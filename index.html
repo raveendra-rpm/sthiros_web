@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sthiros — When Complexity Rises, Sthiros Holds.</title>
+    <meta name="description"
+        content="A senior-led advisory firm delivering strategy, risk, cyber, and AI — for the moments that determine what happens next." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Quicksand:wght@400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css?v=6" />
+</head>
+
+<body class="loading">
+
+    <!-- ═══════════════ PRELOADER ═══════════════ -->
+    <div id="preloader">
+        <video id="preloader-video" src="assets/videos/sthiros_loading_video.mp4" muted playsinline></video>
+    </div>
+
+    <!-- ── WebGL Background Disabled ── -->
+    <!-- <canvas id="webgl-bg"></canvas> -->
+    <!-- ═══════════════ HERO SECTION ═══════════════ -->
+    <section id="hero" class="section-hero">
+
+        <!-- Ambient glow behind the hand -->
+        <div class="hero-glow-bg" aria-hidden="true"></div>
+
+        <!-- Vector 1: right-side rails + bottom-right horizontal line (behind hand) -->
+        <div class="hero-vec-1" aria-hidden="true">
+            <img src="assets/hero_vector_1.svg?v=2" alt="">
+        </div>
+
+        <!-- Robotic hand (in front of vector 1, behind text) -->
+        <img src="assets/robotic_hand_1.png" alt="" class="hero-hand" aria-hidden="true">
+
+        <!-- Vector 2: bottom-left corner bracket and dynamic bridge -->
+        <div class="hero-vec-2-wrapper" aria-hidden="true"
+            style="position: absolute; left: var(--rail-inset); top: calc(var(--rail-h) * 844.546 / 918); width: max(calc(var(--rail-h) * 460 / 918), calc(100vw - 2 * var(--rail-inset) - var(--rail-h) * 1177 / 918 + 2px)); height: calc(var(--rail-h) * 567 / 918); z-index: 1; pointer-events: none;">
+            <!-- The Corner -->
+            <div class="hero-vec-2-corner"
+                style="position: absolute; left: 0; top: 0; width: calc(var(--rail-h) * 460 / 918);">
+                <img src="assets/hero_vector_2.svg?v=3" alt="" style="width: 100%; height: auto; display: block;">
+            </div>
+            <!-- The Bridge (stretches to fill gap) -->
+            <svg class="hero-vec-bridge" preserveAspectRatio="none" viewBox="0 0 100 73.87"
+                style="position: absolute; left: calc(var(--rail-h) * 459 / 918); top: 0; height: calc(var(--rail-h) * 73.87 / 918); width: calc(100% - calc(var(--rail-h) * 459 / 918));">
+                <rect x="0" y="0" width="100" height="24.61" fill="#EC2D26" />
+                <rect x="0" y="36.96" width="100" height="12.32" fill="#EC2D26" />
+                <rect x="0" y="57.76" width="100" height="6.16" fill="#EC2D26" />
+                <rect x="0" y="69.77" width="100" height="4.10" fill="#EC2D26" />
+            </svg>
+        </div>
+
+        <div class="hero-inner">
+            <div class="hero-text">
+                <div class="hero-top">
+                    <p class="hero-label" id="hero-label">ADVISORY · EST. 2005</p>
+                    <div class="hero-top-line"></div>
+                </div>
+                <h1 class="hero-headline" id="hero-headline">
+                    When<br />complexity rises,<br />
+                    Sthiros holds.
+                </h1>
+                <p class="hero-sub" id="hero-sub">
+                    A senior-led advisory firm delivering strategy, risk, cyber, and AI — for the moments that
+                    determine what happens next.
+                </p>
+                <p class="hero-date" id="hero-date">6/15, 5:05:13 PM</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ═══════════════ STATS SECTION ═══════════════ -->
+    <section id="about" class="section-stats">
+        <!-- ═══════════════ HERO SVG TRACK ═══════════════ -->
+        <div class="hero-svg-track">
+            <svg width="100%" height="auto" viewBox="0 0 891 824" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M-3.25251e-05 451.956L0.0832061 455.035C0.0832063 457.088 0.305224 459.168 0.443966 461.22C1.13768 469.459 2.66377 477.669 4.99463 485.63C9.65636 501.579 17.5369 516.557 27.998 529.372C38.5147 542.159 51.5842 552.81 66.263 560.521C80.9142 568.288 97.2302 573.058 113.74 574.445C115.794 574.584 117.875 574.806 119.928 574.834L123.008 574.917L124.535 574.917L125.645 574.944L765.716 574.944C765.91 574.944 766.105 574.944 766.16 574.944L766.798 574.944C767.659 575.028 768.519 574.944 769.379 575.055C772.792 575.277 776.177 575.832 779.452 576.72C786 578.467 792.188 581.574 797.599 585.79C803.01 590.006 807.561 595.304 810.89 601.24C814.248 607.176 816.357 613.722 817.106 620.517C817.3 622.209 817.411 623.929 817.411 625.649L817.411 824L841.913 824L841.913 626.287L841.885 625.344C841.885 622.819 841.691 620.295 841.414 617.799C840.304 607.786 837.14 598.05 832.201 589.257C827.262 580.492 820.547 572.698 812.611 566.484C804.675 560.271 795.49 555.694 785.778 553.087C780.922 551.783 775.928 550.951 770.905 550.646C769.656 550.508 768.38 550.563 767.131 550.508L766.188 550.508C765.883 550.48 765.466 550.48 765.133 550.48L123.286 550.48L120.789 550.397C119.124 550.397 117.459 550.203 115.822 550.092C102.558 548.954 89.4884 545.127 77.6953 538.913C65.9023 532.7 55.3857 524.129 46.9502 513.866C38.5702 503.576 32.2713 491.565 28.5253 478.806C26.6661 472.399 25.4174 465.825 24.8625 459.196C24.7515 457.531 24.585 455.867 24.5573 454.203L24.5017 451.706L24.5017 0.0555399L-5.18851e-05 0.055542L-3.25251e-05 451.956Z"
+                    fill="#EC2D26" />
+                <path
+                    d="M40.2906 475.339C43.5371 486.489 49.0591 497.002 56.3847 506.017C56.3847 506.017 56.4124 506.044 56.4401 506.072C56.4679 506.1 56.4956 506.155 56.5234 506.183C63.9322 515.142 73.1447 522.631 83.4116 528.04C93.7617 533.504 105.194 536.861 116.876 537.859C122.703 538.386 128.558 538.164 134.413 538.22L762.969 538.22C765.883 538.22 768.824 538.22 771.738 538.414C777.565 538.775 783.364 539.745 789.025 541.243C800.318 544.267 811.002 549.62 820.214 556.832C829.454 564.016 837.224 573.058 842.94 583.266C848.684 593.445 852.347 604.818 853.623 616.44C854.317 622.265 854.178 628.117 854.206 633.97L854.206 824L866.471 824L866.471 626.259L866.443 625.011C866.415 621.682 866.193 618.354 865.832 615.053C864.362 601.822 860.172 588.869 853.651 577.247C847.13 565.625 838.278 555.362 827.762 547.151C817.273 538.969 805.119 532.867 792.216 529.399C785.778 527.652 779.174 526.57 772.515 526.154C770.85 525.988 769.185 526.015 767.52 525.96L766.271 525.96L765.134 525.932L123.563 525.932L121.677 525.849C120.4 525.849 119.151 525.682 117.903 525.627C107.858 524.767 98.0349 521.882 89.1277 517.195C80.2482 512.507 72.3122 506.072 65.9023 498.306C59.5757 490.511 54.8308 481.469 52.0282 471.872C50.613 467.045 49.6973 462.08 49.2811 457.06C49.1978 455.812 49.0591 454.536 49.0591 453.287L49.0036 451.401L49.0036 -4.28404e-06L36.7388 -3.21182e-06L36.7388 440.528C36.7943 446.381 36.5723 452.233 37.0718 458.058C37.5712 463.883 38.6534 469.653 40.2906 475.283L40.2906 475.339Z"
+                    fill="#EC2D26" />
+                <path
+                    d="M57.5777 453.01C57.5777 454.147 57.7164 455.257 57.7719 456.366C58.1604 460.832 58.9651 465.242 60.2138 469.514C62.6834 477.974 66.8733 485.935 72.423 492.841C72.423 492.841 72.4507 492.869 72.4785 492.897C72.534 492.952 72.5617 493.035 72.6172 493.091C78.2779 499.887 85.2705 505.601 93.0955 509.706C101.004 513.866 109.717 516.418 118.624 517.195C119.734 517.25 120.844 517.417 121.982 517.389L123.674 517.445L766.327 517.444L767.686 517.472C769.49 517.528 771.294 517.5 773.097 517.694C780.284 518.138 787.471 519.33 794.463 521.217C808.449 524.961 821.629 531.591 833.034 540.467C844.41 549.343 854.011 560.493 861.115 573.086C868.219 585.679 872.742 599.742 874.351 614.11C874.739 617.688 874.989 621.294 875.017 624.9L875.017 626.259L875.045 627.368L875.045 824L881.177 824L881.177 626.259L881.149 624.844C881.094 621.044 880.872 617.244 880.456 613.444C878.763 598.272 873.962 583.404 866.47 570.09C858.978 556.776 848.85 545.016 836.835 535.64C824.82 526.265 810.89 519.275 796.1 515.309C788.719 513.311 781.144 512.063 773.541 511.592C771.654 511.425 769.74 511.425 767.853 511.37L766.438 511.37L765.272 511.342L123.896 511.342L122.37 511.287C121.343 511.287 120.344 511.148 119.318 511.093C111.187 510.399 103.307 508.097 96.1201 504.297C88.9888 500.524 82.5511 495.31 77.3899 489.069C72.312 482.772 68.4827 475.533 66.2351 467.822C65.0974 463.939 64.3482 459.944 64.0152 455.867C63.9597 454.841 63.821 453.842 63.821 452.816L63.821 451.29L63.7655 450.486L63.7655 0.0832464L57.6331 0.0832469L57.6331 451.346L57.6886 453.038L57.5777 453.01Z"
+                    fill="#EC2D26" />
+                <path
+                    d="M69.4818 452.594C69.4818 453.537 69.5928 454.452 69.6483 455.368C69.9535 459.057 70.6472 462.663 71.6739 466.185C73.6995 473.092 77.1125 479.61 81.6633 485.269C81.6633 485.269 81.7466 485.38 81.7743 485.408C81.8021 485.463 81.8576 485.519 81.8853 485.574C86.547 491.149 92.2909 495.809 98.673 499.165C105.166 502.605 112.325 504.685 119.679 505.323C120.594 505.379 121.51 505.517 122.453 505.49L123.841 505.49L124.535 505.545L766.354 505.545L767.853 505.573C769.851 505.628 771.849 505.628 773.846 505.795C781.838 506.294 789.802 507.598 797.543 509.706C813.083 513.866 827.706 521.217 840.331 531.064C852.957 540.91 863.612 553.254 871.465 567.233C879.346 581.213 884.368 596.829 886.144 612.751C886.588 616.717 886.838 620.739 886.893 624.706L886.893 626.203L886.921 627.341L886.921 824L891 824L891 626.231L890.972 624.678C890.917 620.545 890.667 616.44 890.195 612.307C888.364 595.831 883.147 579.688 875.017 565.236C866.887 550.785 855.898 537.998 842.829 527.846C829.787 517.666 814.637 510.066 798.598 505.767C790.579 503.603 782.337 502.244 774.096 501.745C772.043 501.551 769.962 501.579 767.908 501.495L766.354 501.495L765.161 501.468L123.896 501.468L122.592 501.412C121.732 501.412 120.872 501.301 120.012 501.246C113.185 500.663 106.609 498.722 100.588 495.56C94.6218 492.425 89.2386 488.043 84.9099 482.828C80.6644 477.558 77.4733 471.483 75.5864 465.048C74.643 461.803 74.0048 458.447 73.7273 455.035C73.6718 454.175 73.5608 453.343 73.5608 452.455L73.5608 451.152L73.5053 450.458L73.5053 0.0555356L69.4263 0.0555359L69.4263 451.207L69.4818 452.594Z"
+                    fill="#EC2D26" />
+            </svg>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value">350+</div>
+                <p class="stat-label">Clients served across three continents</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">90%</div>
+                <p class="stat-label">Client retention — the work earns the next engagement</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">$200M+</div>
+                <p class="stat-label">In documented client outcomes</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Fixed Background Glows (Global viewport fixed, z-index: -10) -->
+    <div class="services-glow-fixed" aria-hidden="true">
+        <div class="bg-glow-fixed glow-top-right"></div>
+        <div class="bg-glow-fixed glow-bottom-left"></div>
+    </div>
+
+    <!-- ═══════════════ SERVICES SECTION ═══════════════ -->
+    <section id="services" class="section-services">
+
+        <div class="section-center">
+            <p class="section-eyebrow" id="services-eyebrow">WHAT WE DO</p>
+            <h2 class="section-title" id="services-title">
+                Four disciplines.<br /><span class="text-red">One standard.</span>
+            </h2>
+        </div>
+
+        <!-- Rail continues below the heading: descends at centre, turns right -->
+        <div class="services-rail" aria-hidden="true">
+            <div class="services-track">
+                <svg class="first-svg" viewBox="0 0 991 849" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.0837402 727.643L0 724.541V0.943909H24.6853V724.289L24.7415 726.805C24.7694 728.481 24.937 730.158 25.0488 731.835C25.6079 738.515 26.866 745.139 28.739 751.596C32.5132 764.453 38.8594 776.555 47.3022 786.924C55.801 797.265 66.3964 805.902 78.2778 812.162C90.1593 818.423 103.327 822.28 116.69 823.426C118.339 823.538 120.017 823.733 121.694 823.733L124.21 823.817H1750V848.469H126.586L125.468 848.441H123.931L120.827 848.357C118.759 848.329 116.662 848.106 114.593 847.966C97.9591 846.568 81.5208 841.761 66.7598 833.935C51.9708 826.165 38.8032 815.433 28.2078 802.548C17.6682 789.635 9.72864 774.542 5.03198 758.471C2.68359 750.45 1.14612 742.177 0.447266 733.876C0.307495 731.807 0.0837402 729.711 0.0837402 727.643Z"
+                        fill="#EC2D26" />
+                    <path
+                        d="M56.7964 779.07C49.4159 769.987 43.8524 759.394 40.5815 748.158V748.102C38.9321 742.428 37.8418 736.615 37.3386 730.745C36.8354 724.876 37.0591 718.979 37.0032 713.081V0.94397H49.3599V724.037L49.4158 725.938C49.4158 727.196 49.5558 728.481 49.6396 729.739C50.059 734.798 50.9814 739.801 52.4072 744.664C55.2308 754.335 60.0114 763.446 66.3854 771.3C72.8433 779.126 80.8389 785.61 89.7849 790.334C98.7589 795.057 108.655 797.964 118.776 798.83C120.034 798.886 121.292 799.054 122.578 799.054L124.479 799.138H1750V811.52H135.41C129.511 811.464 123.612 811.687 117.741 811.156C105.972 810.15 94.4536 806.768 84.0259 801.262C73.682 795.812 64.4004 788.266 56.936 779.238C56.9081 779.21 56.8802 779.154 56.8523 779.126L56.7964 779.07Z"
+                        fill="#EC2D26" />
+                    <path
+                        d="M58.2052 728.04C58.1493 726.922 58.0096 725.805 58.0096 724.659L58.1215 724.687L58.0653 722.982V0.027832H64.2438V722.115L64.2997 722.926V724.463C64.2997 725.497 64.4396 726.503 64.4955 727.537C64.8309 731.646 65.5856 735.671 66.7318 739.584C68.9963 747.354 72.8544 754.648 77.9703 760.993C83.1702 767.282 89.6561 772.536 96.8409 776.337C104.082 780.166 112.021 782.486 120.212 783.185C121.247 783.241 122.253 783.381 123.288 783.381L124.825 783.436H1750V789.585H124.602L122.896 789.529C121.75 789.557 120.632 789.39 119.514 789.334C110.54 788.551 101.761 785.98 93.7936 781.787C85.9099 777.651 78.8649 771.893 73.1617 765.046C73.1058 764.99 73.078 764.906 73.0221 764.85L72.9662 764.794C67.3749 757.835 63.1536 749.813 60.6654 741.288C59.4073 736.984 58.5966 732.54 58.2052 728.04Z"
+                        fill="#EC2D26" />
+                    <path
+                        d="M70.1705 727.034C70.1146 726.112 70.0028 725.19 70.0028 724.24L69.9469 722.842V0H74.0565V722.087L74.1124 722.786V724.1C74.1124 724.994 74.2242 725.833 74.2802 726.699C74.5597 730.137 75.2026 733.519 76.1532 736.789C78.0542 743.273 81.2692 749.394 85.5465 754.705C89.9077 759.959 95.3313 764.375 101.342 767.533C107.408 770.72 114.034 772.676 120.911 773.263C121.778 773.319 122.645 773.431 123.511 773.431L124.825 773.487H1750V777.595H1750H125.468L124.769 777.539H123.371C122.421 777.567 121.498 777.427 120.576 777.372C113.167 776.729 105.955 774.633 99.4128 771.167C92.9829 767.785 87.196 763.089 82.4994 757.471C82.4714 757.416 82.4155 757.36 82.3876 757.304C82.3596 757.276 82.2755 757.164 82.2755 757.164C77.6907 751.462 74.2521 744.894 72.2113 737.935C71.1769 734.385 70.478 730.752 70.1705 727.034Z"
+                        fill="#EC2D26" />
+                </svg>
+
+                <div class="strategy-section">
+                    <div class="logo-wrapper">
+                        <!-- SVG Wrapper for Logo Tracing Effect -->
+                        <div class="strategy-logo-trace-wrapper" style="opacity: 0;">
+                            <svg class="strategy-img-svg" viewBox="0 0 350 380" preserveAspectRatio="xMidYMid meet"
+                                style="height: 380px; width: 350px; display: block;">
+                                <defs>
+                                    <mask id="s-trace-mask">
+                                        <!-- This path traces the S shape from bottom-left to top-right -->
+                                        <path id="s-trace-path" fill="none" stroke="white" stroke-width="150"
+                                            stroke-linecap="round" stroke-linejoin="round" d="M 30, 330 
+                                                 L 250, 330 
+                                                 C 350, 330, 350, 190, 250, 190 
+                                                 L 100, 190 
+                                                 C 0, 190, 0, 50, 100, 50 
+                                                 L 320, 50" />
+                                    </mask>
+                                </defs>
+                                <image href="assets/images/s_img_sthiros.png" width="350" height="380"
+                                    preserveAspectRatio="xMidYMid meet" mask="url(#s-trace-mask)" />
+                            </svg>
+                        </div>
+                        <!-- second-svg: horizontal → quarter-circle → short vertical drop -->
+                        <svg class="second-svg strategy-curve-svg" viewBox="0 0 2500 900"
+                            preserveAspectRatio="xMinYMin meet" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="strategy-line"
+                                d="M0 2.05 L2000 2.05 A210.65 210.65 0 0 1 2210.65 212.7 L2210.65 700" stroke="#EC2D26"
+                                stroke-width="4.1" />
+                            <path class="strategy-line"
+                                d="M0 13.05 L2000 13.05 A199.65 199.65 0 0 1 2199.65 212.7 L2199.65 700"
+                                stroke="#EC2D26" stroke-width="6.1" />
+                            <path class="strategy-line"
+                                d="M0 31.85 L2000 31.85 A180.85 180.85 0 0 1 2180.85 212.7 L2180.85 700"
+                                stroke="#EC2D26" stroke-width="12.3" />
+                            <path class="strategy-line" d="M0 62.7 L2000 62.7 A150 150 0 0 1 2150 212.7 L2150 700"
+                                stroke="#EC2D26" stroke-width="24.6" />
+                        </svg>
+
+                        <!-- Risk inline section connected to the end of second-svg -->
+                        <div class="risk-inline-section" id="risk-inline">
+                            <div class="risk-logo-box">
+                                <img src="assets/images/o_img_sthiros.png" alt="Risk Logo" class="risk-service-img">
+                                <div class="risk-horiz-rail" aria-hidden="true">
+                                    <svg class="risk-horiz-svg" viewBox="0 0 1500 72" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
+                                        <path class="risk-hline"
+                                            d="M0 12 L1500 12 A 150 150 0 0 0 1650 -138 L1650 -600 A 80 80 0 0 0 1570 -680 L1480 -680"
+                                            stroke="#EC2D26" stroke-width="24.8" />
+                                        <path class="risk-hline"
+                                            d="M0 38 L1500 38 A 176 176 0 0 0 1676 -138 L1676 -600 A 106 106 0 0 0 1570 -706 L1480 -706"
+                                            stroke="#EC2D26" stroke-width="9.9" />
+                                        <path class="risk-hline"
+                                            d="M0 54 L1500 54 A 192 192 0 0 0 1692 -138 L1692 -600 A 122 122 0 0 0 1570 -722 L1480 -722"
+                                            stroke="#EC2D26" stroke-width="4.9" />
+                                        <path class="risk-hline"
+                                            d="M0 64 L1500 64 A 202 202 0 0 0 1702 -138 L1702 -600 A 132 132 0 0 0 1570 -732 L1480 -732"
+                                            stroke="#EC2D26" stroke-width="2.5" />
+                                    </svg>
+                                </div>
+
+                                <!-- Cyber section at the endpoint of Risk upward lines -->
+                                <div class="cyber-inline-section" id="cyber-inline">
+                                    <div class="cyber-logo-box">
+                                        <!-- SVG Wrapper for Logo Tracing Effect -->
+                                        <div class="cyber-logo-trace-wrapper cyber-service-img" style="opacity: 0;">
+                                            <svg class="cyber-img-svg" viewBox="0 0 340 370"
+                                                preserveAspectRatio="xMidYMid meet"
+                                                style="height: 370px; width: 340px; display: block;">
+                                                <defs>
+                                                    <mask id="c-mask">
+                                                        <!-- Traces C with straight lines & round joins for perfect sharp inner / round outer corners -->
+                                                        <path id="c-trace-path" fill="none" stroke="white"
+                                                            stroke-width="160" stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            d="M 480 320 L 50 320 L 50 50 L 340 50 L 340 185 L 50 185" />
+                                                    </mask>
+                                                </defs>
+                                                <image href="assets/images/c_img_sthiros.png" width="340" height="370"
+                                                    mask="url(#c-mask)" />
+                                            </svg>
+                                        </div>
+                                        <!-- Right-exit SVG lines from Cyber logo, curving down (mirror of Risk's curve up) -->
+                                        <div class="cyber-horiz-rail" aria-hidden="true">
+                                            <svg class="cyber-horiz-svg" viewBox="0 0 1500 72" fill="none"
+                                                overflow="visible" xmlns="http://www.w3.org/2000/svg"
+                                                preserveAspectRatio="xMinYMin meet">
+                                                <path class="cyber-hline"
+                                                    d="M0 12 L1200 12 A 188 188 0 0 1 1388 200 L1388 800 A 188 188 0 0 1 1200 988 L1150 988"
+                                                    stroke="#EC2D26" stroke-width="2.5" />
+                                                <path class="cyber-hline"
+                                                    d="M0 22 L1200 22 A 178 178 0 0 1 1378 200 L1378 800 A 178 178 0 0 1 1200 978 L1150 978"
+                                                    stroke="#EC2D26" stroke-width="4.9" />
+                                                <path class="cyber-hline"
+                                                    d="M0 38 L1200 38 A 162 162 0 0 1 1362 200 L1362 800 A 162 162 0 0 1 1200 962 L1150 962"
+                                                    stroke="#EC2D26" stroke-width="9.9" />
+                                                <path class="cyber-hline"
+                                                    d="M0 64 L1200 64 A 136 136 0 0 1 1336 200 L1336 800 A 136 136 0 0 1 1200 936 L1150 936"
+                                                    stroke="#EC2D26" stroke-width="24.8" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="cyber-right-side">
+                                        <div class="cyber-text-block">
+                                            <h2 class="cyber-heading">Cyber</h2>
+                                            <p class="cyber-sub">Security that goes beyond testing — into governance,
+                                                privacy, and law.</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- AI section at the endpoint of Cyber downward lines -->
+                                    <div class="ai-inline-section" id="ai-inline">
+                                        <div class="ai-logo-box">
+                                            <img src="assets/images/ai_img_sthiros.png" alt="AI Logo"
+                                                class="ai-service-img">
+                                        </div>
+                                        <div class="ai-right-side">
+                                            <div class="ai-text-block">
+                                                <h2 class="ai-heading">AI</h2>
+                                                <p class="ai-sub">Data strategy, automation,<br>and digital
+                                                    transformation<br>— grounded in what's real.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end ai-inline-section -->
+
+                                </div>
+                                <!-- end cyber-inline-section -->
+
+                            </div>
+                            <div class="risk-right-side">
+                                <div class="risk-text-block">
+                                    <h2 class="risk-heading">Risk</h2>
+                                    <p class="risk-sub">Governance, compliance, and continuity — before the event, not
+                                        after.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="strategy-content">
+                        <h2 style="margin-bottom: 5px; color: #EC2D26; font-size: 3.5rem; font-weight: 500;">Strategy
+                        </h2>
+                        <p style="color: #fff; max-width: 320px;">From business decisions to transactions — the full
+                            commercial picture.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="services-layout">
+            <!-- Left vertical SVG line indicator (from Figma) -->
+            <div class="services-path-visual" aria-hidden="true"></div>
+
+            <div class="services-cards">
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ WHY STHIROS SECTION ═══════════════ -->
+    <section id="why-sthiros" class="section-why">
+        <div class="why-container">
+            <h2 class="why-heading">WHY STHIROS</h2>
+            <div class="why-svg-container">
+                <svg class="why-svg" viewBox="0 0 1400 1800" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="why-line"
+                        d="M670 0 L670 400 A 92 92 0 0 0 762 492 L1058 492 A 40 40 0 0 1 1098 532 L1098 1200 A 40 40 0 0 1 1058 1240 L762 1240 A 92 92 0 0 0 670 1332 L670 1800"
+                        stroke="#EC2D26" stroke-width="2.5" />
+                    <path class="why-line"
+                        d="M680 0 L680 400 A 82 82 0 0 0 762 482 L1058 482 A 50 50 0 0 1 1108 532 L1108 1200 A 50 50 0 0 1 1058 1250 L762 1250 A 82 82 0 0 0 680 1332 L680 1800"
+                        stroke="#EC2D26" stroke-width="4.9" />
+                    <path class="why-line"
+                        d="M696 0 L696 400 A 66 66 0 0 0 762 466 L1058 466 A 66 66 0 0 1 1124 532 L1124 1200 A 66 66 0 0 1 1058 1266 L762 1266 A 66 66 0 0 0 696 1332 L696 1800"
+                        stroke="#EC2D26" stroke-width="9.9" />
+                    <path class="why-line"
+                        d="M722 0 L722 400 A 40 40 0 0 0 762 440 L1058 440 A 92 92 0 0 1 1150 532 L1150 1200 A 92 92 0 0 1 1058 1292 L762 1292 A 40 40 0 0 0 722 1332 L722 1800"
+                        stroke="#EC2D26" stroke-width="24.8" />
+                </svg>
+
+                <div class="why-content-overlay">
+                    <div class="why-slide" id="why-slide-1" style="opacity: 1; pointer-events: auto;">
+                        <div class="why-text-block">
+                            <div class="why-step">01 / 04</div>
+                            <div class="why-eyebrow">PRINCIPLE</div>
+                            <h3 class="why-title">Senior-led,<br>always.</h3>
+                            <p class="why-desc">The people you meet at the pitch are the people<br>who do the work. No
+                                handoffs to junior teams once<br>the engagement begins.</p>
+                            <div class="why-text-line"></div>
+                        </div>
+                        <div class="why-image-block tilt-right">
+                            <img src="assets/images/principle/senior_led.png" alt="Senior-led always" class="why-photo">
+                        </div>
+                    </div>
+
+                    <div class="why-slide" id="why-slide-2" style="opacity: 0; pointer-events: none;">
+                        <div class="why-text-block">
+                            <div class="why-step">02 / 04</div>
+                            <div class="why-eyebrow">PRINCIPLE</div>
+                            <h3 class="why-title">One firm, four<br>disciplines.</h3>
+                            <p class="why-desc">Strategy, risk, cyber, and AI under one roof means<br>problems get
+                                solved whole — not handed between firms<br>who don't speak to each other.</p>
+                            <div class="why-text-line"></div>
+                        </div>
+                        <div class="why-image-block tilt-left">
+                            <img src="assets/images/principle/one_firm.png" alt="One firm, four disciplines"
+                                class="why-photo">
+                        </div>
+                    </div>
+
+                    <div class="why-slide" id="why-slide-3" style="opacity: 0; pointer-events: none;">
+                        <div class="why-text-block">
+                            <div class="why-step">03 / 04</div>
+                            <div class="why-eyebrow">PRINCIPLE</div>
+                            <h3 class="why-title">Twenty years of<br>staying power.</h3>
+                            <p class="why-desc">Founded in 2005. Still here. The kind of institutional<br>knowledge that
+                                only exists when you've seen what<br>happens next.</p>
+                            <div class="why-text-line"></div>
+                        </div>
+                        <div class="why-image-block tilt-right">
+                            <img src="assets/images/principle/twenty_years.png" alt="Twenty years of staying power"
+                                class="why-photo">
+                        </div>
+                    </div>
+
+                    <div class="why-slide" id="why-slide-4" style="opacity: 0; pointer-events: none;">
+                        <div class="why-text-block">
+                            <div class="why-step">04 / 04</div>
+                            <div class="why-eyebrow">PRINCIPLE</div>
+                            <h3 class="why-title">Global reach,<br>local weight.</h3>
+                            <p class="why-desc">Four offices across three continents. We operate<br>where our clients
+                                operate — with the context that<br>geography demands.</p>
+                            <div class="why-text-line"></div>
+                        </div>
+                        <div class="why-image-block tilt-left">
+                            <img src="assets/images/principle/global_reach.png" alt="Global reach, local weight"
+                                class="why-photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ OUR STORY SECTION ═══════════════ -->
+    <section id="our-story" class="section-story">
+        <div class="story-container">
+            <div class="story-line story-line-top"></div>
+            <p class="story-eyebrow">OUR STORY</p>
+            <h2 class="story-title">
+                <span class="word-mask"><span class="word">Twenty</span></span>
+                <span class="word-mask"><span class="word">years.</span></span><br />
+                <span class="text-red">
+                    <span class="word-mask"><span class="word">Still</span></span>
+                    <span class="word-mask"><span class="word">standing.</span></span>
+                </span>
+            </h2>
+            <div class="story-content">
+                <p>Sthiros began as a five-person risk consultancy in 2005. What held it together wasn't a category or a
+                    service line. It was a consistent answer to hard questions.</p>
+                <p>That's still the work. The firm is larger now. The standard hasn't moved.</p>
+            </div>
+            <div class="story-line story-line-bottom"></div>
+            <div class="story-btn-wrapper">
+                <a href="#" class="story-btn">OUR STORY</a>
+            </div>
+
+            <div class="story-svg-line">
+                <svg width="94" height="814" viewBox="0 0 94 814" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M84.0001 803.957L59.3334 803.957L59.3334 10L84 9.99999L84.0001 803.957Z"
+                        fill="url(#paint0_linear_280_1122)" />
+                    <path d="M47.0139 804L34.6666 804L34.6665 10L47.0139 10L47.0139 804Z"
+                        fill="url(#paint1_linear_280_1122)" />
+                    <path d="M19.8053 803.936L19.8053 10L25.979 10L25.979 803.936L19.8053 803.936Z"
+                        fill="url(#paint2_linear_280_1122)" />
+                    <path d="M10 803.957L9.99993 10L14.1064 10L14.1065 803.957L10 803.957Z"
+                        fill="url(#paint3_linear_280_1122)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_280_1122" x1="47" y1="10" x2="47" y2="804"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" />
+                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_280_1122" x1="47" y1="10" x2="47" y2="804"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" />
+                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_280_1122" x1="47" y1="10" x2="47" y2="804"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" />
+                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint3_linear_280_1122" x1="47" y1="10" x2="47" y2="804"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" />
+                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ INDUSTRIES NEW SECTION ═══════════════ -->
+    <section id="industries-new" class="section-industries-new">
+        <div class="experts-pin-container">
+            <!-- Background Layer: The SVG Lines -->
+            <div class="center-vertical-lines">
+                <svg width="74" height="678" viewBox="0 0 74 678" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M74.0001 677.963L49.3334 677.963L49.3334 -4.31286e-06L74 -6.46929e-06L74.0001 677.963Z"
+                        fill="url(#paint0_linear_90_1428)" />
+                    <path d="M37.0139 678L24.6666 678L24.6665 -2.15642e-06L37.0139 -3.23586e-06L37.0139 678Z"
+                        fill="url(#paint1_linear_90_1428)" />
+                    <path d="M9.80534 677.945L9.80528 -8.5721e-07L15.979 -1.39693e-06L15.979 677.945L9.80534 677.945Z"
+                        fill="url(#paint2_linear_90_1428)" />
+                    <path
+                        d="M-3.20594e-09 677.963L-5.92726e-05 0L4.10643 -3.59001e-07L4.10649 677.963L-3.20594e-09 677.963Z"
+                        fill="url(#paint3_linear_90_1428)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_90_1428" x1="37" y1="-3.23465e-06" x2="37" y2="678"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="1" stop-color="#EC2D26" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_90_1428" x1="37" y1="-3.23465e-06" x2="37" y2="678"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="1" stop-color="#EC2D26" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_90_1428" x1="37" y1="-3.23465e-06" x2="37" y2="678"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="1" stop-color="#EC2D26" />
+                        </linearGradient>
+                        <linearGradient id="paint3_linear_90_1428" x1="37" y1="-3.23465e-06" x2="37" y2="678"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="1" stop-color="#EC2D26" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+
+            <!-- Background Layer: The 5 Cards -->
+            <div class="experts-cards-wrapper">
+                <div class="expert-card card-1">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="assets/images/industries/banking_financial_services.png" alt="Banking">
+                        </div>
+                        <div class="card-back">
+                            <img src="assets/images/industries/banking_financial_services_flip.png"
+                                alt="Banking Details">
+                        </div>
+                    </div>
+                </div>
+                <div class="expert-card card-2">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="assets/images/industries/energy_utilities.png" alt="Energy">
+                        </div>
+                        <div class="card-back">
+                            <img src="assets/images/industries/energy_utilities_flip.png" alt="Energy Details">
+                        </div>
+                    </div>
+                </div>
+                <div class="expert-card card-3">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="assets/images/industries/healthcare_pharma.png" alt="Healthcare">
+                        </div>
+                        <div class="card-back">
+                            <img src="assets/images/industries/healthcare_pharma_flip.png" alt="Healthcare Details">
+                        </div>
+                    </div>
+                </div>
+                <div class="expert-card card-4">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="assets/images/industries/insurance_capital_markets.png" alt="Insurance">
+                        </div>
+                        <div class="card-back">
+                            <img src="assets/images/industries/insurance_capital_markets_flip.png"
+                                alt="Insurance Details">
+                        </div>
+                    </div>
+                </div>
+                <div class="expert-card card-5">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="assets/images/industries/technology_telecom.png" alt="Technology">
+                        </div>
+                        <div class="card-back">
+                            <img src="assets/images/industries/technology_telecom_flip.png" alt="Technology Details">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foreground Layer: Text Overlay -->
+            <div class="industries-new-container">
+                <p class="industries-new-eyebrow">INDUSTRIES</p>
+                <h2 class="industries-new-title">
+                    No matter the<br />
+                    <span class="text-red">industry,</span> no matter<br />
+                    the complexity,<br />
+                    Sthiros holds.
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ LATEST THINKING SECTION ═══════════════ -->
+    <section id="latest-thinking" class="section-latest-thinking">
+        <div class="latest-thinking-container">
+            <div class="thinking-header">
+                <p class="thinking-eyebrow">LATEST THINKING</p>
+                <h2 class="thinking-title">Notes from<br />the <span class="text-red">work.</span></h2>
+            </div>
+            <div class="thinking-cards-wrapper">
+                <div class="thinking-card">
+                    <p class="card-eyebrow">PERSPECTIVE · RISK</p>
+                    <h3 class="card-title">What governance actually looks like before the event.</h3>
+                    <p class="card-read-time">6 min read</p>
+                </div>
+                <div class="thinking-card">
+                    <p class="card-eyebrow">PERSPECTIVE · AI</p>
+                    <h3 class="card-title">Automation without strategy is just faster mistakes.</h3>
+                    <p class="card-read-time">8 min read</p>
+                </div>
+            </div>
+            <div class="thinking-bottom-line">
+                <svg width="74" height="325" viewBox="0 0 74 325" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M74 324.982L49.3334 324.982L49.3334 -4.31286e-06L74 -6.46929e-06L74 324.982Z"
+                        fill="url(#paint0_linear_90_1440)" />
+                    <path d="M37.0139 325L24.6666 325L24.6665 -2.15642e-06L37.0139 -3.23586e-06L37.0139 325Z"
+                        fill="url(#paint1_linear_90_1440)" />
+                    <path d="M9.80534 324.974L9.80531 -8.5721e-07L15.979 -1.39693e-06L15.979 324.974L9.80534 324.974Z"
+                        fill="url(#paint2_linear_90_1440)" />
+                    <path
+                        d="M-1.53677e-09 324.982L-2.84124e-05 0L4.10646 -3.59001e-07L4.10649 324.982L-1.53677e-09 324.982Z"
+                        fill="url(#paint3_linear_90_1440)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_90_1440" x1="37" y1="-3.23464e-06" x2="37" y2="325"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="1" stop-color="#EC2D26" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_90_1440" x1="37" y1="-3.23464e-06" x2="37" y2="325"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="1" stop-color="#EC2D26" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_90_1440" x1="37" y1="-3.23464e-06" x2="37" y2="325"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="1" stop-color="#EC2D26" />
+                        </linearGradient>
+                        <linearGradient id="paint3_linear_90_1440" x1="37" y1="-3.23464e-06" x2="37" y2="325"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="1" stop-color="#EC2D26" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ CTA SECTION ═══════════════ -->
+    <section id="cta" class="section-cta">
+        <div class="cta-container">
+            <div class="cta-banner">
+                <div class="cta-content">
+                    <h2 class="cta-title">Bring us your<br>hardest challenges</h2>
+                </div>
+                <div class="cta-action">
+                    <a href="#" class="btn-talk-to-us">TALK TO US</a>
+                </div>
+            </div>
+            <hr class="cta-divider">
+        </div>
+    </section>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer id="footer" class="site-footer">
+        <div class="footer-container">
+            <!-- Left Side -->
+            <div class="footer-left">
+                <h3 class="footer-heading">Let's work together</h3>
+                <a href="mailto:hello@sthiros.com" class="footer-email">hello@sthiros.com</a>
+
+                <div class="footer-contact-block">
+                    <a href="#" class="contact-now-link">
+                        <span>CONTACT NOW</span>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H11V11" stroke="white" stroke-width="1.5" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/fb_sthiros.png" alt="Facebook" class="social-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/insta_sthiros.png" alt="Instagram" class="social-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/x_sthiros.png" alt="X" class="social-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/linkedin_sthiros.png" alt="LinkedIn" class="social-img">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="footer-right">
+                <ul class="footer-menu">
+                    <li><a href="#">OUR STORY</a></li>
+                    <li><a href="#">LEADERSHIP</a></li>
+                    <li><a href="#">CAREERS</a></li>
+                    <li><a href="#">INDUSTRIES</a></li>
+                    <li><a href="#">LATEST</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-bottom-line">
+
+        <div class="footer-massive-logo-section">
+            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo">
+            <div class="copyright-text">© 2026</div>
+        </div>
+    </footer>
+
+    <!-- ═══════════════ SCRIPTS ═══════════════ -->
+    <!-- GSAP, ScrollTrigger, Anime.js, Lenis (smooth scroll) & Three.js (WebGL) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        function connectMagnets() {
+            return;
+            const vec2Img = document.querySelector('.hero-vec-2');
+            const vec1Container = document.querySelector('.hero-vec-1');
+            const hero = document.querySelector('.section-hero');
+
+            if (!vec2Img || !vec1Container || !hero) return;
+
+            vec1Container.style.transform = 'none';
+
+            const heroRect = hero.getBoundingClientRect();
+            const svg = vec1Container.querySelector('svg');
+            const ctm = svg.getScreenCTM();
+
+            // Actual scale and origin of vec1's SVG in screen coords (hero-relative)
+            const originX = ctm.e - heroRect.left;
+            const originY = ctm.f - heroRect.top;
+            const scaleX = ctm.a;
+            const scaleY = ctm.d;
+
+            // Vec1's 4 horizontal bands in viewBox coords → screen coords
+            // (innerTopY = inner/top edge, outerBottomY = outer/bottom edge of each filled strip)
+            const bands = [
+                { innerTopY: 893.872, outerBottomY: 917.085 }, // outermost (thickest)
+                { innerTopY: 869.181, outerBottomY: 880.090 },
+                { innerTopY: 854.422, outerBottomY: 859.221 },
+                { innerTopY: 844.546, outerBottomY: 847.280 }, // innermost (thinnest)
+            ].map(b => ({
+                top: originY + b.innerTopY * scaleY,
+                h: (b.outerBottomY - b.innerTopY) * scaleY,
+            }));
+
+            // X where vec1's horizontal bands begin (left edge, viewBox x ≈ 1.45)
+            const bandLeftX = originX + 1.45 * scaleX;
+
+            // Left start: same x as vec2 (hero padding-left ≈ 40px, measured dynamically)
+            const vec2Rect = vec2Img.getBoundingClientRect();
+            const startX = vec2Rect.left - heroRect.left;
+
+            // Hide vec2 — its lines are at a different Y level than vec1's bands.
+            // We draw replacement left-side lines at vec1's exact Y positions instead.
+            vec2Img.style.opacity = '0';
+
+            let magnetContainer = document.getElementById('magnet-connectors');
+            if (!magnetContainer) {
+                magnetContainer = document.createElement('div');
+                magnetContainer.id = 'magnet-connectors';
+                magnetContainer.style.cssText =
+                    'position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;pointer-events:none;overflow:visible;';
+                hero.appendChild(magnetContainer);
+            }
+            magnetContainer.innerHTML = '';
+
+            // For each band, draw a horizontal div from startX to bandLeftX (+ 2px overlap).
+            // A semicircular left cap (border-radius = h/2) gives a bracket-like end.
+            const extWidth = Math.max(0, bandLeftX - startX + 2);
+
+            bands.forEach(b => {
+                if (extWidth <= 0) return;
+                const el = document.createElement('div');
+                const r = (b.h / 2).toFixed(1);
+                el.style.cssText =
+                    `position:absolute;background:#EC2D26;` +
+                    `left:${startX}px;width:${extWidth}px;` +
+                    `top:${b.top}px;height:${b.h}px;` +
+                    `border-radius:${r}px 0 0 ${r}px;`;
+                magnetContainer.appendChild(el);
+            });
+        }
+
+        window.addEventListener('load', connectMagnets);
+        window.addEventListener('resize', connectMagnets);
+        setTimeout(connectMagnets, 100);
+        setTimeout(connectMagnets, 500);
+        setTimeout(connectMagnets, 1000);
+    </script>
+
+
+
+</body>
+
+</html>
