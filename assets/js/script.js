@@ -43,10 +43,25 @@ function triggerBoot() {
 }
 
 function initPreloader() {
+  // Force scroll to top and lock it
+  window.scrollTo(0, 0);
+  const preventScroll = (e) => {
+    if (document.body.classList.contains('loading')) {
+      e.preventDefault();
+    }
+  };
+  window.addEventListener('wheel', preventScroll, { passive: false });
+  window.addEventListener('touchmove', preventScroll, { passive: false });
+  window.addEventListener('keydown', (e) => {
+    if (document.body.classList.contains('loading') && ['ArrowUp', 'ArrowDown', 'Space', 'PageUp', 'PageDown', 'Home', 'End'].includes(e.code)) {
+      e.preventDefault();
+    }
+  }, { passive: false });
+
   const video = document.getElementById('preloader-video');
   if (video) {
     // Initial big scale
-    gsap.set(video, { scale: 2.5 });
+    gsap.set(video, { scale: 4 });
 
     const playPromise = video.play();
     if (playPromise !== undefined) {

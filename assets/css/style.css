@@ -69,6 +69,7 @@
   object-fit: cover;
   /* Cover the entire screen, typical for cinematic loaders */
   pointer-events: none;
+  transform: scale(4);
 }
 
 body.loading {
@@ -2445,7 +2446,7 @@ html.lenis body {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(239, 70, 35, 0.2) 0%, rgba(239, 70, 35, 0.06) 30%, transparent 60%);
+  background: radial-gradient(circle, rgba(239, 70, 35, 0.35) 0%, rgba(239, 70, 35, 0.12) 30%, transparent 60%);
   z-index: 1;
   pointer-events: none;
   animation: cardGlowMove 15s ease-in-out infinite;
@@ -2493,7 +2494,7 @@ html.lenis body {
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 0.2em;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.85);
   text-transform: uppercase;
   margin-bottom: 16px;
 }
@@ -2511,7 +2512,7 @@ html.lenis body {
 .card-read-time {
   font-family: 'Quicksand', sans-serif;
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .thinking-bottom-line {
