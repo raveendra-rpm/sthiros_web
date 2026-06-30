@@ -159,29 +159,29 @@ function initHeroTrackAlign() {
     let tokens = [];
     let match;
     while ((match = regex.exec(pathStr)) !== null) tokens.push(match[0]);
-    
+
     let result = '';
     let isX = true;
     for (let i = 0; i < tokens.length; i++) {
-        let token = tokens[i];
-        if (/^[A-Za-z]$/.test(token)) {
-            result += token;
-            isX = true;
+      let token = tokens[i];
+      if (/^[A-Za-z]$/.test(token)) {
+        result += token;
+        isX = true;
+      } else {
+        if (isX) {
+          let x = parseFloat(token);
+          if (x > 300) x += shiftX; // Only shift the coordinates on the right side
+          if (result.length > 0 && !/^[A-Za-z]$/.test(result[result.length - 1])) {
+            result += ' ';
+          }
+          let numStr = Number.isInteger(x) ? x.toString() : x.toFixed(3);
+          if (numStr === '0.000' || numStr === '-0.000') numStr = '0';
+          result += numStr;
         } else {
-            if (isX) {
-                let x = parseFloat(token);
-                if (x > 300) x += shiftX; // Only shift the coordinates on the right side
-                if (result.length > 0 && !/^[A-Za-z]$/.test(result[result.length - 1])) {
-                    result += ' ';
-                }
-                let numStr = Number.isInteger(x) ? x.toString() : x.toFixed(3);
-                if (numStr === '0.000' || numStr === '-0.000') numStr = '0';
-                result += numStr;
-            } else {
-                result += ',' + token;
-            }
-            isX = !isX;
+          result += ',' + token;
         }
+        isX = !isX;
+      }
     }
     return result;
   }
@@ -203,7 +203,7 @@ function initHeroTrackAlign() {
     // We want: railLeft + (829 + shiftX) * s = centerScreen
     const requiredX = (centerScreen - railLeft) / s;
     const shiftX = requiredX - 829;
-    
+
     paths.forEach(p => {
       const orig = p.getAttribute('data-original-d');
       p.setAttribute('d', shiftPath(orig, shiftX));
@@ -211,7 +211,7 @@ function initHeroTrackAlign() {
 
     const newVbW = VB_W + shiftX;
     svg.setAttribute('viewBox', `0 0 ${newVbW} 824`);
-    
+
     svg.style.maxWidth = 'none';
     svg.style.width = (newVbW * s) + 'px';           // scale to match corner precisely
 
@@ -228,8 +228,15 @@ function initHeroTrackAlign() {
 
         const horizTop = svg.getBoundingClientRect().top + window.scrollY + HORIZ_Y * s;
         cards.forEach((card) => {
+          // Temporarily remove transform to get the true untranslated top
+          const currentTransform = card.style.transform;
+          card.style.transform = 'none';
+
           const cardTop = card.getBoundingClientRect().top + window.scrollY;
           card.style.height = Math.max(0, horizTop - cardTop) + 'px';
+
+          // Restore transform
+          card.style.transform = currentTransform;
         });
       }
     }
@@ -279,14 +286,47 @@ function initHeroSvgTrackScroll() {
   const title = document.getElementById('services-title');
 
   if (eyebrow && title) {
-    gsap.set([eyebrow, title], { transformPerspective: 1000 });
-    gsap.fromTo([eyebrow, title],
+    // Helper function to split text nodes into individual letter spans
+    function splitToLetters(el) {
+      const fragment = document.createDocumentFragment();
+      Array.from(el.childNodes).forEach(node => {
+        if (node.nodeType === 3) {
+          const chars = node.textContent.split('');
+          chars.forEach(char => {
+            if (char.trim() === '') {
+              fragment.appendChild(document.createTextNode(char));
+            } else {
+              const span = document.createElement('span');
+              span.textContent = char;
+              span.style.display = 'inline-block';
+              span.className = 'letter';
+              fragment.appendChild(span);
+            }
+          });
+        } else if (node.nodeType === 1) {
+          if (node.tagName !== 'BR') {
+            splitToLetters(node);
+          }
+          fragment.appendChild(node);
+        }
+      });
+      el.innerHTML = '';
+      el.appendChild(fragment);
+    }
+
+    splitToLetters(eyebrow);
+    splitToLetters(title);
+
+    const letters = [...eyebrow.querySelectorAll('.letter'), ...title.querySelectorAll('.letter')];
+
+    gsap.set(letters, { transformPerspective: 1000 });
+    gsap.fromTo(letters,
       {
-        y: 80,
+        y: 40,
         opacity: 0,
         rotationX: -45,
         scale: 0.9,
-        filter: 'blur(10px)'
+        filter: 'blur(5px)'
       },
       {
         y: 0,
@@ -295,12 +335,13 @@ function initHeroSvgTrackScroll() {
         scale: 1,
         filter: 'blur(0px)',
         duration: 1.6,
-        stagger: 0.25,
-        ease: 'expo.out',
+        stagger: 0.05,
+        ease: 'power2.out',
         scrollTrigger: {
           trigger: eyebrow,
-          start: 'top 65%', // Triggers when the text reaches near center
-          toggleActions: 'play none none none'
+          start: 'top 75%',
+          end: 'top 35%',
+          scrub: 1
         }
       }
     );
@@ -329,8 +370,8 @@ function initHeroLinesScroll() {
       tl.to(vec1, { clipPath: 'circle(150% at 100% 0%)', ease: 'none', duration: 1 });
     }
     if (vec2) {
-      // vec2 connects to the end of vec1, so we start it near the end of vec1's animation
-      tl.to(vec2, { clipPath: 'circle(150% at 100% 0%)', ease: 'none', duration: 0.4 }, vec1 ? "-=0.2" : undefined);
+      // vec2 connects to the end of vec1, so we start it after vec1's animation finishes
+      tl.to(vec2, { clipPath: 'circle(150% at 100% 0%)', ease: 'none', duration: 0.4 });
     }
   }
 }
@@ -338,18 +379,30 @@ function initHeroLinesScroll() {
 function initServicesSvgTrackScroll() {
   const servicesSvg = document.querySelector('.services-rail .first-svg');
   if (servicesSvg) {
-    // Hide using a circle at the top-left origin
-    gsap.set(servicesSvg, { clipPath: 'circle(0% at 0% 0%)' });
+    // Initial state: hidden at the top
+    gsap.set(servicesSvg, { clipPath: 'polygon(0% 0%, 16% 0%, 16% 0%, 16% 0%, 16% 0%, 0% 0%)' });
 
-    ScrollTrigger.create({
-      trigger: '.services-rail',
-      start: 'top 65%', // Starts drawing when rail reaches near center
-      end: () => '+=' + (window.innerHeight * 1.2), // Finishes exactly when Part 1A horizontal scroll finishes
-      scrub: true, // Use strict scrub (no lag) so it doesn't bleed into the logo trace sequence
-      animation: gsap.to(servicesSvg, {
-        clipPath: 'circle(250% at 0% 0%)',
-        ease: 'none'
-      })
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.services-rail',
+        start: 'top 65%', // Starts drawing when rail reaches near center
+        end: () => '+=' + (window.innerHeight * 1.2), // Finishes exactly when Part 1A horizontal scroll finishes
+        scrub: true, // Use strict scrub (no lag) so it doesn't bleed into the logo trace sequence
+      }
+    });
+
+    // Step 1: Wipe down the vertical part (approx 1/3 of the total distance)
+    tl.to(servicesSvg, {
+      clipPath: 'polygon(0% 0%, 16% 0%, 16% 85%, 16% 85%, 16% 100%, 0% 100%)',
+      ease: 'none',
+      duration: 1
+    });
+
+    // Step 2: Wipe right along the horizontal part (approx 2/3 of the total distance)
+    tl.to(servicesSvg, {
+      clipPath: 'polygon(0% 0%, 16% 0%, 16% 85%, 200% 85%, 200% 100%, 0% 100%)',
+      ease: 'none',
+      duration: 2
     });
   }
 }
@@ -742,18 +795,6 @@ function initScrollAnimations() {
     );
   });
 
-  gsap.from('.stat-card', {
-    x: 150, /* Slide from right to left */
-    opacity: 0,
-    duration: 1.2,
-    stagger: 0.25, /* 250ms delay between each card */
-    ease: 'power3.out',
-    scrollTrigger: {
-      trigger: '.stats-grid',
-      start: 'top 85%',
-      toggleActions: 'play none none none'
-    }
-  });
 
   gsap.from('.industry-card', {
     y: 40, opacity: 0, duration: 0.7, stagger: 0.1, ease: 'power3.out',
@@ -820,10 +861,10 @@ function initScrollAnimations() {
           const pathLength = sTracePath.getTotalLength();
           gsap.set(sTracePath, { strokeDasharray: pathLength, strokeDashoffset: pathLength });
           gsap.set([strategyH2, strategyP], { opacity: 0, y: 40 });
-          
+
           strategyLines.forEach(line => {
-             const len = line.getTotalLength();
-             gsap.set(line, { strokeDasharray: len, strokeDashoffset: len });
+            const len = line.getTotalLength();
+            gsap.set(line, { strokeDasharray: len, strokeDashoffset: len });
           });
         }
 
@@ -1362,6 +1403,11 @@ function initIndustriesNewScroll() {
     rotation: 0
   });
 
+  const verticalLines = document.querySelector('.center-vertical-lines');
+  if (verticalLines) {
+    gsap.set(verticalLines, { clipPath: 'inset(0% 0% 100% 0%)', opacity: 1 });
+  }
+
   // Master Pinning Timeline
   const tl = gsap.timeline({
     scrollTrigger: {
@@ -1402,16 +1448,6 @@ function initIndustriesNewScroll() {
     duration: 1.5
   }, '+=0.2');
 
-  // 3.5 Animate the SVG lines in just before/during scatter
-  const verticalLines = document.querySelector('.center-vertical-lines');
-  if (verticalLines) {
-    tl.to(verticalLines, {
-      opacity: 1,
-      ease: 'power2.out',
-      duration: 1.5
-    }, '+=0.2'); // Starts right before the scatter stagger
-  }
-
   // 4. Cards Scatter/Flutter one by one, with NO TILT
   tl.to(cards, {
     x: (i) => scatter[i][0],
@@ -1420,7 +1456,7 @@ function initIndustriesNewScroll() {
     stagger: 0.2,
     ease: 'power2.inOut',
     duration: 1.5
-  }, '<'); // '<' syncs it with the SVG animation above
+  }, '<'); // '<' syncs it with the Text Hides animation above
 
   // 5. Cards Flip one by one (completely sequential)
   tl.to(cardInners, {
@@ -1430,29 +1466,40 @@ function initIndustriesNewScroll() {
     duration: 1.5
   }, '+=0.3');
 
-  // 6. Move up and wash out in groups: Top (0, 4) -> Middle (2) -> Bottom (1, 3)
+  // 6. Move up and wash out in groups smoothly: Top -> Middle -> Bottom
 
   // Group 1: Top Cards (indices 0 and 4)
   tl.to([cards[0], cards[4]], {
     y: (i, el) => scatter[cards.indexOf(el)][1] - window.innerHeight - 300,
     opacity: 0,
-    ease: 'power1.in',
-    duration: 1.5
+    ease: 'none',
+    stagger: 0.15, // slight stagger so they aren't rigid
+    duration: 2.5
   }, '+=0.5');
 
   // Group 2: Middle Card (index 2)
   tl.to(cards[2], {
     y: scatter[2][1] - window.innerHeight - 300,
     opacity: 0,
-    ease: 'power1.in',
-    duration: 1.5
-  }); // starts right after Group 1 finishes
+    ease: 'none',
+    duration: 2.5
+  }, '-=1.5'); // Start while the top ones are still moving up
 
   // Group 3: Bottom Cards (indices 1 and 3)
   tl.to([cards[1], cards[3]], {
     y: (i, el) => scatter[cards.indexOf(el)][1] - window.innerHeight - 300,
     opacity: 0,
-    ease: 'power1.in',
-    duration: 1.5
-  }); // starts right after Group 2 finishes
+    ease: 'none',
+    stagger: 0.15, // slight stagger
+    duration: 2.5
+  }, '-=1.5'); // Start while the middle one is still moving up
+
+  // 7. Animate the SVG lines visible when bottom cards move up
+  if (verticalLines) {
+    tl.to(verticalLines, {
+      clipPath: 'inset(0% 0% 0% 0%)',
+      ease: 'none',
+      duration: 1.5
+    }, '<'); // '<' syncs it with Group 3 above
+  }
 }
