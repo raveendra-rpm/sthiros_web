@@ -83,9 +83,11 @@ function initPreloader() {
     // Shrink to zero right before it ends
     let shrinkTriggered = false;
     video.addEventListener('timeupdate', () => {
-      if (!shrinkTriggered && video.duration && (video.duration - video.currentTime) <= 0.6) {
+      // Start shrinking 0.8 seconds before the video ends
+      if (!shrinkTriggered && video.duration && (video.duration - video.currentTime) <= 0.8) {
         shrinkTriggered = true;
-        gsap.to(video, { scale: 0, rotation: 180, duration: 0.5, ease: 'back.in(1.5)' });
+        // Just scale down smoothly to 0 (no extra rotation needed as the video cube already rotates)
+        gsap.to(video, { scale: 0, duration: 0.8, ease: 'power2.inOut' });
       }
     });
 
