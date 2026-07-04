@@ -17,6 +17,47 @@
 
 <body class="loading">
 
+    <!-- ═══════════════ SITE HEADER ═══════════════ -->
+    <header class="site-header">
+        <div class="header-left">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <button class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                <span class="toggle-track">
+                    <img src="assets/images/dark_light_toggle.png" alt="Theme Toggle" class="toggle-art">
+                    <span class="toggle-thumb"></span>
+                </span>
+            </button>
+            <button class="menu-toggle" aria-label="Open Menu">
+                <span class="menu-icon">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ═══════════════ FULL SCREEN MENU OVERLAY ═══════════════ -->
+    <div class="menu-overlay" id="menuOverlay">
+
+        <div class="menu-content">
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="#" class="nav-link active">WHAT WE DO</a>
+                <a href="our-work.html" class="nav-link">WHO WE ARE</a>
+                <a href="#" class="nav-link">THE WORK</a>
+                <a href="#" class="nav-link">OUR THINKING</a>
+                <a href="#" class="nav-link">TALK TO US</a>
+            </nav>
+
+
+        </div>
+    </div>
+
     <!-- ═══════════════ PRELOADER ═══════════════ -->
     <div id="preloader">
         <video id="preloader-video" src="assets/videos/sthiros_loading_video.mp4" muted playsinline></video>
@@ -542,6 +583,59 @@
                         </div>
                     </div>
                 </div>
+                <!-- Next 5 cards (duplicates for now) -->
+                <div class="expert-card card-6">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="assets/images/industries/banking_financial_services.png" alt="Banking">
+                        </div>
+                        <div class="card-back">
+                            <img src="assets/images/industries/banking_financial_services_flip.png"
+                                alt="Banking Details">
+                        </div>
+                    </div>
+                </div>
+                <div class="expert-card card-7">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="assets/images/industries/energy_utilities.png" alt="Energy">
+                        </div>
+                        <div class="card-back">
+                            <img src="assets/images/industries/energy_utilities_flip.png" alt="Energy Details">
+                        </div>
+                    </div>
+                </div>
+                <div class="expert-card card-8">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="assets/images/industries/healthcare_pharma.png" alt="Healthcare">
+                        </div>
+                        <div class="card-back">
+                            <img src="assets/images/industries/healthcare_pharma_flip.png" alt="Healthcare Details">
+                        </div>
+                    </div>
+                </div>
+                <div class="expert-card card-9">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="assets/images/industries/insurance_capital_markets.png" alt="Insurance">
+                        </div>
+                        <div class="card-back">
+                            <img src="assets/images/industries/insurance_capital_markets_flip.png"
+                                alt="Insurance Details">
+                        </div>
+                    </div>
+                </div>
+                <div class="expert-card card-10">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="assets/images/industries/technology_telecom.png" alt="Technology">
+                        </div>
+                        <div class="card-back">
+                            <img src="assets/images/industries/technology_telecom_flip.png" alt="Technology Details">
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Foreground Layer: Text Overlay -->
@@ -560,20 +654,26 @@
     <!-- ═══════════════ LATEST THINKING SECTION ═══════════════ -->
     <section id="latest-thinking" class="section-latest-thinking">
         <div class="latest-thinking-container">
+            <hr class="thinking-divider top-divider">
             <div class="thinking-header">
                 <p class="thinking-eyebrow">LATEST THINKING</p>
                 <h2 class="thinking-title">Notes from<br />the <span class="text-red">work.</span></h2>
             </div>
+            <hr class="thinking-divider bottom-divider">
             <div class="thinking-cards-wrapper">
                 <div class="thinking-card">
                     <p class="card-eyebrow">PERSPECTIVE · RISK</p>
-                    <h3 class="card-title">What governance actually looks like before the event.</h3>
-                    <p class="card-read-time">6 min read</p>
+                    <div class="card-bottom">
+                        <h3 class="card-title">What governance actually looks like before the event.</h3>
+                        <p class="card-read-time">6 min read</p>
+                    </div>
                 </div>
                 <div class="thinking-card">
                     <p class="card-eyebrow">PERSPECTIVE · AI</p>
-                    <h3 class="card-title">Automation without strategy is just faster mistakes.</h3>
-                    <p class="card-read-time">8 min read</p>
+                    <div class="card-bottom">
+                        <h3 class="card-title">Automation without strategy is just faster mistakes.</h3>
+                        <p class="card-read-time">8 min read</p>
+                    </div>
                 </div>
             </div>
             <div class="thinking-bottom-line">
@@ -615,9 +715,14 @@
     </section>
 
     <!-- ═══════════════ CTA SECTION ═══════════════ -->
-    <section id="cta" class="section-cta">
+    <section id="ctaSection" class="section-cta">
+        <!-- Cursor Follower Badge -->
+        <div class="cta-cursor-badge" id="ctaCursorBadge">
+            <span class="cta-badge-dot">○</span>
+            <span class="cta-badge-label">CONTACT US</span>
+        </div>
         <div class="cta-container">
-            <div class="cta-banner">
+            <div class="cta-banner" id="ctaBanner">
                 <div class="cta-content">
                     <h2 class="cta-title">Bring us your<br>hardest challenges</h2>
                 </div>

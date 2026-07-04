@@ -17,6 +17,8 @@ function boot() {
   initStatCounters();
   initCursorGlow();
   initIndustriesNewScroll();
+  initTrustedIndustriesScroll();
+  initOurWorkHeroScroll();
 }
 
 let appBooted = false;
@@ -272,9 +274,9 @@ function initHeroSvgTrackScroll() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '.section-stats',
-        start: 'top 50%', // Start exactly when hero section is half scrolled out
-        end: 'bottom 70%', // Finish drawing before the section leaves
-        scrub: 1, // Smooth scrub
+        start: 'top 55%', // Start slightly after hero SVG finishes
+        end: 'bottom 75%', // Finish before the next section starts
+        scrub: true, // Strict scrub to prevent overlap delay
       }
     });
 
@@ -376,8 +378,8 @@ function initHeroLinesScroll() {
       scrollTrigger: {
         trigger: '.section-hero',
         start: 'top top',
-        end: 'bottom 50%', // Finish when hero section is half scrolled out
-        scrub: 1.5,
+        end: 'bottom 55%', // Finish completely before the next section hits top 55%
+        scrub: true, // Strict scrub to prevent overlap delay
       }
     });
 
@@ -857,7 +859,8 @@ function initScrollAnimations() {
         const riskVertScrollUP = 685; // 684.8 rounded
         const cyberHorizScroll = 1170; // 210 (offset) + 960 (1200 * 0.8)
         const cyberVertScrollDOWN = 966 * scale; // Match the actual animation distance
-        return `+=${targetX + riskY + riskHorizScroll + riskVertScrollUP + cyberHorizScroll + cyberVertScrollDOWN + 800}`;
+        // Added 400 for a small pause at the end before unpinning
+        return `+=${targetX + riskY + riskHorizScroll + riskVertScrollUP + cyberHorizScroll + cyberVertScrollDOWN + 400}`;
       },
       pin: true,
       animation: (() => {
@@ -873,13 +876,14 @@ function initScrollAnimations() {
 
         if (sTracePath && strategyLogoWrapper && strategyH2 && strategyP && strategySvg) {
           gsap.set(strategyLogoWrapper, { opacity: 1 });
-          const pathLength = sTracePath.getTotalLength();
-          gsap.set(sTracePath, { strokeDasharray: pathLength, strokeDashoffset: pathLength });
+          // Use hardcoded length (1050) because getTotalLength() inside <mask> can be unreliable in some browsers
+          const pathLength = 1050;
+          gsap.set(sTracePath, { strokeDasharray: pathLength + 10, strokeDashoffset: pathLength + 10 });
           gsap.set([strategyH2, strategyP], { opacity: 0, y: 40 });
 
           strategyLines.forEach(line => {
             const len = line.getTotalLength();
-            gsap.set(line, { strokeDasharray: len, strokeDashoffset: len });
+            gsap.set(line, { strokeDasharray: len + 10, strokeDashoffset: len + 10, opacity: 0 });
           });
         }
 
@@ -892,12 +896,24 @@ function initScrollAnimations() {
           },
           ease: 'none',
           duration: 0.6
-        });
+        }, "horiz1a");
 
         // Part 1B: Trace Logo and Show Text (Screen X scroll is paused here!)
+        tl.add("logoTrace");
+
         if (sTracePath && strategyH2 && strategyP && strategySvg) {
-          tl.to(sTracePath, { strokeDashoffset: 0, ease: 'none', duration: 0.4 })
+          tl.to(sTracePath, { strokeDashoffset: 0, ease: 'none', duration: 0.4 }, "logoTrace")
             .to([strategyH2, strategyP], { opacity: 1, y: 0, duration: 0.2, stagger: 0.05, ease: 'power3.out' });
+        }
+
+        // Fade out the previous SVG track and the "Four disciplines" text WHILE the logo is tracing
+        const firstSvg = document.querySelector('.services-rail .first-svg');
+        const sectionCenter = document.querySelector('.section-center');
+        if (firstSvg) {
+          tl.to(firstSvg, { opacity: 0, ease: 'none', duration: 0.4 }, "logoTrace");
+        }
+        if (sectionCenter) {
+          tl.to(sectionCenter, { opacity: 0, ease: 'none', duration: 0.4 }, "logoTrace");
         }
 
         // Part 1C: Continue Horizontal scroll to Risk vertical drop AND draw Strategy SVG line
@@ -914,8 +930,8 @@ function initScrollAnimations() {
         }, "horiz1b");
 
         if (strategySvg && strategyLines.length > 0) {
-          // Decreased duration to 0.85 so it reaches the curve before the vertical pan hides it
-          tl.to(strategyLines, { strokeDashoffset: 0, ease: 'none', duration: 0.85 }, "horiz1b");
+          tl.to(strategyLines, { opacity: 1, duration: 0.01 }, "horiz1b")
+            .to(strategyLines, { strokeDashoffset: 0, ease: 'none', duration: 0.85 }, "horiz1b");
         }
 
         // PAUSE REMOVED: Strategy curve pans smoothly without stopping
@@ -949,15 +965,30 @@ function initScrollAnimations() {
         if (riskHlines.length) {
           riskHlines.forEach(line => {
             const len = line.getTotalLength();
-            gsap.set(line, { strokeDasharray: len, strokeDashoffset: len });
+            gsap.set(line, { strokeDasharray: len + 10, strokeDashoffset: len + 10, opacity: 0 });
           });
         }
 
         // Part 2B: Trace Risk Logo and Show Text (Camera paused)
+        tl.add("riskTrace");
         if (riskLogo && riskTextBlock) {
-          tl.to(riskLogo, { opacity: 1, duration: 0.01 })
-            .to(riskLogo, { clipPath: 'inset(0 0 0% 0)', ease: 'none', duration: 0.4 })
+          tl.to(riskLogo, { opacity: 1, duration: 0.01 }, "riskTrace")
+            .to(riskLogo, { clipPath: 'inset(0 0 0% 0)', ease: 'none', duration: 0.4 }, "riskTrace")
             .to(riskTextBlock.children, { opacity: 1, y: 0, duration: 0.3, stagger: 0.1, ease: 'power3.out' });
+        }
+
+        // Fade out previous SVG track and the Strategy logo/text WHILE the Risk logo is tracing
+        const secondSvg = document.querySelector('.services-rail .second-svg');
+        const strategyWrapper = document.querySelector('.strategy-logo-trace-wrapper');
+        const strategyContent = document.querySelector('.strategy-content');
+        if (secondSvg) {
+          tl.to(secondSvg, { opacity: 0, ease: 'none', duration: 0.4 }, "riskTrace");
+        }
+        if (strategyWrapper) {
+          tl.to(strategyWrapper, { opacity: 0, ease: 'none', duration: 0.4 }, "riskTrace");
+        }
+        if (strategyContent) {
+          tl.to(strategyContent, { opacity: 0, ease: 'none', duration: 0.4 }, "riskTrace");
         }
 
         // Part 3: Horizontal scroll (move X left to pan right along Risk lines) AND draw Risk lines
@@ -975,7 +1006,8 @@ function initScrollAnimations() {
         }, "horiz2");
 
         if (riskHlines.length) {
-          tl.to(riskHlines, { strokeDashoffset: 0, ease: 'none', duration: 1.8 }, "horiz2");
+          tl.to(riskHlines, { opacity: 1, duration: 0.01 }, "horiz2")
+            .to(riskHlines, { strokeDashoffset: 0, ease: 'none', duration: 1.8 }, "horiz2");
         }
 
         // PAUSE REMOVED: Risk curve pans smoothly without stopping
@@ -1006,22 +1038,31 @@ function initScrollAnimations() {
         if (cTracePath && cyberLogoWrapper && cyberTextBlock) {
           const pathLength = cTracePath.getTotalLength();
           // Use a large gap to prevent round linecap from leaking backwards from the next dash
-          gsap.set(cTracePath, { strokeDasharray: pathLength + " " + (pathLength + 2000), strokeDashoffset: pathLength });
+          gsap.set(cTracePath, { strokeDasharray: (pathLength + 10) + " " + (pathLength + 2000), strokeDashoffset: pathLength + 10 });
           gsap.set(cyberTextBlock.children, { opacity: 0, y: 40 });
         }
         if (cyberHlines.length) {
           cyberHlines.forEach(line => {
             const len = line.getTotalLength();
-            gsap.set(line, { strokeDasharray: len, strokeDashoffset: len });
+            gsap.set(line, { strokeDasharray: len + 10, strokeDashoffset: len + 10, opacity: 0 });
           });
         }
 
         // Part 4B: Trace Cyber Logo and Show Text (Camera paused)
-        if (cTracePath && cyberTextBlock) {
-          tl.to(cyberLogoWrapper, { opacity: 1, duration: 0.01 })
-            .to(cTracePath, { strokeDashoffset: 0, ease: 'none', duration: 0.4 })
+        tl.add("cyberTrace");
+        if (cTracePath && cyberLogoWrapper && cyberTextBlock) {
+          tl.to(cTracePath, { strokeDashoffset: 0, ease: 'none', duration: 0.4 }, "cyberTrace")
+            .to(cyberLogoWrapper, { opacity: 1, duration: 0.01 }, "cyberTrace")
             .to(cyberTextBlock.children, { opacity: 1, y: 0, duration: 0.3, stagger: 0.1, ease: 'power3.out' });
         }
+
+        // Fade out previous Risk logo/text and lines WHILE Cyber logo is tracing
+        const riskImg = document.querySelector('.risk-service-img');
+        const riskRail = document.querySelector('.risk-horiz-rail');
+        const riskText = document.querySelector('.risk-text-block');
+        if (riskImg) tl.to(riskImg, { opacity: 0, ease: 'none', duration: 0.4 }, "cyberTrace");
+        if (riskRail) tl.to(riskRail, { opacity: 0, ease: 'none', duration: 0.4 }, "cyberTrace");
+        if (riskText) tl.to(riskText, { opacity: 0, ease: 'none', duration: 0.4 }, "cyberTrace");
 
         // Part 5: Horizontal scroll (move X left to pan right along Cyber lines) AND draw Cyber lines
         tl.to(servicesTrack, {
@@ -1037,8 +1078,9 @@ function initScrollAnimations() {
           duration: 1
         }, "horiz3");
 
-        if (cyberHlines.length) {
-          tl.to(cyberHlines, { strokeDashoffset: 0, ease: 'none', duration: 1.8 }, "horiz3");
+        if (cyberHlines.length > 0) {
+          tl.to(cyberHlines, { opacity: 1, duration: 0.01 }, "horiz3")
+            .to(cyberHlines, { strokeDashoffset: 0, ease: 'none', duration: 1.8 }, "horiz3");
         }
 
         // PAUSE REMOVED: before drop
@@ -1078,18 +1120,24 @@ function initScrollAnimations() {
             .to(aiTextBlock.children, { opacity: 1, y: 0, duration: 0.3, stagger: 0.1, ease: 'power3.out' });
         }
 
-        // Part 8: Wash out (fade to 0 opacity) and move up, transitioning smoothly to the next section
-        tl.to(servicesTrack, {
-          y: "-=250",
-          opacity: 0,
-          ease: "power2.inOut",
-          duration: 0.8
-        }, "+=0.6"); // Wait slightly after AI text loads so user can read it
+        // Part 8: Wait slightly after AI text loads so user can read it before unpinning
+        tl.to({}, { duration: 0.6 });
 
         return tl;
       })(),
       scrub: true,
       invalidateOnRefresh: true
+    });
+
+    // Fade out servicesTrack natively as the next section comes into view
+    gsap.to(servicesTrack, {
+      opacity: 0,
+      scrollTrigger: {
+        trigger: '.section-why',
+        start: 'top bottom', // when .section-why enters the viewport
+        end: 'top center',   // fades out completely when it reaches center
+        scrub: true
+      }
     });
   }
 
@@ -1110,7 +1158,7 @@ function initWhySthirosScroll() {
   const whyLines = document.querySelectorAll('.why-line');
   whyLines.forEach(line => {
     const len = line.getTotalLength();
-    gsap.set(line, { strokeDasharray: len, strokeDashoffset: len });
+    gsap.set(line, { strokeDasharray: len + 10, strokeDashoffset: len + 10, opacity: 0 });
   });
 
   // ── UNPINNED TIMELINE (Draws line to 50% while scrolling into view) ──
@@ -1124,6 +1172,7 @@ function initWhySthirosScroll() {
   });
 
   tlUnpinned.to(whyLines, {
+    opacity: 1,
     strokeDashoffset: function (i, el) { return el.getTotalLength() * 0.5; },
     ease: "none"
   });
@@ -1402,13 +1451,10 @@ function initIndustriesNewScroll() {
   const cards = gsap.utils.toArray('.expert-card');
   const cardInners = gsap.utils.toArray('.card-inner');
 
-  // Scatter positions (x, y) without tilt
+  // Scatter positions (x, y) without tilt: 3 top, 2 bottom (repeated for 10 cards)
   const scatter = [
-    [-340, -180],  // Card 1: top-left
-    [-380, 180],  // Card 2: lower-left
-    [0, 0],  // Card 3: center (stays behind text)
-    [380, 180],  // Card 4: lower-right
-    [340, -180],  // Card 5: top-right
+    [-360, -190], [0, -190], [360, -190], [-180, 190], [180, 190], // Set 1
+    [-360, -190], [0, -190], [360, -190], [-180, 190], [180, 190]  // Set 2
   ];
 
   // Initial State for Cards
@@ -1428,7 +1474,7 @@ function initIndustriesNewScroll() {
     scrollTrigger: {
       trigger: section,
       start: 'top top',
-      end: '+=800%', // Extended scroll area for completely sequential animation
+      end: '+=1600%', // Extended scroll area for two sets of 5 cards
       scrub: 1.2,
       pin: true,
       anticipatePin: 1
@@ -1447,11 +1493,15 @@ function initIndustriesNewScroll() {
     duration: 1.5
   });
 
-  // 2. Cards slide up behind text one by one
+  // 2. All 10 Cards slide up behind text one by one
+  // User requested cards 6-10 to be on top of cards 1-5
+  gsap.set(cards.slice(0, 5), { zIndex: 1 });
+  gsap.set(cards.slice(5, 10), { zIndex: 10 });
+
   tl.to(cards, {
     y: 0,
     ease: 'power3.out',
-    stagger: 0.6, // Come up one by one
+    stagger: 0.4,
     duration: 1.5
   }, '+=0.2');
 
@@ -1463,58 +1513,289 @@ function initIndustriesNewScroll() {
     duration: 1.5
   }, '+=0.2');
 
-  // 4. Cards Scatter/Flutter one by one, with NO TILT
-  tl.to(cards, {
+  // Swap z-index right before scattering so first 5 cards come out in front
+  tl.set(cards.slice(0, 5), { zIndex: 10 }, '<');
+  tl.set(cards.slice(5, 10), { zIndex: 1 }, '<');
+
+  // Move remaining 5 cards to the bottom section so they are completely out of the way
+  tl.to(cards.slice(5, 10), {
+    y: window.innerHeight + 300,
+    ease: 'power2.inOut',
+    duration: 1.5
+  }, '<');
+
+  // 4. First 5 Cards Scatter
+  tl.to(cards.slice(0, 5), {
     x: (i) => scatter[i][0],
     y: (i) => scatter[i][1],
     rotation: 0,
     stagger: 0.2,
     ease: 'power2.inOut',
     duration: 1.5
-  }, '<'); // '<' syncs it with the Text Hides animation above
+  }, '<');
 
-  // 5. Cards Flip one by one (completely sequential)
-  tl.to(cardInners, {
+  // 5. First 5 Cards Flip (completely sequential)
+  tl.to(cardInners.slice(0, 5), {
     rotateY: 180,
     ease: 'power2.inOut',
-    stagger: 1.5, // Match duration so one finishes before next starts
+    stagger: 1.5,
     duration: 1.5
   }, '+=0.3');
 
-  // 6. Move up and wash out in groups smoothly: Top -> Middle -> Bottom
-
-  // Group 1: Top Cards (indices 0 and 4)
-  tl.to([cards[0], cards[4]], {
+  // 6. Move up and wash out first 5 smoothly: Top -> Bottom
+  tl.to([cards[0], cards[1], cards[2]], {
     y: (i, el) => scatter[cards.indexOf(el)][1] - window.innerHeight - 300,
     opacity: 0,
     ease: 'none',
-    stagger: 0.15, // slight stagger so they aren't rigid
+    stagger: 0.15,
     duration: 2.5
   }, '+=0.5');
 
-  // Group 2: Middle Card (index 2)
-  tl.to(cards[2], {
-    y: scatter[2][1] - window.innerHeight - 300,
-    opacity: 0,
-    ease: 'none',
-    duration: 2.5
-  }, '-=1.5'); // Start while the top ones are still moving up
-
-  // Group 3: Bottom Cards (indices 1 and 3)
-  tl.to([cards[1], cards[3]], {
+  tl.to([cards[3], cards[4]], {
     y: (i, el) => scatter[cards.indexOf(el)][1] - window.innerHeight - 300,
     opacity: 0,
     ease: 'none',
-    stagger: 0.15, // slight stagger
+    stagger: 0.15,
     duration: 2.5
-  }, '-=1.5'); // Start while the middle one is still moving up
+  }, '-=1.5');
 
-  // 7. Animate the SVG lines visible when bottom cards move up
+  // 7. Second 5 Cards Scatter (from center deck)
+  tl.to(cards.slice(5, 10), {
+    x: (i) => scatter[i + 5][0],
+    y: (i) => scatter[i + 5][1],
+    ease: 'power2.inOut',
+    stagger: 0.2,
+    duration: 1.5
+  }, '-=1.0');
+
+  // 8. Second 5 Cards Flip
+  tl.to(cardInners.slice(5, 10), {
+    rotateY: 180,
+    ease: 'power2.inOut',
+    stagger: 1.5,
+    duration: 1.5
+  }, '+=0.3');
+
+  // 9. Move up and wash out second 5 smoothly: Top -> Bottom
+  tl.to([cards[5], cards[6], cards[7]], {
+    y: (i, el) => scatter[cards.indexOf(el)][1] - window.innerHeight - 300,
+    opacity: 0,
+    ease: 'none',
+    stagger: 0.15,
+    duration: 2.5
+  }, '+=0.5');
+
+  tl.to([cards[8], cards[9]], {
+    y: (i, el) => scatter[cards.indexOf(el)][1] - window.innerHeight - 300,
+    opacity: 0,
+    ease: 'none',
+    stagger: 0.15,
+    duration: 2.5
+  }, '-=1.5');
+
+  // 10. Animate the SVG lines visible when bottom cards move up
   if (verticalLines) {
     tl.to(verticalLines, {
       clipPath: 'inset(0% 0% 0% 0%)',
       ease: 'none',
       duration: 1.5
-    }, '<'); // '<' syncs it with Group 3 above
+    }, '<');
   }
 }
+
+/* ══════════════════════════════════════════
+   TRUSTED INDUSTRIES SVG ANIMATION
+══════════════════════════════════════════ */
+function initTrustedIndustriesScroll() {
+  const lines = document.querySelectorAll('.trusted-line');
+  if (!lines.length) return;
+
+  // Set initial state for all lines
+  lines.forEach(line => {
+    const length = line.getTotalLength();
+    // Using strokeDasharray and strokeDashoffset to draw the line
+    line.style.strokeDasharray = length + 10;
+    line.style.strokeDashoffset = length + 10;
+  });
+
+  // Create ScrollTrigger to draw them in as user scrolls
+  gsap.to(lines, {
+    strokeDashoffset: 0,
+    ease: 'none',
+    scrollTrigger: {
+      trigger: '.trusted-industries',
+      start: 'top bottom',
+      end: 'bottom bottom',
+      scrub: 1.5
+    }
+  });
+}
+
+
+function initOurWorkHeroScroll() {
+  const lines = document.querySelectorAll('.our-work-hero-line');
+  if (!lines.length) return;
+
+  // Initially hide all lines
+  lines.forEach(line => {
+    const length = line.getTotalLength();
+    line.style.strokeDasharray = length;
+    line.style.strokeDashoffset = length;
+  });
+
+  // Draw on scroll
+  gsap.to(lines, {
+    strokeDashoffset: 0,
+    ease: 'none',
+    scrollTrigger: {
+      trigger: '.our-work-banner',
+      start: 'top top',
+      end: 'bottom top',
+      scrub: 1
+    }
+  });
+}
+
+// ═══════════════ HEADER HIDE ON SCROLL ═══════════════
+(function () {
+  const header = document.querySelector('.site-header');
+  if (!header) return;
+
+  let lastScrollY = window.scrollY;
+  let ticking = false;
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        const currentScrollY = window.scrollY;
+        const body = document.body;
+
+        // Menu open ho to header dikhta rahe
+        if (body.classList.contains('menu-open')) {
+          ticking = false;
+          return;
+        }
+
+        // Top pe wapas aayein to hamesha dikhao
+        if (currentScrollY <= 10) {
+          header.classList.remove('header-hidden');
+        } else if (currentScrollY > lastScrollY + 5) {
+          // Niche scroll — hide
+          header.classList.add('header-hidden');
+        } else if (currentScrollY < lastScrollY - 5) {
+          // Upar scroll — show
+          header.classList.remove('header-hidden');
+        }
+
+        lastScrollY = currentScrollY;
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+})();
+
+// ═══════════════ CTA CURSOR FOLLOWER BADGE ═══════════════
+(function () {
+  function initCtaCursor() {
+    const section = document.getElementById('ctaSection');
+    const badge = document.getElementById('ctaCursorBadge');
+    const talkBtn = section && section.querySelector('.btn-talk-to-us');
+    if (!section || !badge) return;
+
+    let mouseX = 0, mouseY = 0;
+    let curX = 0, curY = 0;
+    let rafId = null;
+    let isInside = false;
+    let overBtn = false;
+
+    function lerp(a, b, t) { return a + (b - a) * t; }
+
+    function animate() {
+      curX = lerp(curX, mouseX, 0.1);
+      curY = lerp(curY, mouseY, 0.1);
+      badge.style.left = curX + 'px';
+      badge.style.top = curY + 'px';
+      if (isInside) rafId = requestAnimationFrame(animate);
+    }
+
+    section.addEventListener('mouseenter', (e) => {
+      isInside = true;
+      const rect = section.getBoundingClientRect();
+      mouseX = e.clientX - rect.left;
+      mouseY = e.clientY - rect.top;
+      curX = mouseX;
+      curY = mouseY;
+      badge.style.left = curX + 'px';
+      badge.style.top = curY + 'px';
+      if (!overBtn) section.classList.add('cursor-active');
+      rafId = requestAnimationFrame(animate);
+    });
+
+    section.addEventListener('mousemove', (e) => {
+      const rect = section.getBoundingClientRect();
+      mouseX = e.clientX - rect.left;
+      mouseY = e.clientY - rect.top;
+    });
+
+    section.addEventListener('mouseleave', () => {
+      isInside = false;
+      overBtn = false;
+      section.classList.remove('cursor-active');
+      cancelAnimationFrame(rafId);
+    });
+
+    // "TALK TO US" button pe badge hide karo
+    if (talkBtn) {
+      talkBtn.addEventListener('mouseenter', () => {
+        overBtn = true;
+        section.classList.remove('cursor-active');
+      });
+      talkBtn.addEventListener('mouseleave', () => {
+        overBtn = false;
+        if (isInside) section.classList.add('cursor-active');
+      });
+    }
+  }
+
+  // Wait for DOM
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCtaCursor);
+  } else {
+    initCtaCursor();
+  }
+})();
+
+// ═══════════════ MENU OVERLAY LOGIC ═══════════════
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menuOverlay = document.getElementById('menuOverlay');
+  const body = document.body;
+
+  if (menuToggle && menuOverlay) {
+    menuToggle.addEventListener('click', () => {
+      // Toggle classes
+      menuOverlay.classList.toggle('active');
+      body.classList.toggle('menu-open');
+
+      if (menuOverlay.classList.contains('active')) {
+        // Menu khula — scroll bilkul band karo
+        body.style.overflow = 'hidden';
+        if (lenis) lenis.stop();
+      } else {
+        // Menu band — scroll wapas chalu karo
+        body.style.overflow = '';
+        if (lenis) lenis.start();
+      }
+    });
+  }
+
+  // ═══════════════ TOGGLE BUTTON (sirf on/off visual) ═══════════════
+  const themeToggleBtn = document.querySelector('.theme-toggle');
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      themeToggleBtn.classList.toggle('is-on');
+    });
+  }
+});
