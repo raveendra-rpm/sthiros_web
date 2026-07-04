@@ -3347,8 +3347,19 @@ body.light-mode .section-services {
   }
 
   /* Menu adjustments */
+  .menu-content .main-nav {
+    gap: 30px !important;
+  }
   .menu-content .main-nav .nav-link {
-    font-size: clamp(32px, 5vw, 48px) !important;
+    font-size: 2rem !important;
+  }
+  .menu-content .main-nav .nav-link:hover,
+  .menu-content .main-nav .nav-link.active {
+    font-size: 2.5rem !important;
+  }
+  .menu-close img {
+    width: 40px !important;
+    height: auto !important;
   }
   .site-header {
     padding: 20px 30px !important;
