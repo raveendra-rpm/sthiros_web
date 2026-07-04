@@ -2390,7 +2390,7 @@ html.lenis body {
   width: 50%;
   height: 100%;
   background: linear-gradient(90deg, transparent, #EC2D26 100%);
-  animation: moveGradientLine 3s linear infinite;
+  animation: moveGradientLine 6s linear infinite;
 }
 .thinking-divider.top-divider {
   margin-bottom: 40px;
@@ -2401,7 +2401,7 @@ html.lenis body {
 }
 .thinking-divider.bottom-divider::before {
   background: linear-gradient(270deg, transparent, #EC2D26 100%);
-  animation: moveGradientLineReverse 3s linear infinite;
+  animation: moveGradientLineReverse 6s linear infinite;
 }
 
 @keyframes moveGradientLine {
@@ -3305,4 +3305,187 @@ body.light-mode .section-services {
 /* Logo click hint */
 .logo-link {
   cursor: pointer;
+}
+
+/* ════════════════════════════════════════════
+   1024px SCREEN OPTIMIZATIONS (Tablet / Small Laptop)
+   ════════════════════════════════════════════ */
+@media screen and (max-width: 1050px) and (min-width: 768px) {
+  /* Typography scale down to prevent overlap */
+  .hero-headline {
+    font-size: clamp(40px, 6vw, 75px) !important;
+  }
+  .hero-sub {
+    font-size: 16px !important;
+    max-width: 85% !important;
+  }
+  .work-title, .industries-new-title, .thinking-title, .cta-title, .section-title {
+    font-size: clamp(32px, 5vw, 56px) !important;
+  }
+  .section-eyebrow {
+    font-size: 14px !important;
+  }
+  
+  /* Cards scale down */
+  .work-card, .thinking-card {
+    padding: 24px !important;
+    min-height: auto !important;
+  }
+  .work-card-title, .card-title {
+    font-size: 20px !important;
+  }
+  .work-card-desc {
+    font-size: 14px !important;
+  }
+  
+  /* Stats numeric values */
+  .stat-card {
+    padding: 30px 20px !important;
+  }
+  .stat-value {
+    font-size: clamp(36px, 5vw, 55px) !important;
+  }
+
+  /* Menu adjustments */
+  .menu-content .main-nav .nav-link {
+    font-size: clamp(32px, 5vw, 48px) !important;
+  }
+  .site-header {
+    padding: 20px 30px !important;
+  }
+
+  /* Section padding */
+  .section-work, .section-industries-new, .section-latest-thinking, .section-cta {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
+  .section-why {
+    margin-top: 0 !important;
+    padding-top: 250px !important;
+  }
+  
+  .why-title {
+    font-size: 42px !important;
+  }
+  
+  .why-desc {
+    font-size: 16px !important;
+    max-width: 400px !important;
+  }
+  
+  .why-image-block {
+    width: 400px !important;
+    height: 250px !important;
+    right: 2% !important;
+  }
+  
+  /* Strategy section overrides */
+  .strategy-img-svg {
+    width: 260px !important;
+    height: 280px !important;
+    margin: 0 45px !important;
+  }
+  .cyber-img-svg {
+    width: 260px !important;
+    height: 280px !important;
+    margin: 45px 40px !important;
+  }
+  .risk-service-img, .ai-service-img {
+    width: 260px !important;
+    height: auto !important;
+    margin: 40px !important;
+  }
+  
+  .strategy-content h2, .risk-heading, .cyber-heading, .ai-heading {
+    font-size: 2.5rem !important;
+  }
+  
+  .strategy-content p, .risk-sub, .cyber-sub, .ai-sub {
+    font-size: 15px !important;
+    max-width: 260px !important;
+  }
+  
+  /* All paragraphs should be left-aligned with their headings */
+  .strategy-content p, .risk-sub, .cyber-sub, .ai-sub {
+    margin: 0 !important;
+  }
+
+  /* Tuck the AI text neatly under the incoming horizontal SVG lines as per the mockup */
+  .ai-inline-section {
+    flex-direction: row !important;
+    align-items: flex-start !important;
+  }
+  
+  .ai-right-side {
+    position: absolute !important;
+    left: 290px !important;  /* Aligns text with the right leg of the logo image */
+    top: 240px !important;   /* Places it just under the red lines */
+    width: 260px !important; 
+    text-align: left !important;
+    margin-top: 0 !important;
+  }
+  
+  .ai-text-block {
+    padding: 0 !important;
+  }
+  
+  /* Increase container height so stacked AI text doesn't get clipped by overflow:hidden */
+  .section-services {
+    padding-bottom: 300px !important;
+  }
+  
+  /* Increase SVG line width and use scaleY to maintain vertical alignment without overlapping the top text */
+  .first-svg {
+    width: 56% !important;
+    margin-top: 0 !important;
+    transform: translateX(-3.7336%) scaleY(0.8928) !important;
+    transform-origin: top center !important;
+  }
+  
+  /* Decrease gap between "Four disciplines." and "One standard." */
+  #services-title {
+    line-height: 1.1 !important;
+  }
+  
+  /* Reduce size of OUR STORY text for tablet */
+  .story-title {
+    font-size: 55px !important;
+    line-height: 1.1 !important;
+  }
+  .story-content {
+    font-size: 16px !important;
+    max-width: 550px !important;
+  }
+}
+
+/* Reduce gap above OUR STORY on large screens */
+@media screen and (min-width: 1025px) {
+  .section-story {
+    margin-top: -350px;
+    padding-top: 60px;
+  }
+}
+
+/* Add a bit more space above OUR STORY on extra large screens (1366px, 1920px) */
+@media screen and (min-width: 1366px) {
+  .section-story {
+    margin-top: -80px;
+    padding-top: 120px;
+  }
+}
+
+/* Keep the expert card smaller on tablet/mobile screens */
+@media screen and (max-width: 1050px) {
+  .story-svg-line svg {
+    max-width: 50px !important;
+  }
+}
+
+/* Scale down expert cards on laptop screens (1366px) so they don't overlap */
+@media screen and (max-width: 1400px) {
+  .expert-card {
+    width: 200px !important;
+    height: 283px !important;
+  }
 }

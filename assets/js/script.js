@@ -1134,7 +1134,7 @@ function initScrollAnimations() {
       opacity: 0,
       scrollTrigger: {
         trigger: '.section-why',
-        start: 'top bottom', // when .section-why enters the viewport
+        start: 'top bottom+=250', // start fading out earlier so there is no dead zone
         end: 'top center',   // fades out completely when it reaches center
         scrub: true
       }
@@ -1451,10 +1451,23 @@ function initIndustriesNewScroll() {
   const cards = gsap.utils.toArray('.expert-card');
   const cardInners = gsap.utils.toArray('.card-inner');
 
-  // Scatter positions (x, y) without tilt: 3 top, 2 bottom (repeated for 10 cards)
+  // Scatter positions dynamically based on screen width
+  let gapX = 360;
+  let gapXBottom = 180;
+  let gapY = -190;
+  let gapYBottom = 190;
+
+  // Reduce gap for 1366px / 1024px screens
+  if (window.innerWidth <= 1400) {
+    gapX = 260;
+    gapXBottom = 130;
+    gapY = -160;
+    gapYBottom = 160;
+  }
+
   const scatter = [
-    [-360, -190], [0, -190], [360, -190], [-180, 190], [180, 190], // Set 1
-    [-360, -190], [0, -190], [360, -190], [-180, 190], [180, 190]  // Set 2
+    [-gapX, gapY], [0, gapY], [gapX, gapY], [-gapXBottom, gapYBottom], [gapXBottom, gapYBottom], // Set 1
+    [-gapX, gapY], [0, gapY], [gapX, gapY], [-gapXBottom, gapYBottom], [gapXBottom, gapYBottom]  // Set 2
   ];
 
   // Initial State for Cards
@@ -1493,12 +1506,11 @@ function initIndustriesNewScroll() {
     duration: 1.5
   });
 
-  // 2. All 10 Cards slide up behind text one by one
-  // User requested cards 6-10 to be on top of cards 1-5
+  // 2. First 5 Cards slide up behind text one by one
   gsap.set(cards.slice(0, 5), { zIndex: 1 });
   gsap.set(cards.slice(5, 10), { zIndex: 10 });
 
-  tl.to(cards, {
+  tl.to(cards.slice(0, 5), {
     y: 0,
     ease: 'power3.out',
     stagger: 0.4,
@@ -1517,14 +1529,7 @@ function initIndustriesNewScroll() {
   tl.set(cards.slice(0, 5), { zIndex: 10 }, '<');
   tl.set(cards.slice(5, 10), { zIndex: 1 }, '<');
 
-  // Move remaining 5 cards to the bottom section so they are completely out of the way
-  tl.to(cards.slice(5, 10), {
-    y: window.innerHeight + 300,
-    ease: 'power2.inOut',
-    duration: 1.5
-  }, '<');
-
-  // 4. First 5 Cards Scatter
+  // 4. First 5 Cards Scatter (remaining 5 stay in the center deck)
   tl.to(cards.slice(0, 5), {
     x: (i) => scatter[i][0],
     y: (i) => scatter[i][1],
@@ -1566,7 +1571,7 @@ function initIndustriesNewScroll() {
     ease: 'power2.inOut',
     stagger: 0.2,
     duration: 1.5
-  }, '-=1.0');
+  }, '+=0.2');
 
   // 8. Second 5 Cards Flip
   tl.to(cardInners.slice(5, 10), {
