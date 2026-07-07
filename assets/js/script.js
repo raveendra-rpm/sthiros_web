@@ -19,6 +19,7 @@ function boot() {
   initIndustriesNewScroll();
   initTrustedIndustriesScroll();
   initOurWorkHeroScroll();
+  initOurWorkPageScroll();
 }
 
 let appBooted = false;
@@ -293,8 +294,8 @@ function initHeroSvgTrackScroll() {
     const cards = document.querySelectorAll('.section-stats .stat-card');
     if (cards.length) {
       tl.fromTo(cards,
-        { opacity: 0, y: 50 },
-        { opacity: 1, y: 0, duration: 0.5, stagger: 0.1, ease: 'power2.out' },
+        { opacity: 0, x: 100 },
+        { opacity: 1, x: 0, duration: 0.5, stagger: 0.1, ease: 'power2.out' },
         0 // Start at the same time as the SVG line
       );
     }
@@ -1630,10 +1631,10 @@ function initTrustedIndustriesScroll() {
     strokeDashoffset: 0,
     ease: 'none',
     scrollTrigger: {
-      trigger: '.trusted-industries',
-      start: 'top bottom',
-      end: 'bottom bottom',
-      scrub: 1.5
+      trigger: lines[0].closest('svg'), // Trigger exactly when the SVG itself is in view
+      start: 'top 50%',                 // Start drawing perfectly synchronized with the center of the screen
+      end: 'bottom 50%',                // Finish exactly when SVG ends
+      scrub: true
     }
   });
 }
@@ -1806,3 +1807,117 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// ═══════════════ OUR WORK SVG SCROLL ANIMATION ═══════════════
+function initOurWorkPageScroll() {
+  const heroSvg = document.getElementById('our-work-hero-svg');
+  if (heroSvg) {
+    // Starts top-left and grows as user scrolls the hero banner
+    gsap.set(heroSvg, { clipPath: 'circle(0% at 0% 0%)' });
+    gsap.to(heroSvg, {
+      clipPath: 'circle(150% at 0% 0%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.our-work-banner',
+        start: 'top top',
+        end: '+=100%',
+        scrub: true,
+        pin: true,
+      }
+    });
+  }
+
+  const svgWrapper = document.getElementById('our-work-svgs-wrap');
+  if (!svgWrapper) return;
+
+  const svgs = svgWrapper.querySelectorAll('svg');
+  if (svgs.length >= 4) {
+    // 1. Vertical down
+    gsap.set(svgs[0], { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
+    gsap.to(svgs[0], {
+      clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: svgs[0],
+        start: 'top 100%', // Start drawing as soon as it enters from the bottom to continue from hero banner
+        end: 'bottom 50%',
+        scrub: true,
+      }
+    });
+
+    // 2. Curve from top-right to bottom-left
+    gsap.set(svgs[1], { clipPath: 'circle(0% at 100% 0%)' });
+    gsap.to(svgs[1], {
+      clipPath: 'circle(150% at 100% 0%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: svgs[1],
+        start: 'top 50%',
+        end: 'bottom 50%',
+        scrub: true,
+      }
+    });
+
+    // 3. Curve from top-left to bottom-right
+    gsap.set(svgs[2], { clipPath: 'circle(0% at 0% 0%)' });
+    gsap.to(svgs[2], {
+      clipPath: 'circle(150% at 0% 0%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: svgs[2],
+        start: 'top 50%',
+        end: 'bottom 50%',
+        scrub: true,
+      }
+    });
+
+    // 4. Curve from top-right to left
+    gsap.set(svgs[3], { clipPath: 'circle(0% at 100% 0%)' });
+    gsap.to(svgs[3], {
+      clipPath: 'circle(150% at 100% 0%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: svgs[3],
+        start: 'top 50%',
+        end: 'bottom 50%',
+        scrub: true,
+      }
+    });
+  } else {
+    // Fallback if not exactly 4 SVGs
+    gsap.set(svgWrapper, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
+    gsap.to(svgWrapper, {
+      clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.trusted-industries',
+        start: 'top 80%',
+        end: 'bottom 80%',
+        scrub: true,
+      }
+    });
+  }
+
+  // --- Card Animation Logic ---
+  const statsContainer = document.getElementById('stats-cards-container');
+  const cardLeft = document.querySelector('.stat-card-left');
+  const cardRight = document.querySelector('.stat-card-right');
+
+  if (statsContainer && cardLeft && cardRight) {
+    gsap.set(cardLeft, { x: -150, opacity: 0 });
+    gsap.set(cardRight, { x: 150, opacity: 0 });
+
+    gsap.to([cardLeft, cardRight], {
+      x: 0,
+      opacity: 1,
+      duration: 1.2,
+      ease: 'power3.out',
+      stagger: 0,
+      scrollTrigger: {
+        trigger: statsContainer,
+        start: 'top 85%',
+        toggleActions: 'play none none reverse'
+      }
+    });
+  }
+}

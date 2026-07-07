@@ -2355,6 +2355,45 @@ html.lenis body {
   transform: rotateY(180deg);
 }
 
+.industry-actual-card {
+  background-color: #0b0b0b;
+  border: 1px solid #EC2D26;
+  border-radius: 20px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+.industry-logo-placeholder {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.industry-heading {
+  color: #EC2D26;
+  font-family: 'Pacaembu', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.industry-para {
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.4;
+}
+
 /* ════════════════════════════════════════════
    LATEST THINKING SECTION
    ════════════════════════════════════════════ */
@@ -2382,6 +2421,7 @@ html.lenis body {
   overflow: hidden;
   z-index: 20;
 }
+
 .thinking-divider::before {
   content: '';
   position: absolute;
@@ -2392,26 +2432,39 @@ html.lenis body {
   background: linear-gradient(90deg, transparent, #EC2D26 100%);
   animation: moveGradientLine 6s linear infinite;
 }
+
 .thinking-divider.top-divider {
   margin-bottom: 40px;
 }
+
 .thinking-divider.bottom-divider {
   margin-top: -30px;
   margin-bottom: 60px;
 }
+
 .thinking-divider.bottom-divider::before {
   background: linear-gradient(270deg, transparent, #EC2D26 100%);
   animation: moveGradientLineReverse 6s linear infinite;
 }
 
 @keyframes moveGradientLine {
-  0% { left: -50%; }
-  100% { left: 100%; }
+  0% {
+    left: -50%;
+  }
+
+  100% {
+    left: 100%;
+  }
 }
 
 @keyframes moveGradientLineReverse {
-  0% { left: 100%; }
-  100% { left: -50%; }
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: -50%;
+  }
 }
 
 .latest-thinking-container {
@@ -3311,37 +3364,50 @@ body.light-mode .section-services {
    1024px SCREEN OPTIMIZATIONS (Tablet / Small Laptop)
    ════════════════════════════════════════════ */
 @media screen and (max-width: 1050px) and (min-width: 768px) {
+
   /* Typography scale down to prevent overlap */
   .hero-headline {
     font-size: clamp(40px, 6vw, 75px) !important;
   }
+
   .hero-sub {
     font-size: 16px !important;
     max-width: 85% !important;
   }
-  .work-title, .industries-new-title, .thinking-title, .cta-title, .section-title {
+
+  .work-title,
+  .industries-new-title,
+  .thinking-title,
+  .cta-title,
+  .section-title {
     font-size: clamp(32px, 5vw, 56px) !important;
   }
+
   .section-eyebrow {
     font-size: 14px !important;
   }
-  
+
   /* Cards scale down */
-  .work-card, .thinking-card {
+  .work-card,
+  .thinking-card {
     padding: 24px !important;
     min-height: auto !important;
   }
-  .work-card-title, .card-title {
+
+  .work-card-title,
+  .card-title {
     font-size: 20px !important;
   }
+
   .work-card-desc {
     font-size: 14px !important;
   }
-  
+
   /* Stats numeric values */
   .stat-card {
     padding: 30px 20px !important;
   }
+
   .stat-value {
     font-size: clamp(36px, 5vw, 55px) !important;
   }
@@ -3350,23 +3416,30 @@ body.light-mode .section-services {
   .menu-content .main-nav {
     gap: 30px !important;
   }
+
   .menu-content .main-nav .nav-link {
     font-size: 2rem !important;
   }
+
   .menu-content .main-nav .nav-link:hover,
   .menu-content .main-nav .nav-link.active {
     font-size: 2.5rem !important;
   }
+
   .menu-close img {
     width: 40px !important;
     height: auto !important;
   }
+
   .site-header {
     padding: 20px 30px !important;
   }
 
   /* Section padding */
-  .section-work, .section-industries-new, .section-latest-thinking, .section-cta {
+  .section-work,
+  .section-industries-new,
+  .section-latest-thinking,
+  .section-cta {
     padding-left: 30px !important;
     padding-right: 30px !important;
   }
@@ -3375,50 +3448,62 @@ body.light-mode .section-services {
     margin-top: 0 !important;
     padding-top: 250px !important;
   }
-  
+
   .why-title {
     font-size: 42px !important;
   }
-  
+
   .why-desc {
     font-size: 16px !important;
     max-width: 400px !important;
   }
-  
+
   .why-image-block {
     width: 400px !important;
     height: 250px !important;
     right: 2% !important;
   }
-  
+
   /* Strategy section overrides */
   .strategy-img-svg {
     width: 260px !important;
     height: 280px !important;
     margin: 0 45px !important;
   }
+
   .cyber-img-svg {
     width: 260px !important;
     height: 280px !important;
     margin: 45px 40px !important;
   }
-  .risk-service-img, .ai-service-img {
+
+  .risk-service-img,
+  .ai-service-img {
     width: 260px !important;
     height: auto !important;
     margin: 40px !important;
   }
-  
-  .strategy-content h2, .risk-heading, .cyber-heading, .ai-heading {
+
+  .strategy-content h2,
+  .risk-heading,
+  .cyber-heading,
+  .ai-heading {
     font-size: 2.5rem !important;
   }
-  
-  .strategy-content p, .risk-sub, .cyber-sub, .ai-sub {
+
+  .strategy-content p,
+  .risk-sub,
+  .cyber-sub,
+  .ai-sub {
     font-size: 15px !important;
     max-width: 260px !important;
   }
-  
+
   /* All paragraphs should be left-aligned with their headings */
-  .strategy-content p, .risk-sub, .cyber-sub, .ai-sub {
+  .strategy-content p,
+  .risk-sub,
+  .cyber-sub,
+  .ai-sub {
     margin: 0 !important;
   }
 
@@ -3427,25 +3512,27 @@ body.light-mode .section-services {
     flex-direction: row !important;
     align-items: flex-start !important;
   }
-  
+
   .ai-right-side {
     position: absolute !important;
-    left: 290px !important;  /* Aligns text with the right leg of the logo image */
-    top: 240px !important;   /* Places it just under the red lines */
-    width: 260px !important; 
+    left: 290px !important;
+    /* Aligns text with the right leg of the logo image */
+    top: 240px !important;
+    /* Places it just under the red lines */
+    width: 260px !important;
     text-align: left !important;
     margin-top: 0 !important;
   }
-  
+
   .ai-text-block {
     padding: 0 !important;
   }
-  
+
   /* Increase container height so stacked AI text doesn't get clipped by overflow:hidden */
   .section-services {
     padding-bottom: 300px !important;
   }
-  
+
   /* Increase SVG line width and use scaleY to maintain vertical alignment without overlapping the top text */
   .first-svg {
     width: 56% !important;
@@ -3453,17 +3540,18 @@ body.light-mode .section-services {
     transform: translateX(-3.7336%) scaleY(0.8928) !important;
     transform-origin: top center !important;
   }
-  
+
   /* Decrease gap between "Four disciplines." and "One standard." */
   #services-title {
     line-height: 1.1 !important;
   }
-  
+
   /* Reduce size of OUR STORY text for tablet */
   .story-title {
     font-size: 55px !important;
     line-height: 1.1 !important;
   }
+
   .story-content {
     font-size: 16px !important;
     max-width: 550px !important;
