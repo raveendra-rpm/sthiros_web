@@ -2685,7 +2685,6 @@ html.lenis body {
   justify-content: center;
   align-items: center;
   z-index: 10;
-  cursor: none;
 }
 
 .cta-container {
@@ -3641,23 +3640,29 @@ body.light-mode .section-services {
 /* 1920px screens: Adjust hero text position and font size */
 @media screen and (min-width: 1900px) {
   .hero-inner {
-    padding: 60px 0 350px 0; /* Move text up */
-    margin: 0 40px; /* Align left edge with logo (40px padding in header) */
+    padding: 60px 0 350px 0;
+    /* Move text up */
+    margin: 0 40px;
+    /* Align left edge with logo (40px padding in header) */
     width: calc(100% - 80px);
     max-width: 100%;
   }
+
   .hero-headline {
     font-size: 100px;
     font-weight: bold;
   }
+
   .hero-sub {
     font-size: 18px;
     max-width: 600px;
   }
+
   .stat-label {
     font-size: 16px;
     max-width: 250px;
   }
+
   .bg-glow-fixed {
     max-width: 1600px;
     max-height: 1600px;
@@ -3672,6 +3677,7 @@ body.light-mode .section-services {
   .why-title {
     font-size: 55px !important;
   }
+
   .why-image-block {
     width: 420px !important;
     height: 260px !important;
