@@ -497,6 +497,7 @@ html.lenis body {
   height: 1px;
   background: var(--border);
   overflow: hidden;
+  margin-top: 40px; /* Push the line slightly further down */
 }
 
 .hero-top-line::after {
@@ -759,7 +760,7 @@ html.lenis body {
   width: 100%;
   margin-top: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 0;
   /* No gap as requested */
 }
@@ -771,7 +772,7 @@ html.lenis body {
   background: #000;
   border: 1px solid #9C9C9C;
   border-radius: 24px;
-  padding: 48px 44px 40px;
+  padding: 48px 32px 40px;
   height: clamp(320px, 28vw, 472px);
   display: flex;
   flex-direction: column;
@@ -790,7 +791,7 @@ html.lenis body {
 /* Large orange stat number — bold, tight tracking */
 .stat-value {
   font-family: 'Inter', 'Outfit', sans-serif;
-  font-size: clamp(52px, 6.5vw, 86px);
+  font-size: clamp(40px, 5vw, 76px);
   font-weight: 900;
   color: #F37021;
   line-height: 1;
@@ -1475,16 +1476,13 @@ html.lenis body {
   position: relative;
 }
 
-.why-heading {
+.why-intro-desc {
   color: #fff;
-  /* In the image, text is slightly off-white or white, very thin/spaced */
-  font-size: 1.2rem;
-  font-weight: 300;
-  letter-spacing: 0.25em;
-  font-family: 'Pacaembu', sans-serif;
-  margin-bottom: 40px;
-  /* Gap between the heading and the red lines */
+  font-size: 1.1rem;
+  line-height: 1.5;
   text-align: center;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
   z-index: 5;
 }
 
@@ -2126,7 +2124,7 @@ html.lenis body {
 .section-story {
   position: relative;
   z-index: 2;
-  padding: 120px 40px 40px;
+  padding: 120px 40px 0;
   background: transparent;
   display: flex;
   justify-content: center;
@@ -2206,6 +2204,8 @@ html.lenis body {
   text-align: center;
   color: #fff;
   margin-bottom: 40px;
+  white-space: nowrap;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 70%);
 }
 
 .story-title .word-mask {
@@ -2310,7 +2310,7 @@ html.lenis body {
 
 .center-vertical-lines {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 0;
@@ -3657,17 +3657,30 @@ body.light-mode .section-services {
     font-size: 24px;
     max-width: 800px;
   }
+
+  #services-title {
+    font-weight: 700 !important;
+  }
+
+  .strategy-content h2 {
+    font-weight: 700 !important;
+  }
+
   .strategy-content p,
   .risk-sub,
   .cyber-sub,
   .ai-sub {
-    font-size: 22px !important;
-    max-width: 350px !important;
+    font-size: 26px !important;
+    max-width: 600px !important;
+  }
+
+  .why-title {
+    font-size: 100px !important;
   }
 
   .why-desc {
-    font-size: 24px !important;
-    max-width: 650px !important;
+    font-size: 28px !important;
+    max-width: 800px !important;
   }
 
   .thinking-eyebrow {
@@ -3704,5 +3717,9 @@ body.light-mode .section-services {
 @media screen and (max-width: 767px) {
   .desktop-br {
     display: none;
+  }
+  
+  .story-title {
+    white-space: normal !important;
   }
 }

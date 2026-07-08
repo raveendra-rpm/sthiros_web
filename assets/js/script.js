@@ -1185,7 +1185,7 @@ function initWhySthirosScroll() {
 
   tlUnpinned.to(whyLines, {
     opacity: 1,
-    strokeDashoffset: function (i, el) { return el.getTotalLength() * 0.5; },
+    strokeDashoffset: 1268, // Pauses exactly at the start of the downward line (Y=1332 to 2600)
     ease: "none"
   });
 
