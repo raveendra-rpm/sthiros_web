@@ -549,12 +549,12 @@ html.lenis body {
 
 .hero-sub {
   font-family: 'Quicksand', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   color: #ffffff;
   line-height: normal;
   letter-spacing: 0;
-  max-width: 520px;
+  max-width: 600px;
 }
 
 .hero-actions {
@@ -3654,8 +3654,24 @@ body.light-mode .section-services {
   }
 
   .hero-sub {
-    font-size: 18px;
-    max-width: 600px;
+    font-size: 24px;
+    max-width: 800px;
+  }
+  .strategy-content p,
+  .risk-sub,
+  .cyber-sub,
+  .ai-sub {
+    font-size: 22px !important;
+    max-width: 350px !important;
+  }
+
+  .why-desc {
+    font-size: 24px !important;
+    max-width: 650px !important;
+  }
+
+  .thinking-eyebrow {
+    font-size: 22px !important;
   }
 
   .stat-label {
@@ -3681,5 +3697,12 @@ body.light-mode .section-services {
   .why-image-block {
     width: 420px !important;
     height: 260px !important;
+  }
+}
+
+/* Hide desktop explicit breaks on mobile */
+@media screen and (max-width: 767px) {
+  .desktop-br {
+    display: none;
   }
 }

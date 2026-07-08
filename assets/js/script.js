@@ -822,6 +822,8 @@ function initScrollAnimations() {
   });
 
 
+
+
   function updateHeroDate() {
     const dateEl = document.getElementById('hero-date');
     if (!dateEl) return;
@@ -1117,10 +1119,17 @@ function initScrollAnimations() {
         }
 
         // Part 7: Trace AI Logo and Show Text (Camera paused at final position)
+        tl.add("aiTrace");
         if (aiLogo && aiTextBlock) {
-          tl.to(aiLogo, { opacity: 1, duration: 0.01 })
-            .to(aiLogo, { clipPath: 'inset(0 0 0% 0)', ease: 'none', duration: 0.4 })
-            .to(aiTextBlock.children, { opacity: 1, y: 0, duration: 0.3, stagger: 0.1, ease: 'power3.out' });
+          tl.to(aiLogo, { opacity: 1, duration: 0.01 }, "aiTrace")
+            .to(aiLogo, { clipPath: 'inset(0 0 0% 0)', ease: 'none', duration: 0.4 }, "aiTrace")
+            .to(aiTextBlock.children, { opacity: 1, y: 0, duration: 0.3, stagger: 0.1, ease: 'power3.out' }, "aiTrace");
+        }
+
+        // Fade out Cyber's horizontal rail while AI is tracing
+        const cyberHorizRail = document.querySelector('.cyber-horiz-rail');
+        if (cyberHorizRail) {
+          tl.to(cyberHorizRail, { opacity: 0, ease: 'none', duration: 0.4 }, "aiTrace");
         }
 
         // Part 8: Wait slightly after AI text loads so user can read it before unpinning
@@ -1137,8 +1146,8 @@ function initScrollAnimations() {
       opacity: 0,
       scrollTrigger: {
         trigger: '.section-why',
-        start: window.innerWidth <= 1024 ? 'top bottom-=200' : 'top bottom+=250', // Delay fade out on 1024px screens
-        end: window.innerWidth <= 1024 ? 'top center-=100' : 'top center',
+        start: window.innerWidth <= 1024 ? 'top bottom-=200' : 'top bottom-=100', // Delay fade out so AI stays visible longer
+        end: window.innerWidth <= 1024 ? 'top center-=100' : 'top center-=100',
         scrub: true
       }
     });
