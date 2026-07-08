@@ -402,6 +402,20 @@ html.lenis body {
   display: block;
 }
 
+.hero-hand-video {
+  position: absolute;
+  left: 3vw;
+  bottom: 0;
+  width: 95%;
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+  display: block;
+  mix-blend-mode: screen;
+  transform: scale(0.55) translateY(-14%);
+  transform-origin: 75% 35%;
+}
+
 /* hero_vector_2.svg — bottom-left corner bracket connecting to stats below.
    Width formula: (460/891)*50vw so SVG coordinate spaces align with .hero-svg-track */
 .hero-vec-2 {
@@ -2814,7 +2828,7 @@ html.lenis body {
 .footer-heading {
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
-  font-size: clamp(32px, 4.5vw, 64px);
+  font-size: clamp(28px, 3.5vw, 64px);
   color: #fff;
   margin: 0 0 5px 0;
   line-height: 1.1;
@@ -2923,7 +2937,6 @@ html.lenis body {
   text-transform: uppercase;
   text-decoration: none;
   padding: 24px 0;
-  /* Adjusted padding for smaller font size */
   transition: color 0.4s ease;
 }
 
@@ -3026,6 +3039,42 @@ html.lenis body {
   .footer-right {
     max-width: 100%;
     width: 100%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .footer-container {
+    padding-bottom: 40px;
+  }
+
+  .footer-heading {
+    font-size: 36px;
+  }
+
+  .footer-email {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .footer-contact-block {
+    margin-bottom: 20px;
+  }
+
+  .contact-now-link {
+    padding-bottom: 10px;
+  }
+
+  .footer-menu li a {
+    padding: 12px 0;
+    font-size: 16px;
+  }
+
+  .footer-massive-logo-section {
+    padding: 40px 0 40px 20px;
+  }
+
+  .copyright-text {
+    font-size: 14px;
   }
 }
 
@@ -3586,5 +3635,45 @@ body.light-mode .section-services {
   .expert-card {
     width: 200px !important;
     height: 283px !important;
+  }
+}
+
+/* 1920px screens: Adjust hero text position and font size */
+@media screen and (min-width: 1900px) {
+  .hero-inner {
+    padding: 60px 0 350px 0; /* Move text up */
+    margin: 0 40px; /* Align left edge with logo (40px padding in header) */
+    width: calc(100% - 80px);
+    max-width: 100%;
+  }
+  .hero-headline {
+    font-size: 100px;
+    font-weight: bold;
+  }
+  .hero-sub {
+    font-size: 18px;
+    max-width: 600px;
+  }
+  .stat-label {
+    font-size: 16px;
+    max-width: 250px;
+  }
+  .bg-glow-fixed {
+    max-width: 1600px;
+    max-height: 1600px;
+    width: 110vw;
+    height: 110vw;
+    filter: brightness(1.6);
+  }
+}
+
+/* 1366px screens: Principle section image and heading adjustments */
+@media screen and (max-width: 1366px) {
+  .why-title {
+    font-size: 55px !important;
+  }
+  .why-image-block {
+    width: 420px !important;
+    height: 260px !important;
   }
 }

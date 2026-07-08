@@ -1137,8 +1137,8 @@ function initScrollAnimations() {
       opacity: 0,
       scrollTrigger: {
         trigger: '.section-why',
-        start: 'top bottom+=250', // start fading out earlier so there is no dead zone
-        end: 'top center',   // fades out completely when it reaches center
+        start: window.innerWidth <= 1024 ? 'top bottom-=200' : 'top bottom+=250', // Delay fade out on 1024px screens
+        end: window.innerWidth <= 1024 ? 'top center-=100' : 'top center',
         scrub: true
       }
     });
@@ -1551,13 +1551,15 @@ function initIndustriesNewScroll() {
   }, '+=0.3');
 
   // 6. Move up and wash out first 5 smoothly: Top -> Bottom
+  tl.addLabel('firstWashStart', '+=0.5');
+
   tl.to([cards[0], cards[1], cards[2]], {
     y: (i, el) => scatter[cards.indexOf(el)][1] - window.innerHeight - 300,
     opacity: 0,
     ease: 'none',
     stagger: 0.15,
     duration: 2.5
-  }, '+=0.5');
+  }, 'firstWashStart');
 
   tl.to([cards[3], cards[4]], {
     y: (i, el) => scatter[cards.indexOf(el)][1] - window.innerHeight - 300,
@@ -1565,16 +1567,18 @@ function initIndustriesNewScroll() {
     ease: 'none',
     stagger: 0.15,
     duration: 2.5
-  }, '-=1.5');
+  }, 'firstWashStart+=1.0');
 
-  // 7. Second 5 Cards Scatter (from center deck)
+  // 7. Second 5 Cards rise up from below the fold right as the bottom pair
+  // of the first 5 starts washing out, so they cross paths and are already
+  // arriving by the time the bottom pair clears — no dead gap.
   tl.to(cards.slice(5, 10), {
     x: (i) => scatter[i + 5][0],
     y: (i) => scatter[i + 5][1],
     ease: 'power2.inOut',
     stagger: 0.2,
     duration: 1.5
-  }, '+=0.2');
+  }, 'firstWashStart+=1.0');
 
   // 8. Second 5 Cards Flip
   tl.to(cardInners.slice(5, 10), {
@@ -1804,6 +1808,18 @@ document.addEventListener('DOMContentLoaded', () => {
   if (themeToggleBtn) {
     themeToggleBtn.addEventListener('click', () => {
       themeToggleBtn.classList.toggle('is-on');
+    });
+  }
+
+  // ═══════════════ HERO VIDEO SMOOTH LOOP FIX ═══════════════
+  const heroVideo = document.querySelector('.hero-hand-video');
+  if (heroVideo) {
+    heroVideo.addEventListener('timeupdate', () => {
+      // Seek back to start slightly before the actual end to avoid browser stutter
+      if (heroVideo.duration && heroVideo.currentTime >= heroVideo.duration - 0.08) {
+        heroVideo.currentTime = 0;
+        heroVideo.play();
+      }
     });
   }
 });
