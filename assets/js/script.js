@@ -1178,7 +1178,7 @@ function initWhySthirosScroll() {
     scrollTrigger: {
       trigger: section,
       start: 'top 75%', // Starts after the heading has come up a bit
-      end: 'center center',
+      end: () => window.innerWidth <= 1400 ? 'center 35%' : 'center center',
       scrub: 1.2
     }
   });
@@ -1194,7 +1194,7 @@ function initWhySthirosScroll() {
     scrollTrigger: {
       id: "whyPin",
       trigger: section,
-      start: 'center center',
+      start: () => window.innerWidth <= 1400 ? 'center 35%' : 'center center',
       end: '+=2500', // Only for slide transitions
       pin: true,
       scrub: 1.2
@@ -1238,12 +1238,12 @@ function initWhySthirosScroll() {
 
   transitionSlides('#why-slide-3', '#why-slide-4', 't3');
 
-  // When the 4th card arrives, the SVG line continues to move forward
+  // When the 4th card arrives, the SVG line moves forward smoothly
   tlPinned.to(whyLines, {
     strokeDashoffset: (i, el) => el.getTotalLength() - 1600,
     ease: "none",
-    duration: 0.8
-  }, 't3'); // Draws concurrently with 4th card hold
+    duration: 0.4
+  }, 't3');
 
   // ── FINAL UNPINNED TIMELINE (Draws rest of line while scrolling away) ──
   const tlUnpinnedEnd = gsap.timeline({

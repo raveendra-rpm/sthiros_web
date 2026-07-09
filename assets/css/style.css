@@ -3639,6 +3639,19 @@ body.light-mode .section-services {
     margin-top: -80px;
     padding-top: 120px;
   }
+
+  .why-desc {
+    max-width: 600px;
+  }
+
+  .hero-actions {
+    margin-top: 10px !important;
+  }
+
+  .hero-btn {
+    font-size: 16px;
+    padding: 8px 30px;
+  }
 }
 
 /* Keep the expert card smaller on tablet/mobile screens */
@@ -3654,8 +3667,29 @@ body.light-mode .section-services {
     width: 200px !important;
     height: 283px !important;
   }
+
   .section-industries-new {
     margin-top: 120px;
+  }
+}
+
+/* 1440px screens: Move hero text up slightly */
+@media screen and (min-width: 1367px) and (max-width: 1450px) {
+  .hero-inner {
+    padding: 60px 0 300px 0;
+  }
+
+  .hero-headline {
+    font-weight: bold;
+    font-size: 72px !important;
+  }
+
+  .hero-actions {
+    margin-top: 10px !important;
+  }
+
+  .why-title {
+    font-size: 50px !important;
   }
 }
 
@@ -3739,6 +3773,10 @@ body.light-mode .section-services {
 @media screen and (max-width: 1366px) {
   .section-hero {
     --rail-h: calc(115vh - 36px);
+  }
+
+  .hero-inner {
+    padding: 60px 0 190px 0;
   }
 
   .hero-headline {
