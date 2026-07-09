@@ -1185,7 +1185,7 @@ function initWhySthirosScroll() {
 
   tlUnpinned.to(whyLines, {
     opacity: 1,
-    strokeDashoffset: 1268, // Pauses exactly at the start of the downward line (Y=1332 to 2600)
+    strokeDashoffset: (i, el) => el.getTotalLength() - 400, // Pauses at the top edge of the cards
     ease: "none"
   });
 
@@ -1226,7 +1226,14 @@ function initWhySthirosScroll() {
   }
 
   // ── ANIMATION SEQUENCE ──
-  tlPinned.to({}, { duration: 0.8 }); // Hold Slide 1
+  // Draw the SVG line around the cards concurrently with the slide transitions
+  tlPinned.to(whyLines, {
+    strokeDashoffset: 1268,
+    ease: "none",
+    duration: 3.8
+  }, 0);
+
+  tlPinned.to({}, { duration: 0.8 }, 0); // Hold Slide 1
 
   transitionSlides('#why-slide-1', '#why-slide-2', 't1');
   tlPinned.to({}, { duration: 0.8 }); // Hold Slide 2
@@ -1499,7 +1506,7 @@ function initIndustriesNewScroll() {
     scrollTrigger: {
       trigger: section,
       start: 'top top',
-      end: '+=1600%', // Extended scroll area for two sets of 5 cards
+      end: '+=1200%', // Reduced scroll area since animations are faster
       scrub: 1.2,
       pin: true,
       anticipatePin: 1
@@ -1518,18 +1525,7 @@ function initIndustriesNewScroll() {
     duration: 1.5
   });
 
-  // 2. First 5 Cards slide up behind text one by one
-  gsap.set(cards.slice(0, 5), { zIndex: 1 });
-  gsap.set(cards.slice(5, 10), { zIndex: 10 });
-
-  tl.to(cards.slice(0, 5), {
-    y: 0,
-    ease: 'power3.out',
-    stagger: 0.4,
-    duration: 1.5
-  }, '+=0.2');
-
-  // 3. Text Hides (moves up and fades out)
+  // 2. Text Hides (moves up and fades out)
   tl.to(titleContainer, {
     y: -300,
     opacity: 0,
@@ -1537,11 +1533,19 @@ function initIndustriesNewScroll() {
     duration: 1.5
   }, '+=0.2');
 
-  // Swap z-index right before scattering so first 5 cards come out in front
-  tl.set(cards.slice(0, 5), { zIndex: 10 }, '<');
-  tl.set(cards.slice(5, 10), { zIndex: 1 }, '<');
+  // 3. Swap z-index right before cards come up so first 5 are in front
+  tl.set(cards.slice(0, 5), { zIndex: 10 });
+  tl.set(cards.slice(5, 10), { zIndex: 1 });
 
-  // 4. First 5 Cards Scatter (remaining 5 stay in the center deck)
+  // 4. First 5 Cards slide up to the center one by one
+  tl.to(cards.slice(0, 5), {
+    y: 0,
+    ease: 'power3.out',
+    stagger: 0.4,
+    duration: 1.5
+  }, '+=0.2');
+
+  // 5. First 5 Cards Scatter (remaining 5 stay in the center deck)
   tl.to(cards.slice(0, 5), {
     x: (i) => scatter[i][0],
     y: (i) => scatter[i][1],
@@ -1549,15 +1553,15 @@ function initIndustriesNewScroll() {
     stagger: 0.2,
     ease: 'power2.inOut',
     duration: 1.5
-  }, '<');
+  }, '+=0.2');
 
-  // 5. First 5 Cards Flip (completely sequential)
+  // 5. First 5 Cards Flip (fast overlapping flip)
   tl.to(cardInners.slice(0, 5), {
     rotateY: 180,
     ease: 'power2.inOut',
-    stagger: 1.5,
-    duration: 1.5
-  }, '+=0.3');
+    stagger: 0.2,
+    duration: 0.6
+  }, '+=0.1');
 
   // 6. Move up and wash out first 5 smoothly: Top -> Bottom
   tl.addLabel('firstWashStart', '+=0.5');
@@ -1589,13 +1593,13 @@ function initIndustriesNewScroll() {
     duration: 1.5
   }, 'firstWashStart+=1.0');
 
-  // 8. Second 5 Cards Flip
+  // 8. Second 5 Cards Flip (fast overlapping flip)
   tl.to(cardInners.slice(5, 10), {
     rotateY: 180,
     ease: 'power2.inOut',
-    stagger: 1.5,
-    duration: 1.5
-  }, '+=0.3');
+    stagger: 0.2,
+    duration: 0.6
+  }, '+=0.1');
 
   // 9. Move up and wash out second 5 smoothly: Top -> Bottom
   tl.to([cards[5], cards[6], cards[7]], {

@@ -1479,6 +1479,7 @@ html.lenis body {
 
 .why-intro-desc {
   color: #fff;
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.1rem;
   line-height: 1.5;
   text-align: center;
@@ -2179,7 +2180,7 @@ html.lenis body {
 .story-container {
   position: relative;
   z-index: 2;
-  max-width: 850px;
+  max-width: 1200px;
   width: 100%;
   text-align: center;
 }
@@ -3729,6 +3730,18 @@ body.light-mode .section-services {
 
 /* 1366px screens: Principle section image and heading adjustments */
 @media screen and (max-width: 1366px) {
+  .section-hero {
+    --rail-h: calc(115vh - 36px);
+  }
+
+  .hero-top {
+    top: 20px;
+  }
+
+  .hero-top-line {
+    margin-top: 15px;
+  }
+
   .why-title {
     font-size: 55px !important;
   }
