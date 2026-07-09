@@ -497,7 +497,8 @@ html.lenis body {
   height: 1px;
   background: var(--border);
   overflow: hidden;
-  margin-top: 40px; /* Push the line slightly further down */
+  margin-top: 40px;
+  /* Push the line slightly further down */
 }
 
 .hero-top-line::after {
@@ -792,7 +793,7 @@ html.lenis body {
 .stat-value {
   font-family: 'Inter', 'Outfit', sans-serif;
   font-size: clamp(40px, 5vw, 76px);
-  font-weight: 900;
+  font-weight: 700;
   color: #F37021;
   line-height: 1;
   letter-spacing: -0.03em;
@@ -1565,7 +1566,7 @@ html.lenis body {
 .why-desc {
   color: #ccc;
   font-family: 'Quicksand', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   /* Slightly larger, more legible */
   line-height: 1.6;
   margin-bottom: 30px;
@@ -2205,7 +2206,6 @@ html.lenis body {
   color: #fff;
   margin-bottom: 40px;
   white-space: nowrap;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 70%);
 }
 
 .story-title .word-mask {
@@ -2239,8 +2239,14 @@ html.lenis body {
   gap: 24px;
 }
 
+.story-text-wrapper {
+  background: radial-gradient(48% 48% at 50% 50%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0) 100%);
+  padding: 40px 0;
+  margin: -40px 0;
+}
+
 .story-btn-wrapper {
-  margin-top: 100px;
+  margin-top: 60px;
   display: flex;
   justify-content: center;
 }
@@ -2255,7 +2261,7 @@ html.lenis body {
   box-shadow: 0 0 0 2px var(--bg), 0 0 0 3px #EF4623;
   color: #fff;
   font-family: 'Quicksand', sans-serif;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 400;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -2270,12 +2276,17 @@ html.lenis body {
   box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px #EF4623;
 }
 
+.hero-btn {
+  font-size: 18px;
+  padding: 6px 32px;
+}
+
 .story-title .text-red {
   color: #EF4623;
 }
 
 .story-svg-line {
-  margin-top: 15px;
+  margin-top: 120px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -3409,6 +3420,16 @@ body.light-mode .section-services {
 }
 
 /* ════════════════════════════════════════════
+   1440px SCREEN OPTIMIZATIONS (Large Laptops)
+   ════════════════════════════════════════════ */
+@media screen and (max-width: 1440px) {
+  .hero-sub {
+    font-size: 16px !important;
+    max-width: 600px;
+  }
+}
+
+/* ════════════════════════════════════════════
    1024px SCREEN OPTIMIZATIONS (Tablet / Small Laptop)
    ════════════════════════════════════════════ */
 @media screen and (max-width: 1050px) and (min-width: 768px) {
@@ -3419,7 +3440,7 @@ body.light-mode .section-services {
   }
 
   .hero-sub {
-    font-size: 16px !important;
+    font-size: 14px !important;
     max-width: 85% !important;
   }
 
@@ -3502,7 +3523,7 @@ body.light-mode .section-services {
   }
 
   .why-desc {
-    font-size: 16px !important;
+    font-size: 14px !important;
     max-width: 400px !important;
   }
 
@@ -3654,8 +3675,13 @@ body.light-mode .section-services {
   }
 
   .hero-sub {
-    font-size: 24px;
+    font-size: 20px;
     max-width: 800px;
+  }
+
+  .hero-btn {
+    font-size: 22px;
+    padding: 8px 40px;
   }
 
   #services-title {
@@ -3679,7 +3705,7 @@ body.light-mode .section-services {
   }
 
   .why-desc {
-    font-size: 28px !important;
+    font-size: 24px !important;
     max-width: 800px !important;
   }
 
@@ -3707,6 +3733,11 @@ body.light-mode .section-services {
     font-size: 55px !important;
   }
 
+  .story-title {
+    font-size: 65px !important;
+    line-height: 75px !important;
+  }
+
   .why-image-block {
     width: 420px !important;
     height: 260px !important;
@@ -3718,7 +3749,7 @@ body.light-mode .section-services {
   .desktop-br {
     display: none;
   }
-  
+
   .story-title {
     white-space: normal !important;
   }
