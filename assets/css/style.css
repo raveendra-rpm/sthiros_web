@@ -2322,10 +2322,11 @@ html.lenis body {
 
 .center-vertical-lines {
   position: absolute;
-  top: 0;
+  top: 250px;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 0;
+  width: 90px;
   opacity: 0;
   /* Hidden initially, animated via GSAP */
   pointer-events: none;
@@ -3657,6 +3658,9 @@ body.light-mode .section-services {
     width: 200px !important;
     height: 283px !important;
   }
+  .section-industries-new {
+    margin-top: 120px;
+  }
 }
 
 /* 1920px screens: Adjust hero text position and font size */
@@ -3701,12 +3705,18 @@ body.light-mode .section-services {
     max-width: 600px !important;
   }
 
+  .why-text-block {
+    left: -2% !important;
+    width: 800px !important;
+  }
+
   .why-title {
-    font-size: 100px !important;
+    font-size: 85px !important;
+    font-weight: 500 !important;
   }
 
   .why-desc {
-    font-size: 24px !important;
+    font-size: 18px !important;
     max-width: 800px !important;
   }
 

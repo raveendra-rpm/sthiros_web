@@ -1507,7 +1507,7 @@ function initIndustriesNewScroll() {
     scrollTrigger: {
       trigger: section,
       start: 'top top',
-      end: '+=1200%', // Reduced scroll area since animations are faster
+      end: '+=500%', // Reduced scroll area to bring next section faster
       scrub: 1.2,
       pin: true,
       anticipatePin: 1
@@ -1609,7 +1609,7 @@ function initIndustriesNewScroll() {
     ease: 'none',
     stagger: 0.15,
     duration: 2.5
-  }, '+=0.5');
+  }, '+=0.1');
 
   tl.to([cards[8], cards[9]], {
     y: (i, el) => scatter[cards.indexOf(el)][1] - window.innerHeight - 300,

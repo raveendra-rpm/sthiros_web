@@ -104,7 +104,7 @@
         <div class="hero-inner">
             <div class="hero-text">
                 <div class="hero-top">
-                    <p class="hero-label" id="hero-label">ADVISORY · EST. 2005</p>
+                    <!-- ADVISORY text removed as requested -->
                     <div class="hero-top-line"></div>
                 </div>
                 <h1 class="hero-headline" id="hero-headline">
@@ -368,18 +368,25 @@
                 practitioner-designed, and deployed into operating environments we already understand.</p>
             <div class="why-svg-container">
                 <svg class="why-svg" viewBox="0 0 1400 1800" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="why-fade" x1="0" y1="0" x2="0" y2="2600" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#EC2D26" />
+                            <stop offset="0.8" stop-color="#EC2D26" />
+                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
                     <path class="why-line"
                         d="M670 0 L670 400 A 92 92 0 0 0 762 492 L1058 492 A 40 40 0 0 1 1098 532 L1098 1200 A 40 40 0 0 1 1058 1240 L762 1240 A 92 92 0 0 0 670 1332 L670 2600"
-                        stroke="#EC2D26" stroke-width="2.5" />
+                        stroke="url(#why-fade)" stroke-width="2.5" />
                     <path class="why-line"
                         d="M680 0 L680 400 A 82 82 0 0 0 762 482 L1058 482 A 50 50 0 0 1 1108 532 L1108 1200 A 50 50 0 0 1 1058 1250 L762 1250 A 82 82 0 0 0 680 1332 L680 2600"
-                        stroke="#EC2D26" stroke-width="4.9" />
+                        stroke="url(#why-fade)" stroke-width="4.9" />
                     <path class="why-line"
                         d="M696 0 L696 400 A 66 66 0 0 0 762 466 L1058 466 A 66 66 0 0 1 1124 532 L1124 1200 A 66 66 0 0 1 1058 1266 L762 1266 A 66 66 0 0 0 696 1332 L696 2600"
-                        stroke="#EC2D26" stroke-width="9.9" />
+                        stroke="url(#why-fade)" stroke-width="9.9" />
                     <path class="why-line"
                         d="M722 0 L722 400 A 40 40 0 0 0 762 440 L1058 440 A 92 92 0 0 1 1150 532 L1150 1200 A 92 92 0 0 1 1058 1292 L762 1292 A 40 40 0 0 0 722 1332 L722 2600"
-                        stroke="#EC2D26" stroke-width="24.8" />
+                        stroke="url(#why-fade)" stroke-width="24.8" />
                 </svg>
 
                 <div class="why-content-overlay">
@@ -387,9 +394,12 @@
                         <div class="why-text-block">
                             <div class="why-step">01 / 04</div>
                             <div class="why-eyebrow">PRINCIPLE</div>
-                            <h3 class="why-title">One system.<br><span style="color: #EF4623;">Four pillars.</span></h3>
-                            <p class="why-desc">Strategy, Risk, Cyber and AI working
-                                together from the start.</p>
+                            <h3 class="why-title">Four towers.<br>One operating<br><span
+                                    style="color: #EF4623;">intelligence.</span></h3>
+                            <p class="why-desc">Strategy, Risk, Cyber and AI are not separate practices at Sthiros. They
+                                are integrated from the first conversation. When risk insight informs strategy, and AI
+                                is secured from the start, organisations stop managing complexity and start holding it.
+                            </p>
                             <div class="why-text-line"></div>
                         </div>
                         <div class="why-image-block tilt-right">
@@ -401,10 +411,12 @@
                         <div class="why-text-block">
                             <div class="why-step">02 / 04</div>
                             <div class="why-eyebrow">PRINCIPLE</div>
-                            <h3 class="why-title">Built to <span style="color: #EF4623;">execute.</span></h3>
-                            <p class="why-desc">We stay beyond the recommendation. Into
-                                implementation, adoption and measurable
-                                outcomes.</p>
+                            <h3 class="why-title">We stay past the<br><span
+                                    style="color: #EF4623;">recommendation.</span></h3>
+                            <p class="why-desc">The hardest part of any transformation is the gap between decision and
+                                outcome. Most consultancies hand over a deck and call it done. We stay through
+                                implementation, adoption, and the results that take time to show, until the change
+                                holds.</p>
                             <div class="why-text-line"></div>
                         </div>
                         <div class="why-image-block tilt-left">
@@ -417,10 +429,10 @@
                         <div class="why-text-block">
                             <div class="why-step">03 / 04</div>
                             <div class="why-eyebrow">PRINCIPLE</div>
-                            <h3 class="why-title"><span style="color: #EF4623;">AI</span> that ships.</h3>
-                            <p class="why-desc">From intelligent automation to product
-                                acceleration, we help organisations turn AI
-                                ambition into operating reality.</p>
+                            <h3 class="why-title"><span style="color: #EF4623;">AI</span> that<br>ships</h3>
+                            <p class="why-desc">Our AI capability comes from inside client workflows, not a lab. It's
+                                tested against real operating conditions, and it's already producing proprietary
+                                products built to outlast any single engagement.</p>
                             <div class="why-text-line"></div>
                         </div>
                         <div class="why-image-block tilt-right">
@@ -433,10 +445,10 @@
                         <div class="why-text-block">
                             <div class="why-step">04 / 04</div>
                             <div class="why-eyebrow">PRINCIPLE</div>
-                            <h3 class="why-title">Global reach,<br> <span style="color: #EF4623;">Local weight.</span>
+                            <h3 class="why-title">Global reach,<br><span style="color: #EF4623;">local weight.</span>
                             </h3>
-                            <p class="why-desc">Four offices across three continents. Context
-                                matters. So does proximity.</p>
+                            <p class="why-desc">We operate across India, North America and South Africa. The standard of
+                                work does not change with the time zone.</p>
                             <div class="why-text-line"></div>
                         </div>
                         <div class="why-image-block tilt-left">
@@ -477,39 +489,7 @@
             </div>
 
 
-            <div class="story-svg-line">
-                <svg width="90" height="810" viewBox="0 0 94 814" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M84.0001 814L59.3334 814L59.3334 10L84 9.99999L84.0001 814Z"
-                        fill="url(#paint0_linear_280_1122)" />
-                    <path d="M47.0139 814L34.6666 814L34.6665 10L47.0139 10L47.0139 814Z"
-                        fill="url(#paint1_linear_280_1122)" />
-                    <path d="M19.8053 814L19.8053 10L25.979 10L25.979 814L19.8053 814Z"
-                        fill="url(#paint2_linear_280_1122)" />
-                    <path d="M10 814L9.99993 10L14.1064 10L14.1065 814L10 814Z" fill="url(#paint3_linear_280_1122)" />
-                    <defs>
-                        <linearGradient id="paint0_linear_280_1122" x1="47" y1="10" x2="47" y2="804"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#EC2D26" />
-                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
-                        </linearGradient>
-                        <linearGradient id="paint1_linear_280_1122" x1="47" y1="10" x2="47" y2="804"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#EC2D26" />
-                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
-                        </linearGradient>
-                        <linearGradient id="paint2_linear_280_1122" x1="47" y1="10" x2="47" y2="804"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#EC2D26" />
-                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
-                        </linearGradient>
-                        <linearGradient id="paint3_linear_280_1122" x1="47" y1="10" x2="47" y2="804"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#EC2D26" />
-                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div>
+
         </div>
     </section>
 
@@ -518,34 +498,36 @@
         <div class="experts-pin-container">
             <!-- Background Layer: The SVG Lines -->
             <div class="center-vertical-lines">
-                <svg width="94" height="678" viewBox="0 0 94 678" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M84.0001 677.963L59.3334 677.963L59.3334 0L84 0L84.0001 677.963Z"
-                        fill="url(#paint0_linear_90_1428)" />
-                    <path d="M47.0139 678L34.6666 678L34.6665 0L47.0139 0L47.0139 678Z"
+                <svg width="90" height="850" viewBox="0 0 94 850" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M84.0001 850L59.3334 850L59.3334 0L84 0L84.0001 850Z" fill="url(#paint0_linear_90_1428)" />
+                    <path d="M47.0139 850L34.6666 850L34.6665 0L47.0139 0L47.0139 850Z"
                         fill="url(#paint1_linear_90_1428)" />
-                    <path d="M19.8053 677.945L19.8053 0L25.979 0L25.979 677.945L19.8053 677.945Z"
+                    <path d="M19.8053 850L19.8053 0L25.979 0L25.979 850L19.8053 850Z"
                         fill="url(#paint2_linear_90_1428)" />
-                    <path d="M10 677.963L10 0L14.1064 0L14.1065 677.963L10 677.963Z"
-                        fill="url(#paint3_linear_90_1428)" />
+                    <path d="M10 850L10 0L14.1064 0L14.1065 850L10 850Z" fill="url(#paint3_linear_90_1428)" />
                     <defs>
-                        <linearGradient id="paint0_linear_90_1428" x1="47" y1="0" x2="47" y2="678"
+                        <linearGradient id="paint0_linear_90_1428" x1="47" y1="0" x2="47" y2="850"
                             gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#EC2D26" />
+                            <stop offset="0" stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="0.2" stop-color="#EC2D26" />
                             <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
                         </linearGradient>
-                        <linearGradient id="paint1_linear_90_1428" x1="47" y1="0" x2="47" y2="678"
+                        <linearGradient id="paint1_linear_90_1428" x1="47" y1="0" x2="47" y2="850"
                             gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#EC2D26" />
+                            <stop offset="0" stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="0.2" stop-color="#EC2D26" />
                             <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
                         </linearGradient>
-                        <linearGradient id="paint2_linear_90_1428" x1="47" y1="0" x2="47" y2="678"
+                        <linearGradient id="paint2_linear_90_1428" x1="47" y1="0" x2="47" y2="850"
                             gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#EC2D26" />
+                            <stop offset="0" stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="0.2" stop-color="#EC2D26" />
                             <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
                         </linearGradient>
-                        <linearGradient id="paint3_linear_90_1428" x1="47" y1="0" x2="47" y2="678"
+                        <linearGradient id="paint3_linear_90_1428" x1="47" y1="0" x2="47" y2="850"
                             gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#EC2D26" />
+                            <stop offset="0" stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="0.2" stop-color="#EC2D26" />
                             <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
                         </linearGradient>
                     </defs>
