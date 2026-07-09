@@ -1237,7 +1237,7 @@ function initWhySthirosScroll() {
   tlPinned.to({}, { duration: 0.8 }); // Hold Slide 3
 
   transitionSlides('#why-slide-3', '#why-slide-4', 't3');
-  
+
   // When the 4th card arrives, the SVG line continues to move forward
   tlPinned.to(whyLines, {
     strokeDashoffset: (i, el) => el.getTotalLength() - 1600,
