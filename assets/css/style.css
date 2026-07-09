@@ -3767,6 +3767,16 @@ body.light-mode .section-services {
     height: 110vw;
     filter: brightness(1.6);
   }
+
+  .thinking-card {
+    max-width: 780px !important;
+    height: 380px !important;
+    border-radius: 2rem;
+  }
+
+  .cta-banner {
+    padding: 103px 80px;
+  }
 }
 
 /* 1366px screens: Principle section image and heading adjustments */
