@@ -1185,7 +1185,7 @@ function initWhySthirosScroll() {
 
   tlUnpinned.to(whyLines, {
     opacity: 1,
-    strokeDashoffset: (i, el) => el.getTotalLength() - 400, // Pauses at the top edge of the cards
+    strokeDashoffset: (i, el) => el.getTotalLength() - 1150, // Pauses halfway behind the cards
     ease: "none"
   });
 
@@ -1226,12 +1226,7 @@ function initWhySthirosScroll() {
   }
 
   // ── ANIMATION SEQUENCE ──
-  // Draw the SVG line around the cards concurrently with the slide transitions
-  tlPinned.to(whyLines, {
-    strokeDashoffset: 1268,
-    ease: "none",
-    duration: 3.8
-  }, 0);
+  // The SVG line stays paused behind the cards during the first 3 slides.
 
   tlPinned.to({}, { duration: 0.8 }, 0); // Hold Slide 1
 
@@ -1242,7 +1237,13 @@ function initWhySthirosScroll() {
   tlPinned.to({}, { duration: 0.8 }); // Hold Slide 3
 
   transitionSlides('#why-slide-3', '#why-slide-4', 't3');
-  tlPinned.to({}, { duration: 0.8 }); // Hold Slide 4
+  
+  // When the 4th card arrives, the SVG line continues to move forward
+  tlPinned.to(whyLines, {
+    strokeDashoffset: (i, el) => el.getTotalLength() - 1600,
+    ease: "none",
+    duration: 0.8
+  }, 't3'); // Draws concurrently with 4th card hold
 
   // ── FINAL UNPINNED TIMELINE (Draws rest of line while scrolling away) ──
   const tlUnpinnedEnd = gsap.timeline({
