@@ -1173,19 +1173,42 @@ function initWhySthirosScroll() {
     gsap.set(line, { strokeDasharray: len + 10, strokeDashoffset: len + 10, opacity: 0 });
   });
 
+  // Heading + intro paragraph start hidden and fade in slightly after the
+  // line has already started drawing, so the line visibly leads in.
+  const whyHeading = section.querySelector('.section-title');
+  const whyDesc = section.querySelector('.why-intro-desc');
+  if (whyHeading && whyDesc) {
+    gsap.set([whyHeading, whyDesc], { opacity: 0, y: 30 });
+    gsap.to([whyHeading, whyDesc], {
+      opacity: 1,
+      y: 0,
+      ease: 'power2.out',
+      stagger: 0.15,
+      scrollTrigger: {
+        trigger: section,
+        start: 'top 60%', // A bit after the line starts (top 75%)
+        end: 'top 25%',
+        scrub: 1.2
+      }
+    });
+  }
+
   // ── UNPINNED TIMELINE (Draws line to 50% while scrolling into view) ──
   const tlUnpinned = gsap.timeline({
     scrollTrigger: {
       trigger: section,
-      start: 'top 75%', // Starts after the heading has come up a bit
-      end: () => window.innerWidth <= 1400 ? 'center 35%' : 'center center',
+      start: 'top 75%', // Starts before the heading fades in
+      end: 'center center',
       scrub: 1.2
     }
   });
 
   tlUnpinned.to(whyLines, {
     opacity: 1,
-    strokeDashoffset: (i, el) => el.getTotalLength() - 1150, // Pauses halfway behind the cards
+    // +150 compensates for the extra straight segment added at the path's
+    // start (see index.html) so the reveal still pauses at the same point
+    // behind the cards as before, just with the extension drawn in first.
+    strokeDashoffset: (i, el) => el.getTotalLength() - (1150 + 150), // Pauses halfway behind the cards
     ease: "none"
   });
 
@@ -1194,7 +1217,7 @@ function initWhySthirosScroll() {
     scrollTrigger: {
       id: "whyPin",
       trigger: section,
-      start: () => window.innerWidth <= 1400 ? 'center 35%' : 'center center',
+      start: 'center center',
       end: '+=2500', // Only for slide transitions
       pin: true,
       scrub: 1.2
@@ -1237,13 +1260,16 @@ function initWhySthirosScroll() {
   tlPinned.to({}, { duration: 0.8 }); // Hold Slide 3
 
   transitionSlides('#why-slide-3', '#why-slide-4', 't3');
+  tlPinned.to({}, { duration: 0.8 }); // Hold Slide 4
 
-  // When the 4th card arrives, the SVG line moves forward smoothly
+  // When all 4 cards have finished scrolling, the SVG line moves forward smoothly
+  // (+150 compensates for the extra segment added at the path's start,
+  // same as the tlUnpinned offset above)
   tlPinned.to(whyLines, {
-    strokeDashoffset: (i, el) => el.getTotalLength() - 1600,
+    strokeDashoffset: (i, el) => el.getTotalLength() - (1600 + 150),
     ease: "none",
-    duration: 0.4
-  }, 't3');
+    duration: 0.8
+  });
 
   // ── FINAL UNPINNED TIMELINE (Draws rest of line while scrolling away) ──
   const tlUnpinnedEnd = gsap.timeline({
@@ -1476,13 +1502,37 @@ function initIndustriesNewScroll() {
   let gapXBottom = 180;
   let gapY = -190;
   let gapYBottom = 190;
+  let cardHalfHeight = 170; // half of .expert-card's default 340px height
 
-  // Reduce gap for 1366px / 1024px screens
+  // Reduce gap for 1440px / 1366px / 1024px screens (matches the shorter
+  // .expert-card used at max-width: 1450px in style.css)
+  if (window.innerWidth <= 1450) {
+    gapX = 320;
+    gapXBottom = 160;
+    gapY = -160;
+    gapYBottom = 160;
+    cardHalfHeight = 140; // half of .expert-card's 280px height at this breakpoint
+  }
+
+  // 1366px-class screens use an even smaller card (see style.css) with
+  // tighter text, so it needs its own, smaller scatter offsets.
   if (window.innerWidth <= 1400) {
     gapX = 260;
     gapXBottom = 130;
-    gapY = -160;
-    gapYBottom = 160;
+    gapY = -140;
+    gapYBottom = 140;
+    cardHalfHeight = 110; // half of .expert-card's 220px height at this breakpoint
+  }
+
+  // On shorter viewports (1440px/1366px laptop screens etc.) the top row can land
+  // underneath the fixed site header once it's revealed — clamp gapY so the top
+  // edge of the top row always clears the header. Measures the header's real
+  // height so it stays correct if that height changes per breakpoint.
+  const headerEl = document.querySelector('.site-header');
+  const headerClearance = (headerEl ? headerEl.offsetHeight : 80) + 20;
+  const minGapY = -(window.innerHeight / 2 - cardHalfHeight - headerClearance);
+  if (gapY < minGapY) {
+    gapY = minGapY;
   }
 
   const scatter = [
@@ -1682,43 +1732,53 @@ function initOurWorkHeroScroll() {
   });
 }
 
-// ═══════════════ HEADER HIDE ON SCROLL ═══════════════
+// ═══════════════ HEADER: HIDDEN ON LOAD, SHOWS AFTER HERO ═══════════════
 (function () {
   const header = document.querySelector('.site-header');
   if (!header) return;
 
-  let lastScrollY = window.scrollY;
+  // Hero-jaisa section jo bhi page pe ho (index.html vs our-work.html)
+  const heroEl = document.querySelector('.section-hero, .our-work-banner');
+
   let ticking = false;
+
+  function heroBottom() {
+    if (!heroEl) return 0;
+    const rect = heroEl.getBoundingClientRect();
+    return rect.bottom + window.scrollY;
+  }
+
+  function update() {
+    const body = document.body;
+
+    // Menu khula ho to header ki state mat chhero
+    if (body.classList.contains('menu-open')) return;
+
+    const isPastHero = window.scrollY >= heroBottom();
+
+    if (isPastHero) {
+      // Hero cross ho gaya — header ab hamesha visible rahega
+      header.classList.remove('header-hidden');
+    } else {
+      // Hero ke andar (ya load pe) — header hamesha hidden
+      header.classList.add('header-hidden');
+    }
+  }
 
   window.addEventListener('scroll', () => {
     if (!ticking) {
       window.requestAnimationFrame(() => {
-        const currentScrollY = window.scrollY;
-        const body = document.body;
-
-        // Menu open ho to header dikhta rahe
-        if (body.classList.contains('menu-open')) {
-          ticking = false;
-          return;
-        }
-
-        // Top pe wapas aayein to hamesha dikhao
-        if (currentScrollY <= 10) {
-          header.classList.remove('header-hidden');
-        } else if (currentScrollY > lastScrollY + 5) {
-          // Niche scroll — hide
-          header.classList.add('header-hidden');
-        } else if (currentScrollY < lastScrollY - 5) {
-          // Upar scroll — show
-          header.classList.remove('header-hidden');
-        }
-
-        lastScrollY = currentScrollY;
+        update();
         ticking = false;
       });
       ticking = true;
     }
   }, { passive: true });
+
+  window.addEventListener('resize', update);
+
+  // Load ke turant baad bhi sahi state set karo (agar scroll-restore ho)
+  update();
 })();
 
 // ═══════════════ CTA CURSOR FOLLOWER BADGE ═══════════════
