@@ -3042,7 +3042,7 @@ html.lenis body {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1) !important;
 }
 
 .nav-link:hover,
@@ -3073,6 +3073,12 @@ html.lenis body {
 }
 
 @media (max-width: 1280px) {
+
+  .nav-link:hover,
+  .nav-link.active {
+    font-size: 2.8rem !important;
+  }
+
   .footer-container {
     padding-bottom: 40px;
   }
@@ -3183,38 +3189,35 @@ html.lenis body {
   transition: opacity 0.3s ease;
 }
 
-/* CSS thumb — dark mode mein hidden */
+/* CSS thumb is no longer needed since both states use full image designs */
 .toggle-thumb {
-  position: absolute;
-  top: 50%;
-  left: 4px;
-  transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: #d0d0d0;
-  opacity: 0;
-  transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-    background 0.3s ease,
-    opacity 0.3s ease;
-  pointer-events: none;
+  display: none;
 }
 
-/* Toggle ON — image hide, CSS track + red circle right pe */
-.theme-toggle.is-on .toggle-track {
-  background: #e0e0e0;
-  border: 2px solid #ccc;
-}
-
-.theme-toggle.is-on .toggle-art {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.theme-toggle.is-on .toggle-thumb {
+/* Light mode image default visibility */
+.light-art {
   opacity: 1;
-  left: 26px;
-  background: #F13715;
+}
+
+/* Dark mode image default visibility */
+.dark-art {
+  opacity: 0;
+}
+
+/* Toggle ON — hide light art, show dark art */
+.theme-toggle.is-on .toggle-track {
+  background: transparent;
+  border: none;
+}
+
+.theme-toggle.is-on .light-art {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.theme-toggle.is-on .dark-art {
+  opacity: 1;
+  pointer-events: none;
 }
 
 .menu-toggle {
@@ -3348,7 +3351,7 @@ html.lenis body {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1) !important;
 }
 
 .nav-link:hover,
@@ -3447,8 +3450,10 @@ body.light-mode .section-services {
     font-size: 16px !important;
     max-width: 600px;
   }
+
   .industries-new-title {
-    font-size: 64px; /* Slightly smaller for 1366px laptops */
+    font-size: 64px;
+    /* Slightly smaller for 1366px laptops */
   }
 }
 
