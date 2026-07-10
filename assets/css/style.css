@@ -3303,6 +3303,8 @@ html.lenis body {
   transition: opacity 0.4s ease;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+  padding-bottom: 100px;
 }
 
 .menu-overlay.active {
@@ -3331,16 +3333,16 @@ html.lenis body {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding-left: 40px;
-  padding-top: 80px;
+  padding-top: 15vh;
   /* offset for header */
 }
 
 .main-nav {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 5px;
 }
 
 .nav-link {
@@ -3352,6 +3354,9 @@ html.lenis body {
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1) !important;
+  height: 75px;
+  display: flex;
+  align-items: center;
 }
 
 .nav-link:hover,
@@ -3366,6 +3371,116 @@ html.lenis body {
 .nav-link::after,
 .nav-link:hover::after {
   display: none !important;
+}
+
+/* --- Dropdown / Accordion Styles --- */
+.nav-item-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  justify-content: space-between;
+  width: fit-content;
+  gap: 15px;
+}
+
+.chevron {
+  width: 14px;
+  height: auto;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.nav-item-dropdown.open>.dropdown-toggle>.chevron,
+.nav-item-dropdown.open>.sub-nav-link.dropdown-toggle>.chevron {
+  transform: rotate(90deg);
+}
+
+.sub-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding-left: 20px;
+  transition: max-height 0.5s ease, opacity 0.5s ease, margin 0.5s ease;
+}
+
+.nav-item-dropdown.open>.sub-nav {
+  max-height: 2500px;
+  /* increased to handle nested sub-navs */
+  opacity: 1;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.sub-nav-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #aaa;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.sub-nav-link:hover {
+  color: #F13715;
+  font-size: 1.5rem;
+}
+
+/* --- NESTED DROPDOWN STYLES --- */
+.nested-sub-nav {
+  padding-left: 25px;
+  /* indent further */
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  margin-left: 10px;
+}
+
+body.light-mode .nested-sub-nav {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nested-sub-nav-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #888;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.nested-sub-nav-link:hover {
+  color: #F13715;
+  font-size: 1.1rem;
+}
+
+body.light-mode .nested-sub-nav-link {
+  color: #555;
+}
+
+body.light-mode .nested-sub-nav-link:hover {
+  color: #F13715;
+}
+
+body.light-mode .sub-nav-link {
+  color: #666;
+}
+
+body.light-mode .sub-nav-link:hover {
+  color: #F13715;
 }
 
 .menu-footer {
@@ -3511,7 +3626,7 @@ body.light-mode .section-services {
 
   /* Menu adjustments */
   .menu-content .main-nav {
-    gap: 30px !important;
+    gap: 5px !important;
   }
 
   .menu-content .main-nav .nav-link {

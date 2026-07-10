@@ -1877,6 +1877,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // --- ACCORDION DROPDOWN LOGIC ---
+  const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+  dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      e.preventDefault(); // Prevent default anchor behavior
+      const parentDropdown = toggle.closest('.nav-item-dropdown');
+      
+      // If it's already open, just close it
+      if (parentDropdown.classList.contains('open')) {
+        parentDropdown.classList.remove('open');
+      } else {
+        // Close all other open dropdowns at the SAME level (siblings)
+        const parentContainer = parentDropdown.parentElement;
+        if (parentContainer) {
+          // Use Array.from to filter children since :scope > is sometimes tricky in older browsers
+          Array.from(parentContainer.children).forEach(child => {
+            if (child !== parentDropdown && child.classList.contains('nav-item-dropdown') && child.classList.contains('open')) {
+              child.classList.remove('open');
+            }
+          });
+        }
+        // Open the clicked one
+        parentDropdown.classList.add('open');
+      }
+    });
+  });
+
   // ═══════════════ TOGGLE BUTTON (sirf on/off visual) ═══════════════
   const themeToggleBtn = document.querySelector('.theme-toggle');
   if (themeToggleBtn) {
