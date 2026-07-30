@@ -1656,6 +1656,24 @@ function initIndustriesNewScroll() {
       updateCarousel();
     }
   });
+
+  // SVG Line Draw Animation using GSAP ScrollTrigger
+  const btmSvg = section.querySelector('.industriessvgbtm svg');
+  if (btmSvg && typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+    gsap.fromTo(btmSvg,
+      { clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)' },
+      {
+        clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+        ease: 'none',
+        scrollTrigger: {
+          trigger: '.industriessvgbtm',
+          start: 'top 85%',
+          end: 'bottom 40%',
+          scrub: true
+        }
+      }
+    );
+  }
 }
 
 /* ══════════════════════════════════════════
