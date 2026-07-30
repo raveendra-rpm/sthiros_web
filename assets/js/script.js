@@ -2118,6 +2118,41 @@ function initOurWorkPageScroll() {
    REAL STORIES SLIDER LOGIC
    ════════════════════════════════════════════ */
 function initRealStoriesSlider() {
+  const heading = document.querySelector('#realstoriesheading h1');
+  if (heading) {
+    gsap.fromTo(heading, 
+      { opacity: 0, y: 50, scale: 0.95 },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: '#realstoriesheading',
+          start: "top 80%",
+          toggleActions: "play none none reverse"
+        }
+      }
+    );
+  }
+
+  // Animate the Real Stories SVG line
+  const topSvg = document.querySelector('#realtopstoriessvg svg');
+  if (topSvg) {
+    gsap.set(topSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
+    gsap.to(topSvg, {
+      clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '#realtopstoriessvg',
+        start: 'top 80%',
+        end: 'bottom 50%',
+        scrub: true
+      }
+    });
+  }
+
   const container = document.querySelector('.stories-slider-container');
   const track = document.getElementById('storiesSliderTrack');
   const prevBtn = document.getElementById('storyPrevBtn');
@@ -2201,6 +2236,58 @@ function initRealStoriesSlider() {
 function initWorkholdSlider() {
   const section = document.getElementById('workholdslidecont');
   const track = document.getElementById('workholdCardsTrack');
+  const heading = document.querySelector('#workholdheading h1');
+  
+  if (heading) {
+    gsap.fromTo(heading, 
+      { opacity: 0, y: 50, scale: 0.95 },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: '#workholdheading',
+          start: "top 80%",
+          toggleActions: "play none none reverse"
+        }
+      }
+    );
+  }
+
+  // Animate top SVG (workholdssvg)
+  const topSvg = document.querySelector('#workholdssvg svg');
+  if (topSvg) {
+    gsap.set(topSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
+    gsap.to(topSvg, {
+      clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '#workholdssvg',
+        start: 'top 80%',
+        end: 'bottom 50%',
+        scrub: true
+      }
+    });
+  }
+
+  // Animate bottom SVG (workholdbottomsvg)
+  const bottomSvg = document.querySelector('#workholdbottomsvg svg');
+  if (bottomSvg) {
+    gsap.set(bottomSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
+    gsap.to(bottomSvg, {
+      clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '#workholdbottomsvg',
+        start: 'top 80%',
+        end: 'bottom 20%',
+        scrub: true
+      }
+    });
+  }
+
   if (!section || !track) return;
 
   const slides = track.querySelectorAll('.workhold-card');
@@ -2209,40 +2296,27 @@ function initWorkholdSlider() {
 
   let lastIndex = -1;
 
-  function updateScrollSlider() {
-    const rect = section.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
+  ScrollTrigger.create({
+    trigger: section,
+    start: "top top",
+    end: "bottom bottom",
+    scrub: true,
+    onUpdate: (self) => {
+      let progress = Math.max(0, Math.min(0.9999, self.progress));
+      const slideIndex = Math.floor(progress * totalSlides);
 
-    // The scrollable distance of the section in viewport
-    const totalDistance = section.offsetHeight - windowHeight;
-    if (totalDistance <= 0) return;
-
-    // When rect.top <= 0 (or near top), the wrapper pins and sliding starts
-    let progress = -rect.top / totalDistance;
-    progress = Math.max(0, Math.min(0.9999, progress));
-
-    // Determine active card index (0 to totalSlides - 1)
-    const slideIndex = Math.floor(progress * totalSlides);
-
-    if (slideIndex !== lastIndex) {
-      lastIndex = slideIndex;
-
-      // Translate track vertically to show current slide in the single container
-      track.style.transform = `translate3d(0, -${slideIndex * 100}%, 0)`;
-
-      // Toggle active animation classes
-      slides.forEach((slide, idx) => {
-        if (idx === slideIndex) {
-          slide.classList.add('active');
-        } else {
-          slide.classList.remove('active');
-        }
-      });
+      if (slideIndex !== lastIndex) {
+        lastIndex = slideIndex;
+        track.style.transform = `translate3d(0, -${slideIndex * 100}%, 0)`;
+        
+        slides.forEach((slide, idx) => {
+          if (idx === slideIndex) {
+            slide.classList.add('active');
+          } else {
+            slide.classList.remove('active');
+          }
+        });
+      }
     }
-  }
-
-  window.addEventListener('scroll', updateScrollSlider, { passive: true });
-  window.addEventListener('resize', updateScrollSlider);
-  window.addEventListener('load', updateScrollSlider);
-  setTimeout(updateScrollSlider, 100);
+  });
 }
