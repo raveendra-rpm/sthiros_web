@@ -1396,7 +1396,7 @@ html.lenis body {
 
 .cyber-sub {
   color: #fff;
-  max-width: 235px;
+  max-width: 380px;
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   line-height: 1.6;
@@ -1487,7 +1487,7 @@ html.lenis body {
 
 #realstoriesheading h1 {
   font-family: 'Pacaembu', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: clamp(40px, 6vw, 80px);
   line-height: 1.15;
   color: #fff;
@@ -1540,7 +1540,7 @@ html.lenis body {
   align-items: center;
   justify-content: space-between;
   padding: 60px 70px;
-  gap: 60px;
+  gap: 30px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 30px rgba(239, 70, 35, 0.12);
   min-height: 380px;
   position: relative;
@@ -1796,7 +1796,7 @@ html.lenis body {
   font-family: 'Pacaembu', sans-serif;
   font-size: clamp(40px, 7vw, 90px);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: clamp(48px, 7.8vw, 100px);
   color: #fff;
   margin: 0;
@@ -3907,6 +3907,36 @@ html.lenis body {
   }
 }
 
+@media (max-width: 1440px) {
+  .industries-carousel-stage {
+    height: 350px;
+  }
+
+  .industries-header-wrapper {
+    margin-bottom: 100px;
+  }
+
+  .card-inner {
+    height: 150%;
+    width: 110%;
+  }
+}
+
+@media (max-width: 1366px) {
+  .industries-carousel-stage {
+    height: 320px;
+  }
+
+  .industries-header-wrapper {
+    margin-bottom: 130px;
+  }
+
+  .card-inner {
+    height: 150%;
+    width: 110%;
+  }
+}
+
 /* ═══════════════ SITE HEADER ═══════════════ */
 .site-header {
   position: fixed;
@@ -4823,6 +4853,18 @@ body.light-mode .section-services {
   }
 }
 
+@media (max-width: 1920px) {
+  .hero-inner {
+    height: 90vh;
+  }
+}
+
+@media (max-width: 1440px) {
+  .hero-inner {
+    height: 100vh;
+  }
+}
+
 /* 1366px screens: Principle section image and heading adjustments */
 @media screen and (max-width: 1366px) {
   .section-hero {
@@ -4861,5 +4903,19 @@ body.light-mode .section-services {
 
   .story-title {
     white-space: normal !important;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .risk-sub,
+  .cyber-sub,
+  .ai-sub {
+    max-width: 750px !important;
+  }
+
+  .section-why {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
 }
