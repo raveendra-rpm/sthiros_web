@@ -9,6 +9,8 @@ function boot() {
   initHeroSvgTrackScroll();
   initHeroLinesScroll();
   initServicesSvgTrackScroll();
+  initServicesPageHeroScroll();
+  initConversationSvgScroll();
   initLetterform();
   initStrategyLineSync();
   initScrollAnimations();
@@ -20,6 +22,8 @@ function boot() {
   initTrustedIndustriesScroll();
   initOurWorkHeroScroll();
   initOurWorkPageScroll();
+  initRealStoriesSlider();
+  initWorkholdSlider();
 }
 
 let appBooted = false;
@@ -1453,230 +1457,205 @@ function initWebGLBackground() {
 }
 
 /* ══════════════════════════════════════════
-   INDUSTRIES NEW SECTION SCROLL ANIMATION
+   INDUSTRIES NEW SECTION (3D COVERFLOW CAROUSEL)
 ══════════════════════════════════════════ */
 function initIndustriesNewScroll() {
   const section = document.querySelector('.section-industries-new');
-  const titleContainer = document.querySelector('.industries-new-container');
-  const title = document.querySelector('.industries-new-title');
-  if (!section || !title) return;
+  const cards = document.querySelectorAll('.industries-cards-track .expert-card');
+  const dots = document.querySelectorAll('.industries-pagination .carousel-dot');
+  const prevBtn = document.querySelector('.industries-pagination .prev-btn');
+  const nextBtn = document.querySelector('.industries-pagination .next-btn');
 
-  const childNodes = Array.from(title.childNodes);
-  title.innerHTML = '';
-  const spans = [];
+  if (!section) return;
 
-  childNodes.forEach(node => {
-    if (node.nodeType === 3) { // Text node
-      const words = node.textContent.split(/(\s+)/);
-      words.forEach(word => {
-        if (word.trim().length > 0) {
-          const span = document.createElement('span');
-          span.textContent = word;
-          span.style.opacity = '0.2';
-          span.style.display = 'inline-block';
-          title.appendChild(span);
-          spans.push(span);
-        } else if (word.length > 0) {
-          title.appendChild(document.createTextNode(word));
+  // Restore original word-by-word scroll highlighting exclusively for the heading text
+  const title = section.querySelector('.industries-new-title');
+  if (title) {
+    const childNodes = Array.from(title.childNodes);
+    title.innerHTML = '';
+    const spans = [];
+
+    childNodes.forEach(node => {
+      if (node.nodeType === 3) { // Text node
+        const words = node.textContent.split(/(\s+)/);
+        words.forEach(word => {
+          if (word.trim().length > 0) {
+            const span = document.createElement('span');
+            span.textContent = word;
+            span.style.opacity = '0.2';
+            span.style.display = 'inline-block';
+            title.appendChild(span);
+            spans.push(span);
+          } else if (word.length > 0) {
+            title.appendChild(document.createTextNode(word));
+          }
+        });
+      } else if (node.nodeName === 'BR') {
+        title.appendChild(node);
+      } else if (node.nodeType === 1) { // Element node (span.text-red)
+        const innerText = node.textContent;
+        const spanWrapper = document.createElement('span');
+        spanWrapper.className = node.className;
+        spanWrapper.style.opacity = '0.2';
+        spanWrapper.style.display = 'inline-block';
+        spanWrapper.textContent = innerText;
+        title.appendChild(spanWrapper);
+        spans.push(spanWrapper);
+      }
+    });
+
+    if (spans.length && typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+      gsap.fromTo(spans, {
+        opacity: 0.2,
+        y: 20
+      }, {
+        opacity: 1,
+        y: 0,
+        stagger: 0.1,
+        ease: 'power1.out',
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 80%',
+          end: 'top 25%',
+          scrub: 1.2
         }
       });
-    } else if (node.nodeName === 'BR') {
-      title.appendChild(node);
-    } else if (node.nodeType === 1) { // Element node (span.text-red)
-      const innerText = node.textContent;
-      const spanWrapper = document.createElement('span');
-      spanWrapper.className = node.className;
-      spanWrapper.style.opacity = '0.2';
-      spanWrapper.style.display = 'inline-block';
-      spanWrapper.textContent = innerText;
-      title.appendChild(spanWrapper);
-      spans.push(spanWrapper);
+    }
+  }
+
+  if (!cards.length) return;
+
+  let activeIndex = 5; // Start on BFSI & Fintech as center active card
+  const totalCards = cards.length;
+
+  function updateCarousel() {
+    const isMobile = window.innerWidth <= 768;
+    const isLaptop = window.innerWidth <= 1400 && !isMobile;
+    
+    const stepX = isMobile ? 155 : isLaptop ? 200 : 240;
+    const stepZ = isMobile ? -50 : -65;
+
+    cards.forEach((card, i) => {
+      let offset = i - activeIndex;
+
+      // Direct linear offset positioning in Coverflow style
+      if (offset === 0) {
+        // Active center card
+        card.style.transform = 'translate3d(0px, 0px, 0px) scale(1)';
+        card.style.opacity = '1';
+        card.style.zIndex = '20';
+        card.style.filter = 'brightness(1) blur(0px)';
+        card.style.pointerEvents = 'auto';
+        card.classList.add('active');
+      } else if (offset === -1 || offset === 1) {
+        // First adjacent cards
+        const xPos = offset * stepX;
+        card.style.transform = `translate3d(${xPos}px, 0px, ${stepZ}px) scale(0.88)`;
+        card.style.opacity = '0.85';
+        card.style.zIndex = '15';
+        card.style.filter = 'brightness(0.65)';
+        card.style.pointerEvents = 'auto';
+        card.classList.remove('active');
+      } else if (offset === -2 || offset === 2) {
+        // Second adjacent cards
+        const xPos = (offset > 0 ? 1.8 : -1.8) * stepX;
+        card.style.transform = `translate3d(${xPos}px, 0px, ${stepZ * 2.2}px) scale(0.75)`;
+        card.style.opacity = '0.5';
+        card.style.zIndex = '10';
+        card.style.filter = 'brightness(0.35)';
+        card.style.pointerEvents = 'auto';
+        card.classList.remove('active');
+      } else {
+        // Hidden cards outside view
+        const xPos = (offset > 0 ? 2.6 : -2.6) * stepX;
+        card.style.transform = `translate3d(${xPos}px, 0px, ${stepZ * 3.5}px) scale(0.6)`;
+        card.style.opacity = '0';
+        card.style.zIndex = '1';
+        card.style.filter = 'brightness(0)';
+        card.style.pointerEvents = 'none';
+        card.classList.remove('active');
+      }
+
+      // Ensure rotated inner cards reset when navigating away from them
+      if (offset !== 0) {
+        const inner = card.querySelector('.card-inner');
+        if (inner && inner.style.transform === 'rotateY(180deg)') {
+          inner.style.transform = '';
+        }
+      }
+    });
+
+    // Update pagination dots if they exist
+    dots.forEach((dot, i) => {
+      if (i === activeIndex) {
+        dot.classList.add('active');
+      } else {
+        dot.classList.remove('active');
+      }
+    });
+  }
+
+  // Initialize layout
+  updateCarousel();
+
+  // Re-calculate spacing on window resize
+  window.addEventListener('resize', () => {
+    updateCarousel();
+  });
+
+  // Next & Previous navigation buttons
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      activeIndex = (activeIndex + 1) % totalCards;
+      updateCarousel();
+    });
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      activeIndex = (activeIndex - 1 + totalCards) % totalCards;
+      updateCarousel();
+    });
+  }
+
+  // Dot navigation clicks
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      activeIndex = index;
+      updateCarousel();
+    });
+  });
+
+  // Card clicks (clicking a side card makes it active center card)
+  cards.forEach((card, index) => {
+    card.addEventListener('click', (e) => {
+      if (index !== activeIndex) {
+        activeIndex = index;
+        updateCarousel();
+      } else if (window.innerWidth <= 768) {
+        // Support touch click to flip on mobile devices
+        const inner = card.querySelector('.card-inner');
+        if (inner) {
+          inner.style.transform = inner.style.transform === 'rotateY(180deg)' ? '' : 'rotateY(180deg)';
+        }
+      }
+    });
+  });
+
+  // Keyboard left/right arrows navigation when in viewport
+  window.addEventListener('keydown', (e) => {
+    const rect = section.getBoundingClientRect();
+    const isInView = rect.top < window.innerHeight && rect.bottom > 0;
+    if (!isInView || document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') return;
+    
+    if (e.key === 'ArrowRight') {
+      activeIndex = (activeIndex + 1) % totalCards;
+      updateCarousel();
+    } else if (e.key === 'ArrowLeft') {
+      activeIndex = (activeIndex - 1 + totalCards) % totalCards;
+      updateCarousel();
     }
   });
-
-  const cards = gsap.utils.toArray('.expert-card');
-  const cardInners = gsap.utils.toArray('.card-inner');
-
-  // Scatter positions dynamically based on screen width
-  let gapX = 360;
-  let gapXBottom = 180;
-  let gapY = -190;
-  let gapYBottom = 190;
-  let cardHalfHeight = 170; // half of .expert-card's default 340px height
-
-  // Reduce gap for 1440px / 1366px / 1024px screens (matches the shorter
-  // .expert-card used at max-width: 1450px in style.css)
-  if (window.innerWidth <= 1450) {
-    gapX = 320;
-    gapXBottom = 160;
-    gapY = -160;
-    gapYBottom = 160;
-    cardHalfHeight = 140; // half of .expert-card's 280px height at this breakpoint
-  }
-
-  // 1366px-class screens use an even smaller card (see style.css) with
-  // tighter text, so it needs its own, smaller scatter offsets.
-  if (window.innerWidth <= 1400) {
-    gapX = 260;
-    gapXBottom = 130;
-    gapY = -140;
-    gapYBottom = 140;
-    cardHalfHeight = 110; // half of .expert-card's 220px height at this breakpoint
-  }
-
-  // On shorter viewports (1440px/1366px laptop screens etc.) the top row can land
-  // underneath the fixed site header once it's revealed — clamp gapY so the top
-  // edge of the top row always clears the header. Measures the header's real
-  // height so it stays correct if that height changes per breakpoint.
-  const headerEl = document.querySelector('.site-header');
-  const headerClearance = (headerEl ? headerEl.offsetHeight : 80) + 20;
-  const minGapY = -(window.innerHeight / 2 - cardHalfHeight - headerClearance);
-  if (gapY < minGapY) {
-    gapY = minGapY;
-  }
-
-  const scatter = [
-    [-gapX, gapY], [0, gapY], [gapX, gapY], [-gapXBottom, gapYBottom], [gapXBottom, gapYBottom], // Set 1
-    [-gapX, gapY], [0, gapY], [gapX, gapY], [-gapXBottom, gapYBottom], [gapXBottom, gapYBottom]  // Set 2
-  ];
-
-  // Initial State for Cards
-  gsap.set(cards, {
-    y: window.innerHeight + 300,
-    x: 0,
-    rotation: 0
-  });
-
-  const verticalLines = document.querySelector('.center-vertical-lines');
-  if (verticalLines) {
-    gsap.set(verticalLines, { clipPath: 'inset(0% 0% 100% 0%)', opacity: 1 });
-  }
-
-  // Master Pinning Timeline
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: section,
-      start: 'top top',
-      end: '+=500%', // Reduced scroll area to bring next section faster
-      scrub: 1.2,
-      pin: true,
-      anticipatePin: 1
-    }
-  });
-
-  // 1. Text Highlight
-  tl.fromTo(spans, {
-    opacity: 0.2,
-    y: 20
-  }, {
-    opacity: 1,
-    y: 0,
-    stagger: 0.1,
-    ease: 'power1.out',
-    duration: 1.5
-  });
-
-  // 2. Text Hides (moves up and fades out)
-  tl.to(titleContainer, {
-    y: -300,
-    opacity: 0,
-    ease: 'power2.in',
-    duration: 1.5
-  }, '+=0.2');
-
-  // 3. Swap z-index right before cards come up so first 5 are in front
-  tl.set(cards.slice(0, 5), { zIndex: 10 });
-  tl.set(cards.slice(5, 10), { zIndex: 1 });
-
-  // 4. First 5 Cards slide up to the center one by one
-  tl.to(cards.slice(0, 5), {
-    y: 0,
-    ease: 'power3.out',
-    stagger: 0.4,
-    duration: 1.5
-  }, '+=0.2');
-
-  // 5. First 5 Cards Scatter (remaining 5 stay in the center deck)
-  tl.to(cards.slice(0, 5), {
-    x: (i) => scatter[i][0],
-    y: (i) => scatter[i][1],
-    rotation: 0,
-    stagger: 0.2,
-    ease: 'power2.inOut',
-    duration: 1.5
-  }, '+=0.2');
-
-  // 5. First 5 Cards Flip (fast overlapping flip)
-  tl.to(cardInners.slice(0, 5), {
-    rotateY: 180,
-    ease: 'power2.inOut',
-    stagger: 0.2,
-    duration: 0.6
-  }, '+=0.1');
-
-  // 6. Move up and wash out first 5 smoothly: Top -> Bottom
-  tl.addLabel('firstWashStart', '+=0.5');
-
-  tl.to([cards[0], cards[1], cards[2]], {
-    y: (i, el) => scatter[cards.indexOf(el)][1] - window.innerHeight - 300,
-    opacity: 0,
-    ease: 'none',
-    stagger: 0.15,
-    duration: 2.5
-  }, 'firstWashStart');
-
-  tl.to([cards[3], cards[4]], {
-    y: (i, el) => scatter[cards.indexOf(el)][1] - window.innerHeight - 300,
-    opacity: 0,
-    ease: 'none',
-    stagger: 0.15,
-    duration: 2.5
-  }, 'firstWashStart+=1.0');
-
-  // 7. Second 5 Cards rise up from below the fold right as the bottom pair
-  // of the first 5 starts washing out, so they cross paths and are already
-  // arriving by the time the bottom pair clears — no dead gap.
-  tl.to(cards.slice(5, 10), {
-    x: (i) => scatter[i + 5][0],
-    y: (i) => scatter[i + 5][1],
-    ease: 'power2.inOut',
-    stagger: 0.2,
-    duration: 1.5
-  }, 'firstWashStart+=1.0');
-
-  // 8. Second 5 Cards Flip (fast overlapping flip)
-  tl.to(cardInners.slice(5, 10), {
-    rotateY: 180,
-    ease: 'power2.inOut',
-    stagger: 0.2,
-    duration: 0.6
-  }, '+=0.1');
-
-  // 9. Move up and wash out second 5 smoothly: Top -> Bottom
-  tl.to([cards[5], cards[6], cards[7]], {
-    y: (i, el) => scatter[cards.indexOf(el)][1] - window.innerHeight - 300,
-    opacity: 0,
-    ease: 'none',
-    stagger: 0.15,
-    duration: 2.5
-  }, '+=0.1');
-
-  tl.to([cards[8], cards[9]], {
-    y: (i, el) => scatter[cards.indexOf(el)][1] - window.innerHeight - 300,
-    opacity: 0,
-    ease: 'none',
-    stagger: 0.15,
-    duration: 2.5
-  }, '-=1.5');
-
-  // 10. Animate the SVG lines visible when bottom cards move up
-  if (verticalLines) {
-    tl.to(verticalLines, {
-      clipPath: 'inset(0% 0% 0% 0%)',
-      ease: 'none',
-      duration: 1.5
-    }, '<');
-  }
 }
 
 /* ══════════════════════════════════════════
@@ -1737,8 +1716,8 @@ function initOurWorkHeroScroll() {
   const header = document.querySelector('.site-header');
   if (!header) return;
 
-  // Hero-jaisa section jo bhi page pe ho (index.html vs our-work.html)
-  const heroEl = document.querySelector('.section-hero, .our-work-banner');
+  // Hero-jaisa section jo bhi page pe ho (index.html vs our-work.html vs services.html)
+  const heroEl = document.querySelector('.section-hero, .our-work-banner, .services-hero');
 
   let ticking = false;
 
@@ -1854,6 +1833,102 @@ function initOurWorkHeroScroll() {
 
 // ═══════════════ MENU OVERLAY LOGIC ═══════════════
 
+function initServicesPageHeroScroll() {
+  const heroSection = document.getElementById('services_banner');
+  const svgContainer = document.getElementById('servicesherosvg');
+  const svgPaths = document.querySelectorAll('#servicesherosvg path');
+  
+  if (!heroSection || !svgContainer) return;
+
+  const svgElement = svgContainer.querySelector('svg');
+  const strokedPaths = Array.from(svgPaths).filter(p => p.hasAttribute('stroke'));
+
+  // Reset any dash offset to normal, so the paths are fully "drawn" statically
+  strokedPaths.forEach(path => {
+    gsap.set(path, {
+      strokeDashoffset: 0,
+      visibility: 'visible'
+    });
+  });
+
+  // Initially hide the svg using clip-path (left 0%, right 0%)
+  // We apply this to the SVG element, not the container, to avoid breaking the container's CSS mask-image
+  gsap.set(svgElement, {
+    clipPath: 'polygon(0% 0%, 0% 0%, 0% 60%, 0% 60%)'
+  });
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: heroSection,
+      start: 'top top',
+      end: '+=150%', // Pin for 150% of viewport height to draw the lines
+      scrub: 1,
+      pin: true,
+      anticipatePin: 1
+    }
+  });
+
+  // Step 1: Animate horizontally left to right (revealing the horizontal lines)
+  tl.to(svgElement, {
+    clipPath: 'polygon(0% 0%, 100% 0%, 100% 60%, 0% 60%)',
+    ease: 'none',
+    duration: 1.5
+  });
+
+  // Step 2: Animate vertically top to bottom (revealing the downward curve into the fade out)
+  tl.to(svgElement, {
+    clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+    ease: 'none',
+    duration: 1
+  });
+}
+
+// ----------------------------------------------------------------------
+// sthirosconversationsec SVG Animations
+// ----------------------------------------------------------------------
+function initConversationSvgScroll() {
+  const convSection = document.getElementById('sthirosconversationsec');
+  if (!convSection) return;
+
+  const topSvgContainer = convSection.querySelector('.conversationsvgsec');
+  const bottomSvgContainer = convSection.querySelector('.conversationbottomsvg');
+  
+  const topSvgElement = topSvgContainer ? topSvgContainer.querySelector('svg') : null;
+  const bottomSvgElement = bottomSvgContainer ? bottomSvgContainer.querySelector('svg') : null;
+
+  if (topSvgElement) {
+    gsap.set(topSvgElement, { clipPath: 'polygon(0% 0%, 12% 0%, 12% 0%, 0% 0%)' });
+  }
+  if (bottomSvgElement) {
+    gsap.set(bottomSvgElement, { clipPath: 'polygon(90% 0%, 100% 0%, 100% 0%, 90% 0%)' });
+  }
+
+  // Use a single timeline bound to the entire section so the animations chain perfectly
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: convSection,
+      start: 'top 60%', 
+      end: 'bottom 10%', 
+      scrub: 1
+    }
+  });
+
+  if (topSvgElement) {
+    // The new SVG starts at Left (X=0) -> Right -> Right Down
+    tl.to(topSvgElement, { clipPath: 'polygon(0% 0%, 12% 0%, 12% 37%, 0% 37%)', ease: 'none', duration: 1 })
+      .to(topSvgElement, { clipPath: 'polygon(0% 0%, 12% 0%, 12% 60%, 0% 60%)', ease: 'none', duration: 0.2 })
+      .to(topSvgElement, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 60%, 0% 60%)', ease: 'none', duration: 2 })
+      .to(topSvgElement, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: 'none', duration: 0.8 });
+  }
+
+  if (bottomSvgElement) {
+    // Starts exactly after top SVG finishes
+    tl.to(bottomSvgElement, { clipPath: 'polygon(90% 0%, 100% 0%, 100% 100%, 90% 100%)', ease: 'none', duration: 1 })
+      .to(bottomSvgElement, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: 'none', duration: 2 });
+  }
+}
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.querySelector('.menu-toggle');
   const menuOverlay = document.getElementById('menuOverlay');
@@ -1883,7 +1958,7 @@ document.addEventListener('DOMContentLoaded', () => {
     toggle.addEventListener('click', (e) => {
       e.preventDefault(); // Prevent default anchor behavior
       const parentDropdown = toggle.closest('.nav-item-dropdown');
-      
+
       // If it's already open, just close it
       if (parentDropdown.classList.contains('open')) {
         parentDropdown.classList.remove('open');
@@ -2037,4 +2112,137 @@ function initOurWorkPageScroll() {
       }
     });
   }
+}
+
+/* ════════════════════════════════════════════
+   REAL STORIES SLIDER LOGIC
+   ════════════════════════════════════════════ */
+function initRealStoriesSlider() {
+  const container = document.querySelector('.stories-slider-container');
+  const track = document.getElementById('storiesSliderTrack');
+  const prevBtn = document.getElementById('storyPrevBtn');
+  const nextBtn = document.getElementById('storyNextBtn');
+
+  if (!container || !track || !prevBtn || !nextBtn) return;
+
+  const slides = Array.from(track.querySelectorAll('.story-card'));
+  if (slides.length === 0) return;
+
+  let currentIndex = 0;
+  const totalSlides = slides.length;
+
+  function updateSlider() {
+    const activeSlide = slides[currentIndex];
+    if (!activeSlide) return;
+
+    slides.forEach((slide, index) => {
+      if (index === currentIndex) {
+        slide.classList.add('active');
+      } else {
+        slide.classList.remove('active');
+      }
+    });
+
+    const containerWidth = container.clientWidth || window.innerWidth;
+    const cardLeft = activeSlide.offsetLeft;
+    const cardWidth = activeSlide.offsetWidth;
+    // Calculate translate offset so active card's center aligns with viewport/container center
+    const offset = (containerWidth / 2) - (cardLeft + cardWidth / 2);
+
+    track.style.transform = `translate3d(${offset}px, 0, 0)`;
+  }
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateSlider();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateSlider();
+  });
+
+  window.addEventListener('resize', updateSlider);
+  // Guarantee proper alignment after DOM layout calculations
+  requestAnimationFrame(updateSlider);
+  setTimeout(updateSlider, 100);
+  setTimeout(updateSlider, 500);
+
+  // Support touch swipe gestures on devices
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  track.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+
+  track.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleGesture();
+  }, { passive: true });
+
+  function handleGesture() {
+    const threshold = 50;
+    if (touchEndX < touchStartX - threshold) {
+      // Swipe left -> next slide
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlider();
+    } else if (touchEndX > touchStartX + threshold) {
+      // Swipe right -> prev slide
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateSlider();
+    }
+  }
+}
+
+/* ════════════════════════════════════════════
+   WORK HOLDS VERTICAL SLIDING ON SCROLL (SINGLE CONTAINER)
+   ════════════════════════════════════════════ */
+function initWorkholdSlider() {
+  const section = document.getElementById('workholdslidecont');
+  const track = document.getElementById('workholdCardsTrack');
+  if (!section || !track) return;
+
+  const slides = track.querySelectorAll('.workhold-card');
+  const totalSlides = slides.length;
+  if (totalSlides === 0) return;
+
+  let lastIndex = -1;
+
+  function updateScrollSlider() {
+    const rect = section.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    // The scrollable distance of the section in viewport
+    const totalDistance = section.offsetHeight - windowHeight;
+    if (totalDistance <= 0) return;
+
+    // When rect.top <= 0 (or near top), the wrapper pins and sliding starts
+    let progress = -rect.top / totalDistance;
+    progress = Math.max(0, Math.min(0.9999, progress));
+
+    // Determine active card index (0 to totalSlides - 1)
+    const slideIndex = Math.floor(progress * totalSlides);
+
+    if (slideIndex !== lastIndex) {
+      lastIndex = slideIndex;
+
+      // Translate track vertically to show current slide in the single container
+      track.style.transform = `translate3d(0, -${slideIndex * 100}%, 0)`;
+
+      // Toggle active animation classes
+      slides.forEach((slide, idx) => {
+        if (idx === slideIndex) {
+          slide.classList.add('active');
+        } else {
+          slide.classList.remove('active');
+        }
+      });
+    }
+  }
+
+  window.addEventListener('scroll', updateScrollSlider, { passive: true });
+  window.addEventListener('resize', updateScrollSlider);
+  window.addEventListener('load', updateScrollSlider);
+  setTimeout(updateScrollSlider, 100);
 }

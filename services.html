@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sthiros — Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Quicksand:wght@400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css?v=6" />
+    <style>
+        .services-hero {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 max(40px, calc((100vw - var(--max-w, 1440px)) / 2));
+            background-color: #0d0101;
+            /* Allow SVG to overflow into the next section if needed */
+            overflow: visible;
+            box-sizing: border-box;
+        }
+
+        #servicesherosvg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: auto;
+            z-index: 3;
+            pointer-events: none;
+            overflow: visible;
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 90%);
+            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 90%);
+        }
+
+        #servicesherosvg svg {
+            width: 100%;
+            height: auto;
+            display: block;
+            overflow: visible;
+        }
+
+        #servicesherosvg path[stroke] {
+            visibility: hidden;
+        }
+
+        .services-hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('assets/images/servicespage/servicebanner.jpg') no-repeat right center;
+            background-size: cover;
+            z-index: 0;
+        }
+
+        .services-hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(15, 2, 2, 0.95) 0%, rgba(15, 2, 2, 0.85) 36%, rgba(15, 2, 2, 0) 65%);
+            z-index: 1;
+        }
+
+        .services-hero-bottom-gradient {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(to top, rgba(13, 1, 1, 1) 0%, rgba(13, 1, 1, 0) 100%);
+            z-index: 1;
+        }
+
+        .services-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 650px;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .services-hero-title {
+            font-size: 4.5rem;
+            font-weight: 600;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            letter-spacing: -0.02em;
+        }
+
+        .services-hero-desc {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            font-weight: 300;
+            color: #d4d4d4;
+            max-width: 500px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .services-hero {
+                padding: 100px max(20px, calc((100vw - var(--max-w, 1440px)) / 2));
+                min-height: 70vh;
+            }
+
+            .services-hero-title {
+                font-size: 3rem;
+            }
+
+            .services-hero-desc {
+                font-size: 1rem;
+            }
+
+            .services-hero-bg {
+                background-position: center center;
+            }
+
+            .services-hero-overlay {
+                background: linear-gradient(to bottom, rgba(15, 2, 2, 0.95) 0%, rgba(15, 2, 2, 0.8) 50%, rgba(15, 2, 2, 0) 100%);
+            }
+        }
+
+        /* ---------------------------------
+           SERVICES SECTION STYLES
+           --------------------------------- */
+        #sthirosconversationsec {
+            position: relative;
+            width: 100%;
+            background-color: #000;
+            /* additional layout can be applied if needed */
+        }
+
+        .conversationsvgsec {
+            position: relative;
+            margin-left: 50%;
+            margin-right: max(40px, calc((100vw - var(--max-w, 1440px)) / 2));
+            height: auto;
+            pointer-events: none;
+            overflow: visible;
+            z-index: 3;
+        }
+
+        .conversationsvgsec svg {
+            width: 100%;
+            height: auto;
+            display: block;
+            overflow: visible;
+        }
+
+        .conversationbottomsvg {
+            position: relative;
+            width: 100%;
+            height: auto;
+            padding: 0 max(40px, calc((100vw - var(--max-w, 1440px)) / 2));
+            box-sizing: border-box;
+            pointer-events: none;
+            overflow: visible;
+            z-index: 3;
+            -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 85%);
+            mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 85%);
+        }
+
+        .conversationbottomsvg svg {
+            width: 100%;
+            height: auto;
+            display: block;
+            overflow: visible;
+        }
+
+        .conversationcontsec {
+            position: absolute;
+            bottom: 8%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 2 * max(40px, calc((100vw - var(--max-w, 1440px)) / 2)));
+            max-width: 1300px;
+            background: url('assets/images/servicespage/conveconsecdiv.jpg') no-repeat center center;
+            background-size: cover;
+            border-radius: 20px;
+            border: 1px solid rgba(236, 45, 38, 0.4);
+            padding: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+            box-sizing: border-box;
+        }
+
+        .conv-left-col {
+            flex: 1;
+            padding-right: 40px;
+        }
+
+        .conv-left-col h2 {
+            font-size: 4.5rem;
+            font-weight: 300;
+            line-height: 1.1;
+            margin: 0 0 20px 0;
+            color: #fff;
+        }
+
+        .conv-left-col p {
+            font-size: 1.1rem;
+            color: #d4d4d4;
+            line-height: 1.6;
+            margin: 0;
+            max-width: 600px;
+        }
+
+        .conv-right-col {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .conv-btn {
+            display: inline-flex;
+            padding: 7px 8px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            border: 1px solid #EF4623;
+            text-decoration: none;
+            color: #d4d4d4;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .conv-btn:hover {
+            background-color: rgba(239, 70, 35, 0.1);
+            color: #fff;
+        }
+
+        .conv-btn-inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 350px;
+            height: 55px;
+            transform: rotate(-0.146deg);
+            border-radius: 163px;
+            border: 5px solid #EF4623;
+            white-space: nowrap;
+        }
+
+        .conv-btn.large .conv-btn-inner {
+            width: 397px;
+        }
+
+        #sthservicessec {
+            position: relative;
+            width: 100%;
+            padding: 80px max(40px, calc((100vw - var(--max-w, 1440px)) / 2));
+            /* background-color: #000; */
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+        }
+
+        .services-split-layout {
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: flex;
+        }
+
+        .services-left-col {
+            flex: 0 0 28%;
+        }
+
+        .services-description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #d4d4d4;
+            font-weight: 300;
+            margin: 0;
+        }
+
+        .services-right-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .services-tabs {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            margin-bottom: 60px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .services-tab {
+            color: #555;
+            font-size: 2.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+            flex: 1;
+            position: relative;
+            padding-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .services-tab:hover {
+            color: #888;
+        }
+
+        .services-tab.active {
+            color: #EC2D26;
+        }
+
+        .services-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            /* overlap border-bottom */
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #EC2D26;
+            box-shadow: 0 0 10px #EC2D26, 0 0 20px #EC2D26;
+        }
+
+        .services-cards-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .service-card {
+            flex: 1;
+            min-width: 180px;
+            background: linear-gradient(to bottom, #110202 0%, #1e0505 100%);
+            border: 1px solid rgba(236, 45, 38, 0.4);
+            border-radius: 16px;
+            position: relative;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            overflow: hidden;
+            min-height: 450px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .service-card.active {
+            flex: 2;
+            min-width: 300px;
+            background-color: #EC2D26;
+            background-image: none;
+            border: none;
+            padding: 40px;
+        }
+
+        /* Icons and Images */
+        .service-arrow {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            width: 30px;
+            height: 30px;
+            z-index: 3;
+            transition: opacity 0.4s ease;
+        }
+
+        .service-arrow.white-arrow {
+            opacity: 0;
+        }
+
+        .service-card.active .service-arrow.white-arrow {
+            opacity: 1;
+        }
+
+        .service-card.active .service-arrow.red-arrow {
+            opacity: 0;
+        }
+
+        .service-bg-logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20rem;
+            height: auto;
+            object-fit: contain;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .service-card.active .service-bg-logo {
+            opacity: 1;
+        }
+
+        /* Typography */
+        .service-card .service-title {
+            color: #d4d4d4;
+            font-size: 1.1rem;
+            font-weight: 400;
+            position: relative;
+            z-index: 2;
+            margin: 0;
+            line-height: 1.4;
+            transition: all 0.4s ease;
+        }
+
+        .service-card.active .service-title {
+            color: #fff;
+            font-size: 2.2rem;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        /* Responsive adjustments for large screens */
+        @media (max-width: 1440px) {
+            .services-hero-title {
+                font-size: 3.8rem;
+            }
+
+            .services-hero-desc {
+                font-size: 1.05rem;
+            }
+
+            .conv-left-col h2 {
+                font-size: 3.8rem;
+            }
+
+            .conv-btn-inner,
+            .conv-btn.large .conv-btn-inner {
+                width: 320px;
+                height: 50px;
+            }
+
+            .services-tab {
+                font-size: 2.2rem;
+            }
+
+            .service-card {
+                min-height: 400px;
+                padding: 25px 15px;
+            }
+
+            .service-card.active {
+                padding: 30px;
+            }
+
+            .service-card.active .service-title {
+                font-size: 1.8rem;
+            }
+
+            #sthservicessec {
+                padding-top: 70px;
+                padding-bottom: 70px;
+            }
+
+            .conversationcontsec {
+                padding: 60px;
+                max-width: 1100px;
+            }
+        }
+
+        @media (max-width: 1366px) {
+            .services-hero-title {
+                font-size: 3.5rem;
+            }
+
+            .conv-left-col h2 {
+                font-size: 3.5rem;
+            }
+
+            .conv-btn-inner,
+            .conv-btn.large .conv-btn-inner {
+                width: 300px;
+                height: 48px;
+            }
+
+            .services-tab {
+                font-size: 2rem;
+            }
+
+            .service-card {
+                min-height: 380px;
+            }
+
+            .conversationcontsec {
+                padding: 50px;
+                max-width: 1000px;
+            }
+        }
+
+        @media (max-width: 1280px) {
+            .services-hero-title {
+                font-size: 3.2rem;
+            }
+
+            .services-hero-desc {
+                font-size: 1rem;
+                max-width: 450px;
+            }
+
+            .conv-left-col h2 {
+                font-size: 3.2rem;
+                margin-bottom: 15px;
+            }
+
+            .conv-btn-inner,
+            .conv-btn.large .conv-btn-inner {
+                width: 260px;
+                height: 45px;
+                font-size: 0.85rem;
+            }
+
+            .services-tab {
+                font-size: 1.8rem;
+            }
+
+            .service-card {
+                min-height: 350px;
+            }
+
+            .service-card.active .service-title {
+                font-size: 1.6rem;
+            }
+
+            .services-split-layout {
+                gap: 30px;
+            }
+
+            .conversationcontsec {
+                padding: 40px;
+                max-width: 950px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .services-hero-title {
+                font-size: 2.8rem;
+            }
+
+            .conv-left-col h2 {
+                font-size: 2.8rem;
+            }
+
+            .conv-btn-inner,
+            .conv-btn.large .conv-btn-inner {
+                width: 220px;
+                height: 40px;
+                font-size: 0.75rem;
+            }
+
+            .services-tab {
+                font-size: 1.5rem;
+            }
+
+            .service-card {
+                min-height: 300px;
+            }
+
+            .service-card.active .service-title {
+                font-size: 1.4rem;
+            }
+
+            .services-split-layout {
+                gap: 20px;
+            }
+
+            .conversationcontsec {
+                padding: 30px;
+            }
+
+            #sthservicessec {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .services-split-layout {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .services-left-col {
+                padding-top: 0;
+                flex: none;
+                width: 100%;
+            }
+
+            .services-tabs {
+                flex-wrap: wrap;
+                gap: 15px;
+                border-bottom: none;
+            }
+
+            .services-tab {
+                font-size: 1.5rem;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                flex: 1 1 40%;
+            }
+
+            .services-tab.active::after {
+                height: 2px;
+                bottom: -1px;
+            }
+
+            .services-cards-container {
+                flex-direction: column;
+            }
+
+            .service-card {
+                min-height: 300px;
+            }
+
+            .conversationcontsec {
+                flex-direction: column;
+                padding: 40px 20px;
+                text-align: center;
+                position: relative;
+                top: auto;
+                left: auto;
+                transform: none;
+                width: 90%;
+                margin: 40px auto;
+            }
+
+            .conv-left-col {
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+
+            .conv-right-col {
+                align-items: center;
+            }
+
+            .conv-btn-inner,
+            .conv-btn.large .conv-btn-inner {
+                width: 300px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="loading">
+
+    <!-- ═══════════════ SITE HEADER ═══════════════ -->
+    <header class="site-header header-hidden">
+        <div class="header-left">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <button class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                <span class="toggle-track">
+                    <img src="assets/images/dark_light_toggle.png" alt="Light Theme" class="toggle-art light-art">
+                    <img src="assets/images/dark_mode_toggle_new.png" alt="Dark Theme" class="toggle-art dark-art">
+                    <span class="toggle-thumb"></span>
+                </span>
+            </button>
+            <button class="menu-toggle" aria-label="Open Menu">
+                <span class="menu-icon">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ═══════════════ FULL SCREEN MENU OVERLAY ═══════════════ -->
+    <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
+        <div class="menu-content">
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="#" class="nav-link">ABOUT US</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">WHAT WE DO <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Strategy <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="#" class="nested-sub-nav-link">Business & Growth Strategy</a>
+                                <a href="#" class="nested-sub-nav-link">Strategic Finance & Transactions</a>
+                                <a href="#" class="nested-sub-nav-link">Enterprise Operations & Ecosystems</a>
+                                <a href="#" class="nested-sub-nav-link">Change Management & Organisational
+                                    Acceleration</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">AI <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="#" class="nested-sub-nav-link">AI Strategy & Sovereign Governance</a>
+                                <a href="#" class="nested-sub-nav-link">Intelligent Foundation (Data & Cloud)</a>
+                                <a href="#" class="nested-sub-nav-link">Agentic Operations & Automation</a>
+                                <a href="#" class="nested-sub-nav-link">Cognitive Experience & Engineering</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Risk <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="#" class="nested-sub-nav-link">Enterprise Governance & Regulatory Strategy</a>
+                                <a href="#" class="nested-sub-nav-link">Strategic Assurance & Process Intelligence</a>
+                                <a href="#" class="nested-sub-nav-link">Digital Risk & Technology Controls</a>
+                                <a href="#" class="nested-sub-nav-link">Forensic Integrity & Asset Protection</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Cyber <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="#" class="nested-sub-nav-link">Offensive Security & Exposure</a>
+                                <a href="#" class="nested-sub-nav-link">Cloud Security & Zero Trust</a>
+                                <a href="#" class="nested-sub-nav-link">Data Privacy & Protection Engineering</a>
+                                <a href="#" class="nested-sub-nav-link">Cyber Resilience & Crisis Readiness</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a href="our-work.html" class="nav-link">THE WORK</a>
+                <a href="#" class="nav-link">Our PRODUCTS</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">INDUSTRIES <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="#" class="sub-nav-link">BFSI & Fintech</a>
+                        <a href="#" class="sub-nav-link">D2C & Retail</a>
+                        <a href="#" class="sub-nav-link">Energy, Mining & Utilities</a>
+                        <a href="#" class="sub-nav-link">GCC</a>
+                        <a href="#" class="sub-nav-link">Healthcare & Life Sciences</a>
+                        <a href="#" class="sub-nav-link">Manufacturing</a>
+                        <a href="#" class="sub-nav-link">Telecom & Digital Infrastructure</a>
+                        <a href="#" class="sub-nav-link">Travel & Hospitality</a>
+                        <a href="#" class="sub-nav-link">Public Sector & Government</a>
+                        <a href="#" class="sub-nav-link">Real Estate / EPC / Construction</a>
+                    </div>
+                </div>
+
+                <a href="#" class="nav-link">CONTACT US</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ═══════════════ PRELOADER ═══════════════ -->
+    <div id="preloader">
+        <video id="preloader-video" src="assets/videos/sthiros_loading_video.mp4" muted playsinline></video>
+    </div>
+
+    <!-- services hero banner section -->
+    <section id="services_banner" class="services-hero">
+        <div class="services-hero-bg"></div>
+        <div class="services-hero-overlay"></div>
+        <div class="services-hero-bottom-gradient"></div>
+
+        <div class="services-hero-content">
+            <h1 class="services-hero-title">
+                Four capabilities.<br>One conversation.
+            </h1>
+            <p class="services-hero-desc">
+                Inside Sthiros, Strategy, Risk, Cyber, and AI work as one team, with one point of contact for you. Risk
+                gets consulted before a strategy is signed off. AI deployments get security built in from day one.
+                That's what holding complexity looks like.
+            </p>
+        </div>
+        <div id="servicesherosvg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="996" height="1487" viewBox="0 0 996 1487" fill="none">
+                <mask id="path-1-inside-1_1620_1043" fill="white">
+                    <path
+                        d="M995.974 864.401L995.89 861.299C995.89 859.231 995.666 857.135 995.527 855.066C994.828 846.765 993.29 838.492 990.942 830.471C986.245 814.4 978.306 799.307 967.766 786.394C957.171 773.509 944.003 762.777 929.214 755.007C914.453 747.181 898.015 742.374 881.381 740.976C879.312 740.836 877.215 740.613 875.147 740.585L872.043 740.501L870.506 740.501L869.388 740.473L-34.777 740.478C-34.9727 740.478 -35.1684 740.478 -35.2243 740.478L-35.8673 740.478C-36.734 740.395 -37.6006 740.478 -38.4673 740.367C-41.9059 740.143 -45.3166 739.584 -48.6154 738.69C-55.2132 736.929 -61.4474 733.798 -66.8989 729.55C-72.3504 725.302 -76.9352 719.963 -80.29 713.982C-83.6727 708.001 -85.7974 701.405 -86.5523 694.557C-86.7479 692.852 -86.8598 691.12 -86.8598 689.387L-86.8598 -55.997L-111.545 -55.997L-111.545 688.744L-111.517 689.694C-111.517 692.238 -111.322 694.781 -111.042 697.296C-109.924 707.386 -106.737 717.196 -101.761 726.056C-96.7843 734.888 -90.0188 742.742 -82.0233 749.003C-74.0278 755.264 -64.7742 759.875 -54.9895 762.503C-50.0971 763.816 -45.065 764.655 -40.0049 764.962C-38.7469 765.102 -37.4608 765.046 -36.2028 765.102L-35.2523 765.102C-34.9448 765.13 -34.5254 765.13 -34.19 765.13L871.764 765.125L874.28 765.209C875.957 765.209 877.635 765.404 879.284 765.516C892.647 766.662 905.815 770.519 917.696 776.78C929.578 783.04 940.173 791.677 948.672 802.018C957.114 812.387 963.461 824.489 967.235 837.346C969.108 843.803 970.366 850.427 970.925 857.107C971.037 858.784 971.205 860.46 971.233 862.137L971.289 864.653L971.289 1486L995.974 1486L995.974 864.401Z" />
+                    <path
+                        d="M955.381 840.84C952.11 829.604 946.547 819.011 939.167 809.928C939.167 809.928 939.139 809.9 939.111 809.872C939.083 809.844 939.055 809.788 939.027 809.76C931.562 800.732 922.281 793.186 911.937 787.736C901.509 782.23 889.991 778.848 878.222 777.842C872.351 777.311 866.452 777.534 860.553 777.478L-32.0094 777.484C-34.9448 777.484 -37.9082 777.484 -40.8436 777.288C-46.7145 776.925 -52.5574 775.947 -58.2605 774.437C-69.6387 771.391 -80.4019 765.996 -89.6834 758.729C-98.9929 751.491 -106.821 742.379 -112.58 732.094C-118.367 721.836 -122.057 710.377 -123.343 698.666C-124.042 692.797 -123.902 686.899 -123.93 681.002L-123.93 -55.997L-136.287 -55.997L-136.287 688.772L-136.259 690.03C-136.231 693.384 -136.007 696.737 -135.644 700.063C-134.162 713.395 -129.941 726.448 -123.371 738.159C-116.801 749.87 -107.883 760.211 -97.2875 768.484C-86.72 776.729 -74.4752 782.878 -61.4754 786.372C-54.9896 788.132 -48.3359 789.223 -41.6264 789.642C-39.949 789.809 -38.2716 789.781 -36.5943 789.837L-35.3362 789.837L-34.19 789.865L871.484 789.86L873.385 789.944C874.671 789.944 875.929 790.112 877.187 790.168C887.308 791.034 897.204 793.941 906.178 798.664C915.124 803.388 923.12 809.872 929.578 817.698C935.952 825.552 940.732 834.663 943.556 844.334C944.982 849.197 945.904 854.2 946.323 859.259C946.407 860.517 946.547 861.802 946.547 863.06L946.603 864.96L946.603 1486.05L958.96 1486.05L958.96 875.917C958.904 870.019 959.127 864.122 958.624 858.253C958.121 852.383 957.031 846.57 955.381 840.896L955.381 840.84Z" />
+                    <path
+                        d="M937.965 863.339C937.965 862.194 937.825 861.076 937.769 859.958C937.378 855.458 936.567 851.014 935.309 846.709C932.821 838.185 928.599 830.163 923.008 823.204C923.008 823.204 922.98 823.176 922.952 823.148C922.896 823.092 922.868 823.008 922.812 822.952C917.109 816.105 910.064 810.347 902.18 806.21C894.213 802.018 885.435 799.447 876.461 798.664C875.342 798.608 874.224 798.441 873.078 798.469L871.373 798.413L-35.392 798.418L-36.7619 798.39C-38.579 798.334 -40.3962 798.362 -42.2134 798.166C-49.4541 797.719 -56.6948 796.517 -63.7398 794.617C-77.8298 790.843 -91.1091 784.164 -102.599 775.22C-114.061 766.276 -123.734 755.04 -130.891 742.351C-138.048 729.662 -142.605 715.492 -144.226 701.014C-144.618 697.408 -144.869 693.775 -144.897 690.141L-144.897 688.772L-144.925 687.654L-144.925 -55.9969L-151.103 -55.9969L-151.103 688.772L-151.076 690.197C-151.02 694.026 -150.796 697.855 -150.377 701.684C-148.671 716.973 -143.835 731.954 -136.287 745.37C-128.738 758.785 -118.534 770.636 -106.429 780.083C-94.3241 789.53 -80.29 796.573 -65.3892 800.57C-57.9528 802.582 -50.3207 803.84 -42.6607 804.315C-40.7596 804.483 -38.8306 804.483 -36.9296 804.539L-35.5038 804.539L-34.3297 804.567L871.149 804.562L872.686 804.617C873.721 804.617 874.727 804.757 875.762 804.813C883.953 805.512 891.893 807.832 899.133 811.661C906.318 815.462 912.804 820.716 918.004 827.005C923.12 833.35 926.978 840.644 929.242 848.414C930.388 852.327 931.143 856.352 931.479 860.461C931.535 861.495 931.675 862.501 931.675 863.535L931.675 865.072L931.73 865.883L931.73 1485.97L937.909 1485.97L937.909 865.016L937.853 863.311L937.965 863.339Z" />
+                    <path
+                        d="M925.971 863.759C925.971 862.808 925.859 861.886 925.804 860.964C925.496 857.246 924.797 853.613 923.763 850.063C921.722 843.104 918.283 836.536 913.698 830.834C913.698 830.834 913.615 830.722 913.587 830.694C913.559 830.638 913.503 830.583 913.475 830.527C908.778 824.909 902.991 820.213 896.561 816.831C890.019 813.366 882.807 811.269 875.398 810.626C874.476 810.571 873.553 810.431 872.602 810.459L871.205 810.459L870.506 810.403L-35.42 810.408L-36.9297 810.38C-38.9425 810.324 -40.9554 810.324 -42.9682 810.157C-51.0197 809.654 -59.0432 808.34 -66.843 806.216C-82.4986 802.023 -97.2316 794.617 -109.952 784.695C-122.672 774.772 -133.407 762.335 -141.319 748.248C-149.258 734.162 -154.318 718.426 -156.108 702.383C-156.555 698.386 -156.807 694.334 -156.863 690.337L-156.863 688.828L-156.89 687.682L-156.89 -55.9969L-161 -55.9969L-161 688.8L-160.972 690.365C-160.916 694.529 -160.665 698.666 -160.189 702.83C-158.344 719.432 -153.088 735.699 -144.897 750.261C-136.706 764.823 -125.635 777.707 -112.468 787.937C-99.3283 798.194 -84.0641 805.852 -67.9053 810.185C-59.8259 812.365 -51.5229 813.734 -43.2198 814.237C-41.1511 814.433 -39.0543 814.405 -36.9856 814.489L-35.42 814.489L-34.2179 814.517L871.149 814.512L872.463 814.567C873.33 814.567 874.196 814.679 875.063 814.735C881.94 815.322 888.566 817.278 894.632 820.465C900.643 823.623 906.066 828.039 910.428 833.293C914.705 838.604 917.92 844.725 919.821 851.209C920.771 854.479 921.414 857.861 921.694 861.299C921.75 862.165 921.862 863.004 921.862 863.898L921.862 865.212L921.918 865.911L921.918 1486L926.027 1486L926.027 865.156L925.971 863.759Z" />
+                </mask>
+                <path
+                    d="M995.974 864.401L995.89 861.299C995.89 859.231 995.666 857.135 995.527 855.066C994.828 846.765 993.29 838.492 990.942 830.471C986.245 814.4 978.306 799.307 967.766 786.394C957.171 773.509 944.003 762.777 929.214 755.007C914.453 747.181 898.015 742.374 881.381 740.976C879.312 740.836 877.215 740.613 875.147 740.585L872.043 740.501L870.506 740.501L869.388 740.473L-34.777 740.478C-34.9727 740.478 -35.1684 740.478 -35.2243 740.478L-35.8673 740.478C-36.734 740.395 -37.6006 740.478 -38.4673 740.367C-41.9059 740.143 -45.3166 739.584 -48.6154 738.69C-55.2132 736.929 -61.4474 733.798 -66.8989 729.55C-72.3504 725.302 -76.9352 719.963 -80.29 713.982C-83.6727 708.001 -85.7974 701.405 -86.5523 694.557C-86.7479 692.852 -86.8598 691.12 -86.8598 689.387L-86.8598 -55.997L-111.545 -55.997L-111.545 688.744L-111.517 689.694C-111.517 692.238 -111.322 694.781 -111.042 697.296C-109.924 707.386 -106.737 717.196 -101.761 726.056C-96.7843 734.888 -90.0188 742.742 -82.0233 749.003C-74.0278 755.264 -64.7742 759.875 -54.9895 762.503C-50.0971 763.816 -45.065 764.655 -40.0049 764.962C-38.7469 765.102 -37.4608 765.046 -36.2028 765.102L-35.2523 765.102C-34.9448 765.13 -34.5254 765.13 -34.19 765.13L871.764 765.125L874.28 765.209C875.957 765.209 877.635 765.404 879.284 765.516C892.647 766.662 905.815 770.519 917.696 776.78C929.578 783.04 940.173 791.677 948.672 802.018C957.114 812.387 963.461 824.489 967.235 837.346C969.108 843.803 970.366 850.427 970.925 857.107C971.037 858.784 971.205 860.46 971.233 862.137L971.289 864.653L971.289 1486L995.974 1486L995.974 864.401Z"
+                    stroke="url(#paint0_linear_1620_1043)" stroke-width="2" mask="url(#path-1-inside-1_1620_1043)" />
+                <path
+                    d="M955.381 840.84C952.11 829.604 946.547 819.011 939.167 809.928C939.167 809.928 939.139 809.9 939.111 809.872C939.083 809.844 939.055 809.788 939.027 809.76C931.562 800.732 922.281 793.186 911.937 787.736C901.509 782.23 889.991 778.848 878.222 777.842C872.351 777.311 866.452 777.534 860.553 777.478L-32.0094 777.484C-34.9448 777.484 -37.9082 777.484 -40.8436 777.288C-46.7145 776.925 -52.5574 775.947 -58.2605 774.437C-69.6387 771.391 -80.4019 765.996 -89.6834 758.729C-98.9929 751.491 -106.821 742.379 -112.58 732.094C-118.367 721.836 -122.057 710.377 -123.343 698.666C-124.042 692.797 -123.902 686.899 -123.93 681.002L-123.93 -55.997L-136.287 -55.997L-136.287 688.772L-136.259 690.03C-136.231 693.384 -136.007 696.737 -135.644 700.063C-134.162 713.395 -129.941 726.448 -123.371 738.159C-116.801 749.87 -107.883 760.211 -97.2875 768.484C-86.72 776.729 -74.4752 782.878 -61.4754 786.372C-54.9896 788.132 -48.3359 789.223 -41.6264 789.642C-39.949 789.809 -38.2716 789.781 -36.5943 789.837L-35.3362 789.837L-34.19 789.865L871.484 789.86L873.385 789.944C874.671 789.944 875.929 790.112 877.187 790.168C887.308 791.034 897.204 793.941 906.178 798.664C915.124 803.388 923.12 809.872 929.578 817.698C935.952 825.552 940.732 834.663 943.556 844.334C944.982 849.197 945.904 854.2 946.323 859.259C946.407 860.517 946.547 861.802 946.547 863.06L946.603 864.96L946.603 1486.05L958.96 1486.05L958.96 875.917C958.904 870.019 959.127 864.122 958.624 858.253C958.121 852.383 957.031 846.57 955.381 840.896L955.381 840.84Z"
+                    stroke="url(#paint1_linear_1620_1043)" stroke-width="2" mask="url(#path-1-inside-1_1620_1043)" />
+                <path
+                    d="M937.965 863.339C937.965 862.194 937.825 861.076 937.769 859.958C937.378 855.458 936.567 851.014 935.309 846.709C932.821 838.185 928.599 830.163 923.008 823.204C923.008 823.204 922.98 823.176 922.952 823.148C922.896 823.092 922.868 823.008 922.812 822.952C917.109 816.105 910.064 810.347 902.18 806.21C894.213 802.018 885.435 799.447 876.461 798.664C875.342 798.608 874.224 798.441 873.078 798.469L871.373 798.413L-35.392 798.418L-36.7619 798.39C-38.579 798.334 -40.3962 798.362 -42.2134 798.166C-49.4541 797.719 -56.6948 796.517 -63.7398 794.617C-77.8298 790.843 -91.1091 784.164 -102.599 775.22C-114.061 766.276 -123.734 755.04 -130.891 742.351C-138.048 729.662 -142.605 715.492 -144.226 701.014C-144.618 697.408 -144.869 693.775 -144.897 690.141L-144.897 688.772L-144.925 687.654L-144.925 -55.9969L-151.103 -55.9969L-151.103 688.772L-151.076 690.197C-151.02 694.026 -150.796 697.855 -150.377 701.684C-148.671 716.973 -143.835 731.954 -136.287 745.37C-128.738 758.785 -118.534 770.636 -106.429 780.083C-94.3241 789.53 -80.29 796.573 -65.3892 800.57C-57.9528 802.582 -50.3207 803.84 -42.6607 804.315C-40.7596 804.483 -38.8306 804.483 -36.9296 804.539L-35.5038 804.539L-34.3297 804.567L871.149 804.562L872.686 804.617C873.721 804.617 874.727 804.757 875.762 804.813C883.953 805.512 891.893 807.832 899.133 811.661C906.318 815.462 912.804 820.716 918.004 827.005C923.12 833.35 926.978 840.644 929.242 848.414C930.388 852.327 931.143 856.352 931.479 860.461C931.535 861.495 931.675 862.501 931.675 863.535L931.675 865.072L931.73 865.883L931.73 1485.97L937.909 1485.97L937.909 865.016L937.853 863.311L937.965 863.339Z"
+                    stroke="url(#paint2_linear_1620_1043)" stroke-width="2" mask="url(#path-1-inside-1_1620_1043)" />
+                <path
+                    d="M925.971 863.759C925.971 862.808 925.859 861.886 925.804 860.964C925.496 857.246 924.797 853.613 923.763 850.063C921.722 843.104 918.283 836.536 913.698 830.834C913.698 830.834 913.615 830.722 913.587 830.694C913.559 830.638 913.503 830.583 913.475 830.527C908.778 824.909 902.991 820.213 896.561 816.831C890.019 813.366 882.807 811.269 875.398 810.626C874.476 810.571 873.553 810.431 872.602 810.459L871.205 810.459L870.506 810.403L-35.42 810.408L-36.9297 810.38C-38.9425 810.324 -40.9554 810.324 -42.9682 810.157C-51.0197 809.654 -59.0432 808.34 -66.843 806.216C-82.4986 802.023 -97.2316 794.617 -109.952 784.695C-122.672 774.772 -133.407 762.335 -141.319 748.248C-149.258 734.162 -154.318 718.426 -156.108 702.383C-156.555 698.386 -156.807 694.334 -156.863 690.337L-156.863 688.828L-156.89 687.682L-156.89 -55.9969L-161 -55.9969L-161 688.8L-160.972 690.365C-160.916 694.529 -160.665 698.666 -160.189 702.83C-158.344 719.432 -153.088 735.699 -144.897 750.261C-136.706 764.823 -125.635 777.707 -112.468 787.937C-99.3283 798.194 -84.0641 805.852 -67.9053 810.185C-59.8259 812.365 -51.5229 813.734 -43.2198 814.237C-41.1511 814.433 -39.0543 814.405 -36.9856 814.489L-35.42 814.489L-34.2179 814.517L871.149 814.512L872.463 814.567C873.33 814.567 874.196 814.679 875.063 814.735C881.94 815.322 888.566 817.278 894.632 820.465C900.643 823.623 906.066 828.039 910.428 833.293C914.705 838.604 917.92 844.725 919.821 851.209C920.771 854.479 921.414 857.861 921.694 861.299C921.75 862.165 921.862 863.004 921.862 863.898L921.862 865.212L921.918 865.911L921.918 1486L926.027 1486L926.027 865.156L925.971 863.759Z"
+                    stroke="url(#paint3_linear_1620_1043)" stroke-width="2" mask="url(#path-1-inside-1_1620_1043)" />
+                <defs>
+                    <linearGradient id="paint0_linear_1620_1043" x1="219.5" y1="655.001" x2="219.5" y2="776.501"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1620_1043" x1="219.5" y1="655.001" x2="219.5" y2="776.501"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_1620_1043" x1="219.5" y1="655.001" x2="219.5" y2="776.501"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_1620_1043" x1="219.5" y1="655.001" x2="219.5" y2="776.501"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </section>
+
+    <!-- sthiros service section -->
+    <section id="sthservicessec">
+        <!-- Tabs -->
+        <ul class="services-tabs">
+            <li class="services-tab active" data-tab="strategy">Strategy</li>
+            <li class="services-tab" data-tab="ai">AI</li>
+            <li class="services-tab" data-tab="risk">Risk</li>
+            <li class="services-tab" data-tab="cyber">Cyber</li>
+        </ul>
+
+        <!-- Strategy Tab Content -->
+        <div class="services-split-layout tab-content active" id="tab-strategy">
+            <!-- Left Column: Description -->
+            <div class="services-left-col">
+                <p class="services-description">
+                    Strategy turns ambition into something that survives a board meeting: the operating model, the
+                    market entry plan, the deal structure. It's the pillar called in before the expensive decisions, not
+                    the post-mortem.
+                </p>
+            </div>
+
+            <!-- Right Column: Tabs and Cards -->
+            <div class="services-right-col">
+                <!-- Cards Container -->
+                <div class="services-cards-container">
+
+                    <!-- Card 1 -->
+                    <div class="service-card active">
+                        <img src="assets/images/servicespage/strategy.png" alt="Strategy Logo" class="service-bg-logo">
+                        <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
+                            class="service-arrow white-arrow">
+                        <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
+                        <h3 class="service-title">Business &<br>Growth Strategy</h3>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="service-card">
+                        <img src="assets/images/servicespage/strategy.png" alt="Strategy Logo" class="service-bg-logo">
+                        <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
+                            class="service-arrow white-arrow">
+                        <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
+                        <h3 class="service-title">Strategic<br>Finance &<br>Transactions</h3>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="service-card">
+                        <img src="assets/images/servicespage/strategy.png" alt="Strategy Logo" class="service-bg-logo">
+                        <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
+                            class="service-arrow white-arrow">
+                        <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
+                        <h3 class="service-title">Enterprise<br>Operations &<br>Ecosystems</h3>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="service-card">
+                        <img src="assets/images/servicespage/strategy.png" alt="Strategy Logo" class="service-bg-logo">
+                        <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
+                            class="service-arrow white-arrow">
+                        <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
+                        <h3 class="service-title">Change &<br>Organizational<br>Acceleration</h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Tab Content -->
+        <div class="services-split-layout tab-content" id="tab-ai">
+            <div class="services-left-col">
+                <p class="services-description">
+                    IT keeps the lights on. What runs on top of it decides what happens next: a fraud caught
+                    mid-transaction, a shipment rerouted before delay turns into cost. None of it began in a lab. Every
+                    model we ship earned its place first inside a live engagement, against real complexity, before it
+                    became something a client could run on.
+                </p>
+            </div>
+            <div class="services-right-col">
+                <div class="services-cards-container">
+                    <div class="service-card active">
+                        <img src="assets/images/servicespage/aivector.png" alt="AI Logo" class="service-bg-logo">
+                        <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
+                            class="service-arrow white-arrow">
+                        <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
+                        <h3 class="service-title">Al Strategy &<br>Sovereign<br>Governance</h3>
+                    </div>
+                    <div class="service-card">
+                        <img src="assets/images/servicespage/aivector.png" alt="AI Logo" class="service-bg-logo">
+                        <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
+                            class="service-arrow white-arrow">
+                        <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
+                        <h3 class="service-title">Intelligent<br>Foundation</h3>
+                    </div>
+                    <div class="service-card">
+                        <img src="assets/images/servicespage/aivector.png" alt="AI Logo" class="service-bg-logo">
+                        <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
+                            class="service-arrow white-arrow">
+                        <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
+                        <h3 class="service-title">Agentic<br>Operations &<br>Automation</h3>
+                    </div>
+                    <div class="service-card">
+                        <img src="assets/images/servicespage/aivector.png" alt="AI Logo" class="service-bg-logo">
+                        <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
+                            class="service-arrow white-arrow">
+                        <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
+                        <h3 class="service-title">Cognitive<br>Experience &<br>Engineering</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="services-split-layout tab-content" id="tab-risk">
+            <div class="services-left-col">
+                <p class="services-description">
+                    A gap is just where we happen to look first. What we're actually building is the ground underneath
+                    you, the governance, the resilience, so that when you take a risk, it's because you meant to.
+                </p>
+            </div>
+            <div class="services-right-col">
+                <div class="services-cards-container">
+                    <div class="service-card active">
+                        <img src="assets/images/servicespage/riskvector.png" alt="Risk Logo" class="service-bg-logo">
+                        <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
+                            class="service-arrow white-arrow">
+                        <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
+                        <h3 class="service-title">Enterprise<br>Governance &<br>Regulatory Strategy</h3>
+                    </div>
+                    <div class="service-card">
+                        <img src="assets/images/servicespage/riskvector.png" alt="Risk Logo" class="service-bg-logo">
+                        <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
+                            class="service-arrow white-arrow">
+                        <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
+                        <h3 class="service-title">Strategic<br>Assurance &<br>Process<br>Intelligence</h3>
+                    </div>
+                    <div class="service-card">
+                        <img src="assets/images/servicespage/riskvector.png" alt="Risk Logo" class="service-bg-logo">
+                        <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
+                            class="service-arrow white-arrow">
+                        <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
+                        <h3 class="service-title">Digital Risk &<br>Technology<br>Controls</h3>
+                    </div>
+                    <div class="service-card">
+                        <img src="assets/images/servicespage/riskvector.png" alt="Risk Logo" class="service-bg-logo">
+                        <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
+                            class="service-arrow white-arrow">
+                        <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
+                        <h3 class="service-title">Forensic<br>Integrity &<br>Asset<br>Protection</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services-split-layout tab-content" id="tab-cyber">
+            <div class="services-left-col">
+                <p class="services-description">
+                    A policy tells you how things are supposed to go. A breach doesn't care what the document says, it
+                    happens in the cloud, in the code, in the data itself. So that's where we actually work, not one
+                    layer above it, in the room where the risk really lives.
+                </p>
+            </div>
+            <div class="services-right-col">
+                <div class="services-cards-container">
+                    <div class="service-card active">
+                        <img src="assets/images/servicespage/cybervector.png" alt="Cyber Logo" class="service-bg-logo">
+                        <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
+                            class="service-arrow white-arrow">
+                        <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
+                        <h3 class="service-title">Offensive Security<br>& Exposure</h3>
+                    </div>
+                    <div class="service-card">
+                        <img src="assets/images/servicespage/cybervector.png" alt="Cyber Logo" class="service-bg-logo">
+                        <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
+                            class="service-arrow white-arrow">
+                        <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
+                        <h3 class="service-title">Cloud<br>Security &<br>Zero Trust</h3>
+                    </div>
+                    <div class="service-card">
+                        <img src="assets/images/servicespage/cybervector.png" alt="Cyber Logo" class="service-bg-logo">
+                        <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
+                            class="service-arrow white-arrow">
+                        <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
+                        <h3 class="service-title">Data Privacy<br>& Protection<br>Engineering</h3>
+                    </div>
+                    <div class="service-card">
+                        <img src="assets/images/servicespage/cybervector.png" alt="Cyber Logo" class="service-bg-logo">
+                        <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
+                            class="service-arrow white-arrow">
+                        <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
+                        <h3 class="service-title">Cyber<br>Resilience &<br>Crisis<br>Readiness</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start the conversation section -->
+    <section id="sthirosconversationsec">
+        <div class="conversationsvgsec">
+            <svg xmlns="http://www.w3.org/2000/svg" width="893" height="772" viewBox="0 0 893 772" fill="none">
+                <path
+                    d="M0.0123542 287.653L0.0962168 290.755C0.096217 292.823 0.31985 294.919 0.459621 296.988C1.15853 305.289 2.69613 313.562 5.04446 321.583C9.74112 337.654 17.6807 352.747 28.2202 365.66C38.8157 378.545 51.9832 389.277 66.7721 397.047C81.5331 404.873 97.9715 409.68 114.606 411.078C116.674 411.218 118.771 411.441 120.84 411.469L123.943 411.553L125.481 411.553L126.599 411.581L766.763 411.586C766.959 411.586 767.155 411.586 767.21 411.586L767.853 411.586C768.72 411.67 769.587 411.586 770.453 411.698C773.892 411.921 777.303 412.48 780.602 413.374C787.199 415.135 793.434 418.266 798.885 422.514C804.337 426.762 808.921 432.101 812.276 438.082C815.659 444.063 817.784 450.659 818.538 457.507C818.734 459.212 818.846 460.945 818.846 462.678L818.846 771.061L843.532 771.061L843.531 463.32L843.503 462.37C843.503 459.827 843.308 457.283 843.028 454.768C841.91 444.678 838.723 434.868 833.747 426.008C828.77 417.176 822.005 409.322 814.009 403.061C806.014 396.8 796.76 392.189 786.976 389.561C782.083 388.248 777.051 387.409 771.991 387.102C770.733 386.962 769.447 387.018 768.189 386.962L767.238 386.962C766.931 386.934 766.512 386.934 766.176 386.934L124.222 386.929L121.706 386.845C120.029 386.845 118.352 386.65 116.702 386.538C103.339 385.392 90.1717 381.535 78.2902 375.274C66.4087 369.014 55.8133 360.377 47.3146 350.036C38.8718 339.667 32.5256 327.565 28.7515 314.708C26.8784 308.251 25.6203 301.627 25.0612 294.947C24.9494 293.27 24.7816 291.593 24.7537 289.916L24.6978 287.401L24.6855 0.055862L0.000122075 0.0558642L0.0123542 287.653Z"
+                    fill="url(#paint0_linear_1620_1092)" />
+                <path
+                    d="M40.605 311.214C43.8759 322.45 49.4392 333.043 56.8197 342.126C56.8197 342.126 56.8477 342.154 56.8756 342.182C56.9036 342.21 56.9315 342.266 56.9595 342.294C64.4239 351.321 73.7054 358.868 84.0492 364.318C94.477 369.824 105.995 373.206 117.765 374.212C123.636 374.743 129.534 374.52 135.433 374.576L763.996 374.58C766.931 374.58 769.894 374.58 772.83 374.776C778.701 375.139 784.544 376.118 790.247 377.627C801.625 380.673 812.388 386.068 821.67 393.335C830.979 400.574 838.807 409.685 844.566 419.971C850.353 430.228 854.043 441.687 855.329 453.398C856.028 459.268 855.888 465.165 855.916 471.062L855.916 771.061L868.273 771.061L868.273 463.292L868.245 462.035C868.217 458.681 867.993 455.327 867.63 452.001C866.148 438.669 861.927 425.616 855.357 413.905C848.787 402.195 839.869 391.853 829.274 383.58C818.706 375.335 806.461 369.186 793.462 365.693C786.976 363.932 780.322 362.842 773.613 362.422C771.935 362.255 770.258 362.283 768.58 362.227L767.322 362.227L766.176 362.199L124.502 362.194L122.601 362.11C121.315 362.11 120.057 361.942 118.799 361.886C108.679 361.02 98.7823 358.113 89.8083 353.39C80.8622 348.666 72.8667 342.182 66.4087 334.356C60.0347 326.502 55.2542 317.391 52.4306 307.72C51.0048 302.857 50.0822 297.854 49.6629 292.795C49.579 291.537 49.4392 290.252 49.4392 288.994L49.3833 287.093L49.3711 -4.83191e-05L37.0144 -4.72389e-05L37.0266 316.137C37.0825 322.034 36.8589 287.932 37.3621 293.801C37.8653 299.671 38.9556 305.484 40.605 311.158L40.605 311.214Z"
+                    fill="url(#paint1_linear_1620_1092)" />
+                <path
+                    d="M58.0216 288.715C58.0216 289.86 58.1614 290.978 58.2173 292.096C58.6087 296.596 59.4195 301.04 60.6775 305.344C63.1656 313.869 67.3871 321.891 72.9783 328.85C72.9783 328.85 73.0063 328.878 73.0342 328.906C73.0901 328.962 73.1181 329.046 73.174 329.102C78.8771 335.949 85.9221 341.707 93.8058 345.843C101.773 350.036 110.552 352.607 119.526 353.39C120.644 353.446 121.762 353.613 122.908 353.585L124.614 353.641L767.378 353.646L768.748 353.674C770.565 353.73 772.382 353.702 774.2 353.898C781.44 354.345 788.681 355.547 795.726 357.447C809.816 361.221 823.095 367.901 834.585 376.844C846.047 385.788 855.72 397.024 862.877 409.713C870.034 422.402 874.591 436.573 876.212 451.05C876.604 454.656 876.855 458.289 876.883 461.923L876.883 463.292L876.911 464.41L876.911 771.061L883.09 771.061L883.09 463.292L883.062 461.867C883.006 458.038 882.782 454.209 882.363 450.38C880.657 435.091 875.821 420.11 868.273 406.694C860.725 393.279 850.52 381.428 838.415 371.981C826.31 362.534 812.276 355.491 797.375 351.494C789.939 349.482 782.307 348.224 774.647 347.749C772.746 347.581 770.817 347.581 768.916 347.525L767.49 347.525L766.316 347.497L124.837 347.492L123.3 347.437C122.265 347.437 121.259 347.297 120.225 347.241C112.033 346.542 104.094 344.222 96.8531 340.393C89.6682 336.592 83.1823 331.338 77.9825 325.049C72.8664 318.704 69.0085 311.41 66.744 303.64C65.5978 299.727 64.8429 295.702 64.5075 291.593C64.4516 290.559 64.3118 289.553 64.3118 288.519L64.3118 286.982L64.2559 286.171L64.2437 0.0838127L58.0653 0.0838132L58.0775 287.038L58.1334 288.743L58.0216 288.715Z"
+                    fill="url(#paint2_linear_1620_1092)" />
+                <path
+                    d="M70.015 288.295C70.015 289.246 70.1269 290.168 70.1828 291.09C70.4903 294.808 71.1892 298.441 72.2235 301.991C74.2644 308.95 77.703 315.518 82.2879 321.22C82.2879 321.22 82.3717 321.332 82.3997 321.36C82.4276 321.416 82.4835 321.471 82.5115 321.527C87.2082 327.145 92.9951 331.841 99.4251 335.223C105.967 338.688 113.18 340.785 120.588 341.427C121.511 341.483 122.433 341.623 123.384 341.595L124.782 341.595L125.48 341.651L767.406 341.656L768.916 341.684C770.929 341.74 772.942 341.74 774.954 341.907C783.006 342.41 791.029 343.724 798.829 345.848C814.485 350.041 829.218 357.447 841.938 367.37C854.658 377.292 865.393 389.729 873.305 403.816C881.245 417.902 886.305 433.638 888.094 449.681C888.541 453.678 888.793 457.73 888.849 461.727L888.849 463.236L888.877 464.382L888.877 771.061L892.986 771.061L892.986 463.265L892.958 461.699C892.902 457.535 892.651 453.398 892.175 449.234C890.33 432.632 885.075 416.365 876.883 401.803C868.692 387.242 857.621 374.357 844.454 364.127C831.314 353.87 816.05 346.212 799.891 341.88C791.812 339.7 783.509 338.33 775.206 337.827C773.137 337.631 771.041 337.659 768.972 337.575L767.406 337.575L766.204 337.547L124.837 337.542L123.523 337.487C122.657 337.487 121.79 337.375 120.924 337.319C114.046 336.732 107.421 334.776 101.354 331.589C95.3435 328.431 89.92 324.015 85.5587 318.76C81.2814 313.45 78.0665 307.329 76.1654 300.845C75.2149 297.575 74.5719 294.193 74.2924 290.755C74.2365 289.888 74.1247 289.05 74.1247 288.155L74.1247 286.842L74.0688 286.143L74.0565 0.0558577L69.9469 0.0558581L69.9591 286.898L70.015 288.295Z"
+                    fill="url(#paint3_linear_1620_1092)" />
+                <defs>
+                    <linearGradient id="paint0_linear_1620_1092" x1="446.493" y1="-8.30366e-05" x2="446.493"
+                        y2="771.061" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.201923" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1620_1092" x1="446.493" y1="-8.30366e-05" x2="446.493"
+                        y2="771.061" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.201923" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_1620_1092" x1="446.493" y1="-8.30366e-05" x2="446.493"
+                        y2="771.061" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.201923" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_1620_1092" x1="446.493" y1="-8.30366e-05" x2="446.493"
+                        y2="771.061" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.201923" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+
+        <div class="conversationcontsec">
+            <div class="conv-left-col">
+                <h2>Start the<br>conversation</h2>
+                <p>
+                    Tell us the decision you're facing. Book a 30-minute call and we'll tell you what we'd do first. Or
+                    send us three lines — your situation, what you've tried — and we'll come back with a point of view,
+                    not a brochure.
+                </p>
+            </div>
+            <div class="conv-right-col">
+                <a href="#" class="conv-btn">
+                    <div class="conv-btn-inner">
+                        BOOK A 30-MIN CALL
+                    </div>
+                </a>
+                <a href="#" class="conv-btn large">
+                    <div class="conv-btn-inner">
+                        SEND US YOUR SITUATION
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- bottom svg -->
+        <div class="conversationbottomsvg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1811" height="388" viewBox="0 0 1811 388" fill="none">
+                <path
+                    d="M1736.95 261.541L1736.96 -8.829e-07L1761.61 -5.88934e-07L1761.6 260.954L1761.6 260.958C1761.6 261.293 1761.6 261.71 1761.58 262.016L1761.58 262.967C1761.52 264.225 1761.58 265.511 1761.44 266.769C1761.13 271.829 1760.29 276.861 1758.98 281.753C1756.35 291.538 1751.74 300.792 1745.48 308.787C1739.22 316.783 1731.36 323.548 1722.53 328.524C1713.67 333.5 1703.86 336.688 1693.77 337.806C1691.26 338.085 1688.71 338.281 1686.17 338.281L1685.22 338.309L-5.52173 338.309L-5.52173 313.624L1685.86 313.624C1687.59 313.624 1689.33 313.512 1691.03 313.316C1697.88 312.561 1704.48 310.437 1710.46 307.054C1716.44 303.699 1721.78 299.114 1726.02 293.663C1730.27 288.211 1733.4 281.977 1735.16 275.379C1736.06 272.08 1736.62 268.67 1736.84 265.231C1736.95 264.364 1736.87 263.498 1736.95 262.631L1736.95 261.988L1736.95 261.541Z"
+                    fill="#EC2D26" />
+                <path
+                    d="M1773.96 258.773L1773.97 -4.41617e-07L1786.35 -2.93968e-07L1786.34 260.954L1786.31 262.1L1786.31 263.358C1786.26 265.036 1786.28 266.713 1786.12 268.39C1785.7 275.1 1784.61 281.753 1782.85 288.239C1779.35 301.239 1773.2 313.484 1764.96 324.051C1756.69 334.647 1746.34 343.565 1734.63 350.135C1722.92 356.704 1709.87 360.926 1696.54 362.407C1693.21 362.771 1689.86 362.995 1686.5 363.022L1685.25 363.05L-5.52173 363.051L-5.52173 350.694L1677.48 350.694C1683.37 350.666 1689.27 350.806 1695.14 350.107C1706.85 348.821 1718.31 345.13 1728.57 339.343C1738.85 333.584 1747.96 325.757 1755.2 316.447C1762.47 307.166 1767.87 296.403 1770.91 285.024C1772.42 279.321 1773.4 273.478 1773.76 267.607C1773.96 264.674 1773.96 261.712 1773.96 258.779L1773.96 258.773Z"
+                    fill="#EC2D26" />
+                <path
+                    d="M1794.86 263.526L1794.89 262.156L1794.9 -1.91979e-07L1801.05 -1.18652e-07L1801.04 261.094L1801.01 262.268L1801.01 263.693C1800.96 265.594 1800.96 267.523 1800.79 269.425C1800.31 277.085 1799.06 284.717 1797.04 292.153C1793.05 307.054 1786 321.088 1776.56 333.193C1767.11 345.298 1755.26 355.502 1741.84 363.05C1728.43 370.599 1713.45 375.435 1698.16 377.14C1694.33 377.56 1690.5 377.783 1686.67 377.839L1685.25 377.867L-5.52173 377.867L-5.52173 371.689L1684.13 371.689L1685.25 371.661L1686.62 371.661C1690.25 371.633 1693.88 371.381 1697.49 370.99C1711.97 369.368 1726.14 364.812 1738.83 357.655C1751.51 350.498 1762.75 340.825 1771.69 329.363C1780.64 317.873 1787.32 304.594 1791.09 290.504C1792.99 283.459 1794.19 276.218 1794.64 268.977C1794.84 267.16 1794.81 265.343 1794.86 263.526Z"
+                    fill="#EC2D26" />
+                <path
+                    d="M1806.88 262.184L1806.89 -4.8995e-08L1811 0L1810.99 260.982L1810.96 262.184L1810.96 263.749C1810.88 265.818 1810.91 267.915 1810.71 269.984C1810.21 278.287 1808.84 286.59 1806.66 294.669C1802.33 310.828 1794.67 326.092 1784.41 339.232C1774.18 352.399 1761.3 363.47 1746.74 371.661C1732.17 379.852 1715.91 385.108 1699.3 386.953C1695.14 387.428 1691 387.68 1686.84 387.736L1685.27 387.764L-5.52173 387.764L-5.52173 383.654L1684.16 383.654L1685.3 383.626L1686.81 383.626C1690.81 383.57 1694.86 383.319 1698.86 382.871C1714.9 381.082 1730.64 376.022 1744.72 368.083C1758.81 360.171 1771.25 349.436 1781.17 336.715C1791.09 323.995 1798.5 309.262 1802.69 293.607C1804.81 285.807 1806.13 277.784 1806.63 269.732C1806.8 267.719 1806.8 265.706 1806.85 263.694L1806.88 262.184Z"
+                    fill="#EC2D26" />
+            </svg>
+        </div>
+    </section>
+
+    <script>
+        // Tab switching logic
+        document.querySelectorAll('.services-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.services-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                document.querySelectorAll('.tab-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+
+                const tabId = 'tab-' + tab.getAttribute('data-tab');
+                const targetContent = document.getElementById(tabId);
+                if (targetContent) {
+                    targetContent.classList.add('active');
+                }
+            });
+        });
+
+        // Hover interaction for Strategy cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                const container = card.closest('.services-cards-container');
+                container.querySelectorAll('.service-card').forEach(c => c.classList.remove('active'));
+                card.classList.add('active');
+            });
+        });
+    </script>
+
+
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer id="footer" class="site-footer" style="margin-top: 100px;">
+        <div class="footer-container">
+            <!-- Left Side -->
+            <div class="footer-left">
+                <h3 class="footer-heading">Let's work together</h3>
+                <a href="mailto:hello@sthiros.com" class="footer-email">hello@sthiros.com</a>
+
+                <div class="footer-contact-block">
+                    <a href="#" class="contact-now-link">
+                        <span>CONTACT NOW</span>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H11V11" stroke="white" stroke-width="1.5" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/fb_sthiros.png" alt="Facebook" class="social-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/insta_sthiros.png" alt="Instagram" class="social-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/x_sthiros.png" alt="X" class="social-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/linkedin_sthiros.png" alt="LinkedIn" class="social-img">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="footer-right">
+                <ul class="footer-menu">
+                    <li><a href="#">OUR STORY</a></li>
+                    <li><a href="#">LEADERSHIP</a></li>
+                    <li><a href="#">CAREERS</a></li>
+                    <li><a href="#">INDUSTRIES</a></li>
+                    <li><a href="#">LATEST</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-bottom-line">
+
+        <div class="footer-massive-logo-section">
+            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo">
+            <div class="copyright-text">© 2026</div>
+        </div>
+    </footer>
+
+    <!-- ═══════════════ SCRIPTS ═══════════════ -->
+    <!-- GSAP, ScrollTrigger, Anime.js, Lenis (smooth scroll) & Three.js (WebGL) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
