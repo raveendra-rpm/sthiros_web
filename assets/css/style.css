@@ -1377,9 +1377,9 @@ html.lenis body {
   position: absolute;
   left: calc(100% + 40px);
   /* Compensate for logo moving left */
-  top: -60px;
+  top: -80px;
   /* Moved further up so it sits completely above the horizontal lines without overlapping */
-  width: 500px;
+  width: 700px;
 }
 
 .cyber-text-block {
@@ -4807,7 +4807,7 @@ body.light-mode .section-services {
   .cyber-sub,
   .ai-sub {
     font-size: 26px !important;
-    max-width: 600px !important;
+    max-width: 750px !important;
   }
 
   .why-text-block {
@@ -4857,6 +4857,7 @@ body.light-mode .section-services {
   .hero-inner {
     height: 90vh;
   }
+
 }
 
 @media (max-width: 1440px) {
