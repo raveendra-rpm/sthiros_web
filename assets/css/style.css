@@ -847,6 +847,11 @@ html.lenis body {
   margin-bottom: 20px;
 }
 
+.section-center-para {
+  width: 64%;
+  margin: 0 auto;
+}
+
 .text-red {
   color: var(--red);
 }
@@ -1318,7 +1323,7 @@ html.lenis body {
 
 .risk-sub {
   color: #fff;
-  max-width: 235px;
+  max-width: 335px;
   /* Adjusted to wrap text exactly as in the sample */
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
@@ -2016,7 +2021,8 @@ html.lenis body {
   font-weight: 500;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: #9C9C9C; /* Exact grey color as requested */
+  color: #9C9C9C;
+  /* Exact grey color as requested */
   margin: 0 0 28px 0;
 }
 
@@ -2031,7 +2037,8 @@ html.lenis body {
 }
 
 #ourstory h1 span {
-  color: #EF4623; /* Exact vibrant orange-red color for 'simplifying the complex.' */
+  color: #EF4623;
+  /* Exact vibrant orange-red color for 'simplifying the complex.' */
 }
 
 #ourstory p {
@@ -2044,7 +2051,8 @@ html.lenis body {
   margin: 0 auto;
   max-width: 1040px;
   position: relative;
-  z-index: 10; /* Ensures paragraph sits in front of backend background SVG lines */
+  z-index: 10;
+  /* Ensures paragraph sits in front of backend background SVG lines */
 }
 
 /* Double-Border Element under Our Story Paragraph */
@@ -2063,7 +2071,8 @@ html.lenis body {
   transition: filter 0.3s ease, transform 0.3s ease;
   cursor: pointer;
   position: relative;
-  z-index: 10; /* Ensures OUR STORY badge stays clearly above SVG line */
+  z-index: 10;
+  /* Ensures OUR STORY badge stays clearly above SVG line */
 }
 
 .story-outer-border:hover {
@@ -2101,11 +2110,15 @@ html.lenis body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: -240px; /* Moves shorter SVG lines up behind the button and paragraph */
-  margin-bottom: -30px; /* Removes excessive gap above INDUSTRIES section */
+  margin-top: -240px;
+  /* Moves shorter SVG lines up behind the button and paragraph */
+  margin-bottom: -30px;
+  /* Removes excessive gap above INDUSTRIES section */
   position: relative;
-  z-index: 1; /* Stays in background behind text and buttons */
-  pointer-events: none; /* Prevents SVG from blocking user hover or interaction on button */
+  z-index: 1;
+  /* Stays in background behind text and buttons */
+  pointer-events: none;
+  /* Prevents SVG from blocking user hover or interaction on button */
 }
 
 .ourstorybottomsvg svg,
@@ -2113,7 +2126,8 @@ html.lenis body {
   display: block;
   /* Matches exact rendered width of .first-svg, #realtopstoriessvg, #workholdssvg and #workholdbottomsvg above */
   width: calc((74 / 991) * 50vw);
-  height: 220px !important; /* Shorter vertical height for both top & bottom SVGs */
+  height: 220px !important;
+  /* Shorter vertical height for both top & bottom SVGs */
 }
 
 /* ════════════════════════════════════════════
@@ -2123,7 +2137,8 @@ html.lenis body {
 .section-why {
   position: relative;
   z-index: 2;
-  margin-top: 0px; /* Removed 180px top gap to keep spacing compact */
+  margin-top: 0px;
+  /* Removed 180px top gap to keep spacing compact */
   padding: 0px 40px;
   background: transparent;
   display: flex;
@@ -2995,7 +3010,8 @@ html.lenis body {
   width: 100%;
   background-color: transparent;
   margin-top: -30px;
-  overflow: hidden; /* Prevents side cards from causing horizontal page scrollbars */
+  overflow: hidden;
+  /* Prevents side cards from causing horizontal page scrollbars */
   padding-top: 40px;
 }
 
@@ -3216,7 +3232,8 @@ html.lenis body {
 .section-latest-thinking {
   position: relative;
   width: 100%;
-  padding: 10px 20px 0 20px; /* Reduced from 120px to remove gap above LATEST THINKING */
+  padding: 10px 20px 0 20px;
+  /* Reduced from 120px to remove gap above LATEST THINKING */
   margin-top: 0;
   background-color: transparent;
   display: flex;
@@ -3250,7 +3267,8 @@ html.lenis body {
 }
 
 .thinking-divider.top-divider {
-  margin-bottom: 15px; /* Reduced to bring text closer to top divider line */
+  margin-bottom: 15px;
+  /* Reduced to bring text closer to top divider line */
 }
 
 .thinking-divider.bottom-divider {
@@ -3302,7 +3320,8 @@ html.lenis body {
   color: rgba(255, 255, 255, 0.4);
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 12px; /* Tighter gap below eyebrow */
+  margin-bottom: 12px;
+  /* Tighter gap below eyebrow */
 }
 
 .thinking-title {
@@ -4359,7 +4378,7 @@ body.light-mode .section-services {
   }
 
   .site-header {
-    height: 60px;
+    height: 55px;
   }
 
   .expert-card .industry-actual-card {
