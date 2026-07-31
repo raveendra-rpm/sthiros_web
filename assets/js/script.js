@@ -1876,27 +1876,20 @@ function initServicesPageHeroScroll() {
   });
 
   const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: heroSection,
-      start: 'top top',
-      end: '+=150%', // Pin for 150% of viewport height to draw the lines
-      scrub: 1,
-      pin: true,
-      anticipatePin: 1
-    }
+    delay: 1.5
   });
 
   // Step 1: Animate horizontally left to right (revealing the horizontal lines)
   tl.to(svgElement, {
     clipPath: 'polygon(0% 0%, 100% 0%, 100% 60%, 0% 60%)',
-    ease: 'none',
+    ease: 'power2.inOut',
     duration: 1.5
   });
 
   // Step 2: Animate vertically top to bottom (revealing the downward curve into the fade out)
   tl.to(svgElement, {
     clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-    ease: 'none',
+    ease: 'power2.inOut',
     duration: 1
   });
 }
