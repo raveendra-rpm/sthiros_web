@@ -53,12 +53,14 @@
         .services-hero-bg {
             position: absolute;
             top: 0;
-            left: 0;
+            right: 0;
             width: 100%;
             height: 100%;
             background: url('assets/images/servicespage/servicebanner.jpg') no-repeat right center;
             background-size: cover;
             z-index: 0;
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%);
+            mask-image: linear-gradient(to right, transparent 0%, black 15%);
         }
 
         .services-hero-overlay {
@@ -67,7 +69,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to right, rgba(15, 2, 2, 0.95) 0%, rgba(15, 2, 2, 0.85) 36%, rgba(15, 2, 2, 0) 65%);
+            background: linear-gradient(to right, rgba(13, 1, 1, 1) 0%, rgba(13, 1, 1, 0.9) 15%, rgba(13, 1, 1, 0.6) 30%, rgba(13, 1, 1, 0) 45%);
             z-index: 1;
         }
 
@@ -84,25 +86,27 @@
         .services-hero-content {
             position: relative;
             z-index: 2;
-            max-width: 650px;
+            max-width: 850px;
             color: #fff;
             font-family: 'Inter', sans-serif;
         }
 
         .services-hero-title {
-            font-size: 4.5rem;
+            font-size: 4rem;
             font-weight: 600;
             line-height: 1.1;
             margin-bottom: 25px;
-            letter-spacing: -0.02em;
+            letter-spacing: 0.02em;
+            margin-top: -150px;
         }
 
         .services-hero-desc {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            font-weight: 300;
-            color: #d4d4d4;
-            max-width: 500px;
+            font-family: Quicksand;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 50%;
         }
 
         /* Responsive adjustments */
@@ -312,6 +316,7 @@
             margin-bottom: 60px;
             padding: 0;
             list-style: none;
+            position: relative;
         }
 
         .services-tab {
@@ -334,22 +339,20 @@
             color: #EC2D26;
         }
 
-        .services-tab.active::after {
-            content: '';
+        .tab-indicator {
             position: absolute;
             bottom: -2px;
-            /* overlap border-bottom */
             left: 0;
-            width: 100%;
             height: 3px;
             background-color: #EC2D26;
             box-shadow: 0 0 10px #EC2D26, 0 0 20px #EC2D26;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 2;
         }
 
         .services-cards-container {
             display: flex;
             gap: 20px;
-            /* flex-wrap: wrap; */
         }
 
         .service-card {
@@ -366,15 +369,22 @@
             overflow: hidden;
             min-height: 450px;
             cursor: pointer;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: none;
+            transition: all 0.7s ease;
+        }
+
+        .service-card:hover,
+        .service-card.active {
+            background-color: #EC2D26;
+            background-image: none;
+            border-color: transparent;
         }
 
         .service-card.active {
             flex: 2;
             min-width: 300px;
-            background-color: #EC2D26;
-            background-image: none;
             border: none;
+            box-shadow: none;
             padding: 40px;
         }
 
@@ -386,17 +396,23 @@
             width: 30px;
             height: 30px;
             z-index: 3;
-            transition: opacity 0.4s ease;
+            transition: opacity 0.7s ease;
         }
 
         .service-arrow.white-arrow {
             opacity: 0;
         }
 
+        .service-arrow.red-arrow {
+            opacity: 1;
+        }
+
+        .service-card:hover .service-arrow.white-arrow,
         .service-card.active .service-arrow.white-arrow {
             opacity: 1;
         }
 
+        .service-card:hover .service-arrow.red-arrow,
         .service-card.active .service-arrow.red-arrow {
             opacity: 0;
         }
@@ -410,9 +426,10 @@
             object-fit: contain;
             z-index: 1;
             opacity: 0;
-            transition: opacity 0.4s ease;
+            transition: opacity 0.7s ease;
         }
 
+        .service-card:hover .service-bg-logo,
         .service-card.active .service-bg-logo {
             opacity: 1;
         }
@@ -426,7 +443,7 @@
             z-index: 2;
             margin: 0;
             line-height: 1.4;
-            transition: all 0.4s ease;
+            transition: all 0.7s ease;
         }
 
         .service-card.active .service-title {
@@ -438,6 +455,15 @@
 
         /* Responsive adjustments for large screens */
         @media (max-width: 1440px) {
+            .services-hero {
+                min-height: 90vh;
+            }
+
+            .services-hero-bg {
+                width: 95%;
+                background-size: 110vw;
+            }
+
             .services-hero-title {
                 font-size: 3.8rem;
             }
@@ -486,7 +512,17 @@
 
         @media (max-width: 1366px) {
             .services-hero-title {
-                font-size: 3.5rem;
+                font-size: 3.2rem;
+            }
+
+            .services-hero-desc {
+                max-width: 750px;
+                font-size: 0.95rem;
+            }
+
+            .services-description {
+                font-size: 0.95rem;
+                line-height: 1.5;
             }
 
             .conv-left-col h2 {
@@ -504,7 +540,17 @@
             }
 
             .service-card {
-                min-height: 380px;
+                min-height: 350px;
+                padding: 20px 15px;
+            }
+
+            .service-card.active {
+                min-width: 270px;
+                padding: 25px;
+            }
+
+            .service-card.active .service-title {
+                font-size: 1.65rem;
             }
 
             .conversationcontsec {
@@ -520,7 +566,12 @@
 
             .services-hero-desc {
                 font-size: 1rem;
-                max-width: 450px;
+                max-width: 700px;
+            }
+
+            .services-description {
+                font-size: 0.9rem;
+                line-height: 1.4;
             }
 
             .conv-left-col h2 {
@@ -540,11 +591,18 @@
             }
 
             .service-card {
-                min-height: 350px;
+                min-height: 330px;
+                min-width: 160px;
+                padding: 20px 10px;
+            }
+
+            .service-card.active {
+                min-width: 250px;
+                padding: 25px 20px;
             }
 
             .service-card.active .service-title {
-                font-size: 1.6rem;
+                font-size: 1.5rem;
             }
 
             .services-split-layout {
@@ -557,7 +615,33 @@
             }
         }
 
+        @media (max-width: 1080px) {
+            .services-hero-title {
+                margin-top: -40px;
+            }
+
+            .services-hero-desc {
+                font-size: 0.85rem;
+                margin-top: 24px;
+                max-width: 550px;
+            }
+        }
+
         @media (max-width: 1024px) {
+            #servicesherosvg {
+                top: 80px;
+            }
+
+            .services-hero-bg {
+                background-size: cover;
+                background-position: right top;
+            }
+
+            .services-hero-bottom-gradient {
+                height: 400px;
+                background: linear-gradient(to top, rgba(13, 1, 1, 1) 25%, rgba(13, 1, 1, 0) 100%);
+            }
+
             .services-hero-title {
                 font-size: 2.8rem;
             }
@@ -591,6 +675,7 @@
 
             .conversationcontsec {
                 padding: 30px;
+                max-width: 800px;
             }
 
             #sthservicessec {
@@ -1140,10 +1225,33 @@
 
     <script>
         // Tab switching logic
+        const tabsContainer = document.querySelector('.services-tabs');
+        const indicator = document.createElement('div');
+        indicator.className = 'tab-indicator';
+        tabsContainer.appendChild(indicator);
+
+        function updateIndicator(tab) {
+            indicator.style.width = tab.offsetWidth + 'px';
+            indicator.style.left = tab.offsetLeft + 'px';
+        }
+
+        // Initialize indicator position
+        const initialActiveTab = document.querySelector('.services-tab.active');
+        if (initialActiveTab) {
+            setTimeout(() => updateIndicator(initialActiveTab), 100);
+        }
+
+        window.addEventListener('resize', () => {
+            const activeTab = document.querySelector('.services-tab.active');
+            if (activeTab) updateIndicator(activeTab);
+        });
+
         document.querySelectorAll('.services-tab').forEach(tab => {
             tab.addEventListener('click', () => {
                 document.querySelectorAll('.services-tab').forEach(t => t.classList.remove('active'));
                 tab.classList.add('active');
+
+                updateIndicator(tab);
 
                 document.querySelectorAll('.tab-content').forEach(content => {
                     content.classList.remove('active');
