@@ -24,6 +24,7 @@ function boot() {
   initOurWorkPageScroll();
   initRealStoriesSlider();
   initWorkholdSlider();
+  initServiceAccordion();
 }
 
 let appBooted = false;
@@ -2329,5 +2330,29 @@ function initWorkholdSlider() {
         });
       }
     }
+  });
+}
+
+// Service Lines Accordion
+function initServiceAccordion() {
+  const headers = document.querySelectorAll('.deliverable-header');
+  if (!headers.length) return;
+
+  headers.forEach(header => {
+    header.addEventListener('click', () => {
+      const parent = header.closest('.deliverable-item');
+      
+      // If clicked item is already active, close it
+      if (parent.classList.contains('active')) {
+        parent.classList.remove('active');
+      } else {
+        // Close all items
+        document.querySelectorAll('.deliverable-item.active').forEach(item => {
+          item.classList.remove('active');
+        });
+        // Open the clicked item
+        parent.classList.add('active');
+      }
+    });
   });
 }

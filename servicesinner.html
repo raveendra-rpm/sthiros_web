@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Quicksand:wght@400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            display: block;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+            color: white;
+            z-index: 2;
+            width: 100%;
+            max-width: 1440px;
+            padding: 0 40px;
+        }
+
+        .breadcrumb {
+            color: var(--red, #EC2D26);
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+            font-weight: 500;
+        }
+
+        .main-heading {
+            color: var(--text-primary, #FFFFFF);
+            font-size: 4.5rem;
+            line-height: 1.1;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .highlight {
+            color: var(--red, #EC2D26);
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                padding-left: 5%;
+            }
+
+            .main-heading {
+                font-size: 3rem;
+            }
+        }
+
+        #herosvgtrack {
+            margin-top: -5rem;
+            position: relative;
+            z-index: 5;
+            width: 100%;
+            overflow: visible;
+        }
+
+        .herosvgtracks {
+            width: 50%;
+            margin-left: 28px;
+        }
+
+        .herosvgtracksbtm {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        #herosvgtrack svg {
+            width: 100%;
+            height: auto;
+            display: block;
+            overflow: visible;
+        }
+
+        .herosvgtracksbtm svg {
+            display: block;
+            height: auto;
+            /* Not setting width: 100% so the 74px thin line doesn't distort */
+            width: 64px !important;
+        }
+
+        .herotrackspara {
+            text-align: center;
+            width: 100%;
+            max-width: 950px;
+            margin: -20rem auto 0 auto;
+            /* Negative margin to move it up */
+            position: relative;
+            z-index: 10;
+            color: #d4d4d4;
+            /* Inheriting standard text color for readability */
+            font-size: 1.1rem;
+            line-height: 1.6;
+            box-sizing: border-box;
+
+        }
+
+        .servicelinedeliverable {
+            width: 100%;
+        }
+
+        .servicelinedeliverable svg {
+            display: block;
+            width: 390px !important;
+            height: auto;
+            position: relative;
+            left: 50%;
+            /* Math: Shifts the SVG so the right-side lines align perfectly at the center */
+            transform: translateX(-520px);
+            overflow: visible !important;
+        }
+
+        #Servicelinesdeliverablescontsec {
+            position: relative;
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        .servicelinedeliverablecont {
+            position: absolute;
+            top: 150px;
+            right: 40px;
+            width: 55%;
+            color: #fff;
+        }
+
+        .deliverable-main-title {
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 72px;
+            line-height: 1.1;
+            margin-bottom: 80px;
+            font-weight: 500;
+        }
+
+        .deliverable-item {
+            margin-bottom: 20px;
+        }
+
+        .deliverable-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        .deliverable-title {
+            color: #EC2D26;
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 36px;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .deliverable-desc {
+            font-size: 16px;
+            color: #d4d4d4;
+            line-height: 1.6;
+            max-width: 85%;
+            margin-bottom: 40px;
+        }
+
+        .deliverable-grid {
+            display: flex;
+            gap: 20px;
+            overflow: hidden;
+            max-height: 0;
+            opacity: 0;
+            transition: max-height 0.5s ease, opacity 0.5s ease, margin-top 0.5s ease;
+        }
+
+        .deliverable-item.active .deliverable-grid {
+            max-height: 500px;
+            opacity: 1;
+            margin-top: 20px;
+        }
+
+        .deliverable-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .deliverable-item.active .deliverable-icon {
+            transform: rotate(90deg);
+        }
+
+        .deliverable-grid-col {
+            flex: 1;
+            padding-left: 30px;
+        }
+
+        .deliverable-grid-col:first-child {
+            padding-left: 0;
+        }
+
+        .deliverable-grid-col:not(:first-child) {
+            border-left: 1px solid rgba(236, 45, 38, 0.4);
+        }
+
+        .deliverable-grid-col h4 {
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0 0 15px 0;
+            color: #fff;
+        }
+
+        .deliverable-grid-col p {
+            font-size: 15px;
+            color: #aaa;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .deliverable-divider {
+            height: 1px;
+            background-color: rgba(236, 45, 38, 0.3);
+            margin: 40px 0;
+        }
+
+        .servicelinedeliverablesvgbtm svg {
+            display: block;
+            width: 530px !important;
+            height: auto;
+            position: relative;
+            left: 50%;
+            transform: translateX(-822px);
+            overflow: visible !important;
+        }
+
+        /* Different about working with us */
+        #differentaboutworkingwithus {
+            padding: 120px 0;
+            width: 100%;
+            background: radial-gradient(circle at -10% 50%, rgba(236, 45, 38, 0.15) 0%, transparent 50%);
+            margin-top: 50px;
+        }
+
+        .diff-container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .diff-left {
+            flex: 0 0 42%;
+            display: flex;
+            align-items: center;
+        }
+
+        .diff-title {
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 70px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 85px;
+            color: #fff;
+            margin: 0;
+        }
+
+        .diff-title .highlight {
+            color: #EF4623;
+        }
+
+        .diff-right {
+            flex: 0 0 55%;
+            display: flex;
+            gap: 20px;
+            height: 480px;
+        }
+
+        .diff-card {
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            transition: all 0.4s ease;
+            flex: 1;
+            background-color: transparent;
+            border: 1px solid rgba(236, 45, 38, 0.5);
+            justify-content: flex-end;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            padding: 40px 25px;
+        }
+
+        .diff-card:hover {
+            border-color: rgba(236, 45, 38, 1);
+        }
+
+        .diff-card-collapsed {
+            transition: opacity 0.3s ease;
+        }
+
+        .diff-card-collapsed p {
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            margin: 0;
+            line-height: 1.3;
+        }
+
+        .diff-card-content {
+            position: absolute;
+            top: 40px;
+            bottom: 40px;
+            left: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        .diff-card-content h3 {
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 38px;
+            font-weight: 500;
+            color: #fff;
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        .diff-card-content p {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0;
+            line-height: 1.5;
+            max-width: 96%;
+        }
+
+        /* Active Logic - Accordion Effect */
+        .diff-card.active {
+            flex: 2.2;
+            background-color: #EC2D26;
+            border-color: transparent;
+            padding: 40px;
+        }
+
+        .diff-card.active .diff-card-content {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .diff-card.active .diff-card-collapsed {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .diffbtmsvg,
+        .whenyouneedthissvg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        .diffbtmsvg svg,
+        .whenyouneedthissvg svg {
+            width: 64px;
+            height: auto;
+        }
+
+        /* When You Need This Section */
+        #Whenyouneedthis {
+            padding: 80px 0;
+            width: 100%;
+            margin-top: -250px;
+            position: relative;
+            z-index: 5;
+        }
+
+        .wynt-container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .wynt-left {
+            flex: 0 0 35%;
+        }
+
+        .wynt-title {
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 70px;
+            font-weight: 600;
+            color: #fff;
+            line-height: 85px;
+            margin: 0;
+        }
+
+        .wynt-title .highlight {
+            color: #EC2D26;
+        }
+
+        .wynt-right {
+            flex: 0 0 55%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .wynt-grid-top {
+            display: flex;
+            gap: 20px;
+        }
+
+        .wynt-col {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex: 1;
+        }
+
+        .wynt-card {
+            border: 1px solid #EC2D26;
+            border-radius: 12px;
+            padding: 35px 30px;
+            background-color: transparent;
+            box-sizing: border-box;
+            display: flex;
+            transition: background-color 0.3s ease;
+        }
+
+        .wynt-card:hover {
+            background-color: #EC2D26;
+        }
+
+        .wynt-card-short {
+            height: 160px;
+        }
+
+        .wynt-card-tall {
+            height: 300px;
+        }
+
+        .wynt-card-full {
+            height: 140px;
+            width: 100%;
+        }
+
+        .wynt-card p {
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            margin: 0;
+            line-height: 1.4;
+            transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .align-center {
+            align-items: center;
+        }
+
+        .align-bottom {
+            align-items: flex-end;
+        }
+
+        .slide-down-hover:hover p {
+            transform: translateY(125px);
+        }
+
+        .slide-up-hover:hover p {
+            transform: translateY(-150px);
+        }
+
+        /* Related Case Studies Section */
+        #relatedcasestudiessec {
+            padding: 100px 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: -200px;
+            position: relative;
+            z-index: 5;
+        }
+
+        .rcs-title {
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 70px;
+            font-weight: 600;
+            color: #fff;
+            text-align: center;
+            line-height: 1.1;
+            margin: 0 0 60px 0;
+        }
+
+        .rcs-title .highlight {
+            color: #EC2D26;
+        }
+
+        .rcs-container {
+            max-width: 1440px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        .rcs-card {
+            position: relative;
+            flex: 1;
+            height: 340px;
+            border-radius: 20px;
+            border: 1px solid #EC2D26;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .rcs-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .rcs-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0) 100%);
+            z-index: 2;
+        }
+
+        .rcs-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            z-index: 3;
+        }
+
+        .rcs-text {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .rcs-text h3 {
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: #fff;
+            margin: 0;
+        }
+
+        .rcs-text .rcs-desc {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.8);
+            margin: 0;
+        }
+
+        .rcs-text .rcs-meta {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .rcs-meta .dot {
+            color: #EC2D26;
+        }
+
+        .rcs-arrow-container {
+            width: 32px;
+            height: 32px;
+            position: relative;
+        }
+
+        .rcs-arrow-normal,
+        .rcs-arrow-hover {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .rcs-arrow-hover {
+            opacity: 0;
+        }
+
+        .rcs-card:hover .rcs-arrow-normal {
+            opacity: 0;
+        }
+
+        .rcs-card:hover .rcs-arrow-hover {
+            opacity: 1;
+        }
+
+        .rcs-nav {
+            display: flex;
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .rcs-nav-btn {
+            width: 48px;
+            height: 48px;
+            background-image: url('assets/images/sthiroscircle.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            background-color: transparent;
+        }
+
+        .rcs-nav-btn:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+
+        .rcs-nav-btn img {
+            width: 16px;
+            height: 16px;
+            object-fit: contain;
+        }
+
+        .conversationsvgsec {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        .conversationsvgsec svg {
+            width: 750px;
+            height: auto;
+            transform: scaleY(-1);
+        }
+
+        .conversationbottomsvg {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 40px;
+            margin-top: -220px;
+            position: relative;
+            z-index: 5;
+            box-sizing: border-box;
+        }
+
+        .conversationbottomsvg svg {
+            width: 1450px;
+            height: auto;
+        }
+
+        .conversationcontsec {
+            position: relative;
+            max-width: 1100px;
+            margin: -320px auto 0 auto;
+            z-index: 10;
+            padding: 50px 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            overflow: hidden;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+
+        .conv-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            border-radius: 20px;
+        }
+
+        .conv-left-col {
+            position: relative;
+            z-index: 2;
+            flex: 1;
+        }
+
+        .conv-left-col h2 {
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 54px;
+            font-weight: 300;
+            color: #fff;
+            margin: 0 0 5px 0;
+        }
+
+        .conv-left-col h3 {
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: #fff;
+            margin: 0 0 15px 0;
+        }
+
+        .conv-left-col p {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+            margin: 0;
+            max-width: 600px;
+        }
+
+        .conv-right-col {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            min-width: 300px;
+            align-items: flex-end;
+        }
+
+        .conv-btn {
+            display: inline-block;
+            text-decoration: none;
+            position: relative;
+            padding: 3px;
+            border-radius: 40px;
+            background: linear-gradient(90deg, #EC2D26, #EF4623);
+        }
+
+        .conv-btn-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 30px;
+            border-radius: 37px;
+            background-color: #000;
+            border: 2px solid #EC2D26;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .conv-btn:hover .conv-btn-inner {
+            background-color: #EC2D26;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- hero section -->
+    <div class="hero">
+        <img src="assets/images/servicesinnpage/serviceinnbanner.jpg" alt="Service Banner">
+        <div class="hero-content">
+            <p class="breadcrumb">WHAT WE DO &rarr; STRATEGY &rarr; BUSINESS &amp; GROWTH STRATEGY</p>
+            <h1 class="main-heading">The operating<br>model is where<br><span class="highlight">growth</span>
+                plans<br>actually <span class="highlight">break.</span></h1>
+        </div>
+    </div>
+    <!-- hero bottom svg section -->
+    <section id="herosvgtrack">
+        <div class="herosvgtracks">
+            <svg xmlns="http://www.w3.org/2000/svg" width="996" height="799" viewBox="0 688 996 799" fill="none">
+                <mask id="path-1-inside-1_1871_1189" fill="white">
+                    <path
+                        d="M995.974 864.401L995.89 861.299C995.89 859.231 995.666 857.135 995.527 855.066C994.828 846.765 993.29 838.492 990.942 830.471C986.245 814.4 978.306 799.307 967.766 786.394C957.171 773.509 944.003 762.777 929.214 755.007C914.453 747.181 898.015 742.374 881.381 740.976C879.312 740.836 877.215 740.613 875.147 740.585L872.043 740.501L870.506 740.501L869.388 740.473L-34.777 740.478C-34.9727 740.478 -35.1684 740.478 -35.2243 740.478L-35.8673 740.478C-36.734 740.395 -37.6006 740.478 -38.4673 740.367C-41.9059 740.143 -45.3166 739.584 -48.6154 738.69C-55.2132 736.929 -61.4474 733.798 -66.8989 729.55C-72.3504 725.302 -76.9352 719.963 -80.29 713.982C-83.6727 708.001 -85.7974 701.405 -86.5523 694.557C-86.7479 692.852 -86.8598 691.12 -86.8598 689.387L-86.8598 -55.997L-111.545 -55.997L-111.545 688.744L-111.517 689.694C-111.517 692.238 -111.322 694.781 -111.042 697.296C-109.924 707.386 -106.737 717.196 -101.761 726.056C-96.7843 734.888 -90.0188 742.742 -82.0233 749.003C-74.0278 755.264 -64.7742 759.875 -54.9895 762.503C-50.0971 763.816 -45.065 764.655 -40.0049 764.962C-38.7469 765.102 -37.4608 765.046 -36.2028 765.102L-35.2523 765.102C-34.9448 765.13 -34.5254 765.13 -34.19 765.13L871.764 765.125L874.28 765.209C875.957 765.209 877.635 765.404 879.284 765.516C892.647 766.662 905.815 770.519 917.696 776.78C929.578 783.04 940.173 791.677 948.672 802.018C957.114 812.387 963.461 824.489 967.235 837.346C969.108 843.803 970.366 850.427 970.925 857.107C971.037 858.784 971.205 860.46 971.233 862.137L971.289 864.653L971.289 1486L995.974 1486L995.974 864.401Z" />
+                    <path
+                        d="M955.381 840.84C952.11 829.604 946.547 819.011 939.167 809.928C939.167 809.928 939.139 809.9 939.111 809.872C939.083 809.844 939.055 809.788 939.027 809.76C931.562 800.732 922.281 793.186 911.937 787.736C901.509 782.23 889.991 778.848 878.222 777.842C872.351 777.311 866.452 777.534 860.553 777.478L-32.0094 777.484C-34.9448 777.484 -37.9082 777.484 -40.8436 777.288C-46.7145 776.925 -52.5574 775.947 -58.2605 774.437C-69.6387 771.391 -80.4019 765.996 -89.6834 758.729C-98.9929 751.491 -106.821 742.379 -112.58 732.094C-118.367 721.836 -122.057 710.377 -123.343 698.666C-124.042 692.797 -123.902 686.899 -123.93 681.002L-123.93 -55.997L-136.287 -55.997L-136.287 688.772L-136.259 690.03C-136.231 693.384 -136.007 696.737 -135.644 700.063C-134.162 713.395 -129.941 726.448 -123.371 738.159C-116.801 749.87 -107.883 760.211 -97.2875 768.484C-86.72 776.729 -74.4752 782.878 -61.4754 786.372C-54.9896 788.132 -48.3359 789.223 -41.6264 789.642C-39.949 789.809 -38.2716 789.781 -36.5943 789.837L-35.3362 789.837L-34.19 789.865L871.484 789.86L873.385 789.944C874.671 789.944 875.929 790.112 877.187 790.168C887.308 791.034 897.204 793.941 906.178 798.664C915.124 803.388 923.12 809.872 929.578 817.698C935.952 825.552 940.732 834.663 943.556 844.334C944.982 849.197 945.904 854.2 946.323 859.259C946.407 860.517 946.547 861.802 946.547 863.06L946.603 864.96L946.603 1486.05L958.96 1486.05L958.96 875.917C958.904 870.019 959.127 864.122 958.624 858.253C958.121 852.383 957.031 846.57 955.381 840.896L955.381 840.84Z" />
+                    <path
+                        d="M937.965 863.339C937.965 862.194 937.825 861.076 937.769 859.958C937.378 855.458 936.567 851.014 935.309 846.709C932.821 838.185 928.599 830.163 923.008 823.204C923.008 823.204 922.98 823.176 922.952 823.148C922.896 823.092 922.868 823.008 922.812 822.952C917.109 816.105 910.064 810.347 902.18 806.21C894.213 802.018 885.435 799.447 876.461 798.664C875.342 798.608 874.224 798.441 873.078 798.469L871.373 798.413L-35.392 798.418L-36.7619 798.39C-38.579 798.334 -40.3962 798.362 -42.2134 798.166C-49.4541 797.719 -56.6948 796.517 -63.7398 794.617C-77.8298 790.843 -91.1091 784.164 -102.599 775.22C-114.061 766.276 -123.734 755.04 -130.891 742.351C-138.048 729.662 -142.605 715.492 -144.226 701.014C-144.618 697.408 -144.869 693.775 -144.897 690.141L-144.897 688.772L-144.925 687.654L-144.925 -55.9969L-151.103 -55.9969L-151.103 688.772L-151.076 690.197C-151.02 694.026 -150.796 697.855 -150.377 701.684C-148.671 716.973 -143.835 731.954 -136.287 745.37C-128.738 758.785 -118.534 770.636 -106.429 780.083C-94.3241 789.53 -80.29 796.573 -65.3892 800.57C-57.9528 802.582 -50.3207 803.84 -42.6607 804.315C-40.7596 804.483 -38.8306 804.483 -36.9296 804.539L-35.5038 804.539L-34.3297 804.567L871.149 804.562L872.686 804.617C873.721 804.617 874.727 804.757 875.762 804.813C883.953 805.512 891.893 807.832 899.133 811.661C906.318 815.462 912.804 820.716 918.004 827.005C923.12 833.35 926.978 840.644 929.242 848.414C930.388 852.327 931.143 856.352 931.479 860.461C931.535 861.495 931.675 862.501 931.675 863.535L931.675 865.072L931.73 865.883L931.73 1485.97L937.909 1485.97L937.909 865.016L937.853 863.311L937.965 863.339Z" />
+                    <path
+                        d="M925.971 863.759C925.971 862.808 925.859 861.886 925.804 860.964C925.496 857.246 924.797 853.613 923.763 850.063C921.722 843.104 918.283 836.536 913.698 830.834C913.698 830.834 913.615 830.722 913.587 830.694C913.559 830.638 913.503 830.583 913.475 830.527C908.778 824.909 902.991 820.213 896.561 816.831C890.019 813.366 882.807 811.269 875.398 810.626C874.476 810.571 873.553 810.431 872.602 810.459L871.205 810.459L870.506 810.403L-35.42 810.408L-36.9297 810.38C-38.9425 810.324 -40.9554 810.324 -42.9682 810.157C-51.0197 809.654 -59.0432 808.34 -66.843 806.216C-82.4986 802.023 -97.2316 794.617 -109.952 784.695C-122.672 774.772 -133.407 762.335 -141.319 748.248C-149.258 734.162 -154.318 718.426 -156.108 702.383C-156.555 698.386 -156.807 694.334 -156.863 690.337L-156.863 688.828L-156.89 687.682L-156.89 -55.9969L-161 -55.9969L-161 688.8L-160.972 690.365C-160.916 694.529 -160.665 698.666 -160.189 702.83C-158.344 719.432 -153.088 735.699 -144.897 750.261C-136.706 764.823 -125.635 777.707 -112.468 787.937C-99.3283 798.194 -84.0641 805.852 -67.9053 810.185C-59.8259 812.365 -51.5229 813.734 -43.2198 814.237C-41.1511 814.433 -39.0543 814.405 -36.9856 814.489L-35.42 814.489L-34.2179 814.517L871.149 814.512L872.463 814.567C873.33 814.567 874.196 814.679 875.063 814.735C881.94 815.322 888.566 817.278 894.632 820.465C900.643 823.623 906.066 828.039 910.428 833.293C914.705 838.604 917.92 844.725 919.821 851.209C920.771 854.479 921.414 857.861 921.694 861.299C921.75 862.165 921.862 863.004 921.862 863.898L921.862 865.212L921.918 865.911L921.918 1486L926.027 1486L926.027 865.156L925.971 863.759Z" />
+                </mask>
+                <path
+                    d="M995.974 864.401L995.89 861.299C995.89 859.231 995.666 857.135 995.527 855.066C994.828 846.765 993.29 838.492 990.942 830.471C986.245 814.4 978.306 799.307 967.766 786.394C957.171 773.509 944.003 762.777 929.214 755.007C914.453 747.181 898.015 742.374 881.381 740.976C879.312 740.836 877.215 740.613 875.147 740.585L872.043 740.501L870.506 740.501L869.388 740.473L-34.777 740.478C-34.9727 740.478 -35.1684 740.478 -35.2243 740.478L-35.8673 740.478C-36.734 740.395 -37.6006 740.478 -38.4673 740.367C-41.9059 740.143 -45.3166 739.584 -48.6154 738.69C-55.2132 736.929 -61.4474 733.798 -66.8989 729.55C-72.3504 725.302 -76.9352 719.963 -80.29 713.982C-83.6727 708.001 -85.7974 701.405 -86.5523 694.557C-86.7479 692.852 -86.8598 691.12 -86.8598 689.387L-86.8598 -55.997L-111.545 -55.997L-111.545 688.744L-111.517 689.694C-111.517 692.238 -111.322 694.781 -111.042 697.296C-109.924 707.386 -106.737 717.196 -101.761 726.056C-96.7843 734.888 -90.0188 742.742 -82.0233 749.003C-74.0278 755.264 -64.7742 759.875 -54.9895 762.503C-50.0971 763.816 -45.065 764.655 -40.0049 764.962C-38.7469 765.102 -37.4608 765.046 -36.2028 765.102L-35.2523 765.102C-34.9448 765.13 -34.5254 765.13 -34.19 765.13L871.764 765.125L874.28 765.209C875.957 765.209 877.635 765.404 879.284 765.516C892.647 766.662 905.815 770.519 917.696 776.78C929.578 783.04 940.173 791.677 948.672 802.018C957.114 812.387 963.461 824.489 967.235 837.346C969.108 843.803 970.366 850.427 970.925 857.107C971.037 858.784 971.205 860.46 971.233 862.137L971.289 864.653L971.289 1486L995.974 1486L995.974 864.401Z"
+                    stroke="url(#paint0_linear_1871_1189)" stroke-width="2" mask="url(#path-1-inside-1_1871_1189)" />
+                <path
+                    d="M955.381 840.84C952.11 829.604 946.547 819.011 939.167 809.928C939.167 809.928 939.139 809.9 939.111 809.872C939.083 809.844 939.055 809.788 939.027 809.76C931.562 800.732 922.281 793.186 911.937 787.736C901.509 782.23 889.991 778.848 878.222 777.842C872.351 777.311 866.452 777.534 860.553 777.478L-32.0094 777.484C-34.9448 777.484 -37.9082 777.484 -40.8436 777.288C-46.7145 776.925 -52.5574 775.947 -58.2605 774.437C-69.6387 771.391 -80.4019 765.996 -89.6834 758.729C-98.9929 751.491 -106.821 742.379 -112.58 732.094C-118.367 721.836 -122.057 710.377 -123.343 698.666C-124.042 692.797 -123.902 686.899 -123.93 681.002L-123.93 -55.997L-136.287 -55.997L-136.287 688.772L-136.259 690.03C-136.231 693.384 -136.007 696.737 -135.644 700.063C-134.162 713.395 -129.941 726.448 -123.371 738.159C-116.801 749.87 -107.883 760.211 -97.2875 768.484C-86.72 776.729 -74.4752 782.878 -61.4754 786.372C-54.9896 788.132 -48.3359 789.223 -41.6264 789.642C-39.949 789.809 -38.2716 789.781 -36.5943 789.837L-35.3362 789.837L-34.19 789.865L871.484 789.86L873.385 789.944C874.671 789.944 875.929 790.112 877.187 790.168C887.308 791.034 897.204 793.941 906.178 798.664C915.124 803.388 923.12 809.872 929.578 817.698C935.952 825.552 940.732 834.663 943.556 844.334C944.982 849.197 945.904 854.2 946.323 859.259C946.407 860.517 946.547 861.802 946.547 863.06L946.603 864.96L946.603 1486.05L958.96 1486.05L958.96 875.917C958.904 870.019 959.127 864.122 958.624 858.253C958.121 852.383 957.031 846.57 955.381 840.896L955.381 840.84Z"
+                    stroke="url(#paint1_linear_1871_1189)" stroke-width="2" mask="url(#path-1-inside-1_1871_1189)" />
+                <path
+                    d="M937.965 863.339C937.965 862.194 937.825 861.076 937.769 859.958C937.378 855.458 936.567 851.014 935.309 846.709C932.821 838.185 928.599 830.163 923.008 823.204C923.008 823.204 922.98 823.176 922.952 823.148C922.896 823.092 922.868 823.008 922.812 822.952C917.109 816.105 910.064 810.347 902.18 806.21C894.213 802.018 885.435 799.447 876.461 798.664C875.342 798.608 874.224 798.441 873.078 798.469L871.373 798.413L-35.392 798.418L-36.7619 798.39C-38.579 798.334 -40.3962 798.362 -42.2134 798.166C-49.4541 797.719 -56.6948 796.517 -63.7398 794.617C-77.8298 790.843 -91.1091 784.164 -102.599 775.22C-114.061 766.276 -123.734 755.04 -130.891 742.351C-138.048 729.662 -142.605 715.492 -144.226 701.014C-144.618 697.408 -144.869 693.775 -144.897 690.141L-144.897 688.772L-144.925 687.654L-144.925 -55.9969L-151.103 -55.9969L-151.103 688.772L-151.076 690.197C-151.02 694.026 -150.796 697.855 -150.377 701.684C-148.671 716.973 -143.835 731.954 -136.287 745.37C-128.738 758.785 -118.534 770.636 -106.429 780.083C-94.3241 789.53 -80.29 796.573 -65.3892 800.57C-57.9528 802.582 -50.3207 803.84 -42.6607 804.315C-40.7596 804.483 -38.8306 804.483 -36.9296 804.539L-35.5038 804.539L-34.3297 804.567L871.149 804.562L872.686 804.617C873.721 804.617 874.727 804.757 875.762 804.813C883.953 805.512 891.893 807.832 899.133 811.661C906.318 815.462 912.804 820.716 918.004 827.005C923.12 833.35 926.978 840.644 929.242 848.414C930.388 852.327 931.143 856.352 931.479 860.461C931.535 861.495 931.675 862.501 931.675 863.535L931.675 865.072L931.73 865.883L931.73 1485.97L937.909 1485.97L937.909 865.016L937.853 863.311L937.965 863.339Z"
+                    stroke="url(#paint2_linear_1871_1189)" stroke-width="2" mask="url(#path-1-inside-1_1871_1189)" />
+                <path
+                    d="M925.971 863.759C925.971 862.808 925.859 861.886 925.804 860.964C925.496 857.246 924.797 853.613 923.763 850.063C921.722 843.104 918.283 836.536 913.698 830.834C913.698 830.834 913.615 830.722 913.587 830.694C913.559 830.638 913.503 830.583 913.475 830.527C908.778 824.909 902.991 820.213 896.561 816.831C890.019 813.366 882.807 811.269 875.398 810.626C874.476 810.571 873.553 810.431 872.602 810.459L871.205 810.459L870.506 810.403L-35.42 810.408L-36.9297 810.38C-38.9425 810.324 -40.9554 810.324 -42.9682 810.157C-51.0197 809.654 -59.0432 808.34 -66.843 806.216C-82.4986 802.023 -97.2316 794.617 -109.952 784.695C-122.672 774.772 -133.407 762.335 -141.319 748.248C-149.258 734.162 -154.318 718.426 -156.108 702.383C-156.555 698.386 -156.807 694.334 -156.863 690.337L-156.863 688.828L-156.89 687.682L-156.89 -55.9969L-161 -55.9969L-161 688.8L-160.972 690.365C-160.916 694.529 -160.665 698.666 -160.189 702.83C-158.344 719.432 -153.088 735.699 -144.897 750.261C-136.706 764.823 -125.635 777.707 -112.468 787.937C-99.3283 798.194 -84.0641 805.852 -67.9053 810.185C-59.8259 812.365 -51.5229 813.734 -43.2198 814.237C-41.1511 814.433 -39.0543 814.405 -36.9856 814.489L-35.42 814.489L-34.2179 814.517L871.149 814.512L872.463 814.567C873.33 814.567 874.196 814.679 875.063 814.735C881.94 815.322 888.566 817.278 894.632 820.465C900.643 823.623 906.066 828.039 910.428 833.293C914.705 838.604 917.92 844.725 919.821 851.209C920.771 854.479 921.414 857.861 921.694 861.299C921.75 862.165 921.862 863.004 921.862 863.898L921.862 865.212L921.918 865.911L921.918 1486L926.027 1486L926.027 865.156L925.971 863.759Z"
+                    stroke="url(#paint3_linear_1871_1189)" stroke-width="2" mask="url(#path-1-inside-1_1871_1189)" />
+                <defs>
+                    <linearGradient id="paint0_linear_1871_1189" x1="219.5" y1="655.001" x2="219.5" y2="1284.5"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1871_1189" x1="219.5" y1="655.001" x2="219.5" y2="1284.5"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_1871_1189" x1="219.5" y1="655.001" x2="219.5" y2="1284.5"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_1871_1189" x1="219.5" y1="655.001" x2="219.5" y2="1284.5"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <p class="herotrackspara">For an established business entering India or the US, or restructuring after a
+            decade of accumulated
+            complexity, the risk sits in sequencing: when to enter, what to build first, how fast to scale.
+            Founder-led companies run into the same wall, just earlier and with less room to absorb a wrong call. We
+            work with CXOs and boards to turn where you're growing into an operating model that makes it
+            executable.</p>
+
+        <div class="herosvgtracksbtm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="74" height="286" viewBox="0 0 74 286" fill="none">
+                <path d="M74 285.993L49.3334 285.993L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 285.993Z"
+                    fill="url(#paint0_linear_1871_1337)" />
+                <path d="M37.0139 286L24.6667 286L24.6666 -2.15642e-06L37.0139 -3.23586e-06L37.0139 286Z"
+                    fill="url(#paint1_linear_1871_1337)" />
+                <path d="M9.80545 285.989L9.80536 -8.57214e-07L15.979 -1.39693e-06L15.9791 285.989L9.80545 285.989Z"
+                    fill="url(#paint2_linear_1871_1337)" />
+                <path d="M6.0988e-05 285.993L-2.50029e-05 0L4.10646 -3.59001e-07L4.10655 285.993L6.0988e-05 285.993Z"
+                    fill="url(#paint3_linear_1871_1337)" />
+                <defs>
+                    <linearGradient id="paint0_linear_1871_1337" x1="37" y1="-3.23464e-06" x2="37" y2="286"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.5" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1871_1337" x1="37" y1="-3.23464e-06" x2="37" y2="286"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.5" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_1871_1337" x1="37" y1="-3.23464e-06" x2="37" y2="286"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.5" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_1871_1337" x1="37" y1="-3.23464e-06" x2="37" y2="286"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.5" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </section>
+
+
+    <section id="Servicelinesdeliverablescontsec">
+        <div class="servicelinedeliverable">
+            <svg xmlns="http://www.w3.org/2000/svg" width="452" height="841" viewBox="0 0 74 841" fill="none">
+                <path
+                    d="M0.50061 840.55L0.500666 200.897L0.584529 197.795C0.584529 195.727 0.808162 193.631 0.947933 191.562C1.64685 183.261 3.18445 174.988 5.53277 166.967C10.2294 150.896 18.169 135.803 28.7086 122.89C39.304 110.005 52.4715 99.2729 67.2604 91.5029C82.0214 83.677 98.4598 78.8696 115.094 77.4721C117.163 77.3324 119.259 77.1087 121.328 77.0808L124.431 76.997L125.969 76.997L127.087 76.9691L325.252 76.977C325.447 76.977 325.643 76.977 325.699 76.977L326.342 76.977C327.209 76.8931 328.075 76.977 328.942 76.8652C332.38 76.6415 335.791 76.0827 339.09 75.1883C345.688 73.4274 351.922 70.2969 357.373 66.0486C362.825 61.8003 367.41 56.462 370.765 50.4808C374.147 44.4996 376.272 37.9034 377.027 31.0557C377.223 29.3508 377.334 27.6181 377.334 25.8852L377.334 0.499994L402.02 0.499996L402.02 25.2422L401.992 26.1927C401.992 28.7361 401.796 31.2794 401.517 33.7949C400.398 43.8847 397.211 53.695 392.235 62.555C387.259 71.387 380.493 79.2408 372.498 85.5015C364.502 91.7623 355.249 96.374 345.464 99.0013C340.572 100.315 335.54 101.153 330.479 101.461C329.221 101.601 327.935 101.545 326.677 101.601L325.727 101.601C325.419 101.629 325 101.628 324.665 101.628L124.711 101.621L122.195 101.705C120.517 101.705 118.84 101.9 117.191 102.012C103.827 103.158 90.66 107.015 78.7785 113.276C66.897 119.536 56.3016 128.173 47.8029 138.514C39.3601 148.883 33.0139 160.985 29.2398 173.842C27.3668 180.299 26.1086 186.923 25.5495 193.603C25.4377 195.28 25.27 196.957 25.242 198.634L25.1861 201.149L25.186 840.55M37.5149 840.55L37.5149 212.413C37.5709 206.515 37.3472 200.618 37.8504 194.749C38.3536 188.879 39.4439 183.066 41.0933 177.392L41.0933 177.336C44.3642 166.1 49.9276 155.507 57.308 146.424C57.308 146.424 57.336 146.396 57.364 146.368C57.3919 146.34 57.4199 146.284 57.4478 146.256C64.9122 137.228 74.1937 129.682 84.5375 124.232C94.9653 118.726 106.483 115.344 118.253 114.338C124.124 113.807 130.023 114.03 135.921 113.974L322.484 113.982C325.419 113.982 328.383 113.982 331.318 113.787C337.189 113.423 343.032 112.445 348.735 110.936C360.113 107.889 370.876 102.495 380.158 95.2281C389.467 87.9892 397.295 78.8775 403.054 68.5921C408.841 58.3347 412.531 46.8753 413.817 35.1645C414.516 29.2951 414.377 23.3976 414.405 17.5003L414.405 0.499997L426.761 0.499998L426.761 25.2703L426.733 26.5281C426.705 29.8821 426.482 33.2359 426.118 36.5619C424.637 49.8939 420.415 62.9465 413.845 74.6573C407.276 86.3681 398.358 96.7094 387.762 104.982C377.195 113.228 364.95 119.377 351.95 122.87C345.464 124.631 338.811 125.721 332.101 126.14C330.424 126.308 328.746 126.28 327.069 126.336L325.811 126.336L324.665 126.364L124.99 126.356L123.089 126.44C121.803 126.44 120.545 126.608 119.287 126.664C109.167 127.53 99.2706 130.437 90.2966 135.16C81.3505 139.884 73.355 146.368 66.897 154.194C60.523 162.048 55.7425 171.159 52.9189 180.83C51.4931 185.693 50.5706 190.696 50.1512 195.755C50.0673 197.013 49.9275 198.298 49.9275 199.556L49.8716 201.457L49.8716 840.55M58.5658 840.55L58.5659 201.512L58.6218 199.807L58.5099 199.835C58.5099 198.69 58.6497 197.572 58.7056 196.454C59.097 191.954 59.9078 187.51 61.1658 183.206C63.6539 174.681 67.8754 166.659 73.4666 159.7C73.4666 159.7 73.4946 159.672 73.5225 159.644C73.5784 159.588 73.6064 159.504 73.6623 159.448C79.3654 152.601 86.4104 146.843 94.2941 142.707C102.262 138.514 111.04 135.943 120.014 135.16C121.132 135.104 122.25 134.937 123.397 134.965L125.102 134.909L325.867 134.916L327.236 134.888C329.054 134.833 330.871 134.861 332.688 134.665C339.929 134.218 347.169 133.016 354.214 131.115C368.304 127.342 381.584 120.662 393.074 111.718C404.536 102.774 414.209 91.5388 421.366 78.8497C428.522 66.1606 433.079 51.9902 434.701 37.5123C435.092 33.9068 435.344 30.2733 435.372 26.6398L435.372 25.2703L435.4 24.1524L435.4 0.499999L441.578 0.499999L441.578 25.2703L441.55 26.6957C441.494 30.5248 441.271 34.3539 440.851 38.183C439.146 53.4715 434.309 68.4525 426.761 81.8682C419.213 95.284 409.009 107.135 396.904 116.582C384.799 126.028 370.765 133.072 355.864 137.069C348.427 139.081 340.795 140.339 333.135 140.814C331.234 140.981 329.305 140.981 327.404 141.037L325.978 141.037L324.804 141.065L125.326 141.058L123.788 141.113C122.754 141.113 121.747 141.253 120.713 141.309C112.522 142.008 104.582 144.328 97.3414 148.157C90.1566 151.958 83.6707 157.212 78.4708 163.501C73.3547 169.846 69.4968 177.14 67.2324 184.91C66.0861 188.823 65.3312 192.848 64.9958 196.957C64.9399 197.991 64.8001 198.997 64.8001 200.031L64.8001 201.568L64.7442 202.379L64.7441 840.55M70.4474 840.55L70.4474 201.652L70.5034 200.255C70.5034 199.304 70.6152 198.382 70.6711 197.46C70.9786 193.742 71.6775 190.109 72.7118 186.559C74.7527 179.6 78.1913 173.032 82.7762 167.33C82.7762 167.33 82.86 167.218 82.888 167.19C82.916 167.134 82.9719 167.079 82.9998 167.023C87.6965 161.405 93.4834 156.709 99.9134 153.327C106.455 149.862 113.668 147.765 121.076 147.123C121.999 147.067 122.922 146.927 123.872 146.955L125.27 146.955L125.969 146.899L325.895 146.907L327.404 146.879C329.417 146.823 331.43 146.823 333.443 146.655C341.494 146.152 349.518 144.839 357.318 142.714C372.973 138.522 387.706 131.115 400.426 121.193C413.146 111.271 423.882 98.8334 431.793 84.7469C439.733 70.6603 444.793 54.9247 446.582 38.8817C447.03 34.8848 447.281 30.8323 447.337 26.8355L447.337 25.3262L447.365 24.1802L447.365 0.5L451.475 0.5L451.475 25.2982L451.447 26.8633C451.391 31.0278 451.139 35.1645 450.664 39.3289C448.819 55.931 443.563 72.1976 435.372 86.7593C427.181 101.321 416.11 114.206 402.942 124.435C389.803 134.693 374.539 142.351 358.38 146.683C350.301 148.863 341.997 150.233 333.694 150.736C331.626 150.932 329.529 150.903 327.46 150.987L325.895 150.987L324.692 151.015L125.326 151.008L124.012 151.063C123.145 151.063 122.279 151.175 121.412 151.231C114.535 151.818 107.909 153.774 101.842 156.961C95.8318 160.119 90.4083 164.535 86.0471 169.79C81.7697 175.1 78.5548 181.221 76.6537 187.705C75.7032 190.975 75.0602 194.357 74.7807 197.795C74.7248 198.661 74.613 199.5 74.613 200.394L74.613 201.708L74.5571 202.407L74.557 840.55"
+                    stroke="#EC2D26" />
+            </svg>
+        </div>
+        <div class="servicelinedeliverablecont">
+            <h2 class="deliverable-main-title">Service lines<br>& deliverables</h2>
+
+            <div class="deliverable-item active">
+                <div class="deliverable-header">
+                    <h3 class="deliverable-title">Market Entry & Expansion</h3>
+                    <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        viewBox="0 0 24 24" fill="none" stroke="#EC2D26" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </div>
+                <p class="deliverable-desc">For leaders entering or scaling in complex markets, where the cost of a
+                    wrong first move is high.</p>
+
+                <div class="deliverable-grid">
+                    <div class="deliverable-grid-col">
+                        <h4>Market Entry Strategy</h4>
+                        <p>The structure, compliance path, and go-to-market sequence for entering India, the US, or any
+                            market where getting the order wrong is expensive.</p>
+                    </div>
+                    <div class="deliverable-grid-col">
+                        <h4>Growth Roadmaps</h4>
+                        <p>Investment, capability, and execution sequenced so scale compounds instead of overextending.
+                        </p>
+                    </div>
+                    <div class="deliverable-grid-col">
+                        <h4>Business Model Innovation</h4>
+                        <p>Rebuilding how the business creates, prices, and captures value once the old model stops
+                            earning its keep.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="deliverable-divider"></div>
+
+            <div class="deliverable-item">
+                <div class="deliverable-header">
+                    <h3 class="deliverable-title">Target Operating Models</h3>
+                    <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                        viewBox="0 0 24 24" fill="none" stroke="#EC2D26" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </div>
+                <p class="deliverable-desc">The bridge from strategy to structure — direction translated into the model
+                    that runs it.</p>
+
+                <div class="deliverable-grid">
+                    <div class="deliverable-grid-col">
+                        <h4>Digital Strategy & Roadmap</h4>
+                        <p>Technology decisions anchored to business direction, so the stack moves at the pace of the
+                            strategy, not behind it.</p>
+                    </div>
+                    <div class="deliverable-grid-col">
+                        <h4>Operational Design</h4>
+                        <p>Strategy translated into the functions, processes, and decision rights that can actually run
+                            it.</p>
+                    </div>
+                    <div class="deliverable-grid-col">
+                        <h4>Board Advisory</h4>
+                        <p>Independent counsel for decisions where the consequences are real, not theoretical.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="deliverable-divider"></div>
+        </div>
+        <div class="servicelinedeliverablesvgbtm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="621" height="641" viewBox="0 0 621 641" fill="none">
+                <path
+                    d="M545.834 0.00012207L545.834 255.384C545.834 257.117 545.722 258.849 545.527 260.554C544.772 267.402 542.647 273.998 539.265 279.979C535.91 285.96 531.325 291.299 525.873 295.547C520.422 299.795 514.188 302.926 507.59 304.687C504.291 305.581 500.88 306.14 497.442 306.364C496.575 306.475 495.709 306.392 494.842 306.475H494.199C494.143 306.475 493.947 306.475 493.752 306.475L-410.413 306.47L-411.531 306.498H-413.069L-416.172 306.582C-418.241 306.61 -420.337 306.833 -422.406 306.973C-439.04 308.371 -455.479 313.178 -470.24 321.004C-485.029 328.774 -498.196 339.507 -508.792 352.391C-519.331 365.304 -527.271 380.397 -531.967 396.468C-534.316 404.489 -535.853 412.762 -536.552 421.063C-536.692 423.132 -536.916 425.228 -536.916 427.296L-536.999 430.399V640.051M570.52 0.00012207L570.52 254.741L570.492 255.691C570.492 258.235 570.296 260.778 570.017 263.293C568.898 273.383 565.711 283.193 560.735 292.053C555.759 300.885 548.993 308.739 540.998 315C533.002 321.261 523.749 325.872 513.964 328.5C509.072 329.813 504.04 330.652 498.979 330.959C497.721 331.099 496.435 331.043 495.177 331.099H494.227C493.919 331.127 493.5 331.127 493.164 331.127L-412.789 331.122L-415.305 331.206C-416.983 331.206 -418.66 331.401 -420.309 331.513C-433.673 332.659 -446.84 336.516 -458.722 342.777C-470.603 349.037 -481.198 357.674 -489.697 368.015C-498.14 378.384 -504.486 390.487 -508.26 403.343C-510.133 409.8 -511.391 416.424 -511.951 423.104C-512.062 424.781 -512.23 426.458 -512.258 428.135L-512.314 430.65V640.051M582.904 0.00012207L582.905 246.999C582.877 252.896 583.016 258.794 582.317 264.663C581.031 276.374 577.341 287.833 571.554 298.091C565.795 308.376 557.967 317.488 548.658 324.727C539.376 331.993 528.613 337.388 517.235 340.434C511.532 341.944 505.689 342.922 499.818 343.285C496.883 343.481 493.919 343.481 490.984 343.481L-401.579 343.475C-407.478 343.531 -413.376 343.308 -419.247 343.839C-431.017 344.845 -442.535 348.227 -452.963 353.733C-463.306 359.183 -472.588 366.73 -480.052 375.757C-480.08 375.785 -480.108 375.841 -480.136 375.869C-480.164 375.897 -480.192 375.925 -480.192 375.925C-487.573 385.009 -493.136 395.602 -496.407 406.837V406.893C-498.056 412.567 -499.146 418.38 -499.65 424.25C-500.153 430.119 -499.929 436.017 -499.985 441.914V640.051M595.261 0.00012207L595.261 254.769L595.233 256.027C595.205 259.381 594.982 262.734 594.618 266.06C593.137 279.392 588.915 292.445 582.345 304.156C575.776 315.867 566.858 326.208 556.262 334.481C545.695 342.726 533.45 348.875 520.45 352.369C513.964 354.13 507.31 355.22 500.601 355.639C498.924 355.807 497.246 355.779 495.569 355.834H494.311L493.165 355.862L-412.51 355.857L-414.411 355.941C-415.697 355.941 -416.955 356.109 -418.213 356.165C-428.333 357.031 -438.229 359.938 -447.203 364.661C-456.15 369.385 -464.145 375.869 -470.603 383.695C-476.977 391.549 -481.758 400.66 -484.581 410.331C-486.007 415.194 -486.93 420.197 -487.349 425.256C-487.433 426.514 -487.573 427.799 -487.573 429.057L-487.628 430.958V640.051M603.9 0.00012207L603.9 253.651L603.872 254.769V256.138C603.844 259.772 603.592 263.405 603.201 267.011C601.579 281.489 597.022 295.659 589.866 308.348C582.709 321.037 573.036 332.273 561.574 341.217C550.084 350.161 536.804 356.841 522.714 360.614C515.669 362.514 508.429 363.716 501.188 364.163C499.371 364.359 497.554 364.331 495.736 364.387L494.367 364.415L-412.398 364.41L-414.103 364.466C-415.25 364.438 -416.368 364.605 -417.486 364.661C-426.46 365.444 -435.238 368.015 -443.206 372.208C-451.09 376.344 -458.135 382.102 -463.838 388.95C-463.894 389.006 -463.922 389.089 -463.978 389.145C-464.005 389.173 -464.033 389.201 -464.033 389.201C-469.625 396.161 -473.846 404.182 -476.334 412.707C-477.592 417.011 -478.403 421.455 -478.794 425.955C-478.85 427.073 -478.99 428.191 -478.99 429.337L-478.878 429.309L-478.934 431.014V640.051M610.078 0.00012207L610.078 254.769L610.05 256.194C609.994 260.023 609.77 263.852 609.351 267.682C607.646 282.97 602.809 297.951 595.261 311.367C587.713 324.782 577.509 336.633 565.404 346.08C553.299 355.527 539.265 362.57 524.364 366.567C516.927 368.579 509.295 369.837 501.635 370.312C499.734 370.48 497.805 370.48 495.904 370.536H494.478L493.304 370.564L-412.174 370.559L-413.712 370.615C-414.746 370.615 -415.753 370.754 -416.787 370.81C-424.978 371.509 -432.918 373.829 -440.159 377.658C-447.344 381.459 -453.829 386.713 -459.029 393.002C-464.145 399.347 -468.003 406.641 -470.268 414.412C-471.414 418.324 -472.169 422.349 -472.504 426.458C-472.56 427.492 -472.7 428.498 -472.7 429.532V431.069L-472.756 431.88V640.051M615.865 0.00012207L615.865 253.679L615.837 254.825V256.334C615.781 260.331 615.53 264.383 615.082 268.38C613.293 284.423 608.233 300.159 600.293 314.245C592.382 328.332 581.646 340.77 568.926 350.692C556.206 360.614 541.473 368.021 525.818 372.213C518.018 374.337 509.994 375.651 501.943 376.154C499.93 376.322 497.917 376.322 495.904 376.377L494.395 376.405L-411.531 376.4L-412.23 376.456H-413.628C-414.578 376.428 -415.501 376.568 -416.424 376.624C-423.832 377.266 -431.045 379.363 -437.587 382.828C-444.017 386.21 -449.804 390.906 -454.5 396.524C-454.528 396.58 -454.584 396.636 -454.612 396.691C-454.64 396.719 -454.724 396.831 -454.724 396.831C-459.309 402.533 -462.747 409.101 -464.788 416.06C-465.823 419.61 -466.521 423.244 -466.829 426.961C-466.885 427.883 -466.997 428.805 -466.997 429.756L-467.053 431.153V640.051M619.975 0.00012207L619.975 254.797L619.947 256.362C619.891 260.526 619.639 264.663 619.164 268.827C617.319 285.429 612.063 301.696 603.872 316.258C595.681 330.82 584.61 343.704 571.442 353.934C558.303 364.191 543.039 371.849 526.88 376.182C518.8 378.362 510.497 379.731 502.194 380.234C500.126 380.43 498.029 380.402 495.96 380.486H494.395L493.192 380.514L-412.174 380.509L-413.488 380.565C-414.355 380.565 -415.221 380.676 -416.088 380.732C-422.965 381.319 -429.591 383.276 -435.658 386.462C-441.668 389.62 -447.092 394.036 -451.453 399.291C-455.73 404.601 -458.945 410.722 -460.846 417.206C-461.797 420.477 -462.44 423.858 -462.719 427.296C-462.775 428.163 -462.887 429.001 -462.887 429.896V431.209L-462.943 431.908V640.051"
+                    stroke="#EC2D26" />
+            </svg>
+        </div>
+    </section>
+
+
+    <section id="differentaboutworkingwithus">
+        <div class="diff-container">
+            <div class="diff-left">
+                <h2 class="diff-title">What's<br><span class="highlight">different</span><br>about working<br>with us
+                </h2>
+            </div>
+            <div class="diff-right">
+                <div class="diff-card active">
+                    <div class="diff-card-collapsed">
+                        <p>We start with the decision, not the deck.</p>
+                    </div>
+                    <div class="diff-card-content">
+                        <h3>We start with the decision, not the deck.</h3>
+                        <p>Every engagement is anchored to the actual call leadership has to make.</p>
+                    </div>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-card-collapsed">
+                        <p>Finance- grade rigor.</p>
+                    </div>
+                    <div class="diff-card-content">
+                        <h3>Finance- grade rigor.</h3>
+                        <p>Our analysis is built to withstand the toughest scrutiny, ensuring absolute confidence in
+                            every strategic move.</p>
+                    </div>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-card-collapsed">
+                        <p>From<br>advice to<br>operating<br>model, one<br>team.</p>
+                    </div>
+                    <div class="diff-card-content">
+                        <h3>From advice to<br>operating model,<br>one team.</h3>
+                        <p>The people who write the recommendation<br>build the operating model it depends on,<br>inside
+                            a single engagement, start to finish.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="diffbtmsvg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="74" height="482" viewBox="0 0 74 482" fill="none">
+                <path d="M74 481.988L49.3334 481.988L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 481.988Z"
+                    fill="url(#paint0_linear_1871_1151)" />
+                <path d="M37.014 482L24.6667 482L24.6666 -2.15642e-06L37.0139 -3.23586e-06L37.014 482Z"
+                    fill="url(#paint1_linear_1871_1151)" />
+                <path d="M9.80545 481.982L9.80535 -8.57215e-07L15.979 -1.39693e-06L15.9791 481.982L9.80545 481.982Z"
+                    fill="url(#paint2_linear_1871_1151)" />
+                <path d="M6.09876e-05 481.988L-4.21378e-05 0L4.10645 -3.59001e-07L4.10655 481.988L6.09876e-05 481.988Z"
+                    fill="url(#paint3_linear_1871_1151)" />
+                <defs>
+                    <linearGradient id="paint0_linear_1871_1151" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.5" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1871_1151" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.5" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_1871_1151" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.5" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_1871_1151" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.5" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </section>
+
+    <section id="Whenyouneedthis">
+        <div class="wynt-container">
+            <div class="wynt-left">
+                <h2 class="wynt-title">When you'll<br><span class="highlight">need this</span></h2>
+            </div>
+            <div class="wynt-right">
+                <div class="wynt-grid-top">
+                    <div class="wynt-col">
+                        <div class="wynt-card wynt-card-short">
+                            <p>You're eyeing India or the<br>US, and "we should be<br>there" is currently the<br>entire
+                                strategy.</p>
+                        </div>
+                        <div class="wynt-card wynt-card-tall slide-down-hover">
+                            <p>A digital strategy decision<br>is sitting on someone's<br>desk with no long-term<br>view
+                                attached.</p>
+                        </div>
+                    </div>
+                    <div class="wynt-col">
+                        <div class="wynt-card wynt-card-tall align-bottom slide-up-hover">
+                            <p>Revenue is climbing faster<br>than your operating model<br>can keep up with.</p>
+                        </div>
+                        <div class="wynt-card wynt-card-short align-center">
+                            <p>The board wants a growth<br>case built on numbers, not<br>conviction.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wynt-card wynt-card-full align-center">
+                    <p>You're a year into a scaling push and<br>still making the roadmap up as you go.</p>
+                </div>
+            </div>
+        </div>
+        <div class="whenyouneedthissvg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="74" height="482" viewBox="0 0 74 482" fill="none">
+                <path d="M74 481.988L49.3334 481.988L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 481.988Z"
+                    fill="url(#paint0_linear_1938_2745)" />
+                <path d="M37.014 482L24.6667 482L24.6666 -2.15642e-06L37.0139 -3.23586e-06L37.014 482Z"
+                    fill="url(#paint1_linear_1938_2745)" />
+                <path d="M9.80545 481.982L9.80535 -8.57215e-07L15.979 -1.39693e-06L15.9791 481.982L9.80545 481.982Z"
+                    fill="url(#paint2_linear_1938_2745)" />
+                <path d="M6.09876e-05 481.988L-4.21378e-05 0L4.10645 -3.59001e-07L4.10655 481.988L6.09876e-05 481.988Z"
+                    fill="url(#paint3_linear_1938_2745)" />
+                <defs>
+                    <linearGradient id="paint0_linear_1938_2745" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.5" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1938_2745" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.5" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_1938_2745" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.5" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_1938_2745" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.5" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </section>
+
+    <section id="relatedcasestudiessec">
+        <h2 class="rcs-title">Related<br><span class="highlight">case studies</span></h2>
+        <div class="rcs-container">
+            <!-- Card 1 -->
+            <div class="rcs-card">
+                <img src="assets/images/servicesinnpage/articleimgone.jpg" class="rcs-bg" alt="Case Study">
+                <div class="rcs-overlay"></div>
+                <div class="rcs-content">
+                    <div class="rcs-text">
+                        <h3>Article Title</h3>
+                        <p class="rcs-desc">Article content</p>
+                        <p class="rcs-meta">Strategy <span class="dot">•</span> Business & Growth Strategy<br>[industry]
+                        </p>
+                    </div>
+                    <div class="rcs-arrow-container">
+                        <img src="assets/images/servicesinnpage/arrowred.png" class="rcs-arrow-normal" alt="Arrow">
+                        <img src="assets/images/servicesinnpage/arrowwhite.png" class="rcs-arrow-hover" alt="Arrow">
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="rcs-card">
+                <img src="assets/images/servicesinnpage/articleimgtwo.jpg" class="rcs-bg" alt="Case Study">
+                <div class="rcs-overlay"></div>
+                <div class="rcs-content">
+                    <div class="rcs-text">
+                        <h3>Article Title</h3>
+                        <p class="rcs-desc">Article content</p>
+                        <p class="rcs-meta">Strategy <span class="dot">•</span> Business & Growth Strategy<br>[industry]
+                        </p>
+                    </div>
+                    <div class="rcs-arrow-container">
+                        <img src="assets/images/servicesinnpage/arrowred.png" class="rcs-arrow-normal" alt="Arrow">
+                        <img src="assets/images/servicesinnpage/arrowwhite.png" class="rcs-arrow-hover" alt="Arrow">
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="rcs-card">
+                <img src="assets/images/servicesinnpage/articleimgthree.jpg" class="rcs-bg" alt="Case Study">
+                <div class="rcs-overlay"></div>
+                <div class="rcs-content">
+                    <div class="rcs-text">
+                        <h3>Article Title</h3>
+                        <p class="rcs-desc">Article content</p>
+                        <p class="rcs-meta">Strategy <span class="dot">•</span> Business & Growth Strategy<br>[industry]
+                        </p>
+                    </div>
+                    <div class="rcs-arrow-container">
+                        <img src="assets/images/servicesinnpage/arrowred.png" class="rcs-arrow-normal" alt="Arrow">
+                        <img src="assets/images/servicesinnpage/arrowwhite.png" class="rcs-arrow-hover" alt="Arrow">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rcs-nav">
+            <div class="rcs-nav-btn">
+                <img src="assets/images/arrowslideleft.png" alt="Left">
+            </div>
+            <div class="rcs-nav-btn">
+                <img src="assets/images/arrowslideright.png" alt="Right">
+            </div>
+        </div>
+    </section>
+
+    <!-- Start the conversation section -->
+    <section id="sthirosconversationsec">
+
+    </section>
+
+    <!-- Script for sticky hover on diff-cards -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const diffCards = document.querySelectorAll('.diff-card');
+            diffCards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    diffCards.forEach(c => c.classList.remove('active'));
+                    card.classList.add('active');
+                });
+            });
+        });
+    </script>
+
+    <!-- business & growth strategy section -->
+    <!-- Inline script for Deliverables Accordion -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const headers = document.querySelectorAll('.deliverable-header');
+            headers.forEach(header => {
+                header.addEventListener('click', () => {
+                    const parent = header.closest('.deliverable-item');
+
+                    if (parent.classList.contains('active')) {
+                        parent.classList.remove('active');
+                    } else {
+                        document.querySelectorAll('.deliverable-item.active').forEach(item => {
+                            item.classList.remove('active');
+                        });
+                        parent.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
