@@ -53,11 +53,12 @@
 
         .breadcrumb {
             color: var(--red, #EC2D26);
-            font-size: 14px;
+            font-size: 16px;
             letter-spacing: 2px;
             text-transform: uppercase;
             margin-bottom: 24px;
             font-weight: 500;
+            letter-spacing: 5px;
         }
 
         .main-heading {
@@ -145,6 +146,7 @@
             /* Math: Shifts the SVG so the right-side lines align perfectly at the center */
             transform: translateX(-520px);
             overflow: visible !important;
+            pointer-events: none;
         }
 
         #Servicelinesdeliverablescontsec {
@@ -160,6 +162,8 @@
             right: 40px;
             width: 55%;
             color: #fff;
+            z-index: 20;
+            pointer-events: auto;
         }
 
         .deliverable-main-title {
@@ -167,7 +171,8 @@
             font-size: 72px;
             line-height: 1.1;
             margin-bottom: 80px;
-            font-weight: 500;
+            margin-top: 24px;
+            font-weight: 600;
         }
 
         .deliverable-item {
@@ -823,10 +828,300 @@
         .conv-btn:hover .conv-btn-inner {
             background-color: #EC2D26;
         }
+
+        .skipthedesktop,
+        .skipthedeskbtm {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .skipthedesktop svg {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+        }
+
+        .skipthedeskbtm svg {
+            width: 200%;
+            max-width: 1387.3px;
+            height: auto;
+        }
+
+        #skithedesksec {
+            position: relative;
+        }
+
+        .skipthedeskcont {
+            background-image: url('assets/images/servicesinnpage/skipthedesk.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 90%;
+            max-width: 1200px;
+            border-radius: 20px;
+            padding: 50px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            margin-top: 8rem;
+            margin-left: -1rem;
+        }
+
+        .std-content {
+            flex: 0 0 60%;
+        }
+
+        .std-content h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 56px;
+            font-weight: 300;
+            margin: 0 0 10px 0;
+            color: #fff;
+        }
+
+        .std-content h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 26px;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+            color: #fff;
+        }
+
+        .std-content p {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #aaa;
+            margin: 0;
+            max-width: 95%;
+        }
+
+        .std-buttons {
+            flex: 0 0 35%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .std-btn-outer {
+            display: flex;
+            border-radius: 163.532px;
+            border: 1.817px solid var(--FLAME-ORANGE, #EF4623);
+            padding: 4px;
+            text-decoration: none;
+            width: 100%;
+            max-width: 320px;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        .std-btn-inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 163.532px;
+            border: 5px solid var(--FLAME-ORANGE, #EF4623);
+            padding: 12px 10px;
+            color: #fff;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            width: 100%;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        .std-btn-outer:hover {
+            opacity: 0.8;
+            transform: scale(1.02);
+        }
+
+        .std-btn-outer:first-child {
+            max-width: 260px;
+        }
+
+        @media (max-width: 1366px) {
+            .skipthedeskcont {
+                max-width: 1050px;
+                width: 95%;
+                padding: 50px 40px;
+                margin-top: 8rem;
+            }
+
+            .std-content h2 {
+                font-size: 46px;
+            }
+
+            .std-content h3 {
+                font-size: 22px;
+            }
+
+            .std-content p {
+                font-size: 15px;
+            }
+
+            .std-buttons {
+                flex: 0 0 40%;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .wynt-card p {
+                font-size: 15px;
+            }
+
+            .skipthedeskcont {
+                max-width: 800px;
+                padding: 40px 30px;
+                margin-top: 7rem;
+                margin-left: 1rem;
+            }
+
+            .std-content h2 {
+                font-size: 38px;
+            }
+
+            .std-content h3 {
+                font-size: 18px;
+            }
+
+            .std-content p {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 
-<body>
+<body class="loading">
+    <!-- ═══════════════ SITE HEADER ═══════════════ -->
+    <header class="site-header header-hidden">
+        <div class="header-left">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <button class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                <span class="toggle-track">
+                    <img src="assets/images/dark_light_toggle.png" alt="Light Theme" class="toggle-art light-art">
+                    <img src="assets/images/dark_mode_toggle_new.png" alt="Dark Theme" class="toggle-art dark-art">
+                    <span class="toggle-thumb"></span>
+                </span>
+            </button>
+            <button class="menu-toggle" aria-label="Open Menu">
+                <span class="menu-icon">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ═══════════════ FULL SCREEN MENU OVERLAY ═══════════════ -->
+    <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
+        <div class="menu-content">
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="#" class="nav-link">ABOUT US</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">WHAT WE DO <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Strategy <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="#" class="nested-sub-nav-link">Business & Growth Strategy</a>
+                                <a href="#" class="nested-sub-nav-link">Strategic Finance & Transactions</a>
+                                <a href="#" class="nested-sub-nav-link">Enterprise Operations & Ecosystems</a>
+                                <a href="#" class="nested-sub-nav-link">Change Management & Organisational
+                                    Acceleration</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">AI <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="#" class="nested-sub-nav-link">AI Strategy & Sovereign Governance</a>
+                                <a href="#" class="nested-sub-nav-link">Intelligent Foundation (Data & Cloud)</a>
+                                <a href="#" class="nested-sub-nav-link">Agentic Operations & Automation</a>
+                                <a href="#" class="nested-sub-nav-link">Cognitive Experience & Engineering</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Risk <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="#" class="nested-sub-nav-link">Enterprise Governance & Regulatory Strategy</a>
+                                <a href="#" class="nested-sub-nav-link">Strategic Assurance & Process Intelligence</a>
+                                <a href="#" class="nested-sub-nav-link">Digital Risk & Technology Controls</a>
+                                <a href="#" class="nested-sub-nav-link">Forensic Integrity & Asset Protection</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Cyber <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="#" class="nested-sub-nav-link">Offensive Security & Exposure</a>
+                                <a href="#" class="nested-sub-nav-link">Cloud Security & Zero Trust</a>
+                                <a href="#" class="nested-sub-nav-link">Data Privacy & Protection Engineering</a>
+                                <a href="#" class="nested-sub-nav-link">Cyber Resilience & Crisis Readiness</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a href="our-work.html" class="nav-link">THE WORK</a>
+                <a href="#" class="nav-link">Our PRODUCTS</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">INDUSTRIES <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="#" class="sub-nav-link">BFSI & Fintech</a>
+                        <a href="#" class="sub-nav-link">D2C & Retail</a>
+                        <a href="#" class="sub-nav-link">Energy, Mining & Utilities</a>
+                        <a href="#" class="sub-nav-link">GCC</a>
+                        <a href="#" class="sub-nav-link">Healthcare & Life Sciences</a>
+                        <a href="#" class="sub-nav-link">Manufacturing</a>
+                        <a href="#" class="sub-nav-link">Telecom & Digital Infrastructure</a>
+                        <a href="#" class="sub-nav-link">Travel & Hospitality</a>
+                        <a href="#" class="sub-nav-link">Public Sector & Government</a>
+                        <a href="#" class="sub-nav-link">Real Estate / EPC / Construction</a>
+                    </div>
+                </div>
+
+                <a href="#" class="nav-link">CONTACT US</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ═══════════════ PRELOADER ═══════════════ -->
+    <div id="preloader">
+        <video id="preloader-video" src="assets/videos/sthiros_loading_video.mp4" muted playsinline></video>
+    </div>
+
     <!-- hero section -->
     <div class="hero">
         <img src="assets/images/servicesinnpage/serviceinnbanner.jpg" alt="Service Banner">
@@ -886,7 +1181,8 @@
                 </defs>
             </svg>
         </div>
-        <p class="herotrackspara">For an established business entering India or the US, or restructuring after a
+        <p class="herotrackspara">
+            For an established business entering India or the US, or restructuring after a
             decade of accumulated
             complexity, the risk sits in sequencing: when to enter, what to build first, how fast to scale.
             Founder-led companies run into the same wall, just earlier and with less room to absorb a wrong call. We
@@ -978,7 +1274,7 @@
 
             <div class="deliverable-divider"></div>
 
-            <div class="deliverable-item">
+            <div class="deliverable-item active">
                 <div class="deliverable-header">
                     <h3 class="deliverable-title">Target Operating Models</h3>
                     <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
@@ -1237,8 +1533,108 @@
     </section>
 
     <!-- Start the conversation section -->
-    <section id="sthirosconversationsec">
-
+    <section id="skithedesksec">
+        <div class="skipthedesktop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="940" height="772" viewBox="0 0 940 772" fill="none">
+                <path
+                    d="M939.974 287.653L939.89 290.755C939.89 292.823 939.666 294.92 939.527 296.988C938.828 305.289 937.29 313.562 934.942 321.583C930.245 337.655 922.306 352.747 911.766 365.66C901.171 378.545 888.003 389.277 873.214 397.047C858.453 404.873 842.015 409.68 825.381 411.078C823.312 411.218 821.215 411.441 819.147 411.469L816.043 411.553L814.506 411.553L813.388 411.581L126.223 411.586C126.027 411.586 125.832 411.586 125.776 411.586L125.133 411.586C124.266 411.67 123.4 411.586 122.533 411.698C119.094 411.921 115.684 412.48 112.385 413.375C105.787 415.135 99.5528 418.266 94.1013 422.514C88.6498 426.762 84.0649 432.101 80.7102 438.082C77.3274 444.063 75.2027 450.659 74.4479 457.507C74.2522 459.212 74.1404 460.945 74.1404 462.678L74.1402 771.061L49.4548 771.061L49.4549 463.321L49.4829 462.37C49.4829 459.827 49.6786 457.283 49.9582 454.768C51.0764 444.678 54.2634 434.868 59.2397 426.008C64.2159 417.176 70.9813 409.322 78.9769 403.061C86.9724 396.801 96.2259 392.189 106.011 389.562C110.903 388.248 115.935 387.41 120.995 387.102C122.253 386.962 123.539 387.018 124.797 386.962L125.748 386.962C126.055 386.934 126.475 386.934 126.81 386.934L815.764 386.93L818.28 386.846C819.957 386.846 821.635 386.65 823.284 386.538C836.647 385.392 849.815 381.535 861.696 375.274C873.578 369.014 884.173 360.377 892.672 350.036C901.115 339.667 907.461 327.565 911.235 314.708C913.108 308.252 914.366 301.627 914.925 294.947C915.037 293.27 915.205 291.594 915.233 289.917L915.289 287.401L915.301 0.0559882L939.986 0.0559904L939.974 287.653Z"
+                    fill="url(#paint0_linear_1871_1279)" />
+                <path
+                    d="M899.381 311.214C896.11 322.45 890.547 333.043 883.167 342.126C883.167 342.126 883.139 342.154 883.111 342.182C883.083 342.21 883.055 342.266 883.027 342.294C875.562 351.322 866.281 358.868 855.937 364.318C845.509 369.824 833.991 373.206 822.222 374.212C816.351 374.743 810.452 374.52 804.553 374.576L128.991 374.581C126.055 374.581 123.092 374.58 120.157 374.776C114.286 375.14 108.443 376.118 102.74 377.627C91.3615 380.674 80.5983 386.068 71.3168 393.335C62.0073 400.574 54.1795 409.685 48.4205 419.971C42.6335 430.228 38.9433 441.688 37.6573 453.398C36.9584 459.268 37.0982 465.165 37.0702 471.063L37.07 771.061L24.7133 771.061L24.7135 463.293L24.7414 462.035C24.7694 458.681 24.993 455.327 25.3565 452.001C26.8382 438.669 31.0596 425.616 37.6293 413.906C44.1991 402.195 53.1172 391.853 63.7126 383.58C74.2801 375.335 86.525 369.186 99.5247 365.693C106.011 363.932 112.664 362.842 119.374 362.423C121.051 362.255 122.729 362.283 124.406 362.227L125.664 362.227L126.81 362.199L815.484 362.194L817.385 362.11C818.671 362.11 819.929 361.942 821.187 361.887C831.308 361.02 841.204 358.113 850.178 353.39C859.124 348.666 867.12 342.182 873.578 334.356C879.952 326.502 884.732 317.391 887.556 307.72C888.982 302.857 889.904 297.854 890.323 292.795C890.407 291.538 890.547 290.252 890.547 288.994L890.603 287.094L890.615 7.78601e-05L902.972 7.89403e-05L902.96 316.137C902.904 322.035 903.127 287.932 902.624 293.801C902.121 299.671 901.031 305.484 899.381 311.158L899.381 311.214Z"
+                    fill="url(#paint1_linear_1871_1279)" />
+                <path
+                    d="M881.965 288.715C881.965 289.861 881.825 290.978 881.769 292.097C881.378 296.596 880.567 301.04 879.309 305.345C876.821 313.869 872.599 321.891 867.008 328.85C867.008 328.85 866.98 328.878 866.952 328.906C866.896 328.962 866.868 329.046 866.812 329.102C861.109 335.949 854.064 341.707 846.181 345.844C838.213 350.036 829.435 352.607 820.461 353.39C819.342 353.446 818.224 353.613 817.078 353.586L815.373 353.642L125.608 353.646L124.238 353.674C122.421 353.73 120.604 353.702 118.787 353.898C111.546 354.345 104.305 355.547 97.2604 357.448C83.1704 361.221 69.8911 367.901 58.401 376.845C46.9389 385.788 37.266 397.024 30.1092 409.713C22.9523 422.402 18.3955 436.573 16.774 451.051C16.3826 454.656 16.131 458.29 16.103 461.923L16.103 463.293L16.0751 464.41L16.0749 771.061L9.89654 771.061L9.89672 463.293L9.92467 461.867C9.98059 458.038 10.2042 454.209 10.6236 450.38C12.3289 435.091 17.1654 420.11 24.7136 406.695C32.2618 393.279 42.4659 381.428 54.571 371.981C66.6761 362.534 80.7102 355.491 95.611 351.494C103.047 349.482 110.679 348.224 118.34 347.749C120.241 347.581 122.17 347.581 124.071 347.525L125.496 347.525L126.671 347.497L815.149 347.493L816.686 347.437C817.721 347.437 818.727 347.297 819.762 347.241C827.953 346.542 835.893 344.222 843.133 340.393C850.318 336.592 856.804 331.338 862.004 325.049C867.12 318.705 870.978 311.41 873.242 303.64C874.389 299.727 875.143 295.702 875.479 291.593C875.535 290.559 875.675 289.553 875.675 288.519L875.675 286.982L875.73 286.171L875.743 0.0839389L881.921 0.0839394L881.909 287.038L881.853 288.743L881.965 288.715Z"
+                    fill="url(#paint2_linear_1871_1279)" />
+                <path
+                    d="M869.971 288.295C869.971 289.246 869.859 290.168 869.804 291.09C869.496 294.808 868.797 298.441 867.763 301.991C865.722 308.95 862.283 315.518 857.698 321.22C857.698 321.22 857.615 321.332 857.587 321.36C857.559 321.416 857.503 321.472 857.475 321.527C852.778 327.145 846.991 331.841 840.561 335.223C834.019 338.688 826.807 340.785 819.398 341.428C818.476 341.483 817.553 341.623 816.603 341.595L815.205 341.595L814.506 341.651L125.58 341.656L124.071 341.684C122.058 341.74 120.045 341.74 118.032 341.908C109.98 342.411 101.957 343.724 94.1572 345.848C78.5016 350.041 63.7686 357.448 51.0485 367.37C38.3283 377.292 27.5931 389.729 19.6814 403.816C11.7418 417.902 6.68169 433.638 4.89248 449.681C4.44518 453.678 4.19357 457.73 4.13766 461.727L4.13766 463.237L4.1097 464.383L4.10952 771.061L-6.74083e-05 771.061L0.000108989 463.265L0.0280651 461.699C0.0839782 457.535 0.335586 453.398 0.810845 449.234C2.65597 432.632 7.91177 416.365 16.103 401.803C24.2942 387.242 35.3649 374.357 48.5324 364.127C61.6719 353.87 76.9361 346.212 93.0948 341.88C101.174 339.7 109.477 338.33 117.78 337.827C119.849 337.631 121.946 337.659 124.015 337.576L125.58 337.576L126.782 337.547L815.149 337.543L816.463 337.487C817.329 337.487 818.196 337.375 819.063 337.319C825.94 336.732 832.566 334.776 838.632 331.589C844.643 328.431 850.066 324.015 854.428 318.761C858.705 313.45 861.92 307.329 863.821 300.845C864.771 297.575 865.414 294.193 865.694 290.755C865.75 289.889 865.862 289.05 865.862 288.156L865.862 286.842L865.918 286.143L865.93 0.0559839L870.039 0.0559843L870.027 286.898L869.971 288.295Z"
+                    fill="url(#paint3_linear_1871_1279)" />
+                <defs>
+                    <linearGradient id="paint0_linear_1871_1279" x1="493.493" y1="3.90337e-05" x2="493.493" y2="771.061"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.201923" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1871_1279" x1="493.493" y1="3.90337e-05" x2="493.493" y2="771.061"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.201923" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_1871_1279" x1="493.493" y1="3.90337e-05" x2="493.493" y2="771.061"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.201923" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_1871_1279" x1="493.493" y1="3.90337e-05" x2="493.493" y2="771.061"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.201923" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <div class="skipthedeskcont">
+            <div class="std-content">
+                <h2>Skip the deck.</h2>
+                <h3>Tell us what you're actually deciding.</h3>
+                <p>Tell us the decision you're facing. Book a 30-minute call and we'll tell you what we'd do first. Or
+                    send us three lines: your situation, what you've tried. And we'll come back with a point of view,
+                    not a brochure.</p>
+            </div>
+            <div class="std-buttons">
+                <a href="#" class="std-btn-outer">
+                    <span class="std-btn-inner">BOOK A 30-MIN CALL</span>
+                </a>
+                <a href="#" class="std-btn-outer">
+                    <span class="std-btn-inner">SEND US YOUR SITUATION</span>
+                </a>
+            </div>
+        </div>
+        <div class="skipthedeskbtm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1870" height="208" viewBox="0 180 1863 208" fill="none">
+                <path
+                    d="M74.0472 261.541L74.0384 0.000243258L49.387 0.000243552L49.3957 260.954L49.3957 260.958C49.3957 261.293 49.3957 261.71 49.4236 262.016L49.4236 262.967C49.4795 264.225 49.4237 265.511 49.5635 266.769C49.871 271.829 50.7093 276.861 52.0229 281.754C54.6503 291.538 59.2619 300.792 65.5227 308.787C71.7834 316.783 79.6372 323.548 88.4692 328.525C97.3292 333.501 107.14 336.688 117.229 337.806C119.745 338.086 122.288 338.281 124.832 338.281L125.782 338.309L1866.52 338.309L1866.52 313.624L125.139 313.624C123.406 313.624 121.673 313.512 119.968 313.316C113.121 312.562 106.525 310.437 100.543 307.054C94.5622 303.699 89.2239 299.115 84.9756 293.663C80.7273 288.212 77.5968 281.977 75.8359 275.38C74.9415 272.081 74.3827 268.67 74.159 265.231C74.0472 264.365 74.1311 263.498 74.0472 262.631L74.0472 261.988L74.0472 261.541Z"
+                    fill="url(#paint0_linear_1871_1280)" />
+                <path
+                    d="M37.042 258.773L37.0332 0.000243699L24.6516 0.000243847L24.6604 260.954L24.6882 262.1L24.6882 263.358C24.7441 265.036 24.7162 266.713 24.8839 268.391C25.3031 275.1 26.3932 281.754 28.154 288.24C31.6477 301.239 37.7966 313.484 46.0417 324.052C54.3148 334.647 64.6561 343.565 76.3669 350.135C88.0777 356.705 101.13 360.926 114.462 362.408C117.788 362.771 121.142 362.995 124.496 363.023L125.754 363.051L1866.52 363.051L1866.52 350.694L133.524 350.694C127.627 350.666 121.729 350.806 115.86 350.107C104.149 348.821 92.6896 345.131 82.4321 339.344C72.1467 333.585 63.035 325.757 55.7961 316.448C48.5293 307.166 43.1349 296.403 40.0884 285.025C38.5791 279.321 37.6009 273.479 37.2375 267.608C37.042 264.674 37.042 261.713 37.042 258.779L37.042 258.773Z"
+                    fill="url(#paint1_linear_1871_1280)" />
+                <path
+                    d="M16.1357 263.526L16.1078 262.156L16.099 0.000243949L9.94995 0.000244022L9.95872 261.094L9.9868 262.268L9.9868 263.694C10.0427 265.595 10.0427 267.524 10.2104 269.425C10.6855 277.085 11.9432 284.717 13.9555 292.153C17.9524 307.054 24.9957 321.088 34.4426 333.193C43.8895 345.298 55.7402 355.502 69.156 363.051C82.5718 370.599 97.5527 375.435 112.841 377.141C116.67 377.56 120.499 377.784 124.328 377.839L125.754 377.867L1866.52 377.868L1866.52 371.689L126.872 371.689L125.754 371.661L124.384 371.661C120.751 371.633 117.117 371.382 113.512 370.99C99.034 369.369 84.8636 364.812 72.1745 357.655C59.4855 350.498 48.2497 340.825 39.3059 329.363C30.362 317.873 23.6821 304.594 19.9089 290.504C18.0084 283.459 16.8065 276.218 16.3594 268.977C16.1637 267.16 16.1916 265.343 16.1357 263.526Z"
+                    fill="url(#paint2_linear_1871_1280)" />
+                <path
+                    d="M4.11741 262.184L4.10864 0.000244092L-4.62404e-06 0.000244141L0.00877825 260.982L0.0368544 262.184L0.0368545 263.75C0.120717 265.818 0.0926412 267.915 0.28832 269.984C0.791372 278.287 2.16099 286.59 4.34105 294.669C8.6732 310.828 16.3314 326.092 26.5888 339.232C36.8183 352.399 49.7031 363.47 64.2649 371.661C78.8266 379.852 95.0932 385.108 111.695 386.953C115.86 387.429 119.996 387.68 124.161 387.736L125.726 387.764L1866.52 387.764L1866.52 383.655L126.844 383.654L125.698 383.627L124.189 383.627C120.192 383.571 116.139 383.319 112.143 382.872C96.0995 381.082 80.3639 376.022 66.2773 368.083C52.1908 360.171 39.7532 349.436 29.831 336.716C19.9089 323.996 12.5022 309.263 8.3098 293.607C6.18565 285.807 4.87193 277.784 4.36888 269.732C4.20115 267.719 4.20115 265.707 4.14525 263.694L4.11741 262.184Z"
+                    fill="url(#paint3_linear_1871_1280)" />
+                <defs>
+                    <linearGradient id="paint0_linear_1871_1280" x1="1817" y1="-5.6584e-05" x2="1278.5" y2="-5.6584e-05"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.596992" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1871_1280" x1="1817" y1="-5.6584e-05" x2="1278.5" y2="-5.6584e-05"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.596992" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_1871_1280" x1="1817" y1="-5.6584e-05" x2="1278.5" y2="-5.6584e-05"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.596992" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_1871_1280" x1="1817" y1="-5.6584e-05" x2="1278.5" y2="-5.6584e-05"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.596992" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
     </section>
 
     <!-- Script for sticky hover on diff-cards -->
@@ -1275,6 +1671,67 @@
             });
         });
     </script>
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer id="footer" class="site-footer" style="margin-top: 100px;">
+        <div class="footer-container">
+            <!-- Left Side -->
+            <div class="footer-left">
+                <h3 class="footer-heading">Let's work together</h3>
+                <a href="mailto:hello@sthiros.com" class="footer-email">hello@sthiros.com</a>
+
+                <div class="footer-contact-block">
+                    <a href="#" class="contact-now-link">
+                        <span>CONTACT NOW</span>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H11V11" stroke="white" stroke-width="1.5" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/fb_sthiros.png" alt="Facebook" class="social-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/insta_sthiros.png" alt="Instagram" class="social-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/x_sthiros.png" alt="X" class="social-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/linkedin_sthiros.png" alt="LinkedIn" class="social-img">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="footer-right">
+                <ul class="footer-menu">
+                    <li><a href="#">OUR STORY</a></li>
+                    <li><a href="#">LEADERSHIP</a></li>
+                    <li><a href="#">CAREERS</a></li>
+                    <li><a href="#">INDUSTRIES</a></li>
+                    <li><a href="#">LATEST</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-bottom-line">
+
+        <div class="footer-massive-logo-section">
+            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo">
+            <div class="copyright-text">© 2026</div>
+        </div>
+    </footer>
+
+    <!-- ═══════════════ SCRIPTS ═══════════════ -->
+    <!-- GSAP, ScrollTrigger, Anime.js, Lenis (smooth scroll) & Three.js (WebGL) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

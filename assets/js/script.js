@@ -11,6 +11,14 @@ function boot() {
   initServicesSvgTrackScroll();
   initServicesPageHeroScroll();
   initConversationSvgScroll();
+  initHeroSvgTracksScroll();
+  initHeroSvgTracksBtmScroll();
+  initServiceLineDeliverableScroll();
+  initServiceLineDeliverableBtmScroll();
+  initDiffBtmSvgScroll();
+  initWhenYouNeedThisSvgScroll();
+  initSkipTheDeskScroll();
+  initSkipTheDeskBtmScroll();
   initLetterform();
   initStrategyLineSync();
   initScrollAnimations();
@@ -2342,17 +2350,182 @@ function initServiceAccordion() {
     header.addEventListener('click', () => {
       const parent = header.closest('.deliverable-item');
       
-      // If clicked item is already active, close it
-      if (parent.classList.contains('active')) {
-        parent.classList.remove('active');
-      } else {
-        // Close all items
-        document.querySelectorAll('.deliverable-item.active').forEach(item => {
-          item.classList.remove('active');
-        });
-        // Open the clicked item
-        parent.classList.add('active');
-      }
+      // Toggle the clicked item
+      parent.classList.toggle('active');
+      
+      setTimeout(() => ScrollTrigger.refresh(), 550);
     });
   });
+
+  const cont = document.querySelector('.servicelinedeliverablecont');
+  const svg = document.querySelector('.servicelinedeliverable svg');
+  if (cont && svg) {
+    const path = svg.querySelector('path');
+    const originalD = path.getAttribute('d');
+    const originalViewBox = svg.getAttribute('viewBox').split(' ').map(Number);
+    const baseSvgHeight = originalViewBox[3];
+    let baseContHeight = null;
+    
+    const resizeObserver = new ResizeObserver(entries => {
+      for (let entry of entries) {
+        if (baseContHeight === null) {
+            baseContHeight = entry.contentRect.height;
+        }
+        const currentContHeight = entry.contentRect.height;
+        const heightDiff = currentContHeight - baseContHeight;
+        
+        const scale = 390 / 74; // Based on width: 390px and viewBox width: 74
+        const svgUnitsToAdd = heightDiff / scale;
+        const newSvgHeight = baseSvgHeight + svgUnitsToAdd;
+        
+        svg.setAttribute('viewBox', `0 0 74 ${newSvgHeight}`);
+        svg.setAttribute('height', newSvgHeight);
+        
+        const newBottomY = 840.55 + svgUnitsToAdd;
+        const newD = originalD.replace(/840\.55/g, newBottomY.toFixed(2));
+        path.setAttribute('d', newD);
+      }
+    });
+    
+    resizeObserver.observe(cont);
+  }
+}
+
+function initHeroSvgTracksScroll() {
+  const svg = document.querySelector('.herosvgtracks svg');
+  if (svg) {
+    gsap.set(svg, { clipPath: 'polygon(-20% -20%, -20% -20%, -20% 120%, -20% 120%)' });
+    gsap.to(svg, {
+      clipPath: 'polygon(-20% -20%, 120% -20%, 120% 120%, -20% 120%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '#herosvgtrack',
+        start: 'top 80%',
+        end: 'top 20%',
+        scrub: true
+      }
+    });
+  }
+}
+
+function initHeroSvgTracksBtmScroll() {
+  const svg = document.querySelector('.herosvgtracksbtm svg');
+  if (svg) {
+    gsap.set(svg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
+    gsap.to(svg, {
+      clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.herosvgtracksbtm',
+        start: 'top 85%',
+        end: 'top 40%',
+        scrub: true
+      }
+    });
+  }
+}
+
+function initServiceLineDeliverableScroll() {
+  const svg = document.querySelector('.servicelinedeliverable svg');
+  if (svg) {
+    gsap.set(svg, { clipPath: 'polygon(-500% 0%, 500% 0%, 500% 0%, -500% 0%)' });
+    gsap.to(svg, {
+      clipPath: 'polygon(-500% 0%, 500% 0%, 500% 100%, -500% 100%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.herosvgtracksbtm',
+        start: 'top 40%',
+        endTrigger: '.servicelinedeliverable',
+        end: 'bottom 50%',
+        scrub: true
+      }
+    });
+  }
+}
+
+function initServiceLineDeliverableBtmScroll() {
+  const svg = document.querySelector('.servicelinedeliverablesvgbtm svg');
+  if (svg) {
+    gsap.set(svg, { clipPath: 'polygon(-500% 0%, 500% 0%, 500% 0%, -500% 0%)' });
+    gsap.to(svg, {
+      clipPath: 'polygon(-500% 0%, 500% 0%, 500% 100%, -500% 100%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.servicelinedeliverable',
+        start: 'bottom 50%',
+        endTrigger: '.servicelinedeliverablesvgbtm',
+        end: 'bottom 20%',
+        scrub: true
+      }
+    });
+  }
+}
+
+function initDiffBtmSvgScroll() {
+  const svg = document.querySelector('.diffbtmsvg svg');
+  if (svg) {
+    gsap.set(svg, { clipPath: 'polygon(-20% 0%, 120% 0%, 120% 0%, -20% 0%)' });
+    gsap.to(svg, {
+      clipPath: 'polygon(-20% 0%, 120% 0%, 120% 100%, -20% 100%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.diffbtmsvg',
+        start: 'top 85%',
+        end: 'bottom 20%',
+        scrub: true
+      }
+    });
+  }
+}
+
+function initWhenYouNeedThisSvgScroll() {
+  const svg = document.querySelector('.whenyouneedthissvg svg');
+  if (svg) {
+    gsap.set(svg, { clipPath: 'polygon(-20% 0%, 120% 0%, 120% 0%, -20% 0%)' });
+    gsap.to(svg, {
+      clipPath: 'polygon(-20% 0%, 120% 0%, 120% 100%, -20% 100%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.whenyouneedthissvg',
+        start: 'top 85%',
+        end: 'bottom 20%',
+        scrub: true
+      }
+    });
+  }
+}
+
+function initSkipTheDeskScroll() {
+  const svg = document.querySelector('.skipthedesktop svg');
+  if (svg) {
+    gsap.set(svg, { clipPath: 'polygon(-20% 0%, 120% 0%, 120% 0%, -20% 0%)' });
+    gsap.to(svg, {
+      clipPath: 'polygon(-20% 0%, 120% 0%, 120% 100%, -20% 100%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.skipthedesktop',
+        start: 'top 85%',
+        end: 'bottom 50%',
+        scrub: true
+      }
+    });
+  }
+}
+
+function initSkipTheDeskBtmScroll() {
+  const svg = document.querySelector('.skipthedeskbtm svg');
+  if (svg) {
+    gsap.set(svg, { clipPath: 'polygon(0% -20%, 0% -20%, 0% 120%, 0% 120%)' });
+    gsap.to(svg, {
+      clipPath: 'polygon(0% -20%, 100% -20%, 100% 120%, 0% 120%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.skipthedesktop',
+        start: 'bottom 50%',
+        endTrigger: '.skipthedeskbtm',
+        end: 'bottom 20%',
+        scrub: true
+      }
+    });
+  }
 }
