@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us - sthiros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Quicksand:wght@400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+        .about-hero-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            background-image: url('assets/images/aboutpage/aboutusbanner.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 0 40px;
+        }
+
+        .about-hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0) 100%);
+            z-index: 1;
+        }
+
+        .about-hero-content-wrapper {
+            max-width: 1440px;
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .about-hero-content {
+            max-width: 600px;
+        }
+
+        .about-hero-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 5rem;
+            font-weight: 600;
+            color: #ffffff;
+            line-height: 1.1;
+            margin-bottom: 30px;
+        }
+
+        .about-hero-title span {
+            color: #EF4623;
+        }
+
+        .about-hero-desc {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1.25rem;
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .about-hero-title {
+                font-size: 3rem;
+            }
+
+            .about-hero-desc {
+                font-size: 1.1rem;
+            }
+
+            .about-hero-overlay {
+                background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 100%);
+            }
+        }
+
+        .herobtmsvg {
+            width: 50%;
+            margin-left: 0px;
+            margin-top: -20rem;
+            position: relative;
+            z-index: 5;
+            overflow: visible;
+        }
+
+        .herobtmsvg svg {
+            width: 100%;
+            height: auto;
+            display: block;
+            overflow: visible;
+        }
+
+        .starting-point-sec {
+            position: relative;
+            width: 100%;
+            height: 400vh;
+            /* Scrollable area */
+            background-color: transparent;
+            margin-top: -140px;
+            /* Reduces the gap above this section */
+        }
+
+        .starting-container-sticky {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0 80px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .starting-container-sticky::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60%;
+            height: 100%;
+            background: radial-gradient(circle at right center, rgba(239, 70, 35, 0.15) 0%, rgba(0, 0, 0, 0) 60%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .starting-container {
+            max-width: 1440px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .timeline-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            flex: 0 0 150px;
+        }
+
+        .timeline-link {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            color: #888;
+            text-decoration: none;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-link:hover {
+            color: #ccc;
+        }
+
+        .timeline-link.active {
+            color: var(--VERMILION-RED, #EC2D26);
+            font-family: Pacaembu, sans-serif;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 60px;
+            /* 120% */
+        }
+
+        .timeline-center {
+            flex: 1;
+            display: grid;
+            place-content: center;
+            justify-items: start;
+            text-align: left;
+            margin-top: -30px;
+        }
+
+        .timeline-content-container {
+            display: flex;
+            flex: 1;
+            align-items: center;
+        }
+
+        .timeline-content-item {
+            display: none;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        .timeline-content-item.active {
+            display: flex;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .timeline-subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 32px;
+            font-weight: 600;
+            color: #ffffff;
+            margin: 0 0 10px 0;
+            /* Changed from -10px to add more gap */
+            line-height: 1.2;
+        }
+
+        .timeline-year {
+            color: var(--VERMILION-RED, #EC2D26);
+            font-family: Quicksand, sans-serif;
+            font-size: 160px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 0.92;
+            letter-spacing: 15px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .present-day-year {
+            font-size: 90px !important;
+            line-height: 0.9;
+        }
+
+        .timeline-right {
+            flex: 0 0 350px;
+            padding-left: 40px;
+            margin-top: 20px;
+        }
+
+        .timeline-right p {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 18px;
+            /* Increased from 14px for 1920px and 1440px screens */
+            color: #d4d4d4;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        @media (max-width: 1024px) {
+
+
+            .about-hero-title {
+                font-size: 3.5rem;
+                /* Further scaled down for 1024px screens */
+            }
+
+            .about-hero-desc {
+                font-size: 1rem;
+                /* Smaller text for tablet sizes */
+            }
+
+            .herobtmsvg {
+                margin-top: -15rem;
+                /* Pushed down slightly on 1024px */
+            }
+
+            .timeline-year {
+                font-size: 60px !important;
+                /* Forces override of inline styles for 'PRESENT DAY' */
+                letter-spacing: 4px;
+            }
+
+            .timeline-subtitle {
+                font-size: 24px;
+                /* Scaled down subtitle */
+            }
+
+            .timeline-right p {
+                font-size: 13px;
+                /* Slightly smaller paragraph */
+            }
+
+            .leader-img {
+                max-width: 350px;
+                /* Scaled down leader image for 1024px */
+            }
+
+            .leader-name {
+                font-size: 36px;
+                /* Scaled down leader name */
+                letter-spacing: 8px;
+            }
+
+            .leader-role {
+                font-size: 14px;
+            }
+
+            .leader-desc {
+                font-size: 14px;
+            }
+        }
+
+        #thestartingbtmsvg {
+            width: 50%;
+            margin: 0 auto;
+            position: relative;
+            z-index: 5;
+            display: flex;
+            justify-content: center;
+        }
+
+        #thestartingbtmsvg svg {
+            width: auto;
+            max-width: 100%;
+            height: 400px;
+            display: block;
+            overflow: visible;
+        }
+
+        .meettheleadersdiv {
+            position: relative;
+            width: 100%;
+            padding: 80px 20px;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .meet-leaders-title {
+            color: #d4d4d4;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-bottom: 150px;
+            text-align: center;
+        }
+
+        .meet-leaders-container {
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+        }
+
+        .leader-image-box {
+            position: relative;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .leader-glow {
+            position: absolute;
+            top: 35%;
+            left: 60%;
+            width: 130%;
+            height: 130%;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(circle, rgba(236, 45, 38, 0.8) 0%, rgba(0, 0, 0, 0) 60%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .leader-img {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .leader-content-box {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            align-self: flex-end;
+            padding-bottom: 40px;
+            /* Give it a little breathing room at the bottom */
+        }
+
+        .leader-name {
+            color: var(--VERMILION-RED, #EC2D26);
+            font-family: 'Quicksand', sans-serif;
+            font-size: 50px;
+            font-weight: 300;
+            letter-spacing: 12px;
+            margin: 0;
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+
+        .leader-role {
+            color: #d4d4d4;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 6px;
+            margin: 20px 0 40px 0;
+            text-transform: uppercase;
+        }
+
+        .leader-divider {
+            width: 100%;
+            height: 1px;
+            background-color: #333;
+            margin-bottom: 40px;
+        }
+
+        .leader-desc {
+            color: #a0a0a0;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            line-height: 1.8;
+            margin: 0;
+            max-width: 650px;
+        }
+
+        @media (max-width: 992px) {
+            .meet-leaders-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .leader-content-box {
+                align-items: center;
+                text-align: center;
+            }
+
+            .leader-name {
+                font-size: 40px;
+                letter-spacing: 8px;
+            }
+
+            .leader-role {
+                font-size: 14px;
+                letter-spacing: 4px;
+            }
+
+            .leader-desc {
+                text-align: center;
+            }
+        }
+
+        .meetsthirossec {
+            position: relative;
+            width: 100%;
+            padding: 20px 40px 20px 40px;
+            /* Reduced bottom padding from 100px to reduce gap */
+            overflow-x: auto;
+            background-color: transparent;
+            margin-top: -10rem;
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        .meetsthirossec::-webkit-scrollbar {
+            display: none;
+        }
+
+        .team-slider {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            /* Centers the slider items horizontally */
+            gap: 15px;
+            padding-top: 300px;
+            position: relative;
+            margin: 0 auto;
+            width: max-content;
+        }
+
+        .team-card {
+            position: relative;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            flex-shrink: 0;
+            overflow: visible;
+        }
+
+        .team-card.inactive {
+            width: 130px;
+            height: 200px;
+            filter: brightness(0.6);
+        }
+
+        .team-card.inactive:hover {
+            filter: brightness(0.8);
+        }
+
+        .team-card.active {
+            width: 260px;
+            height: 480px;
+            filter: brightness(1);
+        }
+
+        .team-card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: bottom center;
+            display: block;
+        }
+
+        .team-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 60%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+            pointer-events: none;
+        }
+
+        .team-card-info {
+            position: absolute;
+            bottom: 20px;
+            left: 12px;
+            /* Reduced from 20px for more width */
+            right: 12px;
+            z-index: 2;
+            transition: opacity 0.3s ease;
+        }
+
+        .team-card.active .team-card-info {
+            opacity: 0;
+            /* Hide small info when active */
+            pointer-events: none;
+        }
+
+        .tc-cat {
+            font-family: 'Inter', sans-serif;
+            font-size: 10px;
+            color: #d4d4d4;
+            margin: 0 0 5px 0;
+            text-transform: uppercase;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .tc-name {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 15px;
+            /* Reduced from 18px to prevent awkward breaking */
+            font-weight: 700;
+            color: #fff;
+            margin: 0 0 5px 0;
+            text-transform: capitalize;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            min-height: 40px;
+            /* Reduced to match smaller font */
+            word-break: break-word;
+        }
+
+        .tc-role {
+            font-family: 'Inter', sans-serif;
+            font-size: 11px;
+            color: #a0a0a0;
+            margin: 0;
+            text-transform: uppercase;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .team-active-text-panel {
+            display: none;
+            position: absolute;
+            left: calc(100% + 40px);
+            bottom: 250px;
+            /* Positions it above the inactive cards */
+            width: 500px;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        .team-card.active .team-active-text-panel {
+            display: block;
+            animation: fadeInRight 0.5s ease forwards;
+        }
+
+        .team-card.active.text-left .team-active-text-panel {
+            left: auto;
+            right: calc(100% + 40px);
+            animation: fadeInLeft 0.5s ease forwards;
+        }
+
+        .ta-cat {
+            color: var(--VERMILION-RED, #EC2D26);
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .ta-name {
+            color: #fff;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 48px;
+            font-weight: 600;
+            margin: 0 0 10px 0;
+        }
+
+        .ta-role {
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 0 0 20px 0;
+        }
+
+        .ta-desc {
+            color: #a0a0a0;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .team-slider {
+                padding-top: 50px;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .team-card.active .team-active-text-panel {
+                position: relative;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 20px;
+                text-align: center;
+            }
+        }
+
+        #readywhenyouaresec {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 100%;
+            position: relative;
+            margin-top: -100px;
+            /* Pulls the section up to reduce the gap */
+            padding: 40px 28px 40px 0;
+            overflow: hidden;
+        }
+
+        #readywhenyouaresec>svg {
+            width: 42%;
+            height: auto;
+            display: block;
+        }
+
+        .btmsvgreadywhenyouare {
+            width: 85.56%;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 0px;
+            margin-right: 1px;
+            /* Adjusted slightly for the new scale to ensure perfect connection */
+            /* Slight adjustment if there is a gap */
+        }
+
+        .btmsvgreadywhenyouare svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .aboutreadywhenyu {
+            position: absolute;
+            left: 250px;
+            /* Shifted right from 40px */
+            top: 65%;
+            /* Moved downwards from 50% */
+            transform: translateY(-50%);
+            width: 75%;
+            border-radius: 20px;
+            padding: 80px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            z-index: 10;
+        }
+
+        .rwy-bg-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .rwy-content-wrapper {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 40px;
+        }
+
+        .rwy-heading {
+            color: var(--LIGHT-GREY, #F4F3F2);
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 75px;
+            font-style: normal;
+            font-weight: 100;
+            line-height: 80px;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            opacity: 0.85;
+            /* Visually thins out bright text on dark backgrounds */
+        }
+
+        .rwy-btn-outer {
+            display: inline-block;
+            text-decoration: none;
+            border-radius: 163.532px;
+            border: 1.817px solid var(--FLAME-ORANGE, #EF4623);
+            padding: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .rwy-btn-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 163.532px;
+            border: 5px solid var(--FLAME-ORANGE, #EF4623);
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 15px 45px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .rwy-btn-outer:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 992px) {
+            .rwy-content-wrapper {
+                flex-direction: column;
+                gap: 40px;
+                text-align: center;
+            }
+
+            .rwy-heading {
+                font-size: 60px;
+                line-height: 70px;
+            }
+        }
+
+        @media (max-width: 1440px) {
+            .btmsvgreadywhenyouare {
+                margin-right: 0px;
+                /* Adjusted slightly for the new scale to ensure perfect connection */
+                /* Slight adjustment if there is a gap */
+            }
+
+            .team-card.inactive {
+                height: 170px;
+                width: 115px;
+            }
+
+            .team-card.active {
+                height: 400px;
+                width: 230px;
+            }
+
+            .team-active-text-panel {
+                bottom: 190px;
+                /* Tighter gap between text panel and small cards */
+            }
+
+            .team-slider {
+                padding-top: 250px;
+            }
+
+            .about-hero-title {
+                font-size: 4rem;
+                /* Scaled down for 1366px screens */
+            }
+
+            .about-hero-desc {
+                font-size: 1.125rem;
+                /* Scaled down slightly */
+            }
+
+            .timeline-year {
+                font-size: 130px;
+                /* Reduced from 160px for better fit */
+                letter-spacing: 10px;
+                /* Reduced spacing slightly as well */
+            }
+
+            .present-day-year {
+                font-size: 80px !important;
+                line-height: 0.9;
+            }
+        }
+
+        @media (max-width: 1280px) {
+            .timeline-right p {
+                font-size: 14px;
+                /* Kept small for 1280px and below */
+            }
+
+            .aboutreadywhenyu {
+                left: 55%;
+                /* Shifted right for 1280px and 1024px screens */
+                transform: translate(-50%, -50%);
+                width: 75%;
+                /* Reduced width */
+                padding: 50px 0;
+            }
+
+            .rwy-heading {
+                font-size: 50px;
+                line-height: 60px;
+            }
+
+            .rwy-btn-outer {
+                padding: 4px;
+            }
+
+            .rwy-btn-inner {
+                padding: 10px 30px;
+                font-size: 14px;
+                border-width: 3px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ═══════════════ SITE HEADER ═══════════════ -->
+    <header class="site-header header-hidden">
+        <div class="header-left">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <button class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                <span class="toggle-track">
+                    <img src="assets/images/dark_light_toggle.png" alt="Light Theme" class="toggle-art light-art">
+                    <img src="assets/images/dark_mode_toggle_new.png" alt="Dark Theme" class="toggle-art dark-art">
+                    <span class="toggle-thumb"></span>
+                </span>
+            </button>
+            <button class="menu-toggle" aria-label="Open Menu">
+                <span class="menu-icon">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ═══════════════ FULL SCREEN MENU OVERLAY ═══════════════ -->
+    <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
+        <div class="menu-content">
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link active">HOME</a>
+                <a href="#" class="nav-link">ABOUT US</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">WHAT WE DO <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Strategy <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="#" class="nested-sub-nav-link">Business & Growth Strategy</a>
+                                <a href="#" class="nested-sub-nav-link">Strategic Finance & Transactions</a>
+                                <a href="#" class="nested-sub-nav-link">Enterprise Operations & Ecosystems</a>
+                                <a href="#" class="nested-sub-nav-link">Change Management & Organisational
+                                    Acceleration</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">AI <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="#" class="nested-sub-nav-link">AI Strategy & Sovereign Governance</a>
+                                <a href="#" class="nested-sub-nav-link">Intelligent Foundation (Data & Cloud)</a>
+                                <a href="#" class="nested-sub-nav-link">Agentic Operations & Automation</a>
+                                <a href="#" class="nested-sub-nav-link">Cognitive Experience & Engineering</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Risk <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="#" class="nested-sub-nav-link">Enterprise Governance & Regulatory Strategy</a>
+                                <a href="#" class="nested-sub-nav-link">Strategic Assurance & Process Intelligence</a>
+                                <a href="#" class="nested-sub-nav-link">Digital Risk & Technology Controls</a>
+                                <a href="#" class="nested-sub-nav-link">Forensic Integrity & Asset Protection</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Cyber <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="#" class="nested-sub-nav-link">Offensive Security & Exposure</a>
+                                <a href="#" class="nested-sub-nav-link">Cloud Security & Zero Trust</a>
+                                <a href="#" class="nested-sub-nav-link">Data Privacy & Protection Engineering</a>
+                                <a href="#" class="nested-sub-nav-link">Cyber Resilience & Crisis Readiness</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a href="our-work.html" class="nav-link">THE WORK</a>
+                <a href="#" class="nav-link">Our PRODUCTS</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">INDUSTRIES <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="#" class="sub-nav-link">BFSI & Fintech</a>
+                        <a href="#" class="sub-nav-link">D2C & Retail</a>
+                        <a href="#" class="sub-nav-link">Energy, Mining & Utilities</a>
+                        <a href="#" class="sub-nav-link">GCC</a>
+                        <a href="#" class="sub-nav-link">Healthcare & Life Sciences</a>
+                        <a href="#" class="sub-nav-link">Manufacturing</a>
+                        <a href="#" class="sub-nav-link">Telecom & Digital Infrastructure</a>
+                        <a href="#" class="sub-nav-link">Travel & Hospitality</a>
+                        <a href="#" class="sub-nav-link">Public Sector & Government</a>
+                        <a href="#" class="sub-nav-link">Real Estate / EPC / Construction</a>
+                    </div>
+                </div>
+
+                <a href="#" class="nav-link">CONTACT US</a>
+            </nav>
+
+
+        </div>
+    </div>
+
+
+    <!-- about hero section -->
+    <section id="aboutherosection" class="about-hero-section">
+        <div class="about-hero-overlay"></div>
+        <div class="about-hero-content-wrapper">
+            <div class="about-hero-content">
+                <h1 class="about-hero-title">
+                    People build<br>the <span>system.</span>
+                </h1>
+                <p class="about-hero-desc">
+                    AI and product come first here. Everything else is what earned us the right to say that: years spent
+                    building, auditing, defending, and scaling real businesses across Strategy, Risk, Cyber, and AI.
+                    We'd rather solve your problem at the root than sell you a service.
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="herobtmsvg">
+        <svg xmlns="http://www.w3.org/2000/svg" width="997" height="913" viewBox="0 0 997 913" fill="none">
+            <mask id="path-1-inside-1_502_645" fill="white">
+                <path
+                    d="M-140 281.653L-139.916 284.755C-139.916 286.823 -139.692 288.919 -139.553 290.988C-138.854 299.289 -137.316 307.562 -134.968 315.583C-130.271 331.654 -122.332 346.747 -111.792 359.66C-101.197 372.545 -88.029 383.277 -73.2401 391.047C-58.4791 398.873 -42.0407 403.68 -25.4067 405.078C-23.3379 405.218 -21.2412 405.441 -19.1724 405.469L-16.0693 405.553L-14.5317 405.553L-13.4134 405.581L870.751 405.576C870.947 405.576 871.143 405.576 871.198 405.576L871.841 405.576C872.708 405.66 873.575 405.576 874.441 405.688C877.88 405.911 881.291 406.47 884.59 407.365C891.187 409.125 897.422 412.256 902.873 416.504C908.324 420.752 912.909 426.091 916.264 432.072C919.647 438.053 921.772 444.649 922.526 451.497C922.722 453.202 922.834 454.935 922.834 456.668L922.834 912.051L947.519 912.051L947.519 457.311L947.491 456.36C947.491 453.817 947.296 451.273 947.016 448.758C945.898 438.668 942.711 428.858 937.735 419.998C932.758 411.166 925.993 403.312 917.997 397.051C910.002 390.791 900.748 386.179 890.964 383.552C886.071 382.238 881.039 381.4 875.979 381.092C874.721 380.952 873.435 381.008 872.177 380.952L871.226 380.952C870.919 380.924 870.5 380.924 870.164 380.924L-15.7898 380.929L-18.3058 380.845C-19.9831 380.845 -21.6605 380.65 -23.3099 380.538C-36.6731 379.392 -49.8405 375.535 -61.722 369.274C-73.6035 363.014 -84.1989 354.377 -92.6976 344.036C-101.14 333.667 -107.487 321.565 -111.261 308.708C-113.134 302.251 -114.392 295.627 -114.951 288.947C-115.063 287.27 -115.231 285.594 -115.259 283.917L-115.314 281.401L-115.314 0.0559139L-140 0.055916L-140 281.653Z" />
+                <path
+                    d="M-99.4072 305.214C-96.1363 316.45 -90.573 327.043 -83.1925 336.126C-83.1925 336.126 -83.1645 336.154 -83.1366 336.182C-83.1086 336.21 -83.0807 336.266 -83.0527 336.294C-75.5883 345.322 -66.3069 352.868 -55.963 358.318C-45.5352 363.824 -34.0172 367.206 -22.2475 368.212C-16.3767 368.743 -10.478 368.52 -4.57919 368.576L867.984 368.571C870.919 368.571 873.882 368.57 876.818 368.766C882.689 369.13 888.531 370.108 894.235 371.617C905.613 374.663 916.376 380.058 925.658 387.325C934.967 394.564 942.795 403.675 948.554 413.961C954.341 424.218 958.031 435.678 959.317 447.388C960.016 453.258 959.876 459.155 959.904 465.053L959.904 912.051L972.261 912.051L972.261 457.283L972.233 456.025C972.205 452.671 971.981 449.317 971.618 445.991C970.136 432.659 965.915 419.606 959.345 407.896C952.775 396.185 943.857 385.843 933.262 377.57C922.694 369.325 910.449 363.176 897.45 359.683C890.964 357.922 884.31 356.832 877.6 356.413C875.923 356.245 874.246 356.273 872.568 356.217L871.31 356.217L870.164 356.189L-15.5101 356.194L-17.4111 356.11C-18.6971 356.11 -19.9552 355.942 -21.2132 355.886C-31.3335 355.02 -41.2299 352.113 -50.2039 347.39C-59.15 342.666 -67.1455 336.182 -73.6035 328.356C-79.9775 320.502 -84.758 311.391 -87.5816 301.72C-89.0074 296.857 -89.9299 291.854 -90.3493 286.795C-90.4332 285.537 -90.573 284.252 -90.573 282.994L-90.6289 281.094L-90.6289 3.52854e-06L-102.986 4.6088e-06L-102.986 270.137C-102.93 276.035 -103.153 281.932 -102.65 287.801C-102.147 293.671 -101.057 299.484 -99.4072 305.158L-99.4072 305.214Z" />
+                <path
+                    d="M-81.9906 282.715C-81.9906 283.86 -81.8508 284.978 -81.7949 286.096C-81.4035 290.596 -80.5927 295.04 -79.3347 299.344C-76.8467 307.869 -72.6252 315.891 -67.0339 322.85C-67.0339 322.85 -67.006 322.878 -66.978 322.906C-66.9221 322.962 -66.8941 323.046 -66.8382 323.102C-61.1351 329.949 -54.0901 335.707 -46.2064 339.844C-38.2387 344.036 -29.4605 346.607 -20.4865 347.39C-19.3683 347.446 -18.2501 347.613 -17.1039 347.585L-15.3985 347.641L871.366 347.636L872.736 347.664C874.553 347.72 876.37 347.692 878.187 347.888C885.428 348.335 892.669 349.537 899.714 351.438C913.804 355.211 927.083 361.891 938.573 370.835C950.035 379.778 959.708 391.014 966.865 403.703C974.022 416.392 978.579 430.563 980.2 445.041C980.592 448.646 980.843 452.28 980.871 455.913L980.871 457.283L980.899 458.4L980.899 912.051L987.078 912.051L987.078 457.283L987.05 455.857C986.994 452.028 986.77 448.199 986.351 444.37C984.645 429.081 979.809 414.1 972.261 400.685C964.712 387.269 954.508 375.418 942.403 365.971C930.298 356.524 916.264 349.481 901.363 345.484C893.927 343.472 886.295 342.214 878.635 341.739C876.734 341.571 874.805 341.571 872.904 341.515L871.478 341.515L870.304 341.487L-15.1749 341.492L-16.7124 341.437C-17.7467 341.437 -18.7533 341.297 -19.7877 341.241C-27.979 340.542 -35.9184 338.222 -43.1592 334.393C-50.344 330.592 -56.8298 325.338 -62.0298 319.049C-67.1457 312.704 -71.0036 305.41 -73.2682 297.64C-74.4144 293.727 -75.1693 289.702 -75.5047 285.593C-75.5606 284.559 -75.7004 283.553 -75.7004 282.519L-75.7004 280.982L-75.7563 280.171L-75.7563 0.0838645L-81.9347 0.0838651L-81.9347 281.038L-81.8788 282.743L-81.9906 282.715Z" />
+                <path
+                    d="M-69.9972 282.295C-69.9972 283.246 -69.8854 284.168 -69.8294 285.09C-69.5219 288.808 -68.823 292.441 -67.7887 295.991C-65.7478 302.95 -62.3092 309.518 -57.7243 315.22C-57.7243 315.22 -57.6405 315.332 -57.6125 315.36C-57.5846 315.416 -57.5287 315.471 -57.5007 315.527C-52.804 321.145 -47.0171 325.841 -40.5871 329.223C-34.0454 332.688 -26.8325 334.785 -19.424 335.427C-18.5015 335.483 -17.5789 335.623 -16.6284 335.595L-15.2306 335.595L-14.5317 335.651L871.394 335.646L872.904 335.674C874.917 335.73 876.929 335.73 878.942 335.898C886.994 336.401 895.017 337.714 902.817 339.838C918.473 344.031 933.206 351.438 945.926 361.36C958.646 371.282 969.381 383.719 977.293 397.806C985.232 411.892 990.293 427.628 992.082 443.671C992.529 447.668 992.781 451.72 992.837 455.717L992.837 457.227L992.865 458.373L992.865 912.051L996.974 912.051L996.974 457.255L996.946 455.689C996.89 451.525 996.639 447.388 996.163 443.224C994.318 426.622 989.063 410.355 980.871 395.793C972.68 381.232 961.609 368.347 948.442 358.117C935.302 347.86 920.038 340.202 903.879 335.87C895.8 333.69 887.497 332.32 879.194 331.817C877.125 331.621 875.028 331.649 872.96 331.565L871.394 331.565L870.192 331.537L-15.1748 331.542L-16.4887 331.487C-17.3554 331.487 -18.222 331.375 -19.0886 331.319C-25.9659 330.732 -32.5915 328.776 -38.6581 325.589C-44.6687 322.431 -50.0923 318.015 -54.4535 312.76C-58.7308 307.45 -61.9458 301.329 -63.8468 294.845C-64.7973 291.575 -65.4403 288.193 -65.7198 284.755C-65.7757 283.889 -65.8875 283.05 -65.8875 282.156L-65.8875 280.842L-65.9435 280.143L-65.9435 0.0559096L-70.0531 0.0559099L-70.0531 280.898L-69.9972 282.295Z" />
+            </mask>
+            <path
+                d="M-140 281.653L-139.916 284.755C-139.916 286.823 -139.692 288.919 -139.553 290.988C-138.854 299.289 -137.316 307.562 -134.968 315.583C-130.271 331.654 -122.332 346.747 -111.792 359.66C-101.197 372.545 -88.029 383.277 -73.2401 391.047C-58.4791 398.873 -42.0407 403.68 -25.4067 405.078C-23.3379 405.218 -21.2412 405.441 -19.1724 405.469L-16.0693 405.553L-14.5317 405.553L-13.4134 405.581L870.751 405.576C870.947 405.576 871.143 405.576 871.198 405.576L871.841 405.576C872.708 405.66 873.575 405.576 874.441 405.688C877.88 405.911 881.291 406.47 884.59 407.365C891.187 409.125 897.422 412.256 902.873 416.504C908.324 420.752 912.909 426.091 916.264 432.072C919.647 438.053 921.772 444.649 922.526 451.497C922.722 453.202 922.834 454.935 922.834 456.668L922.834 912.051L947.519 912.051L947.519 457.311L947.491 456.36C947.491 453.817 947.296 451.273 947.016 448.758C945.898 438.668 942.711 428.858 937.735 419.998C932.758 411.166 925.993 403.312 917.997 397.051C910.002 390.791 900.748 386.179 890.964 383.552C886.071 382.238 881.039 381.4 875.979 381.092C874.721 380.952 873.435 381.008 872.177 380.952L871.226 380.952C870.919 380.924 870.5 380.924 870.164 380.924L-15.7898 380.929L-18.3058 380.845C-19.9831 380.845 -21.6605 380.65 -23.3099 380.538C-36.6731 379.392 -49.8405 375.535 -61.722 369.274C-73.6035 363.014 -84.1989 354.377 -92.6976 344.036C-101.14 333.667 -107.487 321.565 -111.261 308.708C-113.134 302.251 -114.392 295.627 -114.951 288.947C-115.063 287.27 -115.231 285.594 -115.259 283.917L-115.314 281.401L-115.314 0.0559139L-140 0.055916L-140 281.653Z"
+                stroke="url(#paint0_linear_502_645)" stroke-width="2" mask="url(#path-1-inside-1_502_645)" />
+            <path
+                d="M-99.4072 305.214C-96.1363 316.45 -90.573 327.043 -83.1925 336.126C-83.1925 336.126 -83.1645 336.154 -83.1366 336.182C-83.1086 336.21 -83.0807 336.266 -83.0527 336.294C-75.5883 345.322 -66.3069 352.868 -55.963 358.318C-45.5352 363.824 -34.0172 367.206 -22.2475 368.212C-16.3767 368.743 -10.478 368.52 -4.57919 368.576L867.984 368.571C870.919 368.571 873.882 368.57 876.818 368.766C882.689 369.13 888.531 370.108 894.235 371.617C905.613 374.663 916.376 380.058 925.658 387.325C934.967 394.564 942.795 403.675 948.554 413.961C954.341 424.218 958.031 435.678 959.317 447.388C960.016 453.258 959.876 459.155 959.904 465.053L959.904 912.051L972.261 912.051L972.261 457.283L972.233 456.025C972.205 452.671 971.981 449.317 971.618 445.991C970.136 432.659 965.915 419.606 959.345 407.896C952.775 396.185 943.857 385.843 933.262 377.57C922.694 369.325 910.449 363.176 897.45 359.683C890.964 357.922 884.31 356.832 877.6 356.413C875.923 356.245 874.246 356.273 872.568 356.217L871.31 356.217L870.164 356.189L-15.5101 356.194L-17.4111 356.11C-18.6971 356.11 -19.9552 355.942 -21.2132 355.886C-31.3335 355.02 -41.2299 352.113 -50.2039 347.39C-59.15 342.666 -67.1455 336.182 -73.6035 328.356C-79.9775 320.502 -84.758 311.391 -87.5816 301.72C-89.0074 296.857 -89.9299 291.854 -90.3493 286.795C-90.4332 285.537 -90.573 284.252 -90.573 282.994L-90.6289 281.094L-90.6289 3.52854e-06L-102.986 4.6088e-06L-102.986 270.137C-102.93 276.035 -103.153 281.932 -102.65 287.801C-102.147 293.671 -101.057 299.484 -99.4072 305.158L-99.4072 305.214Z"
+                stroke="url(#paint1_linear_502_645)" stroke-width="2" mask="url(#path-1-inside-1_502_645)" />
+            <path
+                d="M-81.9906 282.715C-81.9906 283.86 -81.8508 284.978 -81.7949 286.096C-81.4035 290.596 -80.5927 295.04 -79.3347 299.344C-76.8467 307.869 -72.6252 315.891 -67.0339 322.85C-67.0339 322.85 -67.006 322.878 -66.978 322.906C-66.9221 322.962 -66.8941 323.046 -66.8382 323.102C-61.1351 329.949 -54.0901 335.707 -46.2064 339.844C-38.2387 344.036 -29.4605 346.607 -20.4865 347.39C-19.3683 347.446 -18.2501 347.613 -17.1039 347.585L-15.3985 347.641L871.366 347.636L872.736 347.664C874.553 347.72 876.37 347.692 878.187 347.888C885.428 348.335 892.669 349.537 899.714 351.438C913.804 355.211 927.083 361.891 938.573 370.835C950.035 379.778 959.708 391.014 966.865 403.703C974.022 416.392 978.579 430.563 980.2 445.041C980.592 448.646 980.843 452.28 980.871 455.913L980.871 457.283L980.899 458.4L980.899 912.051L987.078 912.051L987.078 457.283L987.05 455.857C986.994 452.028 986.77 448.199 986.351 444.37C984.645 429.081 979.809 414.1 972.261 400.685C964.712 387.269 954.508 375.418 942.403 365.971C930.298 356.524 916.264 349.481 901.363 345.484C893.927 343.472 886.295 342.214 878.635 341.739C876.734 341.571 874.805 341.571 872.904 341.515L871.478 341.515L870.304 341.487L-15.1749 341.492L-16.7124 341.437C-17.7467 341.437 -18.7533 341.297 -19.7877 341.241C-27.979 340.542 -35.9184 338.222 -43.1592 334.393C-50.344 330.592 -56.8298 325.338 -62.0298 319.049C-67.1457 312.704 -71.0036 305.41 -73.2682 297.64C-74.4144 293.727 -75.1693 289.702 -75.5047 285.593C-75.5606 284.559 -75.7004 283.553 -75.7004 282.519L-75.7004 280.982L-75.7563 280.171L-75.7563 0.0838645L-81.9347 0.0838651L-81.9347 281.038L-81.8788 282.743L-81.9906 282.715Z"
+                stroke="url(#paint2_linear_502_645)" stroke-width="2" mask="url(#path-1-inside-1_502_645)" />
+            <path
+                d="M-69.9972 282.295C-69.9972 283.246 -69.8854 284.168 -69.8294 285.09C-69.5219 288.808 -68.823 292.441 -67.7887 295.991C-65.7478 302.95 -62.3092 309.518 -57.7243 315.22C-57.7243 315.22 -57.6405 315.332 -57.6125 315.36C-57.5846 315.416 -57.5287 315.471 -57.5007 315.527C-52.804 321.145 -47.0171 325.841 -40.5871 329.223C-34.0454 332.688 -26.8325 334.785 -19.424 335.427C-18.5015 335.483 -17.5789 335.623 -16.6284 335.595L-15.2306 335.595L-14.5317 335.651L871.394 335.646L872.904 335.674C874.917 335.73 876.929 335.73 878.942 335.898C886.994 336.401 895.017 337.714 902.817 339.838C918.473 344.031 933.206 351.438 945.926 361.36C958.646 371.282 969.381 383.719 977.293 397.806C985.232 411.892 990.293 427.628 992.082 443.671C992.529 447.668 992.781 451.72 992.837 455.717L992.837 457.227L992.865 458.373L992.865 912.051L996.974 912.051L996.974 457.255L996.946 455.689C996.89 451.525 996.639 447.388 996.163 443.224C994.318 426.622 989.063 410.355 980.871 395.793C972.68 381.232 961.609 368.347 948.442 358.117C935.302 347.86 920.038 340.202 903.879 335.87C895.8 333.69 887.497 332.32 879.194 331.817C877.125 331.621 875.028 331.649 872.96 331.565L871.394 331.565L870.192 331.537L-15.1748 331.542L-16.4887 331.487C-17.3554 331.487 -18.222 331.375 -19.0886 331.319C-25.9659 330.732 -32.5915 328.776 -38.6581 325.589C-44.6687 322.431 -50.0923 318.015 -54.4535 312.76C-58.7308 307.45 -61.9458 301.329 -63.8468 294.845C-64.7973 291.575 -65.4403 288.193 -65.7198 284.755C-65.7757 283.889 -65.8875 283.05 -65.8875 282.156L-65.8875 280.842L-65.9435 280.143L-65.9435 0.0559096L-70.0531 0.0559099L-70.0531 280.898L-69.9972 282.295Z"
+                stroke="url(#paint3_linear_502_645)" stroke-width="2" mask="url(#path-1-inside-1_502_645)" />
+            <defs>
+                <linearGradient id="paint0_linear_502_645" x1="428.487" y1="-4.1854e-05" x2="428.487" y2="912.051"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" />
+                    <stop offset="0.793269" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_502_645" x1="428.487" y1="-4.1854e-05" x2="428.487" y2="912.051"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" />
+                    <stop offset="0.793269" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_502_645" x1="428.487" y1="-4.1854e-05" x2="428.487" y2="912.051"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" />
+                    <stop offset="0.793269" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint3_linear_502_645" x1="428.487" y1="-4.1854e-05" x2="428.487" y2="912.051"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" />
+                    <stop offset="0.793269" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+
+    <section id="Thestartingpointsec" class="starting-point-sec">
+        <div class="starting-container-sticky">
+            <div class="starting-container">
+                <!-- Left Timeline -->
+                <div class="timeline-sidebar">
+                    <a href="#year-2002" class="timeline-link active" data-target="content-2002">2002</a>
+                    <a href="#year-2005" class="timeline-link" data-target="content-2005">2005</a>
+                    <a href="#year-2012" class="timeline-link" data-target="content-2012">2012</a>
+                    <a href="#year-2015" class="timeline-link" data-target="content-2015">2015</a>
+                    <a href="#year-2024" class="timeline-link" data-target="content-2024">2024</a>
+                    <a href="#year-present" class="timeline-link" data-target="content-present">PRESENT<br>DAY</a>
+                </div>
+
+                <!-- Content Container -->
+                <div class="timeline-content-container">
+                    <!-- 2002 -->
+                    <div class="timeline-content-item active" id="content-2002">
+                        <div class="timeline-center">
+                            <h2 class="timeline-subtitle">The starting point</h2>
+                            <h1 class="timeline-year">2002</h1>
+                        </div>
+                        <div class="timeline-right">
+                            <p>S P R & Co. opens its doors as a chartered accountancy practice. No tech layer, no AI
+                                ambitions. Just the discipline of getting the numbers right.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2005 -->
+                    <div class="timeline-content-item" id="content-2005">
+                        <div class="timeline-center">
+                            <h2 class="timeline-subtitle">SPR takes shape</h2>
+                            <h1 class="timeline-year">2005</h1>
+                        </div>
+                        <div class="timeline-right">
+                            <p>A five-person team sets out to do risk consulting differently: governance, assurance, and
+                                compliance work built on relationships, not volume.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2012 -->
+                    <div class="timeline-content-item" id="content-2012">
+                        <div class="timeline-center">
+                            <h2 class="timeline-subtitle">Category-1 status</h2>
+                            <h1 class="timeline-year">2012</h1>
+                        </div>
+                        <div class="timeline-right">
+                            <p>RBI recognition as a Category-1 firm. The team grows to fifty. What started as a boutique
+                                practice starts looking like an institution.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2015 -->
+                    <div class="timeline-content-item" id="content-2015">
+                        <div class="timeline-center">
+                            <h2 class="timeline-subtitle">The tech turn</h2>
+                            <h1 class="timeline-year">2015</h1>
+                        </div>
+                        <div class="timeline-right">
+                            <p>SPR moves into ERP consulting and starts building the technology muscle that would
+                                eventually
+                                reshape the whole business. Team crosses 150, with the first footholds outside India.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 2024 -->
+                    <div class="timeline-content-item" id="content-2024">
+                        <div class="timeline-center">
+                            <h2 class="timeline-subtitle">One brand, one stack</h2>
+                            <h1 class="timeline-year">2024</h1>
+                        </div>
+                        <div class="timeline-right">
+                            <p>The technology arm unifies under the SPR Consultech name. A dedicated Data Lab opens to
+                                push
+                                AI and analytics work. Team passes 375, spread across India, Africa, and North America,
+                                including a new base in Gaborone, Botswana, opened that September.</p>
+                        </div>
+                    </div>
+
+                    <!-- PRESENT DAY -->
+                    <div class="timeline-content-item" id="content-present">
+                        <div class="timeline-center">
+                            <h2 class="timeline-subtitle">Sthiros</h2>
+                            <h1 class="timeline-year present-day-year">PRESENT<br>DAY</h1>
+                        </div>
+                        <div class="timeline-right">
+                            <p>Strategy, Risk, Cyber, and AI come together as one integrated practice under a single
+                                name:
+                                Sthiros. Not a rename so much as an admission, that these were never four separate
+                                problems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="thestartingbtmsvg">
+        <svg xmlns="http://www.w3.org/2000/svg" width="74" height="598" viewBox="0 0 74 598" fill="none">
+            <path d="M74.0001 597.985L49.3334 597.985L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74.0001 597.985Z"
+                fill="url(#paint0_linear_1746_2758)" />
+            <path d="M37.014 598L24.6667 598L24.6666 -2.15642e-06L37.0138 -3.23586e-06L37.014 598Z"
+                fill="url(#paint1_linear_1746_2758)" />
+            <path d="M9.80545 597.977L9.80534 -8.57215e-07L15.979 -1.39693e-06L15.9791 597.977L9.80545 597.977Z"
+                fill="url(#paint2_linear_1746_2758)" />
+            <path d="M6.09874e-05 597.985L-5.22788e-05 0L4.10644 -3.59001e-07L4.10655 597.985L6.09874e-05 597.985Z"
+                fill="url(#paint3_linear_1746_2758)" />
+            <defs>
+                <linearGradient id="paint0_linear_1746_2758" x1="37" y1="-3.23465e-06" x2="37" y2="598"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.538462" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_1746_2758" x1="37" y1="-3.23465e-06" x2="37" y2="598"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.538462" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_1746_2758" x1="37" y1="-3.23465e-06" x2="37" y2="598"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.538462" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint3_linear_1746_2758" x1="37" y1="-3.23465e-06" x2="37" y2="598"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.538462" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </section>
+
+    <!-- Meet the Leaders -->
+    <section id="meettheleaderssec">
+        <div class="meettheleadersdiv">
+            <h4 class="meet-leaders-title">MEET THE LEADERS</h4>
+            <div class="meet-leaders-container">
+                <div class="leader-image-box">
+                    <div class="leader-glow"></div>
+                    <img src="assets/images/aboutpage/adityaceofounderimg.png" alt="Aditya - Founder & CEO"
+                        class="leader-img">
+                </div>
+                <div class="leader-content-box">
+                    <h2 class="leader-name">ADITYA AMIN</h2>
+                    <h3 class="leader-role">FOUNDER & CEO</h3>
+                    <div class="leader-divider"></div>
+                    <p class="leader-desc">
+                        Aditya built Sthiros on one conviction: advice means nothing without engineering behind it. A
+                        Chartered Accountant, CISA, and CDPSE, he brings over fourteen years across financial planning,
+                        risk, and systems audit. As Founder and CEO, he holds every engagement to three tests: clear
+                        strategy, strong governance, resilient systems, and partners with founders and boards to turn
+                        complexity into opportunity.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Market & Growth -->
+        <div class="meetsthirossec">
+            <div class="team-slider" id="teamSlider">
+                <!-- JavaScript will populate this -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ready when you are section -->
+    <section id="readywhenyouaresec">
+        <svg xmlns="http://www.w3.org/2000/svg" width="886" height="794" viewBox="0 0 886 794" fill="none">
+            <path
+                d="M8.76805e-05 304.787L0.0839503 307.889C0.0839504 309.958 0.307583 312.054 0.447354 314.122C1.14627 322.423 2.68387 330.696 5.0322 338.718C9.72885 354.789 17.6684 369.881 28.208 382.794C38.8034 395.679 51.9709 406.411 66.7599 414.181C81.5208 422.007 97.9592 426.815 114.593 428.212C116.662 428.352 118.759 428.576 120.827 428.603L123.931 428.687L125.468 428.687L126.587 428.715L758.982 434.13C759.178 434.13 759.373 434.13 759.429 434.13L760.072 434.13C760.939 434.213 761.806 434.13 762.672 434.241C766.111 434.465 769.521 435.024 772.82 435.918C779.418 437.679 785.652 440.81 791.104 445.058C796.555 449.306 801.14 454.645 804.495 460.626C807.878 466.607 810.002 473.203 810.757 480.051C810.953 481.756 811.065 483.489 811.065 485.221L811.065 793.606L835.75 793.606L835.75 485.864L835.722 484.914C835.722 482.37 835.526 479.827 835.247 477.312C834.129 467.222 830.942 457.412 825.965 448.552C820.989 439.72 814.224 431.866 806.228 425.605C798.233 419.344 788.979 414.733 779.194 412.105C774.302 410.792 769.27 409.953 764.21 409.646C762.952 409.506 761.666 409.562 760.408 409.506L759.457 409.506C759.15 409.478 758.73 409.478 758.395 409.478L124.21 404.064L121.694 403.98C120.017 403.98 118.339 403.784 116.69 403.672C103.327 402.526 90.1594 398.669 78.2779 392.409C66.3965 386.148 55.8011 377.512 47.3023 367.17C38.8595 356.801 32.5133 344.699 28.7392 331.842C26.8662 325.386 25.6081 318.762 25.0489 312.082C24.9371 310.405 24.7694 308.728 24.7414 307.051L24.6855 304.535L27.9366 0.0557031L3.25116 0.0557053L8.76805e-05 304.787Z"
+                fill="url(#paint0_linear_1746_2854)" />
+            <path
+                d="M40.5927 328.348C43.8636 339.584 49.427 350.177 56.8075 359.26C56.8075 359.26 56.8354 359.288 56.8634 359.316C56.8913 359.344 56.9193 359.4 56.9472 359.428C64.4116 368.456 73.6931 376.002 84.037 381.452C94.4647 386.958 105.983 390.34 117.752 391.347C123.623 391.878 129.522 391.654 135.421 391.71L756.214 397.124C759.15 397.124 762.113 397.124 765.049 397.32C770.919 397.683 776.762 398.661 782.465 400.171C793.844 403.217 804.607 408.612 813.888 415.878C823.198 423.117 831.026 432.229 836.785 442.514C842.572 452.772 846.262 464.231 847.548 475.942C848.247 481.811 848.107 487.709 848.135 493.606L848.135 793.606L860.492 793.606L860.492 485.836L860.464 484.578C860.436 481.224 860.212 477.871 859.849 474.545C858.367 461.213 854.145 448.16 847.576 436.449C841.006 424.738 832.088 414.397 821.492 406.124C810.925 397.879 798.68 391.73 785.68 388.236C779.194 386.476 772.541 385.385 765.831 384.966C764.154 384.799 762.477 384.826 760.799 384.771L759.541 384.771L758.395 384.743L124.49 379.328L122.589 379.244C121.303 379.244 120.045 379.077 118.787 379.021C108.667 378.154 98.77 375.248 89.796 370.524C80.8499 365.801 72.8544 359.316 66.3965 351.49C60.0224 343.637 55.2419 334.525 52.4183 324.855C50.9925 319.991 50.07 314.988 49.6506 309.929C49.5667 308.672 49.427 307.386 49.427 306.128L49.3711 304.228L52.6221 -0.000207239L40.2654 -0.000206158L37.0144 333.271C37.0703 339.169 36.8466 305.066 37.3498 310.936C37.8531 316.805 38.9433 322.619 40.5927 328.292L40.5927 328.348Z"
+                fill="url(#paint1_linear_1746_2854)" />
+            <path
+                d="M58.0094 305.849C58.0094 306.995 58.1491 308.113 58.205 309.231C58.5965 313.731 59.4072 318.175 60.6653 322.479C63.1533 331.003 67.3748 339.025 72.966 345.984C72.966 345.984 72.994 346.012 73.0219 346.04C73.0779 346.096 73.1058 346.18 73.1617 346.236C78.8648 353.083 85.9098 358.841 93.7935 362.978C101.761 367.17 110.539 369.742 119.513 370.524C120.632 370.58 121.75 370.748 122.896 370.72L124.601 370.776L759.597 376.19L760.967 376.218C762.784 376.274 764.601 376.246 766.418 376.442C773.659 376.889 780.9 378.091 787.945 379.991C802.035 383.764 815.314 390.444 826.804 399.388C838.266 408.332 847.939 419.568 855.096 432.257C862.253 444.946 866.81 459.116 868.431 473.594C868.822 477.2 869.074 480.833 869.102 484.467L869.102 485.836L869.13 486.954L869.13 793.606L875.309 793.606L875.308 485.836L875.28 484.411C875.224 480.582 875.001 476.753 874.581 472.924C872.876 457.635 868.04 442.654 860.491 429.238C852.943 415.823 842.739 403.972 830.634 394.525C818.529 385.078 804.495 378.035 789.594 374.038C782.158 372.026 774.526 370.768 766.866 370.293C764.965 370.125 763.036 370.125 761.135 370.069L759.709 370.069L758.535 370.041L124.825 364.627L123.288 364.571C122.253 364.571 121.247 364.431 120.212 364.375C112.021 363.676 104.082 361.357 96.8408 357.528C89.656 353.726 83.1701 348.472 77.9702 342.183C72.8542 335.839 68.9962 328.544 66.7318 320.774C65.5855 316.861 64.8307 312.836 64.4952 308.728C64.4393 307.693 64.2995 306.687 64.2995 305.653L64.2995 304.116L64.2436 303.305L67.4947 0.0836538L61.3163 0.0836543L58.0653 304.172L58.1212 305.877L58.0094 305.849Z"
+                fill="url(#paint2_linear_1746_2854)" />
+            <path
+                d="M70.0028 305.43C70.0028 306.38 70.1146 307.302 70.1705 308.225C70.478 311.942 71.1769 315.575 72.2113 319.125C74.2521 326.084 77.6908 332.653 82.2756 338.354C82.2756 338.354 82.3595 338.466 82.3874 338.494C82.4154 338.55 82.4713 338.606 82.4992 338.662C87.1959 344.279 92.9828 348.975 99.4128 352.357C105.955 355.823 113.167 357.919 120.576 358.562C121.498 358.618 122.421 358.757 123.372 358.729L124.769 358.729L125.468 358.785L759.625 364.2L761.135 364.228C763.147 364.283 765.16 364.283 767.173 364.451C775.225 364.954 783.248 366.268 791.048 368.392C806.703 372.585 821.436 379.991 834.157 389.913C846.877 399.836 857.612 412.273 865.524 426.36C873.463 440.446 878.523 456.182 880.313 472.225C880.76 476.222 881.012 480.274 881.067 484.271L881.067 485.78L881.095 486.926L881.096 793.606L885.205 793.606L885.205 485.808L885.177 484.243C885.121 480.079 884.869 475.942 884.394 471.778C882.549 455.176 877.293 438.909 869.102 424.347C860.911 409.785 849.84 396.901 836.673 386.671C823.533 376.414 808.269 368.756 792.11 364.423C784.031 362.243 775.728 360.874 767.425 360.371C765.356 360.175 763.259 360.203 761.19 360.119L759.625 360.119L758.423 360.091L124.825 354.677L123.511 354.621C122.645 354.621 121.778 354.509 120.911 354.453C114.034 353.866 107.408 351.91 101.342 348.724C95.3313 345.565 89.9077 341.149 85.5465 335.895C81.2691 330.584 78.0542 324.463 76.1532 317.979C75.2027 314.709 74.5597 311.327 74.2801 307.889C74.2242 307.023 74.1124 306.184 74.1124 305.29L74.1124 303.976L74.0565 303.278L77.3076 0.0556988L73.1979 0.0556992L69.9469 304.032L70.0028 305.43Z"
+                fill="url(#paint3_linear_1746_2854)" />
+            <defs>
+                <linearGradient id="paint0_linear_1746_2854" x1="442.205" y1="243.5" x2="442.603" y2="793.606"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.349328" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_1746_2854" x1="442.205" y1="243.5" x2="442.603" y2="793.606"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.349328" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_1746_2854" x1="442.205" y1="243.5" x2="442.603" y2="793.606"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.349328" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" />
+                </linearGradient>
+                <linearGradient id="paint3_linear_1746_2854" x1="442.205" y1="243.5" x2="442.603" y2="793.606"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.349328" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" />
+                </linearGradient>
+            </defs>
+        </svg>
+
+        <!-- readywhereyouaresec -->
+        <div class="aboutreadywhenyu">
+            <img src="assets/images/aboutpage/aboutreadywhenyu.jpg" alt="Ready when you are background"
+                class="rwy-bg-img">
+            <div class="rwy-content-wrapper">
+                <h2 class="rwy-heading">Ready when<br>you are.</h2>
+                <a href="#" class="rwy-btn-outer">
+                    <span class="rwy-btn-inner">GET IN TOUCH</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- bottom svg -->
+        <div class="btmsvgreadywhenyouare">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1805" height="308" viewBox="0 80 1805 308" fill="none">
+                <path
+                    d="M1730.95 261.541L1730.96 0.000243258L1755.61 0.000243552L1755.6 260.954L1755.6 260.958C1755.6 261.293 1755.6 261.71 1755.58 262.016L1755.58 262.967C1755.52 264.225 1755.58 265.511 1755.44 266.769C1755.13 271.829 1754.29 276.861 1752.98 281.754C1750.35 291.538 1745.74 300.792 1739.48 308.787C1733.22 316.783 1725.36 323.548 1716.53 328.525C1707.67 333.501 1697.86 336.688 1687.77 337.806C1685.26 338.086 1682.71 338.281 1680.17 338.281L1679.22 338.309L-9.52173 338.309L-9.52173 313.624L1679.86 313.624C1681.59 313.624 1683.33 313.512 1685.03 313.316C1691.88 312.562 1698.48 310.437 1704.46 307.054C1710.44 303.699 1715.78 299.115 1720.02 293.663C1724.27 288.212 1727.4 281.977 1729.16 275.38C1730.06 272.081 1730.62 268.67 1730.84 265.231C1730.95 264.365 1730.87 263.498 1730.95 262.631L1730.95 261.988L1730.95 261.541Z"
+                    fill="url(#paint0_linear_1746_2853)" />
+                <path
+                    d="M1767.96 258.773L1767.97 0.000243699L1780.35 0.000243847L1780.34 260.954L1780.31 262.1L1780.31 263.358C1780.26 265.036 1780.28 266.713 1780.12 268.391C1779.7 275.1 1778.61 281.754 1776.85 288.24C1773.35 301.239 1767.2 313.484 1758.96 324.052C1750.69 334.647 1740.34 343.565 1728.63 350.135C1716.92 356.705 1703.87 360.926 1690.54 362.408C1687.21 362.771 1683.86 362.995 1680.5 363.023L1679.25 363.051L-9.52173 363.051L-9.52173 350.694L1671.48 350.694C1677.37 350.666 1683.27 350.806 1689.14 350.107C1700.85 348.821 1712.31 345.131 1722.57 339.344C1732.85 333.585 1741.96 325.757 1749.2 316.448C1756.47 307.166 1761.87 296.403 1764.91 285.025C1766.42 279.321 1767.4 273.479 1767.76 267.608C1767.96 264.674 1767.96 261.713 1767.96 258.779L1767.96 258.773Z"
+                    fill="url(#paint1_linear_1746_2853)" />
+                <path
+                    d="M1788.86 263.526L1788.89 262.156L1788.9 0.000243949L1795.05 0.000244022L1795.04 261.094L1795.01 262.268L1795.01 263.694C1794.96 265.595 1794.96 267.524 1794.79 269.425C1794.31 277.085 1793.06 284.717 1791.04 292.153C1787.05 307.054 1780 321.088 1770.56 333.193C1761.11 345.298 1749.26 355.502 1735.84 363.051C1722.43 370.599 1707.45 375.435 1692.16 377.141C1688.33 377.56 1684.5 377.784 1680.67 377.839L1679.25 377.867L-9.52173 377.868L-9.52173 371.689L1678.13 371.689L1679.25 371.661L1680.62 371.661C1684.25 371.633 1687.88 371.382 1691.49 370.99C1705.97 369.369 1720.14 364.812 1732.83 357.655C1745.51 350.498 1756.75 340.825 1765.69 329.363C1774.64 317.873 1781.32 304.594 1785.09 290.504C1786.99 283.459 1788.19 276.218 1788.64 268.977C1788.84 267.16 1788.81 265.343 1788.86 263.526Z"
+                    fill="url(#paint2_linear_1746_2853)" />
+                <path
+                    d="M1800.88 262.184L1800.89 0.000244092L1805 0.000244141L1804.99 260.982L1804.96 262.184L1804.96 263.75C1804.88 265.818 1804.91 267.915 1804.71 269.984C1804.21 278.287 1802.84 286.59 1800.66 294.669C1796.33 310.828 1788.67 326.092 1778.41 339.232C1768.18 352.399 1755.3 363.47 1740.74 371.661C1726.17 379.852 1709.91 385.108 1693.3 386.953C1689.14 387.429 1685 387.68 1680.84 387.736L1679.27 387.764L-9.52173 387.764L-9.52173 383.655L1678.16 383.654L1679.3 383.627L1680.81 383.627C1684.81 383.571 1688.86 383.319 1692.86 382.872C1708.9 381.082 1724.64 376.022 1738.72 368.083C1752.81 360.171 1765.25 349.436 1775.17 336.716C1785.09 323.996 1792.5 309.263 1796.69 293.607C1798.81 285.807 1800.13 277.784 1800.63 269.732C1800.8 267.719 1800.8 265.707 1800.85 263.694L1800.88 262.184Z"
+                    fill="url(#paint3_linear_1746_2853)" />
+                <defs>
+                    <linearGradient id="paint0_linear_1746_2853" x1="897.739" y1="387.764" x2="-10" y2="388"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" />
+                        <stop offset="0.658654" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1746_2853" x1="897.739" y1="387.764" x2="-10" y2="388"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" />
+                        <stop offset="0.658654" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_1746_2853" x1="897.739" y1="387.764" x2="-10" y2="388"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" />
+                        <stop offset="0.658654" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_1746_2853" x1="897.739" y1="387.764" x2="-10" y2="388"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" />
+                        <stop offset="0.658654" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </section>
+
+    <footer id="footer" class="site-footer">
+        <div class="footer-container">
+            <!-- Left Side -->
+            <div class="footer-left">
+                <h3 class="footer-heading">Let's work together</h3>
+                <a href="mailto:hello@sthiros.com" class="footer-email">hello@sthiros.com</a>
+
+                <div class="footer-contact-block">
+                    <a href="#" class="contact-now-link">
+                        <span>CONTACT NOW</span>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H11V11" stroke="white" stroke-width="1.5" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/fb_sthiros.png" alt="Facebook" class="social-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/insta_sthiros.png" alt="Instagram" class="social-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/x_sthiros.png" alt="X" class="social-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/linkedin_sthiros.png" alt="LinkedIn" class="social-img">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="footer-right">
+                <ul class="footer-menu">
+                    <li><a href="#">OUR STORY</a></li>
+                    <li><a href="#">LEADERSHIP</a></li>
+                    <li><a href="#">CAREERS</a></li>
+                    <li><a href="#">INDUSTRIES</a></li>
+                    <li><a href="#">LATEST</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-bottom-line">
+
+        <div class="footer-massive-logo-section">
+            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo">
+            <div class="copyright-text">© 2026</div>
+        </div>
+    </footer>
+
+    <!-- ═══════════════ SCRIPTS ═══════════════ -->
+    <!-- GSAP, ScrollTrigger, Anime.js, Lenis (smooth scroll) & Three.js (WebGL) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('.timeline-link');
+            const items = document.querySelectorAll('.timeline-content-item');
+            const section = document.querySelector('.starting-point-sec');
+            const totalItems = items.length;
+
+            // Handle click events to scroll to specific part
+            links.forEach((link, index) => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight - window.innerHeight;
+                    const targetScroll = sectionTop + (sectionHeight * (index / (totalItems - 1)));
+
+                    window.scrollTo({
+                        top: targetScroll,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Handle scroll events for timeline
+            window.addEventListener('scroll', function () {
+                const rect = section.getBoundingClientRect();
+                const scrollProgress = -rect.top;
+                const scrollHeight = rect.height - window.innerHeight;
+
+                // Add a small buffer to ensure we catch the start and end
+                if (scrollProgress >= -50 && scrollProgress <= scrollHeight + 50) {
+                    let percentage = scrollProgress / scrollHeight;
+                    percentage = Math.max(0, Math.min(1, percentage));
+
+                    let activeIndex = Math.round(percentage * (totalItems - 1));
+
+                    if (!links[activeIndex].classList.contains('active')) {
+                        links.forEach(l => l.classList.remove('active'));
+                        items.forEach(i => i.classList.remove('active'));
+
+                        links[activeIndex].classList.add('active');
+                        items[activeIndex].classList.add('active');
+                    }
+                }
+            });
+
+            // Initialize Team Slider
+            const teamData = [
+                { category: "Market & Growth", name: "Pooja Parameswaran", role: "Chief Branding Officer", desc: "Pooja brings extensive experience in brand strategy and marketing, shaping the company's identity and market presence.", img: "assets/images/aboutpage/teamoneimg.jpg" },
+                { category: "MARKET & GROWTH", name: "Sreekhar", role: "HEAD OF SALES", desc: "Sreekhar is a Chartered Accountant with over thirteen years in enterprise risk and digital transformation. He holds ISO 27001, 27701, NIST-aligned, FAFD, and BRSR credentials, the foundation for how he reads a client's business and shapes the deal around it.", img: "assets/images/aboutpage/teamoneimg.jpg" },
+                { category: "Client Solutions", name: "Karthik Jegannathan", role: "Client Solutions", desc: "Karthik specializes in client relationship management and tailored solutions, ensuring every engagement delivers maximum value.", img: "assets/images/aboutpage/teamoneimg.jpg" },
+                { category: "Client Solutions", name: "Praveen Babu C", role: "Head of AI", desc: "Praveen leads the AI division, focusing on cutting-edge machine learning and data engineering to drive automated intelligence.", img: "assets/images/aboutpage/teamoneimg.jpg" },
+                { category: "Enterprise Risk", name: "Santhosh Kumar R", role: "Chief People Officer", desc: "Santhosh is dedicated to building strong, resilient teams and fostering a great company culture rooted in continuous learning.", img: "assets/images/aboutpage/teamoneimg.jpg" },
+                { category: "Enterprise Risk", name: "Krishnapriya", role: "Head of Legal & Compliance", desc: "Krishnapriya oversees all legal frameworks, ensuring strict compliance and robust governance across global operations.", img: "assets/images/aboutpage/teamoneimg.jpg" },
+                { category: "Strategic Partner Practice", name: "Hithender Kumar G", role: "Head Of Strategy", desc: "Hithender drives the long-term strategic vision and key partnerships, aligning business goals with emerging market opportunities.", img: "assets/images/aboutpage/teamoneimg.jpg" },
+                { category: "Strategic Partner Practice", name: "Ravishankar M", role: "Head of Risk", desc: "Ravishankar is an expert in risk mitigation, security protocols, and operational resilience, safeguarding the organization's core assets.", img: "assets/images/aboutpage/teamoneimg.jpg" }
+            ];
+
+            const teamSlider = document.getElementById('teamSlider');
+
+            function renderTeam() {
+                teamSlider.innerHTML = '';
+                teamData.forEach((member, index) => {
+                    const isActive = index === 1; // Sreekhar starts active by default
+                    const isLastThree = index >= teamData.length - 4; // Shifted so the 5th card's text opens to the left to avoid overflow
+                    const card = document.createElement('div');
+                    card.className = `team-card ${isActive ? 'active' : 'inactive'} ${isLastThree ? 'text-left' : ''}`;
+                    card.innerHTML = `
+                        <img src="${member.img}" class="team-card-img" alt="${member.name}">
+                        
+                        <div class="team-card-info">
+                            <p class="tc-cat">${member.category}</p>
+                            <h4 class="tc-name">${member.name}</h4>
+                            <p class="tc-role">${member.role}</p>
+                        </div>
+
+                        <div class="team-active-text-panel">
+                            <h5 class="ta-cat">${member.category}</h5>
+                            <h2 class="ta-name">${member.name}</h2>
+                            <h4 class="ta-role">${member.role}</h4>
+                            <p class="ta-desc">${member.desc}</p>
+                        </div>
+                    `;
+
+                    card.addEventListener('click', () => {
+                        document.querySelectorAll('.team-card').forEach(c => c.classList.remove('active'));
+                        document.querySelectorAll('.team-card').forEach(c => c.classList.add('inactive'));
+                        card.classList.remove('inactive');
+                        card.classList.add('active');
+
+                        // Scroll into view only on smaller screens (1280px and below)
+                        if (window.innerWidth <= 1280) {
+                            card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                        }
+                    });
+
+                    teamSlider.appendChild(card);
+                });
+            }
+
+            renderTeam();
+
+            // SVG Scroll Animation for .herobtmsvg
+            const heroSvgSection = document.querySelector('.herobtmsvg');
+            if (heroSvgSection) {
+                heroSvgSection.style.clipPath = 'inset(0 100% 0 0)';
+                heroSvgSection.style.transition = 'clip-path 0.1s ease-out';
+
+                window.addEventListener('scroll', function () {
+                    const scrollY = window.scrollY;
+                    const scrollMax = 350; // Draw completely over the first 350px of scrolling
+                    let progress = scrollY / scrollMax;
+                    progress = Math.max(0, Math.min(1, progress));
+                    const insetRight = 100 - (progress * 100);
+                    heroSvgSection.style.clipPath = `inset(0 ${insetRight}% 0 0)`;
+                });
+
+                // Trigger once on load to set initial state correctly
+                window.dispatchEvent(new Event('scroll'));
+            }
+            // SVG Scroll Animation for #thestartingbtmsvg
+            const startingBtmSvgSection = document.getElementById('thestartingbtmsvg');
+            if (startingBtmSvgSection) {
+                startingBtmSvgSection.style.clipPath = 'inset(0 0 100% 0)';
+                startingBtmSvgSection.style.transition = 'clip-path 0.1s ease-out';
+
+                window.addEventListener('scroll', function () {
+                    const rect = startingBtmSvgSection.getBoundingClientRect();
+                    const windowHeight = window.innerHeight;
+
+                    const startPos = windowHeight;
+                    const endPos = windowHeight * 0.3;
+
+                    if (rect.top <= startPos) {
+                        let progress = (startPos - rect.top) / (startPos - endPos);
+                        progress = Math.max(0, Math.min(1, progress));
+                        const insetBottom = 100 - (progress * 100);
+                        startingBtmSvgSection.style.clipPath = `inset(0 0 ${insetBottom}% 0)`;
+                    } else {
+                        startingBtmSvgSection.style.clipPath = 'inset(0 0 100% 0)';
+                    }
+                });
+            }
+
+            // SVG Scroll Animation for readywhenyouaresec
+            const rwySection = document.getElementById('readywhenyouaresec');
+            const rwyTopSvg = document.querySelector('#readywhenyouaresec > svg');
+            const rwyBtmSvg = document.querySelector('.btmsvgreadywhenyouare');
+
+            if (rwySection && rwyTopSvg && rwyBtmSvg) {
+                // Initial hidden state
+                rwyTopSvg.style.clipPath = 'inset(0 100% 0 0)';
+                rwyTopSvg.style.transition = 'clip-path 0.1s ease-out';
+
+                // Bottom SVG reveals from top to bottom first, then right to left
+                rwyBtmSvg.style.clipPath = 'inset(0 0 100% 93%)';
+                rwyBtmSvg.style.transition = 'clip-path 0.1s ease-out';
+
+                window.addEventListener('scroll', function () {
+                    const rect = rwySection.getBoundingClientRect();
+                    const windowHeight = window.innerHeight;
+
+                    // Start animation when the top of the section is at 80% of the viewport height
+                    const startPos = windowHeight * 0.8;
+
+                    // Total scrollable distance for this section is roughly its height
+                    const totalDistance = rect.height * 1.5;
+                    const scrolled = startPos - rect.top;
+
+                    if (scrolled > 0) {
+                        let totalProgress = scrolled / totalDistance;
+                        totalProgress = Math.max(0, Math.min(1, totalProgress));
+
+                        // Top SVG animates from progress 0 to 0.5
+                        let topProgress = totalProgress / 0.5;
+                        topProgress = Math.max(0, Math.min(1, topProgress));
+
+                        if (topProgress < 0.7) {
+                            // Phase 1: Horizontal draw
+                            // Keep the bottom 39% hidden so the vertical line isn't revealed yet
+                            let hProgress = topProgress / 0.7;
+                            let rightInset = 100 - (hProgress * 100);
+                            rwyTopSvg.style.clipPath = `inset(0 ${rightInset}% 39% 0)`;
+                        } else {
+                            // Phase 2: Vertical draw downwards
+                            // Horizontal is fully drawn, now reveal the vertical drop
+                            let vProgress = (topProgress - 0.7) / 0.3;
+                            let bottomInset = 39 - (vProgress * 39);
+                            rwyTopSvg.style.clipPath = `inset(0 0% ${bottomInset}% 0)`;
+                        }
+
+                        // Bottom SVG animates from progress 0.5 to 1.0
+                        let btmProgress = (totalProgress - 0.5) / 0.5;
+                        btmProgress = Math.max(0, Math.min(1, btmProgress));
+                        
+                        if (btmProgress < 0.2) {
+                            // Phase 1: Vertical draw (top to bottom)
+                            // Keep the left 93% hidden so the horizontal line isn't revealed yet
+                            let vProg = btmProgress / 0.2;
+                            let bottomInset = 100 - (vProg * 100);
+                            rwyBtmSvg.style.clipPath = `inset(0 0 ${bottomInset}% 93%)`;
+                        } else {
+                            // Phase 2: Horizontal draw (right to left)
+                            // Vertical is fully drawn, now reveal the horizontal line right to left
+                            let hProg = (btmProgress - 0.2) / 0.8;
+                            let leftInset = 93 - (hProg * 93);
+                            rwyBtmSvg.style.clipPath = `inset(0 0 0 ${leftInset}%)`;
+                        }
+
+                    } else {
+                        rwyTopSvg.style.clipPath = 'inset(0 100% 0 0)';
+                        rwyBtmSvg.style.clipPath = 'inset(0 0 100% 93%)';
+                    }
+                });
+
+                // Trigger once on load to ensure initial states are correct if user reloads mid-page
+                window.dispatchEvent(new Event('scroll'));
+            }
+        });
+    </script>
+
+</body>
+
+</html>
