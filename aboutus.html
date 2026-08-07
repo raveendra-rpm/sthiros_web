@@ -2041,17 +2041,16 @@
                     domCards.forEach((card, i) => {
                         const content = card.querySelector('.team-card-content');
 
-                        // Clone entire wrapper for perfectly synced outgoing slide animation
+                        // Clone entire wrapper for perfectly synced outgoing animation
                         const clone = content.cloneNode(true);
-                        clone.style.transition = 'transform 0.4s ease, opacity 0.4s ease';
+                        clone.style.transition = 'opacity 0.4s ease';
 
                         card.appendChild(clone);
 
                         // Force reflow for clone
                         void clone.offsetWidth;
 
-                        // Slide out clone and scale down slightly
-                        clone.style.transform = `translateX(${dir * 15}px) scale(0.95)`;
+                        // Fade out clone
                         clone.style.opacity = '0';
 
                         // Instantly prepare incoming real wrapper (underneath clone)
@@ -2059,22 +2058,18 @@
                         populateData(content, dataIndex);
 
                         content.style.transition = 'none';
-                        // Start small and offset
-                        content.style.transform = `translateX(${-dir * 15}px) scale(0.95)`;
                         content.style.opacity = '0';
 
                         void content.offsetWidth; // Force reflow
 
-                        // Slide in real wrapper and scale to normal size
-                        content.style.transition = 'transform 0.4s ease, opacity 0.4s ease';
-                        content.style.transform = 'translateX(0) scale(1)';
+                        // Fade in real wrapper
+                        content.style.transition = 'opacity 0.4s ease';
                         content.style.opacity = '1';
 
                         // Cleanup after animation finishes
                         setTimeout(() => {
                             clone.remove();
                             content.style.transition = '';
-                            content.style.transform = '';
                         }, 400);
                     });
 
