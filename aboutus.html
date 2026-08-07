@@ -2010,48 +2010,159 @@
             ];
 
             const teamSlider = document.getElementById('teamSlider');
+            let isAnimating = false;
 
-            function renderTeam() {
+            function initTeam() {
+                if (!teamSlider) return;
                 teamSlider.innerHTML = '';
-                teamData.forEach((member, index) => {
-                    const isActive = index === 1; // Sreekhar starts active by default
-                    const isLastThree = index >= teamData.length - 4; // Shifted so the 5th card's text opens to the left to avoid overflow
+
+                const domCards = [];
+                let dataOffset = 0;
+                const len = teamData.length;
+
+                function populateData(card, dataIndex) {
+                    const member = teamData[dataIndex];
+
+                    const img = card.querySelector('.team-card-img');
+                    img.src = member.img;
+                    img.alt = member.name;
+
+                    card.querySelector('.tc-cat').innerText = member.category;
+                    card.querySelector('.tc-name').innerText = member.name;
+                    card.querySelector('.tc-role').innerText = member.role;
+
+                    card.querySelector('.ta-cat').innerText = member.category;
+                    card.querySelector('.ta-name').innerText = member.name;
+                    card.querySelector('.ta-role').innerText = member.role;
+                    card.querySelector('.ta-desc').innerText = member.desc;
+                }
+
+                function shiftCards(shift) {
+                    if (shift === 0 || isAnimating) return;
+                    isAnimating = true;
+
+                    // Shortest path logic for offset rotation
+                    if (shift > len / 2) {
+                        shift = shift - len;
+                    } else if (shift < -len / 2) {
+                        shift = shift + len;
+                    }
+
+                    dataOffset = ((dataOffset + shift) % len + len) % len;
+
+                    // Fade out content (only text, not image, to prevent black dip effect)
+                    domCards.forEach(card => {
+                        const els = card.querySelectorAll('.team-card-info, .team-active-text-panel');
+                        els.forEach(el => el.style.opacity = '0');
+                    });
+
+                    // Wait for fade out, update data, then fade in
+                    setTimeout(() => {
+                        domCards.forEach((card, i) => {
+                            const dataIndex = ((i + dataOffset) % len + len) % len;
+                            populateData(card, dataIndex);
+                        });
+
+                        domCards.forEach(card => {
+                            const els = card.querySelectorAll('.team-card-info, .team-active-text-panel');
+                            els.forEach(el => el.style.opacity = ''); // Remove inline style to fallback to CSS
+                        });
+
+                        setTimeout(() => {
+                            isAnimating = false;
+                        }, 300); // 300ms matches the opacity transition time
+                    }, 300);
+                }
+
+                for (let i = 0; i < len; i++) {
                     const card = document.createElement('div');
+                    const isActive = i === 1; // 2nd card is always the active one visually
+                    const isLastThree = i >= len - 4;
+
                     card.className = `team-card ${isActive ? 'active' : 'inactive'} ${isLastThree ? 'text-left' : ''}`;
+                    card.style.order = i;
+                    card.style.webkitTapHighlightColor = 'transparent';
+
                     card.innerHTML = `
-                        <img src="${member.img}" class="team-card-img" alt="${member.name}">
+                        <img src="" class="team-card-img" alt="">
                         
-                        <div class="team-card-info">
-                            <p class="tc-cat">${member.category}</p>
-                            <h4 class="tc-name">${member.name}</h4>
-                            <p class="tc-role">${member.role}</p>
+                        <div class="team-card-info" style="transition: opacity 0.3s ease;">
+                            <p class="tc-cat"></p>
+                            <h4 class="tc-name"></h4>
+                            <p class="tc-role"></p>
                         </div>
 
-                        <div class="team-active-text-panel">
-                            <h5 class="ta-cat">${member.category}</h5>
-                            <h2 class="ta-name">${member.name}</h2>
-                            <h4 class="ta-role">${member.role}</h4>
-                            <p class="ta-desc">${member.desc}</p>
+                        <div class="team-active-text-panel" style="transition: opacity 0.3s ease;">
+                            <h5 class="ta-cat"></h5>
+                            <h2 class="ta-name"></h2>
+                            <h4 class="ta-role"></h4>
+                            <p class="ta-desc"></p>
                         </div>
                     `;
 
-                    card.addEventListener('click', () => {
-                        document.querySelectorAll('.team-card').forEach(c => c.classList.remove('active'));
-                        document.querySelectorAll('.team-card').forEach(c => c.classList.add('inactive'));
-                        card.classList.remove('inactive');
-                        card.classList.add('active');
+                    populateData(card, i);
 
-                        // Scroll into view only on smaller screens (1280px and below)
-                        if (window.innerWidth <= 1280) {
-                            card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-                        }
+                    // Prevent native image dragging so custom mouse swipe works smoothly
+                    const img = card.querySelector('.team-card-img');
+                    if (img) {
+                        img.addEventListener('dragstart', (e) => e.preventDefault());
+                    }
+
+                    card.addEventListener('click', () => {
+                        if (wasSwiped) return;
+                        if (isAnimating || i === 1) return;
+                        shiftCards(i - 1);
                     });
 
+                    domCards.push(card);
                     teamSlider.appendChild(card);
-                });
+                }
+
+                // Add swipe/drag detection
+                let startX = 0;
+                let startY = 0;
+                let isDragging = false;
+                let wasSwiped = false;
+
+                const handleDragStart = (e) => {
+                    if (isAnimating) return;
+                    startX = e.touches ? e.touches[0].clientX : e.clientX;
+                    startY = e.touches ? e.touches[0].clientY : e.clientY;
+                    isDragging = true;
+                };
+
+                const handleDragEnd = (e) => {
+                    if (!isDragging) return;
+                    isDragging = false;
+
+                    const endX = e.changedTouches ? e.changedTouches[0].clientX : e.clientX;
+                    const endY = e.changedTouches ? e.changedTouches[0].clientY : e.clientY;
+
+                    const deltaX = endX - startX;
+                    const deltaY = endY - startY;
+
+                    // If horizontal swipe is strong enough
+                    if (Math.abs(deltaX) > 40 && Math.abs(deltaX) > Math.abs(deltaY)) {
+                        wasSwiped = true;
+                        setTimeout(() => { wasSwiped = false; }, 50);
+
+                        if (deltaX < 0) {
+                            // Swipe left -> next data
+                            shiftCards(1);
+                        } else {
+                            // Swipe right -> prev data
+                            shiftCards(-1);
+                        }
+                    }
+                };
+
+                teamSlider.addEventListener('touchstart', handleDragStart, { passive: true });
+                teamSlider.addEventListener('touchend', handleDragEnd);
+                teamSlider.addEventListener('mousedown', handleDragStart);
+                window.addEventListener('mouseup', handleDragEnd);
             }
 
-            renderTeam();
+            initTeam();
 
             // SVG Scroll Animation for .herobtmsvg
             const heroSvgSection = document.querySelector('.herobtmsvg');

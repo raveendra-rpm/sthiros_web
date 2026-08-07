@@ -1,0 +1,276 @@
+/* ═══════════════ REPOSITORY PAGE STYLES ═══════════════ */
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Typography */
+.repo-section-tag {
+    font-family: 'Inter', sans-serif;
+    color: var(--VERMILION-RED, #EC2D26);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.repo-section-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.repo-section-title span {
+    color: var(--VERMILION-RED, #EC2D26);
+}
+
+.repo-section-subtitle {
+    text-align: center;
+    color: #a0a0a0;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+/* Main Container */
+.repo-main {
+    position: relative;
+    padding-top: 0;
+}
+
+/* SVG Connecting Line */
+.reposvgcontainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.reposvgcontainer svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: visible;
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+}
+
+/* Hero Section */
+.repo-hero {
+    position: relative;
+    height: 100vh;
+    /* Better fit for full hero banner */
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 1;
+    background-image:
+        linear-gradient(to bottom, transparent 70%, #000 100%),
+        linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 40%, transparent 100%),
+        url('../images/repositorypage/repositoryimgbanner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.repo-hero-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.repo-hero-content {
+    max-width: 500px;
+}
+
+.repo-hero-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.repo-hero-desc {
+    color: #ccc;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Sections */
+.repo-section {
+    position: relative;
+    padding: 80px 10%;
+    z-index: 10;
+}
+
+.repo-work {
+    margin-top: 180px;
+    /* Pusher it down below the hero section */
+}
+
+/* Grids & Cards */
+.repo-grid {
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+}
+
+.repo-grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.repo-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(236, 45, 38, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background: #111;
+}
+
+.repo-card:hover {
+    border-color: #EC2D26;
+    box-shadow: 0 0 20px rgba(236, 45, 38, 0.4);
+    transform: translateY(-5px);
+}
+
+.repo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    min-height: 200px;
+}
+
+.repo-card-icon {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.repo-card-icon img {
+    width: 12px;
+    height: 12px;
+    min-height: auto;
+}
+
+.repo-card-wide {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    aspect-ratio: 16/7;
+}
+
+.repo-play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    color: #EC2D26;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 0 20px rgba(236, 45, 38, 0.6);
+}
+
+.repo-cents-icons {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 40px;
+    z-index: 2;
+}
+
+.repo-cent-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #EC2D26;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 0 15px rgba(236, 45, 38, 0.5);
+}
+
+/* CTA */
+.repo-cta {
+    padding: 150px 10%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.repo-cta-box {
+    border: 2px solid #EC2D26;
+    border-radius: 40px;
+    padding: 80px 60px;
+    text-align: left;
+    box-shadow: 0 0 50px rgba(236, 45, 38, 0.1) inset, 0 0 50px rgba(236, 45, 38, 0.1);
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+.repo-cta-box p {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 0;
+    color: #ccc;
+}
+
+.repo-btn {
+    border: 1px solid #EC2D26;
+    padding: 12px 40px;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+    background: transparent;
+    text-transform: uppercase;
+}
+
+.repo-btn:hover {
+    background: #EC2D26;
+    box-shadow: 0 0 15px rgba(236, 45, 38, 0.8);
+}
