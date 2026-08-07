@@ -532,16 +532,7 @@
             display: block;
         }
 
-        .team-card::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 60%;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
-            pointer-events: none;
-        }
+
 
         .team-card-info {
             position: absolute;
@@ -2020,21 +2011,17 @@
                 let dataOffset = 0;
                 const len = teamData.length;
 
-                function populateData(card, dataIndex) {
+                function populateData(container, dataIndex) {
                     const member = teamData[dataIndex];
 
-                    const img = card.querySelector('.team-card-img');
+                    const img = container.querySelector('.team-card-img');
                     img.src = member.img;
                     img.alt = member.name;
 
-                    card.querySelector('.tc-cat').innerText = member.category;
-                    card.querySelector('.tc-name').innerText = member.name;
-                    card.querySelector('.tc-role').innerText = member.role;
-
-                    card.querySelector('.ta-cat').innerText = member.category;
-                    card.querySelector('.ta-name').innerText = member.name;
-                    card.querySelector('.ta-role').innerText = member.role;
-                    card.querySelector('.ta-desc').innerText = member.desc;
+                    container.querySelector('.ta-cat').innerText = member.category;
+                    container.querySelector('.ta-name').innerText = member.name;
+                    container.querySelector('.ta-role').innerText = member.role;
+                    container.querySelector('.ta-desc').innerText = member.desc;
                 }
 
                 function shiftCards(shift) {
@@ -2048,30 +2035,52 @@
                         shift = shift + len;
                     }
 
+                    const dir = shift > 0 ? -1 : 1; // swipe left (shift>0) -> out left (-1), in right (+1)
                     dataOffset = ((dataOffset + shift) % len + len) % len;
 
-                    // Fade out content (only text, not image, to prevent black dip effect)
-                    domCards.forEach(card => {
-                        const els = card.querySelectorAll('.team-card-info, .team-active-text-panel');
-                        els.forEach(el => el.style.opacity = '0');
+                    domCards.forEach((card, i) => {
+                        const content = card.querySelector('.team-card-content');
+
+                        // Clone entire wrapper for perfectly synced outgoing slide animation
+                        const clone = content.cloneNode(true);
+                        clone.style.transition = 'transform 0.4s ease, opacity 0.4s ease';
+
+                        card.appendChild(clone);
+
+                        // Force reflow for clone
+                        void clone.offsetWidth;
+
+                        // Slide out clone and scale down slightly
+                        clone.style.transform = `translateX(${dir * 15}px) scale(0.95)`;
+                        clone.style.opacity = '0';
+
+                        // Instantly prepare incoming real wrapper (underneath clone)
+                        const dataIndex = ((i + dataOffset) % len + len) % len;
+                        populateData(content, dataIndex);
+
+                        content.style.transition = 'none';
+                        // Start small and offset
+                        content.style.transform = `translateX(${-dir * 15}px) scale(0.95)`;
+                        content.style.opacity = '0';
+
+                        void content.offsetWidth; // Force reflow
+
+                        // Slide in real wrapper and scale to normal size
+                        content.style.transition = 'transform 0.4s ease, opacity 0.4s ease';
+                        content.style.transform = 'translateX(0) scale(1)';
+                        content.style.opacity = '1';
+
+                        // Cleanup after animation finishes
+                        setTimeout(() => {
+                            clone.remove();
+                            content.style.transition = '';
+                            content.style.transform = '';
+                        }, 400);
                     });
 
-                    // Wait for fade out, update data, then fade in
                     setTimeout(() => {
-                        domCards.forEach((card, i) => {
-                            const dataIndex = ((i + dataOffset) % len + len) % len;
-                            populateData(card, dataIndex);
-                        });
-
-                        domCards.forEach(card => {
-                            const els = card.querySelectorAll('.team-card-info, .team-active-text-panel');
-                            els.forEach(el => el.style.opacity = ''); // Remove inline style to fallback to CSS
-                        });
-
-                        setTimeout(() => {
-                            isAnimating = false;
-                        }, 300); // 300ms matches the opacity transition time
-                    }, 300);
+                        isAnimating = false;
+                    }, 400);
                 }
 
                 for (let i = 0; i < len; i++) {
@@ -2084,23 +2093,20 @@
                     card.style.webkitTapHighlightColor = 'transparent';
 
                     card.innerHTML = `
-                        <img src="" class="team-card-img" alt="">
-                        
-                        <div class="team-card-info" style="transition: opacity 0.3s ease;">
-                            <p class="tc-cat"></p>
-                            <h4 class="tc-name"></h4>
-                            <p class="tc-role"></p>
-                        </div>
-
-                        <div class="team-active-text-panel" style="transition: opacity 0.3s ease;">
-                            <h5 class="ta-cat"></h5>
-                            <h2 class="ta-name"></h2>
-                            <h4 class="ta-role"></h4>
-                            <p class="ta-desc"></p>
+                        <div class="team-card-content" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                            <img src="" class="team-card-img" alt="">
+                            
+                            <div class="team-active-text-panel" style="transition: opacity 0.3s ease;">
+                                <h5 class="ta-cat"></h5>
+                                <h2 class="ta-name"></h2>
+                                <h4 class="ta-role"></h4>
+                                <p class="ta-desc"></p>
+                            </div>
                         </div>
                     `;
 
-                    populateData(card, i);
+                    const content = card.querySelector('.team-card-content');
+                    populateData(content, i);
 
                     // Prevent native image dragging so custom mouse swipe works smoothly
                     const img = card.querySelector('.team-card-img');
