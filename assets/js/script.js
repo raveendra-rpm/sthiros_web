@@ -33,6 +33,11 @@ function boot() {
   initRealStoriesSlider();
   initWorkholdSlider();
   initServiceAccordion();
+  initWorkspeakBtmSvgScroll();
+  initRepoSvgScroll();
+  initInsightIndustrySvgScroll();
+  initOurTwoCentsBtmSvgScroll();
+  initYoursCanTooSvgScroll();
 }
 
 let appBooted = false;
@@ -1540,7 +1545,7 @@ function initIndustriesNewScroll() {
   function updateCarousel() {
     const isMobile = window.innerWidth <= 768;
     const isLaptop = window.innerWidth <= 1400 && !isMobile;
-    
+
     const stepX = isMobile ? 155 : isLaptop ? 200 : 240;
     const stepZ = isMobile ? -50 : -65;
 
@@ -1656,7 +1661,7 @@ function initIndustriesNewScroll() {
     const rect = section.getBoundingClientRect();
     const isInView = rect.top < window.innerHeight && rect.bottom > 0;
     if (!isInView || document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') return;
-    
+
     if (e.key === 'ArrowRight') {
       activeIndex = (activeIndex + 1) % totalCards;
       updateCarousel();
@@ -1743,8 +1748,8 @@ function initOurWorkHeroScroll() {
   const header = document.querySelector('.site-header');
   if (!header) return;
 
-  // Hero-jaisa section jo bhi page pe ho (index.html vs our-work.html vs services.html)
-  const heroEl = document.querySelector('.section-hero, .our-work-banner, .services-hero');
+  // Hero-jaisa section jo bhi page pe ho
+  const heroEl = document.querySelector('.section-hero, .our-work-banner, .services-hero, .about-hero-section');
 
   let ticking = false;
 
@@ -1864,7 +1869,7 @@ function initServicesPageHeroScroll() {
   const heroSection = document.getElementById('services_banner');
   const svgContainer = document.getElementById('servicesherosvg');
   const svgPaths = document.querySelectorAll('#servicesherosvg path');
-  
+
   if (!heroSection || !svgContainer) return;
 
   const svgElement = svgContainer.querySelector('svg');
@@ -1912,7 +1917,7 @@ function initConversationSvgScroll() {
 
   const topSvgContainer = convSection.querySelector('.conversationsvgsec');
   const bottomSvgContainer = convSection.querySelector('.conversationbottomsvg');
-  
+
   const topSvgElement = topSvgContainer ? topSvgContainer.querySelector('svg') : null;
   const bottomSvgElement = bottomSvgContainer ? bottomSvgContainer.querySelector('svg') : null;
 
@@ -1927,8 +1932,8 @@ function initConversationSvgScroll() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: convSection,
-      start: 'top 60%', 
-      end: 'bottom 10%', 
+      start: 'top 60%',
+      end: 'bottom 10%',
       scrub: 1
     }
   });
@@ -2140,7 +2145,7 @@ function initOurWorkPageScroll() {
 function initRealStoriesSlider() {
   const heading = document.querySelector('#realstoriesheading h1');
   if (heading) {
-    gsap.fromTo(heading, 
+    gsap.fromTo(heading,
       { opacity: 0, y: 50, scale: 0.95 },
       {
         opacity: 1,
@@ -2257,9 +2262,9 @@ function initWorkholdSlider() {
   const section = document.getElementById('workholdslidecont');
   const track = document.getElementById('workholdCardsTrack');
   const heading = document.querySelector('#workholdheading h1');
-  
+
   if (heading) {
-    gsap.fromTo(heading, 
+    gsap.fromTo(heading,
       { opacity: 0, y: 50, scale: 0.95 },
       {
         opacity: 1,
@@ -2328,7 +2333,7 @@ function initWorkholdSlider() {
       if (slideIndex !== lastIndex) {
         lastIndex = slideIndex;
         track.style.transform = `translate3d(0, -${slideIndex * 100}%, 0)`;
-        
+
         slides.forEach((slide, idx) => {
           if (idx === slideIndex) {
             slide.classList.add('active');
@@ -2349,10 +2354,10 @@ function initServiceAccordion() {
   headers.forEach(header => {
     header.addEventListener('click', () => {
       const parent = header.closest('.deliverable-item');
-      
+
       // Toggle the clicked item
       parent.classList.toggle('active');
-      
+
       setTimeout(() => ScrollTrigger.refresh(), 550);
     });
   });
@@ -2365,28 +2370,28 @@ function initServiceAccordion() {
     const originalViewBox = svg.getAttribute('viewBox').split(' ').map(Number);
     const baseSvgHeight = originalViewBox[3];
     let baseContHeight = null;
-    
+
     const resizeObserver = new ResizeObserver(entries => {
       for (let entry of entries) {
         if (baseContHeight === null) {
-            baseContHeight = entry.contentRect.height;
+          baseContHeight = entry.contentRect.height;
         }
         const currentContHeight = entry.contentRect.height;
         const heightDiff = currentContHeight - baseContHeight;
-        
+
         const scale = 390 / 74; // Based on width: 390px and viewBox width: 74
         const svgUnitsToAdd = heightDiff / scale;
         const newSvgHeight = baseSvgHeight + svgUnitsToAdd;
-        
+
         svg.setAttribute('viewBox', `0 0 74 ${newSvgHeight}`);
         svg.setAttribute('height', newSvgHeight);
-        
+
         const newBottomY = 840.55 + svgUnitsToAdd;
         const newD = originalD.replace(/840\.55/g, newBottomY.toFixed(2));
         path.setAttribute('d', newD);
       }
     });
-    
+
     resizeObserver.observe(cont);
   }
 }
@@ -2527,5 +2532,99 @@ function initSkipTheDeskBtmScroll() {
         scrub: true
       }
     });
+  }
+}
+
+function initWorkspeakBtmSvgScroll() {
+  const svg = document.querySelector('#workspeakbtmsvg svg');
+  if (svg) {
+    gsap.set(svg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
+    gsap.to(svg, {
+      clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '#workspeakbtmsvg',
+        start: 'top 80%',
+        end: '+=300', // Fast wipe on scroll
+        scrub: 1
+      }
+    });
+  }
+}
+
+function initRepoSvgScroll() {
+  const svg = document.querySelector('#repoSvgLine svg');
+  if (svg) {
+    // Starts hidden at the left and wipes rightwards as user scrolls
+    gsap.set(svg, { clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' });
+    gsap.to(svg, {
+      clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '#repoSvgLine svg',
+        start: 'top top',
+        end: '+=200', // Very fast reveal (finishes within 200px of scrolling)
+        scrub: 1
+      }
+    });
+  }
+}
+
+function initInsightIndustrySvgScroll() {
+  const svg = document.querySelector('#insightindustrysec svg');
+  if (svg) {
+    gsap.set(svg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
+    gsap.to(svg, {
+      clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '#insightindustrysec',
+        start: 'top 80%',
+        end: '+=300', // Fast wipe on scroll
+        scrub: 1
+      }
+    });
+  }
+}
+
+function initOurTwoCentsBtmSvgScroll() {
+  const svg = document.querySelector('#ourtwocentsbtmsvg svg');
+  if (svg) {
+    gsap.set(svg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
+    gsap.to(svg, {
+      clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '#ourtwocentsbtmsvg',
+        start: 'top 80%',
+        end: '+=300', // Fast wipe on scroll
+        scrub: 1
+      }
+    });
+  }
+}
+
+function initYoursCanTooSvgScroll() {
+  const topSvg = document.querySelector('.yourscantootop svg');
+  const btmSvg = document.querySelector('.yourscantoobtm svg');
+
+  if (topSvg && btmSvg) {
+    // Top SVG: Vertical Wipe
+    gsap.set(topSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
+    // Bottom SVG: Horizontal Wipe (Left to Right)
+    gsap.set(btmSvg, { clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' });
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '#yourscantoosec',
+        start: 'top 70%',
+        end: 'bottom 20%', // Extended scroll distance for both animations
+        scrub: 1
+      }
+    });
+
+    // Animate top SVG first, then bottom SVG
+    tl.to(topSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: 'none' })
+      .to(btmSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: 'none' });
   }
 }

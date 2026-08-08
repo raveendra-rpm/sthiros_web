@@ -118,7 +118,19 @@ body {
 
 .repo-work {
     margin-top: 180px;
+    padding-left: 0;
+    padding-right: 0;
     /* Pusher it down below the hero section */
+}
+
+.repo-insight {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: -50px;
+}
+
+.repo-cents {
+    margin-top: -50px;
 }
 
 /* Grids & Cards */
@@ -134,9 +146,9 @@ body {
 
 .repo-card {
     position: relative;
-    border-radius: 20px;
+    border-radius: 30px;
     overflow: hidden;
-    border: 1px solid rgba(236, 45, 38, 0.3);
+    border: 1px solid var(--FLAME-ORANGE, #EF4623);
     transition: all 0.3s ease;
     cursor: pointer;
     background: #111;
@@ -145,7 +157,6 @@ body {
 .repo-card:hover {
     border-color: #EC2D26;
     box-shadow: 0 0 20px rgba(236, 45, 38, 0.4);
-    transform: translateY(-5px);
 }
 
 .repo-card img {
@@ -176,10 +187,11 @@ body {
 }
 
 .repo-card-wide {
-    width: 100%;
-    max-width: 1000px;
+    width: 90%;
+    max-width: 1400px;
     margin: 0 auto;
-    aspect-ratio: 16/7;
+    aspect-ratio: 18/6;
+    max-height: 600px;
 }
 
 .repo-play-icon {
