@@ -103,10 +103,1119 @@
                 text-align: center;
             }
         }
+
+        #herosvgtrack {
+            margin-top: -5rem;
+            position: relative;
+            z-index: 5;
+            width: 100%;
+            overflow: visible;
+        }
+
+        .herosvgtracks {
+            width: 50%;
+            margin-left: 28px;
+        }
+
+        #herosvgtrack svg {
+            width: 100%;
+            height: auto;
+            display: block;
+            overflow: visible;
+        }
+
+        #Whotherightproblemssec {
+            width: 100%;
+            padding: 40px 20px 80px 20px;
+            margin-top: -250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            z-index: 5;
+        }
+
+        .wtrp-content {
+            max-width: 1400px;
+        }
+
+        .wtrp-heading {
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 64px;
+            font-weight: 500;
+            color: #fff;
+            line-height: 1.1;
+            margin: 0 auto 20px auto;
+            max-width: 800px;
+        }
+
+        .wtrp-heading span {
+            color: #EC2D26;
+        }
+
+        .wtrp-subheading {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
+            color: #aaa;
+            margin: 0 auto;
+            max-width: 800px;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .wtrp-heading {
+                font-size: 40px;
+            }
+
+            .wtrp-subheading {
+                font-size: 14px;
+            }
+        }
+
+        .segment-tabs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+            position: sticky;
+            top: 0;
+            background-color: #000;
+            z-index: 20;
+            padding: 20px 0;
+        }
+
+        .segment-btn {
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50px;
+            padding: 12px 24px;
+            color: #fff;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .segment-btn:hover {
+            border-color: #fff;
+        }
+
+        .segment-btn.active {
+            background-color: #EC2D26;
+            border-color: #EC2D26;
+        }
+
+        .problems-container {
+            width: 100%;
+            margin-top: 60px;
+            text-align: left;
+        }
+
+        .problem-item {
+            display: flex;
+            align-items: stretch;
+            gap: 40px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .problem-header {
+            cursor: default;
+            position: sticky;
+            background-color: #000;
+            z-index: 19;
+            padding-top: 20px;
+        }
+
+        .problem-header:hover {
+            background-color: transparent;
+        }
+
+        .problem-header .problem-left,
+        .problem-header .problem-right {
+            padding: 0 0 15px 0;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+
+        .problem-heading-text {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 14px;
+            color: #fff;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .problem-item:hover {
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+
+        .problem-left {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 35%;
+            min-width: 360px;
+            padding: 30px 0;
+            border-bottom: 1px solid rgba(236, 45, 38, 0.4);
+        }
+
+        .problem-right {
+            flex: 1;
+            border-bottom: 1px solid rgba(236, 45, 38, 0.4);
+        }
+
+        .problem-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            color: #fff;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+
+        .problem-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .problem-arrow img {
+            width: 20px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .problem-item:hover .problem-arrow img {
+            transform: translateX(8px);
+        }
+
+        /* Active State Styles */
+        .problem-item.active {
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+
+        .problem-item.active .problem-left,
+        .problem-item.active .problem-right {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .problem-item.active .problem-arrow img {
+            transform: rotate(90deg);
+        }
+
+        .problem-item.active:hover .problem-arrow img {
+            transform: rotate(90deg) translateY(4px);
+        }
+
+        .problem-left-content {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding-right: 20px;
+        }
+
+        .problem-desc {
+            display: none;
+            font-size: 14px;
+            color: #888;
+            line-height: 1.6;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .problem-item.active .problem-desc {
+            display: block;
+        }
+
+        .problem-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .problem-dropdown-content {
+            display: none;
+            padding-top: 5px;
+            gap: 40px;
+        }
+
+        .problem-item.active .problem-dropdown-content {
+            display: flex;
+        }
+
+        .solution-main {
+            flex: 1.5;
+            padding-right: 40px;
+        }
+
+        .solution-main h3 {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 20px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .solution-main p {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .fix-btn {
+            background: transparent;
+            border: 1px solid #EC2D26;
+            color: #888;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-size: 13px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+
+        .fix-btn:hover {
+            background: #EC2D26;
+            color: #fff;
+        }
+
+        .solution-sidebar {
+            flex: 1;
+        }
+
+        .service-item {
+            border-bottom: 1px solid rgba(236, 45, 38, 0.4);
+        }
+
+        .service-item:first-child {
+            border-top: 1px solid rgba(236, 45, 38, 0.4);
+        }
+
+        .service-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            cursor: pointer;
+        }
+
+        .service-title {
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .service-arrow img {
+            width: 14px;
+            transition: transform 0.3s;
+        }
+
+        .service-item.active .service-arrow img {
+            transform: rotate(90deg);
+        }
+
+        .service-list {
+            display: none;
+            list-style: none;
+            padding-left: 15px;
+            padding-bottom: 15px;
+            margin: 0;
+        }
+
+        .service-item.active .service-list {
+            display: block;
+        }
+
+        .service-list li {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .service-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .service-list li::before {
+            content: "•";
+            position: absolute;
+            left: -15px;
+            color: #888;
+        }
+
+        @media (max-width: 768px) {
+            .problem-left {
+                width: 100%;
+                border-right: none;
+                padding-right: 0;
+            }
+
+            .problem-right {
+                display: none;
+            }
+        }
+
+        #sectiontitlesvgtop {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 0 20px 0;
+            margin-top: -30px;
+            position: relative;
+            z-index: 5;
+        }
+
+        #sectiontitlesvgtop svg {
+            width: 60px;
+            /* Width thoda kam kiya gaya hai */
+            height: auto;
+            display: block;
+        }
+
+        #howsthirosdifferentsec {
+            width: 100%;
+            text-align: center;
+            padding: 0 20px 80px 20px;
+        }
+
+        .hsd-heading {
+            font-family: 'Inter', sans-serif;
+            font-size: 56px;
+            font-weight: 600;
+            color: #fff;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .hsd-heading span {
+            color: #EC2D26;
+        }
+
+        @media (max-width: 768px) {
+            .hsd-heading {
+                font-size: 36px;
+            }
+        }
+
+        .hsd-features {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 60px;
+            max-width: 1200px;
+            margin: 60px auto 0 auto;
+            text-align: left;
+        }
+
+        .hsd-feature-card {
+            flex: 1;
+            border-left: 2px solid #EC2D26;
+            padding-left: 20px;
+        }
+
+        .hsd-feature-content h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .hsd-feature-content p {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 14px;
+            color: #aaa;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .hsd-features {
+                flex-direction: column;
+                gap: 40px;
+                padding: 0 20px;
+            }
+        }
+
+        #hsd-list-section {
+            width: 100%;
+            padding: 20px 20px 80px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hsd-list-container {
+            max-width: 1000px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hsd-list-item {
+            display: flex;
+            align-items: center;
+            padding: 40px 0;
+            border-bottom: 1px solid rgba(236, 45, 38, 0.4);
+            gap: 40px;
+        }
+
+        .hsd-list-left {
+            flex: 0 0 30%;
+            font-family: 'Inter', sans-serif;
+            font-size: 28px;
+            font-weight: 500;
+            color: #F05A28;
+            /* The orange-red color from the design */
+        }
+
+        .hsd-list-right {
+            flex: 1;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .hsd-list-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+                padding: 30px 0;
+            }
+
+            .hsd-list-left {
+                flex: none;
+                font-size: 24px;
+            }
+        }
+
+        #sthirostransformationsec {
+            width: 100%;
+            padding: 40px 20px 80px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .sthiros-trans-card {
+            background-color: #EC2D26;
+            border-radius: 20px;
+            padding: 60px 40px;
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .sthiros-trans-text {
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            line-height: 1.6;
+            font-weight: 500;
+            margin: 0 auto 40px auto;
+            max-width: 1000px;
+        }
+
+        .sthiros-trans-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.9);
+            font-family: 'Quicksand', sans-serif;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .sthiros-trans-divider::before,
+        .sthiros-trans-divider::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+            margin: 0 20px;
+            max-width: 300px;
+        }
+
+        @media (max-width: 768px) {
+            .sthiros-trans-card {
+                padding: 40px 20px;
+            }
+
+            .sthiros-trans-text {
+                font-size: 16px;
+            }
+
+            .sthiros-trans-divider::before,
+            .sthiros-trans-divider::after {
+                max-width: 100px;
+                margin: 0 10px;
+            }
+
+            .sthiros-trans-divider {
+                font-size: 12px;
+                letter-spacing: 1px;
+            }
+        }
+
+        .sthirossvgtransformationbtm {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 0 60px 0;
+            position: relative;
+            z-index: 5;
+        }
+
+        .sthirossvgtransformationbtm svg {
+            width: 60px;
+            height: auto;
+            display: block;
+        }
+
+        #choosehowrostartsec {
+            width: 100%;
+            padding: 100px 20px 80px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .chts-container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .chts-subtitle {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 12px;
+            color: #aaa;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+
+        .chts-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 56px;
+            font-weight: 600;
+            color: #fff;
+            line-height: 1.1;
+            margin-bottom: 50px;
+            letter-spacing: -1px;
+        }
+
+        .chts-title span {
+            color: #EC2D26;
+        }
+
+        .chts-desc {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 14px;
+            color: #aaa;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 600px;
+        }
+
+        .chts-cards-wrapper {
+            width: 100%;
+            max-width: 1350px;
+            margin: 60px auto 0 auto;
+        }
+
+        .chts-cards-container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .chts-slider-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #EC2D26;
+            border-radius: 12px;
+            z-index: 0;
+            transition: all 0.5s ease-in-out;
+            pointer-events: none;
+            opacity: 0;
+        }
+
+        .chts-card {
+            flex: 1;
+            background-color: transparent;
+            border: 1px solid rgba(236, 45, 38, 0.4);
+            border-radius: 12px;
+            padding: 30px 30px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            transition: border-color 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .chts-card.is-active {
+            border-color: transparent;
+        }
+
+        .chts-card-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .chts-card-desc {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 14px;
+            color: #ccc;
+            line-height: 1.6;
+            flex-grow: 1;
+            margin-bottom: 30px;
+            transition: color 0.3s ease;
+        }
+
+        .chts-card.is-active .chts-card-desc {
+            color: #fff;
+        }
+
+        .chts-card-footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 20px;
+            margin-top: auto;
+            transition: border-color 0.3s ease;
+        }
+
+        .chts-card.is-active .chts-card-footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .chts-card-footer a {
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .chts-card-footer a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .chts-title {
+                font-size: 36px;
+            }
+
+            .chts-subtitle {
+                font-size: 10px;
+            }
+
+            .chts-desc {
+                font-size: 13px;
+            }
+
+            .chts-cards-container {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .chts-slider-bg {
+                display: none;
+            }
+
+            .chts-card {
+                padding: 40px 30px;
+            }
+
+            .chts-card.is-active {
+                background-color: #EC2D26;
+            }
+        }
+
+        /* SKIPPED DESK CSS */
+        .skipthedesktop,
+        .skipthedeskbtm {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .skipthedesktop svg {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            flex-shrink: 0;
+        }
+
+        .skipthedeskbtm svg {
+            width: calc(100% * (1863 / 940));
+            max-width: 1387.34px;
+            height: auto;
+            flex-shrink: 0;
+            margin-left: -2.2px;
+        }
+
+        #skithedesksec {
+            position: relative;
+        }
+
+        .skipthedeskcont {
+            background-image: url('assets/images/servicesinnpage/skipthedesk.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 90%;
+            max-width: 1200px;
+            border-radius: 20px;
+            padding: 50px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            margin-top: 8rem;
+            margin-left: -1rem;
+        }
+
+        .std-content {
+            flex: 0 0 60%;
+        }
+
+        .std-content h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 56px;
+            font-weight: 300;
+            margin: 0 0 10px 0;
+            color: #fff;
+        }
+
+        .std-content h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 26px;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+            color: #fff;
+        }
+
+        .std-content p {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #aaa;
+            margin: 0;
+            max-width: 95%;
+        }
+
+        .std-buttons {
+            flex: 0 0 35%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .std-btn-outer {
+            display: flex;
+            border-radius: 163.532px;
+            border: 1.817px solid var(--FLAME-ORANGE, #EF4623);
+            padding: 4px;
+            text-decoration: none;
+            width: 100%;
+            max-width: 320px;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        .std-btn-inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 163.532px;
+            border: 5px solid var(--FLAME-ORANGE, #EF4623);
+            padding: 12px 10px;
+            color: #fff;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            width: 100%;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        .std-btn-outer:hover {
+            opacity: 0.8;
+            transform: scale(1.02);
+        }
+
+        .std-btn-outer:first-child {
+            max-width: 260px;
+        }
+
+        @media (max-width: 1366px) {
+            .skipthedeskcont {
+                max-width: 1050px;
+                width: 95%;
+                padding: 50px 40px;
+                margin-top: 8rem;
+            }
+
+            .std-content h2 {
+                font-size: 46px;
+            }
+
+            .std-content h3 {
+                font-size: 22px;
+            }
+
+            .std-content p {
+                font-size: 15px;
+            }
+
+            .std-buttons {
+                flex: 0 0 40%;
+            }
+
+            .skipthedesktop svg {
+                width: 48.0vw !important;
+                max-width: none !important;
+            }
+
+            .skipthedeskbtm svg {
+                width: 95.132vw !important;
+                max-width: none !important;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .skipthedeskcont {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 40px;
+                margin-top: 6rem;
+            }
+
+            .std-content {
+                flex: 0 0 100%;
+                margin-bottom: 30px;
+            }
+
+            .std-buttons {
+                flex: 0 0 100%;
+                width: 100%;
+                flex-direction: row;
+                justify-content: flex-start;
+                gap: 15px;
+            }
+
+            .std-btn-outer {
+                max-width: 260px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .skipthedesktop svg {
+                width: 56.456vw !important;
+                max-width: none !important;
+            }
+
+            .skipthedeskbtm svg {
+                width: 111.873vw !important;
+                max-width: none !important;
+                margin-left: -2.2px;
+            }
+
+            .skipthedeskcont {
+                margin-top: 4rem;
+                padding: 30px;
+            }
+
+            .std-content h2 {
+                font-size: 36px;
+            }
+
+            .std-content h3 {
+                font-size: 20px;
+            }
+
+            .std-buttons {
+                flex-direction: column;
+                width: 100%;
+                align-items: stretch;
+            }
+
+            .std-btn-outer {
+                max-width: 100%;
+            }
+
+            .std-btn-outer:first-child {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .skipthedeskcont {
+                margin-top: 2rem;
+                padding: 20px;
+            }
+
+            .std-content h2 {
+                font-size: 28px;
+            }
+
+            .std-content h3 {
+                font-size: 18px;
+            }
+
+            .std-content p {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 
-<body class="loading">
+<body>
+    <!-- ═══════════════ SITE HEADER ═══════════════ -->
+    <header class="site-header header-hidden">
+        <div class="header-left">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <button class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                <span class="toggle-track">
+                    <img src="assets/images/dark_light_toggle.png" alt="Light Theme" class="toggle-art light-art">
+                    <img src="assets/images/dark_mode_toggle_new.png" alt="Dark Theme" class="toggle-art dark-art">
+                    <span class="toggle-thumb"></span>
+                </span>
+            </button>
+            <button class="menu-toggle" aria-label="Open Menu">
+                <span class="menu-icon">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ═══════════════ FULL SCREEN MENU OVERLAY ═══════════════ -->
+    <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
+        <div class="menu-content">
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link active">HOME</a>
+                <a href="#" class="nav-link">ABOUT US</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">WHAT WE DO <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Strategy <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="#" class="nested-sub-nav-link">Business & Growth Strategy</a>
+                                <a href="#" class="nested-sub-nav-link">Strategic Finance & Transactions</a>
+                                <a href="#" class="nested-sub-nav-link">Enterprise Operations & Ecosystems</a>
+                                <a href="#" class="nested-sub-nav-link">Change Management & Organisational
+                                    Acceleration</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">AI <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="#" class="nested-sub-nav-link">AI Strategy & Sovereign Governance</a>
+                                <a href="#" class="nested-sub-nav-link">Intelligent Foundation (Data & Cloud)</a>
+                                <a href="#" class="nested-sub-nav-link">Agentic Operations & Automation</a>
+                                <a href="#" class="nested-sub-nav-link">Cognitive Experience & Engineering</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Risk <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="#" class="nested-sub-nav-link">Enterprise Governance & Regulatory Strategy</a>
+                                <a href="#" class="nested-sub-nav-link">Strategic Assurance & Process Intelligence</a>
+                                <a href="#" class="nested-sub-nav-link">Digital Risk & Technology Controls</a>
+                                <a href="#" class="nested-sub-nav-link">Forensic Integrity & Asset Protection</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Cyber <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="#" class="nested-sub-nav-link">Offensive Security & Exposure</a>
+                                <a href="#" class="nested-sub-nav-link">Cloud Security & Zero Trust</a>
+                                <a href="#" class="nested-sub-nav-link">Data Privacy & Protection Engineering</a>
+                                <a href="#" class="nested-sub-nav-link">Cyber Resilience & Crisis Readiness</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a href="our-work.html" class="nav-link">THE WORK</a>
+                <a href="#" class="nav-link">Our PRODUCTS</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">INDUSTRIES <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="#" class="sub-nav-link">BFSI & Fintech</a>
+                        <a href="#" class="sub-nav-link">D2C & Retail</a>
+                        <a href="#" class="sub-nav-link">Energy, Mining & Utilities</a>
+                        <a href="#" class="sub-nav-link">GCC</a>
+                        <a href="#" class="sub-nav-link">Healthcare & Life Sciences</a>
+                        <a href="#" class="sub-nav-link">Manufacturing</a>
+                        <a href="#" class="sub-nav-link">Telecom & Digital Infrastructure</a>
+                        <a href="#" class="sub-nav-link">Travel & Hospitality</a>
+                        <a href="#" class="sub-nav-link">Public Sector & Government</a>
+                        <a href="#" class="sub-nav-link">Real Estate / EPC / Construction</a>
+                    </div>
+                </div>
+
+                <a href="#" class="nav-link">CONTACT US</a>
+            </nav>
+
+
+        </div>
+    </div>
+
 
     <!-- ═══════════════ SITE HEADER ═══════════════ -->
     <header class="site-header header-hidden">
@@ -146,6 +1255,876 @@
         </div>
     </section>
 
+    <!-- hero bottom svg section -->
+    <section id="herosvgtrack">
+        <div class="herosvgtracks">
+            <svg xmlns="http://www.w3.org/2000/svg" width="996" height="799" viewBox="0 688 996 799" fill="none">
+                <mask id="path-1-inside-1_1871_1189" fill="white">
+                    <path
+                        d="M995.974 864.401L995.89 861.299C995.89 859.231 995.666 857.135 995.527 855.066C994.828 846.765 993.29 838.492 990.942 830.471C986.245 814.4 978.306 799.307 967.766 786.394C957.171 773.509 944.003 762.777 929.214 755.007C914.453 747.181 898.015 742.374 881.381 740.976C879.312 740.836 877.215 740.613 875.147 740.585L872.043 740.501L870.506 740.501L869.388 740.473L-34.777 740.478C-34.9727 740.478 -35.1684 740.478 -35.2243 740.478L-35.8673 740.478C-36.734 740.395 -37.6006 740.478 -38.4673 740.367C-41.9059 740.143 -45.3166 739.584 -48.6154 738.69C-55.2132 736.929 -61.4474 733.798 -66.8989 729.55C-72.3504 725.302 -76.9352 719.963 -80.29 713.982C-83.6727 708.001 -85.7974 701.405 -86.5523 694.557C-86.7479 692.852 -86.8598 691.12 -86.8598 689.387L-86.8598 -55.997L-111.545 -55.997L-111.545 688.744L-111.517 689.694C-111.517 692.238 -111.322 694.781 -111.042 697.296C-109.924 707.386 -106.737 717.196 -101.761 726.056C-96.7843 734.888 -90.0188 742.742 -82.0233 749.003C-74.0278 755.264 -64.7742 759.875 -54.9895 762.503C-50.0971 763.816 -45.065 764.655 -40.0049 764.962C-38.7469 765.102 -37.4608 765.046 -36.2028 765.102L-35.2523 765.102C-34.9448 765.13 -34.5254 765.13 -34.19 765.13L871.764 765.125L874.28 765.209C875.957 765.209 877.635 765.404 879.284 765.516C892.647 766.662 905.815 770.519 917.696 776.78C929.578 783.04 940.173 791.677 948.672 802.018C957.114 812.387 963.461 824.489 967.235 837.346C969.108 843.803 970.366 850.427 970.925 857.107C971.037 858.784 971.205 860.46 971.233 862.137L971.289 864.653L971.289 1486L995.974 1486L995.974 864.401Z" />
+                    <path
+                        d="M955.381 840.84C952.11 829.604 946.547 819.011 939.167 809.928C939.167 809.928 939.139 809.9 939.111 809.872C939.083 809.844 939.055 809.788 939.027 809.76C931.562 800.732 922.281 793.186 911.937 787.736C901.509 782.23 889.991 778.848 878.222 777.842C872.351 777.311 866.452 777.534 860.553 777.478L-32.0094 777.484C-34.9448 777.484 -37.9082 777.484 -40.8436 777.288C-46.7145 776.925 -52.5574 775.947 -58.2605 774.437C-69.6387 771.391 -80.4019 765.996 -89.6834 758.729C-98.9929 751.491 -106.821 742.379 -112.58 732.094C-118.367 721.836 -122.057 710.377 -123.343 698.666C-124.042 692.797 -123.902 686.899 -123.93 681.002L-123.93 -55.997L-136.287 -55.997L-136.287 688.772L-136.259 690.03C-136.231 693.384 -136.007 696.737 -135.644 700.063C-134.162 713.395 -129.941 726.448 -123.371 738.159C-116.801 749.87 -107.883 760.211 -97.2875 768.484C-86.72 776.729 -74.4752 782.878 -61.4754 786.372C-54.9896 788.132 -48.3359 789.223 -41.6264 789.642C-39.949 789.809 -38.2716 789.781 -36.5943 789.837L-35.3362 789.837L-34.19 789.865L871.484 789.86L873.385 789.944C874.671 789.944 875.929 790.112 877.187 790.168C887.308 791.034 897.204 793.941 906.178 798.664C915.124 803.388 923.12 809.872 929.578 817.698C935.952 825.552 940.732 834.663 943.556 844.334C944.982 849.197 945.904 854.2 946.323 859.259C946.407 860.517 946.547 861.802 946.547 863.06L946.603 864.96L946.603 1486.05L958.96 1486.05L958.96 875.917C958.904 870.019 959.127 864.122 958.624 858.253C958.121 852.383 957.031 846.57 955.381 840.896L955.381 840.84Z" />
+                    <path
+                        d="M937.965 863.339C937.965 862.194 937.825 861.076 937.769 859.958C937.378 855.458 936.567 851.014 935.309 846.709C932.821 838.185 928.599 830.163 923.008 823.204C923.008 823.204 922.98 823.176 922.952 823.148C922.896 823.092 922.868 823.008 922.812 822.952C917.109 816.105 910.064 810.347 902.18 806.21C894.213 802.018 885.435 799.447 876.461 798.664C875.342 798.608 874.224 798.441 873.078 798.469L871.373 798.413L-35.392 798.418L-36.7619 798.39C-38.579 798.334 -40.3962 798.362 -42.2134 798.166C-49.4541 797.719 -56.6948 796.517 -63.7398 794.617C-77.8298 790.843 -91.1091 784.164 -102.599 775.22C-114.061 766.276 -123.734 755.04 -130.891 742.351C-138.048 729.662 -142.605 715.492 -144.226 701.014C-144.618 697.408 -144.869 693.775 -144.897 690.141L-144.897 688.772L-144.925 687.654L-144.925 -55.9969L-151.103 -55.9969L-151.103 688.772L-151.076 690.197C-151.02 694.026 -150.796 697.855 -150.377 701.684C-148.671 716.973 -143.835 731.954 -136.287 745.37C-128.738 758.785 -118.534 770.636 -106.429 780.083C-94.3241 789.53 -80.29 796.573 -65.3892 800.57C-57.9528 802.582 -50.3207 803.84 -42.6607 804.315C-40.7596 804.483 -38.8306 804.483 -36.9296 804.539L-35.5038 804.539L-34.3297 804.567L871.149 804.562L872.686 804.617C873.721 804.617 874.727 804.757 875.762 804.813C883.953 805.512 891.893 807.832 899.133 811.661C906.318 815.462 912.804 820.716 918.004 827.005C923.12 833.35 926.978 840.644 929.242 848.414C930.388 852.327 931.143 856.352 931.479 860.461C931.535 861.495 931.675 862.501 931.675 863.535L931.675 865.072L931.73 865.883L931.73 1485.97L937.909 1485.97L937.909 865.016L937.853 863.311L937.965 863.339Z" />
+                    <path
+                        d="M925.971 863.759C925.971 862.808 925.859 861.886 925.804 860.964C925.496 857.246 924.797 853.613 923.763 850.063C921.722 843.104 918.283 836.536 913.698 830.834C913.698 830.834 913.615 830.722 913.587 830.694C913.559 830.638 913.503 830.583 913.475 830.527C908.778 824.909 902.991 820.213 896.561 816.831C890.019 813.366 882.807 811.269 875.398 810.626C874.476 810.571 873.553 810.431 872.602 810.459L871.205 810.459L870.506 810.403L-35.42 810.408L-36.9297 810.38C-38.9425 810.324 -40.9554 810.324 -42.9682 810.157C-51.0197 809.654 -59.0432 808.34 -66.843 806.216C-82.4986 802.023 -97.2316 794.617 -109.952 784.695C-122.672 774.772 -133.407 762.335 -141.319 748.248C-149.258 734.162 -154.318 718.426 -156.108 702.383C-156.555 698.386 -156.807 694.334 -156.863 690.337L-156.863 688.828L-156.89 687.682L-156.89 -55.9969L-161 -55.9969L-161 688.8L-160.972 690.365C-160.916 694.529 -160.665 698.666 -160.189 702.83C-158.344 719.432 -153.088 735.699 -144.897 750.261C-136.706 764.823 -125.635 777.707 -112.468 787.937C-99.3283 798.194 -84.0641 805.852 -67.9053 810.185C-59.8259 812.365 -51.5229 813.734 -43.2198 814.237C-41.1511 814.433 -39.0543 814.405 -36.9856 814.489L-35.42 814.489L-34.2179 814.517L871.149 814.512L872.463 814.567C873.33 814.567 874.196 814.679 875.063 814.735C881.94 815.322 888.566 817.278 894.632 820.465C900.643 823.623 906.066 828.039 910.428 833.293C914.705 838.604 917.92 844.725 919.821 851.209C920.771 854.479 921.414 857.861 921.694 861.299C921.75 862.165 921.862 863.004 921.862 863.898L921.862 865.212L921.918 865.911L921.918 1486L926.027 1486L926.027 865.156L925.971 863.759Z" />
+                </mask>
+                <path
+                    d="M995.974 864.401L995.89 861.299C995.89 859.231 995.666 857.135 995.527 855.066C994.828 846.765 993.29 838.492 990.942 830.471C986.245 814.4 978.306 799.307 967.766 786.394C957.171 773.509 944.003 762.777 929.214 755.007C914.453 747.181 898.015 742.374 881.381 740.976C879.312 740.836 877.215 740.613 875.147 740.585L872.043 740.501L870.506 740.501L869.388 740.473L-34.777 740.478C-34.9727 740.478 -35.1684 740.478 -35.2243 740.478L-35.8673 740.478C-36.734 740.395 -37.6006 740.478 -38.4673 740.367C-41.9059 740.143 -45.3166 739.584 -48.6154 738.69C-55.2132 736.929 -61.4474 733.798 -66.8989 729.55C-72.3504 725.302 -76.9352 719.963 -80.29 713.982C-83.6727 708.001 -85.7974 701.405 -86.5523 694.557C-86.7479 692.852 -86.8598 691.12 -86.8598 689.387L-86.8598 -55.997L-111.545 -55.997L-111.545 688.744L-111.517 689.694C-111.517 692.238 -111.322 694.781 -111.042 697.296C-109.924 707.386 -106.737 717.196 -101.761 726.056C-96.7843 734.888 -90.0188 742.742 -82.0233 749.003C-74.0278 755.264 -64.7742 759.875 -54.9895 762.503C-50.0971 763.816 -45.065 764.655 -40.0049 764.962C-38.7469 765.102 -37.4608 765.046 -36.2028 765.102L-35.2523 765.102C-34.9448 765.13 -34.5254 765.13 -34.19 765.13L871.764 765.125L874.28 765.209C875.957 765.209 877.635 765.404 879.284 765.516C892.647 766.662 905.815 770.519 917.696 776.78C929.578 783.04 940.173 791.677 948.672 802.018C957.114 812.387 963.461 824.489 967.235 837.346C969.108 843.803 970.366 850.427 970.925 857.107C971.037 858.784 971.205 860.46 971.233 862.137L971.289 864.653L971.289 1486L995.974 1486L995.974 864.401Z"
+                    stroke="url(#paint0_linear_1871_1189)" stroke-width="2" mask="url(#path-1-inside-1_1871_1189)" />
+                <path
+                    d="M955.381 840.84C952.11 829.604 946.547 819.011 939.167 809.928C939.167 809.928 939.139 809.9 939.111 809.872C939.083 809.844 939.055 809.788 939.027 809.76C931.562 800.732 922.281 793.186 911.937 787.736C901.509 782.23 889.991 778.848 878.222 777.842C872.351 777.311 866.452 777.534 860.553 777.478L-32.0094 777.484C-34.9448 777.484 -37.9082 777.484 -40.8436 777.288C-46.7145 776.925 -52.5574 775.947 -58.2605 774.437C-69.6387 771.391 -80.4019 765.996 -89.6834 758.729C-98.9929 751.491 -106.821 742.379 -112.58 732.094C-118.367 721.836 -122.057 710.377 -123.343 698.666C-124.042 692.797 -123.902 686.899 -123.93 681.002L-123.93 -55.997L-136.287 -55.997L-136.287 688.772L-136.259 690.03C-136.231 693.384 -136.007 696.737 -135.644 700.063C-134.162 713.395 -129.941 726.448 -123.371 738.159C-116.801 749.87 -107.883 760.211 -97.2875 768.484C-86.72 776.729 -74.4752 782.878 -61.4754 786.372C-54.9896 788.132 -48.3359 789.223 -41.6264 789.642C-39.949 789.809 -38.2716 789.781 -36.5943 789.837L-35.3362 789.837L-34.19 789.865L871.484 789.86L873.385 789.944C874.671 789.944 875.929 790.112 877.187 790.168C887.308 791.034 897.204 793.941 906.178 798.664C915.124 803.388 923.12 809.872 929.578 817.698C935.952 825.552 940.732 834.663 943.556 844.334C944.982 849.197 945.904 854.2 946.323 859.259C946.407 860.517 946.547 861.802 946.547 863.06L946.603 864.96L946.603 1486.05L958.96 1486.05L958.96 875.917C958.904 870.019 959.127 864.122 958.624 858.253C958.121 852.383 957.031 846.57 955.381 840.896L955.381 840.84Z"
+                    stroke="url(#paint1_linear_1871_1189)" stroke-width="2" mask="url(#path-1-inside-1_1871_1189)" />
+                <path
+                    d="M937.965 863.339C937.965 862.194 937.825 861.076 937.769 859.958C937.378 855.458 936.567 851.014 935.309 846.709C932.821 838.185 928.599 830.163 923.008 823.204C923.008 823.204 922.98 823.176 922.952 823.148C922.896 823.092 922.868 823.008 922.812 822.952C917.109 816.105 910.064 810.347 902.18 806.21C894.213 802.018 885.435 799.447 876.461 798.664C875.342 798.608 874.224 798.441 873.078 798.469L871.373 798.413L-35.392 798.418L-36.7619 798.39C-38.579 798.334 -40.3962 798.362 -42.2134 798.166C-49.4541 797.719 -56.6948 796.517 -63.7398 794.617C-77.8298 790.843 -91.1091 784.164 -102.599 775.22C-114.061 766.276 -123.734 755.04 -130.891 742.351C-138.048 729.662 -142.605 715.492 -144.226 701.014C-144.618 697.408 -144.869 693.775 -144.897 690.141L-144.897 688.772L-144.925 687.654L-144.925 -55.9969L-151.103 -55.9969L-151.103 688.772L-151.076 690.197C-151.02 694.026 -150.796 697.855 -150.377 701.684C-148.671 716.973 -143.835 731.954 -136.287 745.37C-128.738 758.785 -118.534 770.636 -106.429 780.083C-94.3241 789.53 -80.29 796.573 -65.3892 800.57C-57.9528 802.582 -50.3207 803.84 -42.6607 804.315C-40.7596 804.483 -38.8306 804.483 -36.9296 804.539L-35.5038 804.539L-34.3297 804.567L871.149 804.562L872.686 804.617C873.721 804.617 874.727 804.757 875.762 804.813C883.953 805.512 891.893 807.832 899.133 811.661C906.318 815.462 912.804 820.716 918.004 827.005C923.12 833.35 926.978 840.644 929.242 848.414C930.388 852.327 931.143 856.352 931.479 860.461C931.535 861.495 931.675 862.501 931.675 863.535L931.675 865.072L931.73 865.883L931.73 1485.97L937.909 1485.97L937.909 865.016L937.853 863.311L937.965 863.339Z"
+                    stroke="url(#paint2_linear_1871_1189)" stroke-width="2" mask="url(#path-1-inside-1_1871_1189)" />
+                <path
+                    d="M925.971 863.759C925.971 862.808 925.859 861.886 925.804 860.964C925.496 857.246 924.797 853.613 923.763 850.063C921.722 843.104 918.283 836.536 913.698 830.834C913.698 830.834 913.615 830.722 913.587 830.694C913.559 830.638 913.503 830.583 913.475 830.527C908.778 824.909 902.991 820.213 896.561 816.831C890.019 813.366 882.807 811.269 875.398 810.626C874.476 810.571 873.553 810.431 872.602 810.459L871.205 810.459L870.506 810.403L-35.42 810.408L-36.9297 810.38C-38.9425 810.324 -40.9554 810.324 -42.9682 810.157C-51.0197 809.654 -59.0432 808.34 -66.843 806.216C-82.4986 802.023 -97.2316 794.617 -109.952 784.695C-122.672 774.772 -133.407 762.335 -141.319 748.248C-149.258 734.162 -154.318 718.426 -156.108 702.383C-156.555 698.386 -156.807 694.334 -156.863 690.337L-156.863 688.828L-156.89 687.682L-156.89 -55.9969L-161 -55.9969L-161 688.8L-160.972 690.365C-160.916 694.529 -160.665 698.666 -160.189 702.83C-158.344 719.432 -153.088 735.699 -144.897 750.261C-136.706 764.823 -125.635 777.707 -112.468 787.937C-99.3283 798.194 -84.0641 805.852 -67.9053 810.185C-59.8259 812.365 -51.5229 813.734 -43.2198 814.237C-41.1511 814.433 -39.0543 814.405 -36.9856 814.489L-35.42 814.489L-34.2179 814.517L871.149 814.512L872.463 814.567C873.33 814.567 874.196 814.679 875.063 814.735C881.94 815.322 888.566 817.278 894.632 820.465C900.643 823.623 906.066 828.039 910.428 833.293C914.705 838.604 917.92 844.725 919.821 851.209C920.771 854.479 921.414 857.861 921.694 861.299C921.75 862.165 921.862 863.004 921.862 863.898L921.862 865.212L921.918 865.911L921.918 1486L926.027 1486L926.027 865.156L925.971 863.759Z"
+                    stroke="url(#paint3_linear_1871_1189)" stroke-width="2" mask="url(#path-1-inside-1_1871_1189)" />
+                <defs>
+                    <linearGradient id="paint0_linear_1871_1189" x1="219.5" y1="655.001" x2="219.5" y2="1284.5"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1871_1189" x1="219.5" y1="655.001" x2="219.5" y2="1284.5"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_1871_1189" x1="219.5" y1="655.001" x2="219.5" y2="1284.5"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_1871_1189" x1="219.5" y1="655.001" x2="219.5" y2="1284.5"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Who are you?
+We’ll show you the right problems. -->
+    <section id="Whotherightproblemssec">
+        <div class="wtrp-content">
+            <h2 class="wtrp-heading">Who are you?<br>We'll show you the<br>right <span>problems.</span></h2>
+            <p class="wtrp-subheading">Pick your segment. What comes up is tuned to your reality, right down to the
+                regulator</p>
+            <div class="segment-tabs">
+                <button class="segment-btn active">BANK OR NBFC</button>
+                <button class="segment-btn">INSURANCE</button>
+                <button class="segment-btn">FINTECH FOUNDER</button>
+                <button class="segment-btn">PAYMENTS AND LENDING</button>
+                <button class="segment-btn">AMC OR WEALTHTECH</button>
+                <button class="segment-btn">MICROFINANCE OR SFB</button>
+            </div>
+
+            <div class="problems-container">
+                <div class="problem-item problem-header">
+                    <div class="problem-left">
+                        <div class="problem-heading-text">PROBLEMS</div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-heading-text">STHIROS SOLUTION</div>
+                    </div>
+                </div>
+                <div class="problem-item active" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">Regulation is moving faster<br>than my compliance team</div>
+                            <div class="problem-desc">RBI circulars, DPDPA, CKYC... My team spends the week putting out
+                                fires, never building anything that stops the next one.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>A compliance function that sees the circular coming</h3>
+                                <p>Most compliance teams live in permanent reaction. A circular drops, everyone abandons
+                                    what they were doing, and the cycle resets the following week. We'd rather your team
+                                    saw it coming. So we map your obligations across RBI, DPDPA and CKYC, hand each one
+                                    a clear owner, set a monitoring rhythm that doesn't depend on heroics, and put an AI
+                                    layer underneath that catches regulatory shifts and internal gaps while they're
+                                    still cheap to fix. Compliance ends up a step ahead of the regulator, which is a
+                                    nicer place to stand than a step behind.</p>
+                                <button class="fix-btn">FIX MY COMPLIANCE MODEL</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Regulatory gap assessment</li>
+                                        <li>Compliance operating model</li>
+                                        <li>RBI / DPDPA / CKYC mapping</li>
+                                        <li>Board compliance reporting</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list"></ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">Legacy core banking is blocking<br>everything I want to do</div>
+                            <div class="problem-desc">New product, new API, new anything - it all runs into the core
+                                first. We've built so many workarounds I'm no longer sure which ones are holding the
+                                place up.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Modernising the core without the horror story</h3>
+                                <p>Ask a room of Indian bank CIOs what's top of the list and most will say the core. Ask
+                                    why they haven't fixed it and you get the same answer: every migration puts
+                                    regulatory, operational and reputational risk on the table at once. Fair concern. We
+                                    plan the route, sequence it so nothing important falls over on a Tuesday, and slot
+                                    in middleware that lets your old core talk to modern APIs without a full
+                                    rip-and-replace. You move faster, and nobody has to explain a failed cutover to the
+                                    board.</p>
+                                <button class="fix-btn">MAP MY MODERNISATION</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Modernisation roadmap</li>
+                                        <li>Migration risk sequencing</li>
+                                        <li>Vendor and platform selection</li>
+                                        <li>Phased cutover architecture</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list"></ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">Fraud and NPAs are climbing<br>faster than my controls</div>
+                            <div class="problem-desc">Digital lending defaults, UPI fraud, early delinquency in the
+                                retail book &mdash; my controls were built for branches, not digital volumes.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Fraud and NPA controls for the volumes you actually run</h3>
+                                <p>UPI fraud, first-party fraud on digital loans, delinquency that shows up in the very
+                                    first EMI. The money moved online and the controls didn't. They were built for a
+                                    world where a risky customer walked into a branch and someone could look them in the
+                                    eye. We rebuild the fraud and credit-risk framework for how money actually moves
+                                    now, then put an AI engine behind it that works at transaction speed: catching the
+                                    anomalies, scoring the risk, kicking the odd case to a human, and leaving the honest
+                                    customer completely alone. They never notice it's there, which is rather the point.
+                                </p>
+                                <button class="fix-btn">TIGHTEN MY RISK CONTROLS</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Fraud risk framework redesign</li>
+                                        <li>Credit risk model audit</li>
+                                        <li>KYC and onboarding controls</li>
+                                        <li>Collections strategy</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list"></ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">I want to deploy AI, but the<br>board wants explainability</div>
+                            <div class="problem-desc">Everyone's talking AI in credit, collections, ops. I can't get
+                                sign-off without a governance framework the regulator will actually accept.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>AI you can actually explain to an inspector</h3>
+                                <p>The hard part of AI in banking was never the model. It's convincing a regulator you
+                                    know exactly why the model did what it did. RBI's AI framework, the
+                                    responsible-lending guidelines, DPDPA consent, most AI vendors have never had to
+                                    think about any of it. We have. What we deploy stays inside your regulatory lines:
+                                    models you can explain, a log for every decision, drift monitoring, a human who can
+                                    overrule it, and a governance story your compliance team can walk an inspector
+                                    through without their pulse changing.</p>
+                                <button class="fix-btn">DEPLOY AI THE RIGHT WAY</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>AI use-case prioritisation</li>
+                                        <li>Regulatory AI governance</li>
+                                        <li>Model risk policy</li>
+                                        <li>Explainability framework</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list"></ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">My transformation programme<br>has spent, but isn't delivering
+                            </div>
+                            <div class="problem-desc">The tech's in. The vendors are paid. The outcomes aren't here.
+                                Something in the execution layer is broken.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>The transformation you already paid for, finished</h3>
+                                <p>When a BFSI transformation stalls, the technology is rarely the culprit. It dies in
+                                    the quiet gap between the strategy deck and the actual work, where someone was
+                                    supposed to change how a thing gets done and it turned out to be nobody's job. We go
+                                    and find that gap. Then we redesign the programme around it and put in the
+                                    governance and change management that turns your very large invoice into something
+                                    you can point to in a board meeting and feel good about.</p>
+                                <button class="fix-btn">RECOVER MY PROGRAMME</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Programme diagnostic</li>
+                                        <li>Delivery model redesign</li>
+                                        <li>Governance and accountability reset</li>
+                                        <li>Change management architecture</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list"></ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">Fintech talent isn't sticking to<br>our operating model</div>
+                            <div class="problem-desc">We're hiring digital and data people, and they're hitting walls
+                                &mdash; legacy systems, slow approvals, risk-averse culture. Attrition's high.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Getting your digital hires past the antibodies</h3>
+                                <p>Hire a data scientist into a bank and you don't automatically get a data capability.
+                                    You get a data scientist who's now waiting three weeks for an approval and quietly
+                                    wondering why they left their last job. Good people hit the legacy systems, the
+                                    sign-off queues and the general institutional caution, and a fair number of them
+                                    drift back out the door. We fix the environment rather than the hire: clearer
+                                    decision rights, sandboxes where they can build without convening a committee, and
+                                    roles defined so a fintech brain can ship something before the enthusiasm wears off.
+                                </p>
+                                <button class="fix-btn">FIX MY TALENT INTEGRATION</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Digital talent operating model</li>
+                                        <li>Role and decision rights design</li>
+                                        <li>Innovation governance framework</li>
+                                        <li>Culture and retention strategy</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list"></ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- T Section Title How Sthiros is different in BFSI -->
+    <section id="sectiontitlesvgtop">
+        <svg xmlns="http://www.w3.org/2000/svg" width="74" height="482" viewBox="0 0 74 482" fill="none">
+            <path d="M74 481.988L49.3334 481.988L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 481.988Z"
+                fill="url(#paint0_linear_2166_2170)" />
+            <path d="M37.014 482L24.6667 482L24.6666 -2.15642e-06L37.0139 -3.23586e-06L37.014 482Z"
+                fill="url(#paint1_linear_2166_2170)" />
+            <path d="M9.80545 481.982L9.80535 -8.57215e-07L15.979 -1.39693e-06L15.9791 481.982L9.80545 481.982Z"
+                fill="url(#paint2_linear_2166_2170)" />
+            <path d="M6.09876e-05 481.988L-4.21378e-05 0L4.10645 -3.59001e-07L4.10655 481.988L6.09876e-05 481.988Z"
+                fill="url(#paint3_linear_2166_2170)" />
+            <defs>
+                <linearGradient id="paint0_linear_2166_2170" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_2166_2170" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_2166_2170" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint3_linear_2166_2170" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </section>
+
+    <!-- How Sthiros is different in BFSI -->
+    <section id="howsthirosdifferentsec">
+        <h2 class="hsd-heading">How <span>Sthiros</span> is<br>different in BFSI</h2>
+
+        <div class="hsd-features">
+            <div class="hsd-feature-card">
+                <div class="hsd-feature-content">
+                    <h3>We read the circulars, so you don't have to explain them to us</h3>
+                    <p>RBI, SEBI, IRDAI, DPDPA — we work with the current rulebook open on the desk. Compliance goes
+                        into the design at the start, which is considerably cheaper than discovering it during an audit.
+                    </p>
+                </div>
+            </div>
+            <div class="hsd-feature-card">
+                <div class="hsd-feature-content">
+                    <h3>Our AI can survive a conversation with a regulator</h3>
+                    <p>Explainable models, a log for every decision, drift monitoring, a human who can pull the
+                        handbrake. The AI works inside your compliance boundary because we built it there on purpose.
+                    </p>
+                </div>
+            </div>
+            <div class="hsd-feature-card">
+                <div class="hsd-feature-content">
+                    <h3>We leave software behind, which is rarer than it should be</h3>
+                    <p>Risk dashboards, compliance trackers, fraud engines, credit platforms. Real products your team
+                        keeps running long after we've packed up. That's rather the point.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HSD List Section -->
+    <section id="hsd-list-section">
+        <div class="hsd-list-container">
+            <div class="hsd-list-item">
+                <div class="hsd-list-left">Reg-first</div>
+                <div class="hsd-list-right">Every build starts with the rulebook already open.</div>
+            </div>
+            <div class="hsd-list-item">
+                <div class="hsd-list-left">4–16 weeks</div>
+                <div class="hsd-list-right">Scoped to how BFSI actually decides. No retainer that quietly renews
+                    forever.</div>
+            </div>
+            <div class="hsd-list-item">
+                <div class="hsd-list-left">One team,<br>three modes</div>
+                <div class="hsd-list-right">The people who advise you are the people who build it. Nothing gets lost in
+                    a handoff, because there isn't one.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BFSI transformation section -->
+    <section id="sthirostransformationsec">
+        <div class="sthiros-trans-card">
+            <p class="sthiros-trans-text">
+                To us, the interesting question in any BFSI transformation is what it's built on. Regulatory clarity, AI
+                you can explain, controls that hold when someone finally checks. Get those right and the rest follows.
+                Get them wrong and you've built something that looks fine until the first real audit. We've fixed that
+                more than once.
+            </p>
+            <div class="sthiros-trans-divider">
+                <span>STHIROS &middot; BFSI &amp; FINTECH</span>
+            </div>
+        </div>
+    </section>
+    <!-- transformationsvgbtm -->
+    <div class="sthirossvgtransformationbtm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="74" height="482" viewBox="0 0 74 482" fill="none">
+            <path d="M74 481.988L49.3334 481.988L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 481.988Z"
+                fill="url(#paint0_linear_2166_2171)" />
+            <path d="M37.014 482L24.6667 482L24.6666 -2.15642e-06L37.0139 -3.23586e-06L37.014 482Z"
+                fill="url(#paint1_linear_2166_2171)" />
+            <path d="M9.80545 481.982L9.80535 -8.57215e-07L15.979 -1.39693e-06L15.9791 481.982L9.80545 481.982Z"
+                fill="url(#paint2_linear_2166_2171)" />
+            <path d="M6.09876e-05 481.988L-4.21378e-05 0L4.10645 -3.59001e-07L4.10655 481.988L6.09876e-05 481.988Z"
+                fill="url(#paint3_linear_2166_2171)" />
+            <defs>
+                <linearGradient id="paint0_linear_2166_2171" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_2166_2171" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_2166_2171" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint3_linear_2166_2171" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+
+    <!-- CHOOSE HOW TO START -->
+    <section id="choosehowrostartsec">
+        <div class="chts-container">
+            <h4 class="chts-subtitle">CHOOSE HOW TO START</h4>
+            <h2 class="chts-title"><span>Pick a way in.</span><br>They all lead to the<br>same conversation.</h2>
+            <p class="chts-desc">Whether you run a mid-size bank, you're the one who has to make an NBFC's
+                transformation actually work, or you're a founder who just hit the first wall money can't knock down
+                &mdash; start wherever's easiest.</p>
+        </div>
+
+        <div class="chts-cards-wrapper">
+            <div class="chts-cards-container">
+                <div class="chts-card">
+                    <h3 class="chts-card-title">A 30-minute call</h3>
+                    <p class="chts-card-desc">Tell us the problem. By the end of the call we'll tell you what we'd
+                        tackle first, whether that's a regulatory sprint, an AI build, or shipping a piece of software.
+                        No deck required.</p>
+                    <div class="chts-card-footer">
+                        <a href="#">Book a call</a>
+                    </div>
+                </div>
+
+                <div class="chts-card">
+                    <h3 class="chts-card-title">The BFSI readiness check</h3>
+                    <p class="chts-card-desc">A free self-assessment across your regulatory posture, AI readiness,
+                        operating maturity and risk gaps. It tells you where you stand and what's worth doing first.
+                        Occasionally it tells you you're fine, which we're happy to confirm.</p>
+                    <div class="chts-card-footer">
+                        <a href="#">Get the diagnostic</a>
+                    </div>
+                </div>
+
+                <div class="chts-card">
+                    <h3 class="chts-card-title">Just describe the mess</h3>
+                    <p class="chts-card-desc">Not ready to talk? Send three lines: what you are, what's broken, what
+                        you've already tried. You'll get an actual opinion back, not a brochure.</p>
+                    <div class="chts-card-footer">
+                        <a href="#">Send a brief</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start the conversation section -->
+    <section id="skithedesksec">
+        <div class="skipthedesktop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="940" height="772" viewBox="0 0 940 772" fill="none">
+                <path
+                    d="M939.974 287.653L939.89 290.755C939.89 292.823 939.666 294.92 939.527 296.988C938.828 305.289 937.29 313.562 934.942 321.583C930.245 337.655 922.306 352.747 911.766 365.66C901.171 378.545 888.003 389.277 873.214 397.047C858.453 404.873 842.015 409.68 825.381 411.078C823.312 411.218 821.215 411.441 819.147 411.469L816.043 411.553L814.506 411.553L813.388 411.581L126.223 411.586C126.027 411.586 125.832 411.586 125.776 411.586L125.133 411.586C124.266 411.67 123.4 411.586 122.533 411.698C119.094 411.921 115.684 412.48 112.385 413.375C105.787 415.135 99.5528 418.266 94.1013 422.514C88.6498 426.762 84.0649 432.101 80.7102 438.082C77.3274 444.063 75.2027 450.659 74.4479 457.507C74.2522 459.212 74.1404 460.945 74.1404 462.678L74.1402 771.061L49.4548 771.061L49.4549 463.321L49.4829 462.37C49.4829 459.827 49.6786 457.283 49.9582 454.768C51.0764 444.678 54.2634 434.868 59.2397 426.008C64.2159 417.176 70.9813 409.322 78.9769 403.061C86.9724 396.801 96.2259 392.189 106.011 389.562C110.903 388.248 115.935 387.41 120.995 387.102C122.253 386.962 123.539 387.018 124.797 386.962L125.748 386.962C126.055 386.934 126.475 386.934 126.81 386.934L815.764 386.93L818.28 386.846C819.957 386.846 821.635 386.65 823.284 386.538C836.647 385.392 849.815 381.535 861.696 375.274C873.578 369.014 884.173 360.377 892.672 350.036C901.115 339.667 907.461 327.565 911.235 314.708C913.108 308.252 914.366 301.627 914.925 294.947C915.037 293.27 915.205 291.594 915.233 289.917L915.289 287.401L915.301 0.0559882L939.986 0.0559904L939.974 287.653Z"
+                    fill="url(#paint0_linear_1871_1279)" />
+                <path
+                    d="M899.381 311.214C896.11 322.45 890.547 333.043 883.167 342.126C883.167 342.126 883.139 342.154 883.111 342.182C883.083 342.21 883.055 342.266 883.027 342.294C875.562 351.322 866.281 358.868 855.937 364.318C845.509 369.824 833.991 373.206 822.222 374.212C816.351 374.743 810.452 374.52 804.553 374.576L128.991 374.581C126.055 374.581 123.092 374.58 120.157 374.776C114.286 375.14 108.443 376.118 102.74 377.627C91.3615 380.674 80.5983 386.068 71.3168 393.335C62.0073 400.574 54.1795 409.685 48.4205 419.971C42.6335 430.228 38.9433 441.688 37.6573 453.398C36.9584 459.268 37.0982 465.165 37.0702 471.063L37.07 771.061L24.7133 771.061L24.7135 463.293L24.7414 462.035C24.7694 458.681 24.993 455.327 25.3565 452.001C26.8382 438.669 31.0596 425.616 37.6293 413.906C44.1991 402.195 53.1172 391.853 63.7126 383.58C74.2801 375.335 86.525 369.186 99.5247 365.693C106.011 363.932 112.664 362.842 119.374 362.423C121.051 362.255 122.729 362.283 124.406 362.227L125.664 362.227L126.81 362.199L815.484 362.194L817.385 362.11C818.671 362.11 819.929 361.942 821.187 361.887C831.308 361.02 841.204 358.113 850.178 353.39C859.124 348.666 867.12 342.182 873.578 334.356C879.952 326.502 884.732 317.391 887.556 307.72C888.982 302.857 889.904 297.854 890.323 292.795C890.407 291.538 890.547 290.252 890.547 288.994L890.603 287.094L890.615 7.78601e-05L902.972 7.89403e-05L902.96 316.137C902.904 322.035 903.127 287.932 902.624 293.801C902.121 299.671 901.031 305.484 899.381 311.158L899.381 311.214Z"
+                    fill="url(#paint1_linear_1871_1279)" />
+                <path
+                    d="M881.965 288.715C881.965 289.861 881.825 290.978 881.769 292.097C881.378 296.596 880.567 301.04 879.309 305.345C876.821 313.869 872.599 321.891 867.008 328.85C867.008 328.85 866.98 328.878 866.952 328.906C866.896 328.962 866.868 329.046 866.812 329.102C861.109 335.949 854.064 341.707 846.181 345.844C838.213 350.036 829.435 352.607 820.461 353.39C819.342 353.446 818.224 353.613 817.078 353.586L815.373 353.642L125.608 353.646L124.238 353.674C122.421 353.73 120.604 353.702 118.787 353.898C111.546 354.345 104.305 355.547 97.2604 357.448C83.1704 361.221 69.8911 367.901 58.401 376.845C46.9389 385.788 37.266 397.024 30.1092 409.713C22.9523 422.402 18.3955 436.573 16.774 451.051C16.3826 454.656 16.131 458.29 16.103 461.923L16.103 463.293L16.0751 464.41L16.0749 771.061L9.89654 771.061L9.89672 463.293L9.92467 461.867C9.98059 458.038 10.2042 454.209 10.6236 450.38C12.3289 435.091 17.1654 420.11 24.7136 406.695C32.2618 393.279 42.4659 381.428 54.571 371.981C66.6761 362.534 80.7102 355.491 95.611 351.494C103.047 349.482 110.679 348.224 118.34 347.749C120.241 347.581 122.17 347.581 124.071 347.525L125.496 347.525L126.671 347.497L815.149 347.493L816.686 347.437C817.721 347.437 818.727 347.297 819.762 347.241C827.953 346.542 835.893 344.222 843.133 340.393C850.318 336.592 856.804 331.338 862.004 325.049C867.12 318.705 870.978 311.41 873.242 303.64C874.389 299.727 875.143 295.702 875.479 291.593C875.535 290.559 875.675 289.553 875.675 288.519L875.675 286.982L875.73 286.171L875.743 0.0839389L881.921 0.0839394L881.909 287.038L881.853 288.743L881.965 288.715Z"
+                    fill="url(#paint2_linear_1871_1279)" />
+                <path
+                    d="M869.971 288.295C869.971 289.246 869.859 290.168 869.804 291.09C869.496 294.808 868.797 298.441 867.763 301.991C865.722 308.95 862.283 315.518 857.698 321.22C857.698 321.22 857.615 321.332 857.587 321.36C857.559 321.416 857.503 321.472 857.475 321.527C852.778 327.145 846.991 331.841 840.561 335.223C834.019 338.688 826.807 340.785 819.398 341.428C818.476 341.483 817.553 341.623 816.603 341.595L815.205 341.595L814.506 341.651L125.58 341.656L124.071 341.684C122.058 341.74 120.045 341.74 118.032 341.908C109.98 342.411 101.957 343.724 94.1572 345.848C78.5016 350.041 63.7686 357.448 51.0485 367.37C38.3283 377.292 27.5931 389.729 19.6814 403.816C11.7418 417.902 6.68169 433.638 4.89248 449.681C4.44518 453.678 4.19357 457.73 4.13766 461.727L4.13766 463.237L4.1097 464.383L4.10952 771.061L-6.74083e-05 771.061L0.000108989 463.265L0.0280651 461.699C0.0839782 457.535 0.335586 453.398 0.810845 449.234C2.65597 432.632 7.91177 416.365 16.103 401.803C24.2942 387.242 35.3649 374.357 48.5324 364.127C61.6719 353.87 76.9361 346.212 93.0948 341.88C101.174 339.7 109.477 338.33 117.78 337.827C119.849 337.631 121.946 337.659 124.015 337.576L125.58 337.576L126.782 337.547L815.149 337.543L816.463 337.487C817.329 337.487 818.196 337.375 819.063 337.319C825.94 336.732 832.566 334.776 838.632 331.589C844.643 328.431 850.066 324.015 854.428 318.761C858.705 313.45 861.92 307.329 863.821 300.845C864.771 297.575 865.414 294.193 865.694 290.755C865.75 289.889 865.862 289.05 865.862 288.156L865.862 286.842L865.918 286.143L865.93 0.0559839L870.039 0.0559843L870.027 286.898L869.971 288.295Z"
+                    fill="url(#paint3_linear_1871_1279)" />
+                <defs>
+                    <linearGradient id="paint0_linear_1871_1279" x1="493.493" y1="3.90337e-05" x2="493.493" y2="771.061"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.201923" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1871_1279" x1="493.493" y1="3.90337e-05" x2="493.493" y2="771.061"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.201923" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_1871_1279" x1="493.493" y1="3.90337e-05" x2="493.493" y2="771.061"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.201923" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_1871_1279" x1="493.493" y1="3.90337e-05" x2="493.493" y2="771.061"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.201923" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <div class="skipthedeskcont">
+            <div class="std-content">
+                <h2>Skip the deck.</h2>
+                <h3>Tell us what you're actually deciding.</h3>
+                <p>Tell us the decision you're facing. Book a 30-minute call and we'll tell you what we'd do first. Or
+                    send us three lines: your situation, what you've tried. And we'll come back with a point of view,
+                    not a brochure.</p>
+            </div>
+            <div class="std-buttons">
+                <a href="#" class="std-btn-outer">
+                    <span class="std-btn-inner">BOOK A 30-MIN CALL</span>
+                </a>
+                <a href="#" class="std-btn-outer">
+                    <span class="std-btn-inner">SEND US YOUR SITUATION</span>
+                </a>
+            </div>
+        </div>
+        <div class="skipthedeskbtm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1870" height="208" viewBox="0 180 1863 208" fill="none">
+                <path
+                    d="M74.0472 261.541L74.0384 0.000243258L49.387 0.000243552L49.3957 260.954L49.3957 260.958C49.3957 261.293 49.3957 261.71 49.4236 262.016L49.4236 262.967C49.4795 264.225 49.4237 265.511 49.5635 266.769C49.871 271.829 50.7093 276.861 52.0229 281.754C54.6503 291.538 59.2619 300.792 65.5227 308.787C71.7834 316.783 79.6372 323.548 88.4692 328.525C97.3292 333.501 107.14 336.688 117.229 337.806C119.745 338.086 122.288 338.281 124.832 338.281L125.782 338.309L1866.52 338.309L1866.52 313.624L125.139 313.624C123.406 313.624 121.673 313.512 119.968 313.316C113.121 312.562 106.525 310.437 100.543 307.054C94.5622 303.699 89.2239 299.115 84.9756 293.663C80.7273 288.212 77.5968 281.977 75.8359 275.38C74.9415 272.081 74.3827 268.67 74.159 265.231C74.0472 264.365 74.1311 263.498 74.0472 262.631L74.0472 261.988L74.0472 261.541Z"
+                    fill="url(#paint0_linear_1871_1280)" />
+                <path
+                    d="M37.042 258.773L37.0332 0.000243699L24.6516 0.000243847L24.6604 260.954L24.6882 262.1L24.6882 263.358C24.7441 265.036 24.7162 266.713 24.8839 268.391C25.3031 275.1 26.3932 281.754 28.154 288.24C31.6477 301.239 37.7966 313.484 46.0417 324.052C54.3148 334.647 64.6561 343.565 76.3669 350.135C88.0777 356.705 101.13 360.926 114.462 362.408C117.788 362.771 121.142 362.995 124.496 363.023L125.754 363.051L1866.52 363.051L1866.52 350.694L133.524 350.694C127.627 350.666 121.729 350.806 115.86 350.107C104.149 348.821 92.6896 345.131 82.4321 339.344C72.1467 333.585 63.035 325.757 55.7961 316.448C48.5293 307.166 43.1349 296.403 40.0884 285.025C38.5791 279.321 37.6009 273.479 37.2375 267.608C37.042 264.674 37.042 261.713 37.042 258.779L37.042 258.773Z"
+                    fill="url(#paint1_linear_1871_1280)" />
+                <path
+                    d="M16.1357 263.526L16.1078 262.156L16.099 0.000243949L9.94995 0.000244022L9.95872 261.094L9.9868 262.268L9.9868 263.694C10.0427 265.595 10.0427 267.524 10.2104 269.425C10.6855 277.085 11.9432 284.717 13.9555 292.153C17.9524 307.054 24.9957 321.088 34.4426 333.193C43.8895 345.298 55.7402 355.502 69.156 363.051C82.5718 370.599 97.5527 375.435 112.841 377.141C116.67 377.56 120.499 377.784 124.328 377.839L125.754 377.867L1866.52 377.868L1866.52 371.689L126.872 371.689L125.754 371.661L124.384 371.661C120.751 371.633 117.117 371.382 113.512 370.99C99.034 369.369 84.8636 364.812 72.1745 357.655C59.4855 350.498 48.2497 340.825 39.3059 329.363C30.362 317.873 23.6821 304.594 19.9089 290.504C18.0084 283.459 16.8065 276.218 16.3594 268.977C16.1637 267.16 16.1916 265.343 16.1357 263.526Z"
+                    fill="url(#paint2_linear_1871_1280)" />
+                <path
+                    d="M4.11741 262.184L4.10864 0.000244092L-4.62404e-06 0.000244141L0.00877825 260.982L0.0368544 262.184L0.0368545 263.75C0.120717 265.818 0.0926412 267.915 0.28832 269.984C0.791372 278.287 2.16099 286.59 4.34105 294.669C8.6732 310.828 16.3314 326.092 26.5888 339.232C36.8183 352.399 49.7031 363.47 64.2649 371.661C78.8266 379.852 95.0932 385.108 111.695 386.953C115.86 387.429 119.996 387.68 124.161 387.736L125.726 387.764L1866.52 387.764L1866.52 383.655L126.844 383.654L125.698 383.627L124.189 383.627C120.192 383.571 116.139 383.319 112.143 382.872C96.0995 381.082 80.3639 376.022 66.2773 368.083C52.1908 360.171 39.7532 349.436 29.831 336.716C19.9089 323.996 12.5022 309.263 8.3098 293.607C6.18565 285.807 4.87193 277.784 4.36888 269.732C4.20115 267.719 4.20115 265.707 4.14525 263.694L4.11741 262.184Z"
+                    fill="url(#paint3_linear_1871_1280)" />
+                <defs>
+                    <linearGradient id="paint0_linear_1871_1280" x1="1817" y1="-5.6584e-05" x2="1278.5" y2="-5.6584e-05"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.596992" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1871_1280" x1="1817" y1="-5.6584e-05" x2="1278.5" y2="-5.6584e-05"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.596992" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_1871_1280" x1="1817" y1="-5.6584e-05" x2="1278.5" y2="-5.6584e-05"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.596992" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_1871_1280" x1="1817" y1="-5.6584e-05" x2="1278.5" y2="-5.6584e-05"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.596992" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </section>
+
+    <footer id="footer" class="site-footer">
+        <div class="footer-container">
+            <!-- Left Side -->
+            <div class="footer-left">
+                <h3 class="footer-heading">Let's work together</h3>
+                <a href="mailto:hello@sthiros.com" class="footer-email">hello@sthiros.com</a>
+
+                <div class="footer-contact-block">
+                    <a href="#" class="contact-now-link">
+                        <span>CONTACT NOW</span>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H11V11" stroke="white" stroke-width="1.5" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/fb_sthiros.png" alt="Facebook" class="social-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/insta_sthiros.png" alt="Instagram" class="social-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/x_sthiros.png" alt="X" class="social-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/linkedin_sthiros.png" alt="LinkedIn" class="social-img">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="footer-right">
+                <ul class="footer-menu">
+                    <li><a href="#">OUR STORY</a></li>
+                    <li><a href="#">LEADERSHIP</a></li>
+                    <li><a href="#">CAREERS</a></li>
+                    <li><a href="#">INDUSTRIES</a></li>
+                    <li><a href="#">LATEST</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-bottom-line">
+
+        <div class="footer-massive-logo-section">
+            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo">
+            <div class="copyright-text">© 2026</div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+    <script>
+        function updateStickyHeader() {
+            const segmentTabs = document.querySelector('.segment-tabs');
+            const problemHeader = document.querySelector('.problem-header');
+            if (segmentTabs && problemHeader) {
+                const tabsHeight = segmentTabs.offsetHeight;
+                problemHeader.style.top = (tabsHeight - 1) + 'px';
+            }
+        }
+        window.addEventListener('load', updateStickyHeader);
+        window.addEventListener('resize', updateStickyHeader);
+
+        // Sliding cards logic
+        document.addEventListener("DOMContentLoaded", () => {
+            const chtsContainer = document.querySelector('.chts-cards-container');
+            if (chtsContainer && window.innerWidth > 768) {
+                const cards = chtsContainer.querySelectorAll('.chts-card');
+                const slider = document.createElement('div');
+                slider.className = 'chts-slider-bg';
+                chtsContainer.appendChild(slider);
+
+                let activeIndex = 1; // Middle card default
+                let isHovering = false;
+
+                function updateSlider(card) {
+                    if (!card) return;
+                    const rect = card.getBoundingClientRect();
+                    const containerRect = chtsContainer.getBoundingClientRect();
+
+                    slider.style.width = `${rect.width}px`;
+                    slider.style.height = `${rect.height}px`;
+                    slider.style.transform = `translate(${rect.left - containerRect.left}px, ${rect.top - containerRect.top}px) scale(1.05, 1.10)`;
+                    slider.style.opacity = '1';
+
+                    cards.forEach(c => c.classList.remove('is-active'));
+                    card.classList.add('is-active');
+                }
+
+                setTimeout(() => {
+                    updateSlider(cards[activeIndex]);
+                }, 200); // small delay to ensure fonts/layout are ready
+
+                window.addEventListener('resize', () => {
+                    if (window.innerWidth > 768) {
+                        slider.style.display = 'block';
+                        updateSlider(cards[activeIndex]);
+                    } else {
+                        slider.style.display = 'none';
+                        cards.forEach(c => c.classList.remove('is-active'));
+                        cards[1].classList.add('is-active');
+                    }
+                });
+
+                cards.forEach((card, index) => {
+                    card.addEventListener('mouseenter', () => {
+                        isHovering = true;
+                        activeIndex = index;
+                        updateSlider(card);
+                    });
+                });
+
+                // mouseleave event listener removed so slider stays on the last hovered card
+            } else if (chtsContainer) {
+                // Mobile default active
+                chtsContainer.querySelectorAll('.chts-card')[1].classList.add('is-active');
+            }
+        });
+
+        function toggleProblem(element) {
+            // Toggle the clicked element
+            element.classList.toggle('active');
+
+            // Optionally, close other open problem items (if accordion behavior is desired)
+            // document.querySelectorAll('.problem-item').forEach(item => {
+            //     if(item !== element) item.classList.remove('active');
+            // });
+        }
+
+        function toggleService(element) {
+            // Toggle the clicked service item
+            element.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>

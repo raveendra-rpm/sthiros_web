@@ -1748,7 +1748,7 @@ function initOurWorkHeroScroll() {
   if (!header) return;
 
   // Hero-jaisa section jo bhi page pe ho
-  const heroEl = document.querySelector('.section-hero, .our-work-banner, .services-hero, .about-hero-section');
+  const heroEl = document.querySelector('.section-hero, .our-work-banner, .services-hero, .about-hero-section, .industry-hero');
 
   let ticking = false;
 
@@ -1771,7 +1771,7 @@ function initOurWorkHeroScroll() {
       header.classList.remove('header-hidden');
     } else {
       // Hero ke andar (ya load pe) — header hamesha hidden
-      header.classList.add('header-hidden');
+      // header.classList.add('header-hidden');
     }
   }
 
