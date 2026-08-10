@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sthiros — Industry</title>
+    <meta name="description" content="We build financial systems that clear audit before the auditor asks." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Quicksand:wght@400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css?v=6" />
+    <style>
+        .industry-hero {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background-color: #000;
+            background-image: url('assets/images/industrypage/industrybanner.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 120px 5%;
+        }
+
+        .industry-hero-content {
+            max-width: 800px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .industry-hero h1 {
+            font-family: var(--font), sans-serif;
+            font-size: clamp(3rem, 5vw, 4.5rem);
+            font-weight: 600;
+            line-height: 1.1;
+            color: #fff;
+            margin-bottom: 24px;
+        }
+
+        .industry-hero h1 span {
+            color: #EC2D26;
+            /* Sthiros Red */
+        }
+
+        .industry-hero p {
+            font-family: 'Inter', sans-serif;
+            font-size: clamp(1rem, 1.5vw, 1.125rem);
+            line-height: 1.6;
+            color: #ccc;
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+
+        .industry-hero-actions {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .industry-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 32px;
+            border: 2px solid #F0832E;
+            /* Orange border */
+            border-radius: 40px;
+            /* Pill shape */
+            background: transparent;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.875rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .industry-btn:hover {
+            background: rgba(240, 131, 46, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .industry-hero {
+                padding-top: 150px;
+                background-position: left center;
+            }
+
+            .industry-hero-actions {
+                flex-direction: column;
+            }
+
+            .industry-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body class="loading">
+
+    <!-- ═══════════════ SITE HEADER ═══════════════ -->
+    <header class="site-header header-hidden">
+        <div class="header-left">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <button class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                <span class="toggle-track">
+                    <img src="assets/images/dark_light_toggle.png" alt="Light Theme" class="toggle-art light-art">
+                    <img src="assets/images/dark_mode_toggle_new.png" alt="Dark Theme" class="toggle-art dark-art">
+                    <span class="toggle-thumb"></span>
+                </span>
+            </button>
+            <button class="menu-toggle" aria-label="Open Menu">
+                <span class="menu-icon">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ═══════════════ INDUSTRY HERO SECTION ═══════════════ -->
+    <section class="industry-hero">
+        <div class="industry-hero-content">
+            <h1>We build financial systems that <span>clear audit</span> before the auditor asks.</h1>
+            <p>RBI, SEBI and IRDAI keep raising the bar. A lean fintech can ship in weeks what takes you a decade. We
+                build systems that hit both.</p>
+            <div class="industry-hero-actions">
+                <a href="#" class="industry-btn">BOOK A 30-MIN CALL</a>
+                <a href="#" class="industry-btn">GET THE BFSI DIAGNOSTIC</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
