@@ -892,17 +892,16 @@ function initScrollAnimations() {
         // Prepare Strategy animations initial states
         const sTracePath = document.querySelector('#s-trace-path');
         const strategyLogoWrapper = document.querySelector('.strategy-logo-trace-wrapper');
-        const strategyH2 = document.querySelector('.strategy-content h2');
-        const strategyP = document.querySelector('.strategy-content p');
+        const strategyContentChildren = document.querySelectorAll('.strategy-content > *');
         const strategySvg = document.querySelector('.second-svg');
         const strategyLines = document.querySelectorAll('.second-svg .strategy-line');
 
-        if (sTracePath && strategyLogoWrapper && strategyH2 && strategyP && strategySvg) {
+        if (sTracePath && strategyLogoWrapper && strategyContentChildren.length && strategySvg) {
           gsap.set(strategyLogoWrapper, { opacity: 1 });
           // Use hardcoded length (1050) because getTotalLength() inside <mask> can be unreliable in some browsers
           const pathLength = 1050;
           gsap.set(sTracePath, { strokeDasharray: pathLength + 10, strokeDashoffset: pathLength + 10 });
-          gsap.set([strategyH2, strategyP], { opacity: 0, y: 40 });
+          gsap.set(strategyContentChildren, { opacity: 0, y: 40 });
 
           strategyLines.forEach(line => {
             const len = line.getTotalLength();
@@ -924,9 +923,9 @@ function initScrollAnimations() {
         // Part 1B: Trace Logo and Show Text (Screen X scroll is paused here!)
         tl.add("logoTrace");
 
-        if (sTracePath && strategyH2 && strategyP && strategySvg) {
+        if (sTracePath && strategyContentChildren.length && strategySvg) {
           tl.to(sTracePath, { strokeDashoffset: 0, ease: 'none', duration: 0.4 }, "logoTrace")
-            .to([strategyH2, strategyP], { opacity: 1, y: 0, duration: 0.2, stagger: 0.05, ease: 'power3.out' });
+            .to(strategyContentChildren, { opacity: 1, y: 0, duration: 0.2, stagger: 0.05, ease: 'power3.out' });
         }
 
         // Fade out the previous SVG track and the "Four disciplines" text WHILE the logo is tracing
@@ -2332,7 +2331,6 @@ function initWorkholdSlider() {
 
       if (slideIndex !== lastIndex) {
         lastIndex = slideIndex;
-        track.style.transform = `translate3d(0, -${slideIndex * 100}%, 0)`;
 
         slides.forEach((slide, idx) => {
           if (idx === slideIndex) {
