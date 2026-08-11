@@ -28,7 +28,8 @@
         }
 
         .industry-hero-content {
-            max-width: 800px;
+            max-width: 1000px;
+            /* Increased from 800px to give buttons more space */
             position: relative;
             z-index: 2;
         }
@@ -62,29 +63,43 @@
             flex-wrap: wrap;
         }
 
-        .industry-btn {
+        .industry-btn-outer {
             display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 14px 32px;
-            border: 2px solid #F0832E;
-            /* Orange border */
-            border-radius: 40px;
-            /* Pill shape */
-            background: transparent;
-            color: #fff;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.875rem;
-            font-weight: 500;
-            letter-spacing: 1px;
-            text-transform: uppercase;
+            border-radius: 163.532px;
+            border: 1.817px solid var(--FLAME-ORANGE, #EF4623);
+            padding: 4px;
             text-decoration: none;
             transition: all 0.3s ease;
+            box-sizing: border-box;
         }
 
-        .industry-btn:hover {
-            background: rgba(240, 131, 46, 0.1);
-            transform: translateY(-2px);
+        .industry-btn-outer:hover {
+            opacity: 0.8;
+            transform: scale(1.02);
+        }
+
+        .industry-btn-inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 163.532px;
+            border: 5px solid var(--FLAME-ORANGE, #EF4623);
+            padding: 10px 40px;
+            /* Increased horizontal padding to make button wider */
+            color: var(--WHITE, #FFF);
+            text-align: center;
+            /* H4 */
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+            background: transparent;
         }
 
         /* Responsive adjustments */
@@ -98,9 +113,16 @@
                 flex-direction: column;
             }
 
-            .industry-btn {
+            .industry-btn-outer {
                 width: 100%;
-                text-align: center;
+            }
+
+            .industry-btn-inner {
+                font-size: 18px;
+                /* scale down for mobile */
+                padding: 12px 20px;
+                letter-spacing: 2px;
+                width: 100%;
             }
         }
 
@@ -142,12 +164,14 @@
 
         .wtrp-heading {
             font-family: 'Pacaembu', sans-serif;
-            font-size: 64px;
+            font-size: 75px;
+            font-style: normal;
             font-weight: 500;
             color: #fff;
-            line-height: 1.1;
+            line-height: 85px;
+            /* 111.111% */
             margin: 0 auto 20px auto;
-            max-width: 800px;
+            max-width: 900px;
         }
 
         .wtrp-heading span {
@@ -191,12 +215,16 @@
             background-color: transparent;
             border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 50px;
-            padding: 12px 24px;
-            color: #fff;
+            padding: 10px 20px;
+            color: var(--WHITE, #FFF);
+            text-align: center;
             font-family: 'Quicksand', sans-serif;
-            font-size: 13px;
-            font-weight: 600;
-            letter-spacing: 1.5px;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26.357px;
+            /* 146.425% */
+            letter-spacing: 3px;
             text-transform: uppercase;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -247,9 +275,13 @@
 
         .problem-heading-text {
             font-family: 'Quicksand', sans-serif;
-            font-size: 14px;
-            color: #fff;
-            letter-spacing: 2px;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            /* 115.385% */
+            color: var(--WHITE, #FFF);
+            letter-spacing: 5.2px;
             text-transform: uppercase;
         }
 
@@ -273,11 +305,12 @@
         }
 
         .problem-text {
-            font-family: 'Inter', sans-serif;
-            font-size: 16px;
-            color: #fff;
-            line-height: 1.5;
+            color: var(--WHITE, #FFF);
+            font-family: Pacaembu, sans-serif;
+            font-size: 22px;
+            font-style: normal;
             font-weight: 400;
+            line-height: 30px;
         }
 
         .problem-arrow {
@@ -356,11 +389,13 @@
         }
 
         .solution-main h3 {
-            font-size: 18px;
-            color: #fff;
             margin-bottom: 20px;
-            font-weight: 500;
-            line-height: 1.4;
+            color: var(--WHITE, #FFF);
+            font-family: Pacaembu, sans-serif;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
         }
 
         .solution-main p {
@@ -409,8 +444,12 @@
         }
 
         .service-title {
-            font-size: 16px;
-            color: #fff;
+            color: var(--WHITE, #FFF);
+            font-family: Pacaembu, sans-serif;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
         }
 
         .service-arrow img {
@@ -1245,12 +1284,16 @@
     <!-- ═══════════════ INDUSTRY HERO SECTION ═══════════════ -->
     <section class="industry-hero">
         <div class="industry-hero-content">
-            <h1>We build financial systems that <span>clear audit</span> before the auditor asks.</h1>
+            <h1>We build financial <br> systems that <span> <br> clear audit</span> before <br> the auditor asks.</h1>
             <p>RBI, SEBI and IRDAI keep raising the bar. A lean fintech can ship in weeks what takes you a decade. We
                 build systems that hit both.</p>
             <div class="industry-hero-actions">
-                <a href="#" class="industry-btn">BOOK A 30-MIN CALL</a>
-                <a href="#" class="industry-btn">GET THE BFSI DIAGNOSTIC</a>
+                <a href="#" class="industry-btn-outer">
+                    <span class="industry-btn-inner">BOOK A 30-MIN CALL</span>
+                </a>
+                <a href="#" class="industry-btn-outer">
+                    <span class="industry-btn-inner">GET THE BFSI DIAGNOSTIC</span>
+                </a>
             </div>
         </div>
     </section>

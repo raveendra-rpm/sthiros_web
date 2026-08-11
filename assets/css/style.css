@@ -4938,3 +4938,30 @@ body.light-mode .section-services {
     padding-top: 0 !important;
   }
 }
+/* --------------- GLOBAL CARD HOVER GLOW EFFECT --------------- */
+.sthiros-hover-glow-effect {
+    position: absolute;
+    top: -30%;
+    left: -30%;
+    width: 160%;
+    height: 160%;
+    object-fit: cover;
+    opacity: 0;
+    z-index: 3;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    animation: sthirosGlowMove 12s infinite alternate ease-in-out;
+}
+
+.sthiros-glow-card:hover .sthiros-hover-glow-effect {
+    opacity: 0.85;
+}
+
+@keyframes sthirosGlowMove {
+    0% { transform: translate(0, 0) scale(1); }
+    25% { transform: translate(5%, 10%) scale(1.1); }
+    50% { transform: translate(-10%, 5%) scale(1.2); }
+    75% { transform: translate(-5%, -10%) scale(1.05); }
+    100% { transform: translate(10%, -5%) scale(1); }
+}
+
