@@ -27,6 +27,30 @@
             padding: 120px 5%;
         }
 
+        .industry-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .industry-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
         .industry-hero-content {
             max-width: 1000px;
             /* Increased from 800px to give buttons more space */
