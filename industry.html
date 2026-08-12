@@ -1519,15 +1519,15 @@ We’ll show you the right problems. -->
             <p class="wtrp-subheading">Pick your segment. What comes up is tuned to your reality, right down to the
                 regulator</p>
             <div class="segment-tabs">
-                <button class="segment-btn active">BANK OR NBFC</button>
-                <button class="segment-btn">INSURANCE</button>
-                <button class="segment-btn">FINTECH FOUNDER</button>
-                <button class="segment-btn">PAYMENTS AND LENDING</button>
-                <button class="segment-btn">AMC OR WEALTHTECH</button>
-                <button class="segment-btn">MICROFINANCE OR SFB</button>
+                <button class="segment-btn active" data-target="problems-bank">BANK OR NBFC</button>
+                <button class="segment-btn" data-target="problems-insurance">INSURANCE</button>
+                <button class="segment-btn" data-target="problems-fintech">FINTECH FOUNDER</button>
+                <button class="segment-btn" data-target="problems-payments">PAYMENTS AND LENDING</button>
+                <button class="segment-btn" data-target="problems-amc">AMC OR WEALTHTECH</button>
+                <button class="segment-btn" data-target="problems-microfinance">MICROFINANCE OR SFB</button>
             </div>
 
-            <div class="problems-container">
+            <div class="problems-container" id="problems-bank">
                 <div class="problem-item problem-header">
                     <div class="problem-left">
                         <div class="problem-heading-text">PROBLEMS</div>
@@ -1558,7 +1558,7 @@ We’ll show you the right problems. -->
                                     layer underneath that catches regulatory shifts and internal gaps while they're
                                     still cheap to fix. Compliance ends up a step ahead of the regulator, which is a
                                     nicer place to stand than a step behind.</p>
-                                <button class="fix-btn">FIX MY COMPLIANCE MODEL</button>
+                                <button class="fix-btn">Fix my compliance model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
@@ -1580,7 +1580,12 @@ We’ll show you the right problems. -->
                                         <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
                                                 alt="arrow"></div>
                                     </div>
-                                    <ul class="service-list"></ul>
+                                    <ul class="service-list">
+                                        <li>Circular monitoring alerts</li>
+                                        <li>Automated gap flagging</li>
+                                        <li>Regulatory change impact scoring</li>
+                                        <li>Audit trail intelligence</li>
+                                    </ul>
                                 </div>
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
                                     <div class="service-header">
@@ -1588,7 +1593,12 @@ We’ll show you the right problems. -->
                                         <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
                                                 alt="arrow"></div>
                                     </div>
-                                    <ul class="service-list"></ul>
+                                    <ul class="service-list">
+                                        <li>Compliance control dashboard</li>
+                                        <li>Regulatory calendar</li>
+                                        <li>Board-level risk view</li>
+                                        <li>Automated compliance pack</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -1597,7 +1607,7 @@ We’ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">Legacy core banking is blocking<br>everything I want to do</div>
+                            <div class="problem-text">Legacy core banking is blocking everything I want to do</div>
                             <div class="problem-desc">New product, new API, new anything - it all runs into the core
                                 first. We've built so many workarounds I'm no longer sure which ones are holding the
                                 place up.</div>
@@ -1617,7 +1627,7 @@ We’ll show you the right problems. -->
                                     in middleware that lets your old core talk to modern APIs without a full
                                     rip-and-replace. You move faster, and nobody has to explain a failed cutover to the
                                     board.</p>
-                                <button class="fix-btn">MAP MY MODERNISATION</button>
+                                <button class="fix-btn">Fix my compliance model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
@@ -1639,7 +1649,12 @@ We’ll show you the right problems. -->
                                         <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
                                                 alt="arrow"></div>
                                     </div>
-                                    <ul class="service-list"></ul>
+                                    <ul class="service-list">
+                                        <li>Legacy process mining</li>
+                                        <li>Migration risk prediction</li>
+                                        <li>API dependency mapping</li>
+                                        <li>Performance anomaly detection</li>
+                                    </ul>
                                 </div>
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
                                     <div class="service-header">
@@ -1647,7 +1662,12 @@ We’ll show you the right problems. -->
                                         <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
                                                 alt="arrow"></div>
                                     </div>
-                                    <ul class="service-list"></ul>
+                                    <ul class="service-list">
+                                        <li>Integration middleware layer</li>
+                                        <li>API orchestration tool</li>
+                                        <li>Migration tracking dashboard</li>
+                                        <li>System health monitor</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -1656,7 +1676,7 @@ We’ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">Fraud and NPAs are climbing<br>faster than my controls</div>
+                            <div class="problem-text">Fraud and NPAs are climbing <br> faster than my controls</div>
                             <div class="problem-desc">Digital lending defaults, UPI fraud, early delinquency in the
                                 retail book &mdash; my controls were built for branches, not digital volumes.</div>
                         </div>
@@ -1698,7 +1718,12 @@ We’ll show you the right problems. -->
                                         <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
                                                 alt="arrow"></div>
                                     </div>
-                                    <ul class="service-list"></ul>
+                                    <ul class="service-list">
+                                        <li>Real-time fraud detection</li>
+                                        <li>AI credit scoring engine</li>
+                                        <li>Behavioural anomaly detection</li>
+                                        <li>Collections propensity model</li>
+                                    </ul>
                                 </div>
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
                                     <div class="service-header">
@@ -1706,7 +1731,12 @@ We’ll show you the right problems. -->
                                         <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
                                                 alt="arrow"></div>
                                     </div>
-                                    <ul class="service-list"></ul>
+                                    <ul class="service-list">
+                                        <li>Fraud intelligence dashboard</li>
+                                        <li>Credit risk monitor</li>
+                                        <li>Tighten my risk controls</li>
+                                        <li>Tighten my risk controls</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -1734,7 +1764,7 @@ We’ll show you the right problems. -->
                                     models you can explain, a log for every decision, drift monitoring, a human who can
                                     overrule it, and a governance story your compliance team can walk an inspector
                                     through without their pulse changing.</p>
-                                <button class="fix-btn">DEPLOY AI THE RIGHT WAY</button>
+                                <button class="fix-btn">Deploy AI the right way</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
@@ -1756,7 +1786,12 @@ We’ll show you the right problems. -->
                                         <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
                                                 alt="arrow"></div>
                                     </div>
-                                    <ul class="service-list"></ul>
+                                    <ul class="service-list">
+                                        <li>Explainable AI deployment</li>
+                                        <li>Model monitoring and drift</li>
+                                        <li>NLP query layer</li>
+                                        <li>Predictive operations AI</li>
+                                    </ul>
                                 </div>
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
                                     <div class="service-header">
@@ -1764,7 +1799,12 @@ We’ll show you the right problems. -->
                                         <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
                                                 alt="arrow"></div>
                                     </div>
-                                    <ul class="service-list"></ul>
+                                    <ul class="service-list">
+                                        <li>AI governance dashboard</li>
+                                        <li>Model audit log</li>
+                                        <li>Regulator-ready AI pack</li>
+                                        <li>Model performance monitor</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -1792,7 +1832,7 @@ We’ll show you the right problems. -->
                                     and find that gap. Then we redesign the programme around it and put in the
                                     governance and change management that turns your very large invoice into something
                                     you can point to in a board meeting and feel good about.</p>
-                                <button class="fix-btn">RECOVER MY PROGRAMME</button>
+                                <button class="fix-btn">Recover my programme</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
@@ -1814,7 +1854,12 @@ We’ll show you the right problems. -->
                                         <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
                                                 alt="arrow"></div>
                                     </div>
-                                    <ul class="service-list"></ul>
+                                    <ul class="service-list">
+                                        <li>Deploy AI the right way</li>
+                                        <li>Dependency and risk mapping</li>
+                                        <li>Adoption signal monitoring</li>
+                                        <li>Value realisation tracking</li>
+                                    </ul>
                                 </div>
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
                                     <div class="service-header">
@@ -1822,7 +1867,12 @@ We’ll show you the right problems. -->
                                         <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
                                                 alt="arrow"></div>
                                     </div>
-                                    <ul class="service-list"></ul>
+                                    <ul class="service-list">
+                                        <li>Programme control dashboard</li>
+                                        <li>Benefits tracker</li>
+                                        <li>Stakeholder alignment tool</li>
+                                        <li>Transformation health monitor</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -1851,7 +1901,7 @@ We’ll show you the right problems. -->
                                     decision rights, sandboxes where they can build without convening a committee, and
                                     roles defined so a fintech brain can ship something before the enthusiasm wears off.
                                 </p>
-                                <button class="fix-btn">FIX MY TALENT INTEGRATION</button>
+                                <button class="fix-btn">Fix my talent integration</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
@@ -1873,7 +1923,12 @@ We’ll show you the right problems. -->
                                         <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
                                                 alt="arrow"></div>
                                     </div>
-                                    <ul class="service-list"></ul>
+                                    <ul class="service-list">
+                                        <li>Fix my talent integration</li>
+                                        <li>Attrition risk prediction</li>
+                                        <li>Skill gap identification</li>
+                                        <li>Collaboration pattern mapping</li>
+                                    </ul>
                                 </div>
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
                                     <div class="service-header">
@@ -1881,7 +1936,2100 @@ We’ll show you the right problems. -->
                                         <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
                                                 alt="arrow"></div>
                                     </div>
-                                    <ul class="service-list"></ul>
+                                    <ul class="service-list">
+                                        <li>Digital talent dashboard</li>
+                                        <li>Innovation pipeline tracker</li>
+                                        <li>Retention risk monitor</li>
+                                        <li>Capability development tool</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="problems-container" id="problems-insurance" style="display: none;">
+                <div class="problem-item problem-header">
+                    <div class="problem-left">
+                        <div class="problem-heading-text">PROBLEMS</div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-heading-text">STHIROS SOLUTION</div>
+                    </div>
+                </div>
+                <div class="problem-item active" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">IRDAI mandates are changing faster than I can implement them</div>
+                            <div class="problem-desc">Bima Sugam, data localisation, EoM norms — the pace of regulatory
+                                change is outrunning my capacity to act on it.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>IRDAI compliance that runs quietly in the background</h3>
+                                <p>Bima Sugam, the EoM norms, data localisation, product-approval timelines that keep
+                                    shrinking — IRDAI has kept everyone busy these past couple of years. Most insurers
+                                    still treat compliance as something you do at quarter-end, in a hurry, with the
+                                    lights on late. We turn it into something that watches itself: every obligation
+                                    owned, every change assessed the day it lands, implementation tracked, and a board
+                                    view clear enough that nobody gets surprised in a meeting. It hums along in the
+                                    background, the way it always should have.</p>
+                                <button class="fix-btn">FIX MY COMPLIANCE MODEL</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>IRDAI compliance gap assessment</li>
+                                        <li>Regulatory operating model</li>
+                                        <li>Change impact framework</li>
+                                        <li>Board compliance reporting</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>IRDAI circular monitoring</li>
+                                        <li>Change impact scoring</li>
+                                        <li>Change impact scoring</li>
+                                        <li>Compliance posture tracking</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Compliance posture tracking</li>
+                                        <li>Regulatory calendar</li>
+                                        <li>Implementation tracker</li>
+                                        <li>Board risk reporting tool</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">Claims processing is slow, manual,<br> and quietly killing my
+                                renewals
+                            </div>
+                            <div class="problem-desc">My claims TAT is dragging down renewal rates. The process is still
+                                paper-heavy and my teams drown at peak.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Faster claims that don't quietly invite fraud</h3>
+                                <p>Claims speed is the thing your customers judge you on, and the thing that wrecks your
+                                    loss ratio the moment you get sloppy about it. Both are true at the same time, which
+                                    is exactly why claims is hard. We rebuild the whole path: digital first notice of
+                                    loss, document checks that don't need a human squinting at a PDF, straight-through
+                                    processing for the easy claims, and an AI layer that quietly pulls the inflated and
+                                    duplicate ones before the money's out the door.</p>
+                                <button class="fix-btn">Transform my claims process</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Claims process redesign</li>
+                                        <li>FNOL and intake digitalisation</li>
+                                        <li>STP eligibility framework</li>
+                                        <li>Fraud control architecture</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>AI claims fraud detection</li>
+                                        <li>Document validation AI</li>
+                                        <li>STP eligibility scoring</li>
+                                        <li>TAT prediction and alerts</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Claims intelligence dashboard</li>
+                                        <li>Digital FNOL portal</li>
+                                        <li>STP processing engine</li>
+                                        <li>Fraud detection monitor</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">My underwriting is still actuarial gut-feel, not data</div>
+                            <div class="problem-desc">Competitors price risk on real-time behavioural and alternative
+                                data. My model hasn't fundamentally moved in years.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Underwriting that keeps up with the people you're up against</h3>
+                                <p>Underwriting used to be a question of historical loss tables. These days it's
+                                    behavioural signals, telematics and alternative data, and the insurers using them
+                                    price sharper than you do. The uncomfortable part isn't the volume they take. It's
+                                    the quality: they keep the good risks, and the ones they decline drift over to you.
+                                    That's adverse selection, and it compounds quietly until suddenly it doesn't. We
+                                    rebuild the underwriting model, plus the data and AI beneath it, so your pricing
+                                    recalibrates continuously rather than once a year in a spreadsheet nobody enjoys
+                                    opening.
+                                </p>
+                                <button class="fix-btn">Modernise my underwriting</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Underwriting model audit</li>
+                                        <li>Alternative data strategy</li>
+                                        <li>Risk pricing framework redesign</li>
+                                        <li>Actuarial and AI integration</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>AI risk scoring engine</li>
+                                        <li>Alternative data integration</li>
+                                        <li>Real-time pricing model</li>
+                                        <li>Adverse selection detection</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Underwriting intelligence platform</li>
+                                        <li>Risk pricing dashboard</li>
+                                        <li>Alternative data connector</li>
+                                        <li>Model performance tracker</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">Digital distribution is the priority, but I don't have the
+                                platform</div>
+                            <div class="problem-desc">The Bima Sugam opportunity is real. My policy admin system and API
+                                architecture aren't ready for embedded or digital-first distribution.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Distribution ready for Bima Sugam before it matters</h3>
+                                <p>Bima Sugam is a shared rail for selling insurance, and it only helps the insurers
+                                    whose policy admin, APIs and customer data are actually ready to plug into it. Most
+                                    legacy stacks aren't. They were never built for real-time distribution, embedded
+                                    flows, or the consent rules IRDAI now takes seriously. We build the platform that
+                                    gets your products in front of customers wherever they happen to be, which
+                                    increasingly isn't your website.</p>
+                                <button class="fix-btn">Build my digital distribution</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Digital distribution strategy</li>
+                                        <li>Digital distribution strategy</li>
+                                        <li>API architecture design</li>
+                                        <li>Partner onboarding framework</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Product recommendation engine</li>
+                                        <li>Customer need prediction</li>
+                                        <li>Distribution channel optimisation</li>
+                                        <li>Conversion intelligence</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Digital distribution platform</li>
+                                        <li>Bima Sugam connector</li>
+                                        <li>Partner API portal</li>
+                                        <li>Distribution performance dashboard</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">Claims fraud is eating into my loss ratio
+                            </div>
+                            <div class="problem-desc">Staged accidents, inflated bills, duplicate claims in motor and
+                                health — my detection is still manual and exception-based.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Catching claims fraud while the money's still in the building</h3>
+                                <p>Staged accidents, inflated hospital bills, the same claim filed twice, garages and
+                                    clinics that are a touch too cooperative. Manual, exception-based detection catches
+                                    a slice of it, usually after the cheque has cleared. We put an AI layer in front of
+                                    approval that screens every claim as it arrives, using behavioural signals, network
+                                    analysis and anomaly detection trained on how fraud actually works in India, rather
+                                    than a model that learned its trade somewhere it's never seen a cashless garage.</p>
+                                <button class="fix-btn">Build my fraud detection</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Fraud pattern analysis</li>
+                                        <li>Detection framework design</li>
+                                        <li>Investigation process redesign</li>
+                                        <li>SIU capability assessment</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Real-time fraud scoring</li>
+                                        <li>Network and collusion detection</li>
+                                        <li>Anomaly pattern identification</li>
+                                        <li>Claim risk flagging</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Claims fraud intelligence tool</li>
+                                        <li>Real-time screening engine</li>
+                                        <li>SIU case management portal</li>
+                                        <li>Fraud loss tracker</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">I want AI in underwriting and claims, but I need a safe framework
+                            </div>
+                            <div class="problem-desc">AI in insurance carries specific regulatory risk. IRDAI's data-use
+                                and consumer-protection rules make unstructured deployment genuinely dangerous.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>AI in insurance, inside IRDAI's guardrails</h3>
+                                <p>Point AI at underwriting, claims or customer communication and IRDAI's
+                                    data-governance and consumer-protection rules come along with it, whether you
+                                    planned for them or not. Skip the governance and you've bought regulatory and
+                                    reputational risk in a single move, which is impressively efficient but not the
+                                    goal. We build the governance model first: explainability you can defend, bias
+                                    testing that's actually run, a consent architecture that holds, and an audit trail
+                                    showing the regulator you thought about all of this before switching anything on.
+                                </p>
+                                <button class="fix-btn">Deploy AI responsibly</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Insurance AI governance design</li>
+                                        <li>IRDAI compliance framework</li>
+                                        <li>Bias testing methodology</li>
+                                        <li>Consumer protection architecture</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Explainable AI deployment</li>
+                                        <li>Bias and fairness monitoring</li>
+                                        <li>Model audit logging</li>
+                                        <li>Consumer consent AI layer</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>AI governance dashboard</li>
+                                        <li>Model audit trail tool</li>
+                                        <li>Bias monitoring system</li>
+                                        <li>Consumer consent portal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="problems-container" id="problems-fintech" style="display: none;">
+                <div class="problem-item problem-header">
+                    <div class="problem-left">
+                        <div class="problem-heading-text">PROBLEMS</div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-heading-text">STHIROS SOLUTION</div>
+                    </div>
+                </div>
+                <div class="problem-item active" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">My ops can't keep up with product growth</div>
+                            <div class="problem-desc">We went from 10 to 200 people in 18 months. Finance is in Excel,
+                                compliance is one person, risk controls are founder judgement.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>The unglamorous machine behind the product</h3>
+                                <p>Products scale in months. The machinery underneath tends to lag by a year or two, and
+                                    it shows. By Series B the finance function is a heroic spreadsheet, compliance is
+                                    one person answering everything, risk control is founder instinct, and the board has
+                                    started asking for numbers you can't cleanly produce. We build the boring, essential
+                                    infrastructure — finance, risk, compliance, governance — for the company you're
+                                    about to be, not the one you were back when the spreadsheet still worked.</p>
+                                <button class="fix-btn">Build my operating model</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Operating model design</li>
+                                        <li>Finance function build-out</li>
+                                        <li>Regulatory compliance architecture</li>
+                                        <li>Board reporting design</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>AI-powered finance ops</li>
+                                        <li>Automated compliance monitoring</li>
+                                        <li>Unit economics intelligence</li>
+                                        <li>Investor reporting automation</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Fintech ops command centre</li>
+                                        <li>CFO dashboard and pack</li>
+                                        <li>Compliance tracker</li>
+                                        <li>Board reporting system</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">Regulatory licensing is blocking my next product line</div>
+                            <div class="problem-desc">RBI PA licence, NBFC registration, SEBI IA licence — the pathway's
+                                unclear and the application is eating time I don't have.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>The licence, minus the wasted quarters</h3>
+                                <p>PA licence, NBFC registration, SEBI IA or RA — the licensing path is a maze, the
+                                    order you do things in matters more than people expect, and mistakes cost real time.
+                                    We map the exact route for what you're trying to build, write the application,
+                                    handle the back-and-forth with the regulator, and set up the compliance you'll need
+                                    to hold on to the licence afterwards. Getting one is the easy half. Keeping it is
+                                    where most people trip.</p>
+                                <button class="fix-btn">Navigate my licensing</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Licensing pathway mapping</li>
+                                        <li>Application documentation</li>
+                                        <li>Regulatory interface management</li>
+                                        <li>Compliance architecture design</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Regulatory requirement tracking</li>
+                                        <li>Application completeness checking</li>
+                                        <li>Compliance gap identification</li>
+                                        <li>Timeline risk monitoring</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Licensing tracker and portal</li>
+                                        <li>Compliance requirement map</li>
+                                        <li>Application document repository</li>
+                                        <li>Regulatory calendar</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">Investors want CFO-grade reporting I can't yet produce</div>
+                            <div class="problem-desc">Board pack, cohort analysis, unit economics by product — I'm
+                                building it by hand every quarter, and it shows.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Numbers a Series C diligence team won't unpick</h3>
+                                <p>Cohorts, unit economics by product, CAC and LTV by channel, margins by segment.
+                                    Investors want all of it, every quarter, and they want it to reconcile. Stitching it
+                                    together by hand from five systems is slow, quietly inconsistent, and tends to come
+                                    apart the moment a diligence team starts pulling threads. We design the reporting
+                                    architecture and build the stack that generates these numbers on their own, so the
+                                    last week of every quarter stops being a fire drill.
+                                </p>
+                                <button class="fix-btn">Build my CFO reporting</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Financial reporting design</li>
+                                        <li>Cohort analysis framework</li>
+                                        <li>Unit economics architecture</li>
+                                        <li>Board pack structure</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Automated report generation</li>
+                                        <li>Cohort intelligence AI</li>
+                                        <li>Unit economics modelling</li>
+                                        <li>Investor narrative synthesis</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>CFO intelligence dashboard</li>
+                                        <li>Automated board pack tool</li>
+                                        <li>Cohort analysis platform</li>
+                                        <li>Unit economics tracker</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">Fraud is scaling right alongside my transaction volume</div>
+                            <div class="problem-desc">As GMV grows, so does fraud. My rule-based detection is too slow,
+                                too blunt, and throwing off too many false positives.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Fraud detection that stops blocking your real customers</h3>
+                                <p>Rules don't scale with you. As GMV climbs, so does fraud, and a rules engine responds
+                                    to both by getting twitchier, blocking more good customers while the clever fraud
+                                    strolls straight past. We build the AI layer that replaces the guesswork:
+                                    behavioural models, device intelligence, network analysis, and a feedback loop so
+                                    the thing gets a little smarter every time it sees a transaction. Left alone, most
+                                    fraud systems go stale. This one doesn't.</p>
+                                <button class="fix-btn">Build my fraud detection</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Fraud detection audit</li>
+                                        <li>Model strategy design</li>
+                                        <li>False positive reduction framework</li>
+                                        <li>Escalation and review process</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>ML fraud detection engine</li>
+                                        <li>Behavioural pattern modelling</li>
+                                        <li>Device and network intelligence</li>
+                                        <li>Real-time risk scoring</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Fraud intelligence platform</li>
+                                        <li>Real-time detection dashboard</li>
+                                        <li>False positive tracker</li>
+                                        <li>Fraud loss analytics tool</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">I want to embed AI, but the data infrastructure isn't there
+                            </div>
+                            <div class="problem-desc">AI's on the roadmap. My data is fragmented across systems,
+                                unclean, and nowhere near a state a model will train on reliably.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>The data plumbing your AI roadmap quietly depends on</h3>
+                                <p>Every AI feature on your roadmap rests on data, and if that data is scattered across
+                                    systems, half-clean and in no state to train a model, the roadmap is decoration. We
+                                    go under the hood: audit what you've got, build the unified data layer, clean and
+                                    structure the datasets that matter, and stand up the feature pipeline that turns
+                                    those roadmap slides into things you can ship.</p>
+                                <button class="fix-btn">Build my data infrastructure</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Data architecture audit</li>
+                                        <li>AI-readiness assessment</li>
+                                        <li>Data governance design</li>
+                                        <li>Feature engineering strategy</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Data quality AI</li>
+                                        <li>Automated feature engineering</li>
+                                        <li>Data pipeline monitoring</li>
+                                        <li>Model readiness scoring</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Unified data layer</li>
+                                        <li>Unified data layer</li>
+                                        <li>Feature store platform</li>
+                                        <li>AI readiness tracker</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">I need to build an institutional board and leadership team</div>
+                            <div class="problem-desc">Moving from founder-led to professionally managed. I don't know
+                                how to structure the board, who to hire first, or how to set up governance.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>From founder-run to grown-up, without the classic mistakes</h3>
+                                <p>Going from founder-run to properly governed is one of the trickier moments in a
+                                    company's life, and it's littered with expensive mistakes: the wrong board, a CFO
+                                    hired before anyone defined the job, governance that generates meetings but not
+                                    accountability. We've watched all of them happen. So we design the transition
+                                    deliberately — board, committees, first senior hires — and a governance model built
+                                    to grow with the company rather than sit on top of it like a weight.
+                                </p>
+                                <button class="fix-btn">FIX MY TALENT INTEGRATION</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Board composition design</li>
+                                        <li>Committee structure</li>
+                                        <li>Executive hiring specification</li>
+                                        <li>Governance operating model</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Leadership gap analysis</li>
+                                        <li>Governance benchmarking</li>
+                                        <li>Board effectiveness scoring</li>
+                                        <li>Succession planning intelligence</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Board management portal</li>
+                                        <li>Governance tracker</li>
+                                        <li>Governance tracker</li>
+                                        <li>Committee calendar system</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="problems-container" id="problems-payments" style="display: none;">
+                <div class="problem-item problem-header">
+                    <div class="problem-left">
+                        <div class="problem-heading-text">PROBLEMS</div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-heading-text">STHIROS SOLUTION</div>
+                    </div>
+                </div>
+                <div class="problem-item active" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+
+                            <div class="problem-text">Transaction fraud is scaling faster than my detection</div>
+                            <div class="problem-desc">UPI fraud, merchant fraud, account takeover — my rules engine
+                                throws too many false positives and misses too many real ones.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Fraud detection that keeps pace with UPI</h3>
+                                <p>At UPI speed, a rules engine is always fighting the last war. By the time you've
+                                    spotted the pattern and written the rule, the fraud has moved somewhere else. We
+                                    build the layer that works at the same speed the fraud does: behavioural models,
+                                    device fingerprinting, velocity checks, and a network graph that notices a
+                                    coordinated ring while it's still small enough to shut down.</p>
+                                <button class="fix-btn">Build my fraud detection</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Fraud strategy design</li>
+                                        <li>Detection model architecture</li>
+                                        <li>False positive reduction</li>
+                                        <li>Merchant fraud framework</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Real-time ML fraud detection</li>
+                                        <li>Network graph analysis</li>
+                                        <li>Device and behavioural intelligence</li>
+                                        <li>Velocity and pattern scoring</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Fraud intelligence platform</li>
+                                        <li>Real-time detection dashboard</li>
+                                        <li>Merchant risk monitor</li>
+                                        <li>Fraud loss analytics</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">PA/PG compliance is a permanent operational tax</div>
+                            <div class="problem-desc">Aggregator licensing, nodal accounts, data localisation, merchant
+                                KYC — the overhead is eating the bandwidth I need to grow.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>PA/PG compliance that takes care of itself</h3>
+                                <p>PA and PG compliance isn't a box you tick once. It's a running obligation that never
+                                    quite stops: nodal accounts, merchant KYC and due diligence, data localisation,
+                                    settlement reporting, and now the TPAP framework arriving to keep things
+                                    interesting. We rebuild the lot into a system that hums along on its own, so
+                                    compliance stops surfacing as a fire on the last day of the quarter.</p>
+                                <button class="fix-btn">Fix my PA compliance</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>PA/PG compliance framework</li>
+                                        <li>Merchant KYC operating model</li>
+                                        <li>Nodal account governance</li>
+                                        <li>Settlement reporting design</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>LSettlement reporting design</li>
+                                        <li>Compliance deadline monitoring</li>
+                                        <li>Settlement anomaly detection</li>
+                                        <li>Regulatory change tracking</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>PA compliance dashboard</li>
+                                        <li>Merchant KYC portal</li>
+                                        <li>Nodal account tracker</li>
+                                        <li>Settlement reconciliation tool</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">Settlement reconciliation tool</div>
+                            <div class="problem-desc">BNPL, merchant lending, consumer credit — low precision at high
+                                volume. Approval rates and delinquency are both too high.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Credit decisions that are quick and rarely wrong</h3>
+                                <p>BNPL, merchant advances, credit at checkout — at these volumes you need underwriting
+                                    that's fast, accurate, and paying attention to how the book is actually performing
+                                    week to week. A static scorecard and a human review can't manage all three at once.
+                                    We build the decisioning engine that can: bureau data, alternative signals,
+                                    behaviour, and a model that learns a little more every time a loan is repaid, or
+                                    isn't.
+                                </p>
+                                <button class="fix-btn">Build my credit decisioning</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Credit strategy design</li>
+                                        <li>Scorecard audit and redesign</li>
+                                        <li>Alternative data strategy</li>
+                                        <li>Portfolio risk framework</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>AI credit scoring engine</li>
+                                        <li>Alternative data integration</li>
+                                        <li>Dynamic risk pricing</li>
+                                        <li>Early delinquency prediction</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Credit intelligence platform</li>
+                                        <li>Real-time decisioning engine</li>
+                                        <li>Portfolio risk dashboard</li>
+                                        <li>Early warning system</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">Settlement architecture is throwing reconciliation failures</div>
+                            <div class="problem-desc">Multi-bank, multi-instrument, multi-currency flows through a
+                                system built for a fraction of today's volume. It's breaking.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Settlement that stops breaking on you</h3>
+                                <p>Multi-bank, multi-instrument, multi-currency. The flows got complicated and the
+                                    reconciliation system didn't keep up. Built for a tenth of today's volume, it fails
+                                    in ways that are both costly and embarrassing, and at scale an unreconciled pile
+                                    stops being a nuisance and becomes an incident with your name on it. We rebuild the
+                                    settlement architecture and the reconciliation engine around the volume you run
+                                    today, on the reasonable assumption that it'll be larger tomorrow.</p>
+                                <button class="fix-btn">Fix my settlement architecture</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Settlement architecture audit</li>
+                                        <li>Reconciliation process redesign</li>
+                                        <li>Bank and instrument integration</li>
+                                        <li>Exception management framework</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>AI reconciliation engine</li>
+                                        <li>Anomaly and exception detection</li>
+                                        <li>Settlement failure prediction</li>
+                                        <li>Multi-bank matching automation</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Settlement intelligence platform</li>
+                                        <li>Automated reconciliation tool</li>
+                                        <li>Exception management portal</li>
+                                        <li>Settlement health dashboard</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">Collections efficiency drops as the book grows
+                            </div>
+                            <div class="problem-desc">Collections efficiency drops as the book grows.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Collections that knows who to call and who to leave alone</h3>
+                                <p>Who pays back, and when, varies enormously: by cohort, geography, channel, product,
+                                    how far behind they already are. Run everyone through the same dialler with the same
+                                    reminder and you'll leave money uncollected while irritating the borrowers who were
+                                    always going to pay. We segment collections properly and build a propensity model
+                                    that works out who needs a nudge, who needs a call, and who genuinely just forgot,
+                                    then times each one for when it'll actually land.</p>
+                                <button class="fix-btn">Collections strategy redesign</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Collections strategy redesign</li>
+                                        <li>Segment-level tactic design</li>
+                                        <li>Channel and timing optimisation</li>
+                                        <li>Legal and regulatory compliance</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Repayment propensity scoring</li>
+                                        <li>Optimal channel prediction</li>
+                                        <li>Early delinquency identification</li>
+                                        <li>Promise-to-pay tracking AI</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Collections intelligence platform</li>
+                                        <li>Segment performance dashboard</li>
+                                        <li>AI-powered nudge engine</li>
+                                        <li>Recovery tracking tool</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">I want real-time risk intelligence across the whole stack</div>
+                            <div class="problem-desc">I have data from every layer — issuer, acquirer, merchant,
+                                consumer — and no unified view that reads it together in real time.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>One risk picture instead of six half-pictures</h3>
+                                <p>You already have the signals. Transaction data on the issuing side, merchant
+                                    behaviour on the acquiring side, repayment patterns from the lending book. What you
+                                    don't have is anything reading them together, so each team makes a decent call on a
+                                    third of the picture. We build the layer that pulls all of it into one real-time
+                                    view, which lets you make risk decisions no single feed could ever justify on its
+                                    own.
+                                </p>
+                                <button class="fix-btn">Risk intelligence architectur</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Risk intelligence architectur</li>
+                                        <li>Data source integration strategy</li>
+                                        <li>Signal hierarchy design</li>
+                                        <li>Decision logic framework</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Cross-stack risk synthesis</li>
+                                        <li>Real-time signal aggregation</li>
+                                        <li>Multi-source anomaly detection</li>
+                                        <li>Predictive risk scoring</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Unified risk intelligence platform</li>
+                                        <li>Real-time risk dashboard</li>
+                                        <li>Cross-stack signal connector</li>
+                                        <li>Risk decision engine</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="problems-container" id="problems-amc" style="display: none;">
+                <div class="problem-item problem-header">
+                    <div class="problem-left">
+                        <div class="problem-heading-text">PROBLEMS</div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-heading-text">STHIROS SOLUTION</div>
+                    </div>
+                </div>
+                <div class="problem-item active" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">SEBI IA and RA compliance is creating constant friction</div>
+                            <div class="problem-desc">Fee disclosure, suitability, research independence — the rules for
+                                investment advice changed, and my systems didn't.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>SEBI compliance that stops living in workarounds</h3>
+                                <p>SEBI's rules for advisers and research analysts — fee structures, suitability,
+                                    conflict disclosures, the walls around research independence — added up to a
+                                    compliance load most wealth platforms are quietly carrying on duct tape and good
+                                    intentions. We rebuild it into something solid: workflows that make sense,
+                                    suitability documented as it happens, disclosures managed automatically, and an
+                                    audit trail that survives a SEBI visit without anyone losing a weekend to it.</p>
+                                <button class="fix-btn">Fix my SEBI compliance</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Fix my SEBI compliance</li>
+                                        <li>Fix my SEBI compliance</li>
+                                        <li>Suitability framework design</li>
+                                        <li>Disclosure management process</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Regulatory change monitoring</li>
+                                        <li>Suitability scoring AI</li>
+                                        <li>Disclosure completeness checking</li>
+                                        <li>Conflict of interest flagging</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Compliance control dashboard</li>
+                                        <li>Suitability assessment tool</li>
+                                        <li>Disclosure management portal</li>
+                                        <li>Regulatory calendar system</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">Portfolio reporting and client comms are still largely manual
+                            </div>
+                            <div class="problem-desc">Personalised views, tax overlays, goal-tracking — clients expect
+                                it digitally and in real time. My back-office can't produce it at scale.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Client reporting that's fresh when it lands</h3>
+                                <p>Your HNI and mass-affluent clients want a live view of their portfolio, their goals,
+                                    the tax picture, what's actually driving returns, on a screen, whenever they feel
+                                    like checking. Most back offices are still sending batch reports that were out of
+                                    date before they hit the inbox. We rebuild the reporting so it generates and
+                                    delivers itself, personalised and compliant, at whatever scale you need, and nobody
+                                    in operations spends their evening hand-building packs.</p>
+                                <button class="fix-btn">Build my client reporting</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Client reporting strategy</li>
+                                        <li>Personalisation framework</li>
+                                        <li>Tax overlay design</li>
+                                        <li>Regulatory disclosure architecture</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Personalised narrative generation</li>
+                                        <li>Tax optimisation suggestions</li>
+                                        <li>Goal tracking intelligence</li>
+                                        <li>Performance attribution AI</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Client portfolio portal</li>
+                                        <li>Personalised reporting engine</li>
+                                        <li>Tax overlay tool</li>
+                                        <li>Goal tracking dashboard</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">Acquisition cost is rising and AUM per client isn't</div>
+                            <div class="problem-desc">My distribution is advisor-led and expensive. Digital acquisition
+                                is an aspiration — I don't have the platform or the content engine for it.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Winning clients without a relationship manager for each one</h3>
+                                <p>An advisor for every client is expensive, and it stops scaling right around the point
+                                    you most want to grow. Acquiring clients digitally — through content, search, the
+                                    right platform partnerships — runs on a completely different machine: lead capture,
+                                    onboarding that happens on a phone, suitability handled automatically, and a nurture
+                                    sequence that walks a curious prospect all the way to funded without a human at
+                                    every turn. We build that machine, end to end.
+                                </p>
+                                <button class="fix-btn">Build my acquisition engine</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Build my acquisition engine</li>
+                                        <li>Funnel architecture design</li>
+                                        <li>Content and SEO strategy</li>
+                                        <li>Partner channel design</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Lead scoring and prioritisation</li>
+                                        <li>Personalised nurture AI</li>
+                                        <li>Conversion prediction model</li>
+                                        <li>Churn risk identification</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Digital acquisition funnel</li>
+                                        <li>Lead management platform</li>
+                                        <li>Automated nurture engine</li>
+                                        <li>AUM growth tracker</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">I want AI-driven portfolio construction, but lack the
+                                infrastructure</div>
+                            <div class="problem-desc">Factor models, alternative data, personalised rebalancing — the
+                                gap between what I offer and what fintechs offer keeps widening.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Portfolio construction that keeps up with the wealthtechs</h3>
+                                <p>The distance between what a traditional AMC offers and what an AI-native wealthtech
+                                    offers grows a little every quarter. Factor models, rebalancing that reacts in real
+                                    time, alternative data, portfolios shaped to the individual — clients have quietly
+                                    started assuming all of it comes standard. We design the investment methodology and
+                                    build the AI underneath so you can deliver it to thousands of clients at once.
+                                    Describing this stuff in a pitch is easy. Doing it is the part we handle.</p>
+                                <button class="fix-btn">Build my portfolio AI</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Investment methodology design</li>
+                                        <li>Factor model architecture</li>
+                                        <li>Alternative data strategy</li>
+                                        <li>Personalisation framework</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>AI portfolio construction engine</li>
+                                        <li>Factor signal processing</li>
+                                        <li>Alternative data integration</li>
+                                        <li>Personalised rebalancing AI</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Portfolio construction platform</li>
+                                        <li>Factor model dashboard</li>
+                                        <li>Rebalancing engine/li>
+                                        <li>Investment intelligence tool</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">AML and KYC friction is costing me clients at onboarding
+                            </div>
+                            <div class="problem-desc">Onboarding is slow and manual. Fintechs onboard in minutes — and
+                                I'm losing prospects to them at the door.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Onboarding that's compliant and doesn't lose the client</h3>
+                                <p>The quickest way to lose a wealthy prospect is a long, form-heavy onboarding. The
+                                    catch is that SEBI's KYC and AML rules genuinely require a documented, auditable
+                                    process, so you can't just cut it short and hope for the best. We redesign
+                                    onboarding to satisfy both: e-KYC, video KYC where the rules ask for it, AML
+                                    screening that runs itself, and a suitability check that's regulator-grade but fast
+                                    enough the client doesn't give up and open an app instead.</p>
+                                <button class="fix-btn">Fix my onboarding and KYC</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Onboarding process redesign</li>
+                                        <li>KYC and AML framework</li>
+                                        <li>Suitability assessment design</li>
+                                        <li>Regulatory documentation architecture</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Document verification AI</li>
+                                        <li>AML screening engine</li>
+                                        <li>Suitability scoring AI</li>
+                                        <li>Onboarding drop-off prediction/li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Digital onboarding portal</li>
+                                        <li>KYC verification tool</li>
+                                        <li>AML screening system</li>
+                                        <li>Suitability assessment engine</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">Fee compression is structural, and I haven't responded</div>
+                            <div class="problem-desc">TER caps, direct-plan migration, commission disclosure — the
+                                revenue model changed permanently. My operations didn't.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Making the maths work at today's fees</h3>
+                                <p>TER caps, direct plans, commission disclosure, the move to fee-based advice — the
+                                    revenue you earn per rupee of AUM has fallen, and it isn't coming back. Most AMCs
+                                    and IFAs have adjusted the pitch but not the cost base underneath it. We redesign
+                                    the operating model: find where your costs still assume the old economics, automate
+                                    the work that shouldn't need people, and get the business to a place where it makes
+                                    money at today's fees rather than yesterday's.
+                                </p>
+                                <button class="fix-btn">Respond to fee compression</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Operating model audit</li>
+                                        <li>Cost structure redesign</li>
+                                        <li>Process automation strategy</li>
+                                        <li>Revenue model repositioning</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Cost driver analysis</li>
+                                        <li>Cost driver analysis</li>
+                                        <li>Revenue optimisation modelling</li>
+                                        <li>Fee sensitivity analysis</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Operating efficiency dashboard</li>
+                                        <li>Cost tracker</li>
+                                        <li>Process automation tool</li>
+                                        <li>Revenue model monitor</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="problems-container" id="problems-microfinance" style="display: none;">
+                <div class="problem-item problem-header">
+                    <div class="problem-left">
+                        <div class="problem-heading-text">PROBLEMS</div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-heading-text">STHIROS SOLUTION</div>
+                    </div>
+                </div>
+                <div class="problem-item active" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">Credit assessment without formal history is too slow and too
+                                manual</div>
+                            <div class="problem-desc">Thin files, informal income, group-lending dynamics — my
+                                underwriting is experience-based and doesn't scale. Approval TAT is a disadvantage.
+                            </div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Credit calls for the borrowers no bureau has met</h3>
+                                <p>Your borrowers are exactly the people a credit bureau knows little or nothing about,
+                                    which is what makes them your whole market and impossible to score with ordinary
+                                    tools. As it turns out, the signal is elsewhere: alternative data, how a group
+                                    behaves, the small patterns in how people repay. We design the methodology around
+                                    that signal and build a scoring engine accurate enough to approve more without
+                                    approving worse, and fast enough to give a field officer an answer while they're
+                                    still sitting across from the borrower.</p>
+                                <button class="fix-btn">Build my credit assessment</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Credit methodology redesign</li>
+                                        <li>Alternative data strategy</li>
+                                        <li>Group lending risk framework</li>
+                                        <li>RBI compliance architecture</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Alternative data credit scoring</li>
+                                        <li>Group risk prediction model</li>
+                                        <li>Repayment psychographic analysis</li>
+                                        <li>Bureau thin-file augmentation</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Credit intelligence platform</li>
+                                        <li>Field-level decisioning tool</li>
+                                        <li>Alternative data connector</li>
+                                        <li>Scorecard performance tracker</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">Collections efficiency is diverging by geography and segment</div>
+                            <div class="problem-desc">Repayment rates split sharply by field officer, area and borrower
+                                type. I don't have the analytics to see why — or to act early.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Seeing a repayment problem 30 days before it's a problem</h3>
+                                <p>Repayment in microfinance is stubbornly local. One field officer's book performs; the
+                                    officer one block over struggles, and the reasons never show up in a district-level
+                                    number. We break the numbers down by officer, area, cohort and product until the
+                                    pattern's visible, then build the model that flags an account 30 to 60 days before
+                                    it slips into arrears, which is roughly the window in which you can still do
+                                    something useful about it.</p>
+                                <button class="fix-btn">Build my collections intelligence</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Collections strategy redesign</li>
+                                        <li>Field officer performance framework</li>
+                                        <li>Geographic risk analysis</li>
+                                        <li>Early intervention design</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Early delinquency prediction</li>
+                                        <li>Field officer performance AI</li>
+                                        <li>Geographic risk scoring</li>
+                                        <li>Repayment propensity model</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Collections intelligence dashboard</li>
+                                        <li>Field officer performance tool</li>
+                                        <li>Early warning system</li>
+                                        <li>Portfolio at risk tracker</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">The RBI MFI framework is creating compliance complexity</div>
+                            <div class="problem-desc">Indebtedness limits, income assessment, pricing caps — the 2022
+                                harmonised norms changed the rules, and my systems weren't built for them.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>MFI compliance that fits the 2022 rules, not the old ones</h3>
+                                <p>The 2022 harmonised framework changed the rules underneath you: indebtedness limits,
+                                    income assessment, pricing caps, stronger borrower protections. Most MFI systems
+                                    predate all of it, so compliance gets done by hand, which is slow, error-prone, and
+                                    a standing invitation for the regulator to find something. We rebuild the compliance
+                                    operating model around the framework as it reads today, not the one your software
+                                    was quietly written for.
+                                </p>
+                                <button class="fix-btn">MFI framework gap assessment</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>MFI framework gap assessment</li>
+                                        <li>Indebtedness monitoring design</li>
+                                        <li>Income assessment process</li>
+                                        <li>Borrower protection architecture</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Indebtedness limit monitoring</li>
+                                        <li>Income assessment AI</li>
+                                        <li>Compliance gap flagging</li>
+                                        <li>Regulatory change tracking</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>MFI compliance dashboard</li>
+                                        <li>Indebtedness tracker</li>
+                                        <li>Borrower assessment tool</li>
+                                        <li>Regulatory reporting system</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">Field officer churn is hurting portfolio quality</div>
+                            <div class="problem-desc">My field force is my product. High attrition means new officers on
+                                unfamiliar books — and that shows up directly in delinquency.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>When a field officer leaves, the portfolio shouldn't</h3>
+                                <p>In microfinance the field officer basically is the product. The relationship, the
+                                    credit judgement and the collections all live in one person's head, which is fine
+                                    right up until that person quits and takes their book's performance with them. We
+                                    move that knowledge into something more durable: structured credit protocols, client
+                                    records that live in a system rather than a notebook, performance you can actually
+                                    see, and training that gets a replacement productive before the portfolio starts to
+                                    slip.</p>
+                                <button class="fix-btn">Build my field force capability</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Field force operating model</li>
+                                        <li>Knowledge capture design</li>
+                                        <li>Training and onboarding system</li>
+                                        <li>Performance management framework</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Field officer productivity AI</li>
+                                        <li>Knowledge extraction tool</li>
+                                        <li>Training need identification</li>
+                                        <li>Performance pattern analysis</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Field force management platform</li>
+                                        <li>Digital client record system</li>
+                                        <li>Training management tool</li>
+                                        <li>Officer performance dashboard</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">My core MIS doesn't give me the intelligence I need
+                            </div>
+                            <div class="problem-desc">PAR by cohort, officer performance, early delinquency signals — my
+                                system produces lag reports. I need it in real time.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Knowing your PAR today, not next month</h3>
+                                <p>Most MFI reporting arrives weekly or monthly, which means by the time PAR-by-cohort
+                                    lands on your desk, the at-risk accounts are already at risk and you're reading
+                                    history. We build the layer that updates daily: portfolio health by area and
+                                    officer, early delinquency surfaced before it hits 30 days past due, and field
+                                    productivity in a shape a branch manager can act on the same morning, while the
+                                    problem is still small and cheap to fix.</p>
+                                <button class="fix-btn">Build my operational intelligence</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Operational intelligence design</li>
+                                        <li>KPI and metric framework</li>
+                                        <li>Data architecture for MFI MIS</li>
+                                        <li>Reporting cadence design</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Real-time PAR tracking</li>
+                                        <li>Early delinquency AI</li>
+                                        <li>Field performance anomaly detection</li>
+                                        <li>Portfolio health prediction</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>MFI operations command centre</li>
+                                        <li>Real-time PAR dashboard</li>
+                                        <li>Field performance tool</li>
+                                        <li>Branch manager intelligence app</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-item" onclick="toggleProblem(this)">
+                    <div class="problem-left">
+                        <div class="problem-left-content">
+                            <div class="problem-text">I want to move to digital lending, but need a compliant
+                                architecture</div>
+                            <div class="problem-desc">Digital applications, e-KYC, app-based repayment — the
+                                opportunity's real, but RBI's digital lending guidelines are a framework I have to get
+                                right before I scale.</div>
+                        </div>
+                        <div class="problem-arrow">
+                            <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="problem-right">
+                        <div class="problem-dropdown-content">
+                            <div class="solution-main">
+                                <h3>Digital lending that's compliant before you switch it on</h3>
+                                <p>RBI's digital lending guidelines — LSP engagement, what data you can collect, money
+                                    going straight to the borrower, the key fact statement — shape the architecture from
+                                    the ground up. Try to add the compliance afterwards and you'll be rebuilding, not
+                                    patching. So we design it in from the first sketch: the borrower journey, the LSP
+                                    framework, the tech stack, and the controls that keep you clean while you scale,
+                                    which is exactly the moment most lenders get sloppy.
+                                </p>
+                                <button class="fix-btn">Build my digital lending</button>
+                            </div>
+                            <div class="solution-sidebar">
+                                <div class="service-item active" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Consulting</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Digital lending strategy design</li>
+                                        <li>RBI DL guideline compliance</li>
+                                        <li>LSP engagement framework</li>
+                                        <li>Borrower journey architecture</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">AI layer</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Digital credit scoring</li>
+                                        <li>Borrower behaviour modelling</li>
+                                        <li>Repayment prediction</li>
+                                        <li>Compliance monitoring AI</li>
+                                    </ul>
+                                </div>
+                                <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
+                                    <div class="service-header">
+                                        <div class="service-title">Product we build</div>
+                                        <div class="service-arrow"><img src="assets/images/industrypage/redarrowimg.png"
+                                                alt="arrow"></div>
+                                    </div>
+                                    <ul class="service-list">
+                                        <li>Digital lending platform</li>
+                                        <li>Borrower onboarding portal</li>
+                                        <li>LSP management tool</li>
+                                        <li>Compliance control dashboard</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -2377,6 +4525,39 @@ We’ll show you the right problems. -->
             // Toggle the clicked service item
             element.classList.toggle('active');
         }
+
+        // Tab switching logic for Segment tabs
+        document.addEventListener('DOMContentLoaded', () => {
+            const segmentBtns = document.querySelectorAll('.segment-btn');
+            const problemContainers = document.querySelectorAll('.problems-container');
+
+            segmentBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    // Remove active class from all buttons
+                    segmentBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to the clicked button
+                    this.classList.add('active');
+
+                    // Hide all problem containers
+                    problemContainers.forEach(container => {
+                        container.style.display = 'none';
+                    });
+
+                    // Show the target container
+                    const targetId = this.getAttribute('data-target');
+                    if (targetId) {
+                        const targetContainer = document.getElementById(targetId);
+                        if (targetContainer) {
+                            targetContainer.style.display = 'flex';
+                            targetContainer.style.flexDirection = 'column';
+
+                            // Re-apply display block to container 
+                            targetContainer.style.display = 'block';
+                        }
+                    }
+                });
+            });
+        });
     </script>
 </body>
 
