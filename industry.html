@@ -4513,13 +4513,20 @@ We’ll show you the right problems. -->
         });
 
         function toggleProblem(element) {
-            // Toggle the clicked element
-            element.classList.toggle('active');
-
-            // Optionally, close other open problem items (if accordion behavior is desired)
-            // document.querySelectorAll('.problem-item').forEach(item => {
-            //     if(item !== element) item.classList.remove('active');
-            // });
+            const parent = element.closest('.problems-container');
+            const isActive = element.classList.contains('active');
+            
+            if (parent) {
+                parent.querySelectorAll('.problem-item').forEach(item => {
+                    if (item !== element) item.classList.remove('active');
+                });
+            }
+            
+            if (isActive) {
+                element.classList.remove('active');
+            } else {
+                element.classList.add('active');
+            }
         }
 
         function toggleService(element) {
