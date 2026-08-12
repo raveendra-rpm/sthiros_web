@@ -4515,13 +4515,13 @@ We’ll show you the right problems. -->
         function toggleProblem(element) {
             const parent = element.closest('.problems-container');
             const isActive = element.classList.contains('active');
-            
+
             if (parent) {
                 parent.querySelectorAll('.problem-item').forEach(item => {
                     if (item !== element) item.classList.remove('active');
                 });
             }
-            
+
             if (isActive) {
                 element.classList.remove('active');
             } else {
