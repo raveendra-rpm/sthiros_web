@@ -38,6 +38,10 @@ function boot() {
   initInsightIndustrySvgScroll();
   initOurTwoCentsBtmSvgScroll();
   initYoursCanTooSvgScroll();
+  initProductsHeroSvgScroll();
+  initComplianceSvgSequenceScroll();
+  initTellUsWhatSvgSequenceScroll();
+  initFloatingCurves();
 }
 
 let appBooted = false;
@@ -2624,5 +2628,109 @@ function initYoursCanTooSvgScroll() {
     // Animate top SVG first, then bottom SVG
     tl.to(topSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: 'none' })
       .to(btmSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: 'none' });
+  }
+}
+
+// ═══════════════ PRODUCTS HERO SVG BTM ANIMATION ═══════════════
+function initProductsHeroSvgScroll() {
+  const svg = document.querySelector('#svgherobtm svg');
+  if (svg) {
+    // Clear any previous stroke properties from the old approach
+    const paths = svg.querySelectorAll('path[stroke]');
+    paths.forEach(p => gsap.set(p, { clearProps: 'strokeDasharray,strokeDashoffset' }));
+
+    // Start completely hidden (width 0, left edge), starting slightly off-screen to the left
+    gsap.set(svg, { clipPath: 'polygon(-20% 0%, -20% 0%, -20% 100%, -20% 100%)' });
+    
+    gsap.to(svg, {
+      // Wipe to full width (left to right)
+      clipPath: 'polygon(-20% 0%, 100% 0%, 100% 100%, -20% 100%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.products-hero-section', // Using the very top section as trigger
+        start: 'top top',                  // Start exactly when scrolling begins
+        end: () => `+=${document.querySelector('#svgherobtm').offsetHeight * 0.3}`,
+        scrub: 1
+      }
+    });
+  }
+}
+
+// ═══════════════ COMPLIANCE SECTION SVG SEQUENCE ═══════════════
+function initComplianceSvgSequenceScroll() {
+  const topSvg = document.querySelector('.topdivsvg svg');
+  const midSvg = document.querySelector('.middledivsvg svg');
+  const btmSvg = document.querySelector('.bottomdivsvg svg');
+  
+  if (topSvg) gsap.set(topSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
+  if (midSvg) gsap.set(midSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
+  if (btmSvg) gsap.set(btmSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
+
+  if (!topSvg && !midSvg && !btmSvg) return;
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.svgconsecblc',
+      start: 'top 80%',
+      end: 'bottom 40%',
+      scrub: 1
+    }
+  });
+
+  if (topSvg) tl.to(topSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: 'none', duration: 2.7 });
+  if (midSvg) tl.to(midSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: 'none', duration: 11.6 });
+  if (btmSvg) tl.to(btmSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: 'none', duration: 6.6 });
+}
+
+// ═══════════════ TELL US WHAT SECTION SVG SEQUENCE ═══════════════
+function initTellUsWhatSvgSequenceScroll() {
+  const topSvg = document.querySelector('.telluswhatsvgtop svg');
+  const btmSvg = document.querySelector('.telluswhatsvgbtm svg');
+  
+  if (topSvg) gsap.set(topSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
+  if (btmSvg) gsap.set(btmSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
+
+  if (!topSvg && !btmSvg) return;
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#Telluswhatsstillbeingdonebyhandsec',
+      // Starts precisely when the previous section hits 40% (its end point)
+      // This naturally sequences them while speeding up this animation!
+      start: 'top 40%', 
+      end: 'bottom 40%',
+      scrub: 1
+    }
+  });
+
+  if (topSvg) tl.to(topSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: 'none', duration: 4.0 });
+  if (btmSvg) tl.to(btmSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', ease: 'none', duration: 3.1 });
+}
+
+// ═══════════════ CONTINUOUS FLOATING CURVES ═══════════════
+function initFloatingCurves() {
+  // Vertical floating (top to bottom)
+  // We animate all 3 compliance SVGs together so they don't disconnect
+  const verticalCurves = document.querySelectorAll('.topdivsvg svg, .middledivsvg svg, .bottomdivsvg svg, #svgherobtm svg');
+  if (verticalCurves.length > 0) {
+    gsap.to(verticalCurves, {
+      y: 15,
+      yoyo: true,
+      repeat: -1,
+      duration: 3,
+      ease: 'sine.inOut'
+    });
+  }
+
+  // Horizontal floating (left to right)
+  const horizontalCurves = document.querySelectorAll('.telluswhatsvgtop svg, .telluswhatsvgbtm svg');
+  if (horizontalCurves.length > 0) {
+    gsap.to(horizontalCurves, {
+      x: 15,
+      yoyo: true,
+      repeat: -1,
+      duration: 3,
+      ease: 'sine.inOut'
+    });
   }
 }

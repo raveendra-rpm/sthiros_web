@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sthiros - Products</title>
+    <meta name="description" content="Sthiros Products" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Quicksand:wght@400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css?v=6" />
+    <style>
+        /* --------------- PRODUCTS PAGE HERO SECTION --------------- */
+        .products-hero-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url('assets/images/productsinsights/productbannerhero.jpg');
+            background-size: cover;
+            background-position: center right;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            padding: 100px 40px 50px 40px;
+            background-color: #0a0a0a;
+        }
+
+        .products-hero-content {
+            max-width: 650px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .products-hero-title {
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 80px;
+            font-weight: 600;
+            line-height: 1.1;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+
+        .products-hero-title span {
+            color: #EC2D26;
+        }
+
+        .products-hero-subtitle {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
+            color: #ddd;
+            line-height: 1.6;
+            max-width: 500px;
+        }
+
+        @media (max-width: 1024px) {
+            .products-hero-title {
+                font-size: 60px;
+            }
+        }
+
+        #svgherobtm {
+            margin-top: -45rem;
+            position: relative;
+            z-index: 5;
+            width: 52%;
+            margin-left: 0;
+            overflow: visible;
+        }
+
+        #svgherobtm svg {
+            width: 100%;
+            height: auto;
+            display: block;
+            overflow: visible;
+        }
+
+        @media (max-width: 768px) {
+            .products-hero-section {
+                background-position: left center;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .products-hero-title {
+                font-size: 45px;
+            }
+
+            .products-hero-subtitle {
+                font-size: 16px;
+            }
+
+            #svgherobtm {
+                margin-left: 0;
+                margin-top: -25rem;
+            }
+        }
+
+        #productsexploretxt {
+            position: relative;
+            z-index: 10;
+            margin-top: -18rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding: 0 20px;
+        }
+
+        #productsexploretxt p {
+            color: var(--WHITE, #FFF);
+            text-align: center;
+            font-family: Quicksand;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            max-width: 750px;
+        }
+
+        @media (max-width: 768px) {
+            #productsexploretxt {
+                margin-top: -12rem;
+            }
+
+            #productsexploretxt p {
+                font-size: 16px;
+            }
+        }
+
+        .topdivsvg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: -30px;
+        }
+
+        .middledivsvg {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            margin-top: -180px;
+            padding-right: 42px;
+        }
+
+        .bottomdivsvg {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            padding-right: 42.5px;
+        }
+
+        .telluswhatsvgtop {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+            margin-top: -336px;
+            padding-left: 42px;
+        }
+
+        .telluswhatsvgbtm {
+            display: flex;
+            justify-content: flex-start;
+            /* width: 100%; */
+            padding-left: 41.5px;
+        }
+
+        #Telluswhatsstillbeingdonebyhandsec {
+            position: relative;
+        }
+
+        .telluswhatssvgtopcont {
+            background-image: url('assets/images/productsinsights/productstelluswhatsv.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px;
+            margin-left: 100px;
+            margin-right: 50px;
+            position: absolute;
+            top: 250px;
+            left: 0;
+            right: 0;
+            z-index: 10;
+            border: 1px solid #EF4623;
+        }
+
+        .tw-content {
+            max-width: 650px;
+        }
+
+        .tw-heading {
+            color: var(--LIGHT-GREY, #F4F3F2);
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 100;
+            line-height: 60px;
+            margin-bottom: 15px;
+        }
+
+        .tw-desc {
+            color: var(--LIGHT-GREY, #F4F3F2);
+            font-family: 'Quicksand', sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 30px;
+        }
+
+        .tw-forge-btn-outer {
+            display: inline-block;
+            padding: 5px;
+            border-radius: 163.532px;
+            border: 1.817px solid #EF4623;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .tw-forge-btn-inner {
+            display: inline-block;
+            padding: 8px 36px;
+            border-radius: 163.532px;
+            border: 5px solid #EF4623;
+            color: var(--WHITE, #FFF);
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 5.2px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .tw-forge-btn-outer:hover .tw-forge-btn-inner {
+            background-color: #EF4623;
+            color: #fff;
+        }
+
+        #complianceoperationsec {
+            position: relative;
+            padding-bottom: 100px;
+        }
+
+        /* --- Feature Cards Styling --- */
+        .svgconsecblc {
+            position: relative;
+            z-index: 20;
+            pointer-events: none;
+            /* so SVGs don't block clicks on the cards behind them */
+        }
+
+        .contdivseccompliancecard {
+            position: absolute;
+            top: 250px;
+            bottom: 800px;
+            left: 0;
+            right: 0;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+            max-width: 1350px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .compliance-feature-card {
+            position: sticky;
+            top: 85px;
+            background-color: #000;
+            border: 1px solid #EC2D26;
+            border-radius: 30px;
+            display: flex;
+            padding: 30px 60px;
+            gap: 60px;
+            width: 100%;
+        }
+
+        .compliance-feature-card .cf-left {
+            flex: 1;
+            max-width: 400px;
+        }
+
+        .cf-title {
+            color: #EC2D26;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .cf-heading {
+            color: #FFF;
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 52px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .cf-subheading {
+            color: #FFF;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .cf-desc {
+            color: #CCC;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 13px;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .cf-small-desc {
+            color: #666;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+
+        .cf-stats {
+            display: flex;
+            flex-direction: column;
+            border-top: 1px solid #333;
+            padding-top: 10px;
+        }
+
+        .cf-stat-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-bottom: 1px solid #EC2D26;
+            padding: 10px 0;
+        }
+
+        .cf-stat-num {
+            color: #FFF;
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 38px;
+            font-weight: 600;
+            min-width: 90px;
+        }
+
+        .cf-stat-text {
+            color: #CCC;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        .compliance-feature-card .cf-right {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .cf-features-row {
+            display: flex;
+            gap: 30px;
+            margin-top: 160px;
+        }
+
+        .cf-feature-col {
+            flex: 1;
+            border-left: 1px solid #333;
+            padding-left: 20px;
+        }
+
+        .cf-feature-title {
+            color: #FFF;
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .cf-feature-sub {
+            color: #CCC;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 11px;
+            line-height: 1.4;
+            margin-bottom: 10px;
+            min-height: 35px;
+        }
+
+        .cf-feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cf-feature-list li {
+            color: #CCC;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .cf-feature-list li::before {
+            content: "•";
+            color: #EC2D26;
+            position: absolute;
+            left: 0;
+            top: -2px;
+            font-size: 20px;
+            line-height: 1;
+        }
+
+        .cf-action-btn-wrap {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: auto;
+            margin-bottom: 10px;
+        }
+
+        .cf-action-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border: 1px solid #EC2D26;
+            border-radius: 30px;
+            color: #FFF;
+            text-decoration: none;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .cf-action-btn:hover {
+            background-color: rgba(236, 45, 38, 0.1);
+        }
+
+        @media (max-width: 1024px) {
+            .compliance-feature-card {
+                flex-direction: column;
+                padding: 40px;
+            }
+
+            .compliance-feature-card .cf-left {
+                max-width: 100%;
+            }
+
+            .cf-features-row {
+                flex-direction: column;
+                margin-top: 40px;
+            }
+
+            .cf-feature-col {
+                border-left: none;
+                padding-left: 0;
+                border-top: 1px solid #333;
+                padding-top: 20px;
+            }
+
+            .contdivseccompliancecard {
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ═══════════════ SITE HEADER ═══════════════ -->
+    <header class="site-header header-hidden">
+        <div class="header-left">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <button class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                <span class="toggle-track">
+                    <img src="assets/images/dark_light_toggle.png" alt="Light Theme" class="toggle-art light-art">
+                    <img src="assets/images/dark_mode_toggle_new.png" alt="Dark Theme" class="toggle-art dark-art">
+                    <span class="toggle-thumb"></span>
+                </span>
+            </button>
+            <button class="menu-toggle" aria-label="Open Menu">
+                <span class="menu-icon">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ═══════════════ FULL SCREEN MENU OVERLAY ═══════════════ -->
+    <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
+        <div class="menu-content">
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="#" class="nav-link">ABOUT US</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">WHAT WE DO <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Strategy <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="#" class="nested-sub-nav-link">Business & Growth Strategy</a>
+                                <a href="#" class="nested-sub-nav-link">Strategic Finance & Transactions</a>
+                                <a href="#" class="nested-sub-nav-link">Enterprise Operations & Ecosystems</a>
+                                <a href="#" class="nested-sub-nav-link">Change Management & Organisational
+                                    Acceleration</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">AI <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="#" class="nested-sub-nav-link">AI Strategy & Sovereign Governance</a>
+                                <a href="#" class="nested-sub-nav-link">Intelligent Foundation (Data & Cloud)</a>
+                                <a href="#" class="nested-sub-nav-link">Agentic Operations & Automation</a>
+                                <a href="#" class="nested-sub-nav-link">Cognitive Experience & Engineering</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Risk <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="#" class="nested-sub-nav-link">Enterprise Governance & Regulatory Strategy</a>
+                                <a href="#" class="nested-sub-nav-link">Strategic Assurance & Process Intelligence</a>
+                                <a href="#" class="nested-sub-nav-link">Digital Risk & Technology Controls</a>
+                                <a href="#" class="nested-sub-nav-link">Forensic Integrity & Asset Protection</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Cyber <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="#" class="nested-sub-nav-link">Offensive Security & Exposure</a>
+                                <a href="#" class="nested-sub-nav-link">Cloud Security & Zero Trust</a>
+                                <a href="#" class="nested-sub-nav-link">Data Privacy & Protection Engineering</a>
+                                <a href="#" class="nested-sub-nav-link">Cyber Resilience & Crisis Readiness</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a href="our-work.html" class="nav-link">THE WORK</a>
+                <a href="#" class="nav-link active">Our PRODUCTS</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">INDUSTRIES <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="#" class="sub-nav-link">BFSI & Fintech</a>
+                        <a href="#" class="sub-nav-link">D2C & Retail</a>
+                        <a href="#" class="sub-nav-link">Energy, Mining & Utilities</a>
+                        <a href="#" class="sub-nav-link">GCC</a>
+                        <a href="#" class="sub-nav-link">Healthcare & Life Sciences</a>
+                        <a href="#" class="sub-nav-link">Manufacturing</a>
+                        <a href="#" class="sub-nav-link">Telecom & Digital Infrastructure</a>
+                        <a href="#" class="sub-nav-link">Travel & Hospitality</a>
+                        <a href="#" class="sub-nav-link">Public Sector & Government</a>
+                        <a href="#" class="sub-nav-link">Real Estate / EPC / Construction</a>
+                    </div>
+                </div>
+
+                <a href="#" class="nav-link">CONTACT US</a>
+            </nav>
+
+
+        </div>
+    </div>
+
+    <!-- ═══════════════ PRODUCTS HERO SECTION ═══════════════ -->
+    <section class="products-hero-section">
+        <div class="products-hero-content">
+            <h1 class="products-hero-title">Built from<br>the work we<br><span>already do.</span></h1>
+            <p class="products-hero-subtitle">An Oriq product begins inside a live client engagement, with a process
+                that's breaking or a report someone still builds by hand every week.</p>
+        </div>
+    </section>
+
+    <!-- hero bottom svg section -->
+    <section id="svgherobtm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="996" height="1543" viewBox="0 0 996 1543" fill="none">
+            <mask id="path-1-inside-1_2701_2432" fill="white">
+                <path
+                    d="M995.974 920.398L995.89 917.296C995.89 915.228 995.666 913.131 995.527 911.063C994.828 902.762 993.29 894.489 990.942 886.468C986.245 870.397 978.306 855.304 967.766 842.391C957.171 829.506 944.003 818.774 929.214 811.004C914.453 803.178 898.015 798.371 881.381 796.973C879.312 796.833 877.215 796.61 875.147 796.582L872.043 796.498L870.506 796.498L869.388 796.47L-34.777 796.475C-34.9727 796.475 -35.1684 796.475 -35.2243 796.475L-35.8673 796.475C-36.734 796.391 -37.6006 796.475 -38.4673 796.364C-41.9059 796.14 -45.3166 795.581 -48.6154 794.687C-55.2132 792.926 -61.4474 789.795 -66.8989 785.547C-72.3504 781.299 -76.9352 775.96 -80.29 769.979C-83.6727 763.998 -85.7974 757.402 -86.5523 750.554C-86.7479 748.849 -86.8598 747.116 -86.8598 745.384L-86.8598 1.14784e-06L-111.545 3.30591e-06L-111.545 744.741L-111.517 745.691C-111.517 748.235 -111.322 750.778 -111.042 753.293C-109.924 763.383 -106.737 773.193 -101.761 782.053C-96.7843 790.885 -90.0188 798.739 -82.0233 805C-74.0278 811.261 -64.7742 815.872 -54.9895 818.5C-50.0971 819.813 -45.065 820.652 -40.0049 820.959C-38.7469 821.099 -37.4608 821.043 -36.2028 821.099L-35.2523 821.099C-34.9448 821.127 -34.5254 821.127 -34.19 821.127L871.764 821.121L874.28 821.205C875.957 821.205 877.635 821.401 879.284 821.513C892.647 822.659 905.815 826.516 917.696 832.777C929.578 839.037 940.173 847.674 948.672 858.015C957.114 868.384 963.461 880.486 967.235 893.343C969.108 899.799 970.366 906.424 970.925 913.104C971.037 914.781 971.205 916.457 971.233 918.134L971.289 920.65L971.289 1542L995.974 1542L995.974 920.398Z" />
+                <path
+                    d="M955.381 896.837C952.11 885.601 946.547 875.008 939.167 865.925C939.167 865.925 939.139 865.897 939.111 865.869C939.083 865.841 939.055 865.785 939.027 865.757C931.562 856.729 922.281 849.183 911.937 843.733C901.509 838.227 889.991 834.845 878.222 833.839C872.351 833.308 866.452 833.531 860.553 833.475L-32.0094 833.481C-34.9448 833.481 -37.9082 833.481 -40.8436 833.285C-46.7145 832.922 -52.5574 831.943 -58.2605 830.434C-69.6387 827.388 -80.4019 821.993 -89.6834 814.726C-98.9929 807.488 -106.821 798.376 -112.58 788.09C-118.367 777.833 -122.057 766.374 -123.343 754.663C-124.042 748.793 -123.902 742.896 -123.93 736.999L-123.93 4.38862e-06L-136.287 5.46888e-06L-136.287 744.769L-136.259 746.026C-136.231 749.38 -136.007 752.734 -135.644 756.06C-134.162 769.392 -129.941 782.445 -123.371 794.156C-116.801 805.866 -107.883 816.208 -97.2875 824.481C-86.72 832.726 -74.4752 838.875 -61.4754 842.369C-54.9896 844.129 -48.3359 845.219 -41.6264 845.639C-39.949 845.806 -38.2716 845.778 -36.5943 845.834L-35.3362 845.834L-34.19 845.862L871.484 845.857L873.385 845.941C874.671 845.941 875.929 846.109 877.187 846.164C887.308 847.031 897.204 849.938 906.178 854.661C915.124 859.385 923.12 865.869 929.578 873.695C935.952 881.549 940.732 890.66 943.556 900.331C944.982 905.194 945.904 910.197 946.323 915.256C946.407 916.513 946.547 917.799 946.547 919.057L946.603 920.957L946.603 1542.05L958.96 1542.05L958.96 931.914C958.904 926.016 959.127 920.119 958.624 914.25C958.121 908.38 957.031 902.567 955.381 896.893L955.381 896.837Z" />
+                <path
+                    d="M937.965 919.336C937.965 918.19 937.825 917.073 937.769 915.955C937.378 911.455 936.567 907.011 935.309 902.706C932.821 894.182 928.599 886.16 923.008 879.201C923.008 879.201 922.98 879.173 922.952 879.145C922.896 879.089 922.868 879.005 922.812 878.949C917.109 872.102 910.064 866.344 902.18 862.207C894.213 858.015 885.435 855.444 876.461 854.661C875.342 854.605 874.224 854.438 873.078 854.465L871.373 854.409L-35.392 854.415L-36.7619 854.387C-38.579 854.331 -40.3962 854.359 -42.2134 854.163C-49.4541 853.716 -56.6948 852.514 -63.7398 850.614C-77.8298 846.84 -91.1091 840.161 -102.599 831.217C-114.061 822.273 -123.734 811.037 -130.891 798.348C-138.048 785.659 -142.605 771.489 -144.226 757.011C-144.618 753.405 -144.869 749.772 -144.897 746.138L-144.897 744.769L-144.925 743.651L-144.925 6.22407e-06L-151.103 6.7642e-06L-151.103 744.769L-151.076 746.194C-151.02 750.023 -150.796 753.852 -150.377 757.681C-148.671 772.97 -143.835 787.951 -136.287 801.367C-128.738 814.782 -118.534 826.633 -106.429 836.08C-94.3241 845.527 -80.29 852.57 -65.3892 856.567C-57.9528 858.579 -50.3207 859.837 -42.6607 860.312C-40.7596 860.48 -38.8306 860.48 -36.9296 860.536L-35.5038 860.536L-34.3297 860.564L871.149 860.559L872.686 860.614C873.721 860.614 874.727 860.754 875.762 860.81C883.953 861.509 891.893 863.829 899.133 867.658C906.318 871.459 912.804 876.713 918.004 883.002C923.12 889.346 926.978 896.641 929.242 904.411C930.388 908.324 931.143 912.349 931.479 916.458C931.535 917.492 931.675 918.498 931.675 919.532L931.675 921.069L931.73 921.88L931.73 1541.97L937.909 1541.97L937.909 921.013L937.853 919.308L937.965 919.336Z" />
+                <path
+                    d="M925.971 919.756C925.971 918.805 925.859 917.883 925.804 916.961C925.496 913.243 924.797 909.61 923.763 906.06C921.722 899.101 918.283 892.533 913.698 886.831C913.698 886.831 913.615 886.719 913.587 886.691C913.559 886.635 913.503 886.58 913.475 886.524C908.778 880.906 902.991 876.21 896.561 872.828C890.019 869.363 882.807 867.266 875.398 866.623C874.476 866.568 873.553 866.428 872.602 866.456L871.205 866.456L870.506 866.4L-35.42 866.405L-36.9297 866.377C-38.9425 866.321 -40.9554 866.321 -42.9682 866.154C-51.0197 865.651 -59.0432 864.337 -66.843 862.213C-82.4986 858.02 -97.2316 850.614 -109.952 840.692C-122.672 830.769 -133.407 818.332 -141.319 804.245C-149.258 790.159 -154.318 774.423 -156.108 758.38C-156.555 754.383 -156.807 750.331 -156.863 746.334L-156.863 744.825L-156.89 743.679L-156.89 7.27012e-06L-161 7.62939e-06L-161 744.797L-160.972 746.362C-160.916 750.526 -160.665 754.663 -160.189 758.827C-158.344 775.429 -153.088 791.696 -144.897 806.258C-136.706 820.819 -125.635 833.704 -112.468 843.934C-99.3283 854.191 -84.0641 861.849 -67.9053 866.182C-59.8259 868.362 -51.5229 869.731 -43.2198 870.234C-41.1511 870.43 -39.0543 870.402 -36.9856 870.486L-35.42 870.486L-34.2179 870.514L871.149 870.508L872.463 870.564C873.33 870.564 874.196 870.676 875.063 870.732C881.94 871.319 888.566 873.275 894.632 876.462C900.643 879.62 906.066 884.036 910.428 889.29C914.705 894.601 917.92 900.722 919.821 907.206C920.771 910.476 921.414 913.858 921.694 917.296C921.75 918.162 921.862 919.001 921.862 919.895L921.862 921.209L921.918 921.908L921.918 1542L926.027 1542L926.027 921.153L925.971 919.756Z" />
+            </mask>
+            <path
+                d="M995.974 920.398L995.89 917.296C995.89 915.228 995.666 913.131 995.527 911.063C994.828 902.762 993.29 894.489 990.942 886.468C986.245 870.397 978.306 855.304 967.766 842.391C957.171 829.506 944.003 818.774 929.214 811.004C914.453 803.178 898.015 798.371 881.381 796.973C879.312 796.833 877.215 796.61 875.147 796.582L872.043 796.498L870.506 796.498L869.388 796.47L-34.777 796.475C-34.9727 796.475 -35.1684 796.475 -35.2243 796.475L-35.8673 796.475C-36.734 796.391 -37.6006 796.475 -38.4673 796.364C-41.9059 796.14 -45.3166 795.581 -48.6154 794.687C-55.2132 792.926 -61.4474 789.795 -66.8989 785.547C-72.3504 781.299 -76.9352 775.96 -80.29 769.979C-83.6727 763.998 -85.7974 757.402 -86.5523 750.554C-86.7479 748.849 -86.8598 747.116 -86.8598 745.384L-86.8598 1.14784e-06L-111.545 3.30591e-06L-111.545 744.741L-111.517 745.691C-111.517 748.235 -111.322 750.778 -111.042 753.293C-109.924 763.383 -106.737 773.193 -101.761 782.053C-96.7843 790.885 -90.0188 798.739 -82.0233 805C-74.0278 811.261 -64.7742 815.872 -54.9895 818.5C-50.0971 819.813 -45.065 820.652 -40.0049 820.959C-38.7469 821.099 -37.4608 821.043 -36.2028 821.099L-35.2523 821.099C-34.9448 821.127 -34.5254 821.127 -34.19 821.127L871.764 821.121L874.28 821.205C875.957 821.205 877.635 821.401 879.284 821.513C892.647 822.659 905.815 826.516 917.696 832.777C929.578 839.037 940.173 847.674 948.672 858.015C957.114 868.384 963.461 880.486 967.235 893.343C969.108 899.799 970.366 906.424 970.925 913.104C971.037 914.781 971.205 916.457 971.233 918.134L971.289 920.65L971.289 1542L995.974 1542L995.974 920.398Z"
+                stroke="url(#paint0_linear_2701_2432)" stroke-width="2" mask="url(#path-1-inside-1_2701_2432)" />
+            <path
+                d="M955.381 896.837C952.11 885.601 946.547 875.008 939.167 865.925C939.167 865.925 939.139 865.897 939.111 865.869C939.083 865.841 939.055 865.785 939.027 865.757C931.562 856.729 922.281 849.183 911.937 843.733C901.509 838.227 889.991 834.845 878.222 833.839C872.351 833.308 866.452 833.531 860.553 833.475L-32.0094 833.481C-34.9448 833.481 -37.9082 833.481 -40.8436 833.285C-46.7145 832.922 -52.5574 831.943 -58.2605 830.434C-69.6387 827.388 -80.4019 821.993 -89.6834 814.726C-98.9929 807.488 -106.821 798.376 -112.58 788.09C-118.367 777.833 -122.057 766.374 -123.343 754.663C-124.042 748.793 -123.902 742.896 -123.93 736.999L-123.93 4.38862e-06L-136.287 5.46888e-06L-136.287 744.769L-136.259 746.026C-136.231 749.38 -136.007 752.734 -135.644 756.06C-134.162 769.392 -129.941 782.445 -123.371 794.156C-116.801 805.866 -107.883 816.208 -97.2875 824.481C-86.72 832.726 -74.4752 838.875 -61.4754 842.369C-54.9896 844.129 -48.3359 845.219 -41.6264 845.639C-39.949 845.806 -38.2716 845.778 -36.5943 845.834L-35.3362 845.834L-34.19 845.862L871.484 845.857L873.385 845.941C874.671 845.941 875.929 846.109 877.187 846.164C887.308 847.031 897.204 849.938 906.178 854.661C915.124 859.385 923.12 865.869 929.578 873.695C935.952 881.549 940.732 890.66 943.556 900.331C944.982 905.194 945.904 910.197 946.323 915.256C946.407 916.513 946.547 917.799 946.547 919.057L946.603 920.957L946.603 1542.05L958.96 1542.05L958.96 931.914C958.904 926.016 959.127 920.119 958.624 914.25C958.121 908.38 957.031 902.567 955.381 896.893L955.381 896.837Z"
+                stroke="url(#paint1_linear_2701_2432)" stroke-width="2" mask="url(#path-1-inside-1_2701_2432)" />
+            <path
+                d="M937.965 919.336C937.965 918.19 937.825 917.073 937.769 915.955C937.378 911.455 936.567 907.011 935.309 902.706C932.821 894.182 928.599 886.16 923.008 879.201C923.008 879.201 922.98 879.173 922.952 879.145C922.896 879.089 922.868 879.005 922.812 878.949C917.109 872.102 910.064 866.344 902.18 862.207C894.213 858.015 885.435 855.444 876.461 854.661C875.342 854.605 874.224 854.438 873.078 854.465L871.373 854.409L-35.392 854.415L-36.7619 854.387C-38.579 854.331 -40.3962 854.359 -42.2134 854.163C-49.4541 853.716 -56.6948 852.514 -63.7398 850.614C-77.8298 846.84 -91.1091 840.161 -102.599 831.217C-114.061 822.273 -123.734 811.037 -130.891 798.348C-138.048 785.659 -142.605 771.489 -144.226 757.011C-144.618 753.405 -144.869 749.772 -144.897 746.138L-144.897 744.769L-144.925 743.651L-144.925 6.22407e-06L-151.103 6.7642e-06L-151.103 744.769L-151.076 746.194C-151.02 750.023 -150.796 753.852 -150.377 757.681C-148.671 772.97 -143.835 787.951 -136.287 801.367C-128.738 814.782 -118.534 826.633 -106.429 836.08C-94.3241 845.527 -80.29 852.57 -65.3892 856.567C-57.9528 858.579 -50.3207 859.837 -42.6607 860.312C-40.7596 860.48 -38.8306 860.48 -36.9296 860.536L-35.5038 860.536L-34.3297 860.564L871.149 860.559L872.686 860.614C873.721 860.614 874.727 860.754 875.762 860.81C883.953 861.509 891.893 863.829 899.133 867.658C906.318 871.459 912.804 876.713 918.004 883.002C923.12 889.346 926.978 896.641 929.242 904.411C930.388 908.324 931.143 912.349 931.479 916.458C931.535 917.492 931.675 918.498 931.675 919.532L931.675 921.069L931.73 921.88L931.73 1541.97L937.909 1541.97L937.909 921.013L937.853 919.308L937.965 919.336Z"
+                stroke="url(#paint2_linear_2701_2432)" stroke-width="2" mask="url(#path-1-inside-1_2701_2432)" />
+            <path
+                d="M925.971 919.756C925.971 918.805 925.859 917.883 925.804 916.961C925.496 913.243 924.797 909.61 923.763 906.06C921.722 899.101 918.283 892.533 913.698 886.831C913.698 886.831 913.615 886.719 913.587 886.691C913.559 886.635 913.503 886.58 913.475 886.524C908.778 880.906 902.991 876.21 896.561 872.828C890.019 869.363 882.807 867.266 875.398 866.623C874.476 866.568 873.553 866.428 872.602 866.456L871.205 866.456L870.506 866.4L-35.42 866.405L-36.9297 866.377C-38.9425 866.321 -40.9554 866.321 -42.9682 866.154C-51.0197 865.651 -59.0432 864.337 -66.843 862.213C-82.4986 858.02 -97.2316 850.614 -109.952 840.692C-122.672 830.769 -133.407 818.332 -141.319 804.245C-149.258 790.159 -154.318 774.423 -156.108 758.38C-156.555 754.383 -156.807 750.331 -156.863 746.334L-156.863 744.825L-156.89 743.679L-156.89 7.27012e-06L-161 7.62939e-06L-161 744.797L-160.972 746.362C-160.916 750.526 -160.665 754.663 -160.189 758.827C-158.344 775.429 -153.088 791.696 -144.897 806.258C-136.706 820.819 -125.635 833.704 -112.468 843.934C-99.3283 854.191 -84.0641 861.849 -67.9053 866.182C-59.8259 868.362 -51.5229 869.731 -43.2198 870.234C-41.1511 870.43 -39.0543 870.402 -36.9856 870.486L-35.42 870.486L-34.2179 870.514L871.149 870.508L872.463 870.564C873.33 870.564 874.196 870.676 875.063 870.732C881.94 871.319 888.566 873.275 894.632 876.462C900.643 879.62 906.066 884.036 910.428 889.29C914.705 894.601 917.92 900.722 919.821 907.206C920.771 910.476 921.414 913.858 921.694 917.296C921.75 918.162 921.862 919.001 921.862 919.895L921.862 921.209L921.918 921.908L921.918 1542L926.027 1542L926.027 921.153L925.971 919.756Z"
+                stroke="url(#paint3_linear_2701_2432)" stroke-width="2" mask="url(#path-1-inside-1_2701_2432)" />
+            <defs>
+                <linearGradient id="paint0_linear_2701_2432" x1="219.5" y1="710.998" x2="219.5" y2="1340.5"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_2701_2432" x1="219.5" y1="710.998" x2="219.5" y2="1340.5"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_2701_2432" x1="219.5" y1="710.998" x2="219.5" y2="1340.5"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint3_linear_2701_2432" x1="219.5" y1="710.998" x2="219.5" y2="1340.5"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </section>
+
+    <section id="productsexploretxt">
+        <p>That capability doesn't come from a lab. It comes from inside live client workflows, tested against real
+            operating conditions, producing proprietary products built to outlast the engagement that created them.</p>
+    </section>
+
+    <!-- compliance operations section -->
+    <section id="complianceoperationsec">
+        <div class="svgconsecblc">
+            <!-- top -->
+            <div class="topdivsvg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="58" height="272" viewBox="0 0 74 272" fill="none">
+                    <path d="M74 271.993L49.3334 271.993L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 271.993Z"
+                        fill="url(#paint0_linear_2760_2788)" />
+                    <path d="M37.0139 272L24.6667 272L24.6666 -2.15642e-06L37.0139 -3.23586e-06L37.0139 272Z"
+                        fill="url(#paint1_linear_2760_2788)" />
+                    <path d="M9.80545 271.99L9.80536 -8.57214e-07L15.979 -1.39693e-06L15.9791 271.99L9.80545 271.99Z"
+                        fill="url(#paint2_linear_2760_2788)" />
+                    <path d="M6.0988e-05 271.993L-2.3779e-05 0L4.10646 -3.59001e-07L4.10655 271.993L6.0988e-05 271.993Z"
+                        fill="url(#paint3_linear_2760_2788)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_2760_2788" x1="37" y1="-3.23464e-06" x2="37" y2="272"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="0.5" stop-color="#EC2D26" />
+                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_2760_2788" x1="37" y1="-3.23464e-06" x2="37" y2="272"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="0.5" stop-color="#EC2D26" />
+                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_2760_2788" x1="37" y1="-3.23464e-06" x2="37" y2="272"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="0.5" stop-color="#EC2D26" />
+                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint3_linear_2760_2788" x1="37" y1="-3.23464e-06" x2="37" y2="272"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="0.5" stop-color="#EC2D26" />
+                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="middledivsvg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="754" height="1162" viewBox="0 0 962 1482" fill="none">
+                    <path
+                        d="M961.974 483.409L961.89 480.306C961.89 478.238 961.666 476.142 961.527 474.074C960.828 465.772 959.29 457.499 956.942 449.478C952.245 433.407 944.306 418.314 933.766 405.401C923.171 392.517 910.003 381.784 895.214 374.014C880.453 366.188 864.015 361.381 847.381 359.983C845.312 359.844 843.215 359.62 841.147 359.592L838.043 359.508L836.506 359.508L835.387 359.48L126.223 359.475C126.027 359.475 125.832 359.475 125.776 359.475L125.133 359.475C124.266 359.392 123.399 359.475 122.533 359.364C119.094 359.14 115.684 358.581 112.385 357.687C105.787 355.926 99.5527 352.795 94.1012 348.547C88.6497 344.299 84.0649 338.96 80.7101 332.979C77.3274 326.998 75.2027 320.402 74.4479 313.554C74.2522 311.849 74.1403 310.117 74.1403 308.384L74.1402 -6.48155e-06L49.4547 -4.32348e-06L49.4549 307.741L49.4828 308.691C49.4828 311.235 49.6785 313.778 49.9581 316.293C51.0763 326.383 54.2634 336.193 59.2396 345.053C64.2159 353.885 70.9813 361.739 78.9768 368C86.9723 374.261 96.2259 378.872 106.011 381.5C110.903 382.813 115.935 383.652 120.995 383.959C122.253 384.099 123.539 384.043 124.797 384.099L125.748 384.099C126.055 384.127 126.475 384.127 126.81 384.127L837.764 384.132L840.28 384.216C841.957 384.216 843.635 384.411 845.284 384.523C858.647 385.669 871.815 389.526 883.696 395.787C895.578 402.048 906.173 410.684 914.672 421.025C923.114 431.394 929.461 443.497 933.235 456.353C935.108 462.81 936.366 469.434 936.925 476.114C937.037 477.791 937.205 479.468 937.233 481.145L937.288 483.66L937.301 1481.01L961.986 1481.01L961.974 483.409Z"
+                        fill="url(#paint0_linear_2760_2796)" />
+                    <path
+                        d="M921.381 459.847C918.11 448.612 912.547 438.019 905.167 428.935C905.167 428.935 905.139 428.907 905.111 428.879C905.083 428.851 905.055 428.795 905.027 428.767C897.562 419.74 888.281 412.193 877.937 406.743C867.509 401.237 855.991 397.855 844.222 396.849C838.351 396.318 832.452 396.541 826.553 396.486L128.991 396.481C126.055 396.481 123.092 396.481 120.156 396.285C114.286 395.922 108.443 394.944 102.74 393.434C91.3614 390.388 80.5982 384.993 71.3167 377.727C62.0072 370.488 54.1794 361.376 48.4204 351.091C42.6335 340.833 38.9432 329.374 37.6572 317.663C36.9583 311.794 37.0981 305.896 37.0701 299.999L37.07 -3.24077e-06L24.7132 -2.16051e-06L24.7134 307.769L24.7414 309.027C24.7693 312.381 24.993 315.734 25.3564 319.06C26.8381 332.392 31.0595 345.445 37.6293 357.156C44.199 368.867 53.1171 379.208 63.7126 387.481C74.2801 395.726 86.525 401.875 99.5247 405.369C106.011 407.13 112.664 408.22 119.374 408.639C121.051 408.807 122.728 408.779 124.406 408.834L125.664 408.834L126.81 408.862L837.484 408.867L839.385 408.951C840.671 408.951 841.929 409.119 843.187 409.175C853.307 410.041 863.204 412.948 872.178 417.671C881.124 422.395 889.12 428.879 895.578 436.705C901.952 444.559 906.732 453.67 909.556 463.341C910.981 468.204 911.904 473.207 912.323 478.266C912.407 479.524 912.547 480.809 912.547 482.067L912.603 483.968L912.615 1481.06L924.972 1481.06L924.96 454.924C924.904 449.027 925.127 483.129 924.624 477.26C924.121 471.39 923.031 465.577 921.381 459.903L921.381 459.847Z"
+                        fill="url(#paint1_linear_2760_2796)" />
+                    <path
+                        d="M903.965 482.347C903.965 481.201 903.825 480.083 903.769 478.965C903.378 474.465 902.567 470.021 901.309 465.717C898.821 457.192 894.599 449.171 889.008 442.211C889.008 442.211 888.98 442.183 888.952 442.155C888.896 442.099 888.868 442.016 888.812 441.96C883.109 435.112 876.064 429.354 868.18 425.218C860.213 421.025 851.435 418.454 842.461 417.671C841.342 417.615 840.224 417.448 839.078 417.476L837.373 417.42L125.608 417.415L124.238 417.387C122.421 417.331 120.604 417.359 118.787 417.163C111.546 416.716 104.305 415.514 97.2603 413.614C83.1703 409.841 69.891 403.161 58.401 394.217C46.9389 385.273 37.266 374.037 30.1091 361.348C22.9523 348.659 18.3954 334.489 16.7739 320.011C16.3825 316.405 16.1309 312.772 16.103 309.138L16.103 307.769L16.075 306.651L16.0748 -1.40532e-06L9.89648 -8.65189e-07L9.89666 307.769L9.92461 309.194C9.98052 313.023 10.2042 316.852 10.6235 320.682C12.3289 335.97 17.1653 350.951 24.7135 364.367C32.2618 377.782 42.4658 389.633 54.571 399.08C66.6761 408.527 80.7102 415.57 95.6109 419.567C103.047 421.579 110.679 422.837 118.339 423.312C120.24 423.48 122.169 423.48 124.071 423.536L125.496 423.536L126.67 423.564L837.149 423.569L838.686 423.625C839.721 423.625 840.727 423.764 841.762 423.82C849.953 424.519 857.892 426.839 865.133 430.668C872.318 434.469 878.804 439.723 884.004 446.012C889.12 452.357 892.978 459.652 895.242 467.422C896.388 471.335 897.143 475.359 897.479 479.468C897.535 480.502 897.674 481.508 897.674 482.542L897.674 484.08L897.73 484.89L897.743 1480.98L903.921 1480.98L903.909 484.024L903.853 482.319L903.965 482.347Z"
+                        fill="url(#paint2_linear_2760_2796)" />
+                    <path
+                        d="M891.971 482.766C891.971 481.815 891.859 480.893 891.804 479.971C891.496 476.254 890.797 472.62 889.763 469.07C887.722 462.111 884.283 455.543 879.698 449.841C879.698 449.841 879.615 449.729 879.587 449.701C879.559 449.646 879.503 449.59 879.475 449.534C874.778 443.916 868.991 439.221 862.561 435.839C856.019 432.373 848.807 430.277 841.398 429.634C840.476 429.578 839.553 429.438 838.602 429.466L837.205 429.466L836.506 429.41L125.58 429.405L124.07 429.377C122.058 429.322 120.045 429.322 118.032 429.154C109.98 428.651 101.957 427.337 94.1571 425.213C78.5015 421.021 63.7686 413.614 51.0484 403.692C38.3282 393.77 27.593 381.332 19.6813 367.245C11.7417 353.159 6.68163 337.423 4.89242 321.38C4.44511 317.383 4.19351 313.331 4.13759 309.334L4.13759 307.825L4.10964 306.679L4.10946 -3.59272e-07L-0.000129478 0L4.69184e-05 307.797L0.0280031 309.362C0.0839162 313.526 0.335524 317.663 0.810783 321.827C2.65591 338.429 7.9117 354.696 16.1029 369.258C24.2941 383.82 35.3649 396.704 48.5323 406.934C61.6718 417.191 76.936 424.849 93.0948 429.182C101.174 431.362 109.477 432.731 117.78 433.234C119.849 433.43 121.946 433.402 124.015 433.486L125.58 433.486L126.782 433.514L837.149 433.519L838.463 433.575C839.329 433.575 840.196 433.686 841.063 433.742C847.94 434.329 854.566 436.286 860.632 439.472C866.643 442.63 872.066 447.046 876.428 452.301C880.705 457.611 883.92 463.732 885.821 470.216C886.771 473.487 887.414 476.868 887.694 480.306C887.75 481.173 887.862 482.011 887.862 482.906L887.862 484.219L887.918 484.918L887.93 1481.01L892.039 1481.01L892.027 484.163L891.971 482.766Z"
+                        fill="url(#paint3_linear_2760_2796)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_2760_2796" x1="495.493" y1="771.061" x2="495.493"
+                            y2="2.64145e-06" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" />
+                            <stop offset="0.539354" stop-color="#EC2D26" />
+                            <stop offset="0.672817" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_2760_2796" x1="495.493" y1="771.061" x2="495.493"
+                            y2="2.64145e-06" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" />
+                            <stop offset="0.539354" stop-color="#EC2D26" />
+                            <stop offset="0.672817" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_2760_2796" x1="495.493" y1="771.061" x2="495.493"
+                            y2="2.64145e-06" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" />
+                            <stop offset="0.539354" stop-color="#EC2D26" />
+                            <stop offset="0.672817" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint3_linear_2760_2796" x1="495.493" y1="771.061" x2="495.493"
+                            y2="2.64145e-06" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" />
+                            <stop offset="0.539354" stop-color="#EC2D26" />
+                            <stop offset="0.672817" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="bottomdivsvg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="752" height="656" viewBox="0 254 960 838" fill="none">
+                    <path
+                        d="M959.974 607.653L959.89 610.755C959.89 612.823 959.666 614.92 959.527 616.988C958.828 625.289 957.29 633.562 954.942 641.583C950.245 657.655 942.306 672.747 931.766 685.66C921.171 698.545 908.003 709.277 893.214 717.047C878.453 724.873 862.015 729.68 845.381 731.078C843.312 731.218 841.215 731.441 839.147 731.469L836.043 731.553L834.506 731.553L833.388 731.581L126.223 731.586C126.027 731.586 125.832 731.586 125.776 731.586L125.133 731.586C124.266 731.67 123.4 731.586 122.533 731.698C119.094 731.921 115.684 732.48 112.385 733.375C105.787 735.135 99.5527 738.266 94.1012 742.514C88.6497 746.762 84.0649 752.101 80.7101 758.082C77.3274 764.063 75.2027 770.659 74.4479 777.507C74.2522 779.212 74.1404 780.945 74.1404 782.678L74.1402 1091.06L49.4547 1091.06L49.4549 783.321L49.4829 782.37C49.4829 779.827 49.6786 777.283 49.9581 774.768C51.0764 764.678 54.2634 754.868 59.2396 746.008C64.2159 737.176 70.9813 729.322 78.9768 723.061C86.9723 716.801 96.2259 712.189 106.011 709.562C110.903 708.248 115.935 707.41 120.995 707.102C122.253 706.962 123.539 707.018 124.797 706.962L125.748 706.962C126.055 706.934 126.475 706.934 126.81 706.934L835.764 706.93L838.28 706.846C839.957 706.846 841.635 706.65 843.284 706.538C856.647 705.392 869.815 701.535 881.696 695.274C893.578 689.014 904.173 680.377 912.672 670.036C921.115 659.667 927.461 647.565 931.235 634.708C933.108 628.252 934.366 621.627 934.925 614.947C935.037 613.27 935.205 611.594 935.233 609.917L935.289 607.401L935.301 0.05599L959.986 0.0559921L959.974 607.653Z"
+                        fill="url(#paint0_linear_2760_2799)" />
+                    <path
+                        d="M919.381 631.214C916.11 642.45 910.547 653.043 903.167 662.126C903.167 662.126 903.139 662.154 903.111 662.182C903.083 662.21 903.055 662.266 903.027 662.294C895.562 671.322 886.281 678.868 875.937 684.318C865.509 689.824 853.991 693.206 842.222 694.212C836.351 694.743 830.452 694.52 824.553 694.576L128.991 694.581C126.055 694.581 123.092 694.58 120.157 694.776C114.286 695.14 108.443 696.118 102.74 697.627C91.3614 700.673 80.5982 706.068 71.3167 713.335C62.0073 720.574 54.1795 729.685 48.4205 739.971C42.6335 750.228 38.9433 761.688 37.6573 773.398C36.9583 779.268 37.0981 785.165 37.0702 791.063L37.07 1091.06L24.7133 1091.06L24.7135 783.292L24.7414 782.035C24.7694 778.681 24.993 775.327 25.3565 772.001C26.8381 758.669 31.0596 745.616 37.6293 733.906C44.1991 722.195 53.1171 711.853 63.7126 703.58C74.2801 695.335 86.525 689.186 99.5247 685.693C106.011 683.932 112.664 682.842 119.374 682.422C121.051 682.255 122.728 682.283 124.406 682.227L125.664 682.227L126.81 682.199L835.484 682.194L837.385 682.11C838.671 682.11 839.929 681.942 841.187 681.887C851.307 681.02 861.204 678.113 870.178 673.39C879.124 668.666 887.12 662.182 893.578 654.356C899.952 646.502 904.732 637.391 907.556 627.72C908.982 622.857 909.904 617.854 910.323 612.795C910.407 611.538 910.547 610.252 910.547 608.994L910.603 607.094L910.615 7.96085e-05L922.972 8.06888e-05L922.96 636.137C922.904 642.035 923.127 607.932 922.624 613.801C922.121 619.671 921.031 625.484 919.381 631.158L919.381 631.214Z"
+                        fill="url(#paint1_linear_2760_2799)" />
+                    <path
+                        d="M901.965 608.715C901.965 609.861 901.825 610.978 901.769 612.097C901.378 616.596 900.567 621.04 899.309 625.345C896.821 633.869 892.599 641.891 887.008 648.85C887.008 648.85 886.98 648.878 886.952 648.906C886.896 648.962 886.868 649.046 886.812 649.102C881.109 655.949 874.064 661.707 866.18 665.844C858.213 670.036 849.435 672.607 840.461 673.39C839.342 673.446 838.224 673.613 837.078 673.586L835.373 673.642L125.608 673.646L124.238 673.674C122.421 673.73 120.604 673.702 118.787 673.898C111.546 674.345 104.305 675.547 97.2604 677.448C83.1704 681.221 69.8911 687.901 58.401 696.844C46.9389 705.788 37.266 717.024 30.1092 729.713C22.9523 742.402 18.3954 756.573 16.774 771.051C16.3826 774.656 16.131 778.29 16.103 781.923L16.103 783.292L16.075 784.41L16.0749 1091.06L9.89651 1091.06L9.89669 783.292L9.92465 781.867C9.98056 778.038 10.2042 774.209 10.6236 770.38C12.3289 755.091 17.1653 740.11 24.7136 726.695C32.2618 713.279 42.4659 701.428 54.571 691.981C66.6761 682.534 80.7102 675.491 95.6109 671.494C103.047 669.482 110.679 668.224 118.339 667.749C120.241 667.581 122.17 667.581 124.071 667.525L125.496 667.525L126.67 667.497L835.149 667.493L836.686 667.437C837.721 667.437 838.727 667.297 839.762 667.241C847.953 666.542 855.893 664.222 863.133 660.393C870.318 656.592 876.804 651.338 882.004 645.049C887.12 638.705 890.978 631.41 893.242 623.64C894.388 619.727 895.143 615.702 895.479 611.593C895.535 610.559 895.675 609.553 895.675 608.519L895.675 606.982L895.73 606.171L895.743 0.0839406L901.921 0.0839412L901.909 607.038L901.853 608.743L901.965 608.715Z"
+                        fill="url(#paint2_linear_2760_2799)" />
+                    <path
+                        d="M889.971 608.295C889.971 609.246 889.859 610.168 889.804 611.09C889.496 614.808 888.797 618.441 887.763 621.991C885.722 628.95 882.283 635.518 877.698 641.22C877.698 641.22 877.615 641.332 877.587 641.36C877.559 641.416 877.503 641.472 877.475 641.527C872.778 647.145 866.991 651.841 860.561 655.223C854.019 658.688 846.807 660.785 839.398 661.428C838.476 661.483 837.553 661.623 836.602 661.595L835.205 661.595L834.506 661.651L125.58 661.656L124.07 661.684C122.058 661.74 120.045 661.74 118.032 661.907C109.98 662.411 101.957 663.724 94.1572 665.848C78.5016 670.041 63.7686 677.448 51.0484 687.37C38.3283 697.292 27.593 709.729 19.6814 723.816C11.7418 737.902 6.68166 753.638 4.89245 769.681C4.44515 773.678 4.19354 777.73 4.13763 781.727L4.13763 783.237L4.10967 784.383L4.10949 1091.06L-9.53836e-05 1091.06L8.10133e-05 783.265L0.0280372 781.699C0.0839503 777.535 0.335558 773.398 0.810817 769.234C2.65594 752.632 7.91174 736.365 16.103 721.803C24.2942 707.242 35.3649 694.357 48.5324 684.127C61.6719 673.87 76.936 666.212 93.0948 661.88C101.174 659.7 109.477 658.33 117.78 657.827C119.849 657.631 121.946 657.659 124.015 657.575L125.58 657.575L126.782 657.547L835.149 657.543L836.463 657.487C837.329 657.487 838.196 657.375 839.063 657.319C845.94 656.732 852.566 654.776 858.632 651.589C864.643 648.431 870.066 644.015 874.428 638.761C878.705 633.45 881.92 627.329 883.821 620.845C884.771 617.575 885.414 614.193 885.694 610.755C885.75 609.889 885.862 609.05 885.862 608.156L885.862 606.842L885.918 606.143L885.93 0.0559857L890.039 0.055986L890.027 606.898L889.971 608.295Z"
+                        fill="url(#paint3_linear_2760_2799)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_2760_2799" x1="493.493" y1="320" x2="493.493" y2="1091.06"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" />
+                            <stop offset="0.539354" stop-color="#EC2D26" />
+                            <stop offset="0.672817" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_2760_2799" x1="493.493" y1="320" x2="493.493" y2="1091.06"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" />
+                            <stop offset="0.539354" stop-color="#EC2D26" />
+                            <stop offset="0.672817" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_2760_2799" x1="493.493" y1="320" x2="493.493" y2="1091.06"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" />
+                            <stop offset="0.539354" stop-color="#EC2D26" />
+                            <stop offset="0.672817" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint3_linear_2760_2799" x1="493.493" y1="320" x2="493.493" y2="1091.06"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" />
+                            <stop offset="0.539354" stop-color="#EC2D26" />
+                            <stop offset="0.672817" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+
+        <div class="contdivseccompliancecard">
+            <!-- Card 1: Keliros -->
+            <div class="compliance-feature-card">
+                <div class="cf-left">
+                    <h4 class="cf-title">TRADE OPERATIONS</h4>
+                    <h2 class="cf-heading">Keliros</h2>
+                    <p class="cf-subheading">An export workflow that files itself.</p>
+                    <p class="cf-desc">Keliros turns a shipment into one continuous workflow, from sales invoice to
+                        proof of delivery, replacing the patchwork of email, spreadsheets, and WhatsApp groups most
+                        export teams still run on.</p>
+                    <p class="cf-small-desc">Piloted inside a live steel export corridor running India to the US, with a
+                        VC-backed manufacturer as the first client.</p>
+
+                    <div class="cf-stats">
+                        <div class="cf-stat-item">
+                            <span class="cf-stat-num">20+</span>
+                            <span class="cf-stat-text">document types,<br>one workflow</span>
+                        </div>
+                        <div class="cf-stat-item">
+                            <span class="cf-stat-num">16 wks</span>
+                            <span class="cf-stat-text">pilot to<br>production</span>
+                        </div>
+                        <div class="cf-stat-item">
+                            <span class="cf-stat-num">$15-50K</span>
+                            <span class="cf-stat-text">demurrage avoided<br>per shipment</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cf-right">
+                    <div class="cf-features-row">
+                        <div class="cf-feature-col">
+                            <h5 class="cf-feature-title">ADVISE</h5>
+                            <p class="cf-feature-sub">We map the shipment before we touch a screen.</p>
+                            <ul class="cf-feature-list">
+                                <li>Every handoff between sales, ops, and finance</li>
+                                <li>The field that, if wrong, triggers a customs hold</li>
+                                <li>Who needs visibility, and at what stage</li>
+                            </ul>
+                        </div>
+                        <div class="cf-feature-col">
+                            <h5 class="cf-feature-title">EMBED AI</h5>
+                            <p class="cf-feature-sub">Then intelligence sits where the errors start.</p>
+                            <ul class="cf-feature-list">
+                                <li>Reads the shipping documents themselves, line by line</li>
+                                <li>Flags a mismatch before it reaches the port</li>
+                                <li>Predicts a delay before the carrier does</li>
+                            </ul>
+                        </div>
+                        <div class="cf-feature-col">
+                            <h5 class="cf-feature-title">BUILD PRODUCT</h5>
+                            <p class="cf-feature-sub">What ships, and what it does.</p>
+                            <ul class="cf-feature-list">
+                                <li>A single timeline, invoice to delivery</li>
+                                <li>A live view of what's at risk this week</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cf-action-btn-wrap">
+                        <a href="#" class="cf-action-btn">TALK TO US ABOUT KELIROS</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Niyamos -->
+            <div class="compliance-feature-card" style="padding-bottom: 180px;">
+                <div class="cf-left">
+                    <h4 class="cf-title">COMPLIANCE OS</h4>
+                    <h2 class="cf-heading">Niyamos</h2>
+                    <p class="cf-subheading">A compliance register that updates itself.</p>
+                    <p class="cf-desc">Reads a company's entity structure and builds its complete compliance register
+                        automatically, then keeps it current as obligations change.</p>
+                    <p class="cf-small-desc">Piloted inside a diversified group with operations across 30-plus Indian
+                        and US states, plus a manufacturing and export footprint into Mexico.</p>
+
+                    <div class="cf-stats">
+                        <div class="cf-stat-item">
+                            <span class="cf-stat-num">600+</span>
+                            <span class="cf-stat-text">obligations tracked<br>for one client</span>
+                        </div>
+                        <div class="cf-stat-item">
+                            <span class="cf-stat-num">2</span>
+                            <span class="cf-stat-text">countries under<br>a single register</span>
+                        </div>
+                        <div class="cf-stat-item">
+                            <span class="cf-stat-num">0</span>
+                            <span class="cf-stat-text">spreadsheets<br>still required</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cf-right">
+                    <div class="cf-features-row">
+                        <div class="cf-feature-col">
+                            <h5 class="cf-feature-title">ADVISE</h5>
+                            <p class="cf-feature-sub">We start by finding the obligations the tracker misses.</p>
+                            <ul class="cf-feature-list">
+                                <li>Every entity, jurisdiction, and filing due against it</li>
+                                <li>Who signs off, and on what schedule</li>
+                            </ul>
+                        </div>
+                        <div class="cf-feature-col">
+                            <h5 class="cf-feature-title">EMBED AI</h5>
+                            <p class="cf-feature-sub">Then we make the register update itself.</p>
+                            <ul class="cf-feature-list">
+                                <li>Builds the obligation calendar straight from the entity profile</li>
+                                <li>Catches what's wrong with a filing before a regulator does</li>
+                            </ul>
+                        </div>
+                        <div class="cf-feature-col">
+                            <h5 class="cf-feature-title">BUILD PRODUCT</h5>
+                            <p class="cf-feature-sub">What runs, day to day.</p>
+                            <ul class="cf-feature-list">
+                                <li>One register, every jurisdiction, always current</li>
+                                <li>Evidence attached the moment a record updates</li>
+                                <li>A single view of what's done, due, and at risk</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cf-action-btn-wrap">
+                        <a href="#" class="cf-action-btn">TALK TO US ABOUT NIYAMOS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tell us what's still being done by hand -->
+    <section id="Telluswhatsstillbeingdonebyhandsec">
+        <div class="telluswhatsvgtop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="752" height="400" viewBox="0 0 940 350" fill="none">
+                <path
+                    d="M939.974 70.6527L939.89 73.7551C939.89 75.8233 939.666 77.9195 939.527 79.9878C938.828 88.2888 937.29 96.562 934.942 104.583C930.245 120.655 922.306 135.747 911.766 148.66C901.171 161.545 888.003 172.277 873.214 180.047C858.453 187.873 842.015 192.68 825.381 194.078C823.312 194.218 821.215 194.441 819.147 194.469L816.043 194.553L814.506 194.553L813.388 194.581L126.223 194.586C126.027 194.586 125.832 194.586 125.776 194.586L125.133 194.586C124.266 194.67 123.4 194.586 122.533 194.698C119.094 194.921 115.684 195.48 112.385 196.375C105.787 198.135 99.5528 201.266 94.1013 205.514C88.6498 209.762 84.0649 215.101 80.7102 221.082C77.3275 227.063 75.2028 233.659 74.4479 240.507C74.2522 242.212 74.1404 243.945 74.1404 245.678L74.1403 554.061L49.4548 554.061L49.455 246.321L49.4829 245.37C49.4829 242.827 49.6786 240.283 49.9582 237.768C51.0764 227.678 54.2635 217.868 59.2397 209.008C64.2159 200.176 70.9814 192.322 78.9769 186.061C86.9724 179.801 96.226 175.189 106.011 172.562C110.903 171.248 115.935 170.41 120.995 170.102C122.253 169.962 123.539 170.018 124.797 169.962L125.748 169.962C126.055 169.934 126.475 169.934 126.81 169.934L815.764 169.93L818.28 169.846C819.957 169.846 821.635 169.65 823.284 169.538C836.647 168.392 849.815 164.535 861.696 158.274C873.578 152.014 884.173 143.377 892.672 133.036C901.115 122.667 907.461 110.565 911.235 97.7078C913.108 91.2515 914.366 84.6274 914.925 77.9475C915.037 76.2705 915.205 74.5936 915.233 72.9166L915.289 70.4011L915.301 0.0559882L939.986 0.0559904L939.974 70.6527Z"
+                    fill="url(#paint0_linear_2701_2513)" />
+                <path
+                    d="M899.381 94.2139C896.11 105.45 890.547 116.043 883.167 125.126C883.167 125.126 883.139 125.154 883.111 125.182C883.083 125.21 883.055 125.266 883.027 125.294C875.562 134.322 866.281 141.868 855.937 147.318C845.509 152.824 833.991 156.206 822.222 157.212C816.351 157.743 810.452 157.52 804.553 157.576L128.991 157.581C126.055 157.581 123.092 157.58 120.157 157.776C114.286 158.14 108.443 159.118 102.74 160.627C91.3615 163.674 80.5983 169.068 71.3168 176.335C62.0073 183.574 54.1795 192.685 48.4205 202.971C42.6335 213.228 38.9433 224.688 37.6573 236.398C36.9584 242.268 37.0982 248.165 37.0702 254.063L37.07 554.061L24.7133 554.061L24.7135 246.293L24.7415 245.035C24.7694 241.681 24.9931 238.327 25.3565 235.001C26.8382 221.669 31.0596 208.616 37.6294 196.906C44.1991 185.195 53.1172 174.853 63.7126 166.58C74.2802 158.335 86.525 152.186 99.5248 148.693C106.011 146.932 112.664 145.842 119.374 145.423C121.051 145.255 122.729 145.283 124.406 145.227L125.664 145.227L126.81 145.199L815.484 145.194L817.385 145.11C818.671 145.11 819.929 144.942 821.187 144.887C831.308 144.02 841.204 141.113 850.178 136.39C859.124 131.666 867.12 125.182 873.578 117.356C879.952 109.502 884.732 100.391 887.556 90.7203C888.982 85.857 889.904 80.8541 890.323 75.7952C890.407 74.5376 890.547 73.2519 890.547 71.9942L890.603 70.0936L890.615 7.78601e-05L902.972 7.89403e-05L902.96 99.1373C902.904 105.035 903.127 70.9321 902.624 76.8015C902.121 82.6709 901.031 88.4845 899.381 94.1582L899.381 94.2139Z"
+                    fill="url(#paint1_linear_2701_2513)" />
+                <path
+                    d="M881.965 71.7147C881.965 72.8606 881.825 73.9785 881.769 75.0965C881.378 79.5964 880.567 84.0404 879.309 88.3446C876.821 96.8692 872.599 104.891 867.008 111.85C867.008 111.85 866.98 111.878 866.952 111.906C866.896 111.962 866.868 112.046 866.812 112.102C861.109 118.949 854.064 124.707 846.181 128.844C838.213 133.036 829.435 135.607 820.461 136.39C819.342 136.446 818.224 136.613 817.078 136.586L815.373 136.642L125.608 136.646L124.238 136.674C122.421 136.73 120.604 136.702 118.787 136.898C111.546 137.345 104.305 138.547 97.2604 140.448C83.1704 144.221 69.8911 150.901 58.4011 159.845C46.9389 168.788 37.266 180.024 30.1092 192.713C22.9524 205.402 18.3955 219.573 16.774 234.051C16.3826 237.656 16.131 241.29 16.103 244.923L16.103 246.293L16.0751 247.41L16.0749 554.061L9.89656 554.061L9.89674 246.293L9.92469 244.867C9.98061 241.038 10.2043 237.209 10.6236 233.38C12.3289 218.091 17.1654 203.11 24.7136 189.695C32.2618 176.279 42.4659 164.428 54.571 154.981C66.6761 145.534 80.7102 138.491 95.611 134.494C103.047 132.482 110.679 131.224 118.34 130.749C120.241 130.581 122.17 130.581 124.071 130.525L125.496 130.525L126.671 130.497L815.149 130.493L816.687 130.437C817.721 130.437 818.727 130.297 819.762 130.241C827.953 129.542 835.893 127.222 843.133 123.393C850.318 119.592 856.804 114.338 862.004 108.049C867.12 101.705 870.978 94.4097 873.242 86.6397C874.389 82.7268 875.143 78.7021 875.479 74.5935C875.535 73.5593 875.675 72.5532 875.675 71.519L875.675 69.9818L875.73 69.1712L875.743 0.0839389L881.921 0.0839394L881.909 70.0377L881.853 71.7426L881.965 71.7147Z"
+                    fill="url(#paint2_linear_2701_2513)" />
+                <path
+                    d="M869.971 71.2955C869.971 72.2458 869.859 73.168 869.804 74.0904C869.496 77.8077 868.797 81.4412 867.763 84.9908C865.722 91.9503 862.283 98.5184 857.698 104.22C857.698 104.22 857.615 104.332 857.587 104.36C857.559 104.416 857.503 104.472 857.475 104.527C852.778 110.145 846.991 114.841 840.561 118.223C834.019 121.688 826.807 123.785 819.398 124.428C818.476 124.483 817.553 124.623 816.603 124.595L815.205 124.595L814.506 124.651L125.58 124.656L124.071 124.684C122.058 124.74 120.045 124.74 118.032 124.908C109.981 125.411 101.957 126.724 94.1572 128.848C78.5016 133.041 63.7686 140.448 51.0485 150.37C38.3283 160.292 27.5931 172.729 19.6814 186.816C11.7418 200.902 6.68171 216.638 4.8925 232.681C4.4452 236.678 4.19359 240.73 4.13767 244.727L4.13767 246.237L4.10972 247.383L4.10954 554.061L-4.84376e-05 554.061L0.000127959 246.265L0.0280841 244.699C0.0839972 240.535 0.335605 236.398 0.810864 232.234C2.65599 215.632 7.91178 199.365 16.103 184.803C24.2942 170.242 35.365 157.357 48.5324 147.127C61.6719 136.87 76.9361 129.212 93.0949 124.88C101.174 122.7 109.477 121.33 117.78 120.827C119.849 120.631 121.946 120.659 124.015 120.576L125.58 120.576L126.782 120.547L815.149 120.543L816.463 120.487C817.33 120.487 818.196 120.375 819.063 120.319C825.94 119.732 832.566 117.776 838.632 114.589C844.643 111.431 850.066 107.015 854.428 101.761C858.705 96.4501 861.92 90.3291 863.821 83.8448C864.771 80.5747 865.414 77.1928 865.694 73.7551C865.75 72.8886 865.862 72.05 865.862 71.1556L865.862 69.8421L865.918 69.1434L865.93 0.0559839L870.039 0.0559843L870.027 69.898L869.971 71.2955Z"
+                    fill="url(#paint3_linear_2701_2513)" />
+                <defs>
+                    <linearGradient id="paint0_linear_2701_2513" x1="493.493" y1="-217" x2="493.493" y2="554.061"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.276695" stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.419523" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_2701_2513" x1="493.493" y1="-217" x2="493.493" y2="554.061"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.276695" stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.419523" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_2701_2513" x1="493.493" y1="-217" x2="493.493" y2="554.061"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.276695" stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.419523" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_2701_2513" x1="493.493" y1="-217" x2="493.493" y2="554.061"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.276695" stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.419523" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <div class="telluswhatssvgtopcont">
+            <div class="tw-content">
+                <h2 class="tw-heading">Tell us what's<br>still being done<br>by hand.</h2>
+                <p class="tw-desc">Most Oriq products started as exactly that kind of complaint. Tell us<br>yours, and
+                    we'll tell you honestly whether it's a project or a product.</p>
+            </div>
+            <div class="tw-btn-wrap">
+                <a href="#" class="tw-forge-btn-outer">
+                    <span class="tw-forge-btn-inner">TALK TO US ABOUT FORGE</span>
+                </a>
+            </div>
+        </div>
+        <div class="telluswhatsvgbtm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1490" height="310" viewBox="0 0 1863 388" fill="none">
+                <path
+                    d="M74.0472 261.541L74.0384 -8.829e-07L49.387 -5.88934e-07L49.3957 260.954L49.3957 260.958C49.3957 261.293 49.3957 261.71 49.4236 262.016L49.4236 262.967C49.4795 264.225 49.4237 265.511 49.5635 266.769C49.871 271.829 50.7093 276.861 52.0229 281.753C54.6503 291.538 59.2619 300.792 65.5227 308.787C71.7834 316.783 79.6372 323.548 88.4692 328.524C97.3292 333.5 107.14 336.688 117.229 337.806C119.745 338.085 122.288 338.281 124.832 338.281L125.782 338.309L1866.52 338.309L1866.52 313.624L125.139 313.624C123.406 313.624 121.673 313.512 119.968 313.316C113.121 312.561 106.525 310.437 100.543 307.054C94.5622 303.699 89.2239 299.114 84.9756 293.663C80.7273 288.211 77.5968 281.977 75.8359 275.379C74.9415 272.08 74.3827 268.67 74.159 265.231C74.0472 264.364 74.1311 263.498 74.0472 262.631L74.0472 261.988L74.0472 261.541Z"
+                    fill="url(#paint0_linear_2701_2514)" />
+                <path
+                    d="M37.042 258.773L37.0332 -4.41617e-07L24.6516 -2.93968e-07L24.6604 260.954L24.6882 262.1L24.6882 263.358C24.7441 265.036 24.7162 266.713 24.8839 268.39C25.3031 275.1 26.3932 281.753 28.154 288.239C31.6477 301.239 37.7966 313.484 46.0417 324.051C54.3148 334.647 64.6561 343.565 76.3669 350.135C88.0777 356.704 101.13 360.926 114.462 362.407C117.788 362.771 121.142 362.995 124.496 363.022L125.754 363.05L1866.52 363.051L1866.52 350.694L133.524 350.694C127.627 350.666 121.729 350.806 115.86 350.107C104.149 348.821 92.6896 345.13 82.4321 339.343C72.1467 333.584 63.035 325.757 55.7961 316.447C48.5293 307.166 43.1349 296.403 40.0884 285.024C38.5791 279.321 37.6009 273.478 37.2375 267.607C37.042 264.674 37.042 261.712 37.042 258.779L37.042 258.773Z"
+                    fill="url(#paint1_linear_2701_2514)" />
+                <path
+                    d="M16.1357 263.526L16.1078 262.156L16.099 -1.91979e-07L9.94995 -1.18652e-07L9.95872 261.094L9.9868 262.268L9.9868 263.693C10.0427 265.594 10.0427 267.523 10.2104 269.425C10.6855 277.085 11.9432 284.717 13.9555 292.153C17.9524 307.054 24.9957 321.088 34.4426 333.193C43.8895 345.298 55.7402 355.502 69.156 363.05C82.5718 370.599 97.5527 375.435 112.841 377.14C116.67 377.56 120.499 377.783 124.328 377.839L125.754 377.867L1866.52 377.867L1866.52 371.689L126.872 371.689L125.754 371.661L124.384 371.661C120.751 371.633 117.117 371.381 113.512 370.99C99.034 369.368 84.8636 364.812 72.1745 357.655C59.4855 350.498 48.2497 340.825 39.3059 329.363C30.362 317.873 23.6821 304.594 19.9089 290.504C18.0084 283.459 16.8065 276.218 16.3594 268.977C16.1637 267.16 16.1916 265.343 16.1357 263.526Z"
+                    fill="url(#paint2_linear_2701_2514)" />
+                <path
+                    d="M4.11741 262.184L4.10864 -4.8995e-08L-4.62404e-06 0L0.00877825 260.982L0.0368544 262.184L0.0368545 263.749C0.120717 265.818 0.0926412 267.915 0.28832 269.984C0.791372 278.287 2.16099 286.59 4.34105 294.669C8.6732 310.828 16.3314 326.092 26.5888 339.232C36.8183 352.399 49.7031 363.47 64.2649 371.661C78.8266 379.852 95.0932 385.108 111.695 386.953C115.86 387.428 119.996 387.68 124.161 387.736L125.726 387.764L1866.52 387.764L1866.52 383.654L126.844 383.654L125.698 383.626L124.189 383.626C120.192 383.57 116.139 383.319 112.143 382.871C96.0995 381.082 80.3639 376.022 66.2773 368.083C52.1908 360.171 39.7532 349.436 29.831 336.715C19.9089 323.995 12.5022 309.262 8.3098 293.607C6.18565 285.807 4.87193 277.784 4.36888 269.732C4.20115 267.719 4.20115 265.706 4.14525 263.694L4.11741 262.184Z"
+                    fill="url(#paint3_linear_2701_2514)" />
+                <defs>
+                    <linearGradient id="paint0_linear_2701_2514" x1="1817" y1="-0.000300725" x2="1278.5"
+                        y2="-0.000300725" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.596992" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_2701_2514" x1="1817" y1="-0.000300725" x2="1278.5"
+                        y2="-0.000300725" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.596992" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_2701_2514" x1="1817" y1="-0.000300725" x2="1278.5"
+                        y2="-0.000300725" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.596992" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_2701_2514" x1="1817" y1="-0.000300725" x2="1278.5"
+                        y2="-0.000300725" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.596992" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="site-footer">
+        <div class="footer-container">
+            <!-- Left Side -->
+            <div class="footer-left">
+                <h3 class="footer-heading">Let's work together</h3>
+                <a href="mailto:hello@sthiros.com" class="footer-email">hello@sthiros.com</a>
+
+                <div class="footer-contact-block">
+                    <a href="#" class="contact-now-link">
+                        <span>CONTACT NOW</span>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H11V11" stroke="white" stroke-width="1.5" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/fb_sthiros.png" alt="Facebook" class="social-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/insta_sthiros.png" alt="Instagram" class="social-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/x_sthiros.png" alt="X" class="social-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/linkedin_sthiros.png" alt="LinkedIn" class="social-img">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="footer-right">
+                <ul class="footer-menu">
+                    <li><a href="#">OUR STORY</a></li>
+                    <li><a href="#">LEADERSHIP</a></li>
+                    <li><a href="#">CAREERS</a></li>
+                    <li><a href="#">INDUSTRIES</a></li>
+                    <li><a href="#">LATEST</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-bottom-line">
+
+        <div class="footer-massive-logo-section">
+            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo">
+            <div class="copyright-text">© 2026</div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
