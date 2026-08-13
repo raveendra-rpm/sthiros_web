@@ -2709,28 +2709,6 @@ function initTellUsWhatSvgSequenceScroll() {
 
 // ═══════════════ CONTINUOUS FLOATING CURVES ═══════════════
 function initFloatingCurves() {
-  // Vertical floating (top to bottom)
-  // We animate all 3 compliance SVGs together so they don't disconnect
+  // Vertical floating disabled per user request
   const verticalCurves = document.querySelectorAll('.topdivsvg svg, .middledivsvg svg, .bottomdivsvg svg, #svgherobtm svg');
-  if (verticalCurves.length > 0) {
-    gsap.to(verticalCurves, {
-      y: 15,
-      yoyo: true,
-      repeat: -1,
-      duration: 3,
-      ease: 'sine.inOut'
-    });
-  }
-
-  // Horizontal floating (left to right)
-  const horizontalCurves = document.querySelectorAll('.telluswhatsvgtop svg, .telluswhatsvgbtm svg');
-  if (horizontalCurves.length > 0) {
-    gsap.to(horizontalCurves, {
-      x: 15,
-      yoyo: true,
-      repeat: -1,
-      duration: 3,
-      ease: 'sine.inOut'
-    });
-  }
 }

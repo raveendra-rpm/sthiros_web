@@ -18,7 +18,7 @@
             position: relative;
             width: 100%;
             height: 100vh;
-            background-image: url('assets/images/productsinsights/productbannerhero.jpg');
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, #000 100%), url('assets/images/productsinsights/productbannerhero.jpg');
             background-size: cover;
             background-position: center right;
             background-repeat: no-repeat;
@@ -36,9 +36,11 @@
 
         .products-hero-title {
             font-family: 'Pacaembu', sans-serif;
-            font-size: 80px;
-            font-weight: 600;
-            line-height: 1.1;
+            font-size: 90px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100px;
+            /* 111.111% */
             color: #fff;
             margin-bottom: 30px;
         }
@@ -48,11 +50,14 @@
         }
 
         .products-hero-subtitle {
-            font-family: 'Quicksand', sans-serif;
-            font-size: 16px;
-            color: #ddd;
-            line-height: 1.6;
+            color: var(--WHITE, #FFF);
+            font-family: Quicksand, sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
             max-width: 500px;
+            margin-bottom: 100px;
         }
 
         @media (max-width: 1024px) {
@@ -179,11 +184,11 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 60px;
+            padding: 30px 60px;
             margin-left: 100px;
             margin-right: 50px;
             position: absolute;
-            top: 250px;
+            top: 230px;
             left: 0;
             right: 0;
             z-index: 10;
@@ -195,12 +200,12 @@
         }
 
         .tw-heading {
-            color: var(--LIGHT-GREY, #F4F3F2);
-            font-family: 'Pacaembu', sans-serif;
-            font-size: 64px;
+            color: #F4F3F2;
+            font-family: 'Inter', sans-serif;
+            font-size: 74px;
             font-style: normal;
-            font-weight: 100;
-            line-height: 60px;
+            font-weight: 300;
+            line-height: 80px;
             margin-bottom: 15px;
         }
 
@@ -249,12 +254,13 @@
             padding-bottom: 100px;
         }
 
-        /* --- Feature Cards Styling --- */
         .svgconsecblc {
             position: relative;
             z-index: 20;
             pointer-events: none;
             /* so SVGs don't block clicks on the cards behind them */
+            max-width: 1530px;
+            margin: 0 auto;
         }
 
         .contdivseccompliancecard {
@@ -263,7 +269,6 @@
             bottom: 800px;
             left: 0;
             right: 0;
-            z-index: 10;
             display: flex;
             flex-direction: column;
             gap: 40px;
@@ -288,6 +293,8 @@
         .compliance-feature-card .cf-left {
             flex: 1;
             max-width: 400px;
+            position: relative;
+            z-index: 30;
         }
 
         .cf-title {
@@ -357,8 +364,10 @@
         .cf-stat-text {
             color: #CCC;
             font-family: 'Quicksand', sans-serif;
-            font-size: 12px;
-            line-height: 1.4;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
         }
 
         .compliance-feature-card .cf-right {
@@ -366,6 +375,8 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            position: relative;
+            z-index: 30;
         }
 
         .cf-features-row {
@@ -376,7 +387,7 @@
 
         .cf-feature-col {
             flex: 1;
-            border-left: 1px solid #333;
+            border-left: 1px solid #EC2D26;
             padding-left: 20px;
         }
 
@@ -431,22 +442,34 @@
             margin-bottom: 10px;
         }
 
-        .cf-action-btn {
-            display: inline-block;
-            padding: 12px 30px;
-            border: 1px solid #EC2D26;
-            border-radius: 30px;
-            color: #FFF;
+        .cf-action-btn-outer {
+            display: inline-flex;
+            padding: 4px;
+            border-radius: 163.532px;
+            border: 1.817px solid #EF4623;
             text-decoration: none;
-            font-family: 'Quicksand', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .cf-action-btn-inner {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 30px;
+            border-radius: 163.532px;
+            border: 5px solid #EF4623;
+            color: #FFF;
+            font-family: Quicksand, sans-serif;
             font-size: 13px;
-            letter-spacing: 2px;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 5.2px;
             text-transform: uppercase;
             transition: all 0.3s ease;
         }
 
-        .cf-action-btn:hover {
-            background-color: rgba(236, 45, 38, 0.1);
+        .cf-action-btn-outer:hover .cf-action-btn-inner {
+            background-color: rgba(239, 70, 35, 0.1);
         }
 
         @media (max-width: 1024px) {
@@ -467,12 +490,225 @@
             .cf-feature-col {
                 border-left: none;
                 padding-left: 0;
-                border-top: 1px solid #333;
+                border-top: 1px solid #EC2D26;
                 padding-top: 20px;
             }
 
             .contdivseccompliancecard {
                 margin-top: 0;
+            }
+        }
+
+        @media (max-width: 1680px) {
+            .telluswhatssvgtopcont {
+                max-width: 1350px;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+            }
+
+            .telluswhatsvgtop,
+            .telluswhatsvgbtm {
+                padding-left: 110px;
+            }
+        }
+
+        @media (max-width: 1600px) {
+            .telluswhatssvgtopcont {
+                max-width: 1200px;
+                margin-right: 10rem;
+            }
+
+            .telluswhatsvgtop,
+            .telluswhatsvgbtm {
+                padding-left: 80px;
+            }
+        }
+
+        @media (max-width: 1440px) {
+            .contdivseccompliancecard {
+                max-width: 1250px;
+            }
+
+            .compliance-feature-card {
+                padding: 20px 40px;
+                gap: 40px;
+            }
+
+            .middledivsvg,
+            .bottomdivsvg {
+                padding-right: 0px;
+            }
+
+            .middledivsvg svg,
+            .bottomdivsvg svg {
+                transform: scaleX(0.92);
+                transform-origin: left;
+            }
+
+            .telluswhatsvgtop {
+                padding-left: 0px;
+            }
+
+            .telluswhatsvgbtm {
+                padding-left: 2px;
+                margin-top: -5px;
+            }
+
+            .products-hero-title {
+                font-size: 75px;
+            }
+        }
+
+        @media (max-width: 1366px) {
+            .contdivseccompliancecard {
+                gap: 140px;
+            }
+
+            .telluswhatssvgtopcont {
+                max-width: 1050px;
+                padding: 20px 40px;
+            }
+
+            .tw-heading {
+                font-size: 54px;
+            }
+
+            .tw-desc {
+                font-size: 14px;
+            }
+
+            .tw-forge-btn-inner {
+                padding: 6px 24px;
+                font-size: 13px;
+                border-width: 3px;
+            }
+
+            .compliance-feature-card {
+                padding: 15px 30px;
+                gap: 20px;
+            }
+
+            .cf-heading {
+                font-size: 40px;
+                margin-bottom: 10px;
+            }
+
+            .cf-title {
+                font-size: 12px;
+                margin-bottom: 8px;
+            }
+
+            .cf-subheading {
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+
+            .cf-desc {
+                font-size: 12px;
+                margin-bottom: 10px;
+                line-height: 1.3;
+            }
+
+            .cf-small-desc {
+                font-size: 11px;
+                margin-bottom: 15px;
+                line-height: 1.3;
+            }
+
+            .cf-stat-num {
+                font-size: 30px;
+            }
+
+            .cf-stat-text {
+                font-size: 14px;
+            }
+
+            .cf-stat-item {
+                padding: 8px 0;
+            }
+
+            .cf-features-row {
+                margin-top: 80px;
+            }
+
+            .cf-feature-title {
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+
+            .cf-feature-sub {
+                font-size: 10px;
+                margin-bottom: 8px;
+                min-height: 28px;
+            }
+
+            .cf-feature-list li {
+                font-size: 11px;
+                margin-bottom: 8px;
+            }
+
+            .telluswhatsvgtop svg {
+                transform: scaleX(0.88) translateX(46px);
+                transform-origin: left;
+            }
+
+            .telluswhatsvgbtm svg {
+                transform: scaleX(0.95) translateX(51px);
+                transform-origin: left;
+            }
+
+            .telluswhatsvgtop,
+            .telluswhatsvgbtm {
+                padding-left: 0px;
+            }
+
+            .telluswhatsvgbtm {
+                margin-top: -15px;
+                margin-left: -0.5rem;
+            }
+
+            .middledivsvg svg {
+                transform: scaleX(0.92) translateX(42px);
+                transform-origin: left;
+            }
+
+            .bottomdivsvg svg {
+                transform: scaleX(0.92) translateX(42px) scaleY(0.85);
+                transform-origin: top left;
+            }
+        }
+
+        @media (max-width: 1320px) {
+            .telluswhatsvgtop svg {
+                transform: scaleX(0.88) translateX(15px);
+            }
+
+            .telluswhatsvgbtm svg {
+                transform: scaleX(0.96) translateX(23.4px);
+                margin-top: -3px;
+            }
+        }
+
+        @media (max-width: 1280px) {
+            .products-hero-title {
+                font-size: 64px;
+                line-height: 80px;
+            }
+
+            .telluswhatssvgtopcont {
+                max-width: 1150px;
+                transform: translateX(100px);
+            }
+
+            .telluswhatsvgbtm svg {
+                transform: scaleX(1.036) translateX(20.5px);
+                margin-top: -7px;
+            }
+
+            .contdivseccompliancecard {
+                max-width: 1100px;
             }
         }
     </style>
@@ -842,7 +1078,9 @@
                         </div>
                     </div>
                     <div class="cf-action-btn-wrap">
-                        <a href="#" class="cf-action-btn">TALK TO US ABOUT KELIROS</a>
+                        <a href="#" class="cf-action-btn-outer">
+                            <span class="cf-action-btn-inner">TALK TO US ABOUT KELIROS</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -902,7 +1140,9 @@
                         </div>
                     </div>
                     <div class="cf-action-btn-wrap">
-                        <a href="#" class="cf-action-btn">TALK TO US ABOUT NIYAMOS</a>
+                        <a href="#" class="cf-action-btn-outer">
+                            <span class="cf-action-btn-inner">TALK TO US ABOUT NIYAMOS</span>
+                        </a>
                     </div>
                 </div>
             </div>
