@@ -42,6 +42,7 @@ function boot() {
   initComplianceSvgSequenceScroll();
   initTellUsWhatSvgSequenceScroll();
   initFloatingCurves();
+  initContactUsSvgScroll();
 }
 
 let appBooted = false;
@@ -415,6 +416,40 @@ function initHeroLinesScroll() {
       // vec2 connects to the end of vec1, so we start it after vec1's animation finishes
       tl.to(vec2, { clipPath: 'circle(150% at 100% 0%)', ease: 'none', duration: 0.4 });
     }
+  }
+}
+
+function initContactUsSvgScroll() {
+  const heroSvg = document.querySelector('#herosvgsecdivcont svg');
+  const btmSvg = document.querySelector('#btmsvgsecdiv svg');
+
+  if (heroSvg) gsap.set(heroSvg, { clipPath: 'circle(0% at 100% 0%)' });
+  if (btmSvg) gsap.set(btmSvg, { clipPath: 'circle(0% at 0% 0%)' });
+
+  if (heroSvg) {
+    gsap.to(heroSvg, {
+      clipPath: 'circle(150% at 100% 0%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.contact-hero',
+        start: 'top top',
+        end: 'bottom top', // maximizing the scroll distance
+        scrub: 2
+      }
+    });
+  }
+
+  if (btmSvg) {
+    gsap.to(btmSvg, {
+      clipPath: 'circle(150% at 0% 0%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.work-section',
+        start: 'top 80%', // starts earlier as section enters
+        end: 'bottom top', // stretches until section leaves
+        scrub: 2
+      }
+    });
   }
 }
 
