@@ -2676,7 +2676,7 @@ function initProductsHeroSvgScroll() {
 
     // Start completely hidden (width 0, left edge), starting slightly off-screen to the left
     gsap.set(svg, { clipPath: 'polygon(-20% 0%, -20% 0%, -20% 100%, -20% 100%)' });
-    
+
     gsap.to(svg, {
       // Wipe to full width (left to right)
       clipPath: 'polygon(-20% 0%, 100% 0%, 100% 100%, -20% 100%)',
@@ -2696,7 +2696,7 @@ function initComplianceSvgSequenceScroll() {
   const topSvg = document.querySelector('.topdivsvg svg');
   const midSvg = document.querySelector('.middledivsvg svg');
   const btmSvg = document.querySelector('.bottomdivsvg svg');
-  
+
   if (topSvg) gsap.set(topSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
   if (midSvg) gsap.set(midSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
   if (btmSvg) gsap.set(btmSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
@@ -2721,7 +2721,7 @@ function initComplianceSvgSequenceScroll() {
 function initTellUsWhatSvgSequenceScroll() {
   const topSvg = document.querySelector('.telluswhatsvgtop svg');
   const btmSvg = document.querySelector('.telluswhatsvgbtm svg');
-  
+
   if (topSvg) gsap.set(topSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
   if (btmSvg) gsap.set(btmSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
 
@@ -2732,7 +2732,7 @@ function initTellUsWhatSvgSequenceScroll() {
       trigger: '#Telluswhatsstillbeingdonebyhandsec',
       // Starts precisely when the previous section hits 40% (its end point)
       // This naturally sequences them while speeding up this animation!
-      start: 'top 40%', 
+      start: 'top 40%',
       end: 'bottom 40%',
       scrub: 1
     }
