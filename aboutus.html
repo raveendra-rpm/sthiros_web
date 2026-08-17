@@ -15,15 +15,17 @@
         .about-hero-section {
             position: relative;
             width: 100%;
-            height: 100vh;
-            min-height: 600px;
+            height: calc(100vh - 70px);
+            margin-top: 70px;
+            min-height: 500px;
             display: flex;
             align-items: center;
             background-image: url('assets/images/aboutpage/aboutusbanner.jpg');
             background-size: cover;
-            background-position: center;
+            background-position: right center;
             background-repeat: no-repeat;
             padding: 0 40px;
+            box-sizing: border-box;
         }
 
         .about-hero-overlay {
@@ -518,6 +520,14 @@
             z-index: 1;
             pointer-events: none;
             transition: opacity 0.4s ease;
+        }
+
+        .team-card.inactive.left-card {
+            filter: brightness(1);
+        }
+
+        .team-card.inactive.left-card .team-card-content::after {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 60%);
         }
 
         .team-card.inactive::before {
@@ -1966,6 +1976,7 @@
             <!-- Right Side -->
             <div class="footer-right">
                 <ul class="footer-menu">
+                    <li><a href="index.html">HOME</a></li>
                     <li><a href="aboutus.html" target="_blank">ABOUT US</a></li>
                     <li><a href="services.html" target="_blank">WHAT WE DO</a></li>
                     <li><a href="repository.html" target="_blank">THE REPOSITORY</a></li>
@@ -2043,10 +2054,10 @@
                 { category: "MARKET & GROWTH", name: "Sreekhar", role: "HEAD OF SALES", desc: "Sreekhar is a Chartered Accountant with over thirteen years in enterprise risk and digital transformation. He holds ISO 27001, 27701, NIST-aligned, FAFD, and BRSR credentials, the foundation for how he reads a client's business and shapes the deal around it.", img: "assets/images/aboutpage/teamoneimg.jpg" },
                 { category: "Client Solutions", name: "Karthik Jegannathan", role: "Client Solutions", desc: "Karthik specializes in client relationship management and tailored solutions, ensuring every engagement delivers maximum value.", img: "assets/images/aboutpage/teamoneimg.jpg" },
                 { category: "Client Solutions", name: "Praveen Babu C", role: "Head of AI", desc: "Praveen leads the AI division, focusing on cutting-edge machine learning and data engineering to drive automated intelligence.", img: "assets/images/aboutpage/teamoneimg.jpg" },
-                { category: "Enterprise Risk", name: "Santhosh Kumar R", role: "Chief People Officer", desc: "Santhosh is dedicated to building strong, resilient teams and fostering a great company culture rooted in continuous learning.", img: "assets/images/aboutpage/teamoneimg.jpg" },
-                { category: "Enterprise Risk", name: "Krishnapriya", role: "Head of Legal & Compliance", desc: "Krishnapriya oversees all legal frameworks, ensuring strict compliance and robust governance across global operations.", img: "assets/images/aboutpage/teamoneimg.jpg" },
-                { category: "Strategic Partner Practice", name: "Hithender Kumar G", role: "Head Of Strategy", desc: "Hithender drives the long-term strategic vision and key partnerships, aligning business goals with emerging market opportunities.", img: "assets/images/aboutpage/teamoneimg.jpg" },
-                { category: "Strategic Partner Practice", name: "Ravishankar M", role: "Head of Risk", desc: "Ravishankar is an expert in risk mitigation, security protocols, and operational resilience, safeguarding the organization's core assets.", img: "assets/images/aboutpage/teamoneimg.jpg" }
+                { category: "Strategic Partner Practice", name: "Hithender Kumar G", role: "Head OF Strategy", desc: "Hithender drives the long-term strategic vision and key partnerships, aligning business goals with emerging market opportunities.", img: "assets/images/aboutpage/teamoneimg.jpg" },
+                { category: "Strategic Partner Practice", name: "Ravishankar M", role: "Head of Risk", desc: "Ravishankar is an expert in risk mitigation, security protocols, and operational resilience, safeguarding the organization's core assets.", img: "assets/images/aboutpage/teamoneimg.jpg" },
+                { category: "Enterprise Enablement", name: "Krishnapriya", role: "Head of Legal & Compliance", desc: "Krishnapriya oversees all legal frameworks, ensuring strict compliance and robust governance across global operations.", img: "assets/images/aboutpage/teamoneimg.jpg" },
+                { category: "Enterprise Enablement", name: "Santhosh Kumar R", role: "Chief People Officer", desc: "Santhosh is dedicated to building strong, resilient teams and fostering a great company culture rooted in continuous learning.", img: "assets/images/aboutpage/teamoneimg.jpg" }
             ];
 
             const teamSlider = document.getElementById('teamSlider');
@@ -2083,6 +2094,8 @@
 
                     container.querySelector('.tc-name').innerText = member.name;
                     container.querySelector('.tc-role').innerText = member.role;
+                    const tcTag = container.querySelector('.tc-tag');
+                    if (tcTag) tcTag.innerText = member.category;
                 }
 
                 function shiftCards(shift) {
@@ -2143,9 +2156,10 @@
                 for (let i = 0; i < len; i++) {
                     const card = document.createElement('div');
                     const isActive = i === 1; // 2nd card is always the active one visually
+                    const isLeftCard = i === 0;
                     const isLastThree = i >= len - 4;
 
-                    card.className = `team-card ${isActive ? 'active' : 'inactive'} ${isLastThree ? 'text-left' : ''}`;
+                    card.className = `team-card ${isActive ? 'active' : 'inactive'} ${isLeftCard ? 'left-card' : ''} ${isLastThree ? 'text-left' : ''}`;
                     card.style.order = i;
                     card.style.webkitTapHighlightColor = 'transparent';
 
@@ -2153,9 +2167,10 @@
                         <div class="team-card-content" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
                             <img src="" class="team-card-img" alt="">
                             
-                            <div class="team-card-info">
-                                <h2 class="tc-name"></h2>
-                                <h4 class="tc-role"></h4>
+                            <div class="team-card-info" style="padding: 10px 5px; bottom: 0;">
+                                <p class="tc-tag" style="font-size: 9px; color: #ccc; margin-bottom: 2px; letter-spacing: 0.5px; line-height: 1.2; font-weight: 400;"></p>
+                                <h2 class="tc-name" style="font-size: 12px; margin-bottom: 2px; line-height: 1.2; font-weight: 600;"></h2>
+                                <h4 class="tc-role" style="font-size: 9px; color: #aaa; letter-spacing: 0.5px; line-height: 1.2; font-weight: 400; text-transform: uppercase;"></h4>
                             </div>
 
                             <div class="team-active-text-panel" style="transition: opacity 0.3s ease;">
