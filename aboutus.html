@@ -507,6 +507,19 @@
             filter: brightness(0.8);
         }
 
+        .team-card.inactive .team-card-content::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(60, 20, 25, 0.6) 100%);
+            z-index: 1;
+            pointer-events: none;
+            transition: opacity 0.4s ease;
+        }
+
         .team-card.inactive::before {
             content: '';
             position: absolute;
@@ -522,6 +535,7 @@
             width: 260px;
             height: 480px;
             filter: brightness(1);
+            z-index: 100;
         }
 
         .team-card-img {
@@ -531,8 +545,6 @@
             object-position: bottom center;
             display: block;
         }
-
-
 
         .team-card-info {
             position: absolute;
@@ -550,15 +562,39 @@
             pointer-events: none;
         }
 
-        .tc-cat {
-            font-family: 'Inter', sans-serif;
-            font-size: 10px;
+        .ta-filters {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: nowrap;
+            width: max-content;
+            position: absolute;
+            left: calc(100% + 40px);
+            top: 0;
+            z-index: 20;
+        }
+
+        .team-filter-btn {
+            background-color: transparent;
             color: #d4d4d4;
-            margin: 0 0 5px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
             text-transform: uppercase;
+            border: 1px solid var(--VERMILION-RED, #EC2D26);
+            border-radius: 50px;
+            padding: 10px 24px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            pointer-events: auto;
             white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+        }
+
+        .team-filter-btn.active,
+        .team-filter-btn:hover {
+            background-color: var(--VERMILION-RED, #EC2D26);
+            color: #fff;
+            font-weight: 700;
         }
 
         .tc-name {
@@ -593,9 +629,9 @@
             display: none;
             position: absolute;
             left: calc(100% + 40px);
-            bottom: 250px;
-            /* Positions it above the inactive cards */
-            width: 500px;
+            top: 60px;
+            /* Anchored to top so tags stay fixed, moved down for tag space */
+            width: 800px;
             z-index: 10;
             pointer-events: none;
         }
@@ -611,14 +647,7 @@
             animation: fadeInLeft 0.5s ease forwards;
         }
 
-        .ta-cat {
-            color: var(--VERMILION-RED, #EC2D26);
-            font-family: 'Inter', sans-serif;
-            font-size: 14px;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-        }
+
 
         .ta-name {
             color: #fff;
@@ -1240,7 +1269,7 @@
 
 <body>
     <!-- ═══════════════ SITE HEADER ═══════════════ -->
-    <header class="site-header header-hidden">
+    <header class="site-header">
         <div class="header-left">
             <a href="index.html" class="logo-link">
                 <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
@@ -1346,14 +1375,14 @@
                     <div class="sub-nav">
                         <a href="industry.html" class="sub-nav-link">BFSI & Fintech</a>
                         <a href="industry1.html" class="sub-nav-link">D2C & Retail</a>
-                        <a href="#" class="sub-nav-link">Energy, Mining & Utilities</a>
+                        <a href="industry2.html" class="sub-nav-link">Energy, Mining & Utilities</a>
                         <a href="industry3.html" class="sub-nav-link">GCC</a>
                         <a href="industry4.html" class="sub-nav-link">Healthcare & Life Sciences</a>
-                        <a href="#" class="sub-nav-link">Manufacturing</a>
-                        <a href="#" class="sub-nav-link">Telecom & Digital Infrastructure</a>
-                        <a href="#" class="sub-nav-link">Travel & Hospitality</a>
+                        <a href="industry5.html" class="sub-nav-link">Manufacturing</a>
+                        <a href="industry7.html" class="sub-nav-link">Telecom & Digital Infrastructure</a>
+                        <a href="industry8.html" class="sub-nav-link">Travel & Hospitality</a>
                         <a href="industry6.html" class="sub-nav-link">Public Sector & Government</a>
-                        <a href="#" class="sub-nav-link">Real Estate / EPC / Construction</a>
+                        <a href="industry9.html" class="sub-nav-link">Real Estate / EPC / Construction</a>
                     </div>
                 </div>
 
@@ -1539,8 +1568,8 @@
                     </svg>
                 </div>
                 <div class="vm-expanded">
-                    <p class="vm-desc">We find the gap between what a company believes about itself and what's actually
-                        true, then close it before the complexity becomes consequence.</p>
+                    <p class="vm-desc">We are on a mission to eradicate operational noise holding enterprises back,
+                        replacing legacy workflows with trusted AI that elevated human potential.</p>
                 </div>
                 <div class="vm-dynamic-title">
                     <span>Mission</span>
@@ -1635,7 +1664,8 @@
                     </svg>
                 </div>
                 <div class="vm-expanded">
-                    <p class="vm-desc">A world where growing companies never have to bet on their own blind spots.</p>
+                    <p class="vm-desc">We kill grunt work, deploy cognitive engines for high stakes decisions and put
+                        human judgment exactly where it belongs</p>
                 </div>
                 <div class="vm-dynamic-title">
                     <span>Vision</span>
@@ -1850,8 +1880,8 @@
                 class="rwy-bg-img">
             <div class="rwy-content-wrapper">
                 <h2 class="rwy-heading">Ready when<br>you are.</h2>
-                <a href="#" class="rwy-btn-outer">
-                    <span class="rwy-btn-inner">GET IN TOUCH</span>
+                <a href="contactus.html" target="_blank" class="hero-btn-outer">
+                    <span class="hero-btn-inner" style="font-size: 16px;">GET IN TOUCH</span>
                 </a>
             </div>
         </div>
@@ -2029,6 +2059,16 @@
                 const domCards = [];
                 let dataOffset = 0;
                 const len = teamData.length;
+                const uniqueCategories = [...new Set(teamData.map(item => item.category.toUpperCase()))];
+
+                function updateFilters() {
+                    const currentActiveIndex = ((1 + dataOffset) % len + len) % len;
+                    const activeCat = teamData[currentActiveIndex].category.toUpperCase();
+                    document.querySelectorAll('.team-filter-btn').forEach(btn => {
+                        if (btn.innerText === activeCat) btn.classList.add('active');
+                        else btn.classList.remove('active');
+                    });
+                }
 
                 function populateData(container, dataIndex) {
                     const member = teamData[dataIndex];
@@ -2037,10 +2077,12 @@
                     img.src = member.img;
                     img.alt = member.name;
 
-                    container.querySelector('.ta-cat').innerText = member.category;
                     container.querySelector('.ta-name').innerText = member.name;
                     container.querySelector('.ta-role').innerText = member.role;
                     container.querySelector('.ta-desc').innerText = member.desc;
+
+                    container.querySelector('.tc-name').innerText = member.name;
+                    container.querySelector('.tc-role').innerText = member.role;
                 }
 
                 function shiftCards(shift) {
@@ -2056,6 +2098,7 @@
 
                     const dir = shift > 0 ? -1 : 1; // swipe left (shift>0) -> out left (-1), in right (+1)
                     dataOffset = ((dataOffset + shift) % len + len) % len;
+                    updateFilters();
 
                     domCards.forEach((card, i) => {
                         const content = card.querySelector('.team-card-content');
@@ -2110,17 +2153,41 @@
                         <div class="team-card-content" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
                             <img src="" class="team-card-img" alt="">
                             
+                            <div class="team-card-info">
+                                <h2 class="tc-name"></h2>
+                                <h4 class="tc-role"></h4>
+                            </div>
+
                             <div class="team-active-text-panel" style="transition: opacity 0.3s ease;">
-                                <h5 class="ta-cat"></h5>
                                 <h2 class="ta-name"></h2>
                                 <h4 class="ta-role"></h4>
                                 <p class="ta-desc"></p>
                             </div>
                         </div>
+                        ${isActive ? `<div class="ta-filters"></div>` : ''}
                     `;
 
                     const content = card.querySelector('.team-card-content');
                     populateData(content, i);
+
+                    const taFilters = card.querySelector('.ta-filters');
+                    if (taFilters) {
+                        uniqueCategories.forEach((cat) => {
+                            const btn = document.createElement('button');
+                            btn.className = 'team-filter-btn';
+                            btn.innerText = cat;
+                            btn.addEventListener('click', (e) => {
+                                e.stopPropagation();
+                                if (isAnimating) return;
+                                const currentActiveIndex = ((1 + dataOffset) % len + len) % len;
+                                const targetIndex = teamData.findIndex(item => item.category.toUpperCase() === cat);
+                                if (targetIndex !== -1 && targetIndex !== currentActiveIndex) {
+                                    shiftCards(targetIndex - currentActiveIndex);
+                                }
+                            });
+                            taFilters.appendChild(btn);
+                        });
+                    }
 
                     // Prevent native image dragging so custom mouse swipe works smoothly
                     const img = card.querySelector('.team-card-img');
@@ -2137,6 +2204,8 @@
                     domCards.push(card);
                     teamSlider.appendChild(card);
                 }
+
+                updateFilters();
 
                 // Add swipe/drag detection
                 let startX = 0;

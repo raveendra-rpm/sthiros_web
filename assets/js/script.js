@@ -2388,9 +2388,35 @@ function initServiceAccordion() {
   const headers = document.querySelectorAll('.deliverable-header');
   if (!headers.length) return;
 
+  // Dynamically fix the gap between Service Lines and What's Different based on item count
+  const deliverableItems = document.querySelectorAll('.deliverable-item');
+  const differentSection = document.getElementById('differentaboutworkingwithus');
+  if (differentSection && deliverableItems.length > 0) {
+    if (deliverableItems.length <= 2) {
+      differentSection.style.marginTop = '-160px';
+      differentSection.style.paddingTop = '60px';
+    } else if (deliverableItems.length === 3) {
+      differentSection.style.marginTop = '-50px';
+      differentSection.style.paddingTop = '60px';
+    } else {
+      differentSection.style.marginTop = '20px';
+      differentSection.style.paddingTop = '60px';
+    }
+  }
+
   headers.forEach(header => {
     header.addEventListener('click', () => {
       const parent = header.closest('.deliverable-item');
+
+      // If we are opening this item, close all others in the same container first
+      if (!parent.classList.contains('active')) {
+        const container = header.closest('.servicelinedeliverablecont');
+        if (container) {
+          container.querySelectorAll('.deliverable-item').forEach(item => {
+            item.classList.remove('active');
+          });
+        }
+      }
 
       // Toggle the clicked item
       parent.classList.toggle('active');

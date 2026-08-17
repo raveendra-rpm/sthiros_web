@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sthiros — Industry</title>
+    <title>Industries — Telecom & Digital Infrastructure</title>
     <meta name="description" content="We build financial systems that clear audit before the auditor asks." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -60,7 +60,7 @@
 
         .industry-hero h1 {
             font-family: var(--font), sans-serif;
-            font-size: clamp(3rem, 5vw, 4.5rem);
+            font-size: clamp(2.5rem, 4vw, 4rem);
             font-weight: 600;
             line-height: 1.1;
             color: #fff;
@@ -1140,6 +1140,8 @@
             gap: 20px;
             align-items: center;
             justify-content: center;
+            position: relative;
+            z-index: 100;
         }
 
         .std-btn-outer {
@@ -1306,7 +1308,7 @@
 
 <body>
     <!-- ═══════════════ SITE HEADER ═══════════════ -->
-    <header class="site-header header-hidden">
+    <header class="site-header">
         <div class="header-left">
             <a href="index.html" class="logo-link">
                 <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
@@ -1412,14 +1414,14 @@
                     <div class="sub-nav">
                         <a href="industry.html" class="sub-nav-link">BFSI & Fintech</a>
                         <a href="industry1.html" class="sub-nav-link">D2C & Retail</a>
-                        <a href="#" class="sub-nav-link">Energy, Mining & Utilities</a>
+                        <a href="industry2.html" class="sub-nav-link">Energy, Mining & Utilities</a>
                         <a href="industry3.html" class="sub-nav-link">GCC</a>
                         <a href="industry4.html" class="sub-nav-link">Healthcare & Life Sciences</a>
-                        <a href="#" class="sub-nav-link">Manufacturing</a>
-                        <a href="#" class="sub-nav-link">Telecom & Digital Infrastructure</a>
-                        <a href="#" class="sub-nav-link">Travel & Hospitality</a>
+                        <a href="industry5.html" class="sub-nav-link">Manufacturing</a>
+                        <a href="industry7.html" class="sub-nav-link">Telecom & Digital Infrastructure</a>
+                        <a href="industry8.html" class="sub-nav-link">Travel & Hospitality</a>
                         <a href="industry6.html" class="sub-nav-link">Public Sector & Government</a>
-                        <a href="#" class="sub-nav-link">Real Estate / EPC / Construction</a>
+                        <a href="industry9.html" class="sub-nav-link">Real Estate / EPC / Construction</a>
                     </div>
                 </div>
 
@@ -1437,30 +1439,7 @@
     </div>
 
 
-    <!-- ═══════════════ SITE HEADER ═══════════════ -->
-    <header class="site-header header-hidden">
-        <div class="header-left">
-            <a href="index.html" class="logo-link">
-                <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
-            </a>
-        </div>
-        <div class="header-right">
-            <button class="theme-toggle" aria-label="Toggle Dark/Light Mode">
-                <span class="toggle-track">
-                    <img src="assets/images/dark_light_toggle.png" alt="Light Theme" class="toggle-art light-art">
-                    <img src="assets/images/dark_mode_toggle_new.png" alt="Dark Theme" class="toggle-art dark-art">
-                    <span class="toggle-thumb"></span>
-                </span>
-            </button>
-            <button class="menu-toggle" aria-label="Open Menu">
-                <span class="menu-icon">
-                    <span class="line line-1"></span>
-                    <span class="line line-2"></span>
-                    <span class="line line-3"></span>
-                </span>
-            </button>
-        </div>
-    </header>
+    
 
     <!-- ═══════════════ INDUSTRY HERO SECTION ═══════════════ -->
     <section class="industry-hero">
@@ -1472,11 +1451,11 @@
                 the economics against ARPU. 5G capex and data centre demand are outrunning most operators' ability to
                 model returns. We answer that before go-live.</p>
             <div class="industry-hero-actions">
-                <a href="#" class="industry-btn-outer">
-                    <span class="industry-btn-inner">BOOK A 30-MIN CALL</span>
+                <a href="contactus.html" target="_blank" class="hero-btn-outer">
+                    <span class="hero-btn-inner">BOOK A 30-MIN CALL</span>
                 </a>
-                <a href="#" class="industry-btn-outer">
-                    <span class="industry-btn-inner">GET THE BFSI DIAGNOSTIC</span>
+                <a href="#" class="hero-btn-outer">
+                    <span class="hero-btn-inner">GET THE BFSI DIAGNOSTIC</span>
                 </a>
             </div>
         </div>
@@ -4127,7 +4106,7 @@ We’ll show you the right problems. -->
         </div>
     </section>
 
-    <!-- T Section Title How Sthiros is different in BFSI -->
+    <!-- T Section Title How Sthiros is different in TELECOM AND DIGITAL INFRASTRUCTURE -->
     <section id="sectiontitlesvgtop">
         <svg xmlns="http://www.w3.org/2000/svg" width="74" height="482" viewBox="0 0 74 482" fill="none">
             <path d="M74 481.988L49.3334 481.988L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 481.988Z"
@@ -4167,9 +4146,10 @@ We’ll show you the right problems. -->
         </svg>
     </section>
 
-    <!-- How Sthiros is different in BFSI -->
+    <!-- How Sthiros is different in TELECOM AND DIGITAL INFRASTRUCTURE -->
     <section id="howsthirosdifferentsec">
-        <h2 class="hsd-heading">HOW STHIROS IS DIFFERENT IN <br>TELECOM AND DIGITAL INFRASTRUCTURE</h2>
+        <h2 class="hsd-heading">how <span style="color: #EC2D26;">sthiros</span> is different in <br>telecom and digital
+            infrastructure</h2>
         <div class="hsd-features">
             <div class="hsd-feature-card">
                 <div class="hsd-feature-content">
@@ -4289,11 +4269,10 @@ We’ll show you the right problems. -->
             <div class="chts-cards-container">
                 <div class="chts-card">
                     <h3 class="chts-card-title">A 30-minute call</h3>
-                    <p class="chts-card-desc">Tell us the asset type and the challenge. By the end of the call we'll say
-                        what we'd tackle first: network economics, ARPU strategy, cost optimisation, an AI build, or a
-                        piece of software. No deck required.</p>
+                    <p class="chts-card-desc">Tell us your asset type, your biggest commercial or operational pressure,
+                        and whether you need advice, a build, or both. We'll point you at the right starting line.</p>
                     <div class="chts-card-footer">
-                        <a href="#">Book a call</a>
+                        <a href="contactus.html" target="_blank">Book a call</a>
                     </div>
                 </div>
 
@@ -4371,11 +4350,11 @@ We’ll show you the right problems. -->
                     need advice, a build, or both. We'll point you at the right starting line.</p>
             </div>
             <div class="std-buttons">
-                <a href="#" class="std-btn-outer">
-                    <span class="std-btn-inner">START TALKING</span>
+                <a href="contactus.html" target="_blank" class="hero-btn-outer">
+                    <span class="hero-btn-inner">START TALKING</span>
                 </a>
-                <a href="#" class="std-btn-outer">
-                    <span class="std-btn-inner">WHAT WE ACTUALLY DO</span>
+                <a href="services.html" target="_blank" class="hero-btn-outer">
+                    <span class="hero-btn-inner">WHAT WE ACTUALLY DO</span>
                 </a>
             </div>
         </div>

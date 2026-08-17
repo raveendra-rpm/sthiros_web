@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sthiros — Industry</title>
+    <title>Industries — Manufacturing</title>
     <meta name="description" content="We build financial systems that clear audit before the auditor asks." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -60,7 +60,7 @@
 
         .industry-hero h1 {
             font-family: var(--font), sans-serif;
-            font-size: clamp(3rem, 5vw, 4.5rem);
+            font-size: clamp(2.5rem, 4vw, 3.8rem);
             font-weight: 600;
             line-height: 1.1;
             color: #fff;
@@ -1140,6 +1140,8 @@
             gap: 20px;
             align-items: center;
             justify-content: center;
+            position: relative;
+            z-index: 100;
         }
 
         .std-btn-outer {
@@ -1306,7 +1308,7 @@
 
 <body>
     <!-- ═══════════════ SITE HEADER ═══════════════ -->
-    <header class="site-header header-hidden">
+    <header class="site-header">
         <div class="header-left">
             <a href="index.html" class="logo-link">
                 <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
@@ -1412,14 +1414,14 @@
                     <div class="sub-nav">
                         <a href="industry.html" class="sub-nav-link">BFSI & Fintech</a>
                         <a href="industry1.html" class="sub-nav-link">D2C & Retail</a>
-                        <a href="#" class="sub-nav-link">Energy, Mining & Utilities</a>
+                        <a href="industry2.html" class="sub-nav-link">Energy, Mining & Utilities</a>
                         <a href="industry3.html" class="sub-nav-link">GCC</a>
                         <a href="industry4.html" class="sub-nav-link">Healthcare & Life Sciences</a>
-                        <a href="#" class="sub-nav-link">Manufacturing</a>
-                        <a href="#" class="sub-nav-link">Telecom & Digital Infrastructure</a>
-                        <a href="#" class="sub-nav-link">Travel & Hospitality</a>
+                        <a href="industry5.html" class="sub-nav-link">Manufacturing</a>
+                        <a href="industry7.html" class="sub-nav-link">Telecom & Digital Infrastructure</a>
+                        <a href="industry8.html" class="sub-nav-link">Travel & Hospitality</a>
                         <a href="industry6.html" class="sub-nav-link">Public Sector & Government</a>
-                        <a href="#" class="sub-nav-link">Real Estate / EPC / Construction</a>
+                        <a href="industry9.html" class="sub-nav-link">Real Estate / EPC / Construction</a>
                     </div>
                 </div>
 
@@ -1437,42 +1439,21 @@
     </div>
 
 
-    <!-- ═══════════════ SITE HEADER ═══════════════ -->
-    <header class="site-header header-hidden">
-        <div class="header-left">
-            <a href="index.html" class="logo-link">
-                <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
-            </a>
-        </div>
-        <div class="header-right">
-            <button class="theme-toggle" aria-label="Toggle Dark/Light Mode">
-                <span class="toggle-track">
-                    <img src="assets/images/dark_light_toggle.png" alt="Light Theme" class="toggle-art light-art">
-                    <img src="assets/images/dark_mode_toggle_new.png" alt="Dark Theme" class="toggle-art dark-art">
-                    <span class="toggle-thumb"></span>
-                </span>
-            </button>
-            <button class="menu-toggle" aria-label="Open Menu">
-                <span class="menu-icon">
-                    <span class="line line-1"></span>
-                    <span class="line line-2"></span>
-                    <span class="line line-3"></span>
-                </span>
-            </button>
-        </div>
-    </header>
+    
 
     <!-- ═══════════════ INDUSTRY HERO SECTION ═══════════════ -->
     <section class="industry-hero">
         <div class="industry-hero-content">
-            <h1>Somewhere between the  <br>  shop floor and the <span> <br>  P&L, </span> the margin  <br> goes missing.</h1>
-            <p>OEE looks fine on the dashboard. What actually protects margin is smaller: whether anyone besides the plant manager knows why line 3 slows every Tuesday. We build the system that knows anyway.</p>
+            <h1>Somewhere between the <br> shop floor and the <span> P&L,<br> </span> the margin goes missing.
+            </h1>
+            <p>OEE looks fine on the dashboard. What actually protects margin is smaller: whether anyone besides the
+                plant manager knows why line 3 slows every Tuesday. We build the system that knows anyway.</p>
             <div class="industry-hero-actions">
-                <a href="#" class="industry-btn-outer">
-                    <span class="industry-btn-inner">BOOK A 30-MIN CALL</span>
+                <a href="contactus.html" target="_blank" class="hero-btn-outer">
+                    <span class="hero-btn-inner">BOOK A 30-MIN CALL</span>
                 </a>
-                <a href="#" class="industry-btn-outer">
-                    <span class="industry-btn-inner">GET THE BFSI DIAGNOSTIC</span>
+                <a href="#" class="hero-btn-outer">
+                    <span class="hero-btn-inner">GET THE BFSI DIAGNOSTIC</span>
                 </a>
             </div>
         </div>
@@ -1535,7 +1516,8 @@ We’ll show you the right problems. -->
     <section id="Whotherightproblemssec">
         <div class="wtrp-content">
             <h2 class="wtrp-heading">Who are you?<br>We'll show you the<br>right <span>problems.</span></h2>
-            <p class="wtrp-subheading">Pick your segment. What comes up is tuned to your operating context and where your cost structure actually hurts.</p>
+            <p class="wtrp-subheading">Pick your segment. What comes up is tuned to your operating context and where
+                your cost structure actually hurts.</p>
             <div class="segment-tabs">
                 <button class="segment-btn active" data-target="problems-bank">Process manufacturer</button>
                 <button class="segment-btn" data-target="problems-insurance">Discrete manufacturer</button>
@@ -1558,7 +1540,9 @@ We’ll show you the right problems. -->
                     <div class="problem-left">
                         <div class="problem-left-content">
                             <div class="problem-text">Yield losses are eating into my batch margins</div>
-                            <div class="problem-desc">Every batch below standard yield is a direct margin hit. I know it's happening but I can't pinpoint whether it's raw material variability, process drift, or operator inconsistency.</div>
+                            <div class="problem-desc">Every batch below standard yield is a direct margin hit. I know
+                                it's happening but I can't pinpoint whether it's raw material variability, process
+                                drift, or operator inconsistency.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -1568,8 +1552,14 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Finding out where the yield actually goes</h3>
-                                <p>Yield loss usually comes from three places: raw material that varies enough to change the outcome, process parameters drifting in ways nobody clocks until the batch is tested, and operators executing the same step slightly differently. Most plants track yield in aggregate, which confirms the loss exists without telling you where to stand and look. We decompose it down to the batch, the parameter and the operator, and build the monitoring that catches a deviation while the batch can still be saved rather than mourned.</p>
-                                <button class="fix-btn">Fix my batch yield</button>
+                                <p>Yield loss usually comes from three places: raw material that varies enough to change
+                                    the outcome, process parameters drifting in ways nobody clocks until the batch is
+                                    tested, and operators executing the same step slightly differently. Most plants
+                                    track yield in aggregate, which confirms the loss exists without telling you where
+                                    to stand and look. We decompose it down to the batch, the parameter and the
+                                    operator, and build the monitoring that catches a deviation while the batch can
+                                    still be saved rather than mourned.</p>
+                                <button class="fix-btn">Fix my batch yield ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -1618,8 +1608,10 @@ We’ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">Regulatory and quality compliance is becoming harder to maintain</div>
-                            <div class="problem-desc">GMP, FSSAI, REACH, BIS — the compliance burden is increasing and my systems weren't designed to manage it at current scale and complexity.</div>
+                            <div class="problem-text">Regulatory and quality compliance is becoming harder to maintain
+                            </div>
+                            <div class="problem-desc">GMP, FSSAI, REACH, BIS — the compliance burden is increasing and
+                                my systems weren't designed to manage it at current scale and complexity.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -1629,8 +1621,14 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Compliance that lives in the process, not in the paperwork</h3>
-                                <p>Compliance in process manufacturing gets treated as a documentation job, but GMP deviations don't happen in the documents — they happen on the line, and the paperwork just records them after the fact. We rebuild it as an operating discipline: SOPs built into the production workflow, deviations flagged in real time, batch records that fill themselves, and an audit trail that satisfies both internal QA and an external inspector without a week of someone frantically assembling documents the night before.</p>
-                                <button class="fix-btn">Fix my compliance operating model</button>
+                                <p>Compliance in process manufacturing gets treated as a documentation job, but GMP
+                                    deviations don't happen in the documents — they happen on the line, and the
+                                    paperwork just records them after the fact. We rebuild it as an operating
+                                    discipline: SOPs built into the production workflow, deviations flagged in real
+                                    time, batch records that fill themselves, and an audit trail that satisfies both
+                                    internal QA and an external inspector without a week of someone frantically
+                                    assembling documents the night before.</p>
+                                <button class="fix-btn">Fix my compliance operating model ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -1680,7 +1678,9 @@ We’ll show you the right problems. -->
                     <div class="problem-left">
                         <div class="problem-left-content">
                             <div class="problem-text">Unplanned downtime is disrupting production schedules</div>
-                            <div class="problem-desc">Equipment failures that weren't predicted, changeover delays, and  &mdash; utility interruptions are causing schedule slippage and customer delivery failures.</div>
+                            <div class="problem-desc">Equipment failures that weren't predicted, changeover delays, and
+                                &mdash; utility interruptions are causing schedule slippage and customer delivery
+                                failures.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -1690,9 +1690,15 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Predicting the breakdown instead of reacting to it</h3>
-                                <p>Unplanned downtime in process manufacturing costs more than the lost production alone — there's the ruined batch, the wasted utilities, and the scramble to recover the schedule on top. Most plants run calendar-based preventive maintenance, which manages to both over-service equipment that's fine and miss the failures that don't check a calendar first. We build predictive maintenance instead: sensor data integrated, real failure patterns modelled, and scheduling that acts on how the equipment is actually behaving rather than what the plan says this month.
+                                <p>Unplanned downtime in process manufacturing costs more than the lost production alone
+                                    — there's the ruined batch, the wasted utilities, and the scramble to recover the
+                                    schedule on top. Most plants run calendar-based preventive maintenance, which
+                                    manages to both over-service equipment that's fine and miss the failures that don't
+                                    check a calendar first. We build predictive maintenance instead: sensor data
+                                    integrated, real failure patterns modelled, and scheduling that acts on how the
+                                    equipment is actually behaving rather than what the plan says this month.
                                 </p>
-                                <button class="fix-btn">Build my predictive maintenance system</button>
+                                <button class="fix-btn">Build my predictive maintenance system ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -1741,8 +1747,11 @@ We’ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">Raw material cost volatility is making margin planning impossible</div>
-                            <div class="problem-desc">Commodity price swings, single-source dependencies, and long procurement lead times mean my standard costs are almost always wrong by the time the batch runs.</div>
+                            <div class="problem-text">Raw material cost volatility is making margin planning impossible
+                            </div>
+                            <div class="problem-desc">Commodity price swings, single-source dependencies, and long
+                                procurement lead times mean my standard costs are almost always wrong by the time the
+                                batch runs.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -1752,8 +1761,14 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Getting standard cost to actually resemble what you paid</h3>
-                                <p>Raw material is the biggest line in most process P&Ls and also the twitchiest. Single-source dependencies, long lead times, and buying decisions made without much market intelligence leave your cost structure permanently on the back foot, and your standard cost wrong by the time the batch runs. We rework the procurement strategy — multi-sourcing where it's worth it, price intelligence feeds, sensible hedging, and a timing model that shrinks the gap between the standard cost in your sheet and the actual cost you paid.</p>
-                                <button class="fix-btn">Build my raw material intelligence</button>
+                                <p>Raw material is the biggest line in most process P&Ls and also the twitchiest.
+                                    Single-source dependencies, long lead times, and buying decisions made without much
+                                    market intelligence leave your cost structure permanently on the back foot, and your
+                                    standard cost wrong by the time the batch runs. We rework the procurement strategy —
+                                    multi-sourcing where it's worth it, price intelligence feeds, sensible hedging, and
+                                    a timing model that shrinks the gap between the standard cost in your sheet and the
+                                    actual cost you paid.</p>
+                                <button class="fix-btn">Build my raw material intelligence ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -1804,7 +1819,9 @@ We’ll show you the right problems. -->
                         <div class="problem-left-content">
                             <div class="problem-text">I have no real-time visibility into plant performance
                             </div>
-                            <div class="problem-desc">I get a production report the next morning. By then the shift is over, the decisions are made, and the losses are locked in. I need to see what's happening now.</div>
+                            <div class="problem-desc">I get a production report the next morning. By then the shift is
+                                over, the decisions are made, and the losses are locked in. I need to see what's
+                                happening now.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -1814,8 +1831,13 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Seeing the shift while it's still happening</h3>
-                                <p>A production report that lands the next morning is a history lesson, not a control. By the time you read it the shift is done, the decisions are made, and the losses are locked in for good. We build the real-time layer — production rate, yield, downtime, quality and utility consumption visible live by line, batch and shift — so your plant manager is making calls during the shift, while there's still a shift left to change.</p>
-                                <button class="fix-btn">Build my plant intelligence</button>
+                                <p>A production report that lands the next morning is a history lesson, not a control.
+                                    By the time you read it the shift is done, the decisions are made, and the losses
+                                    are locked in for good. We build the real-time layer — production rate, yield,
+                                    downtime, quality and utility consumption visible live by line, batch and shift — so
+                                    your plant manager is making calls during the shift, while there's still a shift
+                                    left to change.</p>
+                                <button class="fix-btn">Build my plant intelligence ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -1864,8 +1886,10 @@ We’ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">I want to scale capacity but my current <br>processes aren't stable enough</div>
-                            <div class="problem-desc">Adding capacity on top of an unstable process just scales the problems. Before I invest in expansion, I need the current process under control.</div>
+                            <div class="problem-text">I want to scale capacity but my current <br>processes aren't
+                                stable enough</div>
+                            <div class="problem-desc">Adding capacity on top of an unstable process just scales the
+                                problems. Before I invest in expansion, I need the current process under control.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -1875,9 +1899,14 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Getting the process stable before you scale its problems</h3>
-                                <p>Scaling an unstable process doesn't grow the business; it just buys you the same problems in bulk. Before you spend on new reactors, lines or utilities, the current process wants to be under statistical control — yield predictable, downtime manageable, quality steady, compliance reliable. We run the stabilisation programme first and design the expansion second, on a foundation that can actually carry the extra weight.
+                                <p>Scaling an unstable process doesn't grow the business; it just buys you the same
+                                    problems in bulk. Before you spend on new reactors, lines or utilities, the current
+                                    process wants to be under statistical control — yield predictable, downtime
+                                    manageable, quality steady, compliance reliable. We run the stabilisation programme
+                                    first and design the expansion second, on a foundation that can actually carry the
+                                    extra weight.
                                 </p>
-                                <button class="fix-btn">Stabilise my process first</button>
+                                <button class="fix-btn">Stabilise my process first ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -1936,8 +1965,11 @@ We’ll show you the right problems. -->
                 <div class="problem-item active" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">On-time delivery performance is damaging customer relationships</div>
-                            <div class="problem-desc">Schedule adherence is below target. Customers are escalating. I'm spending more time managing delivery failures than improving the process that causes them.</div>
+                            <div class="problem-text">On-time delivery performance is damaging customer relationships
+                            </div>
+                            <div class="problem-desc">Schedule adherence is below target. Customers are escalating. I'm
+                                spending more time managing delivery failures than improving the process that causes
+                                them.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -1946,8 +1978,14 @@ We’ll show you the right problems. -->
                     <div class="problem-right">
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
-                                <h3>Missed delivery dates in discrete manufacturing are usually a planning problem wearing a production problem's clothes. Material shortages, breakdowns, quality holds, engineering changes all hit the schedule, but the real issue is that the schedule was built as if none of them ever would. We redesign the planning model — constraint-based scheduling, buffers where they belong, material readiness checked before the job starts, and a daily rhythm that stops a small disruption from quietly turning into a late shipment</p>
-                                <button class="fix-btn">Improve my on-time delivery</button>
+                                <h3>Missed delivery dates in discrete manufacturing are usually a planning problem
+                                    wearing a production problem's clothes. Material shortages, breakdowns, quality
+                                    holds, engineering changes all hit the schedule, but the real issue is that the
+                                    schedule was built as if none of them ever would. We redesign the planning model —
+                                    constraint-based scheduling, buffers where they belong, material readiness checked
+                                    before the job starts, and a daily rhythm that stops a small disruption from quietly
+                                    turning into a late shipment</p>
+                                    <button class="fix-btn">Improve my on-time delivery ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -1998,7 +2036,9 @@ We’ll show you the right problems. -->
                         <div class="problem-left-content">
                             <div class="problem-text">Rejection and rework rates are too <br> high and too unpredictable
                             </div>
-                            <div class="problem-desc">Quality escapes, in-process rejections, and customer returns are creating hidden cost that doesn't show up until month-end — by which point the damage is done.</div>
+                            <div class="problem-desc">Quality escapes, in-process rejections, and customer returns are
+                                creating hidden cost that doesn't show up until month-end — by which point the damage is
+                                done.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -2008,8 +2048,13 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Rejections and rework brought down to a number you can plan around</h3>
-                                <p>A quality escape costs you three times over: the scrap or rework itself, the schedule hit from holding and reinspecting, and the customer damage when a bad part reaches the field. The good news is quality problems are rarely random — they cluster around particular machines, operators, setups and material lots. We find the clusters, fix what's actually causing them, and build the in-process monitoring that catches a deviation before it becomes a reject rather than after.</p>
-                                <button class="fix-btn">Reduce my rejection rate</button>
+                                <p>A quality escape costs you three times over: the scrap or rework itself, the schedule
+                                    hit from holding and reinspecting, and the customer damage when a bad part reaches
+                                    the field. The good news is quality problems are rarely random — they cluster around
+                                    particular machines, operators, setups and material lots. We find the clusters, fix
+                                    what's actually causing them, and build the in-process monitoring that catches a
+                                    deviation before it becomes a reject rather than after.</p>
+                                <button class="fix-btn">Reduce my rejection rate ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -2019,7 +2064,7 @@ We’ll show you the right problems. -->
                                                 alt="arrow"></div>
                                     </div>
                                     <ul class="service-list">
-                                        <li>CONSULTING  Quality loss analysis</li>
+                                        <li>CONSULTING Quality loss analysis</li>
                                         <li>Root cause and corrective action</li>
                                         <li>In-process control redesign</li>
                                         <li>Customer quality response protocol</li>
@@ -2059,7 +2104,9 @@ We’ll show you the right problems. -->
                     <div class="problem-left">
                         <div class="problem-left-content">
                             <div class="problem-text">My OEE is too low and I don't know which loss is biggest</div>
-                            <div class="problem-desc">I know the number but not the breakdown. Is it availability, performance, or quality? Which machine, which shift, which product family is the real problem?</div>
+                            <div class="problem-desc">I know the number but not the breakdown. Is it availability,
+                                performance, or quality? Which machine, which shift, which product family is the real
+                                problem?</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -2069,9 +2116,14 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>OEE broken down to the loss that's actually worth fixing</h3>
-                                <p>OEE is one tidy number sitting on top of a messy mix — availability, performance and quality losses spread across different machines, products and shifts. Improving it means knowing which bucket is biggest, which asset is dragging it, and why, before you spend anything on a fix. We decompose OEE down to the machine and the shift, name the top three loss contributors, and build the improvement programme that goes after them in the order that actually pays, not the order that's easiest.
+                                <p>OEE is one tidy number sitting on top of a messy mix — availability, performance and
+                                    quality losses spread across different machines, products and shifts. Improving it
+                                    means knowing which bucket is biggest, which asset is dragging it, and why, before
+                                    you spend anything on a fix. We decompose OEE down to the machine and the shift,
+                                    name the top three loss contributors, and build the improvement programme that goes
+                                    after them in the order that actually pays, not the order that's easiest.
                                 </p>
-                                <button class="fix-btn">Improve my OEE</button>
+                                <button class="fix-btn">Improve my OEE ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -2121,7 +2173,9 @@ We’ll show you the right problems. -->
                     <div class="problem-left">
                         <div class="problem-left-content">
                             <div class="problem-text">Supply chain disruptions are causing line stoppages</div>
-                            <div class="problem-desc">Single-source components, long lead time imports, and supplier quality variability are creating material availability gaps that stop production lines mid-run.</div>
+                            <div class="problem-desc">Single-source components, long lead time imports, and supplier
+                                quality variability are creating material availability gaps that stop production lines
+                                mid-run.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -2131,8 +2185,12 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Keeping a supplier problem from stopping the line</h3>
-                                <p>Single-source critical components, long-lead imports and suppliers whose quality varies are structural vulnerabilities, and they all share one failure mode: the line stops. A stopped line in discrete manufacturing isn't a subtle cost either — it's immediate and everyone can see it. We rework the risk architecture: dual sourcing on the items that would actually halt you, safety stock set by component</p>
-                                <button class="fix-btn">Reduce my supply chain risk</button>
+                                <p>Single-source critical components, long-lead imports and suppliers whose quality
+                                    varies are structural vulnerabilities, and they all share one failure mode: the line
+                                    stops. A stopped line in discrete manufacturing isn't a subtle cost either — it's
+                                    immediate and everyone can see it. We rework the risk architecture: dual sourcing on
+                                    the items that would actually halt you, safety stock set by component</p>
+                                <button class="fix-btn">Reduce my supply chain risk ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -2157,7 +2215,7 @@ We’ll show you the right problems. -->
                                     <ul class="service-list">
                                         <li>Supplier risk scoring AI</li>
                                         <li>Lead time variability prediction</li>
-                                        <li>Material shortage early warning  </li>
+                                        <li>Material shortage early warning </li>
                                         <li>Supplier quality trend analysis</li>
                                     </ul>
                                 </div>
@@ -2181,9 +2239,11 @@ We’ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">Skilled operator attrition is hurting output quality and throughput
+                            <div class="problem-text">Skilled operator attrition is hurting output quality and
+                                throughput
                             </div>
-                            <div class="problem-desc">When experienced operators leave, quality and speed drop on that cell or line. The knowledge is in people's heads, not in the process.</div>
+                            <div class="problem-desc">When experienced operators leave, quality and speed drop on that
+                                cell or line. The knowledge is in people's heads, not in the process.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -2193,8 +2253,14 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Getting the operator's know-how out of their head and into the process</h3>
-                                <p>Your experienced operators carry knowledge that never made it into a document — the setup sequence, the feel for when a tool's going, the handling quirks of a fussy material. When one leaves, that cell quietly underperforms until the replacement has re-earned the same experience the hard way. We capture it properly: work instructions rebuilt from watching how the job is actually done, setup videos, and a digital work-guidance system that gets a new operator to full speed in weeks rather than months.</p>
-                                <button class="fix-btn">Capture my operator knowledge</button>
+                                <p>Your experienced operators carry knowledge that never made it into a document — the
+                                    setup sequence, the feel for when a tool's going, the handling quirks of a fussy
+                                    material. When one leaves, that cell quietly underperforms until the replacement has
+                                    re-earned the same experience the hard way. We capture it properly: work
+                                    instructions rebuilt from watching how the job is actually done, setup videos, and a
+                                    digital work-guidance system that gets a new operator to full speed in weeks rather
+                                    than months.</p>
+                                <button class="fix-btn">Capture my operator knowledge ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -2245,7 +2311,9 @@ We’ll show you the right problems. -->
                         <div class="problem-left-content">
                             <div class="problem-text">I want to move towards Industry 4.0 but don't know where to start
                             </div>
-                            <div class="problem-desc">Smart manufacturing, IoT sensors, digital twins — everyone is talking about it. I don't know what's real, what's worth investing in, and what the right sequence is for my plant.</div>
+                            <div class="problem-desc">Smart manufacturing, IoT sensors, digital twins — everyone is
+                                talking about it. I don't know what's real, what's worth investing in, and what the
+                                right sequence is for my plant.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -2255,9 +2323,15 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>An Industry 4.0 plan for your plant, not for a brochure</h3>
-                                <p>Industry 4.0 is a direction, not a thing you buy. Bolt IoT sensors onto machines with no reliable baseline and you generate noise, not intelligence. Build a digital twin of a process that isn't under control and you've built an expensive, high-resolution model of a problem you still haven't solved. We design the roadmap for your actual plant — what to instrument first, what data plumbing to lay before any analytics, and a sequence that produces return rather than a nice thing to show visitors on a factory tour.
+                                <p>Industry 4.0 is a direction, not a thing you buy. Bolt IoT sensors onto machines with
+                                    no reliable baseline and you generate noise, not intelligence. Build a digital twin
+                                    of a process that isn't under control and you've built an expensive, high-resolution
+                                    model of a problem you still haven't solved. We design the roadmap for your actual
+                                    plant — what to instrument first, what data plumbing to lay before any analytics,
+                                    and a sequence that produces return rather than a nice thing to show visitors on a
+                                    factory tour.
                                 </p>
-                                <button class="fix-btn">Build my I4.0 roadmap</button>
+                                <button class="fix-btn">Build my I4.0 roadmap ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -2316,8 +2390,11 @@ We’ll show you the right problems. -->
                 <div class="problem-item active" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">My conversion margins are too thin to absorb any inefficiency</div>
-                            <div class="problem-desc">Brand owners benchmark me against co-packers every year. I'm winning on price and losing on margin. I need to find operational efficiency I haven't found yet.</div>
+                            <div class="problem-text">My conversion margins are too thin to absorb any inefficiency
+                            </div>
+                            <div class="problem-desc">Brand owners benchmark me against co-packers every year. I'm
+                                winning on price and losing on margin. I need to find operational efficiency I haven't
+                                found yet.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -2327,8 +2404,13 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>The efficiency your competitors haven't found yet</h3>
-                                <p>Co-packer margins get competed away at the quote, so the only durable edge is operational efficiency the other three bidders haven't found yet. We run a structured conversion cost audit — labour productivity by line, material used against standard, utilities by product, whether overhead is even allocated accurately — and then implement the specific improvements that quietly give you a cost structure your competitors can't match at the price you're both quoting.</p>
-                                <button class="fix-btn">Find my hidden efficiency</button>
+                                <p>Co-packer margins get competed away at the quote, so the only durable edge is
+                                    operational efficiency the other three bidders haven't found yet. We run a
+                                    structured conversion cost audit — labour productivity by line, material used
+                                    against standard, utilities by product, whether overhead is even allocated
+                                    accurately — and then implement the specific improvements that quietly give you a
+                                    cost structure your competitors can't match at the price you're both quoting.</p>
+                                <button class="fix-btn">Find my hidden efficiency ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -2378,7 +2460,8 @@ We’ll show you the right problems. -->
                     <div class="problem-left">
                         <div class="problem-left-content">
                             <div class="problem-text">Changeover times between SKUs are killing line utilisation</div>
-                            <div class="problem-desc">My portfolio has dozens of SKUs with different formats, fills, and labels. Every changeover costs me time I'm not getting paid for.</div>
+                            <div class="problem-desc">My portfolio has dozens of SKUs with different formats, fills, and
+                                labels. Every changeover costs me time I'm not getting paid for.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -2388,8 +2471,14 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Recovering the line time your changeovers quietly eat</h3>
-                                <p>In high-mix co-packing, changeover is the single biggest source of lost line time. A 45-minute changeover on a line running 20 SKUs a week is 15 hours of capacity you produced nothing with. SMED applied to your specific changeover types — format, label, fill weight, cleaning — typically takes 40 to 60% out of that. We run the analysis, redesign the sequence so more of it happens while the line's still running, and write the standard procedure that makes every changeover both faster and consistent, not just faster on a good day.</p>
-                                <button class="fix-btn">Reduce my changeover time</button>
+                                <p>In high-mix co-packing, changeover is the single biggest source of lost line time. A
+                                    45-minute changeover on a line running 20 SKUs a week is 15 hours of capacity you
+                                    produced nothing with. SMED applied to your specific changeover types — format,
+                                    label, fill weight, cleaning — typically takes 40 to 60% out of that. We run the
+                                    analysis, redesign the sequence so more of it happens while the line's still
+                                    running, and write the standard procedure that makes every changeover both faster
+                                    and consistent, not just faster on a good day.</p>
+                                <button class="fix-btn">Reduce my changeover time ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -2438,8 +2527,10 @@ We’ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">Customer forecast variability is creating inventory and capacity problems</div>
-                            <div class="problem-desc">Brand owners give me 8-week forecasts that change every 2 weeks. I'm either carrying too much material or scrambling to source at short notice.</div>
+                            <div class="problem-text">Customer forecast variability is creating inventory and capacity
+                                problems</div>
+                            <div class="problem-desc">Brand owners give me 8-week forecasts that change every 2 weeks.
+                                I'm either carrying too much material or scrambling to source at short notice.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -2449,9 +2540,15 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Planning around forecasts your customers won't stick to</h3>
-                                <p>Brand owner forecasts are unreliable by nature — promotions shift, listings move, distribution calls get made late. Plan rigidly against the 8-week number and you'll be holding the wrong inventory and the wrong capacity commitment two weeks later. We redesign demand planning for that reality: rolling-horizon planning, material procurement built around scenarios rather than a single guess, and a capacity reservation model that stops your customers' forecast errors from landing on your P&L.
+                                <p>Brand owner forecasts are unreliable by nature — promotions shift, listings move,
+                                    distribution calls get made late. Plan rigidly against the 8-week number and you'll
+                                    be holding the wrong inventory and the wrong capacity commitment two weeks later. We
+                                    redesign demand planning for that reality: rolling-horizon planning, material
+                                    procurement built around scenarios rather than a single guess, and a capacity
+                                    reservation model that stops your customers' forecast errors from landing on your
+                                    P&L.
                                 </p>
-                                <button class="fix-btn">Fix my demand planning</button>
+                                <button class="fix-btn">Fix my demand planning ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -2500,8 +2597,11 @@ We’ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">Quality audits by brand owners are finding issues I didn't see</div>
-                            <div class="problem-desc">Customer quality audits are identifying GMP gaps, documentation failures, and process deviations that my internal QA is missing. My audit readiness isn't where it needs to be.</div>
+                            <div class="problem-text">Quality audits by brand owners are finding issues I didn't see
+                            </div>
+                            <div class="problem-desc">Customer quality audits are identifying GMP gaps, documentation
+                                failures, and process deviations that my internal QA is missing. My audit readiness
+                                isn't where it needs to be.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -2511,8 +2611,13 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Passing the brand owner audit before it becomes a crisis</h3>
-                                <p>For a co-packer, a brand owner audit is a high-stakes event — fail one and you can lose the contract. And most failures are avoidable: documentation gaps, training records gone stale, GMP deviations nobody flagged, facility standards that quietly drifted since the last visit. We run the pre-audit diagnostic, close the gaps, and build the ongoing readiness discipline that turns each audit into a routine day rather than a fortnight of held breath.</p>
-                                <button class="fix-btn">Build my audit readiness</button>
+                                <p>For a co-packer, a brand owner audit is a high-stakes event — fail one and you can
+                                    lose the contract. And most failures are avoidable: documentation gaps, training
+                                    records gone stale, GMP deviations nobody flagged, facility standards that quietly
+                                    drifted since the last visit. We run the pre-audit diagnostic, close the gaps, and
+                                    build the ongoing readiness discipline that turns each audit into a routine day
+                                    rather than a fortnight of held breath.</p>
+                                <button class="fix-btn">Build my audit readiness ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -2561,9 +2666,12 @@ We’ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">I want to add new brand owner customers but my capacity planning is weak
+                            <div class="problem-text">I want to add new brand owner customers but my capacity planning
+                                is weak
                             </div>
-                            <div class="problem-desc">I'm turning away business because I can't accurately model capacity. I don't know what I can commit to without compromising existing customers.</div>
+                            <div class="problem-desc">I'm turning away business because I can't accurately model
+                                capacity. I don't know what I can commit to without compromising existing customers.
+                            </div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -2572,9 +2680,15 @@ We’ll show you the right problems. -->
                     <div class="problem-right">
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
-                                <h3>  Knowing what you can promise without letting a current customer</h3>
-                                <p>A co-packer who can't model capacity accurately does one of two things: turns away business it could have taken, or takes business and quietly fails an existing customer to fit it in. Capacity in high-mix co-packing is genuinely fiddly — changeover time, cleaning, SKU-specific line constraints, seasonality all eat into what's really available. We build the model that lets you quote new business with confidence and commit dates you can actually hit, so growth doesn't come at the expense of the customers you already have.</p>
-                                <button class="fix-btn">Build my capacity planning model</button>
+                                <h3> Knowing what you can promise without letting a current customer</h3>
+                                <p>A co-packer who can't model capacity accurately does one of two things: turns away
+                                    business it could have taken, or takes business and quietly fails an existing
+                                    customer to fit it in. Capacity in high-mix co-packing is genuinely fiddly —
+                                    changeover time, cleaning, SKU-specific line constraints, seasonality all eat into
+                                    what's really available. We build the model that lets you quote new business with
+                                    confidence and commit dates you can actually hit, so growth doesn't come at the
+                                    expense of the customers you already have.</p>
+                                <button class="fix-btn">Build my capacity planning model ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -2623,8 +2737,10 @@ We’ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">My production reporting is too slow and too manual for my customers</div>
-                            <div class="problem-desc">Brand owners want real-time batch status, yield data, and quality release confirmation. I'm producing this manually with a 24-hour lag.</div>
+                            <div class="problem-text">My production reporting is too slow and too manual for my
+                                customers</div>
+                            <div class="problem-desc">Brand owners want real-time batch status, yield data, and quality
+                                release confirmation. I'm producing this manually with a 24-hour lag.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -2634,9 +2750,14 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Batch data your customers can see without a 24-hour lag</h3>
-                                <p>Brand owners increasingly want real-time batch status, yield and quality release, not a PDF that arrives the next morning. The good news is you don't have to rip out your production systems to give them that. It takes an integration layer that pulls from what you already have, shapes it into the format the customer wants, and serves it through a portal they can open themselves. We build that layer, and it usually pays for itself in the sales conversations it wins.
+                                <p>Brand owners increasingly want real-time batch status, yield and quality release, not
+                                    a PDF that arrives the next morning. The good news is you don't have to rip out your
+                                    production systems to give them that. It takes an integration layer that pulls from
+                                    what you already have, shapes it into the format the customer wants, and serves it
+                                    through a portal they can open themselves. We build that layer, and it usually pays
+                                    for itself in the sales conversations it wins.
                                 </p>
-                                <button class="fix-btn">Build my brand owner reporting</button>
+                                <button class="fix-btn">Build my brand owner reporting ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -2697,7 +2818,9 @@ We’ll show you the right problems. -->
                         <div class="problem-left-content">
 
                             <div class="problem-text">Job cost overruns are eroding margins on individual orders</div>
-                            <div class="problem-desc">We estimate accurately but execute expensively. Material wastage, engineering rework, and labour hours above standard are compressing the margin on almost every order.</div>
+                            <div class="problem-desc">We estimate accurately but execute expensively. Material wastage,
+                                engineering rework, and labour hours above standard are compressing the margin on almost
+                                every order.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -2707,8 +2830,14 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Closing the gap between what you quoted and what it cost</h3>
-                                <p>AJob cost overruns in industrial manufacturing are structural, not occasional: material exceeds the BOM, labour runs over the routing, engineering changes add cost nobody budgeted, subcontract comes in above the quoted rate. Each variance looks trivial on its own, and together they compress the margin on nearly every order. We install job cost tracking at the work centre level, so actual-versus-standard is visible while the job is still on the floor and you can do something, rather than in the reconciliation after it's shipped and you can only wince.</p>
-                                <button class="fix-btn">Control my job costs</button>
+                                <p>AJob cost overruns in industrial manufacturing are structural, not occasional:
+                                    material exceeds the BOM, labour runs over the routing, engineering changes add cost
+                                    nobody budgeted, subcontract comes in above the quoted rate. Each variance looks
+                                    trivial on its own, and together they compress the margin on nearly every order. We
+                                    install job cost tracking at the work centre level, so actual-versus-standard is
+                                    visible while the job is still on the floor and you can do something, rather than in
+                                    the reconciliation after it's shipped and you can only wince.</p>
+                                <button class="fix-btn">Control my job costs ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -2758,7 +2887,9 @@ We’ll show you the right problems. -->
                     <div class="problem-left">
                         <div class="problem-left-content">
                             <div class="problem-text">Order delivery timelines are consistently slipping</div>
-                            <div class="problem-desc">Long manufacturing cycles with complex engineering dependencies mean a delay in one stage cascades through the entire order. Customer penalties are accumulating.</div>
+                            <div class="problem-desc">Long manufacturing cycles with complex engineering dependencies
+                                mean a delay in one stage cascades through the entire order. Customer penalties are
+                                accumulating.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -2768,8 +2899,13 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Long-cycle orders that don't accumulate delay stage by stage</h3>
-                                <p>Long cycles make schedule risk compound: a slip at fabrication ripples through assembly, testing and commissioning, growing as it goes. By the time it's visible in the delivery date, the ways to recover are few and expensive. We rebuild the planning architecture for long-cycle work — milestone-based scheduling, the constraints identified up front, buffers between stages, and an early-warning system that flags a delay while there's still enough runway to absorb it.</p>
-                                <button class="fix-btn">Fix my order delivery</button>
+                                <p>Long cycles make schedule risk compound: a slip at fabrication ripples through
+                                    assembly, testing and commissioning, growing as it goes. By the time it's visible in
+                                    the delivery date, the ways to recover are few and expensive. We rebuild the
+                                    planning architecture for long-cycle work — milestone-based scheduling, the
+                                    constraints identified up front, buffers between stages, and an early-warning system
+                                    that flags a delay while there's still enough runway to absorb it.</p>
+                                <button class="fix-btn">Fix my order delivery ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -2818,8 +2954,10 @@ We’ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">I have no real-time view of job cost versus estimate during production</div>
-                            <div class="problem-desc">I find out a job went over budget after it's shipped. I need to see job cost variance during production — not in the post-mortem.</div>
+                            <div class="problem-text">I have no real-time view of job cost versus estimate during
+                                production</div>
+                            <div class="problem-desc">I find out a job went over budget after it's shipped. I need to
+                                see job cost variance during production — not in the post-mortem.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -2829,8 +2967,13 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Job cost variance you can see while the job's still on the floor</h3>
-                                <p>Learning a job blew its budget after it ships is a post-mortem, not a control. The window to actually do something — swap a material, rethink a process step, renegotiate a subcontract — is open during production and shut the moment it leaves the door. We build the tracking that shows actual against standard at the work centre level in real time, so production and commercial can make the cost-saving call while the job is still in front of them.</p>
-                                <button class="fix-btn">Build my real-time job cost tracking</button>
+                                <p>Learning a job blew its budget after it ships is a post-mortem, not a control. The
+                                    window to actually do something — swap a material, rethink a process step,
+                                    renegotiate a subcontract — is open during production and shut the moment it leaves
+                                    the door. We build the tracking that shows actual against standard at the work
+                                    centre level in real time, so production and commercial can make the cost-saving
+                                    call while the job is still in front of them.</p>
+                                <button class="fix-btn">Build my real-time job cost tracking ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -2880,7 +3023,9 @@ We’ll show you the right problems. -->
                     <div class="problem-left">
                         <div class="problem-left-content">
                             <div class="problem-text">Engineering and design rework is consuming capacity and cost</div>
-                            <div class="problem-desc">Design changes during production, specification ambiguity from customers, and internal engineering errors are creating rework loops that delay delivery and add cost.</div>
+                            <div class="problem-desc">Design changes during production, specification ambiguity from
+                                customers, and internal engineering errors are creating rework loops that delay delivery
+                                and add cost.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -2890,8 +3035,14 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Cutting the rework loops between engineering and production</h3>
-                                <p>Engineering rework is a profit drain that most plants never measure properly. Design errors caught during production, specifications ambiguous enough to be interpreted three ways, customer-driven changes mid-order — each spins up a rework loop that burns capacity and adds nothing. We diagnose where yours actually comes from — usually some mix of thin design review, loose customer requirements management, and engineering and production not quite talking — and close those gaps one at a time.</p>
-                                <button class="fix-btn">Reduce my engineering rework</button>
+                                <p>Engineering rework is a profit drain that most plants never measure properly. Design
+                                    errors caught during production, specifications ambiguous enough to be interpreted
+                                    three ways, customer-driven changes mid-order — each spins up a rework loop that
+                                    burns capacity and adds nothing. We diagnose where yours actually comes from —
+                                    usually some mix of thin design review, loose customer requirements management, and
+                                    engineering and production not quite talking — and close those gaps one at a time.
+                                </p>
+                                <button class="fix-btn">Reduce my engineering rework ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -2940,9 +3091,12 @@ We’ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">Procurement is too reactive and it's creating cost and schedule risk
+                            <div class="problem-text">Procurement is too reactive and it's creating cost and schedule
+                                risk
                             </div>
-                            <div class="problem-desc">Long lead time items that weren't ordered on time, vendor quality issues discovered late, and price variances from quoted rates are all creating downstream problems.</div>
+                            <div class="problem-desc">Long lead time items that weren't ordered on time, vendor quality
+                                issues discovered late, and price variances from quoted rates are all creating
+                                downstream problems.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -2952,8 +3106,14 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Procurement that stops holding your schedule hostage</h3>
-                                <p>Long-lead items ordered too late, vendor quality found only at incoming inspection, prices that drifted from the quote — all procurement failures, all with production consequences. In this kind of manufacturing, procurement quietly sets whether the line can run, which makes calling it back-office a mistake. We rebuild the operating model: lead times mapped, critical items planned ahead, vendor qualification that's actually rigorous, and a purchase intelligence system that keeps your schedule from being held hostage by a late PO.</p>
-                                <button class="fix-btn">Fix my procurement model</button>
+                                <p>Long-lead items ordered too late, vendor quality found only at incoming inspection,
+                                    prices that drifted from the quote — all procurement failures, all with production
+                                    consequences. In this kind of manufacturing, procurement quietly sets whether the
+                                    line can run, which makes calling it back-office a mistake. We rebuild the operating
+                                    model: lead times mapped, critical items planned ahead, vendor qualification that's
+                                    actually rigorous, and a purchase intelligence system that keeps your schedule from
+                                    being held hostage by a late PO.</p>
+                                <button class="fix-btn">Fix my procurement model ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3002,8 +3162,11 @@ We’ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">I want to build a more accurate cost estimation and bidding capability</div>
-                            <div class="problem-desc">We lose jobs we should have won and win jobs we shouldn't have. The estimating process isn't precise enough and the risk pricing doesn't reflect execution reality.</div>
+                            <div class="problem-text">I want to build a more accurate cost estimation and bidding
+                                capability</div>
+                            <div class="problem-desc">We lose jobs we should have won and win jobs we shouldn't have.
+                                The estimating process isn't precise enough and the risk pricing doesn't reflect
+                                execution reality.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -3013,9 +3176,14 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Winning the jobs worth winning, at a price that holds</h3>
-                                <p>Your estimating process decides both which jobs you win and whether winning them was a good idea. Estimate too conservatively and you lose work to competitors who simply know their costs better; too aggressively and you win jobs that quietly destroy margin. We audit the process, rebuild the cost model on accurate BOM and routing data, add a structured risk-pricing layer, and put in a bid review that catches the pricing error before it goes out rather than after the job's underwater.
+                                <p>Your estimating process decides both which jobs you win and whether winning them was
+                                    a good idea. Estimate too conservatively and you lose work to competitors who simply
+                                    know their costs better; too aggressively and you win jobs that quietly destroy
+                                    margin. We audit the process, rebuild the cost model on accurate BOM and routing
+                                    data, add a structured risk-pricing layer, and put in a bid review that catches the
+                                    pricing error before it goes out rather than after the job's underwater.
                                 </p>
-                                <button class="fix-btn">Fix my estimating accuracy</button>
+                                <button class="fix-btn">Fix my estimating accuracy ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3074,8 +3242,11 @@ We’ll show you the right problems. -->
                 <div class="problem-item active" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">Buyer sustainability and compliance audits are creating business risk</div>
-                            <div class="problem-desc">ESG requirements, social compliance audits, chemical restrictions, and traceability demands from global buyers are becoming mandatory for order retention — not just good practice.</div>
+                            <div class="problem-text">Buyer sustainability and compliance audits are creating business
+                                risk</div>
+                            <div class="problem-desc">ESG requirements, social compliance audits, chemical restrictions,
+                                and traceability demands from global buyers are becoming mandatory for order retention —
+                                not just good practice.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -3085,8 +3256,14 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Staying audit-ready for the buyers who now demand it</h3>
-                                <p>For global apparel and textile buyers, sustainability compliance has stopped being a preference and become a condition of keeping the order. GOTS, OEKO-TEX, BSCI, the Higg Index, chemical management under REACH and ZDHC, traceability from fibre to garment — these are now table stakes, not bonus points. We rebuild the compliance architecture: chemical management systems, social audit preparation, traceability documentation, and continuous monitoring that keeps you ready for a buyer visit without the usual scramble the week before one lands.</p>
-                                <button class="fix-btn">Build my compliance capability</button>
+                                <p>For global apparel and textile buyers, sustainability compliance has stopped being a
+                                    preference and become a condition of keeping the order. GOTS, OEKO-TEX, BSCI, the
+                                    Higg Index, chemical management under REACH and ZDHC, traceability from fibre to
+                                    garment — these are now table stakes, not bonus points. We rebuild the compliance
+                                    architecture: chemical management systems, social audit preparation, traceability
+                                    documentation, and continuous monitoring that keeps you ready for a buyer visit
+                                    without the usual scramble the week before one lands.</p>
+                                <button class="fix-btn">Build my compliance capability ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3137,7 +3314,9 @@ We’ll show you the right problems. -->
                         <div class="problem-left-content">
                             <div class="problem-text">Labour productivity in stitching and weaving is too variable
                             </div>
-                            <div class="problem-desc">Output per operator per shift varies significantly across lines and supervisors. I know the gap exists but I don't have a systematic way to close it.</div>
+                            <div class="problem-desc">Output per operator per shift varies significantly across lines
+                                and supervisors. I know the gap exists but I don't have a systematic way to close it.
+                            </div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -3147,8 +3326,14 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Closing the 25–40% gap between your best line and your worst</h3>
-                                <p>Labour productivity in stitching and weaving is at once the most variable cost driver in a textile plant and the most fixable. The gap between a high-performing line and a low-performing one on the same operation is typically 25 to 40%, and it comes down to operator skill mix, the supervisor, how the line's balanced, and how the incentive is designed. We diagnose which of those is actually driving your gap and build the improvement programme that lifts the weak lines toward the strong ones rather than just celebrating the strong ones.</p>
-                                <button class="fix-btn">Improve my labour productivity</button>
+                                <p>Labour productivity in stitching and weaving is at once the most variable cost driver
+                                    in a textile plant and the most fixable. The gap between a high-performing line and
+                                    a low-performing one on the same operation is typically 25 to 40%, and it comes down
+                                    to operator skill mix, the supervisor, how the line's balanced, and how the
+                                    incentive is designed. We diagnose which of those is actually driving your gap and
+                                    build the improvement programme that lifts the weak lines toward the strong ones
+                                    rather than just celebrating the strong ones.</p>
+                                <button class="fix-btn">Improve my labour productivity ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3197,8 +3382,11 @@ We’ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">Yarn and fabric procurement costs are volatile and hard to hedge</div>
-                            <div class="problem-desc">Cotton prices, polyester feedstock, and specialty yarn availability swing significantly. My procurement timing decisions are based on market intuition, not data.</div>
+                            <div class="problem-text">Yarn and fabric procurement costs are volatile and hard to hedge
+                            </div>
+                            <div class="problem-desc">Cotton prices, polyester feedstock, and specialty yarn
+                                availability swing significantly. My procurement timing decisions are based on market
+                                intuition, not data.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -3207,10 +3395,15 @@ We’ll show you the right problems. -->
                     <div class="problem-right">
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
-                                <h3>SOLUTION   Buying yarn and fabric on data instead of a feel for the market</h3>
-                                <p>Cotton, polyester feedstock and specialty yarn all move with commodity markets, currency and the season's crop. Buy on gut feel in that environment and your actual cost drifts a long way from budget, usually in the wrong direction. We build the procurement intelligence — price forecasting, optimal buying-window analysis, supplier diversification, and the hedging logic that narrows the gap between your standard material cost and what you actually end up paying at the mill.
+                                <h3>SOLUTION Buying yarn and fabric on data instead of a feel for the market</h3>
+                                <p>Cotton, polyester feedstock and specialty yarn all move with commodity markets,
+                                    currency and the season's crop. Buy on gut feel in that environment and your actual
+                                    cost drifts a long way from budget, usually in the wrong direction. We build the
+                                    procurement intelligence — price forecasting, optimal buying-window analysis,
+                                    supplier diversification, and the hedging logic that narrows the gap between your
+                                    standard material cost and what you actually end up paying at the mill.
                                 </p>
-                                <button class="fix-btn">Build my procurement intelligence</button>
+                                <button class="fix-btn">Build my procurement intelligence ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3259,8 +3452,11 @@ We’ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">Order lead times are too long for fast-fashion buyer requirements</div>
-                            <div class="problem-desc">Buyers are shortening seasons and compressing lead times. My current planning and production cycle can't reliably deliver in the windows they're demanding.</div>
+                            <div class="problem-text">Order lead times are too long for fast-fashion buyer requirements
+                            </div>
+                            <div class="problem-desc">Buyers are shortening seasons and compressing lead times. My
+                                current planning and production cycle can't reliably deliver in the windows they're
+                                demanding.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -3270,8 +3466,13 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Hitting the 45-day window without cutting corners on quality</h3>
-                                <p>When a buyer moves you from a 90-day to a 45-day lead time without simplifying the order, that's a planning and process problem before it's a capacity one. We map the full lead time from order confirmation to shipment, find the fat blocks — fabric sourcing, dyeing, sampling approvals, cut-to-pack — and redesign the sequence to compress the critical path. The trick is doing it without quietly moving the risk into quality or compliance, where it costs far more later.</p>
-                                <button class="fix-btn">Compress my lead times</button>
+                                <p>When a buyer moves you from a 90-day to a 45-day lead time without simplifying the
+                                    order, that's a planning and process problem before it's a capacity one. We map the
+                                    full lead time from order confirmation to shipment, find the fat blocks — fabric
+                                    sourcing, dyeing, sampling approvals, cut-to-pack — and redesign the sequence to
+                                    compress the critical path. The trick is doing it without quietly moving the risk
+                                    into quality or compliance, where it costs far more later.</p>
+                                <button class="fix-btn">Compress my lead times ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3322,7 +3523,9 @@ We’ll show you the right problems. -->
                         <div class="problem-left-content">
                             <div class="problem-text">Fabric wastage and cut plan inefficiency are adding hidden cost
                             </div>
-                            <div class="problem-desc">Fabric is my largest input cost. Poor marker efficiency, off-standard cutting, and shrinkage miscalculation are creating waste I'm not measuring accurately.</div>
+                            <div class="problem-desc">Fabric is my largest input cost. Poor marker efficiency,
+                                off-standard cutting, and shrinkage miscalculation are creating waste I'm not measuring
+                                accurately.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -3332,8 +3535,14 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>The ₹2Cr sitting in a 2% fabric utilisation gap</h3>
-                                <p>Fabric is the biggest single input cost in garment manufacturing — typically 60 to 65% of material cost — which makes it the most valuable place to be losing money quietly. Marker efficiency, width utilisation, shrinkage allowance, end-bit waste all push actual consumption above the standard in your cost sheet. Two percentage points of utilisation across a ₹100Cr fabric spend is ₹2Cr straight to the bottom line. We audit consumption against standard, find what's driving the variance, and implement the process and system fixes that close it.</p>
-                                <button class="fix-btn">Improve my fabric utilisation</button>
+                                <p>Fabric is the biggest single input cost in garment manufacturing — typically 60 to
+                                    65% of material cost — which makes it the most valuable place to be losing money
+                                    quietly. Marker efficiency, width utilisation, shrinkage allowance, end-bit waste
+                                    all push actual consumption above the standard in your cost sheet. Two percentage
+                                    points of utilisation across a ₹100Cr fabric spend is ₹2Cr straight to the bottom
+                                    line. We audit consumption against standard, find what's driving the variance, and
+                                    implement the process and system fixes that close it.</p>
+                                <button class="fix-btn">Improve my fabric utilisation ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3382,8 +3591,11 @@ We’ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">I want to offer digital product development and sampling to attract new buyers</div>
-                            <div class="problem-desc">Global buyers want faster sampling, digital proto approvals, and PLM visibility. My development process is still sample-by-courier and it's costing me new business.</div>
+                            <div class="problem-text">I want to offer digital product development and sampling to
+                                attract new buyers</div>
+                            <div class="problem-desc">Global buyers want faster sampling, digital proto approvals, and
+                                PLM visibility. My development process is still sample-by-courier and it's costing me
+                                new business.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -3393,9 +3605,15 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Sampling that isn't still moving by courier</h3>
-                                <p>Global buyers are moving to digital proto approvals, 3D sampling and PLM-driven development, all of which collapse the physical sample cycle. The manufacturers who can offer that win the buyers who want their development timeline compressed. We design and build the capability — 3D visualisation, digital colour approval, PLM integration, and a buyer collaboration portal — so your development stops depending on a courier and a fortnight, and starts happening on a shared screen in an afternoon.
+                                <p>Global buyers are moving to digital proto approvals, 3D sampling and PLM-driven
+                                    development, all of which collapse the physical sample cycle. The manufacturers who
+                                    can offer that win the buyers who want their development timeline compressed. We
+                                    design and build the capability — 3D visualisation, digital colour approval, PLM
+                                    integration, and a buyer collaboration portal — so your development stops depending
+                                    on a courier and a fortnight, and starts happening on a shared screen in an
+                                    afternoon.
                                 </p>
-                                <button class="fix-btn">Build my digital development capability</button>
+                                <button class="fix-btn">Build my digital development capability ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3455,7 +3673,9 @@ We’ll show you the right problems. -->
                     <div class="problem-left">
                         <div class="problem-left-content">
                             <div class="problem-text">Working capital is perpetually tight and I don't know why</div>
-                            <div class="problem-desc">Revenue is growing but cash is always short. Debtors are stretching, creditors are tightening, and I'm never sure whether a new order will help or hurt my liquidity.
+                            <div class="problem-desc">Revenue is growing but cash is always short. Debtors are
+                                stretching, creditors are tightening, and I'm never sure whether a new order will help
+                                or hurt my liquidity.
                             </div>
                         </div>
                         <div class="problem-arrow">
@@ -3466,8 +3686,14 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Finding out why growing revenue never turns into cash</h3>
-                                <p>Tight working capital in an MSME is usually structural, not bad luck: debtors stretching past their terms, raw material overstocked on the slow movers and short on the fast ones, and no view of cash beyond the next fortnight. Revenue grows and the squeeze never lets up, which is a maddening combination. We rebuild the working capital model — collection discipline on debtors, inventory right-sized, creditor terms actually negotiated, and a 13-week cash forecast that shows you the gap while there's still time to do something about it.</p>
-                                <button class="fix-btn">Fix my working capital</button>
+                                <p>Tight working capital in an MSME is usually structural, not bad luck: debtors
+                                    stretching past their terms, raw material overstocked on the slow movers and short
+                                    on the fast ones, and no view of cash beyond the next fortnight. Revenue grows and
+                                    the squeeze never lets up, which is a maddening combination. We rebuild the working
+                                    capital model — collection discipline on debtors, inventory right-sized, creditor
+                                    terms actually negotiated, and a 13-week cash forecast that shows you the gap while
+                                    there's still time to do something about it.</p>
+                                <button class="fix-btn">Fix my working capital ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3516,8 +3742,11 @@ We’ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">I don't know which jobs or customers are actually making me money</div>
-                            <div class="problem-desc">I price based on experience. I can't tell you which customer, product, or job type has the best margin. My costing is too rough to make good commercial decisions.</div>
+                            <div class="problem-text">I don't know which jobs or customers are actually making me money
+                            </div>
+                            <div class="problem-desc">I price based on experience. I can't tell you which customer,
+                                product, or job type has the best margin. My costing is too rough to make good
+                                commercial decisions.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -3527,8 +3756,14 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Knowing which customers actually make you money</h3>
-                                <p>Pricing by experience works right up until the business gets complex enough that different jobs, customers and product types carry genuinely different costs. Past that point, your profitable work is quietly subsidising your unprofitable work and nothing on your reports shows it. We rebuild the job costing — material and labour by job, overhead allocated by job type — and give you the profitability ranking that says plainly which customers and categories to grow, and which to reprice or, occasionally, politely let go.</p>
-                                <button class="fix-btn">See my real job margins</button>
+                                <p>Pricing by experience works right up until the business gets complex enough that
+                                    different jobs, customers and product types carry genuinely different costs. Past
+                                    that point, your profitable work is quietly subsidising your unprofitable work and
+                                    nothing on your reports shows it. We rebuild the job costing — material and labour
+                                    by job, overhead allocated by job type — and give you the profitability ranking that
+                                    says plainly which customers and categories to grow, and which to reprice or,
+                                    occasionally, politely let go.</p>
+                                <button class="fix-btn">See my real job margins ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3578,7 +3813,9 @@ We’ll show you the right problems. -->
                     <div class="problem-left">
                         <div class="problem-left-content">
                             <div class="problem-text">Key person dependence is an existential risk to my business</div>
-                            <div class="problem-desc">My production supervisor, my QC head, my senior machinist — if any of them leave, a piece of the business goes with them. The knowledge isn't in the system.</div>
+                            <div class="problem-desc">My production supervisor, my QC head, my senior machinist — if any
+                                of them leave, a piece of the business goes with them. The knowledge isn't in the
+                                system.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -3588,9 +3825,15 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Making the business survive any one person leaving</h3>
-                                <p>In most MSME manufacturers, the institutional knowledge sits in two or three heads: the supervisor who knows every machine's temperament, the QC head who approves batches by feel, the senior machinist who sets up the awkward jobs. That's both an existential risk and a growth ceiling — the business can only run as large as those few people can personally watch over. We design the knowledge capture and role structure that spreads it out, so the business stops being one resignation away from a very bad month.
+                                <p>In most MSME manufacturers, the institutional knowledge sits in two or three heads:
+                                    the supervisor who knows every machine's temperament, the QC head who approves
+                                    batches by feel, the senior machinist who sets up the awkward jobs. That's both an
+                                    existential risk and a growth ceiling — the business can only run as large as those
+                                    few people can personally watch over. We design the knowledge capture and role
+                                    structure that spreads it out, so the business stops being one resignation away from
+                                    a very bad month.
                                 </p>
-                                <button class="fix-btn">Reduce my key person risk</button>
+                                <button class="fix-btn">Reduce my key person risk ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3639,8 +3882,11 @@ We’ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">I want to grow but I'm not confident the operations can scale</div>
-                            <div class="problem-desc">Taking on more orders means more raw material, more labour, more quality risk. I'm not confident the current operating model handles 2x volume without breaking.</div>
+                            <div class="problem-text">I want to grow but I'm not confident the operations can scale
+                            </div>
+                            <div class="problem-desc">Taking on more orders means more raw material, more labour, more
+                                quality risk. I'm not confident the current operating model handles 2x volume without
+                                breaking.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -3650,8 +3896,14 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Getting to 2x without the wheels coming off</h3>
-                                <p>MSMEs that take on more orders without building the operating infrastructure to match usually discover the same three things: quality slips, delivery gets less reliable, and the MD ends up more overloaded than before, not less. Scaling well takes deliberate design — supervisory depth, quality systems that don't depend on the MD personally signing off, financial controls that catch a problem before it compounds, and a working capital model that funds the growth instead of choking on it. We build that model before you double, not after it breaks.</p>
-                                <button class="fix-btn">Build my growth model</button>
+                                <p>MSMEs that take on more orders without building the operating infrastructure to match
+                                    usually discover the same three things: quality slips, delivery gets less reliable,
+                                    and the MD ends up more overloaded than before, not less. Scaling well takes
+                                    deliberate design — supervisory depth, quality systems that don't depend on the MD
+                                    personally signing off, financial controls that catch a problem before it compounds,
+                                    and a working capital model that funds the growth instead of choking on it. We build
+                                    that model before you double, not after it breaks.</p>
+                                <button class="fix-btn">Build my growth model ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3700,9 +3952,12 @@ We’ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">I'm losing bids on price but I don't know if the winning bids are profitable
+                            <div class="problem-text">I'm losing bids on price but I don't know if the winning bids are
+                                profitable
                             </div>
-                            <div class="problem-desc">Competitors are pricing below what I think is rational. Either they know something about their costs I don't know about mine, or they're buying market share at a loss.</div>
+                            <div class="problem-desc">Competitors are pricing below what I think is rational. Either
+                                they know something about their costs I don't know about mine, or they're buying market
+                                share at a loss.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -3712,8 +3967,14 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Knowing your real cost better than the competitor undercutting you</h3>
-                                <p>A competitor pricing below what looks rational to you means one of two things: they're buying market share at a loss, or they simply know their costs better than you know yours. Only one of those is your problem to fix. We build the cost intelligence — accurate direct cost by product and job type, overhead allocated to reflect what's actually consumed — and the pricing model that lets you say with confidence which jobs you can afford to win and which ones aren't worth having at any price.</p>
-                                <button class="fix-btn">Build my cost intelligence</button>
+                                <p>A competitor pricing below what looks rational to you means one of two things:
+                                    they're buying market share at a loss, or they simply know their costs better than
+                                    you know yours. Only one of those is your problem to fix. We build the cost
+                                    intelligence — accurate direct cost by product and job type, overhead allocated to
+                                    reflect what's actually consumed — and the pricing model that lets you say with
+                                    confidence which jobs you can afford to win and which ones aren't worth having at
+                                    any price.</p>
+                                <button class="fix-btn">Build my cost intelligence ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3762,8 +4023,11 @@ We’ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">I want to modernise operations but I don't know where technology adds real value</div>
-                            <div class="problem-desc">ERP, IoT sensors, quality management systems — everyone is selling me technology. I need to know what will actually move my business before I spend the money.</div>
+                            <div class="problem-text">I want to modernise operations but I don't know where technology
+                                adds real value</div>
+                            <div class="problem-desc">ERP, IoT sensors, quality management systems — everyone is selling
+                                me technology. I need to know what will actually move my business before I spend the
+                                money.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -3773,9 +4037,14 @@ We’ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Which technology actually moves your business, before you spend</h3>
-                                <p>ERP vendors, IoT sensor suppliers and quality-software companies all promise transformational ROI, and they can't all be right. For an MSME with limited capital and limited IT muscle, the wrong technology buys you complexity and no value. We assess your operations, name the three or four interventions that would actually move your specific cost and quality problems, and sequence the spend so each one shows a measurable result before you're asked to write the next cheque.
+                                <p>ERP vendors, IoT sensor suppliers and quality-software companies all promise
+                                    transformational ROI, and they can't all be right. For an MSME with limited capital
+                                    and limited IT muscle, the wrong technology buys you complexity and no value. We
+                                    assess your operations, name the three or four interventions that would actually
+                                    move your specific cost and quality problems, and sequence the spend so each one
+                                    shows a measurable result before you're asked to write the next cheque.
                                 </p>
-                                <button class="fix-btn">Build my technology roadmap</button>
+                                <button class="fix-btn">Build my technology roadmap ↗</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3825,7 +4094,7 @@ We’ll show you the right problems. -->
         </div>
     </section>
 
-    <!-- T Section Title How Sthiros is different in BFSI -->
+    <!-- T Section Title How Sthiros is different in MANUFACTURING -->
     <section id="sectiontitlesvgtop">
         <svg xmlns="http://www.w3.org/2000/svg" width="74" height="482" viewBox="0 0 74 482" fill="none">
             <path d="M74 481.988L49.3334 481.988L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 481.988Z"
@@ -3865,7 +4134,7 @@ We’ll show you the right problems. -->
         </svg>
     </section>
 
-    <!-- How Sthiros is different in BFSI -->
+    <!-- How Sthiros is different in MANUFACTURING -->
     <section id="howsthirosdifferentsec">
         <h2 class="hsd-heading">HOW <span>STHIROS</span> IS<br>DIFFERENT IN MANUFACTURING</h2>
 
@@ -3873,27 +4142,28 @@ We’ll show you the right problems. -->
             <div class="hsd-feature-card">
                 <div class="hsd-feature-content">
                     <h3>We speak OEE, batch yield and conversion cost natively</h3>
-                    <p>Capacity utilisation, rejection rates, the real economics of a shop floor — we advise in that language rather than importing a generic operational framework and applying it to manufacturing from the outside, which never quite fits.
-                    </p>
-                </div>
-            </div>
-            <div class="hsd-feature-card">
-                <div class="hsd-feature-content">
-                    <h3>Our AI can survive a conversation with a regulator</h3>
-                    <p>Explainable models, a log for every decision, drift monitoring, a human who can pull the
-                        handbrake. The AI works inside your compliance boundary because we built it there on purpose.
+                    <p>Capacity utilisation, rejection rates, the real economics of a shop floor — we advise in that
+                        language rather than importing a generic operational framework and applying it to manufacturing
+                        from the outside, which never quite fits.
                     </p>
                 </div>
             </div>
             <div class="hsd-feature-card">
                 <div class="hsd-feature-content">
                     <h3>Our AI is built for the production floor, not the demo</h3>
-                    <p>Predictive maintenance, defect detection, demand-driven scheduling, yield optimisation — built for the messy realities of sensor data, batch records and shift-level operations, not for a clean dataset that never survives contact with a real plant.</p>
+                    <p>Predictive maintenance, defect detection, demand-driven scheduling, yield optimisation — built
+                        for the messy realities of sensor data, batch records and shift-level operations, not for a
+                        clean dataset that never survives contact with a real plant.
+                    </p>
                 </div>
-                <!-- <div class="hsd-feature-content">
+            </div>
+            <div class="hsd-feature-card">
+                <div class="hsd-feature-content">
                     <h3>We leave software your plant team runs, not IT</h3>
-                    <p>Production dashboards, cost tracking, quality control platforms, compliance tools — real products your plant teams open every shift, rather than a system so fragile it needs an IT team standing behind it to stay upright.</p>
-                </div> -->
+                    <p>Production dashboards, cost tracking, quality control platforms, compliance tools — real products
+                        your plant teams open every shift, rather than a system so fragile it needs an IT team standing
+                        behind it to stay upright.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -3903,7 +4173,8 @@ We’ll show you the right problems. -->
         <div class="hsd-list-container">
             <div class="hsd-list-item">
                 <div class="hsd-list-left">Plant-native</div>
-                <div class="hsd-list-right">Every build starts from how a plant actually runs — shifts, batches, yield, compliance.</div>
+                <div class="hsd-list-right">Every build starts from how a plant actually runs — shifts, batches, yield,
+                    compliance.</div>
             </div>
             <div class="hsd-list-item">
                 <div class="hsd-list-left">4–16 weeks</div>
@@ -3911,7 +4182,8 @@ We’ll show you the right problems. -->
             </div>
             <div class="hsd-list-item">
                 <div class="hsd-list-left">One team, <br>three modes</div>
-                <div class="hsd-list-right">The people who advise you are the people who build it. The plan and the thing arrive together.</div>
+                <div class="hsd-list-right">The people who advise you are the people who build it. The plan and the
+                    thing arrive together.</div>
             </div>
         </div>
     </section>
@@ -3920,7 +4192,10 @@ We’ll show you the right problems. -->
     <section id="sthirostransformationsec">
         <div class="sthiros-trans-card">
             <p class="sthiros-trans-text">
-                Yield loss, an unplanned stoppage, a batch of rework, a procurement call made half-blind. None of it is dramatic on the day. Add a year of it up and it's the difference between a good plant and a struggling one. Closing that gap, quietly and repeatedly, is the work we do.”
+                The gap between standard cost and actual cost on any shop floor is right there in the form of a yield
+                loss, an unplanned stoppage, a batch of rework, a procurement call made half-blind. None of it is
+                dramatic on the day. Add a year of it up and it's the difference between a good plant and a struggling
+                one. Closing that gap, quietly and repeatedly, is the work we do.
             </p>
             <div class="sthiros-trans-divider">
                 <span>Sthiros &middot; Manufacturing</span>
@@ -3979,15 +4254,20 @@ We’ll show you the right problems. -->
             <div class="chts-cards-container">
                 <div class="chts-card">
                     <h3 class="chts-card-title">A 30-minute call</h3>
-                    <p class="chts-card-desc">Tell us the plant situation. By the end of the call we'll say what we'd tackle first — cost structure, an OEE improvement, a quality system, or a production intelligence build. No deck required.</p>
+                    <p class="chts-card-desc">Tell us the plant situation. By the end of the call we'll say what we'd
+                        tackle first — cost structure, an OEE improvement, a quality system, or a production
+                        intelligence build. No deck required.</p>
                     <div class="chts-card-footer">
-                        <a href="#">Book a call</a>
+                        <a href="contactus.html" target="_blank">Book a call</a>
                     </div>
                 </div>
 
                 <div class="chts-card">
                     <h3 class="chts-card-title">The manufacturing ops diagnostic</h3>
-                    <p class="chts-card-desc">A free self-assessment across cost competitiveness, OEE, quality maturity, supply chain resilience, compliance posture and workforce capability. It shows exactly where you're exposed. Occasionally it tells you you're running tighter than you thought, which we're glad to confirm.</p>
+                    <p class="chts-card-desc">A free self-assessment across cost competitiveness, OEE, quality maturity,
+                        supply chain resilience, compliance posture and workforce capability. It shows exactly where
+                        you're exposed. Occasionally it tells you you're running tighter than you thought, which we're
+                        glad to confirm.</p>
                     <div class="chts-card-footer">
                         <a href="#">Get the diagnostic</a>
                     </div>
@@ -3995,7 +4275,9 @@ We’ll show you the right problems. -->
 
                 <div class="chts-card">
                     <h3 class="chts-card-title">Just describe the situation</h3>
-                    <p class="chts-card-desc">Not ready to talk? Send three lines: your plant type and scale, the pressure point, what you've already tried. You'll get an actual point of view back, not a brochure.</p>
+                    <p class="chts-card-desc">Not ready to talk? Send three lines: your plant type and scale, the
+                        pressure point, what you've already tried. You'll get an actual point of view back, not a
+                        brochure.</p>
                     <div class="chts-card-footer">
                         <a href="#">Send a brief</a>
                     </div>
@@ -4051,15 +4333,15 @@ We’ll show you the right problems. -->
         <div class="skipthedeskcont">
             <div class="std-content">
                 <h2>Genuinely not sure<br>where you fit?</h2>
-                <p>Tell us what you are, what's bugging you most, and whether you<br>
-                    need advice, a build, or both. We'll point you at the right starting line.</p>
+                <p>Tell us your manufacturing type, your biggest operational pressure, and whether you need advice, a
+                    build, or both. We'll point you at the right starting line.</p>
             </div>
             <div class="std-buttons">
-                <a href="#" class="std-btn-outer">
-                    <span class="std-btn-inner">START TALKING</span>
+                <a href="contactus.html" target="_blank" class="hero-btn-outer">
+                    <span class="hero-btn-inner">START TALKING</span>
                 </a>
-                <a href="#" class="std-btn-outer">
-                    <span class="std-btn-inner">WHAT WE ACTUALLY DO</span>
+                <a href="services.html" target="_blank" class="hero-btn-outer">
+                    <span class="hero-btn-inner">WHAT WE ACTUALLY DO</span>
                 </a>
             </div>
         </div>

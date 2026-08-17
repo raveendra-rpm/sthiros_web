@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sthiros — Industry</title>
+    <title>Industries — GCC</title>
     <meta name="description" content="We build financial systems that clear audit before the auditor asks." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -863,7 +863,7 @@
             font-weight: 400;
             line-height: normal;
             margin: 0 auto;
-            max-width: 600px;
+            max-width: 700px;
         }
 
         .chts-cards-wrapper {
@@ -1099,7 +1099,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            z-index: 10;
+            z-index: 30;
             margin-top: 8rem;
             margin-left: -1rem;
         }
@@ -1140,6 +1140,8 @@
             gap: 20px;
             align-items: center;
             justify-content: center;
+            position: relative;
+            z-index: 100;
         }
 
         .std-btn-outer {
@@ -1306,7 +1308,7 @@
 
 <body>
     <!-- ═══════════════ SITE HEADER ═══════════════ -->
-    <header class="site-header header-hidden">
+    <header class="site-header">
         <div class="header-left">
             <a href="index.html" class="logo-link">
                 <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
@@ -1412,14 +1414,14 @@
                     <div class="sub-nav">
                         <a href="industry.html" class="sub-nav-link">BFSI & Fintech</a>
                         <a href="industry1.html" class="sub-nav-link">D2C & Retail</a>
-                        <a href="#" class="sub-nav-link">Energy, Mining & Utilities</a>
+                        <a href="industry2.html" class="sub-nav-link">Energy, Mining & Utilities</a>
                         <a href="industry3.html" class="sub-nav-link">GCC</a>
                         <a href="industry4.html" class="sub-nav-link">Healthcare & Life Sciences</a>
-                        <a href="#" class="sub-nav-link">Manufacturing</a>
-                        <a href="#" class="sub-nav-link">Telecom & Digital Infrastructure</a>
-                        <a href="#" class="sub-nav-link">Travel & Hospitality</a>
+                        <a href="industry5.html" class="sub-nav-link">Manufacturing</a>
+                        <a href="industry7.html" class="sub-nav-link">Telecom & Digital Infrastructure</a>
+                        <a href="industry8.html" class="sub-nav-link">Travel & Hospitality</a>
                         <a href="industry6.html" class="sub-nav-link">Public Sector & Government</a>
-                        <a href="#" class="sub-nav-link">Real Estate / EPC / Construction</a>
+                        <a href="industry9.html" class="sub-nav-link">Real Estate / EPC / Construction</a>
                     </div>
                 </div>
 
@@ -1437,30 +1439,7 @@
     </div>
 
 
-    <!-- ═══════════════ SITE HEADER ═══════════════ -->
-    <header class="site-header header-hidden">
-        <div class="header-left">
-            <a href="index.html" class="logo-link">
-                <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
-            </a>
-        </div>
-        <div class="header-right">
-            <button class="theme-toggle" aria-label="Toggle Dark/Light Mode">
-                <span class="toggle-track">
-                    <img src="assets/images/dark_light_toggle.png" alt="Light Theme" class="toggle-art light-art">
-                    <img src="assets/images/dark_mode_toggle_new.png" alt="Dark Theme" class="toggle-art dark-art">
-                    <span class="toggle-thumb"></span>
-                </span>
-            </button>
-            <button class="menu-toggle" aria-label="Open Menu">
-                <span class="menu-icon">
-                    <span class="line line-1"></span>
-                    <span class="line line-2"></span>
-                    <span class="line line-3"></span>
-                </span>
-            </button>
-        </div>
-    </header>
+    
 
     <!-- ═══════════════ INDUSTRY HERO SECTION ═══════════════ -->
     <section class="industry-hero">
@@ -1469,11 +1448,11 @@
             <p>India runs over 1,700 GCCs employing 1.9 million people. Existing isn't remarkable anymore. What survives
                 restructuring is proof you're worth more than the headcount saving. That's what we build.</p>
             <div class="industry-hero-actions">
-                <a href="#" class="industry-btn-outer">
-                    <span class="industry-btn-inner">BOOK A 30-MIN CALL</span>
+                <a href="contactus.html" target="_blank" class="hero-btn-outer">
+                    <span class="hero-btn-inner">BOOK A 30-MIN CALL</span>
                 </a>
-                <a href="#" class="industry-btn-outer">
-                    <span class="industry-btn-inner">GET THE BFSI DIAGNOSTIC</span>
+                <a href="#" class="hero-btn-outer">
+                    <span class="hero-btn-inner">GET THE BFSI DIAGNOSTIC</span>
                 </a>
             </div>
         </div>
@@ -1536,8 +1515,7 @@ We’ll show you the right problems. -->
     <section id="Whotherightproblemssec">
         <div class="wtrp-content">
             <h2 class="wtrp-heading">Who are you?<br>We'll show you the<br>right <span>problems.</span></h2>
-            <p class="wtrp-subheading">Pick your segment. What comes up is tuned to your reality, right down to the
-                regulator</p>
+            <p class="wtrp-subheading">Pick your role. What comes up depends on where you are in the GCC lifecycle.</p>
             <div class="segment-tabs">
                 <button class="segment-btn active" data-target="problems-bank">Setting up a new GCC</button>
                 <button class="segment-btn" data-target="problems-insurance">Scaling established GCC</button>
@@ -4126,30 +4104,33 @@ We’ll show you the right problems. -->
 
     <!-- How Sthiros is different in BFSI -->
     <section id="howsthirosdifferentsec">
-        <h2 class="hsd-heading">How <span>Sthiros</span> is<br>different in BFSI</h2>
+        <h2 class="hsd-heading">How <span>Sthiros</span> is<br>different for GCCs</h2>
 
         <div class="hsd-features">
             <div class="hsd-feature-card">
                 <div class="hsd-feature-content">
-                    <h3>We read the circulars, so you don't have to explain them to us</h3>
-                    <p>RBI, SEBI, IRDAI, DPDPA — we work with the current rulebook open on the desk. Compliance goes
-                        into the design at the start, which is considerably cheaper than discovering it during an audit.
+                    <h3>We understand both sides of the GCC mandate</h3>
+                    <p>Operating excellence for the parent, talent depth for India — we're fluent in HQ's expectations
+                        and in what actually executes on the ground here. Governance, value demonstration and operating
+                        model are our native language, not a slide we adapted.
                     </p>
                 </div>
             </div>
             <div class="hsd-feature-card">
                 <div class="hsd-feature-content">
-                    <h3>Our AI can survive a conversation with a regulator</h3>
-                    <p>Explainable models, a log for every decision, drift monitoring, a human who can pull the
-                        handbrake. The AI works inside your compliance boundary because we built it there on purpose.
+                    <h3>We build AI that HQ will actually fund</h3>
+                    <p>Process automation, analytics CoEs, AI-accelerated delivery — use cases that move productivity in
+                        ways the parent can see, wrapped in the ROI narrative that keeps the investment coming. AI HQ
+                        pays for again, rather than approves once.
                     </p>
                 </div>
             </div>
             <div class="hsd-feature-card">
                 <div class="hsd-feature-content">
-                    <h3>We leave software behind, which is rarer than it should be</h3>
-                    <p>Risk dashboards, compliance trackers, fraud engines, credit platforms. Real products your team
-                        keeps running long after we've packed up. That's rather the point.</p>
+                    <h3>We leave software that makes your value visible</h3>
+                    <p>Performance dashboards, talent intelligence, SLA governance, value reporting — products that show
+                        the centre's contribution to your team, to HQ, and to whoever's deciding where the next tranche
+                        of work lands. Visibility is the whole game here, and we build for it.</p>
                 </div>
             </div>
         </div>
@@ -4159,18 +4140,18 @@ We’ll show you the right problems. -->
     <section id="hsd-list-section">
         <div class="hsd-list-container">
             <div class="hsd-list-item">
-                <div class="hsd-list-left">Reg-first</div>
-                <div class="hsd-list-right">Every build starts with the rulebook already open.</div>
+                <div class="hsd-list-left">HQ-fluent</div>
+                <div class="hsd-list-right">Every build speaks the language global parents understand and fund.
+                </div>
             </div>
             <div class="hsd-list-item">
-                <div class="hsd-list-left">4–16 weeks</div>
-                <div class="hsd-list-right">Scoped to how BFSI actually decides. No retainer that quietly renews
-                    forever.</div>
+                <div class="hsd-list-left">4-16 weeks</div>
+                <div class="hsd-list-right">Paced to GCC operating speed. No retainer that quietly renews forever.</div>
             </div>
             <div class="hsd-list-item">
                 <div class="hsd-list-left">One team,<br>three modes</div>
-                <div class="hsd-list-right">The people who advise you are the people who build it. Nothing gets lost in
-                    a handoff, because there isn't one.</div>
+                <div class="hsd-list-right">The people who advise you are the people who build it. The plan and the
+                    thing arrive together.</div>
             </div>
         </div>
     </section>
@@ -4179,13 +4160,13 @@ We’ll show you the right problems. -->
     <section id="sthirostransformationsec">
         <div class="sthiros-trans-card">
             <p class="sthiros-trans-text">
-                To us, the interesting question in any BFSI transformation is what it's built on. Regulatory clarity, AI
-                you can explain, controls that hold when someone finally checks. Get those right and the rest follows.
-                Get them wrong and you've built something that looks fine until the first real audit. We've fixed that
-                more than once.
+                Surviving a restructuring has surprisingly little to do with having the lowest cost per FTE. The centres
+                that come through are the ones that built capability HQ can't get anywhere else and can prove it with
+                data when the question gets asked. That, in the end, is the whole job — turning a cost line into
+                something the business would genuinely miss.
             </p>
             <div class="sthiros-trans-divider">
-                <span>STHIROS &middot; BFSI &amp; FINTECH</span>
+                <span>STHIROS &middot; GCC</span>
             </div>
         </div>
     </section>
@@ -4234,37 +4215,37 @@ We’ll show you the right problems. -->
         <div class="chts-container">
             <h4 class="chts-subtitle">CHOOSE HOW TO START</h4>
             <h2 class="chts-title"><span>Pick a way in.</span><br>They all lead to the<br>same conversation.</h2>
-            <p class="chts-desc">Whether you run a mid-size bank, you're the one who has to make an NBFC's
-                transformation actually work, or you're a founder who just hit the first wall money can't knock down
-                &mdash; start wherever's easiest.</p>
+            <p class="chts-desc">Setting up, scaling, transitioning to a value centre, or defending your standing with
+                HQ — start wherever fits where you are.</p>
         </div>
 
         <div class="chts-cards-wrapper">
             <div class="chts-cards-container">
                 <div class="chts-card">
                     <h3 class="chts-card-title">A 30-minute call</h3>
-                    <p class="chts-card-desc">Tell us the problem. By the end of the call we'll tell you what we'd
-                        tackle first, whether that's a regulatory sprint, an AI build, or shipping a piece of software.
+                    <p class="chts-card-desc">Tell us the GCC context and the problem. By the end of the call we'll say
+                        what we'd tackle first — operating model, talent architecture, an AI build, or value reporting.
                         No deck required.</p>
                     <div class="chts-card-footer">
-                        <a href="#">Book a call</a>
+                        <a href="contactus.html" target="_blank">Book a call</a>
                     </div>
                 </div>
 
                 <div class="chts-card">
-                    <h3 class="chts-card-title">The BFSI readiness check</h3>
-                    <p class="chts-card-desc">A free self-assessment across your regulatory posture, AI readiness,
-                        operating maturity and risk gaps. It tells you where you stand and what's worth doing first.
-                        Occasionally it tells you you're fine, which we're happy to confirm.</p>
+                    <h3 class="chts-card-title">The GCC maturity diagnostic</h3>
+                    <p class="chts-card-desc">A free self-assessment across governance, talent depth, value delivery, HQ
+                        alignment, AI readiness and operating model. It shows where your centre sits on the maturity
+                        curve. Occasionally it tells you you're further along than you thought, which we're glad to
+                        confirm.</p>
                     <div class="chts-card-footer">
                         <a href="#">Get the diagnostic</a>
                     </div>
                 </div>
 
                 <div class="chts-card">
-                    <h3 class="chts-card-title">Just describe the mess</h3>
-                    <p class="chts-card-desc">Not ready to talk? Send three lines: what you are, what's broken, what
-                        you've already tried. You'll get an actual opinion back, not a brochure.</p>
+                    <h3 class="chts-card-title">Just describe the situation</h3>
+                    <p class="chts-card-desc">Not ready to talk? Send three lines: your GCC type and scale, the pressure
+                        point, what you've already tried. You'll get an actual point of view back, not a brochure.</p>
                     <div class="chts-card-footer">
                         <a href="#">Send a brief</a>
                     </div>
@@ -4320,15 +4301,15 @@ We’ll show you the right problems. -->
         <div class="skipthedeskcont">
             <div class="std-content">
                 <h2>Genuinely not sure<br>where you fit?</h2>
-                <p>Tell us what you are, what's bugging you most, and whether you<br>
-                    need advice, a build, or both. We'll point you at the right starting line.</p>
+                <p>Tell us your GCC stage, your biggest pressure with HQ or operations, and whether you need advice, a
+                    build, or both. We'll point you at the right starting line.</p>
             </div>
             <div class="std-buttons">
-                <a href="#" class="std-btn-outer">
-                    <span class="std-btn-inner">START TALKING</span>
+                <a href="contactus.html" target="_blank" class="hero-btn-outer">
+                    <span class="hero-btn-inner">START TALKING</span>
                 </a>
-                <a href="#" class="std-btn-outer">
-                    <span class="std-btn-inner">WHAT WE ACTUALLY DO</span>
+                <a href="services.html" target="_blank" class="hero-btn-outer">
+                    <span class="hero-btn-inner">WHAT WE ACTUALLY DO</span>
                 </a>
             </div>
         </div>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sthiros — Industry</title>
+    <title>Industries — Travel & Hospitality</title>
     <meta name="description" content="We build financial systems that clear audit before the auditor asks." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -60,7 +60,7 @@
 
         .industry-hero h1 {
             font-family: var(--font), sans-serif;
-            font-size: clamp(3rem, 5vw, 4.5rem);
+            font-size: clamp(2.5rem, 4vw, 4rem);
             font-weight: 600;
             line-height: 1.1;
             color: #fff;
@@ -1140,6 +1140,8 @@
             gap: 20px;
             align-items: center;
             justify-content: center;
+            position: relative;
+            z-index: 100;
         }
 
         .std-btn-outer {
@@ -1306,7 +1308,7 @@
 
 <body>
     <!-- ═══════════════ SITE HEADER ═══════════════ -->
-    <header class="site-header header-hidden">
+    <header class="site-header">
         <div class="header-left">
             <a href="index.html" class="logo-link">
                 <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
@@ -1412,14 +1414,14 @@
                     <div class="sub-nav">
                         <a href="industry.html" class="sub-nav-link">BFSI & Fintech</a>
                         <a href="industry1.html" class="sub-nav-link">D2C & Retail</a>
-                        <a href="#" class="sub-nav-link">Energy, Mining & Utilities</a>
+                        <a href="industry2.html" class="sub-nav-link">Energy, Mining & Utilities</a>
                         <a href="industry3.html" class="sub-nav-link">GCC</a>
                         <a href="industry4.html" class="sub-nav-link">Healthcare & Life Sciences</a>
-                        <a href="#" class="sub-nav-link">Manufacturing</a>
-                        <a href="#" class="sub-nav-link">Telecom & Digital Infrastructure</a>
-                        <a href="#" class="sub-nav-link">Travel & Hospitality</a>
+                        <a href="industry5.html" class="sub-nav-link">Manufacturing</a>
+                        <a href="industry7.html" class="sub-nav-link">Telecom & Digital Infrastructure</a>
+                        <a href="industry8.html" class="sub-nav-link">Travel & Hospitality</a>
                         <a href="industry6.html" class="sub-nav-link">Public Sector & Government</a>
-                        <a href="#" class="sub-nav-link">Real Estate / EPC / Construction</a>
+                        <a href="industry9.html" class="sub-nav-link">Real Estate / EPC / Construction</a>
                     </div>
                 </div>
 
@@ -1437,44 +1439,22 @@
     </div>
 
 
-    <!-- ═══════════════ SITE HEADER ═══════════════ -->
-    <header class="site-header header-hidden">
-        <div class="header-left">
-            <a href="index.html" class="logo-link">
-                <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
-            </a>
-        </div>
-        <div class="header-right">
-            <button class="theme-toggle" aria-label="Toggle Dark/Light Mode">
-                <span class="toggle-track">
-                    <img src="assets/images/dark_light_toggle.png" alt="Light Theme" class="toggle-art light-art">
-                    <img src="assets/images/dark_mode_toggle_new.png" alt="Dark Theme" class="toggle-art dark-art">
-                    <span class="toggle-thumb"></span>
-                </span>
-            </button>
-            <button class="menu-toggle" aria-label="Open Menu">
-                <span class="menu-icon">
-                    <span class="line line-1"></span>
-                    <span class="line line-2"></span>
-                    <span class="line line-3"></span>
-                </span>
-            </button>
-        </div>
-    </header>
+    
 
     <!-- ═══════════════ INDUSTRY HERO SECTION ═══════════════ -->
     <section class="industry-hero">
         <div class="industry-hero-content">
-            <h1>RevPAR is back to <br> 2019 levels.<span>GOP <br> is still deciding <br> whether to show up.</span></h1>
+            <h1><span>RevPAR</span> is back to <br> 2019 levels.GOP <br> is still deciding <br> whether to <span>show
+                    up.</span></h1>
             <p>Domestic travel, premium hotel demand and OTA GMV are all at record highs — but OTA commissions and
                 customer acquisition costs are structurally higher too, so occupancy and revenue recovered before margin
                 did. We close that gap.</p>
             <div class="industry-hero-actions">
-                <a href="#" class="industry-btn-outer">
-                    <span class="industry-btn-inner">BOOK A 30-MIN CALL</span>
+                <a href="contactus.html" target="_blank" class="hero-btn-outer">
+                    <span class="hero-btn-inner">BOOK A 30-MIN CALL</span>
                 </a>
-                <a href="#" class="industry-btn-outer">
-                    <span class="industry-btn-inner">GET THE BFSI DIAGNOSTIC</span>
+                <a href="#" class="hero-btn-outer">
+                    <span class="hero-btn-inner">GET THE BFSI DIAGNOSTIC</span>
                 </a>
             </div>
         </div>
@@ -4266,9 +4246,8 @@ We’ll show you the right problems. -->
         <div class="chts-container">
             <h4 class="chts-subtitle">CHOOSE HOW TO START</h4>
             <h2 class="chts-title"><span>Pick a way in.</span><br>They all lead to the<br>same conversation.</h2>
-            <p class="chts-desc">Whether you run a mid-size bank, you're the one who has to make an NBFC's
-                transformation actually work, or you're a founder who just hit the first wall money can't knock down
-                &mdash; start wherever's easiest.</p>
+            <p class="chts-desc">Hotel operator, OTA leader, airline exec or travel tech founder — start wherever fits
+                where you are.</p>
         </div>
 
         <div class="chts-cards-wrapper">
@@ -4279,7 +4258,7 @@ We’ll show you the right problems. -->
                         what we'd tackle first — revenue strategy, cost structure, channel mix, an AI build, or a piece
                         of software. No deck required.</p>
                     <div class="chts-card-footer">
-                        <a href="#">Book a call</a>
+                        <a href="contactus.html" target="_blank">Book a call</a>
                     </div>
                 </div>
 
@@ -4353,15 +4332,15 @@ We’ll show you the right problems. -->
         <div class="skipthedeskcont">
             <div class="std-content">
                 <h2>Genuinely not sure<br>where you fit?</h2>
-                <p>Tell us what you are, what's bugging you most, and whether you<br>
-                    need advice, a build, or both. We'll point you at the right starting line.</p>
+                <p>Tell us your business type, your biggest revenue or cost pressure, and whether you need advice, a
+                    build, or both. We'll point you at the right starting line.</p>
             </div>
             <div class="std-buttons">
-                <a href="#" class="std-btn-outer">
-                    <span class="std-btn-inner">START TALKING</span>
+                <a href="contactus.html" target="_blank" class="hero-btn-outer">
+                    <span class="hero-btn-inner">START TALKING</span>
                 </a>
-                <a href="#" class="std-btn-outer">
-                    <span class="std-btn-inner">WHAT WE ACTUALLY DO</span>
+                <a href="services.html" target="_blank" class="hero-btn-outer">
+                    <span class="hero-btn-inner">WHAT WE ACTUALLY DO</span>
                 </a>
             </div>
         </div>

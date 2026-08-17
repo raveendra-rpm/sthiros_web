@@ -244,8 +244,8 @@
             transition: all 0.3s ease;
         }
 
-        .conv-btn:hover {
-            background-color: rgba(239, 70, 35, 0.1);
+        .conv-btn:hover .conv-btn-inner {
+            background-color: #EF4623;
             color: #fff;
         }
 
@@ -259,6 +259,7 @@
             border-radius: 163px;
             border: 5px solid #EF4623;
             white-space: nowrap;
+            transition: all 0.3s ease;
         }
 
         .conv-btn.large .conv-btn-inner {
@@ -377,13 +378,13 @@
         .service-card.active {
             background-color: #EC2D26;
             background-image: none;
-            border-color: transparent;
+            border-color: #EC2D26;
+            outline: none;
         }
 
         .service-card.active {
             flex: 2;
             min-width: 300px;
-            border: none;
             box-shadow: none;
             padding: 40px;
         }
@@ -760,10 +761,10 @@
     </style>
 </head>
 
-<body class="loading">
+<body>
 
     <!-- ═══════════════ SITE HEADER ═══════════════ -->
-    <header class="site-header header-hidden">
+    <header class="site-header">
         <div class="header-left">
             <a href="index.html" class="logo-link">
                 <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
@@ -869,14 +870,14 @@
                     <div class="sub-nav">
                         <a href="industry.html" class="sub-nav-link">BFSI & Fintech</a>
                         <a href="industry1.html" class="sub-nav-link">D2C & Retail</a>
-                        <a href="#" class="sub-nav-link">Energy, Mining & Utilities</a>
+                        <a href="industry2.html" class="sub-nav-link">Energy, Mining & Utilities</a>
                         <a href="industry3.html" class="sub-nav-link">GCC</a>
                         <a href="industry4.html" class="sub-nav-link">Healthcare & Life Sciences</a>
-                        <a href="#" class="sub-nav-link">Manufacturing</a>
-                        <a href="#" class="sub-nav-link">Telecom & Digital Infrastructure</a>
-                        <a href="#" class="sub-nav-link">Travel & Hospitality</a>
+                        <a href="industry5.html" class="sub-nav-link">Manufacturing</a>
+                        <a href="industry7.html" class="sub-nav-link">Telecom & Digital Infrastructure</a>
+                        <a href="industry8.html" class="sub-nav-link">Travel & Hospitality</a>
                         <a href="industry6.html" class="sub-nav-link">Public Sector & Government</a>
-                        <a href="#" class="sub-nav-link">Real Estate / EPC / Construction</a>
+                        <a href="industry9.html" class="sub-nav-link">Real Estate / EPC / Construction</a>
                     </div>
                 </div>
 
@@ -891,11 +892,6 @@
 
 
         </div>
-    </div>
-
-    <!-- ═══════════════ PRELOADER ═══════════════ -->
-    <div id="preloader">
-        <video id="preloader-video" src="assets/videos/sthiros_loading_video.mp4" muted playsinline></video>
     </div>
 
     <!-- services hero banner section -->
@@ -991,40 +987,40 @@
                 <div class="services-cards-container">
 
                     <!-- Card 1 -->
-                    <div class="service-card active">
+                    <a href="strategy1.html" target="_blank" class="service-card active" style="text-decoration: none;">
                         <img src="assets/images/servicespage/strategy.png" alt="Strategy Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
                         <h3 class="service-title">Business &<br>Growth Strategy</h3>
-                    </div>
+                    </a>
 
                     <!-- Card 2 -->
-                    <div class="service-card">
+                    <a href="strategy2.html" target="_blank" class="service-card" style="text-decoration: none;">
                         <img src="assets/images/servicespage/strategy.png" alt="Strategy Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
                         <h3 class="service-title">Strategic<br>Finance &<br>Transactions</h3>
-                    </div>
+                    </a>
 
                     <!-- Card 3 -->
-                    <div class="service-card">
+                    <a href="strategy3.html" target="_blank" class="service-card" style="text-decoration: none;">
                         <img src="assets/images/servicespage/strategy.png" alt="Strategy Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
                         <h3 class="service-title">Enterprise<br>Operations &<br>Ecosystems</h3>
-                    </div>
+                    </a>
 
                     <!-- Card 4 -->
-                    <div class="service-card">
+                    <a href="strategy4.html" target="_blank" class="service-card" style="text-decoration: none;">
                         <img src="assets/images/servicespage/strategy.png" alt="Strategy Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
                         <h3 class="service-title">Change &<br>Organizational<br>Acceleration</h3>
-                    </div>
+                    </a>
 
                 </div>
             </div>
@@ -1042,34 +1038,34 @@
             </div>
             <div class="services-right-col">
                 <div class="services-cards-container">
-                    <div class="service-card active">
+                    <a href="servicesai1.html" target="_blank" class="service-card active" style="text-decoration: none;">
                         <img src="assets/images/servicespage/aivector.png" alt="AI Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
                         <h3 class="service-title">Al Strategy &<br>Sovereign<br>Governance</h3>
-                    </div>
-                    <div class="service-card">
+                    </a>
+                    <a href="servicesai2.html" target="_blank" class="service-card" style="text-decoration: none;">
                         <img src="assets/images/servicespage/aivector.png" alt="AI Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
                         <h3 class="service-title">Intelligent<br>Foundation</h3>
-                    </div>
-                    <div class="service-card">
+                    </a>
+                    <a href="servicesai3.html" target="_blank" class="service-card" style="text-decoration: none;">
                         <img src="assets/images/servicespage/aivector.png" alt="AI Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
                         <h3 class="service-title">Agentic<br>Operations &<br>Automation</h3>
-                    </div>
-                    <div class="service-card">
+                    </a>
+                    <a href="servicesai4.html" target="_blank" class="service-card" style="text-decoration: none;">
                         <img src="assets/images/servicespage/aivector.png" alt="AI Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
                         <h3 class="service-title">Cognitive<br>Experience &<br>Engineering</h3>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -1083,34 +1079,34 @@
             </div>
             <div class="services-right-col">
                 <div class="services-cards-container">
-                    <div class="service-card active">
+                    <a href="risk1.html" target="_blank" class="service-card active" style="text-decoration: none;">
                         <img src="assets/images/servicespage/riskvector.png" alt="Risk Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
                         <h3 class="service-title">Enterprise<br>Governance &<br>Regulatory Strategy</h3>
-                    </div>
-                    <div class="service-card">
+                    </a>
+                    <a href="risk2.html" target="_blank" class="service-card" style="text-decoration: none;">
                         <img src="assets/images/servicespage/riskvector.png" alt="Risk Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
                         <h3 class="service-title">Strategic<br>Assurance &<br>Process<br>Intelligence</h3>
-                    </div>
-                    <div class="service-card">
+                    </a>
+                    <a href="risk3.html" target="_blank" class="service-card" style="text-decoration: none;">
                         <img src="assets/images/servicespage/riskvector.png" alt="Risk Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
                         <h3 class="service-title">Digital Risk &<br>Technology<br>Controls</h3>
-                    </div>
-                    <div class="service-card">
+                    </a>
+                    <a href="risk4.html" target="_blank" class="service-card" style="text-decoration: none;">
                         <img src="assets/images/servicespage/riskvector.png" alt="Risk Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
                         <h3 class="service-title">Forensic<br>Integrity &<br>Asset<br>Protection</h3>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -1124,34 +1120,34 @@
             </div>
             <div class="services-right-col">
                 <div class="services-cards-container">
-                    <div class="service-card active">
+                    <a href="servicescyber1.html" target="_blank" class="service-card active" style="text-decoration: none;">
                         <img src="assets/images/servicespage/cybervector.png" alt="Cyber Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
                         <h3 class="service-title">Offensive Security<br>& Exposure</h3>
-                    </div>
-                    <div class="service-card">
+                    </a>
+                    <a href="servicescyber2.html" target="_blank" class="service-card" style="text-decoration: none;">
                         <img src="assets/images/servicespage/cybervector.png" alt="Cyber Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
                         <h3 class="service-title">Cloud<br>Security &<br>Zero Trust</h3>
-                    </div>
-                    <div class="service-card">
+                    </a>
+                    <a href="servicescyber3.html" target="_blank" class="service-card" style="text-decoration: none;">
                         <img src="assets/images/servicespage/cybervector.png" alt="Cyber Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
                         <h3 class="service-title">Data Privacy<br>& Protection<br>Engineering</h3>
-                    </div>
-                    <div class="service-card">
+                    </a>
+                    <a href="servicescyber4.html" target="_blank" class="service-card" style="text-decoration: none;">
                         <img src="assets/images/servicespage/cybervector.png" alt="Cyber Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
                         <h3 class="service-title">Cyber<br>Resilience &<br>Crisis<br>Readiness</h3>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -1212,14 +1208,9 @@
                 </p>
             </div>
             <div class="conv-right-col">
-                <a href="#" class="conv-btn">
+                <a href="contactus.html" target="_blank" class="conv-btn">
                     <div class="conv-btn-inner">
                         BOOK A 30-MIN CALL
-                    </div>
-                </a>
-                <a href="#" class="conv-btn large">
-                    <div class="conv-btn-inner">
-                        SEND US YOUR SITUATION
                     </div>
                 </a>
             </div>
@@ -1254,6 +1245,41 @@
         function updateIndicator(tab) {
             indicator.style.width = tab.offsetWidth + 'px';
             indicator.style.left = tab.offsetLeft + 'px';
+        }
+
+        // Handle URL query parameter ?tab=
+        const urlParams = new URLSearchParams(window.location.search);
+        const queryTab = urlParams.get('tab');
+        if (queryTab) {
+            const targetTab = document.querySelector(`.services-tab[data-tab="${queryTab}"]`);
+            if (targetTab) {
+                document.querySelectorAll('.services-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                targetTab.classList.add('active');
+                const targetContent = document.getElementById('tab-' + queryTab);
+                if (targetContent) targetContent.classList.add('active');
+                // Smooth scroll to the section
+                const doScroll = () => {
+                    const section = document.getElementById('sthservicessec');
+                    if (section) {
+                        if (typeof lenis !== 'undefined' && lenis !== null) {
+                            lenis.scrollTo(section, { offset: -80 });
+                        } else {
+                            const headerOffset = 80;
+                            const elementPosition = section.getBoundingClientRect().top;
+                            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                            window.scrollTo({
+                                top: offsetPosition,
+                                behavior: "smooth"
+                            });
+                        }
+                    }
+                };
+                
+                // Trigger scroll after DOM/JS initialization
+                setTimeout(doScroll, 150);
+                setTimeout(doScroll, 600); // Failsafe
+            }
         }
 
         // Initialize indicator position
