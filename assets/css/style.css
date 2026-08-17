@@ -4062,7 +4062,8 @@ html.lenis body {
   border: none;
   padding: 0;
   cursor: pointer;
-  display: flex;
+  /* display: flex;  <-- Unhide this to show the toggle */
+  display: none;
   align-items: center;
 }
 
