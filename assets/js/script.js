@@ -2773,3 +2773,53 @@ function initFloatingCurves() {
   // Vertical floating disabled per user request
   const verticalCurves = document.querySelectorAll('.topdivsvg svg, .middledivsvg svg, .bottomdivsvg svg, #svgherobtm svg');
 }
+
+
+
+// --- Set Active Nav Link Dynamically ---
+document.addEventListener('DOMContentLoaded', () => {
+    let path = window.location.pathname;
+    let page = path.split('/').pop();
+    
+    if (page === '' || page === '/') {
+        page = 'index.html';
+    }
+
+    // --- Desktop Navigation ---
+    const dNavLinks = document.querySelectorAll('.d-nav-list a');
+    dNavLinks.forEach(link => link.classList.remove('active-nav'));
+
+    dNavLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href && href === page) {
+            link.classList.add('active-nav');
+            
+            // Check if it's inside a mega menu, highlight the parent
+            const megaMenu = link.closest('.has-mega-menu');
+            if (megaMenu) {
+                const parentLink = megaMenu.querySelector('a'); // The top level link
+                if (parentLink) parentLink.classList.add('active-nav');
+            }
+        }
+    });
+
+    // --- Mobile Navigation ---
+    const mNavLinks = document.querySelectorAll('.main-nav a');
+    mNavLinks.forEach(link => link.classList.remove('active'));
+
+    mNavLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href && href === page) {
+            link.classList.add('active');
+            
+            // Highlight parent dropdowns if any
+            let parentDropdown = link.closest('.nav-item-dropdown');
+            while (parentDropdown) {
+                const parentToggle = parentDropdown.querySelector('.dropdown-toggle');
+                if (parentToggle) parentToggle.classList.add('active');
+                parentDropdown = parentDropdown.parentElement.closest('.nav-item-dropdown'); // For nested dropdowns
+            }
+        }
+    });
+});
+
