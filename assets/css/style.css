@@ -93,11 +93,13 @@ body:has(.has-mega-menu.active-click) {
 body::after {
   content: "";
   position: fixed;
-  top: 80px; /* Below header */
+  top: 80px;
+  /* Below header */
   left: 0;
   width: 100vw;
   height: calc(100vh - 80px);
-  background: rgba(0, 0, 0, 0.4); /* Slight dark overlay */
+  background: rgba(0, 0, 0, 0.4);
+  /* Slight dark overlay */
   backdrop-filter: blur(5px);
   z-index: 900;
   opacity: 0;
@@ -4319,8 +4321,8 @@ html.lenis body {
   /* offset for header */
 }
 
-.has-mega-menu:hover > a > .nav-arrow-img,
-.has-mega-menu.active-click > a > .nav-arrow-img {
+.has-mega-menu:hover>a>.nav-arrow-img,
+.has-mega-menu.active-click>a>.nav-arrow-img {
   transform: rotate(90deg);
 }
 
@@ -4509,13 +4511,13 @@ body.light-mode .sub-nav-link:hover {
   height: 100%;
 }
 
-.d-nav-list > li {
+.d-nav-list>li {
   height: 80px;
   display: flex;
   align-items: center;
 }
 
-.d-nav-list > li > a {
+.d-nav-list>li>a {
   color: #fff;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
@@ -4529,8 +4531,8 @@ body.light-mode .sub-nav-link:hover {
   gap: 5px;
 }
 
-.d-nav-list > li > a:hover,
-.d-nav-list > li > a.active-nav {
+.d-nav-list>li>a:hover,
+.d-nav-list>li>a.active-nav {
   color: #EC2D26;
 }
 
@@ -4547,17 +4549,18 @@ body.light-mode .sub-nav-link:hover {
 }
 
 /* WHAT WE DO arrow points right by default, and down on hover */
-.has-mega-menu > a > .nav-arrow-img {
+.has-mega-menu>a>.nav-arrow-img {
   transform: rotate(0deg);
 }
 
-.has-mega-menu:hover > a > .nav-arrow-img,
-.has-mega-menu.active-click > a > .nav-arrow-img {
+.has-mega-menu:hover>a>.nav-arrow-img,
+.has-mega-menu.active-click>a>.nav-arrow-img {
   transform: rotate(90deg);
 }
 
 .menu-toggle {
-  display: none; /* Hidden on desktop */
+  display: none;
+  /* Hidden on desktop */
 }
 
 /* Mega Menu */
@@ -4567,10 +4570,12 @@ body.light-mode .sub-nav-link:hover {
 
 .mega-menu {
   position: absolute;
-  top: 80px; /* Below header */
+  top: 80px;
+  /* Below header */
   left: 0;
   width: 100%;
-  height: max-content; /* Fit content instead of forcing 90vh */
+  height: max-content;
+  /* Fit content instead of forcing 90vh */
   min-height: 600px;
   max-height: 90vh;
   background-color: #030303;
@@ -4586,7 +4591,8 @@ body.light-mode .sub-nav-link:hover {
   gap: 40px;
   box-sizing: border-box;
   overflow-y: auto;
-  overscroll-behavior: contain; /* Prevents scrolling main body when scrolling in menu */
+  overscroll-behavior: contain;
+  /* Prevents scrolling main body when scrolling in menu */
 }
 
 .has-mega-menu:hover .mega-menu,
@@ -4682,6 +4688,7 @@ body.light-mode .sub-nav-link:hover {
   .desktop-nav {
     display: none !important;
   }
+
   .menu-toggle {
     display: block !important;
   }
@@ -5392,7 +5399,8 @@ body.light-mode .section-services {
     height: 150px !important;
     padding: 24px 20px !important;
     border-radius: 20px !important;
-    margin-bottom: -1px; /* Prevent double borders */
+    margin-bottom: -1px;
+    /* Prevent double borders */
   }
 
   #herosectionmobilescreen {
@@ -5453,14 +5461,25 @@ body.light-mode .section-services {
     transform-origin: top right;
   }
 
+  .hero-mobile-left-svg svg {
+    width: 223px;
+  }
+
   .hero-mobile-right-svg {
     position: absolute;
     left: 15px;
-    bottom: -36px;
+    top: 576px;
+    width: calc(100vw - 245px);
+    overflow: hidden;
     z-index: 3;
     opacity: 0.8;
     transform: scaleX(1.02) scaleY(0.95);
-    transform-origin: bottom left;
+    transform-origin: top left;
+  }
+
+  .hero-mobile-right-svg svg {
+    width: 300px;
+    max-width: none;
   }
 
   .hero-mobile-bottom {
@@ -5573,6 +5592,7 @@ body.light-mode .section-services {
     padding: 12px 20px;
   }
 }
+
 @media screen and (max-width: 1024px) {
   .header-search {
     display: none;
@@ -5582,14 +5602,17 @@ body.light-mode .section-services {
 
 /* --- 1366px Laptop Fixes --- */
 @media screen and (max-width: 1400px) {
+
   /* Fix gap when header shrinks to 60px */
   .mega-menu {
     top: 60px !important;
   }
+
   body::after {
     top: 60px !important;
     height: calc(100vh - 60px) !important;
   }
+
   .menu-overlay {
     top: 60px !important;
     height: calc(100vh - 60px) !important;
@@ -5599,22 +5622,26 @@ body.light-mode .section-services {
   .d-nav-list {
     gap: 15px !important;
   }
-  .d-nav-list > li > a {
+
+  .d-nav-list>li>a {
     font-size: 11px !important;
     letter-spacing: 1px !important;
   }
+
   .header-search {
     width: 180px !important;
   }
+
   .header-search-btn {
     width: 28px !important;
     height: 28px !important;
   }
+
   .header-search-input {
     font-size: 12px !important;
   }
+
   .header-right {
     gap: 15px !important;
   }
 }
-
