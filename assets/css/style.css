@@ -2936,7 +2936,8 @@ html.lenis body {
 .story-container {
   position: relative;
   z-index: 2;
-  max-width: 1200px;
+  max-width: 100%;
+  gap: 40px;
   width: 100%;
   text-align: center;
 }
@@ -5647,6 +5648,100 @@ body.light-mode .section-services {
   .header-right {
     gap: 15px !important;
   }
+
+  .hero-inner {
+    padding-bottom: 140px;
+  }
+
+  #services-title {
+    font-size: 55px !important;
+    line-height: 1.2 !important;
+  }
+
+  .strategy-img-svg {
+    width: 280px !important;
+    height: 304px !important;
+  }
+
+  .strategy-content h2 {
+    font-size: 2.8rem !important;
+  }
+
+  .risk-service-img {
+    width: 272px !important;
+  }
+
+  .risk-heading {
+    font-size: 2.8rem !important;
+  }
+
+  .cyber-img-svg {
+    width: 272px !important;
+    height: 296px !important;
+  }
+
+  .cyber-heading {
+    font-size: 2.8rem !important;
+  }
+
+  .ai-service-img {
+    width: 272px !important;
+  }
+
+  .ai-heading {
+    font-size: 2.8rem !important;
+  }
+
+  #realstoriesheading h1 {
+    font-size: 65px !important;
+  }
+
+  .stories-slider-track {
+    gap: calc(50vw - min(500px, calc(50vw - 20px)) + 80px);
+  }
+
+  .story-card {
+    flex: 0 0 min(1000px, calc(100vw - 40px));
+    width: min(1000px, calc(100vw - 40px));
+    padding: 50px 60px;
+    min-height: 340px;
+  }
+
+  .story-arrow-btn.story-prev,
+  .story-arrow-btn.story-next {
+    width: 55px;
+    height: 55px;
+  }
+
+  #workholdheading h1 {
+    font-size: 70px !important;
+    line-height: 1.15 !important;
+  }
+
+  .workhold-pinned-wrapper {
+    top: calc(50vh - 250px) !important;
+  }
+
+  #ourstory h1 {
+    font-size: 70px !important;
+    line-height: 1.15 !important;
+  }
+
+  #ourstory p {
+    font-size: 18px !important;
+  }
+
+  .industries-pagination {
+    margin-top: -15px !important;
+  }
+
+  .thinking-title {
+    font-size: 55px !important;
+  }
+
+  .strategy-content {
+    margin-top: 20px !important;
+  }
 }
 
 /* Mobile Button Shrinking */
@@ -5760,5 +5855,184 @@ body.light-mode .section-services {
 @media (max-width: 768px) {
   .services-rail {
     display: none !important;
+  }
+}
+
+/* 1280px screen specific fixes */
+@media screen and (max-width: 1280px) {
+  .hero-inner {
+    padding-bottom: 120px !important;
+  }
+
+  .hero-headline {
+    font-size: 65px !important;
+  }
+
+  .hero-btn-inner {
+    font-size: 18px !important;
+    padding: 8px 32px !important;
+  }
+
+  .workhold-card-img {
+    width: 85% !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+
+  .industries-new-title {
+    font-size: 55px !important;
+  }
+}
+
+/* Filter Section Styles */
+.repo-filter-section {
+  padding: 80px max(20px, calc((100vw - var(--max-w, 1440px)) / 2));
+  background-color: transparent;
+  /* Assuming dark background from parent */
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 10;
+}
+
+.repo-filter-title {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 60px;
+  font-family: 'Pacaembu', sans-serif;
+}
+
+.repo-filter-title .text-red {
+  color: #EF4623;
+}
+
+.repo-filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 100%;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.repo-filter-dropdown {
+  position: relative;
+  flex: 0 0 220px;
+}
+
+.repo-filter-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(239, 70, 35, 0.5);
+  /* Faded red line */
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 300;
+  color: #A3A3A3;
+  transition: all 0.3s ease;
+}
+
+.repo-filter-toggle:hover,
+.repo-filter-dropdown.active .repo-filter-toggle {
+  border-bottom-color: #EF4623;
+  color: #fff;
+}
+
+.repo-filter-arrow {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.repo-filter-dropdown.active .repo-filter-arrow {
+  transform: rotate(180deg);
+}
+
+.repo-filter-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  border-top: 1px solid #EF4623;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  z-index: 20;
+}
+
+.repo-filter-dropdown.active .repo-filter-menu {
+  max-height: 600px;
+  /* Large enough to show all items */
+}
+
+.repo-filter-item {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(239, 70, 35, 0.5);
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.repo-filter-item:last-child {
+  border-bottom: 1px solid #EF4623;
+}
+
+.repo-filter-item:hover {
+  color: #EF4623;
+}
+
+.repo-filter-search {
+  cursor: pointer;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(239, 70, 35, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  padding-right: 15px;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.repo-filter-search:hover {
+  border-bottom-color: #EF4623;
+}
+
+@media (max-width: 1024px) {
+  .repo-filter-title {
+    font-size: 48px;
+  }
+
+  .repo-filter-bar {
+    flex-wrap: wrap;
+  }
+
+  .repo-filter-dropdown {
+    flex: 1 1 45%;
+  }
+
+  .repo-filter-search {
+    flex: 1 1 100%;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .repo-filter-title {
+    font-size: 36px;
+  }
+
+  .repo-filter-dropdown {
+    flex: 1 1 100%;
   }
 }

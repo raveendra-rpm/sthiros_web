@@ -1085,7 +1085,9 @@ function initScrollAnimations() {
             const firstSvg = document.querySelector('.first-svg');
             const lineOffset = firstSvg.getBoundingClientRect().height * 0.535;
             const riskVertOffset = 120;
-            return (lineOffset - 190) - (700 * scale) + 684.8 - riskVertOffset; // Move track DOWN by exactly 684.8px to perfectly center Cyber logo
+            let cyberBonus = 0;
+            if (vw <= 1366) cyberBonus = 120;
+            return (lineOffset - 190) - (700 * scale) + 684.8 - riskVertOffset + cyberBonus; // Move track DOWN by exactly 684.8px to perfectly center Cyber logo
           },
           ease: 'none',
           duration: 0.8
@@ -1134,7 +1136,11 @@ function initScrollAnimations() {
             const stratLogoW = 380;
             const riskX = 1.25 * vw + 10 + stratLogoW + 15 + 2180 * scale;
             const cyberHorizScroll = 1170; // precisely to the center of the downward curve
-            return -(riskX - vw / 2 + 1159 + cyberHorizScroll);
+            let aiCenterBonus = 0;
+            if (vw <= 1280) {
+              aiCenterBonus = 350; // Move track less to the left so AI logo is centered
+            }
+            return -(riskX - vw / 2 + 1159 + cyberHorizScroll) + aiCenterBonus;
           },
           ease: 'none',
           duration: 1
@@ -1158,9 +1164,13 @@ function initScrollAnimations() {
             const firstSvg = document.querySelector('.first-svg');
             const lineOffset = firstSvg.getBoundingClientRect().height * 0.535;
             const riskVertOffset = 120;
+            let cyberBonus = 0;
+            if (vw <= 1366) cyberBonus = 120;
+            let aiUpBonus = 0;
+            if (vw <= 1280) aiUpBonus = 150; // Extra pan up so AI isn't cut off at the bottom
             // The vertical distance between Cyber logo and AI logo is exactly 966 * scale
             const cyberVertScrollDOWN = 966 * scale;
-            return (lineOffset - 190) - (700 * scale) + 684.8 - riskVertOffset - cyberVertScrollDOWN; // move track UP by exactly the distance
+            return (lineOffset - 190) - (700 * scale) + 684.8 - riskVertOffset + cyberBonus - cyberVertScrollDOWN - aiUpBonus; // move track UP by exactly the distance
           },
           ease: 'none',
           duration: 0.8
@@ -2362,7 +2372,10 @@ function initWorkholdSlider() {
 
   ScrollTrigger.create({
     trigger: section,
-    start: "top top",
+    start: () => {
+      const wrapper = document.querySelector('.workhold-pinned-wrapper');
+      return wrapper ? "top " + window.getComputedStyle(wrapper).top : "top top";
+    },
     end: "bottom bottom",
     scrub: true,
     onUpdate: (self) => {
@@ -2824,3 +2837,40 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
+// --- Repository Filter Dropdowns ---
+document.addEventListener('DOMContentLoaded', () => {
+    const filterToggles = document.querySelectorAll('.repo-filter-toggle');
+    
+    filterToggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const parentDropdown = toggle.closest('.repo-filter-dropdown');
+            
+            // Close other dropdowns
+            document.querySelectorAll('.repo-filter-dropdown').forEach(dropdown => {
+                if (dropdown !== parentDropdown) {
+                    dropdown.classList.remove('active');
+                }
+            });
+            
+            // Toggle the clicked one
+            parentDropdown.classList.toggle('active');
+        });
+    });
+
+    // Close when clicking outside
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.repo-filter-dropdown').forEach(dropdown => {
+            dropdown.classList.remove('active');
+        });
+    });
+
+    // Prevent closing when clicking inside the menu
+    const filterMenus = document.querySelectorAll('.repo-filter-menu');
+    filterMenus.forEach(menu => {
+        menu.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+    });
+});
