@@ -4678,10 +4678,314 @@ body.light-mode .sub-nav-link:hover {
   padding-bottom: 8px;
 }
 
+.social-link:hover img {
+  opacity: 0.7;
+}
+
+/* ==================================================
+   Desktop Navigation & Mega Menu
+   ================================================== */
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
+.d-nav-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  height: 100%;
+}
+
+.d-nav-list>li {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.d-nav-list>li>a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.d-nav-list>li>a:hover,
+.d-nav-list>li>a.active-nav {
+  color: #EC2D26;
+}
+
+.nav-arrow {
+  font-size: 10px;
+  color: #EC2D26;
+}
+
+.nav-arrow-img {
+  width: 7px;
+  height: auto;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+/* WHAT WE DO arrow points right by default, and down on hover */
+.has-mega-menu>a>.nav-arrow-img {
+  transform: rotate(0deg);
+}
+
+.has-mega-menu:hover>a>.nav-arrow-img,
+.has-mega-menu.active-click>a>.nav-arrow-img {
+  transform: rotate(90deg);
+}
+
+.menu-toggle {
+  display: none;
+  /* Hidden on desktop */
+}
+
+/* Mega Menu */
+.has-mega-menu {
+  /* No relative pos here so mega menu spans full header width */
+}
+
+.mega-menu {
+  position: absolute;
+  top: 80px;
+  /* Below header */
+  left: 0;
+  width: 100%;
+  height: max-content;
+  /* Fit content instead of forcing 90vh */
+  min-height: 600px;
+  max-height: 90vh;
+  background-color: #030303;
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #EC2D26;
+  display: flex;
+  padding: 50px 40px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 100;
+  gap: 40px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  /* Prevents scrolling main body when scrolling in menu */
+}
+
+.has-mega-menu:hover .mega-menu,
+.has-mega-menu.active-click .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.mega-menu-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mega-header {
+  margin-bottom: 60px;
+}
+
+.mega-main-title {
+  color: #EC2D26;
+  font-size: 38px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.mega-main-arrow-img {
+  width: 18px;
+  height: auto;
+  margin-left: 15px;
+  transform: rotate(90deg);
+  /* Use CSS filter to colorize PNG to red if it is white/gray */
+  filter: invert(24%) sepia(87%) saturate(3015%) hue-rotate(348deg) brightness(101%) contrast(92%);
+}
+
+.mega-columns {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+}
+
+.mega-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.mega-heading {
+  color: #EC2D26;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.mega-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.mega-links a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 8px;
+}
+
 .mega-links a:hover,
 .mega-links a.active-mega-link,
 .mega-links a.active-nav {
   color: #EC2D26 !important;
+  border-bottom: 1px solid #EC2D26;
+}
+
+/* Split Mega Menu Styles */
+.mega-menu.split-mega-menu {
+  padding: 0;
+  gap: 0;
+  flex-direction: column;
+  min-height: 400px;
+  background-color: #000;
+  border-bottom: none;
+}
+
+.split-mega-top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.split-mega-menu .mega-sidebar {
+  width: 280px;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+}
+
+.split-mega-menu .mega-sidebar-link {
+  padding: 16px 40px;
+  color: #888;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.split-mega-menu .mega-sidebar-link:first-child {
+  color: #EC2D26;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+.split-mega-menu .mega-sidebar-link:first-child .mega-arrow {
+  color: #EC2D26;
+}
+
+.split-mega-menu .mega-sidebar-link:hover,
+.split-mega-menu .mega-sidebar-link.active {
+  color: #EC2D26;
+}
+
+.split-mega-menu .mega-sidebar-link .mega-arrow {
+  font-size: 20px;
+  font-weight: 300;
+  transition: transform 0.3s ease;
+}
+
+.split-mega-menu .mega-sidebar-link:hover .mega-arrow,
+.split-mega-menu .mega-sidebar-link.active .mega-arrow {
+  transform: translateX(5px);
+}
+
+.split-mega-menu .mega-content-area {
+  flex: 1;
+  padding: 154px 80px 60px 80px;
+  position: relative;
+  background-color: #000;
+}
+
+.split-mega-menu .mega-pane {
+  display: none;
+  animation: fadeInPane 0.4s ease forwards;
+}
+
+.split-mega-menu .mega-pane.active {
+  display: block;
+}
+
+@keyframes fadeInPane {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+.split-mega-menu .mega-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.split-mega-menu .mega-links-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  display: inline-block;
+  padding-bottom: 8px;
+  border-bottom: 1px solid transparent;
+}
+
+.split-mega-menu .mega-links-list li a:hover {
+  color: #EC2D26;
   border-bottom: 1px solid #EC2D26;
 }
 
@@ -6086,3 +6390,46 @@ body.light-mode .section-services {
   transform: scaleX(0.8);
 }
 
+
+
+.split-mega-bottom {
+  border-top: 1px solid #EC2D26;
+  background-color: #000;
+  padding: 25px 40px;
+  width: 100%;
+  display: flex;
+}
+
+.mega-socials {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.mega-social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  transition: transform 0.3s ease;
+}
+
+.mega-social-icon:hover {
+  transform: scale(1.1);
+}
+
+.mega-social-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
+
+
+
+/* Fix alignment for WHO WE SERVE dropdown right section */
+.d-nav-list > li:nth-child(4) .split-mega-menu .mega-content-area {
+  padding-top: 56px;
+}
