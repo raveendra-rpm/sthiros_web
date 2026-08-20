@@ -6195,7 +6195,7 @@ body.light-mode .section-services {
   /* Assuming dark background from parent */
   color: #fff;
   font-family: 'Inter', sans-serif;
-  margin-top: 60px;
+  margin-top: 140px;
   margin-bottom: 200px;
   position: relative;
   z-index: 10;
@@ -6256,7 +6256,7 @@ body.light-mode .section-services {
 }
 
 .repo-filter-dropdown.active .repo-filter-arrow {
-  transform: rotate(180deg);
+  transform: rotate(90deg);
 }
 
 .repo-filter-menu {
@@ -6433,3 +6433,5 @@ body.light-mode .section-services {
 .d-nav-list > li:nth-child(4) .split-mega-menu .mega-content-area {
   padding-top: 56px;
 }
+
+

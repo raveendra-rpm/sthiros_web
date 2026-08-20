@@ -15,7 +15,6 @@
 </head>
 
 <body class="loading">
-
     <!-- PASSWORD GATE OVERLAY -->
     <div id="sthiros-password-gate"
         style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000; z-index: 9999999; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Inter', sans-serif;">
@@ -203,8 +202,8 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="repository.html" target="_blank">THE REPOSITORY</a></li>
-                <li><a href="products.html" target="_blank">ORIQ</a></li>
+                <li><a href="repository.html">THE REPOSITORY</a></li>
+                <li><a href="products.html">ORIQ</a></li>
                 <li>
                     <a href="contactus.html">CONTACT US</a>
                 </li>
@@ -236,31 +235,69 @@
                 </span>
             </button>
         </div>
-
-
-
-
         <script>
             document.addEventListener('DOMContentLoaded', function () {
-                const sidebarLinks = document.querySelectorAll('.mega-sidebar-link[data-target]');
+                const path = window.location.pathname.toLowerCase();
 
-                sidebarLinks.forEach(link => {
+                // 1. Initial Active State Logic for WHAT WE DO
+                const whatWeDoMenu = document.querySelector('.d-nav-list > li:nth-child(3) .split-mega-menu');
+                if (whatWeDoMenu) {
+                    const links = whatWeDoMenu.querySelectorAll('.mega-sidebar-link');
+                    const panes = whatWeDoMenu.querySelectorAll('.mega-pane');
+
+                    let anySubActive = false;
+
+                    links.forEach(link => {
+                        link.classList.remove('active');
+                        const target = link.getAttribute('data-target');
+                        if (target) {
+                            if ((target === 'mega-strategy' && path.includes('strategy')) ||
+                                (target === 'mega-ai' && path.includes('ai')) ||
+                                (target === 'mega-risk' && path.includes('risk')) ||
+                                (target === 'mega-cyber' && path.includes('cyber'))) {
+                                link.classList.add('active');
+                                anySubActive = true;
+                            }
+                        }
+                    });
+
+                    if (!anySubActive && links.length > 0) {
+                        links[0].classList.add('active'); // "WHAT WE DO" is active
+                    }
+
+                    // Show correct pane
+                    panes.forEach(p => p.classList.remove('active'));
+                    links.forEach(link => {
+                        if (link.classList.contains('active')) {
+                            const target = link.getAttribute('data-target');
+                            if (target) {
+                                const pane = document.getElementById(target);
+                                if (pane) pane.classList.add('active');
+                            }
+                        }
+                    });
+                }
+
+                // 2. Hover Logic for all menus
+                const allSidebarLinks = document.querySelectorAll('.mega-sidebar-link');
+
+                allSidebarLinks.forEach(link => {
                     link.addEventListener('mouseenter', function (e) {
                         const megaMenu = this.closest('.split-mega-menu');
                         if (!megaMenu) return;
 
-                        const localLinks = megaMenu.querySelectorAll('.mega-sidebar-link[data-target]');
+                        const localLinks = megaMenu.querySelectorAll('.mega-sidebar-link');
                         const localPanes = megaMenu.querySelectorAll('.mega-pane');
 
-                        // Remove active from local links and panes
                         localLinks.forEach(l => l.classList.remove('active'));
                         localPanes.forEach(p => p.classList.remove('active'));
 
-                        // Add active to current
                         this.classList.add('active');
                         const targetId = this.getAttribute('data-target');
-                        const targetPane = document.getElementById(targetId);
-                        if (targetPane) targetPane.classList.add('active');
+                        if (targetId) {
+                            const targetPane = document.getElementById(targetId);
+                            if (targetPane) targetPane.classList.add('active');
+                        }
                     });
                 });
             });
@@ -272,13 +309,13 @@
         <div class="menu-content">
             <nav class="main-nav">
                 <a href="index.html" class="nav-link active">HOME</a>
-                <a href="aboutus.html" target="_blank" class="nav-link">WHO WE ARE</a>
+                <a href="aboutus.html" class="nav-link">WHO WE ARE</a>
 
                 <div class="nav-item-dropdown">
                     <a href="#" class="nav-link dropdown-toggle">WHAT WE DO <img
                             src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
                     <div class="sub-nav">
-                        <a href="services.html" target="_blank" class="sub-nav-link">WHAT WE DO</a>
+                        <a href="services.html" class="sub-nav-link">WHAT WE DO</a>
 
                         <div class="nav-item-dropdown nested-dropdown">
                             <a href="#" class="sub-nav-link dropdown-toggle">Strategy <img
@@ -359,8 +396,8 @@
                     </div>
                 </div>
 
-                <a href="repository.html" target="_blank" class="nav-link">THE REPOSITORY</a>
-                <a href="products.html" target="_blank" class="nav-link">ORIQ</a>
+                <a href="repository.html" class="nav-link">THE REPOSITORY</a>
+                <a href="products.html" class="nav-link">ORIQ</a>
 
                 <a href="contactus.html" class="nav-link">CONTACT US</a>
             </nav>
@@ -428,10 +465,10 @@
                     properly, and act on it with confidence.
                 </p>
                 <div class="hero-actions" style="margin-top: 40px; display: flex; gap: 20px;">
-                    <a href="contactus.html" target="_blank" class="hero-btn-outer">
+                    <a href="contactus.html" class="hero-btn-outer">
                         <span class="hero-btn-inner">TALK TO US</span>
                     </a>
-                    <a href="services.html" target="_blank" class="hero-btn-outer">
+                    <a href="services.html" class="hero-btn-outer">
                         <span class="hero-btn-inner">WHAT WE DO</span>
                     </a>
                 </div>
@@ -498,10 +535,10 @@
                     with confidence.
                 </p>
                 <div class="hero-mobile-actions">
-                    <a href="contactus.html" target="_blank" class="hero-btn-outer">
+                    <a href="contactus.html" class="hero-btn-outer">
                         <span class="hero-btn-inner">TALK TO US</span>
                     </a>
-                    <a href="services.html" target="_blank" class="hero-btn-outer">
+                    <a href="services.html" class="hero-btn-outer">
                         <span class="hero-btn-inner">WHAT WE DO</span>
                     </a>
                 </div>
@@ -719,7 +756,7 @@
                                                 a breach. We get into
                                                 the cloud, the code, and the data itself, and secure
                                                 what's actually there.</p>
-                                            <a href="services.html?tab=cyber" target="_blank"
+                                            <a href="services.html?tab=cyber"
                                                 style="display: inline-flex; align-items: center; gap: 8px; color: #EC2D26; text-decoration: none; font-size: 1.5rem; font-weight: 600; margin-top: 0; position: relative; z-index: 999; pointer-events: auto;">
                                                 Know more
                                                 <img src="assets/images/arrowred.png" alt=""
@@ -741,7 +778,7 @@
                                                     build the intelligent
                                                     systems and the agentic workforce that
                                                     carry the business forward.</p>
-                                                <a href="services.html?tab=ai" target="_blank"
+                                                <a href="services.html?tab=ai"
                                                     style="display: inline-flex; align-items: center; gap: 8px; color: #EC2D26; text-decoration: none; font-size: 1.5rem; font-weight: 600; margin-top: 0; position: relative; z-index: 999; pointer-events: auto;">
                                                     Know more
                                                     <img src="assets/images/arrowred.png" alt=""
@@ -763,7 +800,7 @@
                                         actually
                                         build is the governance and operational
                                         resilience that let you take risks on purpose.</p>
-                                    <a href="services.html?tab=risk" target="_blank"
+                                    <a href="services.html?tab=risk"
                                         style="display: inline-flex; align-items: center; gap: 8px; color: #EC2D26; text-decoration: none; font-size: 1.5rem; font-weight: 600; margin-top: 0; position: relative; z-index: 999; pointer-events: auto;">
                                         Know more
                                         <img src="assets/images/arrowred.png" alt="" style="width: 20px; height: auto;">
@@ -780,7 +817,7 @@
                             Blueprints <br>
                             for market entry, financial transactions,<br>
                             and organizational acceleration.</p>
-                        <a href="services.html?tab=strategy" target="_blank"
+                        <a href="services.html?tab=strategy"
                             style="display: inline-flex; align-items: center; gap: 8px; color: #EC2D26; text-decoration: none; font-size: 1.5rem; font-weight: 600; margin-top: 0; position: relative; z-index: 999; pointer-events: auto;">
                             Know more
                             <img src="assets/images/arrowred.png" alt="" style="width: 20px; height: auto;">
@@ -1111,7 +1148,7 @@
                 Today Strategy, Risk, Cyber, and Al operate as one integrated intelligence, built from the same standard
                 we started with, at a scale several magnitudes higher than what we started with.</p>
             <div style="text-align: center; margin-top: 55px; position: relative; z-index: 10;">
-                <a href="aboutus.html" target="_blank" class="hero-btn-outer">
+                <a href="aboutus.html" class="hero-btn-outer">
                     <span class="hero-btn-inner" style="font-size: 18px; padding: 6px 30px;">OUR STORY</span>
                 </a>
             </div>
@@ -1475,14 +1512,14 @@
             </div>
             <hr class="thinking-divider bottom-divider">
             <div class="thinking-cards-wrapper">
-                <a href="repository.html" target="_blank" class="thinking-card" style="text-decoration: none;">
+                <a href="repository.html" class="thinking-card" style="text-decoration: none;">
                     <p class="card-eyebrow">PERSPECTIVE</p>
                     <div class="card-bottom">
                         <h3 class="card-title">What governance actually looks like before the event.</h3>
                         <p class="card-read-time">6 min read</p>
                     </div>
                 </a>
-                <a href="repository.html" target="_blank" class="thinking-card" style="text-decoration: none;">
+                <a href="repository.html" class="thinking-card" style="text-decoration: none;">
                     <p class="card-eyebrow">BRIEFING</p>
                     <div class="card-bottom">
                         <h3 class="card-title">Automation without strategy is just faster mistakes.</h3>
@@ -1536,7 +1573,7 @@
                     <h2 class="cta-title">Bring us the<br> hardest one.</h2>
                 </div>
                 <div class="cta-action">
-                    <a href="contactus.html" target="_blank" class="hero-btn-outer hero-btn-white">
+                    <a href="contactus.html" class="hero-btn-outer hero-btn-white">
                         <span class="hero-btn-inner">TALK TO US</span>
                     </a>
                 </div>
@@ -1552,15 +1589,6 @@
             <div class="footer-left">
                 <h3 class="footer-heading">Let's work together</h3>
                 <a href="mailto:connect@sthiros.com" class="footer-email">connect@sthiros.com</a>
-
-                <div class="footer-contact-block">
-                    <a href="#" class="contact-now-link">
-                        <span>CONTACT NOW</span>
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1H11V11" stroke="white" stroke-width="1.5" />
-                        </svg>
-                    </a>
-                </div>
 
                 <div class="footer-socials">
                     <a href="#" class="social-icon">
@@ -1582,12 +1610,12 @@
             <div class="footer-right">
                 <ul class="footer-menu">
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="aboutus.html" target="_blank">WHO WE ARE</a></li>
-                    <li><a href="services.html" target="_blank">WHAT WE DO</a></li>
-                    <li><a href="repository.html" target="_blank">THE REPOSITORY</a></li>
-                    <li><a href="products.html" target="_blank">Oriq</a></li>
-                    <li><a href="industry.html" target="_blank">INDUSTRIES</a></li>
-                    <li><a href="contactus.html" target="_blank">CONTACT US</a></li>
+                    <li><a href="aboutus.html">WHO WE ARE</a></li>
+                    <li><a href="services.html">WHAT WE DO</a></li>
+                    <li><a href="industry.html">WHO WE SERVE</a></li>
+                    <li><a href="repository.html">THE REPOSITORY</a></li>
+                    <li><a href="products.html">ORIQ</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
                 </ul>
             </div>
         </div>

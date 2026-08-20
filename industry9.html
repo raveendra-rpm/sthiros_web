@@ -1489,8 +1489,8 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="repository.html" target="_blank">THE REPOSITORY</a></li>
-                <li><a href="products.html" target="_blank">ORIQ</a></li>
+                <li><a href="repository.html">THE REPOSITORY</a></li>
+                <li><a href="products.html">ORIQ</a></li>
                 <li>
                     <a href="contactus.html">CONTACT US</a>
                 </li>
@@ -1521,32 +1521,69 @@
                     <span class="line line-3"></span>
                 </span>
             </button>
-        </div>
-
-
-
-
-        <script>
+        </div>        <script>
             document.addEventListener('DOMContentLoaded', function () {
-                const sidebarLinks = document.querySelectorAll('.mega-sidebar-link[data-target]');
-
-                sidebarLinks.forEach(link => {
+                const path = window.location.pathname.toLowerCase();
+                
+                // 1. Initial Active State Logic for WHAT WE DO
+                const whatWeDoMenu = document.querySelector('.d-nav-list > li:nth-child(3) .split-mega-menu');
+                if (whatWeDoMenu) {
+                    const links = whatWeDoMenu.querySelectorAll('.mega-sidebar-link');
+                    const panes = whatWeDoMenu.querySelectorAll('.mega-pane');
+                    
+                    let anySubActive = false;
+                    
+                    links.forEach(link => {
+                        link.classList.remove('active');
+                        const target = link.getAttribute('data-target');
+                        if (target) {
+                            if ((target === 'mega-strategy' && path.includes('strategy')) ||
+                                (target === 'mega-ai' && path.includes('ai')) ||
+                                (target === 'mega-risk' && path.includes('risk')) ||
+                                (target === 'mega-cyber' && path.includes('cyber'))) {
+                                link.classList.add('active');
+                                anySubActive = true;
+                            }
+                        }
+                    });
+                    
+                    if (!anySubActive && links.length > 0) {
+                        links[0].classList.add('active'); // "WHAT WE DO" is active
+                    }
+                    
+                    // Show correct pane
+                    panes.forEach(p => p.classList.remove('active'));
+                    links.forEach(link => {
+                        if (link.classList.contains('active')) {
+                            const target = link.getAttribute('data-target');
+                            if (target) {
+                                const pane = document.getElementById(target);
+                                if (pane) pane.classList.add('active');
+                            }
+                        }
+                    });
+                }
+                
+                // 2. Hover Logic for all menus
+                const allSidebarLinks = document.querySelectorAll('.mega-sidebar-link');
+                
+                allSidebarLinks.forEach(link => {
                     link.addEventListener('mouseenter', function (e) {
                         const megaMenu = this.closest('.split-mega-menu');
                         if (!megaMenu) return;
 
-                        const localLinks = megaMenu.querySelectorAll('.mega-sidebar-link[data-target]');
+                        const localLinks = megaMenu.querySelectorAll('.mega-sidebar-link');
                         const localPanes = megaMenu.querySelectorAll('.mega-pane');
 
-                        // Remove active from local links and panes
                         localLinks.forEach(l => l.classList.remove('active'));
                         localPanes.forEach(p => p.classList.remove('active'));
 
-                        // Add active to current
                         this.classList.add('active');
                         const targetId = this.getAttribute('data-target');
-                        const targetPane = document.getElementById(targetId);
-                        if (targetPane) targetPane.classList.add('active');
+                        if (targetId) {
+                            const targetPane = document.getElementById(targetId);
+                            if (targetPane) targetPane.classList.add('active');
+                        }
                     });
                 });
             });
@@ -1558,13 +1595,13 @@
         <div class="menu-content">
             <nav class="main-nav">
                 <a href="index.html" class="nav-link active">HOME</a>
-                <a href="aboutus.html" target="_blank" class="nav-link">WHO WE ARE</a>
+                <a href="aboutus.html" class="nav-link">WHO WE ARE</a>
 
                 <div class="nav-item-dropdown">
                     <a href="#" class="nav-link dropdown-toggle">WHAT WE DO <img
                             src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
                     <div class="sub-nav">
-                        <a href="services.html" target="_blank" class="sub-nav-link">WHAT WE DO</a>
+                        <a href="services.html" class="sub-nav-link">WHAT WE DO</a>
 
                         <div class="nav-item-dropdown nested-dropdown">
                             <a href="#" class="sub-nav-link dropdown-toggle">Strategy <img
@@ -1645,8 +1682,8 @@
                     </div>
                 </div>
 
-                <a href="repository.html" target="_blank" class="nav-link">THE REPOSITORY</a>
-                <a href="products.html" target="_blank" class="nav-link">ORIQ</a>
+                <a href="repository.html" class="nav-link">THE REPOSITORY</a>
+                <a href="products.html" class="nav-link">ORIQ</a>
 
                 <a href="contactus.html" class="nav-link">CONTACT US</a>
             </nav>
@@ -1663,13 +1700,13 @@
         <div class="menu-content">
             <nav class="main-nav">
                 <a href="index.html" class="nav-link active">HOME</a>
-                <a href="aboutus.html" target="_blank" class="nav-link">WHO WE ARE</a>
+                <a href="aboutus.html" class="nav-link">WHO WE ARE</a>
 
                 <div class="nav-item-dropdown">
                     <a href="#" class="nav-link dropdown-toggle">WHAT WE DO <img
                             src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
                     <div class="sub-nav">
-                        <a href="services.html" target="_blank" class="sub-nav-link">WHAT WE DO</a>
+                        <a href="services.html" class="sub-nav-link">WHAT WE DO</a>
 
                         <div class="nav-item-dropdown nested-dropdown">
                             <a href="#" class="sub-nav-link dropdown-toggle">Strategy <img
@@ -1750,8 +1787,8 @@
                     </div>
                 </div>
 
-                <a href="repository.html" target="_blank" class="nav-link">THE REPOSITORY</a>
-                <a href="products.html" target="_blank" class="nav-link">ORIQ</a>
+                <a href="repository.html" class="nav-link">THE REPOSITORY</a>
+                <a href="products.html" class="nav-link">ORIQ</a>
 
                 <a href="contactus.html" class="nav-link">CONTACT US</a>
             </nav>
@@ -1768,13 +1805,13 @@
         <div class="menu-content">
             <nav class="main-nav">
                 <a href="index.html" class="nav-link active">HOME</a>
-                <a href="aboutus.html" target="_blank" class="nav-link">WHO WE ARE</a>
+                <a href="aboutus.html" class="nav-link">WHO WE ARE</a>
 
                 <div class="nav-item-dropdown">
                     <a href="#" class="nav-link dropdown-toggle">WHAT WE DO <img
                             src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
                     <div class="sub-nav">
-                        <a href="services.html" target="_blank" class="sub-nav-link">WHAT WE DO</a>
+                        <a href="services.html" class="sub-nav-link">WHAT WE DO</a>
 
                         <div class="nav-item-dropdown nested-dropdown">
                             <a href="#" class="sub-nav-link dropdown-toggle">Strategy <img
@@ -1837,7 +1874,7 @@
                     </div>
                 </div>
 
-                <a href="repository.html" target="_blank" class="nav-link">THE REPOSITORY</a>
+                <a href="repository.html" class="nav-link">THE REPOSITORY</a>
                 <a href="products.html" class="nav-link">Oriq</a>
 
                 <div class="nav-item-dropdown">
@@ -1857,8 +1894,8 @@
                     </div>
                 </div>
 
-                <a href="repository.html" target="_blank" class="nav-link">THE REPOSITORY</a>
-                <a href="products.html" target="_blank" class="nav-link">ORIQ</a>
+                <a href="repository.html" class="nav-link">THE REPOSITORY</a>
+                <a href="products.html" class="nav-link">ORIQ</a>
 
                 <a href="contactus.html" class="nav-link">CONTACT US</a>
             </nav>
@@ -1875,13 +1912,13 @@
         <div class="menu-content">
             <nav class="main-nav">
                 <a href="index.html" class="nav-link active">HOME</a>
-                <a href="aboutus.html" target="_blank" class="nav-link">WHO WE ARE</a>
+                <a href="aboutus.html" class="nav-link">WHO WE ARE</a>
 
                 <div class="nav-item-dropdown">
                     <a href="#" class="nav-link dropdown-toggle">WHAT WE DO <img
                             src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
                     <div class="sub-nav">
-                        <a href="services.html" target="_blank" class="sub-nav-link">WHAT WE DO</a>
+                        <a href="services.html" class="sub-nav-link">WHAT WE DO</a>
 
                         <div class="nav-item-dropdown nested-dropdown">
                             <a href="#" class="sub-nav-link dropdown-toggle">Strategy <img
@@ -1944,7 +1981,7 @@
                     </div>
                 </div>
 
-                <a href="repository.html" target="_blank" class="nav-link">THE REPOSITORY</a>
+                <a href="repository.html" class="nav-link">THE REPOSITORY</a>
                 <a href="products.html" class="nav-link">Oriq</a>
 
                 <div class="nav-item-dropdown">
@@ -1964,8 +2001,8 @@
                     </div>
                 </div>
 
-                <a href="repository.html" target="_blank" class="nav-link">THE REPOSITORY</a>
-                <a href="products.html" target="_blank" class="nav-link">ORIQ</a>
+                <a href="repository.html" class="nav-link">THE REPOSITORY</a>
+                <a href="products.html" class="nav-link">ORIQ</a>
 
                 <a href="contactus.html" class="nav-link">CONTACT US</a>
             </nav>
@@ -1982,13 +2019,13 @@
         <div class="menu-content">
             <nav class="main-nav">
                 <a href="index.html" class="nav-link active">HOME</a>
-                <a href="aboutus.html" target="_blank" class="nav-link">WHO WE ARE</a>
+                <a href="aboutus.html" class="nav-link">WHO WE ARE</a>
 
                 <div class="nav-item-dropdown">
                     <a href="#" class="nav-link dropdown-toggle">WHAT WE DO <img
                             src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
                     <div class="sub-nav">
-                        <a href="services.html" target="_blank" class="sub-nav-link">WHAT WE DO</a>
+                        <a href="services.html" class="sub-nav-link">WHAT WE DO</a>
 
                         <div class="nav-item-dropdown nested-dropdown">
                             <a href="#" class="sub-nav-link dropdown-toggle">Strategy <img
@@ -2051,7 +2088,7 @@
                     </div>
                 </div>
 
-                <a href="repository.html" target="_blank" class="nav-link">THE REPOSITORY</a>
+                <a href="repository.html" class="nav-link">THE REPOSITORY</a>
                 <a href="products.html" class="nav-link">Oriq</a>
 
                 <div class="nav-item-dropdown">
@@ -2071,8 +2108,8 @@
                     </div>
                 </div>
 
-                <a href="repository.html" target="_blank" class="nav-link">THE REPOSITORY</a>
-                <a href="products.html" target="_blank" class="nav-link">ORIQ</a>
+                <a href="repository.html" class="nav-link">THE REPOSITORY</a>
+                <a href="products.html" class="nav-link">ORIQ</a>
 
                 <a href="contactus.html" class="nav-link">CONTACT US</a>
             </nav>
@@ -2095,7 +2132,7 @@
                 they compound fast. We work with developers, EPC contractors and construction businesses to build the
                 controls, systems and intelligence that protect the margin.</p>
             <div class="industry-hero-actions">
-                <a href="contactus.html" target="_blank" class="hero-btn-outer">
+                <a href="contactus.html" class="hero-btn-outer">
                     <span class="hero-btn-inner">BOOK A 30-MIN CALL</span>
                 </a>
                 <a href="#" class="hero-btn-outer">
@@ -4806,7 +4843,7 @@ We’ll show you the right problems. -->
                     <p class="chts-card-desc">Tell us the project situation. We'll be direct about what we'd do first —
                         a cash flow fix, a cost control system, or a project intelligence build</p>
                     <div class="chts-card-footer">
-                        <a href="contactus.html" target="_blank">Book a call</a>
+                        <a href="contactus.html">Book a call</a>
                     </div>
                 </div>
 
@@ -4883,7 +4920,7 @@ We’ll show you the right problems. -->
                     both.</p>
             </div>
             <div class="std-buttons">
-                <a href="contactus.html" target="_blank" class="hero-btn-outer">
+                <a href="contactus.html" class="hero-btn-outer">
                     <span class="hero-btn-inner">Start the conversation</span>
                 </a>
             </div>
@@ -4939,15 +4976,6 @@ We’ll show you the right problems. -->
                 <h3 class="footer-heading">Let's work together</h3>
                 <a href="mailto:connect@sthiros.com" class="footer-email">connect@sthiros.com</a>
 
-                <div class="footer-contact-block">
-                    <a href="#" class="contact-now-link">
-                        <span>CONTACT NOW</span>
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1H11V11" stroke="white" stroke-width="1.5" />
-                        </svg>
-                    </a>
-                </div>
-
                 <div class="footer-socials">
                     <a href="#" class="social-icon">
                         <img src="assets/images/social_media/fb_sthiros.png" alt="Facebook" class="social-img">
@@ -4966,14 +4994,14 @@ We’ll show you the right problems. -->
 
             <!-- Right Side -->
             <div class="footer-right">
-                <ul class="footer-menu">
+                                <ul class="footer-menu">
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="aboutus.html" target="_blank">WHO WE ARE</a></li>
-                    <li><a href="services.html" target="_blank">WHAT WE DO</a></li>
-                    <li><a href="repository.html" target="_blank">THE REPOSITORY</a></li>
-                    <li><a href="products.html" target="_blank">Oriq</a></li>
-                    <li><a href="industry.html" target="_blank">INDUSTRIES</a></li>
-                    <li><a href="contactus.html" target="_blank">CONTACT US</a></li>
+                    <li><a href="aboutus.html">WHO WE ARE</a></li>
+                    <li><a href="services.html">WHAT WE DO</a></li>
+                    <li><a href="industry.html">WHO WE SERVE</a></li>
+                    <li><a href="repository.html">THE REPOSITORY</a></li>
+                    <li><a href="products.html">ORIQ</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
                 </ul>
             </div>
         </div>
@@ -5180,5 +5208,11 @@ We’ll show you the right problems. -->
 </body>
 
 </html>
+
+
+
+
+
+
 
 
