@@ -444,8 +444,9 @@ function initContactUsSvgScroll() {
       clipPath: 'circle(150% at 0% 0%)',
       ease: 'none',
       scrollTrigger: {
-        trigger: '.work-section',
-        start: 'top 80%', // starts earlier as section enters
+        trigger: '.contact-hero',
+        start: 'bottom top', // starts immediately after heroSvg finishes
+        endTrigger: '.work-section',
         end: 'bottom top', // stretches until section leaves
         scrub: 2
       }
