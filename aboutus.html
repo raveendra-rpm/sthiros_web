@@ -902,6 +902,31 @@
             }
         }
 
+        .team-card.active.text-left .ta-filters {
+            left: auto;
+            right: calc(100% + 40px);
+            justify-content: flex-end;
+        }
+
+        @media (max-width: 1366px) {
+            .ta-filters {
+                flex-wrap: wrap;
+                max-width: 600px;
+                gap: 10px;
+                top: -50px;
+            }
+            .team-active-text-panel {
+                width: 600px;
+                top: 50px;
+            }
+            .ta-name {
+                margin: 0 0 5px 0 !important;
+            }
+            .ta-role {
+                margin: 0 0 5px 0 !important;
+            }
+        }
+
         @media (max-width: 1280px) {
             .timeline-right p {
                 font-size: 14px;

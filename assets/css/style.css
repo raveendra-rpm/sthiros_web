@@ -6447,15 +6447,31 @@ body.light-mode .section-services {
 /* Centering AI section for 1366px screens */
 @media screen and (min-width: 1281px) and (max-width: 1399px) {
   .cyber-horiz-svg {
-    width: 1230px !important;
+    width: 1330px !important;
+    transform: scaleY(0.86);
+    transform-origin: top left;
+  }
+  .ai-inline-section {
+    margin-top: -80px !important;
   }
   .ai-right-side {
-    left: 580px !important;
+    left: 650px !important;
     top: 10px !important;
     width: 210px !important;
   }
   #realtopstoriessvg {
     margin-top: 100px !important;
+  }
+}
+
+/* Adjust SVG widths for 1280px, 1320px, 1366px screens */
+@media screen and (min-width: 1280px) and (max-width: 1366px) {
+  #realtopstoriessvg svg,
+  #workholdssvg svg,
+  #workholdbottomsvg svg,
+  #ourstorybottomsvg svg,
+  #whysthirossvg svg {
+    width: 50px !important;
   }
 }
 
