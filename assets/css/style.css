@@ -6007,8 +6007,8 @@ body.light-mode .section-services {
   .story-card {
     flex: 0 0 min(1000px, calc(100vw - 40px));
     width: min(1000px, calc(100vw - 40px));
-    padding: 50px 60px;
-    min-height: 340px;
+    padding: 40px 60px;
+    min-height: 310px;
   }
 
   .story-arrow-btn.story-prev,
@@ -6433,5 +6433,21 @@ body.light-mode .section-services {
 .d-nav-list > li:nth-child(4) .split-mega-menu .mega-content-area {
   padding-top: 56px;
 }
+
+/* Centering AI section for 1366px screens */
+@media screen and (min-width: 1281px) and (max-width: 1399px) {
+  .cyber-horiz-svg {
+    width: 1230px !important;
+  }
+  .ai-right-side {
+    left: 580px !important;
+    top: 10px !important;
+    width: 210px !important;
+  }
+  #realtopstoriessvg {
+    margin-top: 100px !important;
+  }
+}
+
 
 
