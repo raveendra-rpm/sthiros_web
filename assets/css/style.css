@@ -5911,6 +5911,11 @@ body.light-mode .section-services {
 /* --- 1366px Laptop Fixes --- */
 @media screen and (max-width: 1400px) {
 
+  .hero-btn-inner {
+    font-size: 15px !important;
+    padding: 7px 28px !important;
+  }
+
   /* Fix gap when header shrinks to 60px */
   .mega-menu {
     top: 60px !important;
@@ -6173,8 +6178,8 @@ body.light-mode .section-services {
   }
 
   .hero-btn-inner {
-    font-size: 18px !important;
-    padding: 8px 32px !important;
+    font-size: 14px !important;
+    padding: 6px 24px !important;
   }
 
   .workhold-card-img {
@@ -6430,7 +6435,7 @@ body.light-mode .section-services {
 
 
 /* Fix alignment for WHO WE SERVE dropdown right section */
-.d-nav-list > li:nth-child(4) .split-mega-menu .mega-content-area {
+.d-nav-list > li:nth-child(3) .split-mega-menu .mega-content-area {
   padding-top: 56px;
 }
 
