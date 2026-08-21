@@ -915,13 +915,16 @@
                 gap: 10px;
                 top: -50px;
             }
+
             .team-active-text-panel {
                 width: 600px;
                 top: 50px;
             }
+
             .ta-name {
                 margin: 0 0 5px 0 !important;
             }
+
             .ta-role {
                 margin: 0 0 5px 0 !important;
             }
@@ -1305,18 +1308,23 @@
 <body>
 
     <!-- PASSWORD GATE OVERLAY -->
-    <div id="sthiros-password-gate" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000; z-index: 9999999; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Inter', sans-serif;">
+    <div id="sthiros-password-gate"
+        style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000; z-index: 9999999; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Inter', sans-serif;">
         <div style="text-align: center;">
-            <h2 style="color: #fff; font-size: 24px; margin-bottom: 25px; font-weight: 500;">Please enter password to access site</h2>
+            <h2 style="color: #fff; font-size: 24px; margin-bottom: 25px; font-weight: 500;">Please enter password to
+                access site</h2>
             <div style="display: flex; gap: 10px; justify-content: center;">
-                <input type="password" id="sthiros-gate-input" placeholder="Enter password" style="padding: 12px 20px; font-size: 16px; border: 1px solid #333; border-radius: 6px; background-color: #111; color: #fff; outline: none; width: 280px;">
-                <button id="sthiros-gate-btn" style="padding: 12px 24px; font-size: 16px; background-color: #EF4623; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-weight: 500;">Submit</button>
+                <input type="password" id="sthiros-gate-input" placeholder="Enter password"
+                    style="padding: 12px 20px; font-size: 16px; border: 1px solid #333; border-radius: 6px; background-color: #111; color: #fff; outline: none; width: 280px;">
+                <button id="sthiros-gate-btn"
+                    style="padding: 12px 24px; font-size: 16px; background-color: #EF4623; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-weight: 500;">Submit</button>
             </div>
-            <p id="sthiros-gate-error" style="color: #EF4623; margin-top: 15px; font-size: 14px; display: none;">Incorrect Password</p>
+            <p id="sthiros-gate-error" style="color: #EF4623; margin-top: 15px; font-size: 14px; display: none;">
+                Incorrect Password</p>
         </div>
     </div>
     <script>
-        (function() {
+        (function () {
             const gate = document.getElementById('sthiros-password-gate');
             const input = document.getElementById('sthiros-gate-input');
             const btn = document.getElementById('sthiros-gate-btn');
@@ -1339,14 +1347,14 @@
             }
 
             btn.addEventListener('click', unlockSite);
-            input.addEventListener('keypress', function(e) {
+            input.addEventListener('keypress', function (e) {
                 if (e.key === 'Enter') unlockSite();
             });
         })();
     </script>
     <!-- END PASSWORD GATE -->
     <!-- ═══════════════ SITE HEADER ═══════════════ -->
-                        <header class="site-header">
+    <header class="site-header">
         <div class="header-left">
             <a href="index.html" class="logo-link">
                 <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
@@ -1356,7 +1364,7 @@
         <!-- Desktop Navigation & Mega Menu -->
         <nav class="desktop-nav">
             <ul class="d-nav-list">
-                
+
                 <li><a href="aboutus.html">WHO WE ARE</a></li>
                 <li class="has-mega-menu">
                     <a href="#">WHAT WE DO <img src="assets/images/sthiros_arrow_btn.png" alt="Arrow"
@@ -1517,18 +1525,19 @@
                     <span class="line line-3"></span>
                 </span>
             </button>
-        </div>        <script>
+        </div>
+        <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const path = window.location.pathname.toLowerCase();
-                
+
                 // 1. Initial Active State Logic for WHAT WE DO
                 const whatWeDoMenu = document.querySelector('.d-nav-list > li:nth-child(3) .split-mega-menu');
                 if (whatWeDoMenu) {
                     const links = whatWeDoMenu.querySelectorAll('.mega-sidebar-link');
                     const panes = whatWeDoMenu.querySelectorAll('.mega-pane');
-                    
+
                     let anySubActive = false;
-                    
+
                     links.forEach(link => {
                         link.classList.remove('active');
                         const target = link.getAttribute('data-target');
@@ -1542,11 +1551,11 @@
                             }
                         }
                     });
-                    
+
                     if (!anySubActive && links.length > 0) {
                         links[0].classList.add('active'); // "WHAT WE DO" is active
                     }
-                    
+
                     // Show correct pane
                     panes.forEach(p => p.classList.remove('active'));
                     links.forEach(link => {
@@ -1559,10 +1568,10 @@
                         }
                     });
                 }
-                
+
                 // 2. Hover Logic for all menus
                 const allSidebarLinks = document.querySelectorAll('.mega-sidebar-link');
-                
+
                 allSidebarLinks.forEach(link => {
                     link.addEventListener('mouseenter', function (e) {
                         const megaMenu = this.closest('.split-mega-menu');
@@ -1590,7 +1599,7 @@
     <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
         <div class="menu-content">
             <nav class="main-nav">
-                
+
                 <a href="aboutus.html" class="nav-link">WHO WE ARE</a>
 
                 <div class="nav-item-dropdown">
@@ -1660,7 +1669,7 @@
                     </div>
                 </div>
 
-                
+
                 <div class="nav-item-dropdown">
                     <a href="#" class="nav-link dropdown-toggle">INDUSTRIES <img
                             src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
@@ -1695,7 +1704,7 @@
     <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
         <div class="menu-content">
             <nav class="main-nav">
-                
+
                 <a href="aboutus.html" class="nav-link">WHO WE ARE</a>
 
                 <div class="nav-item-dropdown">
@@ -1765,113 +1774,6 @@
                     </div>
                 </div>
 
-                
-                <div class="nav-item-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">INDUSTRIES <img
-                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
-                    <div class="sub-nav">
-                        <a href="industry.html" class="sub-nav-link">BFSI & Fintech</a>
-                        <a href="industry1.html" class="sub-nav-link">D2C & Retail</a>
-                        <a href="industry2.html" class="sub-nav-link">Energy, Mining & Utilities</a>
-                        <a href="industry3.html" class="sub-nav-link">GCC</a>
-                        <a href="industry4.html" class="sub-nav-link">Healthcare & Life Sciences</a>
-                        <a href="industry5.html" class="sub-nav-link">Manufacturing</a>
-                        <a href="industry7.html" class="sub-nav-link">Telecom & Digital Infrastructure</a>
-                        <a href="industry8.html" class="sub-nav-link">Travel & Hospitality</a>
-                        <a href="industry6.html" class="sub-nav-link">Public Sector & Government</a>
-                        <a href="industry9.html" class="sub-nav-link">Real Estate / EPC / Construction</a>
-                    </div>
-                </div>
-
-                <a href="repository.html" class="nav-link">THE REPOSITORY</a>
-                <a href="products.html" class="nav-link">ORIQ</a>
-
-                <a href="contactus.html" class="nav-link">CONTACT US</a>
-            </nav>
-
-
-        </div>
-    </div>
-
-
-    </header>
-
-    <!-- ═══════════════ FULL SCREEN MENU OVERLAY ═══════════════ -->
-    <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
-        <div class="menu-content">
-            <nav class="main-nav">
-                
-                <a href="aboutus.html" class="nav-link">WHO WE ARE</a>
-
-                <div class="nav-item-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">WHAT WE DO <img
-                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
-                    <div class="sub-nav">
-                        <a href="services.html" class="sub-nav-link">WHAT WE DO</a>
-
-                        <div class="nav-item-dropdown nested-dropdown">
-                            <a href="#" class="sub-nav-link dropdown-toggle">Strategy <img
-                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
-                            <div class="sub-nav nested-sub-nav">
-                                <a href="strategy1.html" class="nested-sub-nav-link">Business & Growth Strategy</a>
-                                <a href="strategy2.html" class="nested-sub-nav-link">Strategic Finance &
-                                    Transactions</a>
-                                <a href="strategy3.html" class="nested-sub-nav-link">Enterprise Operations &
-                                    Ecosystems</a>
-                                <a href="strategy4.html" class="nested-sub-nav-link">Change Management & Organisational
-                                    Acceleration</a>
-                            </div>
-                        </div>
-
-                        <div class="nav-item-dropdown nested-dropdown">
-                            <a href="#" class="sub-nav-link dropdown-toggle">AI <img
-                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
-                            <div class="sub-nav nested-sub-nav">
-                                <a href="servicesai1.html" class="nested-sub-nav-link">AI Strategy & Sovereign
-                                    Governance</a>
-                                <a href="servicesai2.html" class="nested-sub-nav-link">Intelligent Foundation (Data &
-                                    Cloud)</a>
-                                <a href="servicesai3.html" class="nested-sub-nav-link">Agentic Operations &
-                                    Automation</a>
-                                <a href="servicesai4.html" class="nested-sub-nav-link">Cognitive Experience &
-                                    Engineering</a>
-                            </div>
-                        </div>
-
-                        <div class="nav-item-dropdown nested-dropdown">
-                            <a href="#" class="sub-nav-link dropdown-toggle">Risk <img
-                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
-                            <div class="sub-nav nested-sub-nav">
-                                <a href="risk1.html" class="nested-sub-nav-link">Enterprise Governance & Regulatory
-                                    Strategy</a>
-                                <a href="risk2.html" class="nested-sub-nav-link">Strategic Assurance & Process
-                                    Intelligence</a>
-                                <a href="risk3.html" class="nested-sub-nav-link">Digital Risk & Technology Controls</a>
-                                <a href="risk4.html" class="nested-sub-nav-link">Forensic Integrity & Asset
-                                    Protection</a>
-                            </div>
-                        </div>
-
-                        <div class="nav-item-dropdown nested-dropdown">
-                            <a href="#" class="sub-nav-link dropdown-toggle">Cyber <img
-                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
-                            <div class="sub-nav nested-sub-nav">
-                                <a href="servicescyber1.html" class="nested-sub-nav-link">Offensive Security &
-                                    Exposure</a>
-                                <a href="servicescyber2.html" class="nested-sub-nav-link">Cloud Security & Zero
-                                    Trust</a>
-                                <a href="servicescyber3.html" class="nested-sub-nav-link">Data Privacy & Protection
-                                    Engineering</a>
-                                <a href="servicescyber4.html" class="nested-sub-nav-link">Cyber Resilience & Crisis
-                                    Readiness</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <a href="repository.html" class="nav-link">THE REPOSITORY</a>
-                <a href="products.html" class="nav-link">Oriq</a>
 
                 <div class="nav-item-dropdown">
                     <a href="#" class="nav-link dropdown-toggle">INDUSTRIES <img
@@ -1907,7 +1809,7 @@
     <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
         <div class="menu-content">
             <nav class="main-nav">
-                
+
                 <a href="aboutus.html" class="nav-link">WHO WE ARE</a>
 
                 <div class="nav-item-dropdown">
@@ -2014,7 +1916,114 @@
     <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
         <div class="menu-content">
             <nav class="main-nav">
-                
+
+                <a href="aboutus.html" class="nav-link">WHO WE ARE</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">WHAT WE DO <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="services.html" class="sub-nav-link">WHAT WE DO</a>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Strategy <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="strategy1.html" class="nested-sub-nav-link">Business & Growth Strategy</a>
+                                <a href="strategy2.html" class="nested-sub-nav-link">Strategic Finance &
+                                    Transactions</a>
+                                <a href="strategy3.html" class="nested-sub-nav-link">Enterprise Operations &
+                                    Ecosystems</a>
+                                <a href="strategy4.html" class="nested-sub-nav-link">Change Management & Organisational
+                                    Acceleration</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">AI <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="servicesai1.html" class="nested-sub-nav-link">AI Strategy & Sovereign
+                                    Governance</a>
+                                <a href="servicesai2.html" class="nested-sub-nav-link">Intelligent Foundation (Data &
+                                    Cloud)</a>
+                                <a href="servicesai3.html" class="nested-sub-nav-link">Agentic Operations &
+                                    Automation</a>
+                                <a href="servicesai4.html" class="nested-sub-nav-link">Cognitive Experience &
+                                    Engineering</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Risk <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="risk1.html" class="nested-sub-nav-link">Enterprise Governance & Regulatory
+                                    Strategy</a>
+                                <a href="risk2.html" class="nested-sub-nav-link">Strategic Assurance & Process
+                                    Intelligence</a>
+                                <a href="risk3.html" class="nested-sub-nav-link">Digital Risk & Technology Controls</a>
+                                <a href="risk4.html" class="nested-sub-nav-link">Forensic Integrity & Asset
+                                    Protection</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Cyber <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="servicescyber1.html" class="nested-sub-nav-link">Offensive Security &
+                                    Exposure</a>
+                                <a href="servicescyber2.html" class="nested-sub-nav-link">Cloud Security & Zero
+                                    Trust</a>
+                                <a href="servicescyber3.html" class="nested-sub-nav-link">Data Privacy & Protection
+                                    Engineering</a>
+                                <a href="servicescyber4.html" class="nested-sub-nav-link">Cyber Resilience & Crisis
+                                    Readiness</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a href="repository.html" class="nav-link">THE REPOSITORY</a>
+                <a href="products.html" class="nav-link">Oriq</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">INDUSTRIES <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="industry.html" class="sub-nav-link">BFSI & Fintech</a>
+                        <a href="industry1.html" class="sub-nav-link">D2C & Retail</a>
+                        <a href="industry2.html" class="sub-nav-link">Energy, Mining & Utilities</a>
+                        <a href="industry3.html" class="sub-nav-link">GCC</a>
+                        <a href="industry4.html" class="sub-nav-link">Healthcare & Life Sciences</a>
+                        <a href="industry5.html" class="sub-nav-link">Manufacturing</a>
+                        <a href="industry7.html" class="sub-nav-link">Telecom & Digital Infrastructure</a>
+                        <a href="industry8.html" class="sub-nav-link">Travel & Hospitality</a>
+                        <a href="industry6.html" class="sub-nav-link">Public Sector & Government</a>
+                        <a href="industry9.html" class="sub-nav-link">Real Estate / EPC / Construction</a>
+                    </div>
+                </div>
+
+                <a href="repository.html" class="nav-link">THE REPOSITORY</a>
+                <a href="products.html" class="nav-link">ORIQ</a>
+
+                <a href="contactus.html" class="nav-link">CONTACT US</a>
+            </nav>
+
+
+        </div>
+    </div>
+
+
+    </header>
+
+    <!-- ═══════════════ FULL SCREEN MENU OVERLAY ═══════════════ -->
+    <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
+        <div class="menu-content">
+            <nav class="main-nav">
+
                 <a href="aboutus.html" class="nav-link">WHO WE ARE</a>
 
                 <div class="nav-item-dropdown">
@@ -2673,7 +2682,7 @@
 
             <!-- Right Side -->
             <div class="footer-right">
-                                <ul class="footer-menu">
+                <ul class="footer-menu">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="aboutus.html">WHO WE ARE</a></li>
                     <li><a href="services.html">WHAT WE DO</a></li>
@@ -3101,11 +3110,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-

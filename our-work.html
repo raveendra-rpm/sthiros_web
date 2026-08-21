@@ -16,18 +16,23 @@
 <body>
 
     <!-- PASSWORD GATE OVERLAY -->
-    <div id="sthiros-password-gate" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000; z-index: 9999999; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Inter', sans-serif;">
+    <div id="sthiros-password-gate"
+        style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000; z-index: 9999999; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Inter', sans-serif;">
         <div style="text-align: center;">
-            <h2 style="color: #fff; font-size: 24px; margin-bottom: 25px; font-weight: 500;">Please enter password to access site</h2>
+            <h2 style="color: #fff; font-size: 24px; margin-bottom: 25px; font-weight: 500;">Please enter password to
+                access site</h2>
             <div style="display: flex; gap: 10px; justify-content: center;">
-                <input type="password" id="sthiros-gate-input" placeholder="Enter password" style="padding: 12px 20px; font-size: 16px; border: 1px solid #333; border-radius: 6px; background-color: #111; color: #fff; outline: none; width: 280px;">
-                <button id="sthiros-gate-btn" style="padding: 12px 24px; font-size: 16px; background-color: #EF4623; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-weight: 500;">Submit</button>
+                <input type="password" id="sthiros-gate-input" placeholder="Enter password"
+                    style="padding: 12px 20px; font-size: 16px; border: 1px solid #333; border-radius: 6px; background-color: #111; color: #fff; outline: none; width: 280px;">
+                <button id="sthiros-gate-btn"
+                    style="padding: 12px 24px; font-size: 16px; background-color: #EF4623; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-weight: 500;">Submit</button>
             </div>
-            <p id="sthiros-gate-error" style="color: #EF4623; margin-top: 15px; font-size: 14px; display: none;">Incorrect Password</p>
+            <p id="sthiros-gate-error" style="color: #EF4623; margin-top: 15px; font-size: 14px; display: none;">
+                Incorrect Password</p>
         </div>
     </div>
     <script>
-        (function() {
+        (function () {
             const gate = document.getElementById('sthiros-password-gate');
             const input = document.getElementById('sthiros-gate-input');
             const btn = document.getElementById('sthiros-gate-btn');
@@ -50,7 +55,7 @@
             }
 
             btn.addEventListener('click', unlockSite);
-            input.addEventListener('keypress', function(e) {
+            input.addEventListener('keypress', function (e) {
                 if (e.key === 'Enter') unlockSite();
             });
         })();
@@ -232,15 +237,68 @@
             }
         }
 
-        @media (min-width: 1281px) and (max-width: 1600px) {
+        @media (min-width: 1281px) and (max-width: 1366px) {
 
             #browse-all-header-wrapper,
             #stacked-cards-container {
-                padding-left: 18% !important;
+                padding-left: 14% !important;
+            }
+        }
+
+        @media (min-width: 1367px) and (max-width: 1919px) {
+            #abs-wrapper {
+                max-width: 1440px !important;
+            }
+
+            #search-section {
+                padding-left: 8.5% !important;
+                padding-right: 2% !important;
+            }
+
+            #cards-grid {
+                padding-left: 8.5% !important;
+                padding-right: 2% !important;
+                gap: 24px !important;
+            }
+
+            #browse-all-header-wrapper {
+                padding-left: 8.5% !important;
+                padding-right: 2% !important;
+            }
+
+            #stacked-cards-container {
+                padding-left: 8.5% !important;
+                padding-right: 2% !important;
+            }
+
+            .stacked-card {
+                width: 100% !important;
+                min-height: 160px !important;
+            }
+
+            .stacked-card>div:nth-child(1) {
+                flex: 0 0 42% !important;
+            }
+
+            .stacked-card>div:nth-child(2) {
+                flex: 1 !important;
+                padding: 24px 36px !important;
+            }
+
+            #complexity-banner {
+                width: 85% !important;
+                max-width: 1200px !important;
+                left: 0 !important;
+                right: 0 !important;
+                margin: 0 auto !important;
             }
         }
 
         @media (min-width: 1920px) {
+            #abs-wrapper {
+                max-width: 1800px !important;
+            }
+
             #intel-repository-section {
                 margin-top: 80px !important;
                 margin-bottom: 30px !important;
@@ -249,27 +307,73 @@
             #search-section {
                 margin-top: 400px !important;
                 margin-bottom: 40px !important;
+                padding-left: 8% !important;
+                padding-right: 2% !important;
             }
 
             #cards-grid {
                 margin-bottom: 120px !important;
+                padding-left: 8% !important;
+                padding-right: 2% !important;
+                gap: 30px !important;
             }
 
             #browse-all-header-wrapper {
                 margin-bottom: 50px !important;
+                padding-left: 8% !important;
+                padding-right: 2% !important;
             }
 
             #stacked-cards-container {
+                padding-left: 8% !important;
+                padding-right: 2% !important;
                 padding-bottom: 180px !important;
                 margin-bottom: 240px !important;
             }
 
+            .stacked-card {
+                width: 100% !important;
+                min-height: 200px !important;
+            }
+
+            .stacked-card>div:nth-child(1) {
+                flex: 0 0 40% !important;
+                border-radius: 24px !important;
+            }
+
+            .stacked-card>div:nth-child(2) {
+                flex: 1 !important;
+                border-radius: 0 24px 24px 0 !important;
+                padding: 35px 50px !important;
+            }
+
+            .stacked-card>div:nth-child(2)>div:nth-child(1) {
+                font-size: 13px !important;
+                margin-bottom: 10px !important;
+            }
+
+            .stacked-card>div:nth-child(2)>div:nth-child(2) {
+                font-size: 28px !important;
+                margin-bottom: 16px !important;
+            }
+
+            .stacked-card>div:nth-child(2)>div:nth-child(3) {
+                font-size: 16px !important;
+                max-width: 95% !important;
+                line-height: 1.7 !important;
+                margin-bottom: 16px !important;
+            }
+
+            .stacked-card>div:nth-child(2)>div:nth-child(4) {
+                font-size: 16px !important;
+            }
+
             #complexity-banner {
-                right: 340px !important;
-                left: auto !important;
-                margin-right: 0 !important;
-                margin-left: auto !important;
-                max-width: 1200px !important;
+                width: 85% !important;
+                max-width: 1400px !important;
+                left: 0 !important;
+                right: 0 !important;
+                margin: 0 auto !important;
             }
 
             #our-work-hero-headline {
@@ -295,10 +399,78 @@
                 left: -600px !important;
             }
         }
+
+        @media (max-width: 991px) {
+            .all-industries-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 30px 20px !important;
+            }
+        }
+
+        @media (max-width: 540px) {
+            .all-industries-grid {
+                grid-template-columns: 1fr !important;
+                gap: 24px !important;
+            }
+        }
+
+        /* Global SEE MORE & Complexity Button Hover States */
+        #abs-wrapper {
+            pointer-events: none !important;
+        }
+
+        #abs-wrapper > * {
+            pointer-events: auto !important;
+        }
+
+        .complexity-btn {
+            cursor: pointer !important;
+            display: inline-block !important;
+            text-decoration: none !important;
+            position: relative !important;
+            z-index: 35 !important;
+            pointer-events: auto !important;
+        }
+
+        .complexity-btn .complexity-btn-outer {
+            border: 1px solid #EF4623;
+            border-radius: 50px;
+            padding: 3px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            background-color: transparent;
+            cursor: pointer !important;
+        }
+
+        .complexity-btn .complexity-btn-inner {
+            border: 3px solid #EC2D26;
+            border-radius: 50px;
+            padding: 14px 40px;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            color: #fff;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            background-color: #050505;
+            transition: all 0.3s ease;
+            cursor: pointer !important;
+        }
+
+        .complexity-btn:hover .complexity-btn-outer,
+        .complexity-btn:focus .complexity-btn-outer {
+            background-color: #ffffff !important;
+        }
+
+        .complexity-btn:hover .complexity-btn-inner,
+        .complexity-btn:focus .complexity-btn-inner {
+            background-color: #ffffff !important;
+            color: #EF4623 !important;
+        }
     </style>
 
     <!-- ═══════════════ SITE HEADER ═══════════════ -->
-                        <header class="site-header">
+    <header class="site-header">
         <div class="header-left">
             <a href="index.html" class="logo-link">
                 <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
@@ -468,18 +640,19 @@
                     <span class="line line-3"></span>
                 </span>
             </button>
-        </div>        <script>
+        </div>
+        <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const path = window.location.pathname.toLowerCase();
-                
+
                 // 1. Initial Active State Logic for WHAT WE DO
                 const whatWeDoMenu = document.querySelector('.d-nav-list > li:nth-child(3) .split-mega-menu');
                 if (whatWeDoMenu) {
                     const links = whatWeDoMenu.querySelectorAll('.mega-sidebar-link');
                     const panes = whatWeDoMenu.querySelectorAll('.mega-pane');
-                    
+
                     let anySubActive = false;
-                    
+
                     links.forEach(link => {
                         link.classList.remove('active');
                         const target = link.getAttribute('data-target');
@@ -493,11 +666,11 @@
                             }
                         }
                     });
-                    
+
                     if (!anySubActive && links.length > 0) {
                         links[0].classList.add('active'); // "WHAT WE DO" is active
                     }
-                    
+
                     // Show correct pane
                     panes.forEach(p => p.classList.remove('active'));
                     links.forEach(link => {
@@ -510,10 +683,10 @@
                         }
                     });
                 }
-                
+
                 // 2. Hover Logic for all menus
                 const allSidebarLinks = document.querySelectorAll('.mega-sidebar-link');
-                
+
                 allSidebarLinks.forEach(link => {
                     link.addEventListener('mouseenter', function (e) {
                         const megaMenu = this.closest('.split-mega-menu');
@@ -610,7 +783,7 @@
                     </div>
                 </div>
 
-                
+
                 <div class="nav-item-dropdown">
                     <a href="#" class="nav-link dropdown-toggle">INDUSTRIES <img
                             src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
@@ -714,7 +887,7 @@
                     </div>
                 </div>
 
-                
+
                 <div class="nav-item-dropdown">
                     <a href="#" class="nav-link dropdown-toggle">INDUSTRIES <img
                             src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
@@ -1079,6 +1252,11 @@
                 style="position: absolute; top: 0; left: 0; width: 45%; height: 100vh; background: linear-gradient(to right, #050505 0%, #050505 33%, transparent 100%); z-index: 1; pointer-events: none;">
             </div>
 
+            <!-- Bottom black gradient overlay to blend image into background -->
+            <div
+                style="position: absolute; top: 70vh; left: 0; width: 100%; height: 30vh; background: linear-gradient(to bottom, transparent 0%, #050505 100%); z-index: 1; pointer-events: none;">
+            </div>
+
             <div
                 style="position: absolute; inset: 0; width: 100%; height: 110vh; padding: 0 max(40px, calc((100vw - var(--max-w, 1440px)) / 2)); box-sizing: border-box; pointer-events: none;">
                 <div style="position: relative; width: 100%; height: 100%;">
@@ -1195,7 +1373,7 @@
 
 
             <!-- Third SVG: modified by user -->
-            <div style="position: relative; width: 100%; margin-top: -2px; margin-left: 0;">
+            <div style="position: relative; width: 100%; margin-top: -2px; margin-left: 0; z-index: 25;">
 
                 <!-- Black Gradient Mask behind the button to fade out SVG lines -->
                 <div
@@ -1219,8 +1397,8 @@
                 </svg>
 
                 <!-- See More Button on 3rd SVG -->
-                <div style="position: absolute; top: 75.64%; left: 50%; transform: translate(-50%, -50%); z-index: 10;">
-                    <a href="#" class="complexity-btn" style="text-decoration: none; display: inline-block;">
+                <div style="position: absolute; top: 75.64%; left: 50%; transform: translate(-50%, -50%); z-index: 35; pointer-events: auto;">
+                    <a href="#" class="complexity-btn" style="text-decoration: none; display: inline-block; pointer-events: auto;">
                         <div class="complexity-btn-outer">
                             <div class="complexity-btn-inner">
                                 SEE MORE
@@ -1343,7 +1521,7 @@
                         style="font-family: 'Pacaembu', sans-serif; font-size: clamp(50px, 6vw, 80px); font-weight: 600; letter-spacing: 0.05em; color: #EF4623; margin-bottom: 0px; line-height: 1;">
                         70+</div>
                     <div
-                        style="font-family: 'Inter', sans-serif; font-size: clamp(20px, 2.5vw, 34px); font-weight: 600; color: #ffffff; line-height: 1.1;">
+                        style="font-family: 'Pacaembu', sans-serif; font-size: clamp(20px, 2.5vw, 34px); font-weight: 600; color: #ffffff; line-height: 1.1;">
                         Organisations</div>
                 </div>
                 <div class="stat-card-right"
@@ -1352,76 +1530,106 @@
                         style="font-family: 'Pacaembu', sans-serif; font-size: clamp(50px, 6vw, 80px); font-weight: 600; letter-spacing: 0.05em; color: #EF4623; margin-bottom: 0px; line-height: 1;">
                         6</div>
                     <div
-                        style="font-family: 'Inter', sans-serif; font-size: clamp(20px, 2.5vw, 34px); font-weight: 600; color: #ffffff; line-height: 1.1;">
+                        style="font-family: 'Pacaembu', sans-serif; font-size: clamp(20px, 2.5vw, 34px); font-weight: 600; color: #ffffff; line-height: 1.1;">
                         Industries</div>
                 </div>
             </div>
 
-            <!-- All Industries Link -->
-            <a href="javascript:void(0)" id="toggle-industries-btn"
-                style="font-family: 'Inter', sans-serif; font-size: clamp(14px, 1.5vw, 18px); letter-spacing: 4px; color: #fff; text-decoration: none; text-transform: uppercase; display: flex; align-items: center; justify-content: center; margin: clamp(40px, 5.2vw, 100px) auto 10px; max-width: 800px; padding: 10px; border: none; background: transparent; position: relative; z-index: 10; font-weight: 500; transition: all 0.3s;">
-                ALL INDUSTRIES <img id="toggle-icon" src="assets/images/our_work_ast/right_arrow_png.png" alt="Toggle"
-                    style="display: inline-block; transition: transform 0.3s; margin-left: 8px; height: 16px; width: auto;">
-            </a>
+            <!-- All Industries Full-Bleed Container -->
+            <div id="all-industries-wrapper"
+                style="width: 100vw; margin-left: calc(50% - 50vw); margin-top: clamp(40px, 5.2vw, 80px); margin-bottom: 20px; position: relative; z-index: 10; transition: background-color 0.3s ease;">
 
-            <!-- Expandable Industries Section -->
-            <div id="all-industries-section"
-                style="display: none; max-width: 1000px; margin: 0 auto clamp(20px, 3.1vw, 60px); padding: clamp(20px, 3vw, 40px); background: #050505; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; text-align: left; position: relative; z-index: 10; font-family: 'Inter', sans-serif; font-size: 13px; color: #a0a0a0; letter-spacing: 0.5px;">
-                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px 20px;">
-                    <!-- Column 1 -->
-                    <div style="display: flex; flex-direction: column; gap: 30px;">
-                        <span style="color: #EF4623; cursor: pointer;">HEALTHCARE</span>
-                        <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
-                            onmouseout="this.style.color='#a0a0a0'">BFSI &amp; FINTECH</span>
-                        <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
-                            onmouseout="this.style.color='#a0a0a0'">IT &amp; ITeS</span>
-                        <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
-                            onmouseout="this.style.color='#a0a0a0'">BFSI</span>
-                        <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
-                            onmouseout="this.style.color='#a0a0a0'">DEFENCE</span>
-                        <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
-                            onmouseout="this.style.color='#a0a0a0'">SERVICE</span>
-                    </div>
-                    <!-- Column 2 -->
-                    <div style="display: flex; flex-direction: column; gap: 30px;">
-                        <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
-                            onmouseout="this.style.color='#a0a0a0'">AUTOMOTIVE</span>
-                        <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
-                            onmouseout="this.style.color='#a0a0a0'">FMCG</span>
-                        <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
-                            onmouseout="this.style.color='#a0a0a0'">CONSTRUCTION</span>
-                        <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
-                            onmouseout="this.style.color='#a0a0a0'">BUSINESS CONSULTING</span>
-                        <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
-                            onmouseout="this.style.color='#a0a0a0'">HOTEL</span>
-                        <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
-                            onmouseout="this.style.color='#a0a0a0'">NGO</span>
-                    </div>
-                    <!-- Column 3 -->
-                    <div style="display: flex; flex-direction: column; gap: 30px;">
-                        <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
-                            onmouseout="this.style.color='#a0a0a0'">RETAIL</span>
-                        <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
-                            onmouseout="this.style.color='#a0a0a0'">MINING</span>
-                        <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
-                            onmouseout="this.style.color='#a0a0a0'">AGRI BUSINESS</span>
-                        <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
-                            onmouseout="this.style.color='#a0a0a0'">BPO</span>
-                        <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
-                            onmouseout="this.style.color='#a0a0a0'">REAL ESTATE</span>
-                    </div>
-                    <!-- Column 4 -->
-                    <div style="display: flex; flex-direction: column; gap: 30px;">
-                        <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
-                            onmouseout="this.style.color='#a0a0a0'">ENTERTAINMENT</span>
-                        <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
-                            onmouseout="this.style.color='#a0a0a0'">GAS AND OIL</span>
-                        <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
-                            onmouseout="this.style.color='#a0a0a0'">GOVERNMENT</span>
-                        <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
-                            onmouseout="this.style.color='#a0a0a0'">IT</span>
-                        <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
-                            onmouseout="this.style.color='#a0a0a0'">CHARTED ACCOUNTANT</span>
+                <!-- All Industries Toggle Button -->
+                <a href="javascript:void(0)" id="toggle-industries-btn"
+                    style="font-family: 'Inter', sans-serif; font-size: clamp(14px, 1.5vw, 18px); letter-spacing: 4px; color: #fff; text-decoration: none; text-transform: uppercase; display: flex; align-items: center; justify-content: center; max-width: 400px; margin: 0 auto; padding: 18px 20px; border: none; background: transparent; position: relative; z-index: 10; font-weight: 500; transition: all 0.3s;">
+                    ALL INDUSTRIES <img id="toggle-icon" src="assets/images/our_work_ast/right_arrow_png.png"
+                        alt="Toggle"
+                        style="display: inline-block; transition: transform 0.3s; margin-left: 8px; height: 16px; width: auto;">
+                </a>
+
+                <!-- Expandable Industries Section (Full Width, No Border Radius) -->
+                <div id="all-industries-section"
+                    style="display: none; width: 100%; padding: 20px max(40px, calc((100vw - 1440px) / 2 + 40px)) clamp(45px, 5vw, 75px); background: #050505; border-radius: 0; box-sizing: border-box; text-align: left; position: relative; z-index: 10; font-family: 'Inter', sans-serif; font-size: clamp(13px, 1.1vw, 15px); color: #a0a0a0; letter-spacing: 0.8px;">
+                    <div style="max-width: 1440px; margin: 0 auto; width: 100%;">
+                        <div class="all-industries-grid"
+                            style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px clamp(20px, 4vw, 60px);">
+                            <!-- Column 1 -->
+                            <div style="display: flex; flex-direction: column; gap: clamp(18px, 2vw, 28px);">
+                                <span style="color: #EF4623; cursor: pointer; font-weight: 500;">HEALTHCARE</span>
+                                <span style="cursor: pointer; transition: color 0.3s; font-weight: 500;"
+                                    onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#a0a0a0'">BFSI
+                                    &amp; FINTECH</span>
+                                <span style="cursor: pointer; transition: color 0.3s; font-weight: 500;"
+                                    onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#a0a0a0'">IT
+                                    &amp; ITeS</span>
+                                <span style="cursor: pointer; transition: color 0.3s; font-weight: 500;"
+                                    onmouseover="this.style.color='#fff'"
+                                    onmouseout="this.style.color='#a0a0a0'">BFSI</span>
+                                <span style="cursor: pointer; transition: color 0.3s; font-weight: 500;"
+                                    onmouseover="this.style.color='#fff'"
+                                    onmouseout="this.style.color='#a0a0a0'">DEFENCE</span>
+                                <span style="cursor: pointer; transition: color 0.3s; font-weight: 500;"
+                                    onmouseover="this.style.color='#fff'"
+                                    onmouseout="this.style.color='#a0a0a0'">SERVICE</span>
+                            </div>
+                            <!-- Column 2 -->
+                            <div style="display: flex; flex-direction: column; gap: clamp(18px, 2vw, 28px);">
+                                <span style="cursor: pointer; transition: color 0.3s; font-weight: 500;"
+                                    onmouseover="this.style.color='#fff'"
+                                    onmouseout="this.style.color='#a0a0a0'">AUTOMOTIVE</span>
+                                <span style="cursor: pointer; transition: color 0.3s; font-weight: 500;"
+                                    onmouseover="this.style.color='#fff'"
+                                    onmouseout="this.style.color='#a0a0a0'">FMCG</span>
+                                <span style="cursor: pointer; transition: color 0.3s; font-weight: 500;"
+                                    onmouseover="this.style.color='#fff'"
+                                    onmouseout="this.style.color='#a0a0a0'">CONSTRUCTION</span>
+                                <span style="cursor: pointer; transition: color 0.3s; font-weight: 500;"
+                                    onmouseover="this.style.color='#fff'"
+                                    onmouseout="this.style.color='#a0a0a0'">BUSINESS CONSULTING</span>
+                                <span style="cursor: pointer; transition: color 0.3s; font-weight: 500;"
+                                    onmouseover="this.style.color='#fff'"
+                                    onmouseout="this.style.color='#a0a0a0'">HOTEL</span>
+                                <span style="cursor: pointer; transition: color 0.3s; font-weight: 500;"
+                                    onmouseover="this.style.color='#fff'"
+                                    onmouseout="this.style.color='#a0a0a0'">NGO</span>
+                            </div>
+                            <!-- Column 3 -->
+                            <div style="display: flex; flex-direction: column; gap: clamp(18px, 2vw, 28px);">
+                                <span style="cursor: pointer; transition: color 0.3s; font-weight: 500;"
+                                    onmouseover="this.style.color='#fff'"
+                                    onmouseout="this.style.color='#a0a0a0'">RETAIL</span>
+                                <span style="cursor: pointer; transition: color 0.3s; font-weight: 500;"
+                                    onmouseover="this.style.color='#fff'"
+                                    onmouseout="this.style.color='#a0a0a0'">MINING</span>
+                                <span style="cursor: pointer; transition: color 0.3s; font-weight: 500;"
+                                    onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#a0a0a0'">AGRI
+                                    BUSINESS</span>
+                                <span style="cursor: pointer; transition: color 0.3s; font-weight: 500;"
+                                    onmouseover="this.style.color='#fff'"
+                                    onmouseout="this.style.color='#a0a0a0'">BPO</span>
+                                <span style="cursor: pointer; transition: color 0.3s; font-weight: 500;"
+                                    onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#a0a0a0'">REAL
+                                    ESTATE</span>
+                            </div>
+                            <!-- Column 4 -->
+                            <div style="display: flex; flex-direction: column; gap: clamp(18px, 2vw, 28px);">
+                                <span style="cursor: pointer; transition: color 0.3s; font-weight: 500;"
+                                    onmouseover="this.style.color='#fff'"
+                                    onmouseout="this.style.color='#a0a0a0'">ENTERTAINMENT</span>
+                                <span style="cursor: pointer; transition: color 0.3s; font-weight: 500;"
+                                    onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#a0a0a0'">GAS
+                                    AND OIL</span>
+                                <span style="cursor: pointer; transition: color 0.3s; font-weight: 500;"
+                                    onmouseover="this.style.color='#fff'"
+                                    onmouseout="this.style.color='#a0a0a0'">GOVERNMENT</span>
+                                <span style="cursor: pointer; transition: color 0.3s; font-weight: 500;"
+                                    onmouseover="this.style.color='#fff'"
+                                    onmouseout="this.style.color='#a0a0a0'">IT</span>
+                                <span style="cursor: pointer; transition: color 0.3s; font-weight: 500;"
+                                    onmouseover="this.style.color='#fff'"
+                                    onmouseout="this.style.color='#a0a0a0'">CHARTED ACCOUNTANT</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1430,12 +1638,15 @@
                 document.getElementById('toggle-industries-btn').addEventListener('click', function (e) {
                     e.preventDefault();
                     var section = document.getElementById('all-industries-section');
+                    var wrapper = document.getElementById('all-industries-wrapper');
                     var icon = document.getElementById('toggle-icon');
                     if (section.style.display === 'none' || section.style.display === '') {
                         section.style.display = 'block';
+                        wrapper.style.backgroundColor = '#050505';
                         icon.style.transform = 'rotate(90deg)';
                     } else {
                         section.style.display = 'none';
+                        wrapper.style.backgroundColor = 'transparent';
                         icon.style.transform = 'rotate(0deg)';
                     }
                 });
@@ -1753,7 +1964,7 @@
 
             <!-- Right Side -->
             <div class="footer-right">
-                                <ul class="footer-menu">
+                <ul class="footer-menu">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="aboutus.html">WHO WE ARE</a></li>
                     <li><a href="services.html">WHAT WE DO</a></li>
@@ -1780,11 +1991,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
