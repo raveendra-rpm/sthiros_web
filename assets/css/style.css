@@ -125,6 +125,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+input,
+select,
+textarea,
+button {
+  font-family: 'Quicksand', sans-serif;
+}
+
 /* ── Lenis smooth scroll ── */
 html.lenis,
 html.lenis body {
@@ -3745,6 +3752,7 @@ html.lenis body {
   width: 100%;
   padding: 60px 40px 0;
   background-color: transparent;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .footer-container {
@@ -3945,7 +3953,7 @@ html.lenis body {
 }
 
 .nav-link {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Pacaembu', sans-serif;
   font-size: 1.2rem;
   letter-spacing: 0.1em;
   color: #fff;
@@ -4334,7 +4342,7 @@ html.lenis body {
 }
 
 .nav-link {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Pacaembu', sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: 0.18em;
@@ -4406,7 +4414,7 @@ html.lenis body {
 }
 
 .sub-nav-link {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Pacaembu', sans-serif;
   font-size: 1.1rem;
   font-weight: 300;
   color: #aaa;
@@ -4437,7 +4445,7 @@ body.light-mode .nested-sub-nav {
 }
 
 .nested-sub-nav-link {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Pacaembu', sans-serif;
   font-size: 0.95rem;
   font-weight: 300;
   color: #888;
@@ -4521,7 +4529,7 @@ body.light-mode .sub-nav-link:hover {
 .d-nav-list>li>a {
   color: #fff;
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Pacaembu', sans-serif;
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 2px;
@@ -4615,6 +4623,7 @@ body.light-mode .sub-nav-link:hover {
 
 .mega-main-title {
   color: #EC2D26;
+  font-family: 'Pacaembu', sans-serif;
   font-size: 38px;
   font-weight: 500;
   letter-spacing: 2px;
@@ -4646,6 +4655,7 @@ body.light-mode .sub-nav-link:hover {
 
 .mega-heading {
   color: #EC2D26;
+  font-family: 'Pacaembu', sans-serif;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -4666,6 +4676,7 @@ body.light-mode .sub-nav-link:hover {
 .mega-links a {
   color: #aaa;
   text-decoration: none;
+  font-family: 'Pacaembu', sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 1.5px;
@@ -4712,7 +4723,7 @@ body.light-mode .sub-nav-link:hover {
 .d-nav-list>li>a {
   color: #fff;
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Pacaembu', sans-serif;
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 2px;
@@ -4904,6 +4915,7 @@ body.light-mode .sub-nav-link:hover {
   padding: 16px 40px;
   color: #888;
   text-decoration: none;
+  font-family: 'Pacaembu', sans-serif;
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 1.5px;
@@ -4974,6 +4986,7 @@ body.light-mode .sub-nav-link:hover {
 .split-mega-menu .mega-links-list li a {
   color: #fff;
   text-decoration: none;
+  font-family: 'Pacaembu', sans-serif;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 1.5px;

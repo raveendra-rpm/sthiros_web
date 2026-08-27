@@ -133,7 +133,7 @@
             padding: 100px 40px;
             margin-top: 250px;
             color: #FFF;
-            font-family: 'Inter', sans-serif;
+            font-family: 'Quicksand', sans-serif;
             background: #000;
         }
 
@@ -306,6 +306,7 @@
             font-family: 'Quicksand', sans-serif;
         }
 
+        .contact-form label .req,
         .work-form label .req {
             color: #EF4623;
         }
@@ -518,7 +519,7 @@
             padding: 100px 40px;
             margin-top: 0px;
             color: #FFF;
-            font-family: 'Inter', sans-serif;
+            font-family: 'Quicksand', sans-serif;
             background: #000;
             position: relative;
         }
@@ -820,7 +821,8 @@
                                 <div id="mega-cyber" class="mega-pane">
                                     <ul class="mega-links-list">
                                         <li><a href="servicescyber1.html">OFFENSIVE SECURITY & EXPOSURE</a></li>
-                                        <li><a href="servicescyber2.html">CLOUD SECURITY & ZERO TRUST ARCHITECTURE</a></li>
+                                        <li><a href="servicescyber2.html">CLOUD SECURITY & ZERO TRUST ARCHITECTURE</a>
+                                        </li>
                                         <li><a href="servicescyber3.html">DATA PRIVACY & PROTECTION ENGINEERING</a></li>
                                         <li><a href="servicescyber4.html">CYBER RESILIENCE & CRISIS READINESS</a></li>
                                     </ul>
@@ -1227,7 +1229,7 @@
 
     <!-- Contact Form Section -->
     <section id="contactusformsec" class="contact-info-section">
-        <h2 class="work-heading" style="position: relative; z-index: 1;"><span class="highlight">Tell Us</span> What’s
+        <h2 class="work-heading" style="position: relative; z-index: 1;"><span class="highlight">Tell Us</span> What's
             on Your Mind</h2>
         <div class="contact-info-container">
             <!-- Left Column -->
@@ -1239,11 +1241,11 @@
                 </div>
                 <div class="info-block">
                     <h3>Office Time</h3>
-                    <p>Monday - Sunday<br>11 AM - 7 PM</p>
+                    <p>Monday - Friday<br>10 AM - 7 PM</p>
                 </div>
                 <div class="info-block">
                     <h3>Support</h3>
-                    <p><a href="mailto:connect@sthiros.com">connect@sthiros.com</a>+91 98765 43210</p>
+                    <p><a href="mailto:connect@sthiros.com">connect@sthiros.com</a>+91 93639 15961</p>
                 </div>
             </div>
 
@@ -1252,28 +1254,28 @@
                 <form class="contact-form">
                     <div class="form-row">
                         <div class="form-group">
-                            <label>Enter your name</label>
-                            <input type="text">
+                            <label>Enter your name <span class="req">*</span></label>
+                            <input type="text" required>
                         </div>
                         <div class="form-group">
-                            <label>Email address</label>
-                            <input type="email">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Company name</label>
-                            <input type="text">
-                        </div>
-                        <div class="form-group">
-                            <label>Contact number</label>
-                            <input type="tel">
+                            <label>Email address <span class="req">*</span></label>
+                            <input type="email" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <label>Tell us what's not working</label>
-                            <textarea rows="1"></textarea>
+                            <label>Company name <span class="req">*</span></label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Contact number <span class="req">*</span></label>
+                            <input type="tel" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Tell us what's not working <span class="req">*</span></label>
+                            <textarea rows="1" required></textarea>
                         </div>
                     </div>
 

@@ -1246,18 +1246,23 @@
 <body>
 
     <!-- PASSWORD GATE OVERLAY -->
-    <div id="sthiros-password-gate" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000; z-index: 9999999; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Inter', sans-serif;">
+    <div id="sthiros-password-gate"
+        style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000; z-index: 9999999; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Inter', sans-serif;">
         <div style="text-align: center;">
-            <h2 style="color: #fff; font-size: 24px; margin-bottom: 25px; font-weight: 500;">Please enter password to access site</h2>
+            <h2 style="color: #fff; font-size: 24px; margin-bottom: 25px; font-weight: 500;">Please enter password to
+                access site</h2>
             <div style="display: flex; gap: 10px; justify-content: center;">
-                <input type="password" id="sthiros-gate-input" placeholder="Enter password" style="padding: 12px 20px; font-size: 16px; border: 1px solid #333; border-radius: 6px; background-color: #111; color: #fff; outline: none; width: 280px;">
-                <button id="sthiros-gate-btn" style="padding: 12px 24px; font-size: 16px; background-color: #EF4623; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-weight: 500;">Submit</button>
+                <input type="password" id="sthiros-gate-input" placeholder="Enter password"
+                    style="padding: 12px 20px; font-size: 16px; border: 1px solid #333; border-radius: 6px; background-color: #111; color: #fff; outline: none; width: 280px;">
+                <button id="sthiros-gate-btn"
+                    style="padding: 12px 24px; font-size: 16px; background-color: #EF4623; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-weight: 500;">Submit</button>
             </div>
-            <p id="sthiros-gate-error" style="color: #EF4623; margin-top: 15px; font-size: 14px; display: none;">Incorrect Password</p>
+            <p id="sthiros-gate-error" style="color: #EF4623; margin-top: 15px; font-size: 14px; display: none;">
+                Incorrect Password</p>
         </div>
     </div>
     <script>
-        (function() {
+        (function () {
             const gate = document.getElementById('sthiros-password-gate');
             const input = document.getElementById('sthiros-gate-input');
             const btn = document.getElementById('sthiros-gate-btn');
@@ -1280,7 +1285,7 @@
             }
 
             btn.addEventListener('click', unlockSite);
-            input.addEventListener('keypress', function(e) {
+            input.addEventListener('keypress', function (e) {
                 if (e.key === 'Enter') unlockSite();
             });
         })();
@@ -1293,7 +1298,7 @@
     </div>
 
     <!-- ═══════════════ SITE HEADER ═══════════════ -->
-                        <header class="site-header">
+    <header class="site-header">
         <div class="header-left">
             <a href="index.html" class="logo-link">
                 <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
@@ -1350,7 +1355,8 @@
                                 <div id="mega-cyber" class="mega-pane">
                                     <ul class="mega-links-list">
                                         <li><a href="servicescyber1.html">OFFENSIVE SECURITY & EXPOSURE</a></li>
-                                        <li><a href="servicescyber2.html">CLOUD SECURITY & ZERO TRUST ARCHITECTURE</a></li>
+                                        <li><a href="servicescyber2.html">CLOUD SECURITY & ZERO TRUST ARCHITECTURE</a>
+                                        </li>
                                         <li><a href="servicescyber3.html">DATA PRIVACY & PROTECTION ENGINEERING</a></li>
                                         <li><a href="servicescyber4.html">CYBER RESILIENCE & CRISIS READINESS</a></li>
                                     </ul>
@@ -1829,7 +1835,7 @@
                     <img src="assets/images/servicesinnpage/drodownarrowicnpng.png" alt="Toggle"
                         class="deliverable-icon">
                 </div>
-                <p class="deliverable-desc">TAutomation that lives inside the platforms you already run.</p>
+                <p class="deliverable-desc">Automation that lives inside the platforms you already run.</p>
 
                 <div class="deliverable-grid">
                     <div class="deliverable-grid-col">
@@ -2264,7 +2270,7 @@
 
             <!-- Right Side -->
             <div class="footer-right">
-                                <ul class="footer-menu">
+                <ul class="footer-menu">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="aboutus.html">WHO WE ARE</a></li>
                     <li><a href="services.html">WHAT WE DO</a></li>
@@ -2294,11 +2300,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
