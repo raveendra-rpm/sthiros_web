@@ -2,3 +2,14 @@ node_modules/
 .DS_Store
 .claude/
 index_backup.html
+
+# Python files & environments
+*.py
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.ipynb_checkpoints/
+venv/
+.venv/
+env/

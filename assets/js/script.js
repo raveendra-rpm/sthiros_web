@@ -316,10 +316,20 @@ function initHeroSvgTrackScroll() {
     // Animate the cards to load
     const cards = document.querySelectorAll('.section-stats .stat-card');
     if (cards.length) {
-      tl.fromTo(cards,
+      gsap.fromTo(cards,
         { opacity: 0, x: 100 },
-        { opacity: 1, x: 0, duration: 0.5, stagger: 0.1, ease: 'power2.out' },
-        0 // Start at the same time as the SVG line
+        { 
+          opacity: 1, 
+          x: 0, 
+          stagger: 0.1, 
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: '.section-stats',
+            start: 'top 90%', // Starts earlier, when section just enters viewport
+            end: 'top 50%', // Finishes fully before the SVG line scrubs into them
+            scrub: true
+          }
+        }
       );
     }
   }
@@ -1588,7 +1598,7 @@ function initIndustriesNewScroll() {
 
   if (!cards.length) return;
 
-  let activeIndex = 5; // Start on BFSI & Fintech as center active card
+  let activeIndex = 4; // Start on Healthcare & Life Sciences as center active card
   const totalCards = cards.length;
 
   function updateCarousel() {

@@ -716,18 +716,23 @@
 <body>
 
     <!-- PASSWORD GATE OVERLAY -->
-    <div id="sthiros-password-gate" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000; z-index: 9999999; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Inter', sans-serif;">
+    <div id="sthiros-password-gate"
+        style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000; z-index: 9999999; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Inter', sans-serif;">
         <div style="text-align: center;">
-            <h2 style="color: #fff; font-size: 24px; margin-bottom: 25px; font-weight: 500;">Please enter password to access site</h2>
+            <h2 style="color: #fff; font-size: 24px; margin-bottom: 25px; font-weight: 500;">Please enter password to
+                access site</h2>
             <div style="display: flex; gap: 10px; justify-content: center;">
-                <input type="password" id="sthiros-gate-input" placeholder="Enter password" style="padding: 12px 20px; font-size: 16px; border: 1px solid #333; border-radius: 6px; background-color: #111; color: #fff; outline: none; width: 280px;">
-                <button id="sthiros-gate-btn" style="padding: 12px 24px; font-size: 16px; background-color: #EF4623; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-weight: 500;">Submit</button>
+                <input type="password" id="sthiros-gate-input" placeholder="Enter password"
+                    style="padding: 12px 20px; font-size: 16px; border: 1px solid #333; border-radius: 6px; background-color: #111; color: #fff; outline: none; width: 280px;">
+                <button id="sthiros-gate-btn"
+                    style="padding: 12px 24px; font-size: 16px; background-color: #EF4623; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-weight: 500;">Submit</button>
             </div>
-            <p id="sthiros-gate-error" style="color: #EF4623; margin-top: 15px; font-size: 14px; display: none;">Incorrect Password</p>
+            <p id="sthiros-gate-error" style="color: #EF4623; margin-top: 15px; font-size: 14px; display: none;">
+                Incorrect Password</p>
         </div>
     </div>
     <script>
-        (function() {
+        (function () {
             const gate = document.getElementById('sthiros-password-gate');
             const input = document.getElementById('sthiros-gate-input');
             const btn = document.getElementById('sthiros-gate-btn');
@@ -750,7 +755,7 @@
             }
 
             btn.addEventListener('click', unlockSite);
-            input.addEventListener('keypress', function(e) {
+            input.addEventListener('keypress', function (e) {
                 if (e.key === 'Enter') unlockSite();
             });
         })();
@@ -779,17 +784,17 @@
                                         class="mega-arrow">&rsaquo;</span></a>
                                 <a href="#" class="mega-sidebar-link active" data-target="mega-strategy">STRATEGY <span
                                         class="mega-arrow">&rsaquo;</span></a>
-                                <a href="#" class="mega-sidebar-link" data-target="mega-ai">AI <span
-                                        class="mega-arrow">&rsaquo;</span></a>
                                 <a href="#" class="mega-sidebar-link" data-target="mega-risk">RISK <span
                                         class="mega-arrow">&rsaquo;</span></a>
                                 <a href="#" class="mega-sidebar-link" data-target="mega-cyber">CYBER <span
+                                        class="mega-arrow">&rsaquo;</span></a>
+                                <a href="#" class="mega-sidebar-link" data-target="mega-ai">AI <span
                                         class="mega-arrow">&rsaquo;</span></a>
                             </div>
                             <div class="mega-content-area">
                                 <div id="mega-strategy" class="mega-pane active">
                                     <ul class="mega-links-list">
-                                        <li><a href="strategy1.html">BUSINESS & GROWTH</a></li>
+                                        <li><a href="strategy1.html">BUSINESS & GROWTH STRATEGY</a></li>
                                         <li><a href="strategy2.html">STRATEGIC FINANCE & TRANSACTIONS</a></li>
                                         <li><a href="strategy3.html">ENTERPRISE OPERATIONS & ECOSYSTEMS</a></li>
                                         <li><a href="strategy4.html">CHANGE MANAGEMENT & ORGANISATIONAL ACCELERATION</a>
@@ -815,7 +820,7 @@
                                 <div id="mega-cyber" class="mega-pane">
                                     <ul class="mega-links-list">
                                         <li><a href="servicescyber1.html">OFFENSIVE SECURITY & EXPOSURE</a></li>
-                                        <li><a href="servicescyber2.html">CLOUD SECURITY & ZERO TRUST</a></li>
+                                        <li><a href="servicescyber2.html">CLOUD SECURITY & ZERO TRUST ARCHITECTURE</a></li>
                                         <li><a href="servicescyber3.html">DATA PRIVACY & PROTECTION ENGINEERING</a></li>
                                         <li><a href="servicescyber4.html">CYBER RESILIENCE & CRISIS READINESS</a></li>
                                     </ul>
@@ -860,15 +865,15 @@
                                             <li><a href="industry.html">BFSI & FINTECH</a></li>
                                             <li><a href="industry1.html">D2C & RETAIL</a></li>
                                             <li><a href="industry2.html">ENERGY, MINING & UTILITIES</a></li>
+                                            <li><a href="industry3.html">GCC</a></li>
                                             <li><a href="industry4.html">HEALTHCARE & LIFE SCIENCES</a></li>
-                                            <li><a href="industry9.html">REAL ESTATE / EPC / CONSTRUCTION</a></li>
                                         </ul>
                                         <!-- Column 2 -->
                                         <ul class="mega-links-list" style="flex: 1;">
-                                            <li><a href="industry3.html">GCC</a></li>
                                             <li><a href="industry5.html">MANUFACTURING</a></li>
-                                            <li><a href="industry7.html">TELECOM & DIGITAL INFRASTRUCTURE</a></li>
                                             <li><a href="industry6.html">PUBLIC SECTOR & GOVERNMENT</a></li>
+                                            <li><a href="industry9.html">REAL ESTATE / EPC / CONSTRUCTION</a></li>
+                                            <li><a href="industry7.html">TELECOM & DIGITAL INFRASTRUCTURE</a></li>
                                             <li><a href="industry8.html">TRAVEL & HOSPITALITY</a></li>
                                         </ul>
                                     </div>
@@ -897,7 +902,7 @@
                     </div>
                 </li>
                 <li><a href="repository.html">THE REPOSITORY</a></li>
-                <li><a href="products.html">ORIQ</a></li>
+                <li><a href="oriq.html">ORIQ</a></li>
                 <li>
                     <a href="contactus.html">CONTACT US</a>
                 </li>
@@ -928,18 +933,19 @@
                     <span class="line line-3"></span>
                 </span>
             </button>
-        </div>        <script>
+        </div>
+        <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const path = window.location.pathname.toLowerCase();
-                
+
                 // 1. Initial Active State Logic for WHAT WE DO
                 const whatWeDoMenu = document.querySelector('.d-nav-list > li:nth-child(3) .split-mega-menu');
                 if (whatWeDoMenu) {
                     const links = whatWeDoMenu.querySelectorAll('.mega-sidebar-link');
                     const panes = whatWeDoMenu.querySelectorAll('.mega-pane');
-                    
+
                     let anySubActive = false;
-                    
+
                     links.forEach(link => {
                         link.classList.remove('active');
                         const target = link.getAttribute('data-target');
@@ -953,11 +959,11 @@
                             }
                         }
                     });
-                    
+
                     if (!anySubActive && links.length > 0) {
                         links[0].classList.add('active'); // "WHAT WE DO" is active
                     }
-                    
+
                     // Show correct pane
                     panes.forEach(p => p.classList.remove('active'));
                     links.forEach(link => {
@@ -970,10 +976,10 @@
                         }
                     });
                 }
-                
+
                 // 2. Hover Logic for all menus
                 const allSidebarLinks = document.querySelectorAll('.mega-sidebar-link');
-                
+
                 allSidebarLinks.forEach(link => {
                     link.addEventListener('mouseenter', function (e) {
                         const megaMenu = this.closest('.split-mega-menu');
@@ -1024,21 +1030,6 @@
                         </div>
 
                         <div class="nav-item-dropdown nested-dropdown">
-                            <a href="#" class="sub-nav-link dropdown-toggle">AI <img
-                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
-                            <div class="sub-nav nested-sub-nav">
-                                <a href="servicesai1.html" class="nested-sub-nav-link">AI Strategy & Sovereign
-                                    Governance</a>
-                                <a href="servicesai2.html" class="nested-sub-nav-link">Intelligent Foundation (Data &
-                                    Cloud)</a>
-                                <a href="servicesai3.html" class="nested-sub-nav-link">Agentic Operations &
-                                    Automation</a>
-                                <a href="servicesai4.html" class="nested-sub-nav-link">Cognitive Experience &
-                                    Engineering</a>
-                            </div>
-                        </div>
-
-                        <div class="nav-item-dropdown nested-dropdown">
                             <a href="#" class="sub-nav-link dropdown-toggle">Risk <img
                                     src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
                             <div class="sub-nav nested-sub-nav">
@@ -1059,7 +1050,7 @@
                                 <a href="servicescyber1.html" class="nested-sub-nav-link">Offensive Security &
                                     Exposure</a>
                                 <a href="servicescyber2.html" class="nested-sub-nav-link">Cloud Security & Zero
-                                    Trust</a>
+                                    Trust Architecture</a>
                                 <a href="servicescyber3.html" class="nested-sub-nav-link">Data Privacy & Protection
                                     Engineering</a>
                                 <a href="servicescyber4.html" class="nested-sub-nav-link">Cyber Resilience & Crisis
@@ -1067,10 +1058,25 @@
                             </div>
                         </div>
 
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">AI <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="servicesai1.html" class="nested-sub-nav-link">AI Strategy & Sovereign
+                                    Governance</a>
+                                <a href="servicesai2.html" class="nested-sub-nav-link">Intelligent Foundation (Data &
+                                    Cloud)</a>
+                                <a href="servicesai3.html" class="nested-sub-nav-link">Agentic Operations &
+                                    Automation</a>
+                                <a href="servicesai4.html" class="nested-sub-nav-link">Cognitive Experience &
+                                    Engineering</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
-                
+
                 <div class="nav-item-dropdown">
                     <a href="#" class="nav-link dropdown-toggle">INDUSTRIES <img
                             src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
@@ -1081,15 +1087,15 @@
                         <a href="industry3.html" class="sub-nav-link">GCC</a>
                         <a href="industry4.html" class="sub-nav-link">Healthcare & Life Sciences</a>
                         <a href="industry5.html" class="sub-nav-link">Manufacturing</a>
-                        <a href="industry7.html" class="sub-nav-link">Telecom & Digital Infrastructure</a>
-                        <a href="industry8.html" class="sub-nav-link">Travel & Hospitality</a>
                         <a href="industry6.html" class="sub-nav-link">Public Sector & Government</a>
                         <a href="industry9.html" class="sub-nav-link">Real Estate / EPC / Construction</a>
+                        <a href="industry7.html" class="sub-nav-link">Telecom & Digital Infrastructure</a>
+                        <a href="industry8.html" class="sub-nav-link">Travel & Hospitality</a>
                     </div>
                 </div>
 
                 <a href="repository.html" class="nav-link">THE REPOSITORY</a>
-                <a href="products.html" class="nav-link">ORIQ</a>
+                <a href="oriq.html" class="nav-link">ORIQ</a>
 
                 <a href="contactus.html" class="nav-link">CONTACT US</a>
             </nav>
@@ -1228,7 +1234,8 @@
             <div class="info-column">
                 <div class="info-block">
                     <h3>Office Location</h3>
-                    <p>Plot No. C15, Secretariat Colony, Alandur,<br>Saidapet, Kanchipuram, Tamil Nadu, 600016</p>
+                    <p>Sriram Nivas, C-15, Ramapuram, Secretariat Colony, Thiruvalluvar Nagar, Alandur, Chennai, Greater
+                        Chennai, Tamil Nadu 600016</p>
                 </div>
                 <div class="info-block">
                     <h3>Office Time</h3>
@@ -1345,7 +1352,7 @@
                     <form class="work-form">
                         <div class="form-row">
                             <div class="form-group">
-                                <label>Full name<span class="req">*</span></label>
+                                <label>Full name <span class="req">*</span></label>
                                 <input type="text" placeholder="|">
                             </div>
                             <div class="form-group">
@@ -1355,11 +1362,11 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group">
-                                <label>Phone number<span class="req">*</span></label>
+                                <label>Phone number <span class="req">*</span></label>
                                 <input type="tel" placeholder="|">
                             </div>
                             <div class="form-group">
-                                <label>Pick the team you'd like to be a part of<span class="req">*</span></label>
+                                <label>Pick the team you'd like to be a part of <span class="req">*</span></label>
                                 <div class="custom-dropdown" id="departmentDropdown">
                                     <div class="dropdown-selected">
                                         <span>Choose department</span>
@@ -1392,14 +1399,14 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group">
-                                <label>Resume / CV<span class="req">*</span></label>
+                                <label>Resume / CV <span class="req">*</span></label>
                                 <div class="file-upload-wrapper">
                                     <button type="button" class="file-btn">File upload</button>
                                     <input type="file" class="file-input">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label>A few lines about why you'd be a fit</label>
+                                <label>A few lines about why you'd be a fit <span class="req">*</span></label>
                                 <input type="text" placeholder="|">
                             </div>
                         </div>
@@ -1450,13 +1457,13 @@
 
             <!-- Right Side -->
             <div class="footer-right">
-                                <ul class="footer-menu">
+                <ul class="footer-menu">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="aboutus.html">WHO WE ARE</a></li>
                     <li><a href="services.html">WHAT WE DO</a></li>
                     <li><a href="industry.html">WHO WE SERVE</a></li>
                     <li><a href="repository.html">THE REPOSITORY</a></li>
-                    <li><a href="products.html">ORIQ</a></li>
+                    <li><a href="oriq.html">ORIQ</a></li>
                     <li><a href="contactus.html">CONTACT US</a></li>
                 </ul>
             </div>
@@ -1513,11 +1520,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
