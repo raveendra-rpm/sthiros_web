@@ -826,7 +826,7 @@ html.lenis body {
 
 /* Large orange stat number — bold, tight tracking */
 .stat-value {
-  font-family: 'Inter', 'Outfit', sans-serif;
+  font-family: 'Pacaembu', sans-serif;
   font-size: clamp(40px, 5vw, 76px);
   font-weight: 700;
   color: #F37021;
@@ -1668,7 +1668,7 @@ html.lenis body {
 }
 
 .story-card-desc {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 1.65;
@@ -1982,7 +1982,7 @@ html.lenis body {
 }
 
 .workhold-card-desc {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: clamp(16px, 1.25vw, 18px);
   color: #E0E0E0;
   line-height: 1.6;
@@ -2073,7 +2073,7 @@ html.lenis body {
 }
 
 #ourstory h4 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Pacaembu', sans-serif;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 4px;
@@ -3688,7 +3688,7 @@ html.lenis body {
 }
 
 .cta-badge-label {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.2em;
@@ -6217,7 +6217,7 @@ body.light-mode .section-services {
   background-color: transparent;
   /* Assuming dark background from parent */
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   margin-top: 140px;
   margin-bottom: 200px;
   position: relative;
@@ -6341,7 +6341,7 @@ body.light-mode .section-services {
   border: none;
   color: #fff;
   font-size: 16px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   flex: 1;
   outline: none;
 }

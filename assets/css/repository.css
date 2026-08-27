@@ -11,7 +11,7 @@ body {
 
 /* Typography */
 .repo-section-tag {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Pacaembu', sans-serif;
     color: var(--VERMILION-RED, #EC2D26);
     text-align: center;
     font-size: 14px;
@@ -22,7 +22,7 @@ body {
 }
 
 .repo-section-title {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Pacaembu', sans-serif;
     font-size: 3rem;
     font-weight: 600;
     text-align: center;
@@ -96,7 +96,7 @@ body {
 }
 
 .repo-hero-title {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Pacaembu', sans-serif;
     font-size: 4rem;
     font-weight: 700;
     line-height: 1.1;
@@ -260,7 +260,7 @@ body {
 }
 
 .repo-cta-box p {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 2.2rem;
     font-weight: 300;
     line-height: 1.4;
@@ -275,7 +275,7 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     letter-spacing: 2px;
     transition: all 0.3s;
     background: transparent;
@@ -291,7 +291,7 @@ body {
     padding: 80px max(20px, calc((100vw - var(--max-w, 1440px)) / 2));
     background-color: transparent; /* Assuming dark background from parent */
     color: #fff;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     margin-bottom: 40px;
     position: relative;
     z-index: 10;
