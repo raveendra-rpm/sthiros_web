@@ -2,7 +2,7 @@ $index = Get-Content "index.html" -Encoding UTF8
 $header = $index[18..129]
 $footer = $index[1185..1236]
 
-$about = Get-Content "aboutus.html" -Encoding UTF8
+$about = Get-Content "about.html" -Encoding UTF8
 $bodyIdx = -1
 $scriptIdx = -1
 
@@ -22,7 +22,7 @@ if ($bodyIdx -ge 0 -and $scriptIdx -ge 0) {
     $newAbout += $about[($bodyIdx+1)..($scriptIdx-1)]
     $newAbout += $footer
     $newAbout += $about[$scriptIdx..($about.Length-1)]
-    $newAbout | Set-Content "aboutus.html" -Encoding UTF8
+    $newAbout | Set-Content "about.html" -Encoding UTF8
     Write-Host "Success! Header and footer injected."
 } else {
     Write-Host "Failed to find <body> or <script>"

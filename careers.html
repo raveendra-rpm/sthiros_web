@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers — Sthiros</title>
+    <meta name="description" content="Join the Sthiros team. Our careers page is coming soon with exciting opportunities." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css?v=7" />
+    <style>
+        /* ── Careers Under Development Page ── */
+        .careers-dev-main {
+            position: relative;
+            min-height: 100vh;
+            background: #000000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 140px 40px 100px;
+            box-sizing: border-box;
+        }
+
+        /* Subtle red-tinted grid */
+        .careers-grid-bg {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(239,70,35,0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(239,70,35,0.05) 1px, transparent 1px);
+            background-size: 64px 64px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Sweeping horizontal light lines */
+        .careers-deco-line {
+            position: absolute;
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, rgba(239,70,35,0.5) 50%, transparent 100%);
+            pointer-events: none;
+            z-index: 0;
+            animation: careersSweep 7s ease-in-out infinite;
+        }
+        .careers-deco-line--1 { width: 55%; top: 22%; animation-delay: 0s; }
+        .careers-deco-line--2 { width: 35%; top: 58%; animation-delay: 2.5s; }
+        .careers-deco-line--3 { width: 45%; top: 80%; animation-delay: 5s; }
+
+        @keyframes careersSweep {
+            0%   { transform: translateX(-120%); opacity: 0; }
+            20%  { opacity: 1; }
+            80%  { opacity: 1; }
+            100% { transform: translateX(250vw); opacity: 0; }
+        }
+
+        /* Centre glow */
+        .careers-dev-main::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(ellipse, rgba(239,70,35,0.09) 0%, transparent 65%);
+            pointer-events: none;
+            z-index: 0;
+            animation: careersGlow 5s ease-in-out infinite;
+        }
+
+        @keyframes careersGlow {
+            0%,100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
+            50%     { opacity: 1;   transform: translate(-50%, -50%) scale(1.08); }
+        }
+
+        /* Content wrapper */
+        .careers-content-wrap {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 720px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Status badge */
+        .careers-status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(239,70,35,0.08);
+            border: 1px solid rgba(239,70,35,0.3);
+            border-radius: 100px;
+            padding: 9px 22px;
+            color: #EF4623;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 3.5px;
+            text-transform: uppercase;
+            margin-bottom: 44px;
+        }
+
+        .careers-blink-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #EF4623;
+            flex-shrink: 0;
+            animation: careersDotBlink 1.5s ease-in-out infinite;
+        }
+
+        @keyframes careersDotBlink {
+            0%,100% { opacity: 1; box-shadow: 0 0 8px #EF4623; }
+            50%     { opacity: 0.25; box-shadow: none; }
+        }
+
+        /* Animated icon ring */
+        .careers-icon-ring {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 2px solid rgba(239,70,35,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 44px;
+            position: relative;
+        }
+
+        .careers-icon-ring::before {
+            content: '';
+            position: absolute;
+            inset: -8px;
+            border-radius: 50%;
+            border: 1px dashed rgba(239,70,35,0.3);
+            animation: careersRingRotate 10s linear infinite;
+        }
+
+        @keyframes careersRingRotate {
+            from { transform: rotate(0deg); }
+            to   { transform: rotate(360deg); }
+        }
+
+        .careers-icon-ring svg {
+            width: 52px;
+            height: 52px;
+            color: #EF4623;
+        }
+
+        /* Heading */
+        .careers-title {
+            font-family: 'Pacaembu', sans-serif;
+            font-size: clamp(40px, 5.5vw, 72px);
+            font-weight: 400;
+            color: #ffffff;
+            line-height: 1.1;
+            margin: 0 0 28px 0;
+            letter-spacing: -0.5px;
+        }
+
+        .careers-title-accent {
+            color: #EF4623;
+        }
+
+        /* Description */
+        .careers-desc {
+            font-family: 'Quicksand', sans-serif;
+            font-size: clamp(15px, 1.3vw, 18px);
+            color: #777777;
+            line-height: 1.85;
+            margin: 0 0 52px 0;
+        }
+
+        /* Divider */
+        .careers-divider {
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, #EC2D26, #EF4623);
+            margin: 0 auto 52px;
+            border-radius: 10px;
+        }
+
+        /* Progress section */
+        .careers-progress-wrap {
+            max-width: 500px;
+            margin: 0 auto 52px;
+        }
+
+        .careers-progress-labels {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 11px;
+            font-weight: 600;
+            color: #444;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .careers-progress-labels span:last-child {
+            color: #EF4623;
+        }
+
+        .careers-progress-track {
+            width: 100%;
+            height: 2px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .careers-progress-bar {
+            height: 100%;
+            width: 0;
+            background: linear-gradient(90deg, #EC2D26, #EF4623, #F0832E);
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(239,70,35,0.6);
+            animation: careersProgressFill 2.5s cubic-bezier(0.16,1,0.3,1) 0.5s forwards;
+        }
+
+        @keyframes careersProgressFill {
+            0%   { width: 0%; }
+            100% { width: 65%; }
+        }
+
+        /* Notify button */
+        .careers-cta-wrap {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .careers-notify-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #EF4623;
+            border: none;
+            color: #fff;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 16px 40px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+        }
+
+        .careers-notify-btn:hover {
+            background: #d93d1a;
+            box-shadow: 0 0 30px rgba(239,70,35,0.5);
+            transform: translateY(-2px);
+        }
+
+        .careers-ghost-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.12);
+            color: #888;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 16px 40px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: border-color 0.25s, color 0.25s, transform 0.2s;
+        }
+
+        .careers-ghost-btn:hover {
+            border-color: rgba(255,255,255,0.3);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .careers-dev-main { padding: 120px 24px 80px; }
+            .careers-cta-wrap { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+
+<body class="loading">
+
+    <!-- PASSWORD GATE OVERLAY -->
+    <div id="sthiros-password-gate"
+        style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000; z-index: 9999999; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Quicksand', sans-serif;">
+        <div style="text-align: center;">
+            <h2 style="color: #fff; font-size: 24px; margin-bottom: 25px; font-weight: 500;">Please enter password to
+                access site</h2>
+            <div style="display: flex; gap: 10px; justify-content: center;">
+                <input type="password" id="sthiros-gate-input" placeholder="Enter password"
+                    style="padding: 12px 20px; font-size: 16px; border: 1px solid #333; border-radius: 6px; background-color: #111; color: #fff; outline: none; width: 280px;">
+                <button id="sthiros-gate-btn"
+                    style="padding: 12px 24px; font-size: 16px; background-color: #EF4623; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-weight: 500;">Submit</button>
+            </div>
+            <p id="sthiros-gate-error" style="color: #EF4623; margin-top: 15px; font-size: 14px; display: none;">
+                Incorrect Password</p>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="header-left">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
+            </a>
+        </div>
+
+        <!-- Desktop Navigation & Mega Menu -->
+        <nav class="desktop-nav">
+            <ul class="d-nav-list">
+                <li><a href="about.html">WHO WE ARE</a></li>
+                <li class="has-mega-menu">
+                    <a href="#">WHAT WE DO <img src="assets/images/sthiros_arrow_btn.png" alt="Arrow"
+                            class="nav-arrow-img"></a>
+                    <div class="mega-menu split-mega-menu">
+                        <div class="split-mega-top">
+                            <div class="mega-sidebar">
+                                <a href="services.html" class="mega-sidebar-link">WHAT WE DO <span
+                                        class="mega-arrow">&rsaquo;</span></a>
+                                <a href="#" class="mega-sidebar-link active" data-target="mega-strategy">STRATEGY <span
+                                        class="mega-arrow">&rsaquo;</span></a>
+                                <a href="#" class="mega-sidebar-link" data-target="mega-risk">RISK <span
+                                        class="mega-arrow">&rsaquo;</span></a>
+                                <a href="#" class="mega-sidebar-link" data-target="mega-cyber">CYBER <span
+                                        class="mega-arrow">&rsaquo;</span></a>
+                                <a href="#" class="mega-sidebar-link" data-target="mega-ai">AI <span
+                                        class="mega-arrow">&rsaquo;</span></a>
+                            </div>
+                            <div class="mega-content-area">
+                                <div id="mega-strategy" class="mega-pane active">
+                                    <ul class="mega-links-list">
+                                        <li><a href="strategy1.html">BUSINESS & GROWTH STRATEGY</a></li>
+                                        <li><a href="strategy2.html">STRATEGIC FINANCE & TRANSACTIONS</a></li>
+                                        <li><a href="strategy3.html">ENTERPRISE OPERATIONS & ECOSYSTEMS</a></li>
+                                        <li><a href="strategy4.html">CHANGE MANAGEMENT & ORGANISATIONAL ACCELERATION</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="mega-ai" class="mega-pane">
+                                    <ul class="mega-links-list">
+                                        <li><a href="servicesai1.html">AI STRATEGY & SOVEREIGN GOVERNANCE</a></li>
+                                        <li><a href="servicesai2.html">INTELLIGENT FOUNDATION (DATA & CLOUD)</a></li>
+                                        <li><a href="servicesai3.html">AGENTIC OPERATIONS & AUTOMATION</a></li>
+                                        <li><a href="servicesai4.html">COGNITIVE EXPERIENCE & ENGINEERING</a></li>
+                                    </ul>
+                                </div>
+                                <div id="mega-risk" class="mega-pane">
+                                    <ul class="mega-links-list">
+                                        <li><a href="risk1.html">ENTERPRISE GOVERNANCE & REGULATORY STRATEGY</a></li>
+                                        <li><a href="risk2.html">STRATEGIC ASSURANCE & PROCESS INTELLIGENCE</a></li>
+                                        <li><a href="risk3.html">DIGITAL RISK & TECHNOLOGY CONTROLS</a></li>
+                                        <li><a href="risk4.html">FORENSIC INTEGRITY & ASSET PROTECTION</a></li>
+                                    </ul>
+                                </div>
+                                <div id="mega-cyber" class="mega-pane">
+                                    <ul class="mega-links-list">
+                                        <li><a href="servicescyber1.html">OFFENSIVE SECURITY & EXPOSURE</a></li>
+                                        <li><a href="servicescyber2.html">CLOUD SECURITY & ZERO TRUST ARCHITECTURE</a>
+                                        </li>
+                                        <li><a href="servicescyber3.html">DATA PRIVACY & PROTECTION ENGINEERING</a></li>
+                                        <li><a href="servicescyber4.html">CYBER RESILIENCE & CRISIS READINESS</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="split-mega-bottom">
+                            <div class="mega-socials">
+                                <a href="#" class="mega-social-icon">
+                                    <img src="assets/images/social_media/fb_sthiros.png" alt="Facebook"
+                                        class="mega-social-img">
+                                </a>
+                                <a href="#" class="mega-social-icon">
+                                    <img src="assets/images/social_media/insta_sthiros.png" alt="Instagram"
+                                        class="mega-social-img">
+                                </a>
+                                <a href="#" class="mega-social-icon">
+                                    <img src="assets/images/social_media/x_sthiros.png" alt="X" class="mega-social-img">
+                                </a>
+                                <a href="#" class="mega-social-icon">
+                                    <img src="assets/images/social_media/linkedin_sthiros.png" alt="LinkedIn"
+                                        class="mega-social-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="has-mega-menu">
+                    <a href="#">WHO WE SERVE <img src="assets/images/sthiros_arrow_btn.png" alt="Arrow"
+                            class="nav-arrow-img"></a>
+                    <div class="mega-menu split-mega-menu" style="border-bottom: none;">
+                        <div class="split-mega-top">
+                            <div class="mega-sidebar">
+                                <a href="#" class="mega-sidebar-link active" data-target="mega-industries">INDUSTRIES
+                                    <span class="mega-arrow">&rsaquo;</span></a>
+                            </div>
+                            <div class="mega-content-area">
+                                <div id="mega-industries" class="mega-pane active">
+                                    <div style="display: flex; gap: 80px; width: 100%;">
+                                        <!-- Column 1 -->
+                                        <ul class="mega-links-list" style="flex: 1;">
+                                            <li><a href="industry.html">BFSI & FINTECH</a></li>
+                                            <li><a href="industry1.html">D2C & RETAIL</a></li>
+                                            <li><a href="industry2.html">ENERGY, MINING & UTILITIES</a></li>
+                                            <li><a href="industry3.html">GCC</a></li>
+                                            <li><a href="industry4.html">HEALTHCARE & LIFE SCIENCES</a></li>
+                                        </ul>
+                                        <!-- Column 2 -->
+                                        <ul class="mega-links-list" style="flex: 1;">
+                                            <li><a href="industry5.html">MANUFACTURING</a></li>
+                                            <li><a href="industry6.html">PUBLIC SECTOR & GOVERNMENT</a></li>
+                                            <li><a href="industry9.html">REAL ESTATE / EPC / CONSTRUCTION</a></li>
+                                            <li><a href="industry7.html">TELECOM & DIGITAL INFRASTRUCTURE</a></li>
+                                            <li><a href="industry8.html">TRAVEL & HOSPITALITY</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="split-mega-bottom">
+                            <div class="mega-socials">
+                                <a href="#" class="mega-social-icon">
+                                    <img src="assets/images/social_media/fb_sthiros.png" alt="Facebook"
+                                        class="mega-social-img">
+                                </a>
+                                <a href="#" class="mega-social-icon">
+                                    <img src="assets/images/social_media/insta_sthiros.png" alt="Instagram"
+                                        class="mega-social-img">
+                                </a>
+                                <a href="#" class="mega-social-icon">
+                                    <img src="assets/images/social_media/x_sthiros.png" alt="X" class="mega-social-img">
+                                </a>
+                                <a href="#" class="mega-social-icon">
+                                    <img src="assets/images/social_media/linkedin_sthiros.png" alt="LinkedIn"
+                                        class="mega-social-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="repository.html">THE REPOSITORY</a></li>
+                <li><a href="oriq.html">ORIQ</a></li>
+                <li>
+                    <a href="contactus.html">CONTACT US</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div class="header-search">
+                <input type="text" placeholder="Type to search.." class="header-search-input">
+                <button class="header-search-btn" aria-label="Search">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+            <button class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                <span class="toggle-track">
+                    <img src="assets/images/dark_light_toggle.png" alt="Light Theme" class="toggle-art light-art">
+                    <img src="assets/images/dark_mode_toggle_new.png" alt="Dark Theme" class="toggle-art dark-art">
+                    <span class="toggle-thumb"></span>
+                </span>
+            </button>
+            <button class="menu-toggle" aria-label="Open Menu">
+                <span class="menu-icon">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </span>
+            </button>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const path = window.location.pathname.toLowerCase();
+
+                // 1. Initial Active State Logic for WHAT WE DO
+                const whatWeDoMenu = document.querySelector('.d-nav-list > li:nth-child(3) .split-mega-menu');
+                if (whatWeDoMenu) {
+                    const links = whatWeDoMenu.querySelectorAll('.mega-sidebar-link');
+                    const panes = whatWeDoMenu.querySelectorAll('.mega-pane');
+
+                    let anySubActive = false;
+
+                    links.forEach(link => {
+                        link.classList.remove('active');
+                        const target = link.getAttribute('data-target');
+                        if (target) {
+                            if ((target === 'mega-strategy' && path.includes('strategy')) ||
+                                (target === 'mega-ai' && path.includes('ai')) ||
+                                (target === 'mega-risk' && path.includes('risk')) ||
+                                (target === 'mega-cyber' && path.includes('cyber'))) {
+                                link.classList.add('active');
+                                anySubActive = true;
+                            }
+                        }
+                    });
+
+                    if (!anySubActive && links.length > 0) {
+                        links[0].classList.add('active'); // "WHAT WE DO" is active
+                    }
+
+                    // Show correct pane
+                    panes.forEach(p => p.classList.remove('active'));
+                    links.forEach(link => {
+                        if (link.classList.contains('active')) {
+                            const target = link.getAttribute('data-target');
+                            if (target) {
+                                const pane = document.getElementById(target);
+                                if (pane) pane.classList.add('active');
+                            }
+                        }
+                    });
+                }
+
+                // 2. Hover Logic for all menus
+                const allSidebarLinks = document.querySelectorAll('.mega-sidebar-link');
+
+                allSidebarLinks.forEach(link => {
+                    link.addEventListener('mouseenter', function (e) {
+                        const megaMenu = this.closest('.split-mega-menu');
+                        if (!megaMenu) return;
+
+                        const localLinks = megaMenu.querySelectorAll('.mega-sidebar-link');
+                        const localPanes = megaMenu.querySelectorAll('.mega-pane');
+
+                        localLinks.forEach(l => l.classList.remove('active'));
+                        localPanes.forEach(p => p.classList.remove('active'));
+
+                        this.classList.add('active');
+                        const targetId = this.getAttribute('data-target');
+                        if (targetId) {
+                            const targetPane = document.getElementById(targetId);
+                            if (targetPane) targetPane.classList.add('active');
+                        }
+                    });
+                });
+            });
+        </script>
+    </header>
+
+    <main class="careers-dev-main">
+        <div class="careers-grid-bg"></div>
+        <div class="careers-deco-line careers-deco-line--1"></div>
+        <div class="careers-deco-line careers-deco-line--2"></div>
+        <div class="careers-deco-line careers-deco-line--3"></div>
+
+        <div class="careers-content-wrap">
+
+            <!-- Status badge -->
+            <div class="careers-status-badge">
+                <span class="careers-blink-dot"></span>
+                <span>Under Development</span>
+            </div>
+
+            <!-- Animated icon -->
+            <div class="careers-icon-ring">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 20h9"/>
+                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                </svg>
+            </div>
+
+            <!-- Title -->
+            <h1 class="careers-title">We're Building<br/><span class="careers-title-accent">Something Great</span></h1>
+
+            <!-- Divider -->
+            <div class="careers-divider"></div>
+
+            <!-- Message -->
+            <p class="careers-desc">
+                Our Careers page is currently under development.<br/>
+                We're crafting exciting opportunities to join the Sthiros team.<br/>
+                Check back soon — great things are on the way.
+            </p>
+
+            <!-- Progress bar -->
+            <div class="careers-progress-wrap">
+                <div class="careers-progress-labels">
+                    <span>Development Progress</span>
+                    <span>In Progress</span>
+                </div>
+                <div class="careers-progress-track">
+                    <div class="careers-progress-bar"></div>
+                </div>
+            </div>
+
+            <!-- CTAs -->
+            <div class="careers-cta-wrap">
+                <a href="contactus.html" class="careers-notify-btn">
+                    Get Notified
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+                <a href="index.html" class="careers-ghost-btn">
+                    Back to Home
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer id="footer" class="site-footer">
+        <div class="footer-container">
+            <!-- Left Side -->
+            <div class="footer-left">
+                <h3 class="footer-heading">Let's work together</h3>
+                <a href="mailto:connect@sthiros.com" class="footer-email">connect@sthiros.com</a>
+
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/fb_sthiros.png" alt="Facebook" class="social-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/insta_sthiros.png" alt="Instagram" class="social-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/x_sthiros.png" alt="X" class="social-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="assets/images/social_media/linkedin_sthiros.png" alt="LinkedIn" class="social-img">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="footer-right">
+                <ul class="footer-menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">WHO WE ARE</a></li>
+                    <li><a href="services.html">WHAT WE DO</a></li>
+                    <li><a href="industry.html">WHO WE SERVE</a></li>
+                    <li><a href="repository.html">THE REPOSITORY</a></li>
+                    <li><a href="oriq.html">ORIQ</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-bottom-line">
+
+        <div class="footer-massive-logo-section">
+            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo">
+            <div class="copyright-text">© 2026</div>
+        </div>
+    </footer>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dropdown = document.getElementById('departmentDropdown');
+            if (dropdown) {
+                const selected = dropdown.querySelector('.dropdown-selected');
+                const optionsContainer = dropdown.querySelector('.dropdown-options');
+                const optionsList = dropdown.querySelectorAll('.dropdown-option');
+                const input = document.getElementById('departmentInput');
+                const selectedText = selected.querySelector('span');
+
+                selected.addEventListener('click', () => {
+                    optionsContainer.classList.toggle('show');
+                    selected.classList.toggle('open');
+                });
+
+                optionsList.forEach(option => {
+                    option.addEventListener('click', () => {
+                        selectedText.textContent = option.textContent;
+                        selectedText.style.color = '#FFF';
+                        input.value = option.textContent;
+                        optionsContainer.classList.remove('show');
+                        selected.classList.remove('open');
+                    });
+                });
+
+                document.addEventListener('click', (e) => {
+                    if (!dropdown.contains(e.target)) {
+                        optionsContainer.classList.remove('show');
+                        selected.classList.remove('open');
+                    }
+                });
+            }
+        });
+    </script>
+
+    <!-- GSAP, ScrollTrigger, Anime.js, Lenis (smooth scroll) & Three.js (WebGL) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <!-- Password Gate Logic -->
+    <script>
+        (function () {
+            const gate = document.getElementById('sthiros-password-gate');
+            const input = document.getElementById('sthiros-gate-input');
+            const btn = document.getElementById('sthiros-gate-btn');
+            const errorMsg = document.getElementById('sthiros-gate-error');
+
+            if (sessionStorage.getItem('sthiros_site_unlocked')) {
+                gate.style.display = 'none';
+            } else {
+                document.body.style.overflow = 'hidden';
+            }
+
+            function unlockSite() {
+                if (input.value === 'sthiros@2026') {
+                    sessionStorage.setItem('sthiros_site_unlocked', 'true');
+                    gate.style.display = 'none';
+                    document.body.style.overflow = '';
+                } else {
+                    errorMsg.style.display = 'block';
+                }
+            }
+
+            btn.addEventListener('click', unlockSite);
+            input.addEventListener('keypress', function (e) {
+                if (e.key === 'Enter') unlockSite();
+            });
+        })();
+    </script>
+
+</body>
+</html>
