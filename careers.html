@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Careers — Sthiros</title>
-    <meta name="description" content="Join the Sthiros team. Our careers page is coming soon with exciting opportunities." />
+    <meta name="description"
+        content="Join the Sthiros team. Our careers page is coming soon with exciting opportunities." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css?v=7" />
     <style>
         /* ── Careers Under Development Page ── */
@@ -29,8 +31,8 @@
             position: absolute;
             inset: 0;
             background-image:
-                linear-gradient(rgba(239,70,35,0.05) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(239,70,35,0.05) 1px, transparent 1px);
+                linear-gradient(rgba(239, 70, 35, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(239, 70, 35, 0.05) 1px, transparent 1px);
             background-size: 64px 64px;
             pointer-events: none;
             z-index: 0;
@@ -40,20 +42,48 @@
         .careers-deco-line {
             position: absolute;
             height: 1px;
-            background: linear-gradient(90deg, transparent 0%, rgba(239,70,35,0.5) 50%, transparent 100%);
+            background: linear-gradient(90deg, transparent 0%, rgba(239, 70, 35, 0.5) 50%, transparent 100%);
             pointer-events: none;
             z-index: 0;
             animation: careersSweep 7s ease-in-out infinite;
         }
-        .careers-deco-line--1 { width: 55%; top: 22%; animation-delay: 0s; }
-        .careers-deco-line--2 { width: 35%; top: 58%; animation-delay: 2.5s; }
-        .careers-deco-line--3 { width: 45%; top: 80%; animation-delay: 5s; }
+
+        .careers-deco-line--1 {
+            width: 55%;
+            top: 22%;
+            animation-delay: 0s;
+        }
+
+        .careers-deco-line--2 {
+            width: 35%;
+            top: 58%;
+            animation-delay: 2.5s;
+        }
+
+        .careers-deco-line--3 {
+            width: 45%;
+            top: 80%;
+            animation-delay: 5s;
+        }
 
         @keyframes careersSweep {
-            0%   { transform: translateX(-120%); opacity: 0; }
-            20%  { opacity: 1; }
-            80%  { opacity: 1; }
-            100% { transform: translateX(250vw); opacity: 0; }
+            0% {
+                transform: translateX(-120%);
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            80% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateX(250vw);
+                opacity: 0;
+            }
         }
 
         /* Centre glow */
@@ -65,15 +95,24 @@
             transform: translate(-50%, -50%);
             width: 800px;
             height: 800px;
-            background: radial-gradient(ellipse, rgba(239,70,35,0.09) 0%, transparent 65%);
+            background: radial-gradient(ellipse, rgba(239, 70, 35, 0.09) 0%, transparent 65%);
             pointer-events: none;
             z-index: 0;
             animation: careersGlow 5s ease-in-out infinite;
         }
 
         @keyframes careersGlow {
-            0%,100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
-            50%     { opacity: 1;   transform: translate(-50%, -50%) scale(1.08); }
+
+            0%,
+            100% {
+                opacity: 0.6;
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            50% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1.08);
+            }
         }
 
         /* Content wrapper */
@@ -91,8 +130,8 @@
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            background: rgba(239,70,35,0.08);
-            border: 1px solid rgba(239,70,35,0.3);
+            background: rgba(239, 70, 35, 0.08);
+            border: 1px solid rgba(239, 70, 35, 0.3);
             border-radius: 100px;
             padding: 9px 22px;
             color: #EF4623;
@@ -114,8 +153,17 @@
         }
 
         @keyframes careersDotBlink {
-            0%,100% { opacity: 1; box-shadow: 0 0 8px #EF4623; }
-            50%     { opacity: 0.25; box-shadow: none; }
+
+            0%,
+            100% {
+                opacity: 1;
+                box-shadow: 0 0 8px #EF4623;
+            }
+
+            50% {
+                opacity: 0.25;
+                box-shadow: none;
+            }
         }
 
         /* Animated icon ring */
@@ -123,7 +171,7 @@
             width: 110px;
             height: 110px;
             border-radius: 50%;
-            border: 2px solid rgba(239,70,35,0.2);
+            border: 2px solid rgba(239, 70, 35, 0.2);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -136,13 +184,18 @@
             position: absolute;
             inset: -8px;
             border-radius: 50%;
-            border: 1px dashed rgba(239,70,35,0.3);
+            border: 1px dashed rgba(239, 70, 35, 0.3);
             animation: careersRingRotate 10s linear infinite;
         }
 
         @keyframes careersRingRotate {
-            from { transform: rotate(0deg); }
-            to   { transform: rotate(360deg); }
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         .careers-icon-ring svg {
@@ -210,7 +263,7 @@
         .careers-progress-track {
             width: 100%;
             height: 2px;
-            background: rgba(255,255,255,0.05);
+            background: rgba(255, 255, 255, 0.05);
             border-radius: 10px;
             overflow: hidden;
         }
@@ -220,13 +273,18 @@
             width: 0;
             background: linear-gradient(90deg, #EC2D26, #EF4623, #F0832E);
             border-radius: 10px;
-            box-shadow: 0 0 12px rgba(239,70,35,0.6);
-            animation: careersProgressFill 2.5s cubic-bezier(0.16,1,0.3,1) 0.5s forwards;
+            box-shadow: 0 0 12px rgba(239, 70, 35, 0.6);
+            animation: careersProgressFill 2.5s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
         }
 
         @keyframes careersProgressFill {
-            0%   { width: 0%; }
-            100% { width: 65%; }
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 65%;
+            }
         }
 
         /* Notify button */
@@ -257,7 +315,7 @@
 
         .careers-notify-btn:hover {
             background: #d93d1a;
-            box-shadow: 0 0 30px rgba(239,70,35,0.5);
+            box-shadow: 0 0 30px rgba(239, 70, 35, 0.5);
             transform: translateY(-2px);
         }
 
@@ -266,7 +324,7 @@
             align-items: center;
             gap: 10px;
             background: transparent;
-            border: 1px solid rgba(255,255,255,0.12);
+            border: 1px solid rgba(255, 255, 255, 0.12);
             color: #888;
             font-family: 'Quicksand', sans-serif;
             font-size: 13px;
@@ -280,15 +338,21 @@
         }
 
         .careers-ghost-btn:hover {
-            border-color: rgba(255,255,255,0.3);
+            border-color: rgba(255, 255, 255, 0.3);
             color: #fff;
             transform: translateY(-2px);
         }
 
         /* Responsive */
         @media (max-width: 768px) {
-            .careers-dev-main { padding: 120px 24px 80px; }
-            .careers-cta-wrap { flex-direction: column; align-items: center; }
+            .careers-dev-main {
+                padding: 120px 24px 80px;
+            }
+
+            .careers-cta-wrap {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
@@ -569,22 +633,23 @@
 
             <!-- Animated icon -->
             <div class="careers-icon-ring">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 20h9"/>
-                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M12 20h9" />
+                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
                 </svg>
             </div>
 
             <!-- Title -->
-            <h1 class="careers-title">We're Building<br/><span class="careers-title-accent">Something Great</span></h1>
+            <h1 class="careers-title">We're Building<br /><span class="careers-title-accent">Something Great</span></h1>
 
             <!-- Divider -->
             <div class="careers-divider"></div>
 
             <!-- Message -->
             <p class="careers-desc">
-                Our Careers page is currently under development.<br/>
-                We're crafting exciting opportunities to join the Sthiros team.<br/>
+                Our Careers page is currently under development.<br />
+                We're crafting exciting opportunities to join the Sthiros team.<br />
                 Check back soon — great things are on the way.
             </p>
 
@@ -603,7 +668,11 @@
             <div class="careers-cta-wrap">
                 <a href="contactus.html" class="careers-notify-btn">
                     Get Notified
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <polyline points="12 5 19 12 12 19" />
+                    </svg>
                 </a>
                 <a href="index.html" class="careers-ghost-btn">
                     Back to Home
@@ -657,7 +726,7 @@
         </div>
     </footer>
 
-    
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const dropdown = document.getElementById('departmentDropdown');
@@ -733,4 +802,5 @@
     </script>
 
 </body>
+
 </html>

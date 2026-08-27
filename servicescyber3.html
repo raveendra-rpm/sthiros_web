@@ -7,9 +7,7 @@
     <title>Services</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <style>
         body,
@@ -1246,18 +1244,23 @@
 <body>
 
     <!-- PASSWORD GATE OVERLAY -->
-    <div id="sthiros-password-gate" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000; z-index: 9999999; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Quicksand', sans-serif;">
+    <div id="sthiros-password-gate"
+        style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000; z-index: 9999999; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Quicksand', sans-serif;">
         <div style="text-align: center;">
-            <h2 style="color: #fff; font-size: 24px; margin-bottom: 25px; font-weight: 500;">Please enter password to access site</h2>
+            <h2 style="color: #fff; font-size: 24px; margin-bottom: 25px; font-weight: 500;">Please enter password to
+                access site</h2>
             <div style="display: flex; gap: 10px; justify-content: center;">
-                <input type="password" id="sthiros-gate-input" placeholder="Enter password" style="padding: 12px 20px; font-size: 16px; border: 1px solid #333; border-radius: 6px; background-color: #111; color: #fff; outline: none; width: 280px;">
-                <button id="sthiros-gate-btn" style="padding: 12px 24px; font-size: 16px; background-color: #EF4623; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-weight: 500;">Submit</button>
+                <input type="password" id="sthiros-gate-input" placeholder="Enter password"
+                    style="padding: 12px 20px; font-size: 16px; border: 1px solid #333; border-radius: 6px; background-color: #111; color: #fff; outline: none; width: 280px;">
+                <button id="sthiros-gate-btn"
+                    style="padding: 12px 24px; font-size: 16px; background-color: #EF4623; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-weight: 500;">Submit</button>
             </div>
-            <p id="sthiros-gate-error" style="color: #EF4623; margin-top: 15px; font-size: 14px; display: none;">Incorrect Password</p>
+            <p id="sthiros-gate-error" style="color: #EF4623; margin-top: 15px; font-size: 14px; display: none;">
+                Incorrect Password</p>
         </div>
     </div>
     <script>
-        (function() {
+        (function () {
             const gate = document.getElementById('sthiros-password-gate');
             const input = document.getElementById('sthiros-gate-input');
             const btn = document.getElementById('sthiros-gate-btn');
@@ -1280,7 +1283,7 @@
             }
 
             btn.addEventListener('click', unlockSite);
-            input.addEventListener('keypress', function(e) {
+            input.addEventListener('keypress', function (e) {
                 if (e.key === 'Enter') unlockSite();
             });
         })();
@@ -1293,7 +1296,7 @@
     </div>
 
     <!-- ═══════════════ SITE HEADER ═══════════════ -->
-                        <header class="site-header">
+    <header class="site-header">
         <div class="header-left">
             <a href="index.html" class="logo-link">
                 <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
@@ -1350,7 +1353,8 @@
                                 <div id="mega-cyber" class="mega-pane">
                                     <ul class="mega-links-list">
                                         <li><a href="servicescyber1.html">OFFENSIVE SECURITY & EXPOSURE</a></li>
-                                        <li><a href="servicescyber2.html">CLOUD SECURITY & ZERO TRUST ARCHITECTURE</a></li>
+                                        <li><a href="servicescyber2.html">CLOUD SECURITY & ZERO TRUST ARCHITECTURE</a>
+                                        </li>
                                         <li><a href="servicescyber3.html">DATA PRIVACY & PROTECTION ENGINEERING</a></li>
                                         <li><a href="servicescyber4.html">CYBER RESILIENCE & CRISIS READINESS</a></li>
                                     </ul>
@@ -1641,8 +1645,9 @@
         <img src="assets/images/servicesinnpage/servicecyber3banner.png" alt="Service Banner">
         <div class="hero-content">
             <p class="breadcrumb">WHAT WE DO &rarr; Cyber &rarr; Data Privacy & Protection Engineering</p>
-            <h1 class="main-heading">A privacy policy<br>is a promise.<br><span class="highlight">Privacy engineering</span>
-                is<br>what makes<span class="highlight">it true.</span></h1>
+            <h1 class="main-heading">A privacy policy<br>is a promise.<br><span class="highlight">Privacy
+                    engineering</span>
+                is<br>what makes <span class="highlight">it true.</span></h1>
         </div>
     </div>
     <!-- hero bottom svg section -->
@@ -1696,7 +1701,9 @@
             </svg>
         </div>
         <p class="herotrackspara">
-            Compliance written into a policy rarely survives a regulator asking to see it work. Privacy has to be built into the systems that handle the data: what's collected, where it lives, who can reach it. We treat privacy as an engineering problem, built for India's DPDP Act, GDPR, and whatever comes next.</p>
+            Compliance written into a policy rarely survives a regulator asking to see it work. Privacy has to be built
+            into the systems that handle the data: what's collected, where it lives, who can reach it. We treat privacy
+            as an engineering problem, built for India's DPDP Act, GDPR, and whatever comes next.</p>
         <div class="herosvgtracksbtm">
             <svg xmlns="http://www.w3.org/2000/svg" width="74" height="286" viewBox="0 0 74 286" fill="none">
                 <path d="M74 285.993L49.3334 285.993L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 285.993Z"
@@ -1759,12 +1766,14 @@
                 <div class="deliverable-grid">
                     <div class="deliverable-grid-col">
                         <h4>Data Privacy Gap Assessments</h4>
-                        <p>Where privacy policy and actual data handling diverge, mapped and closed before a regulator finds the gap first.</p>
+                        <p>Where privacy policy and actual data handling diverge, mapped and closed before a regulator
+                            finds the gap first.</p>
                     </div>
                     <div class="deliverable-grid-col">
                         <h4>Data Classification & Protection</h4>
-                        <p>Every place sensitive data lives gets found, labelled, and locked down — including the copies nobody remembers making.</p>
-                        
+                        <p>Every place sensitive data lives gets found, labelled, and locked down — including the copies
+                            nobody remembers making.</p>
+
                     </div>
                     <div class="deliverable-grid-col">
                         <h4>Privacy-by-Design</h4>
@@ -1772,7 +1781,8 @@
                     </div>
                     <div class="deliverable-grid-col">
                         <h4>Consent & Lifecycle Management</h4>
-                        <p>What a user agreed to, and for how long, enforced automatically instead of tracked in a spreadsheet.</p>
+                        <p>What a user agreed to, and for how long, enforced automatically instead of tracked in a
+                            spreadsheet.</p>
                     </div>
                 </div>
             </div>
@@ -1790,15 +1800,18 @@
                 <div class="deliverable-grid">
                     <div class="deliverable-grid-col">
                         <h4>Privacy Audits </h4>
-                        <p>An outside check on whether privacy controls actually work, not just whether the policy says they should.</p>
+                        <p>An outside check on whether privacy controls actually work, not just whether the policy says
+                            they should.</p>
                     </div>
                     <div class="deliverable-grid-col">
                         <h4>Privacy Impact Assessments</h4>
-                        <p>New products and features checked for privacy risk while there's still time to change course.</p>
+                        <p>New products and features checked for privacy risk while there's still time to change course.
+                        </p>
                     </div>
                     <div class="deliverable-grid-col">
                         <h4>Regulatory Implementation </h4>
-                        <p>Privacy law translated into the daily workflows that keep you provably compliant, not just technically compliant.</p>
+                        <p>Privacy law translated into the daily workflows that keep you provably compliant, not just
+                            technically compliant.</p>
                     </div>
                 </div>
             </div>
@@ -1846,7 +1859,8 @@
                     </div>
                     <div class="diff-card-content">
                         <h3>Built<br>for India<br>and beyond.</h3>
-                        <p>Fluent in the DPDP Act,<br>GDPR, and the cross-border<br>obligations that come with scale.</p>
+                        <p>Fluent in the DPDP Act,<br>GDPR, and the cross-border<br>obligations that come with scale.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -1901,15 +1915,18 @@
                 <div class="wynt-grid-top">
                     <div class="wynt-col">
                         <div class="wynt-card wynt-card-short">
-                            <p>Personal data is scattered<br>across systems with<br>no classification or<br>or consent tracking.</p>
+                            <p>Personal data is scattered<br>across systems with<br>no classification or<br>or consent
+                                tracking.</p>
                         </div>
                         <div class="wynt-card wynt-card-tall slide-down-hover">
-                            <p>DPDPA or GDPR compliance<br>is a deadline on the calendar,<br>and the working process<br>isn't built yet.</p>
+                            <p>DPDPA or GDPR compliance<br>is a deadline on the calendar,<br>and the working
+                                process<br>isn't built yet.</p>
                         </div>
                     </div>
                     <div class="wynt-col">
                         <div class="wynt-card wynt-card-tall align-bottom slide-up-hover">
-                            <p>Data crosses borders as<br>part of normal operations,<br>and the transfer controls haven't kept up.</p>
+                            <p>Data crosses borders as<br>part of normal operations,<br>and the transfer controls
+                                haven't kept up.</p>
                         </div>
                         <div class="wynt-card wynt-card-short align-center">
                             <p>A privacy impact assessment<br>is overdue for a product<br>or system already in use.</p>
@@ -1917,7 +1934,8 @@
                     </div>
                 </div>
                 <div class="wynt-card wynt-card-full align-center">
-                    <p>Privacy-by-design sounds right in principle, and<br>the last three builds haven't been checked against it.</p>
+                    <p>Privacy-by-design sounds right in principle, and<br>the last three builds haven't been checked
+                        against it.</p>
                 </div>
             </div>
         </div>
@@ -1973,7 +1991,8 @@
                     <div class="rcs-text">
                         <h3>Article Title</h3>
                         <p class="rcs-desc">Article content</p>
-                        <p class="rcs-meta">Cyber <span class="dot">• </span> Data Privacy & Protection Engineering<br>[industry]
+                        <p class="rcs-meta">Cyber <span class="dot">• </span> Data Privacy & Protection
+                            Engineering<br>[industry]
                         </p>
                     </div>
                     <div class="rcs-arrow-container">
@@ -1991,7 +2010,8 @@
                     <div class="rcs-text">
                         <h3>Article Title</h3>
                         <p class="rcs-desc">Article content</p>
-                        <p class="rcs-meta">Cyber <span class="dot">• </span> Data Privacy & Protection Engineering<br>[industry]
+                        <p class="rcs-meta">Cyber <span class="dot">• </span> Data Privacy & Protection
+                            Engineering<br>[industry]
                         </p>
                     </div>
                     <div class="rcs-arrow-container">
@@ -2009,7 +2029,8 @@
                     <div class="rcs-text">
                         <h3>Article Title</h3>
                         <p class="rcs-desc">Article content</p>
-                        <p class="rcs-meta">Cyber <span class="dot">• </span> Data Privacy & Protection Engineering<br>[industry]
+                        <p class="rcs-meta">Cyber <span class="dot">• </span> Data Privacy & Protection
+                            Engineering<br>[industry]
                         </p>
                     </div>
                     <div class="rcs-arrow-container">
@@ -2173,7 +2194,7 @@
 
             <!-- Right Side -->
             <div class="footer-right">
-                                <ul class="footer-menu">
+                <ul class="footer-menu">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">WHO WE ARE</a></li>
                     <li><a href="services.html">WHAT WE DO</a></li>
@@ -2203,11 +2224,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-

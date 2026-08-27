@@ -6490,3 +6490,11 @@ body.light-mode .section-services {
 
 
 
+
+
+/* Fix for high-resolution 100% scale screens (e.g., MacBook 1920x1080) */
+@media screen and (min-width: 1600px) {
+  body {
+    zoom: 1.25;
+  }
+}
