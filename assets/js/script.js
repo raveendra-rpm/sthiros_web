@@ -159,6 +159,16 @@ function initLenis() {
       lenis.scrollTo(target, { offset: -70 });
     });
   });
+
+  // Handle URL hash on initial page load / navigation from another page
+  if (window.location.hash) {
+    const hashTarget = document.querySelector(window.location.hash);
+    if (hashTarget) {
+      setTimeout(() => {
+        lenis.scrollTo(hashTarget, { offset: -70 });
+      }, 400);
+    }
+  }
 }
 
 
@@ -1598,7 +1608,7 @@ function initIndustriesNewScroll() {
 
   if (!cards.length) return;
 
-  let activeIndex = 4; // Start on Healthcare & Life Sciences as center active card
+  let activeIndex = 5; // Start on BFSI & Fintech (6th card, index 5)
   const totalCards = cards.length;
 
   function updateCarousel() {
