@@ -8,10 +8,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <style>
+        :root {
+            --text-secondary: #ffffff;
+            --text-muted: #ffffff;
+        }
+
+        body.light-mode {
+            --text-secondary: #000000;
+            --text-muted: #000000;
+        }
+
+        body.light-mode .team-card:not(.active) .tc-name,
+        body.light-mode .team-card:not(.active) .tc-role,
+        body.light-mode .team-card:not(.active) .tc-tag {
+            color: #ffffff !important;
+        }
+
+        .footer-menu li.active::after {
+            width: 100%;
+        }
+        .footer-menu li.active a {
+            color: #EC2D26 !important;
+        }
+
         .about-hero-section {
             position: relative;
             width: 100%;
@@ -130,7 +153,7 @@
             right: 0;
             width: 60%;
             height: 100%;
-            background: radial-gradient(circle at right center, rgba(239, 70, 35, 0.15) 0%, rgba(0, 0, 0, 0) 60%);
+            background: radial-gradient(circle at right center, rgba(239, 70, 35, 0.15) 0%, rgba(var(--bg-rgb), 0) 60%);
             pointer-events: none;
             z-index: 1;
         }
@@ -156,14 +179,14 @@
         .timeline-link {
             font-family: 'Quicksand', sans-serif;
             font-size: 16px;
-            color: #888;
+            color: var(--text-muted);
             text-decoration: none;
             letter-spacing: 2px;
             transition: all 0.3s ease;
         }
 
         .timeline-link:hover {
-            color: #ccc;
+            color: var(--text-muted);
         }
 
         .timeline-link.active {
@@ -219,7 +242,7 @@
             font-family: 'Quicksand', sans-serif;
             font-size: 32px;
             font-weight: 600;
-            color: #ffffff;
+            color: var(--text-primary);
             margin: 0 0 10px 0;
             /* Changed from -10px to add more gap */
             line-height: 1.2;
@@ -252,7 +275,7 @@
             font-family: 'Quicksand', sans-serif;
             font-size: 18px;
             /* Increased from 14px for 1920px and 1440px screens */
-            color: #d4d4d4;
+            color: var(--text-muted);
             line-height: 1.6;
             margin: 0;
         }
@@ -339,14 +362,18 @@
         }
 
         .meet-leaders-title {
-            color: #d4d4d4;
+            color: #ffffff;
             font-family: 'Quicksand', sans-serif;
             font-size: 14px;
             letter-spacing: 4px;
             text-transform: uppercase;
-            font-weight: 400;
+            font-weight: 700;
             margin-bottom: 150px;
             text-align: center;
+        }
+
+        body.light-mode .meet-leaders-title {
+            color: #000000;
         }
 
         .meet-leaders-container {
@@ -373,7 +400,7 @@
             width: 130%;
             height: 130%;
             transform: translate(-50%, -50%);
-            background: radial-gradient(circle, rgba(236, 45, 38, 0.8) 0%, rgba(0, 0, 0, 0) 60%);
+            background: radial-gradient(circle, rgba(236, 45, 38, 0.8) 0%, rgba(var(--bg-rgb), 0) 60%);
             z-index: 1;
             pointer-events: none;
         }
@@ -410,7 +437,7 @@
         }
 
         .leader-role {
-            color: #d4d4d4;
+            color: var(--text-muted);
             font-family: 'Quicksand', sans-serif;
             font-size: 16px;
             font-weight: 400;
@@ -422,12 +449,12 @@
         .leader-divider {
             width: 100%;
             height: 1px;
-            background-color: #333;
+            background-color: var(--border);
             margin-bottom: 40px;
         }
 
         .leader-desc {
-            color: #a0a0a0;
+            color: var(--text-muted);
             font-family: 'Quicksand', sans-serif;
             font-size: 15px;
             line-height: 1.8;
@@ -516,7 +543,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(60, 20, 25, 0.6) 100%);
+            background: linear-gradient(to top, rgba(var(--bg-rgb), 0.9) 0%, rgba(60, 20, 25, 0.6) 100%);
             z-index: 1;
             pointer-events: none;
             transition: opacity 0.4s ease;
@@ -527,7 +554,7 @@
         }
 
         .team-card.inactive.left-card .team-card-content::after {
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 60%);
+            background: linear-gradient(to top, rgba(var(--bg-rgb), 0.9) 0%, transparent 60%);
         }
 
         .team-card.inactive::before {
@@ -586,7 +613,7 @@
 
         .team-filter-btn {
             background-color: transparent;
-            color: #d4d4d4;
+            color: var(--text-muted);
             font-family: 'Quicksand', sans-serif;
             font-size: 12px;
             text-transform: uppercase;
@@ -603,7 +630,7 @@
         .team-filter-btn.active,
         .team-filter-btn:hover {
             background-color: var(--VERMILION-RED, #EC2D26);
-            color: #fff;
+            color: var(--text-primary);
             font-weight: 700;
         }
 
@@ -612,7 +639,7 @@
             font-size: 15px;
             /* Reduced from 18px to prevent awkward breaking */
             font-weight: 700;
-            color: #fff;
+            color: var(--text-primary);
             margin: 0 0 5px 0;
             text-transform: capitalize;
             display: -webkit-box;
@@ -627,7 +654,7 @@
         .tc-role {
             font-family: 'Quicksand', sans-serif;
             font-size: 11px;
-            color: #a0a0a0;
+            color: var(--text-muted);
             margin: 0;
             text-transform: uppercase;
             white-space: nowrap;
@@ -660,7 +687,7 @@
 
 
         .ta-name {
-            color: #fff;
+            color: var(--text-primary);
             font-family: 'Quicksand', sans-serif;
             font-size: 48px;
             font-weight: 600;
@@ -668,7 +695,7 @@
         }
 
         .ta-role {
-            color: #fff;
+            color: var(--text-primary);
             font-family: 'Quicksand', sans-serif;
             font-size: 18px;
             font-weight: 600;
@@ -677,7 +704,7 @@
         }
 
         .ta-desc {
-            color: #a0a0a0;
+            color: var(--text-muted);
             font-family: 'Quicksand', sans-serif;
             font-size: 14px;
             line-height: 1.8;
@@ -786,6 +813,18 @@
             z-index: 1;
         }
 
+        .rwy-bg-img-light {
+            display: none;
+        }
+        
+        body.light-mode .rwy-bg-img-dark {
+            display: none;
+        }
+        
+        body.light-mode .rwy-bg-img-light {
+            display: block;
+        }
+
         .rwy-content-wrapper {
             position: relative;
             z-index: 2;
@@ -811,6 +850,14 @@
             /* Visually thins out bright text on dark backgrounds */
         }
 
+        body.light-mode .rwy-heading {
+            color: #000000;
+        }
+
+        body.light-mode .aboutreadywhenyu .hero-btn-inner {
+            color: #000000;
+        }
+
         .rwy-btn-outer {
             display: inline-block;
             text-decoration: none;
@@ -826,7 +873,7 @@
             justify-content: center;
             border-radius: 163.532px;
             border: 5px solid var(--FLAME-ORANGE, #EF4623);
-            color: #fff;
+            color: var(--text-primary);
             font-family: 'Quicksand', sans-serif;
             font-size: 16px;
             letter-spacing: 2px;
@@ -980,7 +1027,7 @@
             font-style: normal;
             font-weight: 400;
             line-height: 100px;
-            color: #ffffff;
+            color: var(--text-primary);
             margin: 0 0 40px 0;
             position: relative;
             z-index: 2;
@@ -993,7 +1040,7 @@
         .world-building-desc {
             font-family: 'Quicksand', sans-serif;
             font-size: 20px;
-            color: #d4d4d4;
+            color: var(--text-muted);
             line-height: 1.6;
             margin: 0;
             max-width: 600px;
@@ -1177,7 +1224,7 @@
             display: flex;
             align-items: center;
             gap: 15px;
-            color: #fff;
+            color: #ffffff;
             font-family: 'Pacaembu', sans-serif;
             font-size: 40px;
             font-weight: bold;
@@ -1203,6 +1250,16 @@
 
         .vm-card.vision-card.active .vm-dynamic-title {
             left: 5rem;
+        }
+
+        /* Light mode active card styles */
+        body.light-mode #Theworldbuilding .vm-card.active .vm-dynamic-title,
+        body.light-mode #Theworldbuilding .vm-card.active .vm-dynamic-title span {
+            color: #EC2D26 !important;
+        }
+
+        body.light-mode #Theworldbuilding .vm-card.active .vm-desc {
+            color: #000000 !important;
         }
 
         .vm-dynamic-title img {
@@ -1309,15 +1366,15 @@
 
     <!-- PASSWORD GATE OVERLAY -->
     <div id="sthiros-password-gate"
-        style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000; z-index: 9999999; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Quicksand', sans-serif;">
+        style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: var(--bg); z-index: 9999999; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Quicksand', sans-serif;">
         <div style="text-align: center;">
-            <h2 style="color: #fff; font-size: 24px; margin-bottom: 25px; font-weight: 500;">Please enter password to
+            <h2 style="color: var(--text-primary); font-size: 24px; margin-bottom: 25px; font-weight: 500;">Please enter password to
                 access site</h2>
             <div style="display: flex; gap: 10px; justify-content: center;">
                 <input type="password" id="sthiros-gate-input" placeholder="Enter password"
-                    style="padding: 12px 20px; font-size: 16px; border: 1px solid #333; border-radius: 6px; background-color: #111; color: #fff; outline: none; width: 280px;">
+                    style="padding: 12px 20px; font-size: 16px; border: 1px solid #333; border-radius: 6px; background-color: var(--bg-card); color: var(--text-primary); outline: none; width: 280px;">
                 <button id="sthiros-gate-btn"
-                    style="padding: 12px 24px; font-size: 16px; background-color: #EF4623; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-weight: 500;">Submit</button>
+                    style="padding: 12px 24px; font-size: 16px; background-color: #EF4623; color: var(--text-primary); border: none; border-radius: 6px; cursor: pointer; font-weight: 500;">Submit</button>
             </div>
             <p id="sthiros-gate-error" style="color: #EF4623; margin-top: 15px; font-size: 14px; display: none;">
                 Incorrect Password</p>
@@ -2175,7 +2232,9 @@
         <!-- readywhereyouaresec -->
         <div class="aboutreadywhenyu">
             <img src="assets/images/aboutpage/aboutreadywhenyu.jpg" alt="Ready when you are background"
-                class="rwy-bg-img">
+                class="rwy-bg-img rwy-bg-img-dark">
+            <img src="assets/images/aboutpage/aboutreadywhenyulight.jpg" alt="Ready when you are background light"
+                class="rwy-bg-img rwy-bg-img-light">
             <div class="rwy-content-wrapper">
                 <h2 class="rwy-heading">Ready when<br>you are.</h2>
                 <a href="contactus.html" class="hero-btn-outer">
@@ -2256,7 +2315,7 @@
             <div class="footer-right">
                 <ul class="footer-menu">
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">WHO WE ARE</a></li>
+                    <li class="active"><a href="about.html">WHO WE ARE</a></li>
                     <li><a href="services.html">WHAT WE DO</a></li>
                     <li><a href="industry.html">WHO WE SERVE</a></li>
                     <li><a href="repository.html">THE REPOSITORY</a></li>
@@ -2268,7 +2327,8 @@
         <hr class="footer-bottom-line">
 
         <div class="footer-massive-logo-section">
-            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo">
+            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo massive-logo-dark">
+            <img src="assets/images/sthiroslogodark.png" alt="Sthiros" class="massive-logo massive-logo-light">
             <div class="copyright-text">© 2026</div>
         </div>
     </footer>
@@ -2448,7 +2508,7 @@
                             <img src="" class="team-card-img" alt="">
                             
                             <div class="team-card-info" style="padding: 10px 5px; bottom: 0;">
-                                <p class="tc-tag" style="font-size: 9px; color: #ccc; margin-bottom: 2px; letter-spacing: 0.5px; line-height: 1.2; font-weight: 400;"></p>
+                                <p class="tc-tag" style="font-size: 9px; color: var(--text-muted); margin-bottom: 2px; letter-spacing: 0.5px; line-height: 1.2; font-weight: 400;"></p>
                                 <h2 class="tc-name" style="font-size: 12px; margin-bottom: 2px; line-height: 1.2; font-weight: 600;"></h2>
                                 <h4 class="tc-role" style="font-size: 9px; color: #aaa; letter-spacing: 0.5px; line-height: 1.2; font-weight: 400; text-transform: uppercase;"></h4>
                             </div>

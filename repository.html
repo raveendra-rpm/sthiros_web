@@ -1037,6 +1037,83 @@
                 font-size: 20px;
             }
         }
+        /* ═══════════════ LIGHT MODE OVERRIDES ═══════════════ */
+        body.light-mode .repo-filter-title {
+            color: #000;
+        }
+
+        body.light-mode .repo-filter-item,
+        body.light-mode .repo-filter-label,
+        body.light-mode .repo-search-input {
+            color: #000;
+        }
+
+        body.light-mode .repo-search-input::placeholder {
+            color: #555;
+        }
+
+        body.light-mode .repo-filter-section,
+        body.light-mode .repo-filter-bar {
+            background-color: transparent;
+        }
+        
+        body.light-mode .repo-filter-menu {
+            background-color: #fff;
+        }
+        
+        body.light-mode .repo-filter-dropdown {
+            border-bottom-color: #EF4623;
+        }
+
+        body.light-mode .rcs-nav-btn {
+            background-color: #000;
+            border-radius: 50%;
+        }
+
+        body.light-mode .cents-nav-btn {
+            background-color: #000;
+        }
+
+        body.light-mode .repo-insight .repo-section-subtitle,
+        body.light-mode .repo-cents .repo-cents-subheading,
+        body.light-mode .repo-dives .repo-cents-subheading {
+            color: #000 !important;
+        }
+
+        body.light-mode .repo-hero {
+            background-image: 
+                linear-gradient(to bottom, transparent 70%, #000 100%),
+                linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 40%, transparent 100%),
+                url('assets/images/repositorypage/repositoryimgbanner.jpg') !important;
+            background-color: #000 !important;
+        }
+
+        body.light-mode .repo-hero-title {
+            color: #fff !important;
+        }
+
+        body.light-mode .repo-hero-desc {
+            color: #ccc !important;
+        }
+
+        body.light-mode #uppar-repo-section::before {
+            background: linear-gradient(to bottom, #f5f5f5 0%, transparent 100%) !important;
+        }
+        
+        body.light-mode #uppar-repo-section::after {
+            background: linear-gradient(to top, #f5f5f5 0%, transparent 100%) !important;
+        }
+        
+        body.light-mode .yourscantoocont {
+            background-image: url('assets/images/repositorypage/reporeadywhenyulight.jpg') !important;
+        }
+
+        body.light-mode .yct-content h2,
+        body.light-mode .yct-content p,
+        body.light-mode .yct-content .repo-section-tag,
+        body.light-mode .yct-buttons .hero-btn-inner {
+            color: #000 !important;
+        }
     </style>
 </head>
 
@@ -2103,7 +2180,8 @@
         <hr class="footer-bottom-line">
 
         <div class="footer-massive-logo-section">
-            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo">
+            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo massive-logo-dark">
+            <img src="assets/images/sthiroslogodark.png" alt="Sthiros" class="massive-logo massive-logo-light">
             <div class="copyright-text">© 2026</div>
         </div>
     </footer>

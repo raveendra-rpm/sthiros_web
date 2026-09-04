@@ -12,6 +12,156 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css?v=7" />
     <style>
+        /* General Light Mode Overrides for Industry */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Password Gate */
+        body.light-mode #sthiros-password-gate {
+            background-color: #ffffff !important;
+        }
+        body.light-mode #sthiros-password-gate h2 {
+            color: #000000 !important;
+        }
+        body.light-mode #sthiros-gate-input {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+            border: 1px solid #ccc !important;
+        }
+
+        /* Headings */
+        body.light-mode .wtrp-heading,
+        body.light-mode .hsd-heading,
+        body.light-mode .hsd-feature-content h3,
+        body.light-mode .we-heading,
+        body.light-mode .chts-title,
+        body.light-mode #skithedesksec h2,
+        body.light-mode .sthiros-trans-title,
+        body.light-mode .problem-heading-text,
+        body.light-mode .problem-text,
+        body.light-mode .solution-main h3,
+        body.light-mode .service-title,
+        body.light-mode .chts-card-title,
+        body.light-mode .chts-subtitle,
+        body.light-mode #skithedesksec p {
+            color: #000000;
+        }
+
+        /* Subheadings and Paragraphs */
+        body.light-mode .wtrp-subheading,
+        body.light-mode .hsd-feature-content p,
+        body.light-mode .chts-desc,
+        body.light-mode .chts-card-desc,
+        body.light-mode .sthiros-trans-text,
+        body.light-mode .problem-desc,
+        body.light-mode .solution-main p,
+        body.light-mode .service-list li,
+        body.light-mode .we-card p {
+            color: #333333;
+        }
+
+        body.light-mode .service-list li::before {
+            color: #333333;
+        }
+
+        /* Buttons */
+        body.light-mode .fix-btn,
+        body.light-mode #skithedesksec .hero-btn-inner {
+            color: #000000 !important;
+        }
+        
+        body.light-mode .fix-btn:hover,
+        body.light-mode #skithedesksec .hero-btn-inner:hover {
+            color: #ffffff !important;
+        }
+
+        body.light-mode .segment-btn {
+            color: #000000;
+            border-color: rgba(0, 0, 0, 0.3);
+        }
+
+        body.light-mode .segment-btn:hover {
+            border-color: #000000;
+        }
+
+        body.light-mode .segment-btn.active {
+            color: #ffffff;
+            background-color: #EC2D26;
+            border-color: #EC2D26;
+        }
+
+        /* Cards and Elements Backgrounds */
+        body.light-mode .problem-header,
+        body.light-mode .segment-tabs,
+        body.light-mode .we-card {
+            background-color: #ffffff;
+        }
+
+        body.light-mode .problem-item.active,
+        body.light-mode .problem-item:hover {
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+        
+        body.light-mode .chts-card-footer {
+            border-top: 1px solid #000000;
+        }
+
+        body.light-mode .chts-card-footer a {
+            color: #000000;
+        }
+
+        body.light-mode .chts-card.is-active .chts-card-footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.8) !important;
+        }
+
+        body.light-mode .chts-card.is-active .chts-card-title,
+        body.light-mode .chts-card.is-active .chts-card-desc,
+        body.light-mode .chts-card.is-active .chts-card-footer a {
+            color: #ffffff !important;
+        }
+
+        body.light-mode .skipthedeskcont {
+            background-image: url('assets/images/industries/industryreadywhenyulight.jpg');
+        }
+
+        /* Services Page Specific Light Mode Overrides */
+        body.light-mode .services-description,
+        body.light-mode .conversationcontsec p {
+            color: #333333;
+        }
+
+        body.light-mode .service-card:not(.active) {
+            background: #ffffff;
+        }
+
+        body.light-mode .service-card:not(.active) .service-title {
+            color: #000000 !important;
+        }
+
+        body.light-mode #sthirosconversationsec {
+            background-color: #ffffff;
+        }
+
+        body.light-mode .conversationcontsec {
+            background-image: url('assets/images/industries/industryreadywhenyulight.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        body.light-mode .conversationcontsec h2 {
+            color: #000000;
+        }
+
+        body.light-mode .conv-btn-inner {
+            color: #000000 !important;
+        }
+
+        body.light-mode .conv-btn-inner:hover {
+            color: #ffffff !important;
+        }
+
         .services-hero {
             position: relative;
             width: 100%;
@@ -764,6 +914,189 @@
                 font-size: 0.8rem;
             }
         }
+        /* ═══════════════ OUR CLIENTS SECTION ═══════════════ */
+        #our-clients-section {
+            padding: 80px 0;
+            background: #000;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Quicksand', sans-serif;
+            color: #fff;
+        }
+
+        .oc-heading {
+            text-align: center;
+            color: var(--WHITE, #FFF);
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 90px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100px; /* 111.111% */
+            margin-bottom: 20px;
+        }
+
+        .oc-toggle {
+            text-align: center;
+            cursor: pointer;
+            margin: 0 auto 60px auto;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: color 0.3s ease;
+            color: var(--WHITE, #FFF);
+            font-family: 'Quicksand', sans-serif;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; /* 115.385% */
+            letter-spacing: 5.2px;
+            text-transform: uppercase;
+        }
+
+        .oc-toggle:hover {
+            color: #fff;
+        }
+
+        .oc-toggle-icon {
+            width: 7px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .oc-toggle.active .oc-toggle-icon {
+            transform: rotate(90deg);
+        }
+
+        .oc-marquee-container {
+            position: relative;
+            width: 100%;
+            height: 120px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+        
+        .oc-marquee-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, #000 0%, transparent 15%, transparent 85%, #000 100%);
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .oc-marquee-track {
+            display: flex;
+            width: max-content;
+            animation: scrollMarquee 320s linear infinite;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            will-change: transform;
+        }
+
+        .oc-marquee-track:hover {
+            animation-play-state: paused;
+        }
+
+        .oc-logo-item {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 35px;
+            height: 70px;
+        }
+
+        .oc-logo-img {
+            max-height: 48px;
+            max-width: 160px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            opacity: 0.85;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .oc-logo-img:hover {
+            opacity: 1;
+            transform: scale(1.08);
+        }
+
+        @keyframes scrollMarquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .oc-grid-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            padding: 0 40px;
+        }
+
+        .oc-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+        }
+
+        .oc-grid-col {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .oc-grid-item {
+            text-decoration: none;
+            color: #777;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        .oc-grid-item:hover, .oc-grid-item.active {
+            color: #EC2D26;
+        }
+
+        /* Light Mode Overrides for Our Clients */
+        body.light-mode #our-clients-section {
+            background: #f5f5f5;
+            color: #000;
+        }
+        body.light-mode .oc-heading {
+            color: #000;
+        }
+        body.light-mode .oc-marquee-container::after {
+            background: linear-gradient(to right, #f5f5f5 0%, transparent 15%, transparent 85%, #f5f5f5 100%);
+        }
+        body.light-mode .oc-toggle {
+            color: #555;
+        }
+        body.light-mode .oc-toggle:hover {
+            color: #000;
+        }
+        body.light-mode .oc-grid-item {
+            color: #777;
+        }
+        body.light-mode .oc-grid-item:hover,
+        body.light-mode .oc-grid-item.active {
+            color: #EC2D26;
+        }
+        body.light-mode .oc-logo-img {
+            filter: brightness(0);
+            opacity: 0.8;
+        }
+        body.light-mode .oc-logo-img:hover {
+            opacity: 1;
+        }
     </style>
 </head>
 
@@ -1416,6 +1749,551 @@
         </div>
     </section>
 
+        <!-- ═══════════════ OUR CLIENTS ═══════════════ -->
+    <section id="our-clients-section">
+        <h2 class="oc-heading">Our Clients</h2>
+        
+        <div class="oc-toggle" id="all-industries-toggle">
+            <span class="oc-toggle-text">ALL INDUSTRIES</span>
+            <img src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="oc-toggle-icon">
+        </div>
+
+        <!-- Grid Mode -->
+        <div class="oc-grid-container" id="oc-grid-container" style="display: none;">
+            <div class="oc-grid" style="padding-top: 20px;">
+                <!-- Column 1 -->
+                <div class="oc-grid-col">
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="healthcareindustry">HEALTHCARE</a>
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="bfsifintech">BFSI &amp; FINTECH</a>
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="itnites">IT &amp; ITeS</a>
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="bfsi">BFSI</a>
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="defenceindustry">DEFENCE</a>
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="services">SERVICE</a>
+                </div>
+                <!-- Column 2 -->
+                <div class="oc-grid-col">
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="automativeindustry">AUTOMOTIVE</a>
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="fmcgindustry,fmcgnother">FMCG</a>
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="contructionindustry">CONSTRUCTION</a>
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="businessconsultingindustry">BUSINESS CONSULTING</a>
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="hotelindustry">HOTEL</a>
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="industry">NGO</a>
+                </div>
+                <!-- Column 3 -->
+                <div class="oc-grid-col">
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="retails">RETAIL</a>
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="miningindustry">MINING</a>
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="agribusinessindustry">AGRI BUSINESS</a>
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="itnites,services">BPO</a>
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="realstateindustry">REAL ESTATE</a>
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="manufacturing">MANUFACTURING</a>
+                </div>
+                <!-- Column 4 -->
+                <div class="oc-grid-col">
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="entertainmentindustry">ENTERTAINMENT</a>
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="oilngasindustry">GAS AND OIL</a>
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="governmentindustry">GOVERNMENT</a>
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="itindustry">IT</a>
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="chartedaccountantindustry">CHARTED ACCOUNTANT</a>
+                    <a href="javascript:void(0)" class="oc-grid-item" data-category="edutechindustry">EDUTECH</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Marquee Mode -->
+        <div class="oc-marquee-container" id="oc-marquee-container">
+            <div class="oc-marquee-track" id="oc-marquee-track">
+                <div class="oc-logo-item" data-folder="agribusinessindustry"><img src="assets/images/servicesclients/agribusinessindustry/agribusinessindustry.png" alt="agribusinessindustry" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative1.png" alt="automative1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi1.png" alt="bfsi1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsifintech"><img src="assets/images/servicesclients/bfsifintech/bsfifin1.png" alt="bsfifin1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci1.png" alt="bci1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="chartedaccountantindustry"><img src="assets/images/servicesclients/chartedaccountantindustry/cai1.png" alt="cai1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="contructionindustry"><img src="assets/images/servicesclients/contructionindustry/constindustry1.png" alt="constindustry1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="defenceindustry"><img src="assets/images/servicesclients/defenceindustry/defindu1.png" alt="defindu1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="edutechindustry"><img src="assets/images/servicesclients/edutechindustry/edutech1.png" alt="edutech1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="entertainmentindustry"><img src="assets/images/servicesclients/entertainmentindustry/entertainment1.png" alt="entertainment1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus1.png" alt="fmcgindus1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother1.png" alt="fmcgother1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="governmentindustry"><img src="assets/images/servicesclients/governmentindustry/govtindu1.png" alt="govtindu1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare1.png" alt="healthcare1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="hotelindustry"><img src="assets/images/servicesclients/hotelindustry/hotelindus1.png" alt="hotelindus1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry1.png" alt="industry1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry1.png" alt="itindustry1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites1.png" alt="itnites1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing1.png" alt="manufacturing1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="miningindustry"><img src="assets/images/servicesclients/miningindustry/miningindustry1.png" alt="miningindustry1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="oilngasindustry"><img src="assets/images/servicesclients/oilngasindustry/oilgas1.png" alt="oilgas1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="realstateindustry"><img src="assets/images/servicesclients/realstateindustry/realestate1.png" alt="realestate1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="retails"><img src="assets/images/servicesclients/retails/retails1.png" alt="retails1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="services"><img src="assets/images/servicesclients/services/services1.png" alt="services1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative10.png" alt="automative10" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi10.png" alt="bfsi10" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsifintech"><img src="assets/images/servicesclients/bfsifintech/bsfifin2.png" alt="bsfifin2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci10.png" alt="bci10" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="chartedaccountantindustry"><img src="assets/images/servicesclients/chartedaccountantindustry/cai2.png" alt="cai2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="contructionindustry"><img src="assets/images/servicesclients/contructionindustry/constindustry10.png" alt="constindustry10" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="defenceindustry"><img src="assets/images/servicesclients/defenceindustry/defindu2.png" alt="defindu2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="entertainmentindustry"><img src="assets/images/servicesclients/entertainmentindustry/entertainment2.png" alt="entertainment2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus10.png" alt="fmcgindus10" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother10.png" alt="fmcgother10" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="governmentindustry"><img src="assets/images/servicesclients/governmentindustry/govtindu2.png" alt="govtindu2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare10.png" alt="healthcare10" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="hotelindustry"><img src="assets/images/servicesclients/hotelindustry/hotelindus2.png" alt="hotelindus2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry10.png" alt="industry10" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry10.png" alt="itindustry10" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites10.png" alt="itnites10" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing2.png" alt="manufacturing2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="miningindustry"><img src="assets/images/servicesclients/miningindustry/miningindustry2.png" alt="miningindustry2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="oilngasindustry"><img src="assets/images/servicesclients/oilngasindustry/oilgas2.png" alt="oilgas2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="realstateindustry"><img src="assets/images/servicesclients/realstateindustry/realestate2.png" alt="realestate2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="retails"><img src="assets/images/servicesclients/retails/retails2.png" alt="retails2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative11.png" alt="automative11" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi11.png" alt="bfsi11" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsifintech"><img src="assets/images/servicesclients/bfsifintech/bsfifin3.png" alt="bsfifin3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci11.png" alt="bci11" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="chartedaccountantindustry"><img src="assets/images/servicesclients/chartedaccountantindustry/cai3.png" alt="cai3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="contructionindustry"><img src="assets/images/servicesclients/contructionindustry/constindustry2.png" alt="constindustry2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="defenceindustry"><img src="assets/images/servicesclients/defenceindustry/defindu3.png" alt="defindu3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="entertainmentindustry"><img src="assets/images/servicesclients/entertainmentindustry/entertainment3.png" alt="entertainment3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus11.png" alt="fmcgindus11" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother11.png" alt="fmcgother11" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="governmentindustry"><img src="assets/images/servicesclients/governmentindustry/govtindu3.png" alt="govtindu3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare11.png" alt="healthcare11" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="hotelindustry"><img src="assets/images/servicesclients/hotelindustry/hotelindus3.png" alt="hotelindus3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry11.png" alt="industry11" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry11.png" alt="itindustry11" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites2.png" alt="itnites2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing3.png" alt="manufacturing3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="miningindustry"><img src="assets/images/servicesclients/miningindustry/miningindustry3.png" alt="miningindustry3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="realstateindustry"><img src="assets/images/servicesclients/realstateindustry/realestate3.png" alt="realestate3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="retails"><img src="assets/images/servicesclients/retails/retails3.png" alt="retails3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative12.png" alt="automative12" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi12.png" alt="bfsi12" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsifintech"><img src="assets/images/servicesclients/bfsifintech/bsfifin4.png" alt="bsfifin4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci12.png" alt="bci12" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="chartedaccountantindustry"><img src="assets/images/servicesclients/chartedaccountantindustry/cai4.png" alt="cai4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="contructionindustry"><img src="assets/images/servicesclients/contructionindustry/constindustry3.png" alt="constindustry3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus2.png" alt="fmcgindus2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother2.png" alt="fmcgother2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="governmentindustry"><img src="assets/images/servicesclients/governmentindustry/govtindu4.png" alt="govtindu4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare2.png" alt="healthcare2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="hotelindustry"><img src="assets/images/servicesclients/hotelindustry/hotelindus4.png" alt="hotelindus4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry12.png" alt="industry12" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry12.png" alt="itindustry12" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites3.png" alt="itnites3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing4.png" alt="manufacturing4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="miningindustry"><img src="assets/images/servicesclients/miningindustry/miningindustry4.png" alt="miningindustry4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="realstateindustry"><img src="assets/images/servicesclients/realstateindustry/realestate4.png" alt="realestate4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative13.png" alt="automative13" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi13.png" alt="bfsi13" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsifintech"><img src="assets/images/servicesclients/bfsifintech/bsfifin5.png" alt="bsfifin5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci13.png" alt="bci13" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="chartedaccountantindustry"><img src="assets/images/servicesclients/chartedaccountantindustry/cai5.png" alt="cai5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="contructionindustry"><img src="assets/images/servicesclients/contructionindustry/constindustry4.png" alt="constindustry4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus3.png" alt="fmcgindus3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother3.png" alt="fmcgother3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="governmentindustry"><img src="assets/images/servicesclients/governmentindustry/govtindu5.png" alt="govtindu5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare3.png" alt="healthcare3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry13.png" alt="industry13" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry13.png" alt="itindustry13" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites4.png" alt="itnites4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing5.png" alt="manufacturing5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative14.png" alt="automative14" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi14.png" alt="bfsi14" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsifintech"><img src="assets/images/servicesclients/bfsifintech/bsfifin6.png" alt="bsfifin6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci2.png" alt="bci2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="chartedaccountantindustry"><img src="assets/images/servicesclients/chartedaccountantindustry/cai6.png" alt="cai6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="contructionindustry"><img src="assets/images/servicesclients/contructionindustry/constindustry5.png" alt="constindustry5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus4.png" alt="fmcgindus4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother4.png" alt="fmcgother4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare4.png" alt="healthcare4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry14.png" alt="industry14" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry14.png" alt="itindustry14" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites5.png" alt="itnites5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing6.png" alt="manufacturing6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative15.png" alt="automative15" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi15.png" alt="bfsi15" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsifintech"><img src="assets/images/servicesclients/bfsifintech/bsfifin7.png" alt="bsfifin7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci3.png" alt="bci3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="contructionindustry"><img src="assets/images/servicesclients/contructionindustry/constindustry6.png" alt="constindustry6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus5.png" alt="fmcgindus5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother5.png" alt="fmcgother5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare5.png" alt="healthcare5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry2.png" alt="industry2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry15.png" alt="itindustry15" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites6.png" alt="itnites6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing7.png" alt="manufacturing7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative16.png" alt="automative16" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi16.png" alt="bfsi16" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci4.png" alt="bci4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="contructionindustry"><img src="assets/images/servicesclients/contructionindustry/constindustry7.png" alt="constindustry7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus6.png" alt="fmcgindus6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother6.png" alt="fmcgother6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare6.png" alt="healthcare6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry3.png" alt="industry3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry16.png" alt="itindustry16" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites7.png" alt="itnites7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing8.png" alt="manufacturing8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative2.png" alt="automative2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi17.png" alt="bfsi17" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci5.png" alt="bci5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="contructionindustry"><img src="assets/images/servicesclients/contructionindustry/constindustry8.png" alt="constindustry8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus7.png" alt="fmcgindus7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother7.png" alt="fmcgother7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare7.png" alt="healthcare7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry4.png" alt="industry4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry17.png" alt="itindustry17" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites8.png" alt="itnites8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing9.png" alt="manufacturing9" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative3.png" alt="automative3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi18.png" alt="bfsi18" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci6.png" alt="bci6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="contructionindustry"><img src="assets/images/servicesclients/contructionindustry/constindustry9.png" alt="constindustry9" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus8.png" alt="fmcgindus8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother8.png" alt="fmcgother8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare8.png" alt="healthcare8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry5.png" alt="industry5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry18.png" alt="itindustry18" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites9.png" alt="itnites9" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative4.png" alt="automative4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi19.png" alt="bfsi19" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci7.png" alt="bci7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus9.png" alt="fmcgindus9" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother9.png" alt="fmcgother9" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare9.png" alt="healthcare9" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry6.png" alt="industry6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry19.png" alt="itindustry19" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative5.png" alt="automative5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi2.png" alt="bfsi2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci8.png" alt="bci8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry7.png" alt="industry7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry2.png" alt="itindustry2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative6.png" alt="automative6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi20.png" alt="bfsi20" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci9.png" alt="bci9" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry8.png" alt="industry8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry20.png" alt="itindustry20" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative7.png" alt="automative7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi21.png" alt="bfsi21" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry9.png" alt="industry9" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry21.png" alt="itindustry21" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative8.png" alt="automative8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi22.png" alt="bfsi22" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry22.png" alt="itindustry22" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative9.png" alt="automative9" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi23.png" alt="bfsi23" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry23.png" alt="itindustry23" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi24.png" alt="bfsi24" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry24.png" alt="itindustry24" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi25.png" alt="bfsi25" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry25.png" alt="itindustry25" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi26.png" alt="bfsi26" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry26.png" alt="itindustry26" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi27.png" alt="bfsi27" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry27.png" alt="itindustry27" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi28.png" alt="bfsi28" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry28.png" alt="itindustry28" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi29.png" alt="bfsi29" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry29.png" alt="itindustry29" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi3.png" alt="bfsi3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry3.png" alt="itindustry3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi30.png" alt="bfsi30" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry30.png" alt="itindustry30" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi31.png" alt="bfsi31" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry31.png" alt="itindustry31" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi32.png" alt="bfsi32" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry32.png" alt="itindustry32" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi33.png" alt="bfsi33" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry33.png" alt="itindustry33" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi34.png" alt="bfsi34" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry34.png" alt="itindustry34" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi35.png" alt="bfsi35" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry35.png" alt="itindustry35" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi36.png" alt="bfsi36" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry36.png" alt="itindustry36" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi4.png" alt="bfsi4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry37.png" alt="itindustry37" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi5.png" alt="bfsi5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry38.png" alt="itindustry38" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi6.png" alt="bfsi6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry39.png" alt="itindustry39" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi7.png" alt="bfsi7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry4.png" alt="itindustry4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi8.png" alt="bfsi8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry40.png" alt="itindustry40" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi9.png" alt="bfsi9" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry41.png" alt="itindustry41" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry42.png" alt="itindustry42" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry43.png" alt="itindustry43" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry44.png" alt="itindustry44" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry45.png" alt="itindustry45" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry46.png" alt="itindustry46" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry47.png" alt="itindustry47" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry48.png" alt="itindustry48" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry49.png" alt="itindustry49" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry5.png" alt="itindustry5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry50.png" alt="itindustry50" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry51.png" alt="itindustry51" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry52.png" alt="itindustry52" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry53.png" alt="itindustry53" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry54.png" alt="itindustry54" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry55.png" alt="itindustry55" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry56.png" alt="itindustry56" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry57.png" alt="itindustry57" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry58.png" alt="itindustry58" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry6.png" alt="itindustry6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry7.png" alt="itindustry7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry8.png" alt="itindustry8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry9.png" alt="itindustry9" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="agribusinessindustry"><img src="assets/images/servicesclients/agribusinessindustry/agribusinessindustry.png" alt="agribusinessindustry" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative1.png" alt="automative1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi1.png" alt="bfsi1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsifintech"><img src="assets/images/servicesclients/bfsifintech/bsfifin1.png" alt="bsfifin1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci1.png" alt="bci1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="chartedaccountantindustry"><img src="assets/images/servicesclients/chartedaccountantindustry/cai1.png" alt="cai1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="contructionindustry"><img src="assets/images/servicesclients/contructionindustry/constindustry1.png" alt="constindustry1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="defenceindustry"><img src="assets/images/servicesclients/defenceindustry/defindu1.png" alt="defindu1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="edutechindustry"><img src="assets/images/servicesclients/edutechindustry/edutech1.png" alt="edutech1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="entertainmentindustry"><img src="assets/images/servicesclients/entertainmentindustry/entertainment1.png" alt="entertainment1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus1.png" alt="fmcgindus1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother1.png" alt="fmcgother1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="governmentindustry"><img src="assets/images/servicesclients/governmentindustry/govtindu1.png" alt="govtindu1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare1.png" alt="healthcare1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="hotelindustry"><img src="assets/images/servicesclients/hotelindustry/hotelindus1.png" alt="hotelindus1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry1.png" alt="industry1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry1.png" alt="itindustry1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites1.png" alt="itnites1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing1.png" alt="manufacturing1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="miningindustry"><img src="assets/images/servicesclients/miningindustry/miningindustry1.png" alt="miningindustry1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="oilngasindustry"><img src="assets/images/servicesclients/oilngasindustry/oilgas1.png" alt="oilgas1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="realstateindustry"><img src="assets/images/servicesclients/realstateindustry/realestate1.png" alt="realestate1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="retails"><img src="assets/images/servicesclients/retails/retails1.png" alt="retails1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="services"><img src="assets/images/servicesclients/services/services1.png" alt="services1" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative10.png" alt="automative10" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi10.png" alt="bfsi10" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsifintech"><img src="assets/images/servicesclients/bfsifintech/bsfifin2.png" alt="bsfifin2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci10.png" alt="bci10" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="chartedaccountantindustry"><img src="assets/images/servicesclients/chartedaccountantindustry/cai2.png" alt="cai2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="contructionindustry"><img src="assets/images/servicesclients/contructionindustry/constindustry10.png" alt="constindustry10" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="defenceindustry"><img src="assets/images/servicesclients/defenceindustry/defindu2.png" alt="defindu2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="entertainmentindustry"><img src="assets/images/servicesclients/entertainmentindustry/entertainment2.png" alt="entertainment2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus10.png" alt="fmcgindus10" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother10.png" alt="fmcgother10" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="governmentindustry"><img src="assets/images/servicesclients/governmentindustry/govtindu2.png" alt="govtindu2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare10.png" alt="healthcare10" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="hotelindustry"><img src="assets/images/servicesclients/hotelindustry/hotelindus2.png" alt="hotelindus2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry10.png" alt="industry10" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry10.png" alt="itindustry10" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites10.png" alt="itnites10" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing2.png" alt="manufacturing2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="miningindustry"><img src="assets/images/servicesclients/miningindustry/miningindustry2.png" alt="miningindustry2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="oilngasindustry"><img src="assets/images/servicesclients/oilngasindustry/oilgas2.png" alt="oilgas2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="realstateindustry"><img src="assets/images/servicesclients/realstateindustry/realestate2.png" alt="realestate2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="retails"><img src="assets/images/servicesclients/retails/retails2.png" alt="retails2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative11.png" alt="automative11" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi11.png" alt="bfsi11" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsifintech"><img src="assets/images/servicesclients/bfsifintech/bsfifin3.png" alt="bsfifin3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci11.png" alt="bci11" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="chartedaccountantindustry"><img src="assets/images/servicesclients/chartedaccountantindustry/cai3.png" alt="cai3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="contructionindustry"><img src="assets/images/servicesclients/contructionindustry/constindustry2.png" alt="constindustry2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="defenceindustry"><img src="assets/images/servicesclients/defenceindustry/defindu3.png" alt="defindu3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="entertainmentindustry"><img src="assets/images/servicesclients/entertainmentindustry/entertainment3.png" alt="entertainment3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus11.png" alt="fmcgindus11" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother11.png" alt="fmcgother11" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="governmentindustry"><img src="assets/images/servicesclients/governmentindustry/govtindu3.png" alt="govtindu3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare11.png" alt="healthcare11" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="hotelindustry"><img src="assets/images/servicesclients/hotelindustry/hotelindus3.png" alt="hotelindus3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry11.png" alt="industry11" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry11.png" alt="itindustry11" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites2.png" alt="itnites2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing3.png" alt="manufacturing3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="miningindustry"><img src="assets/images/servicesclients/miningindustry/miningindustry3.png" alt="miningindustry3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="realstateindustry"><img src="assets/images/servicesclients/realstateindustry/realestate3.png" alt="realestate3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="retails"><img src="assets/images/servicesclients/retails/retails3.png" alt="retails3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative12.png" alt="automative12" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi12.png" alt="bfsi12" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsifintech"><img src="assets/images/servicesclients/bfsifintech/bsfifin4.png" alt="bsfifin4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci12.png" alt="bci12" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="chartedaccountantindustry"><img src="assets/images/servicesclients/chartedaccountantindustry/cai4.png" alt="cai4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="contructionindustry"><img src="assets/images/servicesclients/contructionindustry/constindustry3.png" alt="constindustry3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus2.png" alt="fmcgindus2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother2.png" alt="fmcgother2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="governmentindustry"><img src="assets/images/servicesclients/governmentindustry/govtindu4.png" alt="govtindu4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare2.png" alt="healthcare2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="hotelindustry"><img src="assets/images/servicesclients/hotelindustry/hotelindus4.png" alt="hotelindus4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry12.png" alt="industry12" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry12.png" alt="itindustry12" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites3.png" alt="itnites3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing4.png" alt="manufacturing4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="miningindustry"><img src="assets/images/servicesclients/miningindustry/miningindustry4.png" alt="miningindustry4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="realstateindustry"><img src="assets/images/servicesclients/realstateindustry/realestate4.png" alt="realestate4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative13.png" alt="automative13" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi13.png" alt="bfsi13" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsifintech"><img src="assets/images/servicesclients/bfsifintech/bsfifin5.png" alt="bsfifin5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci13.png" alt="bci13" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="chartedaccountantindustry"><img src="assets/images/servicesclients/chartedaccountantindustry/cai5.png" alt="cai5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="contructionindustry"><img src="assets/images/servicesclients/contructionindustry/constindustry4.png" alt="constindustry4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus3.png" alt="fmcgindus3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother3.png" alt="fmcgother3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="governmentindustry"><img src="assets/images/servicesclients/governmentindustry/govtindu5.png" alt="govtindu5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare3.png" alt="healthcare3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry13.png" alt="industry13" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry13.png" alt="itindustry13" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites4.png" alt="itnites4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing5.png" alt="manufacturing5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative14.png" alt="automative14" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi14.png" alt="bfsi14" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsifintech"><img src="assets/images/servicesclients/bfsifintech/bsfifin6.png" alt="bsfifin6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci2.png" alt="bci2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="chartedaccountantindustry"><img src="assets/images/servicesclients/chartedaccountantindustry/cai6.png" alt="cai6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="contructionindustry"><img src="assets/images/servicesclients/contructionindustry/constindustry5.png" alt="constindustry5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus4.png" alt="fmcgindus4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother4.png" alt="fmcgother4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare4.png" alt="healthcare4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry14.png" alt="industry14" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry14.png" alt="itindustry14" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites5.png" alt="itnites5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing6.png" alt="manufacturing6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative15.png" alt="automative15" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi15.png" alt="bfsi15" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsifintech"><img src="assets/images/servicesclients/bfsifintech/bsfifin7.png" alt="bsfifin7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci3.png" alt="bci3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="contructionindustry"><img src="assets/images/servicesclients/contructionindustry/constindustry6.png" alt="constindustry6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus5.png" alt="fmcgindus5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother5.png" alt="fmcgother5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare5.png" alt="healthcare5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry2.png" alt="industry2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry15.png" alt="itindustry15" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites6.png" alt="itnites6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing7.png" alt="manufacturing7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative16.png" alt="automative16" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi16.png" alt="bfsi16" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci4.png" alt="bci4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="contructionindustry"><img src="assets/images/servicesclients/contructionindustry/constindustry7.png" alt="constindustry7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus6.png" alt="fmcgindus6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother6.png" alt="fmcgother6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare6.png" alt="healthcare6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry3.png" alt="industry3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry16.png" alt="itindustry16" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites7.png" alt="itnites7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing8.png" alt="manufacturing8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative2.png" alt="automative2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi17.png" alt="bfsi17" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci5.png" alt="bci5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="contructionindustry"><img src="assets/images/servicesclients/contructionindustry/constindustry8.png" alt="constindustry8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus7.png" alt="fmcgindus7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother7.png" alt="fmcgother7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare7.png" alt="healthcare7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry4.png" alt="industry4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry17.png" alt="itindustry17" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites8.png" alt="itnites8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing9.png" alt="manufacturing9" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative3.png" alt="automative3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi18.png" alt="bfsi18" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci6.png" alt="bci6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="contructionindustry"><img src="assets/images/servicesclients/contructionindustry/constindustry9.png" alt="constindustry9" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus8.png" alt="fmcgindus8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother8.png" alt="fmcgother8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare8.png" alt="healthcare8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry5.png" alt="industry5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry18.png" alt="itindustry18" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites9.png" alt="itnites9" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative4.png" alt="automative4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi19.png" alt="bfsi19" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci7.png" alt="bci7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus9.png" alt="fmcgindus9" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother9.png" alt="fmcgother9" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare9.png" alt="healthcare9" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry6.png" alt="industry6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry19.png" alt="itindustry19" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative5.png" alt="automative5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi2.png" alt="bfsi2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci8.png" alt="bci8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry7.png" alt="industry7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry2.png" alt="itindustry2" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative6.png" alt="automative6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi20.png" alt="bfsi20" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci9.png" alt="bci9" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry8.png" alt="industry8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry20.png" alt="itindustry20" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative7.png" alt="automative7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi21.png" alt="bfsi21" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry9.png" alt="industry9" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry21.png" alt="itindustry21" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative8.png" alt="automative8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi22.png" alt="bfsi22" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry22.png" alt="itindustry22" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative9.png" alt="automative9" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi23.png" alt="bfsi23" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry23.png" alt="itindustry23" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi24.png" alt="bfsi24" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry24.png" alt="itindustry24" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi25.png" alt="bfsi25" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry25.png" alt="itindustry25" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi26.png" alt="bfsi26" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry26.png" alt="itindustry26" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi27.png" alt="bfsi27" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry27.png" alt="itindustry27" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi28.png" alt="bfsi28" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry28.png" alt="itindustry28" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi29.png" alt="bfsi29" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry29.png" alt="itindustry29" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi3.png" alt="bfsi3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry3.png" alt="itindustry3" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi30.png" alt="bfsi30" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry30.png" alt="itindustry30" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi31.png" alt="bfsi31" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry31.png" alt="itindustry31" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi32.png" alt="bfsi32" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry32.png" alt="itindustry32" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi33.png" alt="bfsi33" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry33.png" alt="itindustry33" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi34.png" alt="bfsi34" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry34.png" alt="itindustry34" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi35.png" alt="bfsi35" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry35.png" alt="itindustry35" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi36.png" alt="bfsi36" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry36.png" alt="itindustry36" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi4.png" alt="bfsi4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry37.png" alt="itindustry37" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi5.png" alt="bfsi5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry38.png" alt="itindustry38" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi6.png" alt="bfsi6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry39.png" alt="itindustry39" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi7.png" alt="bfsi7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry4.png" alt="itindustry4" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi8.png" alt="bfsi8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry40.png" alt="itindustry40" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi9.png" alt="bfsi9" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry41.png" alt="itindustry41" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry42.png" alt="itindustry42" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry43.png" alt="itindustry43" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry44.png" alt="itindustry44" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry45.png" alt="itindustry45" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry46.png" alt="itindustry46" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry47.png" alt="itindustry47" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry48.png" alt="itindustry48" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry49.png" alt="itindustry49" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry5.png" alt="itindustry5" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry50.png" alt="itindustry50" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry51.png" alt="itindustry51" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry52.png" alt="itindustry52" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry53.png" alt="itindustry53" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry54.png" alt="itindustry54" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry55.png" alt="itindustry55" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry56.png" alt="itindustry56" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry57.png" alt="itindustry57" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry58.png" alt="itindustry58" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry6.png" alt="itindustry6" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry7.png" alt="itindustry7" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry8.png" alt="itindustry8" class="oc-logo-img" loading="lazy"></div>
+                <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry9.png" alt="itindustry9" class="oc-logo-img" loading="lazy"></div>
+            </div>
+        </div>
+
+    </section>
+
     <!-- Start the conversation section -->
     <section id="sthirosconversationsec">
         <div class="conversationsvgsec">
@@ -1586,6 +2464,106 @@
     </script>
 
 
+        <script>
+        (function() {
+            const toggle = document.getElementById('all-industries-toggle');
+            const marquee = document.getElementById('oc-marquee-container');
+            const grid = document.getElementById('oc-grid-container');
+            const track = document.getElementById('oc-marquee-track');
+            const toggleText = toggle ? toggle.querySelector('.oc-toggle-text') : null;
+
+            // Cache all initial logo elements (the full set)
+            const allItems = Array.from(track.querySelectorAll('.oc-logo-item'));
+
+            function applyFilter(category, categoryName) {
+                let matched = [];
+
+                if (category === 'all') {
+                    const halfLength = Math.floor(allItems.length / 2);
+                    matched = allItems.slice(0, halfLength);
+                    if (toggleText) toggleText.textContent = 'ALL INDUSTRIES';
+                } else {
+                    const cats = category.split(',');
+                    const halfLength = Math.floor(allItems.length / 2);
+                    const uniqueItems = allItems.slice(0, halfLength);
+                    matched = uniqueItems.filter(el => cats.includes(el.getAttribute('data-folder')));
+                    if (toggleText) toggleText.textContent = 'ALL INDUSTRIES';
+                }
+
+                if (matched.length > 0) {
+                    track.innerHTML = '';
+                    track.style.animation = 'none';
+                    
+                    // Append one set
+                    matched.forEach(el => track.appendChild(el.cloneNode(true)));
+
+                    requestAnimationFrame(() => {
+                        const containerWidth = marquee.clientWidth;
+                        const contentWidth = track.scrollWidth;
+
+                        if (contentWidth > containerWidth) {
+                            // Repeat to fill and allow scrolling
+                            const setsPerHalf = Math.max(1, Math.ceil(containerWidth / contentWidth));
+                            const totalSets = setsPerHalf * 2;
+                            
+                            for (let r = 1; r < totalSets; r++) {
+                                matched.forEach(el => track.appendChild(el.cloneNode(true)));
+                            }
+                            
+                            track.style.width = 'max-content';
+                            track.style.justifyContent = 'flex-start';
+                            track.style.animationName = 'scrollMarquee';
+                            track.style.animationDuration = Math.max(15, matched.length * totalSets * 1.5) + 's';
+                            track.style.animationTimingFunction = 'linear';
+                            track.style.animationIterationCount = 'infinite';
+                        } else {
+                            // No scroll needed, just center
+                            track.style.width = '100%';
+                            track.style.justifyContent = 'center';
+                            track.style.animationName = 'none';
+                        }
+                    });
+                } else {
+                    track.innerHTML = '';
+                }
+
+                // Reset animation slightly to re-trigger cleanly
+                track.offsetHeight;
+            }
+
+            // Toggle grid / marquee
+            if (toggle) {
+                toggle.addEventListener('click', function() {
+                    if (grid.style.display === 'none' || grid.style.display === '') {
+                        grid.style.display = 'block';
+                        this.classList.add('active');
+                    } else {
+                        // When dropdown closes from clicking the toggle, reset to "ALL INDUSTRIES" and show marquee
+                        document.querySelectorAll('.oc-grid-item').forEach(i => i.classList.remove('active'));
+                        applyFilter('all', 'ALL INDUSTRIES');
+                        
+                        grid.style.display = 'none';
+                        this.classList.remove('active');
+                    }
+                });
+            }
+
+            // Industry filter click
+            document.querySelectorAll('.oc-grid-item').forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelectorAll('.oc-grid-item').forEach(i => i.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const category = this.getAttribute('data-category');
+                    const categoryName = this.textContent.trim();
+                    
+                    applyFilter(category, categoryName);
+                    // Do not close grid, so the logos update dynamically while grid is open
+                });
+            });
+        })();
+    </script>
 
     <!-- ═══════════════ FOOTER ═══════════════ -->
     <footer id="footer" class="site-footer">
@@ -1627,7 +2605,8 @@
         <hr class="footer-bottom-line">
 
         <div class="footer-massive-logo-section">
-            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo">
+            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo massive-logo-dark">
+            <img src="assets/images/sthiroslogodark.png" alt="Sthiros" class="massive-logo massive-logo-light">
             <div class="copyright-text">© 2026</div>
         </div>
     </footer>

@@ -21,7 +21,7 @@
 
 :root {
   /* Core Palette */
-  --bg: #000000;
+  --bg: #000000; --bg-rgb: 0, 0, 0;
   --bg-2: #0D0D0D;
   --bg-card: #111111;
   --border: rgba(255, 255, 255, 0.07);
@@ -50,6 +50,18 @@
 
   /* Transitions */
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body.light-mode {
+  --bg: #FFFFFF; --bg-rgb: 255, 255, 255;
+  --bg-2: #F7F7F7;
+  --bg-card: #F0F0F0;
+  --border: rgba(0, 0, 0, 0.1);
+  --border-red: rgba(236, 45, 38, 0.4);
+
+  --text-primary: #111111;
+  --text-secondary: #555555;
+  --text-muted: #888888;
 }
 
 /* ═══════════════ PRELOADER ═══════════════ */
@@ -4146,9 +4158,9 @@ html.lenis body {
   border: none;
   padding: 0;
   cursor: pointer;
-  /* display: flex;  <-- Unhide this to show the toggle */
-  display: none;
+  display: flex;
   align-items: center;
+  order: -1; /* Move before search */
 }
 
 /* ── TOGGLE SWITCH ── */
@@ -5060,10 +5072,6 @@ body.light-mode {
   color: #111;
 }
 
-body.light-mode .site-header {
-  background: #fff;
-  border-bottom: 1px solid #e0e0e0;
-}
 
 body.light-mode .menu-overlay {
   background-color: #f0f0f0;
@@ -6497,4 +6505,34 @@ body.light-mode .section-services {
   body {
     zoom: 1.25;
   }
+}
+
+/* Light mode Footer Overrides */
+body.light-mode .footer-heading {
+    color: #000000;
+}
+body.light-mode .footer-menu li a {
+    color: #000000;
+}
+body.light-mode .copyright-text {
+    color: #000000;
+}
+body.light-mode .social-img {
+    filter: invert(1);
+}
+.massive-logo-light {
+    display: none;
+}
+body.light-mode .massive-logo-dark {
+    display: none;
+}
+body.light-mode .massive-logo-light {
+    display: block;
+}
+
+.footer-menu li.active::after {
+    width: 100%;
+}
+.footer-menu li.active a {
+    color: #EC2D26 !important;
 }

@@ -10,6 +10,96 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css?v=7" />
     <style>
+        /* Light mode specific overrides for Contact & Work Sections */
+        body.light-mode .contact-info-section,
+        body.light-mode .work-section {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        body.light-mode .work-heading,
+        body.light-mode .info-block h3,
+        body.light-mode .contact-form label,
+        body.light-mode .work-form label,
+        body.light-mode .form-heading,
+        body.light-mode .job-info h3,
+        body.light-mode .check-text {
+            color: #000000;
+        }
+
+        body.light-mode .info-block p,
+        body.light-mode .job-info p {
+            color: #555555;
+        }
+
+        /* Form border-bottom #EF4623 */
+        body.light-mode .contact-form input[type="text"],
+        body.light-mode .contact-form input[type="email"],
+        body.light-mode .contact-form input[type="tel"],
+        body.light-mode .contact-form textarea,
+        body.light-mode .work-form input[type="text"],
+        body.light-mode .work-form input[type="email"],
+        body.light-mode .work-form input[type="tel"],
+        body.light-mode .work-form select {
+            color: #000000;
+            border-bottom: 1px solid #EF4623 !important;
+        }
+
+        body.light-mode .work-form input::placeholder {
+            color: #888888;
+        }
+        
+        body.light-mode .contact-form input:focus,
+        body.light-mode .contact-form textarea:focus,
+        body.light-mode .work-form input:focus {
+            border-bottom: 1px solid #EF4623 !important;
+        }
+
+        /* SEND and SUBMIT buttons text black in light mode */
+        body.light-mode .contact-info-section .btn-inner,
+        body.light-mode .work-section .btn-inner {
+            color: #000000 !important;
+        }
+
+        body.light-mode .contact-info-section .btn-inner:hover,
+        body.light-mode .work-section .btn-inner:hover {
+            color: #ffffff !important;
+        }
+
+        /* Choose department dropdown: white bg and black text */
+        body.light-mode .dropdown-selected {
+            color: #000000;
+            border-bottom: 1px solid #EF4623 !important;
+        }
+
+        body.light-mode .dropdown-selected span {
+            color: #000000 !important;
+        }
+
+        body.light-mode .dropdown-options {
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        body.light-mode .dropdown-option {
+            color: #000000;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            padding: 12px 15px;
+            box-sizing: border-box;
+        }
+
+        body.light-mode .dropdown-option:hover {
+            color: #EF4623;
+            background-color: #f8f8f8;
+        }
+
+        body.light-mode .file-btn {
+            background: #e4e4e4;
+            color: #000000;
+        }
+
         .contact-hero {
             position: relative;
             width: 100%;
@@ -1471,7 +1561,8 @@
         <hr class="footer-bottom-line">
 
         <div class="footer-massive-logo-section">
-            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo">
+            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo massive-logo-dark">
+            <img src="assets/images/sthiroslogodark.png" alt="Sthiros" class="massive-logo massive-logo-light">
             <div class="copyright-text">© 2026</div>
         </div>
     </footer>
@@ -1493,7 +1584,8 @@
                 optionsList.forEach(option => {
                     option.addEventListener('click', () => {
                         selectedText.textContent = option.textContent;
-                        selectedText.style.color = '#FFF';
+                        selected.classList.add('selected-active');
+                        selectedText.style.color = document.body.classList.contains('light-mode') ? '#000000' : '#FFFFFF';
                         input.value = option.textContent;
                         optionsContainer.classList.remove('show');
                         selected.classList.remove('open');

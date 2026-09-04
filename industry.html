@@ -11,6 +11,122 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css?v=7" />
     <style>
+        /* General Light Mode Overrides for Industry */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Password Gate */
+        body.light-mode #sthiros-password-gate {
+            background-color: #ffffff !important;
+        }
+
+        body.light-mode #sthiros-password-gate h2 {
+            color: #000000 !important;
+        }
+
+        body.light-mode #sthiros-gate-input {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+            border: 1px solid #ccc !important;
+        }
+
+        /* Headings */
+        body.light-mode .wtrp-heading,
+        body.light-mode .hsd-heading,
+        body.light-mode .hsd-feature-content h3,
+        body.light-mode .we-heading,
+        body.light-mode .chts-title,
+        body.light-mode #skithedesksec h2,
+        body.light-mode .sthiros-trans-title,
+        body.light-mode .problem-heading-text,
+        body.light-mode .problem-text,
+        body.light-mode .solution-main h3,
+        body.light-mode .service-title,
+        body.light-mode .chts-card-title,
+        body.light-mode .chts-subtitle,
+        body.light-mode #skithedesksec p {
+            color: #000000;
+        }
+
+        /* Subheadings and Paragraphs */
+        body.light-mode .wtrp-subheading,
+        body.light-mode .hsd-feature-content p,
+        body.light-mode .chts-desc,
+        body.light-mode .chts-card-desc,
+        body.light-mode .sthiros-trans-text,
+        body.light-mode .problem-desc,
+        body.light-mode .solution-main p,
+        body.light-mode .service-list li,
+        body.light-mode .we-card p {
+            color: #333333;
+        }
+
+        body.light-mode .service-list li::before {
+            color: #333333;
+        }
+
+        /* Buttons */
+        body.light-mode .fix-btn,
+        body.light-mode #skithedesksec .hero-btn-inner {
+            color: #000000 !important;
+        }
+
+        body.light-mode .fix-btn:hover,
+        body.light-mode #skithedesksec .hero-btn-inner:hover {
+            color: #ffffff !important;
+        }
+
+        body.light-mode .segment-btn {
+            color: #000000;
+            border-color: rgba(0, 0, 0, 0.3);
+        }
+
+        body.light-mode .segment-btn:hover {
+            border-color: #000000;
+        }
+
+        body.light-mode .segment-btn.active {
+            color: #ffffff;
+            background-color: #EC2D26;
+            border-color: #EC2D26;
+        }
+
+        /* Cards and Elements Backgrounds */
+        body.light-mode .problem-header,
+        body.light-mode .segment-tabs,
+        body.light-mode .we-card {
+            background-color: #ffffff;
+        }
+
+        body.light-mode .problem-item.active,
+        body.light-mode .problem-item:hover {
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+
+        body.light-mode .chts-card-footer {
+            border-top: 1px solid #000000;
+        }
+
+        body.light-mode .chts-card-footer a {
+            color: #000000;
+        }
+
+        body.light-mode .chts-card.is-active .chts-card-footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.8) !important;
+        }
+
+        body.light-mode .chts-card.is-active .chts-card-title,
+        body.light-mode .chts-card.is-active .chts-card-desc,
+        body.light-mode .chts-card.is-active .chts-card-footer a {
+            color: #ffffff !important;
+        }
+
+        body.light-mode .skipthedeskcont {
+            background-image: url('assets/images/industries/industryreadywhenyulight.jpg');
+        }
+
         .industry-hero {
             position: relative;
             width: 100%;
@@ -1396,13 +1512,11 @@
 </head>
 
 <body>
-
     <!-- PASSWORD GATE OVERLAY -->
     <div id="sthiros-password-gate"
         style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000; z-index: 9999999; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Quicksand', sans-serif;">
         <div style="text-align: center;">
-            <h2 style="color: #fff; font-size: 24px; margin-bottom: 25px; font-weight: 500;">Please enter password to
-                access site</h2>
+            <h2 style="color: #fff; font-size: 24px; margin-bottom: 25px; font-weight: 500;">Please enter password to access site</h2>
             <div style="display: flex; gap: 10px; justify-content: center;">
                 <input type="password" id="sthiros-gate-input" placeholder="Enter password"
                     style="padding: 12px 20px; font-size: 16px; border: 1px solid #333; border-radius: 6px; background-color: #111; color: #fff; outline: none; width: 280px;">
@@ -4810,7 +4924,8 @@ We’ll show you the right problems. -->
         <hr class="footer-bottom-line">
 
         <div class="footer-massive-logo-section">
-            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo">
+            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo massive-logo-dark">
+            <img src="assets/images/sthiroslogodark.png" alt="Sthiros" class="massive-logo massive-logo-light">
             <div class="copyright-text">© 2026</div>
         </div>
     </footer>

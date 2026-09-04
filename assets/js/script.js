@@ -2073,11 +2073,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ═══════════════ TOGGLE BUTTON (sirf on/off visual) ═══════════════
+  // ═══════════════ TOGGLE BUTTON (Light/Dark Mode) ═══════════════
   const themeToggleBtn = document.querySelector('.theme-toggle');
+  
+  // Set initial theme on load based on localStorage
+  const currentTheme = localStorage.getItem('sthiros-theme') || 'dark';
+  if (currentTheme === 'light') {
+    document.body.classList.add('light-mode');
+    if (themeToggleBtn) themeToggleBtn.classList.add('is-on');
+  }
+
   if (themeToggleBtn) {
     themeToggleBtn.addEventListener('click', () => {
-      themeToggleBtn.classList.toggle('is-on');
+      const isLight = document.body.classList.contains('light-mode');
+      if (isLight) {
+        document.body.classList.remove('light-mode');
+        localStorage.setItem('sthiros-theme', 'dark');
+        themeToggleBtn.classList.remove('is-on');
+      } else {
+        document.body.classList.add('light-mode');
+        localStorage.setItem('sthiros-theme', 'light');
+        themeToggleBtn.classList.add('is-on');
+      }
     });
   }
 
@@ -2892,5 +2909,29 @@ document.addEventListener('DOMContentLoaded', () => {
         menu.addEventListener('click', (e) => {
             e.stopPropagation();
         });
+    });
+});
+
+// Automatically set the active footer menu item based on the current URL
+document.addEventListener('DOMContentLoaded', () => {
+    let currentPath = window.location.pathname;
+    let pageName = currentPath.split('/').pop() || 'index.html';
+    
+    // Map child pages to their main parent menu links
+    let targetPage = pageName;
+    if (pageName.startsWith('industry')) targetPage = 'industry.html';
+    else if (pageName.startsWith('services') || pageName.startsWith('strategy') || pageName.startsWith('risk')) targetPage = 'services.html';
+    
+    const footerLinks = document.querySelectorAll('.footer-menu li');
+    // Clear any hardcoded active classes
+    footerLinks.forEach(li => li.classList.remove('active'));
+    
+    // Set active class on matching link
+    const links = document.querySelectorAll('.footer-menu li a');
+    links.forEach(a => {
+        const href = a.getAttribute('href');
+        if (href && (href === targetPage || href === pageName)) {
+            a.parentElement.classList.add('active');
+        }
     });
 });

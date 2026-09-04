@@ -10,6 +10,152 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <style>
+/* General Light Mode Overrides for Industry */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Password Gate */
+        body.light-mode #sthiros-password-gate {
+            background-color: #ffffff !important;
+        }
+        body.light-mode #sthiros-password-gate h2 {
+            color: #000000 !important;
+        }
+        body.light-mode #sthiros-gate-input {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+            border: 1px solid #ccc !important;
+        }
+
+        /* Headings */
+        body.light-mode .wtrp-heading,
+        body.light-mode .hsd-heading,
+        body.light-mode .hsd-feature-content h3,
+        body.light-mode .we-heading,
+        body.light-mode .chts-title,
+        body.light-mode #skithedesksec h2,
+        body.light-mode .sthiros-trans-title,
+        body.light-mode .problem-heading-text,
+        body.light-mode .problem-text,
+        body.light-mode .solution-main h3,
+        body.light-mode .service-title,
+        body.light-mode .chts-card-title,
+        body.light-mode .chts-subtitle,
+        body.light-mode #skithedesksec p {
+            color: #000000;
+        }
+
+        /* Subheadings and Paragraphs */
+        body.light-mode .wtrp-subheading,
+        body.light-mode .hsd-feature-content p,
+        body.light-mode .chts-desc,
+        body.light-mode .chts-card-desc,
+        body.light-mode .sthiros-trans-text,
+        body.light-mode .problem-desc,
+        body.light-mode .solution-main p,
+        body.light-mode .service-list li,
+        body.light-mode .we-card p {
+            color: #333333;
+        }
+
+        body.light-mode .service-list li::before {
+            color: #333333;
+        }
+
+        /* Buttons */
+        body.light-mode .fix-btn,
+        body.light-mode #skithedesksec .hero-btn-inner {
+            color: #000000 !important;
+        }
+        
+        body.light-mode .fix-btn:hover,
+        body.light-mode #skithedesksec .hero-btn-inner:hover {
+            color: #ffffff !important;
+        }
+
+        body.light-mode .segment-btn {
+            color: #000000;
+            border-color: rgba(0, 0, 0, 0.3);
+        }
+
+        body.light-mode .segment-btn:hover {
+            border-color: #000000;
+        }
+
+        body.light-mode .segment-btn.active {
+            color: #ffffff;
+            background-color: #EC2D26;
+            border-color: #EC2D26;
+        }
+
+        /* Cards and Elements Backgrounds */
+        body.light-mode .problem-header,
+        body.light-mode .segment-tabs,
+        body.light-mode .we-card {
+            background-color: #ffffff;
+        }
+
+        body.light-mode .problem-item.active,
+        body.light-mode .problem-item:hover {
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+        
+        body.light-mode .chts-card-footer {
+            border-top: 1px solid #000000;
+        }
+
+        body.light-mode .chts-card-footer a {
+            color: #000000;
+        }
+
+        body.light-mode .chts-card.is-active .chts-card-footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.8) !important;
+        }
+
+        body.light-mode .chts-card.is-active .chts-card-title,
+        body.light-mode .chts-card.is-active .chts-card-desc,
+        body.light-mode .chts-card.is-active .chts-card-footer a {
+            color: #ffffff !important;
+        }
+
+        body.light-mode .skipthedeskcont {
+            background-image: url('assets/images/industries/industryreadywhenyulight.jpg');
+        }
+
+        /* Services Page Specific Light Mode Overrides */
+        body.light-mode .services-description,
+        body.light-mode .conversationcontsec p {
+            color: #333333;
+        }
+
+        body.light-mode .service-card:not(.active) .service-title {
+            color: #ffffff !important;
+        }
+
+        body.light-mode #sthirosconversationsec {
+            background-color: #ffffff;
+        }
+
+        body.light-mode .conversationcontsec {
+            background-image: url('assets/images/industries/industryreadywhenyulight.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        body.light-mode .conversationcontsec h2 {
+            color: #000000;
+        }
+
+        body.light-mode .conv-btn-inner {
+            color: #000000 !important;
+        }
+
+        body.light-mode .conv-btn-inner:hover {
+            color: #ffffff !important;
+        }
+
         body,
         html {
             margin: 0;
@@ -1238,7 +1384,84 @@
                 margin-left: 2rem;
             }
         }
-    </style>
+    
+        /* Strategy Specific Overrides */
+        body.light-mode .hero { background-color: #000000 !important; }
+        body.light-mode .hero .main-heading {
+            color: #ffffff !important;
+        }
+        body.light-mode .hero .breadcrumb,
+        body.light-mode .hero .highlight {
+            color: #EC2D26 !important;
+        }
+
+        body.light-mode .herotrackspara {
+            color: #000000 !important;
+        }
+
+        body.light-mode .deliverable-main-title,
+        body.light-mode .deliverable-desc {
+            color: #000000 !important;
+        }
+        
+        body.light-mode .deliverable-item.active .deliverable-desc {
+            color: #000000 !important;
+        }
+
+        body.light-mode .deliverable-grid-col h4,
+        body.light-mode .deliverable-grid-col p {
+            color: #000000 !important;
+        }
+
+        body.light-mode .diff-title {
+            color: #000000 !important;
+        }
+        body.light-mode .diff-card {
+            background-color: #ffffff !important;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        body.light-mode .diff-card .diff-card-collapsed p,
+        body.light-mode .diff-card .diff-card-content h3,
+        body.light-mode .diff-card .diff-card-content p {
+            color: #000000 !important;
+        }
+        body.light-mode .diff-card.active {
+            background-color: #EC2D26 !important;
+            border-color: #EC2D26 !important;
+        }
+        body.light-mode .diff-card.active .diff-card-collapsed p,
+        body.light-mode .diff-card.active .diff-card-content h3,
+        body.light-mode .diff-card.active .diff-card-content p {
+            color: #ffffff !important;
+        }
+
+        body.light-mode .wynt-title {
+            color: #000000 !important;
+        }
+        body.light-mode .wynt-card {
+            background-color: #ffffff !important;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        body.light-mode .wynt-card p {
+            color: #000000 !important;
+        }
+        body.light-mode .wynt-card:hover {
+            background-color: #EC2D26 !important;
+            border-color: #EC2D26 !important;
+        }
+        body.light-mode .wynt-card:hover p {
+            color: #ffffff !important;
+        }
+
+        body.light-mode .rcs-title {
+            color: #000000 !important;
+        }
+        body.light-mode .rcs-nav-btn {
+            background-color: #000000 !important;
+            border-radius: 50% !important;
+        }
+
+</style>
 </head>
 
 <body>
@@ -2208,7 +2431,8 @@
         <hr class="footer-bottom-line">
 
         <div class="footer-massive-logo-section">
-            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo">
+            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo massive-logo-dark">
+            <img src="assets/images/sthiroslogodark.png" alt="Sthiros" class="massive-logo massive-logo-light">
             <div class="copyright-text">© 2026</div>
         </div>
     </footer>

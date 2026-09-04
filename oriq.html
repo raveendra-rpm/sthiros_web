@@ -756,6 +756,40 @@
                 max-width: 1100px;
             }
         }
+
+        /* ═══════════════ LIGHT MODE OVERRIDES ═══════════════ */
+        body.light-mode #productsexploretxt p {
+            color: #000 !important;
+        }
+
+        body.light-mode .compliance-feature-card {
+            background-color: #fff !important;
+            border-color: #C62620 !important;
+        }
+
+        body.light-mode .compliance-feature-card .cf-heading,
+        body.light-mode .compliance-feature-card .cf-subheading,
+        body.light-mode .compliance-feature-card .cf-desc,
+        body.light-mode .compliance-feature-card .cf-small-desc,
+        body.light-mode .compliance-feature-card .cf-stat-num,
+        body.light-mode .compliance-feature-card .cf-stat-text,
+        body.light-mode .compliance-feature-card .cf-right,
+        body.light-mode .compliance-feature-card .cf-feature-title,
+        body.light-mode .compliance-feature-card .cf-feature-sub,
+        body.light-mode .compliance-feature-card .cf-feature-list li,
+        body.light-mode .compliance-feature-card .cf-action-btn-wrap .hero-btn-inner {
+            color: #000 !important;
+        }
+
+        body.light-mode .telluswhatssvgtopcont {
+            background-image: url('assets/images/productsinsights/productwhenyulight.jpg') !important;
+        }
+
+        body.light-mode .telluswhatssvgtopcont .tw-heading,
+        body.light-mode .telluswhatssvgtopcont .tw-desc,
+        body.light-mode .telluswhatssvgtopcont .tw-btn-wrap .hero-btn-inner {
+            color: #000 !important;
+        }
     </style>
 </head>
 
@@ -1617,7 +1651,8 @@
         <hr class="footer-bottom-line">
 
         <div class="footer-massive-logo-section">
-            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo">
+            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo massive-logo-dark">
+            <img src="assets/images/sthiroslogodark.png" alt="Sthiros" class="massive-logo massive-logo-light">
             <div class="copyright-text">© 2026</div>
         </div>
     </footer>
