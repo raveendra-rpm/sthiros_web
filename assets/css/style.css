@@ -836,6 +836,19 @@ html.lenis body {
   background: #050505;
 }
 
+/* Light Mode Overrides for Stats Cards */
+body.light-mode .stat-card {
+  background: #ffffff;
+}
+
+body.light-mode .stat-card:hover {
+  background: #f7f7f7;
+}
+
+body.light-mode .stat-label {
+  color: #000000;
+}
+
 /* Large orange stat number — bold, tight tracking */
 .stat-value {
   font-family: 'Pacaembu', sans-serif;
@@ -1085,6 +1098,11 @@ html.lenis body {
   width: 1px;
   background: linear-gradient(to bottom, rgba(232, 75, 26, 0.4), transparent);
   border-radius: 1px;
+}
+
+/* Mobile Services SVG line - hidden by default on desktop */
+.services-mobile-svg-wrap {
+  display: none;
 }
 
 /* Rail that descends from the "Four disciplines." heading and turns right.
@@ -2000,6 +2018,11 @@ html.lenis body {
   line-height: 1.6;
   margin: 0;
   max-width: 490px;
+}
+
+/* Work Holds Slider Navigation Buttons (Hidden on desktop) */
+.workhold-nav-container {
+  display: none;
 }
 
 /* Responsive styles for Workholds pinned container */
@@ -3719,6 +3742,14 @@ html.lenis body {
   margin: 0;
 }
 
+.m-br {
+  display: none;
+}
+
+.d-br {
+  display: inline;
+}
+
 .btn-talk-to-us {
   display: inline-flex;
   align-items: center;
@@ -5086,9 +5117,196 @@ body.light-mode .nav-link.active {
   color: #F13715;
 }
 
+/* Hero section stays exactly as dark mode in light mode */
 body.light-mode .section-hero,
-body.light-mode .section-services {
+body.light-mode #herosectionmobilescreen {
+  background-color: #000000;
+}
+
+body.light-mode .section-stats,
+body.light-mode .section-services,
+body.light-mode #realstories,
+body.light-mode #workholds,
+body.light-mode #ourstorysec,
+body.light-mode .section-why,
+body.light-mode .section-industries-new,
+body.light-mode .section-latest-thinking,
+body.light-mode .section-cta {
   background-color: #f5f5f5;
+}
+
+/* ═══════════════ LIGHT MODE TEXT & CARD OVERRIDES FOR INDEX PAGE ═══════════════ */
+
+/* ── Services Section Light Mode (Four Pillars. One thing) ── */
+body.light-mode .section-title {
+  color: #000000;
+}
+
+body.light-mode .section-eyebrow {
+  color: #555555;
+}
+
+body.light-mode .section-center-para {
+  color: #333333;
+}
+
+.strategy-sub {
+  color: #fff;
+}
+
+body.light-mode .strategy-content p,
+body.light-mode .strategy-sub {
+  color: #333333 !important;
+}
+
+body.light-mode .risk-sub,
+body.light-mode .cyber-sub,
+body.light-mode .ai-sub {
+  color: #333333;
+}
+
+body.light-mode .strategy-img-svg image,
+body.light-mode .risk-service-img,
+body.light-mode .cyber-img-svg image,
+body.light-mode .ai-service-img {
+  filter: invert(1) hue-rotate(180deg) drop-shadow(0 4px 12px rgba(0, 0, 0, 0.08));
+}
+
+/* ── Real Stories Section Light Mode ── */
+body.light-mode #realstoriesheading h1 {
+  color: #000000;
+}
+
+body.light-mode .story-card {
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .story-card-desc {
+  color: #333333;
+}
+
+body.light-mode .story-arrow-btn .arrow-icon {
+  filter: brightness(0);
+}
+
+body.light-mode .story-card-left {
+  box-shadow: none;
+}
+
+body.light-mode .story-card-icon {
+  filter: invert(1) hue-rotate(180deg) drop-shadow(0 4px 12px rgba(0, 0, 0, 0.08));
+  box-shadow: none;
+}
+
+/* ── Work Holds Section Light Mode ── */
+body.light-mode #workholdheading h1 {
+  color: #000000;
+}
+
+body.light-mode .workhold-card-title {
+  color: #000000;
+}
+
+body.light-mode .workhold-card-desc {
+  color: #333333;
+}
+
+/* ── Our Story Section Light Mode ── */
+body.light-mode #ourstory h4 {
+  color: #666666;
+}
+
+body.light-mode #ourstory h1 {
+  color: #000000;
+}
+
+body.light-mode #ourstory p {
+  color: #333333;
+}
+
+body.light-mode #ourstorysec .hero-btn-inner,
+body.light-mode #ourstory .hero-btn-inner {
+  color: #000000;
+}
+
+body.light-mode #ourstorysec .hero-btn-outer:hover .hero-btn-inner,
+body.light-mode #ourstorysec .hero-btn-inner:hover,
+body.light-mode #ourstory .hero-btn-outer:hover .hero-btn-inner,
+body.light-mode #ourstory .hero-btn-inner:hover {
+  color: #ffffff;
+}
+
+/* ── Why Sthiros Section Light Mode ── */
+body.light-mode .why-title {
+  color: #000000;
+}
+
+body.light-mode .why-desc {
+  color: #333333;
+}
+
+/* ── Industries Section Light Mode ── */
+body.light-mode .industries-new-eyebrow {
+  color: #555555;
+}
+
+body.light-mode .industries-new-title {
+  color: #000000;
+}
+
+body.light-mode .industry-actual-card {
+  background-color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .expert-card {
+  filter: none !important;
+}
+
+body.light-mode .expert-card.active .industry-actual-card {
+  border: 1.5px solid var(--FLAME-ORANGE, #EF4623);
+  box-shadow: 0 0 25px rgba(239, 70, 35, 0.25), 0 15px 35px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+body.light-mode .industry-logo-placeholder img {
+  filter: invert(1) hue-rotate(180deg) drop-shadow(0 4px 12px rgba(0, 0, 0, 0.08));
+}
+
+body.light-mode .industry-para {
+  color: #333333;
+}
+/* ── Latest Thinking Section Light Mode ── */
+body.light-mode .thinking-eyebrow {
+  color: #555555;
+}
+
+body.light-mode .thinking-title {
+  color: #000000;
+}
+
+body.light-mode .thinking-card {
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .card-eyebrow {
+  color: #555555;
+}
+
+body.light-mode .thinking-card .card-title {
+  color: #000000;
+}
+
+body.light-mode .card-read-time {
+  color: #666666;
+}
+
+/* ── CTA Section Light Mode ── */
+body.light-mode .cta-divider {
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 /* Logo click hint */
@@ -5784,8 +6002,8 @@ body.light-mode .section-services {
     right: 10px;
     top: -250px;
     z-index: 1;
-    opacity: 0.8;
-    transform: scaleX(0.99) scaleY(0.95);
+    opacity: 1;
+    transform: scaleX(1.01) scaleY(0.95);
     transform-origin: top right;
   }
 
@@ -5801,13 +6019,14 @@ body.light-mode .section-services {
     width: calc(100% - 250px);
     overflow: hidden;
     z-index: 3;
-    opacity: 0.8;
-    transform: scaleX(1.01) scaleY(0.95);
+    opacity: 1;
+    transform: scaleY(0.95);
     transform-origin: top left;
   }
 
   .hero-mobile-right-svg svg {
     width: 800px;
+    height: 2500px;
     max-width: none;
   }
 
@@ -5989,8 +6208,8 @@ body.light-mode .section-services {
   }
 
   #services-title {
-    font-size: 55px !important;
-    line-height: 1.2 !important;
+    font-size: clamp(22px, 5.8vw, 29px) !important;
+    line-height: 1.25 !important;
   }
 
   .strategy-img-svg {
@@ -6101,14 +6320,15 @@ body.light-mode .section-services {
 /* Mobile Layout for Services Heading */
 @media (max-width: 768px) {
   #services .section-center {
-    background: #000;
-    padding: 30px 0;
+    background: transparent !important;
+    padding: 155px 20px 30px !important;
     position: relative;
     z-index: 5;
   }
 
   #services .section-center-para {
-    display: none !important;
+    width: 100% !important;
+    margin-top: 20px;
   }
 }
 
@@ -6130,10 +6350,14 @@ body.light-mode .section-services {
 
   #realtopstoriessvg svg,
   #workholdssvg svg,
+  .workholdssvg svg,
   #workholdbottomsvg svg,
+  .workholdbottomsvg svg,
   #ourstorybottomsvg svg,
-  #whysthirossvg svg {
-    width: calc((74 / 991) * 56vw) !important;
+  .ourstorybottomsvg svg,
+  #industriessvgbtm svg,
+  .industriessvgbtm svg {
+    width: 60px !important;
   }
 }
 
@@ -6535,4 +6759,600 @@ body.light-mode .massive-logo-light {
 }
 .footer-menu li.active a {
     color: #EC2D26 !important;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   MOBILE HEADINGS & SECTIONS REFINEMENTS (MAX-WIDTH: 768px)
+   Matches user instructions and reference images for mobile only
+   ════════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  /* 1. Real stories from our case files heading (Image 1) */
+  #realstoriesheading h1 {
+    font-size: clamp(24px, 6.5vw, 30px) !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+    margin: 0 auto 20px auto !important;
+  }
+
+  /* 2. Real stories card title smaller & left-aligned, paragraph left-aligned */
+  .story-card {
+    text-align: left !important;
+    align-items: flex-start !important;
+    padding: 30px 20px !important;
+    min-height: 420px !important;
+  }
+
+  .story-card-left {
+    justify-content: flex-start !important;
+    align-self: flex-start !important;
+    width: auto !important;
+    margin-bottom: 12px !important;
+  }
+
+  .story-card-icon {
+    max-width: 140px !important;
+    max-height: 140px !important;
+    margin: 0 !important;
+  }
+
+  .story-card-right {
+    text-align: left !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+  }
+
+  .story-card-title {
+    font-size: clamp(20px, 5.5vw, 24px) !important;
+    text-align: left !important;
+    margin-bottom: 10px !important;
+    line-height: 1.2 !important;
+  }
+
+  .story-card-desc {
+    text-align: left !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+
+  /* 3. Why the work holds after we leave heading (Image 2) */
+  #workholdheading h1 {
+    font-size: clamp(24px, 6.5vw, 30px) !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+    margin: 0 auto 20px auto !important;
+  }
+
+  /* 4. Why the work holds after we leave cards (Image 3) - Mobile Horizontal Slider */
+  #workholdslidecont {
+    height: auto !important;
+    min-height: auto !important;
+    position: relative !important;
+    padding: 10px 0 20px 0 !important;
+    overflow: hidden !important;
+    width: 100% !important;
+  }
+
+  .workhold-pinned-wrapper {
+    position: relative !important;
+    top: auto !important;
+    height: auto !important;
+    min-height: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    margin: 0 auto !important;
+  }
+
+  .workhold-cards-track {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+    gap: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.35, 1) !important;
+    will-change: transform !important;
+  }
+
+  .workhold-card {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    gap: 0 !important;
+    text-align: left !important;
+    box-sizing: border-box !important;
+    padding: 0 20px !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transform: scale(0.97) !important;
+    transition: opacity 0.4s ease, visibility 0.4s, transform 0.4s ease !important;
+  }
+
+  .workhold-card.active,
+  .workhold-card.is-animating {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    transform: scale(1) !important;
+  }
+
+  .workhold-card-img-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    border: 1.5px solid #EC2D26 !important;
+    border-radius: 22px !important;
+    overflow: hidden !important;
+    background: #000000 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    margin: 0 0 18px 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .workhold-card-img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    border-radius: 20px !important;
+    margin: 0 !important;
+    display: block !important;
+  }
+
+  .workhold-card-text-wrap {
+    text-align: left !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .workhold-card-title {
+    text-align: left !important;
+    font-size: clamp(22px, 6vw, 26px) !important;
+    line-height: 1.25 !important;
+    margin: 0 0 12px 0 !important;
+  }
+
+  .workhold-card-title br {
+    display: none !important;
+  }
+
+  .workhold-card-desc {
+    text-align: left !important;
+    font-size: 14.5px !important;
+    line-height: 1.55 !important;
+    color: #d0d0d0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+
+  /* Work Holds Slider Navigation Buttons (Mobile only) */
+  .workhold-nav-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 20px !important;
+    margin-top: 30px !important;
+    margin-bottom: 25px !important;
+    position: relative !important;
+    z-index: 10 !important;
+  }
+
+  .workhold-nav-container .story-arrow-btn.story-prev,
+  .workhold-nav-container .story-arrow-btn.story-next {
+    width: 68px !important;
+    height: 68px !important;
+  }
+
+  /* 5. Decades of simplifying the complex. heading (Image 4) */
+  #ourstory h1 {
+    font-size: clamp(24px, 6.5vw, 30px) !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+    margin: 0 auto 20px auto !important;
+  }
+
+  /* 6. Whatever your industry, the gap looks familiar section refinements */
+  .section-industries-new {
+    margin-top: 30px !important;
+    padding-top: 15px !important;
+  }
+
+  .industries-header-wrapper {
+    margin-bottom: 20px !important;
+  }
+
+  .industries-new-eyebrow {
+    margin-bottom: 12px !important;
+  }
+
+  .industries-new-title {
+    font-size: clamp(22px, 5.8vw, 26px) !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+    margin-bottom: 0 !important;
+  }
+
+  .industries-carousel-stage {
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+    height: 410px !important;
+  }
+
+  .industries-pagination {
+    margin-top: 5px !important;
+    margin-bottom: 30px !important;
+  }
+
+  /* 7. Intelligence built in the Field. section cards in single column */
+  .thinking-cards-wrapper {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+    width: 100% !important;
+  }
+
+  .thinking-card {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 220px !important;
+    padding: 30px 24px !important;
+  }
+
+  /* 8. Bring us the hardest one. CTA section mobile layout matching uploaded image */
+  .section-cta {
+    padding: 0 20px 50px !important;
+    margin-top: 0 !important;
+  }
+
+  .thinking-bottom-line {
+    margin-bottom: 0 !important;
+  }
+
+  .cta-container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .cta-banner {
+    background-color: #EC2D26 !important;
+    border-radius: 36px !important;
+    padding: 48px 28px 36px 28px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    min-height: 480px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    box-shadow: 0 15px 35px rgba(236, 45, 38, 0.25) !important;
+  }
+
+  .cta-content {
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  .cta-title {
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: 300 !important;
+    font-size: clamp(48px, 12.5vw, 62px) !important;
+    line-height: 1.08 !important;
+    letter-spacing: -0.8px !important;
+    color: #FFFFFF !important;
+    text-align: left !important;
+    margin: 0 !important;
+    word-break: keep-all !important;
+  }
+
+  .m-br {
+    display: block !important;
+  }
+
+  .d-br {
+    display: none !important;
+  }
+
+  .cta-action {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    margin-top: 40px !important;
+  }
+
+  .cta-action .hero-btn-outer.hero-btn-white {
+    width: 50% !important;
+    min-width: 135px !important;
+    max-width: 180px !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: 1px solid rgba(255, 255, 255, 0.9) !important;
+    border-radius: 50px !important;
+    padding: 3px !important;
+    background: transparent !important;
+    text-decoration: none !important;
+    box-sizing: border-box !important;
+  }
+
+  .cta-action .hero-btn-outer.hero-btn-white .hero-btn-inner {
+    width: 100% !important;
+    border: 1px solid rgba(255, 255, 255, 0.9) !important;
+    border-radius: 50px !important;
+    padding: 7px 16px !important;
+    font-family: 'Quicksand', sans-serif !important;
+    font-size: 12.5px !important;
+    font-weight: 400 !important;
+    line-height: 1.4 !important;
+    letter-spacing: 2px !important;
+    color: #FFFFFF !important;
+    text-transform: uppercase !important;
+    background: transparent !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    white-space: nowrap !important;
+  }
+
+  .cta-divider {
+    display: none !important;
+  }
+
+  /* 9. What We Do / Services Section Mobile Header (matching uploaded sample) */
+  .section-services,
+  #services {
+    background: transparent !important;
+  }
+
+  #services .section-center {
+    background: transparent !important;
+    padding: 155px 20px 30px !important;
+  }
+
+  #services-eyebrow {
+    font-family: 'Quicksand', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    line-height: 1.4 !important;
+    letter-spacing: 0.22em !important;
+    color: rgba(255, 255, 255, 0.65) !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    margin: 0 auto 16px auto !important;
+  }
+
+  #services-title {
+    font-family: 'Pacaembu', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: clamp(22px, 5.8vw, 29px) !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.2px !important;
+    text-align: center !important;
+    color: #FFFFFF !important;
+    margin: 0 auto 20px auto !important;
+  }
+
+  #services-title .title-line {
+    display: inline-block !important;
+    white-space: nowrap !important;
+  }
+
+  #services-title .text-red {
+    color: #EC2D26 !important;
+  }
+
+  /* Mobile Services SVG line below Four Pillars (matching uploaded sample) */
+  .section-services,
+  #services {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .services-mobile-svg-wrap {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    margin-top: 10px !important;
+    margin-bottom: 25px !important;
+    pointer-events: none !important;
+  }
+
+  .services-mobile-svg-wrap svg {
+    position: relative !important;
+    left: 50% !important;
+    /* Center the 4 starting vertical lines (midpoint x=37.028 out of 1812) precisely at 50% screen center */
+    transform: translateX(-2.0435%) !important;
+    width: clamp(1200px, 330vw, 1500px) !important;
+    height: auto !important;
+    display: block !important;
+  }
+}
+
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   MOBILE-ONLY (≤768px) FOUR PILLARS SCROLL RAIL  —  .smr
+   Completely separate from the desktop .services-rail. Nothing in this block
+   affects screens wider than 768px, and it lives entirely above #realstories.
+   ══════════════════════════════════════════════════════════════════════════ */
+.smr {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  /* The static elbow is now drawn inside the animated rail track instead */
+  .services-mobile-svg-wrap {
+    display: none !important;
+  }
+
+  .smr {
+    /* the stage takes the whole viewport: the heading has scrolled clear by the
+       time the rail pins, and every pixel here is vertical room for the rail */
+    --smr-top: 0px;
+    --smr-logo-h: clamp(132px, 45vw, 240px);
+
+    display: block;
+    position: relative;
+    width: 100%;
+    height: calc(100vh - var(--smr-top));
+    margin: 0;
+    z-index: 4;
+  }
+
+  /* svh keeps the stage inside the viewport while the browser chrome is up */
+  @supports (height: 100svh) {
+    .smr {
+      height: calc(100svh - var(--smr-top));
+    }
+  }
+
+  .smr-stage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .smr-track {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    will-change: transform;
+  }
+
+  /* ── rail segments: the Figma exports, chained mark to mark ──────────── */
+  .smr-seg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .smr-seg svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* the four bars continued upward — the gradient stops are cut to the same
+     widths as segment A's own paths, so the join is seamless */
+  .smr-seg-tail {
+    overflow: visible;
+  }
+
+  /* segment F is segment E stood on its head: the climb out of Risk turns left
+     into the Cyber mark instead of running on past it */
+  .smr-seg-flip svg {
+    transform: scaleY(-1);
+    transform-origin: 0 0;
+  }
+
+  /* ── a station: the logo box sits on the rail, copy centred underneath ── */
+  .smr-station {
+    position: absolute;
+    z-index: 2;
+    pointer-events: auto;
+  }
+
+  .smr-logo {
+    height: var(--smr-logo-h);
+    width: max-content;
+    display: block;
+  }
+
+  .smr-logo-svg,
+  .smr-logo-img {
+    height: 100%;
+    width: auto;
+    display: block;
+    object-fit: contain;
+  }
+
+  .smr-text {
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 84vw;
+    text-align: left;
+  }
+
+  /* Cyber sits like the comp: mark on the left, words to its right, and the
+     line leaving the mark's right edge above them. The climb that feeds it
+     comes up through the middle of the mark, so it is hidden behind it rather
+     than running down the outside. The copy starts below the outgoing line —
+     that line leaves at 42% of the mark's height and is 60px thick. */
+  .smr-station[data-text="side"] .smr-text {
+    left: calc(100% + 14px);
+    top: auto;
+    /* sits above the line that leaves the mark at 33% of its height, the way
+       the comp stacks it: words, then the outgoing line, then the incoming one */
+    bottom: calc(var(--smr-logo-h) * 0.67 + 42px);
+    transform: none;
+    /* wider than the others on purpose: this column is stacked above two lines,
+       so every line of text it saves is height the whole rail gets back */
+    width: 55vw;
+  }
+
+  .smr-heading {
+    color: #EC2D26;
+    font-family: 'Pacaembu', sans-serif;
+    font-size: clamp(30px, 9vw, 46px);
+    font-weight: 600;
+    line-height: 1;
+    margin: 0 0 10px;
+  }
+
+  .smr-sub {
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: clamp(14px, 3.9vw, 17px);
+    line-height: 1.55;
+    margin: 0 0 12px;
+  }
+
+  .smr-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #EC2D26;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: clamp(15px, 4.2vw, 18px);
+    font-weight: 600;
+    position: relative;
+    z-index: 20;
+  }
+
+  .smr-link img {
+    width: 18px;
+    height: auto;
+  }
 }

@@ -475,6 +475,7 @@ function initContactUsSvgScroll() {
 }
 
 function initServicesSvgTrackScroll() {
+  if (window.innerWidth <= 768) return;
   const servicesSvg = document.querySelector('.services-rail .first-svg');
   if (servicesSvg) {
     // Initial state: hidden at the top
@@ -781,6 +782,7 @@ function initStrategyLineSync() {
   if (!firstSvg || !secondSvg) return;
 
   function sync() {
+    if (window.innerWidth <= 768) return;
     const firstWidth = firstSvg.getBoundingClientRect().width;
     // first-svg's viewBox width is 991
     const scale = firstWidth / 991;
@@ -919,12 +921,18 @@ function initScrollAnimations() {
     scrollTrigger: { trigger: '#hero', start: 'top top', end: 'bottom top', scrub: true }
   });
 
-  // Horizontal scroll animation for the services rail SVG
+  // Horizontal scroll animation for the services rail SVG (Desktop + Mobile matchMedia)
   const servicesRail = document.querySelector('.services-rail');
   const servicesTrack = document.querySelector('.services-track');
   const riskLogo = document.querySelector('.risk-logo');
 
   if (servicesRail && servicesTrack) {
+    const mm = gsap.matchMedia();
+
+    // ══════════════════════════════════════════
+    // DESKTOP: (min-width: 769px) - 100% UNTOUCHED
+    // ══════════════════════════════════════════
+    mm.add("(min-width: 769px)", () => {
     ScrollTrigger.create({
       trigger: servicesRail,
       start: () => {
@@ -1237,6 +1245,17 @@ function initScrollAnimations() {
         end: window.innerWidth <= 1024 ? 'top center-=100' : 'top center-=100',
         scrub: true
       }
+    });
+  
+    });
+
+    // ══════════════════════════════════════════
+    // MOBILE: Dedicated Scroll-Track Journey
+    // ══════════════════════════════════════════
+    mm.add("(max-width: 768px)", () => {
+      // Mobile runs its own, completely separate Four Pillars journey —
+      // see initMobileServicesRail(). The desktop rail above is untouched.
+      return initMobileServicesRail();
     });
   }
 
@@ -2347,7 +2366,10 @@ function initRealStoriesSlider() {
 function initWorkholdSlider() {
   const section = document.getElementById('workholdslidecont');
   const track = document.getElementById('workholdCardsTrack');
+  const wrapper = document.querySelector('.workhold-pinned-wrapper');
   const heading = document.querySelector('#workholdheading h1');
+  const prevBtn = document.getElementById('workholdPrevBtn');
+  const nextBtn = document.getElementById('workholdNextBtn');
 
   if (heading) {
     gsap.fromTo(heading,
@@ -2401,36 +2423,152 @@ function initWorkholdSlider() {
 
   if (!section || !track) return;
 
-  const slides = track.querySelectorAll('.workhold-card');
+  const slides = Array.from(track.querySelectorAll('.workhold-card'));
   const totalSlides = slides.length;
   if (totalSlides === 0) return;
 
-  let lastIndex = -1;
+  const mm = gsap.matchMedia();
 
-  ScrollTrigger.create({
-    trigger: section,
-    start: () => {
-      const wrapper = document.querySelector('.workhold-pinned-wrapper');
-      return wrapper ? "top " + window.getComputedStyle(wrapper).top : "top top";
-    },
-    end: "bottom bottom",
-    scrub: true,
-    onUpdate: (self) => {
-      let progress = Math.max(0, Math.min(0.9999, self.progress));
-      const slideIndex = Math.floor(progress * totalSlides);
+  // Desktop (> 768px): Vertical Pinning & Sliding on Scroll
+  mm.add("(min-width: 769px)", () => {
+    track.style.transform = 'none';
 
-      if (slideIndex !== lastIndex) {
-        lastIndex = slideIndex;
+    slides.forEach((slide, idx) => {
+      if (idx === 0) slide.classList.add('active');
+      else slide.classList.remove('active');
+    });
 
+    let lastIndex = -1;
+    const st = ScrollTrigger.create({
+      trigger: section,
+      start: () => {
+        const pWrapper = document.querySelector('.workhold-pinned-wrapper');
+        return pWrapper ? "top " + window.getComputedStyle(pWrapper).top : "top top";
+      },
+      end: "bottom bottom",
+      scrub: true,
+      onUpdate: (self) => {
+        let progress = Math.max(0, Math.min(0.9999, self.progress));
+        const slideIndex = Math.floor(progress * totalSlides);
+
+        if (slideIndex !== lastIndex) {
+          lastIndex = slideIndex;
+          slides.forEach((slide, idx) => {
+            if (idx === slideIndex) {
+              slide.classList.add('active');
+            } else {
+              slide.classList.remove('active');
+            }
+          });
+        }
+      }
+    });
+
+    return () => {
+      st.kill();
+      track.style.transform = '';
+    };
+  });
+
+  // Mobile (<= 768px): Horizontal Carousel / Slider with Arrows & Touch Gestures
+  mm.add("(max-width: 768px)", () => {
+    let currentIndex = 0;
+
+    function goToSlide(newIndex) {
+      if (newIndex < 0) newIndex = totalSlides - 1;
+      if (newIndex >= totalSlides) newIndex = 0;
+
+      const prevSlide = slides[currentIndex];
+      currentIndex = newIndex;
+
+      // Keep incoming and outgoing slides visible during transition
+      slides.forEach((slide, idx) => {
+        if (idx === currentIndex) {
+          slide.classList.add('active');
+          slide.classList.add('is-animating');
+        } else if (slide === prevSlide) {
+          slide.classList.remove('active');
+          slide.classList.add('is-animating');
+        } else {
+          slide.classList.remove('active');
+          slide.classList.remove('is-animating');
+        }
+      });
+
+      const containerWidth = wrapper ? wrapper.clientWidth : (section.clientWidth || window.innerWidth);
+      const offset = -currentIndex * containerWidth;
+      track.style.transform = `translate3d(${offset}px, 0, 0)`;
+
+      setTimeout(() => {
         slides.forEach((slide, idx) => {
-          if (idx === slideIndex) {
-            slide.classList.add('active');
-          } else {
-            slide.classList.remove('active');
+          if (idx !== currentIndex) {
+            slide.classList.remove('is-animating');
           }
         });
-      }
+      }, 520);
     }
+
+    const onNext = () => {
+      goToSlide(currentIndex + 1);
+    };
+
+    const onPrev = () => {
+      goToSlide(currentIndex - 1);
+    };
+
+    if (nextBtn) nextBtn.addEventListener('click', onNext);
+    if (prevBtn) prevBtn.addEventListener('click', onPrev);
+
+    // Touch swipe support for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    const onTouchStart = (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    };
+
+    const onTouchEnd = (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      const threshold = 40;
+      if (touchEndX < touchStartX - threshold) {
+        goToSlide(currentIndex + 1);
+      } else if (touchEndX > touchStartX + threshold) {
+        goToSlide(currentIndex - 1);
+      }
+    };
+
+    track.addEventListener('touchstart', onTouchStart, { passive: true });
+    track.addEventListener('touchend', onTouchEnd, { passive: true });
+
+    const onResize = () => {
+      const containerWidth = wrapper ? wrapper.clientWidth : (section.clientWidth || window.innerWidth);
+      const offset = -currentIndex * containerWidth;
+      track.style.transform = `translate3d(${offset}px, 0, 0)`;
+    };
+    window.addEventListener('resize', onResize);
+
+    // Set initial active state: only the first slide is visible
+    slides.forEach((slide, idx) => {
+      if (idx === 0) {
+        slide.classList.add('active');
+      } else {
+        slide.classList.remove('active');
+        slide.classList.remove('is-animating');
+      }
+    });
+    track.style.transform = 'translate3d(0px, 0, 0)';
+
+    return () => {
+      if (nextBtn) nextBtn.removeEventListener('click', onNext);
+      if (prevBtn) prevBtn.removeEventListener('click', onPrev);
+      track.removeEventListener('touchstart', onTouchStart);
+      track.removeEventListener('touchend', onTouchEnd);
+      window.removeEventListener('resize', onResize);
+      track.style.transform = '';
+      slides.forEach(s => {
+        s.classList.remove('is-animating');
+      });
+    };
   });
 }
 
@@ -2935,3 +3073,423 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+/* ══════════════════════════════════════════
+   5.4b MOBILE-ONLY FOUR PILLARS RAIL  (≤768px)
+   A completely separate journey from the desktop .services-rail. The rail is
+   the five Figma exports chained mark to mark; each logo lifts or drops the
+   line between the segment that dies behind it and the one that leaves its
+   front. The rail and the marks never animate — one pinned + scrubbed
+   ScrollTrigger flies the camera along the path and that is the only thing
+   that moves. Nothing here runs above 768px.
+══════════════════════════════════════════ */
+
+/* Every export is drawn on the same 4-line band, ~73.5 units across. Scaling
+   all of them by 60/73.5 puts that band at exactly 60px, the width the rest of
+   the mobile page uses (#realtopstoriessvg and friends). */
+var SMR_BAND = 73.5;
+var SMR_BAND_PX = 60;
+
+/* x spans of the four bars in segment A's artboard, used to carry the entry
+   rail on upward past the top of A's own artboard */
+var SMR_BARS = [[0, 24.6853], [37.0032, 49.3599], [58.0653, 64.2438], [69.9469, 74.0565]];
+var SMR_TAIL = 1200;   /* how far up the bars run, in artboard units */
+
+/* Per segment: the artboard size, where the rail enters and leaves it, and the
+   point it turns at — all band centres, in artboard units. Every export is one
+   straight run plus one turn, and the camera route is threaded through those
+   turns so the view corners where the rail corners. */
+var SMR_SEGS = [
+  {
+    key: 'A', el: 'smrSegA', w: 1812, h: 689,         /* down, then right      */
+    enter: [37.03, 0], exit: [1812, 653.03], corner: [37.03, 653.03]
+  },
+  {
+    key: 'B', el: 'smrSegB', w: 1883, h: 673,         /* right, then down      */
+    enter: [0, 36.50], exit: [1846.26, 673], corner: [1846.26, 36.50]
+  },
+  {
+    key: 'C', el: 'smrSegC', w: 2074, h: 544,         /* right, then up        */
+    enter: [0, 507.05], exit: [2036.92, 0], corner: [2036.92, 507.05]
+  },
+  {
+    key: 'D', el: 'smrSegD', w: 1976, h: 184,         /* right, then down      */
+    enter: [0, 36.50], exit: [1939.39, 184], corner: [1939.39, 36.50]
+  },
+  {
+    key: 'E', el: 'smrSegE', w: 184, h: 1061,         /* down, then left       */
+    enter: [147.28, 0], exit: [0, 1024.39], corner: [147.28, 1024.39]
+  },
+  {
+    /* E stood on its head, cropped to just the hook: up, then left. Its numbers
+       are in the flipped frame, measured from the top of what is shown, so the
+       ordinary layout maths still applies. */
+    key: 'F', el: 'smrSegF', w: 184, h: 1061, flip: true, show: 200,
+    enter: [147.28, 200], exit: [0, 36.61], corner: [147.28, 36.61]
+  }
+];
+
+/* Where each mark meets the rail, as a fraction of its own box. Strategy's pair
+   is the S trace path's own start and end — the line arrives at the bottom-left
+   of the mark and the S carries it up to the top-right, exactly as in the
+   mobile comp. The others follow the same idea for their own shapes. */
+var SMR_ANCHORS = {
+  strategy: { in: [0.086, 0.868], out: [0.914, 0.132] },
+  risk: { in: [0.55, 0.15], out: [1.00, 0.51] },
+  cyber: { in: [1.00, 0.85], out: [1.00, 0.33] },
+  ai: { in: [1.00, 0.50] }
+};
+
+/* segment -> the mark it leaves (`from`) or the segment it carries on from
+   (`after`), and the mark it dies behind (`to`) */
+var SMR_CHAIN = [
+  { seg: 'A', to: 'strategy' },
+  { seg: 'B', from: 'strategy', to: 'risk' },
+  { seg: 'C', from: 'risk' },
+  { seg: 'F', after: 'C', to: 'cyber' },
+  { seg: 'D', from: 'cyber' },
+  { seg: 'E', after: 'D', to: 'ai' }
+];
+
+/* Builds the rail, lays the marks out along it and pins the whole thing.
+   Returns a teardown so it can be rebuilt on rotation. */
+function smrCreateRail() {
+  var root = document.getElementById('smr');
+  var stage = root && root.querySelector('.smr-stage');
+  var track = document.getElementById('smrTrack');
+  if (!root || !stage || !track) return null;
+
+  var stations = {};
+  root.querySelectorAll('.smr-station').forEach(function (el) {
+    stations[el.getAttribute('data-smr')] = el;
+  });
+  var segs = {};
+  SMR_SEGS.forEach(function (s) { segs[s.key] = Object.create(s); segs[s.key].node = document.getElementById(s.el); });
+  var tail = document.getElementById('smrSegTail');
+  var sectionCenter = document.querySelector('#services .section-center');
+
+  var K = SMR_BAND_PX / SMR_BAND;      /* artboard unit -> px */
+  var stageH = stage.getBoundingClientRect().height || window.innerHeight;
+  var stageW = stage.getBoundingClientRect().width || window.innerWidth;
+
+  /* ── measure each mark and where its copy sits relative to it ──
+     Offsets are read off the live boxes, so it does not matter whether a
+     station puts its words under the mark or beside it. */
+  var box = {};
+  root.style.removeProperty('--smr-logo-h');
+  function measure() {
+    Object.keys(stations).forEach(function (k) {
+      var r = stations[k].querySelector('.smr-logo').getBoundingClientRect();
+      var t = stations[k].querySelector('.smr-text').getBoundingClientRect();
+      var b = box[k] || (box[k] = {});
+      b.w = r.width; b.h = r.height;
+      b.dTop = t.top - r.top; b.dBottom = t.bottom - r.bottom;
+      b.dLeft = t.left - r.left; b.dRight = t.right - r.right;
+    });
+  }
+
+  /* ── the vertical tails, cut back to `v` px ─────────────────────────────
+     The exports each run for hundreds of units after their turn. On a phone
+     the whole rail has to sit inside one screen height, so the view never has
+     to ride up or down while you scroll — only the dead straight run after
+     each curve is shortened, the curves themselves are untouched. Every clip
+     lands behind the mark it feeds, so nothing is visibly cut. */
+  function trim(v) {
+    var u = v / K;
+    segs.A.clip = [0, 0];
+
+    segs.B.exit = [1846.26, Math.max(126.77, 36.50 + u)];
+    segs.B.clip = [0, 673 - segs.B.exit[1]];
+
+    /* F's hook already lifts the line 163.39 units, so C only climbs the rest */
+    segs.C.exit = [2036.92, Math.min(417.75, 507.05 - Math.max(90, u - 163.39))];
+    segs.C.clip = [segs.C.exit[1], 0];
+    segs.F.clip = [0, 0];
+
+    /* the run down to AI is split across two exports */
+    segs.D.exit = [1939.39, Math.min(184, Math.max(125.16, 36.50 + u * 0.4))];
+    segs.D.clip = [0, 184 - segs.D.exit[1]];
+    var rest = Math.max(92, (v - (segs.D.exit[1] - 36.50) * K) / K);
+    segs.E.enter = [147.28, Math.min(933, 1024.39 - rest)];
+    segs.E.clip = [segs.E.enter[1], 0];
+  }
+
+  /* ── walk the chain: every position falls out of Strategy's box ── */
+  var anchor = function (k, which) {
+    var a = SMR_ANCHORS[k][which];
+    return [box[k].pos[0] + a[0] * box[k].w, box[k].pos[1] + a[1] * box[k].h];
+  };
+  function chain() {
+    Object.keys(box).forEach(function (k) { box[k].pos = null; });
+    box.strategy.pos = [0, 0];
+    SMR_CHAIN.forEach(function (link) {
+      var s = segs[link.seg];
+      if (link.from) {
+        var out = anchor(link.from, 'out');
+        s.pos = [out[0] - s.enter[0] * K, out[1] - s.enter[1] * K];
+      } else if (link.after) {
+        var prev = segs[link.after];
+        s.pos = [prev.pos[0] + prev.exit[0] * K - s.enter[0] * K,
+        prev.pos[1] + prev.exit[1] * K - s.enter[1] * K];
+      } else if (link.to && box[link.to].pos) {
+        /* segment A: work backwards from the mark it feeds */
+        var into = anchor(link.to, 'in');
+        s.pos = [into[0] - s.exit[0] * K, into[1] - s.exit[1] * K];
+      }
+      if (link.to && !box[link.to].pos) {
+        var end = [s.pos[0] + s.exit[0] * K, s.pos[1] + s.exit[1] * K];
+        var a = SMR_ANCHORS[link.to].in;
+        box[link.to].pos = [end[0] - a[0] * box[link.to].w, end[1] - a[1] * box[link.to].h];
+      }
+    });
+  }
+
+  /* how tall the laid-out rail is, copy included */
+  function extent() {
+    var lo = Infinity, hi = -Infinity;
+    Object.keys(box).forEach(function (k) {
+      lo = Math.min(lo, box[k].pos[1] + Math.min(0, box[k].dTop));
+      hi = Math.max(hi, box[k].pos[1] + box[k].h + Math.max(0, box[k].dBottom));
+    });
+    return { lo: lo, hi: hi, h: hi - lo };
+  }
+
+  /* The extent grows 1:1 with the drop, so one trial run solves for the drop
+     that fills the stage without overflowing it. If even the shortest possible
+     drop is too tall — a small phone — the marks come down until it fits. */
+  var room = stageH * 0.96;
+  var V, ext;
+  for (var pass = 0; pass < 4; pass++) {
+    measure();
+    V = 200; trim(V); chain();
+    V = Math.max(150, Math.min(430, room - (extent().h - V)));
+    trim(V); chain();
+    ext = extent();
+    if (ext.h - room <= 1 || pass === 3) break;
+    root.style.setProperty('--smr-logo-h',
+      Math.max(84, box.strategy.h - (ext.h - room) / 2 - 2) + 'px');
+  }
+
+  /* ── the camera settles each mark in the middle of the stage. Because the
+     whole rail is trimmed to fit one stage height, that vertical settle is only
+     ever a fraction of a screen — the view drifts gently down into Risk and back
+     up into Cyber rather than lurching. ── */
+
+  function layout() {
+    var sr = stage.getBoundingClientRect();
+    stageH = sr.height || window.innerHeight;
+    stageW = sr.width || window.innerWidth;
+    SMR_SEGS.forEach(function (def) {
+      var s = segs[def.key];
+      if (!s.node) return;
+      var svg = s.node.querySelector('svg');
+      s.node.style.left = s.pos[0] + 'px';
+      if (def.flip) {
+        /* the svg is mirrored about its own top edge, so dropping it by a full
+           artboard height puts row `h` at the top of the box and row `h - show`
+           at the bottom — the hook, right way up */
+        s.node.style.top = s.pos[1] + 'px';
+        s.node.style.width = (def.w * K) + 'px';
+        s.node.style.height = (def.show * K) + 'px';
+        if (svg) svg.style.top = (def.h * K) + 'px';
+        return;
+      }
+      s.node.style.top = (s.pos[1] + s.clip[0] * K) + 'px';
+      s.node.style.width = (def.w * K) + 'px';
+      s.node.style.height = ((def.h - s.clip[0] - s.clip[1]) * K) + 'px';
+      if (svg) svg.style.top = (-s.clip[0] * K) + 'px';
+    });
+    Object.keys(stations).forEach(function (k) {
+      stations[k].style.left = box[k].pos[0] + 'px';
+      stations[k].style.top = box[k].pos[1] + 'px';
+    });
+    if (tail) {
+      var stops = [], prev = 0;
+      SMR_BARS.forEach(function (b) {
+        stops.push('transparent ' + (prev * K).toFixed(2) + 'px ' + (b[0] * K).toFixed(2) + 'px');
+        stops.push('#EC2D26 ' + (b[0] * K).toFixed(2) + 'px ' + (b[1] * K).toFixed(2) + 'px');
+        prev = b[1];
+      });
+      tail.style.background = 'linear-gradient(to right,' + stops.join(',') + ')';
+      tail.style.left = segs.A.pos[0] + 'px';
+      tail.style.top = (segs.A.pos[1] - SMR_TAIL * K) + 'px';
+      tail.style.width = (74.0565 * K) + 'px';
+      tail.style.height = (SMR_TAIL * K + 1) + 'px';   /* 1px under A, so the join leaves no hairline */
+    }
+  }
+  layout();
+
+  /* ── nothing on the rail animates: the line and the marks are simply there ── */
+  var copy = function (k) { return stations[k].querySelectorAll('.smr-text > *'); };
+  Object.keys(stations).forEach(function (k) {
+    gsap.set(stations[k], { opacity: 1 });
+    gsap.set(copy(k), { opacity: 1, y: 0 });
+  });
+
+  /* ── the ride: the camera runs along the rail, settling on each mark ── */
+  var focusX = function (k) {
+    var b = box[k];
+    return (b.pos[0] + Math.min(0, b.dLeft) + b.pos[0] + b.w + Math.max(0, b.dRight)) / 2;
+  };
+  /* the middle of a mark and its copy together, so the whole block lands centred
+     and the words never run off the bottom */
+  var focusY = function (k) {
+    var b = box[k];
+    return (b.pos[1] + Math.min(0, b.dTop) + b.pos[1] + b.h + Math.max(0, b.dBottom)) / 2;
+  };
+  /* the point where a segment turns, in track px */
+  var bend = function (k) {
+    var g = segs[k];
+    return { x: g.pos[0] + g.corner[0] * K, y: g.pos[1] + g.corner[1] * K };
+  };
+
+  /* ── the camera route, written as camera positions rather than focus points,
+     because what matters is that each leg moves along exactly one axis:
+     straight across to a bend, straight down (or up) off it, then the short
+     step onto the mark. The screen never drifts sideways while it is dropping,
+     or up and down while it is running across. ── */
+  var camOfMark = function (k) {
+    return [stageW / 2 - focusX(k), stageH / 2 - focusY(k)];
+  };
+  var camXofBend = function (k) { return stageW / 2 - bend(k).x; };
+
+  var route = [];
+  var go = function (cx, cy, hold) {
+    var last = route[route.length - 1];
+    /* a step of a few px is not worth a leg of its own */
+    if (last && Math.abs(last.cx - cx) < 3 && Math.abs(last.cy - cy) < 3) {
+      last.hold = Math.max(last.hold, hold || 0);
+      return;
+    }
+    route.push({ cx: cx, cy: cy, hold: hold || 0 });
+  };
+
+  var eA = bend('A');
+  go(stageW / 2 - eA.x, stageH * 0.80 - eA.y, 0);       /* the bend sits low   */
+  go(stageW / 2 - eA.x, stageH * 0.50 - eA.y, 0.35);    /* … and rides to centre */
+
+  var sCam = camOfMark('strategy');
+  go(sCam[0], route[route.length - 1].cy, 0);           /* straight across  */
+  go(sCam[0], sCam[1], 0.9);                            /* settle on the S  */
+
+  /* mark -> bend -> mark, one axis at a time */
+  var runTo = function (bendKey, markKey, endHold) {
+    var m = camOfMark(markKey);
+    var bx = camXofBend(bendKey);
+    go(bx, route[route.length - 1].cy, 0.5);            /* across to the bend, stop */
+    go(bx, m[1], 0);                                    /* off it, straight down/up */
+    go(m[0], m[1], endHold);                            /* the last step onto it    */
+  };
+  runTo('B', 'risk', 0.9);
+  runTo('C', 'cyber', 0.9);
+  /* D and E share an x, so one bend carries the whole drop to AI */
+  runTo('D', 'ai', 1.0);
+
+  var look = function (wp) {
+    return { x: function () { return wp.cx; }, y: function () { return wp.cy; } };
+  };
+  gsap.set(track, look(route[0]));
+
+  var legs = [], total = 0, i;
+  for (i = 1; i < route.length; i++) {
+    legs.push(Math.hypot(route[i].cx - route[i - 1].cx, route[i].cy - route[i - 1].cy));
+    total += legs[i - 1];
+  }
+
+  var tl = gsap.timeline();
+  var at = 0;
+  for (i = 1; i < route.length; i++) {
+    var wp = route[i];
+    var dur = Math.max(0.14, 8.4 * (legs[i - 1] / (total || 1)));
+    var to = look(wp);
+    to.ease = 'none';
+    to.duration = dur;
+    tl.to(track, to, at);
+    if (i === 1 && sectionCenter) {
+      /* the heading sits above the pinned stage, not on the rail — let it go as
+         the camera leaves the elbow rather than leaving a clipped strip behind */
+      tl.to(sectionCenter, { opacity: 0, ease: 'none', duration: dur * 0.7 }, at);
+    }
+    at += dur + wp.hold;
+  }
+  tl.to({}, { duration: 0.4 }, at);
+
+  var st = ScrollTrigger.create({
+    trigger: root,
+    /* .smr is 100svh, so it always fits: pin it flush to the top rather than
+       offsetting by the leftover, which pushes the section down whenever the
+       browser chrome hides and innerHeight grows past svh */
+    start: 'top top',
+    end: function () { return '+=' + Math.round(stage.getBoundingClientRect().height * 6.5); },
+    pin: root,
+    pinSpacing: true,
+    anticipatePin: 1,
+    scrub: 0.6,
+    invalidateOnRefresh: true,
+    animation: tl,
+    onRefreshInit: layout
+  });
+
+  return function () {
+    st.kill();
+    tl.kill();
+    var els = [track];
+    Object.keys(stations).forEach(function (k) { els.push(stations[k]); });
+    SMR_SEGS.forEach(function (d) { if (segs[d.key].node) els.push(segs[d.key].node); });
+    gsap.set(els, { clearProps: 'all' });
+    if (sectionCenter) gsap.set(sectionCenter, { clearProps: 'opacity' });
+    root.style.removeProperty('--smr-logo-h');
+  };
+}
+
+function initMobileServicesRail() {
+  var root = document.getElementById('smr');
+  if (!root) return;
+
+  var teardown = smrCreateRail();
+  var lastW = window.innerWidth;
+  var timer = null;
+
+  /* The Risk and AI marks are <img>, and an image has no width until it loads;
+     the copy has no final height until the webfonts land. Both feed the chain
+     that places every segment and mark, so measure once more when they are in.
+     (Strategy and Cyber are inline <svg> and size themselves immediately, which
+     is why only the other two ever landed off-centre.) */
+  var settle = function () {
+    if (teardown) teardown();
+    teardown = smrCreateRail();
+    lastW = window.innerWidth;
+    ScrollTrigger.refresh();
+  };
+  var waits = [];
+  root.querySelectorAll('.smr-logo-img').forEach(function (img) {
+    if (img.complete && img.naturalWidth) return;
+    waits.push(new Promise(function (done) {
+      img.addEventListener('load', done, { once: true });
+      img.addEventListener('error', done, { once: true });
+    }));
+  });
+  if (document.fonts && document.fonts.ready) waits.push(document.fonts.ready);
+  if (waits.length) Promise.all(waits).then(function () { setTimeout(settle, 0); });
+
+  /* Only a width change (a rotation) needs the chain rebuilt; height-only
+     changes — the browser chrome sliding away — are ScrollTrigger's job. */
+  function onResize() {
+    if (window.innerWidth === lastW) return;
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      if (window.innerWidth === lastW) return;
+      lastW = window.innerWidth;
+      if (teardown) teardown();
+      teardown = smrCreateRail();
+      ScrollTrigger.refresh();
+    }, 200);
+  }
+  window.addEventListener('resize', onResize);
+
+  return function () {
+    clearTimeout(timer);
+    window.removeEventListener('resize', onResize);
+    if (teardown) teardown();
+  };
+}

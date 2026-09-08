@@ -132,6 +132,10 @@
             color: #333333;
         }
 
+        body.light-mode .services-tabs {
+            border-bottom: 1px solid #000000;
+        }
+
         body.light-mode .service-card:not(.active) {
             background: #ffffff;
         }
@@ -874,6 +878,14 @@
                 flex: 1 1 40%;
             }
 
+            body.light-mode .services-tabs {
+                border-bottom: none;
+            }
+
+            body.light-mode .services-tab {
+                border-bottom: 1px solid #000000;
+            }
+
             .services-tab.active::after {
                 height: 2px;
                 bottom: -1px;
@@ -985,7 +997,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to right, #000 0%, transparent 15%, transparent 85%, #000 100%);
+            background: linear-gradient(to right, #000 0%, transparent 5%, transparent 95%, #000 100%);
             pointer-events: none;
             z-index: 2;
         }
@@ -1028,6 +1040,66 @@
             transform: scale(1.08);
         }
 
+        .oc-logo-img[src*="bci13.png"] {
+            max-height: 65px;
+            max-width: 200px;
+            transform: scale(1.35);
+        }
+
+        .oc-logo-img[src*="bci13.png"]:hover {
+            transform: scale(1.45);
+        }
+
+        .oc-logo-img[src*="bci4.png"] {
+            max-height: 58px;
+            max-width: 180px;
+            transform: scale(1.25);
+        }
+
+        .oc-logo-img[src*="bci4.png"]:hover {
+            transform: scale(1.35);
+        }
+
+        .oc-logo-img[src*="realestate1.png"] {
+            max-height: 58px;
+            max-width: 210px;
+            transform: scale(1.25);
+        }
+
+        .oc-logo-img[src*="realestate1.png"]:hover {
+            transform: scale(1.35);
+        }
+
+        .oc-logo-img[src*="realestate2.png"] {
+            max-height: 58px;
+            max-width: 200px;
+            transform: scale(1.3);
+        }
+
+        .oc-logo-img[src*="realestate2.png"]:hover {
+            transform: scale(1.4);
+        }
+
+        .oc-logo-img[src*="realestate4.png"] {
+            max-height: 65px;
+            max-width: 250px;
+            transform: scale(1.45);
+        }
+
+        .oc-logo-img[src*="realestate4.png"]:hover {
+            transform: scale(1.55);
+        }
+
+        .oc-logo-img[src*="defindu1.png"] {
+            max-height: 58px;
+            max-width: 210px;
+            transform: scale(1.25);
+        }
+
+        .oc-logo-img[src*="defindu1.png"]:hover {
+            transform: scale(1.35);
+        }
+
         @keyframes scrollMarquee {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
@@ -1035,7 +1107,7 @@
 
         .oc-grid-container {
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 0 auto 70px auto;
             position: relative;
             padding: 0 40px;
         }
@@ -1075,7 +1147,7 @@
             color: #000;
         }
         body.light-mode .oc-marquee-container::after {
-            background: linear-gradient(to right, #f5f5f5 0%, transparent 15%, transparent 85%, #f5f5f5 100%);
+            background: linear-gradient(to right, #f5f5f5 0%, transparent 5%, transparent 95%, #f5f5f5 100%);
         }
         body.light-mode .oc-toggle {
             color: #555;
@@ -1083,10 +1155,13 @@
         body.light-mode .oc-toggle:hover {
             color: #000;
         }
+        body.light-mode .oc-toggle-icon {
+            filter: brightness(0);
+        }
         body.light-mode .oc-grid-item {
             color: #777;
         }
-        body.light-mode .oc-grid-item:hover,
+        body.light-mode .oc-grid-item:hover,    
         body.light-mode .oc-grid-item.active {
             color: #EC2D26;
         }
@@ -1836,7 +1911,6 @@
                 <div class="oc-logo-item" data-folder="defenceindustry"><img src="assets/images/servicesclients/defenceindustry/defindu2.png" alt="defindu2" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="entertainmentindustry"><img src="assets/images/servicesclients/entertainmentindustry/entertainment2.png" alt="entertainment2" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus10.png" alt="fmcgindus10" class="oc-logo-img" loading="lazy"></div>
-                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother10.png" alt="fmcgother10" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="governmentindustry"><img src="assets/images/servicesclients/governmentindustry/govtindu2.png" alt="govtindu2" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare10.png" alt="healthcare10" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="hotelindustry"><img src="assets/images/servicesclients/hotelindustry/hotelindus2.png" alt="hotelindus2" class="oc-logo-img" loading="lazy"></div>
@@ -2079,7 +2153,6 @@
                 <div class="oc-logo-item" data-folder="defenceindustry"><img src="assets/images/servicesclients/defenceindustry/defindu2.png" alt="defindu2" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="entertainmentindustry"><img src="assets/images/servicesclients/entertainmentindustry/entertainment2.png" alt="entertainment2" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="fmcgindustry"><img src="assets/images/servicesclients/fmcgindustry/fmcgindus10.png" alt="fmcgindus10" class="oc-logo-img" loading="lazy"></div>
-                <div class="oc-logo-item" data-folder="fmcgnother"><img src="assets/images/servicesclients/fmcgnother/fmcgother10.png" alt="fmcgother10" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="governmentindustry"><img src="assets/images/servicesclients/governmentindustry/govtindu2.png" alt="govtindu2" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="healthcareindustry"><img src="assets/images/servicesclients/healthcareindustry/healthcare10.png" alt="healthcare10" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="hotelindustry"><img src="assets/images/servicesclients/hotelindustry/hotelindus2.png" alt="hotelindus2" class="oc-logo-img" loading="lazy"></div>

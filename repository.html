@@ -431,6 +431,12 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cents-nav-btn:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
         }
 
         .cents-nav-btn img {
@@ -1066,12 +1072,17 @@
         }
 
         body.light-mode .rcs-nav-btn {
-            background-color: #000;
-            border-radius: 50%;
+            background-color: transparent;
+        }
+        body.light-mode .rcs-nav-btn img {
+            filter: brightness(0);
         }
 
         body.light-mode .cents-nav-btn {
-            background-color: #000;
+            background-color: transparent !important;
+        }
+        body.light-mode .cents-nav-btn img {
+            filter: brightness(0);
         }
 
         body.light-mode .repo-insight .repo-section-subtitle,
