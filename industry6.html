@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css?v=7" />
+    <link rel="stylesheet" href="assets/css/style.css?v=8" />
     <style>
         /* General Light Mode Overrides for Industry */
         body.light-mode {
@@ -37,7 +37,6 @@
         body.light-mode .we-heading,
         body.light-mode .chts-title,
         body.light-mode #skithedesksec h2,
-        body.light-mode .sthiros-trans-title,
         body.light-mode .problem-heading-text,
         body.light-mode .problem-text,
         body.light-mode .solution-main h3,
@@ -53,7 +52,6 @@
         body.light-mode .hsd-feature-content p,
         body.light-mode .chts-desc,
         body.light-mode .chts-card-desc,
-        body.light-mode .sthiros-trans-text,
         body.light-mode .problem-desc,
         body.light-mode .solution-main p,
         body.light-mode .service-list li,
@@ -89,6 +87,29 @@
             color: #ffffff;
             background-color: #EC2D26;
             border-color: #EC2D26;
+        }
+
+        /* Transformation Card */
+        body.light-mode #sthirostransformationsec {
+            background-color: #ffffff;
+        }
+
+        body.light-mode .sthiros-trans-card {
+            background-color: #EC2D26 !important;
+        }
+
+        body.light-mode .sthiros-trans-text,
+        body.light-mode .sthiros-trans-title {
+            color: #ffffff !important;
+        }
+
+        body.light-mode .sthiros-trans-divider {
+            color: rgba(255, 255, 255, 0.9) !important;
+        }
+
+        body.light-mode .sthiros-trans-divider::before,
+        body.light-mode .sthiros-trans-divider::after {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;
         }
 
         /* Cards and Elements Backgrounds */
@@ -1122,7 +1143,7 @@
 
         .chts-card-desc {
             font-family: 'Quicksand', sans-serif;
-            font-size: 14px;
+            font-size: 16px;
             color: #ccc;
             line-height: 1.6;
             flex-grow: 1;
@@ -1156,6 +1177,14 @@
         .chts-card-footer a:hover {
             opacity: 0.8;
         }
+
+        .chts-bottom-btn-wrapper {
+            text-align: center;
+            margin-top: 80px;
+            padding-bottom: 20px;
+        }
+
+
 
         @media (max-width: 1280px) {
             .chts-title {
@@ -1916,7 +1945,7 @@
                 <a href="contactus.html" class="hero-btn-outer">
                     <span class="hero-btn-inner">BOOK A 30-MIN CALL</span>
                 </a>
-                <a href="#" class="hero-btn-outer">
+                <a href="#" class="hero-btn-outer" style="display: none;">
                     <span class="hero-btn-inner">GET THE INDUSTRY DIAGNOSTIC</span>
                 </a>
             </div>
@@ -4540,7 +4569,7 @@ We’ll show you the right problems. -->
         </div>
     </section>
 
-    <!-- T Section Title How Sthiros is different in BFSI -->
+    <!-- T Section Title The Sthiros Difference -->
     <section id="sectiontitlesvgtop">
         <svg xmlns="http://www.w3.org/2000/svg" width="74" height="482" viewBox="0 0 74 482" fill="none">
             <path d="M74 481.988L49.3334 481.988L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 481.988Z"
@@ -4580,9 +4609,9 @@ We’ll show you the right problems. -->
         </svg>
     </section>
 
-    <!-- How Sthiros is different in BFSI -->
+    <!-- The Sthiros Difference -->
     <section id="howsthirosdifferentsec">
-        <h2 class="hsd-heading">How <span>Sthiros</span> is<br>different in public sector</h2>
+        <h2 class="hsd-heading">The <span>Sthiros</span> Difference</h2>
 
         <div class="hsd-features">
             <div class="hsd-feature-card">
@@ -4665,7 +4694,7 @@ We’ll show you the right problems. -->
             <div class="we-cards">
                 <div class="we-card">
                     <h3>Delivery-native</h3>
-                    <p>Every engagement designed around how government programmes are actually implemented — scheme architecture, fund flows, and inter-agency coordination</p>
+                    <p>Every engagement designed around how government programmes are actually implemented : scheme architecture, fund flows, and inter-agency coordination</p>
                 </div>
                 <div class="we-card">
                     <h3>4-16 weeks</h3>
@@ -4728,7 +4757,7 @@ We’ll show you the right problems. -->
         <div class="sthiros-trans-card">
             <p class="sthiros-trans-text">
                 The gap between a well-designed scheme and a well-delivered one is almost never about intent. It's the
-                implementation architecture underneath — the PMU, the data flows, the grievance loop, the feedback that
+                implementation architecture underneath; the PMU, the data flows, the grievance loop, the feedback that
                 tells you whether the scheme reached who it was meant for. That architecture is the actual work.
             </p>
             <div class="sthiros-trans-divider">
@@ -4791,9 +4820,6 @@ We’ll show you the right problems. -->
                     <h3 class="chts-card-title">30-min discovery call</h3>
                     <p class="chts-card-desc">Tell us your mandate and the delivery challenge. We'll be direct about
                         where we'd start — programme design, a system build, AI, or capacity work.</p>
-                    <div class="chts-card-footer">
-                        <a href="contactus.html">Book a call</a>
-                    </div>
                 </div>
 
                 <div class="chts-card">
@@ -4801,20 +4827,19 @@ We’ll show you the right problems. -->
                     <p class="chts-card-desc">A free self-assessment across scheme implementation, governance, data
                         systems, procurement, capacity and citizen outcomes. It shows you where the gap is actually
                         largest.</p>
-                    <div class="chts-card-footer">
-                        <a href="#">Get the diagnostic</a>
-                    </div>
                 </div>
 
                 <div class="chts-card">
                     <h3 class="chts-card-title">Send us your situation</h3>
                     <p class="chts-card-desc">Not ready for a call? Three lines: your mandate, the delivery challenge,
                         what's already been tried. We'll come back with a specific point of view.</p>
-                    <div class="chts-card-footer">
-                        <a href="#">Send a brief</a>
-                    </div>
                 </div>
             </div>
+
+        <div class="chts-bottom-btn-wrapper">
+            <a href="contactus.html" class="hero-btn-outer">
+                <span class="hero-btn-inner">Bring us the hardest one</span>
+            </a>
         </div>
     </section>
 

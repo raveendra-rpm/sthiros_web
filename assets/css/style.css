@@ -5,8 +5,24 @@
 /* ── Pacaembu Custom Font ── */
 @font-face {
   font-family: 'Pacaembu';
-  src: url('../Pacaembu-Regular.ttf') format('truetype');
+  src: local('Pacaembu'), local('Pacaembu-Regular'), local('Pacaembu Regular'), url('../Pacaembu-Regular.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pacaembu';
+  src: local('Pacaembu'), local('Pacaembu-Regular'), local('Pacaembu Regular'), url('../Pacaembu-Regular.ttf') format('truetype');
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pacaembu';
+  src: local('Pacaembu Bold'), local('Pacaembu-Bold'), local('Pacaembu'), url('../Pacaembu-Regular.ttf') format('truetype');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -3731,6 +3747,21 @@ body.light-mode .stat-label {
   text-transform: uppercase;
 }
 
+/* ── DESKTOP CURSOR GLOW ── */
+#cursor-glow {
+  position: fixed;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(232, 75, 26, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  transition: background 0.3s ease, opacity 0.3s ease;
+}
+
 .cta-title {
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
@@ -5192,6 +5223,19 @@ body.light-mode .nav-link.active {
 body.light-mode .section-hero,
 body.light-mode #herosectionmobilescreen {
   background-color: #000000;
+  position: relative;
+  z-index: 2;
+}
+
+/* ── Fixed Background Glows in Light Mode ── */
+body.light-mode .services-glow-fixed {
+  z-index: 0;
+}
+
+body.light-mode .bg-glow-fixed {
+  mix-blend-mode: multiply;
+  opacity: 0.85;
+  filter: none !important;
 }
 
 body.light-mode .section-stats,
@@ -5203,7 +5247,21 @@ body.light-mode .section-why,
 body.light-mode .section-industries-new,
 body.light-mode .section-latest-thinking,
 body.light-mode .section-cta {
-  background-color: #f5f5f5;
+  background-color: transparent;
+}
+
+/* ── Cursor Glow in Light Mode ── */
+body.light-mode #cursor-glow {
+  width: 360px;
+  height: 360px;
+  background: radial-gradient(circle, rgba(236, 45, 38, 0.32) 0%, rgba(240, 131, 46, 0.16) 38%, transparent 70%) !important;
+  mix-blend-mode: multiply !important;
+}
+
+body.light-mode:has(.section-hero:hover) #cursor-glow,
+body.light-mode:has(#herosectionmobilescreen:hover) #cursor-glow {
+  mix-blend-mode: screen !important;
+  background: radial-gradient(circle, rgba(232, 75, 26, 0.16) 0%, transparent 70%) !important;
 }
 
 /* ═══════════════ LIGHT MODE TEXT & CARD OVERRIDES FOR INDEX PAGE ═══════════════ */
@@ -5379,6 +5437,60 @@ body.light-mode .card-read-time {
 body.light-mode .cta-divider {
   background-color: rgba(0, 0, 0, 0.15);
 }
+
+/* ── Industry Transformation Section Light Mode ── */
+body.light-mode #sthirostransformationsec {
+  background-color: #ffffff !important;
+}
+
+body.light-mode .sthiros-trans-card {
+  background-color: #EC2D26 !important;
+}
+
+body.light-mode .sthiros-trans-text,
+body.light-mode .sthiros-trans-title {
+  color: #ffffff !important;
+}
+
+body.light-mode .sthiros-trans-divider {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+body.light-mode .sthiros-trans-divider::before,
+body.light-mode .sthiros-trans-divider::after {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;
+}
+
+/* ── Skip the deck Card Light Mode (Strategy, Risk, Cyber, AI) ── */
+body.light-mode .skipthedeskcont {
+  background-image: url('../images/industries/industryreadywhenyulight.jpg') !important;
+}
+
+body.light-mode #skithedesksec .std-content h2,
+body.light-mode #skithedesksec .std-content h3,
+body.light-mode #skithedesksec .std-content p,
+body.light-mode .skipthedeskcont .std-content h2,
+body.light-mode .skipthedeskcont .std-content h3,
+body.light-mode .skipthedeskcont .std-content p,
+body.light-mode .skipthedeskcont h2,
+body.light-mode .skipthedeskcont h3,
+body.light-mode .skipthedeskcont p {
+  color: #000000 !important;
+}
+
+body.light-mode #skithedesksec .hero-btn-inner,
+body.light-mode .skipthedeskcont .hero-btn-inner {
+  color: #000000 !important;
+}
+
+body.light-mode #skithedesksec .hero-btn-outer:hover .hero-btn-inner,
+body.light-mode .skipthedeskcont .hero-btn-outer:hover .hero-btn-inner,
+body.light-mode #skithedesksec .hero-btn-inner:hover,
+body.light-mode .skipthedeskcont .hero-btn-inner:hover {
+  color: #ffffff !important;
+}
+
+
 
 /* Logo click hint */
 .logo-link {
@@ -6824,6 +6936,12 @@ body.light-mode .massive-logo-dark {
 body.light-mode .massive-logo-light {
     display: block;
 }
+body.light-mode .footer-bottom-line {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+body.light-mode .footer-menu li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
 
 .footer-menu li.active::after {
     width: 100%;
@@ -7490,3 +7608,20 @@ body.light-mode .massive-logo-light {
     height: auto;
   }
 }
+
+/* ── About & Repository Hero Typography ── */
+.about-hero-title,
+.repo-hero-title {
+  font-family: 'Pacaembu', sans-serif !important;
+}
+
+.about-hero-desc,
+.repo-hero-desc {
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+/* ── The Sthiros Difference Heading ── */
+.hsd-heading span {
+  color: #EC2D26 !important;
+}
+

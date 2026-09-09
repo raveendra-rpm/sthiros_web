@@ -134,47 +134,79 @@
             }
         }
 
-        .topdivsvg {
+        /* ═══════════════ RED RAIL GEOMETRY ═══════════════
+           The rail runs down the page's vertical centre line, bulges out to the
+           right around the product cards, and comes back to that same centre line
+           where #complianceoperationsec hands it over to
+           #Telluswhatsstillbeingdonebyhandsec.
+
+           Every segment is placed from the one 50% anchor with calc(), so
+           .bottomdivsvg's ending point and .telluswhatsvgtop's starting point stay
+           on the same vertical line at any viewport width - no gutters, no
+           per-breakpoint nudging.
+
+           The constants are the rail's own offset inside each SVG (viewBox units
+           x that SVG's rendered scale) and never change; --rail-scale is the only
+           knob the media queries touch. */
+        :root {
+            --rail-scale: 1;
+            --rail-scale-y: 1;
+        }
+
+        .topdivsvg,
+        .middledivsvg,
+        .bottomdivsvg,
+        .telluswhatsvgtop,
+        .telluswhatsvgbtm {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: flex-start;
             width: 100%;
+        }
+
+        .topdivsvg svg,
+        .middledivsvg svg,
+        .bottomdivsvg svg,
+        .telluswhatsvgtop svg,
+        .telluswhatsvgbtm svg {
+            flex-shrink: 0;
+            transform: scaleX(var(--rail-scale));
+            transform-origin: top left;
+        }
+
+        .topdivsvg {
+            align-items: center;
             margin-top: -30px;
         }
 
         .middledivsvg {
-            display: flex;
-            justify-content: flex-end;
-            width: 100%;
             margin-top: -180px;
-            padding-right: 42px;
-        }
-
-        .bottomdivsvg {
-            display: flex;
-            justify-content: flex-end;
-            width: 100%;
-            padding-right: 42.5px;
         }
 
         .telluswhatsvgtop {
-            display: flex;
-            justify-content: flex-start;
-            width: 100%;
             margin-top: -336px;
-            padding-left: 42px;
         }
 
-        .telluswhatsvgbtm {
-            display: flex;
-            justify-content: flex-start;
-            /* width: 100%; */
-            padding-left: 41.5px;
+        /* rail enters these two at x0, so the same offset centres both */
+        .topdivsvg svg,
+        .middledivsvg svg {
+            margin-left: calc(50% - 31.479px * var(--rail-scale));
         }
 
-        .telluswhatsvgbtm svg,
+        /* ending point: rail leaves .bottomdivsvg 29.267px in from its left edge */
+        .bottomdivsvg svg {
+            margin-left: calc(50% - 29.267px * var(--rail-scale));
+            transform: scaleX(var(--rail-scale)) scaleY(var(--rail-scale-y));
+        }
+
+        /* starting point: rail enters .telluswhatsvgtop 722.366px in - lands it on
+           the exact vertical line .bottomdivsvg just left off at */
         .telluswhatsvgtop svg {
-            flex-shrink: 0;
+            margin-left: calc(50% - 722.366px * var(--rail-scale));
+        }
+
+        /* picks the rail back up from .telluswhatsvgtop's own bottom-left exit */
+        .telluswhatsvgbtm svg {
+            margin-left: calc(50% - 723.126px * var(--rail-scale));
         }
 
         #Telluswhatsstillbeingdonebyhandsec {
@@ -190,12 +222,12 @@
             justify-content: space-between;
             align-items: center;
             padding: 30px 60px;
-            margin-left: 100px;
-            margin-right: 50px;
             position: absolute;
             top: 230px;
-            left: 0;
-            right: 0;
+            /* sits inside the rail's bracket: flush with its left descent, ending
+               where the bottom run fades out - both from the same 50% anchor */
+            left: calc(50% - 663.054px * var(--rail-scale));
+            right: calc(50% - 729.361px * var(--rail-scale));
             z-index: 10;
             border: 1px solid #EF4623;
         }
@@ -503,38 +535,20 @@
             }
         }
 
-        @media (max-width: 1680px) {
-            .telluswhatssvgtopcont {
-                max-width: 1350px;
-                margin-left: auto;
-                margin-right: auto;
-                left: 0;
-                right: 0;
-            }
-
-            .telluswhatsvgtop,
-            .telluswhatsvgbtm {
-                padding-left: 110px;
-            }
-
-            .telluswhatsvgbtm {
-                margin-left: -0.5px;
-            }
-        }
-
+        /* --rail-scale only ever shrinks the rail enough to keep both of its
+           descents on screen: the widest point is 729.361px either side of the
+           centre line, so the largest usable scale is (viewport / 1458.7). */
         @media (max-width: 1600px) {
-            .telluswhatssvgtopcont {
-                max-width: 1200px;
-                margin-right: 10rem;
-            }
-
-            .telluswhatsvgtop,
-            .telluswhatsvgbtm {
-                padding-left: 80px;
+            :root {
+                --rail-scale: 0.98;
             }
         }
 
         @media (max-width: 1440px) {
+            :root {
+                --rail-scale: 0.93;
+            }
+
             .contdivseccompliancecard {
                 max-width: 1250px;
             }
@@ -544,24 +558,8 @@
                 gap: 40px;
             }
 
-            .middledivsvg,
-            .bottomdivsvg {
-                padding-right: 0px;
-            }
-
             .bottomdivsvg {
                 margin-top: -3px;
-            }
-
-            .middledivsvg svg,
-            .bottomdivsvg svg {
-                transform: scaleX(0.92);
-                transform-origin: left;
-            }
-
-            .telluswhatsvgtop,
-            .telluswhatsvgbtm {
-                padding-left: 0px;
             }
 
             .telluswhatsvgbtm {
@@ -574,6 +572,11 @@
         }
 
         @media (max-width: 1366px) {
+            :root {
+                --rail-scale: 0.90;
+                --rail-scale-y: 0.85;
+            }
+
             .contdivseccompliancecard {
                 gap: 180px;
             }
@@ -583,19 +586,12 @@
                 /* Shifted down by 30px from previous change */
             }
 
-            .middledivsvg svg,
-            .bottomdivsvg svg {
-                transform: scaleX(0.92) translateX(25px);
-                transform-origin: left;
-            }
-
             .bottomdivsvg {
                 margin-top: -52px;
                 /* Shifted down by 30px from previous change */
             }
 
             .telluswhatssvgtopcont {
-                max-width: 1050px;
                 padding: 20px 40px;
             }
 
@@ -677,29 +673,8 @@
                 margin-bottom: 8px;
             }
 
-            .telluswhatsvgtop svg,
-            .telluswhatsvgbtm svg {
-                transform: scaleX(0.92) translateX(48px);
-                transform-origin: left;
-            }
-
-            .telluswhatsvgtop,
-            .telluswhatsvgbtm {
-                padding-left: 0px;
-            }
-
             .telluswhatsvgbtm {
                 margin-top: -15px;
-            }
-
-            .middledivsvg svg {
-                transform: scaleX(0.92) translateX(42px);
-                transform-origin: left;
-            }
-
-            .bottomdivsvg svg {
-                transform: scaleX(0.92) translateX(42px) scaleY(0.85);
-                transform-origin: top left;
             }
 
             .products-hero-title {
@@ -709,21 +684,13 @@
         }
 
         @media (max-width: 1320px) {
-
-            .svgconsecblc {
-                padding-left: 50px;
-                padding-right: 50px;
+            :root {
+                --rail-scale: 0.87;
             }
 
             #svgherobtm {
                 margin-top: -40rem;
                 /* Shifted down from -45rem */
-            }
-
-            .telluswhatsvgtop svg,
-            .telluswhatsvgbtm svg {
-                transform: scaleX(0.92) translateX(19px);
-                transform-origin: left;
             }
 
             .telluswhatsvgbtm {
@@ -732,20 +699,13 @@
         }
 
         @media (max-width: 1280px) {
+            :root {
+                --rail-scale: 0.78;
+            }
+
             .products-hero-title {
                 font-size: 64px;
                 line-height: 80px;
-            }
-
-            .telluswhatssvgtopcont {
-                max-width: 1150px;
-                transform: translateX(100px);
-            }
-
-            .telluswhatsvgtop svg,
-            .telluswhatsvgbtm svg {
-                transform: scaleX(1.036) translateX(20.5px);
-                transform-origin: left;
             }
 
             .telluswhatsvgbtm {
@@ -754,6 +714,12 @@
 
             .contdivseccompliancecard {
                 max-width: 1100px;
+            }
+        }
+
+        @media (max-width: 1140px) {
+            :root {
+                --rail-scale: 0.70;
             }
         }
 

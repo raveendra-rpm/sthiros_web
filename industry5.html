@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css?v=7" />
+    <link rel="stylesheet" href="assets/css/style.css?v=8" />
     <style>
         /* General Light Mode Overrides for Industry */
         body.light-mode {
@@ -37,7 +37,6 @@
         body.light-mode .we-heading,
         body.light-mode .chts-title,
         body.light-mode #skithedesksec h2,
-        body.light-mode .sthiros-trans-title,
         body.light-mode .problem-heading-text,
         body.light-mode .problem-text,
         body.light-mode .solution-main h3,
@@ -53,7 +52,6 @@
         body.light-mode .hsd-feature-content p,
         body.light-mode .chts-desc,
         body.light-mode .chts-card-desc,
-        body.light-mode .sthiros-trans-text,
         body.light-mode .problem-desc,
         body.light-mode .solution-main p,
         body.light-mode .service-list li,
@@ -89,6 +87,29 @@
             color: #ffffff;
             background-color: #EC2D26;
             border-color: #EC2D26;
+        }
+
+        /* Transformation Card */
+        body.light-mode #sthirostransformationsec {
+            background-color: #ffffff;
+        }
+
+        body.light-mode .sthiros-trans-card {
+            background-color: #EC2D26 !important;
+        }
+
+        body.light-mode .sthiros-trans-text,
+        body.light-mode .sthiros-trans-title {
+            color: #ffffff !important;
+        }
+
+        body.light-mode .sthiros-trans-divider {
+            color: rgba(255, 255, 255, 0.9) !important;
+        }
+
+        body.light-mode .sthiros-trans-divider::before,
+        body.light-mode .sthiros-trans-divider::after {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;
         }
 
         /* Cards and Elements Backgrounds */
@@ -1122,7 +1143,7 @@
 
         .chts-card-desc {
             font-family: 'Quicksand', sans-serif;
-            font-size: 14px;
+            font-size: 16px;
             color: #ccc;
             line-height: 1.6;
             flex-grow: 1;
@@ -1156,6 +1177,14 @@
         .chts-card-footer a:hover {
             opacity: 0.8;
         }
+
+        .chts-bottom-btn-wrapper {
+            text-align: center;
+            margin-top: 80px;
+            padding-bottom: 20px;
+        }
+
+
 
         @media (max-width: 1280px) {
             .chts-title {
@@ -1914,7 +1943,7 @@
                 <a href="contactus.html" class="hero-btn-outer">
                     <span class="hero-btn-inner">BOOK A 30-MIN CALL</span>
                 </a>
-                <a href="#" class="hero-btn-outer">
+                <a href="#" class="hero-btn-outer" style="display: none;">
                     <span class="hero-btn-inner">GET THE INDUSTRY DIAGNOSTIC</span>
                 </a>
             </div>
@@ -4556,7 +4585,7 @@ We’ll show you the right problems. -->
         </div>
     </section>
 
-    <!-- T Section Title How Sthiros is different in MANUFACTURING -->
+    <!-- T Section Title The Sthiros Difference -->
     <section id="sectiontitlesvgtop">
         <svg xmlns="http://www.w3.org/2000/svg" width="74" height="482" viewBox="0 0 74 482" fill="none">
             <path d="M74 481.988L49.3334 481.988L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 481.988Z"
@@ -4596,15 +4625,15 @@ We’ll show you the right problems. -->
         </svg>
     </section>
 
-    <!-- How Sthiros is different in MANUFACTURING -->
+    <!-- The Sthiros Difference -->
     <section id="howsthirosdifferentsec">
-        <h2 class="hsd-heading">HOW <span>STHIROS</span> IS<br>DIFFERENT IN MANUFACTURING</h2>
+        <h2 class="hsd-heading">The <span>Sthiros</span> Difference</h2>
 
         <div class="hsd-features">
             <div class="hsd-feature-card">
                 <div class="hsd-feature-content">
                     <h3>We speak OEE, batch yield and conversion cost natively</h3>
-                    <p>Capacity utilisation, rejection rates, the real economics of a shop floor — we advise in that
+                    <p>Capacity utilisation, rejection rates, the real economics of a shop floor : we advise in that
                         language rather than importing a generic operational framework and applying it to manufacturing
                         from the outside, which never quite fits.
                     </p>
@@ -4613,7 +4642,7 @@ We’ll show you the right problems. -->
             <div class="hsd-feature-card">
                 <div class="hsd-feature-content">
                     <h3>Our AI is built for the production floor, not the demo</h3>
-                    <p>Predictive maintenance, defect detection, demand-driven scheduling, yield optimisation — built
+                    <p>Predictive maintenance, defect detection, demand-driven scheduling, yield optimisation : built
                         for the messy realities of sensor data, batch records and shift-level operations, not for a
                         clean dataset that never survives contact with a real plant.
                     </p>
@@ -4622,7 +4651,7 @@ We’ll show you the right problems. -->
             <div class="hsd-feature-card">
                 <div class="hsd-feature-content">
                     <h3>We leave software your plant team runs, not IT</h3>
-                    <p>Production dashboards, cost tracking, quality control platforms, compliance tools — real products
+                    <p>Production dashboards, cost tracking, quality control platforms, compliance tools : real products
                         your plant teams open every shift, rather than a system so fragile it needs an IT team standing
                         behind it to stay upright.</p>
                 </div>
@@ -4800,7 +4829,7 @@ We’ll show you the right problems. -->
         <div class="chts-container">
             <h4 class="chts-subtitle">CHOOSE HOW TO START</h4>
             <h2 class="chts-title"><span>Pick a way in.</span><br>They all lead to the<br>same conversation.</h2>
-            <p class="chts-desc">Plant head, MD or finance leader — start wherever fits where you are.</p>
+            <p class="chts-desc">Plant head, MD or finance leader; start wherever fits where you are.</p>
         </div>
 
         <div class="chts-cards-wrapper">
@@ -4810,9 +4839,6 @@ We’ll show you the right problems. -->
                     <p class="chts-card-desc">Tell us the plant situation. By the end of the call we'll say what we'd
                         tackle first — cost structure, an OEE improvement, a quality system, or a production
                         intelligence build. No deck required.</p>
-                    <div class="chts-card-footer">
-                        <a href="contactus.html">Book a call</a>
-                    </div>
                 </div>
 
                 <div class="chts-card">
@@ -4821,9 +4847,6 @@ We’ll show you the right problems. -->
                         supply chain resilience, compliance posture and workforce capability. It shows exactly where
                         you're exposed. Occasionally it tells you you're running tighter than you thought, which we're
                         glad to confirm.</p>
-                    <div class="chts-card-footer">
-                        <a href="#">Get the diagnostic</a>
-                    </div>
                 </div>
 
                 <div class="chts-card">
@@ -4831,11 +4854,13 @@ We’ll show you the right problems. -->
                     <p class="chts-card-desc">Not ready to talk? Send three lines: your plant type and scale, the
                         pressure point, what you've already tried. You'll get an actual point of view back, not a
                         brochure.</p>
-                    <div class="chts-card-footer">
-                        <a href="#">Send a brief</a>
-                    </div>
                 </div>
             </div>
+
+        <div class="chts-bottom-btn-wrapper">
+            <a href="contactus.html" class="hero-btn-outer">
+                <span class="hero-btn-inner">Bring us the hardest one</span>
+            </a>
         </div>
     </section>
 

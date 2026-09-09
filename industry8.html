@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css?v=7" />
+    <link rel="stylesheet" href="assets/css/style.css?v=8" />
     <style>
         /* General Light Mode Overrides for Industry */
         body.light-mode {
@@ -37,7 +37,6 @@
         body.light-mode .we-heading,
         body.light-mode .chts-title,
         body.light-mode #skithedesksec h2,
-        body.light-mode .sthiros-trans-title,
         body.light-mode .problem-heading-text,
         body.light-mode .problem-text,
         body.light-mode .solution-main h3,
@@ -53,7 +52,6 @@
         body.light-mode .hsd-feature-content p,
         body.light-mode .chts-desc,
         body.light-mode .chts-card-desc,
-        body.light-mode .sthiros-trans-text,
         body.light-mode .problem-desc,
         body.light-mode .solution-main p,
         body.light-mode .service-list li,
@@ -89,6 +87,29 @@
             color: #ffffff;
             background-color: #EC2D26;
             border-color: #EC2D26;
+        }
+
+        /* Transformation Card */
+        body.light-mode #sthirostransformationsec {
+            background-color: #ffffff;
+        }
+
+        body.light-mode .sthiros-trans-card {
+            background-color: #EC2D26 !important;
+        }
+
+        body.light-mode .sthiros-trans-text,
+        body.light-mode .sthiros-trans-title {
+            color: #ffffff !important;
+        }
+
+        body.light-mode .sthiros-trans-divider {
+            color: rgba(255, 255, 255, 0.9) !important;
+        }
+
+        body.light-mode .sthiros-trans-divider::before,
+        body.light-mode .sthiros-trans-divider::after {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;
         }
 
         /* Cards and Elements Backgrounds */
@@ -1122,7 +1143,7 @@
 
         .chts-card-desc {
             font-family: 'Quicksand', sans-serif;
-            font-size: 14px;
+            font-size: 16px;
             color: #ccc;
             line-height: 1.6;
             flex-grow: 1;
@@ -1156,6 +1177,14 @@
         .chts-card-footer a:hover {
             opacity: 0.8;
         }
+
+        .chts-bottom-btn-wrapper {
+            text-align: center;
+            margin-top: 80px;
+            padding-bottom: 20px;
+        }
+
+
 
         @media (max-width: 1280px) {
             .chts-title {
@@ -1902,14 +1931,14 @@
         <div class="industry-hero-content">
             <h1><span>RevPAR</span> is back to <br> 2019 levels. GOP <br> is still deciding <br> whether to <span>show
                     up.</span></h1>
-            <p>Domestic travel, premium hotel demand and OTA GMV are all at record highs — but OTA commissions and
+            <p>Domestic travel, premium hotel demand and OTA GMV are all at record highs. But OTA commissions and
                 customer acquisition costs are structurally higher too, so occupancy and revenue recovered before margin
                 did. We close that gap.</p>
             <div class="industry-hero-actions">
                 <a href="contactus.html" class="hero-btn-outer">
                     <span class="hero-btn-inner">BOOK A 30-MIN CALL</span>
                 </a>
-                <a href="#" class="hero-btn-outer">
+                <a href="#" class="hero-btn-outer" style="display: none;">
                     <span class="hero-btn-inner">GET THE INDUSTRY DIAGNOSTIC</span>
                 </a>
             </div>
@@ -4548,7 +4577,7 @@ We’ll show you the right problems. -->
         </div>
     </section>
 
-    <!-- T Section Title How Sthiros is different in BFSI -->
+    <!-- T Section Title The Sthiros Difference -->
     <section id="sectiontitlesvgtop">
         <svg xmlns="http://www.w3.org/2000/svg" width="74" height="482" viewBox="0 0 74 482" fill="none">
             <path d="M74 481.988L49.3334 481.988L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 481.988Z"
@@ -4588,15 +4617,15 @@ We’ll show you the right problems. -->
         </svg>
     </section>
 
-    <!-- How Sthiros is different in BFSI -->
+    <!-- The Sthiros Difference -->
     <section id="howsthirosdifferentsec">
-        <h2 class="hsd-heading">How <span>Sthiros</span> is different<br> in travel and hospitality</h2>
+        <h2 class="hsd-heading">The <span>Sthiros</span> Difference</h2>
 
         <div class="hsd-features">
             <div class="hsd-feature-card">
                 <div class="hsd-feature-content">
                     <h3>We speak RevPAR, GOP, take rate and yield natively</h3>
-                    <p>ADR, OTA commission, FIT versus group margin — the financial language of travel and hospitality
+                    <p>ADR, OTA commission, FIT versus group margin : the financial language of travel and hospitality
                         is our first language, not a generic operational framework we imported and applied to the sector
                         from the outside, which never quite fits.
                     </p>
@@ -4606,7 +4635,7 @@ We’ll show you the right problems. -->
                 <div class="hsd-feature-content">
                     <h3>Our AI is built for perishable inventory and volatile demand</h3>
                     <p>Dynamic pricing, demand forecasting, personalisation, yield optimisation, cost anomaly detection
-                        — built for the specific data patterns of travel: seasonality, demand that swings, and a
+                        : built for the specific data patterns of travel: seasonality, demand that swings, and a
                         room-night that's worth nothing the morning after it's gone unsold.
                     </p>
                 </div>
@@ -4615,7 +4644,7 @@ We’ll show you the right problems. -->
                 <div class="hsd-feature-content">
                     <h3>We leave software your revenue team runs without us</h3>
                     <p>Revenue management dashboards, direct booking engines, distribution intelligence, guest
-                        intelligence tools — real products your revenue and operations teams open every day, not a
+                        intelligence tools : real products your revenue and operations teams open every day, not a
                         system that needs a consultant in the room to be read</p>
                 </div>
             </div>
@@ -4737,7 +4766,7 @@ We’ll show you the right problems. -->
     <section id="sthirostransformationsec">
         <div class="sthiros-trans-card">
             <p class="sthiros-trans-text">
-                In travel and hospitality the margin hides in a few familiar gaps — between what you could have charged
+                In travel and hospitality the margin hides in a few familiar gaps : between what you could have charged
                 and what you actually charged, between the guest you won directly and the one you paid 18% commission
                 for, between the cost your operating model should carry and the cost it does. None of them is dramatic
                 on any single night. Add a season of them together and it's the difference between a strong topline and
@@ -4793,7 +4822,7 @@ We’ll show you the right problems. -->
         <div class="chts-container">
             <h4 class="chts-subtitle">CHOOSE HOW TO START</h4>
             <h2 class="chts-title"><span>Pick a way in.</span><br>They all lead to the<br>same conversation.</h2>
-            <p class="chts-desc">Hotel operator, OTA leader, airline exec or travel tech founder — start wherever fits
+            <p class="chts-desc">Hotel operator, OTA leader, airline exec or travel tech founder; start wherever fits
                 where you are.</p>
         </div>
 
@@ -4804,9 +4833,6 @@ We’ll show you the right problems. -->
                     <p class="chts-card-desc">Tell us your business and the challenge. By the end of the call we'll say
                         what we'd tackle first — revenue strategy, cost structure, channel mix, an AI build, or a piece
                         of software. No deck required.</p>
-                    <div class="chts-card-footer">
-                        <a href="contactus.html">Book a call</a>
-                    </div>
                 </div>
 
                 <div class="chts-card">
@@ -4814,9 +4840,6 @@ We’ll show you the right problems. -->
                     <p class="chts-card-desc">A free self-assessment across your regulatory posture, AI readiness,
                         operating maturity and risk gaps. It tells you where you stand and what's worth doing first.
                         Occasionally it tells you you're fine, which we're happy to confirm.</p>
-                    <div class="chts-card-footer">
-                        <a href="#">Get the diagnostic</a>
-                    </div>
                 </div>
 
                 <div class="chts-card">
@@ -4824,11 +4847,13 @@ We’ll show you the right problems. -->
                     <p class="chts-card-desc">Not ready to talk? Send three lines: your business type and scale, the
                         commercial pressure, what you've already tried. You'll get an actual point of view back, not a
                         brochure.</p>
-                    <div class="chts-card-footer">
-                        <a href="#">Send a brief</a>
-                    </div>
                 </div>
             </div>
+
+        <div class="chts-bottom-btn-wrapper">
+            <a href="contactus.html" class="hero-btn-outer">
+                <span class="hero-btn-inner">Bring us the hardest one</span>
+            </a>
         </div>
     </section>
 

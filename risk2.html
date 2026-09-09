@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css?v=8" />
     <style>
 /* General Light Mode Overrides for Industry */
         body.light-mode {
@@ -120,8 +120,33 @@
             color: #ffffff !important;
         }
 
+        /* Skip the deck Card Light Mode */
         body.light-mode .skipthedeskcont {
-            background-image: url('assets/images/industries/industryreadywhenyulight.jpg');
+            background-image: url('assets/images/industries/industryreadywhenyulight.jpg') !important;
+        }
+
+        body.light-mode #skithedesksec .std-content h2,
+        body.light-mode #skithedesksec .std-content h3,
+        body.light-mode #skithedesksec .std-content p,
+        body.light-mode .skipthedeskcont .std-content h2,
+        body.light-mode .skipthedeskcont .std-content h3,
+        body.light-mode .skipthedeskcont .std-content p,
+        body.light-mode .skipthedeskcont h2,
+        body.light-mode .skipthedeskcont h3,
+        body.light-mode .skipthedeskcont p {
+            color: #000000 !important;
+        }
+
+        body.light-mode #skithedesksec .hero-btn-inner,
+        body.light-mode .skipthedeskcont .hero-btn-inner {
+            color: #000000 !important;
+        }
+
+        body.light-mode #skithedesksec .hero-btn-outer:hover .hero-btn-inner,
+        body.light-mode .skipthedeskcont .hero-btn-outer:hover .hero-btn-inner,
+        body.light-mode #skithedesksec .hero-btn-inner:hover,
+        body.light-mode .skipthedeskcont .hero-btn-inner:hover {
+            color: #ffffff !important;
         }
 
         /* Services Page Specific Light Mode Overrides */

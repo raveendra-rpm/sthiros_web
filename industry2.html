@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css?v=7" />
+    <link rel="stylesheet" href="assets/css/style.css?v=8" />
     <style>
         /* General Light Mode Overrides for Industry */
         body.light-mode {
@@ -37,7 +37,6 @@
         body.light-mode .we-heading,
         body.light-mode .chts-title,
         body.light-mode #skithedesksec h2,
-        body.light-mode .sthiros-trans-title,
         body.light-mode .problem-heading-text,
         body.light-mode .problem-text,
         body.light-mode .solution-main h3,
@@ -53,7 +52,6 @@
         body.light-mode .hsd-feature-content p,
         body.light-mode .chts-desc,
         body.light-mode .chts-card-desc,
-        body.light-mode .sthiros-trans-text,
         body.light-mode .problem-desc,
         body.light-mode .solution-main p,
         body.light-mode .service-list li,
@@ -89,6 +87,29 @@
             color: #ffffff;
             background-color: #EC2D26;
             border-color: #EC2D26;
+        }
+
+        /* Transformation Card */
+        body.light-mode #sthirostransformationsec {
+            background-color: #ffffff;
+        }
+
+        body.light-mode .sthiros-trans-card {
+            background-color: #EC2D26 !important;
+        }
+
+        body.light-mode .sthiros-trans-text,
+        body.light-mode .sthiros-trans-title {
+            color: #ffffff !important;
+        }
+
+        body.light-mode .sthiros-trans-divider {
+            color: rgba(255, 255, 255, 0.9) !important;
+        }
+
+        body.light-mode .sthiros-trans-divider::before,
+        body.light-mode .sthiros-trans-divider::after {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;
         }
 
         /* Cards and Elements Backgrounds */
@@ -1122,7 +1143,7 @@
 
         .chts-card-desc {
             font-family: 'Quicksand', sans-serif;
-            font-size: 14px;
+            font-size: 16px;
             color: #ccc;
             line-height: 1.6;
             flex-grow: 1;
@@ -1156,6 +1177,14 @@
         .chts-card-footer a:hover {
             opacity: 0.8;
         }
+
+        .chts-bottom-btn-wrapper {
+            text-align: center;
+            margin-top: 80px;
+            padding-bottom: 20px;
+        }
+
+
 
         @media (max-width: 1280px) {
             .chts-title {
@@ -1916,7 +1945,7 @@
                 <a href="contactus.html" class="hero-btn-outer">
                     <span class="hero-btn-inner">BOOK A 30-MIN CALL</span>
                 </a>
-                <a href="#" class="hero-btn-outer">
+                <a href="#" class="hero-btn-outer" style="display: none;">
                     <span class="hero-btn-inner">GET THE INDUSTRY DIAGNOSTIC</span>
                 </a>
             </div>
@@ -4571,7 +4600,7 @@ We’ll show you the right problems. -->
         </div>
     </section>
 
-    <!-- T Section Title How Sthiros is different in BFSI -->
+    <!-- T Section Title The Sthiros Difference -->
     <section id="sectiontitlesvgtop">
         <svg xmlns="http://www.w3.org/2000/svg" width="74" height="482" viewBox="0 0 74 482" fill="none">
             <path d="M74 481.988L49.3334 481.988L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 481.988Z"
@@ -4611,15 +4640,15 @@ We’ll show you the right problems. -->
         </svg>
     </section>
 
-    <!-- How Sthiros is different in BFSI -->
+    <!-- The Sthiros Difference -->
     <section id="howsthirosdifferentsec">
-        <h2 class="hsd-heading">How <span>Sthiros</span> is<br>different in energy and mining</h2>
+        <h2 class="hsd-heading">The <span>Sthiros</span> Difference</h2>
 
         <div class="hsd-features">
             <div class="hsd-feature-card">
                 <div class="hsd-feature-content">
                     <h3>We speak CUF, AT&C, stripping ratio and LCOE natively</h3>
-                    <p>Wellhead cost, ore grade, PPA tariff — the financial language of energy and mining assets is our
+                    <p>Wellhead cost, ore grade, PPA tariff. the financial language of energy and mining assets is our
                         first language, not a framework we imported and bent to fit a capital-intensive business from
                         the outside.
                     </p>
@@ -4761,7 +4790,7 @@ We’ll show you the right problems. -->
         <div class="sthiros-trans-card">
             <p class="sthiros-trans-text">
                 In energy and mining, the whole business problem is the gap between what an asset could produce and what
-                it does. A point of CUF, a bit of AT&C loss recovered, a stripping ratio nudged back towards plan — none
+                it does. A point of CUF, a bit of AT&C loss recovered, a stripping ratio nudged back towards plan; none
                 of it is dramatic, and all of it compounds across an asset life measured in decades. Closing those gaps,
                 quietly and repeatedly, is the work we like.
             </p>
@@ -4816,8 +4845,7 @@ We’ll show you the right problems. -->
             <h4 class="chts-subtitle">CHOOSE HOW TO START</h4>
             <h2 class="chts-title"><span>Pick a way in.</span><br>They all lead to the<br>same conversation.</h2>
             <p class="chts-desc">Whether you run a mid-size bank, you're the one who has to make an NBFC's
-                transformation actually work, or you're a founder who just hit the first wall money can't knock down
-                &mdash; start wherever's easiest.</p>
+                transformation actually work, or you're a founder who just hit the first wall money can't knock down; start wherever's easiest.</p>
         </div>
 
         <div class="chts-cards-wrapper">
@@ -4827,9 +4855,6 @@ We’ll show you the right problems. -->
                     <p class="chts-card-desc">Tell us the asset type and the problem. By the end of the call we'll say
                         what we'd tackle first — asset performance, regulatory advisory, cost structure, an AI build, or
                         a piece of software. No deck required.</p>
-                    <div class="chts-card-footer">
-                        <a href="contactus.html">Book a call</a>
-                    </div>
                 </div>
 
                 <div class="chts-card">
@@ -4838,20 +4863,19 @@ We’ll show you the right problems. -->
                         structure, operational risk, digital readiness and commercial optimisation. It shows where your
                         returns are leaking. Occasionally it tells you you're running tight, which we're glad to
                         confirm.</p>
-                    <div class="chts-card-footer">
-                        <a href="#">Get the diagnostic</a>
-                    </div>
                 </div>
 
                 <div class="chts-card">
                     <h3 class="chts-card-title">Just describe the situation</h3>
                     <p class="chts-card-desc">Not ready to talk? Send three lines: what you are, what's broken, what
                         you've already tried. You'll get an actual opinion back, not a brochure.</p>
-                    <div class="chts-card-footer">
-                        <a href="#">Send a brief</a>
-                    </div>
                 </div>
             </div>
+
+        <div class="chts-bottom-btn-wrapper">
+            <a href="contactus.html" class="hero-btn-outer">
+                <span class="hero-btn-inner">Bring us the hardest one</span>
+            </a>
         </div>
     </section>
 

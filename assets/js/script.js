@@ -1458,15 +1458,12 @@ function initStatCounters() {
 ══════════════════════════════════════════ */
 function initCursorGlow() {
   if (!window.matchMedia('(hover: hover)').matches) return;
-  const cursor = document.createElement('div');
-  cursor.id = 'cursor-glow';
-  Object.assign(cursor.style, {
-    position: 'fixed', width: '300px', height: '300px', borderRadius: '50%',
-    background: 'radial-gradient(circle, rgba(232,75,26,0.07) 0%, transparent 70%)',
-    pointerEvents: 'none', zIndex: '9999', transform: 'translate(-50%, -50%)',
-    top: '0', left: '0'
-  });
-  document.body.appendChild(cursor);
+  let cursor = document.getElementById('cursor-glow');
+  if (!cursor) {
+    cursor = document.createElement('div');
+    cursor.id = 'cursor-glow';
+    document.body.appendChild(cursor);
+  }
   let mx = 0, my = 0;
   document.addEventListener('mousemove', (e) => { mx = e.clientX; my = e.clientY; });
   gsap.ticker.add(() => gsap.set(cursor, { left: mx, top: my }));
