@@ -3121,11 +3121,9 @@ var SMR_SEGS = [
     enter: [147.28, 0], exit: [0, 1024.39], corner: [147.28, 1024.39]
   },
   {
-    /* E stood on its head, cropped to just the hook: up, then left. Its numbers
-       are in the flipped frame, measured from the top of what is shown, so the
-       ordinary layout maths still applies. */
-    key: 'F', el: 'smrSegF', w: 184, h: 1061, flip: true, show: 200,
-    enter: [147.28, 200], exit: [0, 36.61], corner: [147.28, 36.61]
+    /* F: custom 224x254 corner curve entering from C below and turning left into Cyber */
+    key: 'F', el: 'smrSegF', w: 224, h: 254,
+    enter: [187.05, 254], exit: [0, 37.09], corner: [187.05, 37.09]
   }
 ];
 
@@ -3201,16 +3199,17 @@ function smrCreateRail() {
     segs.B.exit = [1846.26, Math.max(126.77, 36.50 + u)];
     segs.B.clip = [0, 673 - segs.B.exit[1]];
 
-    /* F's hook already lifts the line 163.39 units, so C only climbs the rest */
-    segs.C.exit = [2036.92, Math.min(417.75, 507.05 - Math.max(90, u - 163.39))];
-    segs.C.clip = [segs.C.exit[1], 0];
+    /* F is custom corner SVG connecting directly to C's top exit */
+    segs.C.exit = [2036.92, 0];
+    segs.C.clip = [0, 0];
     segs.F.clip = [0, 0];
 
-    /* the run down to AI is split across two exports */
-    segs.D.exit = [1939.39, Math.min(184, Math.max(125.16, 36.50 + u * 0.4))];
-    segs.D.clip = [0, 184 - segs.D.exit[1]];
-    var rest = Math.max(92, (v - (segs.D.exit[1] - 36.50) * K) / K);
-    segs.E.enter = [147.28, Math.min(933, 1024.39 - rest)];
+    /* the run down to AI is split across two exports:
+       Seg D curves down and exits vertically, Seg E continues down before curving left to AI */
+    segs.D.exit = [1939.39, 184];
+    segs.D.clip = [0, 0];
+    var restAI = Math.max(280, (Math.max(380, stageH * 0.48) - (184 - 36.50) * K) / K);
+    segs.E.enter = [147.28, Math.max(0, 1024.39 - restAI)];
     segs.E.clip = [segs.E.enter[1], 0];
   }
 
@@ -3226,20 +3225,40 @@ function smrCreateRail() {
       var s = segs[link.seg];
       if (link.from) {
         var out = anchor(link.from, 'out');
-        s.pos = [out[0] - s.enter[0] * K, out[1] - s.enter[1] * K];
+        if (link.seg === 'B') {
+          s.pos = [out[0] - s.enter[0] * K, 35];
+        } else if (link.seg === 'C') {
+          s.pos = [1900, 345];
+        } else if (link.seg === 'D') {
+          s.pos = [out[0] - s.enter[0] * K, 55];
+        } else {
+          s.pos = [out[0] - s.enter[0] * K, out[1] - s.enter[1] * K];
+        }
       } else if (link.after) {
         var prev = segs[link.after];
-        s.pos = [prev.pos[0] + prev.exit[0] * K - s.enter[0] * K,
-        prev.pos[1] + prev.exit[1] * K - s.enter[1] * K];
+        if (link.seg === 'F') {
+          s.pos = [segs.C.pos[0] + (2036.92 - s.enter[0]) * K, segs.C.pos[1] - s.enter[1] * K];
+        } else {
+          s.pos = [prev.pos[0] + prev.exit[0] * K - s.enter[0] * K,
+                   prev.pos[1] + prev.exit[1] * K - s.enter[1] * K];
+        }
       } else if (link.to && box[link.to].pos) {
         /* segment A: work backwards from the mark it feeds */
         var into = anchor(link.to, 'in');
-        s.pos = [into[0] - s.exit[0] * K, into[1] - s.exit[1] * K];
+        if (link.seg === 'A') {
+          s.pos = [into[0] - s.exit[0] * K, -310];
+        } else {
+          s.pos = [into[0] - s.exit[0] * K, into[1] - s.exit[1] * K];
+        }
       }
       if (link.to && !box[link.to].pos) {
         var end = [s.pos[0] + s.exit[0] * K, s.pos[1] + s.exit[1] * K];
         var a = SMR_ANCHORS[link.to].in;
-        box[link.to].pos = [end[0] - a[0] * box[link.to].w, end[1] - a[1] * box[link.to].h];
+        if (link.to === 'risk') {
+          box[link.to].pos = [1595, 590];
+        } else {
+          box[link.to].pos = [end[0] - a[0] * box[link.to].w, end[1] - a[1] * box[link.to].h];
+        }
       }
     });
   }
@@ -3254,21 +3273,12 @@ function smrCreateRail() {
     return { lo: lo, hi: hi, h: hi - lo };
   }
 
-  /* The extent grows 1:1 with the drop, so one trial run solves for the drop
-     that fills the stage without overflowing it. If even the shortest possible
-     drop is too tall — a small phone — the marks come down until it fits. */
-  var room = stageH * 0.96;
-  var V, ext;
-  for (var pass = 0; pass < 4; pass++) {
-    measure();
-    V = 200; trim(V); chain();
-    V = Math.max(150, Math.min(430, room - (extent().h - V)));
-    trim(V); chain();
-    ext = extent();
-    if (ext.h - room <= 1 || pass === 3) break;
-    root.style.setProperty('--smr-logo-h',
-      Math.max(84, box.strategy.h - (ext.h - room) / 2 - 2) + 'px');
-  }
+  /* Measure the station boxes at their full, prominent mobile size defined by CSS,
+     and trim the segments with a proportional vertical drop */
+  measure();
+  var V = Math.max(170, Math.min(240, stageH * 0.25));
+  trim(V);
+  chain();
 
   /* ── the camera settles each mark in the middle of the stage. Because the
      whole rail is trimmed to fit one stage height, that vertical settle is only
@@ -3329,6 +3339,13 @@ function smrCreateRail() {
   /* ── the ride: the camera runs along the rail, settling on each mark ── */
   var focusX = function (k) {
     var b = box[k];
+    if (k === 'cyber') {
+      return b.pos[0] + b.w / 2;
+    }
+    if (k === 'ai' && window.innerWidth <= 768) {
+      /* AI logo center taking into account the mobile CSS translation and Seg D shorten */
+      return (b.pos[0] - window.innerWidth * 0.16) + b.w / 2 - (window.innerWidth * 0.12);
+    }
     return (b.pos[0] + Math.min(0, b.dLeft) + b.pos[0] + b.w + Math.max(0, b.dRight)) / 2;
   };
   /* the middle of a mark and its copy together, so the whole block lands centred
@@ -3351,7 +3368,12 @@ function smrCreateRail() {
   var camOfMark = function (k) {
     return [stageW / 2 - focusX(k), stageH / 2 - focusY(k)];
   };
-  var camXofBend = function (k) { return stageW / 2 - bend(k).x; };
+  var camXofBend = function (k) {
+    if (k === 'D' && window.innerWidth <= 768) {
+      return stageW / 2 - (bend(k).x - window.innerWidth * 0.28);
+    }
+    return stageW / 2 - bend(k).x;
+  };
 
   var route = [];
   var go = function (cx, cy, hold) {
@@ -3493,3 +3515,186 @@ function initMobileServicesRail() {
     if (teardown) teardown();
   };
 }
+
+/**
+ * In-Page Text Search (Ctrl+F behavior)
+ */
+function initHeaderInPageSearch() {
+  const searchInput = document.querySelector('.header-search-input');
+  const searchBtn = document.querySelector('.header-search-btn');
+  const searchForm = document.querySelector('.header-search');
+  
+  if (!searchInput || !searchForm) return;
+
+  // Create or select the counter badge
+  let counterBadge = document.querySelector('.header-search-count');
+  if (!counterBadge) {
+    counterBadge = document.createElement('div');
+    counterBadge.className = 'header-search-count';
+    searchForm.insertBefore(counterBadge, searchBtn);
+  }
+
+  let matches = [];
+  let currentMatchIndex = -1;
+  const searchableContainer = document.body; // Search entire body
+
+  function clearHighlights() {
+    const marks = document.querySelectorAll('mark.sthiros-search-match');
+    marks.forEach(mark => {
+      const parent = mark.parentNode;
+      parent.replaceChild(document.createTextNode(mark.textContent), mark);
+      parent.normalize(); // Merge adjacent text nodes
+    });
+    matches = [];
+    currentMatchIndex = -1;
+    updateCounterBadge();
+  }
+
+  // Recursive text node search
+  function walkAndHighlight(node, queryRegex) {
+    // Skip script, style, and already highlighted nodes
+    if (['SCRIPT', 'STYLE', 'NOSCRIPT', 'MARK'].includes(node.nodeName)) return;
+    // Skip the search input itself to avoid weird nested DOM loops
+    if (node.closest && node.closest('.header-search')) return;
+
+    if (node.nodeType === 3) { // Text node
+      const text = node.nodeValue;
+      if (!text.trim()) return;
+
+      const match = queryRegex.exec(text);
+      if (match) {
+        const mark = document.createElement('mark');
+        mark.className = 'sthiros-search-match';
+        mark.textContent = match[0];
+
+        const afterNode = node.splitText(match.index);
+        afterNode.nodeValue = afterNode.nodeValue.substring(match[0].length);
+        node.parentNode.insertBefore(mark, afterNode);
+        
+        matches.push(mark);
+        
+        // Reset lastIndex because exec modifies it for global regexes
+        queryRegex.lastIndex = 0; 
+        
+        // Continue walking the rest of the text node
+        walkAndHighlight(afterNode, queryRegex);
+      }
+    } else if (node.nodeType === 1 && node.childNodes && !(node.tagName === 'SELECT' || node.tagName === 'TEXTAREA')) {
+      // Element node
+      // Iterate backwards so DOM mutations don't mess up the indices
+      for (let i = node.childNodes.length - 1; i >= 0; i--) {
+        walkAndHighlight(node.childNodes[i], queryRegex);
+      }
+    }
+  }
+
+  function updateCounterBadge() {
+    if (!searchInput.value.trim()) {
+      counterBadge.classList.remove('is-visible', 'no-results');
+      counterBadge.textContent = '';
+      return;
+    }
+
+    counterBadge.classList.add('is-visible');
+    
+    if (matches.length === 0) {
+      counterBadge.classList.add('no-results');
+      counterBadge.textContent = '0/0';
+    } else {
+      counterBadge.classList.remove('no-results');
+      counterBadge.textContent = `${currentMatchIndex + 1}/${matches.length}`;
+    }
+  }
+
+  function performSearch(query) {
+    clearHighlights();
+    
+    if (!query) return;
+
+    // Create case-insensitive regex, escape regex specials
+    const escapedQuery = query.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+    const regex = new RegExp(escapedQuery, 'gi');
+
+    // Small delay to allow typing, but keep it responsive
+    walkAndHighlight(searchableContainer, regex);
+    
+    // Reverse matches because our recursive walk went backwards through children
+    matches.reverse();
+
+    if (matches.length > 0) {
+      currentMatchIndex = 0;
+      focusMatch(currentMatchIndex);
+    } else {
+      updateCounterBadge();
+    }
+  }
+
+  function focusMatch(index) {
+    if (matches.length === 0) return;
+
+    // Remove active class from old match
+    matches.forEach(m => m.classList.remove('is-active'));
+
+    const activeMatch = matches[index];
+    activeMatch.classList.add('is-active');
+    
+    // Auto-expand accordions/hidden parents if needed (Optional depending on DOM structure)
+    let parent = activeMatch.parentNode;
+    while (parent && parent !== document.body) {
+      if (parent.tagName === 'DETAILS') {
+        parent.setAttribute('open', '');
+      } else if (parent.classList && parent.classList.contains('accordion-content')) {
+        // Mock opening accordion if sthiros uses custom classes
+        parent.style.maxHeight = 'none'; 
+        parent.style.display = 'block';
+      }
+      parent = parent.parentNode;
+    }
+
+    // Scroll into view using Lenis or native
+    const yOffset = -150; // Offset for fixed header
+    const y = activeMatch.getBoundingClientRect().top + window.scrollY + yOffset;
+
+    if (window.lenis) {
+      window.lenis.scrollTo(y, { duration: 1.2, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
+    } else {
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+
+    updateCounterBadge();
+  }
+
+  // Event Listeners
+  let debounceTimeout;
+  searchInput.addEventListener('input', (e) => {
+    clearTimeout(debounceTimeout);
+    debounceTimeout = setTimeout(() => {
+      performSearch(e.target.value.trim());
+    }, 300);
+  });
+
+  searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      if (matches.length > 0) {
+        // Cycle to next match on enter
+        currentMatchIndex = (currentMatchIndex + 1) % matches.length;
+        focusMatch(currentMatchIndex);
+      }
+    }
+  });
+
+  if (searchBtn) {
+    searchBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (matches.length > 0) {
+        currentMatchIndex = (currentMatchIndex + 1) % matches.length;
+        focusMatch(currentMatchIndex);
+      } else {
+        performSearch(searchInput.value.trim());
+      }
+    });
+  }
+}
+
+document.addEventListener('DOMContentLoaded', initHeaderInPageSearch);
