@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -146,6 +146,10 @@
             color: #ffffff !important;
         }
 
+        body.light-mode .chts-nav-btn img {
+            filter: brightness(0);
+        }
+
         body.light-mode .skipthedeskcont {
             background-image: url('assets/images/industries/industryreadywhenyulight.jpg');
         }
@@ -267,7 +271,7 @@
         @media (max-width: 768px) {
             .industry-hero {
                 padding-top: 150px;
-                background-position: left center;
+                background-position: right center !important;
             }
 
             .industry-hero-actions {
@@ -369,13 +373,70 @@
         }
 
         @media (max-width: 768px) {
+            #herosvgtrack {
+                margin-top: -60px !important;
+                position: relative !important;
+                z-index: 5 !important;
+                width: 100% !important;
+                overflow: visible !important;
+            }
+
+            .herosvgtracks {
+                width: 80vw !important;
+                max-width: none !important;
+                margin-left: calc(50vw - (80vw * (960 / 996))) !important;
+                margin-right: auto !important;
+                overflow: visible !important;
+                clip-path: none !important;
+                position: relative;
+                z-index: 5;
+            }
+
+            #herosvgtrack svg {
+                width: 100% !important;
+                height: auto !important;
+                display: block !important;
+                overflow: visible !important;
+            }
+
+            #Whotherightproblemssec {
+                margin-top: 15px !important;
+                padding: 20px 20px 60px 20px !important;
+            }
+
             .wtrp-heading {
                 font-size: 40px;
                 line-height: 50px;
+                margin-bottom: 16px;
             }
 
             .wtrp-subheading {
                 font-size: 14px;
+            }
+
+            .segment-tabs {
+                flex-wrap: nowrap !important;
+                justify-content: flex-start !important;
+                overflow-x: auto !important;
+                -webkit-overflow-scrolling: touch !important;
+                scrollbar-width: none !important;
+                -ms-overflow-style: none !important;
+                gap: 10px !important;
+                padding: 15px 16px !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+            }
+
+            .segment-tabs::-webkit-scrollbar {
+                display: none !important;
+            }
+
+            .segment-btn {
+                flex-shrink: 0 !important;
+                white-space: nowrap !important;
+                padding: 8px 16px !important;
+                font-size: 11px !important;
+                letter-spacing: 2px !important;
             }
         }
 
@@ -708,14 +769,294 @@
         }
 
         @media (max-width: 768px) {
-            .problem-left {
-                width: 100%;
-                border-right: none;
-                padding-right: 0;
+            /* ── Problems Section Container ── */
+            .problems-container {
+                margin-top: 25px !important;
+                width: 100% !important;
             }
 
-            .problem-right {
-                display: none;
+            /* ── Problem Header: PROBLEMS (centered with red border line) ── */
+            .problem-header {
+                position: static !important;
+                background-color: transparent !important;
+                padding-top: 0 !important;
+                margin-bottom: 5px !important;
+                border-bottom: none !important;
+            }
+
+            .problem-header .problem-left {
+                width: 100% !important;
+                padding: 0 0 14px 0 !important;
+                border-bottom: 1px solid #EC2D26 !important;
+                display: flex !important;
+                justify-content: center !important;
+                text-align: center !important;
+            }
+
+            .problem-header .problem-heading-text {
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 22px !important;
+                font-weight: 500 !important;
+                line-height: 28px !important;
+                letter-spacing: 5px !important;
+                color: #fff !important;
+                text-align: center !important;
+                width: 100% !important;
+                text-transform: uppercase !important;
+            }
+
+            .problem-header .problem-right {
+                display: none !important;
+            }
+
+            /* ── Problem Items: Vertical Stack Accordion ── */
+            .problem-item {
+                flex-direction: column !important;
+                width: 100% !important;
+                gap: 0 !important;
+                border-bottom: 1px solid rgba(236, 45, 38, 0.4) !important;
+                background-color: transparent !important;
+                cursor: pointer;
+            }
+
+            .problem-left {
+                width: 100% !important;
+                min-width: 0 !important;
+                padding: 18px 0 !important;
+                border-bottom: none !important;
+                display: flex !important;
+                justify-content: space-between !important;
+                gap: 15px !important;
+            }
+
+            /* Inactive problem items: vertically center arrow with title */
+            .problem-item:not(.active) .problem-left {
+                align-items: center !important;
+            }
+
+            .problem-item.active .problem-left {
+                align-items: flex-start !important;
+                padding-top: 22px !important;
+                padding-bottom: 18px !important;
+            }
+
+            .problem-left-content {
+                padding-right: 0 !important;
+                gap: 10px !important;
+                flex: 1 !important;
+            }
+
+            .problem-text {
+                font-family: 'Pacaembu', sans-serif !important;
+                font-size: 19px !important;
+                font-weight: 500 !important;
+                line-height: 27px !important;
+                color: #fff !important;
+            }
+
+            .problem-arrow {
+                flex-shrink: 0 !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+            }
+
+            .problem-item:not(.active) .problem-arrow {
+                margin-top: 0 !important;
+            }
+
+            .problem-item.active .problem-arrow {
+                margin-top: 6px !important;
+            }
+
+            .problem-arrow img {
+                width: 18px !important;
+                height: auto !important;
+                transition: transform 0.3s ease !important;
+                transform: none !important;
+            }
+
+            /* When active: red chevron rotates 90deg downwards as seen in reference image */
+            .problem-item.active .problem-arrow img {
+                transform: rotate(90deg) !important;
+            }
+
+            .problem-desc {
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 14px !important;
+                line-height: 1.6 !important;
+                color: #ccc !important;
+                margin-top: 12px !important;
+            }
+
+            .problem-item:not(.active) .problem-desc {
+                display: none !important;
+            }
+
+            .problem-item.active .problem-desc {
+                display: block !important;
+            }
+
+            /* ── Sthiros Solution Section ── */
+            .problem-item:not(.active) .problem-right {
+                display: none !important;
+            }
+
+            .problem-item.active .problem-right {
+                display: block !important;
+                width: 100% !important;
+                border-bottom: none !important;
+                padding: 0 0 24px 0 !important;
+            }
+
+            .problem-item.active .problem-dropdown-content {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 20px !important;
+                width: 100% !important;
+                padding-top: 10px !important;
+            }
+
+            /* "STHIROS SOLUTION" header with red horizontal line as in reference image */
+            .problem-item.active .problem-dropdown-content::before {
+                content: "STHIROS SOLUTION";
+                display: block;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 22px;
+                font-weight: 500;
+                line-height: 28px;
+                letter-spacing: 5px;
+                color: #fff;
+                text-transform: uppercase;
+                text-align: center;
+                width: 100%;
+                padding-bottom: 14px;
+                border-bottom: 1px solid #EC2D26;
+                margin-top: 8px;
+                margin-bottom: 16px;
+            }
+
+            /* Solution main content */
+            .solution-main {
+                padding-right: 0 !important;
+                width: 100% !important;
+            }
+
+            .solution-main h3 {
+                font-family: 'Pacaembu', sans-serif !important;
+                font-size: 19px !important;
+                font-weight: 500 !important;
+                line-height: 26px !important;
+                color: #fff !important;
+                margin-bottom: 14px !important;
+            }
+
+            .solution-main p {
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 13.5px !important;
+                line-height: 1.65 !important;
+                color: #ccc !important;
+                margin-bottom: 24px !important;
+            }
+
+            /* Button: FIX MY COMPLIANCE MODEL */
+            .fix-btn {
+                display: inline-block !important;
+                background: transparent !important;
+                border: 2px solid #EF4623 !important;
+                color: #FFF !important;
+                padding: 11px 26px !important;
+                border-radius: 40px !important;
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 12px !important;
+                font-weight: 600 !important;
+                letter-spacing: 2px !important;
+                text-transform: uppercase !important;
+                position: relative !important;
+                margin-bottom: 25px !important;
+                cursor: pointer;
+            }
+
+            .fix-btn::before {
+                content: '' !important;
+                position: absolute !important;
+                top: -5px !important;
+                left: -5px !important;
+                right: -5px !important;
+                bottom: -5px !important;
+                border: 1px solid #EF4623 !important;
+                border-radius: 45px !important;
+                pointer-events: none !important;
+            }
+
+            /* Services Accordion List */
+            .solution-sidebar {
+                width: 100% !important;
+            }
+
+            .service-item {
+                border-bottom: 1px solid rgba(236, 45, 38, 0.4) !important;
+            }
+
+            .service-item:first-child {
+                border-top: none !important;
+            }
+
+            .service-header {
+                display: flex !important;
+                justify-content: space-between !important;
+                align-items: center !important;
+                padding: 16px 0 !important;
+                cursor: pointer;
+            }
+
+            .service-title {
+                font-family: 'Pacaembu', sans-serif !important;
+                font-size: 18px !important;
+                font-weight: 500 !important;
+                color: #fff !important;
+            }
+
+            .service-arrow {
+                display: flex !important;
+                align-items: center !important;
+            }
+
+            .service-arrow img {
+                width: 14px !important;
+                height: auto !important;
+                transition: transform 0.3s ease !important;
+                transform: none !important;
+            }
+
+            /* In reference image, active service item (e.g. Consulting) hides arrow */
+            .service-item.active .service-arrow {
+                display: none !important;
+            }
+
+            .service-list {
+                list-style: none !important;
+                padding-left: 18px !important;
+                padding-bottom: 16px !important;
+                margin: 0 !important;
+            }
+
+            .service-list li {
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 14px !important;
+                color: #ccc !important;
+                margin-bottom: 10px !important;
+                position: relative !important;
+                line-height: 1.5 !important;
+            }
+
+            .service-list li::before {
+                content: "•" !important;
+                position: absolute !important;
+                left: -15px !important;
+                color: #EC2D26 !important; /* Red dot bullet as in reference image */
+                font-size: 16px !important;
+                line-height: 1 !important;
             }
         }
 
@@ -950,6 +1291,32 @@
 
             .we-heading {
                 font-size: 48px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .topsvglines,
+            .btmsvglines,
+            .topsvglines svg,
+            .btmsvglines svg {
+                display: none !important;
+            }
+
+            #what-expect-section {
+                padding: 40px 20px 60px 20px !important;
+                min-height: auto !important;
+            }
+
+            .we-cards {
+                padding: 0 !important;
+                margin-top: 35px !important;
+                gap: 20px !important;
+            }
+
+            .we-heading {
+                font-size: 36px !important;
+                line-height: 44px !important;
+                text-align: center !important;
             }
         }
 
@@ -1190,7 +1557,9 @@
             padding-bottom: 20px;
         }
 
-
+        .chts-nav {
+            display: none;
+        }
 
         @media (max-width: 1280px) {
             .chts-title {
@@ -1254,6 +1623,17 @@
             }
         }
 
+        @keyframes chtsCardFadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.96);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
         @media (max-width: 768px) {
             .chts-title {
                 font-size: 36px;
@@ -1268,21 +1648,107 @@
                 font-size: 13px;
             }
 
+            .chts-cards-wrapper {
+                width: 100% !important;
+                max-width: 400px !important;
+                margin: 30px auto 0 auto !important;
+                padding: 0 20px !important;
+                box-sizing: border-box !important;
+            }
+
             .chts-cards-container {
-                flex-direction: column;
-                gap: 30px;
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: center !important;
+                align-items: center !important;
+                width: 100% !important;
+                gap: 0 !important;
+                transform: none !important;
             }
 
             .chts-slider-bg {
-                display: none;
+                display: none !important;
             }
 
+            /* Inactive cards are completely hidden on mobile so nothing else shows */
             .chts-card {
-                padding: 40px 30px;
+                display: none !important;
             }
 
+            /* Only the active card shows in full #EC2D26 */
             .chts-card.is-active {
-                background-color: #EC2D26;
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: center !important;
+                text-align: center !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+                background-color: #EC2D26 !important;
+                border: none !important;
+                border-radius: 20px !important;
+                padding: 40px 28px !important;
+                min-height: 280px !important;
+                box-shadow: 0 10px 35px rgba(236, 45, 38, 0.45) !important;
+                animation: chtsCardFadeIn 0.3s ease-out !important;
+            }
+
+            .chts-card.is-active .chts-card-title {
+                color: #ffffff !important;
+                font-size: 22px !important;
+                font-weight: 600 !important;
+                line-height: 30px !important;
+                margin-bottom: 18px !important;
+            }
+
+            .chts-card.is-active .chts-card-desc {
+                color: rgba(255, 255, 255, 0.95) !important;
+                font-size: 14.5px !important;
+                line-height: 1.6 !important;
+            }
+
+            .chts-nav {
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+                gap: 20px !important;
+                margin-top: 25px !important;
+                width: 100% !important;
+            }
+
+            .chts-nav-btn {
+                width: 48px !important;
+                height: 48px !important;
+                background: transparent !important;
+                background-image: url('assets/images/sthiroscircle.png') !important;
+                background-size: contain !important;
+                background-repeat: no-repeat !important;
+                background-position: center !important;
+                border: none !important;
+                outline: none !important;
+                padding: 0 !important;
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+                cursor: pointer !important;
+                transition: transform 0.2s ease, opacity 0.2s ease !important;
+                -webkit-tap-highlight-color: transparent !important;
+            }
+
+            .chts-nav-btn:hover,
+            .chts-nav-btn:active {
+                opacity: 0.8 !important;
+                transform: scale(1.08) !important;
+            }
+
+            .chts-nav-btn img {
+                width: 16px !important;
+                height: 16px !important;
+                object-fit: contain !important;
+                pointer-events: none !important;
+            }
+
+            .chts-bottom-btn-wrapper {
+                margin-top: 40px !important;
             }
         }
 
@@ -1482,20 +1948,31 @@
         }
 
         @media (max-width: 768px) {
-            .skipthedesktop svg {
-                width: 56.456vw !important;
-                max-width: none !important;
+            .skipthedesktop,
+            .skipthedeskbtm,
+            .skipthedesktop svg,
+            .skipthedeskbtm svg {
+                display: none !important;
             }
 
-            .skipthedeskbtm svg {
-                width: 111.873vw !important;
-                max-width: none !important;
-                margin-left: -2.2px;
+            #skithedesksec {
+                margin-bottom: 50px !important;
+                padding: 10px 0 !important;
             }
 
             .skipthedeskcont {
-                margin-top: 4rem;
-                padding: 30px;
+                position: relative !important;
+                top: auto !important;
+                left: auto !important;
+                transform: none !important;
+                margin: 0 auto !important;
+                width: 90% !important;
+                min-height: 520px !important;
+                padding: 60px 28px !important;
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: space-between !important;
+                box-sizing: border-box !important;
             }
 
             .std-content h2 {
@@ -1523,8 +2000,9 @@
 
         @media (max-width: 480px) {
             .skipthedeskcont {
-                margin-top: 2rem;
-                padding: 20px;
+                margin-top: 0 !important;
+                min-height: 490px !important;
+                padding: 50px 22px !important;
             }
 
             .std-content h2 {
@@ -4772,7 +5250,6 @@ We’ll show you the right problems. -->
     <!-- CHOOSE HOW TO START -->
     <section id="choosehowrostartsec">
         <div class="chts-container">
-            <h4 class="chts-subtitle">CHOOSE HOW TO START</h4>
             <h2 class="chts-title"><span>Pick a way in.</span><br>They all lead to the<br>same conversation.</h2>
             <p class="chts-desc">Whether you run a mid-size bank, you're the one who has to make an NBFC's
                 transformation actually work, or you're a founder who just hit the first wall money can't knock down; start wherever's easiest.</p>
@@ -4800,6 +5277,17 @@ We’ll show you the right problems. -->
                         you've already tried. You'll get an actual opinion back, not a brochure.</p>
                 </div>
             </div>
+
+            <!-- Mobile Arrow Navigation -->
+            <div class="chts-nav">
+                <button type="button" class="chts-nav-btn chts-prev-btn" aria-label="Previous card">
+                    <img src="assets/images/arrowslideleft.png" alt="Previous">
+                </button>
+                <button type="button" class="chts-nav-btn chts-next-btn" aria-label="Next card">
+                    <img src="assets/images/arrowslideright.png" alt="Next">
+                </button>
+            </div>
+        </div>
 
         <div class="chts-bottom-btn-wrapper">
             <a href="contactus.html" class="hero-btn-outer">
@@ -4952,7 +5440,7 @@ We’ll show you the right problems. -->
         <div class="footer-massive-logo-section">
             <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo massive-logo-dark">
             <img src="assets/images/sthiroslogodark.png" alt="Sthiros" class="massive-logo massive-logo-light">
-            <div class="copyright-text">© 2026</div>
+            <div class="copyright-text"><span class="copy-sym">©</span> 2026</div>
         </div>
     </footer>
 
@@ -5049,17 +5537,22 @@ We’ll show you the right problems. -->
                 );
 
             const chtsContainer = document.querySelector('.chts-cards-container');
-            if (chtsContainer && window.innerWidth > 768) {
+            if (chtsContainer) {
                 const cards = chtsContainer.querySelectorAll('.chts-card');
-                const slider = document.createElement('div');
-                slider.className = 'chts-slider-bg';
-                chtsContainer.appendChild(slider);
+                let slider = chtsContainer.querySelector('.chts-slider-bg');
+                if (!slider) {
+                    slider = document.createElement('div');
+                    slider.className = 'chts-slider-bg';
+                    chtsContainer.appendChild(slider);
+                }
 
-                let activeIndex = 1; // Middle card default
-                let isHovering = false;
+                let desktopActiveIndex = 1; // Middle card default on desktop
+                let mobileActiveIndex = 0;  // 1st card default on mobile
 
-                function updateSlider(card) {
-                    if (!card) return;
+                function updateDesktopSlider(card) {
+                    if (!card || window.innerWidth <= 768) return;
+                    slider.style.display = 'block';
+                    chtsContainer.style.transform = 'none';
                     const rect = card.getBoundingClientRect();
                     const containerRect = chtsContainer.getBoundingClientRect();
 
@@ -5072,33 +5565,86 @@ We’ll show you the right problems. -->
                     card.classList.add('is-active');
                 }
 
-                setTimeout(() => {
-                    updateSlider(cards[activeIndex]);
-                }, 200); // small delay to ensure fonts/layout are ready
+                function updateMobileCard(index) {
+                    if (window.innerWidth > 768 || cards.length === 0) return;
+                    slider.style.display = 'none';
+                    if (index < 0) index = cards.length - 1;
+                    if (index >= cards.length) index = 0;
+                    mobileActiveIndex = index;
+                    chtsContainer.style.transform = 'none';
+
+                    cards.forEach((card, idx) => {
+                        if (idx === mobileActiveIndex) {
+                            card.classList.add('is-active');
+                        } else {
+                            card.classList.remove('is-active');
+                        }
+                    });
+                }
+
+                function initChts() {
+                    if (window.innerWidth > 768) {
+                        chtsContainer.style.transform = 'none';
+                        updateDesktopSlider(cards[desktopActiveIndex]);
+                    } else {
+                        updateMobileCard(mobileActiveIndex);
+                    }
+                }
+
+                setTimeout(initChts, 200);
 
                 window.addEventListener('resize', () => {
-                    if (window.innerWidth > 768) {
-                        slider.style.display = 'block';
-                        updateSlider(cards[activeIndex]);
-                    } else {
-                        slider.style.display = 'none';
-                        cards.forEach(c => c.classList.remove('is-active'));
-                        cards[1].classList.add('is-active');
-                    }
+                    initChts();
                 });
 
+                // Desktop hover effect
                 cards.forEach((card, index) => {
                     card.addEventListener('mouseenter', () => {
-                        isHovering = true;
-                        activeIndex = index;
-                        updateSlider(card);
+                        if (window.innerWidth > 768) {
+                            desktopActiveIndex = index;
+                            updateDesktopSlider(card);
+                        }
                     });
                 });
 
-                // mouseleave event listener removed so slider stays on the last hovered card
-            } else if (chtsContainer) {
-                // Mobile default active
-                chtsContainer.querySelectorAll('.chts-card')[1].classList.add('is-active');
+                // Mobile Arrow button navigation
+                const prevBtn = document.querySelector('.chts-prev-btn');
+                const nextBtn = document.querySelector('.chts-next-btn');
+
+                if (prevBtn) {
+                    prevBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        updateMobileCard(mobileActiveIndex - 1);
+                    });
+                }
+                if (nextBtn) {
+                    nextBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        updateMobileCard(mobileActiveIndex + 1);
+                    });
+                }
+
+                // Mobile touch swipe support
+                let touchStartX = 0;
+                let touchEndX = 0;
+                const wrapper = document.querySelector('.chts-cards-wrapper');
+                if (wrapper) {
+                    wrapper.addEventListener('touchstart', (e) => {
+                        touchStartX = e.changedTouches[0].screenX;
+                    }, { passive: true });
+
+                    wrapper.addEventListener('touchend', (e) => {
+                        touchEndX = e.changedTouches[0].screenX;
+                        if (window.innerWidth <= 768) {
+                            const diff = touchStartX - touchEndX;
+                            if (diff > 45) {
+                                updateMobileCard(mobileActiveIndex + 1);
+                            } else if (diff < -45) {
+                                updateMobileCard(mobileActiveIndex - 1);
+                            }
+                        }
+                    }, { passive: true });
+                }
             }
         });
 
@@ -5116,6 +5662,12 @@ We’ll show you the right problems. -->
                 element.classList.remove('active');
             } else {
                 element.classList.add('active');
+                // Ensure the first service-item is active by default as shown in reference
+                const firstService = element.querySelector('.service-item');
+                const anyActiveService = element.querySelector('.service-item.active');
+                if (firstService && !anyActiveService) {
+                    firstService.classList.add('active');
+                }
             }
         }
 
@@ -5144,6 +5696,9 @@ We’ll show you the right problems. -->
                     segmentBtns.forEach(b => b.classList.remove('active'));
                     // Add active class to the clicked button
                     this.classList.add('active');
+
+                    // Smoothly scroll clicked tab into view on mobile
+                    this.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
 
                     // Hide all problem containers
                     problemContainers.forEach(container => {

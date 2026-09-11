@@ -1,3 +1,23 @@
+(function () {
+  try {
+    var p = window.location.pathname.split('/').pop().toLowerCase();
+    var isIdx = (!p || p === '/' || p === 'index.html');
+    function applyPageClass() {
+      if (!document.body) return;
+      if (isIdx) {
+        document.body.classList.add('home-index', 'home-page', 'page-index');
+      } else {
+        document.body.classList.add('sub-page', 'page-subpage');
+      }
+    }
+    if (document.body) {
+      applyPageClass();
+    } else {
+      document.addEventListener('DOMContentLoaded', applyPageClass);
+    }
+  } catch (e) {}
+})();
+
 gsap.registerPlugin(ScrollTrigger);
 
 let lenis = null;
@@ -2964,12 +2984,20 @@ function initFloatingCurves() {
 
 // --- Set Active Nav Link Dynamically ---
 document.addEventListener('DOMContentLoaded', () => {
-    let path = window.location.pathname;
-    let page = path.split('/').pop();
+    let rawPath = window.location.pathname.toLowerCase();
+    let page = rawPath.split('/').pop();
     
     if (page === '' || page === '/') {
         page = 'index.html';
     }
+
+    if (page.toLowerCase() === 'index.html') {
+        document.body.classList.add('page-index');
+    } else {
+        document.body.classList.add('page-subpage');
+    }
+
+    const isServicesPage = page === 'services.html' || page === 'servicesinner.html' || rawPath.endsWith('/services') || rawPath.endsWith('/services.html');
 
     // --- Desktop Navigation ---
     const dNavLinks = document.querySelectorAll('.d-nav-list a');
@@ -2977,14 +3005,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     dNavLinks.forEach(link => {
         const href = link.getAttribute('href');
-        if (href && href === page) {
+        if (href && (href === page || (href === 'services.html' && isServicesPage))) {
             link.classList.add('active-nav');
             
-            // Check if it's inside a mega menu, highlight the parent
+            // Check if it's inside a mega menu, highlight the parent ONLY if allowed
             const megaMenu = link.closest('.has-mega-menu');
             if (megaMenu) {
-                const parentLink = megaMenu.querySelector('a'); // The top level link
-                if (parentLink) parentLink.classList.add('active-nav');
+                const parentLink = megaMenu.querySelector(':scope > a'); // The top level link
+                const isWhatWeDoMega = parentLink && parentLink.textContent.includes('WHAT WE DO');
+                // For WHAT WE DO, only activate top-level link when on services.html / servicesinner.html
+                if (parentLink && (!isWhatWeDoMega || isServicesPage)) {
+                    parentLink.classList.add('active-nav');
+                }
             }
         }
     });
@@ -2995,7 +3027,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     mNavLinks.forEach(link => {
         const href = link.getAttribute('href');
-        if (href && href === page) {
+        if (href && (href === page || (href === 'services.html' && isServicesPage))) {
             link.classList.add('active');
             
             // Highlight parent dropdowns if any
@@ -3007,7 +3039,88 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    // --- WHAT WE DO Mega Menu Category & Sidebar Active Handling ---
+    initWhatWeDoMegaMenu(page);
 });
+
+function initWhatWeDoMegaMenu(currentPage) {
+    const rawPath = window.location.pathname.toLowerCase();
+    const page = (currentPage || rawPath.split('/').pop() || 'index.html').toLowerCase();
+
+    // Find all WHAT WE DO mega menu containers
+    const whatWeDoLis = Array.from(document.querySelectorAll('.d-nav-list > li.has-mega-menu')).filter(li => {
+        const topLink = li.querySelector(':scope > a');
+        return topLink && topLink.textContent.includes('WHAT WE DO');
+    });
+
+    whatWeDoLis.forEach(whatWeDoLi => {
+        const megaMenu = whatWeDoLi.querySelector('.split-mega-menu');
+        if (!megaMenu) return;
+
+        const sidebarLinks = megaMenu.querySelectorAll('.mega-sidebar-link');
+        const panes = megaMenu.querySelectorAll('.mega-pane');
+        const whatWeDoLink = megaMenu.querySelector('.mega-sidebar-link[href*="services.html"]') || sidebarLinks[0];
+
+        const isWhatWeDoPage = page === 'services.html' || page === 'servicesinner.html' || rawPath.endsWith('/services') || rawPath.endsWith('/services.html');
+        const isStrategy = page.includes('strategy');
+        const isRisk = page.includes('risk');
+        const isCyber = page.includes('cyber');
+        const isAi = page.includes('ai');
+
+        let activeTarget = null;
+        if (isStrategy) activeTarget = 'mega-strategy';
+        else if (isRisk) activeTarget = 'mega-risk';
+        else if (isCyber) activeTarget = 'mega-cyber';
+        else if (isAi) activeTarget = 'mega-ai';
+
+        function applyActiveState() {
+            // Clear all active classes in sidebar links & panes
+            sidebarLinks.forEach(l => l.classList.remove('active'));
+            panes.forEach(p => p.classList.remove('active'));
+
+            if (activeTarget) {
+                // One of Strategy / Risk / Cyber / AI is active
+                const activeLink = megaMenu.querySelector(`.mega-sidebar-link[data-target="${activeTarget}"]`);
+                if (activeLink) activeLink.classList.add('active');
+
+                const activePane = document.getElementById(activeTarget);
+                if (activePane) activePane.classList.add('active');
+            } else if (isWhatWeDoPage) {
+                // "WHAT WE DO" page itself is active
+                if (whatWeDoLink) whatWeDoLink.classList.add('active');
+                const defaultPane = document.getElementById('mega-strategy') || panes[0];
+                if (defaultPane) defaultPane.classList.add('active');
+            } else {
+                // Other page (e.g. index, about, oriq, contactus): no sidebar link is active
+                const defaultPane = document.getElementById('mega-strategy') || panes[0];
+                if (defaultPane) defaultPane.classList.add('active');
+            }
+        }
+
+        // Apply immediately
+        applyActiveState();
+
+        // Interactive hover switching on sidebar items
+        sidebarLinks.forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                sidebarLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+
+                const targetId = link.getAttribute('data-target');
+                if (targetId) {
+                    panes.forEach(p => p.classList.remove('active'));
+                    const targetPane = document.getElementById(targetId);
+                    if (targetPane) targetPane.classList.add('active');
+                }
+            });
+        });
+
+        // Restore active state when cursor leaves mega menu or nav item
+        megaMenu.addEventListener('mouseleave', applyActiveState);
+        whatWeDoLi.addEventListener('mouseleave', applyActiveState);
+    });
+}
 
 
 // --- Repository Filter Dropdowns ---
@@ -3274,6 +3387,7 @@ function smrCreateRail() {
   measure();
   var V = Math.max(170, Math.min(240, stageH * 0.25));
   trim(V);
+  
   chain();
 
   /* ── the camera settles each mark in the middle of the stage. Because the
@@ -3351,20 +3465,7 @@ function smrCreateRail() {
   }
   locate();
 
-  /* ── smrSegF: shift left so its FULL artboard (horizontal lines + curve) is visible
-     on screen when the camera settles on Cyber. Without this, only the left ~36% of
-     smrSegF is visible (the horizontal strips) and the curve at the right is cut off.
-     We translate smrSegF leftward until its right edge lands exactly at the viewport
-     right edge. The C-logo station (z-index 2) is above smrSegF (z-index 1), so the
-     logo draws cleanly on top of any overlap. ── */
-  if (segs.F && segs.F.node && box.cyber && box.cyber.seen) {
-    var fWidth = segs.F.w * K;                                  /* 224 × K = 182.85px */
-    var cyberFX = (box.cyber.seen.l + box.cyber.seen.r) / 2;   /* actual focusX      */
-    var fShift = stageW / 2 - (segs.F.pos[0] - cyberFX + fWidth);
-    segs.F.node.style.transform = 'translateX(' + fShift.toFixed(2) + 'px)';
-  }
-
-
+  /* ── nothing on the rail animates: the line and the marks are simply there ── */
   var copy = function (k) { return stations[k].querySelectorAll('.smr-text > *'); };
   Object.keys(stations).forEach(function (k) {
     gsap.set(stations[k], { opacity: 1 });
@@ -3402,6 +3503,12 @@ function smrCreateRail() {
     return [stageW / 2 - focusX(k), stageH / 2 - focusY(k)];
   };
   var camXofBend = function (k) {
+    if (k === 'D') {
+      /* push the stop past the bend's true x so the camera runs fully right
+         first — far enough that the D/E curve into AI is on screen — before
+         the last leg of runTo() drops back left onto the AI mark */
+      return stageW / 2 - (bend(k).x - stageW * 0.28);
+    }
     return stageW / 2 - bend(k).x;
   };
 
@@ -3417,7 +3524,23 @@ function smrCreateRail() {
   };
 
   var eA = bend('A');
-  go(stageW / 2 - eA.x, stageH * 0.80 - eA.y, 0);       /* the bend sits low   */
+  /* The resting/entry position used to be a flat stageH*0.80, tuned back when
+     the tail (#smrSegTail) carried the bars up to meet the heading with no gap.
+     Now that the tail is hidden (removed per the user, 2026-09-11), a flat
+     fraction leaves a wide dead gap between the heading's copy and segment A's
+     own bars on any width where the heading wraps shorter than it was tuned
+     against. Derive the entry Y instead: at this point in the build track's
+     transform is still (0,0) (fresh, or cleared by teardown on a rebuild), so
+     segs.A.node's own getBoundingClientRect().top is exactly its offset from
+     the track's origin — solving for the trackY that puts segment A's top
+     24px under the heading's own measured bottom keeps the two touching at
+     every width and every heading line-wrap, without moving segment A itself
+     at all. */
+  var entryY = stageH * 0.80 - eA.y;
+  if (sectionCenter && segs.A.node) {
+    entryY = sectionCenter.getBoundingClientRect().bottom + 24 - segs.A.node.getBoundingClientRect().top;
+  }
+  go(stageW / 2 - eA.x, entryY, 0);                     /* the bend sits low, just under the heading */
   go(stageW / 2 - eA.x, stageH * 0.50 - eA.y, 0.35);    /* … and rides to centre */
 
   var sCam = camOfMark('strategy');
@@ -3434,16 +3557,10 @@ function smrCreateRail() {
   };
   runTo('B', 'risk', 0.9);
   runTo('C', 'cyber', 0.9);
-
-  /* The run out of Cyber does not corner on bend D. D and E turn down at the
-     far side of the AI mark, so stopping over that bend carries AI a quarter
-     of a screen past the middle and the last step then swings it back — the
-     view lurches left and returns. Instead the camera runs across only as far
-     as AI's own centre and then drops straight down onto it: once the mark is
-     centred, the rest of the scroll is the descent. */
-  var aiCam = camOfMark('ai');
-  go(aiCam[0], route[route.length - 1].cy, 0.5);   /* across until AI is centred */
-  go(aiCam[0], aiCam[1], 1.0);                     /* then straight down onto it */
+  /* D and E share an x, so one bend carries the whole drop to AI: the camera
+     runs fully right first, past the bend, so the D/E curve is on screen,
+     then drops down and comes back left to settle centred on the AI mark. */
+  runTo('D', 'ai', 1.0);
 
   var look = function (wp) {
     return { x: function () { return wp.cx; }, y: function () { return wp.cy; } };

@@ -47,6 +47,24 @@
 
         .products-hero-title span {
             color: #EC2D26;
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+        }
+
+        .products-hero-title span::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 140%;
+            height: 180%;
+            background: radial-gradient(ellipse at center, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.8) 40%, rgba(10, 10, 10, 0.4) 65%, rgba(10, 10, 10, 0) 85%);
+            filter: blur(20px);
+            z-index: -1;
+            pointer-events: none;
+            border-radius: 50%;
         }
 
         .products-hero-subtitle {
@@ -58,6 +76,23 @@
             line-height: normal;
             max-width: 500px;
             margin-bottom: 100px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .products-hero-subtitle::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 130%;
+            height: 180%;
+            background: radial-gradient(ellipse at center, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.8) 45%, rgba(10, 10, 10, 0.4) 70%, rgba(10, 10, 10, 0) 90%);
+            filter: blur(20px);
+            z-index: -1;
+            pointer-events: none;
+            border-radius: 50%;
         }
 
         @media (max-width: 1024px) {
@@ -1529,7 +1564,7 @@
             </div>
             <div class="tw-btn-wrap">
                 <a href="contactus.html" class="hero-btn-outer">
-                    <span class="hero-btn-inner" style="font-size: 22px;">TALK TO US ABOUT FORGE</span>
+                    <span class="hero-btn-inner" style="font-size: 22px;">GET IN TOUCH</span>
                 </a>
             </div>
         </div>
@@ -1619,7 +1654,7 @@
         <div class="footer-massive-logo-section">
             <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo massive-logo-dark">
             <img src="assets/images/sthiroslogodark.png" alt="Sthiros" class="massive-logo massive-logo-light">
-            <div class="copyright-text">© 2026</div>
+            <div class="copyright-text"><span class="copy-sym">©</span> 2026</div>
         </div>
     </footer>
 

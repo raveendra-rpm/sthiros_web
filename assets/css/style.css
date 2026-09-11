@@ -4029,6 +4029,11 @@ body.light-mode .stat-label {
   /* Flips it to read bottom-to-top */
 }
 
+.copy-sym {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
 .nav-link {
   font-family: 'Pacaembu', sans-serif;
   font-size: 1.2rem;
@@ -5143,17 +5148,19 @@ body.light-mode .sub-nav-link:hover {
 }
 
 .split-mega-menu .mega-sidebar-link:first-child {
-  color: #EC2D26;
+  color: #888;
   margin-bottom: 40px;
   font-size: 18px;
 }
 .split-mega-menu .mega-sidebar-link:first-child .mega-arrow {
-  color: #EC2D26;
+  color: inherit;
 }
 
 .split-mega-menu .mega-sidebar-link:hover,
-.split-mega-menu .mega-sidebar-link.active {
-  color: #EC2D26;
+.split-mega-menu .mega-sidebar-link.active,
+.split-mega-menu .mega-sidebar-link:first-child:hover,
+.split-mega-menu .mega-sidebar-link:first-child.active {
+  color: #EC2D26 !important;
 }
 
 .split-mega-menu .mega-sidebar-link .mega-arrow {
@@ -5163,7 +5170,10 @@ body.light-mode .sub-nav-link:hover {
 }
 
 .split-mega-menu .mega-sidebar-link:hover .mega-arrow,
-.split-mega-menu .mega-sidebar-link.active .mega-arrow {
+.split-mega-menu .mega-sidebar-link.active .mega-arrow,
+.split-mega-menu .mega-sidebar-link:first-child:hover .mega-arrow,
+.split-mega-menu .mega-sidebar-link:first-child.active .mega-arrow {
+  color: #EC2D26 !important;
   transform: translateX(5px);
 }
 
@@ -5213,7 +5223,8 @@ body.light-mode .sub-nav-link:hover {
   border-bottom: 1px solid transparent;
 }
 
-.split-mega-menu .mega-links-list li a:hover {
+.split-mega-menu .mega-links-list li a:hover,
+.split-mega-menu .mega-links-list li a.active-nav {
   color: #EC2D26;
   border-bottom: 1px solid #EC2D26;
 }
@@ -5225,6 +5236,36 @@ body.light-mode .sub-nav-link:hover {
 
   .menu-toggle {
     display: block !important;
+  }
+
+  /* Keep header and menu in dark mode style on all pages except index.html */
+  body.light-mode:not(.home-page):not(.home-index) .site-header,
+  body.light-mode.page-subpage .site-header {
+    background-color: #000000 !important;
+    background: #000000 !important;
+    border-bottom: 1px solid #EC2D26 !important;
+    color: #ffffff !important;
+  }
+
+  body.light-mode:not(.home-page):not(.home-index) .site-header *,
+  body.light-mode.page-subpage .site-header * {
+    color: #ffffff !important;
+  }
+
+  body.light-mode:not(.home-page):not(.home-index) .site-header .menu-icon .line,
+  body.light-mode.page-subpage .site-header .menu-icon .line {
+    background-color: #ffffff !important;
+  }
+
+  body.light-mode:not(.home-page):not(.home-index) .menu-overlay,
+  body.light-mode.page-subpage .menu-overlay {
+    background-color: #050505 !important;
+    background: #050505 !important;
+  }
+
+  body.light-mode:not(.home-page):not(.home-index) .menu-overlay *,
+  body.light-mode.page-subpage .menu-overlay * {
+    color: #ffffff !important;
   }
 }
 
@@ -5296,6 +5337,15 @@ body.light-mode #herosectionmobilescreen {
   background-color: #000000;
   position: relative;
   z-index: 2;
+  overflow: hidden;
+}
+
+/* Light mode mobile: stats section must sit above the hero's black bg */
+@media (max-width: 768px) {
+  body.light-mode .section-stats {
+    position: relative;
+    z-index: 3 !important;
+  }
 }
 
 /* ── Fixed Background Glows in Light Mode ── */
@@ -6376,6 +6426,50 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
     background: #000;
     transition: all 0.3s ease;
     width: 100%;
+  }
+}
+
+/* Below 375px .hero-mobile-left-svg (223px) and .hero-mobile-right-svg (800px,
+   2500px) stop scaling entirely, so their fixed footprint stops shrinking with
+   the viewport while the text column keeps getting narrower — the two start
+   overlapping the headline, paragraph and buttons. Scale both proportionally
+   below 375px (calc(100vw * <value-at-375> / 375)) so they shrink smoothly
+   past that point instead of snapping to a hand-picked constant; both formulas
+   equal the original 375px value exactly at 375px, so there's no visible jump
+   at the boundary. Right-svg's height is scaled by the same ratio as its
+   width so the artwork doesn't stretch. */
+@media (max-width: 375px) {
+  .hero-mobile-left-svg svg {
+    width: calc(100vw * 223 / 375) !important;
+  }
+
+  .hero-mobile-right-svg svg {
+    width: calc(100vw * 800 / 375) !important;
+    height: calc(100vw * 2500 / 375) !important;
+  }
+
+  /* Shrinking .hero-mobile-left-svg above pulled its left/"ending" edge away
+     from .hero-mobile-right-svg's reveal window (its right/"starting" edge)
+     — the two are meant to sit flush (they're within 0.3px of touching at
+     375px, by the original, untouched design). left-svg is anchored from the
+     right (`right:10px`, `transform-origin:top right`), so shrinking its
+     width retreats its left edge *rightward*, away from right-svg, opening a
+     gap that grows the narrower the screen gets (measured ~33px at 320px).
+     Fix: derive right-svg's reveal width from left-svg's actual left edge
+     instead of leaving it at the old fixed `calc(100% - 250px)`, so the two
+     stay flush at every width instead of just at 375px. The three terms are
+     left-svg's own geometry: `100vw - 50px` is where its `right:10px` anchor
+     actually lands (measured with getBoundingClientRect at 320px and 375px —
+     that 50px offset is constant, coming from ancestor padding, not
+     hand-picked), `100vw * 223 * 1.01 / 375` is its rendered width (the 1.01
+     is its own `scaleX(1.01)`), and the trailing `- 15px` converts that left
+     edge into a width for this element (whose own `left:15px` is unchanged).
+     Verified via getBoundingClientRect (not screenshots — see the
+     screenshotting note elsewhere in memory): gap is ~0 at both 320px and
+     375px. Re-derive all three terms together if left-svg's width formula,
+     scaleX, or right:10px changes. */
+  .hero-mobile-right-svg {
+    width: calc(100vw - 50px - (100vw * 223 * 1.01 / 375) - 15px) !important;
   }
 }
 
@@ -7585,21 +7679,49 @@ body.light-mode .footer-menu li {
     transform: none !important;
   }
 
-  #smrSegD,
   #smrSegE {
     transform: translateX(calc(-12vw)) !important;
   }
 
+  /* SegD's near end must land exactly on the Cyber logo's right edge (see the
+     .smr-station[data-smr="cyber"] .smr-logo comment below for how that target
+     was measured: 3326.906px, same as segF's fixed left edge). SegD's own
+     JS-computed `left` is 3410.094px at every width (the chain math cancels out
+     any width dependence here), so a single constant translateX closes the gap:
+     3326.906 - 3410.094 = -83.188px, no vw term needed on this end.
+
+     That constant transform breaks the OTHER end, though: segD's own curve
+     doesn't end at its canvas's outer edge (1613.06px) — it ends ~30px short
+     of it, at its actual `exit`/`corner` point (1939.39 artboard units * K =
+     1583.176px), which is where the line has to land exactly on segE's own
+     `enter` point (147.28 * K = 120.65px into segE's box) for the two curves
+     to read as one continuous line. With the old `-12vw` transform and
+     `margin-left:-16vw`, that exit point tracked segE (which keeps its own
+     `-16vw`/`-12vw` terms, e.g. for the already-verified AI-mark join) at
+     `-28vw` combined. Swapping the transform for a flat `-83.188px` breaks
+     that rate — margin-left and width must absorb the whole `-28vw` dependence
+     on their own now, solved so the exit point renders at the exact same
+     screen position the old formula gave it, at every width: margin-left
+     `calc(83.188px - 28vw)`, width `calc(1529.872px + 28vw)` (still sized to
+     fully reveal the canvas at every width, just from the new margin).
+     Verified by computing both the exit point's and segE's `enter` point's
+     screen position independently (via getBoundingClientRect, not the CSS
+     formulas) at 320px and 768px — under 0.01px apart at both. Re-derive all
+     four numbers together (segD's transform, margin-left and width, plus the
+     Cyber logo's shift above) from fresh measurements if segF's fixed box or
+     the logo's size/aspect ever changes — don't hand-tune any one of them
+     against how it looks at a single width. */
   #smrSegD {
     top: calc(55px) !important;
-    width: calc(1613.06px - 16vw) !important;
+    transform: translateX(-83.188px) !important;
+    width: calc(1529.872px + 28vw) !important;
     overflow: hidden !important;
   }
 
   #smrSegD svg {
     width: 1613.06px !important;
     max-width: none !important;
-    margin-left: calc(-16vw) !important;
+    margin-left: calc(83.188px - 28vw) !important;
   }
 
   #smrSegE {
@@ -7623,10 +7745,13 @@ body.light-mode .footer-menu li {
     top: 0 !important;
   }
 
-  /* the four bars continued upward — the gradient stops are cut to the same
-     widths as segment A's own paths, so the join is seamless */
+  /* Removed per user request (2026-09-11): the gradient bars that used to carry
+     segment A's entry rail off the top of the stage, above the "Four Pillars"
+     heading. Hidden here rather than deleted from the JS/HTML so segment A's
+     own positioning (untouched) keeps working exactly as before — layout()
+     still writes to #smrSegTail's inline styles, they just never render. */
   .smr-seg-tail {
-    overflow: visible;
+    display: none !important;
   }
 
   .smr-seg-flip svg {
@@ -7651,9 +7776,23 @@ body.light-mode .footer-menu li {
     display: block;
   }
 
-  /* Cyber logo only (kewal isi): enlarged & moved to the left with calc for all mobile screens */
+  /* Cyber logo only (kewal isi): enlarged, and shifted so its right edge always
+     lands on segF's fixed left edge (3326.906px) and segD's fixed near end
+     (3410.094px - 83.188px, see #smrSegD above) — both segments meet the logo
+     at exactly this one point on every mobile width. A flat -12vw (the old
+     value) drifted off that point because it ignored the scale(1.22): scaling
+     a box of width W from its own centre pushes the right edge out by an
+     extra 0.11*W, and W itself grows with --smr-logo-h, so the old shift only
+     happened to line up near one screen size and opened a growing gap either
+     side of it (measured up to ~37px at 768px, confirmed via a killed
+     ScrollTrigger + gsap.set(track,{x,y}) screenshot). Solving
+     unshifted-right-edge(w) + 0.11*unscaledWidth(w) + shift(w) = 3326.906,
+     with unscaledWidth = 1.5 * var(--smr-logo-h) * 0.918919 (the art's own
+     aspect ratio, measured at scale 1 with the transform disabled), gives the
+     shift below. Re-derive both this and #smrSegD's -83.188px together if the
+     Cyber logo's size/aspect or segF's fixed box ever changes. */
   .smr-station[data-smr="cyber"] .smr-logo {
-    transform: translateX(calc(-12vw)) scale(1.22) !important;
+    transform: translateX(calc(-83.188px + var(--smr-logo-h) * 0.151622)) scale(1.22) !important;
     transform-origin: center center !important;
   }
 
@@ -7746,3 +7885,327 @@ body.light-mode .footer-menu li {
   color: #EC2D26 !important;
 }
 
+
+/* ════════════════════════════════════════════════════════════════
+   MOBILE LIGHT MODE — Universal Text Colour Override (max-width: 768px)
+   Forces ALL text elements dark on mobile in light theme.
+   Hero (#herosectionmobilescreen) & header (.site-header) are
+   whitelisted to stay white (they keep their dark background).
+   ════════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+
+  /* ── UNIVERSAL: every heading, paragraph, span, anchor, list item → dark ── */
+  body.light-mode h1,
+  body.light-mode h2,
+  body.light-mode h3,
+  body.light-mode h4,
+  body.light-mode h5,
+  body.light-mode h6,
+  body.light-mode p,
+  body.light-mode span,
+  body.light-mode li,
+  body.light-mode label,
+  body.light-mode div {
+    color: #111111 !important;
+  }
+
+  /* Keep orange/red accent colours intact */
+  body.light-mode .text-red,
+  body.light-mode .stat-value,
+  body.light-mode .smr-heading,
+  body.light-mode .smr-link,
+  body.light-mode .hero-mobile-headline .highlight,
+  body.light-mode .workhold-card-title span,
+  body.light-mode .story-title .text-red,
+  body.light-mode .footer-email,
+  body.light-mode .footer-menu li.active a,
+  body.light-mode .footer-menu li:hover a {
+    color: #EC2D26 !important;
+  }
+
+  /* ── WHITELIST: Hero mobile section stays white (dark bg) ── */
+  body.light-mode #herosectionmobilescreen h1,
+  body.light-mode #herosectionmobilescreen h2,
+  body.light-mode #herosectionmobilescreen h3,
+  body.light-mode #herosectionmobilescreen h4,
+  body.light-mode #herosectionmobilescreen p,
+  body.light-mode #herosectionmobilescreen span,
+  body.light-mode #herosectionmobilescreen li,
+  body.light-mode #herosectionmobilescreen div,
+  body.light-mode #herosectionmobilescreen a {
+    color: #ffffff !important;
+  }
+
+  /* But keep highlight red inside hero headline */
+  body.light-mode #herosectionmobilescreen .highlight {
+    color: #EC2D26 !important;
+  }
+
+  /* Keep hero buttons styled properly */
+  body.light-mode #herosectionmobilescreen .hero-btn-inner {
+    color: #ffffff !important;
+  }
+
+  /* ── WHITELIST: index.html header ── */
+  body.light-mode.home-page .site-header h1,
+  body.light-mode.home-page .site-header h2,
+  body.light-mode.home-page .site-header h3,
+  body.light-mode.home-page .site-header p,
+  body.light-mode.home-page .site-header span,
+  body.light-mode.home-page .site-header a,
+  body.light-mode.home-page .site-header li,
+  body.light-mode.home-page .site-header div,
+  body.light-mode.home-page .site-header .nav-link,
+  body.light-mode.home-page .site-header .sub-nav-link,
+  body.light-mode.home-index .site-header h1,
+  body.light-mode.home-index .site-header h2,
+  body.light-mode.home-index .site-header h3,
+  body.light-mode.home-index .site-header p,
+  body.light-mode.home-index .site-header span,
+  body.light-mode.home-index .site-header a,
+  body.light-mode.home-index .site-header li,
+  body.light-mode.home-index .site-header div,
+  body.light-mode.home-index .site-header .nav-link,
+  body.light-mode.home-index .site-header .sub-nav-link {
+    color: inherit !important;
+  }
+
+  /* ── ALL PAGES EXCEPT index.html: Mobile header stays 100% in Dark Mode style (WHITE TEXT, NO BLACK TEXT) ── */
+  body.light-mode:not(.home-page):not(.home-index) .site-header,
+  body.light-mode.sub-page .site-header,
+  body.light-mode.page-subpage .site-header {
+    background-color: #000000 !important;
+    background: #000000 !important;
+    border-bottom: 1px solid #EC2D26 !important;
+    color: #ffffff !important;
+  }
+
+  /* Force all text, links, headings, spans, divs inside site-header to stay white in light mode */
+  body.light-mode:not(.home-page):not(.home-index) .site-header,
+  body.light-mode:not(.home-page):not(.home-index) .site-header *,
+  body.light-mode:not(.home-page):not(.home-index) .site-header a,
+  body.light-mode:not(.home-page):not(.home-index) .site-header span,
+  body.light-mode:not(.home-page):not(.home-index) .site-header li,
+  body.light-mode:not(.home-page):not(.home-index) .site-header div,
+  body.light-mode:not(.home-page):not(.home-index) .site-header p,
+  body.light-mode:not(.home-page):not(.home-index) .site-header h1,
+  body.light-mode:not(.home-page):not(.home-index) .site-header h2,
+  body.light-mode:not(.home-page):not(.home-index) .site-header h3,
+  body.light-mode:not(.home-page):not(.home-index) .site-header .d-nav-list a,
+  body.light-mode:not(.home-page):not(.home-index) .site-header .d-nav-list li,
+  body.light-mode:not(.home-page):not(.home-index) .site-header .d-nav-list span,
+  body.light-mode.sub-page .site-header,
+  body.light-mode.sub-page .site-header *,
+  body.light-mode.sub-page .site-header a,
+  body.light-mode.sub-page .site-header span,
+  body.light-mode.sub-page .site-header li,
+  body.light-mode.sub-page .site-header div,
+  body.light-mode.sub-page .site-header p,
+  body.light-mode.page-subpage .site-header,
+  body.light-mode.page-subpage .site-header *,
+  body.light-mode.page-subpage .site-header a,
+  body.light-mode.page-subpage .site-header span,
+  body.light-mode.page-subpage .site-header li,
+  body.light-mode.page-subpage .site-header div,
+  body.light-mode.page-subpage .site-header p {
+    color: #ffffff !important;
+  }
+
+  /* Keep desktop nav active link flame red */
+  body.light-mode:not(.home-page):not(.home-index) .site-header .d-nav-list a:hover,
+  body.light-mode:not(.home-page):not(.home-index) .site-header .d-nav-list a.active-nav,
+  body.light-mode.sub-page .site-header .d-nav-list a:hover,
+  body.light-mode.sub-page .site-header .d-nav-list a.active-nav,
+  body.light-mode.page-subpage .site-header .d-nav-list a:hover,
+  body.light-mode.page-subpage .site-header .d-nav-list a.active-nav {
+    color: #EC2D26 !important;
+  }
+
+  /* Desktop mega menu sidebar active and hover in light mode */
+  body.light-mode .split-mega-menu .mega-sidebar-link:not(.active):not(:hover),
+  body.light-mode .split-mega-menu .mega-sidebar-link:first-child:not(.active):not(:hover) {
+    color: #888888 !important;
+  }
+  body.light-mode .split-mega-menu .mega-sidebar-link.active,
+  body.light-mode .split-mega-menu .mega-sidebar-link:hover,
+  body.light-mode .split-mega-menu .mega-sidebar-link:first-child.active,
+  body.light-mode .split-mega-menu .mega-sidebar-link:first-child:hover {
+    color: #EC2D26 !important;
+  }
+
+  /* Hamburger menu lines stay white */
+  body.light-mode:not(.home-page):not(.home-index) .site-header .menu-icon .line,
+  body.light-mode.sub-page .site-header .menu-icon .line,
+  body.light-mode.page-subpage .site-header .menu-icon .line {
+    background-color: #ffffff !important;
+  }
+
+  /* Open hamburger cross lines stay flame red */
+  body.light-mode:not(.home-page):not(.home-index).menu-open .site-header .menu-icon .line-1,
+  body.light-mode:not(.home-page):not(.home-index).menu-open .site-header .menu-icon .line-3,
+  body.light-mode.sub-page.menu-open .site-header .menu-icon .line-1,
+  body.light-mode.sub-page.menu-open .site-header .menu-icon .line-3,
+  body.light-mode.page-subpage.menu-open .site-header .menu-icon .line-1,
+  body.light-mode.page-subpage.menu-open .site-header .menu-icon .line-3 {
+    background-color: #F13715 !important;
+  }
+
+  /* Logo filter none */
+  body.light-mode:not(.home-page):not(.home-index) .site-header .site-logo,
+  body.light-mode.sub-page .site-header .site-logo,
+  body.light-mode.page-subpage .site-header .site-logo {
+    filter: none !important;
+    opacity: 1 !important;
+  }
+
+  /* Search bar input & button remain crisp standard dark mode style */
+  body.light-mode:not(.home-page):not(.home-index) .site-header .header-search,
+  body.light-mode.sub-page .site-header .header-search,
+  body.light-mode.page-subpage .site-header .header-search {
+    background-color: #ffffff !important;
+  }
+
+  body.light-mode:not(.home-page):not(.home-index) .site-header .header-search-input,
+  body.light-mode.sub-page .site-header .header-search-input,
+  body.light-mode.page-subpage .site-header .header-search-input {
+    color: #222222 !important;
+    -webkit-text-fill-color: #222222 !important;
+    background: transparent !important;
+  }
+
+  body.light-mode:not(.home-page):not(.home-index) .site-header .header-search-btn,
+  body.light-mode.sub-page .site-header .header-search-btn,
+  body.light-mode.page-subpage .site-header .header-search-btn {
+    background-color: #EF4623 !important;
+    color: #ffffff !important;
+  }
+
+  body.light-mode:not(.home-page):not(.home-index) .site-header .header-search-btn svg,
+  body.light-mode.sub-page .site-header .header-search-btn svg,
+  body.light-mode.page-subpage .site-header .header-search-btn svg {
+    stroke: #ffffff !important;
+  }
+
+  /* ── Mobile Fullscreen Menu Overlay: deep black background, white text (identical to dark mode) ── */
+  body.light-mode:not(.home-page):not(.home-index) .menu-overlay,
+  body.light-mode.sub-page .menu-overlay,
+  body.light-mode.page-subpage .menu-overlay {
+    background-color: #050505 !important;
+    background: #050505 !important;
+    color: #ffffff !important;
+  }
+
+  body.light-mode:not(.home-page):not(.home-index) .menu-overlay *,
+  body.light-mode.sub-page .menu-overlay *,
+  body.light-mode.page-subpage .menu-overlay * {
+    color: #ffffff !important;
+  }
+
+  body.light-mode:not(.home-page):not(.home-index) .menu-overlay .nav-link,
+  body.light-mode:not(.home-page):not(.home-index) .menu-overlay .main-nav a,
+  body.light-mode:not(.home-page):not(.home-index) .menu-overlay .menu-content a,
+  body.light-mode.sub-page .menu-overlay .nav-link,
+  body.light-mode.sub-page .menu-overlay .main-nav a,
+  body.light-mode.sub-page .menu-overlay .menu-content a,
+  body.light-mode.page-subpage .menu-overlay .nav-link,
+  body.light-mode.page-subpage .menu-overlay .main-nav a,
+  body.light-mode.page-subpage .menu-overlay .menu-content a {
+    color: #ffffff !important;
+  }
+
+  body.light-mode:not(.home-page):not(.home-index) .menu-overlay .nav-link:hover,
+  body.light-mode:not(.home-page):not(.home-index) .menu-overlay .nav-link.active,
+  body.light-mode:not(.home-page):not(.home-index) .menu-overlay .main-nav a:hover,
+  body.light-mode:not(.home-page):not(.home-index) .menu-overlay .main-nav a.active,
+  body.light-mode.sub-page .menu-overlay .nav-link:hover,
+  body.light-mode.sub-page .menu-overlay .nav-link.active,
+  body.light-mode.page-subpage .menu-overlay .nav-link:hover,
+  body.light-mode.page-subpage .menu-overlay .nav-link.active {
+    color: #F13715 !important;
+  }
+
+  body.light-mode:not(.home-page):not(.home-index) .menu-overlay .sub-nav-link,
+  body.light-mode:not(.home-page):not(.home-index) .menu-overlay .nested-sub-nav-link,
+  body.light-mode.sub-page .menu-overlay .sub-nav-link,
+  body.light-mode.sub-page .menu-overlay .nested-sub-nav-link,
+  body.light-mode.page-subpage .menu-overlay .sub-nav-link,
+  body.light-mode.page-subpage .menu-overlay .nested-sub-nav-link {
+    color: #888888 !important;
+  }
+
+  body.light-mode:not(.home-page):not(.home-index) .menu-overlay .sub-nav-link:hover,
+  body.light-mode:not(.home-page):not(.home-index) .menu-overlay .nested-sub-nav-link:hover,
+  body.light-mode.sub-page .menu-overlay .sub-nav-link:hover,
+  body.light-mode.sub-page .menu-overlay .nested-sub-nav-link:hover,
+  body.light-mode.page-subpage .menu-overlay .sub-nav-link:hover,
+  body.light-mode.page-subpage .menu-overlay .nested-sub-nav-link:hover {
+    color: #F13715 !important;
+  }
+
+  body.light-mode:not(.home-page):not(.home-index) .menu-overlay .nested-sub-nav,
+  body.light-mode.sub-page .menu-overlay .nested-sub-nav,
+  body.light-mode.page-subpage .menu-overlay .nested-sub-nav {
+    border-left: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+
+  body.light-mode:not(.home-page):not(.home-index) .menu-overlay .chevron,
+  body.light-mode:not(.home-page):not(.home-index) .menu-overlay .social-link img,
+  body.light-mode.sub-page .menu-overlay .chevron,
+  body.light-mode.sub-page .menu-overlay .social-link img,
+  body.light-mode.page-subpage .menu-overlay .chevron,
+  body.light-mode.page-subpage .menu-overlay .social-link img {
+    filter: none !important;
+  }
+
+  body.light-mode:not(.home-page):not(.home-index) .menu-overlay .menu-footer *,
+  body.light-mode.sub-page .menu-overlay .menu-footer *,
+  body.light-mode.page-subpage .menu-overlay .menu-footer * {
+    color: #888888 !important;
+  }
+
+  /* ── Sthiros transformation cards stay white (red bg cards) ── */
+  body.light-mode .sthiros-trans-text,
+  body.light-mode .sthiros-trans-title,
+  body.light-mode .sthiros-trans-divider {
+    color: #ffffff !important;
+  }
+
+  /* ── CTA banner stays white — it has a red background on mobile ── */
+  body.light-mode .cta-banner h1,
+  body.light-mode .cta-banner h2,
+  body.light-mode .cta-banner h3,
+  body.light-mode .cta-banner p,
+  body.light-mode .cta-banner span,
+  body.light-mode .cta-banner div,
+  body.light-mode .cta-banner a,
+  body.light-mode .cta-title,
+  body.light-mode .cta-banner .hero-btn-inner {
+    color: #ffffff !important;
+  }
+
+  /* ── CTA button border fix ── */
+  body.light-mode .btn-talk-to-us {
+    border-color: #111111 !important;
+    box-shadow: 0 0 0 3px #EF4623, 0 0 0 4px #111111 !important;
+  }
+  body.light-mode .btn-talk-to-us:hover {
+    color: #ffffff !important;
+    background: #111111 !important;
+  }
+
+  /* ── Story / Our Story button text ── */
+  body.light-mode .hero-btn-outer:hover .hero-btn-inner,
+  body.light-mode .hero-btn-inner:hover {
+    color: #ffffff !important;
+  }
+
+  /* ── Strategy / Risk / Cyber / AI logos: same invert filter as desktop light mode ── */
+  body.light-mode .smr-logo-svg,
+  body.light-mode .smr-logo-img,
+  body.light-mode .strategy-img-svg image,
+  body.light-mode .risk-service-img,
+  body.light-mode .cyber-img-svg image,
+  body.light-mode .ai-service-img {
+    filter: invert(1) hue-rotate(180deg) drop-shadow(0 4px 12px rgba(0, 0, 0, 0.08)) !important;
+  }
+}

@@ -1720,71 +1720,7 @@
             </button>
         </div>
         <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const path = window.location.pathname.toLowerCase();
-
-                // 1. Initial Active State Logic for WHAT WE DO
-                const whatWeDoMenu = document.querySelector('.d-nav-list > li:nth-child(3) .split-mega-menu');
-                if (whatWeDoMenu) {
-                    const links = whatWeDoMenu.querySelectorAll('.mega-sidebar-link');
-                    const panes = whatWeDoMenu.querySelectorAll('.mega-pane');
-
-                    let anySubActive = false;
-
-                    links.forEach(link => {
-                        link.classList.remove('active');
-                        const target = link.getAttribute('data-target');
-                        if (target) {
-                            if ((target === 'mega-strategy' && path.includes('strategy')) ||
-                                (target === 'mega-ai' && path.includes('ai')) ||
-                                (target === 'mega-risk' && path.includes('risk')) ||
-                                (target === 'mega-cyber' && path.includes('cyber'))) {
-                                link.classList.add('active');
-                                anySubActive = true;
-                            }
-                        }
-                    });
-
-                    if (!anySubActive && links.length > 0) {
-                        links[0].classList.add('active'); // "WHAT WE DO" is active
-                    }
-
-                    // Show correct pane
-                    panes.forEach(p => p.classList.remove('active'));
-                    links.forEach(link => {
-                        if (link.classList.contains('active')) {
-                            const target = link.getAttribute('data-target');
-                            if (target) {
-                                const pane = document.getElementById(target);
-                                if (pane) pane.classList.add('active');
-                            }
-                        }
-                    });
-                }
-
-                // 2. Hover Logic for all menus
-                const allSidebarLinks = document.querySelectorAll('.mega-sidebar-link');
-
-                allSidebarLinks.forEach(link => {
-                    link.addEventListener('mouseenter', function (e) {
-                        const megaMenu = this.closest('.split-mega-menu');
-                        if (!megaMenu) return;
-
-                        const localLinks = megaMenu.querySelectorAll('.mega-sidebar-link');
-                        const localPanes = megaMenu.querySelectorAll('.mega-pane');
-
-                        localLinks.forEach(l => l.classList.remove('active'));
-                        localPanes.forEach(p => p.classList.remove('active'));
-
-                        this.classList.add('active');
-                        const targetId = this.getAttribute('data-target');
-                        if (targetId) {
-                            const targetPane = document.getElementById(targetId);
-                            if (targetPane) targetPane.classList.add('active');
-                        }
-                    });
-                });
-            });
+            // Mega menu active states and hover behavior are centrally initialized in assets/js/script.js
         </script>
     </header>
 
@@ -1952,9 +1888,7 @@
             </svg>
         </div>
         <p class="herotrackspara">
-            The plan is sound, but disconnected systems and untouched processes quietly leak the growth it promises. We
-            turn the operating layer into one connected ecosystem: processes streamlined, systems talking to each other.
-            A machine leadership can actually steer.</p>
+            The plan is sound, but disconnected systems and untouched processes quietly leak the growth it promises. We turn the operating layer into one connected ecosystem: processes streamlined, systems talking to each other. A machine that leadership can actually steer.
         <div class="herosvgtracksbtm">
             <svg xmlns="http://www.w3.org/2000/svg" width="74" height="286" viewBox="0 0 74 286" fill="none">
                 <path d="M74 285.993L49.3334 285.993L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 285.993Z"
@@ -2447,7 +2381,7 @@
         <div class="footer-massive-logo-section">
             <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo massive-logo-dark">
             <img src="assets/images/sthiroslogodark.png" alt="Sthiros" class="massive-logo massive-logo-light">
-            <div class="copyright-text">© 2026</div>
+            <div class="copyright-text"><span class="copy-sym">©</span> 2026</div>
         </div>
     </footer>
 
