@@ -3864,8 +3864,11 @@ body.light-mode .stat-label {
   margin-bottom: 80px;
   /* Increased gap before CONTACT NOW */
   display: inline-block;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
   transition: opacity 0.3s ease;
-  line-height: 1.1;
+  line-height: 1.15;
 }
 
 .footer-email:hover {
@@ -4050,19 +4053,6 @@ body.light-mode .stat-label {
 }
 
 /* Responsive adjustments */
-@media (max-width: 900px) {
-  .footer-container {
-    flex-direction: column;
-    gap: 60px;
-  }
-
-  .footer-left,
-  .footer-right {
-    max-width: 100%;
-    width: 100%;
-  }
-}
-
 @media (max-width: 1280px) {
 
   .nav-link:hover,
@@ -4075,11 +4065,11 @@ body.light-mode .stat-label {
   }
 
   .footer-heading {
-    font-size: 36px;
+    font-size: clamp(28px, 3.2vw, 36px);
   }
 
   .footer-email {
-    font-size: 36px;
+    font-size: clamp(26px, 3.6vw, 36px);
     margin-bottom: 40px;
   }
 
@@ -4102,6 +4092,87 @@ body.light-mode .stat-label {
 
   .copyright-text {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .footer-left,
+  .footer-right {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .footer-heading {
+    font-size: clamp(24px, 4vw, 32px);
+  }
+
+  .footer-email {
+    font-size: clamp(22px, 4.5vw, 32px);
+  }
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 50px 20px 0;
+  }
+
+  .footer-container {
+    gap: 40px;
+    padding-bottom: 30px;
+  }
+
+  .footer-heading {
+    font-size: clamp(20px, 5.5vw, 28px);
+    margin-bottom: 8px;
+  }
+
+  .footer-email {
+    font-size: clamp(16px, 6.8vw, 28px);
+    margin-bottom: 30px;
+    max-width: 100%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-footer {
+    padding: 40px 16px 0;
+  }
+
+  .footer-heading {
+    font-size: clamp(18px, 5.5vw, 24px);
+    margin-bottom: 6px;
+  }
+
+  .footer-email {
+    font-size: clamp(15px, 6.8vw, 24px);
+    margin-bottom: 24px;
+  }
+
+  .footer-socials {
+    gap: 14px;
+  }
+
+  .social-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 340px) {
+  .footer-heading {
+    font-size: clamp(16px, 5.2vw, 20px);
+  }
+
+  .footer-email {
+    font-size: clamp(13px, 6.5vw, 18px);
   }
 }
 
@@ -6124,7 +6195,7 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
   }
 
   .stat-card {
-    width: 82% !important;
+    width: 76% !important;
     height: 150px !important;
     padding: 24px 20px !important;
     border-radius: 20px !important;
@@ -6544,6 +6615,22 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
   }
 }
 
+/* Reduce mobile SVG width from 60px to 50px on screens <= 375px */
+@media (max-width: 375px) {
+  #realtopstoriessvg svg,
+  #workholdssvg svg,
+  .workholdssvg svg,
+  #workholdbottomsvg svg,
+  .workholdbottomsvg svg,
+  #ourstorybottomsvg svg,
+  .ourstorybottomsvg svg,
+  #industriessvgbtm svg,
+  .industriessvgbtm svg,
+  #whysthirossvg svg {
+    width: 50px !important;
+  }
+}
+
 
 /* Fix broken SVG gap on mobile */
 @media (max-width: 768px) {
@@ -6561,6 +6648,24 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
 @media (max-width: 768px) {
   .aboutusmobilescreensvg svg {
     clip-path: inset(0 0 120px 0);
+  }
+}
+
+/* Adjustments for smaller mobile screens <= 410px:
+   Shift aboutusmobilescreensvg downward from -68px to 0,
+   adjust bottom clip-path, and lock stat-card width to 76% */
+@media (max-width: 410px) {
+  .aboutusmobilescreensvg {
+    margin-top: 0 !important;
+  }
+
+  .aboutusmobilescreensvg svg {
+    clip-path: inset(0 0 190px 0) !important;
+  }
+
+  .stats-grid .stat-card,
+  .stat-card {
+    width: 76% !important;
   }
 }
 
@@ -7460,15 +7565,24 @@ body.light-mode .footer-menu li {
   }
 
   #smrSegC {
-    left: calc(1900px) !important;
+    left: calc(1906px) !important;
     top: calc(345px) !important;
-    width: calc(1599px) !important;
+    width: calc(1593px) !important;
+    height: calc(418px) !important;
   }
 
+  /* Magnet lock: #smrSegF entrance connects seamlessly to #smrSegC exit with zero gap on all device widths.
+     C exit right edge is at 1906px + 1593px = 3499px, top at 345px.
+     F must render at the exact same px-per-artboard-unit scale as C (1593/2074 = 418/544 = 0.768232),
+     not a scale of its own, or the line visibly thickens right where it meets Cyber even though each
+     segment's own aspect ratio is individually correct. F width/height = 224/254 * 0.768232 = 172.08/195.13px,
+     right edge pinned to 3499px (left: 3326.92px), bottom edge pinned to 345.5px (top: 150.37px). */
   #smrSegF {
-    left: calc(3410px) !important;
-    top: calc(138px) !important;
-    transform: translateX(calc(-12vw)) !important;
+    left: calc(3326.92px) !important;
+    top: calc(150.37px) !important;
+    width: calc(172.08px) !important;
+    height: calc(195.13px) !important;
+    transform: none !important;
   }
 
   #smrSegD,
@@ -7492,8 +7606,15 @@ body.light-mode .footer-menu li {
     left: calc(4873.04px - 16vw) !important;
   }
 
+  /* The AI mark hangs off the end of the rail: its right edge is segment E's
+     left edge, so the hook always dies behind the A. Derive it from the same
+     number segment E uses instead of pinning it — the mark's width follows
+     --smr-logo-h, so a hard-coded left only lines up on one screen size and
+     leaves the line stopping short on a narrow phone. The logo renders at
+     150% of --smr-logo-h and ai_img_sthiros.png is 475x436, so it is
+     1.5 x 475/436 = 1.63417 x --smr-logo-h wide. */
   .smr-station[data-smr="ai"] {
-    left: calc(4605.39px - 16vw) !important;
+    left: calc(4873.04px - 16vw - var(--smr-logo-h) * 1.63417) !important;
     transform: translateX(calc(-12vw)) !important;
   }
 

@@ -3179,7 +3179,6 @@ function smrCreateRail() {
       var b = box[k] || (box[k] = {});
       b.w = r.width; b.h = r.height;
       b.dTop = t.top - r.top; b.dBottom = t.bottom - r.bottom;
-      b.dLeft = t.left - r.left; b.dRight = t.right - r.right;
     });
   }
 
@@ -3326,30 +3325,67 @@ function smrCreateRail() {
   }
   layout();
 
-  /* ── nothing on the rail animates: the line and the marks are simply there ── */
+  /* ── where the marks actually ended up ──────────────────────────────────
+     Some marks are placed by the chain above and some are nudged into place
+     by hand in the stylesheet, so the camera asks the finished boxes where
+     they are rather than trusting the numbers it just computed — that is
+     what used to leave AI sitting off to one side, with its copy running off
+     the edge, on every width but the one the stylesheet was tuned at.
+     The track is a zero-size box at the rail's origin, so subtracting its
+     rect gives track coordinates whatever transform the camera is holding. */
+  function locate() {
+    var o = track.getBoundingClientRect();
+    Object.keys(stations).forEach(function (k) {
+      /* the artwork, not its box: a mark is drawn at 150% of the box height
+         and Cyber is scaled on top of that, so the box alone is not the mark */
+      var el = stations[k].querySelector('.smr-logo-svg, .smr-logo-img') || stations[k].querySelector('.smr-logo');
+      var art = el.getBoundingClientRect();
+      var txt = stations[k].querySelector('.smr-text').getBoundingClientRect();
+      box[k].seen = {
+        l: Math.min(art.left, txt.left) - o.left,
+        r: Math.max(art.right, txt.right) - o.left,
+        t: Math.min(art.top, txt.top) - o.top,
+        b: Math.max(art.bottom, txt.bottom) - o.top
+      };
+    });
+  }
+  locate();
+
+  /* ── smrSegF: shift left so its FULL artboard (horizontal lines + curve) is visible
+     on screen when the camera settles on Cyber. Without this, only the left ~36% of
+     smrSegF is visible (the horizontal strips) and the curve at the right is cut off.
+     We translate smrSegF leftward until its right edge lands exactly at the viewport
+     right edge. The C-logo station (z-index 2) is above smrSegF (z-index 1), so the
+     logo draws cleanly on top of any overlap. ── */
+  if (segs.F && segs.F.node && box.cyber && box.cyber.seen) {
+    var fWidth = segs.F.w * K;                                  /* 224 × K = 182.85px */
+    var cyberFX = (box.cyber.seen.l + box.cyber.seen.r) / 2;   /* actual focusX      */
+    var fShift = stageW / 2 - (segs.F.pos[0] - cyberFX + fWidth);
+    segs.F.node.style.transform = 'translateX(' + fShift.toFixed(2) + 'px)';
+  }
+
+
   var copy = function (k) { return stations[k].querySelectorAll('.smr-text > *'); };
   Object.keys(stations).forEach(function (k) {
     gsap.set(stations[k], { opacity: 1 });
     gsap.set(copy(k), { opacity: 1, y: 0 });
   });
 
-  /* ── the ride: the camera runs along the rail, settling on each mark ── */
+  /* ── the ride: the camera runs along the rail, settling on each mark ──
+     A mark is framed on the block it actually draws — its art and its copy
+     together — so the whole thing lands centred and the words never run off
+     an edge. Framing on the live-measured union (`seen`) rather than the
+     pre-transform chain position is what keeps Cyber's mark — which carries
+     its own translateX/scale in the stylesheet — from hanging off the left
+     edge on a narrow phone: since art and copy are both inside that union
+     box, centring on it can never push either one past the stage edge, the
+     way centring on the mark alone did on a wide phone (the copy trails to
+     the lower right there and the union used to run past the right edge). */
   var focusX = function (k) {
-    var b = box[k];
-    if (k === 'cyber') {
-      return b.pos[0] + b.w / 2;
-    }
-    if (k === 'ai' && window.innerWidth <= 768) {
-      /* AI logo center taking into account the mobile CSS translation and Seg D shorten */
-      return (b.pos[0] - window.innerWidth * 0.16) + b.w / 2 - (window.innerWidth * 0.12);
-    }
-    return (b.pos[0] + Math.min(0, b.dLeft) + b.pos[0] + b.w + Math.max(0, b.dRight)) / 2;
+    return (box[k].seen.l + box[k].seen.r) / 2;
   };
-  /* the middle of a mark and its copy together, so the whole block lands centred
-     and the words never run off the bottom */
   var focusY = function (k) {
-    var b = box[k];
-    return (b.pos[1] + Math.min(0, b.dTop) + b.pos[1] + b.h + Math.max(0, b.dBottom)) / 2;
+    return (box[k].seen.t + box[k].seen.b) / 2;
   };
   /* the point where a segment turns, in track px */
   var bend = function (k) {
@@ -3366,9 +3402,6 @@ function smrCreateRail() {
     return [stageW / 2 - focusX(k), stageH / 2 - focusY(k)];
   };
   var camXofBend = function (k) {
-    if (k === 'D' && window.innerWidth <= 768) {
-      return stageW / 2 - (bend(k).x - window.innerWidth * 0.28);
-    }
     return stageW / 2 - bend(k).x;
   };
 
@@ -3401,8 +3434,16 @@ function smrCreateRail() {
   };
   runTo('B', 'risk', 0.9);
   runTo('C', 'cyber', 0.9);
-  /* D and E share an x, so one bend carries the whole drop to AI */
-  runTo('D', 'ai', 1.0);
+
+  /* The run out of Cyber does not corner on bend D. D and E turn down at the
+     far side of the AI mark, so stopping over that bend carries AI a quarter
+     of a screen past the middle and the last step then swings it back — the
+     view lurches left and returns. Instead the camera runs across only as far
+     as AI's own centre and then drops straight down onto it: once the mark is
+     centred, the rest of the scroll is the descent. */
+  var aiCam = camOfMark('ai');
+  go(aiCam[0], route[route.length - 1].cy, 0.5);   /* across until AI is centred */
+  go(aiCam[0], aiCam[1], 1.0);                     /* then straight down onto it */
 
   var look = function (wp) {
     return { x: function () { return wp.cx; }, y: function () { return wp.cy; } };
