@@ -952,6 +952,39 @@ function initScrollAnimations() {
     // ══════════════════════════════════════════
     // DESKTOP: (min-width: 769px) - 100% UNTOUCHED
     // ══════════════════════════════════════════
+    // cyberHorizScroll used to be a flat constant (1170 = 210 + 1200*0.8) derived
+    // assuming .cyber-horiz-svg always renders at a fixed 1200px wide. It doesn't
+    // any more (e.g. the >=1900px breakpoint resizes it to height:70px/width:auto,
+    // which renders wider) — so this now reads the SVG's actual current width and
+    // re-derives the same "210 + viewBox-x-1200 * scale" offset from that, keeping
+    // Cyber (and AI, which continues from Cyber's pan) correctly centered no
+    // matter how that accent line is sized. Falls back to the old 0.8 scale
+    // (i.e. 1170) if the element isn't in the DOM yet.
+    function getCyberHorizScroll() {
+      const svg = document.querySelector('.cyber-horiz-svg');
+      const scale = svg ? svg.getBoundingClientRect().width / 1500 : 0.8;
+      return 210 + 1200 * scale;
+    }
+
+    // riskHorizScroll (below) is the pan that brings Cyber's card into view for
+    // its own "cyberTrace" reveal — same root issue as getCyberHorizScroll()
+    // above: growing .risk-horiz-svg past its old fixed 1200px width (the
+    // >=1900px height:70px/width:auto rule) shifts Cyber's actual position
+    // (set by sync(), which measures that SVG live) further right than this
+    // flat 1159 constant assumes, so at a 1920px viewport Cyber's card
+    // overshoots past centered and its text clips the right edge. Unlike
+    // cyberHorizScroll there's no clean "offset + viewBox-x * scale" formula
+    // documented for the original 1159 to re-derive from, so this keeps 1159
+    // as the base (still correct below 1900px, where the accent line is
+    // still 1200px) and adds a flat, empirically-measured correction — at a
+    // true 1920px viewport, the camera needed exactly 152px more pan to land
+    // Cyber's logo dead center (verified via getBoundingClientRect) — for the
+    // same >=1900px range the CSS resize applies to.
+    function getRiskHorizScroll() {
+      const vw = window.innerWidth;
+      return 1159 + (vw >= 1900 ? 152 : 0);
+    }
+
     mm.add("(min-width: 769px)", () => {
     ScrollTrigger.create({
       trigger: servicesRail,
@@ -966,9 +999,9 @@ function initScrollAnimations() {
         const riskX = 1.25 * vw + 10 + stratLogoW + 15 + 2180 * scale;
         const targetX = Math.abs(-(riskX - vw / 2));
         const riskY = 700 * scale;
-        const riskHorizScroll = 1159; // precise center-to-center distance
+        const riskHorizScroll = getRiskHorizScroll();
         const riskVertScrollUP = 685; // 684.8 rounded
-        const cyberHorizScroll = 1170; // 210 (offset) + 960 (1200 * 0.8)
+        const cyberHorizScroll = getCyberHorizScroll();
         const cyberVertScrollDOWN = 966 * scale; // Match the actual animation distance
         // Added 400 for a small pause at the end before unpinning
         return `+=${targetX + riskY + riskHorizScroll + riskVertScrollUP + cyberHorizScroll + cyberVertScrollDOWN + 400}`;
@@ -1108,8 +1141,8 @@ function initScrollAnimations() {
             const scale = (vw * 0.5) / 991;
             const stratLogoW = 380;
             const riskX = 1.25 * vw + 10 + stratLogoW + 15 + 2180 * scale;
-            // Center to center distance is exactly 1159px
-            return -(riskX - vw / 2 + 1159);
+            // Center to center distance is exactly 1159px (see getRiskHorizScroll)
+            return -(riskX - vw / 2 + getRiskHorizScroll());
           },
           ease: 'none',
           duration: 1
@@ -1183,12 +1216,33 @@ function initScrollAnimations() {
             const scale = (vw * 0.5) / 991;
             const stratLogoW = 380;
             const riskX = 1.25 * vw + 10 + stratLogoW + 15 + 2180 * scale;
-            const cyberHorizScroll = 1170; // precisely to the center of the downward curve
+            const cyberHorizScroll = getCyberHorizScroll();
             let aiCenterBonus = 0;
             if (vw <= 1280) {
               aiCenterBonus = 350; // Move track less to the left so AI logo is centered
             }
-            return -(riskX - vw / 2 + 1159 + cyberHorizScroll) + aiCenterBonus;
+            if (vw > 1280 && vw <= 1366) {
+              // At 1366px the AI logo+text block (as a combined unit — they share this
+              // one pan, so they can't each be independently centered) sat well left
+              // of viewport-center (combined bbox center measured at 446.5px on a
+              // 1366px-wide viewport via getBoundingClientRect). +236.5, rounded to
+              // 237, lands that combined center on the true viewport center (683px).
+              // Deliberately does not touch getRiskHorizScroll()/getCyberHorizScroll()
+              // — those also determine where Cyber's own line starts, which this
+              // request explicitly said to leave alone; this bonus only affects the
+              // pan past that point, on the way to AI (2026-09-12, user request).
+              aiCenterBonus = 237;
+            }
+            if (vw >= 1900) {
+              // getRiskHorizScroll()'s own >=1900px correction (needed to re-center
+              // Cyber, see that function) overshoots here because it also feeds this
+              // same pan — it's added a second time via this chain (riskX ... +
+              // getRiskHorizScroll() + cyberHorizScroll). Empirically measured via
+              // getBoundingClientRect at a true 1920px viewport: without this, AI's
+              // logo lands 238px left of viewport-center; this cancels that out.
+              aiCenterBonus = 238;
+            }
+            return -(riskX - vw / 2 + getRiskHorizScroll() + cyberHorizScroll) + aiCenterBonus;
           },
           ease: 'none',
           duration: 1
@@ -1216,6 +1270,18 @@ function initScrollAnimations() {
             if (vw <= 1366) cyberBonus = 120;
             let aiUpBonus = 0;
             if (vw <= 1280) aiUpBonus = 150; // Extra pan up so AI isn't cut off at the bottom
+            if (vw > 1280 && vw <= 1366) aiUpBonus = 90; // 2026-09-12 user request: nudge AI up at 1366px (was 50, "thoda aur upar" follow-up)
+            // >=1900px: .cyber-horiz-rail gets an extra +100px top offset (see the
+            // min-width:1900px block in style.css), which shifts .ai-inline-section's
+            // own synced position (sync() in initServicesTracing, derived from
+            // .cyber-horiz-svg's live rect) down by the same amount — but this
+            // vertical pan's cyberVertScrollDOWN constant (966 * scale) doesn't know
+            // about that extra offset, so AI lands ~80px below center at a true
+            // 1920px viewport (measured via getBoundingClientRect: combined AI logo +
+            // text block centered at y=619.5 vs viewport-center 540 on a 1080-tall
+            // viewport). Only vw>=1900 is affected — the accent-line resize this
+            // compensates for is itself scoped to that breakpoint (2026-09-14).
+            if (vw >= 1900) aiUpBonus = 80;
             // The vertical distance between Cyber logo and AI logo is exactly 966 * scale
             const cyberVertScrollDOWN = 966 * scale;
             return (lineOffset - 190) - (700 * scale) + 684.8 - riskVertOffset + cyberBonus - cyberVertScrollDOWN - aiUpBonus; // move track UP by exactly the distance

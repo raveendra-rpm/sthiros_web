@@ -6005,32 +6005,23 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
   }
 }
 
-/* 1920px screens: Adjust hero text position and font size */
+/* 1920px+ screens: type/size tweaks for later sections (Why Sthiros, Latest Thinking, CTA banner),
+   plus a hero-inner position fix (2026-09-12 — see memory). The base .hero-inner is
+   max-width:1440px + margin:0 auto, so past ~1520px wide it starts auto-centering that 1440px
+   column — at 1920px (100% Windows scale on a 1920x1080 monitor) that's ~200px of left margin,
+   vs. only ~6px at ~1536px (125% scale on the same monitor), visibly shifting the hero text right
+   and away from the header logo. Same growth pattern hits height: 90vh grows faster in absolute
+   px than the (font-clamped, effectively fixed-height) hero text block does, and since hero-inner
+   is bottom-anchored (justify-content: flex-end), that extra room shows up entirely as growing
+   empty space ABOVE the headline. Both fixed below by pinning hero-inner to the section's own
+   40px padding (no extra centering margin) and giving it enough bottom padding to keep the text
+   block's vertical position in line with how it sits at ~1536px. */
 @media screen and (min-width: 1900px) {
   .hero-inner {
-    padding: 60px 0 350px 0;
-    /* Move text up */
-    margin: 0 40px;
-    /* Align left edge with logo (40px padding in header) */
-    width: calc(100% - 80px);
+    margin: 0 0 0 40px;
+    width: calc(100% - 40px);
     max-width: 100%;
-  }
-
-  .hero-headline {
-    font-size: 100px;
-    font-weight: bold;
-    line-height: 0.95;
-  }
-
-
-  .hero-sub {
-    font-size: 20px;
-    max-width: 800px;
-  }
-
-  .hero-btn {
-    font-size: 22px;
-    padding: 8px 40px;
+    padding: 60px 0 275px 0;
   }
 
   #services-title {
@@ -6047,6 +6038,36 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
   .ai-sub {
     font-size: 26px !important;
     max-width: 750px !important;
+  }
+
+  /* Cyber and AI's cards sit far enough right (positioned off the end of the
+     Risk/Cyber accent lines) that the shared 750px max-width above runs their
+     paragraph text past the 1920px viewport edge, getting clipped mid-word —
+     pull just these two back down near their un-boosted base widths (cyber-sub:
+     600px, ai-sub: 340px) so they wrap safely regardless of where the camera
+     pans. Same specificity + !important as the rule above, so source order
+     (this comes after) is what makes it win. cyber-sub widened 380->600px
+     (2026-09-12, user request) — still comfortably clear of the 1920px edge:
+     card starts at x~1170-1174, so 600px wide lands its right edge ~1770-1774,
+     leaving ~150px of margin before the viewport edge (verified via
+     getBoundingClientRect against the >=1900px camera-centering fix in
+     script.js — see sthiros-desktop-four-pillars-camera-1900px memory). */
+  .cyber-sub {
+    max-width: 600px !important;
+  }
+
+  .ai-sub {
+    max-width: 400px !important;
+  }
+
+  /* Risk's paragraph was capped by .risk-right-side's own base width:500px
+     (not by .risk-sub's max-width, which is already 750px from the shared
+     rule above but never gets the chance to matter) — widen the container
+     itself so the text actually gets more room, same as cyber-sub above.
+     Risk's card sits at x~1043 here, so 750px wide lands its right edge
+     ~1793, still ~127px clear of the 1920px viewport edge. */
+  .risk-right-side {
+    width: 750px !important;
   }
 
   .why-text-block {
@@ -6090,6 +6111,34 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
   .cta-banner {
     padding: 103px 80px;
   }
+
+  /* Four Pillars rail (2026-09-12): at a true 1920px viewport the Risk/Cyber
+     accent lines (.risk-horiz-svg / .cyber-horiz-svg, base width: 1200px,
+     height: auto -> ~58px) render large enough to sweep into neighbouring
+     content — cyber-horiz-svg in particular overlaps the Cyber card's "Know
+     more" link. Pin both to a 70px HEIGHT (top-to-bottom) instead — width:
+     auto lets the browser derive the proportional width from the svg's own
+     viewBox (0 0 1500 72), so the line keeps its native shape, just resized
+     to a fixed 70px tall accent instead of the fluid 1200px-wide one. Also
+     nudge Strategy's text block and Cyber's line down slightly to match the
+     reference composition. */
+  .risk-horiz-svg {
+    height: 70px !important;
+    width: auto !important;
+  }
+
+  .cyber-horiz-svg {
+    height: 70px !important;
+    width: auto !important;
+  }
+
+  .cyber-horiz-rail {
+    top: calc(45% + 100px);
+  }
+
+  .strategy-content {
+    transform: translateY(40px);
+  }
 }
 
 @media (max-width: 1920px) {
@@ -6132,6 +6181,48 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
   .why-image-block {
     width: 420px !important;
     height: 260px !important;
+  }
+}
+
+/* Strategy/Risk/Cyber Four Pillars rail tweaks scoped specifically to 1366px
+   laptop screens (2026-09-12, user request — explicitly only this range, not
+   all of <=1366px like the block above, so these don't bleed into tablet/
+   mobile widths that have their own separate handling). */
+@media screen and (min-width: 1281px) and (max-width: 1366px) {
+  /* At 1366px the Strategy heading's top edge sits right at (slightly above)
+     the bottom of the thick incoming red line above it, reading as touching/
+     overlapping. Nudge the whole text block down a little to open a clean
+     gap; transform (not margin) since .strategy-content is flex-end aligned
+     inside .strategy-section and a margin there wouldn't move it (verified
+     this same distinction earlier for the same reason on .hero-inner). */
+  .strategy-content {
+    transform: translateY(30px);
+  }
+
+  /* Risk's accent line (.risk-horiz-svg, viewBox 0 0 1500 72) starts near
+     viewBox y~12-64 (bottom-left, next to the Risk logo) and curves up to
+     end near y~-600 to -732 (top). Scaling vertically from a top-left
+     transform-origin stretches the far-away ending points a lot while
+     barely moving the start (which sits close to that origin), matching
+     "move where it ends further up, leave where it starts alone". Verified
+     via getBoundingClientRect: start points shift <5px, end points shift
+     ~45-50px further up. */
+  .risk-horiz-svg {
+    transform-origin: top left;
+    transform: scaleY(1.08);
+  }
+
+  /* Same trick, opposite direction: Cyber's accent line (.cyber-horiz-svg,
+     same viewBox) starts near the top (close to the Cyber logo) and curves
+     DOWN — its "ending point" is the far-away one this time (was overshooting
+     ~400px+ past the bottom of a 768px-tall viewport at cyberTrace).
+     Shrinking (scaleY < 1) from the same top-left origin pulls that
+     far-away bottom end UP toward the anchored start without moving the
+     start itself. 0.85 (was 0.92) per follow-up "thoda aur upar" request —
+     verified end points now move ~113-118px up total, start still <5px. */
+  .cyber-horiz-svg {
+    transform-origin: top left;
+    transform: scaleY(0.85);
   }
 }
 
@@ -7073,19 +7164,6 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
 
 /* Centering AI section for 1366px screens */
 @media screen and (min-width: 1281px) and (max-width: 1399px) {
-  .cyber-horiz-svg {
-    width: 1330px !important;
-    transform: scaleY(0.86);
-    transform-origin: top left;
-  }
-  .ai-inline-section {
-    margin-top: -80px !important;
-  }
-  .ai-right-side {
-    left: 650px !important;
-    top: 10px !important;
-    width: 210px !important;
-  }
   #realtopstoriessvg {
     margin-top: 100px !important;
   }
@@ -7106,12 +7184,6 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
 
 
 
-/* Fix for high-resolution 100% scale screens (e.g., MacBook 1920x1080) */
-@media screen and (min-width: 1600px) {
-  body {
-    zoom: 1.25;
-  }
-}
 
 /* Light mode Footer Overrides */
 body.light-mode .footer-heading {
