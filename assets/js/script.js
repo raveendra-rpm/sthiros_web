@@ -63,6 +63,7 @@ function boot() {
   initTellUsWhatSvgSequenceScroll();
   initFloatingCurves();
   initContactUsSvgScroll();
+  initIndexMobileScroll();
 }
 
 let appBooted = false;
@@ -428,6 +429,63 @@ function initHeroSvgTrackScroll() {
         }
       }
     );
+  }
+}
+
+function initIndexMobileScroll() {
+  if (window.innerWidth > 768) return;
+
+  // 1. Hero Mobile SVGs - Removed per request
+
+  // 2. About Us Mobile SVG
+  const aboutSvg = document.querySelector('.aboutusmobilescreensvg svg');
+  if (aboutSvg) {
+    gsap.set(aboutSvg, { clipPath: 'inset(0 0 100% 0)' });
+    gsap.to(aboutSvg, {
+      clipPath: 'inset(0 0 0% 0)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.aboutusmobilescreensvg',
+        start: 'top 80%',
+        end: 'bottom 20%',
+        scrub: true
+      }
+    });
+  }
+
+  // 3. Services Mobile SVG
+  const servicesSvg = document.querySelector('.services-mobile-svg-wrap svg');
+  if (servicesSvg) {
+    gsap.set(servicesSvg, { clipPath: 'inset(0 0 100% 0)' });
+    gsap.to(servicesSvg, {
+      clipPath: 'inset(0 0 0% 0)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.section-services',
+        start: 'top 80%',
+        end: 'bottom 20%',
+        scrub: true
+      }
+    });
+  }
+
+  // 4. Four Pillars Mobile Logos (Strategy, Risk, Cyber, AI)
+  const mobileLogos = document.querySelectorAll('.smr-station .smr-logo > *');
+  if (mobileLogos.length > 0) {
+    gsap.set(mobileLogos, { clipPath: 'inset(0 0 100% 0)' });
+    
+    // We animate them sequentially as the user scrolls through the pinned #smr section
+    gsap.to(mobileLogos, {
+      clipPath: 'inset(0 0 0% 0)',
+      ease: 'none',
+      stagger: 1, // Stagger distributes them evenly across the scrub duration
+      scrollTrigger: {
+        trigger: '#smr',
+        start: 'top top',
+        end: 'bottom bottom',
+        scrub: 0.5
+      }
+    });
   }
 }
 
@@ -1342,6 +1400,16 @@ function initScrollAnimations() {
       // Mobile runs its own, completely separate Four Pillars journey —
       // see initMobileServicesRail(). The desktop rail above is untouched.
       return initMobileServicesRail();
+    });
+
+    // Mobile hero rail: scroll-draws the corner bracket + vertical accent
+    // line top-to-bottom as the user scrolls through the hero, the same
+    // scroll-scrubbed-reveal idea as the desktop rail's logo traces — so by
+    // the time the hero scrolls out, the line has "arrived", handing off to
+    // the Four Pillars rail's own scroll journey right after (2026-09-14
+    // user request). Desktop's hero-vec-1/2 are untouched.
+    mm.add("(max-width: 768px)", () => {
+      // return initMobileHeroReveal(); // Animation disabled per user request
     });
   }
 
@@ -3734,6 +3802,40 @@ function initMobileServicesRail() {
     clearTimeout(timer);
     window.removeEventListener('resize', onResize);
     if (teardown) teardown();
+  };
+}
+
+/**
+ * Mobile hero rail: reveals the corner-bracket (.hero-mobile-left-svg) and the
+ * vertical accent line (.hero-mobile-right-svg) with a top-to-bottom clip-path
+ * wipe, scrubbed to the hero's own scroll distance (top top -> bottom top) —
+ * the same wipe-reveal technique the desktop rail uses for its logo traces
+ * (e.g. .ai-service-img's clipPath tween), just scroll-scrubbed instead of
+ * paused-at-a-label, since the mobile hero has no pin to pause on.
+ */
+function initMobileHeroReveal() {
+  var heroSection = document.getElementById('herosectionmobilescreen');
+  var leftSvg = document.querySelector('.hero-mobile-left-svg');
+  var rightSvg = document.querySelector('.hero-mobile-right-svg');
+  if (!heroSection || !leftSvg || !rightSvg) return;
+
+  gsap.set([leftSvg, rightSvg], { clipPath: 'inset(0 0 100% 0)' });
+
+  var tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: heroSection,
+      start: 'top top',
+      end: 'bottom top',
+      scrub: true
+    }
+  });
+  tl.to(leftSvg, { clipPath: 'inset(0 0 0% 0)', ease: 'none', duration: 1 }, 0)
+    .to(rightSvg, { clipPath: 'inset(0 0 0% 0)', ease: 'none', duration: 1 }, 0.15);
+
+  return function () {
+    tl.scrollTrigger && tl.scrollTrigger.kill();
+    tl.kill();
+    gsap.set([leftSvg, rightSvg], { clearProps: 'clipPath' });
   };
 }
 

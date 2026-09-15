@@ -4031,7 +4031,8 @@ body.light-mode .stat-label {
 
 .copy-sym {
   display: inline-block;
-  transform: rotate(180deg);
+  transform: rotate(90deg);
+  font-size: 24px;
 }
 
 .nav-link {
@@ -8004,13 +8005,37 @@ body.light-mode .footer-menu li {
   body.light-mode #herosectionmobilescreen span,
   body.light-mode #herosectionmobilescreen li,
   body.light-mode #herosectionmobilescreen div,
-  body.light-mode #herosectionmobilescreen a {
+  body.light-mode #herosectionmobilescreen a,
+  body.light-mode #aboutherosection h1,
+  body.light-mode #aboutherosection h2,
+  body.light-mode #aboutherosection h3,
+  body.light-mode #aboutherosection h4,
+  body.light-mode #aboutherosection div,
+  body.light-mode #aboutherosection a,
+  body.light-mode .about-hero-section h1,
+  body.light-mode .about-hero-section h2,
+  body.light-mode .about-hero-section h3,
+  body.light-mode .about-hero-section h4,
+  body.light-mode .about-hero-section div,
+  body.light-mode .about-hero-section a,
+  body.light-mode .about-hero-title {
     color: #ffffff !important;
   }
 
+  /* About hero description stays muted as in dark mode */
+  body.light-mode #aboutherosection p,
+  body.light-mode #aboutherosection .about-hero-desc,
+  body.light-mode .about-hero-section p,
+  body.light-mode .about-hero-section .about-hero-desc {
+    color: #c8c8c8 !important;
+  }
+
   /* But keep highlight red inside hero headline */
-  body.light-mode #herosectionmobilescreen .highlight {
-    color: #EC2D26 !important;
+  body.light-mode #herosectionmobilescreen .highlight,
+  body.light-mode #aboutherosection .about-hero-title span,
+  body.light-mode .about-hero-section .about-hero-title span,
+  body.light-mode .about-hero-title span {
+    color: #EF4623 !important;
   }
 
   /* Keep hero buttons styled properly */
@@ -8280,4 +8305,21 @@ body.light-mode .footer-menu li {
   body.light-mode .ai-service-img {
     filter: invert(1) hue-rotate(180deg) drop-shadow(0 4px 12px rgba(0, 0, 0, 0.08)) !important;
   }
+}
+
+/* Hide Pick a way in section across all industry pages */
+#choosehowrostartsec {
+  display: none !important;
+}
+
+/* Hide arrow navigation on desktop versions */
+@media (min-width: 768px) {
+  .chts-nav {
+    display: none !important;
+  }
+}
+
+/* Hide transformation bottom SVG across all industry pages */
+.sthirossvgtransformationbtm {
+  display: none !important;
 }

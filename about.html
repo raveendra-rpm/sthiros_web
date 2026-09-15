@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css?v=37" />
+    <link rel="stylesheet" href="assets/css/style.css?v=38" />
     <style>
         :root {
             --text-secondary: #ffffff;
@@ -80,23 +80,29 @@
             max-width: 600px;
         }
 
-        .about-hero-title {
+        .about-hero-title,
+        body.light-mode .about-hero-title,
+        body.light-mode #aboutherosection .about-hero-title {
             font-family: 'Pacaembu', sans-serif !important;
             font-size: 5rem;
             font-weight: 500;
-            color: #ffffff;
+            color: #ffffff !important;
             line-height: 1.1;
             margin-bottom: 30px;
         }
 
-        .about-hero-title span {
-            color: #EF4623;
+        .about-hero-title span,
+        body.light-mode .about-hero-title span,
+        body.light-mode #aboutherosection .about-hero-title span {
+            color: #EF4623 !important;
         }
 
-        .about-hero-desc {
+        .about-hero-desc,
+        body.light-mode .about-hero-desc,
+        body.light-mode #aboutherosection .about-hero-desc {
             font-family: 'Quicksand', sans-serif !important;
             font-size: 1.25rem;
-            color: #e0e0e0;
+            color: #e0e0e0 !important;
             line-height: 1.6;
             margin-bottom: 0;
         }
@@ -824,6 +830,15 @@
             display: none;
         }
 
+        .rwy-bg-img-mobile {
+            display: none;
+        }
+
+        .rwy-mobile-svg-top,
+        .rwy-mobile-svg-bottom {
+            display: none;
+        }
+
         body.light-mode .rwy-bg-img-dark {
             display: none;
         }
@@ -1498,25 +1513,39 @@
                 margin-top: 8px;
             }
 
-            .about-hero-title {
+            .about-hero-title,
+            body.light-mode .about-hero-title,
+            body.light-mode #aboutherosection .about-hero-title {
                 font-size: clamp(2.25rem, 7vw, 2.65rem) !important;
-                line-height: 1.15;
-                margin-bottom: 16px;
+                line-height: 1.15 !important;
+                margin-bottom: 16px !important;
+                color: #ffffff !important;
+                font-family: 'Pacaembu', sans-serif !important;
+                font-weight: 500 !important;
             }
 
-            .about-hero-desc {
+            .about-hero-title span,
+            body.light-mode .about-hero-title span,
+            body.light-mode #aboutherosection .about-hero-title span {
+                color: #EF4623 !important;
+            }
+
+            .about-hero-desc,
+            body.light-mode .about-hero-desc,
+            body.light-mode #aboutherosection .about-hero-desc {
                 font-size: clamp(0.95rem, 2.8vw, 1.05rem) !important;
-                line-height: 1.65;
-                color: #c8c8c8;
+                line-height: 1.65 !important;
+                color: #c8c8c8 !important;
+                font-family: 'Quicksand', sans-serif !important;
             }
 
             /* ── Hero bottom SVG: as per uploaded sample image & centered end-point ── */
             .herobtmsvg {
-                width: calc(50vw * (997 / 960)) !important;
+                width: 110vw !important;
                 max-width: none !important;
-                margin-left: 0 !important;
+                margin-left: -60vw !important;
                 margin-right: auto !important;
-                margin-top: -60px !important;
+                margin-top: -200px !important;
                 overflow: visible !important;
                 clip-path: none !important;
                 position: relative;
@@ -1917,51 +1946,128 @@
 
             /* ── Ready When You Are ── */
             #readywhenyouaresec {
-                margin-top: 0 !important;
-                padding: 20px 0 40px !important;
+                margin-top: 50px !important;
+                padding: 40px 0 60px !important;
                 align-items: normal !important;
                 flex-direction: column !important;
-                overflow: visible !important;
+                overflow: hidden !important;
+                position: relative !important;
             }
 
-            /* Hide the complex directional SVGs on mobile */
+            /* Hide the complex directional desktop SVGs on mobile */
             #readywhenyouaresec>svg,
             .btmsvgreadywhenyouare {
                 display: none !important;
             }
 
-            /* The CTA card — compact height on mobile */
+            /* Mobile Top SVG */
+            .rwy-mobile-svg-top {
+                display: flex !important;
+                justify-content: flex-end !important;
+                width: 100% !important;
+                height: 180px !important;
+                overflow: hidden !important;
+                position: relative !important;
+                margin-bottom: 36px !important;
+                pointer-events: none !important;
+            }
+
+            .rwy-mobile-svg-top svg {
+                width: min(250px, 68vw) !important;
+                height: auto !important;
+                position: absolute !important;
+                top: -190px !important;
+                right: 0 !important;
+                display: block !important;
+            }
+
+            /* The CTA card — increased height on mobile */
             .aboutreadywhenyu {
                 position: relative !important;
                 left: auto !important;
                 top: auto !important;
                 transform: none !important;
-                width: calc(100% - 24px) !important;
+                width: calc(100% - 32px) !important;
                 margin: 0 auto !important;
                 border-radius: 20px !important;
-                padding: 40px 24px !important;
-                min-height: 280px !important;
+                padding: 50px 24px !important;
+                min-height: 580px !important;
                 overflow: hidden !important;
                 display: flex !important;
-                align-items: center !important;
-                justify-content: center !important;
+                flex-direction: column !important;
+                align-items: stretch !important;
+                justify-content: stretch !important;
+                z-index: 2 !important;
+            }
+
+            /* Mobile background: use readywhenyouare.png exclusively on mobile */
+            .aboutreadywhenyu .rwy-bg-img-dark,
+            .aboutreadywhenyu .rwy-bg-img-light,
+            body.light-mode .aboutreadywhenyu .rwy-bg-img-dark,
+            body.light-mode .aboutreadywhenyu .rwy-bg-img-light {
+                display: none !important;
+            }
+
+            .aboutreadywhenyu .rwy-bg-img-mobile,
+            body.light-mode .aboutreadywhenyu .rwy-bg-img-mobile {
+                display: block !important;
+                position: absolute !important;
+                top: 0 !important;
+                left: 0 !important;
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: fill !important;
+                z-index: 1 !important;
             }
 
             .rwy-content-wrapper {
+                display: flex !important;
                 flex-direction: column !important;
-                gap: 32px !important;
+                justify-content: space-between !important;
+                align-items: flex-start !important;
+                flex: 1 1 auto !important;
+                height: 100% !important;
+                gap: 40px !important;
                 text-align: left !important;
                 padding: 0 !important;
                 max-width: 100% !important;
-                align-items: flex-start !important;
                 position: relative !important;
                 z-index: 2 !important;
                 width: 100% !important;
             }
 
+            .rwy-content-wrapper .hero-btn-outer {
+                margin-top: auto !important;
+            }
+
             .rwy-heading {
                 font-size: 48px !important;
                 line-height: 56px !important;
+            }
+
+            body.light-mode .rwy-heading,
+            body.light-mode .aboutreadywhenyu .hero-btn-inner {
+                color: #ffffff !important;
+            }
+
+            /* Mobile Bottom SVG — positioned close to the card */
+            .rwy-mobile-svg-bottom {
+                display: flex !important;
+                justify-content: flex-end !important;
+                width: 100% !important;
+                overflow: hidden !important;
+                margin-top: -180px !important;
+                pointer-events: none !important;
+                position: relative !important;
+                z-index: 1 !important;
+            }
+
+            .rwy-mobile-svg-bottom svg {
+                width: 100% !important;
+                max-width: 440px !important;
+                height: auto !important;
+                display: block !important;
+                margin-left: auto !important;
             }
 
             /* ── Footer ── */
@@ -3169,18 +3275,112 @@
             </defs>
         </svg>
 
+        <!-- Mobile Top SVG for Ready When You Are -->
+        <div class="rwy-mobile-svg-top">
+            <svg width="296" height="794" viewBox="0 0 296 794" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M-3.43898e-05 304.787L0.0838282 307.889C0.0838284 309.958 0.307461 312.054 0.447232 314.122C1.14615 322.423 2.68374 330.696 5.03207 338.718C9.72873 354.789 17.6683 369.881 28.2079 382.794C38.8033 395.679 51.9708 406.411 66.7597 414.181C81.5207 422.007 97.9591 426.815 114.593 428.212C116.662 428.352 118.759 428.576 120.827 428.603L123.931 428.687L125.468 428.687L126.586 428.715L758.982 434.13C759.178 434.13 759.373 434.13 759.429 434.13L760.072 434.13C760.939 434.213 761.805 434.13 762.672 434.241C766.111 434.465 769.521 435.024 772.82 435.918C779.418 437.679 785.652 440.81 791.104 445.058C796.555 449.306 801.14 454.645 804.495 460.626C807.878 466.607 810.002 473.203 810.757 480.051C810.953 481.756 811.065 483.489 811.065 485.221L811.065 793.606L835.75 793.606L835.75 485.864L835.722 484.914C835.722 482.37 835.526 479.827 835.247 477.312C834.129 467.222 830.942 457.412 825.965 448.552C820.989 439.72 814.224 431.866 806.228 425.605C798.233 419.344 788.979 414.733 779.194 412.105C774.302 410.792 769.27 409.953 764.21 409.646C762.952 409.506 761.666 409.562 760.408 409.506L759.457 409.506C759.15 409.478 758.73 409.478 758.395 409.478L124.21 404.064L121.694 403.98C120.017 403.98 118.339 403.784 116.69 403.672C103.327 402.526 90.1593 398.669 78.2778 392.409C66.3963 386.148 55.8009 377.512 47.3022 367.17C38.8594 356.801 32.5132 344.699 28.7391 331.842C26.8661 325.386 25.6079 318.762 25.0488 312.082C24.937 310.405 24.7693 308.728 24.7413 307.051L24.6854 304.535L27.9365 0.0557031L3.25104 0.0557053L-3.43898e-05 304.787Z"
+                    fill="url(#paint0_linear_2309_1843)" />
+                <path
+                    d="M40.5926 328.348C43.8635 339.584 49.4268 350.177 56.8073 359.26C56.8073 359.26 56.8353 359.288 56.8633 359.316C56.8912 359.344 56.9192 359.4 56.9471 359.428C64.4115 368.456 73.693 376.002 84.0368 381.452C94.4646 386.958 105.983 390.34 117.752 391.347C123.623 391.878 129.522 391.654 135.421 391.71L756.214 397.124C759.15 397.124 762.113 397.124 765.048 397.32C770.919 397.683 776.762 398.661 782.465 400.171C793.843 403.217 804.607 408.612 813.888 415.878C823.198 423.117 831.025 432.229 836.784 442.514C842.571 452.772 846.262 464.231 847.548 475.942C848.247 481.811 848.107 487.709 848.135 493.606L848.135 793.606L860.492 793.606L860.491 485.836L860.464 484.578C860.436 481.224 860.212 477.871 859.848 474.545C858.367 461.213 854.145 448.16 847.576 436.449C841.006 424.738 832.088 414.397 821.492 406.124C810.925 397.879 798.68 391.73 785.68 388.236C779.194 386.476 772.541 385.385 765.831 384.966C764.154 384.799 762.476 384.826 760.799 384.771L759.541 384.771L758.395 384.743L124.49 379.328L122.589 379.244C121.303 379.244 120.045 379.077 118.787 379.021C108.666 378.154 98.7699 375.248 89.7959 370.524C80.8498 365.801 72.8543 359.316 66.3963 351.49C60.0223 343.637 55.2418 334.525 52.4182 324.855C50.9924 319.991 50.0699 314.988 49.6505 309.929C49.5666 308.672 49.4268 307.386 49.4268 306.128L49.3709 304.228L52.622 -0.000207239L40.2653 -0.000206158L37.0143 333.271C37.0702 339.169 36.8465 305.066 37.3497 310.936C37.8529 316.805 38.9432 322.619 40.5926 328.292L40.5926 328.348Z"
+                    fill="url(#paint1_linear_2309_1843)" />
+                <path
+                    d="M58.0092 305.849C58.0092 306.995 58.149 308.113 58.2049 309.231C58.5963 313.731 59.4071 318.175 60.6651 322.479C63.1532 331.003 67.3747 339.025 72.9659 345.984C72.9659 345.984 72.9939 346.012 73.0218 346.04C73.0777 346.096 73.1057 346.18 73.1616 346.236C78.8647 353.083 85.9097 358.841 93.7934 362.978C101.761 367.17 110.539 369.742 119.513 370.524C120.632 370.58 121.75 370.748 122.896 370.72L124.601 370.776L759.597 376.19L760.967 376.218C762.784 376.274 764.601 376.246 766.418 376.442C773.659 376.889 780.9 378.091 787.945 379.991C802.035 383.764 815.314 390.444 826.804 399.388C838.266 408.332 847.939 419.568 855.096 432.257C862.253 444.946 866.81 459.116 868.431 473.594C868.822 477.2 869.074 480.833 869.102 484.467L869.102 485.836L869.13 486.954L869.13 793.606L875.308 793.606L875.308 485.836L875.28 484.411C875.224 480.582 875.001 476.753 874.581 472.924C872.876 457.635 868.04 442.654 860.491 429.238C852.943 415.823 842.739 403.972 830.634 394.525C818.529 385.078 804.495 378.035 789.594 374.038C782.158 372.026 774.526 370.768 766.865 370.293C764.964 370.125 763.035 370.125 761.134 370.069L759.709 370.069L758.534 370.041L124.825 364.627L123.287 364.571C122.253 364.571 121.246 364.431 120.212 364.375C112.021 363.676 104.081 361.357 96.8407 357.528C89.6559 353.726 83.17 348.472 77.9701 342.183C72.854 335.839 68.9961 328.544 66.7317 320.774C65.5854 316.861 64.8305 312.836 64.4951 308.728C64.4392 307.693 64.2994 306.687 64.2994 305.653L64.2994 304.116L64.2435 303.305L67.4946 0.0836538L61.3162 0.0836543L58.0652 304.172L58.1211 305.877L58.0092 305.849Z"
+                    fill="url(#paint2_linear_2309_1843)" />
+                <path
+                    d="M70.0027 305.43C70.0027 306.38 70.1145 307.302 70.1704 308.225C70.4779 311.942 71.1768 315.575 72.2111 319.125C74.252 326.084 77.6906 332.653 82.2755 338.354C82.2755 338.354 82.3593 338.466 82.3873 338.494C82.4153 338.55 82.4712 338.606 82.4991 338.662C87.1958 344.279 92.9827 348.975 99.4127 352.357C105.954 355.823 113.167 357.919 120.576 358.562C121.498 358.618 122.421 358.757 123.371 358.729L124.769 358.729L125.468 358.785L759.625 364.2L761.134 364.228C763.147 364.283 765.16 364.283 767.173 364.451C775.224 364.954 783.248 366.268 791.048 368.392C806.703 372.585 821.436 379.991 834.156 389.913C846.877 399.836 857.612 412.273 865.524 426.36C873.463 440.446 878.523 456.182 880.312 472.225C880.76 476.222 881.011 480.274 881.067 484.271L881.067 485.78L881.095 486.926L881.095 793.606L885.205 793.606L885.205 485.808L885.177 484.243C885.121 480.079 884.869 475.942 884.394 471.778C882.549 455.176 877.293 438.909 869.102 424.347C860.911 409.785 849.84 396.901 836.673 386.671C823.533 376.414 808.269 368.756 792.11 364.423C784.031 362.243 775.728 360.874 767.425 360.371C765.356 360.175 763.259 360.203 761.19 360.119L759.625 360.119L758.423 360.091L124.825 354.677L123.511 354.621C122.644 354.621 121.778 354.509 120.911 354.453C114.034 353.866 107.408 351.91 101.342 348.724C95.3311 345.565 89.9076 341.149 85.5464 335.895C81.269 330.584 78.0541 324.463 76.153 317.979C75.2025 314.709 74.5595 311.327 74.28 307.889C74.2241 307.023 74.1123 306.184 74.1123 305.29L74.1123 303.976L74.0564 303.278L77.3074 0.0556988L73.1978 0.0556992L69.9467 304.032L70.0027 305.43Z"
+                    fill="url(#paint3_linear_2309_1843)" />
+                <defs>
+                    <linearGradient id="paint0_linear_2309_1843" x1="442.205" y1="243.5" x2="442.602" y2="793.606"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.349328" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_2309_1843" x1="442.205" y1="243.5" x2="442.602" y2="793.606"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.349328" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_2309_1843" x1="442.205" y1="243.5" x2="442.602" y2="793.606"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.349328" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_2309_1843" x1="442.205" y1="243.5" x2="442.602" y2="793.606"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="0.349328" stop-color="#EC2D26" />
+                        <stop offset="1" stop-color="#EC2D26" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+
         <!-- readywhereyouaresec -->
         <div class="aboutreadywhenyu">
             <img src="assets/images/aboutpage/aboutreadywhenyu.jpg" alt="Ready when you are background"
                 class="rwy-bg-img rwy-bg-img-dark">
             <img src="assets/images/aboutpage/aboutreadywhenyulight.jpg" alt="Ready when you are background light"
                 class="rwy-bg-img rwy-bg-img-light">
+            <img src="assets/images/aboutpage/readywhenyouare.png" alt="Ready when you are background mobile"
+                class="rwy-bg-img rwy-bg-img-mobile">
             <div class="rwy-content-wrapper">
                 <h2 class="rwy-heading">Ready when<br>you are.</h2>
                 <a href="contactus.html" class="hero-btn-outer">
                     <span class="hero-btn-inner" style="font-size: 16px;">GET IN TOUCH</span>
                 </a>
             </div>
+        </div>
+
+        <!-- Mobile Bottom SVG for Ready When You Are -->
+        <div class="rwy-mobile-svg-bottom">
+            <svg width="440" height="313" viewBox="0 0 440 313" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M440.241 211.114L440.248 2.9805e-05L460.143 3.00423e-05L460.136 210.64L460.136 210.643C460.136 210.914 460.136 211.25 460.113 211.497L460.113 212.265C460.068 213.28 460.113 214.318 460 215.334C459.752 219.418 459.076 223.48 458.016 227.429C455.895 235.327 452.173 242.797 447.121 249.251C442.068 255.705 435.73 261.165 428.602 265.182C421.452 269.199 413.534 271.772 405.392 272.674C403.361 272.9 401.309 273.058 399.256 273.058L398.489 273.08L-966 273.08L-966 253.155L399.008 253.155C400.407 253.155 401.805 253.064 403.181 252.906C408.707 252.297 414.031 250.582 418.858 247.851C423.685 245.144 427.993 241.443 431.422 237.042C434.85 232.642 437.377 227.61 438.798 222.284C439.519 219.621 439.97 216.868 440.151 214.092C440.241 213.393 440.173 212.693 440.241 211.994L440.241 211.475L440.241 211.114Z"
+                    fill="url(#paint0_linear_rwy_btm_mobile)" />
+                <path
+                    d="M470.106 208.88L470.113 3.01612e-05L480.105 3.02803e-05L480.098 210.64L480.076 211.565L480.076 212.581C480.031 213.935 480.053 215.289 479.918 216.643C479.579 222.058 478.7 227.429 477.279 232.665C474.459 243.158 469.497 253.042 462.843 261.572C456.166 270.124 447.82 277.323 438.369 282.626C428.918 287.929 418.384 291.336 407.625 292.532C404.94 292.826 402.234 293.006 399.527 293.029L398.512 293.051L-966 293.052L-966 283.077L392.241 283.077C397.001 283.055 401.76 283.168 406.497 282.603C415.948 281.565 425.196 278.587 433.474 273.915C441.775 269.267 449.128 262.948 454.97 255.434C460.835 247.942 465.189 239.254 467.647 230.069C468.865 225.466 469.655 220.75 469.948 216.011C470.106 213.643 470.106 211.252 470.106 208.884L470.106 208.88Z"
+                    fill="url(#paint1_linear_rwy_btm_mobile)" />
+                <path
+                    d="M486.978 212.716L487 211.61L487.008 3.03626e-05L491.97 3.04218e-05L491.963 210.753L491.94 211.7L491.94 212.851C491.895 214.386 491.895 215.943 491.76 217.477C491.376 223.661 490.361 229.821 488.737 235.824C485.512 247.851 479.828 259.18 472.204 268.951C464.58 278.722 455.016 286.959 444.189 293.051C433.362 299.144 421.271 303.048 408.933 304.425C405.843 304.763 402.753 304.944 399.662 304.989L398.512 305.011L-966 305.012L-966 300.024L397.61 300.024L398.512 300.002L399.617 300.002C402.55 299.979 405.482 299.776 408.392 299.46C420.076 298.151 431.512 294.473 441.752 288.696C451.993 282.919 461.061 275.111 468.279 265.859C475.497 256.584 480.888 245.866 483.933 234.492C485.467 228.806 486.437 222.961 486.797 217.116C486.955 215.65 486.933 214.183 486.978 212.716Z"
+                    fill="url(#paint2_linear_rwy_btm_mobile)" />
+                <path
+                    d="M496.677 211.633L496.684 3.0478e-05L500 3.05176e-05L499.993 210.662L499.97 211.633L499.97 212.896C499.903 214.566 499.925 216.259 499.767 217.929C499.361 224.631 498.256 231.333 496.497 237.855C493 250.898 486.82 263.219 478.542 273.825C470.286 284.454 459.888 293.39 448.136 300.002C436.384 306.614 423.256 310.856 409.858 312.345C406.497 312.729 403.158 312.932 399.798 312.977L398.534 313L-966 313L-966 309.683L397.632 309.683L398.557 309.66L399.775 309.66C403.001 309.615 406.271 309.412 409.497 309.051C422.444 307.607 435.143 303.522 446.512 297.113C457.88 290.727 467.918 282.062 475.925 271.794C483.933 261.527 489.91 249.634 493.294 236.997C495.008 230.701 496.068 224.225 496.474 217.726C496.61 216.101 496.61 214.476 496.655 212.851L496.677 211.633Z"
+                    fill="url(#paint3_linear_rwy_btm_mobile)" />
+                <defs>
+                    <linearGradient id="paint0_linear_rwy_btm_mobile" x1="450" y1="0" x2="0" y2="263"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="12%" stop-color="#EC2D26" stop-opacity="1" />
+                        <stop offset="65%" stop-color="#EC2D26" stop-opacity="1" />
+                        <stop offset="100%" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_rwy_btm_mobile" x1="475" y1="0" x2="0" y2="288"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="12%" stop-color="#EC2D26" stop-opacity="1" />
+                        <stop offset="65%" stop-color="#EC2D26" stop-opacity="1" />
+                        <stop offset="100%" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_rwy_btm_mobile" x1="489" y1="0" x2="0" y2="302"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="12%" stop-color="#EC2D26" stop-opacity="1" />
+                        <stop offset="65%" stop-color="#EC2D26" stop-opacity="1" />
+                        <stop offset="100%" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_rwy_btm_mobile" x1="498" y1="0" x2="0" y2="311"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#EC2D26" stop-opacity="0" />
+                        <stop offset="12%" stop-color="#EC2D26" stop-opacity="1" />
+                        <stop offset="65%" stop-color="#EC2D26" stop-opacity="1" />
+                        <stop offset="100%" stop-color="#EC2D26" stop-opacity="0" />
+                    </linearGradient>
+                </defs>
+            </svg>
         </div>
 
         <!-- bottom svg -->
@@ -3650,6 +3850,7 @@
                 rwyBtmSvg.style.transition = 'clip-path 0.1s ease-out';
 
                 window.addEventListener('scroll', function () {
+                    if (window.innerWidth <= 768) return;
                     const rect = rwySection.getBoundingClientRect();
                     const windowHeight = window.innerHeight;
 

@@ -45,8 +45,9 @@
         body.light-mode .service-title,
         body.light-mode .chts-card-title,
         body.light-mode .chts-subtitle,
-        body.light-mode #skithedesksec p {
-            color: #000000;
+        body.light-mode #skithedesksec p,
+        body.light-mode .problem-item.active .problem-dropdown-content::before {
+            color: #000000 !important;
         }
 
         /* Subheadings and Paragraphs */
@@ -58,7 +59,7 @@
         body.light-mode .solution-main p,
         body.light-mode .service-list li,
         body.light-mode .we-card p {
-            color: #333333;
+            color: #333333 !important;
         }
 
         body.light-mode .service-list li::before {
@@ -107,7 +108,8 @@
             color: #ffffff !important;
         }
 
-        body.light-mode .sthiros-trans-divider {
+        body.light-mode .sthiros-trans-divider,
+        body.light-mode .sthiros-trans-divider span {
             color: rgba(255, 255, 255, 0.9) !important;
         }
 
@@ -267,6 +269,20 @@
             background: transparent;
         }
 
+        /* Enforce dark-mode colors in light-mode for industry-hero */
+        body.light-mode .industry-hero h1 {
+            color: #fff !important;
+        }
+        body.light-mode .industry-hero h1 span {
+            color: #EC2D26 !important;
+        }
+        body.light-mode .industry-hero p {
+            color: #ccc !important;
+        }
+        body.light-mode .industry-hero .hero-btn-inner {
+            color: #FFF !important;
+        }
+
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .industry-hero {
@@ -382,9 +398,9 @@
             }
 
             .herosvgtracks {
-                width: 80vw !important;
+                width: 120vw !important;
                 max-width: none !important;
-                margin-left: calc(50vw - (80vw * (960 / 996))) !important;
+                margin-left: calc(50vw - (120vw * (960 / 996))) !important;
                 margin-right: auto !important;
                 overflow: visible !important;
                 clip-path: none !important;
@@ -799,7 +815,6 @@
                 font-weight: 500 !important;
                 line-height: 28px !important;
                 letter-spacing: 5px !important;
-                color: #fff !important;
                 text-align: center !important;
                 width: 100% !important;
                 text-transform: uppercase !important;
@@ -961,7 +976,9 @@
 
             /* Button: FIX MY COMPLIANCE MODEL */
             .fix-btn {
-                display: inline-block !important;
+                display: block !important;
+                width: max-content !important;
+                margin: 0 auto 25px auto !important;
                 background: transparent !important;
                 border: 2px solid #EF4623 !important;
                 color: #FFF !important;
@@ -973,7 +990,6 @@
                 letter-spacing: 2px !important;
                 text-transform: uppercase !important;
                 position: relative !important;
-                margin-bottom: 25px !important;
                 cursor: pointer;
             }
 
@@ -2017,7 +2033,67 @@
                 font-size: 14px;
             }
         }
-    </style>
+    
+        @media (max-width: 768px) {
+            .industry-hero::before {
+                width: 100% !important;
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%) !important;
+                height: 150px !important;
+            }
+            .site-header {
+                background-color: rgba(0, 0, 0, 0.4) !important;
+            }
+        }
+
+
+        @media (max-width: 768px) {
+            .skipthedesktop,
+            .skipthedeskbtm,
+            .skipthedesktop svg,
+            .skipthedeskbtm svg {
+                display: none !important;
+            }
+        }
+
+
+        @media (max-width: 768px) {
+            .skipthedeskcont {
+                background-image: url('assets/images/industrypages/btmctaartsec.png') !important;
+            }
+            body.light-mode .skipthedeskcont {
+                background-image: url('assets/images/industrypages/btmctaartsecwhite.png') !important;
+            }
+        }
+
+
+        @media (max-width: 768px) {
+            .skipthedeskcont {
+                background-size: 100% 100% !important;
+                height: auto !important;
+            }
+        }
+
+
+        .skipthedeskbtm-mobile {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .skipthedeskbtm-mobile {
+                display: block !important;
+                width: 100%;
+                overflow: hidden;
+                margin-top: -125px !important;
+                position: relative;
+                z-index: 5;
+            }
+            .skipthedeskbtm-mobile svg {
+                width: 100%;
+                height: auto;
+                display: block !important;
+            }
+        }
+
+</style>
 </head>
 
 <body>
@@ -5397,6 +5473,16 @@ We’ll show you the right problems. -->
                 </defs>
             </svg>
         </div>
+
+          <div class="skipthedeskbtm-mobile">
+              <svg width="440" height="313" viewBox="0 0 440 313" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M440.241 211.114L440.248 2.9805e-05L460.143 3.00423e-05L460.136 210.64L460.136 210.643C460.136 210.914 460.136 211.25 460.113 211.497L460.113 212.265C460.068 213.28 460.113 214.318 460 215.334C459.752 219.418 459.076 223.48 458.016 227.429C455.895 235.327 452.173 242.797 447.121 249.251C442.068 255.705 435.73 261.165 428.602 265.182C421.452 269.199 413.534 271.772 405.392 272.674C403.361 272.9 401.309 273.058 399.256 273.058L398.489 273.08L-966 273.08L-966 253.155L399.008 253.155C400.407 253.155 401.805 253.064 403.181 252.906C408.707 252.297 414.03 250.582 418.858 247.851C423.685 245.144 427.993 241.443 431.422 237.042C434.85 232.642 437.377 227.61 438.798 222.284C439.519 219.621 439.97 216.868 440.151 214.092C440.241 213.393 440.173 212.693 440.241 211.994L440.241 211.475L440.241 211.114Z" fill="#EC2D26"/>
+<path d="M470.106 208.88L470.113 3.01612e-05L480.105 3.02803e-05L480.098 210.64L480.076 211.565L480.076 212.581C480.031 213.935 480.053 215.289 479.918 216.643C479.579 222.058 478.7 227.429 477.279 232.665C474.459 243.158 469.497 253.042 462.843 261.572C456.166 270.124 447.82 277.323 438.369 282.626C428.918 287.929 418.384 291.336 407.625 292.532C404.94 292.826 402.234 293.006 399.527 293.029L398.512 293.051L-966 293.052L-966 283.077L392.241 283.077C397.001 283.055 401.76 283.168 406.497 282.603C415.948 281.565 425.196 278.587 433.474 273.915C441.775 269.267 449.128 262.948 454.97 255.434C460.835 247.942 465.189 239.254 467.647 230.069C468.865 225.466 469.655 220.75 469.948 216.011C470.106 213.643 470.106 211.252 470.106 208.884L470.106 208.88Z" fill="#EC2D26"/>
+<path d="M486.978 212.716L487 211.61L487.008 3.03626e-05L491.97 3.04218e-05L491.963 210.753L491.94 211.7L491.94 212.851C491.895 214.386 491.895 215.943 491.76 217.477C491.376 223.661 490.361 229.821 488.737 235.824C485.512 247.851 479.828 259.18 472.204 268.951C464.58 278.722 455.016 286.959 444.189 293.051C433.362 299.144 421.271 303.048 408.933 304.425C405.843 304.763 402.753 304.944 399.662 304.989L398.512 305.011L-966 305.012L-966 300.024L397.61 300.024L398.512 300.002L399.617 300.002C402.55 299.979 405.482 299.776 408.392 299.46C420.076 298.151 431.512 294.473 441.752 288.696C451.993 282.919 461.061 275.111 468.279 265.859C475.497 256.584 480.888 245.866 483.933 234.492C485.467 228.806 486.437 222.961 486.797 217.116C486.955 215.65 486.933 214.183 486.978 212.716Z" fill="#EC2D26"/>
+<path d="M496.677 211.633L496.684 3.0478e-05L500 3.05176e-05L499.993 210.662L499.97 211.633L499.97 212.896C499.903 214.566 499.925 216.259 499.767 217.929C499.361 224.631 498.256 231.333 496.497 237.855C493 250.898 486.82 263.219 478.542 273.825C470.286 284.454 459.888 293.39 448.136 300.002C436.384 306.614 423.256 310.856 409.858 312.345C406.497 312.729 403.158 312.932 399.798 312.977L398.534 313L-966 313L-966 309.683L397.632 309.683L398.557 309.66L399.775 309.66C403.001 309.615 406.271 309.412 409.497 309.051C422.444 307.607 435.143 303.522 446.512 297.113C457.88 290.727 467.918 282.062 475.925 271.794C483.933 261.527 489.91 249.634 493.294 236.997C495.008 230.701 496.068 224.225 496.474 217.726C496.61 216.101 496.61 214.476 496.655 212.851L496.677 211.633Z" fill="#EC2D26"/>
+</svg>
+          </div>
+
     </section>
 
     <footer id="footer" class="site-footer">

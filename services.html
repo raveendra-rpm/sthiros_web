@@ -49,6 +49,10 @@
             color: #000000;
         }
 
+        body.light-mode .services-hero-title span {
+            color: #EC2D26 !important;
+        }
+
         /* Subheadings and Paragraphs */
         body.light-mode .wtrp-subheading,
         body.light-mode .hsd-feature-content p,
@@ -270,29 +274,7 @@
             }
         }
 
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .services-hero {
-                padding: 100px max(20px, calc((100vw - var(--max-w, 1440px)) / 2));
-                min-height: 70vh;
-            }
 
-            .services-hero-title {
-                font-size: 3rem;
-            }
-
-            .services-hero-desc {
-                font-size: 1rem;
-            }
-
-            .services-hero-bg {
-                background-position: center center;
-            }
-
-            .services-hero-overlay {
-                background: linear-gradient(to bottom, rgba(15, 2, 2, 0.95) 0%, rgba(15, 2, 2, 0.8) 50%, rgba(15, 2, 2, 0) 100%);
-            }
-        }
 
         /* ---------------------------------
            SERVICES SECTION STYLES
@@ -358,6 +340,10 @@
             align-items: center;
             z-index: 10;
             box-sizing: border-box;
+        }
+
+        .mobile-conv-svg-card {
+            display: none;
         }
 
         .conv-left-col {
@@ -927,6 +913,239 @@
                 font-size: 0.8rem;
             }
         }
+
+        /* Hero Responsive adjustments */
+        @media (max-width: 768px) {
+            /* Keep mobile hero section same as dark mode even in light mode */
+            body.light-mode .services-hero-title,
+            body.light-mode .services-hero-desc,
+            body.light-mode .services-hero {
+                color: #ffffff !important;
+            }
+
+            .services-hero {
+                padding: 220px 20px 50px 20px;
+                min-height: 100vh;
+                align-items: flex-start;
+            }
+
+            .services-hero-title {
+                font-size: 3.5rem;
+                margin-top: 0;
+            }
+
+            .services-hero-desc {
+                font-size: 1.1rem;
+                width: 100%;
+                line-height: 1.4;
+                margin-top: 20px;
+            }
+
+            .services-hero-bg {
+                width: 100%;
+                left: 0;
+                background-image: url('assets/images/servicespage/servicebannermob.jpg');
+                background-position: center bottom;
+                background-repeat: no-repeat;
+                background-size: cover;
+                opacity: 0.8;
+                -webkit-mask-image: none;
+                mask-image: none;
+            }
+
+            .services-hero-overlay {
+                background: linear-gradient(to bottom, rgba(15, 2, 2, 0.95) 0%, rgba(15, 2, 2, 0.6) 50%, rgba(15, 2, 2, 0) 100%);
+            }
+
+            #servicesherosvg {
+                top: 0%;
+                left: 50%;
+                width: 130%;
+                transform: translateX(-94%);
+            }
+        }
+
+        @media (max-width: 526px) {
+            .services-hero-title {
+                font-size: 9.5vw;
+                white-space: nowrap;
+            }
+        }
+
+        @media (max-width: 500px) {
+            #servicesherosvg {
+                top: 10%;
+            }
+        }
+
+        /* Services Accordion Mobile Adjustments */
+        @media (max-width: 768px) {
+            .conversationsvgsec, .conversationbottomsvg {
+                display: none !important;
+            }
+            .conversationcontsec {
+                /* removed overflow hidden */
+            }
+            #sthirosconversationsec {
+                padding-bottom: 150px;
+            }
+            .mobile-conv-svg-card {
+                display: block;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                pointer-events: none;
+                z-index: 1;
+            }
+            .mobile-conv-svg-card svg {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            .conv-left-col, .conv-right-col {
+                position: relative;
+                z-index: 2;
+            }
+            #sthservicessec {
+                display: flex;
+                flex-direction: column;
+                padding: 40px 20px !important;
+            }
+            .services-tabs {
+                display: contents;
+            }
+            .services-tab {
+                width: 100% !important;
+                flex: none !important;
+                text-align: center;
+                font-size: 1.6rem;
+                padding: 15px 0;
+                border-bottom: 1px solid #ffffff !important;
+                color: rgba(255, 255, 255, 0.5) !important;
+                margin: 0;
+            }
+            .services-tab.active {
+                color: #EC2D26 !important;
+                border-bottom: 2px solid #EC2D26 !important;
+            }
+            .tab-indicator, .services-tab.active::after {
+                display: none !important;
+            }
+            
+            /* Order exactly as per screenshot */
+            .services-tab[data-tab="strategy"] { order: 1; }
+            #tab-strategy { order: 2; }
+            .services-tab[data-tab="ai"] { order: 3; }
+            #tab-ai { order: 4; }
+            .services-tab[data-tab="risk"] { order: 5; }
+            #tab-risk { order: 6; }
+            .services-tab[data-tab="cyber"] { order: 7; }
+            #tab-cyber { order: 8; }
+            
+            .services-split-layout.tab-content {
+                display: none;
+            }
+            .services-split-layout.tab-content.active {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch !important;
+                gap: 20px;
+                padding: 20px 0;
+                width: 100%;
+            }
+            .services-left-col, .services-right-col {
+                width: 100% !important;
+                flex: none !important;
+            }
+            .services-description {
+                text-align: left;
+                font-size: 0.95rem;
+                margin-bottom: 10px;
+            }
+            .services-cards-container {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                width: 100%;
+            }
+            .service-card {
+                min-height: 70px !important;
+                height: auto;
+                flex: none !important;
+                flex-direction: row !important;
+                align-items: center;
+                justify-content: space-between !important;
+                padding: 15px 20px !important;
+                border: 1px solid rgba(236, 45, 38, 0.4) !important;
+                background: linear-gradient(to right, #110202 0%, #1e0505 100%) !important;
+                border-radius: 12px !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                box-sizing: border-box !important;
+            }
+            .service-card .service-title {
+                font-size: 0.95rem !important;
+                margin: 0;
+                text-align: left;
+                color: #d4d4d4;
+                line-height: 1.4;
+                flex: 1;
+            }
+            .service-card:not(.active) .service-title br {
+                display: none;
+            }
+            .service-card.active {
+                min-height: 250px !important;
+                flex-direction: column !important;
+                justify-content: flex-end !important;
+                align-items: flex-start !important;
+                padding: 30px 20px !important;
+                background: #EC2D26 !important;
+                border-color: #EC2D26 !important;
+            }
+            .service-card.active .service-title {
+                font-size: 1.6rem !important;
+                color: #fff;
+            }
+            .service-arrow {
+                position: static !important;
+                width: 24px !important;
+                height: 24px !important;
+                margin-left: 15px;
+                flex-shrink: 0;
+            }
+            .service-card.active .service-arrow {
+                position: absolute !important;
+                top: 20px !important;
+                right: 20px !important;
+                width: 30px !important;
+                height: 30px !important;
+            }
+            .service-bg-logo {
+                width: 70% !important;
+                opacity: 0.15 !important;
+                top: -10px !important;
+                left: -10px !important;
+                max-width: 250px;
+            }
+
+            /* Light mode overrides for mobile services accordion */
+            body.light-mode .services-tab {
+                border-bottom: 1px solid #000000 !important;
+                color: rgba(0, 0, 0, 0.5) !important;
+            }
+            body.light-mode .service-card:not(.active) {
+                background: #ffffff !important;
+                border: 1px solid rgba(0, 0, 0, 0.1) !important;
+            }
+            body.light-mode .service-card:not(.active) .service-title {
+                color: #000000 !important;
+            }
+            body.light-mode .service-card.active .service-title {
+                color: #ffffff !important;
+            }
+        }
         /* ═══════════════ OUR CLIENTS SECTION ═══════════════ */
         #our-clients-section {
             padding: 80px 0;
@@ -1137,6 +1356,34 @@
 
         .oc-grid-item:hover, .oc-grid-item.active {
             color: #EC2D26;
+        }
+
+        /* Responsive Our Clients */
+        @media (max-width: 768px) {
+            #our-clients-section {
+                padding: 40px 0;
+            }
+            .oc-heading {
+                font-size: 40px;
+                line-height: 1.2;
+            }
+            .oc-toggle {
+                font-size: 16px;
+                letter-spacing: 2px;
+                margin-bottom: 30px;
+            }
+            .oc-grid-container {
+                padding: 0 20px;
+            }
+            .oc-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+        }
+        @media (max-width: 480px) {
+            .oc-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         /* Light Mode Overrides for Our Clients */
@@ -1572,7 +1819,7 @@
 
         <div class="services-hero-content">
             <h1 class="services-hero-title">
-                Four capabilities.<br>One conversation.
+                Four capabilities.<br><span style="color: #EC2D26;">One conversation.</span>
             </h1>
             <p class="services-hero-desc">
                 Inside Sthiros, Strategy, Risk, Cyber, and AI work as one team, with one point of contact for you. Risk
@@ -2446,6 +2693,15 @@
                 <path
                     d="M1806.88 262.184L1806.89 -4.8995e-08L1811 0L1810.99 260.982L1810.96 262.184L1810.96 263.749C1810.88 265.818 1810.91 267.915 1810.71 269.984C1810.21 278.287 1808.84 286.59 1806.66 294.669C1802.33 310.828 1794.67 326.092 1784.41 339.232C1774.18 352.399 1761.3 363.47 1746.74 371.661C1732.17 379.852 1715.91 385.108 1699.3 386.953C1695.14 387.428 1691 387.68 1686.84 387.736L1685.27 387.764L-5.52173 387.764L-5.52173 383.654L1684.16 383.654L1685.3 383.626L1686.81 383.626C1690.81 383.57 1694.86 383.319 1698.86 382.871C1714.9 381.082 1730.64 376.022 1744.72 368.083C1758.81 360.171 1771.25 349.436 1781.17 336.715C1791.09 323.995 1798.5 309.262 1802.69 293.607C1804.81 285.807 1806.13 277.784 1806.63 269.732C1806.8 267.719 1806.8 265.706 1806.85 263.694L1806.88 262.184Z"
                     fill="#EC2D26" />
+            </svg>
+        </div>
+        <!-- Mobile specific SVG placed outside the card -->
+        <div class="mobile-conv-svg-card">
+            <svg width="440" height="313" viewBox="0 0 440 313" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M440.241 211.114L440.248 2.9805e-05L460.143 3.00423e-05L460.136 210.64L460.136 210.643C460.136 210.914 460.136 211.25 460.113 211.497L460.113 212.265C460.068 213.28 460.113 214.318 460 215.334C459.752 219.418 459.076 223.48 458.016 227.429C455.895 235.327 452.173 242.797 447.121 249.251C442.068 255.705 435.73 261.165 428.602 265.182C421.452 269.199 413.534 271.772 405.392 272.674C403.361 272.9 401.309 273.058 399.256 273.058L398.489 273.08L-966 273.08L-966 253.155L399.008 253.155C400.407 253.155 401.805 253.064 403.181 252.906C408.707 252.297 414.031 250.582 418.858 247.851C423.685 245.144 427.993 241.443 431.422 237.042C434.85 232.642 437.377 227.61 438.798 222.284C439.519 219.621 439.97 216.868 440.151 214.092C440.241 213.393 440.173 212.693 440.241 211.994L440.241 211.475L440.241 211.114Z" fill="#EC2D26"/>
+<path d="M470.106 208.88L470.113 3.01612e-05L480.105 3.02803e-05L480.098 210.64L480.076 211.565L480.076 212.581C480.031 213.935 480.053 215.289 479.918 216.643C479.579 222.058 478.7 227.429 477.279 232.665C474.459 243.158 469.497 253.042 462.843 261.572C456.166 270.124 447.82 277.323 438.369 282.626C428.918 287.929 418.384 291.336 407.625 292.532C404.94 292.826 402.234 293.006 399.527 293.029L398.512 293.051L-966 293.052L-966 283.077L392.241 283.077C397.001 283.055 401.76 283.168 406.497 282.603C415.948 281.565 425.196 278.587 433.474 273.915C441.775 269.267 449.128 262.948 454.97 255.434C460.835 247.942 465.189 239.254 467.647 230.069C468.865 225.466 469.655 220.75 469.948 216.011C470.106 213.643 470.106 211.252 470.106 208.884L470.106 208.88Z" fill="#EC2D26"/>
+<path d="M486.978 212.716L487 211.61L487.008 3.03626e-05L491.97 3.04218e-05L491.963 210.753L491.94 211.7L491.94 212.851C491.895 214.386 491.895 215.943 491.76 217.477C491.376 223.661 490.361 229.821 488.737 235.824C485.512 247.851 479.828 259.18 472.204 268.951C464.58 278.722 455.016 286.959 444.189 293.051C433.362 299.144 421.271 303.048 408.933 304.425C405.843 304.763 402.753 304.944 399.662 304.989L398.512 305.011L-966 305.012L-966 300.024L397.61 300.024L398.512 300.002L399.617 300.002C402.55 299.979 405.482 299.776 408.392 299.46C420.076 298.151 431.512 294.473 441.752 288.696C451.993 282.919 461.061 275.111 468.279 265.859C475.497 256.584 480.888 245.866 483.933 234.492C485.467 228.806 486.437 222.961 486.797 217.116C486.955 215.65 486.933 214.183 486.978 212.716Z" fill="#EC2D26"/>
+<path d="M496.677 211.633L496.684 3.0478e-05L500 3.05176e-05L499.993 210.662L499.97 211.633L499.97 212.896C499.903 214.566 499.925 216.259 499.767 217.929C499.361 224.631 498.256 231.333 496.497 237.855C493 250.898 486.82 263.219 478.542 273.825C470.286 284.454 459.888 293.39 448.136 300.002C436.384 306.614 423.256 310.856 409.858 312.345C406.497 312.729 403.158 312.932 399.798 312.977L398.534 313L-966 313L-966 309.683L397.632 309.683L398.557 309.66L399.775 309.66C403.001 309.615 406.271 309.412 409.497 309.051C422.444 307.607 435.143 303.522 446.512 297.113C457.88 290.727 467.918 282.062 475.925 271.794C483.933 261.527 489.91 249.634 493.294 236.997C495.008 230.701 496.068 224.225 496.474 217.726C496.61 216.101 496.61 214.476 496.655 212.851L496.677 211.633Z" fill="#EC2D26"/>
             </svg>
         </div>
     </section>
