@@ -10,7 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css?v=8" />
     <style>
-/* General Light Mode Overrides for Industry */
+        .std-buttons {
+                position: relative;
+                z-index: 10;
+                width: 100%;
+            }
+
+            .mobile-skipthedesk-svgbtm {
+            display: none;
+        }
+
+        /* General Light Mode Overrides for Industry */
         body.light-mode {
             background-color: #ffffff;
             color: #000000;
@@ -20,9 +30,11 @@
         body.light-mode #sthiros-password-gate {
             background-color: #ffffff !important;
         }
+
         body.light-mode #sthiros-password-gate h2 {
             color: #000000 !important;
         }
+
         body.light-mode #sthiros-gate-input {
             background-color: #ffffff !important;
             color: #000000 !important;
@@ -69,7 +81,7 @@
         body.light-mode #skithedesksec .hero-btn-inner {
             color: #000000 !important;
         }
-        
+
         body.light-mode .fix-btn:hover,
         body.light-mode #skithedesksec .hero-btn-inner:hover {
             color: #ffffff !important;
@@ -101,7 +113,7 @@
         body.light-mode .problem-item:hover {
             background-color: rgba(0, 0, 0, 0.02);
         }
-        
+
         body.light-mode .chts-card-footer {
             border-top: 1px solid #000000;
         }
@@ -243,13 +255,82 @@
         }
 
         @media (max-width: 768px) {
+            .hero {
+                align-items: flex-start;
+            }
+
+            .hero::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background:
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 40%, transparent 80%),
+                    linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 45%, transparent 100%);
+                z-index: 1;
+                pointer-events: none;
+            }
+
+            .hero img {
+                object-position: right center;
+                opacity: 0.55;
+            }
+
             .hero-content {
-                padding-left: 5%;
+                top: 180px;
+                left: 20px;
+                transform: none;
+                width: calc(100% - 40px);
+                padding: 0;
+            }
+
+            .breadcrumb {
+                font-size: 11px;
+                letter-spacing: 2px;
+                line-height: 1.6;
+                margin-bottom: 16px;
             }
 
             .main-heading {
-                font-size: 3rem;
+                font-size: clamp(26px, 9vw, 48px);
+                line-height: 1.15;
             }
+
+            #herosvgtrack {
+                margin-top: 0;
+            }
+
+            .herosvgtracks {
+                position: absolute;
+                top: -95vh;
+                left: 0;
+                width: 100%;
+                z-index: 2;
+                pointer-events: none;
+            }
+
+            .desktop-svg {
+                display: none !important;
+            }
+
+            .mobile-svg {
+                display: block !important;
+                width: 100%;
+                height: auto;
+            }
+
+            .herotrackspara {
+                margin-top: 60px !important;
+                padding: 0 20px;
+                position: relative;
+                z-index: 10;
+            }
+        }
+
+        .mobile-svg {
+            display: none !important;
         }
 
         #herosvgtrack {
@@ -1409,12 +1490,360 @@
                 margin-left: 2rem;
             }
         }
-    
+
+        @media (max-width: 768px) {
+
+            .servicelinedeliverable,
+            .servicelinedeliverablesvgbtm {
+                display: none !important;
+            }
+
+            #Servicelinesdeliverablescontsec {
+                margin-top: 40px;
+            }
+
+            .servicelinedeliverablecont {
+                position: relative;
+                top: auto;
+                right: auto;
+                width: 100%;
+                padding: 0 20px;
+                box-sizing: border-box;
+            }
+
+            .deliverable-main-title {
+                font-size: 38px;
+                line-height: 1.2;
+                margin-bottom: 30px;
+                margin-top: 0;
+            }
+
+            .deliverable-grid {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .deliverable-item.active .deliverable-grid {
+                max-height: 1200px;
+            }
+
+            .deliverable-grid-col {
+                padding-left: 0 !important;
+            }
+
+            .deliverable-grid-col:not(:first-child) {
+                border-left: none !important;
+                border-top: 1px solid rgba(236, 45, 38, 0.4);
+                padding-top: 20px;
+            }
+
+            .deliverable-title {
+                font-size: 24px;
+            }
+
+            .deliverable-desc {
+                max-width: 100%;
+                margin-bottom: 25px;
+            }
+
+            .deliverable-header {
+                align-items: center;
+            }
+
+            .deliverable-icon {
+                transform: rotate(0deg) !important;
+            }
+
+            .deliverable-item.active .deliverable-icon {
+                transform: rotate(180deg) !important;
+            }
+
+            #differentaboutworkingwithus {
+                margin-top: 20px !important;
+            }
+
+            .mobile-diff-svgtracksbtm {
+                display: block !important;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .mobile-diff-svgtracksbtm svg {
+                width: 60px !important;
+                height: auto;
+            }
+
+            .diff-container {
+                flex-direction: column;
+                padding: 0 20px;
+            }
+
+            .diff-left {
+                flex: none;
+                width: 100%;
+                max-width: 100%;
+                margin-bottom: 25px;
+            }
+
+            .diff-title {
+                font-size: 38px;
+                line-height: 1.1;
+                width: 100%;
+            }
+
+            .diff-right {
+                flex: none;
+                width: 100%;
+                max-width: 100%;
+                flex-direction: column;
+                height: auto;
+                gap: 15px;
+            }
+
+            .diff-card {
+                flex: none !important;
+                width: 100%;
+                height: 85px;
+                justify-content: center;
+                padding: 0 20px !important;
+            }
+
+            .diff-card.active {
+                height: 330px;
+                padding: 30px 20px !important;
+            }
+
+            .diff-card-content {
+                top: 30px;
+                bottom: 30px;
+                left: 20px;
+                right: 20px;
+            }
+
+            .diff-card-content h3 {
+                font-size: 26px;
+            }
+
+            .diff-card-collapsed p {
+                font-size: 16px;
+            }
+
+            .diff-card-collapsed p br {
+                display: none;
+            }
+
+            #Whenyouneedthis {
+                margin-top: 0px !important;
+                padding-top: 40px !important;
+            }
+
+            .herosvgtracks {
+                width: 100% !important;
+                margin: -40px 0 0 0 !important;
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            .herosvgtracks .mobile-svg {
+                width: 50% !important;
+                height: auto;
+            }
+
+            .herosvgtracksbtm svg,
+            .diffbtmsvg svg,
+            .whenyouneedthissvg svg {
+                width: 60px !important;
+            }
+
+            .wynt-container {
+                flex-direction: column;
+                padding: 0 20px;
+            }
+
+            .wynt-left {
+                flex: none;
+                width: 100%;
+                max-width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .wynt-title {
+                font-size: 38px;
+                line-height: 1.2;
+                width: 100%;
+            }
+
+            .wynt-right {
+                flex: none;
+                width: 100%;
+                max-width: 100%;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .wynt-grid-top {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .wynt-col {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .wynt-card {
+                height: auto !important;
+                padding: 25px 20px !important;
+                width: 100% !important;
+                display: block !important;
+                pointer-events: none !important;
+            }
+
+            .wynt-card p {
+                font-size: 16px;
+                text-align: left;
+                line-height: 1.5;
+            }
+
+            .wynt-card p br {
+                display: none;
+            }
+
+            /* Related Case Studies mobile layout */
+            .rcs-container {
+                flex-direction: column;
+                padding: 0 20px;
+                gap: 20px;
+            }
+
+            .rcs-title {
+                font-size: 38px;
+                line-height: 1.2;
+                margin-bottom: 30px;
+            }
+
+            .rcs-card {
+                flex: none !important;
+                width: 100%;
+                height: 400px !important;
+                /* Make cards taller on mobile for a square/portrait aspect ratio */
+            }
+
+            .skipthedesktop,
+            .skipthedeskbtm {
+                display: none !important;
+            }
+
+            .mobile-skipthedesk-svgbtm {
+                display: flex !important;
+                pointer-events: none;
+                z-index: 1;
+                justify-content: flex-end;
+                width: 100%;
+                overflow: hidden;
+                margin-top: -200px;
+                line-height: 0;
+            }
+
+            .mobile-skipthedesk-svgbtm svg {
+                width: 425px !important;
+                height: auto;
+            }
+
+            .mobile-skipthedesk-btn {
+                display: inline-flex !important;
+            }
+
+            .mobile-wynt-svgtracksbtm {
+                display: block !important;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .mobile-wynt-svgtracksbtm svg {
+                width: 60px !important;
+                height: auto;
+            }
+
+            #skithedesksec {
+                padding: 40px 0;
+            }
+
+            .skipthedeskcont {
+                position: relative;
+                top: auto;
+                left: auto;
+                transform: none;
+                flex-direction: column;
+                justify-content: space-between !important;
+                align-items: flex-start;
+                margin: 0 auto;
+                padding: 50px 30px !important;
+                width: calc(100% - 40px);
+                text-align: left;
+                gap: 80px !important;
+                min-height: 550px !important;
+            }
+
+            .skipthedeskcont .std-content {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+                text-align: left;
+            }
+
+            .skipthedeskcont .std-content h2 {
+                font-size: 52px;
+                line-height: 1.1;
+                font-weight: 300;
+                margin: 0;
+            }
+
+            .skipthedeskcont .std-content h3 {
+                font-size: 24px;
+                line-height: 1.3;
+                font-weight: 700;
+                margin: 0;
+            }
+
+            .skipthedeskcont .std-content p {
+                font-size: 15px;
+                line-height: 1.5;
+                margin: 0;
+                color: rgba(255, 255, 255, 0.8);
+            }
+
+            body.light-mode .skipthedeskcont .std-content p {
+                color: rgba(0, 0, 0, 0.8) !important;
+            }
+
+            .skipthedeskcont {
+                background-image: url('assets/images/servicesinnpage/serbtmctaartsec.png') !important;
+            }
+
+            body.light-mode .skipthedeskcont {
+                background-image: url('assets/images/servicesinnpage/serbtmctaartsecwhite.png') !important;
+            }
+        }
+
+        .mobile-diff-svgtracksbtm,
+        .mobile-wynt-svgtracksbtm {
+            display: none;
+            text-align: center;
+            width: 100%;
+        }
+
         /* Strategy Specific Overrides */
-        body.light-mode .hero { background-color: #000000 !important; }
+        body.light-mode .hero {
+            background-color: #000000 !important;
+        }
+
         body.light-mode .hero .main-heading {
             color: #ffffff !important;
         }
+
         body.light-mode .hero .breadcrumb,
         body.light-mode .hero .highlight {
             color: #EC2D26 !important;
@@ -1428,7 +1857,7 @@
         body.light-mode .deliverable-desc {
             color: #000000 !important;
         }
-        
+
         body.light-mode .deliverable-item.active .deliverable-desc {
             color: #000000 !important;
         }
@@ -1441,19 +1870,23 @@
         body.light-mode .diff-title {
             color: #000000 !important;
         }
+
         body.light-mode .diff-card {
             background-color: #ffffff !important;
-            border: 1px solid rgba(0,0,0,0.1);
+            border: 1px solid rgba(0, 0, 0, 0.1);
         }
+
         body.light-mode .diff-card .diff-card-collapsed p,
         body.light-mode .diff-card .diff-card-content h3,
         body.light-mode .diff-card .diff-card-content p {
             color: #000000 !important;
         }
+
         body.light-mode .diff-card.active {
             background-color: #EC2D26 !important;
             border-color: #EC2D26 !important;
         }
+
         body.light-mode .diff-card.active .diff-card-collapsed p,
         body.light-mode .diff-card.active .diff-card-content h3,
         body.light-mode .diff-card.active .diff-card-content p {
@@ -1463,17 +1896,21 @@
         body.light-mode .wynt-title {
             color: #000000 !important;
         }
+
         body.light-mode .wynt-card {
             background-color: #ffffff !important;
-            border: 1px solid rgba(0,0,0,0.1);
+            border: 1px solid rgba(0, 0, 0, 0.1);
         }
+
         body.light-mode .wynt-card p {
             color: #000000 !important;
         }
+
         body.light-mode .wynt-card:hover {
             background-color: #EC2D26 !important;
             border-color: #EC2D26 !important;
         }
+
         body.light-mode .wynt-card:hover p {
             color: #ffffff !important;
         }
@@ -1481,14 +1918,95 @@
         body.light-mode .rcs-title {
             color: #000000 !important;
         }
+
+        body.light-mode .rcs-title .highlight {
+            color: #EC2D26 !important;
+        }
+
+        body.light-mode .rcs-card h3,
+        body.light-mode .rcs-card p {
+            color: #ffffff !important;
+        }
+
         body.light-mode .rcs-nav-btn {
             background-color: transparent !important;
         }
+
         body.light-mode .rcs-nav-btn img {
             filter: brightness(0);
         }
 
-</style>
+        .mobile-contactus-svg {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-contactus-svg {
+                display: block;
+                position: absolute;
+                top: -60px;
+                /* Adjusted to sit behind the strategy text */
+                left: -20px;
+                width: 100vw;
+                z-index: 0;
+            }
+
+            .mobile-contactus-svg svg {
+                display: block;
+                width: 50% !important;
+                height: auto;
+                position: relative;
+                left: 0;
+                transform: translateY(-10%);
+                overflow: visible !important;
+                -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 65%);
+                mask-image: linear-gradient(to bottom, black 40%, transparent 65%);
+            }
+
+            .hero-content .main-heading,
+            .hero-content .breadcrumb {
+                position: relative;
+                z-index: 2;
+            }
+
+            .herosvgtracks .mobile-svg {
+                display: none !important;
+                /* Hide old hero SVG on mobile */
+            }
+
+            .skipthedeskcont .std-buttons {
+                width: 100%;
+                align-items: center;
+            }
+            .skipthedeskcont .std-buttons .hero-btn-outer {
+                width: max-content !important;
+                max-width: max-content !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+            }
+            .skipthedeskcont .std-buttons .hero-btn-inner {
+                font-size: clamp(9px, 3vw, 13px) !important;
+                text-align: center;
+                white-space: nowrap !important;
+                
+                width: auto;
+            }
+        }
+        @media (min-width: 436px) and (max-width: 768px) {
+            .mobile-skipthedesk-svgbtm svg {
+                -webkit-mask-image: linear-gradient(to right, transparent 0%, black 25%);
+                mask-image: linear-gradient(to right, transparent 0%, black 25%);
+            }
+        }
+    
+        @media (max-width: 400px) {
+            .mobile-skipthedesk-svgbtm {
+                margin-top: -100px !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -1545,7 +2063,7 @@
         <div class="bg-glow-fixed glow-bottom-left"></div>
     </div>
 
-    <!-- ═══════════════ SITE HEADER ═══════════════ -->
+    <!-- --------------- SITE HEADER --------------- -->
     <header class="site-header">
         <div class="header-left">
             <a href="index.html" class="logo-link">
@@ -1787,7 +2305,7 @@
         </script>
     </header>
 
-    <!-- ═══════════════ FULL SCREEN MENU OVERLAY ═══════════════ -->
+    <!-- --------------- FULL SCREEN MENU OVERLAY --------------- -->
     <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
         <div class="menu-content">
             <nav class="main-nav">
@@ -2073,6 +2591,45 @@
     </section>
 
 
+        <div class="mobile-diff-svgtracksbtm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="74" height="286" viewBox="0 0 74 286" fill="none"
+            style="display: inline-block;">
+            <path d="M74 285.993L49.3334 285.993L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 285.993Z"
+                fill="url(#paint0_mobdiff)" />
+            <path d="M37.0139 286L24.6667 286L24.6666 -2.15642e-06L37.0139 -3.23586e-06L37.0139 286Z"
+                fill="url(#paint1_mobdiff)" />
+            <path d="M9.80545 285.989L9.80536 -8.57214e-07L15.979 -1.39693e-06L15.9791 285.989L9.80545 285.989Z"
+                fill="url(#paint2_mobdiff)" />
+            <path d="M6.0988e-05 285.993L-2.50029e-05 0L4.10646 -3.59001e-07L4.10655 285.993L6.0988e-05 285.993Z"
+                fill="url(#paint3_mobdiff)" />
+            <defs>
+                <linearGradient id="paint0_mobdiff" x1="37" y1="-3.23464e-06" x2="37" y2="286"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" />
+                </linearGradient>
+                <linearGradient id="paint1_mobdiff" x1="30.8403" y1="-3.23464e-06" x2="30.8403" y2="286"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" />
+                </linearGradient>
+                <linearGradient id="paint2_mobdiff" x1="12.8922" y1="-2.15642e-06" x2="12.8922" y2="285.989"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" />
+                </linearGradient>
+                <linearGradient id="paint3_mobdiff" x1="2.05324" y1="-3.5894e-07" x2="2.05324" y2="285.993"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
     <section id="differentaboutworkingwithus">
         <div class="diff-container">
             <div class="diff-left">
@@ -2234,7 +2791,7 @@
                     <div class="rcs-text">
                         <h3>Article Title</h3>
                         <p class="rcs-desc">Article content</p>
-                        <p class="rcs-meta">Cyber <span class="dot">•</span> Cyber Resilience & Crisis
+                        <p class="rcs-meta">Cyber <span class="dot"></span> Cyber Resilience & Crisis
                             Readiness<br>[industry]
                         </p>
                     </div>
@@ -2253,7 +2810,7 @@
                     <div class="rcs-text">
                         <h3>Article Title</h3>
                         <p class="rcs-desc">Article content</p>
-                        <p class="rcs-meta">Cyber <span class="dot">•</span> Cyber Resilience & Crisis
+                        <p class="rcs-meta">Cyber <span class="dot"></span> Cyber Resilience & Crisis
                             Readiness<br>[industry]
                         </p>
                     </div>
@@ -2272,7 +2829,7 @@
                     <div class="rcs-text">
                         <h3>Article Title</h3>
                         <p class="rcs-desc">Article content</p>
-                        <p class="rcs-meta">Cyber <span class="dot">•</span> Cyber Resilience & Crisis
+                        <p class="rcs-meta">Cyber <span class="dot"></span> Cyber Resilience & Crisis
                             Readiness<br>[industry]
                         </p>
                     </div>
@@ -2295,6 +2852,45 @@
     </section>
 
     <!-- Start the conversation section -->
+    <div class="mobile-wynt-svgtracksbtm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="74" height="482" viewBox="0 0 74 482" fill="none"
+            style="display: inline-block;">
+            <path d="M74 481.988L49.3334 481.988L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 481.988Z"
+                fill="url(#paint0_mob_wynt)" />
+            <path d="M37.014 482L24.6667 482L24.6666 -2.15642e-06L37.0139 -3.23586e-06L37.014 482Z"
+                fill="url(#paint1_mob_wynt)" />
+            <path d="M9.80545 481.982L9.80535 -8.57215e-07L15.979 -1.39693e-06L15.9791 481.982L9.80545 481.982Z"
+                fill="url(#paint2_mob_wynt)" />
+            <path d="M6.09876e-05 481.988L-4.21378e-05 0L4.10645 -3.59001e-07L4.10655 481.988L6.09876e-05 481.988Z"
+                fill="url(#paint3_mob_wynt)" />
+            <defs>
+                <linearGradient id="paint0_mob_wynt" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint1_mob_wynt" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint2_mob_wynt" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint3_mob_wynt" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
     <section id="skithedesksec">
         <div class="skipthedesktop">
             <svg xmlns="http://www.w3.org/2000/svg" width="940" height="772" viewBox="0 0 940 772" fill="none">
@@ -2394,6 +2990,22 @@
                 </defs>
             </svg>
         </div>
+        <div class="mobile-skipthedesk-svgbtm">
+            <svg width="440" height="313" viewBox="0 0 440 313" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M440.241 211.114L440.248 2.9805e-05L460.143 3.00423e-05L460.136 210.64L460.136 210.643C460.136 210.914 460.136 211.25 460.113 211.497L460.113 212.265C460.068 213.28 460.113 214.318 460 215.334C459.752 219.418 459.076 223.48 458.016 227.429C455.895 235.327 452.173 242.797 447.121 249.251C442.068 255.705 435.73 261.165 428.602 265.182C421.452 269.199 413.534 271.772 405.392 272.674C403.361 272.9 401.309 273.058 399.256 273.058L398.489 273.08L-966 273.08L-966 253.155L399.008 253.155C400.407 253.155 401.805 253.064 403.181 252.906C408.707 252.297 414.031 250.582 418.858 247.851C423.685 245.144 427.993 241.443 431.422 237.042C434.85 232.642 437.377 227.61 438.798 222.284C439.519 219.621 439.97 216.868 440.151 214.092C440.241 213.393 440.173 212.693 440.241 211.994L440.241 211.475L440.241 211.114Z"
+                    fill="#EC2D26" />
+                <path
+                    d="M470.106 208.88L470.113 3.01612e-05L480.105 3.02803e-05L480.098 210.64L480.076 211.565L480.076 212.581C480.031 213.935 480.053 215.289 479.918 216.643C479.579 222.058 478.7 227.429 477.279 232.665C474.459 243.158 469.497 253.042 462.843 261.572C456.166 270.124 447.82 277.323 438.369 282.626C428.918 287.929 418.384 291.336 407.625 292.532C404.94 292.826 402.234 293.006 399.527 293.029L398.512 293.051L-966 293.052L-966 283.077L392.241 283.077C397.001 283.055 401.76 283.168 406.497 282.603C415.948 281.565 425.196 278.587 433.474 273.915C441.775 269.267 449.128 262.948 454.97 255.434C460.835 247.942 465.189 239.254 467.647 230.069C468.865 225.466 469.655 220.75 469.948 216.011C470.106 213.643 470.106 211.252 470.106 208.884L470.106 208.88Z"
+                    fill="#EC2D26" />
+                <path
+                    d="M486.978 212.716L487 211.61L487.008 3.03626e-05L491.97 3.04218e-05L491.963 210.753L491.94 211.7L491.94 212.851C491.895 214.386 491.895 215.943 491.76 217.477C491.376 223.661 490.361 229.821 488.737 235.824C485.512 247.851 479.828 259.18 472.204 268.951C464.58 278.722 455.016 286.959 444.189 293.051C433.362 299.144 421.271 303.048 408.933 304.425C405.843 304.763 402.753 304.944 399.662 304.989L398.512 305.011L-966 305.012L-966 300.024L397.61 300.024L398.512 300.002L399.617 300.002C402.55 299.979 405.482 299.776 408.392 299.46C420.076 298.151 431.512 294.473 441.752 288.696C451.993 282.919 461.061 275.111 468.279 265.859C475.497 256.584 480.888 245.866 483.933 234.492C485.467 228.806 486.437 222.961 486.797 217.116C486.955 215.65 486.933 214.183 486.978 212.716Z"
+                    fill="#EC2D26" />
+                <path
+                    d="M496.677 211.633L496.684 3.0478e-05L500 3.05176e-05L499.993 210.662L499.97 211.633L499.97 212.896C499.903 214.566 499.925 216.259 499.767 217.929C499.361 224.631 498.256 231.333 496.497 237.855C493 250.898 486.82 263.219 478.542 273.825C470.286 284.454 459.888 293.39 448.136 300.002C436.384 306.614 423.256 310.856 409.858 312.345C406.497 312.729 403.158 312.932 399.798 312.977L398.534 313L-966 313L-966 309.683L397.632 309.683L398.557 309.66L399.775 309.66C403.001 309.615 406.271 309.412 409.497 309.051C422.444 307.607 435.143 303.522 446.512 297.113C457.88 290.727 467.918 282.062 475.925 271.794C483.933 261.527 489.91 249.634 493.294 236.997C495.008 230.701 496.068 224.225 496.474 217.726C496.61 216.101 496.61 214.476 496.655 212.851L496.677 211.633Z"
+                    fill="#EC2D26" />
+            </svg>
+        </div>
     </section>
 
     <!-- Script for sticky hover on diff-cards -->
@@ -2411,7 +3023,7 @@
 
     <!-- business & growth strategy section -->
 
-    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <!-- --------------- FOOTER --------------- -->
     <footer id="footer" class="site-footer">
         <div class="footer-container">
             <!-- Left Side -->
@@ -2453,11 +3065,11 @@
         <div class="footer-massive-logo-section">
             <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo massive-logo-dark">
             <img src="assets/images/sthiroslogodark.png" alt="Sthiros" class="massive-logo massive-logo-light">
-            <div class="copyright-text"><span class="copy-sym">©</span> 2026</div>
+            <div class="copyright-text"><span class="copy-sym"></span> 2026</div>
         </div>
     </footer>
 
-    <!-- ═══════════════ SCRIPTS ═══════════════ -->
+    <!-- --------------- SCRIPTS --------------- -->
     <!-- GSAP, ScrollTrigger, Anime.js, Lenis (smooth scroll) & Three.js (WebGL) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>

@@ -12,6 +12,189 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css?v=8" />
     <style>
+        .std-buttons {
+                position: relative;
+                z-index: 10;
+                width: 100%;
+            }
+
+            .mobile-skipthedesk-svgbtm {
+            display: none;
+        }
+
+        /* General Light Mode Overrides for Industry */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Password Gate */
+        body.light-mode #sthiros-password-gate {
+            background-color: #ffffff !important;
+        }
+
+        body.light-mode #sthiros-password-gate h2 {
+            color: #000000 !important;
+        }
+
+        body.light-mode #sthiros-gate-input {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+            border: 1px solid #ccc !important;
+        }
+
+        /* Headings */
+        body.light-mode .wtrp-heading,
+        body.light-mode .hsd-heading,
+        body.light-mode .hsd-feature-content h3,
+        body.light-mode .we-heading,
+        body.light-mode .chts-title,
+        body.light-mode #skithedesksec h2,
+        body.light-mode .sthiros-trans-title,
+        body.light-mode .problem-heading-text,
+        body.light-mode .problem-text,
+        body.light-mode .solution-main h3,
+        body.light-mode .service-title,
+        body.light-mode .chts-card-title,
+        body.light-mode .chts-subtitle,
+        body.light-mode #skithedesksec p {
+            color: #000000;
+        }
+
+        /* Subheadings and Paragraphs */
+        body.light-mode .wtrp-subheading,
+        body.light-mode .hsd-feature-content p,
+        body.light-mode .chts-desc,
+        body.light-mode .chts-card-desc,
+        body.light-mode .sthiros-trans-text,
+        body.light-mode .problem-desc,
+        body.light-mode .solution-main p,
+        body.light-mode .service-list li,
+        body.light-mode .we-card p {
+            color: #333333;
+        }
+
+        body.light-mode .service-list li::before {
+            color: #333333;
+        }
+
+        /* Buttons */
+        body.light-mode .fix-btn,
+        body.light-mode #skithedesksec .hero-btn-inner {
+            color: #000000 !important;
+        }
+
+        body.light-mode .fix-btn:hover,
+        body.light-mode #skithedesksec .hero-btn-inner:hover {
+            color: #ffffff !important;
+        }
+
+        body.light-mode .segment-btn {
+            color: #000000;
+            border-color: rgba(0, 0, 0, 0.3);
+        }
+
+        body.light-mode .segment-btn:hover {
+            border-color: #000000;
+        }
+
+        body.light-mode .segment-btn.active {
+            color: #ffffff;
+            background-color: #EC2D26;
+            border-color: #EC2D26;
+        }
+
+        /* Cards and Elements Backgrounds */
+        body.light-mode .problem-header,
+        body.light-mode .segment-tabs,
+        body.light-mode .we-card {
+            background-color: #ffffff;
+        }
+
+        body.light-mode .problem-item.active,
+        body.light-mode .problem-item:hover {
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+
+        body.light-mode .chts-card-footer {
+            border-top: 1px solid #000000;
+        }
+
+        body.light-mode .chts-card-footer a {
+            color: #000000;
+        }
+
+        body.light-mode .chts-card.is-active .chts-card-footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.8) !important;
+        }
+
+        body.light-mode .chts-card.is-active .chts-card-title,
+        body.light-mode .chts-card.is-active .chts-card-desc,
+        body.light-mode .chts-card.is-active .chts-card-footer a {
+            color: #ffffff !important;
+        }
+
+        /* Skip the deck Card Light Mode */
+        body.light-mode .skipthedeskcont {
+            background-image: url('assets/images/industries/industryreadywhenyulight.jpg') !important;
+        }
+
+        body.light-mode #skithedesksec .std-content h2,
+        body.light-mode #skithedesksec .std-content h3,
+        body.light-mode #skithedesksec .std-content p,
+        body.light-mode .skipthedeskcont .std-content h2,
+        body.light-mode .skipthedeskcont .std-content h3,
+        body.light-mode .skipthedeskcont .std-content p,
+        body.light-mode .skipthedeskcont h2,
+        body.light-mode .skipthedeskcont h3,
+        body.light-mode .skipthedeskcont p {
+            color: #000000 !important;
+        }
+
+        body.light-mode #skithedesksec .hero-btn-inner,
+        body.light-mode .skipthedeskcont .hero-btn-inner {
+            color: #000000 !important;
+        }
+
+        body.light-mode #skithedesksec .hero-btn-outer:hover .hero-btn-inner,
+        body.light-mode .skipthedeskcont .hero-btn-outer:hover .hero-btn-inner,
+        body.light-mode #skithedesksec .hero-btn-inner:hover,
+        body.light-mode .skipthedeskcont .hero-btn-inner:hover {
+            color: #ffffff !important;
+        }
+
+        /* Services Page Specific Light Mode Overrides */
+        body.light-mode .services-description,
+        body.light-mode .conversationcontsec p {
+            color: #333333;
+        }
+
+        body.light-mode .service-card:not(.active) .service-title {
+            color: #ffffff !important;
+        }
+
+        body.light-mode #sthirosconversationsec {
+            background-color: #ffffff;
+        }
+
+        body.light-mode .conversationcontsec {
+            background-image: url('assets/images/industries/industryreadywhenyulight.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        body.light-mode .conversationcontsec h2 {
+            color: #000000;
+        }
+
+        body.light-mode .conv-btn-inner {
+            color: #000000 !important;
+        }
+
+        body.light-mode .conv-btn-inner:hover {
+            color: #ffffff !important;
+        }
+
         body,
         html {
             margin: 0;
@@ -74,13 +257,82 @@
         }
 
         @media (max-width: 768px) {
+            .hero {
+                align-items: flex-start;
+            }
+
+            .hero::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background:
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 40%, transparent 80%),
+                    linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 45%, transparent 100%);
+                z-index: 1;
+                pointer-events: none;
+            }
+
+            .hero img {
+                object-position: right center;
+                opacity: 0.55;
+            }
+
             .hero-content {
-                padding-left: 5%;
+                top: 180px;
+                left: 20px;
+                transform: none;
+                width: calc(100% - 40px);
+                padding: 0;
+            }
+
+            .breadcrumb {
+                font-size: 11px;
+                letter-spacing: 2px;
+                line-height: 1.6;
+                margin-bottom: 16px;
             }
 
             .main-heading {
-                font-size: 3rem;
+                font-size: clamp(26px, 9vw, 48px);
+                line-height: 1.15;
             }
+
+            #herosvgtrack {
+                margin-top: 0;
+            }
+
+            .herosvgtracks {
+                position: absolute;
+                top: -95vh;
+                left: 0;
+                width: 100%;
+                z-index: 2;
+                pointer-events: none;
+            }
+
+            .desktop-svg {
+                display: none !important;
+            }
+
+            .mobile-svg {
+                display: block !important;
+                width: 100%;
+                height: auto;
+            }
+
+            .herotrackspara {
+                margin-top: 60px !important;
+                padding: 0 20px;
+                position: relative;
+                z-index: 10;
+            }
+        }
+
+        .mobile-svg {
+            display: none !important;
         }
 
         #herosvgtrack {
@@ -1240,35 +1492,522 @@
                 margin-left: 2rem;
             }
         }
-            /* Skip the deck Card Light Mode */
-        body.light-mode .skipthedeskcont {
-            background-image: url('assets/images/industries/industryreadywhenyulight.jpg') !important;
+
+        @media (max-width: 768px) {
+
+            .servicelinedeliverable,
+            .servicelinedeliverablesvgbtm {
+                display: none !important;
+            }
+
+            #Servicelinesdeliverablescontsec {
+                margin-top: 40px;
+            }
+
+            .servicelinedeliverablecont {
+                position: relative;
+                top: auto;
+                right: auto;
+                width: 100%;
+                padding: 0 20px;
+                box-sizing: border-box;
+            }
+
+            .deliverable-main-title {
+                font-size: 38px;
+                line-height: 1.2;
+                margin-bottom: 30px;
+                margin-top: 0;
+            }
+
+            .deliverable-grid {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .deliverable-item.active .deliverable-grid {
+                max-height: 1200px;
+            }
+
+            .deliverable-grid-col {
+                padding-left: 0 !important;
+            }
+
+            .deliverable-grid-col:not(:first-child) {
+                border-left: none !important;
+                border-top: 1px solid rgba(236, 45, 38, 0.4);
+                padding-top: 20px;
+            }
+
+            .deliverable-title {
+                font-size: 24px;
+            }
+
+            .deliverable-desc {
+                max-width: 100%;
+                margin-bottom: 25px;
+            }
+
+            .deliverable-header {
+                align-items: center;
+            }
+
+            .deliverable-icon {
+                transform: rotate(0deg) !important;
+            }
+
+            .deliverable-item.active .deliverable-icon {
+                transform: rotate(180deg) !important;
+            }
+
+            #differentaboutworkingwithus {
+                margin-top: 20px !important;
+            }
+
+            .mobile-diff-svgtracksbtm {
+                display: block !important;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .mobile-diff-svgtracksbtm svg {
+                width: 60px !important;
+                height: auto;
+            }
+
+            .diff-container {
+                flex-direction: column;
+                padding: 0 20px;
+            }
+
+            .diff-left {
+                flex: none;
+                width: 100%;
+                max-width: 100%;
+                margin-bottom: 25px;
+            }
+
+            .diff-title {
+                font-size: 38px;
+                line-height: 1.1;
+                width: 100%;
+            }
+
+            .diff-right {
+                flex: none;
+                width: 100%;
+                max-width: 100%;
+                flex-direction: column;
+                height: auto;
+                gap: 15px;
+            }
+
+            .diff-card {
+                flex: none !important;
+                width: 100%;
+                height: 85px;
+                justify-content: center;
+                padding: 0 20px !important;
+            }
+
+            .diff-card.active {
+                height: 330px;
+                padding: 30px 20px !important;
+            }
+
+            .diff-card-content {
+                top: 30px;
+                bottom: 30px;
+                left: 20px;
+                right: 20px;
+            }
+
+            .diff-card-content h3 {
+                font-size: 26px;
+            }
+
+            .diff-card-collapsed p {
+                font-size: 16px;
+            }
+
+            .diff-card-collapsed p br {
+                display: none;
+            }
+
+            #Whenyouneedthis {
+                margin-top: 0px !important;
+                padding-top: 40px !important;
+            }
+
+            .herosvgtracks {
+                width: 100% !important;
+                margin: -40px 0 0 0 !important;
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            .herosvgtracks .mobile-svg {
+                width: 50% !important;
+                height: auto;
+            }
+
+            .herosvgtracksbtm svg,
+            .diffbtmsvg svg,
+            .whenyouneedthissvg svg {
+                width: 60px !important;
+            }
+
+            .wynt-container {
+                flex-direction: column;
+                padding: 0 20px;
+            }
+
+            .wynt-left {
+                flex: none;
+                width: 100%;
+                max-width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .wynt-title {
+                font-size: 38px;
+                line-height: 1.2;
+                width: 100%;
+            }
+
+            .wynt-right {
+                flex: none;
+                width: 100%;
+                max-width: 100%;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .wynt-grid-top {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .wynt-col {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .wynt-card {
+                height: auto !important;
+                padding: 25px 20px !important;
+                width: 100% !important;
+                display: block !important;
+                pointer-events: none !important;
+            }
+
+            .wynt-card p {
+                font-size: 16px;
+                text-align: left;
+                line-height: 1.5;
+            }
+
+            .wynt-card p br {
+                display: none;
+            }
+
+            /* Related Case Studies mobile layout */
+            .rcs-container {
+                flex-direction: column;
+                padding: 0 20px;
+                gap: 20px;
+            }
+
+            .rcs-title {
+                font-size: 38px;
+                line-height: 1.2;
+                margin-bottom: 30px;
+            }
+
+            .rcs-card {
+                flex: none !important;
+                width: 100%;
+                height: 400px !important;
+                /* Make cards taller on mobile for a square/portrait aspect ratio */
+            }
+
+            .skipthedesktop,
+            .skipthedeskbtm {
+                display: none !important;
+            }
+
+            .mobile-skipthedesk-svgbtm {
+                display: flex !important;
+                pointer-events: none;
+                z-index: 1;
+                justify-content: flex-end;
+                width: 100%;
+                overflow: hidden;
+                margin-top: -200px;
+                line-height: 0;
+            }
+
+            .mobile-skipthedesk-svgbtm svg {
+                width: 425px !important;
+                height: auto;
+            }
+
+            .mobile-skipthedesk-btn {
+                display: inline-flex !important;
+            }
+
+            .mobile-wynt-svgtracksbtm {
+                display: block !important;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .mobile-wynt-svgtracksbtm svg {
+                width: 60px !important;
+                height: auto;
+            }
+
+            #skithedesksec {
+                padding: 40px 0;
+            }
+
+            .skipthedeskcont {
+                position: relative;
+                top: auto;
+                left: auto;
+                transform: none;
+                flex-direction: column;
+                justify-content: space-between !important;
+                align-items: flex-start;
+                margin: 0 auto;
+                padding: 50px 30px !important;
+                width: calc(100% - 40px);
+                text-align: left;
+                gap: 80px !important;
+                min-height: 550px !important;
+            }
+
+            .skipthedeskcont .std-content {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+                text-align: left;
+            }
+
+            .skipthedeskcont .std-content h2 {
+                font-size: 52px;
+                line-height: 1.1;
+                font-weight: 300;
+                margin: 0;
+            }
+
+            .skipthedeskcont .std-content h3 {
+                font-size: 24px;
+                line-height: 1.3;
+                font-weight: 700;
+                margin: 0;
+            }
+
+            .skipthedeskcont .std-content p {
+                font-size: 15px;
+                line-height: 1.5;
+                margin: 0;
+                color: rgba(255, 255, 255, 0.8);
+            }
+
+            body.light-mode .skipthedeskcont .std-content p {
+                color: rgba(0, 0, 0, 0.8) !important;
+            }
+
+            .skipthedeskcont {
+                background-image: url('assets/images/servicesinnpage/serbtmctaartsec.png') !important;
+            }
+
+            body.light-mode .skipthedeskcont {
+                background-image: url('assets/images/servicesinnpage/serbtmctaartsecwhite.png') !important;
+            }
         }
 
-        body.light-mode #skithedesksec .std-content h2,
-        body.light-mode #skithedesksec .std-content h3,
-        body.light-mode #skithedesksec .std-content p,
-        body.light-mode .skipthedeskcont .std-content h2,
-        body.light-mode .skipthedeskcont .std-content h3,
-        body.light-mode .skipthedeskcont .std-content p,
-        body.light-mode .skipthedeskcont h2,
-        body.light-mode .skipthedeskcont h3,
-        body.light-mode .skipthedeskcont p {
-            color: #000000 !important;
+        .mobile-diff-svgtracksbtm,
+        .mobile-wynt-svgtracksbtm {
+            display: none;
+            text-align: center;
+            width: 100%;
         }
 
-        body.light-mode #skithedesksec .hero-btn-inner,
-        body.light-mode .skipthedeskcont .hero-btn-inner {
-            color: #000000 !important;
+        /* Strategy Specific Overrides */
+        body.light-mode .hero {
+            background-color: #000000 !important;
         }
 
-        body.light-mode #skithedesksec .hero-btn-outer:hover .hero-btn-inner,
-        body.light-mode .skipthedeskcont .hero-btn-outer:hover .hero-btn-inner,
-        body.light-mode #skithedesksec .hero-btn-inner:hover,
-        body.light-mode .skipthedeskcont .hero-btn-inner:hover {
+        body.light-mode .hero .main-heading {
             color: #ffffff !important;
         }
 
+        body.light-mode .hero .breadcrumb,
+        body.light-mode .hero .highlight {
+            color: #EC2D26 !important;
+        }
+
+        body.light-mode .herotrackspara {
+            color: #000000 !important;
+        }
+
+        body.light-mode .deliverable-main-title,
+        body.light-mode .deliverable-desc {
+            color: #000000 !important;
+        }
+
+        body.light-mode .deliverable-item.active .deliverable-desc {
+            color: #000000 !important;
+        }
+
+        body.light-mode .deliverable-grid-col h4,
+        body.light-mode .deliverable-grid-col p {
+            color: #000000 !important;
+        }
+
+        body.light-mode .diff-title {
+            color: #000000 !important;
+        }
+
+        body.light-mode .diff-card {
+            background-color: #ffffff !important;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        body.light-mode .diff-card .diff-card-collapsed p,
+        body.light-mode .diff-card .diff-card-content h3,
+        body.light-mode .diff-card .diff-card-content p {
+            color: #000000 !important;
+        }
+
+        body.light-mode .diff-card.active {
+            background-color: #EC2D26 !important;
+            border-color: #EC2D26 !important;
+        }
+
+        body.light-mode .diff-card.active .diff-card-collapsed p,
+        body.light-mode .diff-card.active .diff-card-content h3,
+        body.light-mode .diff-card.active .diff-card-content p {
+            color: #ffffff !important;
+        }
+
+        body.light-mode .wynt-title {
+            color: #000000 !important;
+        }
+
+        body.light-mode .wynt-card {
+            background-color: #ffffff !important;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        body.light-mode .wynt-card p {
+            color: #000000 !important;
+        }
+
+        body.light-mode .wynt-card:hover {
+            background-color: #EC2D26 !important;
+            border-color: #EC2D26 !important;
+        }
+
+        body.light-mode .wynt-card:hover p {
+            color: #ffffff !important;
+        }
+
+        body.light-mode .rcs-title {
+            color: #000000 !important;
+        }
+
+        body.light-mode .rcs-title .highlight {
+            color: #EC2D26 !important;
+        }
+
+        body.light-mode .rcs-card h3,
+        body.light-mode .rcs-card p {
+            color: #ffffff !important;
+        }
+
+        body.light-mode .rcs-nav-btn {
+            background-color: transparent !important;
+        }
+
+        body.light-mode .rcs-nav-btn img {
+            filter: brightness(0);
+        }
+
+        .mobile-contactus-svg {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-contactus-svg {
+                display: block;
+                position: absolute;
+                top: -60px;
+                /* Adjusted to sit behind the strategy text */
+                left: -20px;
+                width: 100vw;
+                z-index: 0;
+            }
+
+            .mobile-contactus-svg svg {
+                display: block;
+                width: 50% !important;
+                height: auto;
+                position: relative;
+                left: 0;
+                transform: translateY(-10%);
+                overflow: visible !important;
+                -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 65%);
+                mask-image: linear-gradient(to bottom, black 40%, transparent 65%);
+            }
+
+            .hero-content .main-heading,
+            .hero-content .breadcrumb {
+                position: relative;
+                z-index: 2;
+            }
+
+            .herosvgtracks .mobile-svg {
+                display: none !important;
+                /* Hide old hero SVG on mobile */
+            }
+
+            .skipthedeskcont .std-buttons {
+                width: 100%;
+                align-items: center;
+            }
+            .skipthedeskcont .std-buttons .hero-btn-outer {
+                width: max-content !important;
+                max-width: max-content !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+            }
+            .skipthedeskcont .std-buttons .hero-btn-inner {
+                font-size: clamp(9px, 3vw, 13px) !important;
+                text-align: center;
+                white-space: nowrap !important;
+                
+                width: auto;
+            }
+        }
+        @media (min-width: 436px) and (max-width: 768px) {
+            .mobile-skipthedesk-svgbtm svg {
+                -webkit-mask-image: linear-gradient(to right, transparent 0%, black 25%);
+                mask-image: linear-gradient(to right, transparent 0%, black 25%);
+            }
+        }
+    
+        @media (max-width: 400px) {
+            .mobile-skipthedesk-svgbtm {
+                margin-top: -100px !important;
+            }
+        }
     </style>
 </head>
 
@@ -1851,6 +2590,45 @@
     </section>
 
 
+        <div class="mobile-diff-svgtracksbtm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="74" height="286" viewBox="0 0 74 286" fill="none"
+            style="display: inline-block;">
+            <path d="M74 285.993L49.3334 285.993L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 285.993Z"
+                fill="url(#paint0_mobdiff)" />
+            <path d="M37.0139 286L24.6667 286L24.6666 -2.15642e-06L37.0139 -3.23586e-06L37.0139 286Z"
+                fill="url(#paint1_mobdiff)" />
+            <path d="M9.80545 285.989L9.80536 -8.57214e-07L15.979 -1.39693e-06L15.9791 285.989L9.80545 285.989Z"
+                fill="url(#paint2_mobdiff)" />
+            <path d="M6.0988e-05 285.993L-2.50029e-05 0L4.10646 -3.59001e-07L4.10655 285.993L6.0988e-05 285.993Z"
+                fill="url(#paint3_mobdiff)" />
+            <defs>
+                <linearGradient id="paint0_mobdiff" x1="37" y1="-3.23464e-06" x2="37" y2="286"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" />
+                </linearGradient>
+                <linearGradient id="paint1_mobdiff" x1="30.8403" y1="-3.23464e-06" x2="30.8403" y2="286"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" />
+                </linearGradient>
+                <linearGradient id="paint2_mobdiff" x1="12.8922" y1="-2.15642e-06" x2="12.8922" y2="285.989"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" />
+                </linearGradient>
+                <linearGradient id="paint3_mobdiff" x1="2.05324" y1="-3.5894e-07" x2="2.05324" y2="285.993"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
     <section id="differentaboutworkingwithus">
         <div class="diff-container">
             <div class="diff-left">
@@ -2071,6 +2849,45 @@
     </section>
 
     <!-- Start the conversation section -->
+    <div class="mobile-wynt-svgtracksbtm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="74" height="482" viewBox="0 0 74 482" fill="none"
+            style="display: inline-block;">
+            <path d="M74 481.988L49.3334 481.988L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 481.988Z"
+                fill="url(#paint0_mob_wynt)" />
+            <path d="M37.014 482L24.6667 482L24.6666 -2.15642e-06L37.0139 -3.23586e-06L37.014 482Z"
+                fill="url(#paint1_mob_wynt)" />
+            <path d="M9.80545 481.982L9.80535 -8.57215e-07L15.979 -1.39693e-06L15.9791 481.982L9.80545 481.982Z"
+                fill="url(#paint2_mob_wynt)" />
+            <path d="M6.09876e-05 481.988L-4.21378e-05 0L4.10645 -3.59001e-07L4.10655 481.988L6.09876e-05 481.988Z"
+                fill="url(#paint3_mob_wynt)" />
+            <defs>
+                <linearGradient id="paint0_mob_wynt" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint1_mob_wynt" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint2_mob_wynt" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint3_mob_wynt" x1="37" y1="-3.23464e-06" x2="37" y2="482"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EC2D26" stop-opacity="0" />
+                    <stop offset="0.5" stop-color="#EC2D26" />
+                    <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
     <section id="skithedesksec">
         <div class="skipthedesktop">
             <svg xmlns="http://www.w3.org/2000/svg" width="940" height="772" viewBox="0 0 940 772" fill="none">

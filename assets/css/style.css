@@ -5298,12 +5298,13 @@ body.light-mode .sub-nav-link:hover {
   }
 
   .menu-content {
+    padding-top: 35px;
     padding-left: 20px;
   }
 
   .nav-link.active,
   .nav-link:hover {
-    font-size: 2rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -5333,12 +5334,17 @@ body.light-mode .nav-link.active {
 }
 
 /* Hero section stays exactly as dark mode in light mode */
-body.light-mode .section-hero,
-body.light-mode #herosectionmobilescreen {
+body.light-mode .section-hero {
   background-color: #000000;
   position: relative;
   z-index: 2;
   overflow: hidden;
+}
+
+body.light-mode #herosectionmobilescreen {
+  background-color: #000000;
+  position: relative;
+  z-index: 0;
 }
 
 /* Light mode mobile: stats section must sit above the hero's black bg */
@@ -5755,17 +5761,48 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
   }
 
   /* Menu adjustments */
+  .menu-content {
+    padding-top: 35px !important;
+    padding-left: 30px !important;
+  }
+
   .menu-content .main-nav {
-    gap: 5px !important;
+    gap: 0px !important;
   }
 
   .menu-content .main-nav .nav-link {
-    font-size: 2rem !important;
+    height: 52px !important;
+    font-size: 1.25rem !important;
+    letter-spacing: 0.12em !important;
+    font-weight: 400 !important;
+    white-space: nowrap !important;
   }
 
   .menu-content .main-nav .nav-link:hover,
   .menu-content .main-nav .nav-link.active {
-    font-size: 2.5rem !important;
+    font-size: 1.25rem !important;
+    color: #EF4623 !important;
+    letter-spacing: 0.12em !important;
+    font-weight: 400 !important;
+  }
+
+  .menu-content .chevron {
+    width: 11px !important;
+  }
+
+  .menu-content .sub-nav-link {
+    font-size: 1rem !important;
+    height: 38px !important;
+  }
+
+  .menu-content .sub-nav-link:hover {
+    font-size: 1rem !important;
+    color: #EF4623 !important;
+  }
+
+  .menu-content .nested-sub-nav-link {
+    font-size: 0.9rem !important;
+    height: 32px !important;
   }
 
   .menu-close img {
@@ -6352,7 +6389,6 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
     width: 100%;
     min-height: 100vh;
     position: relative;
-    overflow: hidden;
     padding-top: 80px;
     padding-bottom: 150px;
   }
@@ -6399,6 +6435,8 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
     top: -250px;
     z-index: 1;
     opacity: 1;
+    width: 223px;
+    height: 891px;
     transform: scaleX(1.01) scaleY(0.95);
     transform-origin: top right;
   }
@@ -6413,6 +6451,7 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
     left: 15px;
     top: 540px;
     width: calc(100% - 250px);
+    height: 450px;
     overflow: hidden;
     z-index: 3;
     opacity: 1;
@@ -6528,16 +6567,46 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
    below 375px (calc(100vw * <value-at-375> / 375)) so they shrink smoothly
    past that point instead of snapping to a hand-picked constant; both formulas
    equal the original 375px value exactly at 375px, so there's no visible jump
-   at the boundary. Right-svg's height is scaled by the same ratio as its
-   width so the artwork doesn't stretch. */
+   at the boundary.
+
+   left-svg's height is scaled by the same ratio as its width so its curve
+   doesn't stretch (its height rule was missing here — only its width shrank —
+   which squashed the curve horizontally without shrinking it vertically,
+   throwing off the angle where it bends into a straight line and opening a
+   visible kink against right-svg's own correctly-scaled starting edge below
+   375px).
+
+   right-svg is different: its curve lives in only the first ~4% of its own
+   800→2500 viewBox; the rest is a plain straight bar running down behind the
+   stats section to read as one continuous line with that section's own
+   bracket (.aboutusmobilescreensvg, which never scales). Scaling its CSS
+   width/height at all — either both together (shrinks how far the bar
+   reaches, opening a growing gap against that fixed-size bracket) or width
+   alone (squashes the curve the same way left-svg's did, reopening a kink at
+   the bend into .hero-mobile-left-svg above it) — breaks one joint or the
+   other. Leaving both off entirely renders it at its native, undistorted
+   800x2500 and lets the wrapper's own width formula below (unrelated to this
+   svg's size — it's derived purely from left-svg's geometry) do the only
+   clipping that's actually needed to keep the text clear. */
 @media (max-width: 375px) {
   .hero-mobile-left-svg svg {
     width: calc(100vw * 223 / 375) !important;
+    height: calc(100vw * 891 / 375) !important;
   }
 
-  .hero-mobile-right-svg svg {
-    width: calc(100vw * 800 / 375) !important;
-    height: calc(100vw * 2500 / 375) !important;
+  /* Scaling left-svg's height above (needed so its curve doesn't stretch —
+     see the comment further down) shrinks it from the wrapper's fixed
+     `top: -250px`, which never moved: the svg's rendered bottom (its bend,
+     where it should meet .hero-mobile-right-svg) is `top + height * 0.95`
+     (the wrapper's own scaleY, anchored `top right` so only the bottom
+     edge moves) — as height shrinks below 375px, that bend climbs upward
+     while right-svg's own starting edge stays put, opening a growing gap
+     between them. Nudging `top` down by exactly the height lost keeps the
+     bend pinned at the same spot the 375px design always put it —
+     596.45px = -250px + 891px * 0.95, the untouched bend position — without
+     moving right-svg's starting point at all. */
+  .hero-mobile-left-svg {
+    top: calc(596.45px - (100vw * 891 * 0.95 / 375)) !important;
   }
 
   /* Shrinking .hero-mobile-left-svg above pulled its left/"ending" edge away
@@ -6562,6 +6631,25 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
      scaleX, or right:10px changes. */
   .hero-mobile-right-svg {
     width: calc(100vw - 50px - (100vw * 223 * 1.01 / 375) - 15px) !important;
+  }
+
+  /* .hero-mobile-img is width:85% (capped at 320px, which is what the flat
+     -420px margin-top on .hero-mobile-bottom below was tuned against — 85% of
+     320/0.85 = 376.47px, i.e. right around this same breakpoint). Below that,
+     the image's own width — and, since it scales proportionally, its height —
+     shrinks with the viewport, so .hero-mobile-bottom's normal-flow position
+     (right under it) is already higher up than at 375px. The flat -420px pull
+     then yanks it up by that same fixed amount on top of an already-higher
+     start, so the copy climbs into the header and, since #herosectionmobile-
+     screen centers its content vertically in a min-height box, "pushes" the
+     whole hero shorter instead of the section growing to fit. Scaling the
+     margin by the same 100vw/375 ratio as the image keeps the pull
+     proportional to how far up the image itself has already moved, so the
+     copy settles back at the same relative spot under it at every width —
+     letting the section's min-height (not a fixed height) grow downward for
+     the extra wrapped lines instead of the text creeping up over the header. */
+  .hero-mobile-bottom {
+    margin-top: max(calc(100vw * -420 / 375), -300px) !important;
   }
 }
 
@@ -6833,7 +6921,7 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
 /* Hide the tail of the top SVG that pokes out below services */
 @media (max-width: 768px) {
   .aboutusmobilescreensvg svg {
-    clip-path: inset(0 0 120px 0);
+    clip-path: inset(0 0 120px 0) !important;
   }
 }
 
@@ -6854,7 +6942,6 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
     width: 76% !important;
   }
 }
-
 
 /* Fix section titles getting huge on mobile */
 @media (max-width: 768px) {
@@ -7251,8 +7338,8 @@ body.light-mode .footer-menu li {
   }
 
   .story-card-icon {
-    max-width: 140px !important;
-    max-height: 140px !important;
+    max-width: 180px !important;
+    max-height: 180px !important;
     margin: 0 !important;
   }
 
@@ -7731,22 +7818,32 @@ body.light-mode .footer-menu li {
     height: 550px !important;
   }
 
+  /* C's top used to be a flat 345px, which only lines up with Risk's own
+     "out" anchor (51% down its box) while --smr-logo-h sits at its 185px
+     ceiling (≥440px). Below that the logo shrinks but this line didn't, so
+     under ~380px it left the Risk mark's centre and the arrow read as
+     starting low/off-centre. Pinning it to --smr-logo-h (250.65 + 0.51*h,
+     calibrated so it still resolves to exactly 345px at the 185px ceiling)
+     keeps it leaving from centre at every width without moving where it
+     lands on Cyber. */
   #smrSegC {
     left: calc(1906px) !important;
-    top: calc(345px) !important;
+    top: calc(250.65px + var(--smr-logo-h) * 0.51) !important;
     width: calc(1593px) !important;
     height: calc(418px) !important;
   }
 
   /* Magnet lock: #smrSegF entrance connects seamlessly to #smrSegC exit with zero gap on all device widths.
-     C exit right edge is at 1906px + 1593px = 3499px, top at 345px.
+     C exit right edge is at 1906px + 1593px = 3499px, top now tracks --smr-logo-h (see #smrSegC above).
      F must render at the exact same px-per-artboard-unit scale as C (1593/2074 = 418/544 = 0.768232),
      not a scale of its own, or the line visibly thickens right where it meets Cyber even though each
      segment's own aspect ratio is individually correct. F width/height = 224/254 * 0.768232 = 172.08/195.13px,
-     right edge pinned to 3499px (left: 3326.92px), bottom edge pinned to 345.5px (top: 150.37px). */
+     right edge pinned to 3499px (left: 3326.92px); its bottom edge stays pinned to C's (now dynamic) top
+     minus the same 194.63px this always resolved to (150.37px at the 185px ceiling), so it rides along
+     with C instead of leaving a gap or overlap below ~380px. */
   #smrSegF {
     left: calc(3326.92px) !important;
-    top: calc(150.37px) !important;
+    top: calc(56.02px + var(--smr-logo-h) * 0.51) !important;
     width: calc(172.08px) !important;
     height: calc(195.13px) !important;
     transform: none !important;
@@ -7885,6 +7982,33 @@ body.light-mode .footer-menu li {
     width: 84vw;
     text-align: left;
     padding-right: 1rem;
+  }
+
+  /* Strategy text only: the default "left: 70%" resolves against the
+     station's own auto width (max-content, driven by the logo's intrinsic
+     size), while "width: 84vw" resolves against the real viewport. Those two
+     references match closely below ~440px (where --smr-logo-h still scales
+     with 42vw), but once --smr-logo-h clamps at its 185px ceiling the station
+     stops growing while the vw-based text box keeps widening — the mismatch
+     drags the camera's centring focus (which frames art + text together) off
+     the S logo, so segment A/B's bars drift out of alignment with the pills
+     at 500-768px even though 375px and below look correct. Pinning left to
+     --smr-logo-h directly (0.9671 = 0.70 * 1.5 * 350/380, the S artboard's
+     own aspect) keeps the offset locked to the logo at every width, and
+     capping the width stops the text (and therefore the camera's focus
+     point) from ballooning past what looks right on a phone. */
+  .smr-station[data-smr="strategy"] .smr-text {
+    left: calc(var(--smr-logo-h) * 0.9671) !important;
+    width: min(84vw, 320px) !important;
+    /* Segment A (the entry rail feeding the bottom-left pill) sits at a fixed
+       track position that never scales with --smr-logo-h, while this text's
+       "top: 150% + 20px" shrinks toward the logo as --smr-logo-h shrinks below
+       its 185px ceiling — so under ~425px the heading closes in on, and
+       overlaps, segment A's bars. 425px already clears them by ~35px because
+       --smr-logo-h there (42vw≈178.5px) is close to the 178.3px this needs;
+       below that, add back exactly the shortfall (267.44 - 1.5*logo-h) so the
+       gap stays ~35px at every width instead of collapsing to zero. */
+    top: calc(150% + 20px + max(0px, 267.44px - 1.5 * var(--smr-logo-h))) !important;
   }
 
   /* Cyber: copy sits neatly underneath the Cyber logo with right padding (kewal isi ko hi) */
@@ -8323,3 +8447,94 @@ body.light-mode .footer-menu li {
 .sthirossvgtransformationbtm {
   display: none !important;
 }
+
+/* Fix mobile header background to be blurred and dark instead of transparent */
+@media (max-width: 768px) {
+  html body .site-header {
+    background-color: rgba(0, 0, 0, 0.85) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+  }
+}
+
+
+/* Responsive Mobile Menu Fix for Smaller Devices */
+@media (max-width: 425px) {
+  .menu-content {
+    padding-top: 25px !important;
+    padding-left: 20px !important;
+  }
+  .menu-content .main-nav .nav-link {
+    height: 48px !important;
+    font-size: 1.15rem !important;
+    letter-spacing: 0.1em !important;
+    font-weight: 400 !important;
+    white-space: nowrap !important;
+  }
+  .menu-content .main-nav .nav-link:hover,
+  .menu-content .main-nav .nav-link.active {
+    font-size: 1.15rem !important;
+    color: #EF4623 !important;
+    letter-spacing: 0.1em !important;
+    font-weight: 400 !important;
+  }
+  .menu-content .sub-nav-link {
+    font-size: 0.95rem !important;
+    height: 36px !important;
+  }
+  .menu-content .sub-nav-link:hover {
+    font-size: 0.95rem !important;
+    color: #EF4623 !important;
+  }
+}
+
+/* Fix header overlap on very small screens */
+@media (max-width: 375px) {
+  .header-left .site-logo {
+    height: 18px !important;
+  }
+  .header-right {
+    gap: 15px !important;
+  }
+  .site-header {
+    padding: 0 15px !important;
+  }
+}
+
+
+/* Maintain span highlight colors in light mode */
+body.light-mode #realstoriesheading h1 span,
+body.light-mode #workholdheading h1 span,
+body.light-mode .workhold-card-title span,
+body.light-mode #ourstory h1 span {
+  color: #EF4623 !important;
+}
+
+
+/* Maintain industry card heading highlight colors in light mode */
+body.light-mode .industry-heading-front {
+  color: var(--FLAME-ORANGE, #EF4623) !important;
+}
+
+
+/* Maintain Four Pillars colored text in light mode */
+body.light-mode #services-title .text-red {
+  color: #EC2D26 !important;
+}
+
+/* Industry Hero Mobile Opacity / Legibility Overlay */
+@media (max-width: 768px) {
+  .industry-hero::before {
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.65) 25%, rgba(0, 0, 0, 0.65) 100%) !important;
+    z-index: 1 !important;
+  }
+
+  /* What We Do Hero Mobile Image Opacity */
+  .hero img {
+    opacity: 0.55 !important;
+  }
+}
+
+

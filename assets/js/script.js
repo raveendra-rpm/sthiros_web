@@ -18,6 +18,7 @@
   } catch (e) {}
 })();
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 let lenis = null;
@@ -64,6 +65,10 @@ function boot() {
   initFloatingCurves();
   initContactUsSvgScroll();
   initIndexMobileScroll();
+  initAboutMobileSvgScroll();
+  initServiceMobileConnectorsScroll();
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
 }
 
 let appBooted = false;
@@ -81,7 +86,11 @@ function triggerBoot() {
       opacity: 0,
       duration: 1,
       ease: 'power2.inOut',
-      onComplete: () => preloader.remove()
+      onComplete: () => {
+        preloader.remove();
+        ScrollTrigger.sort();
+        ScrollTrigger.refresh();
+      }
     });
   }
 
@@ -368,6 +377,7 @@ function initHeroSvgTrackScroll() {
   // Animate the 'WHAT WE DO' text after the SVG line finishes
   const eyebrow = document.getElementById('services-eyebrow');
   const title = document.getElementById('services-title');
+  const para = document.querySelector('#services .section-center-para');
 
   if (eyebrow && title) {
     // Helper function to split text nodes into individual letter spans
@@ -429,6 +439,26 @@ function initHeroSvgTrackScroll() {
         }
       }
     );
+
+    if (para) {
+      gsap.fromTo(para,
+        {
+          y: 40,
+          opacity: 0
+        },
+        {
+          y: 0,
+          opacity: 1,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: eyebrow,
+            start: 'top 35%', // Start exactly when the title animation ends
+            end: 'top 5%',
+            scrub: 1
+          }
+        }
+      );
+    }
   }
 }
 
@@ -453,40 +483,57 @@ function initIndexMobileScroll() {
     });
   }
 
-  // 3. Services Mobile SVG
-  const servicesSvg = document.querySelector('.services-mobile-svg-wrap svg');
-  if (servicesSvg) {
-    gsap.set(servicesSvg, { clipPath: 'inset(0 0 100% 0)' });
-    gsap.to(servicesSvg, {
-      clipPath: 'inset(0 0 0% 0)',
-      ease: 'none',
-      scrollTrigger: {
-        trigger: '.section-services',
-        start: 'top 80%',
-        end: 'bottom 20%',
-        scrub: true
-      }
-    });
-  }
+  // (Removed: Services Mobile SVG and Four Pillars Mobile Logos explicit GSAP animations)
+}
 
-  // 4. Four Pillars Mobile Logos (Strategy, Risk, Cyber, AI)
-  const mobileLogos = document.querySelectorAll('.smr-station .smr-logo > *');
-  if (mobileLogos.length > 0) {
-    gsap.set(mobileLogos, { clipPath: 'inset(0 0 100% 0)' });
-    
-    // We animate them sequentially as the user scrolls through the pinned #smr section
-    gsap.to(mobileLogos, {
-      clipPath: 'inset(0 0 0% 0)',
-      ease: 'none',
-      stagger: 1, // Stagger distributes them evenly across the scrub duration
-      scrollTrigger: {
-        trigger: '#smr',
-        start: 'top top',
-        end: 'bottom bottom',
-        scrub: 0.5
-      }
+function initAboutMobileSvgScroll() {
+  const wbWrap = document.querySelector('.world-building-svg-mobile');
+  const leaderConnectors = document.querySelectorAll('.leader-connector-svg');
+  if (!wbWrap && leaderConnectors.length === 0) return;
+
+  const mm = gsap.matchMedia();
+  mm.add("(max-width: 768px)", () => {
+    // 1. The world we are building mobile SVG connector
+    if (wbWrap) {
+      const wbSvg = wbWrap.querySelector('svg');
+      if (wbSvg) gsap.set(wbSvg, { clearProps: 'clipPath' });
+      gsap.set(wbWrap, { clipPath: 'inset(0% 0% 100% 0%)' });
+      gsap.to(wbWrap, {
+        clipPath: 'inset(0% 0% 0% 0%)',
+        ease: 'none',
+        scrollTrigger: {
+          trigger: wbWrap,
+          start: 'top 85%',
+          end: 'bottom 60%',
+          scrub: true,
+          invalidateOnRefresh: true
+        }
+      });
+    }
+
+    // 2. Meet the Leaders mobile SVG connectors (above header & inside container)
+    leaderConnectors.forEach((leaderWrap) => {
+      const leaderSvg = leaderWrap.querySelector('svg');
+      if (leaderSvg) gsap.set(leaderSvg, { clearProps: 'clipPath' });
+      gsap.set(leaderWrap, { clipPath: 'inset(0% 0% 100% 0%)' });
+      gsap.to(leaderWrap, {
+        clipPath: 'inset(0% 0% 0% 0%)',
+        ease: 'none',
+        scrollTrigger: {
+          trigger: leaderWrap,
+          start: 'top 85%',
+          end: 'bottom 60%',
+          scrub: true,
+          invalidateOnRefresh: true
+        }
+      });
     });
-  }
+
+    return () => {
+      if (wbWrap) gsap.set(wbWrap, { clearProps: 'clipPath' });
+      leaderConnectors.forEach((leaderWrap) => gsap.set(leaderWrap, { clearProps: 'clipPath' }));
+    };
+  });
 }
 
 function initHeroLinesScroll() {
@@ -1409,7 +1456,7 @@ function initScrollAnimations() {
     // the Four Pillars rail's own scroll journey right after (2026-09-14
     // user request). Desktop's hero-vec-1/2 are untouched.
     mm.add("(max-width: 768px)", () => {
-      // return initMobileHeroReveal(); // Animation disabled per user request
+      return initMobileHeroReveal();
     });
   }
 
@@ -2419,17 +2466,20 @@ function initRealStoriesSlider() {
   }
 
   // Animate the Real Stories SVG line
+  const topSvgWrap = document.getElementById('realtopstoriessvg');
   const topSvg = document.querySelector('#realtopstoriessvg svg');
-  if (topSvg) {
-    gsap.set(topSvg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
-    gsap.to(topSvg, {
-      clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+  if (topSvgWrap) {
+    if (topSvg) gsap.set(topSvg, { clearProps: 'clipPath' });
+    gsap.set(topSvgWrap, { clipPath: 'inset(0% 0% 100% 0%)' });
+    gsap.to(topSvgWrap, {
+      clipPath: 'inset(0% 0% 0% 0%)',
       ease: 'none',
       scrollTrigger: {
-        trigger: '#realtopstoriessvg',
-        start: 'top 80%',
-        end: 'bottom 50%',
-        scrub: true
+        trigger: topSvgWrap,
+        start: 'top 85%',
+        end: 'bottom 60%',
+        scrub: true,
+        invalidateOnRefresh: true
       }
     });
   }
@@ -2817,20 +2867,89 @@ function initHeroSvgTracksScroll() {
 }
 
 function initHeroSvgTracksBtmScroll() {
+  const wrap = document.querySelector('.herosvgtracksbtm');
   const svg = document.querySelector('.herosvgtracksbtm svg');
-  if (svg) {
+  if (!wrap || !svg) return;
+
+  const mm = gsap.matchMedia();
+  mm.add("(min-width: 769px)", () => {
+    gsap.set(wrap, { clearProps: 'clipPath' });
     gsap.set(svg, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' });
     gsap.to(svg, {
       clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
       ease: 'none',
       scrollTrigger: {
-        trigger: '.herosvgtracksbtm',
+        trigger: wrap,
         start: 'top 85%',
         end: 'top 40%',
         scrub: true
       }
     });
-  }
+  });
+
+  mm.add("(max-width: 768px)", () => {
+    gsap.set(svg, { clearProps: 'clipPath' });
+    gsap.set(wrap, { clipPath: 'inset(0% 0% 100% 0%)' });
+    gsap.to(wrap, {
+      clipPath: 'inset(0% 0% 0% 0%)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: wrap,
+        start: 'top 85%',
+        end: 'bottom 60%',
+        scrub: true,
+        invalidateOnRefresh: true
+      }
+    });
+  });
+}
+
+function initServiceMobileConnectorsScroll() {
+  const diffWrap = document.querySelector('.mobile-diff-svgtracksbtm');
+  const wyntWrap = document.querySelector('.mobile-wynt-svgtracksbtm');
+  if (!diffWrap && !wyntWrap) return;
+
+  const mm = gsap.matchMedia();
+  mm.add("(max-width: 768px)", () => {
+    if (diffWrap) {
+      const diffSvg = diffWrap.querySelector('svg');
+      if (diffSvg) gsap.set(diffSvg, { clearProps: 'clipPath' });
+      gsap.set(diffWrap, { clipPath: 'inset(0% 0% 100% 0%)' });
+      gsap.to(diffWrap, {
+        clipPath: 'inset(0% 0% 0% 0%)',
+        ease: 'none',
+        scrollTrigger: {
+          trigger: diffWrap,
+          start: 'top 85%',
+          end: 'bottom 60%',
+          scrub: true,
+          invalidateOnRefresh: true
+        }
+      });
+    }
+
+    if (wyntWrap) {
+      const wyntSvg = wyntWrap.querySelector('svg');
+      if (wyntSvg) gsap.set(wyntSvg, { clearProps: 'clipPath' });
+      gsap.set(wyntWrap, { clipPath: 'inset(0% 0% 100% 0%)' });
+      gsap.to(wyntWrap, {
+        clipPath: 'inset(0% 0% 0% 0%)',
+        ease: 'none',
+        scrollTrigger: {
+          trigger: wyntWrap,
+          start: 'top 85%',
+          end: 'bottom 60%',
+          scrub: true,
+          invalidateOnRefresh: true
+        }
+      });
+    }
+
+    return () => {
+      if (diffWrap) gsap.set(diffWrap, { clearProps: 'clipPath' });
+      if (wyntWrap) gsap.set(wyntWrap, { clearProps: 'clipPath' });
+    };
+  });
 }
 
 function initServiceLineDeliverableScroll() {
@@ -3285,11 +3404,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Prevent closing when clicking inside the menu
-    const filterMenus = document.querySelectorAll('.repo-filter-menu');
-    filterMenus.forEach(menu => {
-        menu.addEventListener('click', (e) => {
-            e.stopPropagation();
+    // Handle item selection
+    const filterItems = document.querySelectorAll('.repo-filter-item');
+    
+    filterItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.stopPropagation(); // prevent document click from firing
+            
+            // Close the parent dropdown and update its label
+            const parentDropdown = item.closest('.repo-filter-dropdown');
+            if (parentDropdown) {
+                const label = parentDropdown.querySelector('.repo-filter-label');
+                if (label) {
+                    label.textContent = e.target.textContent.trim();
+                }
+                parentDropdown.classList.remove('active');
+            }
         });
     });
 });
@@ -3471,7 +3601,12 @@ function smrCreateRail() {
         if (link.seg === 'B') {
           s.pos = [out[0] - s.enter[0] * K, 35];
         } else if (link.seg === 'C') {
-          s.pos = [1900, 345];
+          /* C's top is pinned to Risk's own box height (250.65 + 0.51*h),
+             calibrated so it lands on the current 345px at the 185px logo
+             ceiling (≥440px) — see the matching #smrSegC rule in style.css
+             for why a flat 345px drifts off the Risk mark's centre below
+             that width. */
+          s.pos = [1900, 250.65 + 0.51 * box.risk.h];
         } else if (link.seg === 'D') {
           s.pos = [out[0] - s.enter[0] * K, 55];
         } else {
@@ -3599,11 +3734,83 @@ function smrCreateRail() {
   }
   locate();
 
-  /* ── nothing on the rail animates: the line and the marks are simply there ── */
+  /* ── the rail draws in and each mark's logo/copy reveals as the camera
+     arrives — scroll-scrubbed together with the camera route below, the same
+     wipe-reveal technique the desktop rail uses for its logo traces, brought
+     to mobile by user request (2026-09-17). ── */
   var copy = function (k) { return stations[k].querySelectorAll('.smr-text > *'); };
+
+  /* Every export is one straight run plus one turn (see SMR_SEGS above), and
+     the line has to visibly travel both legs — e.g. A runs down, THEN right,
+     so the reveal must draw downward first and only start moving rightward
+     once it reaches the bend, not wipe the whole box on one flat axis. Each
+     leg gets its own clip-path edge (top/right/bottom/left, whichever axis
+     that leg actually moves along), read off the segment's own local
+     enter/corner/exit points — local, because B/E are vertically clipped by
+     trim() so their box is shorter than the raw artboard `h`. */
+  var insetOf = function (edges) {
+    return 'inset(' + (edges.top || 0) + '% ' + (edges.right || 0) + '% ' +
+      (edges.bottom || 0) + '% ' + (edges.left || 0) + '%)';
+  };
+  var localPts = function (key) {
+    var s = segs[key], top = s.clip[0];
+    return {
+      w: s.w, h: s.h - s.clip[0] - s.clip[1],
+      enter: [s.enter[0], s.enter[1] - top],
+      corner: [s.corner[0], s.corner[1] - top],
+      exit: [s.exit[0], s.exit[1] - top]
+    };
+  };
+  /* which edge a leg reveals from, and how far (0-1) along the box that edge
+     has to close to expose the leg's far end */
+  var legEdge = function (from, to, w, h) {
+    var dx = to[0] - from[0], dy = to[1] - from[1];
+    if (Math.abs(dx) >= Math.abs(dy)) {
+      return dx >= 0 ? { edge: 'right', pct: (1 - to[0] / w) * 100 }
+        : { edge: 'left', pct: (to[0] / w) * 100 };
+    }
+    return dy >= 0 ? { edge: 'bottom', pct: (1 - to[1] / h) * 100 }
+      : { edge: 'top', pct: (to[1] / h) * 100 };
+  };
+  var segLegs = {}; /* key -> { p1, p2, l1, l2 } */
+  ['A', 'B', 'C', 'F', 'D', 'E'].forEach(function (k) {
+    if (!segs[k].node) return;
+    var pt = localPts(k);
+    var p1 = legEdge(pt.enter, pt.corner, pt.w, pt.h);
+    var p2 = legEdge(pt.corner, pt.exit, pt.w, pt.h);
+    segLegs[k] = {
+      p1: p1, p2: p2,
+      l1: Math.hypot(pt.corner[0] - pt.enter[0], pt.corner[1] - pt.enter[1]),
+      l2: Math.hypot(pt.exit[0] - pt.corner[0], pt.exit[1] - pt.corner[1])
+    };
+    /* p1's own edge fully hides the segment on its own (100%); p2's edge
+       stays open (0%) until leg 1 is done — inset()'s edges are ANDed
+       together, so leaving p2 at 100% here would blank the element outright
+       regardless of what p1 is doing, since a 100%-closed edge alone leaves
+       zero width/height visible no matter what the other edges say. Leaving
+       p2 open is safe: nothing exists ahead of leg 1's own path to leak. */
+    var hidden = {}; hidden[p1.edge] = 100; hidden[p2.edge] = 0;
+    // gsap.set(segs[k].node, { clipPath: insetOf(hidden) });
+  });
+
+  /* Strategy and Cyber already carry the same trace-mask markup as the
+     desktop logos (#m-s-trace-path / #m-c-trace-path, identical path data) —
+     reuse it for a real line-draw reveal instead of a plain fade. */
+  var sTracePath = document.getElementById('m-s-trace-path');
+  var cTracePath = document.getElementById('m-c-trace-path');
+  if (sTracePath) {
+    var sLen = 1050; /* hardcoded: getTotalLength() inside <mask> is unreliable — same fix desktop's #s-trace-path uses */
+    // gsap.set(sTracePath, { strokeDasharray: sLen + 10, strokeDashoffset: sLen + 10 });
+  }
+  if (cTracePath) {
+    var cLen = cTracePath.getTotalLength();
+    // gsap.set(cTracePath, { strokeDasharray: (cLen + 10) + ' ' + (cLen + 2000), strokeDashoffset: cLen + 10 });
+  }
   Object.keys(stations).forEach(function (k) {
     gsap.set(stations[k], { opacity: 1 });
-    gsap.set(copy(k), { opacity: 1, y: 0 });
+    var img = stations[k].querySelector('.smr-logo-img');
+    // if (img) gsap.set(img, { clipPath: 'inset(0 0 100% 0)', opacity: 0 });
+    // gsap.set(copy(k), { opacity: 0, y: 40 });
   });
 
   /* ── the ride: the camera runs along the rail, settling on each mark ──
@@ -3647,14 +3854,15 @@ function smrCreateRail() {
   };
 
   var route = [];
-  var go = function (cx, cy, hold) {
+  var go = function (cx, cy, hold, tag) {
     var last = route[route.length - 1];
     /* a step of a few px is not worth a leg of its own */
     if (last && Math.abs(last.cx - cx) < 3 && Math.abs(last.cy - cy) < 3) {
       last.hold = Math.max(last.hold, hold || 0);
+      if (tag) last.tag = tag;
       return;
     }
-    route.push({ cx: cx, cy: cy, hold: hold || 0 });
+    route.push({ cx: cx, cy: cy, hold: hold || 0, tag: tag || null });
   };
 
   var eA = bend('A');
@@ -3679,7 +3887,7 @@ function smrCreateRail() {
 
   var sCam = camOfMark('strategy');
   go(sCam[0], route[route.length - 1].cy, 0);           /* straight across  */
-  go(sCam[0], sCam[1], 0.9);                            /* settle on the S  */
+  go(sCam[0], sCam[1], 0.9, 'strategy');                /* settle on the S  */
 
   /* mark -> bend -> mark, one axis at a time */
   var runTo = function (bendKey, markKey, endHold) {
@@ -3687,7 +3895,7 @@ function smrCreateRail() {
     var bx = camXofBend(bendKey);
     go(bx, route[route.length - 1].cy, 0.5);            /* across to the bend, stop */
     go(bx, m[1], 0);                                    /* off it, straight down/up */
-    go(m[0], m[1], endHold);                            /* the last step onto it    */
+    go(m[0], m[1], endHold, markKey);                   /* the last step onto it    */
   };
   runTo('B', 'risk', 0.9);
   runTo('C', 'cyber', 0.9);
@@ -3709,6 +3917,7 @@ function smrCreateRail() {
 
   var tl = gsap.timeline();
   var at = 0;
+  var legAt = []; /* legAt[i] = {start, end} for the tween landing on route[i] */
   for (i = 1; i < route.length; i++) {
     var wp = route[i];
     var dur = Math.max(0.14, 8.4 * (legs[i - 1] / (total || 1)));
@@ -3716,6 +3925,7 @@ function smrCreateRail() {
     to.ease = 'none';
     to.duration = dur;
     tl.to(track, to, at);
+    legAt[i] = { start: at, end: at + dur };
     if (i === 1 && sectionCenter) {
       /* the heading sits above the pinned stage, not on the rail — let it go as
          the camera leaves the elbow rather than leaving a clipped strip behind */
@@ -3724,6 +3934,163 @@ function smrCreateRail() {
     at += dur + wp.hold;
   }
   tl.to({}, { duration: 0.4 }, at);
+
+  /* ── wire the segment/mark reveals to the same legs that carry the camera
+     past them, so each line "arrives" exactly when the camera does ── */
+  var settleIdx = {};
+  route.forEach(function (wp, idx) { if (wp.tag) settleIdx[wp.tag] = idx; });
+  var revealSpan = function (fromIdx, toIdx) {
+    return { start: legAt[fromIdx + 1].start, end: legAt[toIdx].end };
+  };
+  /* Draws each segment leg by leg (down THEN right, right THEN down, ...),
+     and — when a mark's incoming line is two chained exports (Cyber's C+F,
+     AI's D+E) — runs them one after another in chain order too, each getting
+     a share of the span proportional to its own on-screen length, so the
+     line reads as one continuous stroke growing the whole way, not two boxes
+     wiping independently at the same time. */
+  var revealSeg = function (keys, span) {
+    if (keys.indexOf('A') !== -1 && segs.A && segs.A.node) {
+      var nodeA = segs.A.node;
+      // Start hidden: vertical line at top, horizontal line hidden by right: 92.5%
+      gsap.set(nodeA, { clipPath: 'inset(0% 92.5% 100% 0%)' });
+
+      var d1 = legAt[1] ? (legAt[1].end - legAt[1].start) : (span.end * 0.3);
+      var d2 = Math.max(0.1, span.end - d1);
+
+      // Leg 1: Draws down vertically through the curve smoothly on scroll
+      tl.to(nodeA, {
+        clipPath: 'inset(0% 92.5% 0% 0%)',
+        ease: 'none',
+        duration: d1
+      }, 0);
+
+      // Leg 2: Draws horizontally across to the right towards Strategy smoothly on scroll
+      tl.to(nodeA, {
+        clipPath: 'inset(0% 0% 0% 0%)',
+        ease: 'none',
+        duration: d2
+      }, d1);
+    }
+
+    if (keys.indexOf('B') !== -1 && segs.B && segs.B.node) {
+      var nodeB = segs.B.node;
+      // Start hidden: horizontal line hidden from right (right: 100%), vertical line hidden from bottom (bottom: 81.2%)
+      gsap.set(nodeB, { clipPath: 'inset(0% 100% 81.2% 0%)' });
+
+      var segBIdx = (settleIdx.strategy != null && legAt[settleIdx.strategy + 1]) ? (settleIdx.strategy + 1) : null;
+      var d1B = segBIdx ? (legAt[segBIdx].end - span.start) : ((span.end - span.start) * 0.5);
+      var d2B = Math.max(0.1, span.end - (span.start + d1B));
+
+      // Leg 1: Draws horizontally across to the right bend smoothly on scroll
+      tl.to(nodeB, {
+        clipPath: 'inset(0% 0% 81.2% 0%)',
+        ease: 'none',
+        duration: d1B
+      }, span.start);
+
+      // Leg 2: Draws down vertically through the curve to Risk smoothly on scroll
+      tl.to(nodeB, {
+        clipPath: 'inset(0% 0% 0% 0%)',
+        ease: 'none',
+        duration: d2B
+      }, span.start + d1B);
+    }
+
+    if (keys.indexOf('C') !== -1 && segs.C && segs.C.node) {
+      var nodeC = segs.C.node;
+      var nodeF = (segs.F && segs.F.node) ? segs.F.node : null;
+
+      // Start hidden: C's horizontal hidden from right (100%), vertical hidden from top (76.5%)
+      gsap.set(nodeC, { clipPath: 'inset(76.5% 100% 0% 0%)' });
+      // Start hidden: F must remain completely hidden until C reaches its top exit
+      if (nodeF) {
+        gsap.set(nodeF, { clipPath: 'inset(100% 0% 0% 0%)' });
+      }
+
+      var segCIdx = (settleIdx.risk != null && legAt[settleIdx.risk + 1]) ? (settleIdx.risk + 1) : null;
+      var d1C = segCIdx ? (legAt[segCIdx].end - span.start) : ((span.end - span.start) * 0.45);
+      var remC = Math.max(0.2, span.end - (span.start + d1C));
+
+      // Split the upward journey between C's vertical rise (55%) and F's rise+curve into Cyber (45%)
+      var d2C = nodeF ? (remC * 0.55) : remC;
+      var dF = nodeF ? (remC - d2C) : 0;
+
+      // Leg 1: C draws horizontally across to the right bend smoothly on scroll
+      tl.to(nodeC, {
+        clipPath: 'inset(76.5% 0% 0% 0%)',
+        ease: 'none',
+        duration: d1C
+      }, span.start);
+
+      // Leg 2: C draws vertically UP to its top ending point (connecting to F)
+      tl.to(nodeC, {
+        clipPath: 'inset(0% 0% 0% 0%)',
+        ease: 'none',
+        duration: d2C
+      }, span.start + d1C);
+
+      // Leg 3: Right as C reaches the top, F seamlessly continues drawing UP and curves into Cyber!
+      if (nodeF && dF > 0) {
+        tl.to(nodeF, {
+          clipPath: 'inset(0% 0% 0% 0%)',
+          ease: 'none',
+          duration: dF
+        }, span.start + d1C + d2C);
+      }
+    }
+
+    if (keys.indexOf('D') !== -1 && segs.D && segs.D.node) {
+      var nodeD = segs.D.node;
+      var nodeE = (segs.E && segs.E.node) ? segs.E.node : null;
+
+      // Start hidden: D's horizontal hidden from right (100%)
+      gsap.set(nodeD, { clipPath: 'inset(0% 100% 0% 0%)' });
+      // Start hidden: E must remain completely hidden until D reaches its bottom exit
+      if (nodeE) {
+        gsap.set(nodeE, { clipPath: 'inset(0% 0% 100% 0%)' });
+      }
+
+      var segDIdx = (settleIdx.cyber != null && legAt[settleIdx.cyber + 1]) ? (settleIdx.cyber + 1) : null;
+      var d1D = segDIdx ? (legAt[segDIdx].end - span.start) : ((span.end - span.start) * 0.45);
+      var remDE = Math.max(0.2, span.end - (span.start + d1D));
+
+      // Leg 1: D draws horizontally across to the right bend and turns down smoothly on scroll
+      tl.to(nodeD, {
+        clipPath: 'inset(0% 0% 0% 0%)',
+        ease: 'none',
+        duration: d1D
+      }, span.start);
+
+      // Leg 2: Right as D reaches the bottom exit, E seamlessly continues drawing DOWN and curves into AI!
+      if (nodeE) {
+        tl.to(nodeE, {
+          clipPath: 'inset(0% 0% 0% 0%)',
+          ease: 'none',
+          duration: remDE
+        }, span.start + d1D);
+      }
+    }
+  };
+  var revealMark = function (k, span) {
+    // Reveal mark animation removed to make it static
+  };
+
+  if (settleIdx.strategy != null) {
+    revealSeg(['A'], revealSpan(0, settleIdx.strategy));
+    revealMark('strategy', revealSpan(0, settleIdx.strategy));
+  }
+  if (settleIdx.risk != null) {
+    revealSeg(['B'], revealSpan(settleIdx.strategy, settleIdx.risk));
+    revealMark('risk', revealSpan(settleIdx.strategy, settleIdx.risk));
+  }
+  if (settleIdx.cyber != null) {
+    revealSeg(['C', 'F'], revealSpan(settleIdx.risk, settleIdx.cyber));
+    revealMark('cyber', revealSpan(settleIdx.risk, settleIdx.cyber));
+  }
+  if (settleIdx.ai != null) {
+    revealSeg(['D', 'E'], revealSpan(settleIdx.cyber, settleIdx.ai));
+    revealMark('ai', revealSpan(settleIdx.cyber, settleIdx.ai));
+  }
 
   var st = ScrollTrigger.create({
     trigger: root,
@@ -3745,7 +4112,14 @@ function smrCreateRail() {
     st.kill();
     tl.kill();
     var els = [track];
-    Object.keys(stations).forEach(function (k) { els.push(stations[k]); });
+    Object.keys(stations).forEach(function (k) {
+      els.push(stations[k]);
+      var img = stations[k].querySelector('.smr-logo-img');
+      if (img) els.push(img);
+      els.push.apply(els, copy(k));
+    });
+    if (sTracePath) els.push(sTracePath);
+    if (cTracePath) els.push(cTracePath);
     SMR_SEGS.forEach(function (d) { if (segs[d.key].node) els.push(segs[d.key].node); });
     gsap.set(els, { clearProps: 'all' });
     if (sectionCenter) gsap.set(sectionCenter, { clearProps: 'opacity' });
@@ -3770,6 +4144,7 @@ function initMobileServicesRail() {
     if (teardown) teardown();
     teardown = smrCreateRail();
     lastW = window.innerWidth;
+    ScrollTrigger.sort();
     ScrollTrigger.refresh();
   };
   var waits = [];
@@ -3793,6 +4168,7 @@ function initMobileServicesRail() {
       lastW = window.innerWidth;
       if (teardown) teardown();
       teardown = smrCreateRail();
+      ScrollTrigger.sort();
       ScrollTrigger.refresh();
     }, 200);
   }
@@ -3817,25 +4193,40 @@ function initMobileHeroReveal() {
   var heroSection = document.getElementById('herosectionmobilescreen');
   var leftSvg = document.querySelector('.hero-mobile-left-svg');
   var rightSvg = document.querySelector('.hero-mobile-right-svg');
-  if (!heroSection || !leftSvg || !rightSvg) return;
+  var aboutSvgWrapper = document.querySelector('.aboutus-svg-anim-wrapper');
+  if (!heroSection || !leftSvg || !rightSvg || !aboutSvgWrapper) return;
 
-  gsap.set([leftSvg, rightSvg], { clipPath: 'inset(0 0 100% 0)' });
+  gsap.set(leftSvg, { clipPath: 'inset(0% 0% 74% 0%)' });
+  gsap.set(rightSvg, { clipPath: 'inset(0% 0% 100% 0%)' });
+  gsap.set(aboutSvgWrapper, { clipPath: 'inset(0% 0% 100% 0%)' });
 
   var tl = gsap.timeline({
     scrollTrigger: {
       trigger: heroSection,
       start: 'top top',
-      end: 'bottom top',
+      end: '+=1500',
       scrub: true
     }
   });
-  tl.to(leftSvg, { clipPath: 'inset(0 0 0% 0)', ease: 'none', duration: 1 }, 0)
-    .to(rightSvg, { clipPath: 'inset(0 0 0% 0)', ease: 'none', duration: 1 }, 0.15);
+  tl.to(leftSvg, { clipPath: 'inset(0% 0% 0% 0%)', ease: 'none', duration: 0.08 })
+    .to(rightSvg, { clipPath: 'inset(0% 0% 0% 0%)', ease: 'none', duration: 1 });
+
+  var aboutTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: aboutSvgWrapper,
+      start: 'top 60%',
+      end: 'bottom 20%',
+      scrub: true
+    }
+  });
+  aboutTl.to(aboutSvgWrapper, { clipPath: 'inset(0% 0% 0% 0%)', ease: 'none' });
 
   return function () {
     tl.scrollTrigger && tl.scrollTrigger.kill();
     tl.kill();
-    gsap.set([leftSvg, rightSvg], { clearProps: 'clipPath' });
+    aboutTl.scrollTrigger && aboutTl.scrollTrigger.kill();
+    aboutTl.kill();
+    gsap.set([leftSvg, rightSvg, aboutSvgWrapper], { clearProps: 'clipPath' });
   };
 }
 

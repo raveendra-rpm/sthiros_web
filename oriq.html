@@ -119,22 +119,25 @@
 
         @media (max-width: 768px) {
             .products-hero-section {
-                background-position: left center;
+                background-position: right center;
                 padding-left: 20px;
                 padding-right: 20px;
             }
 
             .products-hero-title {
-                font-size: 45px;
+                font-size: clamp(20px, 8vw, 40px);
+                line-height: 1.15;
+                text-align: left;
             }
 
             .products-hero-subtitle {
-                font-size: 16px;
+                font-size: clamp(12px, 3.5vw, 16px);
+                text-align: left;
+                margin-top: 15px;
             }
 
             #svgherobtm {
-                margin-left: 0;
-                margin-top: -25rem;
+                display: none !important;
             }
         }
 
@@ -161,11 +164,74 @@
 
         @media (max-width: 768px) {
             #productsexploretxt {
-                margin-top: -12rem;
+                margin-top: 40px;
             }
 
             #productsexploretxt p {
-                font-size: 16px;
+                font-size: clamp(14px, 4.5vw, 18px);
+                line-height: 1.5;
+            }
+
+            .middledivsvg,
+            .bottomdivsvg,
+            .telluswhatsvgtop,
+            .telluswhatsvgbtm {
+                display: none !important;
+            }
+
+            .contdivseccompliancecard,
+            .telluswhatssvgtopcont {
+                position: relative !important;
+                top: auto !important;
+                bottom: auto !important;
+                left: auto !important;
+                right: auto !important;
+                margin: 40px auto !important;
+                width: calc(100% - 40px) !important;
+                max-width: calc(100% - 40px) !important;
+                box-sizing: border-box;
+            }
+
+            .telluswhatssvgtopcont {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                gap: 20px;
+                padding: 30px 20px !important;
+            }
+
+            .telluswhatssvgtopcont .tw-heading {
+                font-size: clamp(28px, 8vw, 40px) !important;
+                line-height: 1.2;
+            }
+
+            .telluswhatssvgtopcont .tw-desc {
+                font-size: 14px !important;
+            }
+
+            .telluswhatssvgtopcont .tw-desc br,
+            .telluswhatssvgtopcont .tw-heading br {
+                display: none !important;
+            }
+            .telluswhatssvgtopcont .tw-heading .mob-br {
+                display: none !important;
+            }
+
+            .compliance-feature-card .cf-action-btn-wrap .hero-btn-inner {
+                font-size: clamp(8px, 3vw, 13px) !important;
+                white-space: nowrap !important;
+                padding: 6px 16px !important;
+                display: flex !important;
+                flex-direction: row !important;
+                align-items: center !important;
+                justify-content: center !important;
+                gap: 5px;
+            }
+
+            .telluswhatssvgtopcont .tw-btn-wrap {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                margin-top: 10px;
             }
         }
 
@@ -790,6 +856,85 @@
         body.light-mode .telluswhatssvgtopcont .tw-desc,
         body.light-mode .telluswhatssvgtopcont .tw-btn-wrap .hero-btn-inner {
             color: #000 !important;
+        }
+
+        @media (max-width: 480px) {
+            .products-hero-title {
+                font-size: 10vw !important;
+                white-space: nowrap !important;
+                line-height: 1.15;
+            }
+        }
+        @media (max-width: 425px) {
+            .compliance-feature-card .cf-action-btn-wrap .hero-btn-inner {
+                white-space: normal !important;
+                line-height: 1.2;
+                text-align: center !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                justify-content: center !important;
+                gap: 2px !important;
+            }
+        }
+        .mobile-mid-svg, .mobile-bottom-svg, .mobile-telluswhat-svgbtm, .mob-br {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .telluswhatssvgtopcont {
+                background-image: url('assets/images/productsinsights/btmctaartsec.png') !important;
+            }
+            body.light-mode .telluswhatssvgtopcont {
+                background-image: url('assets/images/productsinsights/btmctaartsecwhite.png') !important;
+            }
+            .mobile-mid-svg, .mobile-bottom-svg {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            .mobile-mid-svg {
+                margin: -160px 0;
+            }
+            .mobile-bottom-svg {
+                margin: -160px 0 -120px 0;
+            }
+            .mobile-telluswhat-svgbtm {
+                display: flex !important;
+                justify-content: flex-end;
+                width: 100%;
+                overflow: hidden;
+                margin-top: -170px;
+                line-height: 0;
+            }
+            .mobile-telluswhat-svgbtm svg {
+                width: 100% !important;
+                max-width: 440px !important;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .telluswhatssvgtopcont {
+                min-height: 520px !important;
+                justify-content: space-between !important;
+            }
+            .telluswhatssvgtopcont .tw-btn-wrap {
+                margin-top: auto !important;
+                justify-content: center !important;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .telluswhatssvgtopcont .tw-heading .mob-br {
+                display: block !important;
+            }
+            .telluswhatssvgtopcont .tw-heading {
+                font-weight: 300 !important;
+                line-height: 1.1 !important;
+                font-size: 38px !important;
+            }
         }
     </style>
 </head>
@@ -1440,10 +1585,50 @@
                     </div>
                     <div class="cf-action-btn-wrap">
                         <a href="contactus.html" class="hero-btn-outer">
-                            <span class="hero-btn-inner" style="font-size: 13px;">TALK TO US ABOUT KELIROS</span>
+                            <span class="hero-btn-inner" style="font-size: 13px;"><span>TALK TO US</span> <span>ABOUT KELIROS</span></span>
                         </a>
                     </div>
                 </div>
+            </div>
+
+            <!-- Mobile mid SVG (hidden on desktop) -->
+            <div class="mobile-mid-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="58" height="272" viewBox="0 0 74 272" fill="none">
+                    <path d="M74 271.993L49.3334 271.993L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 271.993Z"
+                        fill="url(#paint0_linear_2760_2788)" />
+                    <path d="M37.0139 272L24.6667 272L24.6666 -2.15642e-06L37.0139 -3.23586e-06L37.0139 272Z"
+                        fill="url(#paint1_linear_2760_2788)" />
+                    <path d="M9.80545 271.99L9.80536 -8.57214e-07L15.979 -1.39693e-06L15.9791 271.99L9.80545 271.99Z"
+                        fill="url(#paint2_linear_2760_2788)" />
+                    <path d="M6.0988e-05 271.993L-2.3779e-05 0L4.10646 -3.59001e-07L4.10655 271.993L6.0988e-05 271.993Z"
+                        fill="url(#paint3_linear_2760_2788)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_2760_2788" x1="37" y1="-3.23464e-06" x2="37" y2="272"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="0.5" stop-color="#EC2D26" />
+                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_2760_2788" x1="37" y1="-3.23464e-06" x2="37" y2="272"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="0.5" stop-color="#EC2D26" />
+                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_2760_2788" x1="37" y1="-3.23464e-06" x2="37" y2="272"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="0.5" stop-color="#EC2D26" />
+                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint3_linear_2760_2788" x1="37" y1="-3.23464e-06" x2="37" y2="272"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="0.5" stop-color="#EC2D26" />
+                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
             </div>
 
             <!-- Card 2: Niyamos -->
@@ -1504,10 +1689,50 @@
                     </div>
                     <div class="cf-action-btn-wrap">
                         <a href="contactus.html" class="hero-btn-outer">
-                            <span class="hero-btn-inner" style="font-size: 13px;">TALK TO US ABOUT NIYAMOS</span>
+                            <span class="hero-btn-inner" style="font-size: 13px;"><span>TALK TO US</span> <span>ABOUT NIYAMOS</span></span>
                         </a>
                     </div>
                 </div>
+            </div>
+
+            <!-- Mobile bottom SVG (hidden on desktop) -->
+            <div class="mobile-bottom-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="58" height="272" viewBox="0 0 74 272" fill="none">
+                    <path d="M74 271.993L49.3334 271.993L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 271.993Z"
+                        fill="url(#paint0_linear_2760_2788)" />
+                    <path d="M37.0139 272L24.6667 272L24.6666 -2.15642e-06L37.0139 -3.23586e-06L37.0139 272Z"
+                        fill="url(#paint1_linear_2760_2788)" />
+                    <path d="M9.80545 271.99L9.80536 -8.57214e-07L15.979 -1.39693e-06L15.9791 271.99L9.80545 271.99Z"
+                        fill="url(#paint2_linear_2760_2788)" />
+                    <path d="M6.0988e-05 271.993L-2.3779e-05 0L4.10646 -3.59001e-07L4.10655 271.993L6.0988e-05 271.993Z"
+                        fill="url(#paint3_linear_2760_2788)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_2760_2788" x1="37" y1="-3.23464e-06" x2="37" y2="272"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="0.5" stop-color="#EC2D26" />
+                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_2760_2788" x1="37" y1="-3.23464e-06" x2="37" y2="272"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="0.5" stop-color="#EC2D26" />
+                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_2760_2788" x1="37" y1="-3.23464e-06" x2="37" y2="272"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="0.5" stop-color="#EC2D26" />
+                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint3_linear_2760_2788" x1="37" y1="-3.23464e-06" x2="37" y2="272"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EC2D26" stop-opacity="0" />
+                            <stop offset="0.5" stop-color="#EC2D26" />
+                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
             </div>
         </div>
     </section>
@@ -1558,7 +1783,7 @@
         </div>
         <div class="telluswhatssvgtopcont">
             <div class="tw-content">
-                <h2 class="tw-heading">Tell us what's<br>still being done<br>by hand.</h2>
+                <h2 class="tw-heading">Tell us<br class="mob-br"> what's<br class="desk-br"> still<br class="mob-br"> being done<br class="desk-br"><br class="mob-br"> by hand.</h2>
                 <p class="tw-desc">Most Oriq products started as exactly that kind of complaint. Tell us<br>yours, and
                     we'll tell you honestly whether it's a project or a product.</p>
             </div>
@@ -1568,6 +1793,25 @@
                 </a>
             </div>
         </div>
+
+        <!-- Mobile SVG below Tell us what's still being done by hand (hidden on desktop) -->
+        <div class="mobile-telluswhat-svgbtm">
+            <svg width="440" height="313" viewBox="0 0 440 313" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M440.241 211.114L440.248 2.9805e-05L460.143 3.00423e-05L460.136 210.64L460.136 210.643C460.136 210.914 460.136 211.25 460.113 211.497L460.113 212.265C460.068 213.28 460.113 214.318 460 215.334C459.752 219.418 459.076 223.48 458.016 227.429C455.895 235.327 452.173 242.797 447.121 249.251C442.068 255.705 435.73 261.165 428.602 265.182C421.452 269.199 413.534 271.772 405.392 272.674C403.361 272.9 401.309 273.058 399.256 273.058L398.489 273.08L-966 273.08L-966 253.155L399.008 253.155C400.407 253.155 401.805 253.064 403.181 252.906C408.707 252.297 414.031 250.582 418.858 247.851C423.685 245.144 427.993 241.443 431.422 237.042C434.85 232.642 437.377 227.61 438.798 222.284C439.519 219.621 439.97 216.868 440.151 214.092C440.241 213.393 440.173 212.693 440.241 211.994L440.241 211.475L440.241 211.114Z"
+                    fill="#EC2D26" />
+                <path
+                    d="M470.106 208.88L470.113 3.01612e-05L480.105 3.02803e-05L480.098 210.64L480.076 211.565L480.076 212.581C480.031 213.935 480.053 215.289 479.918 216.643C479.579 222.058 478.7 227.429 477.279 232.665C474.459 243.158 469.497 253.042 462.843 261.572C456.166 270.124 447.82 277.323 438.369 282.626C428.918 287.929 418.384 291.336 407.625 292.532C404.94 292.826 402.234 293.006 399.527 293.029L398.512 293.051L-966 293.052L-966 283.077L392.241 283.077C397.001 283.055 401.76 283.168 406.497 282.603C415.948 281.565 425.196 278.587 433.474 273.915C441.775 269.267 449.128 262.948 454.97 255.434C460.835 247.942 465.189 239.254 467.647 230.069C468.865 225.466 469.655 220.75 469.948 216.011C470.106 213.643 470.106 211.252 470.106 208.884L470.106 208.88Z"
+                    fill="#EC2D26" />
+                <path
+                    d="M486.978 212.716L487 211.61L487.008 3.03626e-05L491.97 3.04218e-05L491.963 210.753L491.94 211.7L491.94 212.851C491.895 214.386 491.895 215.943 491.76 217.477C491.376 223.661 490.361 229.821 488.737 235.824C485.512 247.851 479.828 259.18 472.204 268.951C464.58 278.722 455.016 286.959 444.189 293.051C433.362 299.144 421.271 303.048 408.933 304.425C405.843 304.763 402.753 304.944 399.662 304.989L398.512 305.011L-966 305.012L-966 300.024L397.61 300.024L398.512 300.002L399.617 300.002C402.55 299.979 405.482 299.776 408.392 299.46C420.076 298.151 431.512 294.473 441.752 288.696C451.993 282.919 461.061 275.111 468.279 265.859C475.497 256.584 480.888 245.866 483.933 234.492C485.467 228.806 486.437 222.961 486.797 217.116C486.955 215.65 486.933 214.183 486.978 212.716Z"
+                    fill="#EC2D26" />
+                <path
+                    d="M496.677 211.633L496.684 3.0478e-05L500 3.05176e-05L499.993 210.662L499.97 211.633L499.97 212.896C499.903 214.566 499.925 216.259 499.767 217.929C499.361 224.631 498.256 231.333 496.497 237.855C493 250.898 486.82 263.219 478.542 273.825C470.286 284.454 459.888 293.39 448.136 300.002C436.384 306.614 423.256 310.856 409.858 312.345C406.497 312.729 403.158 312.932 399.798 312.977L398.534 313L-966 313L-966 309.683L397.632 309.683L398.557 309.66L399.775 309.66C403.001 309.615 406.271 309.412 409.497 309.051C422.444 307.607 435.143 303.522 446.512 297.113C457.88 290.727 467.918 282.062 475.925 271.794C483.933 261.527 489.91 249.634 493.294 236.997C495.008 230.701 496.068 224.225 496.474 217.726C496.61 216.101 496.61 214.476 496.655 212.851L496.677 211.633Z"
+                    fill="#EC2D26" />
+            </svg>
+        </div>
+
         <div class="telluswhatsvgbtm">
             <svg xmlns="http://www.w3.org/2000/svg" width="1490" height="310" viewBox="0 0 1863 388" fill="none">
                 <path
