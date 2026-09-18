@@ -1082,8 +1082,19 @@
             background-color: transparent;
         }
         
+        body.light-mode #dropdown-type .repo-filter-menu,
+        body.light-mode #dropdown-service .repo-filter-menu,
+        body.light-mode #dropdown-industry .repo-filter-menu,
         body.light-mode .repo-filter-menu {
-            background-color: #fff;
+            background-color: #fff !important;
+        }
+
+        body.light-mode .repo-filter-item {
+            color: #000 !important;
+        }
+
+        body.light-mode .repo-filter-item:hover {
+            color: #EF4623 !important;
         }
         
         body.light-mode .repo-filter-dropdown {
@@ -1183,10 +1194,24 @@
                 top: 80px !important;
             }
         }
+        .repo-filter-dropdown.active {
+            z-index: 50;
+        }
+
         @media (max-width: 768px) {
+            .repo-filter-dropdown.active {
+                z-index: 50;
+            }
+            #dropdown-type .repo-filter-menu,
             #dropdown-service .repo-filter-menu,
             #dropdown-industry .repo-filter-menu {
                 background-color: #000;
+            }
+            body.light-mode #dropdown-type .repo-filter-menu,
+            body.light-mode #dropdown-service .repo-filter-menu,
+            body.light-mode #dropdown-industry .repo-filter-menu,
+            body.light-mode .repo-filter-menu {
+                background-color: #fff !important;
             }
             .repo-work .repo-section-title,
             .repo-insight .repo-section-title,

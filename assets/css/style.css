@@ -6391,6 +6391,7 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
     position: relative;
     padding-top: 80px;
     padding-bottom: 150px;
+    overflow-x: clip;
   }
 
   .hero-mobile-container {
@@ -6421,12 +6422,45 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
   }
 
   .hero-mobile-img {
-    width: 85%;
-    max-width: 320px;
-    height: auto;
+    display: none !important;
+  }
+
+  .hero-mobile-hand-wrap {
     position: relative;
     z-index: 2;
-    top: -25px;
+    width: 165vw;
+    max-width: 680px;
+    min-width: 580px;
+    flex-shrink: 0;
+    margin-left: -180px;
+    margin-top: -30px;
+    pointer-events: none;
+    display: block;
+    mix-blend-mode: screen;
+  }
+
+  .hero-mobile-hand {
+    width: 100%;
+    height: auto;
+    display: block;
+    mix-blend-mode: screen;
+    opacity: 0.95;
+    pointer-events: none;
+  }
+
+  .hero-mobile-hand-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    mix-blend-mode: screen;
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0.95;
+    transform: scale(0.55) translateY(-14%);
+    transform-origin: 75% 35%;
   }
 
   .hero-mobile-left-svg {
@@ -6466,7 +6500,7 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
   }
 
   .hero-mobile-bottom {
-    margin-top: -420px;
+    margin-top: -85px;
     text-align: left;
     position: relative;
     z-index: 5;
@@ -8165,6 +8199,16 @@ body.light-mode .footer-menu li {
   /* Keep hero buttons styled properly */
   body.light-mode #herosectionmobilescreen .hero-btn-inner {
     color: #ffffff !important;
+  }
+
+  /* ── WHITELIST: Products hero mobile section stays white ── */
+  body.light-mode .products-hero-title,
+  body.light-mode .products-hero-subtitle {
+    color: #ffffff !important;
+  }
+
+  body.light-mode .products-hero-title span {
+    color: #EC2D26 !important;
   }
 
   /* ── WHITELIST: index.html header ── */

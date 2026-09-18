@@ -2316,16 +2316,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ═══════════════ HERO VIDEO SMOOTH LOOP FIX ═══════════════
-  const heroVideo = document.querySelector('.hero-hand-video');
-  if (heroVideo) {
-    heroVideo.addEventListener('timeupdate', () => {
+  const heroVideos = document.querySelectorAll('.hero-hand-video');
+  heroVideos.forEach((heroVid) => {
+    heroVid.addEventListener('timeupdate', () => {
       // Seek back to start slightly before the actual end to avoid browser stutter
-      if (heroVideo.duration && heroVideo.currentTime >= heroVideo.duration - 0.08) {
-        heroVideo.currentTime = 0;
-        heroVideo.play();
+      if (heroVid.duration && heroVid.currentTime >= heroVid.duration - 0.08) {
+        heroVid.currentTime = 0;
+        heroVid.play().catch(() => {});
       }
     });
-  }
+  });
 });
 
 // ═══════════════ OUR WORK SVG SCROLL ANIMATION ═══════════════
@@ -3800,17 +3800,17 @@ function smrCreateRail() {
   var cTracePath = document.getElementById('m-c-trace-path');
   if (sTracePath) {
     var sLen = 1050; /* hardcoded: getTotalLength() inside <mask> is unreliable — same fix desktop's #s-trace-path uses */
-    // gsap.set(sTracePath, { strokeDasharray: sLen + 10, strokeDashoffset: sLen + 10 });
+    gsap.set(sTracePath, { strokeDasharray: sLen + 10, strokeDashoffset: sLen + 10 });
   }
   if (cTracePath) {
-    var cLen = cTracePath.getTotalLength();
-    // gsap.set(cTracePath, { strokeDasharray: (cLen + 10) + ' ' + (cLen + 2000), strokeDashoffset: cLen + 10 });
+    var cLen = (cTracePath.getTotalLength && cTracePath.getTotalLength()) || 1415;
+    gsap.set(cTracePath, { strokeDasharray: (cLen + 10) + ' ' + (cLen + 2000), strokeDashoffset: cLen + 10 });
   }
   Object.keys(stations).forEach(function (k) {
     gsap.set(stations[k], { opacity: 1 });
     var img = stations[k].querySelector('.smr-logo-img');
-    // if (img) gsap.set(img, { clipPath: 'inset(0 0 100% 0)', opacity: 0 });
-    // gsap.set(copy(k), { opacity: 0, y: 40 });
+    if (img) gsap.set(img, { clipPath: 'inset(0% 0% 100% 0%)', opacity: 0 });
+    gsap.set(copy(k), { opacity: 1, y: 0 });
   });
 
   /* ── the ride: the camera runs along the rail, settling on each mark ──
@@ -4072,7 +4072,37 @@ function smrCreateRail() {
     }
   };
   var revealMark = function (k, span) {
-    // Reveal mark animation removed to make it static
+    var idx = settleIdx[k];
+    if (idx == null || !legAt[idx]) return;
+    var arrive = legAt[idx].end;
+    var hold = (route[idx] && route[idx].hold) ? route[idx].hold : 0.9;
+    var dur = Math.min(0.5, hold * 0.7);
+
+    if (k === 'strategy' && sTracePath) {
+      tl.to(sTracePath, {
+        strokeDashoffset: 0,
+        ease: 'none',
+        duration: dur
+      }, arrive);
+    } else if (k === 'risk') {
+      var riskImg = stations.risk ? stations.risk.querySelector('.smr-logo-img') : null;
+      if (riskImg) {
+        tl.to(riskImg, { opacity: 1, duration: 0.01 }, arrive)
+          .to(riskImg, { clipPath: 'inset(0% 0% 0% 0%)', ease: 'none', duration: dur }, arrive);
+      }
+    } else if (k === 'cyber' && cTracePath) {
+      tl.to(cTracePath, {
+        strokeDashoffset: 0,
+        ease: 'none',
+        duration: dur
+      }, arrive);
+    } else if (k === 'ai') {
+      var aiImg = stations.ai ? stations.ai.querySelector('.smr-logo-img') : null;
+      if (aiImg) {
+        tl.to(aiImg, { opacity: 1, duration: 0.01 }, arrive)
+          .to(aiImg, { clipPath: 'inset(0% 0% 0% 0%)', ease: 'none', duration: dur }, arrive);
+      }
+    }
   };
 
   if (settleIdx.strategy != null) {
