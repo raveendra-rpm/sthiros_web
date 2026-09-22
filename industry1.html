@@ -555,7 +555,7 @@
         }
 
         .problem-desc {
-            display: none;
+            display: block;
             color: var(--WHITE, #FFF);
             font-family: Quicksand, sans-serif;
             font-size: 16px;
@@ -1722,7 +1722,7 @@
             }
 
             .problem-desc {
-                display: none;
+                display: block;
             color: var(--WHITE, #FFF);
             font-family: Quicksand, sans-serif;
             font-size: 16px;
@@ -1900,7 +1900,7 @@
             }
 
             .problem-item:not(.active) .problem-desc {
-                display: none !important;
+                display: block !important;
             }
 
             .problem-item.active .problem-desc {
@@ -2445,6 +2445,216 @@
             }
         }
 
+/* --- Redesign Desktop Layout for Who Are You Problems Section --- */
+        @media (min-width: 769px) {
+            .problem-header {
+                display: none !important;
+            }
+
+            .problem-item {
+                flex-direction: column !important;
+                gap: 0 !important;
+                border-bottom: 1px solid rgba(236, 45, 38, 0.4) !important;
+                background-color: transparent !important;
+                position: relative;
+            }
+            .problem-item.active {
+                border-bottom: none !important;
+                padding-bottom: 20px !important;
+            }
+
+            .problem-left {
+                width: 100% !important;
+                min-width: 0 !important;
+                padding: 30px 0 !important;
+                border-bottom: 1px solid #EC2D26 !important;
+                display: flex !important;
+                justify-content: space-between !important;
+                align-items: flex-start !important;
+            }
+
+            .problem-left-content::before {
+                content: "Problem";
+                display: block;
+                color: #EC2D26;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                text-transform: capitalize;
+            }
+
+            .problem-item:not(.active) .problem-right {
+                display: none !important;
+            }
+
+            .problem-item.active .problem-right {
+                display: block !important;
+                width: 100% !important;
+                border-bottom: none !important;
+                padding: 15px 0 170px 0 !important;
+            }
+
+            .problem-item:not(.active) .problem-dropdown-content {
+                display: none !important;
+            }
+
+            .problem-item.active .problem-dropdown-content {
+                display: flex !important;
+                flex-direction: row !important;
+                flex-wrap: wrap !important;
+                gap: 30px !important;
+                position: relative !important;
+            }
+
+            .problem-dropdown-content::before {
+                content: "Solution";
+                display: block;
+                color: #EC2D26;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 5px;
+                width: 100%;
+                text-transform: capitalize;
+            }
+
+            .solution-main {
+                flex: 1 1 350px !important;
+                border: 1px solid #EC2D26 !important;
+                border-radius: 12px !important;
+                padding: 30px !important;
+                margin-right: 0 !important;
+                background: #000;
+            }
+            
+            .solution-main h3 {
+                margin-top: 0 !important;
+                margin-bottom: 15px !important;
+            }
+
+            .solution-sidebar {
+                flex: 2 1 600px !important;
+                border: 1px solid #EC2D26 !important;
+                border-radius: 12px !important;
+                padding: 30px !important;
+                display: flex !important;
+                flex-direction: row !important;
+                align-items: center !important;
+                background: #000;
+            }
+
+            .service-item {
+                flex: 1 !important;
+                border: none !important;
+                pointer-events: none !important;
+            }
+            
+            .service-item:not(:last-child) {
+                border-right: 1px solid rgba(255, 255, 255, 0.3) !important;
+                padding-right: 30px !important;
+            }
+            
+            .service-item:not(:first-child) {
+                padding-left: 30px !important;
+            }
+
+            .service-header {
+                padding: 0 0 20px 0 !important;
+                border-bottom: none !important;
+            }
+            .service-title {
+                font-size: 20px !important;
+                font-weight: 600 !important;
+            }
+            .service-arrow {
+                display: none !important;
+            }
+            .service-list {
+                display: block !important;
+                padding-left: 15px !important;
+            }
+            .service-list li {
+                font-size: 16px !important;
+                color: #ccc !important;
+                margin-bottom: 15px !important;
+                line-height: 1.5 !important;
+            }
+            .service-list li:last-child {
+                margin-bottom: 0 !important;
+            }
+            .service-list li::before {
+                color: #EC2D26 !important;
+            }
+
+            .fix-btn {
+                position: absolute !important;
+                bottom: -115px !important;
+                left: 0 !important;
+                margin: 0 !important;
+                background: #000 !important;
+                border: 4px solid #EF4623 !important;
+                color: #FFF !important;
+                padding: 18px 80px !important;
+                border-radius: 40px !important;
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 16px !important;
+                font-weight: 400 !important;
+                letter-spacing: 3px !important;
+                text-transform: uppercase !important;
+                cursor: pointer;
+                z-index: 10;
+                pointer-events: auto !important;
+            }
+
+            .fix-btn::before {
+                content: '' !important;
+                position: absolute !important;
+                top: -10px !important;
+                left: -10px !important;
+                right: -10px !important;
+                bottom: -10px !important;
+                border: 1px solid #EF4623 !important;
+                border-radius: 50px !important;
+                pointer-events: none !important;
+            }
+
+            .fix-btn:hover {
+                background: #EF4623 !important;
+                color: #fff !important;
+            }
+
+            .problem-dropdown-content::after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: #EC2D26;
+                position: absolute;
+                bottom: -135px;
+                left: 0;
+                z-index: 1;
+            }
+        }
+
+
+        /* Smooth reveal animation for dropdowns */
+        @keyframes smoothReveal {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .problem-item.active .problem-dropdown-content,
+        .problem-item.active .problem-right {
+            animation: smoothReveal 0.4s ease-out forwards !important;
+        }
+
 </style>
 </head>
 
@@ -2960,7 +3170,7 @@ We’ll show you the right problems. -->
                                     economics from CAC through to LTV, renegotiate costs by SKU and channel, and lay out
                                     a contribution waterfall clear enough that you can finally see which products and
                                     cohorts pay for themselves and which have been living off the others.</p>
-                                <button class="fix-btn">Fix my margins ↗</button>
+                                <button class="fix-btn">Fix my margins</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3027,7 +3237,7 @@ We’ll show you the right problems. -->
                                     channels, a retail P&L that makes sense, the data bridge that keeps offline and your
                                     digital stack talking in real time, and the governance to run both without one
                                     quietly eating the other's margin.</p>
-                                <button class="fix-btn">Design my offline model ↗</button>
+                                <button class="fix-btn">Design my offline model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3094,7 +3304,7 @@ We’ll show you the right problems. -->
                                     exit-readiness programme: financial cleanup, an honest audit of the operating model,
                                     brand documentation, the diligence pack, and positioning aimed at the buyers who are
                                     actually shopping right now, not the ones from last year's headlines.</p>
-                                <button class="fix-btn">Start exit prep ↗</button>
+                                <button class="fix-btn">Start exit prep</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3161,7 +3371,7 @@ We’ll show you the right problems. -->
                                     the performance system — goals, dashboards, escalation paths — that makes
                                     accountability something the org holds rather than something you personally carry
                                     around all day.</p>
-                                <button class="fix-btn">Build the org ↗</button>
+                                <button class="fix-btn">Build the org</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3229,7 +3439,7 @@ We’ll show you the right problems. -->
                                     it: churn prediction, LTV scoring, the right nudge to the right customer at a moment
                                     they're actually receptive. You end up with a system that keeps working, instead of
                                     a campaign you keep relaunching.</p>
-                                <button class="fix-btn">Fix my retention ↗</button>
+                                <button class="fix-btn">Fix my retention</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3296,7 +3506,7 @@ We’ll show you the right problems. -->
                                     and build an intelligence layer that answers the 'so what do I do now' question
                                     rather than just reporting yesterday. What you get is one command centre the
                                     founding team can open with their morning coffee.</p>
-                                <button class="fix-btn">Build my intelligence layer ↗</button>
+                                <button class="fix-btn">Build my intelligence layer</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3373,7 +3583,7 @@ We’ll show you the right problems. -->
                                     properly — footfall, conversion, basket trends, catchment mapping — until the real
                                     cause is visible, then design the format refresh and commercial fix that gets growth
                                     moving again without a full and expensive refit.</p>
-                                <button class="fix-btn">Diagnose my same-store growth ↗</button>
+                                <button class="fix-btn">Diagnose my same-store growth</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3441,7 +3651,7 @@ We’ll show you the right problems. -->
                                     store-cluster assortment, then put an AI replenishment engine underneath that pulls
                                     both problems down at the same time, which is meaningfully harder than fixing either
                                     one on its own.</p>
-                                <button class="fix-btn">Fix my inventory planning ↗</button>
+                                <button class="fix-btn">Fix my inventory planning</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3509,7 +3719,7 @@ We’ll show you the right problems. -->
                                     plus the intelligence on top telling you which customers are worth investing in,
                                     which are quietly leaving, and where each one actually spends.
                                 </p>
-                                <button class="fix-btn">Build my unified customer view ↗</button>
+                                <button class="fix-btn">Build my unified customer view</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3576,7 +3786,7 @@ We’ll show you the right problems. -->
                                     build the real-time dashboard that hands your ops and commercial teams live numbers,
                                     so they're responding to what's happening this week while there's still something
                                     they can do about it.</p>
-                                <button class="fix-btn">Build my real-time store P&L ↗</button>
+                                <button class="fix-btn">Build my real-time store P&L</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3645,7 +3855,7 @@ We’ll show you the right problems. -->
                                     past a handful of stores. We rebuild it: roles, onboarding, training, performance
                                     management, and incentives that make the good behaviour repeatable rather than
                                     lucky.</p>
-                                <button class="fix-btn">Fix my frontline ops ↗</button>
+                                <button class="fix-btn">Fix my frontline ops</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3715,7 +3925,7 @@ We’ll show you the right problems. -->
                                     the AI that personalises the rewards in real time, so the programme nudges the
                                     behaviour you want instead of subsidising the behaviour you'd have got anyway.
                                 </p>
-                                <button class="fix-btn">Redesign my loyalty programme ↗</button>
+                                <button class="fix-btn">Redesign my loyalty programme</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3793,7 +4003,7 @@ We’ll show you the right problems. -->
                                     channel war with the modern trade network that still moves most of your volume. We
                                     design the whole architecture: positioning, channel strategy, product tiering, and a
                                     commercial model that keeps both sides fed.</p>
-                                <button class="fix-btn">Build my D2C response strategy ↗</button>
+                                <button class="fix-btn">Build my D2C response strategy</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3861,7 +4071,7 @@ We’ll show you the right problems. -->
                                     and digital marketing that can acquire and keep customers without setting money on
                                     fire. We build that capability end to end, including the operating model and the
                                     tools your team needs to run it after we've gone.</p>
-                                <button class="fix-btn">Build my digital commerce capability ↗</button>
+                                <button class="fix-btn">Build my digital commerce capability</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3932,7 +4142,7 @@ We’ll show you the right problems. -->
                                     and an integration model that plugs the brand into your distribution scale without
                                     sanding off the identity you paid for.
                                 </p>
-                                <button class="fix-btn">Structure my D2C acquisition ↗</button>
+                                <button class="fix-btn">Structure my D2C acquisition</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4000,7 +4210,7 @@ We’ll show you the right problems. -->
                                     measurement framework and the analytics under it so you can finally tell which spend
                                     is genuinely driving sell-out and which is just becoming extra margin for the
                                     retailer.</p>
-                                <button class="fix-btn">Measure my trade marketing ROI ↗</button>
+                                <button class="fix-btn">Measure my trade marketing ROI</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4070,7 +4280,7 @@ We’ll show you the right problems. -->
                                     model around the signals that matter — sell-out data, promo calendars, seasonality,
                                     the odd external factor — and put an AI engine behind it that gets a little sharper
                                     every cycle it runs.</p>
-                                <button class="fix-btn">Improve my demand forecasting ↗</button>
+                                <button class="fix-btn">Improve my demand forecasting</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4139,7 +4349,7 @@ We’ll show you the right problems. -->
                                     mechanics, and the infrastructure underneath that gives you a consumer intelligence
                                     capability you actually keep, whatever the platforms decide next quarter.
                                 </p>
-                                <button class="fix-btn">Build my consumer data capability ↗</button>
+                                <button class="fix-btn">Build my consumer data capability</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4219,7 +4429,7 @@ We’ll show you the right problems. -->
                                     by store, find the lever that actually moves your particular P&L — AOV, delivery
                                     cost, assortment margin or frequency — and design the intervention that gets each
                                     store to break-even density sooner.</p>
-                                <button class="fix-btn">Fix my dark store unit economics ↗</button>
+                                <button class="fix-btn">Fix my dark store unit economics</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4286,7 +4496,7 @@ We’ll show you the right problems. -->
                                     near-standard assortment with a few local tweaks and hope. We build the hyperlocal
                                     demand intelligence that sets assortment at the SKU level by store, time of day and
                                     day of week, which brings down waste and fast-mover stockouts at the same time.</p>
-                                <button class="fix-btn">Build my inventory intelligence ↗</button>
+                                <button class="fix-btn">Build my inventory intelligence</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4355,7 +4565,7 @@ We’ll show you the right problems. -->
                                     build the site scoring model that turns the next capex round into a set of
                                     data-backed calls rather than a collection of confident hunches.
                                 </p>
-                                <button class="fix-btn">Build my site selection model ↗</button>
+                                <button class="fix-btn">Build my site selection model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4424,7 +4634,7 @@ We’ll show you the right problems. -->
                                     trouble is it lives in a handful of heads and nobody's written it down. We find the
                                     real performance drivers, turn them into an operating playbook, and build the
                                     performance system that drags the rest of the estate up towards the top.</p>
-                                <button class="fix-btn">Fix my ops consistency ↗</button>
+                                <button class="fix-btn">Fix my ops consistency</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4493,7 +4703,7 @@ We’ll show you the right problems. -->
                                     category trends emerging in your data months before they surface in anyone's
                                     national numbers. We build the layer that reads all of it, so the advantage sitting
                                     in your order history stops going to waste.</p>
-                                <button class="fix-btn">Build my demand intelligence ↗</button>
+                                <button class="fix-btn">Build my demand intelligence</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4563,7 +4773,7 @@ We’ll show you the right problems. -->
                                     investable. We write that playbook with you, so city three onwards runs on a method
                                     rather than nerve.
                                 </p>
-                                <button class="fix-btn">Build my expansion playbook ↗</button>
+                                <button class="fix-btn">Build my expansion playbook</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4641,7 +4851,7 @@ We’ll show you the right problems. -->
                                     marketplace P&L SKU by SKU, separate the products that make money from the ones that
                                     lose it, and rework the commercial model — pricing, advertising, catalogue mix —
                                     until contribution is comfortably back in positive territory.</p>
-                                <button class="fix-btn">Recover my marketplace margin ↗</button>
+                                <button class="fix-btn">Recover my marketplace margin</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4709,7 +4919,7 @@ We’ll show you the right problems. -->
                                     sequence the ONDC opportunity, and how to stand up a D2C channel that can acquire
                                     customers profitably on its own. The aim is a channel mix where no single platform
                                     holds the whole business hostage.</p>
-                                <button class="fix-btn">Diversify my channel mix ↗</button>
+                                <button class="fix-btn">Diversify my channel mix</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4778,7 +4988,7 @@ We’ll show you the right problems. -->
                                     something the listing quietly implied — and fix it at the source, in the product and
                                     operations, rather than papering over it with faster customer service replies.
                                 </p>
-                                <button class="fix-btn">Fix my ratings and returns ↗</button>
+                                <button class="fix-btn">Fix my ratings and returns</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4847,7 +5057,7 @@ We’ll show you the right problems. -->
                                     put an AI optimisation layer over it that adjusts bids, keywords and budgets off
                                     live performance, instead of whatever last Tuesday's manual review happened to
                                     conclude.</p>
-                                <button class="fix-btn">Optimise my marketplace advertising ↗</button>
+                                <button class="fix-btn">Optimise my marketplace advertising</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4917,7 +5127,7 @@ We’ll show you the right problems. -->
                                     We rebuild the replenishment model around real velocity and sensible lead-time
                                     buffers, and give you an inventory-health dashboard that keeps the whole catalogue
                                     sitting in that narrow, profitable band.</p>
-                                <button class="fix-btn">Fix my FBA inventory planning ↗</button>
+                                <button class="fix-btn">Fix my FBA inventory planning</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4987,7 +5197,7 @@ We’ll show you the right problems. -->
                                     buyers profitable, and a tech stack you can run alongside the marketplace business
                                     without doubling your headaches.
                                 </p>
-                                <button class="fix-btn">Build my D2C channel ↗</button>
+                                <button class="fix-btn">Build my D2C channel</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5066,7 +5276,7 @@ We’ll show you the right problems. -->
                                     stops making sense. We design the portfolio financial architecture and build the
                                     layer that gives you one live view across every brand: contribution margin, CAC
                                     trends, LTV, burn.</p>
-                                <button class="fix-btn">Build my portfolio intelligence ↗</button>
+                                <button class="fix-btn">Build my portfolio intelligence</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5136,7 +5346,7 @@ We’ll show you the right problems. -->
                                     sharper question — what genuinely benefits from being shared versus what each brand
                                     should keep control of — and build the operating model that turns the synergies from
                                     a spreadsheet assumption into an actual line item.</p>
-                                <button class="fix-btn">Fix my shared services model ↗</button>
+                                <button class="fix-btn">Fix my shared services model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5205,7 +5415,7 @@ We’ll show you the right problems. -->
                                     channel quality, operating maturity and strategic fit, so every target lands on the
                                     same set of scales and you can trust the comparison.
                                 </p>
-                                <button class="fix-btn">Build my acquisition framework ↗</button>
+                                <button class="fix-btn">Build my acquisition framework</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5273,7 +5483,7 @@ We’ll show you the right problems. -->
                                     the cheap moment to fix it has usually passed. We build the AI intelligence layer
                                     that aggregates cohorts, CAC, LTV and channel health live across every brand, so a
                                     problem reaches you while it's still a nudge rather than a headline.</p>
-                                <button class="fix-btn">Build my portfolio intelligence AI ↗</button>
+                                <button class="fix-btn">Build my portfolio intelligence AI</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5343,7 +5553,7 @@ We’ll show you the right problems. -->
                                     design the transition so it doesn't — a governance structure that gives founders
                                     real autonomy while the useful infrastructure gets integrated, and a retention setup
                                     that makes staying to the end of the earnout feel worth it.</p>
-                                <button class="fix-btn">Design my transition model ↗</button>
+                                <button class="fix-btn">Design my transition model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5413,7 +5623,7 @@ We’ll show you the right problems. -->
                                     brand, build the preparation timeline, and do the positioning work that gets each
                                     one to its highest defensible number.
                                 </p>
-                                <button class="fix-btn">Define my portfolio exit strategy ↗</button>
+                                <button class="fix-btn">Define my portfolio exit strategy</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">

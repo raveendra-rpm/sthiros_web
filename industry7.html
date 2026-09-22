@@ -555,7 +555,7 @@
         }
 
         .problem-desc {
-            display: none;
+            display: block;
             color: var(--WHITE, #FFF);
             font-family: Quicksand, sans-serif;
             font-size: 16px;
@@ -1722,7 +1722,7 @@
             }
 
             .problem-desc {
-                display: none;
+                display: block;
             color: var(--WHITE, #FFF);
             font-family: Quicksand, sans-serif;
             font-size: 16px;
@@ -1900,7 +1900,7 @@
             }
 
             .problem-item:not(.active) .problem-desc {
-                display: none !important;
+                display: block !important;
             }
 
             .problem-item.active .problem-desc {
@@ -2462,6 +2462,216 @@
             }
         }
 
+/* --- Redesign Desktop Layout for Who Are You Problems Section --- */
+        @media (min-width: 769px) {
+            .problem-header {
+                display: none !important;
+            }
+
+            .problem-item {
+                flex-direction: column !important;
+                gap: 0 !important;
+                border-bottom: 1px solid rgba(236, 45, 38, 0.4) !important;
+                background-color: transparent !important;
+                position: relative;
+            }
+            .problem-item.active {
+                border-bottom: none !important;
+                padding-bottom: 20px !important;
+            }
+
+            .problem-left {
+                width: 100% !important;
+                min-width: 0 !important;
+                padding: 30px 0 !important;
+                border-bottom: 1px solid #EC2D26 !important;
+                display: flex !important;
+                justify-content: space-between !important;
+                align-items: flex-start !important;
+            }
+
+            .problem-left-content::before {
+                content: "Problem";
+                display: block;
+                color: #EC2D26;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                text-transform: capitalize;
+            }
+
+            .problem-item:not(.active) .problem-right {
+                display: none !important;
+            }
+
+            .problem-item.active .problem-right {
+                display: block !important;
+                width: 100% !important;
+                border-bottom: none !important;
+                padding: 15px 0 170px 0 !important;
+            }
+
+            .problem-item:not(.active) .problem-dropdown-content {
+                display: none !important;
+            }
+
+            .problem-item.active .problem-dropdown-content {
+                display: flex !important;
+                flex-direction: row !important;
+                flex-wrap: wrap !important;
+                gap: 30px !important;
+                position: relative !important;
+            }
+
+            .problem-dropdown-content::before {
+                content: "Solution";
+                display: block;
+                color: #EC2D26;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 5px;
+                width: 100%;
+                text-transform: capitalize;
+            }
+
+            .solution-main {
+                flex: 1 1 350px !important;
+                border: 1px solid #EC2D26 !important;
+                border-radius: 12px !important;
+                padding: 30px !important;
+                margin-right: 0 !important;
+                background: #000;
+            }
+            
+            .solution-main h3 {
+                margin-top: 0 !important;
+                margin-bottom: 15px !important;
+            }
+
+            .solution-sidebar {
+                flex: 2 1 600px !important;
+                border: 1px solid #EC2D26 !important;
+                border-radius: 12px !important;
+                padding: 30px !important;
+                display: flex !important;
+                flex-direction: row !important;
+                align-items: center !important;
+                background: #000;
+            }
+
+            .service-item {
+                flex: 1 !important;
+                border: none !important;
+                pointer-events: none !important;
+            }
+            
+            .service-item:not(:last-child) {
+                border-right: 1px solid rgba(255, 255, 255, 0.3) !important;
+                padding-right: 30px !important;
+            }
+            
+            .service-item:not(:first-child) {
+                padding-left: 30px !important;
+            }
+
+            .service-header {
+                padding: 0 0 20px 0 !important;
+                border-bottom: none !important;
+            }
+            .service-title {
+                font-size: 20px !important;
+                font-weight: 600 !important;
+            }
+            .service-arrow {
+                display: none !important;
+            }
+            .service-list {
+                display: block !important;
+                padding-left: 15px !important;
+            }
+            .service-list li {
+                font-size: 16px !important;
+                color: #ccc !important;
+                margin-bottom: 15px !important;
+                line-height: 1.5 !important;
+            }
+            .service-list li:last-child {
+                margin-bottom: 0 !important;
+            }
+            .service-list li::before {
+                color: #EC2D26 !important;
+            }
+
+            .fix-btn {
+                position: absolute !important;
+                bottom: -115px !important;
+                left: 0 !important;
+                margin: 0 !important;
+                background: #000 !important;
+                border: 4px solid #EF4623 !important;
+                color: #FFF !important;
+                padding: 18px 80px !important;
+                border-radius: 40px !important;
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 16px !important;
+                font-weight: 400 !important;
+                letter-spacing: 3px !important;
+                text-transform: uppercase !important;
+                cursor: pointer;
+                z-index: 10;
+                pointer-events: auto !important;
+            }
+
+            .fix-btn::before {
+                content: '' !important;
+                position: absolute !important;
+                top: -10px !important;
+                left: -10px !important;
+                right: -10px !important;
+                bottom: -10px !important;
+                border: 1px solid #EF4623 !important;
+                border-radius: 50px !important;
+                pointer-events: none !important;
+            }
+
+            .fix-btn:hover {
+                background: #EF4623 !important;
+                color: #fff !important;
+            }
+
+            .problem-dropdown-content::after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: #EC2D26;
+                position: absolute;
+                bottom: -135px;
+                left: 0;
+                z-index: 1;
+            }
+        }
+
+
+        /* Smooth reveal animation for dropdowns */
+        @keyframes smoothReveal {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .problem-item.active .problem-dropdown-content,
+        .problem-item.active .problem-right {
+            animation: smoothReveal 0.4s ease-out forwards !important;
+        }
+
 </style>
 </head>
 
@@ -2983,7 +3193,7 @@ We’ll show you the right problems. -->
                                     programme properly — value proposition by segment, upsell and cross-sell mechanics
                                     that work, and an enterprise commercial model that captures the premium ARPU on
                                     purpose rather than by accident.</p>
-                                <button class="fix-btn">Grow my ARPU ↗</button>
+                                <button class="fix-btn">Grow my ARPU</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3052,7 +3262,7 @@ We’ll show you the right problems. -->
                                     subscriber, offers matched to the actual churn driver, and a retention workflow that
                                     reaches the right customer at the right moment, rather than the current approach of
                                     phoning them the day after they've made up their mind.</p>
-                                <button class="fix-btn">Reduce my churn ↗</button>
+                                <button class="fix-btn">Reduce my churn</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3122,7 +3332,7 @@ We’ll show you the right problems. -->
                                     than a commercial programme, which is why the returns lag. We build the real thing:
                                     FWA sizing and go-to-market, an enterprise private-network pipeline, and pricing
                                     that actually captures a premium from the early adopters willing to pay one.</p>
-                                <button class="fix-btn">Monetise my 5G investment ↗</button>
+                                <button class="fix-btn">Monetise my 5G investment</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3189,7 +3399,7 @@ We’ll show you the right problems. -->
                                     energy by site type, O&M by network layer, shared infrastructure efficiency — and
                                     then implement the reduction programme that shows up in the actual EBITDA line
                                     rather than in a slide about theoretical efficiency.</p>
-                                <button class="fix-btn">Reduce my network opex ↗</button>
+                                <button class="fix-btn">Reduce my network opex</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3259,7 +3469,7 @@ We’ll show you the right problems. -->
                                     proactive monitoring, automated reporting, and an early-warning layer that spots a
                                     gap before the regulator does, which is a considerably cheaper moment to find it.
                                 </p>
-                                <button class="fix-btn">Fix my TRAI compliance ↗</button>
+                                <button class="fix-btn">Fix my TRAI compliance</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3330,7 +3540,7 @@ We’ll show you the right problems. -->
                                     architecture problem far more than a modelling one. We build the programme wired
                                     into your actual network and commercial workflows, where it can do something other
                                     than impress a steering committee.</p>
-                                <button class="fix-btn">Deploy AI across my telecom operations ↗</button>
+                                <button class="fix-btn">Deploy AI across my telecom operations</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3409,7 +3619,7 @@ We’ll show you the right problems. -->
                                     site faster and easier than building a new one, and price it so co-location beats
                                     new build for them. We design the tenancy growth programme and the commercial model
                                     that actually moves the ratio.</p>
-                                <button class="fix-btn">Grow my tenancy ratio ↗</button>
+                                <button class="fix-btn">Grow my tenancy ratio</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3479,7 +3689,7 @@ We’ll show you the right problems. -->
                                     monitors and tunes consumption across every site in real time. The savings here are
                                     unglamorous and they compound across thousands of towers, which is the good kind of
                                     boring.</p>
-                                <button class="fix-btn">Reduce my tower energy cost ↗</button>
+                                <button class="fix-btn">Reduce my tower energy cost</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3549,7 +3759,7 @@ We’ll show you the right problems. -->
                                     actively managed, and a project model that runs permitting and construction in
                                     parallel instead of politely one after the other. We design and put in that
                                     operating model.</p>
-                                <button class="fix-btn">Accelerate my site acquisition ↗</button>
+                                <button class="fix-btn">Accelerate my site acquisition</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3619,7 +3829,7 @@ We’ll show you the right problems. -->
                                     better security, emergency response protocols, and monitoring that ensures every
                                     outage is at least detected and dispatched inside the SLA response window, so you're
                                     never learning about your own downtime from your customer.</p>
-                                <button class="fix-btn">Improve my tower uptime ↗</button>
+                                <button class="fix-btn">Improve my tower uptime</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3688,7 +3898,7 @@ We’ll show you the right problems. -->
                                     operator, so your ops and commercial teams can step in before a problem becomes a
                                     customer's problem. We build the portfolio intelligence layer that shows your team
                                     what's happening now instead of what happened last week.</p>
-                                <button class="fix-btn">Build my portfolio intelligence ↗</button>
+                                <button class="fix-btn">Build my portfolio intelligence</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3758,7 +3968,7 @@ We’ll show you the right problems. -->
                                     sensible model. We build and deploy them wired into your NOC workflows, because an
                                     AI that flags a failure into a dashboard nobody's watching hasn't actually helped
                                     anyone.</p>
-                                <button class="fix-btn">Deploy AI on my tower portfolio ↗</button>
+                                <button class="fix-btn">Deploy AI on my tower portfolio</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3837,7 +4047,7 @@ We’ll show you the right problems. -->
                                     quote. We run the diagnostic — measured by system, root-caused by location and time
                                     of day — and implement the specific engineering and operational changes that move
                                     the number measurably inside 90 days.</p>
-                                <button class="fix-btn">Improve my PUE ↗</button>
+                                <button class="fix-btn">Improve my PUE</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3906,7 +4116,7 @@ We’ll show you the right problems. -->
                                     analysed, maintenance windows managed, and monitoring that catches the precursor to
                                     a failure instead of the failure itself. We run the uptime risk assessment and make
                                     the operational changes that put margin back between you and the threshold.</p>
-                                <button class="fix-btn">Protect my uptime SLA ↗</button>
+                                <button class="fix-btn">Protect my uptime SLA</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3976,7 +4186,7 @@ We’ll show you the right problems. -->
                                     customer type takes years to redeploy, if ever. We design the demand-led planning
                                     model that sequences your investment against contracted and pipeline demand rather
                                     than against a general belief that demand is coming.</p>
-                                <button class="fix-btn">Fix my capacity planning ↗</button>
+                                <button class="fix-btn">Fix my capacity planning</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4046,7 +4256,7 @@ We’ll show you the right problems. -->
                                     portfolio, find the positions that are quietly bleeding margin as power costs move,
                                     and design both the restructuring and the framework for everything you sign next.
                                 </p>
-                                <button class="fix-btn">Restructure my customer contracts ↗</button>
+                                <button class="fix-btn">Restructure my customer contracts</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4116,7 +4326,7 @@ We’ll show you the right problems. -->
                                     We build the talent strategy — compensation benchmarked against hyperscaler and colo
                                     peers, a real career path, knowledge capture, and a training programme that grows
                                     the capability internally rather than only buying it.</p>
-                                <button class="fix-btn">Fix my data centre talent model ↗</button>
+                                <button class="fix-btn">Fix my data centre talent model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4186,7 +4396,7 @@ We’ll show you the right problems. -->
                                     the lowest energy it can. Predictive maintenance on UPS, chillers, cooling towers
                                     and switchgear catches failures before they turn into downtime. We design and deploy
                                     both, against your actual sensor data rather than a reference architecture.</p>
-                                <button class="fix-btn">Deploy AI in my data centre ↗</button>
+                                <button class="fix-btn">Deploy AI in my data centre</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4266,7 +4476,7 @@ We’ll show you the right problems. -->
                                     passed typically comes down 25 to 40% — which is often the difference between a
                                     model that works at scale and one that doesn't. We run the cost audit and design the
                                     optimisation programme.</p>
-                                <button class="fix-btn">Reduce my last-mile cost ↗</button>
+                                <button class="fix-btn">Reduce my last-mile cost</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4336,7 +4546,7 @@ We’ll show you the right problems. -->
                                     marketing, a sales process that fits how people actually buy, an installation
                                     experience that doesn't put them off, and a referral mechanic that turns your
                                     connected customers into your cheapest acquisition channel.</p>
-                                <button class="fix-btn">Improve my take-up rate ↗</button>
+                                <button class="fix-btn">Improve my take-up rate</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4406,7 +4616,7 @@ We’ll show you the right problems. -->
                                     address. We build the programme: predictive risk scoring, service quality managed
                                     before it becomes a cancellation, and a retention workflow that engages an at-risk
                                     subscriber while there's still a subscriber to engage.</p>
-                                <button class="fix-btn">Reduce my ISP churn ↗</button>
+                                <button class="fix-btn">Reduce my ISP churn</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4475,7 +4685,7 @@ We’ll show you the right problems. -->
                                     you can't spare at your size. We design a compliance framework scaled to you,
                                     automate the reporting where it can be automated, and build the monitoring that
                                     keeps you clean without hiring a compliance department to do it.</p>
-                                <button class="fix-btn">Fix my TRAI compliance ↗</button>
+                                <button class="fix-btn">Fix my TRAI compliance</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4544,7 +4754,7 @@ We’ll show you the right problems. -->
                                     fault detection, sharper trouble-ticket triage, and smarter dispatch. We redesign
                                     the NOC and field operations model and build the fault intelligence system that
                                     brings MTTR down without simply throwing bodies at it.</p>
-                                <button class="fix-btn">Reduce my fault resolution time ↗</button>
+                                <button class="fix-btn">Reduce my fault resolution time</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4614,7 +4824,7 @@ We’ll show you the right problems. -->
                                     acquisition sequence, and honest ramp-up assumptions about when each new city turns
                                     cash-flow positive. We write it with you, so city three onwards runs on a method
                                     rather than on the founder's memory.</p>
-                                <button class="fix-btn">Build my expansion playbook ↗</button>
+                                <button class="fix-btn">Build my expansion playbook</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4695,7 +4905,7 @@ We’ll show you the right problems. -->
                                     stakeholders mapped by procurement stage, real technical relationships with the
                                     network engineering teams who actually decide, and a value demonstration framework
                                     that gets you through evaluation faster.</p>
-                                <button class="fix-btn">Fix my enterprise sales model ↗</button>
+                                <button class="fix-btn">Fix my enterprise sales model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4765,7 +4975,7 @@ We’ll show you the right problems. -->
                                     chain security for government-sensitive work, and honest total cost of ownership
                                     across the network's life. We design the differentiation strategy and the commercial
                                     narrative that makes the headline price comparison the wrong comparison.</p>
-                                <button class="fix-btn">Build my differentiation strategy ↗</button>
+                                <button class="fix-btn">Build my differentiation strategy</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4835,7 +5045,7 @@ We’ll show you the right problems. -->
                                     commercial model, the service delivery, or the contract structure to take it. We
                                     design the managed services strategy and the model that shifts your revenue from
                                     one-off transactions to something that renews.</p>
-                                <button class="fix-btn">Build my recurring revenue model ↗</button>
+                                <button class="fix-btn">Build my recurring revenue model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4905,7 +5115,7 @@ We’ll show you the right problems. -->
                                     and build the capability: the use cases operators actually care about, the data
                                     architecture underneath, the model work, and the product integration that turns AI
                                     from a slide into a feature they'd miss if they switched.</p>
-                                <button class="fix-btn">Build my AI product capability ↗</button>
+                                <button class="fix-btn">Build my AI product capability</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4976,7 +5186,7 @@ We’ll show you the right problems. -->
                                     their commercial people think of you as a partner rather than a line item. We
                                     redesign the account management model for the handful of accounts you genuinely
                                     can't afford to lose.</p>
-                                <button class="fix-btn">Deepen my account relationships ↗</button>
+                                <button class="fix-btn">Deepen my account relationships</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5046,7 +5256,7 @@ We’ll show you the right problems. -->
                                     expensive to undo. We map the complete requirement set against your actual product
                                     portfolio and design the compliance and manufacturing strategy, before a missed
                                     certification quietly closes a market to you.</p>
-                                <button class="fix-btn">Navigate my India compliance ↗</button>
+                                <button class="fix-btn">Navigate my India compliance</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5126,7 +5336,7 @@ We’ll show you the right problems. -->
                                     and real coverage — these need domain expertise a generalist deal team simply
                                     doesn't carry. We run the technical due diligence that surfaces the asset-specific
                                     risks while you can still price them, rather than after closing.</p>
-                                <button class="fix-btn">Run my digital infrastructure DD ↗</button>
+                                <button class="fix-btn">Run my digital infrastructure DD</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5196,7 +5406,7 @@ We’ll show you the right problems. -->
                                     independent operating assessment — cost structure, commercial model, operational
                                     efficiency — and design the turnaround that resets performance against the thesis
                                     you underwrote, with no incentive to be polite about what we find.</p>
-                                <button class="fix-btn">Fix my portfolio company performance ↗</button>
+                                <button class="fix-btn">Fix my portfolio company performance</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5267,7 +5477,7 @@ We’ll show you the right problems. -->
                                     intelligence: demand drivers, competitive dynamics, the regulatory frame, and a
                                     financial model built on how the asset actually behaves rather than on the analogy
                                     to one you already know.</p>
-                                <button class="fix-btn">Evaluate my target sub-sector ↗</button>
+                                <button class="fix-btn">Evaluate my target sub-sector</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5336,7 +5546,7 @@ We’ll show you the right problems. -->
                                     regulatory risk register mapping exposure by asset, by decision and by timeline. We
                                     build that framework: exposure mapped, scenarios analysed, and monitoring that flags
                                     a regulatory development before it turns up in the valuation rather than after.</p>
-                                <button class="fix-btn">Map my regulatory risk ↗</button>
+                                <button class="fix-btn">Map my regulatory risk</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5406,7 +5616,7 @@ We’ll show you the right problems. -->
                                     actually got, whether the operating model is ready to run AI-driven operations, and
                                     the gap to best-in-class. We build that framework and apply it as part of the
                                     diligence, so digitalisation maturity is priced in rather than discovered later.</p>
-                                <button class="fix-btn">Assess AI maturity in my targets ↗</button>
+                                <button class="fix-btn">Assess AI maturity in my targets</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5476,7 +5686,7 @@ We’ll show you the right problems. -->
                                     measured, a renewable strategy for the portfolio assets, and a reporting framework
                                     that satisfies your LPs and the regulators while positioning the portfolio for the
                                     energy transition rather than merely surviving it.</p>
-                                <button class="fix-btn">Build my digital infrastructure ESG programme ↗</button>
+                                <button class="fix-btn">Build my digital infrastructure ESG programme</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">

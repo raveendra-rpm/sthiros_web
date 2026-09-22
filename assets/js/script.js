@@ -1109,7 +1109,8 @@ function initScrollAnimations() {
         const cyberHorizScroll = getCyberHorizScroll();
         const cyberVertScrollDOWN = 966 * scale; // Match the actual animation distance
         // Added 400 for a small pause at the end before unpinning
-        return `+=${targetX + riskY + riskHorizScroll + riskVertScrollUP + cyberHorizScroll + cyberVertScrollDOWN + 400}`;
+        // Multiplied by 0.5 to reduce the number of scrolls to reach the next section faster
+        return `+=${(targetX + riskY + riskHorizScroll + riskVertScrollUP + cyberHorizScroll + cyberVertScrollDOWN + 400) * 0.5}`;
       },
       pin: true,
       animation: (() => {
@@ -4263,45 +4264,97 @@ function initMobileHeroReveal() {
 /**
  * In-Page Text Search (Ctrl+F behavior)
  */
-function initHeaderInPageSearch() {
+function initAdvancedSearch() {
   const searchInput = document.querySelector('.header-search-input');
   const searchBtn = document.querySelector('.header-search-btn');
   const searchForm = document.querySelector('.header-search');
-  
+
   if (!searchInput || !searchForm) return;
+
+  // Add Clear (X) Button
+  let clearBtn = document.querySelector('.header-search-clear');
+  if (!clearBtn) {
+    clearBtn = document.createElement('button');
+    clearBtn.className = 'header-search-clear';
+    clearBtn.innerHTML = '&#x2715;'; // X symbol
+    clearBtn.style.display = 'none';
+    searchForm.insertBefore(clearBtn, searchBtn);
+  }
 
   // Create or select the counter badge
   let counterBadge = document.querySelector('.header-search-count');
   if (!counterBadge) {
     counterBadge = document.createElement('div');
     counterBadge.className = 'header-search-count';
-    searchForm.insertBefore(counterBadge, searchBtn);
+    searchForm.insertBefore(counterBadge, clearBtn);
   }
+
+  // Create Dropdown Container
+  let dropdown = document.querySelector('.search-dropdown-results');
+  if (!dropdown) {
+    dropdown = document.createElement('div');
+    dropdown.className = 'search-dropdown-results';
+    searchForm.appendChild(dropdown);
+  }
+
+  // Dynamic loading of Fuse.js and Data
+  let fuse = null;
+  let isFuseLoaded = false;
+  
+  function loadSearchDependencies() {
+    if (isFuseLoaded) return;
+    isFuseLoaded = true;
+    
+    const fuseScript = document.createElement('script');
+    fuseScript.src = "https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js";
+    document.body.appendChild(fuseScript);
+    
+    fuseScript.onload = () => {
+      const dataScript = document.createElement('script');
+      dataScript.src = "assets/js/searchData.js";
+      document.body.appendChild(dataScript);
+      
+      dataScript.onload = () => {
+        if (window.sthirosSearchData) {
+          fuse = new Fuse(window.sthirosSearchData, {
+            keys: ['title', 'content'],
+            includeMatches: true,
+            threshold: 0.3, // Fuzzy matching threshold
+            minMatchCharLength: 2
+          });
+          // If user already typed something while loading
+          if (searchInput.value.trim().length >= 2) {
+            handleFuseSearch(searchInput.value.trim());
+          }
+        }
+      };
+    };
+  }
+
+  // Focus triggers load
+  searchInput.addEventListener('focus', loadSearchDependencies);
 
   let matches = [];
   let currentMatchIndex = -1;
-  const searchableContainer = document.body; // Search entire body
+  const searchableContainer = document.body;
 
   function clearHighlights() {
     const marks = document.querySelectorAll('mark.sthiros-search-match');
     marks.forEach(mark => {
       const parent = mark.parentNode;
       parent.replaceChild(document.createTextNode(mark.textContent), mark);
-      parent.normalize(); // Merge adjacent text nodes
+      parent.normalize(); 
     });
     matches = [];
     currentMatchIndex = -1;
     updateCounterBadge();
   }
 
-  // Recursive text node search
   function walkAndHighlight(node, queryRegex) {
-    // Skip script, style, and already highlighted nodes
-    if (['SCRIPT', 'STYLE', 'NOSCRIPT', 'MARK'].includes(node.nodeName)) return;
-    // Skip the search input itself to avoid weird nested DOM loops
-    if (node.closest && node.closest('.header-search')) return;
+    if (['SCRIPT', 'STYLE', 'NOSCRIPT', 'MARK', 'HEADER', 'FOOTER', 'NAV'].includes(node.nodeName)) return;
+    if (node.closest && (node.closest('.header-search') || node.closest('header') || node.closest('.mobile-menu') || node.closest('footer') || node.closest('nav'))) return;
 
-    if (node.nodeType === 3) { // Text node
+    if (node.nodeType === 3) { 
       const text = node.nodeValue;
       if (!text.trim()) return;
 
@@ -4314,18 +4367,12 @@ function initHeaderInPageSearch() {
         const afterNode = node.splitText(match.index);
         afterNode.nodeValue = afterNode.nodeValue.substring(match[0].length);
         node.parentNode.insertBefore(mark, afterNode);
-        
+
         matches.push(mark);
-        
-        // Reset lastIndex because exec modifies it for global regexes
-        queryRegex.lastIndex = 0; 
-        
-        // Continue walking the rest of the text node
+        queryRegex.lastIndex = 0;
         walkAndHighlight(afterNode, queryRegex);
       }
     } else if (node.nodeType === 1 && node.childNodes && !(node.tagName === 'SELECT' || node.tagName === 'TEXTAREA')) {
-      // Element node
-      // Iterate backwards so DOM mutations don't mess up the indices
       for (let i = node.childNodes.length - 1; i >= 0; i--) {
         walkAndHighlight(node.childNodes[i], queryRegex);
       }
@@ -4335,34 +4382,27 @@ function initHeaderInPageSearch() {
   function updateCounterBadge() {
     if (!searchInput.value.trim()) {
       counterBadge.classList.remove('is-visible', 'no-results');
-      counterBadge.textContent = '';
+      counterBadge.innerHTML = '';
       return;
     }
-
     counterBadge.classList.add('is-visible');
-    
     if (matches.length === 0) {
       counterBadge.classList.add('no-results');
-      counterBadge.textContent = '0/0';
+      counterBadge.innerHTML = '0/0';
     } else {
       counterBadge.classList.remove('no-results');
-      counterBadge.textContent = `${currentMatchIndex + 1}/${matches.length}`;
+      counterBadge.innerHTML = `${currentMatchIndex + 1}/${matches.length} <span class='counter-arrow' style='margin-left:2px;'>&#x2193;</span>`;
     }
   }
 
-  function performSearch(query) {
+  function performInPageSearch(query) {
     clearHighlights();
-    
     if (!query) return;
 
-    // Create case-insensitive regex, escape regex specials
     const escapedQuery = query.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
     const regex = new RegExp(escapedQuery, 'gi');
 
-    // Small delay to allow typing, but keep it responsive
     walkAndHighlight(searchableContainer, regex);
-    
-    // Reverse matches because our recursive walk went backwards through children
     matches.reverse();
 
     if (matches.length > 0) {
@@ -4375,70 +4415,217 @@ function initHeaderInPageSearch() {
 
   function focusMatch(index) {
     if (matches.length === 0) return;
-
-    // Remove active class from old match
     matches.forEach(m => m.classList.remove('is-active'));
 
     const activeMatch = matches[index];
     activeMatch.classList.add('is-active');
-    
-    // Auto-expand accordions/hidden parents if needed (Optional depending on DOM structure)
+
+    // Auto-expand hidden parents and handle slider/flip cards
     let parent = activeMatch.parentNode;
+    let isCardBack = false;
+    let isCardFront = false;
+
+    // Temporary toast function for testing
+    function showSearchToast(msg) {
+      let toast = document.getElementById('search-toast');
+      if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'search-toast';
+        toast.style.position = 'fixed';
+        toast.style.bottom = '20px';
+        toast.style.right = '20px';
+        toast.style.background = '#EF4623';
+        toast.style.color = 'white';
+        toast.style.padding = '10px 20px';
+        toast.style.borderRadius = '5px';
+        toast.style.zIndex = '99999';
+        toast.style.fontWeight = 'bold';
+        toast.style.transition = 'opacity 0.3s';
+        document.body.appendChild(toast);
+      }
+      toast.textContent = msg;
+      toast.style.opacity = '1';
+      setTimeout(() => { toast.style.opacity = '0'; }, 3000);
+    }
+
     while (parent && parent !== document.body) {
+      if (parent.classList) {
+        if (parent.classList.contains('card-back')) isCardBack = true;
+        if (parent.classList.contains('card-front')) isCardFront = true;
+
+        if (parent.classList.contains('problem-item') || 
+            parent.classList.contains('team-card') || 
+            parent.classList.contains('vm-card')) {
+          parent.classList.add('active');
+        }
+
+        if (parent.classList.contains('problems-container')) {
+          if (parent.id) {
+            const tabBtn = document.querySelector(`.segment-btn[data-target="${parent.id}"]`);
+            if (tabBtn && !tabBtn.classList.contains('active')) {
+              tabBtn.click();
+              showSearchToast('Tab automatically opened for result.');
+            }
+          }
+        }        if (parent.classList.contains('expert-card')) {
+          // It's a slider card. Click it so the slider moves to it.
+          parent.click();
+          
+          // Now handle flipping if needed
+          const inner = parent.querySelector('.card-inner');
+          if (inner) {
+            if (isCardBack) {
+              inner.style.transform = 'rotateY(180deg)';
+              showSearchToast('Match found on Back! Card flipped successfully.');
+            } else if (isCardFront) {
+              inner.style.transform = '';
+              showSearchToast('Match found on Front! Card shown successfully.');
+            }
+          }
+        }
+      }
       if (parent.tagName === 'DETAILS') {
         parent.setAttribute('open', '');
-      } else if (parent.classList && parent.classList.contains('accordion-content')) {
-        // Mock opening accordion if sthiros uses custom classes
-        parent.style.maxHeight = 'none'; 
-        parent.style.display = 'block';
       }
       parent = parent.parentNode;
     }
 
-    // Scroll into view using Lenis or native
-    const yOffset = -150; // Offset for fixed header
-    const y = activeMatch.getBoundingClientRect().top + window.scrollY + yOffset;
+    setTimeout(() => {
+      const yOffset = -150; 
+      const y = activeMatch.getBoundingClientRect().top + window.scrollY + yOffset;
 
-    if (window.lenis) {
-      window.lenis.scrollTo(y, { duration: 1.2, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
-    } else {
-      window.scrollTo({ top: y, behavior: 'smooth' });
-    }
-
-    updateCounterBadge();
+      if (window.lenis) {
+        window.lenis.scrollTo(y, { duration: 1.2, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
+      } else {
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+      updateCounterBadge();
+    }, 50);
   }
 
-  // Event Listeners
+  function handleFuseSearch(query) {
+    if (!fuse || !query || query.length < 2) {
+      dropdown.style.display = 'none';
+      return;
+    }
+    const results = fuse.search(query);
+    dropdown.innerHTML = '';
+    
+    if (results.length === 0) {
+      dropdown.style.display = 'none';
+      return;
+    }
+
+    dropdown.style.display = 'block';
+    
+    // Take top 5 results
+    const topResults = results.slice(0, 5);
+    topResults.forEach(res => {
+      const item = document.createElement('div');
+      item.className = 'search-dropdown-item';
+      item.innerHTML = `<strong>${res.item.title}</strong><br><small>${res.item.url}</small>`;
+      item.addEventListener('click', () => {
+        dropdown.style.display = 'none';
+        searchInput.value = query;
+        const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+        const targetPath = res.item.url;
+        
+        if (currentPath === targetPath) {
+            performInPageSearch(query);
+        } else {
+            window.location.href = targetPath + '?q=' + encodeURIComponent(query);
+        }
+      });
+      dropdown.appendChild(item);
+    });
+  }
+
   let debounceTimeout;
   searchInput.addEventListener('input', (e) => {
+    const val = e.target.value.trim();
+    if (val.length > 0) {
+      clearBtn.style.display = 'block';
+    } else {
+      clearBtn.style.display = 'none';
+      dropdown.style.display = 'none';
+      clearHighlights();
+    }
+    
     clearTimeout(debounceTimeout);
     debounceTimeout = setTimeout(() => {
-      performSearch(e.target.value.trim());
+      performInPageSearch(val);
+      if (fuse) handleFuseSearch(val);
     }, 300);
   });
 
   searchInput.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
       e.preventDefault();
+      dropdown.style.display = 'none';
       if (matches.length > 0) {
-        // Cycle to next match on enter
         currentMatchIndex = (currentMatchIndex + 1) % matches.length;
         focusMatch(currentMatchIndex);
       }
+    } else if (e.key === 'Escape') {
+      dropdown.style.display = 'none';
+      clearHighlights();
+      searchInput.value = '';
+      clearBtn.style.display = 'none';
+      searchInput.blur();
+    }
+  });
+  
+  clearBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      searchInput.value = '';
+      clearBtn.style.display = 'none';
+      dropdown.style.display = 'none';
+      clearHighlights();
+      searchInput.focus();
+  });
+
+  
+  counterBadge.style.cursor = 'pointer';
+  counterBadge.addEventListener('click', (e) => {
+    e.preventDefault();
+    dropdown.style.display = 'none';
+    if (matches.length > 0) {
+      currentMatchIndex = (currentMatchIndex + 1) % matches.length;
+      focusMatch(currentMatchIndex);
     }
   });
 
   if (searchBtn) {
+
     searchBtn.addEventListener('click', (e) => {
       e.preventDefault();
+      dropdown.style.display = 'none';
       if (matches.length > 0) {
         currentMatchIndex = (currentMatchIndex + 1) % matches.length;
         focusMatch(currentMatchIndex);
       } else {
-        performSearch(searchInput.value.trim());
+        performInPageSearch(searchInput.value.trim());
       }
     });
   }
+  
+  // Close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+      if (!searchForm.contains(e.target)) {
+          dropdown.style.display = 'none';
+      }
+  });
+
+  // Check URL params on load
+  const urlParams = new URLSearchParams(window.location.search);
+  const q = urlParams.get('q');
+  if (q) {
+      searchInput.value = q;
+      clearBtn.style.display = 'block';
+      setTimeout(() => {
+          performInPageSearch(q);
+      }, 500); // Small delay to ensure DOM is ready
+  }
 }
 
-document.addEventListener('DOMContentLoaded', initHeaderInPageSearch);
+document.addEventListener('DOMContentLoaded', initAdvancedSearch);

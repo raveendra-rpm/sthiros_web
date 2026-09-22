@@ -555,7 +555,7 @@
         }
 
         .problem-desc {
-            display: none;
+            display: block;
             color: var(--WHITE, #FFF);
             font-family: Quicksand, sans-serif;
             font-size: 16px;
@@ -1722,7 +1722,7 @@
             }
 
             .problem-desc {
-                display: none;
+                display: block;
             color: var(--WHITE, #FFF);
             font-family: Quicksand, sans-serif;
             font-size: 16px;
@@ -1900,7 +1900,7 @@
             }
 
             .problem-item:not(.active) .problem-desc {
-                display: none !important;
+                display: block !important;
             }
 
             .problem-item.active .problem-desc {
@@ -2462,6 +2462,216 @@
             }
         }
 
+/* --- Redesign Desktop Layout for Who Are You Problems Section --- */
+        @media (min-width: 769px) {
+            .problem-header {
+                display: none !important;
+            }
+
+            .problem-item {
+                flex-direction: column !important;
+                gap: 0 !important;
+                border-bottom: 1px solid rgba(236, 45, 38, 0.4) !important;
+                background-color: transparent !important;
+                position: relative;
+            }
+            .problem-item.active {
+                border-bottom: none !important;
+                padding-bottom: 20px !important;
+            }
+
+            .problem-left {
+                width: 100% !important;
+                min-width: 0 !important;
+                padding: 30px 0 !important;
+                border-bottom: 1px solid #EC2D26 !important;
+                display: flex !important;
+                justify-content: space-between !important;
+                align-items: flex-start !important;
+            }
+
+            .problem-left-content::before {
+                content: "Problem";
+                display: block;
+                color: #EC2D26;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                text-transform: capitalize;
+            }
+
+            .problem-item:not(.active) .problem-right {
+                display: none !important;
+            }
+
+            .problem-item.active .problem-right {
+                display: block !important;
+                width: 100% !important;
+                border-bottom: none !important;
+                padding: 15px 0 170px 0 !important;
+            }
+
+            .problem-item:not(.active) .problem-dropdown-content {
+                display: none !important;
+            }
+
+            .problem-item.active .problem-dropdown-content {
+                display: flex !important;
+                flex-direction: row !important;
+                flex-wrap: wrap !important;
+                gap: 30px !important;
+                position: relative !important;
+            }
+
+            .problem-dropdown-content::before {
+                content: "Solution";
+                display: block;
+                color: #EC2D26;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 5px;
+                width: 100%;
+                text-transform: capitalize;
+            }
+
+            .solution-main {
+                flex: 1 1 350px !important;
+                border: 1px solid #EC2D26 !important;
+                border-radius: 12px !important;
+                padding: 30px !important;
+                margin-right: 0 !important;
+                background: #000;
+            }
+            
+            .solution-main h3 {
+                margin-top: 0 !important;
+                margin-bottom: 15px !important;
+            }
+
+            .solution-sidebar {
+                flex: 2 1 600px !important;
+                border: 1px solid #EC2D26 !important;
+                border-radius: 12px !important;
+                padding: 30px !important;
+                display: flex !important;
+                flex-direction: row !important;
+                align-items: center !important;
+                background: #000;
+            }
+
+            .service-item {
+                flex: 1 !important;
+                border: none !important;
+                pointer-events: none !important;
+            }
+            
+            .service-item:not(:last-child) {
+                border-right: 1px solid rgba(255, 255, 255, 0.3) !important;
+                padding-right: 30px !important;
+            }
+            
+            .service-item:not(:first-child) {
+                padding-left: 30px !important;
+            }
+
+            .service-header {
+                padding: 0 0 20px 0 !important;
+                border-bottom: none !important;
+            }
+            .service-title {
+                font-size: 20px !important;
+                font-weight: 600 !important;
+            }
+            .service-arrow {
+                display: none !important;
+            }
+            .service-list {
+                display: block !important;
+                padding-left: 15px !important;
+            }
+            .service-list li {
+                font-size: 16px !important;
+                color: #ccc !important;
+                margin-bottom: 15px !important;
+                line-height: 1.5 !important;
+            }
+            .service-list li:last-child {
+                margin-bottom: 0 !important;
+            }
+            .service-list li::before {
+                color: #EC2D26 !important;
+            }
+
+            .fix-btn {
+                position: absolute !important;
+                bottom: -115px !important;
+                left: 0 !important;
+                margin: 0 !important;
+                background: #000 !important;
+                border: 4px solid #EF4623 !important;
+                color: #FFF !important;
+                padding: 18px 80px !important;
+                border-radius: 40px !important;
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 16px !important;
+                font-weight: 400 !important;
+                letter-spacing: 3px !important;
+                text-transform: uppercase !important;
+                cursor: pointer;
+                z-index: 10;
+                pointer-events: auto !important;
+            }
+
+            .fix-btn::before {
+                content: '' !important;
+                position: absolute !important;
+                top: -10px !important;
+                left: -10px !important;
+                right: -10px !important;
+                bottom: -10px !important;
+                border: 1px solid #EF4623 !important;
+                border-radius: 50px !important;
+                pointer-events: none !important;
+            }
+
+            .fix-btn:hover {
+                background: #EF4623 !important;
+                color: #fff !important;
+            }
+
+            .problem-dropdown-content::after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: #EC2D26;
+                position: absolute;
+                bottom: -135px;
+                left: 0;
+                z-index: 1;
+            }
+        }
+
+
+        /* Smooth reveal animation for dropdowns */
+        @keyframes smoothReveal {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .problem-item.active .problem-dropdown-content,
+        .problem-item.active .problem-right {
+            animation: smoothReveal 0.4s ease-out forwards !important;
+        }
+
 </style>
 </head>
 
@@ -2974,7 +3184,7 @@ We’ll show you the right problems. -->
                                     &mdash; cost decomposed by department, benchmarked against the right peer set
                                     &mdash; and go after the specific cost lines that are actually hurting you. Blanket
                                     cost-cutting tends to damage the guest experience; this doesn't.</p>
-                                <button class="fix-btn">Fix my GOP margin &#x2197;</button>
+                                <button class="fix-btn">Fix my GOP margin</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3043,7 +3253,7 @@ We’ll show you the right problems. -->
                                     mechanics, and a paid-and-organic acquisition model that makes a direct booking
                                     cheap enough to acquire that it's actually worth having rather than a vanity metric.
                                 </p>
-                                <button class="fix-btn">Grow my direct bookings &#x2197;</button>
+                                <button class="fix-btn">Grow my direct bookings</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3112,7 +3322,7 @@ We’ll show you the right problems. -->
                                     methodology, a rate optimisation model, stay-restriction logic, and a decision
                                     support layer that hands your revenue manager the right information at the right
                                     time instead of a competitor rate check and a memory of last year.</p>
-                                <button class="fix-btn">Improve my revenue management &#x2197;</button>
+                                <button class="fix-btn">Improve my revenue management</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3182,7 +3392,7 @@ We’ll show you the right problems. -->
                                     optimised, cross-training so one department's quiet shift can cover another's busy
                                     one, and a retention programme that breaks the expensive lose-someone-then-rehire
                                     cycle.</p>
-                                <button class="fix-btn">Fix my labour cost model &#x2197;</button>
+                                <button class="fix-btn">Fix my labour cost model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3251,7 +3461,7 @@ We’ll show you the right problems. -->
                                     occupancy, ADR, GOP and guest satisfaction visible live across every property, so
                                     your revenue and ops teams can move while the booking window is still open rather
                                     than reading about it once it's shut.</p>
-                                <button class="fix-btn">Build my portfolio intelligence &#x2197;</button>
+                                <button class="fix-btn">Build my portfolio intelligence</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3321,7 +3531,7 @@ We’ll show you the right problems. -->
                                     build it into a standard operating model, and put in the quality assurance that
                                     drags the rest of the portfolio up to meet it. Consistency is unglamorous, and it's
                                     what ratings actually reward.</p>
-                                <button class="fix-btn">Standardise my guest experience &#x2197;</button>
+                                <button class="fix-btn">Standardise my guest experience</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3400,7 +3610,7 @@ We’ll show you the right problems. -->
                                     efficiency. We design and implement it: website conversion, rate parity management,
                                     Google Hotel Ads done properly, and a loyalty mechanic that gives the guest a
                                     genuine reason to book with you directly next time.</p>
-                                <button class="fix-btn">Grow my direct bookings &#x2197;</button>
+                                <button class="fix-btn">Grow my direct bookings</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3468,7 +3678,7 @@ We’ll show you the right problems. -->
                                     intelligence feed that nudges your rates against local demand signals &mdash; all
                                     without saddling you with a revenue management system built for a 200-room chain.
                                 </p>
-                                <button class="fix-btn">Optimise my pricing &#x2197;</button>
+                                <button class="fix-btn">Optimise my pricing</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3538,7 +3748,7 @@ We’ll show you the right problems. -->
                                     the recurring complaints identified, a service recovery protocol, and the
                                     operational fixes that stop the same complaint arriving next month. A good reply is
                                     nice; a fixed root cause is better.</p>
-                                <button class="fix-btn">Fix my online reputation &#x2197;</button>
+                                <button class="fix-btn">Fix my online reputation</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3607,7 +3817,7 @@ We’ll show you the right problems. -->
                                     full. We rebuild the working capital model &mdash; cash flow forecasting, advance
                                     payments optimised, OTA settlements tracked, and a 13-week cash view that turns your
                                     cash position from a monthly surprise into something you can see coming.</p>
-                                <button class="fix-btn">Fix my working capital &#x2197;</button>
+                                <button class="fix-btn">Fix my working capital</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3675,7 +3885,7 @@ We’ll show you the right problems. -->
                                     rebuild the retention model: compensation benchmarked, a career path that exists,
                                     recognition that lands, and training infrastructure that gets a new hire to standard
                                     in weeks rather than by trial and error on live guests.</p>
-                                <button class="fix-btn">Fix my staff retention &#x2197;</button>
+                                <button class="fix-btn">Fix my staff retention</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3745,7 +3955,7 @@ We’ll show you the right problems. -->
                                     run the assessment: what your current stack does and doesn't do, the additions with
                                     the highest ROI for you specifically, and how to put them in without creating a new
                                     mess to manage.</p>
-                                <button class="fix-btn">Build my tech roadmap &#x2197;</button>
+                                <button class="fix-btn">Build my tech roadmap</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3826,7 +4036,7 @@ We’ll show you the right problems. -->
                                     funnel, find the friction points that actually cost you bookings, and redesign the
                                     experience and the search ranking to close them, with A/B testing wired in so every
                                     change earns its place rather than being someone's opinion.</p>
-                                <button class="fix-btn">Improve my conversion rate &#x2197;</button>
+                                <button class="fix-btn">Improve my conversion rate</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3895,7 +4105,7 @@ We’ll show you the right problems. -->
                                     demand you deliver that the supplier couldn't have reached on their own. We rebuild
                                     that value proposition to suppliers and the commercial model underneath it, so the
                                     commission conversation is about value rather than just price.</p>
-                                <button class="fix-btn">Defend my take rate &#x2197;</button>
+                                <button class="fix-btn">Defend my take rate</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3964,7 +4174,7 @@ We’ll show you the right problems. -->
                                     travel. We design and build the personalisation engine: the recommendation model,
                                     the ranking algorithm, and the real-time signal processing that makes every result a
                                     little more relevant than the last.</p>
-                                <button class="fix-btn">Build my personalisation engine &#x2197;</button>
+                                <button class="fix-btn">Build my personalisation engine</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4032,7 +4242,7 @@ We’ll show you the right problems. -->
                                     AI layer: transaction-level risk scoring, device and behavioural intelligence,
                                     network analysis to catch organised rings, and a chargeback reduction model that
                                     protects the contribution margin the fraud is quietly eating.</p>
-                                <button class="fix-btn">Build my fraud detection &#x2197;</button>
+                                <button class="fix-btn">Build my fraud detection</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4102,7 +4312,7 @@ We’ll show you the right problems. -->
                                     content quality standards, rate and availability parity, and a supplier success
                                     model that keeps those smaller properties active rather than
                                     signed-up-and-forgotten.</p>
-                                <button class="fix-btn">Fix my inventory depth &#x2197;</button>
+                                <button class="fix-btn">Fix my inventory depth</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4171,7 +4381,7 @@ We’ll show you the right problems. -->
                                     you the path of least resistance. We redesign the loyalty architecture and build the
                                     AI that personalises the post-trip engagement so the next booking comes straight
                                     back to you.</p>
-                                <button class="fix-btn">Fix my loyalty and repeat rate &#x2197;</button>
+                                <button class="fix-btn">Fix my loyalty and repeat rate</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4251,7 +4461,7 @@ We’ll show you the right problems. -->
                                     model would pick up. We audit the current approach, pinpoint the routes and demand
                                     windows where revenue is quietly leaking, and implement the optimisation model that
                                     closes them.</p>
-                                <button class="fix-btn">Improve my yield management &#x2197;</button>
+                                <button class="fix-btn">Improve my yield management</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4321,7 +4531,7 @@ We’ll show you the right problems. -->
                                     the OTP diagnostic: delays attributed to root cause, network dependencies mapped,
                                     and the operational fixes aimed at the pattern rather than at yesterday's individual
                                     incident.</p>
-                                <button class="fix-btn">Improve my OTP &#x2197;</button>
+                                <button class="fix-btn">Improve my OTP</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4391,7 +4601,7 @@ We’ll show you the right problems. -->
                                     segments actually want. We redesign the ancillary strategy and build the
                                     personalisation layer that puts the right offer in front of the right passenger at
                                     the moment they'd say yes.</p>
-                                <button class="fix-btn">Improve my ancillary revenue &#x2197;</button>
+                                <button class="fix-btn">Improve my ancillary revenue</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4460,7 +4670,7 @@ We’ll show you the right problems. -->
                                     kind. We run the CASK diagnostic and implement the specific reduction programme
                                     &mdash; the sort that shows up in the cost line, not the sort a passenger notices in
                                     a worse experience.</p>
-                                <button class="fix-btn">Reduce my CASK &#x2197;</button>
+                                <button class="fix-btn">Reduce my CASK</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4529,7 +4739,7 @@ We’ll show you the right problems. -->
                                     deadhead cost and lifts utilisation while staying strictly inside DGCA duty and rest
                                     requirements &mdash; because that's one constraint you optimise around, never
                                     through.</p>
-                                <button class="fix-btn">Optimise my crew scheduling &#x2197;</button>
+                                <button class="fix-btn">Optimise my crew scheduling</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4598,7 +4808,7 @@ We’ll show you the right problems. -->
                                     The catch is the usual one: it only helps if it's wired into how planning actually
                                     happens, rather than producing an elegant model that lives quietly in the data
                                     science team. We build it into the workflow.</p>
-                                <button class="fix-btn">Build my AI network planning &#x2197;</button>
+                                <button class="fix-btn">Build my AI network planning</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4677,7 +4887,7 @@ We’ll show you the right problems. -->
                                     group needs tighter cost control and a more accurate demand forecast. We run the
                                     margin diagnostic and redesign the commercial model for each, rather than pretending
                                     one strategy fits both.</p>
-                                <button class="fix-btn">Fix my tour margin &#x2197;</button>
+                                <button class="fix-btn">Fix my tour margin</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4747,7 +4957,7 @@ We’ll show you the right problems. -->
                                     build the supplier management framework: cost consolidated, a contracted-rate
                                     negotiation strategy, and the procurement intelligence that shows you exactly where
                                     the volume &mdash; and the discount you've been declining &mdash; actually is.</p>
-                                <button class="fix-btn">Optimise my supplier costs &#x2197;</button>
+                                <button class="fix-btn">Optimise my supplier costs</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4818,7 +5028,7 @@ We’ll show you the right problems. -->
                                     stars. We find the process the top performers are running, standardise it, and build
                                     the tools that make everyone else run it too.
                                 </p>
-                                <button class="fix-btn">Improve my sales conversion &#x2197;</button>
+                                <button class="fix-btn">Improve my sales conversion</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4887,7 +5097,7 @@ We’ll show you the right problems. -->
                                     engagement model: feedback collected, the relationship nurtured, referral mechanics
                                     that work, and the re-engagement triggers that bring a past traveller back before
                                     they've drifted to someone else.</p>
-                                <button class="fix-btn">Build my loyalty programme &#x2197;</button>
+                                <button class="fix-btn">Build my loyalty programme</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4957,7 +5167,7 @@ We’ll show you the right problems. -->
                                     team for the complex, high-value conversations that genuinely need a person. We
                                     design the automation architecture and build the workflow tools that take the
                                     per-booking grunt work off the team's plate.</p>
-                                <button class="fix-btn">Automate my tour operations &#x2197;</button>
+                                <button class="fix-btn">Automate my tour operations</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5026,7 +5236,7 @@ We’ll show you the right problems. -->
                                     commercial analysis instead: demand assessed, the competitive landscape mapped, cost
                                     structure modelled, break-even booking volume worked out, and a phased launch plan
                                     that lets the product prove itself before you commit the full investment.</p>
-                                <button class="fix-btn">Analyse my new product launch &#x2197;</button>
+                                <button class="fix-btn">Analyse my new product launch</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5106,7 +5316,7 @@ We’ll show you the right problems. -->
                                     when your runway is finite. We rebuild the enterprise sales model: stakeholders
                                     mapped, each procurement stage actively managed, and a value demonstration framework
                                     that shortens every leg of the relay.</p>
-                                <button class="fix-btn">Fix my enterprise sales motion &#x2197;</button>
+                                <button class="fix-btn">Fix my enterprise sales motion</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5175,7 +5385,7 @@ We’ll show you the right problems. -->
                                     product's impact from everything else moving at once. We design the pilot and the
                                     measurement framework so the evidence you hand over is credible rather than a
                                     hopeful chart.</p>
-                                <button class="fix-btn">Build my ROI evidence &#x2197;</button>
+                                <button class="fix-btn">Build my ROI evidence</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5245,7 +5455,7 @@ We’ll show you the right problems. -->
                                     feature list or a slide about your model architecture. We build the differentiation
                                     framework and the comparative evidence that makes the better-ness legible to a buyer
                                     who's heard every pitch.</p>
-                                <button class="fix-btn">Build my AI differentiation case &#x2197;</button>
+                                <button class="fix-btn">Build my AI differentiation case</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5315,7 +5525,7 @@ We’ll show you the right problems. -->
                                     milestones, a real business review cadence, and an early-warning system that flags
                                     churn risk months before the renewal conversation, when you can still do something
                                     about it.</p>
-                                <button class="fix-btn">Fix my customer success model &#x2197;</button>
+                                <button class="fix-btn">Fix my customer success model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5386,7 +5596,7 @@ We’ll show you the right problems. -->
                                     data model, and an integration management approach &mdash; so each new connection
                                     costs a fraction of what the last one did, and your engineers get their week back.
                                 </p>
-                                <button class="fix-btn">Fix my integration architecture &#x2197;</button>
+                                <button class="fix-btn">Fix my integration architecture</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5456,7 +5666,7 @@ We’ll show you the right problems. -->
                                     chain, and the resulting implementation delays damage the relationship before it's
                                     even properly begun. We design the enterprise operating model in advance, so your
                                     first big logo is a reference rather than a cautionary tale.</p>
-                                <button class="fix-btn">Build my enterprise model &#x2197;</button>
+                                <button class="fix-btn">Build my enterprise model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">

@@ -555,7 +555,7 @@
         }
 
         .problem-desc {
-            display: none;
+            display: block;
             color: var(--WHITE, #FFF);
             font-family: Quicksand, sans-serif;
             font-size: 16px;
@@ -1722,7 +1722,7 @@
             }
 
             .problem-desc {
-                display: none;
+                display: block;
             color: var(--WHITE, #FFF);
             font-family: Quicksand, sans-serif;
             font-size: 16px;
@@ -1900,7 +1900,7 @@
             }
 
             .problem-item:not(.active) .problem-desc {
-                display: none !important;
+                display: block !important;
             }
 
             .problem-item.active .problem-desc {
@@ -2462,6 +2462,216 @@
             }
         }
 
+/* --- Redesign Desktop Layout for Who Are You Problems Section --- */
+        @media (min-width: 769px) {
+            .problem-header {
+                display: none !important;
+            }
+
+            .problem-item {
+                flex-direction: column !important;
+                gap: 0 !important;
+                border-bottom: 1px solid rgba(236, 45, 38, 0.4) !important;
+                background-color: transparent !important;
+                position: relative;
+            }
+            .problem-item.active {
+                border-bottom: none !important;
+                padding-bottom: 20px !important;
+            }
+
+            .problem-left {
+                width: 100% !important;
+                min-width: 0 !important;
+                padding: 30px 0 !important;
+                border-bottom: 1px solid #EC2D26 !important;
+                display: flex !important;
+                justify-content: space-between !important;
+                align-items: flex-start !important;
+            }
+
+            .problem-left-content::before {
+                content: "Problem";
+                display: block;
+                color: #EC2D26;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                text-transform: capitalize;
+            }
+
+            .problem-item:not(.active) .problem-right {
+                display: none !important;
+            }
+
+            .problem-item.active .problem-right {
+                display: block !important;
+                width: 100% !important;
+                border-bottom: none !important;
+                padding: 15px 0 170px 0 !important;
+            }
+
+            .problem-item:not(.active) .problem-dropdown-content {
+                display: none !important;
+            }
+
+            .problem-item.active .problem-dropdown-content {
+                display: flex !important;
+                flex-direction: row !important;
+                flex-wrap: wrap !important;
+                gap: 30px !important;
+                position: relative !important;
+            }
+
+            .problem-dropdown-content::before {
+                content: "Solution";
+                display: block;
+                color: #EC2D26;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 5px;
+                width: 100%;
+                text-transform: capitalize;
+            }
+
+            .solution-main {
+                flex: 1 1 350px !important;
+                border: 1px solid #EC2D26 !important;
+                border-radius: 12px !important;
+                padding: 30px !important;
+                margin-right: 0 !important;
+                background: #000;
+            }
+            
+            .solution-main h3 {
+                margin-top: 0 !important;
+                margin-bottom: 15px !important;
+            }
+
+            .solution-sidebar {
+                flex: 2 1 600px !important;
+                border: 1px solid #EC2D26 !important;
+                border-radius: 12px !important;
+                padding: 30px !important;
+                display: flex !important;
+                flex-direction: row !important;
+                align-items: center !important;
+                background: #000;
+            }
+
+            .service-item {
+                flex: 1 !important;
+                border: none !important;
+                pointer-events: none !important;
+            }
+            
+            .service-item:not(:last-child) {
+                border-right: 1px solid rgba(255, 255, 255, 0.3) !important;
+                padding-right: 30px !important;
+            }
+            
+            .service-item:not(:first-child) {
+                padding-left: 30px !important;
+            }
+
+            .service-header {
+                padding: 0 0 20px 0 !important;
+                border-bottom: none !important;
+            }
+            .service-title {
+                font-size: 20px !important;
+                font-weight: 600 !important;
+            }
+            .service-arrow {
+                display: none !important;
+            }
+            .service-list {
+                display: block !important;
+                padding-left: 15px !important;
+            }
+            .service-list li {
+                font-size: 16px !important;
+                color: #ccc !important;
+                margin-bottom: 15px !important;
+                line-height: 1.5 !important;
+            }
+            .service-list li:last-child {
+                margin-bottom: 0 !important;
+            }
+            .service-list li::before {
+                color: #EC2D26 !important;
+            }
+
+            .fix-btn {
+                position: absolute !important;
+                bottom: -115px !important;
+                left: 0 !important;
+                margin: 0 !important;
+                background: #000 !important;
+                border: 4px solid #EF4623 !important;
+                color: #FFF !important;
+                padding: 18px 80px !important;
+                border-radius: 40px !important;
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 16px !important;
+                font-weight: 400 !important;
+                letter-spacing: 3px !important;
+                text-transform: uppercase !important;
+                cursor: pointer;
+                z-index: 10;
+                pointer-events: auto !important;
+            }
+
+            .fix-btn::before {
+                content: '' !important;
+                position: absolute !important;
+                top: -10px !important;
+                left: -10px !important;
+                right: -10px !important;
+                bottom: -10px !important;
+                border: 1px solid #EF4623 !important;
+                border-radius: 50px !important;
+                pointer-events: none !important;
+            }
+
+            .fix-btn:hover {
+                background: #EF4623 !important;
+                color: #fff !important;
+            }
+
+            .problem-dropdown-content::after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: #EC2D26;
+                position: absolute;
+                bottom: -135px;
+                left: 0;
+                z-index: 1;
+            }
+        }
+
+
+        /* Smooth reveal animation for dropdowns */
+        @keyframes smoothReveal {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .problem-item.active .problem-dropdown-content,
+        .problem-item.active .problem-right {
+            animation: smoothReveal 0.4s ease-out forwards !important;
+        }
+
 </style>
 </head>
 
@@ -2976,7 +3186,7 @@ We’ll show you the right problems. -->
                                     after the first 200 hires, they just live with the choice. We run the assessment
                                     properly, model the cost and talent implications of each city, and design the entity
                                     structure that squeezes the most out of India's tax and regulatory position.</p>
-                                <button class="fix-btn">Structure my location decision ↗</button>
+                                <button class="fix-btn">Structure my location decision</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3046,7 +3256,7 @@ We’ll show you the right problems. -->
                                     run the leadership search, the JDs, compensation benchmarked against real GCC peers,
                                     employer brand, and an interview process that holds quality even while you're hiring
                                     fast.</p>
-                                <button class="fix-btn">Design my GCC hiring strategy ↗</button>
+                                <button class="fix-btn">Design my GCC hiring strategy</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3114,7 +3324,7 @@ We’ll show you the right problems. -->
                                     away. We design the whole architecture: who decides what, reporting lines, the SLA
                                     framework, escalation paths, and an operating rhythm of cadences and forums that
                                     keeps India aligned without HQ having to intervene daily.</p>
-                                <button class="fix-btn">Design my GCC governance ↗</button>
+                                <button class="fix-btn">Design my GCC governance</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3181,7 +3391,7 @@ We’ll show you the right problems. -->
                                     it right at the start costs a fraction of fixing it after an assessment finds the
                                     gaps. We design the compliance architecture and build the operating system that
                                     keeps it current as the centre grows past its first structure.</p>
-                                <button class="fix-btn">Design my India compliance setup ↗</button>
+                                <button class="fix-btn">Design my India compliance setup</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3249,7 +3459,7 @@ We’ll show you the right problems. -->
                                     cost, quality, productivity and capability measures that actually reflect what the
                                     centre does, presented in the format your HQ CFO and business sponsors already trust
                                     rather than one they'll have to be taught to read.</p>
-                                <button class="fix-btn">Build my value demonstration plan ↗</button>
+                                <button class="fix-btn">Build my value demonstration plan</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3317,7 +3527,7 @@ We’ll show you the right problems. -->
                                     shows up in your hiring profile, what governance looks like, and how you show HQ the
                                     value from year one. We design that operating model while the centre is still small
                                     enough that changing your mind is cheap.</p>
-                                <button class="fix-btn">Design my AI-native GCC ↗</button>
+                                <button class="fix-btn">Design my AI-native GCC</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3397,7 +3607,7 @@ We’ll show you the right problems. -->
                                     the management layer, structured onboarding and knowledge transfer, real quality
                                     assurance, and a governance cadence that keeps everyone aligned as the team gets too
                                     big to align by osmosis.</p>
-                                <button class="fix-btn">Design my scaling model ↗</button>
+                                <button class="fix-btn">Design my scaling model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3466,7 +3676,7 @@ We’ll show you the right problems. -->
                                     that never quite adds up. We design the unified model: shared governance, a common
                                     SLA framework, integrated reporting, and a cross-functional rhythm that makes it one
                                     centre.</p>
-                                <button class="fix-btn">Unify my multi-function model ↗</button>
+                                <button class="fix-btn">Unify my multi-function model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3535,7 +3745,7 @@ We’ll show you the right problems. -->
                                     and the language your business sponsors use when they're deciding where the next
                                     tranche of work goes. We rebuild the value reporting for the scale you're at and the
                                     one you're heading toward.</p>
-                                <button class="fix-btn">Rebuild my value narrative ↗</button>
+                                <button class="fix-btn">Rebuild my value narrative</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3604,7 +3814,7 @@ We’ll show you the right problems. -->
                                     the work means anything, and whether good management notices. We rebuild the
                                     retention model around that specific cohort, because it's the one whose departure
                                     hurts most.</p>
-                                <button class="fix-btn">Fix my mid-level retention ↗</button>
+                                <button class="fix-btn">Fix my mid-level retention</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3673,7 +3883,7 @@ We’ll show you the right problems. -->
                                     prioritised across functions, a standardised toolchain, governance, and a
                                     measurement system that turns all that scattered effort into a credible productivity
                                     number.</p>
-                                <button class="fix-btn">Build my unified AI strategy ↗</button>
+                                <button class="fix-btn">Build my unified AI strategy</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3742,7 +3952,7 @@ We’ll show you the right problems. -->
                                     structured cadences, and cultural norms written down for the first time, so the
                                     place still works when people can no longer run everything through personal
                                     relationships.</p>
-                                <button class="fix-btn">Formalise my operating model ↗</button>
+                                <button class="fix-btn">Formalise my operating model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3822,7 +4032,7 @@ We’ll show you the right problems. -->
                                     deliberate HQ relationship programme, and a reporting cadence that keeps quietly
                                     reinforcing capability instead of cost, month after month, until the story changes.
                                 </p>
-                                <button class="fix-btn">Reposition my GCC ↗</button>
+                                <button class="fix-btn">Reposition my GCC</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3892,7 +4102,7 @@ We’ll show you the right problems. -->
                                     end, from the mandate through the operating model and talent profile to the business
                                     case that gets HQ to actually fund and sponsor it rather than just approve of it.
                                 </p>
-                                <button class="fix-btn">Design my CoE ↗</button>
+                                <button class="fix-btn">Design my CoE</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3960,7 +4170,7 @@ We’ll show you the right problems. -->
                                     over. It takes operational credibility with the sponsors you already have and a
                                     deliberate capability programme that makes the India team the obvious choice for the
                                     next level of work rather than a hopeful one. We design and run that transition.</p>
-                                <button class="fix-btn">Evolve my scope ↗</button>
+                                <button class="fix-btn">Evolve my scope</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4029,7 +4239,7 @@ We’ll show you the right problems. -->
                                     rollout, an honest before-and-after, and a narrative that can attribute the gain to
                                     AI rather than to a good quarter. We design the deployment and the measurement so
                                     the number holds up when someone at HQ pushes on it.</p>
-                                <button class="fix-btn">Build my AI productivity case ↗</button>
+                                <button class="fix-btn">Build my AI productivity case</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4098,7 +4308,7 @@ We’ll show you the right problems. -->
                                     metrics, a format HQ reads without effort, and a cadence — so the perception of
                                     India's contribution moves in the direction you want, deliberately rather than by
                                     luck.</p>
-                                <button class="fix-btn">Redesign my value reporting ↗</button>
+                                <button class="fix-btn">Redesign my value reporting</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4166,7 +4376,7 @@ We’ll show you the right problems. -->
                                     targeted senior hiring, accelerated development for the high-potentials you already
                                     have, and a promotion model that builds the profile credibly over two to three years
                                     rather than on paper overnight.</p>
-                                <button class="fix-btn">Reshape my talent pyramid ↗</button>
+                                <button class="fix-btn">Reshape my talent pyramid</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4246,7 +4456,7 @@ We’ll show you the right problems. -->
                                     against the business case, quality and capability benchmarked against peer GCCs, and
                                     a recommendation that tells you plainly what's working and what isn't. No incentive
                                     to flatter the centre, and none to bury it.</p>
-                                <button class="fix-btn">Run my GCC value assessment ↗</button>
+                                <button class="fix-btn">Run my GCC value assessment</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4314,7 +4524,7 @@ We’ll show you the right problems. -->
                                     of what each one actually does, where they overlap, what the consolidation options
                                     really cost, and what the long-term benefit is worth. We run the assessment and
                                     design the single India strategy that should have existed from the start.</p>
-                                <button class="fix-btn">Rationalise my India presence ↗</button>
+                                <button class="fix-btn">Rationalise my India presence</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4384,7 +4594,7 @@ We’ll show you the right problems. -->
                                     transition, what a realistic timeline looks like rather than an optimistic one, and
                                     how to sequence the whole thing so you reach the target operating model without a
                                     nasty gap in the middle.</p>
-                                <button class="fix-btn">Structure my GCC restructuring ↗</button>
+                                <button class="fix-btn">Structure my GCC restructuring</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4452,7 +4662,7 @@ We’ll show you the right problems. -->
                                     real ownership of global AI programmes rather than support roles on them, and an org
                                     structure that makes the whole thing credible to the rest of the business, which
                                     won't hand over ownership just because India asked. We design that model.</p>
-                                <button class="fix-btn">Build my India AI hub ↗</button>
+                                <button class="fix-btn">Build my India AI hub</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4520,7 +4730,7 @@ We’ll show you the right problems. -->
                                     hold a strategic conversation with global business leaders as a peer, and lining up
                                     successors who can take the centre to its next stage. We design that programme, and
                                     it tends to matter more than any single piece of scope.</p>
-                                <button class="fix-btn">Build my GCC leadership pipeline ↗</button>
+                                <button class="fix-btn">Build my GCC leadership pipeline</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4588,7 +4798,7 @@ We’ll show you the right problems. -->
                                     grown, scope has expanded, functions have been added, the rules have moved — all of
                                     it argues for a periodic review. We run the assessment and design the updated
                                     structure, ideally before the tax authority suggests one.</p>
-                                <button class="fix-btn">Review my India structure ↗</button>
+                                <button class="fix-btn">Review my India structure</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4666,7 +4876,7 @@ We’ll show you the right problems. -->
                                     that staying doesn't pay. The levers for the 3–7 year band are specific: a visible
                                     career path, work that means something, exposure to HQ, and managers worth working
                                     for. We run the diagnostic and rebuild the model for exactly this cohort.</p>
-                                <button class="fix-btn">Fix my mid-level attrition ↗</button>
+                                <button class="fix-btn">Fix my mid-level attrition</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4734,7 +4944,7 @@ We’ll show you the right problems. -->
                                     from within, and running a promotion model that makes the whole shift credible over
                                     two to three years. Done fast and lazily it fools nobody, least of all HQ. We design
                                     it to actually hold up.</p>
-                                <button class="fix-btn">Restructure my talent pyramid ↗</button>
+                                <button class="fix-btn">Restructure my talent pyramid</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4802,7 +5012,7 @@ We’ll show you the right problems. -->
                                     need, plus a measurement framework that proves the improvement to HQ and tells you
                                     honestly which roles can be reskilled and which can't. We build the programme around
                                     that distinction, because pretending everyone can be upskilled helps no one.</p>
-                                <button class="fix-btn">Close my AI skills gap ↗</button>
+                                <button class="fix-btn">Close my AI skills gap</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4870,7 +5080,7 @@ We’ll show you the right problems. -->
                                     seat on global projects. Done well, an India GCC career competes with anything else
                                     on the market. Left vague, your best people leave to find that clarity somewhere
                                     else. We design the architecture that makes staying the rational choice.</p>
-                                <button class="fix-btn">Build my career architecture ↗</button>
+                                <button class="fix-btn">Build my career architecture</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4937,7 +5147,7 @@ We’ll show you the right problems. -->
                                     learning environment, how fast a career can move inside your centre. Generic 'great
                                     place to work' messaging is invisible here. We design the specific EVP and brand
                                     strategy that gives a strong candidate an actual reason to pick you.</p>
-                                <button class="fix-btn">Build my employer brand ↗</button>
+                                <button class="fix-btn">Build my employer brand</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5007,7 +5217,7 @@ We’ll show you the right problems. -->
                                     tracks capability progression rather than training hours completed, then connects it
                                     to delivery quality and the scope you're trying to win. Hours attended prove
                                     attendance; this proves capability.</p>
-                                <button class="fix-btn">Fix my L&D effectiveness ↗</button>
+                                <button class="fix-btn">Fix my L&D effectiveness</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5086,7 +5296,7 @@ We’ll show you the right problems. -->
                                     ambiguous enough to argue about. We run the diagnostic function by function, find
                                     the actual cause in each, and fix that. Boringly consistent delivery is the goal,
                                     and boring is underrated.</p>
-                                <button class="fix-btn">Fix my SLA performance ↗</button>
+                                <button class="fix-btn">Fix my SLA performance</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5156,7 +5366,7 @@ We’ll show you the right problems. -->
                                     delivery intelligence layer so you're looking at what's happening now, not a tidy
                                     summary of last month, by which point the conversation with HQ has usually already
                                     gone the wrong way.</p>
-                                <button class="fix-btn">Build my delivery intelligence ↗</button>
+                                <button class="fix-btn">Build my delivery intelligence</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5226,7 +5436,7 @@ We’ll show you the right problems. -->
                                     the kind that justifies more AI investment and marks the centre as genuinely
                                     AI-capable. We design and run it across your functions, so the effort finally shows
                                     up in a number HQ recognises.</p>
-                                <button class="fix-btn">Build my coordinated AI programme ↗</button>
+                                <button class="fix-btn">Build my coordinated AI programme</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5294,7 +5504,7 @@ We’ll show you the right problems. -->
                                     criteria for what 'ready to go live' even means. We build the KT architecture —
                                     process, documentation standards, competency assessment, explicit go-live criteria —
                                     so a migration becomes a reliable handover rather than a hopeful one.</p>
-                                <button class="fix-btn">Fix my knowledge transfer ↗</button>
+                                <button class="fix-btn">Fix my knowledge transfer</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5363,7 +5573,7 @@ We’ll show you the right problems. -->
                                     quality standards, so the output is consistent no matter which team happens to
                                     produce it. We define that and make it stick, without turning everyone into robots.
                                 </p>
-                                <button class="fix-btn">Standardise my GCC processes ↗</button>
+                                <button class="fix-btn">Standardise my GCC processes</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5432,7 +5642,7 @@ We’ll show you the right problems. -->
                                     into new scope instead of banked as visible efficiency. We design the programme that
                                     produces improvement you can actually measure and show, against the number you
                                     committed to.</p>
-                                <button class="fix-btn">Deliver my productivity commitments ↗</button>
+                                <button class="fix-btn">Deliver my productivity commitments</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">

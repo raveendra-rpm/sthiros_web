@@ -557,7 +557,7 @@
         }
 
         .problem-desc {
-            display: none;
+            display: block;
             color: var(--WHITE, #FFF);
             font-family: Quicksand, sans-serif;
             font-size: 16px;
@@ -1724,7 +1724,7 @@
             }
 
             .problem-desc {
-                display: none;
+                display: block;
             color: var(--WHITE, #FFF);
             font-family: Quicksand, sans-serif;
             font-size: 16px;
@@ -1902,7 +1902,7 @@
             }
 
             .problem-item:not(.active) .problem-desc {
-                display: none !important;
+                display: block !important;
             }
 
             .problem-item.active .problem-desc {
@@ -2464,6 +2464,216 @@
             }
         }
 
+/* --- Redesign Desktop Layout for Who Are You Problems Section --- */
+        @media (min-width: 769px) {
+            .problem-header {
+                display: none !important;
+            }
+
+            .problem-item {
+                flex-direction: column !important;
+                gap: 0 !important;
+                border-bottom: 1px solid rgba(236, 45, 38, 0.4) !important;
+                background-color: transparent !important;
+                position: relative;
+            }
+            .problem-item.active {
+                border-bottom: none !important;
+                padding-bottom: 20px !important;
+            }
+
+            .problem-left {
+                width: 100% !important;
+                min-width: 0 !important;
+                padding: 30px 0 !important;
+                border-bottom: 1px solid #EC2D26 !important;
+                display: flex !important;
+                justify-content: space-between !important;
+                align-items: flex-start !important;
+            }
+
+            .problem-left-content::before {
+                content: "Problem";
+                display: block;
+                color: #EC2D26;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                text-transform: capitalize;
+            }
+
+            .problem-item:not(.active) .problem-right {
+                display: none !important;
+            }
+
+            .problem-item.active .problem-right {
+                display: block !important;
+                width: 100% !important;
+                border-bottom: none !important;
+                padding: 15px 0 170px 0 !important;
+            }
+
+            .problem-item:not(.active) .problem-dropdown-content {
+                display: none !important;
+            }
+
+            .problem-item.active .problem-dropdown-content {
+                display: flex !important;
+                flex-direction: row !important;
+                flex-wrap: wrap !important;
+                gap: 30px !important;
+                position: relative !important;
+            }
+
+            .problem-dropdown-content::before {
+                content: "Solution";
+                display: block;
+                color: #EC2D26;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 5px;
+                width: 100%;
+                text-transform: capitalize;
+            }
+
+            .solution-main {
+                flex: 1 1 350px !important;
+                border: 1px solid #EC2D26 !important;
+                border-radius: 12px !important;
+                padding: 30px !important;
+                margin-right: 0 !important;
+                background: #000;
+            }
+            
+            .solution-main h3 {
+                margin-top: 0 !important;
+                margin-bottom: 15px !important;
+            }
+
+            .solution-sidebar {
+                flex: 2 1 600px !important;
+                border: 1px solid #EC2D26 !important;
+                border-radius: 12px !important;
+                padding: 30px !important;
+                display: flex !important;
+                flex-direction: row !important;
+                align-items: center !important;
+                background: #000;
+            }
+
+            .service-item {
+                flex: 1 !important;
+                border: none !important;
+                pointer-events: none !important;
+            }
+            
+            .service-item:not(:last-child) {
+                border-right: 1px solid rgba(255, 255, 255, 0.3) !important;
+                padding-right: 30px !important;
+            }
+            
+            .service-item:not(:first-child) {
+                padding-left: 30px !important;
+            }
+
+            .service-header {
+                padding: 0 0 20px 0 !important;
+                border-bottom: none !important;
+            }
+            .service-title {
+                font-size: 20px !important;
+                font-weight: 600 !important;
+            }
+            .service-arrow {
+                display: none !important;
+            }
+            .service-list {
+                display: block !important;
+                padding-left: 15px !important;
+            }
+            .service-list li {
+                font-size: 16px !important;
+                color: #ccc !important;
+                margin-bottom: 15px !important;
+                line-height: 1.5 !important;
+            }
+            .service-list li:last-child {
+                margin-bottom: 0 !important;
+            }
+            .service-list li::before {
+                color: #EC2D26 !important;
+            }
+
+            .fix-btn {
+                position: absolute !important;
+                bottom: -115px !important;
+                left: 0 !important;
+                margin: 0 !important;
+                background: #000 !important;
+                border: 4px solid #EF4623 !important;
+                color: #FFF !important;
+                padding: 18px 80px !important;
+                border-radius: 40px !important;
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 16px !important;
+                font-weight: 400 !important;
+                letter-spacing: 3px !important;
+                text-transform: uppercase !important;
+                cursor: pointer;
+                z-index: 10;
+                pointer-events: auto !important;
+            }
+
+            .fix-btn::before {
+                content: '' !important;
+                position: absolute !important;
+                top: -10px !important;
+                left: -10px !important;
+                right: -10px !important;
+                bottom: -10px !important;
+                border: 1px solid #EF4623 !important;
+                border-radius: 50px !important;
+                pointer-events: none !important;
+            }
+
+            .fix-btn:hover {
+                background: #EF4623 !important;
+                color: #fff !important;
+            }
+
+            .problem-dropdown-content::after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: #EC2D26;
+                position: absolute;
+                bottom: -135px;
+                left: 0;
+                z-index: 1;
+            }
+        }
+
+
+        /* Smooth reveal animation for dropdowns */
+        @keyframes smoothReveal {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .problem-item.active .problem-dropdown-content,
+        .problem-item.active .problem-right {
+            animation: smoothReveal 0.4s ease-out forwards !important;
+        }
+
 </style>
 </head>
 
@@ -2983,7 +3193,7 @@ We’ll show you the right problems. -->
                                     district-level work breakdown, a PMU model that owns outcomes rather than
                                     expenditure, and a reporting system that tracks physical progress instead of just
                                     the fund flow it's supposed to represent.</p>
-                                <button class="fix-btn">Fix my scheme delivery ↗</button>
+                                <button class="fix-btn">Fix my scheme delivery</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3052,7 +3262,7 @@ We’ll show you the right problems. -->
                                     memo. We rebuild the identification layer — deduplication, field verification, and
                                     an audit system that keeps checking the database instead of trusting it once at
                                     intake — so leakage and exclusion both shrink instead of just changing shape.</p>
-                                <button class="fix-btn">Fix my beneficiary targeting ↗</button>
+                                <button class="fix-btn">Fix my beneficiary targeting</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3121,7 +3331,7 @@ We’ll show you the right problems. -->
                                     feeds into one place, standardise what a state actually has to report, and build the
                                     dashboard that flags a lagging district before the quarterly review does — so the
                                     ministry is looking at this month, not the one before it.</p>
-                                <button class="fix-btn">Build my programme intelligence ↗</button>
+                                <button class="fix-btn">Build my programme intelligence</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3190,7 +3400,7 @@ We’ll show you the right problems. -->
                                     money moves: what needs verifying, a review process that can't be talked around, and
                                     a standard DPR format that makes a gap visible to whoever's approving it, not just
                                     to whoever eventually inherits the delay.</p>
-                                <button class="fix-btn">Improve my DPR quality ↗</button>
+                                <button class="fix-btn">Improve my DPR quality</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3259,7 +3469,7 @@ We’ll show you the right problems. -->
                                     are well understood. The harder part is building it inside NIC infrastructure and
                                     government data governance rather than around it. We do that part, which is the part
                                     that actually ships.</p>
-                                <button class="fix-btn">Deploy AI in my scheme ↗</button>
+                                <button class="fix-btn">Deploy AI in my scheme</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3328,7 +3538,7 @@ We’ll show you the right problems. -->
                                     stalls, each department delivers its component on schedule and the beneficiary still
                                     doesn't get the combined outcome. We design the governance architecture that makes
                                     convergence something the system does, not something that depends on goodwill.</p>
-                                <button class="fix-btn">Design my convergence architecture ↗</button>
+                                <button class="fix-btn">Design my convergence architecture</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3407,7 +3617,7 @@ We’ll show you the right problems. -->
                                     We run the last-mile diagnostic to find the specific blocks and bottlenecks, then
                                     build the fix — concentrated handholding, simpler field reporting, and an
                                     early-warning flag that catches a lagging block while there's still time to act.</p>
-                                <button class="fix-btn">Accelerate my last-mile delivery ↗</button>
+                                <button class="fix-btn">Accelerate my last-mile delivery</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3475,7 +3685,7 @@ We’ll show you the right problems. -->
                                     utilisation calendar — quarterly expenditure targets, a procurement schedule that
                                     isn't an afterthought, a UC clearance push — and a monitoring view that shows the
                                     trajectory in June, not the shortfall in March.</p>
-                                <button class="fix-btn">Fix my fund utilisation ↗</button>
+                                <button class="fix-btn">Fix my fund utilisation</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3544,7 +3754,7 @@ We’ll show you the right problems. -->
                                     failure wearing a grievance number. We rebuild the system to read for the pattern:
                                     root cause escalation, scheme-specific feedback loops, and a monitoring view that
                                     turns repeat complaints into a fix rather than a faster close time.</p>
-                                <button class="fix-btn">Fix my grievance management ↗</button>
+                                <button class="fix-btn">Fix my grievance management</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3613,7 +3823,7 @@ We’ll show you the right problems. -->
                                     place, tracks the expenditure trajectory as it happens, and gives the Finance
                                     Secretary and the CM Office a view of this quarter, not a reconstruction of the last
                                     one.</p>
-                                <button class="fix-btn">Build my finance monitoring system ↗</button>
+                                <button class="fix-btn">Build my finance monitoring system</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3682,7 +3892,7 @@ We’ll show you the right problems. -->
                                     gives it to you: a common data architecture, standard reporting templates every
                                     department can use, district-level drill-down, and exception flags that surface the
                                     underperforming scheme before the Planning Department goes looking for it.</p>
-                                <button class="fix-btn">Build my state programme MIS ↗</button>
+                                <button class="fix-btn">Build my state programme MIS</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3752,7 +3962,7 @@ We’ll show you the right problems. -->
                                     a capacity and culture gap, not a funding one, which is good news, because it means
                                     it can be transferred. We find what the high performers are doing, document it
                                     properly, and build the programme that moves it to the districts that aren't.</p>
-                                <button class="fix-btn">Strengthen district capacity ↗</button>
+                                <button class="fix-btn">Strengthen district capacity</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3831,7 +4041,7 @@ We’ll show you the right problems. -->
                                     AOP, a procurement calendar that isn't wishful thinking, and a monitoring system
                                     that shows deployment against plan in real time, not at the quarterly board meeting.
                                 </p>
-                                <button class="fix-btn">Accelerate my capex deployment ↗</button>
+                                <button class="fix-btn">Accelerate my capex deployment</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3901,7 +4111,7 @@ We’ll show you the right problems. -->
                                     put a real contractor performance framework in place, and build the tracking system
                                     that shows senior management where things stand today, not what the last monthly
                                     deck said.</p>
-                                <button class="fix-btn">Improve my project execution ↗</button>
+                                <button class="fix-btn">Improve my project execution</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3970,7 +4180,7 @@ We’ll show you the right problems. -->
                                     all adding up quietly. We benchmark cost per unit against comparable entities, find
                                     where the waste actually sits, and build the improvement programme that works inside
                                     PSU governance rather than pretending that governance can be ignored.</p>
-                                <button class="fix-btn">Improve my operational efficiency ↗</button>
+                                <button class="fix-btn">Improve my operational efficiency</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4039,7 +4249,7 @@ We’ll show you the right problems. -->
                                     framework that gives you real integrity: transparent process, documented rationale,
                                     sensible delegation, an audit trail that holds up, without the paralysis that slows
                                     procurement to the point it stops serving anyone.</p>
-                                <button class="fix-btn">Strengthen my procurement governance ↗</button>
+                                <button class="fix-btn">Strengthen my procurement governance</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4108,7 +4318,7 @@ We’ll show you the right problems. -->
                                     people already there, senior lateral hires where they're worth the exception, and
                                     partnerships with technical institutions that lend you capability without adding
                                     permanent headcount. We design that mix for the mandate you're actually running.</p>
-                                <button class="fix-btn">Build my PSU talent capability ↗</button>
+                                <button class="fix-btn">Build my PSU talent capability</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4177,7 +4387,7 @@ We’ll show you the right problems. -->
                                     procurement, and the approval chain new technology has to survive. We design and
                                     deploy inside those constraints, because that's the only version of AI that actually
                                     gets switched on in a PSU.</p>
-                                <button class="fix-btn">Deploy AI in my PSU ↗</button>
+                                <button class="fix-btn">Deploy AI in my PSU</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4258,7 +4468,7 @@ We’ll show you the right problems. -->
                                     satellite-based property identification, GIS integration with the tax records, an
                                     assessment update process, and the collection model that actually realises the
                                     revenue once it's found.</p>
-                                <button class="fix-btn">Improve my city revenue ↗</button>
+                                <button class="fix-btn">Improve my city revenue</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4327,7 +4537,7 @@ We’ll show you the right problems. -->
                                     mobility app launched without anyone using it, and the operations model never got
                                     designed alongside the technology. We run the delivery diagnostic and build the plan
                                     that finishes what's unfinished and gets the rest actually used.</p>
-                                <button class="fix-btn">Complete my Smart City projects ↗</button>
+                                <button class="fix-btn">Complete my Smart City projects</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4396,7 +4606,7 @@ We’ll show you the right problems. -->
                                     contractor accountability, grievances are triage and escalation. Treating all three
                                     as one undifferentiated citizen-services problem is how they all stay broken. We
                                     diagnose and fix each on its own terms.</p>
-                                <button class="fix-btn">Improve my citizen services ↗</button>
+                                <button class="fix-btn">Improve my citizen services</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4465,7 +4675,7 @@ We’ll show you the right problems. -->
                                     underneath — a unified GIS base, a cross-departmental dashboard, and a real-time
                                     operations view that finally lets someone manage the city by exception instead of by
                                     whichever department called first.</p>
-                                <button class="fix-btn">Build my city intelligence ↗</button>
+                                <button class="fix-btn">Build my city intelligence</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4534,7 +4744,7 @@ We’ll show you the right problems. -->
                                     plan. GIS-based monitoring, an online permission system with auto-scrutiny, and
                                     satellite-based violation detection turn what used to require a physical inspector
                                     into something the system watches continuously.</p>
-                                <button class="fix-btn">Modernise my urban planning ↗</button>
+                                <button class="fix-btn">Modernise my urban planning</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4603,7 +4813,7 @@ We’ll show you the right problems. -->
                                     already worked in other Indian cities. We build them into your existing systems
                                     rather than as a standalone platform, so the outputs land on a city official's desk
                                     as something to act on, not another dashboard nobody logs into.</p>
-                                <button class="fix-btn">Deploy AI in my city ↗</button>
+                                <button class="fix-btn">Deploy AI in my city</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4683,7 +4893,7 @@ We’ll show you the right problems. -->
                                     coordinate the piece that usually falls through the gap between the defence
                                     establishment, DRDO and the industrial base: the programme management that turns the
                                     policy into a supplier who can deliver.</p>
-                                <button class="fix-btn">Accelerate my indigenisation programme ↗</button>
+                                <button class="fix-btn">Accelerate my indigenisation programme</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4752,7 +4962,7 @@ We’ll show you the right problems. -->
                                     meetings. We staff and design that layer: proactive evaluation management and an
                                     escalation path that surfaces a stuck decision before it becomes a schedule problem.
                                 </p>
-                                <button class="fix-btn">Improve my acquisition timelines ↗</button>
+                                <button class="fix-btn">Improve my acquisition timelines</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4820,7 +5030,7 @@ We’ll show you the right problems. -->
                                     that a field technician can actually use. We run the readiness diagnostic to find
                                     where availability is actually being lost, then build the fix, including predictive
                                     maintenance wherever the platform already has the sensor data to support it.</p>
-                                <button class="fix-btn">Improve my platform readiness ↗</button>
+                                <button class="fix-btn">Improve my platform readiness</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4888,7 +5098,7 @@ We’ll show you the right problems. -->
                                     through them at once needs people who know the procedure, understand the technical
                                     domain, and can move a decision through the approval chain without losing months to
                                     it. That's the support we provide.</p>
-                                <button class="fix-btn">Strengthen my programme management ↗</button>
+                                <button class="fix-btn">Strengthen my programme management</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4956,7 +5166,7 @@ We’ll show you the right problems. -->
                                     network requirements, domestic infrastructure rules, and data governance mean the
                                     architecture has to be built specifically for this environment rather than adapted
                                     from somewhere else. We build it to that standard from the start.</p>
-                                <button class="fix-btn">Deploy AI in defence operations ↗</button>
+                                <button class="fix-btn">Deploy AI in defence operations</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5025,7 +5235,7 @@ We’ll show you the right problems. -->
                                     transfer that's actually managed, and quality systems built to the standard the OEM
                                     requires. We coordinate that development between the defence establishment, the
                                     OEMs, and the MSME suppliers who need to get there.</p>
-                                <button class="fix-btn">Develop my defence manufacturing ecosystem ↗</button>
+                                <button class="fix-btn">Develop my defence manufacturing ecosystem</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5104,7 +5314,7 @@ We’ll show you the right problems. -->
                                     of change, not the cash flow. We redesign the system around outcome indicators and
                                     the data collection that can actually support them, so the portfolio review measures
                                     results, not just spend.</p>
-                                <button class="fix-btn">Build my results monitoring system ↗</button>
+                                <button class="fix-btn">Build my results monitoring system</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5174,7 +5384,7 @@ We’ll show you the right problems. -->
                                     four: procurement design inside the DFI's own guidelines, counterpart coordination,
                                     regulatory navigation, and a project management office that keeps the clock on the
                                     commitment period, not the calendar.</p>
-                                <button class="fix-btn">Accelerate my project implementation ↗</button>
+                                <button class="fix-btn">Accelerate my project implementation</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5243,7 +5453,7 @@ We’ll show you the right problems. -->
                                     capability is actually missing, what needs building, and what intervention gets
                                     there in the time available, so the TA and the investment are pulling in the same
                                     direction.</p>
-                                <button class="fix-btn">Redesign my TA programme ↗</button>
+                                <button class="fix-btn">Redesign my TA programme</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5311,7 +5521,7 @@ We’ll show you the right problems. -->
                                     Generic public financial management training rarely moves that needle. What does is
                                     capacity strengthening built around the specific implementation requirements of this
                                     investment, which is the version we design and deliver.</p>
-                                <button class="fix-btn">Strengthen my borrower capacity ↗</button>
+                                <button class="fix-btn">Strengthen my borrower capacity</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5381,7 +5591,7 @@ We’ll show you the right problems. -->
                                     warning scoring across sources, outcome measurement from remote sensing and
                                     administrative data, and the climate risk assessment that infrastructure portfolios
                                     increasingly need to show.</p>
-                                <button class="fix-btn">Build my portfolio AI capability ↗</button>
+                                <button class="fix-btn">Build my portfolio AI capability</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5450,7 +5660,7 @@ We’ll show you the right problems. -->
                                     with the staff member who knew it. We build the knowledge system that captures it
                                     properly, makes it searchable at the point a new project is being designed, and
                                     ensures the next programme doesn't start from zero.</p>
-                                <button class="fix-btn">Build my knowledge management system ↗</button>
+                                <button class="fix-btn">Build my knowledge management system</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">

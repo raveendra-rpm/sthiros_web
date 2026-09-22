@@ -555,7 +555,7 @@
         }
 
         .problem-desc {
-            display: none;
+            display: block;
             color: var(--WHITE, #FFF);
             font-family: Quicksand, sans-serif;
             font-size: 16px;
@@ -1722,7 +1722,7 @@
             }
 
             .problem-desc {
-                display: none;
+                display: block;
             color: var(--WHITE, #FFF);
             font-family: Quicksand, sans-serif;
             font-size: 16px;
@@ -1900,7 +1900,7 @@
             }
 
             .problem-item:not(.active) .problem-desc {
-                display: none !important;
+                display: block !important;
             }
 
             .problem-item.active .problem-desc {
@@ -2462,6 +2462,216 @@
             }
         }
 
+/* --- Redesign Desktop Layout for Who Are You Problems Section --- */
+        @media (min-width: 769px) {
+            .problem-header {
+                display: none !important;
+            }
+
+            .problem-item {
+                flex-direction: column !important;
+                gap: 0 !important;
+                border-bottom: 1px solid rgba(236, 45, 38, 0.4) !important;
+                background-color: transparent !important;
+                position: relative;
+            }
+            .problem-item.active {
+                border-bottom: none !important;
+                padding-bottom: 20px !important;
+            }
+
+            .problem-left {
+                width: 100% !important;
+                min-width: 0 !important;
+                padding: 30px 0 !important;
+                border-bottom: 1px solid #EC2D26 !important;
+                display: flex !important;
+                justify-content: space-between !important;
+                align-items: flex-start !important;
+            }
+
+            .problem-left-content::before {
+                content: "Problem";
+                display: block;
+                color: #EC2D26;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                text-transform: capitalize;
+            }
+
+            .problem-item:not(.active) .problem-right {
+                display: none !important;
+            }
+
+            .problem-item.active .problem-right {
+                display: block !important;
+                width: 100% !important;
+                border-bottom: none !important;
+                padding: 15px 0 170px 0 !important;
+            }
+
+            .problem-item:not(.active) .problem-dropdown-content {
+                display: none !important;
+            }
+
+            .problem-item.active .problem-dropdown-content {
+                display: flex !important;
+                flex-direction: row !important;
+                flex-wrap: wrap !important;
+                gap: 30px !important;
+                position: relative !important;
+            }
+
+            .problem-dropdown-content::before {
+                content: "Solution";
+                display: block;
+                color: #EC2D26;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 5px;
+                width: 100%;
+                text-transform: capitalize;
+            }
+
+            .solution-main {
+                flex: 1 1 350px !important;
+                border: 1px solid #EC2D26 !important;
+                border-radius: 12px !important;
+                padding: 30px !important;
+                margin-right: 0 !important;
+                background: #000;
+            }
+            
+            .solution-main h3 {
+                margin-top: 0 !important;
+                margin-bottom: 15px !important;
+            }
+
+            .solution-sidebar {
+                flex: 2 1 600px !important;
+                border: 1px solid #EC2D26 !important;
+                border-radius: 12px !important;
+                padding: 30px !important;
+                display: flex !important;
+                flex-direction: row !important;
+                align-items: center !important;
+                background: #000;
+            }
+
+            .service-item {
+                flex: 1 !important;
+                border: none !important;
+                pointer-events: none !important;
+            }
+            
+            .service-item:not(:last-child) {
+                border-right: 1px solid rgba(255, 255, 255, 0.3) !important;
+                padding-right: 30px !important;
+            }
+            
+            .service-item:not(:first-child) {
+                padding-left: 30px !important;
+            }
+
+            .service-header {
+                padding: 0 0 20px 0 !important;
+                border-bottom: none !important;
+            }
+            .service-title {
+                font-size: 20px !important;
+                font-weight: 600 !important;
+            }
+            .service-arrow {
+                display: none !important;
+            }
+            .service-list {
+                display: block !important;
+                padding-left: 15px !important;
+            }
+            .service-list li {
+                font-size: 16px !important;
+                color: #ccc !important;
+                margin-bottom: 15px !important;
+                line-height: 1.5 !important;
+            }
+            .service-list li:last-child {
+                margin-bottom: 0 !important;
+            }
+            .service-list li::before {
+                color: #EC2D26 !important;
+            }
+
+            .fix-btn {
+                position: absolute !important;
+                bottom: -115px !important;
+                left: 0 !important;
+                margin: 0 !important;
+                background: #000 !important;
+                border: 4px solid #EF4623 !important;
+                color: #FFF !important;
+                padding: 18px 80px !important;
+                border-radius: 40px !important;
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 16px !important;
+                font-weight: 400 !important;
+                letter-spacing: 3px !important;
+                text-transform: uppercase !important;
+                cursor: pointer;
+                z-index: 10;
+                pointer-events: auto !important;
+            }
+
+            .fix-btn::before {
+                content: '' !important;
+                position: absolute !important;
+                top: -10px !important;
+                left: -10px !important;
+                right: -10px !important;
+                bottom: -10px !important;
+                border: 1px solid #EF4623 !important;
+                border-radius: 50px !important;
+                pointer-events: none !important;
+            }
+
+            .fix-btn:hover {
+                background: #EF4623 !important;
+                color: #fff !important;
+            }
+
+            .problem-dropdown-content::after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: #EC2D26;
+                position: absolute;
+                bottom: -135px;
+                left: 0;
+                z-index: 1;
+            }
+        }
+
+
+        /* Smooth reveal animation for dropdowns */
+        @keyframes smoothReveal {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .problem-item.active .problem-dropdown-content,
+        .problem-item.active .problem-right {
+            animation: smoothReveal 0.4s ease-out forwards !important;
+        }
+
 </style>
 </head>
 
@@ -2979,7 +3189,7 @@ We’ll show you the right problems. -->
                                     to stand and look. We decompose it down to the batch, the parameter and the
                                     operator, and build the monitoring that catches a deviation while the batch can
                                     still be saved rather than mourned.</p>
-                                <button class="fix-btn">Fix my batch yield ↗</button>
+                                <button class="fix-btn">Fix my batch yield</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3048,7 +3258,7 @@ We’ll show you the right problems. -->
                                     time, batch records that fill themselves, and an audit trail that satisfies both
                                     internal QA and an external inspector without a week of someone frantically
                                     assembling documents the night before.</p>
-                                <button class="fix-btn">Fix my compliance operating model ↗</button>
+                                <button class="fix-btn">Fix my compliance operating model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3118,7 +3328,7 @@ We’ll show you the right problems. -->
                                     integrated, real failure patterns modelled, and scheduling that acts on how the
                                     equipment is actually behaving rather than what the plan says this month.
                                 </p>
-                                <button class="fix-btn">Build my predictive maintenance system ↗</button>
+                                <button class="fix-btn">Build my predictive maintenance system</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3188,7 +3398,7 @@ We’ll show you the right problems. -->
                                     multi-sourcing where it's worth it, price intelligence feeds, sensible hedging, and
                                     a timing model that shrinks the gap between the standard cost in your sheet and the
                                     actual cost you paid.</p>
-                                <button class="fix-btn">Build my raw material intelligence ↗</button>
+                                <button class="fix-btn">Build my raw material intelligence</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3257,7 +3467,7 @@ We’ll show you the right problems. -->
                                     downtime, quality and utility consumption visible live by line, batch and shift — so
                                     your plant manager is making calls during the shift, while there's still a shift
                                     left to change.</p>
-                                <button class="fix-btn">Build my plant intelligence ↗</button>
+                                <button class="fix-btn">Build my plant intelligence</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3326,7 +3536,7 @@ We’ll show you the right problems. -->
                                     first and design the expansion second, on a foundation that can actually carry the
                                     extra weight.
                                 </p>
-                                <button class="fix-btn">Stabilise my process first ↗</button>
+                                <button class="fix-btn">Stabilise my process first</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3405,7 +3615,7 @@ We’ll show you the right problems. -->
                                     constraint-based scheduling, buffers where they belong, material readiness checked
                                     before the job starts, and a daily rhythm that stops a small disruption from quietly
                                     turning into a late shipment</p>
-                                    <button class="fix-btn">Improve my on-time delivery ↗</button>
+                                    <button class="fix-btn">Improve my on-time delivery</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3474,7 +3684,7 @@ We’ll show you the right problems. -->
                                     particular machines, operators, setups and material lots. We find the clusters, fix
                                     what's actually causing them, and build the in-process monitoring that catches a
                                     deviation before it becomes a reject rather than after.</p>
-                                <button class="fix-btn">Reduce my rejection rate ↗</button>
+                                <button class="fix-btn">Reduce my rejection rate</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3543,7 +3753,7 @@ We’ll show you the right problems. -->
                                     name the top three loss contributors, and build the improvement programme that goes
                                     after them in the order that actually pays, not the order that's easiest.
                                 </p>
-                                <button class="fix-btn">Improve my OEE ↗</button>
+                                <button class="fix-btn">Improve my OEE</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3610,7 +3820,7 @@ We’ll show you the right problems. -->
                                     stops. A stopped line in discrete manufacturing isn't a subtle cost either — it's
                                     immediate and everyone can see it. We rework the risk architecture: dual sourcing on
                                     the items that would actually halt you, safety stock set by component</p>
-                                <button class="fix-btn">Reduce my supply chain risk ↗</button>
+                                <button class="fix-btn">Reduce my supply chain risk</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3680,7 +3890,7 @@ We’ll show you the right problems. -->
                                     instructions rebuilt from watching how the job is actually done, setup videos, and a
                                     digital work-guidance system that gets a new operator to full speed in weeks rather
                                     than months.</p>
-                                <button class="fix-btn">Capture my operator knowledge ↗</button>
+                                <button class="fix-btn">Capture my operator knowledge</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3751,7 +3961,7 @@ We’ll show you the right problems. -->
                                     and a sequence that produces return rather than a nice thing to show visitors on a
                                     factory tour.
                                 </p>
-                                <button class="fix-btn">Build my I4.0 roadmap ↗</button>
+                                <button class="fix-btn">Build my I4.0 roadmap</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3830,7 +4040,7 @@ We’ll show you the right problems. -->
                                     against standard, utilities by product, whether overhead is even allocated
                                     accurately — and then implement the specific improvements that quietly give you a
                                     cost structure your competitors can't match at the price you're both quoting.</p>
-                                <button class="fix-btn">Find my hidden efficiency ↗</button>
+                                <button class="fix-btn">Find my hidden efficiency</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3898,7 +4108,7 @@ We’ll show you the right problems. -->
                                     analysis, redesign the sequence so more of it happens while the line's still
                                     running, and write the standard procedure that makes every changeover both faster
                                     and consistent, not just faster on a good day.</p>
-                                <button class="fix-btn">Reduce my changeover time ↗</button>
+                                <button class="fix-btn">Reduce my changeover time</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3968,7 +4178,7 @@ We’ll show you the right problems. -->
                                     reservation model that stops your customers' forecast errors from landing on your
                                     P&L.
                                 </p>
-                                <button class="fix-btn">Fix my demand planning ↗</button>
+                                <button class="fix-btn">Fix my demand planning</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4037,7 +4247,7 @@ We’ll show you the right problems. -->
                                     drifted since the last visit. We run the pre-audit diagnostic, close the gaps, and
                                     build the ongoing readiness discipline that turns each audit into a routine day
                                     rather than a fortnight of held breath.</p>
-                                <button class="fix-btn">Build my audit readiness ↗</button>
+                                <button class="fix-btn">Build my audit readiness</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4108,7 +4318,7 @@ We’ll show you the right problems. -->
                                     what's really available. We build the model that lets you quote new business with
                                     confidence and commit dates you can actually hit, so growth doesn't come at the
                                     expense of the customers you already have.</p>
-                                <button class="fix-btn">Build my capacity planning model ↗</button>
+                                <button class="fix-btn">Build my capacity planning model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4177,7 +4387,7 @@ We’ll show you the right problems. -->
                                     through a portal they can open themselves. We build that layer, and it usually pays
                                     for itself in the sales conversations it wins.
                                 </p>
-                                <button class="fix-btn">Build my brand owner reporting ↗</button>
+                                <button class="fix-btn">Build my brand owner reporting</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4257,7 +4467,7 @@ We’ll show you the right problems. -->
                                     install job cost tracking at the work centre level, so actual-versus-standard is
                                     visible while the job is still on the floor and you can do something, rather than in
                                     the reconciliation after it's shipped and you can only wince.</p>
-                                <button class="fix-btn">Control my job costs ↗</button>
+                                <button class="fix-btn">Control my job costs</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4325,7 +4535,7 @@ We’ll show you the right problems. -->
                                     planning architecture for long-cycle work — milestone-based scheduling, the
                                     constraints identified up front, buffers between stages, and an early-warning system
                                     that flags a delay while there's still enough runway to absorb it.</p>
-                                <button class="fix-btn">Fix my order delivery ↗</button>
+                                <button class="fix-btn">Fix my order delivery</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4393,7 +4603,7 @@ We’ll show you the right problems. -->
                                     the door. We build the tracking that shows actual against standard at the work
                                     centre level in real time, so production and commercial can make the cost-saving
                                     call while the job is still in front of them.</p>
-                                <button class="fix-btn">Build my real-time job cost tracking ↗</button>
+                                <button class="fix-btn">Build my real-time job cost tracking</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4462,7 +4672,7 @@ We’ll show you the right problems. -->
                                     usually some mix of thin design review, loose customer requirements management, and
                                     engineering and production not quite talking — and close those gaps one at a time.
                                 </p>
-                                <button class="fix-btn">Reduce my engineering rework ↗</button>
+                                <button class="fix-btn">Reduce my engineering rework</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4533,7 +4743,7 @@ We’ll show you the right problems. -->
                                     model: lead times mapped, critical items planned ahead, vendor qualification that's
                                     actually rigorous, and a purchase intelligence system that keeps your schedule from
                                     being held hostage by a late PO.</p>
-                                <button class="fix-btn">Fix my procurement model ↗</button>
+                                <button class="fix-btn">Fix my procurement model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4603,7 +4813,7 @@ We’ll show you the right problems. -->
                                     data, add a structured risk-pricing layer, and put in a bid review that catches the
                                     pricing error before it goes out rather than after the job's underwater.
                                 </p>
-                                <button class="fix-btn">Fix my estimating accuracy ↗</button>
+                                <button class="fix-btn">Fix my estimating accuracy</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4683,7 +4893,7 @@ We’ll show you the right problems. -->
                                     architecture: chemical management systems, social audit preparation, traceability
                                     documentation, and continuous monitoring that keeps you ready for a buyer visit
                                     without the usual scramble the week before one lands.</p>
-                                <button class="fix-btn">Build my compliance capability ↗</button>
+                                <button class="fix-btn">Build my compliance capability</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4753,7 +4963,7 @@ We’ll show you the right problems. -->
                                     incentive is designed. We diagnose which of those is actually driving your gap and
                                     build the improvement programme that lifts the weak lines toward the strong ones
                                     rather than just celebrating the strong ones.</p>
-                                <button class="fix-btn">Improve my labour productivity ↗</button>
+                                <button class="fix-btn">Improve my labour productivity</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4823,7 +5033,7 @@ We’ll show you the right problems. -->
                                     supplier diversification, and the hedging logic that narrows the gap between your
                                     standard material cost and what you actually end up paying at the mill.
                                 </p>
-                                <button class="fix-btn">Build my procurement intelligence ↗</button>
+                                <button class="fix-btn">Build my procurement intelligence</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4892,7 +5102,7 @@ We’ll show you the right problems. -->
                                     sourcing, dyeing, sampling approvals, cut-to-pack — and redesign the sequence to
                                     compress the critical path. The trick is doing it without quietly moving the risk
                                     into quality or compliance, where it costs far more later.</p>
-                                <button class="fix-btn">Compress my lead times ↗</button>
+                                <button class="fix-btn">Compress my lead times</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4962,7 +5172,7 @@ We’ll show you the right problems. -->
                                     points of utilisation across a ₹100Cr fabric spend is ₹2Cr straight to the bottom
                                     line. We audit consumption against standard, find what's driving the variance, and
                                     implement the process and system fixes that close it.</p>
-                                <button class="fix-btn">Improve my fabric utilisation ↗</button>
+                                <button class="fix-btn">Improve my fabric utilisation</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5033,7 +5243,7 @@ We’ll show you the right problems. -->
                                     on a courier and a fortnight, and starts happening on a shared screen in an
                                     afternoon.
                                 </p>
-                                <button class="fix-btn">Build my digital development capability ↗</button>
+                                <button class="fix-btn">Build my digital development capability</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5113,7 +5323,7 @@ We’ll show you the right problems. -->
                                     capital model — collection discipline on debtors, inventory right-sized, creditor
                                     terms actually negotiated, and a 13-week cash forecast that shows you the gap while
                                     there's still time to do something about it.</p>
-                                <button class="fix-btn">Fix my working capital ↗</button>
+                                <button class="fix-btn">Fix my working capital</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5183,7 +5393,7 @@ We’ll show you the right problems. -->
                                     by job, overhead allocated by job type — and give you the profitability ranking that
                                     says plainly which customers and categories to grow, and which to reprice or,
                                     occasionally, politely let go.</p>
-                                <button class="fix-btn">See my real job margins ↗</button>
+                                <button class="fix-btn">See my real job margins</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5253,7 +5463,7 @@ We’ll show you the right problems. -->
                                     structure that spreads it out, so the business stops being one resignation away from
                                     a very bad month.
                                 </p>
-                                <button class="fix-btn">Reduce my key person risk ↗</button>
+                                <button class="fix-btn">Reduce my key person risk</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5323,7 +5533,7 @@ We’ll show you the right problems. -->
                                     personally signing off, financial controls that catch a problem before it compounds,
                                     and a working capital model that funds the growth instead of choking on it. We build
                                     that model before you double, not after it breaks.</p>
-                                <button class="fix-btn">Build my growth model ↗</button>
+                                <button class="fix-btn">Build my growth model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5394,7 +5604,7 @@ We’ll show you the right problems. -->
                                     reflect what's actually consumed — and the pricing model that lets you say with
                                     confidence which jobs you can afford to win and which ones aren't worth having at
                                     any price.</p>
-                                <button class="fix-btn">Build my cost intelligence ↗</button>
+                                <button class="fix-btn">Build my cost intelligence</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5464,7 +5674,7 @@ We’ll show you the right problems. -->
                                     move your specific cost and quality problems, and sequence the spend so each one
                                     shows a measurable result before you're asked to write the next cheque.
                                 </p>
-                                <button class="fix-btn">Build my technology roadmap ↗</button>
+                                <button class="fix-btn">Build my technology roadmap</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">

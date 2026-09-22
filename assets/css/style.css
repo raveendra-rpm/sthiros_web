@@ -8509,3 +8509,97 @@ body.light-mode #services-title .text-red {
 }
 
 
+
+
+/* Advanced Search UI Styles */
+.header-search-clear {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0 8px;
+  display: none; /* Hidden by default, shown via JS */
+  outline: none;
+  transition: color 0.2s;
+}
+
+.header-search-clear:hover {
+  color: #EF4623;
+}
+
+.search-dropdown-results {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  min-width: 300px;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(239, 70, 35, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  z-index: 1000;
+  overflow: hidden;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.search-dropdown-item {
+  padding: 12px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: #fff;
+  transition: background 0.2s;
+  text-align: left;
+}
+
+.search-dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.search-dropdown-item:hover {
+  background: rgba(239, 70, 35, 0.15);
+}
+
+.search-dropdown-item strong {
+  display: block;
+  font-size: 14px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  color: #EF4623;
+  margin-bottom: 4px;
+}
+
+.search-dropdown-item small {
+  display: block;
+  font-size: 12px;
+  color: #aaa;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Enhancing the highlight mark */
+mark.sthiros-search-match {
+  background-color: rgba(239, 70, 35, 0.2) !important;
+  color: #EF4623 !important;
+  border-radius: 3px;
+  padding: 0 2px;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(239, 70, 35, 0.5);
+  animation: pulseHighlight 1.5s infinite alternate;
+}
+
+mark.sthiros-search-match.is-active {
+  background-color: #EF4623 !important;
+  color: #fff !important;
+  box-shadow: 0 0 10px rgba(239, 70, 35, 0.8);
+}
+
+@keyframes pulseHighlight {
+  from { box-shadow: 0 0 5px rgba(239, 70, 35, 0.3); }
+  to { box-shadow: 0 0 12px rgba(239, 70, 35, 0.7); }
+}

@@ -555,7 +555,7 @@
         }
 
         .problem-desc {
-            display: none;
+            display: block;
             color: var(--WHITE, #FFF);
             font-family: Quicksand, sans-serif;
             font-size: 16px;
@@ -1722,7 +1722,7 @@
             }
 
             .problem-desc {
-                display: none;
+                display: block;
             color: var(--WHITE, #FFF);
             font-family: Quicksand, sans-serif;
             font-size: 16px;
@@ -1900,7 +1900,7 @@
             }
 
             .problem-item:not(.active) .problem-desc {
-                display: none !important;
+                display: block !important;
             }
 
             .problem-item.active .problem-desc {
@@ -2462,6 +2462,216 @@
             }
         }
 
+/* --- Redesign Desktop Layout for Who Are You Problems Section --- */
+        @media (min-width: 769px) {
+            .problem-header {
+                display: none !important;
+            }
+
+            .problem-item {
+                flex-direction: column !important;
+                gap: 0 !important;
+                border-bottom: 1px solid rgba(236, 45, 38, 0.4) !important;
+                background-color: transparent !important;
+                position: relative;
+            }
+            .problem-item.active {
+                border-bottom: none !important;
+                padding-bottom: 20px !important;
+            }
+
+            .problem-left {
+                width: 100% !important;
+                min-width: 0 !important;
+                padding: 30px 0 !important;
+                border-bottom: 1px solid #EC2D26 !important;
+                display: flex !important;
+                justify-content: space-between !important;
+                align-items: flex-start !important;
+            }
+
+            .problem-left-content::before {
+                content: "Problem";
+                display: block;
+                color: #EC2D26;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                text-transform: capitalize;
+            }
+
+            .problem-item:not(.active) .problem-right {
+                display: none !important;
+            }
+
+            .problem-item.active .problem-right {
+                display: block !important;
+                width: 100% !important;
+                border-bottom: none !important;
+                padding: 15px 0 170px 0 !important;
+            }
+
+            .problem-item:not(.active) .problem-dropdown-content {
+                display: none !important;
+            }
+
+            .problem-item.active .problem-dropdown-content {
+                display: flex !important;
+                flex-direction: row !important;
+                flex-wrap: wrap !important;
+                gap: 30px !important;
+                position: relative !important;
+            }
+
+            .problem-dropdown-content::before {
+                content: "Solution";
+                display: block;
+                color: #EC2D26;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 5px;
+                width: 100%;
+                text-transform: capitalize;
+            }
+
+            .solution-main {
+                flex: 1 1 350px !important;
+                border: 1px solid #EC2D26 !important;
+                border-radius: 12px !important;
+                padding: 30px !important;
+                margin-right: 0 !important;
+                background: #000;
+            }
+            
+            .solution-main h3 {
+                margin-top: 0 !important;
+                margin-bottom: 15px !important;
+            }
+
+            .solution-sidebar {
+                flex: 2 1 600px !important;
+                border: 1px solid #EC2D26 !important;
+                border-radius: 12px !important;
+                padding: 30px !important;
+                display: flex !important;
+                flex-direction: row !important;
+                align-items: center !important;
+                background: #000;
+            }
+
+            .service-item {
+                flex: 1 !important;
+                border: none !important;
+                pointer-events: none !important;
+            }
+            
+            .service-item:not(:last-child) {
+                border-right: 1px solid rgba(255, 255, 255, 0.3) !important;
+                padding-right: 30px !important;
+            }
+            
+            .service-item:not(:first-child) {
+                padding-left: 30px !important;
+            }
+
+            .service-header {
+                padding: 0 0 20px 0 !important;
+                border-bottom: none !important;
+            }
+            .service-title {
+                font-size: 20px !important;
+                font-weight: 600 !important;
+            }
+            .service-arrow {
+                display: none !important;
+            }
+            .service-list {
+                display: block !important;
+                padding-left: 15px !important;
+            }
+            .service-list li {
+                font-size: 16px !important;
+                color: #ccc !important;
+                margin-bottom: 15px !important;
+                line-height: 1.5 !important;
+            }
+            .service-list li:last-child {
+                margin-bottom: 0 !important;
+            }
+            .service-list li::before {
+                color: #EC2D26 !important;
+            }
+
+            .fix-btn {
+                position: absolute !important;
+                bottom: -115px !important;
+                left: 0 !important;
+                margin: 0 !important;
+                background: #000 !important;
+                border: 4px solid #EF4623 !important;
+                color: #FFF !important;
+                padding: 18px 80px !important;
+                border-radius: 40px !important;
+                font-family: 'Quicksand', sans-serif !important;
+                font-size: 16px !important;
+                font-weight: 400 !important;
+                letter-spacing: 3px !important;
+                text-transform: uppercase !important;
+                cursor: pointer;
+                z-index: 10;
+                pointer-events: auto !important;
+            }
+
+            .fix-btn::before {
+                content: '' !important;
+                position: absolute !important;
+                top: -10px !important;
+                left: -10px !important;
+                right: -10px !important;
+                bottom: -10px !important;
+                border: 1px solid #EF4623 !important;
+                border-radius: 50px !important;
+                pointer-events: none !important;
+            }
+
+            .fix-btn:hover {
+                background: #EF4623 !important;
+                color: #fff !important;
+            }
+
+            .problem-dropdown-content::after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: #EC2D26;
+                position: absolute;
+                bottom: -135px;
+                left: 0;
+                z-index: 1;
+            }
+        }
+
+
+        /* Smooth reveal animation for dropdowns */
+        @keyframes smoothReveal {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .problem-item.active .problem-dropdown-content,
+        .problem-item.active .problem-right {
+            animation: smoothReveal 0.4s ease-out forwards !important;
+        }
+
 </style>
 </head>
 
@@ -2972,7 +3182,7 @@ We’ll show you the right problems. -->
                                     rebuild the flow — discharge planning that starts at admission, daily bed huddles on
                                     real data, and an AI layer that flags who's ready to go home a day ahead — so you
                                     find capacity without spending a rupee on construction.</p>
-                                <button class="fix-btn">Improve my bed management ↗</button>
+                                <button class="fix-btn">Improve my bed management</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3041,7 +3251,7 @@ We’ll show you the right problems. -->
                                     a number on the leak at each stage, and redesign the process — including an AI layer
                                     that catches documentation gaps before billing and flags a claim likely to be
                                     rejected before it's ever submitted.</p>
-                                <button class="fix-btn">Fix my revenue cycle ↗</button>
+                                <button class="fix-btn">Fix my revenue cycle</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3110,7 +3320,7 @@ We’ll show you the right problems. -->
                                     protocols built into the clinical workflow, incident reporting that's routine rather
                                     than something people fear, and documentation captured at the point of care instead
                                     of reconstructed from memory the week before the assessors arrive.</p>
-                                <button class="fix-btn">Build my NABH compliance model ↗</button>
+                                <button class="fix-btn">Build my NABH compliance model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3180,7 +3390,7 @@ We’ll show you the right problems. -->
                                     benchmarked properly, rostering that respects fatigue, a visible career path, and
                                     retention intelligence that spots who's about to leave before the resignation
                                     letter, when there's still something you can do.</p>
-                                <button class="fix-btn">Fix my clinical workforce model ↗</button>
+                                <button class="fix-btn">Fix my clinical workforce model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3248,7 +3458,7 @@ We’ll show you the right problems. -->
                                     want all of it live, not summarised the next morning. We build the intelligence
                                     layer: a command centre that pulls HMS, OT scheduling, revenue and clinical data
                                     into one operational view of the hospital as it is right now.</p>
-                                <button class="fix-btn">Build my hospital intelligence ↗</button>
+                                <button class="fix-btn">Build my hospital intelligence</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3318,7 +3528,7 @@ We’ll show you the right problems. -->
                                     performance management that works across geographies, and governance that holds
                                     quality steady without the founder or COO needing to be physically in the building.
                                     Good hospitals shouldn't depend on who's on shift.</p>
-                                <button class="fix-btn">Build my multi-facility model ↗</button>
+                                <button class="fix-btn">Build my multi-facility model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3398,7 +3608,7 @@ We’ll show you the right problems. -->
                                     assessment against current expectations, remediation ranked by risk, and the
                                     operating changes that make readiness a permanent condition rather than a fortnight
                                     of panic before the audit.</p>
-                                <button class="fix-btn">Build my inspection readiness ↗</button>
+                                <button class="fix-btn">Build my inspection readiness</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3467,7 +3677,7 @@ We’ll show you the right problems. -->
                                     varies by who's on shift. We find which ones are actually hurting you, fix them, and
                                     build the monitoring that catches the precursors while the batch is still saveable.
                                 </p>
-                                <button class="fix-btn">Reduce my batch rejections ↗</button>
+                                <button class="fix-btn">Reduce my batch rejections</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3536,7 +3746,7 @@ We’ll show you the right problems. -->
                                     nobody ever optimised for speed. We redesign the release path and build the
                                     intelligence system that compresses the timeline while leaving the quality bar
                                     exactly where it was.</p>
-                                <button class="fix-btn">Accelerate my batch release ↗</button>
+                                <button class="fix-btn">Accelerate my batch release</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3606,7 +3816,7 @@ We’ll show you the right problems. -->
                                     rather than just vendor scoring, set safety stock on the materials that would
                                     actually stop the line, and build the intelligence that surfaces a supply risk
                                     before it becomes an empty tank on a Tuesday.</p>
-                                <button class="fix-btn">Reduce my supply chain risk ↗</button>
+                                <button class="fix-btn">Reduce my supply chain risk</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3676,7 +3886,7 @@ We’ll show you the right problems. -->
                                     patterns that keep recurring, and rebuild the regulatory writing and review process
                                     so submissions move through the first time instead of bouncing back with questions.
                                 </p>
-                                <button class="fix-btn">Improve my dossier quality ↗</button>
+                                <button class="fix-btn">Improve my dossier quality</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3746,7 +3956,7 @@ We’ll show you the right problems. -->
                                     auditor can follow, and a governance model that keeps both your quality unit and the
                                     regulator comfortable. The clever model is the easy part; the validation is where we
                                     earn our keep.</p>
-                                <button class="fix-btn">Deploy AI compliantly ↗</button>
+                                <button class="fix-btn">Deploy AI compliantly</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3826,7 +4036,7 @@ We’ll show you the right problems. -->
                                     a courier-to-lab handoff that drops time. We map the full testing cycle, find the
                                     bottleneck by test category, and make the changes that turn your TAT commitment into
                                     something you actually hit, not something you hope for.</p>
-                                <button class="fix-btn">Fix my TAT performance ↗</button>
+                                <button class="fix-btn">Fix my TAT performance</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3895,7 +4105,7 @@ We’ll show you the right problems. -->
                                     document control that happens continuously, internal audits that are routine rather
                                     than dreaded, and EQA folded into the testing workflow instead of bolted on. The
                                     assessment stops being an event and becomes a formality.</p>
-                                <button class="fix-btn">Embed my NABL quality system ↗</button>
+                                <button class="fix-btn">Embed my NABL quality system</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -3965,7 +4175,7 @@ We’ll show you the right problems. -->
                                     collection point. We redesign the pre-analytical system and build the monitoring
                                     that flags a problem before a compromised sample has travelled all the way to the
                                     lab to be rejected.</p>
-                                <button class="fix-btn">Fix my collection centre quality ↗</button>
+                                <button class="fix-btn">Fix my collection centre quality</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4034,7 +4244,7 @@ We’ll show you the right problems. -->
                                     mix optimised, true cost per test visible by analyser and category, a pricing
                                     strategy that reflects the costs, and receivables discipline that closes the
                                     familiar gap between revenue you reported and cash you actually collected.</p>
-                                <button class="fix-btn">Improve my diagnostics margin ↗</button>
+                                <button class="fix-btn">Improve my diagnostics margin</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4103,7 +4313,7 @@ We’ll show you the right problems. -->
                                     that only resolve at month-end — all symptoms of intelligence that always lags. We
                                     build the real-time layer: TAT, instrument uptime, sample volumes, rejection rates
                                     and financials visible live across every location in one view.</p>
-                                <button class="fix-btn">Build my network intelligence ↗</button>
+                                <button class="fix-btn">Build my network intelligence</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4173,7 +4383,7 @@ We’ll show you the right problems. -->
                                     AI capability so it's clinically validated, CDSCO-compliant where that applies, and
                                     sitting inside your existing reporting workflow rather than in a separate portal
                                     nobody opens.</p>
-                                <button class="fix-btn">Build my AI diagnostic capability ↗</button>
+                                <button class="fix-btn">Build my AI diagnostic capability</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4252,7 +4462,7 @@ We’ll show you the right problems. -->
                                     dossier right the first time is quite literally the difference between a 12-month
                                     and a 24-month path to market, and the second one has killed more than one
                                     commercial plan. We navigate it with you, first time rather than second.</p>
-                                <button class="fix-btn">Navigate my CDSCO pathway ↗</button>
+                                <button class="fix-btn">Navigate my CDSCO pathway</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4321,7 +4531,7 @@ We’ll show you the right problems. -->
                                     rebuild the model: map the stakeholders, design the clinical evaluation, build the
                                     value case, and put in a pipeline system that tracks each account through the actual
                                     procurement stages rather than guessing where it's stuck.</p>
-                                <button class="fix-btn">Accelerate my hospital sales ↗</button>
+                                <button class="fix-btn">Accelerate my hospital sales</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4391,7 +4601,7 @@ We’ll show you the right problems. -->
                                     behaviour. We design the evidence programme around the commercial outcome — study
                                     design, sites, investigators, analysis, publication — rather than around the
                                     regulatory floor.</p>
-                                <button class="fix-btn">Build my clinical evidence programme ↗</button>
+                                <button class="fix-btn">Build my clinical evidence programme</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4461,7 +4671,7 @@ We’ll show you the right problems. -->
                                     product in the field. We build the PMS operating system: signal detection, adverse
                                     event classification and reporting, PSUR preparation, and monitoring that surfaces a
                                     field performance trend before it becomes a reportable event.</p>
-                                <button class="fix-btn">Build my PMS system ↗</button>
+                                <button class="fix-btn">Build my PMS system</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4531,7 +4741,7 @@ We’ll show you the right problems. -->
                                     facility. We design and manage the whole transition — regulatory, operational and
                                     commercial — so 'we should make this in India' becomes a plan rather than a board
                                     slide.</p>
-                                <button class="fix-btn">Plan my India manufacturing transition ↗</button>
+                                <button class="fix-btn">Plan my India manufacturing transition</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4601,7 +4811,7 @@ We’ll show you the right problems. -->
                                     cybersecurity, data privacy. Retrofit it later and you rebuild. We design and build
                                     the capability with device-software integration, regulatory compliance and clinical
                                     validation handled together rather than in sequence.</p>
-                                <button class="fix-btn">Build my SaMD capability ↗</button>
+                                <button class="fix-btn">Build my SaMD capability</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4681,7 +4891,7 @@ We’ll show you the right problems. -->
                                     map the pathway under MDR 2017, and design the compliance architecture now, while
                                     it's a design decision rather than an expensive retrofit into a product you've
                                     already shipped.</p>
-                                <button class="fix-btn">Clarify my SaMD pathway ↗</button>
+                                <button class="fix-btn">Clarify my SaMD pathway</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4751,7 +4961,7 @@ We’ll show you the right problems. -->
                                     regulatory exposure and the kind of hesitation from institutional buyers that stalls
                                     an enterprise deal at security review. We design the DPDPA-compliant architecture up
                                     front, which is far cheaper than re-plumbing it later.</p>
-                                <button class="fix-btn">Build my DPDPA-compliant architecture ↗</button>
+                                <button class="fix-btn">Build my DPDPA-compliant architecture</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4822,7 +5032,7 @@ We’ll show you the right problems. -->
                                     healthcare — stakeholder sequencing, the procurement process mapped, IT integration
                                     pre-qualified, and account management that keeps a deal moving through the
                                     committees instead of stalling in one.</p>
-                                <button class="fix-btn">Accelerate my healthcare sales ↗</button>
+                                <button class="fix-btn">Accelerate my healthcare sales</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4892,7 +5102,7 @@ We’ll show you the right problems. -->
                                     accounts that actually matter. We design the validation programme that produces it:
                                     study design, site selection, IRB navigation, data collection, statistical analysis,
                                     publication. The traction gets you the meeting; this gets you the contract.</p>
-                                <button class="fix-btn">Build my clinical validation programme ↗</button>
+                                <button class="fix-btn">Build my clinical validation programme</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -4962,7 +5172,7 @@ We’ll show you the right problems. -->
                                     messy B2B healthcare billing. We build the infrastructure that makes you look and
                                     run like an institutional-grade vendor, for the simple reason that your buyers are
                                     institutions and can tell the difference.</p>
-                                <button class="fix-btn">Build my healthcare operating model ↗</button>
+                                <button class="fix-btn">Build my healthcare operating model</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5033,7 +5243,7 @@ We’ll show you the right problems. -->
                                     live: clinical validation, explainability standards, consent architecture, a clear
                                     liability position, and the regulatory pathway. Moving fast is fine here, but only
                                     on top of that.</p>
-                                <button class="fix-btn">Build my clinical AI framework ↗</button>
+                                <button class="fix-btn">Build my clinical AI framework</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5112,7 +5322,7 @@ We’ll show you the right problems. -->
                                     dwarfs whatever it costs to stay ready all the time. We build the continuous
                                     readiness programme: mock audits, gap remediation, and the operating discipline that
                                     turns every real audit into a routine day rather than an emergency.</p>
-                                <button class="fix-btn">Build my inspection readiness ↗</button>
+                                <button class="fix-btn">Build my inspection readiness</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5181,7 +5391,7 @@ We’ll show you the right problems. -->
                                     electronic system validation under 21 CFR Part 11. We audit, remediate, and build
                                     the operating model that keeps the gap from reopening, because finding it once and
                                     fixing it isn't the same as it staying fixed.</p>
-                                <button class="fix-btn">Fix my data integrity ↗</button>
+                                <button class="fix-btn">Fix my data integrity</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5251,7 +5461,7 @@ We’ll show you the right problems. -->
                                     sponsor communication protocol that manages expectations before a delay turns into
                                     an escalation. Sponsors forgive a well-managed risk far more readily than a
                                     surprise.</p>
-                                <button class="fix-btn">Improve my study delivery ↗</button>
+                                <button class="fix-btn">Improve my study delivery</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5321,7 +5531,7 @@ We’ll show you the right problems. -->
                                     which means over-allocating some people, under-using others, and turning away work
                                     you could have taken. We build the resource intelligence that makes allocation
                                     visible and proactive instead of a monthly argument.</p>
-                                <button class="fix-btn">Fix my resource utilisation ↗</button>
+                                <button class="fix-btn">Fix my resource utilisation</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5391,7 +5601,7 @@ We’ll show you the right problems. -->
                                     workload that's actually managed, compensation benchmarked, and retention
                                     intelligence that flags flight risk before the resignation, when you can still do
                                     something about it.</p>
-                                <button class="fix-btn">Fix my talent retention ↗</button>
+                                <button class="fix-btn">Fix my talent retention</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
@@ -5461,7 +5671,7 @@ We’ll show you the right problems. -->
                                     We build AI inside that frame — audit-ready documentation, sponsor-facing validation
                                     packages, and a governance model that turns AI from a compliance liability into
                                     something you can put on the capabilities slide with a straight face.</p>
-                                <button class="fix-btn">Deploy AI in my CRO ↗</button>
+                                <button class="fix-btn">Deploy AI in my CRO</button>
                             </div>
                             <div class="solution-sidebar">
                                 <div class="service-item" onclick="event.stopPropagation(); toggleService(this)">
