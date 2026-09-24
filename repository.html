@@ -404,6 +404,23 @@
             transform: scale(0.7);
         }
 
+        .cents-slide iframe {
+            pointer-events: none;
+        }
+
+        .cents-slide-center iframe {
+            pointer-events: auto;
+        }
+
+        .cents-slide-hidden {
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1;
+            transform: scale(0.5);
+            left: 50%;
+            transform: translateX(-50%) scale(0.5);
+        }
+
         .cents-play-btn {
             position: absolute;
             top: 50%;
@@ -414,6 +431,27 @@
             width: 90px;
             height: 90px;
             object-fit: contain;
+        }
+
+        .cents-slide-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 10;
+            color: #fff;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+            pointer-events: none;
+            box-sizing: border-box;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+            padding: 30px 40px 50px 40px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .cents-slider-nav {
@@ -2174,31 +2212,74 @@
 
             <div class="cents-slider-container">
                 <div class="cents-slider">
-                    <div class="cents-slide cents-slide-far-left">
-                        <img class="our-cents-img-class" src="assets/images/repositorypage/ourtwocents.jpg"
-                            alt="Our Two Cents">
+                    <div class="cents-slide cents-slide-center" data-video-id="z9wf5zxVo2o" data-video-title="Prime Take 1 | What's the One Risk no company Budgeted for in 2025">
+                        <div class="cents-slide-title">Prime Take 1 | What's the One Risk no company Budgeted for in 2025</div>
+                        <img class="our-cents-img-class" src="https://img.youtube.com/vi/z9wf5zxVo2o/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/z9wf5zxVo2o/hqdefault.jpg'" alt="Thumbnail">
                         <img src="assets/images/repositorypage/playbtn.png" alt="Play" class="cents-play-btn">
                     </div>
-                    <div class="cents-slide cents-slide-left">
-                        <img class="our-cents-img-class" src="assets/images/repositorypage/ourtwocents.jpg"
-                            alt="Our Two Cents">
+                    <div class="cents-slide cents-slide-right" data-video-id="1tiCiay_vFk" data-video-title="Prime Take 2 | CbCR India Avoid Penalities, Prove Substance">
+                        <div class="cents-slide-title">Prime Take 2 | CbCR India Avoid Penalities, Prove Substance</div>
+                        <img class="our-cents-img-class" src="https://img.youtube.com/vi/1tiCiay_vFk/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/1tiCiay_vFk/hqdefault.jpg'" alt="Thumbnail">
                         <img src="assets/images/repositorypage/playbtn.png" alt="Play" class="cents-play-btn">
                     </div>
-
-                    <div class="cents-slide cents-slide-center">
-                        <img class="our-cents-img-class" src="assets/images/repositorypage/ourtwocents.jpg"
-                            alt="Our Two Cents">
+                    <div class="cents-slide cents-slide-far-right" data-video-id="JWIaY4hzUh8" data-video-title="Prime Take 3 | Striking the Balance Navigating Consulting & Automation Under One Roof">
+                        <div class="cents-slide-title">Prime Take 3 | Striking the Balance Navigating Consulting & Automation Under One Roof</div>
+                        <img class="our-cents-img-class" src="https://img.youtube.com/vi/JWIaY4hzUh8/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/JWIaY4hzUh8/hqdefault.jpg'" alt="Thumbnail">
                         <img src="assets/images/repositorypage/playbtn.png" alt="Play" class="cents-play-btn">
                     </div>
-
-                    <div class="cents-slide cents-slide-right">
-                        <img class="our-cents-img-class" src="assets/images/repositorypage/ourtwocents.jpg"
-                            alt="Our Two Cents">
+                    <div class="cents-slide cents-slide-hidden" data-video-id="TcuePBI1iGA" data-video-title="Prime Take 4 | SPR at GFF 2025 “Operationalising the Future of Finance”">
+                        <div class="cents-slide-title">Prime Take 4 | SPR at GFF 2025 “Operationalising the Future of Finance”</div>
+                        <img class="our-cents-img-class" src="https://img.youtube.com/vi/TcuePBI1iGA/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/TcuePBI1iGA/hqdefault.jpg'" alt="Thumbnail">
                         <img src="assets/images/repositorypage/playbtn.png" alt="Play" class="cents-play-btn">
                     </div>
-                    <div class="cents-slide cents-slide-far-right">
-                        <img class="our-cents-img-class" src="assets/images/repositorypage/ourtwocents.jpg"
-                            alt="Our Two Cents">
+                    <div class="cents-slide cents-slide-hidden" data-video-id="bsFKm2Q-UpM" data-video-title="Prime Take 5 | AI Trust, Algorithmic Deception & the New Cyber Security Frontier">
+                        <div class="cents-slide-title">Prime Take 5 | AI Trust, Algorithmic Deception & the New Cyber Security Frontier</div>
+                        <img class="our-cents-img-class" src="https://img.youtube.com/vi/bsFKm2Q-UpM/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/bsFKm2Q-UpM/hqdefault.jpg'" alt="Thumbnail">
+                        <img src="assets/images/repositorypage/playbtn.png" alt="Play" class="cents-play-btn">
+                    </div>
+                    <div class="cents-slide cents-slide-hidden" data-video-id="BtJVhRpY--0" data-video-title="Prime Take 6 | GSTR 9 & 9C for FY 2024–25 The 3 Triggers That Can Invite a Notice">
+                        <div class="cents-slide-title">Prime Take 6 | GSTR 9 & 9C for FY 2024–25 The 3 Triggers That Can Invite a Notice</div>
+                        <img class="our-cents-img-class" src="https://img.youtube.com/vi/BtJVhRpY--0/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/BtJVhRpY--0/hqdefault.jpg'" alt="Thumbnail">
+                        <img src="assets/images/repositorypage/playbtn.png" alt="Play" class="cents-play-btn">
+                    </div>
+                    <div class="cents-slide cents-slide-hidden" data-video-id="kkqoFeDrl34" data-video-title="Prime Take 7 | When Cyber Security Is Becoming a Board Level Investment Decision">
+                        <div class="cents-slide-title">Prime Take 7 | When Cyber Security Is Becoming a Board Level Investment Decision</div>
+                        <img class="our-cents-img-class" src="https://img.youtube.com/vi/kkqoFeDrl34/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/kkqoFeDrl34/hqdefault.jpg'" alt="Thumbnail">
+                        <img src="assets/images/repositorypage/playbtn.png" alt="Play" class="cents-play-btn">
+                    </div>
+                    <div class="cents-slide cents-slide-hidden" data-video-id="kXBjiawWf-0" data-video-title="Prime Take 8 | Before You Grow 2X">
+                        <div class="cents-slide-title">Prime Take 8 | Before You Grow 2X</div>
+                        <img class="our-cents-img-class" src="https://img.youtube.com/vi/kXBjiawWf-0/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/kXBjiawWf-0/hqdefault.jpg'" alt="Thumbnail">
+                        <img src="assets/images/repositorypage/playbtn.png" alt="Play" class="cents-play-btn">
+                    </div>
+                    <div class="cents-slide cents-slide-hidden" data-video-id="OXMJTTDrPB8" data-video-title="Prime Take 9 | India’s Manufacturing Decade">
+                        <div class="cents-slide-title">Prime Take 9 | India’s Manufacturing Decade</div>
+                        <img class="our-cents-img-class" src="https://img.youtube.com/vi/OXMJTTDrPB8/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/OXMJTTDrPB8/hqdefault.jpg'" alt="Thumbnail">
+                        <img src="assets/images/repositorypage/playbtn.png" alt="Play" class="cents-play-btn">
+                    </div>
+                    <div class="cents-slide cents-slide-hidden" data-video-id="7SqadRyZgwc" data-video-title="Prime Take 10 | Social stock exchange">
+                        <div class="cents-slide-title">Prime Take 10 | Social stock exchange</div>
+                        <img class="our-cents-img-class" src="https://img.youtube.com/vi/7SqadRyZgwc/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/7SqadRyZgwc/hqdefault.jpg'" alt="Thumbnail">
+                        <img src="assets/images/repositorypage/playbtn.png" alt="Play" class="cents-play-btn">
+                    </div>
+                    <div class="cents-slide cents-slide-hidden" data-video-id="cdjJxIxOawM" data-video-title="DPDP Series | EPISODE 1">
+                        <div class="cents-slide-title">DPDP Series | EPISODE 1</div>
+                        <img class="our-cents-img-class" src="https://img.youtube.com/vi/cdjJxIxOawM/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/cdjJxIxOawM/hqdefault.jpg'" alt="Thumbnail">
+                        <img src="assets/images/repositorypage/playbtn.png" alt="Play" class="cents-play-btn">
+                    </div>
+                    <div class="cents-slide cents-slide-hidden" data-video-id="I_R561xrw6c" data-video-title="DPDP Series | EPISODE 2">
+                        <div class="cents-slide-title">DPDP Series | EPISODE 2</div>
+                        <img class="our-cents-img-class" src="https://img.youtube.com/vi/I_R561xrw6c/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/I_R561xrw6c/hqdefault.jpg'" alt="Thumbnail">
+                        <img src="assets/images/repositorypage/playbtn.png" alt="Play" class="cents-play-btn">
+                    </div>
+                    <div class="cents-slide cents-slide-far-left" data-video-id="08dIKe3BIaw" data-video-title="DPDP Series | EPISODE 3">
+                        <div class="cents-slide-title">DPDP Series | EPISODE 3</div>
+                        <img class="our-cents-img-class" src="https://img.youtube.com/vi/08dIKe3BIaw/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/08dIKe3BIaw/hqdefault.jpg'" alt="Thumbnail">
+                        <img src="assets/images/repositorypage/playbtn.png" alt="Play" class="cents-play-btn">
+                    </div>
+                    <div class="cents-slide cents-slide-left" data-video-id="sFdk7vRPpQU" data-video-title="DPDP Series | EPISODE 4">
+                        <div class="cents-slide-title">DPDP Series | EPISODE 4</div>
+                        <img class="our-cents-img-class" src="https://img.youtube.com/vi/sFdk7vRPpQU/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/sFdk7vRPpQU/hqdefault.jpg'" alt="Thumbnail">
                         <img src="assets/images/repositorypage/playbtn.png" alt="Play" class="cents-play-btn">
                     </div>
                 </div>
@@ -2498,24 +2579,40 @@
             const btnPrev = document.getElementById('cents-btn-prev');
             const btnNext = document.getElementById('cents-btn-next');
 
-            const classes = [
-                'cents-slide-far-left',
-                'cents-slide-left',
-                'cents-slide-center',
-                'cents-slide-right',
-                'cents-slide-far-right'
-            ];
+            let currentIndex = 0; // The 1st slide (index 0) is the center initially
+
+            function updateSlides() {
+                slides.forEach((slide, index) => {
+                    // Reset to base class
+                    slide.className = 'cents-slide';
+                    
+                    // Restore thumbnail if it was playing a video
+                    if (slide.querySelector('iframe')) {
+                        const videoId = slide.getAttribute('data-video-id');
+                        const videoTitle = slide.getAttribute('data-video-title');
+                        slide.innerHTML = `<div class="cents-slide-title">${videoTitle}</div><img class="our-cents-img-class" src="https://img.youtube.com/vi/${videoId}/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/${videoId}/hqdefault.jpg'" alt="Thumbnail"><img src="assets/images/repositorypage/playbtn.png" alt="Play" class="cents-play-btn">`;
+                    }
+
+                    let diff = index - currentIndex;
+                    if (diff < -2) diff += slides.length;
+                    if (diff > 2) diff -= slides.length;
+
+                    if (diff === -2) slide.classList.add('cents-slide-far-left');
+                    else if (diff === -1) slide.classList.add('cents-slide-left');
+                    else if (diff === 0) slide.classList.add('cents-slide-center');
+                    else if (diff === 1) slide.classList.add('cents-slide-right');
+                    else if (diff === 2) slide.classList.add('cents-slide-far-right');
+                    else slide.classList.add('cents-slide-hidden');
+                });
+            }
 
             function rotate(direction) {
                 if (direction === 'next') {
-                    classes.unshift(classes.pop());
+                    currentIndex = (currentIndex + 1) % slides.length;
                 } else {
-                    classes.push(classes.shift());
+                    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
                 }
-
-                slides.forEach((slide, index) => {
-                    slide.className = 'cents-slide ' + classes[index];
-                });
+                updateSlides();
             }
 
             btnPrev.addEventListener('click', () => rotate('prev'));
@@ -2527,9 +2624,16 @@
                         rotate('prev');
                     } else if (this.classList.contains('cents-slide-right') || this.classList.contains('cents-slide-far-right')) {
                         rotate('next');
+                    } else if (this.classList.contains('cents-slide-center')) {
+                        if (!this.querySelector('iframe')) {
+                            const videoId = this.getAttribute('data-video-id');
+                            this.innerHTML = `<iframe class="our-cents-img-class" src="https://www.youtube.com/embed/${videoId}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+                        }
                     }
                 });
             });
+
+            updateSlides();
         });
 
         // --- SVG Scroll Animation ---
