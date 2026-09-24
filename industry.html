@@ -726,7 +726,8 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px 0;
-            cursor: pointer;
+            cursor: default !important;
+                pointer-events: none !important;
         }
 
         .service-title {
@@ -1016,7 +1017,8 @@
                 justify-content: space-between !important;
                 align-items: center !important;
                 padding: 16px 0 !important;
-                cursor: pointer;
+                cursor: default !important;
+                pointer-events: none !important;
             }
 
             .service-title {
@@ -1027,7 +1029,7 @@
             }
 
             .service-arrow {
-                display: flex !important;
+                display: none !important;
                 align-items: center !important;
             }
 
@@ -1048,6 +1050,7 @@
                 padding-left: 18px !important;
                 padding-bottom: 16px !important;
                 margin: 0 !important;
+                display: block !important;
             }
 
             .service-list li {
@@ -2296,6 +2299,13 @@
             animation: smoothReveal 0.4s ease-out forwards !important;
         }
 
+
+        /* CUSTOM MOBILE SERVICE LIST OVERRIDE */
+        @media (max-width: 768px) {
+            .service-arrow { display: none !important; }
+            .service-list { display: block !important; padding-left: 15px !important; }
+            .service-header { cursor: default !important; pointer-events: none !important; }
+        }
 </style>
 </head>
 

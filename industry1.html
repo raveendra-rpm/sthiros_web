@@ -668,7 +668,8 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px 0;
-            cursor: pointer;
+            cursor: default !important;
+                pointer-events: none !important;
         }
 
         .service-title {
@@ -2655,6 +2656,13 @@
             animation: smoothReveal 0.4s ease-out forwards !important;
         }
 
+
+        /* CUSTOM MOBILE SERVICE LIST OVERRIDE */
+        @media (max-width: 768px) {
+            .service-arrow { display: none !important; }
+            .service-list { display: block !important; padding-left: 15px !important; }
+            .service-header { cursor: default !important; pointer-events: none !important; }
+        }
 </style>
 </head>
 
