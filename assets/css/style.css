@@ -8603,3 +8603,12 @@ mark.sthiros-search-match.is-active {
   from { box-shadow: 0 0 5px rgba(239, 70, 35, 0.3); }
   to { box-shadow: 0 0 12px rgba(239, 70, 35, 0.7); }
 }
+
+.rcs-nav-btn {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
