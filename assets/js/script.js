@@ -4629,3 +4629,81 @@ function initAdvancedSearch() {
 }
 
 document.addEventListener('DOMContentLoaded', initAdvancedSearch);
+
+// Case Studies Slider
+document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('rcs-slider-container');
+    const rcsCards = Array.from(document.querySelectorAll('#rcs-slider-container .rcs-card'));
+    const rcsPrev = document.getElementById('rcs-btn-prev');
+    const rcsNext = document.getElementById('rcs-btn-next');
+    
+    if (container && rcsCards.length > 0 && rcsPrev && rcsNext) {
+        if (container.dataset.sliderInitialized) return;
+        container.dataset.sliderInitialized = 'true';
+
+        const viewport = document.createElement('div');
+        viewport.className = 'rcs-slider-viewport';
+        viewport.style.overflow = 'hidden';
+        viewport.style.width = '100%';
+        viewport.style.boxSizing = 'border-box';
+        container.parentNode.insertBefore(viewport, container);
+        viewport.appendChild(container);
+
+        container.style.justifyContent = 'flex-start';
+        container.style.transition = 'transform 0.5s ease-in-out';
+        container.style.flexWrap = 'nowrap';
+        container.style.width = 'max-content';
+        container.style.maxWidth = 'none';
+        
+        let rcsIndex = 0;
+        
+        function updateRcsSlider() {
+            const isMobile = window.innerWidth <= 768;
+            const cardsToShow = isMobile ? 1 : 3;
+            const gap = isMobile ? 20 : 40;
+            
+            viewport.style.padding = isMobile ? '0 20px' : '0 40px';
+            container.style.padding = '0';
+            container.style.gap = gap + 'px';
+            
+            const viewportWidth = viewport.clientWidth - (isMobile ? 40 : 80);
+            const cardWidth = isMobile ? viewportWidth : (viewportWidth - (gap * 2)) / 3;
+            
+            rcsCards.forEach(card => {
+                card.style.display = 'block';
+                card.style.flex = `0 0 ${cardWidth}px`;
+                card.style.width = `${cardWidth}px`;
+            });
+            
+            const maxIndex = rcsCards.length - cardsToShow;
+            if (rcsIndex > maxIndex) rcsIndex = maxIndex;
+            if (rcsIndex < 0) rcsIndex = 0;
+            
+            const moveAmount = cardWidth + gap;
+            container.style.transform = `translateX(-${rcsIndex * moveAmount}px)`;
+        }
+        
+        rcsPrev.addEventListener('click', () => {
+            const isMobile = window.innerWidth <= 768;
+            const cardsToShow = isMobile ? 1 : 3;
+            const maxIndex = rcsCards.length - cardsToShow;
+            
+            rcsIndex--;
+            if (rcsIndex < 0) rcsIndex = maxIndex;
+            updateRcsSlider();
+        });
+        
+        rcsNext.addEventListener('click', () => {
+            const isMobile = window.innerWidth <= 768;
+            const cardsToShow = isMobile ? 1 : 3;
+            const maxIndex = rcsCards.length - cardsToShow;
+            
+            rcsIndex++;
+            if (rcsIndex > maxIndex) rcsIndex = 0;
+            updateRcsSlider();
+        });
+        
+        window.addEventListener('resize', updateRcsSlider);
+        setTimeout(updateRcsSlider, 100);
+    }
+});
