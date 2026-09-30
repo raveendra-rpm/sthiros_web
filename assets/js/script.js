@@ -134,19 +134,13 @@ function initPreloader() {
       });
     }
 
-    // Shrink to zero right before it ends
-    let shrinkTriggered = false;
-    video.addEventListener('timeupdate', () => {
-      // Start shrinking 0.8 seconds before the video ends
-      if (!shrinkTriggered && video.duration && (video.duration - video.currentTime) <= 0.8) {
-        shrinkTriggered = true;
-        // Just scale down smoothly to 0 (no extra rotation needed as the video cube already rotates)
-        gsap.to(video, { scale: 0, duration: 0.8, ease: 'power2.inOut' });
-      }
-    });
+    // Shrink to zero right before 3 seconds
+    setTimeout(() => {
+      gsap.to(video, { scale: 0, duration: 0.8, ease: 'power2.inOut' });
+    }, 2200);
 
-    video.addEventListener('ended', triggerBoot);
-    setTimeout(triggerBoot, 8000);
+    // Boot the app after exactly 3 seconds
+    setTimeout(triggerBoot, 3000);
   } else {
     triggerBoot();
   }
@@ -1124,11 +1118,12 @@ function initScrollAnimations() {
         const strategyLines = document.querySelectorAll('.second-svg .strategy-line');
 
         if (sTracePath && strategyLogoWrapper && strategyContentChildren.length && strategySvg) {
-          gsap.set(strategyLogoWrapper, { opacity: 1 });
+          gsap.set(strategyLogoWrapper, { opacity: 0 });
+          gsap.set('.strategy-content', { opacity: 0 });
           // Use hardcoded length (1050) because getTotalLength() inside <mask> can be unreliable in some browsers
           const pathLength = 1050;
-          gsap.set(sTracePath, { strokeDasharray: pathLength + 10, strokeDashoffset: pathLength + 10 });
-          gsap.set(strategyContentChildren, { opacity: 0, y: 40 });
+          // gsap.set(sTracePath, { strokeDasharray: pathLength + 10, strokeDashoffset: pathLength + 10 });
+
 
           strategyLines.forEach(line => {
             const len = line.getTotalLength();
@@ -1151,8 +1146,8 @@ function initScrollAnimations() {
         tl.add("logoTrace");
 
         if (sTracePath && strategyContentChildren.length && strategySvg) {
-          tl.to(sTracePath, { strokeDashoffset: 0, ease: 'none', duration: 0.4 }, "logoTrace")
-            .to(strategyContentChildren, { opacity: 1, y: 0, duration: 0.2, stagger: 0.05, ease: 'power3.out' });
+          tl.to(strategyLogoWrapper, { opacity: 1, duration: 0.4 }, "logoTrace")
+            .to('.strategy-content', { opacity: 1, duration: 0.4 }, "logoTrace");
         }
 
         // Fade out the previous SVG track and the "Four disciplines" text WHILE the logo is tracing
@@ -1208,8 +1203,8 @@ function initScrollAnimations() {
         const riskHlines = document.querySelectorAll('.risk-hline');
 
         if (riskLogo && riskTextBlock) {
-          gsap.set(riskLogo, { clipPath: 'inset(0 0 100% 0)', opacity: 0 }); // Hidden (wipe from top to bottom)
-          gsap.set(riskTextBlock.children, { opacity: 0, y: 40 });
+          gsap.set(riskLogo, { opacity: 0 });
+          gsap.set(riskTextBlock, { opacity: 0 });
         }
         if (riskHlines.length) {
           riskHlines.forEach(line => {
@@ -1221,9 +1216,8 @@ function initScrollAnimations() {
         // Part 2B: Trace Risk Logo and Show Text (Camera paused)
         tl.add("riskTrace");
         if (riskLogo && riskTextBlock) {
-          tl.to(riskLogo, { opacity: 1, duration: 0.01 }, "riskTrace")
-            .to(riskLogo, { clipPath: 'inset(0 0 0% 0)', ease: 'none', duration: 0.4 }, "riskTrace")
-            .to(riskTextBlock.children, { opacity: 1, y: 0, duration: 0.3, stagger: 0.1, ease: 'power3.out' });
+          tl.to(riskLogo, { opacity: 1, duration: 0.4 }, "riskTrace")
+            .to(riskTextBlock, { opacity: 1, duration: 0.4 }, "riskTrace");
         }
 
         // Fade out previous SVG track and the Strategy logo/text WHILE the Risk logo is tracing
@@ -1289,8 +1283,8 @@ function initScrollAnimations() {
         if (cTracePath && cyberLogoWrapper && cyberTextBlock) {
           const pathLength = cTracePath.getTotalLength();
           // Use a large gap to prevent round linecap from leaking backwards from the next dash
-          gsap.set(cTracePath, { strokeDasharray: (pathLength + 10) + " " + (pathLength + 2000), strokeDashoffset: pathLength + 10 });
-          gsap.set(cyberTextBlock.children, { opacity: 0, y: 40 });
+          gsap.set(cyberLogoWrapper, { opacity: 0 });
+          gsap.set(cyberTextBlock, { opacity: 0 });
         }
         if (cyberHlines.length) {
           cyberHlines.forEach(line => {
@@ -1302,9 +1296,8 @@ function initScrollAnimations() {
         // Part 4B: Trace Cyber Logo and Show Text (Camera paused)
         tl.add("cyberTrace");
         if (cTracePath && cyberLogoWrapper && cyberTextBlock) {
-          tl.to(cTracePath, { strokeDashoffset: 0, ease: 'none', duration: 0.4 }, "cyberTrace")
-            .to(cyberLogoWrapper, { opacity: 1, duration: 0.01 }, "cyberTrace")
-            .to(cyberTextBlock.children, { opacity: 1, y: 0, duration: 0.3, stagger: 0.1, ease: 'power3.out' });
+          tl.to(cyberLogoWrapper, { opacity: 1, duration: 0.4 }, "cyberTrace")
+            .to(cyberTextBlock, { opacity: 1, duration: 0.4 }, "cyberTrace");
         }
 
         // Fade out previous Risk logo/text and lines WHILE Cyber logo is tracing
@@ -1401,16 +1394,15 @@ function initScrollAnimations() {
         const aiTextBlock = document.querySelector('.ai-text-block');
 
         if (aiLogo && aiTextBlock) {
-          gsap.set(aiLogo, { clipPath: 'inset(0 0 100% 0)', opacity: 0 }); // Fully hidden
-          gsap.set(aiTextBlock.children, { opacity: 0, y: 40 });
+          gsap.set(aiLogo, { opacity: 0 });
+          gsap.set(aiTextBlock, { opacity: 0 });
         }
 
         // Part 7: Trace AI Logo and Show Text (Camera paused at final position)
         tl.add("aiTrace");
         if (aiLogo && aiTextBlock) {
-          tl.to(aiLogo, { opacity: 1, duration: 0.01 }, "aiTrace")
-            .to(aiLogo, { clipPath: 'inset(0 0 0% 0)', ease: 'none', duration: 0.4 }, "aiTrace")
-            .to(aiTextBlock.children, { opacity: 1, y: 0, duration: 0.3, stagger: 0.1, ease: 'power3.out' }, "aiTrace");
+          tl.to(aiLogo, { opacity: 1, duration: 0.4 }, "aiTrace")
+            .to(aiTextBlock, { opacity: 1, duration: 0.4 }, "aiTrace");
         }
 
         // Fade out Cyber's horizontal rail while AI is tracing
@@ -1478,7 +1470,7 @@ function initWhySthirosScroll() {
   const whyLines = document.querySelectorAll('.why-line');
   whyLines.forEach(line => {
     const len = line.getTotalLength();
-    gsap.set(line, { strokeDasharray: len + 10, strokeDashoffset: len + 10, opacity: 0 });
+    // gsap.set(line, { strokeDasharray: len + 10, strokeDashoffset: len + 10, opacity: 0 });
   });
 
   // Heading + intro paragraph start hidden and fade in slightly after the
@@ -3302,7 +3294,7 @@ function initWhatWeDoMegaMenu(currentPage) {
     const rawPath = window.location.pathname.toLowerCase();
     const page = (currentPage || rawPath.split('/').pop() || 'index.html').toLowerCase();
 
-    // Find all WHAT WE DO mega menu containers
+    // 1. Find all WHAT WE DO mega menu containers
     const whatWeDoLis = Array.from(document.querySelectorAll('.d-nav-list > li.has-mega-menu')).filter(li => {
         const topLink = li.querySelector(':scope > a');
         return topLink && topLink.textContent.includes('WHAT WE DO');
@@ -3322,40 +3314,82 @@ function initWhatWeDoMegaMenu(currentPage) {
         const isCyber = page.includes('cyber');
         const isAi = page.includes('ai');
 
-        let activeTarget = null;
-        if (isStrategy) activeTarget = 'mega-strategy';
-        else if (isRisk) activeTarget = 'mega-risk';
-        else if (isCyber) activeTarget = 'mega-cyber';
-        else if (isAi) activeTarget = 'mega-ai';
+        let defaultTarget = null;
+        if (isStrategy) defaultTarget = 'mega-strategy';
+        else if (isRisk) defaultTarget = 'mega-risk';
+        else if (isCyber) defaultTarget = 'mega-cyber';
+        else if (isAi) defaultTarget = 'mega-ai';
+
+        if (isWhatWeDoPage || defaultTarget) {
+            const topLink = whatWeDoLi.querySelector(':scope > a');
+            if (topLink) topLink.classList.add('active-nav');
+        }
 
         function applyActiveState() {
             // Clear all active classes in sidebar links & panes
             sidebarLinks.forEach(l => l.classList.remove('active'));
             panes.forEach(p => p.classList.remove('active'));
 
-            if (activeTarget) {
-                // One of Strategy / Risk / Cyber / AI is active
-                const activeLink = megaMenu.querySelector(`.mega-sidebar-link[data-target="${activeTarget}"]`);
-                if (activeLink) activeLink.classList.add('active');
-
-                const activePane = document.getElementById(activeTarget);
-                if (activePane) activePane.classList.add('active');
-            } else if (isWhatWeDoPage) {
+            if (isWhatWeDoPage) {
                 // "WHAT WE DO" page itself is active
                 if (whatWeDoLink) whatWeDoLink.classList.add('active');
-                const defaultPane = document.getElementById('mega-strategy') || panes[0];
-                if (defaultPane) defaultPane.classList.add('active');
-            } else {
-                // Other page (e.g. index, about, oriq, contactus): no sidebar link is active
-                const defaultPane = document.getElementById('mega-strategy') || panes[0];
-                if (defaultPane) defaultPane.classList.add('active');
+            } else if (defaultTarget) {
+                // Activate current category if on risk/cyber/ai/strategy
+                const activeLink = megaMenu.querySelector(`.mega-sidebar-link[data-target="${defaultTarget}"]`);
+                if (activeLink) activeLink.classList.add('active');
+
+                const activePane = document.getElementById(defaultTarget);
+                if (activePane) activePane.classList.add('active');
             }
         }
 
         // Apply immediately
         applyActiveState();
 
+        // Refresh/reset active state whenever cursor enters WHAT WE DO nav item
+        whatWeDoLi.addEventListener('mouseenter', applyActiveState);
+
         // Interactive hover switching on sidebar items
+        sidebarLinks.forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                sidebarLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+
+                const targetId = link.getAttribute('data-target');
+                panes.forEach(p => p.classList.remove('active'));
+
+                if (targetId) {
+                    const targetPane = document.getElementById(targetId);
+                    if (targetPane) targetPane.classList.add('active');
+                }
+            });
+
+            // Prevent scroll/jump on click for '#' links
+            link.addEventListener('click', (e) => {
+                if (link.getAttribute('href') === '#' || !link.getAttribute('href')) {
+                    e.preventDefault();
+                }
+            });
+        });
+
+        // Restore active state when cursor leaves mega menu or nav item
+        megaMenu.addEventListener('mouseleave', applyActiveState);
+        whatWeDoLi.addEventListener('mouseleave', applyActiveState);
+    });
+
+    // 2. WHO WE SERVE mega menu
+    const whoWeServeLis = Array.from(document.querySelectorAll('.d-nav-list > li.has-mega-menu')).filter(li => {
+        const topLink = li.querySelector(':scope > a');
+        return topLink && topLink.textContent.includes('WHO WE SERVE');
+    });
+
+    whoWeServeLis.forEach(whoWeServeLi => {
+        const megaMenu = whoWeServeLi.querySelector('.split-mega-menu');
+        if (!megaMenu) return;
+
+        const sidebarLinks = megaMenu.querySelectorAll('.mega-sidebar-link');
+        const panes = megaMenu.querySelectorAll('.mega-pane');
+
         sidebarLinks.forEach(link => {
             link.addEventListener('mouseenter', () => {
                 sidebarLinks.forEach(l => l.classList.remove('active'));
@@ -3368,11 +3402,37 @@ function initWhatWeDoMegaMenu(currentPage) {
                     if (targetPane) targetPane.classList.add('active');
                 }
             });
-        });
 
-        // Restore active state when cursor leaves mega menu or nav item
-        megaMenu.addEventListener('mouseleave', applyActiveState);
-        whatWeDoLi.addEventListener('mouseleave', applyActiveState);
+            link.addEventListener('click', (e) => {
+                if (link.getAttribute('href') === '#' || !link.getAttribute('href')) {
+                    e.preventDefault();
+                }
+            });
+        });
+    });
+
+    // 3. Desktop mega menu click toggle & outside click dismissal
+    const allMegaLis = document.querySelectorAll('.d-nav-list > li.has-mega-menu');
+    allMegaLis.forEach(li => {
+        const topLink = li.querySelector(':scope > a');
+        if (topLink) {
+            topLink.addEventListener('click', (e) => {
+                if (topLink.getAttribute('href') === '#' || !topLink.getAttribute('href')) {
+                    e.preventDefault();
+                }
+                const isAlreadyActive = li.classList.contains('active-click');
+                allMegaLis.forEach(item => item.classList.remove('active-click'));
+                if (!isAlreadyActive) {
+                    li.classList.add('active-click');
+                }
+            });
+        }
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.has-mega-menu')) {
+            allMegaLis.forEach(item => item.classList.remove('active-click'));
+        }
     });
 }
 
@@ -4650,16 +4710,14 @@ document.addEventListener('DOMContentLoaded', () => {
         viewport.appendChild(container);
 
         container.style.justifyContent = 'flex-start';
-        container.style.transition = 'transform 0.5s ease-in-out';
         container.style.flexWrap = 'nowrap';
         container.style.width = 'max-content';
         container.style.maxWidth = 'none';
         
-        let rcsIndex = 0;
+        let isAnimating = false;
         
-        function updateRcsSlider() {
+        function updateRcsLayout() {
             const isMobile = window.innerWidth <= 768;
-            const cardsToShow = isMobile ? 1 : 3;
             const gap = isMobile ? 20 : 40;
             
             viewport.style.padding = isMobile ? '0 20px' : '0 40px';
@@ -4669,41 +4727,168 @@ document.addEventListener('DOMContentLoaded', () => {
             const viewportWidth = viewport.clientWidth - (isMobile ? 40 : 80);
             const cardWidth = isMobile ? viewportWidth : (viewportWidth - (gap * 2)) / 3;
             
-            rcsCards.forEach(card => {
-                card.style.display = 'block';
-                card.style.flex = `0 0 ${cardWidth}px`;
-                card.style.width = `${cardWidth}px`;
+            Array.from(container.children).forEach(card => {
+                if(card.classList.contains('rcs-card')) {
+                    card.style.display = 'block';
+                    card.style.flex = `0 0 ${cardWidth}px`;
+                    card.style.width = `${cardWidth}px`;
+                }
             });
             
-            const maxIndex = rcsCards.length - cardsToShow;
-            if (rcsIndex > maxIndex) rcsIndex = maxIndex;
-            if (rcsIndex < 0) rcsIndex = 0;
-            
-            const moveAmount = cardWidth + gap;
-            container.style.transform = `translateX(-${rcsIndex * moveAmount}px)`;
+            return { cardWidth, gap };
         }
         
-        rcsPrev.addEventListener('click', () => {
-            const isMobile = window.innerWidth <= 768;
-            const cardsToShow = isMobile ? 1 : 3;
-            const maxIndex = rcsCards.length - cardsToShow;
-            
-            rcsIndex--;
-            if (rcsIndex < 0) rcsIndex = maxIndex;
-            updateRcsSlider();
-        });
-        
         rcsNext.addEventListener('click', () => {
-            const isMobile = window.innerWidth <= 768;
-            const cardsToShow = isMobile ? 1 : 3;
-            const maxIndex = rcsCards.length - cardsToShow;
+            if (isAnimating) return;
+            isAnimating = true;
             
-            rcsIndex++;
-            if (rcsIndex > maxIndex) rcsIndex = 0;
-            updateRcsSlider();
+            const { cardWidth, gap } = updateRcsLayout();
+            const moveAmount = cardWidth + gap;
+            
+            container.style.transition = 'transform 0.5s ease-in-out';
+            container.style.transform = `translateX(-${moveAmount}px)`;
+            
+            setTimeout(() => {
+                container.style.transition = 'none';
+                container.appendChild(container.firstElementChild);
+                container.style.transform = 'translateX(0)';
+                container.offsetHeight; // force reflow
+                isAnimating = false;
+            }, 500);
         });
         
-        window.addEventListener('resize', updateRcsSlider);
-        setTimeout(updateRcsSlider, 100);
+        rcsPrev.addEventListener('click', () => {
+            if (isAnimating) return;
+            isAnimating = true;
+            
+            const { cardWidth, gap } = updateRcsLayout();
+            const moveAmount = cardWidth + gap;
+            
+            container.style.transition = 'none';
+            container.insertBefore(container.lastElementChild, container.firstElementChild);
+            container.style.transform = `translateX(-${moveAmount}px)`;
+            container.offsetHeight; // force reflow
+            
+            container.style.transition = 'transform 0.5s ease-in-out';
+            container.style.transform = 'translateX(0)';
+            
+            setTimeout(() => {
+                isAnimating = false;
+            }, 500);
+        });
+        
+        window.addEventListener('resize', () => {
+            container.style.transition = 'none';
+            container.style.transform = 'translateX(0)';
+            updateRcsLayout();
+        });
+        
+        setTimeout(updateRcsLayout, 100);
+    }
+});
+
+// Latest Thinking Slider (Mobile Only)
+document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.querySelector('.thinking-cards-wrapper');
+    const prevBtn = document.querySelector('.story-prev');
+    const nextBtn = document.querySelector('.story-next');
+    
+    if (wrapper && prevBtn && nextBtn) {
+        if (wrapper.dataset.sliderInitialized) return;
+        wrapper.dataset.sliderInitialized = 'true';
+
+        // Wrap it in a viewport
+        const viewport = document.createElement('div');
+        viewport.className = 'thinking-slider-viewport';
+        viewport.style.overflow = 'hidden';
+        viewport.style.width = '100%';
+        viewport.style.boxSizing = 'border-box';
+        
+        wrapper.parentNode.insertBefore(viewport, wrapper);
+        viewport.appendChild(wrapper);
+
+        let isAnimating = false;
+
+        function updateThinkingLayout() {
+            const isMobile = window.innerWidth <= 768;
+            
+            if (!isMobile) {
+                // Desktop: remove JS transform
+                wrapper.style.transform = 'none';
+                wrapper.style.transition = 'none';
+                viewport.style.padding = '0';
+                Array.from(wrapper.children).forEach(card => {
+                    card.style.flex = '';
+                    card.style.width = '';
+                });
+                return { cardWidth: 0, gap: 30 };
+            }
+
+            const gap = 20;
+            viewport.style.padding = '0 20px';
+            wrapper.style.gap = gap + 'px';
+            
+            const viewportWidth = viewport.clientWidth - 40; // minus padding
+            const cardWidth = viewportWidth; // 1 card visible
+            
+            Array.from(wrapper.children).forEach(card => {
+                if(card.classList.contains('thinking-card')) {
+                    card.style.display = 'flex';
+                    card.style.flex = `0 0 ${cardWidth}px`;
+                    card.style.width = `${cardWidth}px`;
+                }
+            });
+            
+            return { cardWidth, gap };
+        }
+
+        nextBtn.addEventListener('click', () => {
+            if (window.innerWidth > 768) return;
+            if (isAnimating) return;
+            isAnimating = true;
+            
+            const { cardWidth, gap } = updateThinkingLayout();
+            const moveAmount = cardWidth + gap;
+            
+            wrapper.style.transition = 'transform 0.5s ease-in-out';
+            wrapper.style.transform = `translateX(-${moveAmount}px)`;
+            
+            setTimeout(() => {
+                wrapper.style.transition = 'none';
+                wrapper.appendChild(wrapper.firstElementChild);
+                wrapper.style.transform = 'translateX(0)';
+                wrapper.offsetHeight; // force reflow
+                isAnimating = false;
+            }, 500);
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (window.innerWidth > 768) return;
+            if (isAnimating) return;
+            isAnimating = true;
+            
+            const { cardWidth, gap } = updateThinkingLayout();
+            const moveAmount = cardWidth + gap;
+            
+            wrapper.style.transition = 'none';
+            wrapper.insertBefore(wrapper.lastElementChild, wrapper.firstElementChild);
+            wrapper.style.transform = `translateX(-${moveAmount}px)`;
+            wrapper.offsetHeight; // force reflow
+            
+            wrapper.style.transition = 'transform 0.5s ease-in-out';
+            wrapper.style.transform = 'translateX(0)';
+            
+            setTimeout(() => {
+                isAnimating = false;
+            }, 500);
+        });
+
+        window.addEventListener('resize', () => {
+            wrapper.style.transition = 'none';
+            wrapper.style.transform = 'translateX(0)';
+            updateThinkingLayout();
+        });
+
+        setTimeout(updateThinkingLayout, 100);
     }
 });

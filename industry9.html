@@ -2680,6 +2680,248 @@
             .service-list { display: block !important; padding-left: 15px !important; }
             .service-header { cursor: default !important; pointer-events: none !important; }
         }
+
+/* Related Case Studies Section */
+        #relatedcasestudiessec {
+            padding: 100px 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0px;
+            position: relative;
+            z-index: 5;
+        }
+
+        .rcs-title {
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 70px;
+            font-weight: 600;
+            color: #fff;
+            text-align: center;
+            line-height: 1.1;
+            margin: 0 0 60px 0;
+        }
+
+        .rcs-title .highlight {
+            color: #EC2D26;
+        }
+
+        .rcs-container {
+            max-width: 1440px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        .rcs-card {
+            position: relative;
+            flex: 1;
+            height: 340px;
+            border-radius: 20px;
+            border: 1px solid #EC2D26;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .rcs-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .rcs-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0) 100%);
+            z-index: 2;
+        }
+
+        .rcs-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            z-index: 4;
+            transition: transform 0.3s ease;
+        }
+
+        .rcs-glow-effect {
+            position: absolute;
+            top: -30%;
+            left: -30%;
+            width: 160%;
+            height: 160%;
+            object-fit: cover;
+            opacity: 0;
+            z-index: 3;
+            pointer-events: none;
+            transition: opacity 0.5s ease;
+            animation: moveGlow 12s infinite alternate ease-in-out;
+        }
+
+        .rcs-card:hover .rcs-glow-effect {
+            opacity: 0.85;
+        }
+
+        @keyframes moveGlow {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            25% {
+                transform: translate(5%, 10%) scale(1.1);
+            }
+
+            50% {
+                transform: translate(-10%, 5%) scale(1.2);
+            }
+
+            75% {
+                transform: translate(-5%, -10%) scale(1.05);
+            }
+
+            100% {
+                transform: translate(10%, -5%) scale(1);
+            }
+        }
+
+        .rcs-text {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .rcs-text h3 {
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: #fff;
+            margin: 0;
+        }
+
+        .rcs-text .rcs-desc {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: #ffffff;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        .rcs-text .rcs-meta {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .rcs-meta .dot {
+            color: #EC2D26;
+        }
+
+        .rcs-arrow-container {
+            width: 32px;
+            height: 32px;
+            position: relative;
+        }
+
+        .rcs-arrow-normal,
+        .rcs-arrow-hover {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .rcs-arrow-hover {
+            opacity: 0;
+        }
+
+        .rcs-card:hover .rcs-arrow-normal {
+            opacity: 0;
+        }
+
+        .rcs-card:hover .rcs-arrow-hover {
+            opacity: 1;
+        }
+
+        .rcs-nav {
+            display: flex;
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .rcs-nav-btn {
+            width: 48px;
+            height: 48px;
+            background-image: url('assets/images/sthiroscircle.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            background-color: transparent;
+        }
+
+        .rcs-nav-btn:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+
+        .rcs-nav-btn img {
+            width: 16px;
+            height: 16px;
+            object-fit: contain;
+        }
+
+@media (max-width: 768px) {
+/* Related Case Studies mobile layout */
+            .rcs-container {
+                flex-direction: column;
+                padding: 0 20px;
+                gap: 20px;
+            }
+
+            .rcs-title {
+                font-size: 38px;
+                line-height: 1.2;
+                margin-bottom: 30px;
+            }
+
+            .rcs-card {
+                flex: none !important;
+                width: 100%;
+                height: 400px !important;
+                /* Make cards taller on mobile for a square/portrait aspect ratio */
+            }
+}
+
 </style>
 </head>
 
@@ -2904,72 +3146,8 @@
                 </span>
             </button>
         </div>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const path = window.location.pathname.toLowerCase();
-
-                // 1. Initial Active State Logic for WHAT WE DO
-                const whatWeDoMenu = document.querySelector('.d-nav-list > li:nth-child(3) .split-mega-menu');
-                if (whatWeDoMenu) {
-                    const links = whatWeDoMenu.querySelectorAll('.mega-sidebar-link');
-                    const panes = whatWeDoMenu.querySelectorAll('.mega-pane');
-
-                    let anySubActive = false;
-
-                    links.forEach(link => {
-                        link.classList.remove('active');
-                        const target = link.getAttribute('data-target');
-                        if (target) {
-                            if ((target === 'mega-strategy' && path.includes('strategy')) ||
-                                (target === 'mega-ai' && path.includes('ai')) ||
-                                (target === 'mega-risk' && path.includes('risk')) ||
-                                (target === 'mega-cyber' && path.includes('cyber'))) {
-                                link.classList.add('active');
-                                anySubActive = true;
-                            }
-                        }
-                    });
-
-                    if (!anySubActive && links.length > 0) {
-                        links[0].classList.add('active'); // "WHAT WE DO" is active
-                    }
-
-                    // Show correct pane
-                    panes.forEach(p => p.classList.remove('active'));
-                    links.forEach(link => {
-                        if (link.classList.contains('active')) {
-                            const target = link.getAttribute('data-target');
-                            if (target) {
-                                const pane = document.getElementById(target);
-                                if (pane) pane.classList.add('active');
-                            }
-                        }
-                    });
-                }
-
-                // 2. Hover Logic for all menus
-                const allSidebarLinks = document.querySelectorAll('.mega-sidebar-link');
-
-                allSidebarLinks.forEach(link => {
-                    link.addEventListener('mouseenter', function (e) {
-                        const megaMenu = this.closest('.split-mega-menu');
-                        if (!megaMenu) return;
-
-                        const localLinks = megaMenu.querySelectorAll('.mega-sidebar-link');
-                        const localPanes = megaMenu.querySelectorAll('.mega-pane');
-
-                        localLinks.forEach(l => l.classList.remove('active'));
-                        localPanes.forEach(p => p.classList.remove('active'));
-
-                        this.classList.add('active');
-                        const targetId = this.getAttribute('data-target');
-                        if (targetId) {
-                            const targetPane = document.getElementById(targetId);
-                            if (targetPane) targetPane.classList.add('active');
-                        }
-                    });
-                });
-            });
+                <script>
+            // Mega menu active states and hover behavior are centrally initialized in assets/js/script.js
         </script>
     </header>
 
@@ -5866,6 +6044,127 @@ We’ll show you the right problems. -->
             </defs>
         </svg>
     </div>
+
+    <!-- CHOOSE HOW TO START -->
+    <section id="relatedcasestudiessec">
+        <h2 class="rcs-title">Related<br><span class="highlight">case studies</span></h2>
+                <div class="rcs-container" id="rcs-slider-container">
+            <!-- Card 1 -->
+            <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/AIcasestudypdf/Moving inventory intelligence beyond reactive ERP reporting, in 12 weeks.pdf', '_blank')">
+                <img src="assets/images/repositorypage/casestudyimgone.jpg" class="rcs-bg" alt="Case Study">
+                <div class="rcs-overlay"></div>
+                <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                <div class="rcs-content">
+                    <div class="rcs-text">
+                        <p class="rcs-desc">Moving inventory intelligence beyond reactive ERP reporting, in 12 weeks</p>
+                    </div>
+                    <div class="rcs-arrow-container">
+                        <img src="assets/images/repositorypage/arrowwhite.png" class="rcs-arrow-normal" alt="Arrow">
+                        <img src="assets/images/repositorypage/arrowred.png" class="rcs-arrow-hover" alt="Arrow">
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/AIcasestudypdf/Automating multilingual video creation for training and incident reporting, at scale.pdf', '_blank')">
+                <img src="assets/images/repositorypage/casestudyimgtwo.jpg" class="rcs-bg" alt="Case Study">
+                <div class="rcs-overlay"></div>
+                <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                <div class="rcs-content">
+                    <div class="rcs-text">
+                        <p class="rcs-desc">Automating multilingual video creation for training and incident reporting, at scale</p>
+                    </div>
+                    <div class="rcs-arrow-container">
+                        <img src="assets/images/repositorypage/arrowwhite.png" class="rcs-arrow-normal" alt="Arrow">
+                        <img src="assets/images/repositorypage/arrowred.png" class="rcs-arrow-hover" alt="Arrow">
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/AIcasestudypdf/Teaching machine data and Excel to speak one language, in real time.pdf', '_blank')">
+                <img src="assets/images/repositorypage/casestudyimgthree.jpg" class="rcs-bg" alt="Case Study">
+                <div class="rcs-overlay"></div>
+                <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                <div class="rcs-content">
+                    <div class="rcs-text">
+                        <p class="rcs-desc">Teaching machine data and Excel to speak one language, in real time</p>
+                    </div>
+                    <div class="rcs-arrow-container">
+                        <img src="assets/images/repositorypage/arrowwhite.png" class="rcs-arrow-normal" alt="Arrow">
+                        <img src="assets/images/repositorypage/arrowred.png" class="rcs-arrow-hover" alt="Arrow">
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/AIcasestudypdf/Cutting manual cash burn reporting effort by 50-70%, in 25 business days.pdf', '_blank')">
+                <img src="assets/images/repositorypage/casestudyimgone.jpg" class="rcs-bg" alt="Case Study">
+                <div class="rcs-overlay"></div>
+                <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                <div class="rcs-content">
+                    <div class="rcs-text">
+                        <p class="rcs-desc">Cutting manual cash burn reporting effort by 50-70%, in 25 business days</p>
+                    </div>
+                    <div class="rcs-arrow-container">
+                        <img src="assets/images/repositorypage/arrowwhite.png" class="rcs-arrow-normal" alt="Arrow">
+                        <img src="assets/images/repositorypage/arrowred.png" class="rcs-arrow-hover" alt="Arrow">
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/AIcasestudypdf/Turning an undocumented risk practice into a Board-ready, CAG-audit-ready ERM framework.pdf', '_blank')">
+                <img src="assets/images/repositorypage/casestudyimgtwo.jpg" class="rcs-bg" alt="Case Study">
+                <div class="rcs-overlay"></div>
+                <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                <div class="rcs-content">
+                    <div class="rcs-text">
+                        <p class="rcs-desc">Turning an undocumented risk practice into a Board-ready, CAG-audit-ready ERM framework</p>
+                    </div>
+                    <div class="rcs-arrow-container">
+                        <img src="assets/images/repositorypage/arrowwhite.png" class="rcs-arrow-normal" alt="Arrow">
+                        <img src="assets/images/repositorypage/arrowred.png" class="rcs-arrow-hover" alt="Arrow">
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/AIcasestudypdf/Taking a manufacturer%27s intelligence from a 35 to one governed Smart Genba view.pdf', '_blank')">
+                <img src="assets/images/repositorypage/casestudyimgthree.jpg" class="rcs-bg" alt="Case Study">
+                <div class="rcs-overlay"></div>
+                <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                <div class="rcs-content">
+                    <div class="rcs-text">
+                        <p class="rcs-desc">Taking a manufacturer's intelligence from a 35 to one governed Smart Genba view</p>
+                    </div>
+                    <div class="rcs-arrow-container">
+                        <img src="assets/images/repositorypage/arrowwhite.png" class="rcs-arrow-normal" alt="Arrow">
+                        <img src="assets/images/repositorypage/arrowred.png" class="rcs-arrow-hover" alt="Arrow">
+                    </div>
+                </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/AIcasestudypdf/Catching customs and demurrage risk 48 hours before it costs a steel exporter money.pdf', '_blank')">
+                <img src="assets/images/repositorypage/casestudyimgone.jpg" class="rcs-bg" alt="Case Study">
+                <div class="rcs-overlay"></div>
+                <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                <div class="rcs-content">
+                    <div class="rcs-text">
+                        <p class="rcs-desc">Catching customs and demurrage risk 48 hours before it costs a steel exporter money</p>
+                    </div>
+                    <div class="rcs-arrow-container">
+                        <img src="assets/images/repositorypage/arrowwhite.png" class="rcs-arrow-normal" alt="Arrow">
+                        <img src="assets/images/repositorypage/arrowred.png" class="rcs-arrow-hover" alt="Arrow">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rcs-nav">
+            <div class="rcs-nav-btn" id="rcs-btn-prev">
+                <img src="assets/images/arrowslideleft.png" alt="Left">
+            </div>
+            <div class="rcs-nav-btn" id="rcs-btn-next">
+                <img src="assets/images/arrowslideright.png" alt="Right">
+            </div>
+        </div>
+    </section>
 
     <!-- CHOOSE HOW TO START -->
     <section id="choosehowrostartsec">

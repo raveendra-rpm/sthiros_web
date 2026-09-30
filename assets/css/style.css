@@ -4957,7 +4957,8 @@ body.light-mode .sub-nav-link:hover {
 }
 
 .d-nav-list>li>a:hover,
-.d-nav-list>li>a.active-nav {
+.d-nav-list>li>a.active-nav,
+.d-nav-list>li.has-mega-menu:hover>a {
   color: #EC2D26;
 }
 
@@ -7512,10 +7513,12 @@ body.light-mode .footer-menu li {
 
   /* 7. Intelligence built in the Field. section cards in single column */
   .thinking-cards-wrapper {
-    flex-direction: column !important;
-    align-items: center !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
     gap: 20px !important;
-    width: 100% !important;
+    width: max-content !important;
+    /* transition is handled by JS */
   }
 
   .thinking-card {
