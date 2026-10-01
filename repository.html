@@ -1338,8 +1338,11 @@
                 display: block !important;
             }
             .rcs-container {
-                flex-direction: column !important;
+                /* flex-direction: column !important; (Removed to allow horizontal slider on mobile) */
                 gap: 20px !important;
+            }
+            .repo-insight .rcs-container {
+                flex-direction: column !important;
                 padding: 0 20px !important;
             }
             .repo-insight {
@@ -1347,7 +1350,7 @@
                 padding-right: 0 !important;
             }
             .rcs-card {
-                width: 100% !important;
+                /* Removed width: 100% !important; so JS can set pixel width for slider */
                 flex: none !important;
                 height: 340px !important;
             }
@@ -1357,11 +1360,14 @@
             }
             /* Our Two Cents Slider Mobile */
             .cents-slide-center {
-                width: 90% !important;
-                max-width: 360px !important;
-                height: 480px !important;
-                aspect-ratio: unset !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                height: auto !important;
+                aspect-ratio: 4/3 !important;
                 border-radius: 20px !important;
+            }
+            .our-cents-img-class {
+                object-position: 25% center !important;
             }
             .cents-slide:not(.cents-slide-center) {
                 opacity: 0 !important;
@@ -1370,6 +1376,14 @@
             }
             .cents-slider {
                 margin: 40px 0 !important;
+            }
+            .cents-slide-title {
+                padding-top: 10px !important;
+                padding-bottom: 30px !important;
+                font-size: 18px !important;
+            }
+            .repo-cents {
+                padding: 40px 15px !important;
             }
             /* The Deep Dives Mobile Layout */
             .dives-container {
@@ -2046,6 +2060,156 @@
                         </div>
                     </div>
                 </div>
+                <!-- Card 8 -->
+                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/cybercasestudy/FINAL_Sthiros_CaseStudy_Valgenesis_SOC2_v1 2.pdf', '_blank')">
+                    <img src="assets/images/repositorypage/casestudyimgtwo.jpg" class="rcs-bg" alt="Case Study">
+                    <div class="rcs-overlay"></div>
+                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                    <div class="rcs-content">
+                        <div class="rcs-text">
+                            <p class="rcs-desc">FINAL_Sthiros_CaseStudy_Valgenesis_SOC2_v1 2</p>
+                        </div>
+                        <div class="rcs-arrow-container">
+                            <img src="assets/images/repositorypage/arrowwhite.png" class="rcs-arrow-normal" alt="Arrow">
+                            <img src="assets/images/repositorypage/arrowred.png" class="rcs-arrow-hover" alt="Arrow">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 9 -->
+                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/cybercasestudy/Sthiros_CaseStudy_CYBER04_ISMS_v1 3.pdf', '_blank')">
+                    <img src="assets/images/repositorypage/casestudyimgthree.jpg" class="rcs-bg" alt="Case Study">
+                    <div class="rcs-overlay"></div>
+                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                    <div class="rcs-content">
+                        <div class="rcs-text">
+                            <p class="rcs-desc">Sthiros_CaseStudy_CYBER04_ISMS_v1 3</p>
+                        </div>
+                        <div class="rcs-arrow-container">
+                            <img src="assets/images/repositorypage/arrowwhite.png" class="rcs-arrow-normal" alt="Arrow">
+                            <img src="assets/images/repositorypage/arrowred.png" class="rcs-arrow-hover" alt="Arrow">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 10 -->
+                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/cybercasestudy/Sthiros_CaseStudy_CYBER05_Automotive_v1 3.pdf', '_blank')">
+                    <img src="assets/images/repositorypage/casestudyimgone.jpg" class="rcs-bg" alt="Case Study">
+                    <div class="rcs-overlay"></div>
+                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                    <div class="rcs-content">
+                        <div class="rcs-text">
+                            <p class="rcs-desc">Sthiros_CaseStudy_CYBER05_Automotive_v1 3</p>
+                        </div>
+                        <div class="rcs-arrow-container">
+                            <img src="assets/images/repositorypage/arrowwhite.png" class="rcs-arrow-normal" alt="Arrow">
+                            <img src="assets/images/repositorypage/arrowred.png" class="rcs-arrow-hover" alt="Arrow">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 11 -->
+                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/cybercasestudy/Sthiros_CaseStudy_CYBER06_Forensic_v1 3.pdf', '_blank')">
+                    <img src="assets/images/repositorypage/casestudyimgtwo.jpg" class="rcs-bg" alt="Case Study">
+                    <div class="rcs-overlay"></div>
+                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                    <div class="rcs-content">
+                        <div class="rcs-text">
+                            <p class="rcs-desc">Sthiros_CaseStudy_CYBER06_Forensic_v1 3</p>
+                        </div>
+                        <div class="rcs-arrow-container">
+                            <img src="assets/images/repositorypage/arrowwhite.png" class="rcs-arrow-normal" alt="Arrow">
+                            <img src="assets/images/repositorypage/arrowred.png" class="rcs-arrow-hover" alt="Arrow">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 12 -->
+                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/cybercasestudy/Sthiros_CaseStudy_CYBER07_AWS_v1 3.pdf', '_blank')">
+                    <img src="assets/images/repositorypage/casestudyimgthree.jpg" class="rcs-bg" alt="Case Study">
+                    <div class="rcs-overlay"></div>
+                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                    <div class="rcs-content">
+                        <div class="rcs-text">
+                            <p class="rcs-desc">Sthiros_CaseStudy_CYBER07_AWS_v1 3</p>
+                        </div>
+                        <div class="rcs-arrow-container">
+                            <img src="assets/images/repositorypage/arrowwhite.png" class="rcs-arrow-normal" alt="Arrow">
+                            <img src="assets/images/repositorypage/arrowred.png" class="rcs-arrow-hover" alt="Arrow">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 13 -->
+                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/cybercasestudy/Sthiros_CaseStudy_CYBER08_ITITES_v1 3.pdf', '_blank')">
+                    <img src="assets/images/repositorypage/casestudyimgone.jpg" class="rcs-bg" alt="Case Study">
+                    <div class="rcs-overlay"></div>
+                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                    <div class="rcs-content">
+                        <div class="rcs-text">
+                            <p class="rcs-desc">Sthiros_CaseStudy_CYBER08_ITITES_v1 3</p>
+                        </div>
+                        <div class="rcs-arrow-container">
+                            <img src="assets/images/repositorypage/arrowwhite.png" class="rcs-arrow-normal" alt="Arrow">
+                            <img src="assets/images/repositorypage/arrowred.png" class="rcs-arrow-hover" alt="Arrow">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 14 -->
+                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/cybercasestudy/Sthiros_CaseStudy_CYBER10_SOP_v1 3.pdf', '_blank')">
+                    <img src="assets/images/repositorypage/casestudyimgtwo.jpg" class="rcs-bg" alt="Case Study">
+                    <div class="rcs-overlay"></div>
+                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                    <div class="rcs-content">
+                        <div class="rcs-text">
+                            <p class="rcs-desc">Sthiros_CaseStudy_CYBER10_SOP_v1 3</p>
+                        </div>
+                        <div class="rcs-arrow-container">
+                            <img src="assets/images/repositorypage/arrowwhite.png" class="rcs-arrow-normal" alt="Arrow">
+                            <img src="assets/images/repositorypage/arrowred.png" class="rcs-arrow-hover" alt="Arrow">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 15 -->
+                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/cybercasestudy/Sthiros_CaseStudy_Equitas_ATM_v1 3.pdf', '_blank')">
+                    <img src="assets/images/repositorypage/casestudyimgthree.jpg" class="rcs-bg" alt="Case Study">
+                    <div class="rcs-overlay"></div>
+                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                    <div class="rcs-content">
+                        <div class="rcs-text">
+                            <p class="rcs-desc">Sthiros_CaseStudy_Equitas_ATM_v1 3</p>
+                        </div>
+                        <div class="rcs-arrow-container">
+                            <img src="assets/images/repositorypage/arrowwhite.png" class="rcs-arrow-normal" alt="Arrow">
+                            <img src="assets/images/repositorypage/arrowred.png" class="rcs-arrow-hover" alt="Arrow">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 16 -->
+                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/casestudybsfi/FINAL_Sthiros_CaseStudy_Kinara_IS_Audit _v1 1.pdf', '_blank')">
+                    <img src="assets/images/repositorypage/casestudyimgone.jpg" class="rcs-bg" alt="Case Study">
+                    <div class="rcs-overlay"></div>
+                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                    <div class="rcs-content">
+                        <div class="rcs-text">
+                            <p class="rcs-desc">FINAL_Sthiros_CaseStudy_Kinara_IS_Audit _v1 1</p>
+                        </div>
+                        <div class="rcs-arrow-container">
+                            <img src="assets/images/repositorypage/arrowwhite.png" class="rcs-arrow-normal" alt="Arrow">
+                            <img src="assets/images/repositorypage/arrowred.png" class="rcs-arrow-hover" alt="Arrow">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 17 -->
+                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/casestudybsfi/FINAL_Sthiros_CaseStudy_TFCU_v1 3.pdf', '_blank')">
+                    <img src="assets/images/repositorypage/casestudyimgtwo.jpg" class="rcs-bg" alt="Case Study">
+                    <div class="rcs-overlay"></div>
+                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                    <div class="rcs-content">
+                        <div class="rcs-text">
+                            <p class="rcs-desc">FINAL_Sthiros_CaseStudy_TFCU_v1 3</p>
+                        </div>
+                        <div class="rcs-arrow-container">
+                            <img src="assets/images/repositorypage/arrowwhite.png" class="rcs-arrow-normal" alt="Arrow">
+                            <img src="assets/images/repositorypage/arrowred.png" class="rcs-arrow-hover" alt="Arrow">
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="rcs-nav">
@@ -2156,14 +2320,7 @@
                 </div>
             </div>
 
-            <div class="rcs-nav">
-                <div class="rcs-nav-btn">
-                    <img src="assets/images/arrowslideleft.png" alt="Left">
-                </div>
-                <div class="rcs-nav-btn">
-                    <img src="assets/images/arrowslideright.png" alt="Right">
-                </div>
-            </div>
+
         </section>
 
         <section id="insightindustrysec">
@@ -2403,10 +2560,6 @@
                     </div>
                 </div>
 
-                <div class="dives-nav">
-                    <button class="cents-nav-btn"><img src="assets/images/arrowslideleft.png" alt="Left"></button>
-                    <button class="cents-nav-btn"><img src="assets/images/arrowslideright.png" alt="Right"></button>
-                </div>
             </div>
         </section>
 

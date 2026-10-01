@@ -3533,7 +3533,7 @@ body.light-mode .stat-label {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
   cursor: pointer;
 }
 
@@ -3561,7 +3561,7 @@ body.light-mode .stat-label {
 }
 
 .thinking-card:hover {
-  transform: translateY(-5px);
+  transform: none;
   border-color: #EF4623;
   box-shadow: 0 10px 30px rgba(239, 70, 35, 0.25);
 }
@@ -5788,12 +5788,13 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
   }
 
   .menu-content .chevron {
-    width: 11px !important;
+    width: 8px !important;
   }
 
   .menu-content .sub-nav-link {
     font-size: 1rem !important;
     height: 38px !important;
+    padding-left: 20px !important;
   }
 
   .menu-content .sub-nav-link:hover {
@@ -5803,7 +5804,17 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
 
   .menu-content .nested-sub-nav-link {
     font-size: 0.9rem !important;
-    height: 32px !important;
+    height: auto !important;
+    padding-left: 15px !important;
+    margin-bottom: 8px !important;
+    line-height: 1.4 !important;
+  }
+  
+  .menu-content .sub-nav {
+    margin-top: 15px !important;
+    margin-bottom: 25px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
 
   .menu-close img {
@@ -6354,7 +6365,7 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
 
   .aboutusmobilescreensvg {
     display: block;
-    margin-top: -68px;
+    margin-top: 34px !important;
     height: 0;
     overflow: visible;
     position: relative;
@@ -6486,7 +6497,7 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
   .hero-mobile-left-svg {
     position: absolute;
     right: 10px;
-    top: -250px;
+    top: -170px;
     z-index: 1;
     opacity: 1;
     width: 223px;
@@ -6503,9 +6514,9 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
   .hero-mobile-right-svg {
     position: absolute;
     left: 15px;
-    top: 540px;
+    top: 620px;
     width: calc(100% - 250px);
-    height: 450px;
+    height: 617px;
     overflow: hidden;
     z-index: 3;
     opacity: 1;
@@ -7511,23 +7522,24 @@ body.light-mode .footer-menu li {
     margin-bottom: 30px !important;
   }
 
-  /* 7. Intelligence built in the Field. section cards in single column */
+  /* 7. Intelligence built in the Field. section cards responsive layout */
   .thinking-cards-wrapper {
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    align-items: stretch !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
     gap: 20px !important;
-    width: max-content !important;
-    /* transition is handled by JS */
+    width: 100% !important;
+    transform: none !important; /* Override any JS transform if present */
   }
 
   .thinking-card {
-    flex: 0 0 auto !important;
+    flex: none !important;
     width: 100% !important;
     max-width: 100% !important;
     height: auto !important;
     min-height: 220px !important;
     padding: 30px 24px !important;
+    box-sizing: border-box !important;
   }
 
   /* 8. Bring us the hardest one. CTA section mobile layout matching uploaded image */
@@ -8455,10 +8467,16 @@ body.light-mode .footer-menu li {
   .menu-content .sub-nav-link {
     font-size: 0.95rem !important;
     height: 36px !important;
+    padding-left: 20px !important;
   }
   .menu-content .sub-nav-link:hover {
     font-size: 0.95rem !important;
     color: #EF4623 !important;
+  }
+  .menu-content .nested-sub-nav-link {
+    padding-left: 15px !important;
+    margin-bottom: 6px !important;
+    line-height: 1.4 !important;
   }
 }
 

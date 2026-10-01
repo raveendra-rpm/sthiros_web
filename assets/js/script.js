@@ -4794,6 +4794,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextBtn = document.querySelector('.story-next');
     
     if (wrapper && prevBtn && nextBtn) {
+        return; // Slider logic disabled (now pure CSS responsive layout)
         if (wrapper.dataset.sliderInitialized) return;
         wrapper.dataset.sliderInitialized = 'true';
 
