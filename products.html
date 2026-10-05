@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sthiros - ORIQ</title>
+    <title>Sthiros - Products</title>
     <meta name="description" content="Sthiros Products" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Quicksand:wght@400&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css?v=7" />
     <style>
@@ -47,24 +47,6 @@
 
         .products-hero-title span {
             color: #EC2D26;
-            position: relative;
-            display: inline-block;
-            z-index: 1;
-        }
-
-        .products-hero-title span::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 140%;
-            height: 180%;
-            background: radial-gradient(ellipse at center, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.8) 40%, rgba(10, 10, 10, 0.4) 65%, rgba(10, 10, 10, 0) 85%);
-            filter: blur(20px);
-            z-index: -1;
-            pointer-events: none;
-            border-radius: 50%;
         }
 
         .products-hero-subtitle {
@@ -76,23 +58,6 @@
             line-height: normal;
             max-width: 500px;
             margin-bottom: 100px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .products-hero-subtitle::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 130%;
-            height: 180%;
-            background: radial-gradient(ellipse at center, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.8) 45%, rgba(10, 10, 10, 0.4) 70%, rgba(10, 10, 10, 0) 90%);
-            filter: blur(20px);
-            z-index: -1;
-            pointer-events: none;
-            border-radius: 50%;
         }
 
         @media (max-width: 1024px) {
@@ -119,25 +84,22 @@
 
         @media (max-width: 768px) {
             .products-hero-section {
-                background-position: right center;
+                background-position: left center;
                 padding-left: 20px;
                 padding-right: 20px;
             }
 
             .products-hero-title {
-                font-size: clamp(20px, 8vw, 40px);
-                line-height: 1.15;
-                text-align: left;
+                font-size: 45px;
             }
 
             .products-hero-subtitle {
-                font-size: clamp(12px, 3.5vw, 16px);
-                text-align: left;
-                margin-top: 15px;
+                font-size: 16px;
             }
 
             #svgherobtm {
-                display: none !important;
+                margin-left: 0;
+                margin-top: -25rem;
             }
         }
 
@@ -164,150 +126,55 @@
 
         @media (max-width: 768px) {
             #productsexploretxt {
-                margin-top: 40px;
+                margin-top: -12rem;
             }
 
             #productsexploretxt p {
-                font-size: clamp(14px, 4.5vw, 18px);
-                line-height: 1.5;
+                font-size: 16px;
             }
-
-            .middledivsvg,
-            .bottomdivsvg,
-            .telluswhatsvgtop,
-            .telluswhatsvgbtm {
-                display: none !important;
-            }
-
-            .contdivseccompliancecard,
-            .telluswhatssvgtopcont {
-                position: relative !important;
-                top: auto !important;
-                bottom: auto !important;
-                left: auto !important;
-                right: auto !important;
-                margin: 40px auto !important;
-                width: calc(100% - 20px) !important;
-                max-width: calc(100% - 20px) !important;
-                box-sizing: border-box;
-            }
-
-            .telluswhatssvgtopcont {
-                flex-direction: column !important;
-                align-items: flex-start !important;
-                gap: 20px;
-                padding: 30px 20px !important;
-            }
-
-            .telluswhatssvgtopcont .tw-heading {
-                font-size: clamp(28px, 8vw, 40px) !important;
-                line-height: 1.2;
-            }
-
-            .telluswhatssvgtopcont .tw-desc {
-                font-size: 14px !important;
-            }
-
-            .telluswhatssvgtopcont .tw-desc br,
-            .telluswhatssvgtopcont .tw-heading br {
-                display: none !important;
-            }
-            .telluswhatssvgtopcont .tw-heading .mob-br {
-                display: none !important;
-            }
-
-            .compliance-feature-card .cf-action-btn-wrap .hero-btn-inner {
-                font-size: clamp(8px, 3vw, 13px) !important;
-                white-space: nowrap !important;
-                padding: 6px 16px !important;
-                display: flex !important;
-                flex-direction: row !important;
-                align-items: center !important;
-                justify-content: center !important;
-                gap: 5px;
-            }
-
-            .telluswhatssvgtopcont .tw-btn-wrap {
-                width: 100%;
-                display: flex;
-                justify-content: flex-start;
-                margin-top: 10px;
-            }
-        }
-
-        /* ═══════════════ RED RAIL GEOMETRY ═══════════════
-           The rail runs down the page's vertical centre line, bulges out to the
-           right around the product cards, and comes back to that same centre line
-           where #complianceoperationsec hands it over to
-           #Telluswhatsstillbeingdonebyhandsec.
-
-           Every segment is placed from the one 50% anchor with calc(), so
-           .bottomdivsvg's ending point and .telluswhatsvgtop's starting point stay
-           on the same vertical line at any viewport width - no gutters, no
-           per-breakpoint nudging.
-
-           The constants are the rail's own offset inside each SVG (viewBox units
-           x that SVG's rendered scale) and never change; --rail-scale is the only
-           knob the media queries touch. */
-        :root {
-            --rail-scale: 1;
-            --rail-scale-y: 1;
-        }
-
-        .topdivsvg,
-        .middledivsvg,
-        .bottomdivsvg,
-        .telluswhatsvgtop,
-        .telluswhatsvgbtm {
-            display: flex;
-            justify-content: flex-start;
-            width: 100%;
-        }
-
-        .topdivsvg svg,
-        .middledivsvg svg,
-        .bottomdivsvg svg,
-        .telluswhatsvgtop svg,
-        .telluswhatsvgbtm svg {
-            flex-shrink: 0;
-            transform: scaleX(var(--rail-scale));
-            transform-origin: top left;
         }
 
         .topdivsvg {
+            display: flex;
+            justify-content: center;
             align-items: center;
+            width: 100%;
             margin-top: -30px;
         }
 
         .middledivsvg {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
             margin-top: -180px;
+            padding-right: 42px;
+        }
+
+        .bottomdivsvg {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            padding-right: 42.5px;
         }
 
         .telluswhatsvgtop {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
             margin-top: -336px;
+            padding-left: 42px;
         }
 
-        /* rail enters these two at x0, so the same offset centres both */
-        .topdivsvg svg,
-        .middledivsvg svg {
-            margin-left: calc(50% - 31.479px * var(--rail-scale));
+        .telluswhatsvgbtm {
+            display: flex;
+            justify-content: flex-start;
+            /* width: 100%; */
+            padding-left: 41.5px;
         }
 
-        /* ending point: rail leaves .bottomdivsvg 29.267px in from its left edge */
-        .bottomdivsvg svg {
-            margin-left: calc(50% - 29.267px * var(--rail-scale));
-            transform: scaleX(var(--rail-scale)) scaleY(var(--rail-scale-y));
-        }
-
-        /* starting point: rail enters .telluswhatsvgtop 722.366px in - lands it on
-           the exact vertical line .bottomdivsvg just left off at */
+        .telluswhatsvgbtm svg,
         .telluswhatsvgtop svg {
-            margin-left: calc(50% - 722.366px * var(--rail-scale));
-        }
-
-        /* picks the rail back up from .telluswhatsvgtop's own bottom-left exit */
-        .telluswhatsvgbtm svg {
-            margin-left: calc(50% - 723.126px * var(--rail-scale));
+            flex-shrink: 0;
         }
 
         #Telluswhatsstillbeingdonebyhandsec {
@@ -323,12 +190,12 @@
             justify-content: space-between;
             align-items: center;
             padding: 30px 60px;
+            margin-left: 100px;
+            margin-right: 50px;
             position: absolute;
             top: 230px;
-            /* sits inside the rail's bracket: flush with its left descent, ending
-               where the bottom run fades out - both from the same 50% anchor */
-            left: calc(50% - 663.054px * var(--rail-scale));
-            right: calc(50% - 729.361px * var(--rail-scale));
+            left: 0;
+            right: 0;
             z-index: 10;
             border: 1px solid #EF4623;
         }
@@ -339,7 +206,7 @@
 
         .tw-heading {
             color: #F4F3F2;
-            font-family: 'Quicksand', sans-serif;
+            font-family: 'Inter', sans-serif;
             font-size: 74px;
             font-style: normal;
             font-weight: 300;
@@ -417,7 +284,8 @@
         }
 
         .compliance-feature-card {
-            position: relative;
+            position: sticky;
+            top: 85px;
             background-color: #000;
             border: 1px solid #EC2D26;
             border-radius: 30px;
@@ -636,87 +504,38 @@
             }
         }
 
-        @media screen and (max-width: 1024px) and (min-width: 769px) {
-            .middledivsvg,
-            .bottomdivsvg,
-            .middledivsvg svg,
-            .bottomdivsvg svg,
+        @media (max-width: 1680px) {
+            .telluswhatssvgtopcont {
+                max-width: 1350px;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+            }
+
             .telluswhatsvgtop,
             .telluswhatsvgbtm {
-                display: none !important;
+                padding-left: 110px;
             }
 
-            #svgherobtm {
-                margin-top: -26rem !important;
-            }
-
-            #productsexploretxt {
-                margin-top: 40px !important;
-                padding: 0 40px !important;
-            }
-
-            #productsexploretxt p {
-                font-size: 18px !important;
-                line-height: 1.6 !important;
-                max-width: 750px !important;
-            }
-
-            #complianceoperationsec {
-                position: relative !important;
-                padding-bottom: 40px !important;
-            }
-
-            .topdivsvg {
-                margin-top: 0 !important;
-                margin-bottom: 20px !important;
-            }
-
-            .contdivseccompliancecard {
-                position: relative !important;
-                top: auto !important;
-                bottom: auto !important;
-                left: auto !important;
-                right: auto !important;
-                margin: 40px auto !important;
-                max-width: 950px !important;
-                width: calc(100% - 60px) !important;
-                gap: 60px !important;
-                padding: 0 !important;
-            }
-
-            #Telluswhatsstillbeingdonebyhandsec {
-                position: relative !important;
-                margin: 0 auto !important;
-                padding: 20px 0 80px 0 !important;
-            }
-
-            .telluswhatssvgtopcont {
-                position: relative !important;
-                top: auto !important;
-                bottom: auto !important;
-                left: auto !important;
-                right: auto !important;
-                margin: 0 auto !important;
-                max-width: 950px !important;
-                width: calc(100% - 60px) !important;
-                box-sizing: border-box !important;
+            .telluswhatsvgbtm {
+                margin-left: -0.5px;
             }
         }
 
-        /* --rail-scale only ever shrinks the rail enough to keep both of its
-           descents on screen: the widest point is 729.361px either side of the
-           centre line, so the largest usable scale is (viewport / 1458.7). */
         @media (max-width: 1600px) {
-            :root {
-                --rail-scale: 0.98;
+            .telluswhatssvgtopcont {
+                max-width: 1200px;
+                margin-right: 10rem;
+            }
+
+            .telluswhatsvgtop,
+            .telluswhatsvgbtm {
+                padding-left: 80px;
             }
         }
 
         @media (max-width: 1440px) {
-            :root {
-                --rail-scale: 0.93;
-            }
-
             .contdivseccompliancecard {
                 max-width: 1250px;
             }
@@ -726,8 +545,24 @@
                 gap: 40px;
             }
 
+            .middledivsvg,
+            .bottomdivsvg {
+                padding-right: 0px;
+            }
+
             .bottomdivsvg {
                 margin-top: -3px;
+            }
+
+            .middledivsvg svg,
+            .bottomdivsvg svg {
+                transform: scaleX(0.92);
+                transform-origin: left;
+            }
+
+            .telluswhatsvgtop,
+            .telluswhatsvgbtm {
+                padding-left: 0px;
             }
 
             .telluswhatsvgbtm {
@@ -740,11 +575,6 @@
         }
 
         @media (max-width: 1366px) {
-            :root {
-                --rail-scale: 0.90;
-                --rail-scale-y: 0.85;
-            }
-
             .contdivseccompliancecard {
                 gap: 180px;
             }
@@ -754,12 +584,19 @@
                 /* Shifted down by 30px from previous change */
             }
 
+            .middledivsvg svg,
+            .bottomdivsvg svg {
+                transform: scaleX(0.92) translateX(25px);
+                transform-origin: left;
+            }
+
             .bottomdivsvg {
                 margin-top: -52px;
                 /* Shifted down by 30px from previous change */
             }
 
             .telluswhatssvgtopcont {
+                max-width: 1050px;
                 padding: 20px 40px;
             }
 
@@ -793,20 +630,20 @@
             }
 
             .cf-subheading {
-                font-size: 15px;
+                font-size: 13px;
                 margin-bottom: 10px;
             }
 
             .cf-desc {
-                font-size: 14px;
+                font-size: 12px;
                 margin-bottom: 10px;
-                line-height: 1.4;
+                line-height: 1.3;
             }
 
             .cf-small-desc {
-                font-size: 13px;
+                font-size: 11px;
                 margin-bottom: 15px;
-                line-height: 1.4;
+                line-height: 1.3;
             }
 
             .cf-stat-num {
@@ -831,18 +668,39 @@
             }
 
             .cf-feature-sub {
-                font-size: 12px;
+                font-size: 10px;
                 margin-bottom: 8px;
                 min-height: 28px;
             }
 
             .cf-feature-list li {
-                font-size: 13px;
+                font-size: 11px;
                 margin-bottom: 8px;
+            }
+
+            .telluswhatsvgtop svg,
+            .telluswhatsvgbtm svg {
+                transform: scaleX(0.92) translateX(48px);
+                transform-origin: left;
+            }
+
+            .telluswhatsvgtop,
+            .telluswhatsvgbtm {
+                padding-left: 0px;
             }
 
             .telluswhatsvgbtm {
                 margin-top: -15px;
+            }
+
+            .middledivsvg svg {
+                transform: scaleX(0.92) translateX(42px);
+                transform-origin: left;
+            }
+
+            .bottomdivsvg svg {
+                transform: scaleX(0.92) translateX(42px) scaleY(0.85);
+                transform-origin: top left;
             }
 
             .products-hero-title {
@@ -852,13 +710,21 @@
         }
 
         @media (max-width: 1320px) {
-            :root {
-                --rail-scale: 0.87;
+
+            .svgconsecblc {
+                padding-left: 50px;
+                padding-right: 50px;
             }
 
             #svgherobtm {
                 margin-top: -40rem;
                 /* Shifted down from -45rem */
+            }
+
+            .telluswhatsvgtop svg,
+            .telluswhatsvgbtm svg {
+                transform: scaleX(0.92) translateX(19px);
+                transform-origin: left;
             }
 
             .telluswhatsvgbtm {
@@ -867,13 +733,20 @@
         }
 
         @media (max-width: 1280px) {
-            :root {
-                --rail-scale: 0.78;
-            }
-
             .products-hero-title {
                 font-size: 64px;
                 line-height: 80px;
+            }
+
+            .telluswhatssvgtopcont {
+                max-width: 1150px;
+                transform: translateX(100px);
+            }
+
+            .telluswhatsvgtop svg,
+            .telluswhatsvgbtm svg {
+                transform: scaleX(1.036) translateX(20.5px);
+                transform-origin: left;
             }
 
             .telluswhatsvgbtm {
@@ -884,179 +757,13 @@
                 max-width: 1100px;
             }
         }
-
-        @media (max-width: 1140px) {
-            :root {
-                --rail-scale: 0.70;
-            }
-        }
-
-        /* ═══════════════ LIGHT MODE OVERRIDES ═══════════════ */
-        body.light-mode #productsexploretxt p {
-            color: #000 !important;
-        }
-
-        body.light-mode .compliance-feature-card {
-            background-color: #fff !important;
-            border-color: #C62620 !important;
-        }
-
-        body.light-mode .compliance-feature-card .cf-heading,
-        body.light-mode .compliance-feature-card .cf-subheading,
-        body.light-mode .compliance-feature-card .cf-desc,
-        body.light-mode .compliance-feature-card .cf-small-desc,
-        body.light-mode .compliance-feature-card .cf-stat-num,
-        body.light-mode .compliance-feature-card .cf-stat-text,
-        body.light-mode .compliance-feature-card .cf-right,
-        body.light-mode .compliance-feature-card .cf-feature-title,
-        body.light-mode .compliance-feature-card .cf-feature-sub,
-        body.light-mode .compliance-feature-card .cf-feature-list li,
-        body.light-mode .compliance-feature-card .cf-action-btn-wrap .hero-btn-inner {
-            color: #000 !important;
-        }
-
-        body.light-mode .telluswhatssvgtopcont {
-            background-image: url('assets/images/productsinsights/productwhenyulight.jpg') !important;
-        }
-
-        body.light-mode .telluswhatssvgtopcont .tw-heading,
-        body.light-mode .telluswhatssvgtopcont .tw-desc,
-        body.light-mode .telluswhatssvgtopcont .tw-btn-wrap .hero-btn-inner {
-            color: #000 !important;
-        }
-
-        @media (max-width: 480px) {
-            .products-hero-title {
-                font-size: 10vw !important;
-                white-space: nowrap !important;
-                line-height: 1.15;
-            }
-        }
-        @media (max-width: 425px) {
-            .compliance-feature-card .cf-action-btn-wrap .hero-btn-inner {
-                white-space: normal !important;
-                line-height: 1.2;
-                text-align: center !important;
-                display: flex !important;
-                flex-direction: column !important;
-                align-items: center !important;
-                justify-content: center !important;
-                gap: 2px !important;
-            }
-        }
-        .mobile-mid-svg, .mobile-bottom-svg, .mobile-telluswhat-svgbtm, .mob-br {
-            display: none;
-        }
-
-        @media (max-width: 768px) {
-            .telluswhatssvgtopcont {
-                background-image: url('assets/images/productsinsights/btmctaartsec.png') !important;
-            }
-            body.light-mode .telluswhatssvgtopcont {
-                background-image: url('assets/images/productsinsights/btmctaartsecwhite.png') !important;
-            }
-            .mobile-mid-svg, .mobile-bottom-svg {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-            }
-            .mobile-mid-svg {
-                margin: -160px 0;
-            }
-            .mobile-bottom-svg {
-                margin: -160px 0 -120px 0;
-            }
-            .mobile-telluswhat-svgbtm {
-                display: flex !important;
-                justify-content: flex-end;
-                width: 100%;
-                overflow: hidden;
-                margin-top: -170px;
-                line-height: 0;
-            }
-            .mobile-telluswhat-svgbtm svg {
-                width: 100% !important;
-                max-width: 440px !important;
-                height: auto;
-            }
-        }
-
-        @media (max-width: 550px) {
-            .telluswhatssvgtopcont {
-                min-height: 520px !important;
-                justify-content: space-between !important;
-            }
-            .telluswhatssvgtopcont .tw-btn-wrap {
-                margin-top: auto !important;
-                justify-content: center !important;
-            }
-        }
-
-        @media (max-width: 500px) {
-            .telluswhatssvgtopcont .tw-heading .mob-br {
-                display: block !important;
-            }
-            .telluswhatssvgtopcont .tw-heading {
-                font-weight: 300 !important;
-                line-height: 1.1 !important;
-                font-size: 38px !important;
-            }
-        }
     </style>
 </head>
 
 <body>
 
-    <!-- PASSWORD GATE OVERLAY -->
-    <div id="sthiros-password-gate"
-        style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000; z-index: 9999999; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Quicksand', sans-serif;">
-        <div style="text-align: center;">
-            <h2 style="color: #fff; font-size: 24px; margin-bottom: 25px; font-weight: 500;">Please enter password to
-                access site</h2>
-            <div style="display: flex; gap: 10px; justify-content: center;">
-                <input type="password" id="sthiros-gate-input" placeholder="Enter password"
-                    style="padding: 12px 20px; font-size: 16px; border: 1px solid #333; border-radius: 6px; background-color: #111; color: #fff; outline: none; width: 280px;">
-                <button id="sthiros-gate-btn"
-                    style="padding: 12px 24px; font-size: 16px; background-color: #EF4623; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-weight: 500;">Submit</button>
-            </div>
-            <p id="sthiros-gate-error" style="color: #EF4623; margin-top: 15px; font-size: 14px; display: none;">
-                Incorrect Password</p>
-        </div>
-    </div>
-    <script>
-        (function () {
-            const gate = document.getElementById('sthiros-password-gate');
-            const input = document.getElementById('sthiros-gate-input');
-            const btn = document.getElementById('sthiros-gate-btn');
-            const errorMsg = document.getElementById('sthiros-gate-error');
-
-            if (sessionStorage.getItem('sthiros_site_unlocked')) {
-                gate.style.display = 'none';
-            } else {
-                document.body.style.overflow = 'hidden';
-            }
-
-            function unlockSite() {
-                if (input.value === 'sthiros@2026') {
-                    sessionStorage.setItem('sthiros_site_unlocked', 'true');
-                    gate.style.display = 'none';
-                    document.body.style.overflow = '';
-                } else {
-                    errorMsg.style.display = 'block';
-                }
-            }
-
-            btn.addEventListener('click', unlockSite);
-            input.addEventListener('keypress', function (e) {
-                if (e.key === 'Enter') unlockSite();
-            });
-        })();
-    </script>
-    <!-- END PASSWORD GATE -->
-
     <!-- ═══════════════ SITE HEADER ═══════════════ -->
-    <header class="site-header">
+            <header class="site-header">
         <div class="header-left">
             <a href="index.html" class="logo-link">
                 <img src="assets/images/sthiros_logo.png" alt="Sthiros Logo" class="site-logo">
@@ -1066,138 +773,134 @@
         <!-- Desktop Navigation & Mega Menu -->
         <nav class="desktop-nav">
             <ul class="d-nav-list">
-                <li><a href="about.html">WHO WE ARE</a></li>
+                <li><a href="index.html" class="active-nav">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
                 <li class="has-mega-menu">
                     <a href="#">WHAT WE DO <img src="assets/images/sthiros_arrow_btn.png" alt="Arrow"
                             class="nav-arrow-img"></a>
-                    <div class="mega-menu split-mega-menu">
-                        <div class="split-mega-top">
-                            <div class="mega-sidebar">
-                                <a href="services.html" class="mega-sidebar-link">WHAT WE DO <span
-                                        class="mega-arrow">&rsaquo;</span></a>
-                                <a href="#" class="mega-sidebar-link active" data-target="mega-strategy">STRATEGY <span
-                                        class="mega-arrow">&rsaquo;</span></a>
-                                <a href="#" class="mega-sidebar-link" data-target="mega-risk">RISK <span
-                                        class="mega-arrow">&rsaquo;</span></a>
-                                <a href="#" class="mega-sidebar-link" data-target="mega-cyber">CYBER <span
-                                        class="mega-arrow">&rsaquo;</span></a>
-                                <a href="#" class="mega-sidebar-link" data-target="mega-ai">AI <span
-                                        class="mega-arrow">&rsaquo;</span></a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-header">
+                                <h2 class="mega-main-title">WHAT WE DO <img src="assets/images/sthiros_arrow_btn.png"
+                                        alt="Arrow" class="mega-main-arrow-img"></h2>
                             </div>
-                            <div class="mega-content-area">
-                                <div id="mega-strategy" class="mega-pane active">
-                                    <ul class="mega-links-list">
-                                        <li><a href="strategy1.html">BUSINESS & GROWTH STRATEGY</a></li>
+                            <div class="mega-columns">
+                                <div class="mega-col">
+                                    <a href="services.html" class="mega-heading"
+                                        style="text-decoration: none; display: block;">WHAT WE DO</a>
+                                </div>
+                                <div class="mega-col">
+                                    <span class="mega-heading">STRATEGY</span>
+                                    <ul class="mega-links">
+                                        <li><a href="strategy1.html">BUSINESS & GROWTH</a></li>
                                         <li><a href="strategy2.html">STRATEGIC FINANCE & TRANSACTIONS</a></li>
                                         <li><a href="strategy3.html">ENTERPRISE OPERATIONS & ECOSYSTEMS</a></li>
                                         <li><a href="strategy4.html">CHANGE MANAGEMENT & ORGANISATIONAL ACCELERATION</a>
                                         </li>
                                     </ul>
                                 </div>
-                                <div id="mega-ai" class="mega-pane">
-                                    <ul class="mega-links-list">
+                                <div class="mega-col">
+                                    <span class="mega-heading">AI</span>
+                                    <ul class="mega-links">
                                         <li><a href="servicesai1.html">AI STRATEGY & SOVEREIGN GOVERNANCE</a></li>
                                         <li><a href="servicesai2.html">INTELLIGENT FOUNDATION (DATA & CLOUD)</a></li>
                                         <li><a href="servicesai3.html">AGENTIC OPERATIONS & AUTOMATION</a></li>
                                         <li><a href="servicesai4.html">COGNITIVE EXPERIENCE & ENGINEERING</a></li>
                                     </ul>
                                 </div>
-                                <div id="mega-risk" class="mega-pane">
-                                    <ul class="mega-links-list">
+                                <div class="mega-col">
+                                    <span class="mega-heading">RISK</span>
+                                    <ul class="mega-links">
                                         <li><a href="risk1.html">ENTERPRISE GOVERNANCE & REGULATORY STRATEGY</a></li>
                                         <li><a href="risk2.html">STRATEGIC ASSURANCE & PROCESS INTELLIGENCE</a></li>
                                         <li><a href="risk3.html">DIGITAL RISK & TECHNOLOGY CONTROLS</a></li>
                                         <li><a href="risk4.html">FORENSIC INTEGRITY & ASSET PROTECTION</a></li>
                                     </ul>
                                 </div>
-                                <div id="mega-cyber" class="mega-pane">
-                                    <ul class="mega-links-list">
+                                <div class="mega-col">
+                                    <span class="mega-heading">CYBER</span>
+                                    <ul class="mega-links">
                                         <li><a href="servicescyber1.html">OFFENSIVE SECURITY & EXPOSURE</a></li>
-                                        <li><a href="servicescyber2.html">CLOUD SECURITY & ZERO TRUST ARCHITECTURE</a></li>
+                                        <li><a href="servicescyber2.html">CLOUD SECURITY & ZERO TRUST</a></li>
                                         <li><a href="servicescyber3.html">DATA PRIVACY & PROTECTION ENGINEERING</a></li>
                                         <li><a href="servicescyber4.html">CYBER RESILIENCE & CRISIS READINESS</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="split-mega-bottom">
-                            <div class="mega-socials">
-                                <a href="#" class="mega-social-icon">
-                                    <img src="assets/images/social_media/fb_sthiros.png" alt="Facebook"
-                                        class="mega-social-img">
-                                </a>
-                                <a href="#" class="mega-social-icon">
-                                    <img src="assets/images/social_media/insta_sthiros.png" alt="Instagram"
-                                        class="mega-social-img">
-                                </a>
-                                <a href="#" class="mega-social-icon">
-                                    <img src="assets/images/social_media/x_sthiros.png" alt="X" class="mega-social-img">
-                                </a>
-                                <a href="#" class="mega-social-icon">
-                                    <img src="assets/images/social_media/linkedin_sthiros.png" alt="LinkedIn"
-                                        class="mega-social-img">
-                                </a>
+                    </div>
+                </li>
+                <li><a href="repository.html" target="_blank">THE REPOSITORY</a></li>
+                <li><a href="products.html" target="_blank">ORIQ</a></li>
+                <li class="has-mega-menu">
+                    <a href="#">INDUSTRIES <img src="assets/images/sthiros_arrow_btn.png" alt="Arrow"
+                            class="nav-arrow-img"></a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-header">
+                                <h2 class="mega-main-title">INDUSTRIES <img src="assets/images/sthiros_arrow_btn.png"
+                                        alt="Arrow" class="mega-main-arrow-img"></h2>
+                            </div>
+                            <div class="mega-columns">
+                                <div class="mega-col">
+                                </div>
+                                <div class="mega-col">
+                                    <ul class="mega-links" style="margin-top: 30px;">
+                                        <li><a href="industry.html">BFSI & FINTECH</a></li>
+                                        <li><a href="industry1.html">D2C & RETAIL</a></li>
+                                        <li><a href="industry2.html">ENERGY, MINING & UTILITIES</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col">
+                                    <ul class="mega-links" style="margin-top: 30px;">
+                                        <li><a href="industry3.html">GCC</a></li>
+                                        <li><a href="industry4.html">HEALTHCARE & LIFE SCIENCES</a></li>
+                                        <li><a href="industry5.html">MANUFACTURING</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col">
+                                    <ul class="mega-links" style="margin-top: 30px;">
+                                        <li><a href="industry7.html">TELECOM & DIGITAL INFRASTRUCTURE</a></li>
+                                        <li><a href="industry8.html">TRAVEL & HOSPITALITY</a></li>
+                                        <li><a href="industry6.html">PUBLIC SECTOR & GOVERNMENT</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col">
+                                    <ul class="mega-links" style="margin-top: 30px;">
+                                        <li><a href="industry9.html">REAL ESTATE / EPC / CONSTRUCTION</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="has-mega-menu">
-                    <a href="#">WHO WE SERVE <img src="assets/images/sthiros_arrow_btn.png" alt="Arrow"
+                    <a href="#">CONTACT US <img src="assets/images/sthiros_arrow_btn.png" alt="Arrow"
                             class="nav-arrow-img"></a>
-                    <div class="mega-menu split-mega-menu" style="border-bottom: none;">
-                        <div class="split-mega-top">
-                            <div class="mega-sidebar">
-                                <a href="#" class="mega-sidebar-link active" data-target="mega-industries">INDUSTRIES
-                                    <span class="mega-arrow">&rsaquo;</span></a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-inner">
+                            <div class="mega-header">
+                                <h2 class="mega-main-title">CONTACT US <img src="assets/images/sthiros_arrow_btn.png"
+                                        alt="Arrow" class="mega-main-arrow-img"></h2>
                             </div>
-                            <div class="mega-content-area">
-                                <div id="mega-industries" class="mega-pane active">
-                                    <div style="display: flex; gap: 80px; width: 100%;">
-                                        <!-- Column 1 -->
-                                        <ul class="mega-links-list" style="flex: 1;">
-                                            <li><a href="industry.html">BFSI & FINTECH</a></li>
-                                            <li><a href="industry1.html">D2C & RETAIL</a></li>
-                                            <li><a href="industry2.html">ENERGY, MINING & UTILITIES</a></li>
-                                            <li><a href="industry3.html">GCC</a></li>
-                                            <li><a href="industry4.html">HEALTHCARE & LIFE SCIENCES</a></li>
-                                        </ul>
-                                        <!-- Column 2 -->
-                                        <ul class="mega-links-list" style="flex: 1;">
-                                            <li><a href="industry5.html">MANUFACTURING</a></li>
-                                            <li><a href="industry6.html">PUBLIC SECTOR & GOVERNMENT</a></li>
-                                            <li><a href="industry9.html">REAL ESTATE / EPC / CONSTRUCTION</a></li>
-                                            <li><a href="industry7.html">TELECOM & DIGITAL INFRASTRUCTURE</a></li>
-                                            <li><a href="industry8.html">TRAVEL & HOSPITALITY</a></li>
-                                        </ul>
-                                    </div>
+                            <div class="mega-columns">
+                                <div class="mega-col">
                                 </div>
-                            </div>
-                        </div>
-                        <div class="split-mega-bottom">
-                            <div class="mega-socials">
-                                <a href="#" class="mega-social-icon">
-                                    <img src="assets/images/social_media/fb_sthiros.png" alt="Facebook"
-                                        class="mega-social-img">
-                                </a>
-                                <a href="#" class="mega-social-icon">
-                                    <img src="assets/images/social_media/insta_sthiros.png" alt="Instagram"
-                                        class="mega-social-img">
-                                </a>
-                                <a href="#" class="mega-social-icon">
-                                    <img src="assets/images/social_media/x_sthiros.png" alt="X" class="mega-social-img">
-                                </a>
-                                <a href="#" class="mega-social-icon">
-                                    <img src="assets/images/social_media/linkedin_sthiros.png" alt="LinkedIn"
-                                        class="mega-social-img">
-                                </a>
+                                <div class="mega-col">
+                                    <ul class="mega-links" style="margin-top: 30px;">
+                                        <li><a href="contactus.html">CONTACT US</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col">
+                                    <ul class="mega-links" style="margin-top: 30px;">
+                                        <li><a href="#">CAREERS</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col"></div>
+                                <div class="mega-col"></div>
                             </div>
                         </div>
                     </div>
-                </li>
-                <li><a href="repository.html">THE REPOSITORY</a></li>
-                <li><a href="oriq.html">ORIQ</a></li>
-                <li>
-                    <a href="contactus.html">CONTACT US</a>
                 </li>
             </ul>
         </nav>
@@ -1227,22 +930,20 @@
                 </span>
             </button>
         </div>
-                <script>
-            // Mega menu active states and hover behavior are centrally initialized in assets/js/script.js
-        </script>
     </header>
 
     <!-- ═══════════════ FULL SCREEN MENU OVERLAY ═══════════════ -->
     <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
         <div class="menu-content">
             <nav class="main-nav">
-                <a href="about.html" class="nav-link">WHO WE ARE</a>
+                <a href="index.html" class="nav-link active">HOME</a>
+                <a href="aboutus.html" target="_blank" class="nav-link">ABOUT US</a>
 
                 <div class="nav-item-dropdown">
                     <a href="#" class="nav-link dropdown-toggle">WHAT WE DO <img
                             src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
                     <div class="sub-nav">
-                        <a href="services.html" class="sub-nav-link">WHAT WE DO</a>
+                        <a href="services.html" target="_blank" class="sub-nav-link">WHAT WE DO</a>
 
                         <div class="nav-item-dropdown nested-dropdown">
                             <a href="#" class="sub-nav-link dropdown-toggle">Strategy <img
@@ -1255,6 +956,21 @@
                                     Ecosystems</a>
                                 <a href="strategy4.html" class="nested-sub-nav-link">Change Management & Organisational
                                     Acceleration</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">AI <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="servicesai1.html" class="nested-sub-nav-link">AI Strategy & Sovereign
+                                    Governance</a>
+                                <a href="servicesai2.html" class="nested-sub-nav-link">Intelligent Foundation (Data &
+                                    Cloud)</a>
+                                <a href="servicesai3.html" class="nested-sub-nav-link">Agentic Operations &
+                                    Automation</a>
+                                <a href="servicesai4.html" class="nested-sub-nav-link">Cognitive Experience &
+                                    Engineering</a>
                             </div>
                         </div>
 
@@ -1279,11 +995,78 @@
                                 <a href="servicescyber1.html" class="nested-sub-nav-link">Offensive Security &
                                     Exposure</a>
                                 <a href="servicescyber2.html" class="nested-sub-nav-link">Cloud Security & Zero
-                                    Trust Architecture</a>
+                                    Trust</a>
                                 <a href="servicescyber3.html" class="nested-sub-nav-link">Data Privacy & Protection
                                     Engineering</a>
                                 <a href="servicescyber4.html" class="nested-sub-nav-link">Cyber Resilience & Crisis
                                     Readiness</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a href="repository.html" target="_blank" class="nav-link">THE REPOSITORY</a>
+                <a href="products.html" target="_blank" class="nav-link">ORIQ</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">INDUSTRIES <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="industry.html" class="sub-nav-link">BFSI & Fintech</a>
+                        <a href="industry1.html" class="sub-nav-link">D2C & Retail</a>
+                        <a href="industry2.html" class="sub-nav-link">Energy, Mining & Utilities</a>
+                        <a href="industry3.html" class="sub-nav-link">GCC</a>
+                        <a href="industry4.html" class="sub-nav-link">Healthcare & Life Sciences</a>
+                        <a href="industry5.html" class="sub-nav-link">Manufacturing</a>
+                        <a href="industry7.html" class="sub-nav-link">Telecom & Digital Infrastructure</a>
+                        <a href="industry8.html" class="sub-nav-link">Travel & Hospitality</a>
+                        <a href="industry6.html" class="sub-nav-link">Public Sector & Government</a>
+                        <a href="industry9.html" class="sub-nav-link">Real Estate / EPC / Construction</a>
+                    </div>
+                </div>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">CONTACT US <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="contactus.html" target="_blank" class="sub-nav-link">CONTACT</a>
+                        <a href="#" class="sub-nav-link">Careers</a>
+                    </div>
+                </div>
+            </nav>
+
+
+        </div>
+    </div>
+
+
+    </header>
+
+    <!-- ═══════════════ FULL SCREEN MENU OVERLAY ═══════════════ -->
+    <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
+        <div class="menu-content">
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link active">HOME</a>
+                <a href="aboutus.html" target="_blank" class="nav-link">ABOUT US</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">WHAT WE DO <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="services.html" target="_blank" class="sub-nav-link">WHAT WE DO</a>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Strategy <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="strategy1.html" class="nested-sub-nav-link">Business & Growth Strategy</a>
+                                <a href="strategy2.html" class="nested-sub-nav-link">Strategic Finance &
+                                    Transactions</a>
+                                <a href="strategy3.html" class="nested-sub-nav-link">Enterprise Operations &
+                                    Ecosystems</a>
+                                <a href="strategy4.html" class="nested-sub-nav-link">Change Management & Organisational
+                                    Acceleration</a>
                             </div>
                         </div>
 
@@ -1302,9 +1085,40 @@
                             </div>
                         </div>
 
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Risk <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="risk1.html" class="nested-sub-nav-link">Enterprise Governance & Regulatory
+                                    Strategy</a>
+                                <a href="risk2.html" class="nested-sub-nav-link">Strategic Assurance & Process
+                                    Intelligence</a>
+                                <a href="risk3.html" class="nested-sub-nav-link">Digital Risk & Technology Controls</a>
+                                <a href="risk4.html" class="nested-sub-nav-link">Forensic Integrity & Asset
+                                    Protection</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Cyber <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="servicescyber1.html" class="nested-sub-nav-link">Offensive Security &
+                                    Exposure</a>
+                                <a href="servicescyber2.html" class="nested-sub-nav-link">Cloud Security & Zero
+                                    Trust</a>
+                                <a href="servicescyber3.html" class="nested-sub-nav-link">Data Privacy & Protection
+                                    Engineering</a>
+                                <a href="servicescyber4.html" class="nested-sub-nav-link">Cyber Resilience & Crisis
+                                    Readiness</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
+                <a href="repository.html" target="_blank" class="nav-link">THE REPOSITORY</a>
+                <a href="products.html" target="_blank" class="nav-link">ORIQ</a>
 
                 <div class="nav-item-dropdown">
                     <a href="#" class="nav-link dropdown-toggle">INDUSTRIES <img
@@ -1316,17 +1130,354 @@
                         <a href="industry3.html" class="sub-nav-link">GCC</a>
                         <a href="industry4.html" class="sub-nav-link">Healthcare & Life Sciences</a>
                         <a href="industry5.html" class="sub-nav-link">Manufacturing</a>
-                        <a href="industry6.html" class="sub-nav-link">Public Sector & Government</a>
-                        <a href="industry9.html" class="sub-nav-link">Real Estate / EPC / Construction</a>
                         <a href="industry7.html" class="sub-nav-link">Telecom & Digital Infrastructure</a>
                         <a href="industry8.html" class="sub-nav-link">Travel & Hospitality</a>
+                        <a href="industry6.html" class="sub-nav-link">Public Sector & Government</a>
+                        <a href="industry9.html" class="sub-nav-link">Real Estate / EPC / Construction</a>
                     </div>
                 </div>
 
-                <a href="repository.html" class="nav-link">THE REPOSITORY</a>
-                <a href="oriq.html" class="nav-link">ORIQ</a>
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">CONTACT US <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="contactus.html" target="_blank" class="sub-nav-link">CONTACT</a>
+                        <a href="#" class="sub-nav-link">Careers</a>
+                    </div>
+                </div>
+            </nav>
 
-                <a href="contactus.html" class="nav-link">CONTACT US</a>
+
+        </div>
+    </div>
+
+
+    </header>
+
+    <!-- ═══════════════ FULL SCREEN MENU OVERLAY ═══════════════ -->
+    <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
+        <div class="menu-content">
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link active">HOME</a>
+                <a href="aboutus.html" target="_blank" class="nav-link">ABOUT US</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">WHAT WE DO <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="services.html" target="_blank" class="sub-nav-link">WHAT WE DO</a>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Strategy <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="strategy1.html" class="nested-sub-nav-link">Business & Growth Strategy</a>
+                                <a href="strategy2.html" class="nested-sub-nav-link">Strategic Finance &
+                                    Transactions</a>
+                                <a href="strategy3.html" class="nested-sub-nav-link">Enterprise Operations &
+                                    Ecosystems</a>
+                                <a href="strategy4.html" class="nested-sub-nav-link">Change Management & Organisational
+                                    Acceleration</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">AI <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="servicesai1.html" class="nested-sub-nav-link">AI Strategy & Sovereign
+                                    Governance</a>
+                                <a href="servicesai2.html" class="nested-sub-nav-link">Intelligent Foundation (Data &
+                                    Cloud)</a>
+                                <a href="servicesai3.html" class="nested-sub-nav-link">Agentic Operations &
+                                    Automation</a>
+                                <a href="servicesai4.html" class="nested-sub-nav-link">Cognitive Experience &
+                                    Engineering</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Risk <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="risk1.html" class="nested-sub-nav-link">Enterprise Governance & Regulatory
+                                    Strategy</a>
+                                <a href="risk2.html" class="nested-sub-nav-link">Strategic Assurance & Process
+                                    Intelligence</a>
+                                <a href="risk3.html" class="nested-sub-nav-link">Digital Risk & Technology Controls</a>
+                                <a href="risk4.html" class="nested-sub-nav-link">Forensic Integrity & Asset
+                                    Protection</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Cyber <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="servicescyber1.html" class="nested-sub-nav-link">Offensive Security &
+                                    Exposure</a>
+                                <a href="servicescyber2.html" class="nested-sub-nav-link">Cloud Security & Zero
+                                    Trust</a>
+                                <a href="servicescyber3.html" class="nested-sub-nav-link">Data Privacy & Protection
+                                    Engineering</a>
+                                <a href="servicescyber4.html" class="nested-sub-nav-link">Cyber Resilience & Crisis
+                                    Readiness</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a href="repository.html" target="_blank" class="nav-link">THE REPOSITORY</a>
+                <a href="products.html" class="nav-link">Oriq</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">INDUSTRIES <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="industry.html" class="sub-nav-link">BFSI & Fintech</a>
+                        <a href="industry1.html" class="sub-nav-link">D2C & Retail</a>
+                        <a href="industry2.html" class="sub-nav-link">Energy, Mining & Utilities</a>
+                        <a href="industry3.html" class="sub-nav-link">GCC</a>
+                        <a href="industry4.html" class="sub-nav-link">Healthcare & Life Sciences</a>
+                        <a href="industry5.html" class="sub-nav-link">Manufacturing</a>
+                        <a href="industry7.html" class="sub-nav-link">Telecom & Digital Infrastructure</a>
+                        <a href="industry8.html" class="sub-nav-link">Travel & Hospitality</a>
+                        <a href="industry6.html" class="sub-nav-link">Public Sector & Government</a>
+                        <a href="industry9.html" class="sub-nav-link">Real Estate / EPC / Construction</a>
+                    </div>
+                </div>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">CONTACT US <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="contactus.html" target="_blank" class="sub-nav-link">CONTACT</a>
+                        <a href="#" class="sub-nav-link">Careers</a>
+                    </div>
+                </div>
+            </nav>
+
+
+        </div>
+    </div>
+
+
+    </header>
+
+    <!-- ═══════════════ FULL SCREEN MENU OVERLAY ═══════════════ -->
+    <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
+        <div class="menu-content">
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link active">HOME</a>
+                <a href="aboutus.html" target="_blank" class="nav-link">ABOUT US</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">WHAT WE DO <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="services.html" target="_blank" class="sub-nav-link">WHAT WE DO</a>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Strategy <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="strategy1.html" class="nested-sub-nav-link">Business & Growth Strategy</a>
+                                <a href="strategy2.html" class="nested-sub-nav-link">Strategic Finance &
+                                    Transactions</a>
+                                <a href="strategy3.html" class="nested-sub-nav-link">Enterprise Operations &
+                                    Ecosystems</a>
+                                <a href="strategy4.html" class="nested-sub-nav-link">Change Management & Organisational
+                                    Acceleration</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">AI <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="servicesai1.html" class="nested-sub-nav-link">AI Strategy & Sovereign
+                                    Governance</a>
+                                <a href="servicesai2.html" class="nested-sub-nav-link">Intelligent Foundation (Data &
+                                    Cloud)</a>
+                                <a href="servicesai3.html" class="nested-sub-nav-link">Agentic Operations &
+                                    Automation</a>
+                                <a href="servicesai4.html" class="nested-sub-nav-link">Cognitive Experience &
+                                    Engineering</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Risk <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="risk1.html" class="nested-sub-nav-link">Enterprise Governance & Regulatory
+                                    Strategy</a>
+                                <a href="risk2.html" class="nested-sub-nav-link">Strategic Assurance & Process
+                                    Intelligence</a>
+                                <a href="risk3.html" class="nested-sub-nav-link">Digital Risk & Technology Controls</a>
+                                <a href="risk4.html" class="nested-sub-nav-link">Forensic Integrity & Asset
+                                    Protection</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Cyber <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="servicescyber1.html" class="nested-sub-nav-link">Offensive Security &
+                                    Exposure</a>
+                                <a href="servicescyber2.html" class="nested-sub-nav-link">Cloud Security & Zero
+                                    Trust</a>
+                                <a href="servicescyber3.html" class="nested-sub-nav-link">Data Privacy & Protection
+                                    Engineering</a>
+                                <a href="servicescyber4.html" class="nested-sub-nav-link">Cyber Resilience & Crisis
+                                    Readiness</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a href="repository.html" target="_blank" class="nav-link">THE REPOSITORY</a>
+                <a href="products.html" class="nav-link">Oriq</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">INDUSTRIES <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="industry.html" class="sub-nav-link">BFSI & Fintech</a>
+                        <a href="industry1.html" class="sub-nav-link">D2C & Retail</a>
+                        <a href="industry2.html" class="sub-nav-link">Energy, Mining & Utilities</a>
+                        <a href="industry3.html" class="sub-nav-link">GCC</a>
+                        <a href="industry4.html" class="sub-nav-link">Healthcare & Life Sciences</a>
+                        <a href="industry5.html" class="sub-nav-link">Manufacturing</a>
+                        <a href="industry7.html" class="sub-nav-link">Telecom & Digital Infrastructure</a>
+                        <a href="industry8.html" class="sub-nav-link">Travel & Hospitality</a>
+                        <a href="industry6.html" class="sub-nav-link">Public Sector & Government</a>
+                        <a href="industry9.html" class="sub-nav-link">Real Estate / EPC / Construction</a>
+                    </div>
+                </div>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">CONTACT US <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="contactus.html" target="_blank" class="sub-nav-link">CONTACT</a>
+                        <a href="#" class="sub-nav-link">Careers</a>
+                    </div>
+                </div>
+            </nav>
+
+
+        </div>
+    </div>
+
+
+    </header>
+
+    <!-- ═══════════════ FULL SCREEN MENU OVERLAY ═══════════════ -->
+    <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
+        <div class="menu-content">
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link active">HOME</a>
+                <a href="aboutus.html" target="_blank" class="nav-link">ABOUT US</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">WHAT WE DO <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="services.html" target="_blank" class="sub-nav-link">WHAT WE DO</a>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Strategy <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="strategy1.html" class="nested-sub-nav-link">Business & Growth Strategy</a>
+                                <a href="strategy2.html" class="nested-sub-nav-link">Strategic Finance &
+                                    Transactions</a>
+                                <a href="strategy3.html" class="nested-sub-nav-link">Enterprise Operations &
+                                    Ecosystems</a>
+                                <a href="strategy4.html" class="nested-sub-nav-link">Change Management & Organisational
+                                    Acceleration</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">AI <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="servicesai1.html" class="nested-sub-nav-link">AI Strategy & Sovereign
+                                    Governance</a>
+                                <a href="servicesai2.html" class="nested-sub-nav-link">Intelligent Foundation (Data &
+                                    Cloud)</a>
+                                <a href="servicesai3.html" class="nested-sub-nav-link">Agentic Operations &
+                                    Automation</a>
+                                <a href="servicesai4.html" class="nested-sub-nav-link">Cognitive Experience &
+                                    Engineering</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Risk <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="risk1.html" class="nested-sub-nav-link">Enterprise Governance & Regulatory
+                                    Strategy</a>
+                                <a href="risk2.html" class="nested-sub-nav-link">Strategic Assurance & Process
+                                    Intelligence</a>
+                                <a href="risk3.html" class="nested-sub-nav-link">Digital Risk & Technology Controls</a>
+                                <a href="risk4.html" class="nested-sub-nav-link">Forensic Integrity & Asset
+                                    Protection</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Cyber <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="servicescyber1.html" class="nested-sub-nav-link">Offensive Security &
+                                    Exposure</a>
+                                <a href="servicescyber2.html" class="nested-sub-nav-link">Cloud Security & Zero
+                                    Trust</a>
+                                <a href="servicescyber3.html" class="nested-sub-nav-link">Data Privacy & Protection
+                                    Engineering</a>
+                                <a href="servicescyber4.html" class="nested-sub-nav-link">Cyber Resilience & Crisis
+                                    Readiness</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a href="repository.html" target="_blank" class="nav-link">THE REPOSITORY</a>
+                <a href="products.html" class="nav-link">Oriq</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">INDUSTRIES <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="industry.html" class="sub-nav-link">BFSI & Fintech</a>
+                        <a href="industry1.html" class="sub-nav-link">D2C & Retail</a>
+                        <a href="industry2.html" class="sub-nav-link">Energy, Mining & Utilities</a>
+                        <a href="industry3.html" class="sub-nav-link">GCC</a>
+                        <a href="industry4.html" class="sub-nav-link">Healthcare & Life Sciences</a>
+                        <a href="industry5.html" class="sub-nav-link">Manufacturing</a>
+                        <a href="industry7.html" class="sub-nav-link">Telecom & Digital Infrastructure</a>
+                        <a href="industry8.html" class="sub-nav-link">Travel & Hospitality</a>
+                        <a href="industry6.html" class="sub-nav-link">Public Sector & Government</a>
+                        <a href="industry9.html" class="sub-nav-link">Real Estate / EPC / Construction</a>
+                    </div>
+                </div>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">CONTACT US <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="contactus.html" target="_blank" class="sub-nav-link">CONTACT</a>
+                        <a href="#" class="sub-nav-link">Careers</a>
+                    </div>
+                </div>
             </nav>
 
 
@@ -1534,12 +1685,10 @@
                     <h4 class="cf-title">TRADE OPERATIONS</h4>
                     <h2 class="cf-heading">Keliros</h2>
                     <p class="cf-subheading">An export workflow that files itself.</p>
-                    <p class="cf-desc" style="color: #fff;">Keliros turns a shipment into one continuous workflow, from
-                        sales invoice to
+                    <p class="cf-desc">Keliros turns a shipment into one continuous workflow, from sales invoice to
                         proof of delivery, replacing the patchwork of email, spreadsheets, and WhatsApp groups most
                         export teams still run on.</p>
-                    <p class="cf-small-desc" style="color: #e6e6e6;">Piloted inside a live steel export corridor running
-                        India to the US, with a
+                    <p class="cf-small-desc">Piloted inside a live steel export corridor running India to the US, with a
                         VC-backed manufacturer as the first client.</p>
 
                     <div class="cf-stats">
@@ -1587,64 +1736,22 @@
                         </div>
                     </div>
                     <div class="cf-action-btn-wrap">
-                        <a href="contactus.html" class="hero-btn-outer">
-                            <span class="hero-btn-inner" style="font-size: 13px;"><span>TALK TO US</span> <span>ABOUT KELIROS</span></span>
+                        <a href="#" class="hero-btn-outer">
+                            <span class="hero-btn-inner" style="font-size: 13px;">TALK TO US ABOUT KELIROS</span>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- Mobile mid SVG (hidden on desktop) -->
-            <div class="mobile-mid-svg">
-                <svg xmlns="http://www.w3.org/2000/svg" width="58" height="272" viewBox="0 0 74 272" fill="none">
-                    <path d="M74 271.993L49.3334 271.993L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 271.993Z"
-                        fill="url(#paint0_linear_2760_2788)" />
-                    <path d="M37.0139 272L24.6667 272L24.6666 -2.15642e-06L37.0139 -3.23586e-06L37.0139 272Z"
-                        fill="url(#paint1_linear_2760_2788)" />
-                    <path d="M9.80545 271.99L9.80536 -8.57214e-07L15.979 -1.39693e-06L15.9791 271.99L9.80545 271.99Z"
-                        fill="url(#paint2_linear_2760_2788)" />
-                    <path d="M6.0988e-05 271.993L-2.3779e-05 0L4.10646 -3.59001e-07L4.10655 271.993L6.0988e-05 271.993Z"
-                        fill="url(#paint3_linear_2760_2788)" />
-                    <defs>
-                        <linearGradient id="paint0_linear_2760_2788" x1="37" y1="-3.23464e-06" x2="37" y2="272"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#EC2D26" stop-opacity="0" />
-                            <stop offset="0.5" stop-color="#EC2D26" />
-                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
-                        </linearGradient>
-                        <linearGradient id="paint1_linear_2760_2788" x1="37" y1="-3.23464e-06" x2="37" y2="272"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#EC2D26" stop-opacity="0" />
-                            <stop offset="0.5" stop-color="#EC2D26" />
-                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
-                        </linearGradient>
-                        <linearGradient id="paint2_linear_2760_2788" x1="37" y1="-3.23464e-06" x2="37" y2="272"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#EC2D26" stop-opacity="0" />
-                            <stop offset="0.5" stop-color="#EC2D26" />
-                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
-                        </linearGradient>
-                        <linearGradient id="paint3_linear_2760_2788" x1="37" y1="-3.23464e-06" x2="37" y2="272"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#EC2D26" stop-opacity="0" />
-                            <stop offset="0.5" stop-color="#EC2D26" />
-                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div>
-
-            <!-- Card 2: Thesen -->
-            <div class="compliance-feature-card">
+            <!-- Card 2: Niyamos -->
+            <div class="compliance-feature-card" style="padding-bottom: 180px;">
                 <div class="cf-left">
                     <h4 class="cf-title">COMPLIANCE OS</h4>
-                    <h2 class="cf-heading">Thesen</h2>
+                    <h2 class="cf-heading">Niyamos</h2>
                     <p class="cf-subheading">A compliance register that updates itself.</p>
-                    <p class="cf-desc" style="color: #fff;">Reads a company's entity structure and builds its complete
-                        compliance register
+                    <p class="cf-desc">Reads a company's entity structure and builds its complete compliance register
                         automatically, then keeps it current as obligations change.</p>
-                    <p class="cf-small-desc" style="color: #e6e6e6;">Piloted inside a diversified group with operations
-                        across 30-plus Indian
+                    <p class="cf-small-desc">Piloted inside a diversified group with operations across 30-plus Indian
                         and US states, plus a manufacturing and export footprint into Mexico.</p>
 
                     <div class="cf-stats">
@@ -1691,51 +1798,11 @@
                         </div>
                     </div>
                     <div class="cf-action-btn-wrap">
-                        <a href="contactus.html" class="hero-btn-outer">
-                            <span class="hero-btn-inner" style="font-size: 13px;"><span>TALK TO US</span> <span>ABOUT THESEN</span></span>
+                        <a href="#" class="hero-btn-outer">
+                            <span class="hero-btn-inner" style="font-size: 13px;">TALK TO US ABOUT NIYAMOS</span>
                         </a>
                     </div>
                 </div>
-            </div>
-
-            <!-- Mobile bottom SVG (hidden on desktop) -->
-            <div class="mobile-bottom-svg">
-                <svg xmlns="http://www.w3.org/2000/svg" width="58" height="272" viewBox="0 0 74 272" fill="none">
-                    <path d="M74 271.993L49.3334 271.993L49.3333 -4.31286e-06L73.9999 -6.46928e-06L74 271.993Z"
-                        fill="url(#paint0_linear_2760_2788)" />
-                    <path d="M37.0139 272L24.6667 272L24.6666 -2.15642e-06L37.0139 -3.23586e-06L37.0139 272Z"
-                        fill="url(#paint1_linear_2760_2788)" />
-                    <path d="M9.80545 271.99L9.80536 -8.57214e-07L15.979 -1.39693e-06L15.9791 271.99L9.80545 271.99Z"
-                        fill="url(#paint2_linear_2760_2788)" />
-                    <path d="M6.0988e-05 271.993L-2.3779e-05 0L4.10646 -3.59001e-07L4.10655 271.993L6.0988e-05 271.993Z"
-                        fill="url(#paint3_linear_2760_2788)" />
-                    <defs>
-                        <linearGradient id="paint0_linear_2760_2788" x1="37" y1="-3.23464e-06" x2="37" y2="272"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#EC2D26" stop-opacity="0" />
-                            <stop offset="0.5" stop-color="#EC2D26" />
-                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
-                        </linearGradient>
-                        <linearGradient id="paint1_linear_2760_2788" x1="37" y1="-3.23464e-06" x2="37" y2="272"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#EC2D26" stop-opacity="0" />
-                            <stop offset="0.5" stop-color="#EC2D26" />
-                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
-                        </linearGradient>
-                        <linearGradient id="paint2_linear_2760_2788" x1="37" y1="-3.23464e-06" x2="37" y2="272"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#EC2D26" stop-opacity="0" />
-                            <stop offset="0.5" stop-color="#EC2D26" />
-                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
-                        </linearGradient>
-                        <linearGradient id="paint3_linear_2760_2788" x1="37" y1="-3.23464e-06" x2="37" y2="272"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#EC2D26" stop-opacity="0" />
-                            <stop offset="0.5" stop-color="#EC2D26" />
-                            <stop offset="1" stop-color="#EC2D26" stop-opacity="0" />
-                        </linearGradient>
-                    </defs>
-                </svg>
             </div>
         </div>
     </section>
@@ -1786,35 +1853,16 @@
         </div>
         <div class="telluswhatssvgtopcont">
             <div class="tw-content">
-                <h2 class="tw-heading">Tell us<br class="mob-br"> what's<br class="desk-br"> still<br class="mob-br"> being done<br class="desk-br"><br class="mob-br"> by hand.</h2>
+                <h2 class="tw-heading">Tell us what's<br>still being done<br>by hand.</h2>
                 <p class="tw-desc">Most Oriq products started as exactly that kind of complaint. Tell us<br>yours, and
                     we'll tell you honestly whether it's a project or a product.</p>
             </div>
             <div class="tw-btn-wrap">
-                <a href="contactus.html" class="hero-btn-outer">
-                    <span class="hero-btn-inner" style="font-size: 22px;">TALK TO US</span>
+                <a href="#" class="hero-btn-outer">
+                    <span class="hero-btn-inner" style="font-size: 22px;">TALK TO US ABOUT FORGE</span>
                 </a>
             </div>
         </div>
-
-        <!-- Mobile SVG below Tell us what's still being done by hand (hidden on desktop) -->
-        <div class="mobile-telluswhat-svgbtm">
-            <svg width="440" height="313" viewBox="0 0 440 313" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M440.241 211.114L440.248 2.9805e-05L460.143 3.00423e-05L460.136 210.64L460.136 210.643C460.136 210.914 460.136 211.25 460.113 211.497L460.113 212.265C460.068 213.28 460.113 214.318 460 215.334C459.752 219.418 459.076 223.48 458.016 227.429C455.895 235.327 452.173 242.797 447.121 249.251C442.068 255.705 435.73 261.165 428.602 265.182C421.452 269.199 413.534 271.772 405.392 272.674C403.361 272.9 401.309 273.058 399.256 273.058L398.489 273.08L-966 273.08L-966 253.155L399.008 253.155C400.407 253.155 401.805 253.064 403.181 252.906C408.707 252.297 414.031 250.582 418.858 247.851C423.685 245.144 427.993 241.443 431.422 237.042C434.85 232.642 437.377 227.61 438.798 222.284C439.519 219.621 439.97 216.868 440.151 214.092C440.241 213.393 440.173 212.693 440.241 211.994L440.241 211.475L440.241 211.114Z"
-                    fill="#EC2D26" />
-                <path
-                    d="M470.106 208.88L470.113 3.01612e-05L480.105 3.02803e-05L480.098 210.64L480.076 211.565L480.076 212.581C480.031 213.935 480.053 215.289 479.918 216.643C479.579 222.058 478.7 227.429 477.279 232.665C474.459 243.158 469.497 253.042 462.843 261.572C456.166 270.124 447.82 277.323 438.369 282.626C428.918 287.929 418.384 291.336 407.625 292.532C404.94 292.826 402.234 293.006 399.527 293.029L398.512 293.051L-966 293.052L-966 283.077L392.241 283.077C397.001 283.055 401.76 283.168 406.497 282.603C415.948 281.565 425.196 278.587 433.474 273.915C441.775 269.267 449.128 262.948 454.97 255.434C460.835 247.942 465.189 239.254 467.647 230.069C468.865 225.466 469.655 220.75 469.948 216.011C470.106 213.643 470.106 211.252 470.106 208.884L470.106 208.88Z"
-                    fill="#EC2D26" />
-                <path
-                    d="M486.978 212.716L487 211.61L487.008 3.03626e-05L491.97 3.04218e-05L491.963 210.753L491.94 211.7L491.94 212.851C491.895 214.386 491.895 215.943 491.76 217.477C491.376 223.661 490.361 229.821 488.737 235.824C485.512 247.851 479.828 259.18 472.204 268.951C464.58 278.722 455.016 286.959 444.189 293.051C433.362 299.144 421.271 303.048 408.933 304.425C405.843 304.763 402.753 304.944 399.662 304.989L398.512 305.011L-966 305.012L-966 300.024L397.61 300.024L398.512 300.002L399.617 300.002C402.55 299.979 405.482 299.776 408.392 299.46C420.076 298.151 431.512 294.473 441.752 288.696C451.993 282.919 461.061 275.111 468.279 265.859C475.497 256.584 480.888 245.866 483.933 234.492C485.467 228.806 486.437 222.961 486.797 217.116C486.955 215.65 486.933 214.183 486.978 212.716Z"
-                    fill="#EC2D26" />
-                <path
-                    d="M496.677 211.633L496.684 3.0478e-05L500 3.05176e-05L499.993 210.662L499.97 211.633L499.97 212.896C499.903 214.566 499.925 216.259 499.767 217.929C499.361 224.631 498.256 231.333 496.497 237.855C493 250.898 486.82 263.219 478.542 273.825C470.286 284.454 459.888 293.39 448.136 300.002C436.384 306.614 423.256 310.856 409.858 312.345C406.497 312.729 403.158 312.932 399.798 312.977L398.534 313L-966 313L-966 309.683L397.632 309.683L398.557 309.66L399.775 309.66C403.001 309.615 406.271 309.412 409.497 309.051C422.444 307.607 435.143 303.522 446.512 297.113C457.88 290.727 467.918 282.062 475.925 271.794C483.933 261.527 489.91 249.634 493.294 236.997C495.008 230.701 496.068 224.225 496.474 217.726C496.61 216.101 496.61 214.476 496.655 212.851L496.677 211.633Z"
-                    fill="#EC2D26" />
-            </svg>
-        </div>
-
         <div class="telluswhatsvgbtm">
             <svg xmlns="http://www.w3.org/2000/svg" width="1490" height="310" viewBox="0 0 1863 388" fill="none">
                 <path
@@ -1867,6 +1915,15 @@
                 <h3 class="footer-heading">Let's work together</h3>
                 <a href="mailto:connect@sthiros.com" class="footer-email">connect@sthiros.com</a>
 
+                <div class="footer-contact-block">
+                    <a href="#" class="contact-now-link">
+                        <span>CONTACT NOW</span>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H11V11" stroke="white" stroke-width="1.5" />
+                        </svg>
+                    </a>
+                </div>
+
                 <div class="footer-socials">
                     <a href="#" class="social-icon">
                         <img src="assets/images/social_media/fb_sthiros.png" alt="Facebook" class="social-img">
@@ -1887,21 +1944,20 @@
             <div class="footer-right">
                 <ul class="footer-menu">
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">WHO WE ARE</a></li>
-                    <li><a href="services.html">WHAT WE DO</a></li>
-                    <li><a href="industry.html">WHO WE SERVE</a></li>
-                    <li><a href="repository.html">THE REPOSITORY</a></li>
-                    <li><a href="oriq.html">ORIQ</a></li>
-                    <li><a href="contactus.html">CONTACT US</a></li>
+                    <li><a href="aboutus.html" target="_blank">ABOUT US</a></li>
+                    <li><a href="services.html" target="_blank">WHAT WE DO</a></li>
+                    <li><a href="repository.html" target="_blank">THE REPOSITORY</a></li>
+                    <li><a href="products.html" target="_blank">Oriq</a></li>
+                    <li><a href="industry.html" target="_blank">INDUSTRIES</a></li>
+                    <li><a href="contactus.html" target="_blank">CONTACT US</a></li>
                 </ul>
             </div>
         </div>
         <hr class="footer-bottom-line">
 
         <div class="footer-massive-logo-section">
-            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo massive-logo-dark">
-            <img src="assets/images/sthiroslogodark.png" alt="Sthiros" class="massive-logo massive-logo-light">
-            <div class="copyright-text"><span class="copy-sym">©</span> 2026</div>
+            <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo">
+            <div class="copyright-text">© 2026</div>
         </div>
     </footer>
 

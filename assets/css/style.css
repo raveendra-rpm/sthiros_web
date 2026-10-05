@@ -5714,14 +5714,100 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
    ════════════════════════════════════════════ */
 @media screen and (max-width: 1050px) and (min-width: 768px) {
 
-  /* Typography scale down to prevent overlap */
+  /* Hero Responsive & SVG Connection (769px to 1024px) */
+  .section-hero {
+    --rail-h: calc(100vh - 45px) !important;
+    --rail-inset: 0px !important;
+    height: 100vh !important;
+    min-height: 600px !important;
+    padding: 0 40px !important;
+    overflow: hidden !important;
+  }
+
+  .hero-vec-1 {
+    right: 0 !important;
+    height: var(--rail-h) !important;
+  }
+
+  .hero-vec-1 img {
+    height: 100% !important;
+    width: auto !important;
+    clip-path: inset(0 0 0 max(0px, calc(calc((460 / 891) * 50vw) - (100vw - var(--rail-h) * 1177 / 918) - 1px))) !important;
+  }
+
+  .hero-vec-2-wrapper {
+    left: 0 !important;
+    top: calc(var(--rail-h) * 844.546 / 918) !important;
+    width: max(calc((460 / 891) * 50vw), calc(100vw - var(--rail-h) * 1177 / 918)) !important;
+    height: calc(100vh - (var(--rail-h) * 844.546 / 918)) !important;
+    overflow: hidden !important;
+  }
+
+  .hero-vec-2-corner {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: calc((460 / 891) * 50vw) !important;
+  }
+
+  .hero-vec-2-corner img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+  .hero-vec-bridge {
+    display: none !important;
+  }
+
+  .hero-inner {
+    height: 100vh !important;
+    padding-top: 50px !important;
+    padding-bottom: 70px !important;
+    max-width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .hero-text {
+    max-width: 580px !important;
+    width: 62% !important;
+    gap: 16px !important;
+    position: relative !important;
+    z-index: 10 !important;
+  }
+
   .hero-headline {
-    font-size: clamp(40px, 6vw, 75px) !important;
+    font-size: clamp(32px, 3.8vw, 42px) !important;
+    line-height: 1.1 !important;
+    white-space: normal !important;
   }
 
   .hero-sub {
-    font-size: 14px !important;
-    max-width: 85% !important;
+    font-size: 14.5px !important;
+    line-height: 1.45 !important;
+    max-width: 440px !important;
+  }
+
+  .hero-actions {
+    margin-top: 15px !important;
+    gap: 12px !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .hero-btn-inner {
+    font-size: 13px !important;
+    padding: 7px 20px !important;
+    white-space: nowrap !important;
+  }
+
+  .hero-hand,
+  .hero-hand-video {
+    left: auto !important;
+    right: -20px !important;
+    width: clamp(520px, 68vw, 750px) !important;
+    bottom: -30px !important;
+    pointer-events: none !important;
   }
 
   .work-title,
@@ -5763,7 +5849,7 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
 
   /* Menu adjustments */
   .menu-content {
-    padding-top: 35px !important;
+    padding-top: 100px !important;
     padding-left: 30px !important;
   }
 
@@ -5811,10 +5897,17 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
   }
   
   .menu-content .sub-nav {
-    margin-top: 15px !important;
-    margin-bottom: 25px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    padding-left: 20px !important;
+  }
+
+  .menu-content .nav-item-dropdown.open > .sub-nav {
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
     padding-top: 10px !important;
     padding-bottom: 10px !important;
+    padding-left: 20px !important;
   }
 
   .menu-close img {
@@ -5855,85 +5948,134 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
     right: 2% !important;
   }
 
-  /* Strategy section overrides */
-  .strategy-img-svg {
-    width: 260px !important;
-    height: 280px !important;
-    margin: 0 45px !important;
+  /* Four Pillars section responsive styling (769px to 1024px) - equal and compact sizing (sab ek barabar) */
+  .first-svg {
+    width: calc(991 * (100vh - 45px) / 918) !important;
+    transform: translate(-3.7336%, -45px) !important;
+    transform-origin: initial !important;
   }
 
-  .cyber-img-svg {
-    width: 260px !important;
-    height: 280px !important;
-    margin: 45px 40px !important;
+  .risk-horiz-rail {
+    width: calc(1500 * (100vh - 45px) / 918) !important;
   }
 
-  .risk-service-img,
-  .ai-service-img {
-    width: 260px !important;
+  .risk-horiz-svg {
+    width: calc(1500 * (100vh - 45px) / 918) !important;
     height: auto !important;
-    margin: 40px !important;
   }
 
+  .cyber-horiz-rail {
+    width: calc(1500 * (100vh - 45px) / 918) !important;
+  }
+
+  .cyber-horiz-svg {
+    width: calc(1500 * (100vh - 45px) / 918) !important;
+    height: auto !important;
+  }
+
+  /* Strategy: align text below exiting horizontal lines so lines never cross text */
+  .strategy-section {
+    top: calc(848.469 * (100vh - 45px) / 918 - 45px) !important;
+    transform: translateY(-238px) !important;
+    align-items: flex-start !important;
+  }
+
+  .strategy-content {
+    margin-top: 105px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .strategy-img-svg,
+  .risk-service-img,
+  .cyber-img-svg,
+  .ai-service-img {
+    width: 220px !important;
+    height: 238px !important;
+    object-fit: contain !important;
+    margin: 0 !important;
+    display: block !important;
+  }
+
+  .strategy-logo-trace-wrapper {
+    width: 220px !important;
+    height: 238px !important;
+  }
+
+  /* Headings and text - scale gracefully so they never overflow right edge */
   .strategy-content h2,
   .risk-heading,
   .cyber-heading,
   .ai-heading {
-    font-size: 2.5rem !important;
+    font-size: clamp(2rem, 3.2vw, 2.4rem) !important;
+    margin-bottom: 6px !important;
+    line-height: 1.1 !important;
   }
 
   .strategy-content p,
   .risk-sub,
   .cyber-sub,
   .ai-sub {
-    font-size: 15px !important;
-    max-width: 260px !important;
+    font-size: 13.5px !important;
+    line-height: 1.45 !important;
+    max-width: 240px !important;
+    margin-bottom: 10px !important;
+    white-space: normal !important;
   }
 
-  /* All paragraphs should be left-aligned with their headings */
-  .strategy-content p,
-  .risk-sub,
-  .cyber-sub,
-  .ai-sub {
-    margin: 0 !important;
+  .strategy-content br {
+    display: none !important;
   }
 
-  /* Tuck the AI text neatly under the incoming horizontal SVG lines as per the mockup */
-  .ai-inline-section {
-    flex-direction: row !important;
-    align-items: flex-start !important;
+  .strategy-content a,
+  .risk-text-block a,
+  .cyber-text-block a,
+  .ai-text-block a {
+    font-size: 1.1rem !important;
+  }
+
+  /* Text positioning relative to logos: ensures SVG lines NEVER overlap text */
+  .risk-right-side {
+    width: 240px !important;
+    top: 220px !important;
+    left: calc(100% + 20px) !important;
+  }
+
+  .cyber-right-side {
+    width: 240px !important;
+    top: -95px !important;
+    left: calc(100% + 20px) !important;
   }
 
   .ai-right-side {
     position: absolute !important;
-    left: 290px !important;
-    /* Aligns text with the right leg of the logo image */
-    top: 240px !important;
-    /* Places it just under the red lines */
-    width: 260px !important;
-    text-align: left !important;
+    width: 240px !important;
+    left: calc(100% + 20px) !important;
+    top: 145px !important;
     margin-top: 0 !important;
   }
 
-  .ai-text-block {
-    padding: 0 !important;
+  .ai-inline-section {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
   }
 
-  /* Increase container height so stacked AI text doesn't get clipped by overflow:hidden */
   .section-services {
-    padding-bottom: 300px !important;
+    padding-bottom: 500px !important;
   }
 
-  /* Increase SVG line width and use scaleY to maintain vertical alignment without overlapping the top text */
-  .first-svg {
-    width: 56% !important;
-    margin-top: 0 !important;
-    transform: translateX(-3.7336%) scaleY(0.8928) !important;
-    transform-origin: top center !important;
-  }
-
-  #realtopstoriessvg svg {
-    width: calc((74 / 991) * 56vw) !important;
+  #realtopstoriessvg svg,
+  #workholdssvg svg,
+  .workholdssvg svg,
+  #workholdbottomsvg svg,
+  .workholdbottomsvg svg,
+  #ourstorybottomsvg svg,
+  .ourstorybottomsvg svg,
+  #industriessvgbtm svg,
+  .industriessvgbtm svg,
+  .thinking-bottom-line svg,
+  #whysthirossvg svg {
+    width: calc(74 * (100vh - 45px) / 918) !important;
   }
 
   /* Decrease gap between "Four disciplines." and "One standard." */
@@ -6288,12 +6430,6 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
 }
 
 @media (max-width: 1024px) {
-
-  .risk-sub,
-  .cyber-sub,
-  .ai-sub {
-    max-width: 750px !important;
-  }
 
   .section-why {
     margin-top: 0 !important;
@@ -6650,7 +6786,7 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
 
 
 /* --- 1366px Laptop Fixes --- */
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1400px) and (min-width: 1051px) {
 
   .split-mega-menu .mega-content-area {
     padding-top: 56px !important;
@@ -7958,6 +8094,13 @@ body.light-mode .footer-menu li {
     width: 84vw;
     text-align: left;
     padding-right: 1rem;
+  }
+
+  /* Hide smr-text children by default so text does not flash
+     before the logo loads — GSAP reveals them after the logo
+     animation completes (initMobileServicesRail → revealMark). */
+  .smr-text > * {
+    opacity: 0;
   }
 
   /* Strategy text only: the default "left: 70%" resolves against the

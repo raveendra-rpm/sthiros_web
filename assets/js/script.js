@@ -600,12 +600,25 @@ function initServicesSvgTrackScroll() {
     // Initial state: hidden at the top
     gsap.set(servicesSvg, { clipPath: 'polygon(0% 0%, 16% 0%, 16% 0%, 16% 0%, 16% 0%, 0% 0%)' });
 
+    const getEndClip = () => {
+      const vw = window.innerWidth;
+      if (vw >= 769 && vw <= 1024) {
+        const stratLogo = document.querySelector('.strategy-img-svg');
+        if (stratLogo && servicesSvg) {
+          const endXPct = ((stratLogo.getBoundingClientRect().left - servicesSvg.getBoundingClientRect().left) / servicesSvg.getBoundingClientRect().width) * 100;
+          return `polygon(0% 0%, 16% 0%, 16% 85%, ${endXPct.toFixed(2)}% 85%, ${endXPct.toFixed(2)}% 100%, 0% 100%)`;
+        }
+      }
+      return 'polygon(0% 0%, 16% 0%, 16% 85%, 200% 85%, 200% 100%, 0% 100%)';
+    };
+
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '.services-rail',
         start: 'top 65%', // Starts drawing when rail reaches near center
         end: () => '+=' + (window.innerHeight * 1.2), // Finishes exactly when Part 1A horizontal scroll finishes
         scrub: true, // Use strict scrub (no lag) so it doesn't bleed into the logo trace sequence
+        invalidateOnRefresh: true,
       }
     });
 
@@ -618,7 +631,7 @@ function initServicesSvgTrackScroll() {
 
     // Step 2: Wipe right along the horizontal part (approx 2/3 of the total distance)
     tl.to(servicesSvg, {
-      clipPath: 'polygon(0% 0%, 16% 0%, 16% 85%, 200% 85%, 200% 100%, 0% 100%)',
+      clipPath: getEndClip,
       ease: 'none',
       duration: 2
     });
@@ -1085,10 +1098,39 @@ function initScrollAnimations() {
     }
 
     mm.add("(min-width: 769px)", () => {
+    function getStationCenterTrack(logoSel, txtSel) {
+      const track = document.querySelector('.services-track');
+      const l = document.querySelector(logoSel);
+      const t = txtSel ? document.querySelector(txtSel) : null;
+      if (!track || !l) return { x: 0, y: 0 };
+      const trackRect = track.getBoundingClientRect();
+      const rL = l.getBoundingClientRect();
+      const lTrack = rL.left - trackRect.left;
+      const rTrack = rL.right - trackRect.left;
+      let combinedLeft = lTrack;
+      let combinedRight = rTrack;
+      if (t) {
+        const rT = t.getBoundingClientRect();
+        combinedLeft = Math.min(lTrack, rT.left - trackRect.left);
+        combinedRight = Math.max(rTrack, rT.right - trackRect.left);
+      }
+      return {
+        x: (combinedLeft + combinedRight) / 2 + 40,
+        y: (rL.top - trackRect.top + rL.bottom - trackRect.top) / 2
+      };
+    }
+
     ScrollTrigger.create({
       trigger: servicesRail,
       start: () => {
-        const lineOffset = 800 * (window.innerWidth * 0.5 / 991);
+        const vw = window.innerWidth;
+        const vh = window.innerHeight;
+        if (vw >= 769 && vw <= 1024) {
+          const scale = (vh - 45) / 918;
+          const lineY = 848.469 * scale - 45;
+          return `top+=${lineY - 119}px center`;
+        }
+        const lineOffset = 800 * (vw * 0.5 / 991);
         return `top+=${lineOffset - 190}px center`;
       },
       end: () => {
@@ -1135,8 +1177,13 @@ function initScrollAnimations() {
         tl.to(servicesTrack, {
           x: () => {
             const vw = window.innerWidth;
+            if (vw >= 769 && vw <= 1024) {
+              const c = getStationCenterTrack('.strategy-img-svg', '.strategy-content');
+              return vw / 2 - c.x;
+            }
             const stratLogoX = 1.25 * vw + 10 + (350 / 2); // Center of logo
-            return -(stratLogoX - vw / 2);
+            const stratCenterShift = (vw >= 769 && vw <= 1024) ? 56 : 0;
+            return -(stratLogoX - vw / 2 + stratCenterShift);
           },
           ease: 'none',
           duration: 0.6
@@ -1164,10 +1211,15 @@ function initScrollAnimations() {
         tl.to(servicesTrack, {
           x: () => {
             const vw = window.innerWidth;
+            if (vw >= 769 && vw <= 1024) {
+              const c = getStationCenterTrack('.risk-service-img', '.risk-text-block');
+              return vw / 2 - c.x + 50;
+            }
             const scale = (vw * 0.5) / 991;
             const stratLogoW = 380;
             const riskX = 1.25 * vw + 10 + stratLogoW + 15 + 2180 * scale;
-            return -(riskX - vw / 2);
+            const riskCenterShift = (vw >= 769 && vw <= 1024) ? -162 : 0;
+            return -(riskX - vw / 2 + riskCenterShift);
           },
           ease: 'none',
           duration: 0.6
@@ -1187,10 +1239,15 @@ function initScrollAnimations() {
         tl.to(servicesTrack, {
           y: () => {
             const vw = window.innerWidth;
+            if (vw >= 769 && vw <= 1024) {
+              const strat = getStationCenterTrack('.strategy-img-svg', null);
+              const risk = getStationCenterTrack('.risk-service-img', null);
+              return -(risk.y - strat.y);
+            }
             const scale = (vw * 0.5) / 991;
             const firstSvg = document.querySelector('.first-svg');
             const lineOffset = firstSvg.getBoundingClientRect().height * 0.535;
-            const riskVertOffset = 120; // Pans camera UP by 120px to reveal Risk text
+            const riskVertOffset = (vw >= 769 && vw <= 1024) ? ((vw <= 850) ? 95 : 135) : 120; // Pans camera UP by 95-135px on tablet, 120px on desktop
             return (lineOffset - 190) - (700 * scale) - riskVertOffset;
           },
           ease: 'none',
@@ -1238,11 +1295,19 @@ function initScrollAnimations() {
         tl.to(servicesTrack, {
           x: () => {
             const vw = window.innerWidth;
+            if (vw >= 769 && vw <= 1024) {
+              const c = getStationCenterTrack('.cyber-img-svg', '.cyber-text-block');
+              return vw / 2 - c.x;
+            }
             const scale = (vw * 0.5) / 991;
             const stratLogoW = 380;
             const riskX = 1.25 * vw + 10 + stratLogoW + 15 + 2180 * scale;
+            let cyberBonusX = 0;
+            if (vw >= 769 && vw <= 1024) {
+              cyberBonusX = 240;
+            }
             // Center to center distance is exactly 1159px (see getRiskHorizScroll)
-            return -(riskX - vw / 2 + getRiskHorizScroll());
+            return -(riskX - vw / 2 + getRiskHorizScroll()) + cyberBonusX;
           },
           ease: 'none',
           duration: 1
@@ -1262,12 +1327,21 @@ function initScrollAnimations() {
         tl.to(servicesTrack, {
           y: () => {
             const vw = window.innerWidth;
+            if (vw >= 769 && vw <= 1024) {
+              const strat = getStationCenterTrack('.strategy-img-svg', null);
+              const cyber = getStationCenterTrack('.cyber-img-svg', null);
+              return -(cyber.y - strat.y);
+            }
             const scale = (vw * 0.5) / 991;
             const firstSvg = document.querySelector('.first-svg');
             const lineOffset = firstSvg.getBoundingClientRect().height * 0.535;
-            const riskVertOffset = 120;
+            const riskVertOffset = (vw >= 769 && vw <= 1024) ? ((vw <= 850) ? 95 : 135) : 120;
             let cyberBonus = 0;
-            if (vw <= 1366) cyberBonus = 120;
+            if (vw >= 769 && vw <= 1024) {
+              cyberBonus = (vw <= 850) ? 220 : 180;
+            } else if (vw <= 1366) {
+              cyberBonus = 120;
+            }
             return (lineOffset - 190) - (700 * scale) + 684.8 - riskVertOffset + cyberBonus; // Move track DOWN by exactly 684.8px to perfectly center Cyber logo
           },
           ease: 'none',
@@ -1312,15 +1386,20 @@ function initScrollAnimations() {
         tl.to(servicesTrack, {
           x: () => {
             const vw = window.innerWidth;
+            if (vw >= 769 && vw <= 1024) {
+              const c = getStationCenterTrack('.ai-service-img', '.ai-text-block');
+              return vw / 2 - c.x;
+            }
             const scale = (vw * 0.5) / 991;
             const stratLogoW = 380;
             const riskX = 1.25 * vw + 10 + stratLogoW + 15 + 2180 * scale;
             const cyberHorizScroll = getCyberHorizScroll();
             let aiCenterBonus = 0;
-            if (vw <= 1280) {
+            if (vw >= 769 && vw <= 1024) {
+              aiCenterBonus = 460;
+            } else if (vw <= 1280) {
               aiCenterBonus = 350; // Move track less to the left so AI logo is centered
-            }
-            if (vw > 1280 && vw <= 1366) {
+            } else if (vw > 1280 && vw <= 1366) {
               // At 1366px the AI logo+text block (as a combined unit — they share this
               // one pan, so they can't each be independently centered) sat well left
               // of viewport-center (combined bbox center measured at 446.5px on a
@@ -1331,8 +1410,7 @@ function initScrollAnimations() {
               // request explicitly said to leave alone; this bonus only affects the
               // pan past that point, on the way to AI (2026-09-12, user request).
               aiCenterBonus = 237;
-            }
-            if (vw >= 1900) {
+            } else if (vw >= 1900) {
               // getRiskHorizScroll()'s own >=1900px correction (needed to re-center
               // Cyber, see that function) overshoots here because it also feeds this
               // same pan — it's added a second time via this chain (riskX ... +
@@ -1361,26 +1439,31 @@ function initScrollAnimations() {
         tl.to(servicesTrack, {
           y: () => {
             const vw = window.innerWidth;
+            if (vw >= 769 && vw <= 1024) {
+              const strat = getStationCenterTrack('.strategy-img-svg', null);
+              const ai = getStationCenterTrack('.ai-service-img', null);
+              return -(ai.y - strat.y);
+            }
             const scale = (vw * 0.5) / 991;
             const firstSvg = document.querySelector('.first-svg');
             const lineOffset = firstSvg.getBoundingClientRect().height * 0.535;
-            const riskVertOffset = 120;
+            const riskVertOffset = (vw >= 769 && vw <= 1024) ? ((vw <= 850) ? 60 : 100) : 120;
             let cyberBonus = 0;
-            if (vw <= 1366) cyberBonus = 120;
+            if (vw >= 769 && vw <= 1024) {
+              cyberBonus = (vw <= 850) ? 110 : 80;
+            } else if (vw <= 1366) {
+              cyberBonus = 120;
+            }
             let aiUpBonus = 0;
-            if (vw <= 1280) aiUpBonus = 150; // Extra pan up so AI isn't cut off at the bottom
-            if (vw > 1280 && vw <= 1366) aiUpBonus = 90; // 2026-09-12 user request: nudge AI up at 1366px (was 50, "thoda aur upar" follow-up)
-            // >=1900px: .cyber-horiz-rail gets an extra +100px top offset (see the
-            // min-width:1900px block in style.css), which shifts .ai-inline-section's
-            // own synced position (sync() in initServicesTracing, derived from
-            // .cyber-horiz-svg's live rect) down by the same amount — but this
-            // vertical pan's cyberVertScrollDOWN constant (966 * scale) doesn't know
-            // about that extra offset, so AI lands ~80px below center at a true
-            // 1920px viewport (measured via getBoundingClientRect: combined AI logo +
-            // text block centered at y=619.5 vs viewport-center 540 on a 1080-tall
-            // viewport). Only vw>=1900 is affected — the accent-line resize this
-            // compensates for is itself scoped to that breakpoint (2026-09-14).
-            if (vw >= 1900) aiUpBonus = 80;
+            if (vw >= 769 && vw <= 1024) {
+              aiUpBonus = (vw <= 850) ? 270 : 230;
+            } else if (vw <= 1280) {
+              aiUpBonus = 150; // Extra pan up so AI isn't cut off at the bottom
+            } else if (vw > 1280 && vw <= 1366) {
+              aiUpBonus = 90; // 2026-09-12 user request: nudge AI up at 1366px (was 50, "thoda aur upar" follow-up)
+            } else if (vw >= 1900) {
+              aiUpBonus = 80;
+            }
             // The vertical distance between Cyber logo and AI logo is exactly 966 * scale
             const cyberVertScrollDOWN = 966 * scale;
             return (lineOffset - 190) - (700 * scale) + 684.8 - riskVertOffset + cyberBonus - cyberVertScrollDOWN - aiUpBonus; // move track UP by exactly the distance
@@ -3871,7 +3954,7 @@ function smrCreateRail() {
     gsap.set(stations[k], { opacity: 1 });
     var img = stations[k].querySelector('.smr-logo-img');
     if (img) gsap.set(img, { clipPath: 'inset(0% 0% 100% 0%)', opacity: 0 });
-    gsap.set(copy(k), { opacity: 1, y: 0 });
+    gsap.set(copy(k), { opacity: 0, y: 15 });
   });
 
   /* ── the ride: the camera runs along the rail, settling on each mark ──
@@ -4164,6 +4247,16 @@ function smrCreateRail() {
           .to(aiImg, { clipPath: 'inset(0% 0% 0% 0%)', ease: 'none', duration: dur }, arrive);
       }
     }
+
+    var textStart = arrive + dur;
+    var textDur = Math.min(0.32, Math.max(0.18, (hold - dur) * 0.85));
+    tl.to(copy(k), {
+      opacity: 1,
+      y: 0,
+      duration: textDur,
+      stagger: 0.04,
+      ease: 'power2.out'
+    }, textStart);
   };
 
   if (settleIdx.strategy != null) {
