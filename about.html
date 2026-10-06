@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css?v=38" />
+    <link rel="stylesheet" href="assets/css/style.css?v=46" />
     <style>
         :root {
             --text-secondary: #ffffff;
@@ -2117,6 +2117,28 @@
             /* ── Shared: prevent overflow on small screens ── */
             body {
                 overflow-x: hidden;
+            }
+        }
+
+        /* ═══════════════════════════════════════════
+           MOBILE EXTRA SMALL — max-width: 500px
+           Shift Mission & Vision card text up away from bottom SVG
+           ═══════════════════════════════════════════ */
+        @media (max-width: 500px) {
+            #Theworldbuilding .vm-card .vm-expanded,
+            #Theworldbuilding .vm-card.active .vm-expanded,
+            #Theworldbuilding .vm-card.vision-card .vm-expanded,
+            #Theworldbuilding .vm-card.mission-card .vm-expanded {
+                justify-content: center !important;
+                padding-top: 80px !important;
+                padding-bottom: 85px !important;
+                padding-left: 22px !important;
+                padding-right: 22px !important;
+            }
+
+            #Theworldbuilding .vm-desc {
+                font-size: 14.5px !important;
+                line-height: 1.55 !important;
             }
         }
     </style>

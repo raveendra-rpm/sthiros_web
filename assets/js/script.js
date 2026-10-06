@@ -4380,9 +4380,18 @@ function initMobileHeroReveal() {
   var aboutSvgWrapper = document.querySelector('.aboutus-svg-anim-wrapper');
   if (!heroSection || !leftSvg || !rightSvg || !aboutSvgWrapper) return;
 
-  gsap.set(leftSvg, { clipPath: 'inset(0% 0% 74% 0%)' });
-  gsap.set(rightSvg, { clipPath: 'inset(0% 0% 100% 0%)' });
-  gsap.set(aboutSvgWrapper, { clipPath: 'inset(0% 0% 100% 0%)' });
+  gsap.set(leftSvg, {
+    clipPath: 'inset(0% 0% 84% 0%)',
+    webkitClipPath: 'inset(0% 0% 84% 0%)'
+  });
+  gsap.set(rightSvg, {
+    clipPath: 'inset(0% 0% 100% 0%)',
+    webkitClipPath: 'inset(0% 0% 100% 0%)'
+  });
+  gsap.set(aboutSvgWrapper, {
+    clipPath: 'inset(0% 0% 100% 0%)',
+    webkitClipPath: 'inset(0% 0% 100% 0%)'
+  });
 
   var tl = gsap.timeline({
     scrollTrigger: {
@@ -4392,8 +4401,18 @@ function initMobileHeroReveal() {
       scrub: true
     }
   });
-  tl.to(leftSvg, { clipPath: 'inset(0% 0% 0% 0%)', ease: 'none', duration: 0.08 })
-    .to(rightSvg, { clipPath: 'inset(0% 0% 0% 0%)', ease: 'none', duration: 1 });
+  tl.to(leftSvg, {
+    clipPath: 'inset(0% 0% 0% 0%)',
+    webkitClipPath: 'inset(0% 0% 0% 0%)',
+    ease: 'none',
+    duration: 0.15
+  })
+  .to(rightSvg, {
+    clipPath: 'inset(0% 0% 0% 0%)',
+    webkitClipPath: 'inset(0% 0% 0% 0%)',
+    ease: 'none',
+    duration: 1
+  });
 
   var aboutTl = gsap.timeline({
     scrollTrigger: {
@@ -4403,14 +4422,18 @@ function initMobileHeroReveal() {
       scrub: true
     }
   });
-  aboutTl.to(aboutSvgWrapper, { clipPath: 'inset(0% 0% 0% 0%)', ease: 'none' });
+  aboutTl.to(aboutSvgWrapper, {
+    clipPath: 'inset(0% 0% 0% 0%)',
+    webkitClipPath: 'inset(0% 0% 0% 0%)',
+    ease: 'none'
+  });
 
   return function () {
     tl.scrollTrigger && tl.scrollTrigger.kill();
     tl.kill();
     aboutTl.scrollTrigger && aboutTl.scrollTrigger.kill();
     aboutTl.kill();
-    gsap.set([leftSvg, rightSvg, aboutSvgWrapper], { clearProps: 'clipPath' });
+    gsap.set([leftSvg, rightSvg, aboutSvgWrapper], { clearProps: 'clipPath,webkitClipPath' });
   };
 }
 

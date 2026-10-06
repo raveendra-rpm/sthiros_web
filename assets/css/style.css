@@ -4517,6 +4517,7 @@ mark.sthiros-search-match.is-active {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   padding-bottom: 100px;
 }
 
@@ -5299,7 +5300,7 @@ body.light-mode .sub-nav-link:hover {
   }
 
   .menu-content {
-    padding-top: 35px;
+    padding-top: 100px;
     padding-left: 20px;
   }
 
@@ -8590,7 +8591,7 @@ body.light-mode .footer-menu li {
 /* Responsive Mobile Menu Fix for Smaller Devices */
 @media (max-width: 425px) {
   .menu-content {
-    padding-top: 25px !important;
+    padding-top: 100px !important;
     padding-left: 20px !important;
   }
   .menu-content .main-nav .nav-link {
@@ -8775,4 +8776,9 @@ mark.sthiros-search-match.is-active {
   -ms-user-select: none;
   outline: none !important;
   -webkit-tap-highlight-color: transparent;
+}
+
+/* Hide Related Case Studies globally as requested */
+#relatedcasestudiessec {
+  display: none !important;
 }
