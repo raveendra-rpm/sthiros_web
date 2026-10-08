@@ -1,0 +1,257 @@
+=== DOC 1: SPR ConsulTech JD.docx ===
+Position: Zoho Consultant
+Required Work Experience: 2–3 Years
+Location: Chennai
+Employment Type: Full-Time
+Department: Technology / Business Applications
+About the Role
+We are looking for a Zoho Consultant with 2–3 years of relevant experience to join our technology team. The candidate will be responsible for understanding business requirements, designing and implementing Zoho solutions, configuring applications, and supporting clients in optimizing their business processes through the Zoho platform.
+Key Responsibilities
+Understand business requirements and translate them into effective Zoho-based solutions.
+Configure and customize Zoho applications based on client requirements.
+Work on Zoho CRM, Zoho Creator, Zoho Books, Zoho Desk, Zoho People, Zoho Analytics and other relevant Zoho applications.
+Design workflows, approval processes, automation, custom modules, reports and dashboards.
+Develop and maintain Zoho Creator applications, Deluge scripts and custom functions.
+Integrate Zoho applications with third-party platforms and APIs.
+Conduct requirement gathering, process mapping, solution design and implementation.
+Perform application testing, troubleshooting and issue resolution.
+Prepare functional/technical documentation, user guides and solution specifications.
+Conduct user training and provide post-implementation support.
+Collaborate with developers, project managers and business teams to deliver projects within timelines.
+Identify opportunities for process automation and recommend suitable Zoho solutions.
+Stay updated with new Zoho features, products and platform capabilities.
+Required Skills
+2–3 years of hands-on experience in Zoho implementation / consulting.
+Strong understanding of Zoho CRM and/or Zoho Creator.
+Working knowledge of Deluge scripting.
+Experience in workflow automation, custom functions and application configuration.
+Understanding of REST APIs and third-party integrations.
+Good understanding of business processes and requirement gathering.
+Strong analytical and problem-solving skills.
+Good communication and client-handling skills.
+Ability to work independently as well as collaboratively with cross-functional teams.
+Good to Have
+Zoho certifications.
+Experience with Zoho Analytics, Zoho Books, Zoho Desk or Zoho People.
+Experience in implementing end-to-end Zoho solutions.
+Exposure to SQL, JavaScript or other programming languages.
+Experience working with multiple clients or consulting projects.
+Education
+Bachelor's degree in Computer Science, Information Technology, Engineering, Business Administration or a related field.
+What We Offer
+Opportunity to work on diverse Zoho implementation and automation projects.
+Exposure to multiple business domains and client environments.
+Opportunities to work on emerging technologies and business automation.
+Collaborative and growth-oriented work environment.
+
+=== DOC 2: SPRCO.docx ===
+Strategic Buyer – O&M & Strategic Service Contracts
+Location: ZambiaPositions: 2
+Job Summary
+Responsible for strategic procurement and contracting activities related to Operations & Maintenance and strategic service requirements.
+Key Responsibilities
+Handle Mining, Smelting and Refining Operations contracts.
+Manage Integrated Maintenance Contracts.
+Support Long-term Strategic Service Agreements.
+Handle Business Operations and Support Services Outsourcing Contracts.
+Develop procurement strategies and category plans.
+Prepare RFIs, RFPs and RFQs.
+Coordinate bid evaluation and supplier engagement.
+Perform commercial evaluation, cost analysis and benchmarking.
+Support negotiations and contract award.
+Manage supplier performance and stakeholder coordination.
+Qualification & Experience
+Relevant experience in strategic procurement, sourcing or contracting.
+Experience in O&M, industrial or service contracts preferred.
+Strong commercial, analytical and negotiation skills.
+Good stakeholder management and communication skills.
+2. Strategic Buyer – Strategic Projects & Transformation Contracts
+Location: ZambiaPositions: 2
+Job Summary
+Responsible for procurement and contracting activities related to strategic projects, transformation programmes and technical services.
+Key Responsibilities
+Handle Strategic Projects and Transformation Programs.
+Support Reliability Improvement and Debottlenecking Projects.
+Handle Digital Transformation Initiatives.
+Manage Engineering and Technical Services requirements.
+Support EPC/EPCM/PMC Contracts.
+Prepare tender documents and coordinate bid evaluations.
+Perform cost analysis, benchmarking and commercial evaluation.
+Support negotiations, risk analysis and contract awards.
+Coordinate with technical, finance, legal and operations teams.
+Qualification & Experience
+Relevant experience in strategic/project procurement.
+Experience in engineering, technical services or project contracts preferred.
+Strong commercial and analytical skills.
+Good negotiation and stakeholder management skills.
+3. Strategic Buyer – FPA / ARC Category Management
+Location: ZambiaPositions: 1
+Job Summary
+Responsible for category management and strategic sourcing of Framework Purchase Agreements, Annual Rate Contracts and related procurement categories.
+Key Responsibilities
+Manage Framework Purchase Agreements (FPA).
+Manage Annual Rate Contracts (ARC).
+Handle MRO categories, consumables and spares.
+Manage Service ARCs.
+Support supplier consolidation and rationalization.
+Develop category plans and sourcing strategies.
+Support tendering, commercial evaluation and negotiations.
+Monitor supplier performance and governance.
+Qualification & Experience
+Relevant experience in procurement and category management.
+Experience in MRO, consumables, spares or service procurement preferred.
+Strong analytical and negotiation skills.
+Good supplier and stakeholder management skills.
+4. IT Auditor / IT Assurance
+Location: ChennaiPositions: 4
+Job Summary
+Responsible for delivering IT assurance and audit services covering applications, ERP, infrastructure, security controls and IT General Controls.
+Key Responsibilities
+Lead and execute system, application, ERP and IT infrastructure audits.
+Perform ITGC and ITAC assessments.
+Evaluate IT security controls and risk registers.
+Conduct process walkthroughs and control testing.
+Review access management, change management, patching, backup and DR controls.
+Evaluate configurations, audit trails and workflow controls.
+Perform compliance reviews against COBIT, NIST, ISO 27001 and SOC frameworks.
+Prepare audit reports, identify gaps and provide recommendations.
+Interact with client IT teams and stakeholders.
+Support knowledge building and training of junior team members.
+Qualification & Experience
+Minimum 4+ years of relevant IT Audit / Assurance experience.
+B.Tech/B.E. in Computer Science or IT preferred.
+Strong knowledge of IT security, infrastructure and ITGC.
+Experience in application and ERP security audits.
+ISO 27001 Lead Auditor or relevant certifications preferred.
+Strong analytical and communication skills.
+5. AR/AP
+Positions: 6Location: To be confirmed
+Job Summary
+Responsible for supporting Accounts Receivable and Accounts Payable activities, including invoice processing, reconciliation, payment follow-up and accounting operations.
+Key Responsibilities
+Handle day-to-day AR/AP accounting activities.
+Process and verify invoices and supporting documents.
+Perform vendor and customer account reconciliations.
+Follow up on outstanding receivables and payment status.
+Support invoice matching and payment processing.
+Identify and resolve invoice discrepancies and payment issues.
+Maintain ageing reports and prepare MIS reports.
+Coordinate with internal teams, customers and vendors.
+Support month-end closing and accounting activities.
+Ensure accuracy and compliance in accounting transactions.
+Qualification & Experience
+Bachelor's degree in Commerce, Accounting, Finance or related field.
+Relevant experience in AR/AP or accounting operations.
+Good knowledge of accounting principles and reconciliations.
+Working knowledge of ERP systems such as SAP/Tally/Oracle preferred.
+Good MS Excel skills.
+Strong analytical and communication skills.
+6. Qualified CA
+Location: ChennaiPositions: 4
+Job Summary
+Responsible for accounting, financial reporting, taxation, audit, compliance and other finance-related activities.
+Key Responsibilities
+Handle accounting and financial reporting activities.
+Review and analyse financial statements and accounting records.
+Support statutory and internal audits.
+Handle taxation and regulatory compliance.
+Prepare MIS and financial reports.
+Perform account reconciliations and review journal entries.
+Coordinate with internal teams, auditors and stakeholders.
+Support finance process improvements.
+Qualification & Experience
+Qualified Chartered Accountant (CA).
+Relevant experience in accounting, audit, taxation or finance.
+Strong knowledge of accounting principles and financial reporting.
+Good knowledge of MS Excel and ERP systems.
+Strong analytical and communication skills.
+7. Qualified CA
+Location: BangalorePositions: 2
+Job Summary
+Responsible for financial accounting, reporting, taxation, audit support and compliance activities.
+Key Responsibilities
+Manage accounting and financial reporting activities.
+Review financial statements and reconciliations.
+Support statutory and internal audits.
+Handle tax and regulatory compliance.
+Prepare MIS and management reports.
+Review accounting entries and financial data.
+Coordinate with auditors and cross-functional teams.
+Identify and resolve accounting and compliance issues.
+Qualification & Experience
+Qualified Chartered Accountant (CA).
+Relevant experience in finance, accounting, audit or taxation.
+Strong accounting and analytical skills.
+Good knowledge of Excel and ERP systems.
+Good communication and stakeholder management skills.
+8. Semi-Qualified CA – Audit Assurance
+Location: ChennaiPositions: 2
+Job Summary
+Support audit and assurance assignments, including financial statement reviews, control testing, documentation and audit reporting.
+Key Responsibilities
+Assist in statutory and internal audit assignments.
+Perform audit testing and verification of financial records.
+Review accounting documents and supporting evidence.
+Perform reconciliations and analytical procedures.
+Identify audit observations and control gaps.
+Prepare audit working papers and documentation.
+Coordinate with clients and internal teams for information and evidence.
+Support preparation of audit reports and recommendations.
+Qualification & Experience
+CA Inter / Semi-Qualified CA.
+Relevant audit or assurance experience preferred.
+Good knowledge of accounting and auditing standards.
+Strong analytical and documentation skills.
+Good communication and client-handling skills.
+Working knowledge of MS Excel.
+9. Qualified CA
+Location: PunePositions: 1
+Job Summary
+Responsible for accounting, financial reporting, taxation, audit, compliance and other finance-related activities.
+Key Responsibilities
+Handle accounting and financial reporting.
+Review financial statements and reconciliations.
+Support statutory and internal audits.
+Manage taxation and regulatory compliance.
+Prepare MIS and management reports.
+Review financial data and accounting entries.
+Coordinate with auditors and internal stakeholders.
+Support process improvements and ensure compliance.
+Qualification & Experience
+Qualified Chartered Accountant (CA).
+Relevant experience in finance, accounting, audit or taxation.
+Strong knowledge of accounting and taxation.
+Good knowledge of MS Excel and ERP systems.
+Strong analytical and communication skills.
+Position
+Location
+Count
+Strategic Buyer – O&M & Strategic Service Contracts
+Zambia
+2
+Strategic Buyer – Strategic Projects & Transformation Contracts
+Zambia
+2
+Strategic Buyer – FPA / ARC Category Management
+Zambia
+1
+IT Auditor / IT Assurance
+Chennai
+4
+AR/AP
+Chennai
+6
+Qualified CA
+Chennai
+4
+Qualified CA
+Bangalore
+2
+Semi-Qualified CA – Audit Assurance
+Chennai
+2
+Qualified CA
+Pune
+1
+Total
+24

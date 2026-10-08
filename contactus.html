@@ -402,14 +402,30 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 25px 0;
+            padding: 24px 12px;
             border-bottom: 1px solid rgba(239, 70, 35, 0.5);
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.25s ease;
+        }
+
+        .job-item:hover {
+            background-color: rgba(239, 70, 35, 0.08);
+        }
+
+        .job-info {
+            padding-right: 20px;
         }
 
         .job-info h3 {
             font-size: 22px;
             font-weight: 500;
             margin: 0 0 10px 0;
+            transition: color 0.25s ease;
+        }
+
+        .job-item:hover .job-info h3 {
+            color: #EF4623;
         }
 
         .job-info p {
@@ -429,11 +445,345 @@
             align-items: center;
             gap: 8px;
             white-space: nowrap;
+            transition: color 0.25s ease;
+        }
+
+        .job-item:hover .apply-btn {
+            color: #ff6a42;
         }
 
         .apply-btn img {
             width: 18px;
             height: auto;
+        }
+
+        /* ── Job Details Modal Styles ── */
+        .job-modal-backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.82);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 999999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            box-sizing: border-box;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .job-modal-backdrop.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .job-modal-container {
+            position: relative;
+            width: 100%;
+            max-width: 760px;
+            max-height: 86vh;
+            background: #0d0d0d;
+            border: 1px solid rgba(239, 70, 35, 0.4);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 35px rgba(239, 70, 35, 0.18);
+            border-radius: 24px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            color: #ffffff;
+            font-family: 'Quicksand', sans-serif;
+            transform: translateY(25px) scale(0.97);
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .job-modal-backdrop.active .job-modal-container {
+            transform: translateY(0) scale(1);
+        }
+
+        .job-modal-close {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #fff;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            z-index: 10;
+            line-height: 1;
+        }
+
+        .job-modal-close:hover {
+            background: #EF4623;
+            border-color: #EF4623;
+            color: #fff;
+            transform: rotate(90deg);
+        }
+
+        .job-modal-header {
+            padding: 26px 35px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .job-modal-title {
+            font-family: 'Pacaembu', sans-serif;
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 1.35;
+            margin: 0;
+            color: #ffffff;
+            padding-right: 45px;
+        }
+
+        .job-modal-meta-list {
+            margin: 0 0 24px 0;
+            padding: 0 0 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        body.light-mode .job-modal-meta-list {
+            border-bottom-color: rgba(0, 0, 0, 0.08);
+        }
+
+        .job-modal-meta-item {
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            line-height: 1.5;
+            color: #d1d1d1;
+        }
+
+        .job-modal-meta-item::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background: #EF4623;
+            border-radius: 50%;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
+        .job-modal-meta-label {
+            font-weight: 600;
+            color: #ffffff;
+            margin-right: 8px;
+        }
+
+        .job-modal-meta-value {
+            color: #cfcfcf;
+        }
+
+        body.light-mode .job-modal-meta-label {
+            color: #000000;
+        }
+
+        body.light-mode .job-modal-meta-value {
+            color: #444444;
+        }
+
+        .job-modal-body {
+            padding: 25px 35px 30px;
+            overflow-y: auto;
+            flex: 1;
+            font-size: 15px;
+            line-height: 1.65;
+            color: #d1d1d1;
+        }
+
+        .job-modal-body::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .job-modal-body::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .job-modal-body::-webkit-scrollbar-thumb {
+            background: #EF4623;
+            border-radius: 4px;
+        }
+
+        .job-modal-section {
+            margin-bottom: 24px;
+        }
+
+        .job-modal-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .job-modal-section h4 {
+            font-size: 15px;
+            font-weight: 700;
+            color: #ffffff;
+            margin: 0 0 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .job-modal-section h4::before {
+            content: '';
+            display: inline-block;
+            width: 5px;
+            height: 13px;
+            background: #EF4623;
+            border-radius: 2px;
+        }
+
+        .job-modal-section p {
+            margin: 0 0 10px;
+            color: #bbb;
+        }
+
+        .job-modal-list {
+            margin: 0;
+            padding-left: 20px;
+            color: #bbb;
+        }
+
+        .job-modal-list li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .job-modal-list li::marker {
+            color: #EF4623;
+        }
+
+        .job-modal-footer {
+            padding: 12px 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #080808;
+        }
+
+        .job-modal-apply-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6px 18px;
+            border-radius: 50px;
+            background: #EF4623;
+            border: 1.5px solid #EF4623;
+            color: #fff;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 11.5px;
+            font-weight: 600;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .job-modal-apply-btn:hover {
+            background-color: transparent;
+            color: #EF4623;
+            box-shadow: 0 0 14px rgba(239, 70, 35, 0.35);
+        }
+
+        /* Light mode support for modal */
+        body.light-mode .job-modal-container {
+            background: #ffffff;
+            border-color: rgba(239, 70, 35, 0.3);
+            color: #111;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        body.light-mode .job-modal-close {
+            background: rgba(0, 0, 0, 0.06);
+            border-color: rgba(0, 0, 0, 0.1);
+            color: #111;
+        }
+
+        body.light-mode .job-modal-close:hover {
+            background: #EF4623;
+            color: #fff;
+        }
+
+        body.light-mode .job-modal-header {
+            border-bottom-color: rgba(0, 0, 0, 0.08);
+        }
+
+        body.light-mode .job-modal-title {
+            color: #000;
+        }
+
+        body.light-mode .job-modal-body {
+            color: #444;
+        }
+
+        body.light-mode .job-modal-section h4 {
+            color: #000;
+        }
+
+        body.light-mode .job-modal-section p,
+        body.light-mode .job-modal-list {
+            color: #555;
+        }
+
+        body.light-mode .job-modal-footer {
+            background: #fbfbfb;
+            border-top-color: rgba(0, 0, 0, 0.08);
+        }
+
+        body.light-mode .job-modal-email-link {
+            color: #666;
+        }
+
+        body.light-mode .job-modal-email-link:hover {
+            color: #000;
+        }
+
+        /* Mobile adjustments for modal */
+        @media (max-width: 768px) {
+            .job-modal-container {
+                max-height: 90vh;
+                border-radius: 18px;
+            }
+            .job-modal-header {
+                padding: 24px 20px 16px;
+            }
+            .job-modal-title {
+                font-size: 20px;
+                padding-right: 35px;
+            }
+            .job-modal-body {
+                padding: 18px 20px 24px;
+            }
+            .job-modal-footer {
+                padding: 10px 18px 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .job-modal-apply-btn {
+                width: auto;
+                padding: 6px 16px;
+                font-size: 11px;
+                letter-spacing: 0.6px;
+            }
         }
 
         /* Right Column */
@@ -1458,50 +1808,85 @@
                 <!-- Left Column: Jobs -->
                 <div class="jobs-column">
                     <div class="jobs-list" data-lenis-prevent>
-                        <!-- Job Item 1 -->
-                        <div class="job-item">
+                        <!-- Job 1 -->
+                        <div class="job-item" data-job-id="0" onclick="openJobModal(0)">
                             <div class="job-info">
-                                <h3>Product Designer</h3>
-                                <p>We're looking for a mid-level<br>product designer to join our team.</p>
+                                <h3>Strategic Buyer – O&amp;M &amp; Strategic Service Contracts</h3>
+                                <p>Strategic procurement and contracting for Operations &amp; Maintenance and strategic services.</p>
                             </div>
-                            <a href="#" class="apply-btn">Apply <img src="assets/images/contactuspage/curvearrowsc.png"
-                                    alt="Apply"></a>
+                            <a href="javascript:void(0)" class="apply-btn" onclick="event.stopPropagation(); openJobModal(0)">Apply <img src="assets/images/contactuspage/curvearrowsc.png" alt="Apply"></a>
                         </div>
-                        <!-- Job Item 2 -->
-                        <div class="job-item">
+                        <!-- Job 2 -->
+                        <div class="job-item" data-job-id="1" onclick="openJobModal(1)">
                             <div class="job-info">
-                                <h3>Engineering Manager</h3>
-                                <p>We're looking for an experienced<br>engineering manager to join our team.</p>
+                                <h3>Strategic Buyer – Strategic Projects &amp; Transformation Contracts</h3>
+                                <p>Procurement and contracting for strategic projects, transformation programmes and technical services.</p>
                             </div>
-                            <a href="#" class="apply-btn">Apply <img src="assets/images/contactuspage/curvearrowsc.png"
-                                    alt="Apply"></a>
+                            <a href="javascript:void(0)" class="apply-btn" onclick="event.stopPropagation(); openJobModal(1)">Apply <img src="assets/images/contactuspage/curvearrowsc.png" alt="Apply"></a>
                         </div>
-                        <!-- Job Item 3 -->
-                        <div class="job-item">
+                        <!-- Job 3 -->
+                        <div class="job-item" data-job-id="2" onclick="openJobModal(2)">
                             <div class="job-info">
-                                <h3>Account Executive</h3>
-                                <p>We're looking for an account executive<br>to join our team.</p>
+                                <h3>Strategic Buyer – FPA / ARC Category Management</h3>
+                                <p>Category management and strategic sourcing of Framework Purchase Agreements and Annual Rate Contracts.</p>
                             </div>
-                            <a href="#" class="apply-btn">Apply <img src="assets/images/contactuspage/curvearrowsc.png"
-                                    alt="Apply"></a>
+                            <a href="javascript:void(0)" class="apply-btn" onclick="event.stopPropagation(); openJobModal(2)">Apply <img src="assets/images/contactuspage/curvearrowsc.png" alt="Apply"></a>
                         </div>
-                        <!-- Job Item 4 -->
-                        <div class="job-item">
+                        <!-- Job 4 -->
+                        <div class="job-item" data-job-id="3" onclick="openJobModal(3)">
                             <div class="job-info">
-                                <h3>Product Designer</h3>
-                                <p>We're looking for a mid-level<br>product designer to join our team.</p>
+                                <h3>IT Auditor / IT Assurance</h3>
+                                <p>Delivering IT assurance and audit services covering applications, ERP, infrastructure and security controls.</p>
                             </div>
-                            <a href="#" class="apply-btn">Apply <img src="assets/images/contactuspage/curvearrowsc.png"
-                                    alt="Apply"></a>
+                            <a href="javascript:void(0)" class="apply-btn" onclick="event.stopPropagation(); openJobModal(3)">Apply <img src="assets/images/contactuspage/curvearrowsc.png" alt="Apply"></a>
                         </div>
-                        <!-- Job Item 5 -->
-                        <div class="job-item">
+                        <!-- Job 5 -->
+                        <div class="job-item" data-job-id="4" onclick="openJobModal(4)">
                             <div class="job-info">
-                                <h3>Engineering Manager</h3>
-                                <p>We're looking for an experienced<br>engineering manager to join our team.</p>
+                                <h3>AR/AP</h3>
+                                <p>Supporting Accounts Receivable and Accounts Payable activities, invoice processing, reconciliations and payment operations.</p>
                             </div>
-                            <a href="#" class="apply-btn">Apply <img src="assets/images/contactuspage/curvearrowsc.png"
-                                    alt="Apply"></a>
+                            <a href="javascript:void(0)" class="apply-btn" onclick="event.stopPropagation(); openJobModal(4)">Apply <img src="assets/images/contactuspage/curvearrowsc.png" alt="Apply"></a>
+                        </div>
+                        <!-- Job 6 -->
+                        <div class="job-item" data-job-id="5" onclick="openJobModal(5)">
+                            <div class="job-info">
+                                <h3>Qualified CA – Chennai</h3>
+                                <p>Accounting, financial reporting, taxation, statutory &amp; internal audits, and compliance activities.</p>
+                            </div>
+                            <a href="javascript:void(0)" class="apply-btn" onclick="event.stopPropagation(); openJobModal(5)">Apply <img src="assets/images/contactuspage/curvearrowsc.png" alt="Apply"></a>
+                        </div>
+                        <!-- Job 7 -->
+                        <div class="job-item" data-job-id="6" onclick="openJobModal(6)">
+                            <div class="job-info">
+                                <h3>Qualified CA – Bangalore</h3>
+                                <p>Financial accounting, management reporting, taxation, audit support and regulatory compliance.</p>
+                            </div>
+                            <a href="javascript:void(0)" class="apply-btn" onclick="event.stopPropagation(); openJobModal(6)">Apply <img src="assets/images/contactuspage/curvearrowsc.png" alt="Apply"></a>
+                        </div>
+                        <!-- Job 8 -->
+                        <div class="job-item" data-job-id="7" onclick="openJobModal(7)">
+                            <div class="job-info">
+                                <h3>Semi-Qualified CA – Audit Assurance</h3>
+                                <p>Supporting audit and assurance assignments, financial reviews, control testing and reporting.</p>
+                            </div>
+                            <a href="javascript:void(0)" class="apply-btn" onclick="event.stopPropagation(); openJobModal(7)">Apply <img src="assets/images/contactuspage/curvearrowsc.png" alt="Apply"></a>
+                        </div>
+                        <!-- Job 9 -->
+                        <div class="job-item" data-job-id="8" onclick="openJobModal(8)">
+                            <div class="job-info">
+                                <h3>Qualified CA – Pune</h3>
+                                <p>Managing accounting, financial reporting, taxation, audit support and finance operations.</p>
+                            </div>
+                            <a href="javascript:void(0)" class="apply-btn" onclick="event.stopPropagation(); openJobModal(8)">Apply <img src="assets/images/contactuspage/curvearrowsc.png" alt="Apply"></a>
+                        </div>
+                        <!-- Job 10 -->
+                        <div class="job-item" data-job-id="9" onclick="openJobModal(9)">
+                            <div class="job-info">
+                                <h3>Zoho Consultant</h3>
+                                <p>Designing and implementing Zoho solutions, configuring applications, and optimizing business processes.</p>
+                            </div>
+                            <a href="javascript:void(0)" class="apply-btn" onclick="event.stopPropagation(); openJobModal(9)">Apply <img src="assets/images/contactuspage/curvearrowsc.png" alt="Apply"></a>
                         </div>
                     </div>
                 </div>
@@ -1551,7 +1936,7 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label>Current role / area of expertise</label>
-                                <input type="text" placeholder="|">
+                                <input type="text" placeholder="|" id="workRoleInput">
                             </div>
                             <div class="form-group">
                                 <label>LinkedIn or portfolio URL</label>
@@ -1637,8 +2022,500 @@
             <div class="copyright-text"><span class="copy-sym">©</span> 2026</div>
         </div>
     </footer>
+
+    <!-- Job Details Popup Modal -->
+    <div id="jobDetailsModal" class="job-modal-backdrop" aria-hidden="true">
+        <div class="job-modal-container" data-lenis-prevent>
+            <button type="button" class="job-modal-close" id="jobModalClose" aria-label="Close modal">&times;</button>
+            <div class="job-modal-header">
+                <h2 class="job-modal-title" id="modalJobTitle">Job Title</h2>
+            </div>
+            <div class="job-modal-body" id="modalJobBody">
+                <!-- Details & Meta List injected dynamically -->
+            </div>
+            <div class="job-modal-footer">
+                <a href="mailto:talent@sthiros.com" class="job-modal-apply-btn" id="modalApplyAction">Apply For This Position</a>
+            </div>
+        </div>
+    </div>
+
     <script>
+        // ── 10 Current Job Openings Data from Docx Files ──
+        const STHIROS_JOBS = [
+            {
+                id: 0,
+                title: "Strategic Buyer – O&M & Strategic Service Contracts",
+                location: "Zambia",
+                positions: "2 Positions",
+                aboutHeading: "Job Summary",
+                summary: "Responsible for strategic procurement and contracting activities related to Operations & Maintenance and strategic service requirements.",
+                responsibilities: [
+                    "Handle Mining, Smelting and Refining Operations contracts.",
+                    "Manage Integrated Maintenance Contracts.",
+                    "Support Long-term Strategic Service Agreements.",
+                    "Handle Business Operations and Support Services Outsourcing Contracts.",
+                    "Develop procurement strategies and category plans.",
+                    "Prepare RFIs, RFPs and RFQs.",
+                    "Coordinate bid evaluation and supplier engagement.",
+                    "Perform commercial evaluation, cost analysis and benchmarking.",
+                    "Support negotiations and contract award.",
+                    "Manage supplier performance and stakeholder coordination."
+                ],
+                qualifications: [
+                    "Relevant experience in strategic procurement, sourcing or contracting.",
+                    "Experience in O&M, industrial or service contracts preferred.",
+                    "Strong commercial, analytical and negotiation skills.",
+                    "Good stakeholder management and communication skills."
+                ]
+            },
+            {
+                id: 1,
+                title: "Strategic Buyer – Strategic Projects & Transformation Contracts",
+                location: "Zambia",
+                positions: "2 Positions",
+                aboutHeading: "Job Summary",
+                summary: "Responsible for procurement and contracting activities related to strategic projects, transformation programmes and technical services.",
+                responsibilities: [
+                    "Handle Strategic Projects and Transformation Programs.",
+                    "Support Reliability Improvement and Debottlenecking Projects.",
+                    "Handle Digital Transformation Initiatives.",
+                    "Manage Engineering and Technical Services requirements.",
+                    "Support EPC/EPCM/PMC Contracts.",
+                    "Prepare tender documents and coordinate bid evaluations.",
+                    "Perform cost analysis, benchmarking and commercial evaluation.",
+                    "Support negotiations, risk analysis and contract awards.",
+                    "Coordinate with technical, finance, legal and operations teams."
+                ],
+                qualifications: [
+                    "Relevant experience in strategic/project procurement.",
+                    "Experience in engineering, technical services or project contracts preferred.",
+                    "Strong commercial and analytical skills.",
+                    "Good negotiation and stakeholder management skills."
+                ]
+            },
+            {
+                id: 2,
+                title: "Strategic Buyer – FPA / ARC Category Management",
+                location: "Zambia",
+                positions: "1 Position",
+                aboutHeading: "Job Summary",
+                summary: "Responsible for category management and strategic sourcing of Framework Purchase Agreements, Annual Rate Contracts and related procurement categories.",
+                responsibilities: [
+                    "Manage Framework Purchase Agreements (FPA).",
+                    "Manage Annual Rate Contracts (ARC).",
+                    "Handle MRO categories, consumables and spares.",
+                    "Manage Service ARCs.",
+                    "Support supplier consolidation and rationalization.",
+                    "Develop category plans and sourcing strategies.",
+                    "Support tendering, commercial evaluation and negotiations.",
+                    "Monitor supplier performance and governance."
+                ],
+                qualifications: [
+                    "Relevant experience in procurement and category management.",
+                    "Experience in MRO, consumables, spares or service procurement preferred.",
+                    "Strong analytical and negotiation skills.",
+                    "Good supplier and stakeholder management skills."
+                ]
+            },
+            {
+                id: 3,
+                title: "IT Auditor / IT Assurance",
+                location: "Chennai",
+                positions: "4 Positions",
+                aboutHeading: "Job Summary",
+                summary: "Responsible for delivering IT assurance and audit services covering applications, ERP, infrastructure, security controls and IT General Controls.",
+                responsibilities: [
+                    "Lead and execute system, application, ERP and IT infrastructure audits.",
+                    "Perform ITGC and ITAC assessments.",
+                    "Evaluate IT security controls and risk registers.",
+                    "Conduct process walkthroughs and control testing.",
+                    "Review access management, change management, patching, backup and DR controls.",
+                    "Evaluate configurations, audit trails and workflow controls.",
+                    "Perform compliance reviews against COBIT, NIST, ISO 27001 and SOC frameworks.",
+                    "Prepare audit reports, identify gaps and provide recommendations.",
+                    "Interact with client IT teams and stakeholders.",
+                    "Support knowledge building and training of junior team members."
+                ],
+                qualifications: [
+                    "Minimum 4+ years of relevant IT Audit / Assurance experience.",
+                    "B.Tech/B.E. in Computer Science or IT preferred.",
+                    "Strong knowledge of IT security, infrastructure and ITGC.",
+                    "Experience in application and ERP security audits.",
+                    "ISO 27001 Lead Auditor or relevant certifications preferred.",
+                    "Strong analytical and communication skills."
+                ]
+            },
+            {
+                id: 4,
+                title: "AR/AP",
+                location: "Chennai",
+                positions: "6 Positions",
+                aboutHeading: "Job Summary",
+                summary: "Responsible for supporting Accounts Receivable and Accounts Payable activities, including invoice processing, reconciliation, payment follow-up and accounting operations.",
+                responsibilities: [
+                    "Handle day-to-day AR/AP accounting activities.",
+                    "Process and verify invoices and supporting documents.",
+                    "Perform vendor and customer account reconciliations.",
+                    "Follow up on outstanding receivables and payment status.",
+                    "Support invoice matching and payment processing.",
+                    "Identify and resolve invoice discrepancies and payment issues.",
+                    "Maintain ageing reports and prepare MIS reports.",
+                    "Coordinate with internal teams, customers and vendors.",
+                    "Support month-end closing and accounting activities.",
+                    "Ensure accuracy and compliance in accounting transactions."
+                ],
+                qualifications: [
+                    "Bachelor's degree in Commerce, Accounting, Finance or related field.",
+                    "Relevant experience in AR/AP or accounting operations.",
+                    "Good knowledge of accounting principles and reconciliations.",
+                    "Working knowledge of ERP systems such as SAP/Tally/Oracle preferred.",
+                    "Good MS Excel skills.",
+                    "Strong analytical and communication skills."
+                ]
+            },
+            {
+                id: 5,
+                title: "Qualified CA – Chennai",
+                location: "Chennai",
+                positions: "4 Positions",
+                aboutHeading: "Job Summary",
+                summary: "Responsible for accounting, financial reporting, taxation, audit, compliance and other finance-related activities.",
+                responsibilities: [
+                    "Handle accounting and financial reporting activities.",
+                    "Review and analyse financial statements and accounting records.",
+                    "Support statutory and internal audits.",
+                    "Handle taxation and regulatory compliance.",
+                    "Prepare MIS and financial reports.",
+                    "Perform account reconciliations and review journal entries.",
+                    "Coordinate with internal teams, auditors and stakeholders.",
+                    "Support finance process improvements."
+                ],
+                qualifications: [
+                    "Qualified Chartered Accountant (CA).",
+                    "Relevant experience in accounting, audit, taxation or finance.",
+                    "Strong knowledge of accounting principles and financial reporting.",
+                    "Good knowledge of MS Excel and ERP systems.",
+                    "Strong analytical and communication skills."
+                ]
+            },
+            {
+                id: 6,
+                title: "Qualified CA – Bangalore",
+                location: "Bangalore",
+                positions: "2 Positions",
+                aboutHeading: "Job Summary",
+                summary: "Responsible for financial accounting, reporting, taxation, audit support and compliance activities.",
+                responsibilities: [
+                    "Manage accounting and financial reporting activities.",
+                    "Review financial statements and reconciliations.",
+                    "Support statutory and internal audits.",
+                    "Handle tax and regulatory compliance.",
+                    "Prepare MIS and management reports.",
+                    "Review accounting entries and financial data.",
+                    "Coordinate with auditors and cross-functional teams.",
+                    "Identify and resolve accounting and compliance issues."
+                ],
+                qualifications: [
+                    "Qualified Chartered Accountant (CA).",
+                    "Relevant experience in finance, accounting, audit or taxation.",
+                    "Strong accounting and analytical skills.",
+                    "Good knowledge of Excel and ERP systems.",
+                    "Good communication and stakeholder management skills."
+                ]
+            },
+            {
+                id: 7,
+                title: "Semi-Qualified CA – Audit Assurance",
+                location: "Chennai",
+                positions: "2 Positions",
+                aboutHeading: "Job Summary",
+                summary: "Support audit and assurance assignments, including financial statement reviews, control testing, documentation and audit reporting.",
+                responsibilities: [
+                    "Assist in statutory and internal audit assignments.",
+                    "Perform audit testing and verification of financial records.",
+                    "Review accounting documents and supporting evidence.",
+                    "Perform reconciliations and analytical procedures.",
+                    "Identify audit observations and control gaps.",
+                    "Prepare audit working papers and documentation.",
+                    "Coordinate with clients and internal teams for information and evidence.",
+                    "Support preparation of audit reports and recommendations."
+                ],
+                qualifications: [
+                    "CA Inter / Semi-Qualified CA.",
+                    "Relevant audit or assurance experience preferred.",
+                    "Good knowledge of accounting and auditing standards.",
+                    "Strong analytical and documentation skills.",
+                    "Good communication and client-handling skills.",
+                    "Working knowledge of MS Excel."
+                ]
+            },
+            {
+                id: 8,
+                title: "Qualified CA – Pune",
+                location: "Pune",
+                positions: "1 Position",
+                aboutHeading: "Job Summary",
+                summary: "Responsible for accounting, financial reporting, taxation, audit, compliance and other finance-related activities.",
+                responsibilities: [
+                    "Handle accounting and financial reporting.",
+                    "Review financial statements and reconciliations.",
+                    "Support statutory and internal audits.",
+                    "Manage taxation and regulatory compliance.",
+                    "Prepare MIS and management reports.",
+                    "Review financial data and accounting entries.",
+                    "Coordinate with auditors and internal stakeholders.",
+                    "Support process improvements and ensure compliance."
+                ],
+                qualifications: [
+                    "Qualified Chartered Accountant (CA).",
+                    "Relevant experience in finance, accounting, audit or taxation.",
+                    "Strong knowledge of accounting and taxation.",
+                    "Good knowledge of MS Excel and ERP systems.",
+                    "Strong analytical and communication skills."
+                ]
+            },
+            {
+                id: 9,
+                title: "Zoho Consultant",
+                location: "Chennai",
+                employmentType: "Full-Time",
+                experience: "2-3 Years",
+                department: "Technology / Business Applications",
+                aboutHeading: "About the Role",
+                summary: "We are looking for a Zoho Consultant with 2-3 years of relevant experience to join our technology team. The candidate will be responsible for understanding business requirements, designing and implementing Zoho solutions, configuring applications, and supporting clients in optimizing their business processes through the Zoho platform.",
+                responsibilities: [
+                    "Understand business requirements and translate them into effective Zoho-based solutions.",
+                    "Configure and customize Zoho applications based on client requirements.",
+                    "Work on Zoho CRM, Zoho Creator, Zoho Books, Zoho Desk, Zoho People, Zoho Analytics and other relevant Zoho applications.",
+                    "Design workflows, approval processes, automation, custom modules, reports and dashboards.",
+                    "Develop and maintain Zoho Creator applications, Deluge scripts and custom functions.",
+                    "Integrate Zoho applications with third-party platforms and APIs.",
+                    "Conduct requirement gathering, process mapping, solution design and implementation.",
+                    "Perform application testing, troubleshooting and issue resolution.",
+                    "Prepare functional/technical documentation, user guides and solution specifications.",
+                    "Conduct user training and provide post-implementation support.",
+                    "Collaborate with developers, project managers and business teams to deliver projects within timelines.",
+                    "Identify opportunities for process automation and recommend suitable Zoho solutions.",
+                    "Stay updated with new Zoho features, products and platform capabilities."
+                ],
+                requiredSkills: [
+                    "2–3 years of hands-on experience in Zoho implementation / consulting.",
+                    "Strong understanding of Zoho CRM and/or Zoho Creator.",
+                    "Working knowledge of Deluge scripting.",
+                    "Experience in workflow automation, custom functions and application configuration.",
+                    "Understanding of REST APIs and third-party integrations.",
+                    "Good understanding of business processes and requirement gathering.",
+                    "Strong analytical and problem-solving skills.",
+                    "Good communication and client-handling skills.",
+                    "Ability to work independently as well as collaboratively with cross-functional teams."
+                ],
+                goodToHave: [
+                    "Zoho certifications.",
+                    "Experience with Zoho Analytics, Zoho Books, Zoho Desk or Zoho People.",
+                    "Experience in implementing end-to-end Zoho solutions.",
+                    "Exposure to SQL, JavaScript or other programming languages.",
+                    "Experience working with multiple clients or consulting projects."
+                ],
+                education: "Bachelor's degree in Computer Science, Information Technology, Engineering, Business Administration or a related field.",
+                whatWeOffer: [
+                    "Opportunity to work on diverse Zoho implementation and automation projects.",
+                    "Exposure to multiple business domains and client environments.",
+                    "Opportunities to work on emerging technologies and business automation.",
+                    "Collaborative and growth-oriented work environment."
+                ]
+            }
+        ];
+
+        let activeJobData = null;
+
+        window.openJobModal = function(jobId) {
+            const job = STHIROS_JOBS.find(j => j.id === jobId);
+            if (!job) return;
+            activeJobData = job;
+
+            const modal = document.getElementById('jobDetailsModal');
+            const titleEl = document.getElementById('modalJobTitle');
+            const bodyEl = document.getElementById('modalJobBody');
+
+            titleEl.textContent = job.title;
+
+            // Body starts with Meta details (Location, Positions, Employment Type, Required Experience, Department)
+            let bodyHTML = '<div class="job-modal-meta-list">';
+            if (job.location) {
+                bodyHTML += `
+                    <div class="job-modal-meta-item">
+                        <span class="job-modal-meta-label">Location:</span>
+                        <span class="job-modal-meta-value">${job.location}</span>
+                    </div>`;
+            }
+            if (job.positions) {
+                bodyHTML += `
+                    <div class="job-modal-meta-item">
+                        <span class="job-modal-meta-label">Positions:</span>
+                        <span class="job-modal-meta-value">${job.positions}</span>
+                    </div>`;
+            }
+            if (job.employmentType) {
+                bodyHTML += `
+                    <div class="job-modal-meta-item">
+                        <span class="job-modal-meta-label">Employment Type:</span>
+                        <span class="job-modal-meta-value">${job.employmentType}</span>
+                    </div>`;
+            }
+            if (job.experience) {
+                bodyHTML += `
+                    <div class="job-modal-meta-item">
+                        <span class="job-modal-meta-label">Required Work Experience:</span>
+                        <span class="job-modal-meta-value">${job.experience}</span>
+                    </div>`;
+            }
+            if (job.department) {
+                bodyHTML += `
+                    <div class="job-modal-meta-item">
+                        <span class="job-modal-meta-label">Department:</span>
+                        <span class="job-modal-meta-value">${job.department}</span>
+                    </div>`;
+            }
+            bodyHTML += '</div>';
+
+            // About the Role / Job Summary
+            if (job.summary) {
+                const heading = job.aboutHeading || 'Job Summary';
+                bodyHTML += `
+                    <div class="job-modal-section">
+                        <h4>${heading}</h4>
+                        <p>${job.summary}</p>
+                    </div>
+                `;
+            }
+
+            // Key Responsibilities
+            if (job.responsibilities && job.responsibilities.length) {
+                bodyHTML += `
+                    <div class="job-modal-section">
+                        <h4>Key Responsibilities</h4>
+                        <ul class="job-modal-list">
+                            ${job.responsibilities.map(r => `<li>${r}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+
+            // Required Skills (if present, e.g. Zoho Consultant)
+            if (job.requiredSkills && job.requiredSkills.length) {
+                bodyHTML += `
+                    <div class="job-modal-section">
+                        <h4>Required Skills</h4>
+                        <ul class="job-modal-list">
+                            ${job.requiredSkills.map(s => `<li>${s}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+
+            // Good to Have (if present, e.g. Zoho Consultant)
+            if (job.goodToHave && job.goodToHave.length) {
+                bodyHTML += `
+                    <div class="job-modal-section">
+                        <h4>Good to Have</h4>
+                        <ul class="job-modal-list">
+                            ${job.goodToHave.map(g => `<li>${g}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+
+            // Qualification & Experience
+            if (job.qualifications && job.qualifications.length) {
+                bodyHTML += `
+                    <div class="job-modal-section">
+                        <h4>Qualification &amp; Experience</h4>
+                        <ul class="job-modal-list">
+                            ${job.qualifications.map(q => `<li>${q}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+
+            // Education (if present, e.g. Zoho Consultant)
+            if (job.education) {
+                bodyHTML += `
+                    <div class="job-modal-section">
+                        <h4>Education</h4>
+                        <p>${job.education}</p>
+                    </div>
+                `;
+            }
+
+            // What We Offer (if present, e.g. Zoho Consultant)
+            if (job.whatWeOffer && job.whatWeOffer.length) {
+                bodyHTML += `
+                    <div class="job-modal-section">
+                        <h4>What We Offer</h4>
+                        <ul class="job-modal-list">
+                            ${job.whatWeOffer.map(o => `<li>${o}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+            bodyEl.innerHTML = bodyHTML;
+            bodyEl.scrollTop = 0;
+
+            const applyActionBtn = document.getElementById('modalApplyAction');
+            if (applyActionBtn) {
+                applyActionBtn.href = `mailto:talent@sthiros.com?subject=Application for ${encodeURIComponent(job.title)}`;
+            }
+
+            modal.classList.add('active');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        };
+
+        window.closeJobModal = function() {
+            const modal = document.getElementById('jobDetailsModal');
+            if (!modal) return;
+            modal.classList.remove('active');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        };
+
         document.addEventListener('DOMContentLoaded', () => {
+            // Modal interactions
+            const modal = document.getElementById('jobDetailsModal');
+            const closeBtn = document.getElementById('jobModalClose');
+            const applyActionBtn = document.getElementById('modalApplyAction');
+
+            if (closeBtn) {
+                closeBtn.addEventListener('click', closeJobModal);
+            }
+
+            if (modal) {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        closeJobModal();
+                    }
+                });
+            }
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    closeJobModal();
+                }
+            });
+
+            if (applyActionBtn) {
+                applyActionBtn.addEventListener('click', () => {
+                    if (activeJobData) {
+                        const roleInput = document.getElementById('workRoleInput');
+                        if (roleInput) {
+                            roleInput.value = activeJobData.title;
+                        }
+                    }
+                    setTimeout(closeJobModal, 300);
+                });
+            }
+
+            // Department Dropdown
             const dropdown = document.getElementById('departmentDropdown');
             if (dropdown) {
                 const selected = dropdown.querySelector('.dropdown-selected');
