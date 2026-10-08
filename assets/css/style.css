@@ -4564,6 +4564,13 @@ mark.sthiros-search-match.is-active {
   gap: 5px;
 }
 
+.menu-content a,
+.menu-content a:focus,
+.menu-content a:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
 .nav-link {
   font-family: 'Pacaembu', sans-serif;
   font-size: 1.5rem;
@@ -8617,10 +8624,18 @@ body.light-mode .footer-menu li {
     font-size: 0.95rem !important;
     color: #EF4623 !important;
   }
+  .menu-content .nav-item-dropdown.open > .nested-sub-nav {
+    margin-top: 10px !important;
+  }
   .menu-content .nested-sub-nav-link {
     padding-left: 15px !important;
     margin-bottom: 6px !important;
     line-height: 1.4 !important;
+    font-size: 0.95rem !important;
+  }
+  .menu-content .nested-sub-nav-link:hover {
+    font-size: 0.95rem !important;
+    color: #EF4623 !important;
   }
 }
 
