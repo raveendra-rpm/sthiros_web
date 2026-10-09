@@ -4827,6 +4827,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         container.style.justifyContent = 'flex-start';
         container.style.flexWrap = 'nowrap';
+        container.style.flexDirection = 'row';
         container.style.width = 'max-content';
         container.style.maxWidth = 'none';
         
@@ -4840,7 +4841,9 @@ document.addEventListener('DOMContentLoaded', () => {
             container.style.padding = '0';
             container.style.gap = gap + 'px';
             
-            const viewportWidth = viewport.clientWidth - (isMobile ? 40 : 80);
+            let baseWidth = viewport.clientWidth;
+            if (!baseWidth || baseWidth <= 0) baseWidth = Math.min(window.innerWidth, 1440);
+            const viewportWidth = baseWidth - (isMobile ? 40 : 80);
             const cardWidth = isMobile ? viewportWidth : (viewportWidth - (gap * 2)) / 3;
             
             Array.from(container.children).forEach(card => {

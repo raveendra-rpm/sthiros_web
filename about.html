@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -35,7 +35,7 @@
             color: #EC2D26 !important;
         }
 
-        /* Hidden on desktop — shown only inside the 767px mobile media query */
+        /* Hidden on desktop â€” shown only inside the 767px mobile media query */
         .leader-connector-svg,
         .world-building-svg-mobile,
         .vm-mobile-svgs {
@@ -1352,7 +1352,7 @@
 
         @media (max-width: 992px) {
 
-            /* ── Stack cards vertically ── */
+            /* â”€â”€ Stack cards vertically â”€â”€ */
             .vm-container {
                 flex-direction: column;
                 height: auto;
@@ -1360,7 +1360,7 @@
                 margin-top: 30px;
             }
 
-            /* ── All cards: default collapsed bar ── */
+            /* â”€â”€ All cards: default collapsed bar â”€â”€ */
             .vm-card {
                 flex: none !important;
                 width: 100% !important;
@@ -1370,14 +1370,14 @@
                 overflow: hidden !important;
             }
 
-            /* ── Active card expands — overflow visible so SVGs render ── */
+            /* â”€â”€ Active card expands â€” overflow visible so SVGs render â”€â”€ */
             .vm-card.active {
                 height: 360px !important;
                 min-height: 360px !important;
                 overflow: visible !important;
             }
 
-            /* ── Title: horizontal left-aligned inside collapsed bar ── */
+            /* â”€â”€ Title: horizontal left-aligned inside collapsed bar â”€â”€ */
             .vm-dynamic-title {
                 top: 50% !important;
                 left: 24px !important;
@@ -1387,7 +1387,7 @@
                 white-space: nowrap;
             }
 
-            /* ── Active card: title anchors to top ── */
+            /* â”€â”€ Active card: title anchors to top â”€â”€ */
             .vm-card.active .vm-dynamic-title,
             .vm-card.vision-card.active .vm-dynamic-title,
             .vm-card.mission-card.active .vm-dynamic-title {
@@ -1398,7 +1398,7 @@
                 gap: 0 !important;
             }
 
-            /* ── Expanded content sits below title ── */
+            /* â”€â”€ Expanded content sits below title â”€â”€ */
             .vm-expanded {
                 flex-direction: column !important;
                 padding: 76px 24px 24px !important;
@@ -1424,13 +1424,13 @@
                 line-height: 1.6 !important;
             }
 
-            /* ── Hide desktop decorative SVGs ── */
+            /* â”€â”€ Hide desktop decorative SVGs â”€â”€ */
             .vmcardcontentsvg,
             .visioncardcontentsvg {
                 display: none !important;
             }
 
-            /* ── Mobile SVGs wrapper for active card ── */
+            /* â”€â”€ Mobile SVGs wrapper for active card â”€â”€ */
             .vm-card:not(.active) .vm-mobile-svgs {
                 display: none !important;
             }
@@ -1446,7 +1446,7 @@
                 border-radius: 16px !important;
             }
 
-            /* ── Top SVG: anchor to top-right, centered top entry capped at original size ── */
+            /* â”€â”€ Top SVG: anchor to top-right, centered top entry capped at original size â”€â”€ */
             .vm-mobile-svg-top {
                 position: absolute !important;
                 top: 0 !important;
@@ -1464,7 +1464,7 @@
                 height: auto !important;
             }
 
-            /* ── Bottom SVG: anchor to bottom-right, centered bottom exit capped at original size ── */
+            /* â”€â”€ Bottom SVG: anchor to bottom-right, centered bottom exit capped at original size â”€â”€ */
             .vm-mobile-svg-bottom {
                 position: absolute !important;
                 bottom: 0 !important;
@@ -1484,13 +1484,13 @@
         }
 
 
-        /* ═══════════════════════════════════════════
-           MOBILE LAYOUT — max-width: 768px (768px and below)
+        /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+           MOBILE LAYOUT â€” max-width: 768px (768px and below)
            Desktop layout is completely untouched.
-           ═══════════════════════════════════════════ */
+           â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
         @media (max-width: 768px) {
 
-            /* ── Hero ── */
+            /* â”€â”€ Hero â”€â”€ */
             .about-hero-section {
                 height: auto;
                 min-height: 65vh;
@@ -1539,7 +1539,7 @@
                 font-family: 'Quicksand', sans-serif !important;
             }
 
-            /* ── Hero bottom SVG: as per uploaded sample image & centered end-point ── */
+            /* â”€â”€ Hero bottom SVG: as per uploaded sample image & centered end-point â”€â”€ */
             .herobtmsvg {
                 width: 110vw !important;
                 max-width: none !important;
@@ -1560,7 +1560,7 @@
                 overflow: visible !important;
             }
 
-            /* ── The World We Are Building ── */
+            /* â”€â”€ The World We Are Building â”€â”€ */
             #Theworldbuilding {
                 padding: 50px 20px 30px;
                 margin-top: 0 !important;
@@ -1578,7 +1578,7 @@
                 padding: 0 4px;
             }
 
-            /* ── Vision / Mission cards ── */
+            /* â”€â”€ Vision / Mission cards â”€â”€ */
             .vm-container {
                 flex-direction: column !important;
                 height: auto !important;
@@ -1586,7 +1586,7 @@
                 margin-top: 24px !important;
             }
 
-            /* ── Collapsed state: 2-class selectors beat the 992px specificity ── */
+            /* â”€â”€ Collapsed state: 2-class selectors beat the 992px specificity â”€â”€ */
             .vm-card.vision-card,
             .vm-card.mission-card {
                 flex: none !important;
@@ -1607,7 +1607,7 @@
                 overflow: hidden !important;
             }
 
-            /* Active card — taller to fit title + desc cleanly */
+            /* Active card â€” taller to fit title + desc cleanly */
             .vm-card.active,
             .vm-card.vision-card.active,
             .vm-card.mission-card.active {
@@ -1615,7 +1615,7 @@
                 min-height: 380px !important;
             }
 
-            /* Title inside card — centered horizontally on collapsed bar */
+            /* Title inside card â€” centered horizontally on collapsed bar */
             .vm-dynamic-title {
                 top: 50% !important;
                 left: 22px !important;
@@ -1643,7 +1643,7 @@
                 display: none !important;
             }
 
-            /* Mobile-only SVGs for opened VM cards — fixed anchor positioning */
+            /* Mobile-only SVGs for opened VM cards â€” fixed anchor positioning */
             .vm-card:not(.active) .vm-mobile-svgs {
                 display: none !important;
             }
@@ -1694,7 +1694,7 @@
                 height: auto !important;
             }
 
-            /* Expanded content area — pad-top clears the title text above */
+            /* Expanded content area â€” pad-top clears the title text above */
             .vm-expanded {
                 flex-direction: column !important;
                 padding: 74px 22px 22px !important;
@@ -1717,7 +1717,7 @@
                 line-height: 1.6 !important;
             }
 
-            /* ── Meet The Leaders ── */
+            /* â”€â”€ Meet The Leaders â”€â”€ */
             .meettheleadersdiv {
                 padding: 50px 20px 30px;
             }
@@ -1741,7 +1741,7 @@
                 position: relative;
             }
 
-            /* leader-glow is 130% wide — shrink + re-center it on mobile */
+            /* leader-glow is 130% wide â€” shrink + re-center it on mobile */
             .leader-glow {
                 width: 80%;
                 height: 80%;
@@ -1788,7 +1788,7 @@
                 text-align: justify !important;
             }
 
-            /* Mobile SVG connector — hidden on desktop, centered on mobile */
+            /* Mobile SVG connector â€” hidden on desktop, centered on mobile */
             .leader-connector-svg {
                 display: block !important;
                 margin: 0 auto !important;
@@ -1801,7 +1801,7 @@
                 text-align: center !important;
             }
 
-            /* ── Meet Sthiros / Team Slider: horizontal snap-scroll carousel ── */
+            /* â”€â”€ Meet Sthiros / Team Slider: horizontal snap-scroll carousel â”€â”€ */
             .meetsthirossec {
                 margin-top: 0 !important;
                 padding: 40px 0 30px !important;
@@ -1866,7 +1866,7 @@
                 z-index: auto !important;
             }
 
-            /* Override JS inline style: position absolute → relative */
+            /* Override JS inline style: position absolute â†’ relative */
             .team-card .team-card-content {
                 position: relative !important;
                 top: auto !important;
@@ -1888,7 +1888,7 @@
                 flex-shrink: 0 !important;
             }
 
-            /* Active card photo — taller, same width */
+            /* Active card photo â€” taller, same width */
             .team-card.active .team-card-img {
                 height: 430px !important;
             }
@@ -1945,7 +1945,7 @@
                 display: none !important;
             }
 
-            /* ── Ready When You Are ── */
+            /* â”€â”€ Ready When You Are â”€â”€ */
             #readywhenyouaresec {
                 margin-top: 50px !important;
                 padding: 40px 0 60px !important;
@@ -1982,7 +1982,7 @@
                 display: block !important;
             }
 
-            /* The CTA card — increased height on mobile */
+            /* The CTA card â€” increased height on mobile */
             .aboutreadywhenyu {
                 position: relative !important;
                 left: auto !important;
@@ -2051,7 +2051,7 @@
                 color: #ffffff !important;
             }
 
-            /* Mobile Bottom SVG — positioned close to the card */
+            /* Mobile Bottom SVG â€” positioned close to the card */
             .rwy-mobile-svg-bottom {
                 display: flex !important;
                 justify-content: flex-end !important;
@@ -2071,7 +2071,7 @@
                 margin-left: auto !important;
             }
 
-            /* ── Footer ── */
+            /* â”€â”€ Footer â”€â”€ */
             .site-footer {
                 padding: 40px 20px 0 !important;
             }
@@ -2114,16 +2114,16 @@
                 font-size: 12px !important;
             }
 
-            /* ── Shared: prevent overflow on small screens ── */
+            /* â”€â”€ Shared: prevent overflow on small screens â”€â”€ */
             body {
                 overflow-x: hidden;
             }
         }
 
-        /* ═══════════════════════════════════════════
-           MOBILE EXTRA SMALL — max-width: 500px
+        /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+           MOBILE EXTRA SMALL â€” max-width: 500px
            Shift Mission & Vision card text up away from bottom SVG
-           ═══════════════════════════════════════════ */
+           â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
         @media (max-width: 500px) {
             #Theworldbuilding .vm-card .vm-expanded,
             #Theworldbuilding .vm-card.active .vm-expanded,
@@ -2193,7 +2193,7 @@
         })();
     </script>
     <!-- END PASSWORD GATE -->
-    <!-- ═══════════════ SITE HEADER ═══════════════ -->
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• SITE HEADER â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
     <header class="site-header">
         <div class="header-left">
             <a href="index.html" class="logo-link">
@@ -2371,7 +2371,7 @@
         </script>
     </header>
 
-    <!-- ═══════════════ FULL SCREEN MENU OVERLAY ═══════════════ -->
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FULL SCREEN MENU OVERLAY â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
     <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
         <div class="menu-content">
             <nav class="main-nav">
@@ -3428,11 +3428,11 @@
         <div class="footer-massive-logo-section">
             <img src="assets/images/sthiros_logo.png" alt="Sthiros" class="massive-logo massive-logo-dark">
             <img src="assets/images/sthiroslogodark.png" alt="Sthiros" class="massive-logo massive-logo-light">
-            <div class="copyright-text"><span class="copy-sym">©</span> 2026</div>
+            <div class="copyright-text"><span class="copy-sym">&copy;</span> 2026</div>
         </div>
     </footer>
 
-    <!-- ═══════════════ SCRIPTS ═══════════════ -->
+    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• SCRIPTS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
     <!-- GSAP, ScrollTrigger, Anime.js, Lenis (smooth scroll) & Three.js (WebGL) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -3715,7 +3715,7 @@
 
             initTeam();
 
-            // ── Mobile only: track active card on scroll & tap ──
+            // â”€â”€ Mobile only: track active card on scroll & tap â”€â”€
             if (window.innerWidth < 768 && teamSlider) {
                 const allCards = teamSlider.querySelectorAll('.team-card');
 
@@ -3896,3 +3896,5 @@
 </body>
 
 </html>
+
+

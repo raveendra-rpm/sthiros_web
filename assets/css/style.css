@@ -8792,8 +8792,3 @@ mark.sthiros-search-match.is-active {
   outline: none !important;
   -webkit-tap-highlight-color: transparent;
 }
-
-/* Hide Related Case Studies globally as requested */
-#relatedcasestudiessec {
-  display: none !important;
-}
