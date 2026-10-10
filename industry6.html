@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PUBLIC SECTOR & GOVERNMENT · STHIROS</title>
+    <title>PUBLIC SECTOR & GOVERNMENT - STHIROS</title>
     <meta name="description" content="We build financial systems that clear audit before the auditor asks." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -63,7 +63,7 @@
         }
 
         body.light-mode .service-list li::before {
-            color: #333333;
+            color: #EC2D26;
         }
 
         /* Buttons */
@@ -720,10 +720,12 @@
         }
 
         .service-list li::before {
-            content: "â€¢";
+            content: "\2022";
             position: absolute;
             left: -15px;
-            color: #888;
+            color: #EC2D26;
+            font-size: 16px;
+            line-height: 1;
         }
 
         @media (max-width: 768px) {
@@ -3465,7 +3467,7 @@
     </section>
 
     <!-- Who are you?
-Weâ€™ll show you the right problems. -->
+We'll show you the right problems. -->
     <section id="Whotherightproblemssec">
         <div class="wtrp-content">
             <h2 class="wtrp-heading">Who are you?<br>We'll show you the<br>right <span>problems.</span></h2>
@@ -3507,7 +3509,7 @@ Weâ€™ll show you the right problems. -->
                                 <h3>The gap between sanction and delivery, closed</h3>
                                 <p>Money moving and money working turn out to be two different questions, and most
                                     schemes are only answering the first one. The AOP has targets; the UC has a number,
-                                    and below the state PMU the actual work â€” who does what, by when, at which block â€”
+                                    and below the state PMU the actual work — who does what, by when, at which block —
                                     was never written down clearly enough to hold anyone to it. We build that layer:
                                     district-level work breakdown, a PMU model that owns outcomes rather than
                                     expenditure, and a reporting system that tracks physical progress instead of just
@@ -3575,12 +3577,12 @@ Weâ€™ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Beneficiary data that stays honest after intake</h3>
-                                <p>DBT solved the obvious fraud â€” the ghost beneficiary is mostly gone. What's left is
+                                <p>DBT solved the obvious fraud — the ghost beneficiary is mostly gone. What's left is
                                     quieter: a dormant account still drawing transfers, an Aadhaar seeding gap nobody's
                                     chased down, a beneficiary who migrated years ago and whose entry never got the
-                                    memo. We rebuild the identification layer â€” deduplication, field verification, and
+                                    memo. We rebuild the identification layer — deduplication, field verification, and
                                     an audit system that keeps checking the database instead of trusting it once at
-                                    intake â€” so leakage and exclusion both shrink instead of just changing shape.</p>
+                                    intake — so leakage and exclusion both shrink instead of just changing shape.</p>
                                 <button class="fix-btn">Fix my beneficiary targeting</button>
                             </div>
                             <div class="solution-sidebar">
@@ -3633,8 +3635,8 @@ Weâ€™ll show you the right problems. -->
                             <div class="problem-text">Real-time visibility of programme delivery across states is
                                 inadequate</div>
                             <div class="problem-desc">I'm managing a scheme across 28 states with monthly reports that
-                                are already stale. I need live programme intelligence â€” physical progress, fund flows,
-                                and outcome indicators â€” not last month's data.</div>
+                                are already stale. I need live programme intelligence — physical progress, fund flows,
+                                and outcome indicators — not last month's data.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -3648,7 +3650,7 @@ Weâ€™ll show you the right problems. -->
                                     describing a different month. Physical progress, fund flows, beneficiary coverage
                                     and grievance signals all move faster than that cycle allows. We pull the state MIS
                                     feeds into one place, standardise what a state actually has to report, and build the
-                                    dashboard that flags a lagging district before the quarterly review does â€” so the
+                                    dashboard that flags a lagging district before the quarterly review does — so the
                                     ministry is looking at this month, not the one before it.</p>
                                 <button class="fix-btn">Build my programme intelligence</button>
                             </div>
@@ -3702,7 +3704,7 @@ Weâ€™ll show you the right problems. -->
                             <div class="problem-text">DPR quality and project readiness before sanction needs
                                 improvement</div>
                             <div class="problem-desc">Projects are being sanctioned on DPRs that aren't
-                                implementation-ready â€” land not acquired, approvals pending, cost estimates not
+                                implementation-ready — land not acquired, approvals pending, cost estimates not
                                 validated. Delays and cost overruns follow predictably.</div>
                         </div>
                         <div class="problem-arrow">
@@ -3714,7 +3716,7 @@ Weâ€™ll show you the right problems. -->
                             <div class="solution-main">
                                 <h3>DPR readiness, checked before the sanction, not after</h3>
                                 <p>A DPR that hasn't had its land, its clearances or its cost estimate actually checked
-                                    is a project that hasn't really been sanctioned â€” it's been scheduled to fail later
+                                    is a project that hasn't really been sanctioned — it's been scheduled to fail later
                                     instead of now. We build the pre-sanction checklist that catches this before the
                                     money moves: what needs verifying, a review process that can't be talked around, and
                                     a standard DPR format that makes a gap visible to whoever's approving it, not just
@@ -3771,7 +3773,7 @@ Weâ€™ll show you the right problems. -->
                             <div class="problem-text">I want to use AI for scheme monitoring and outcome measurement
                             </div>
                             <div class="problem-desc">AI for beneficiary verification, leakage detection, outcome
-                                measurement, and grievance pattern analysis â€” the use cases are clear but the data
+                                measurement, and grievance pattern analysis — the use cases are clear but the data
                                 architecture and implementation pathway within government systems aren't.</div>
                         </div>
                         <div class="problem-arrow">
@@ -3784,7 +3786,7 @@ Weâ€™ll show you the right problems. -->
                                 <h3>AI for scheme delivery, built inside NIC's walls</h3>
                                 <p>Satellite imagery that verifies physical progress without a site visit, deduplication
                                     that catches the beneficiary listed twice, grievance analysis that spots the pattern
-                                    behind a thousand individual complaints â€” the use cases for AI in scheme delivery
+                                    behind a thousand individual complaints — the use cases for AI in scheme delivery
                                     are well understood. The harder part is building it inside NIC infrastructure and
                                     government data governance rather than around it. We do that part, which is the part
                                     that actually ships.</p>
@@ -3934,7 +3936,7 @@ Weâ€™ll show you the right problems. -->
                                     field staff who got the scheme brief but not the scheme training, and a monitoring
                                     system that notices the shortfall around the time the implementation window closes.
                                     We run the last-mile diagnostic to find the specific blocks and bottlenecks, then
-                                    build the fix â€” concentrated handholding, simpler field reporting, and an
+                                    build the fix — concentrated handholding, simpler field reporting, and an
                                     early-warning flag that catches a lagging block while there's still time to act.</p>
                                 <button class="fix-btn">Accelerate my last-mile delivery</button>
                             </div>
@@ -4001,8 +4003,8 @@ Weâ€™ll show you the right problems. -->
                                 <p>The year-end lapse has a rhythm to it: procurement eats the first half of the year,
                                     last year's UC backlog delays this year's release, and nobody built the
                                     implementation plan around how long money actually takes to spend. We redesign the
-                                    utilisation calendar â€” quarterly expenditure targets, a procurement schedule that
-                                    isn't an afterthought, a UC clearance push â€” and a monitoring view that shows the
+                                    utilisation calendar — quarterly expenditure targets, a procurement schedule that
+                                    isn't an afterthought, a UC clearance push — and a monitoring view that shows the
                                     trajectory in June, not the shortfall in March.</p>
                                 <button class="fix-btn">Fix my fund utilisation</button>
                             </div>
@@ -4056,8 +4058,8 @@ Weâ€™ll show you the right problems. -->
                             <div class="problem-text">Citizen grievance redressal is slow and repeat complaints are
                                 rising</div>
                             <div class="problem-desc">My CM Helpline and online grievance portal are receiving more
-                                complaints and resolving fewer. The pattern of complaints â€” by district, by scheme, by
-                                type â€” contains information I'm not using to fix the underlying issues.</div>
+                                complaints and resolving fewer. The pattern of complaints — by district, by scheme, by
+                                type — contains information I'm not using to fix the underlying issues.</div>
                         </div>
                         <div class="problem-arrow">
                             <img src="assets/images/industrypage/redarrowimg.png" alt="arrow">
@@ -4068,8 +4070,8 @@ Weâ€™ll show you the right problems. -->
                             <div class="solution-main">
                                 <h3>Grievances that get fixed, not just closed</h3>
                                 <p>Counting complaints and closing tickets isn't the same as fixing anything. When the
-                                    same grievance keeps arriving from the same block â€” a pipeline that keeps leaking, a
-                                    ration shop that keeps not opening â€” that's not a queue problem, it's a delivery
+                                    same grievance keeps arriving from the same block — a pipeline that keeps leaking, a
+                                    ration shop that keeps not opening — that's not a queue problem, it's a delivery
                                     failure wearing a grievance number. We rebuild the system to read for the pattern:
                                     root cause escalation, scheme-specific feedback loops, and a monitoring view that
                                     turns repeat complaints into a fix rather than a faster close time.</p>
@@ -4194,7 +4196,7 @@ Weâ€™ll show you the right problems. -->
                             <div class="problem-text">I want to build a state programme management and MIS capability
                             </div>
                             <div class="problem-desc">A unified MIS that tracks physical and financial progress across
-                                all schemes â€” both CSS and state schemes â€” with district-level drill-down and exception
+                                all schemes — both CSS and state schemes — with district-level drill-down and exception
                                 flagging. The architecture and platform need to be designed.</div>
                         </div>
                         <div class="problem-arrow">
@@ -4206,7 +4208,7 @@ Weâ€™ll show you the right problems. -->
                             <div class="solution-main">
                                 <h3>One MIS instead of twenty half-views</h3>
                                 <p>Fifty schemes, twenty departments, twenty different MIS platforms, each reporting on
-                                    its own schedule in its own format â€” asking for a single view of state programme
+                                    its own schedule in its own format — asking for a single view of state programme
                                     delivery from that setup is asking a lot. We design and build the one that actually
                                     gives it to you: a common data architecture, standard reporting templates every
                                     department can use, district-level drill-down, and exception flags that surface the
@@ -4276,7 +4278,7 @@ Weâ€™ll show you the right problems. -->
                             <div class="solution-main">
                                 <h3>What the good districts do, made transferable</h3>
                                 <p>The districts that implement well tend to be doing a handful of unglamorous things
-                                    right â€” a collector who treats scheme review as a real priority, a PMU that actually
+                                    right — a collector who treats scheme review as a real priority, a PMU that actually
                                     functions at block level, monitoring that happens monthly instead of on paper. It's
                                     a capacity and culture gap, not a funding one, which is good news, because it means
                                     it can be transferred. We find what the high performers are doing, document it
@@ -4356,7 +4358,7 @@ Weâ€™ll show you the right problems. -->
                                 <p>Underspent capex is usually a scheduling failure dressed up as a resourcing one. GeM
                                     procurement timelines, unfinished technical specifications, and tendering that
                                     starts later than it should all eat into the year the annual plan assumed you'd
-                                    have. We rebuild the deployment model â€” readiness gates before a project enters the
+                                    have. We rebuild the deployment model — readiness gates before a project enters the
                                     AOP, a procurement calendar that isn't wishful thinking, and a monitoring system
                                     that shows deployment against plan in real time, not at the quarterly board meeting.
                                 </p>
@@ -4495,7 +4497,7 @@ Weâ€™ll show you the right problems. -->
                                 <h3>Closing the gap to what private industry gets away with</h3>
                                 <p>The efficiency gap between a PSU and its private-sector comparison isn't usually one
                                     big problem. It's process waste, workforce deployed against the wrong tasks, assets
-                                    running under capacity, and procurement optimised for audit trail rather than cost â€”
+                                    running under capacity, and procurement optimised for audit trail rather than cost —
                                     all adding up quietly. We benchmark cost per unit against comparable entities, find
                                     where the waste actually sits, and build the improvement programme that works inside
                                     PSU governance rather than pretending that governance can be ignored.</p>
@@ -4551,7 +4553,7 @@ Weâ€™ll show you the right problems. -->
                             <div class="problem-text">CVC compliance and procurement integrity is a constant governance
                                 concern</div>
                             <div class="problem-desc">Procurement under GFR and CVC guidelines creates process overhead.
-                                Complaints and vigilance inquiries â€” even unfounded ones â€” consume senior management
+                                Complaints and vigilance inquiries — even unfounded ones — consume senior management
                                 bandwidth and slow decision-making.</div>
                         </div>
                         <div class="problem-arrow">
@@ -4562,7 +4564,7 @@ Weâ€™ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Procurement that's clean without being frozen</h3>
-                                <p>The fear of a CVC inquiry has become its own governance problem in a lot of PSUs â€”
+                                <p>The fear of a CVC inquiry has become its own governance problem in a lot of PSUs —
                                     decisions get avoided, documentation piles up defensively, and procurement starts
                                     optimising for looking clean rather than buying well. We build the governance
                                     framework that gives you real integrity: transparent process, documented rationale,
@@ -4619,7 +4621,7 @@ Weâ€™ll show you the right problems. -->
                         <div class="problem-left-content">
                             <div class="problem-text">Talent quality and skill levels are not keeping pace with the
                                 PSU's technical ambition</div>
-                            <div class="problem-desc">My organisation is taking on more technically complex mandates â€”
+                            <div class="problem-desc">My organisation is taking on more technically complex mandates —
                                 AI, digital systems, new energy. The workforce's technical capability isn't keeping pace
                                 and recruitment under government pay scales is constrained.</div>
                         </div>
@@ -4633,7 +4635,7 @@ Weâ€™ll show you the right problems. -->
                                 <h3>Building the workforce your new mandate actually needs</h3>
                                 <p>Take on an AI or new-energy mandate and you discover the workforce you have was hired
                                     for a different one, and government pay scales make hiring your way straight out of
-                                    it difficult. The fix is rarely just recruitment â€” it's targeted reskilling of the
+                                    it difficult. The fix is rarely just recruitment — it's targeted reskilling of the
                                     people already there, senior lateral hires where they're worth the exception, and
                                     partnerships with technical institutions that lend you capability without adding
                                     permanent headcount. We design that mix for the mandate you're actually running.</p>
@@ -4689,7 +4691,7 @@ Weâ€™ll show you the right problems. -->
                             <div class="problem-text">I want to build AI capability into PSU operations and service
                                 delivery</div>
                             <div class="problem-desc">AI for operational intelligence, predictive maintenance, customer
-                                service automation, and performance management â€” the use cases are clear but
+                                service automation, and performance management — the use cases are clear but
                                 implementation within PSU IT governance and security frameworks is complex.</div>
                         </div>
                         <div class="problem-arrow">
@@ -4700,7 +4702,7 @@ Weâ€™ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>AI that clears your IT governance, not around it</h3>
-                                <p>Predictive maintenance, service automation, operational dashboards â€” the value of AI
+                                <p>Predictive maintenance, service automation, operational dashboards — the value of AI
                                     in PSU operations isn't in question. What's harder is fitting it inside NIC or
                                     in-house data centres, security classification rules, GeM or MeitY-empanelled
                                     procurement, and the approval chain new technology has to survive. We design and
@@ -4765,7 +4767,7 @@ Weâ€™ll show you the right problems. -->
                 <div class="problem-item active" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">Own source revenue â€” property tax and user charges â€” is
+                            <div class="problem-text">Own source revenue — property tax and user charges — is
                                 significantly below potential</div>
                             <div class="problem-desc">My property tax collection is a fraction of demand. GIS-based
                                 property mapping is incomplete, assessment is outdated, and collection efficiency is
@@ -4905,7 +4907,7 @@ Weâ€™ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">Citizen service delivery â€” water, waste, grievances â€” isn't
+                            <div class="problem-text">Citizen service delivery — water, waste, grievances — isn't
                                 meeting expectations</div>
                             <div class="problem-desc">Water supply is intermittent, solid waste collection is
                                 unreliable, and citizen complaints take too long to resolve. The gap between what the
@@ -4991,7 +4993,7 @@ Weâ€™ll show you the right problems. -->
                                 <p>Water, roads, waste, tax, and permissions each on a different system, with different
                                     data standards and different reporting cycles, means the commissioner is making
                                     city-wide decisions off a fragment of the picture. We build the integration layer
-                                    underneath â€” a unified GIS base, a cross-departmental dashboard, and a real-time
+                                    underneath — a unified GIS base, a cross-departmental dashboard, and a real-time
                                     operations view that finally lets someone manage the city by exception instead of by
                                     whichever department called first.</p>
                                 <button class="fix-btn">Build my city intelligence</button>
@@ -5043,7 +5045,7 @@ Weâ€™ll show you the right problems. -->
                 <div class="problem-item" onclick="toggleProblem(this)">
                     <div class="problem-left">
                         <div class="problem-left-content">
-                            <div class="problem-text">Urban planning â€” master plan, land use, building permissions â€”
+                            <div class="problem-text">Urban planning — master plan, land use, building permissions —
                                 needs to be data-driven</div>
                             <div class="problem-desc">Building permission processing is manual and slow. Master plan
                                 violations are difficult to detect systematically. GIS data on land use, zoning, and
@@ -5115,7 +5117,7 @@ Weâ€™ll show you the right problems. -->
                             <div class="problem-text">I want AI for property tax intelligence and citizen service
                                 optimisation</div>
                             <div class="problem-desc">AI for satellite-based property identification, assessment gap
-                                detection, grievance prediction, and solid waste route optimisation â€” the applications
+                                detection, grievance prediction, and solid waste route optimisation — the applications
                                 are clear but the data infrastructure and implementation pathway need to be designed.
                             </div>
                         </div>
@@ -5128,7 +5130,7 @@ Weâ€™ll show you the right problems. -->
                             <div class="solution-main">
                                 <h3>AI that lands on a desk, not in a dashboard</h3>
                                 <p>Satellite-based property identification, assessment gap detection, waste route
-                                    optimisation, grievance prediction â€” these aren't experimental ideas, they've
+                                    optimisation, grievance prediction — these aren't experimental ideas, they've
                                     already worked in other Indian cities. We build them into your existing systems
                                     rather than as a standalone platform, so the outputs land on a city official's desk
                                     as something to act on, not another dashboard nobody logs into.</p>
@@ -5194,7 +5196,7 @@ Weâ€™ll show you the right problems. -->
                             <div class="problem-text">Indigenisation and Atmanirbhar Bharat targets aren't being met at
                                 programme level</div>
                             <div class="problem-desc">DAP 2020 indigenisation requirements, IDDM category procurement,
-                                and positive indigenisation lists â€” the policy framework is clear but the vendor
+                                and positive indigenisation lists — the policy framework is clear but the vendor
                                 development, ToT structuring, and programme management to deliver indigenisation
                                 outcomes aren't.</div>
                         </div>
@@ -5207,7 +5209,7 @@ Weâ€™ll show you the right problems. -->
                             <div class="solution-main">
                                 <h3>Turning the indigenisation list into a supplier who can build it</h3>
                                 <p>A positive indigenisation list doesn't build the industrial capability to manufacture
-                                    what's on it â€” that takes a vendor development programme, IDDM procurement
+                                    what's on it — that takes a vendor development programme, IDDM procurement
                                     structured correctly, and technology transfer that actually transfers something. We
                                     coordinate the piece that usually falls through the gap between the defence
                                     establishment, DRDO and the industrial base: the programme management that turns the
@@ -5275,7 +5277,7 @@ Weâ€™ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Keeping a long procurement process on its own schedule</h3>
-                                <p>Technical evaluation, field trials, CNC negotiation, approvals â€” defence acquisition
+                                <p>Technical evaluation, field trials, CNC negotiation, approvals — defence acquisition
                                     is long by design, and the programmes that still finish on time are the ones with
                                     someone dedicated to running the programme management, not just attending the
                                     meetings. We staff and design that layer: proactive evaluation management and an
@@ -5345,7 +5347,7 @@ Weâ€™ll show you the right problems. -->
                             <div class="solution-main">
                                 <h3>Finding where readiness is actually being lost</h3>
                                 <p>Readiness numbers usually trace back to the supply chain before they trace back to
-                                    the equipment â€” spares availability, depot maintenance timing, and documentation
+                                    the equipment — spares availability, depot maintenance timing, and documentation
                                     that a field technician can actually use. We run the readiness diagnostic to find
                                     where availability is actually being lost, then build the fix, including predictive
                                     maintenance wherever the platform already has the sensor data to support it.</p>
@@ -5400,8 +5402,8 @@ Weâ€™ll show you the right problems. -->
                         <div class="problem-left-content">
                             <div class="problem-text">Defence procurement procedure compliance creates process
                                 complexity</div>
-                            <div class="problem-desc">DPP and DAP compliance requirements â€” technical evaluation, field
-                                evaluation trials, CNC negotiations, and approval stages â€” require structured programme
+                            <div class="problem-desc">DPP and DAP compliance requirements — technical evaluation, field
+                                evaluation trials, CNC negotiations, and approval stages — require structured programme
                                 management that isn't always in place for concurrent programmes.</div>
                         </div>
                         <div class="problem-arrow">
@@ -5412,7 +5414,7 @@ Weâ€™ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Running concurrent acquisitions through the procedure, not around it</h3>
-                                <p>DPP and DAP compliance is a programme management discipline as much as a legal one â€”
+                                <p>DPP and DAP compliance is a programme management discipline as much as a legal one —
                                     the procedures exist for good reason, and running several acquisition programmes
                                     through them at once needs people who know the procedure, understand the technical
                                     domain, and can move a decision through the approval chain without losing months to
@@ -5469,7 +5471,7 @@ Weâ€™ll show you the right problems. -->
                             <div class="problem-text">I want to build AI capability for operational intelligence and
                                 maintenance management</div>
                             <div class="problem-desc">AI for predictive maintenance of defence platforms, logistics
-                                intelligence, training simulation, and operational data analysis â€” within the classified
+                                intelligence, training simulation, and operational data analysis — within the classified
                                 data and security architecture that defence systems require.</div>
                         </div>
                         <div class="problem-arrow">
@@ -5550,7 +5552,7 @@ Weâ€™ll show you the right problems. -->
                             <div class="solution-main">
                                 <h3>Building the supplier base the indigenisation policy assumes exists</h3>
                                 <p>A positive list and an IDDM category don't create a Tier-2 supplier base capable of
-                                    defence-grade manufacturing â€” that takes active vendor qualification, technology
+                                    defence-grade manufacturing — that takes active vendor qualification, technology
                                     transfer that's actually managed, and quality systems built to the standard the OEM
                                     requires. We coordinate that development between the defence establishment, the
                                     OEMs, and the MSME suppliers who need to get there.</p>
@@ -5629,7 +5631,7 @@ Weâ€™ll show you the right problems. -->
                                 <h3>Monitoring what the money was supposed to achieve</h3>
                                 <p>Tracking disbursement against plan tells you the money moved. It doesn't tell you
                                     whether beneficiary coverage improved, service got better, or the institution
-                                    actually got stronger â€” that needs a monitoring architecture built around the theory
+                                    actually got stronger — that needs a monitoring architecture built around the theory
                                     of change, not the cash flow. We redesign the system around outcome indicators and
                                     the data collection that can actually support them, so the portfolio review measures
                                     results, not just spend.</p>
@@ -5696,7 +5698,7 @@ Weâ€™ll show you the right problems. -->
                         <div class="problem-dropdown-content">
                             <div class="solution-main">
                                 <h3>Keeping implementation inside the commitment period</h3>
-                                <p>Development finance projects tend to slip at the same few points â€” procurement at the
+                                <p>Development finance projects tend to slip at the same few points — procurement at the
                                     implementing agency, counterpart funding that doesn't arrive on schedule,
                                     environmental and social compliance running long, and approvals nobody accounted
                                     for. We provide the implementation support that keeps a project moving through all
@@ -5893,7 +5895,7 @@ Weâ€™ll show you the right problems. -->
                                 measurement</div>
                             <div class="problem-desc">AI for early warning of project distress, beneficiary outcome
                                 tracking, climate risk assessment in infrastructure portfolios, and knowledge extraction
-                                from programme experience â€” the data exists but the analytical infrastructure doesn't.
+                                from programme experience — the data exists but the analytical infrastructure doesn't.
                             </div>
                         </div>
                         <div class="problem-arrow">
@@ -5905,7 +5907,7 @@ Weâ€™ll show you the right problems. -->
                             <div class="solution-main">
                                 <h3>Reading portfolio risk across sources instead of one report at a time</h3>
                                 <p>Disbursement records, implementation reports, field monitoring notes, third-party
-                                    verification â€” a development finance portfolio generates plenty of data, and almost
+                                    verification — a development finance portfolio generates plenty of data, and almost
                                     none of it gets read together. We build the intelligence layer that does: early
                                     warning scoring across sources, outcome measurement from remote sensing and
                                     administrative data, and the climate risk assessment that infrastructure portfolios
@@ -5975,7 +5977,7 @@ Weâ€™ll show you the right problems. -->
                             <div class="solution-main">
                                 <h3>Making sure the next project doesn't start from zero</h3>
                                 <p>Every project produces real lessons about what worked in that sector, that geography,
-                                    that institution â€” and most of it dies in a final report nobody reopens, or leaves
+                                    that institution — and most of it dies in a final report nobody reopens, or leaves
                                     with the staff member who knew it. We build the knowledge system that captures it
                                     properly, makes it searchable at the point a new project is being designed, and
                                     ensures the next programme doesn't start from zero.</p>
@@ -6265,8 +6267,8 @@ Weâ€™ll show you the right problems. -->
         </svg>
     </div>
 
-    <!-- CHOOSE HOW TO START -->
-    <section id="relatedcasestudiessec">
+    <!-- RELATED CASE STUDIES -->
+    <section id="relatedcasestudiessec" style="display: none;">
         <h2 class="rcs-title">Related<br><span class="highlight">case studies</span></h2>
                 <div class="rcs-container" id="rcs-slider-container">
             <!-- Card 1 -->
@@ -6399,7 +6401,7 @@ Weâ€™ll show you the right problems. -->
                 <div class="chts-card">
                     <h3 class="chts-card-title">30-min discovery call</h3>
                     <p class="chts-card-desc">Tell us your mandate and the delivery challenge. We'll be direct about
-                        where we'd start â€” programme design, a system build, AI, or capacity work.</p>
+                        where we'd start — programme design, a system build, AI, or capacity work.</p>
                 </div>
 
                 <div class="chts-card">
