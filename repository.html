@@ -1447,12 +1447,238 @@
                 justify-content: flex-end;
                 width: 100%;
                 overflow: hidden;
-                margin-top: -180px;
-                line-height: 0;
+        }
+        }
+        /* End of mobile media query */
+
+        /* ═══════════════════ REPOSITORY LIVE FILTER RESULTS (RED BOX AREA) ═══════════════════ */
+        /* Ensure dropdowns float cleanly above cards with solid background */
+        .repo-filter-bar {
+            position: relative;
+            z-index: 100;
+        }
+
+        .repo-filter-dropdown {
+            position: relative;
+            z-index: 100;
+        }
+
+        .repo-filter-dropdown.active {
+            z-index: 1000 !important;
+        }
+
+        .repo-filter-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: transparent;
+            list-style: none;
+            padding: 0 !important;
+            margin: 0;
+            max-height: 0;
+            overflow: hidden;
+            border: none !important;
+            border-radius: 0;
+            box-shadow: none !important;
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+            transition: max-height 0.3s ease-out, opacity 0.2s ease;
+            z-index: 1001 !important;
+        }
+
+        .repo-filter-dropdown.active .repo-filter-menu {
+            max-height: 600px;
+            visibility: visible;
+            opacity: 1;
+            pointer-events: auto;
+            background-color: #000000 !important;
+            border-top: 1px solid #EF4623 !important;
+            border-bottom: 1px solid rgba(239, 70, 35, 0.4) !important;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.95);
+        }
+
+        .repo-filter-item {
+            padding: 12px 10px !important;
+            border-bottom: 1px solid rgba(239, 70, 35, 0.3) !important;
+            font-size: 15px;
+            color: #ffffff !important;
+            cursor: pointer;
+            background-color: #000000 !important;
+            transition: color 0.2s ease, padding-left 0.2s ease, background-color 0.2s ease;
+        }
+
+        .repo-filter-item:last-child {
+            border-bottom: none !important;
+        }
+
+        .repo-filter-item:hover {
+            color: #EF4623 !important;
+            padding-left: 16px !important;
+            background-color: rgba(239, 70, 35, 0.12) !important;
+        }
+
+        body.light-mode .repo-filter-dropdown.active .repo-filter-menu {
+            background-color: #ffffff !important;
+            border-top: 1px solid #EF4623 !important;
+            border-bottom: 1px solid rgba(239, 70, 35, 0.4) !important;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        body.light-mode .repo-filter-item {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+        }
+
+        body.light-mode .repo-filter-item:hover {
+            color: #EF4623 !important;
+            padding-left: 16px !important;
+            background-color: rgba(239, 70, 35, 0.08) !important;
+        }
+
+        /* Spacing for Filter Section and SVG line */
+        .repo-filter-section {
+            margin-bottom: 80px;
+            padding-bottom: 20px;
+            transition: margin-bottom 0.3s ease, padding-bottom 0.3s ease;
+        }
+
+        .repo-filter-section.has-cards {
+            margin-bottom: 0px !important;
+            padding-bottom: 0px !important;
+        }
+
+        #uppar-repo-section {
+            margin-top: 0px;
+            margin-bottom: -50px !important;
+            position: relative;
+            z-index: 5;
+            transition: margin-top 0.3s ease;
+        }
+
+        .repo-filter-section.has-cards + #uppar-repo-section {
+            margin-top: -35px !important;
+        }
+
+        .repo-filter-results-wrapper {
+            margin-top: 80px !important;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            transition: opacity 0.4s ease;
+        }
+
+        .repo-filter-viewport {
+            width: 100%;
+            overflow: hidden;
+            box-sizing: border-box;
+            padding: 0 40px;
+            position: relative;
+        }
+
+        #repo-filter-slider {
+            display: flex;
+            gap: 40px;
+            transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+            width: max-content;
+            max-width: none;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #repo-filter-slider.centered-cards {
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            justify-content: center !important;
+            transform: none !important;
+        }
+
+        .repo-filter-results-wrapper .rcs-card {
+            flex: 0 0 380px;
+            width: 380px;
+            height: 340px;
+            box-sizing: border-box;
+        }
+
+        .repo-filter-results-wrapper .rcs-text .rcs-desc {
+            font-weight: 700;
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        .repo-filter-nav {
+            display: flex;
+            gap: 20px;
+            margin-top: 40px;
+            justify-content: center;
+        }
+
+        .repo-filter-empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            width: 100%;
+        }
+
+        .repo-filter-empty-state h3 {
+            font-family: 'Pacaembu', sans-serif;
+            color: #fff;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        .repo-filter-empty-state p {
+            color: #a0a0a0;
+            font-size: 15px;
+            margin-bottom: 25px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .repo-filter-reset-action {
+            background: transparent;
+            border: 1px solid rgba(236, 45, 38, 0.6);
+            color: #EC2D26;
+            padding: 8px 22px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .repo-filter-reset-action:hover {
+            background: #EC2D26;
+            color: #fff;
+            box-shadow: 0 0 15px rgba(236, 45, 38, 0.4);
+        }
+
+        /* Light Mode Styling */
+        body.light-mode .repo-filter-empty-state h3 {
+            color: #111;
+        }
+
+        body.light-mode .repo-filter-empty-state p {
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .repo-filter-results-wrapper {
+                margin-top: 40px !important;
             }
-            .mobile-yourscantoo-svgbtm svg {
-                width: 100% !important;
-                height: auto;
+            .repo-filter-viewport {
+                padding: 0 20px;
+            }
+            #repo-filter-slider {
+                gap: 20px;
+            }
+            .repo-filter-results-wrapper .rcs-card {
+                height: 300px;
             }
         }
     </style>
@@ -1912,6 +2138,7 @@
                         </svg>
                     </div>
                     <ul class="repo-filter-menu">
+                        <li class="repo-filter-item">All Services</li>
                         <li class="repo-filter-item">Strategy</li>
                         <li class="repo-filter-item">Risk</li>
                         <li class="repo-filter-item">Cyber</li>
@@ -1929,6 +2156,7 @@
                         </svg>
                     </div>
                     <ul class="repo-filter-menu">
+                        <li class="repo-filter-item">All Who We Serve</li>
                         <li class="repo-filter-item">BFSI & Fintech</li>
                         <li class="repo-filter-item">D2C & Retail</li>
                         <li class="repo-filter-item">Energy, Mining & Utilities</li>
@@ -1950,6 +2178,25 @@
                         <circle cx="11" cy="11" r="8"></circle>
                         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                     </svg>
+                </div>
+            </div>
+
+            <!-- Dynamic Search Results Section (Red Box Area) -->
+            <div class="repo-filter-results-wrapper" id="repo-filter-results-wrapper" style="display: none;">
+                <div class="repo-filter-viewport" id="repo-filter-viewport">
+                    <div class="rcs-container" id="repo-filter-slider">
+                        <!-- Filtered Cards dynamically rendered here -->
+                    </div>
+                </div>
+
+                <!-- Bottom slider arrows matching Work that speaks for itself section (only shows when > 3 cards) -->
+                <div class="rcs-nav repo-filter-nav" id="repo-filter-nav" style="display: none;">
+                    <div class="rcs-nav-btn rcs-btn-prev" id="repo-filter-btn-prev" aria-label="Previous">
+                        <img src="assets/images/arrowslideleft.png" alt="Left">
+                    </div>
+                    <div class="rcs-nav-btn rcs-btn-next" id="repo-filter-btn-next" aria-label="Next">
+                        <img src="assets/images/arrowslideright.png" alt="Right">
+                    </div>
                 </div>
             </div>
         </section>
@@ -3207,6 +3454,8 @@
     <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/case-studies-data.js"></script>
+    <script src="assets/js/repo-filter.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const slides = Array.from(document.querySelectorAll('.cents-slide'));
@@ -3273,15 +3522,17 @@
         // --- SVG Scroll Animation ---
         gsap.registerPlugin(ScrollTrigger);
         gsap.fromTo("#uppar-repo-section svg",
-            { scaleY: 0, transformOrigin: "top center" },
+            { scaleY: 0, scaleX: 0.8, transformOrigin: "top center" },
             {
                 scaleY: 1,
+                scaleX: 0.8,
                 ease: "none",
                 scrollTrigger: {
                     trigger: "#uppar-repo-section",
                     start: "top 85%",
-                    end: "bottom 40%",
-                    scrub: true
+                    end: "bottom 30%",
+                    scrub: 1,
+                    invalidateOnRefresh: true
                 }
             }
         );
