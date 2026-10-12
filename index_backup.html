@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sthiros â€” When Complexity Rises, Sthiros Holds.</title>
+    <title>Sthiros - When Complexity Rises, Sthiros Holds.</title>
     <meta name="description" content="We build intelligence that holds systems together." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -137,6 +137,16 @@
 
                 <a href="contactus.html" class="nav-link">CONTACT US</a>
             </nav>
+            <div class="mobile-menu-search">
+                <input type="text" placeholder="Type to search.." class="mobile-menu-search-input">
+                <button class="mobile-menu-search-btn" aria-label="Search">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
 
 
         </div>
@@ -1383,11 +1393,11 @@
             // X where vec1's horizontal bands begin (left edge, viewBox x â‰ˆ 1.45)
             const bandLeftX = originX + 1.45 * scaleX;
 
-            // Left start: same x as vec2 (hero padding-left â‰ˆ 40px, measured dynamically)
+            // Left start: same x as vec2 (hero padding-left ≈ 40px, measured dynamically)
             const vec2Rect = vec2Img.getBoundingClientRect();
             const startX = vec2Rect.left - heroRect.left;
 
-            // Hide vec2 â€” its lines are at a different Y level than vec1's bands.
+            // Hide vec2 - its lines are at a different Y level than vec1's bands.
             // We draw replacement left-side lines at vec1's exact Y positions instead.
             vec2Img.style.opacity = '0';
 

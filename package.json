@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build:search": "python scripts/generate_search_index.py"
+  },
   "dependencies": {
     "puppeteer-core": "^25.10.0"
   }

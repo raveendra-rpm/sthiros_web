@@ -1,0 +1,11715 @@
+/* Auto-generated static search index for Sthiros website */
+window.__sthirosSearchIndex = [
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "Sreekhar (HEAD OF SALES)",
+    "url": "about.html#meetsthirossec",
+    "anchor": "meetsthirossec",
+    "content": "Sreekhar - HEAD OF SALES [MARKET & GROWTH]. Sreekhar is a Chartered Accountant with over thirteen years in enterprise risk and digital transformation. He holds ISO 27001, 27701, NIST-aligned, FAFD, and BRSR credentials, the foundation for how he reads a client",
+    "type": "leader"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "Pooja Parameswaran (CHIEF BRANDING OFFICER)",
+    "url": "about.html#meetsthirossec",
+    "anchor": "meetsthirossec",
+    "content": "Pooja Parameswaran - CHIEF BRANDING OFFICER [MARKET & GROWTH]. Pooja is rebuilding how Sthiros shows up in the market. Her conviction: a brand is the logic behind why people choose to trust an organisation. She holds an MBA from Singapore and a Kellogg digital-strategy diploma, with ten-plus years across hospitality, e-commerce, FMCG, and IT, working where B2C intuition meets B2B rigour. Her mandate spans brand intelligence, employer branding, and content.",
+    "type": "leader"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "Braen Migogo (MARKET & GROWTH)",
+    "url": "about.html#meetsthirossec",
+    "anchor": "meetsthirossec",
+    "content": "Braen Migogo - MARKET & GROWTH [MARKET & GROWTH]. Braen drives market expansion, strategic client partnerships, and commercial growth initiatives at Sthiros, translating strategic vision into measurable market impact.",
+    "type": "leader"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "Karthik Jegannathan (HEAD OF CYBER)",
+    "url": "about.html#meetsthirossec",
+    "anchor": "meetsthirossec",
+    "content": "Karthik Jegannathan - HEAD OF CYBER [CLIENT SOLUTIONS]. Karthik leads Cyber at Sthiros, working where threat intelligence meets boardroom strategy. Over twenty-three years across cybersecurity, risk, and transformation at HDFC Bank, HPE, Cognizant, and IBM taught him to pair technical depth with a record of scaling practices and revenue. He",
+    "type": "leader"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "Praveen Babu C (HEAD OF AI)",
+    "url": "about.html#meetsthirossec",
+    "anchor": "meetsthirossec",
+    "content": "Praveen Babu C - HEAD OF AI [CLIENT SOLUTIONS]. Praveen leads AI at Sthiros, focused on how organisations adopt it responsibly and at scale. Where most see a technology, he sees a lens spanning business, process, people, data, and audit, sharpened at PwC",
+    "type": "leader"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "Hithender Kumar G (HEAD OF STRATEGY)",
+    "url": "about.html#meetsthirossec",
+    "anchor": "meetsthirossec",
+    "content": "Hithender Kumar G - HEAD OF STRATEGY [STRATEGIC PARTNER PRACTICE]. Hithender leads Strategy, working where tax intelligence, cross-border structuring, and commercial execution meet. A Chartered Accountant trained in Tax and Transfer Pricing at PwC Chennai, he brings fourteen-plus years across direct, international, and expatriate tax. His track record spans cross-border structuring, benchmarking, and litigation before the Income Tax Appellate Tribunal and High Courts. He partners with boards and founders to turn regulatory complexity into sustainable advantage.",
+    "type": "leader"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "Ravishankar M (HEAD OF RISK)",
+    "url": "about.html#meetsthirossec",
+    "anchor": "meetsthirossec",
+    "content": "Ravishankar M - HEAD OF RISK [STRATEGIC PARTNER PRACTICE]. Ravishankar leads Risk & Resilience, the person clients turn to when the stakes are high. A Chartered Accountant and CISA with over eighteen years across the risk practices of PwC and Protiviti, he covers internal audit, ERM, IT controls, SOX, and SOC 1/2 across pharma, BFSI, logistics, and manufacturing. His view: risk is a growth enabler.",
+    "type": "leader"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "Santhosh Kumar R (CHIEF PEOPLE OFFICER)",
+    "url": "about.html#meetsthirossec",
+    "anchor": "meetsthirossec",
+    "content": "Santhosh Kumar R - CHIEF PEOPLE OFFICER [ENTERPRISE ENABLEMENT]. Santhosh shapes the culture that makes the work possible. A strategic HR leader with over fifteen years across business partnering, talent, rewards, and change management, he",
+    "type": "leader"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "Krishnapriya (HEAD OF LEGAL & COMPLIANCE)",
+    "url": "about.html#meetsthirossec",
+    "anchor": "meetsthirossec",
+    "content": "Krishnapriya - HEAD OF LEGAL & COMPLIANCE [ENTERPRISE ENABLEMENT]. Krishnapriya leads legal and governance at Sthiros, keeping growth anchored in integrity and regulatory excellence. She is a Chartered Secretary with over a decade in corporate governance, compliance, and board advisory, guiding organisations through the Companies Act, FEMA, and the full sweep of secretarial work. Her gift is translation, turning dense legal language into clear compliance action.",
+    "type": "leader"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "about us - sthiros",
+    "url": "about.html",
+    "anchor": "",
+    "content": "about us - sthiros People build the system. AI and product come first here. Everything else is what earned us the right to say that: years spent building, auditing, defending, and scaling real businesses across Strategy, Risk, Cyber, and AI. We'd rather solve your problem at the root than sell you a service. The world we are building Every person a",
+    "type": "page"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "People buildthe system.",
+    "url": "about.html#aboutherosection",
+    "anchor": "aboutherosection",
+    "content": "People buildthe system. AI and product come first here. Everything else is what earned us the right to say that: years spent building, auditing, defending, and scaling real businesses across Strategy, Risk, Cyber, and AI. We'd rather solve your problem at the root than sell you a service.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "The world we are building",
+    "url": "about.html#Theworldbuilding",
+    "anchor": "Theworldbuilding",
+    "content": "The world we are building Every person at Sthiros is working towards the big picture. The biggest one there is, actually. We are on a mission to eradicate operational noise holding enterprises back, replacing legacy workflows with trusted AI that elevated human potential. Mission We kill grunt work, deploy cognitive engines for high stakes decisions and put human judgment exact",
+    "type": "section"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "MEET THE LEADERS",
+    "url": "about.html#meettheleaderssec",
+    "anchor": "meettheleaderssec",
+    "content": "MEET THE LEADERS ADITYA AM FOUNDER & CEO Aditya built Sthiros on one conviction: advice means nothing without engineering behind it. A Chartered Accountant, CISA, and CDPSE, he brings over fourteen years across financial planning, risk, and systems audit. As Founder and CEO, he holds every engagement to three tests: clear strategy, strong governance, resilient systems, and part",
+    "type": "section"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "ADITYA AM",
+    "url": "about.html#meettheleaderssec",
+    "anchor": "meettheleaderssec",
+    "content": "ADITYA AM",
+    "type": "section"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "FOUNDER & CEO",
+    "url": "about.html#meettheleaderssec",
+    "anchor": "meettheleaderssec",
+    "content": "FOUNDER & CEO Aditya built Sthiros on one conviction: advice means nothing without engineering behind it. A Chartered Accountant, CISA, and CDPSE, he brings over fourteen years across financial planning, risk, and systems audit. As Founder and CEO, he holds every engagement to three tests: clear strategy, strong governance, resilient systems, and partners with founders and boar",
+    "type": "section"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "Ready whenyou are.",
+    "url": "about.html#readywhenyouaresec",
+    "anchor": "readywhenyouaresec",
+    "content": "Ready whenyou are. GET IN TOUCH",
+    "type": "section"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "Sreekhar (HEAD OF SALES)",
+    "url": "aboutus.html#meetsthirossec",
+    "anchor": "meetsthirossec",
+    "content": "Sreekhar - HEAD OF SALES [MARKET & GROWTH]. Sreekhar is a Chartered Accountant with over thirteen years in enterprise risk and digital transformation. He holds ISO 27001, 27701, NIST-aligned, FAFD, and BRSR credentials, the foundation for how he reads a client",
+    "type": "leader"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "Pooja Parameswaran (CHIEF BRANDING OFFICER)",
+    "url": "aboutus.html#meetsthirossec",
+    "anchor": "meetsthirossec",
+    "content": "Pooja Parameswaran - CHIEF BRANDING OFFICER [MARKET & GROWTH]. Pooja is rebuilding how Sthiros shows up in the market. Her conviction: a brand is the logic behind why people choose to trust an organisation. She holds an MBA from Singapore and a Kellogg digital-strategy diploma, with ten-plus years across hospitality, e-commerce, FMCG, and IT, working where B2C intuition meets B2B rigour. Her mandate spans brand intelligence, employer branding, and content.",
+    "type": "leader"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "Braen Migogo (MARKET & GROWTH)",
+    "url": "aboutus.html#meetsthirossec",
+    "anchor": "meetsthirossec",
+    "content": "Braen Migogo - MARKET & GROWTH [MARKET & GROWTH]. Braen drives market expansion, strategic client partnerships, and commercial growth initiatives at Sthiros, translating strategic vision into measurable market impact.",
+    "type": "leader"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "Karthik Jegannathan (HEAD OF CYBER)",
+    "url": "aboutus.html#meetsthirossec",
+    "anchor": "meetsthirossec",
+    "content": "Karthik Jegannathan - HEAD OF CYBER [CLIENT SOLUTIONS]. Karthik leads Cyber at Sthiros, working where threat intelligence meets boardroom strategy. Over twenty-three years across cybersecurity, risk, and transformation at HDFC Bank, HPE, Cognizant, and IBM taught him to pair technical depth with a record of scaling practices and revenue. He",
+    "type": "leader"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "Praveen Babu C (HEAD OF AI)",
+    "url": "aboutus.html#meetsthirossec",
+    "anchor": "meetsthirossec",
+    "content": "Praveen Babu C - HEAD OF AI [CLIENT SOLUTIONS]. Praveen leads AI at Sthiros, focused on how organisations adopt it responsibly and at scale. Where most see a technology, he sees a lens spanning business, process, people, data, and audit, sharpened at PwC",
+    "type": "leader"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "Hithender Kumar G (HEAD OF STRATEGY)",
+    "url": "aboutus.html#meetsthirossec",
+    "anchor": "meetsthirossec",
+    "content": "Hithender Kumar G - HEAD OF STRATEGY [STRATEGIC PARTNER PRACTICE]. Hithender leads Strategy, working where tax intelligence, cross-border structuring, and commercial execution meet. A Chartered Accountant trained in Tax and Transfer Pricing at PwC Chennai, he brings fourteen-plus years across direct, international, and expatriate tax. His track record spans cross-border structuring, benchmarking, and litigation before the Income Tax Appellate Tribunal and High Courts. He partners with boards and founders to turn regulatory complexity into sustainable advantage.",
+    "type": "leader"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "Ravishankar M (HEAD OF RISK)",
+    "url": "aboutus.html#meetsthirossec",
+    "anchor": "meetsthirossec",
+    "content": "Ravishankar M - HEAD OF RISK [STRATEGIC PARTNER PRACTICE]. Ravishankar leads Risk & Resilience, the person clients turn to when the stakes are high. A Chartered Accountant and CISA with over eighteen years across the risk practices of PwC and Protiviti, he covers internal audit, ERM, IT controls, SOX, and SOC 1/2 across pharma, BFSI, logistics, and manufacturing. His view: risk is a growth enabler.",
+    "type": "leader"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "Santhosh Kumar R (CHIEF PEOPLE OFFICER)",
+    "url": "aboutus.html#meetsthirossec",
+    "anchor": "meetsthirossec",
+    "content": "Santhosh Kumar R - CHIEF PEOPLE OFFICER [ENTERPRISE ENABLEMENT]. Santhosh shapes the culture that makes the work possible. A strategic HR leader with over fifteen years across business partnering, talent, rewards, and change management, he",
+    "type": "leader"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "Krishnapriya (HEAD OF LEGAL & COMPLIANCE)",
+    "url": "aboutus.html#meetsthirossec",
+    "anchor": "meetsthirossec",
+    "content": "Krishnapriya - HEAD OF LEGAL & COMPLIANCE [ENTERPRISE ENABLEMENT]. Krishnapriya leads legal and governance at Sthiros, keeping growth anchored in integrity and regulatory excellence. She is a Chartered Secretary with over a decade in corporate governance, compliance, and board advisory, guiding organisations through the Companies Act, FEMA, and the full sweep of secretarial work. Her gift is translation, turning dense legal language into clear compliance action.",
+    "type": "leader"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "about us - sthiros",
+    "url": "aboutus.html",
+    "anchor": "",
+    "content": "about us - sthiros People build the system. AI and product come first here. Everything else is what earned us the right to say that: years spent building, auditing, defending, and scaling real businesses across Strategy, Risk, Cyber, and AI. We'd rather solve your problem at the root than sell you a service. The world we are building Every person a",
+    "type": "page"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "People buildthe system.",
+    "url": "aboutus.html#aboutherosection",
+    "anchor": "aboutherosection",
+    "content": "People buildthe system. AI and product come first here. Everything else is what earned us the right to say that: years spent building, auditing, defending, and scaling real businesses across Strategy, Risk, Cyber, and AI. We'd rather solve your problem at the root than sell you a service.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "The world we are building",
+    "url": "aboutus.html#Theworldbuilding",
+    "anchor": "Theworldbuilding",
+    "content": "The world we are building Every person at Sthiros is working towards the big picture. The biggest one there is, actually. We are on a mission to eradicate operational noise holding enterprises back, replacing legacy workflows with trusted AI that elevated human potential. Mission We kill grunt work, deploy cognitive engines for high stakes decisions and put human judgment exact",
+    "type": "section"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "MEET THE LEADERS",
+    "url": "aboutus.html#meettheleaderssec",
+    "anchor": "meettheleaderssec",
+    "content": "MEET THE LEADERS ADITYA AMIN FOUNDER & CEO Aditya built Sthiros on one conviction: advice means nothing without engineering behind it. A Chartered Accountant, CISA, and CDPSE, he brings over fourteen years across financial planning, risk, and systems audit. As Founder and CEO, he holds every engagement to three tests: clear strategy, strong governance, resilient systems, and pa",
+    "type": "section"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "ADITYA AMIN",
+    "url": "aboutus.html#meettheleaderssec",
+    "anchor": "meettheleaderssec",
+    "content": "ADITYA AMIN",
+    "type": "section"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "FOUNDER & CEO",
+    "url": "aboutus.html#meettheleaderssec",
+    "anchor": "meettheleaderssec",
+    "content": "FOUNDER & CEO Aditya built Sthiros on one conviction: advice means nothing without engineering behind it. A Chartered Accountant, CISA, and CDPSE, he brings over fourteen years across financial planning, risk, and systems audit. As Founder and CEO, he holds every engagement to three tests: clear strategy, strong governance, resilient systems, and partners with founders and boar",
+    "type": "section"
+  },
+  {
+    "pageTitle": "about us - sthiros",
+    "sectionTitle": "Ready whenyou are.",
+    "url": "aboutus.html#readywhenyouaresec",
+    "anchor": "readywhenyouaresec",
+    "content": "Ready whenyou are. GET IN TOUCH",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Careers - Sthiros",
+    "sectionTitle": "Careers - Sthiros",
+    "url": "careers.html",
+    "anchor": "",
+    "content": "Join the Sthiros team. Our careers page is coming soon with exciting opportunities. Careers - Sthiros Under Development We're Building Something Great Our Careers page is currently under development. We're crafting exciting opportunities to join the Sthiros team. Check back soon - great things are on the way. Development Progress In Progress Get Notified Back to Home",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Careers - Sthiros",
+    "sectionTitle": "We're BuildingSomething Great",
+    "url": "careers.html#sec-were-buildingsomething-great",
+    "anchor": "sec-were-buildingsomething-great",
+    "content": "We're BuildingSomething Great Our Careers page is currently under development. We're crafting exciting opportunities to join the Sthiros team. Check back soon - great things are on the way. Development Progress In Progress Get Notified Back to Home",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Contact Us - Sthiros",
+    "sectionTitle": "Contact Us - Sthiros",
+    "url": "contactus.html",
+    "anchor": "",
+    "content": "Contact Us - Sthiros Bring us the problem. Or solve one with us. TALK TO US EXPLORE CAREERS Tell Us What's on Your Mind Office Location Sriram Nivas, C-15, Ramapuram, Secretariat Colony, Thiruvalluvar Nagar, Alandur, Chennai, Greater Chennai, Tamil Nadu 600016 Office Time Monday - Friday 10 AM - 7 PM Support connect@sthiros.com +91 93639 15961 Ente",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Contact Us - Sthiros",
+    "sectionTitle": "Bring us the problem. Or solve one with us.",
+    "url": "contactus.html#sec-bring-us-the-problem-or-solve-one-with-us",
+    "anchor": "sec-bring-us-the-problem-or-solve-one-with-us",
+    "content": "Bring us the problem. Or solve one with us. TALK TO US EXPLORE CAREERS",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Contact Us - Sthiros",
+    "sectionTitle": "Tell Us What's on Your Mind",
+    "url": "contactus.html#contactusformsec",
+    "anchor": "contactusformsec",
+    "content": "Tell Us What's on Your Mind Office Location Sriram Nivas, C-15, Ramapuram, Secretariat Colony, Thiruvalluvar Nagar, Alandur, Chennai, Greater Chennai, Tamil Nadu 600016 Office Time Monday - Friday10 AM - 7 PM Support connect@sthiros.com+91 93639 15961 Enter your name * Email address * Company name * Contact number * Tell us what's not working * SEND",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Contact Us - Sthiros",
+    "sectionTitle": "Office Location",
+    "url": "contactus.html#contactusformsec",
+    "anchor": "contactusformsec",
+    "content": "Office Location Sriram Nivas, C-15, Ramapuram, Secretariat Colony, Thiruvalluvar Nagar, Alandur, Chennai, Greater Chennai, Tamil Nadu 600016",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Contact Us - Sthiros",
+    "sectionTitle": "Office Time",
+    "url": "contactus.html#contactusformsec",
+    "anchor": "contactusformsec",
+    "content": "Office Time Monday - Friday10 AM - 7 PM",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Contact Us - Sthiros",
+    "sectionTitle": "Support",
+    "url": "contactus.html#contactusformsec",
+    "anchor": "contactusformsec",
+    "content": "Support connect@sthiros.com+91 93639 15961",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Contact Us - Sthiros",
+    "sectionTitle": "Work with us",
+    "url": "contactus.html#Workwithussec",
+    "anchor": "Workwithussec",
+    "content": "Work with us Strategic Buyer - O&M & Strategic Service Contracts Strategic procurement and contracting for Operations & Maintenance and strategic services. Apply Strategic Buyer - Strategic Projects & Transformation Contracts Procurement and contracting for strategic projects, transformation programmes and technical services. Apply Strategic Buyer - FPA / ARC Category Managemen",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Contact Us - Sthiros",
+    "sectionTitle": "Strategic Buyer - O&M & Strategic Service Contracts",
+    "url": "contactus.html#Workwithussec",
+    "anchor": "Workwithussec",
+    "content": "Strategic Buyer - O&M & Strategic Service Contracts Strategic procurement and contracting for Operations & Maintenance and strategic services.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Contact Us - Sthiros",
+    "sectionTitle": "Strategic Buyer - Strategic Projects & Transformation Contracts",
+    "url": "contactus.html#Workwithussec",
+    "anchor": "Workwithussec",
+    "content": "Strategic Buyer - Strategic Projects & Transformation Contracts Procurement and contracting for strategic projects, transformation programmes and technical services.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Contact Us - Sthiros",
+    "sectionTitle": "Strategic Buyer - FPA / ARC Category Management",
+    "url": "contactus.html#Workwithussec",
+    "anchor": "Workwithussec",
+    "content": "Strategic Buyer - FPA / ARC Category Management Category management and strategic sourcing of Framework Purchase Agreements and Annual Rate Contracts.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Contact Us - Sthiros",
+    "sectionTitle": "IT Auditor / IT Assurance",
+    "url": "contactus.html#Workwithussec",
+    "anchor": "Workwithussec",
+    "content": "IT Auditor / IT Assurance Delivering IT assurance and audit services covering applications, ERP, infrastructure and security controls.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Contact Us - Sthiros",
+    "sectionTitle": "AR/AP",
+    "url": "contactus.html#Workwithussec",
+    "anchor": "Workwithussec",
+    "content": "AR/AP Supporting Accounts Receivable and Accounts Payable activities, invoice processing, reconciliations and payment operations.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Contact Us - Sthiros",
+    "sectionTitle": "Qualified CA - Chennai",
+    "url": "contactus.html#Workwithussec",
+    "anchor": "Workwithussec",
+    "content": "Qualified CA - Chennai Accounting, financial reporting, taxation, statutory & internal audits, and compliance activities.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Contact Us - Sthiros",
+    "sectionTitle": "Qualified CA - Bangalore",
+    "url": "contactus.html#Workwithussec",
+    "anchor": "Workwithussec",
+    "content": "Qualified CA - Bangalore Financial accounting, management reporting, taxation, audit support and regulatory compliance.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Contact Us - Sthiros",
+    "sectionTitle": "Semi-Qualified CA - Audit Assurance",
+    "url": "contactus.html#Workwithussec",
+    "anchor": "Workwithussec",
+    "content": "Semi-Qualified CA - Audit Assurance Supporting audit and assurance assignments, financial reviews, control testing and reporting.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Contact Us - Sthiros",
+    "sectionTitle": "Qualified CA - Pune",
+    "url": "contactus.html#Workwithussec",
+    "anchor": "Workwithussec",
+    "content": "Qualified CA - Pune Managing accounting, financial reporting, taxation, audit support and finance operations.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Contact Us - Sthiros",
+    "sectionTitle": "Zoho Consultant",
+    "url": "contactus.html#Workwithussec",
+    "anchor": "Workwithussec",
+    "content": "Zoho Consultant Designing and implementing Zoho solutions, configuring applications, and optimizing business processes.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Contact Us - Sthiros",
+    "sectionTitle": "Not seeing the opening you want?Tell us where you'll be the best fit.",
+    "url": "contactus.html#Workwithussec",
+    "anchor": "Workwithussec",
+    "content": "Not seeing the opening you want?Tell us where you'll be the best fit. Full name * Email* Phone number * Pick the team you'd like to be a part of * Choose department Strategy Risk Cyber AI HR Finance Branding Marketing Current role / area of expertise LinkedIn or portfolio URL Resume / CV * File upload A few lines about why you'd be a fit * I agree to Sthiros storing my detailsf",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Contact Us - Sthiros",
+    "sectionTitle": "Job Title",
+    "url": "contactus.html#modalJobTitle",
+    "anchor": "modalJobTitle",
+    "content": "Job Title",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "url": "index.html",
+    "anchor": "",
+    "content": "We build intelligence that holds systems together. Sthiros : When Complexity Rises, Sthiros Holds. When complexity rises, Sthiros holds. As your business grows more complex, we help you see it clearly, secure it properly, and act on it with confidence. TALK TO US WHAT WE DO When Complexity Rises, Sthiros Holds. As your business grows more complex, we help you see it clearly, secure it properly, and",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Whencomplexity rises, Sthiros holds.",
+    "url": "index.html#hero-headline",
+    "anchor": "hero-headline",
+    "content": "Whencomplexity rises, Sthiros holds. As your business grows more complex, we help you see it clearly,secure it properly, and act on it with confidence. TALK TO US WHAT WE DO",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "When Complexity Rises, Sthiros Holds.",
+    "url": "index.html#herosectionmobilescreen",
+    "anchor": "herosectionmobilescreen",
+    "content": "When Complexity Rises, Sthiros Holds. As your business grows more complex, we help you see it clearly, secure it properly, and act on it with confidence. TALK TO US WHAT WE DO",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Four Pillars. One thingthey're all protecting.",
+    "url": "index.html#services-title",
+    "anchor": "services-title",
+    "content": "Four Pillars. One thingthey're all protecting. Strategy, Risk, Cyber and AI. When a company loses trust in one, it starts losing trust in all of them. That's serious enough that we built four dedicated teams around it, each in the hands of people who've built their careers around that exact domain, working as one intelligence.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Strategy",
+    "url": "index.html#smrTrack",
+    "anchor": "smrTrack",
+    "content": "Strategy We provide the Structural Blueprints for market entry, financial transactions, and organizational acceleration. Know more",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Risk",
+    "url": "index.html#smrTrack",
+    "anchor": "smrTrack",
+    "content": "Risk Gaps are where we start. What we actually build is the governance and operational resilience that let you take risks on purpose. Know more",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Cyber",
+    "url": "index.html#smrTrack",
+    "anchor": "smrTrack",
+    "content": "Cyber Policy documents don't stop a breach. We get into the cloud, the code, and the data itself, and secure what's actually there. Know more",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Cyber",
+    "url": "index.html#cyber-inline",
+    "anchor": "cyber-inline",
+    "content": "Cyber Policy documents don't stop a breach. We get into the cloud, the code, and the data itself, and secure what's actually there. Know more",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Risk",
+    "url": "index.html#risk-inline",
+    "anchor": "risk-inline",
+    "content": "Risk Gaps are where we start. What we actually build is the governance and operational resilience that let you take risks on purpose. Know more",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Strategy",
+    "url": "index.html#services",
+    "anchor": "services",
+    "content": "Strategy We provide the Structural Blueprints for market entry, financial transactions, and organizational acceleration. Know more",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Real storiesfrom our case files",
+    "url": "index.html#realstoriesheading",
+    "anchor": "realstoriesheading",
+    "content": "Real storiesfrom our case files",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Strategy",
+    "url": "index.html#storiesSliderTrack",
+    "anchor": "storiesSliderTrack",
+    "content": "Strategy A food manufacturer had outlets and factories that ran, by every visible measure, \"fine\". Over two years, we found the $3 million sitting inside \"fine\", in waste, inconsistent process, and untapped capacity nobody had measured because nobody thought to.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Risk",
+    "url": "index.html#storiesSliderTrack",
+    "anchor": "storiesSliderTrack",
+    "content": "Risk A metro rail corporation was reconciling its fare revenue against bank statements every month and believed that was enough. It wasn't. A full trace across twelve payment channels found â‚¹2.5-4 crore in revenue that had simply stopped arriving, unnoticed, until someone checked the whole picture instead of the summary.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Cyber",
+    "url": "index.html#storiesSliderTrack",
+    "anchor": "storiesSliderTrack",
+    "content": "Cyber A $9.7 billion credit union had never once looked at its own technology risk as a single picture, only piece by piece. Across 1,124 risks assessed, one sat quietly inside their own ledger: a gap that could have let a manipulation go undetected in their financial reporting. It's closed now, with an owner and a deadline.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Why the work holds after we leave",
+    "url": "index.html#workholdheading",
+    "anchor": "workholdheading",
+    "content": "Why the work holds after we leave",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Four pillars.One operating intelligence.",
+    "url": "index.html#workholdCardsTrack",
+    "anchor": "workholdCardsTrack",
+    "content": "Four pillars.One operating intelligence. Strategy, Risk, Cyber, and AI sit inside one connected capability at Sthiros. If your engagement needs more than one of them, the connection is already there, not something we build after the fact.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "We stay past the recommendation.",
+    "url": "index.html#workholdCardsTrack",
+    "anchor": "workholdCardsTrack",
+    "content": "We stay past the recommendation. We stay through implementation, through adoption, through the results that take time to show. The gap between a decision and an outcome is where most transformations quietly stall, and it's where we choose to stay, until the change actually holds.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "AI that ships.",
+    "url": "index.html#workholdCardsTrack",
+    "anchor": "workholdCardsTrack",
+    "content": "AI that ships. Our AI capability comes from inside client workflows, not a lab. It's tested against real operating conditions, and it's already producing proprietary products built to outlast any single engagement.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Global reach. Local weight.",
+    "url": "index.html#workholdCardsTrack",
+    "anchor": "workholdCardsTrack",
+    "content": "Global reach. Local weight. We operate across India, North America and South Africa. The standard of work does not change with the time zone.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Our story",
+    "url": "index.html#ourstory",
+    "anchor": "ourstory",
+    "content": "Our story",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Decades ofsimplifying the complex.",
+    "url": "index.html#ourstory",
+    "anchor": "ourstory",
+    "content": "Decades ofsimplifying the complex. Sthiros began as a risk boutique enterprise. As the organisations we served grow more interconnected, so do the problems they bring us, until risk, strategy, security, and technology stopped being separate conversations. Today Strategy, Risk, Cyber, and Al operate as one integrated intelligence, built from the same standard we started with, at",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Whatever your industry, the gap looks familiar",
+    "url": "index.html#industries-new",
+    "anchor": "industries-new",
+    "content": "Whatever your industry, the gap looks familiar",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Manufacturing",
+    "url": "index.html#industries-new",
+    "anchor": "industries-new",
+    "content": "Manufacturing",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Public Sector & Government",
+    "url": "index.html#industries-new",
+    "anchor": "industries-new",
+    "content": "Public Sector & Government",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Real Estate, EPC & Construction",
+    "url": "index.html#industries-new",
+    "anchor": "industries-new",
+    "content": "Real Estate, EPC & Construction",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Telecom & Digital Infrastructure",
+    "url": "index.html#industries-new",
+    "anchor": "industries-new",
+    "content": "Telecom & Digital Infrastructure",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Travel & Hospitality",
+    "url": "index.html#industries-new",
+    "anchor": "industries-new",
+    "content": "Travel & Hospitality",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "BFSI & Fintech",
+    "url": "index.html#industries-new",
+    "anchor": "industries-new",
+    "content": "BFSI & Fintech",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "D2C & Retail",
+    "url": "index.html#industries-new",
+    "anchor": "industries-new",
+    "content": "D2C & Retail",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Energy, Mining & Utilities",
+    "url": "index.html#industries-new",
+    "anchor": "industries-new",
+    "content": "Energy, Mining & Utilities",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "GCC",
+    "url": "index.html#industries-new",
+    "anchor": "industries-new",
+    "content": "GCC",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Healthcare & Life Sciences",
+    "url": "index.html#industries-new",
+    "anchor": "industries-new",
+    "content": "Healthcare & Life Sciences",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "LATEST THINKING Intelligence built in the Field.",
+    "url": "index.html#latest-thinking",
+    "anchor": "latest-thinking",
+    "content": "LATEST THINKING Intelligence built in the Field.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "What governance actually looks like before the event.",
+    "url": "index.html#latest-thinking",
+    "anchor": "latest-thinking",
+    "content": "What governance actually looks like before the event. 6 min read",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Automation without strategy is just faster mistakes.",
+    "url": "index.html#latest-thinking",
+    "anchor": "latest-thinking",
+    "content": "Automation without strategy is just faster mistakes. 8 min read",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
+    "sectionTitle": "Bring us the hardest one.",
+    "url": "index.html#ctaBanner",
+    "anchor": "ctaBanner",
+    "content": "Bring us the hardest one.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Sthiros - BFSI | fintech",
+    "url": "industry.html",
+    "anchor": "",
+    "content": "We build financial systems that clear audit before the auditor asks. Sthiros - BFSI | fintech We build financial systems that clear audit before the auditor asks. RBI, SEBI and IRDAI keep raising the bar. A lean fintech can ship in weeks what takes you a decade. We build systems that hit both. BOOK A 30-MIN CALL GET THE INDUSTRY DIAGNOSTIC Who are you? We'll show you the right problems. Pick your segment. What comes",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Regulation is moving faster than my compliance team",
+    "url": "industry.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Regulation is moving faster than my compliance team. RBI circulars, DPDPA, CKYC... My team spends the week putting out fires, never building anything that stops the next one. A compliance function that sees the circular coming: Many compliance teams live in permanent reaction. A circular drops, everyone abandons what they were doing, and the cycle resets the following week. We'",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Legacy core banking is blocking everything I want to do",
+    "url": "industry.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Legacy core banking is blocking everything I want to do. New product, new API, new anything, it all runs into the core first. We've built so many workarounds I'm no longer sure which ones are holding the place up. Modernising the core without the horror story: Ask a room of Indian bank CIOs what's top of the list and most will say the core. Ask why they haven't fixed it and you",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Fraud and NPAs are climbing faster than my controls",
+    "url": "industry.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Fraud and NPAs are climbing faster than my controls. Digital lending defaults, UPI fraud, early delinquency in the retail book, my controls were built for branches, not digital volumes. Fraud and NPA controls for the volumes you actually run: UPI fraud, first-party fraud on digital loans, delinquency that shows up in the very first EMI. The money moved online and the controls d",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "I want to deploy AI, but theboard wants explainability",
+    "url": "industry.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "I want to deploy AI, but theboard wants explainability. Everyone's talking AI in credit, collections, ops. I can't get sign-off without a governance framework the regulator will actually accept. AI you can actually explain to an inspector: The hard part of AI in banking was never the model. It's convincing a regulator you know exactly why the model did what it did. RBI's AI fra",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "My transformation programmehas spent, but isn't delivering",
+    "url": "industry.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "My transformation programmehas spent, but isn't delivering. The tech's in. The vendors are paid. The outcomes aren't here. Something in the execution layer is broken. The transformation you already paid for, finished: When a BFSI transformation stalls, the technology is rarely the culprit. It dies in the quiet gap between the strategy deck and the actual work, where someone was",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Fintech talent isn't sticking toour operating model",
+    "url": "industry.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Fintech talent isn't sticking toour operating model. We're hiring digital and data people, and they're hitting walls, legacy systems, slow approvals, risk-averse culture. Attrition's high. Getting your digital hires past the antibodies: Hire a data scientist into a bank and you don't automatically get a data capability. You get a data scientist who's now waiting three weeks for",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "IRDAI mandates are changing faster than I can implement them",
+    "url": "industry.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "IRDAI mandates are changing faster than I can implement them. Bima Sugam, data localisation, EoM norms, the pace of regulatory change is outrunning my capacity to act on it. IRDAI compliance that runs quietly in the background: Bima Sugam, the EoM norms, data localisation, product-approval timelines that keep shrinking — IRDAI has kept everyone busy these past couple of years. ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Claims processing is slow, manual, and quietly killing my renewals",
+    "url": "industry.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Claims processing is slow, manual, and quietly killing my renewals. My claims TAT is dragging down renewal rates. The process is still paper-heavy and my teams drown at peak. Faster claims that don't quietly invite fraud: Claims speed is the thing your customers judge you on, and the thing that wrecks your loss ratio the moment you get sloppy about it. Both are true at the same",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "My underwriting is still actuarial gut-feel, not data",
+    "url": "industry.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "My underwriting is still actuarial gut-feel, not data. Competitors price risk on real-time behavioural and alternative data. My model hasn't fundamentally moved in years. Underwriting that keeps up with the people you're up against: Underwriting used to be a question of historical loss tables. These days it's behavioural signals, telematics and alternative data, and the insurer",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Digital distribution is the priority, but I don't have the platform",
+    "url": "industry.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Digital distribution is the priority, but I don't have the platform. The Bima Sugam opportunity is real. My policy admin system and API architecture aren't ready for embedded or digital-first distribution. Distribution ready for Bima Sugam before it matters: Bima Sugam is a shared rail for selling insurance, and it only helps the insurers whose policy admin, APIs and customer d",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Claims fraud is eating into my loss ratio",
+    "url": "industry.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Claims fraud is eating into my loss ratio. Staged accidents, inflated bills, duplicate claims in motor and health — my detection is still manual and exception-based. Catching claims fraud while the money's still in the building: Staged accidents, inflated hospital bills, the same claim filed twice, garages and clinics that are a touch too cooperative. Manual, exception-based de",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "I want AI in underwriting and claims, but I need a safe framework",
+    "url": "industry.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "I want AI in underwriting and claims, but I need a safe framework. AI in insurance carries specific regulatory risk. IRDAI's data-use and consumer-protection rules make unstructured deployment genuinely dangerous. AI in insurance, inside IRDAI's guardrails: Point AI at underwriting, claims or customer communication and IRDAI's data-governance and consumer-protection rules come ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "My ops can't keep up with product growth",
+    "url": "industry.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "My ops can't keep up with product growth. We went from 10 to 200 people in 18 months. Finance is in Excel, compliance is one person, risk controls are founder judgement. The unglamorous machine behind the product: Products scale in months. The machinery underneath tends to lag by a year or two, and it shows. By Series B the finance function is a heroic spreadsheet, compliance i",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Regulatory licensing is blocking my next product line",
+    "url": "industry.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Regulatory licensing is blocking my next product line. RBI PA licence, NBFC registration, SEBI IA licence — the pathway's unclear and the application is eating time I don't have. The licence, minus the wasted quarters: PA licence, NBFC registration, SEBI IA or RA — the licensing path is a maze, the order you do things in matters more than people expect, and mistakes cost real t",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Investors want CFO-grade reporting I can't yet produce",
+    "url": "industry.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Investors want CFO-grade reporting I can't yet produce. Board pack, cohort analysis, unit economics by product — I'm building it by hand every quarter, and it shows. Numbers a Series C diligence team won't unpick: Cohorts, unit economics by product, CAC and LTV by channel, margins by segment. Investors want all of it, every quarter, and they want it to reconcile. Stitching it t",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Fraud is scaling right alongside my transaction volume",
+    "url": "industry.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Fraud is scaling right alongside my transaction volume. As GMV grows, so does fraud. My rule-based detection is too slow, too blunt, and throwing off too many false positives. Fraud detection that stops blocking your real customers: Rules don't scale with you. As GMV climbs, so does fraud, and a rules engine responds to both by getting twitchier, blocking more good customers wh",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "I want to embed AI, but the data infrastructure isn't there",
+    "url": "industry.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "I want to embed AI, but the data infrastructure isn't there. AI's on the roadmap. My data is fragmented across systems, unclean, and nowhere near a state a model will train on reliably. The data plumbing your AI roadmap quietly depends on: Every AI feature on your roadmap rests on data, and if that data is scattered across systems, half-clean and in no state to train a model, t",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "I need to build an institutional board and leadership team",
+    "url": "industry.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "I need to build an institutional board and leadership team. Moving from founder-led to professionally managed. I don't know how to structure the board, who to hire first, or how to set up governance. From founder-run to grown-up, without the classic mistakes: Going from founder-run to properly governed is one of the trickier moments in a company's life, and it's littered with e",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Transaction fraud is scaling faster than my detection",
+    "url": "industry.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Transaction fraud is scaling faster than my detection. UPI fraud, merchant fraud, account takeover — my rules engine throws too many false positives and misses too many real ones. Fraud detection that keeps pace with UPI: At UPI speed, a rules engine is always fighting the last war. By the time you've spotted the pattern and written the rule, the fraud has moved somewhere else.",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "PA/PG compliance is a permanent operational tax",
+    "url": "industry.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "PA/PG compliance is a permanent operational tax. Aggregator licensing, nodal accounts, data localisation, merchant KYC — the overhead is eating the bandwidth I need to grow. PA/PG compliance that takes care of itself: PA and PG compliance isn't a box you tick once. It's a running obligation that never quite stops: nodal accounts, merchant KYC and due diligence, data localisatio",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "My credit decisioning isn't precise enough at scale",
+    "url": "industry.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "My credit decisioning isn't precise enough at scale. BNPL, merchant lending, consumer credit — low precision at high volume. Approval rates and delinquency are both too high. Credit decisions that are quick and rarely wrong: BNPL, merchant advances, credit at checkout — at these volumes you need underwriting that's fast, accurate, and paying attention to how the book is actuall",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Settlement architecture is throwing reconciliation failures",
+    "url": "industry.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Settlement architecture is throwing reconciliation failures. Multi-bank, multi-instrument, multi-currency flows through a system built for a fraction of today's volume. It's breaking. Settlement that stops breaking on you: Multi-bank, multi-instrument, multi-currency. The flows got complicated and the reconciliation system didn't keep up. Built for a tenth of today's volume, it",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Collections efficiency drops as the book grows",
+    "url": "industry.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Collections efficiency drops as the book grows. Collections efficiency drops as the book grows. Collections that knows who to call and who to leave alone: Who pays back, and when, varies enormously: by cohort, geography, channel, product, how far behind they already are. Run everyone through the same dialler with the same reminder and you'll leave money uncollected while irrita",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "I want real-time risk intelligence across the whole stack",
+    "url": "industry.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "I want real-time risk intelligence across the whole stack. I have data from every layer — issuer, acquirer, merchant, consumer — and no unified view that reads it together in real time. One risk picture instead of six half-pictures: You already have the signals. Transaction data on the issuing side, merchant behaviour on the acquiring side, repayment patterns from the lending b",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "SEBI IA and RA compliance is creating constant friction",
+    "url": "industry.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "SEBI IA and RA compliance is creating constant friction. Fee disclosure, suitability, research independence — the rules for investment advice changed, and my systems didn't. SEBI compliance that stops living in workarounds: SEBI's rules for advisers and research analysts — fee structures, suitability, conflict disclosures, the walls around research independence — added up to a ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Portfolio reporting and client comms are still largely manual",
+    "url": "industry.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Portfolio reporting and client comms are still largely manual. Personalised views, tax overlays, goal-tracking — clients expect it digitally and in real time. My back-office can't produce it at scale. Client reporting that's fresh when it lands: Your HNI and mass-affluent clients want a live view of their portfolio, their goals, the tax picture, what's actually driving returns,",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Acquisition cost is rising and AUM per client isn't",
+    "url": "industry.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Acquisition cost is rising and AUM per client isn't. My distribution is advisor-led and expensive. Digital acquisition is an aspiration — I don't have the platform or the content engine for it. Winning clients without a relationship manager for each one: An advisor for every client is expensive, and it stops scaling right around the point you most want to grow. Acquiring client",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "I want AI-driven portfolio construction, but lack the infrastructure",
+    "url": "industry.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "I want AI-driven portfolio construction, but lack the infrastructure. Factor models, alternative data, personalised rebalancing — the gap between what I offer and what fintechs offer keeps widening. Portfolio construction that keeps up with the wealthtechs: The distance between what a traditional AMC offers and what an AI-native wealthtech offers grows a little every quarter. F",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "AML and KYC friction is costing me clients at onboarding",
+    "url": "industry.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "AML and KYC friction is costing me clients at onboarding. Onboarding is slow and manual. Fintechs onboard in minutes — and I'm losing prospects to them at the door. Onboarding that's compliant and doesn't lose the client: The quickest way to lose a wealthy prospect is a long, form-heavy onboarding. The catch is that SEBI's KYC and AML rules genuinely require a documented, audit",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Fee compression is structural, and I haven't responded",
+    "url": "industry.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Fee compression is structural, and I haven't responded. TER caps, direct-plan migration, commission disclosure — the revenue model changed permanently. My operations didn't. Making the maths work at today's fees: TER caps, direct plans, commission disclosure, the move to fee-based advice — the revenue you earn per rupee of AUM has fallen, and it isn't coming back. Most AMCs and",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Credit assessment without formal history is too slow and too manual",
+    "url": "industry.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Credit assessment without formal history is too slow and too manual. Thin files, informal income, group-lending dynamics — my underwriting is experience-based and doesn't scale. Approval TAT is a disadvantage. Credit calls for the borrowers no bureau has met: Your borrowers are exactly the people a credit bureau knows little or nothing about, which is what makes them your whole",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Collections efficiency is diverging by geography and segment",
+    "url": "industry.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Collections efficiency is diverging by geography and segment. Repayment rates split sharply by field officer, area and borrower type. I don't have the analytics to see why — or to act early. Seeing a repayment problem 30 days before it's a problem: Repayment in microfinance is stubbornly local. One field officer's book performs; the officer one block over struggles, and the rea",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "The RBI MFI framework is creating compliance complexity",
+    "url": "industry.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "The RBI MFI framework is creating compliance complexity. Indebtedness limits, income assessment, pricing caps — the 2022 harmonised norms changed the rules, and my systems weren't built for them. MFI compliance that fits the 2022 rules, not the old ones: The 2022 harmonised framework changed the rules underneath you: indebtedness limits, income assessment, pricing caps, stronge",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Field officer churn is hurting portfolio quality",
+    "url": "industry.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Field officer churn is hurting portfolio quality. My field force is my product. High attrition means new officers on unfamiliar books — and that shows up directly in delinquency. When a field officer leaves, the portfolio shouldn't: In microfinance the field officer basically is the product. The relationship, the credit judgement and the collections all live in one person's hea",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "My core MIS doesn't give me the intelligence I need",
+    "url": "industry.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "My core MIS doesn't give me the intelligence I need. PAR by cohort, officer performance, early delinquency signals — my system produces lag reports. I need it in real time. Knowing your PAR today, not next month: Most MFI reporting arrives weekly or monthly, which means by the time PAR-by-cohort lands on your desk, the at-risk accounts are already at risk and you're reading his",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "I want to move to digital lending, but need a compliant architecture",
+    "url": "industry.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "I want to move to digital lending, but need a compliant architecture. Digital applications, e-KYC, app-based repayment — the opportunity's real, but RBI's digital lending guidelines are a framework I have to get right before I scale. Digital lending that's compliant before you switch it on: RBI's digital lending guidelines — LSP engagement, what data you can collect, money goin",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "We build financial systems that clear audit before the auditor asks.",
+    "url": "industry.html#sec-we-build-financial-systems-that-clear-audit-b",
+    "anchor": "sec-we-build-financial-systems-that-clear-audit-b",
+    "content": "We build financial systems that clear audit before the auditor asks. RBI, SEBI and IRDAI keep raising the bar. A lean fintech can ship in weeks what takes you a decade. We build systems that hit both. BOOK A 30-MIN CALL GET THE INDUSTRY DIAGNOSTIC",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Who are you?We'll show you theright problems.",
+    "url": "industry.html#Whotherightproblemssec",
+    "anchor": "Whotherightproblemssec",
+    "content": "Who are you?We'll show you theright problems. Pick your segment. What comes up is tuned to your reality, right down to the regulator BANK OR NBFC INSURANCE FINTECH FOUNDER PAYMENTS AND LENDING AMC OR WEALTHTECH MICROFINANCE OR SFB PROBLEMS STHIROS SOLUTION Regulation is moving faster than my compliance team RBI circulars, DPDPA, CKYC... My team spends the week putting out fires",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "A compliance function that sees the circular coming",
+    "url": "industry.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "A compliance function that sees the circular coming Many compliance teams live in permanent reaction. A circular drops, everyone abandons what they were doing, and the cycle resets the following week. We'd rather your team saw it coming. So we map your obligations across RBI, DPDPA and CKYC, hand each one a clear owner, set a monitoring rhythm that doesn't depend on heroics, an",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Modernising the core without the horror story",
+    "url": "industry.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Modernising the core without the horror story Ask a room of Indian bank CIOs what's top of the list and most will say the core. Ask why they haven't fixed it and you get the same answer: every migration puts regulatory, operational and reputational risk on the table at once. Fair concern. We plan the route, sequence it so nothing important falls over on a Tuesday, and slot in m",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Fraud and NPA controls for the volumes you actually run",
+    "url": "industry.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Fraud and NPA controls for the volumes you actually run UPI fraud, first-party fraud on digital loans, delinquency that shows up in the very first EMI. The money moved online and the controls didn't. They were built for a world where a risky customer walked into a branch and someone could look them in the eye. We rebuild the fraud and credit-risk framework for how money actuall",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "AI you can actually explain to an inspector",
+    "url": "industry.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "AI you can actually explain to an inspector The hard part of AI in banking was never the model. It's convincing a regulator you know exactly why the model did what it did. RBI's AI framework, the responsible-lending guidelines, DPDPA consent, most AI vendors have never had to think about any of it. We have. What we deploy stays inside your regulatory lines: models you can expla",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "The transformation you already paid for, finished",
+    "url": "industry.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "The transformation you already paid for, finished When a BFSI transformation stalls, the technology is rarely the culprit. It dies in the quiet gap between the strategy deck and the actual work, where someone was supposed to change how a thing gets done and it turned out to be nobody's job. We go and find that gap. Then we redesign the programme around it and put in the governa",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Getting your digital hires past the antibodies",
+    "url": "industry.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Getting your digital hires past the antibodies Hire a data scientist into a bank and you don't automatically get a data capability. You get a data scientist who's now waiting three weeks for an approval and quietly wondering why they left their last job. Good people hit the legacy systems, the sign-off queues and the general institutional caution, and a fair number of them drif",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "IRDAI compliance that runs quietly in the background",
+    "url": "industry.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "IRDAI compliance that runs quietly in the background Bima Sugam, the EoM norms, data localisation, product-approval timelines that keep shrinking — IRDAI has kept everyone busy these past couple of years. Most insurers still treat compliance as something you do at quarter-end, in a hurry, with the lights on late. We turn it into something that watches itself: every obligation o",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Faster claims that don't quietly invite fraud",
+    "url": "industry.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Faster claims that don't quietly invite fraud Claims speed is the thing your customers judge you on, and the thing that wrecks your loss ratio the moment you get sloppy about it. Both are true at the same time, which is exactly why claims is hard. We rebuild the whole path: digital first notice of loss, document checks that don't need a human squinting at a PDF, straight-throug",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Underwriting that keeps up with the people you're up against",
+    "url": "industry.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Underwriting that keeps up with the people you're up against Underwriting used to be a question of historical loss tables. These days it's behavioural signals, telematics and alternative data, and the insurers using them price sharper than you do. The uncomfortable part isn't the volume they take. It's the quality: they keep the good risks, and the ones they decline drift over ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Distribution ready for Bima Sugam before it matters",
+    "url": "industry.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Distribution ready for Bima Sugam before it matters Bima Sugam is a shared rail for selling insurance, and it only helps the insurers whose policy admin, APIs and customer data are actually ready to plug into it. Most legacy stacks aren't. They were never built for real-time distribution, embedded flows, or the consent rules IRDAI now takes seriously. We build the platform that",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Catching claims fraud while the money's still in the building",
+    "url": "industry.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Catching claims fraud while the money's still in the building Staged accidents, inflated hospital bills, the same claim filed twice, garages and clinics that are a touch too cooperative. Manual, exception-based detection catches a slice of it, usually after the cheque has cleared. We put an AI layer in front of approval that screens every claim as it arrives, using behavioural ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "AI in insurance, inside IRDAI's guardrails",
+    "url": "industry.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "AI in insurance, inside IRDAI's guardrails Point AI at underwriting, claims or customer communication and IRDAI's data-governance and consumer-protection rules come along with it, whether you planned for them or not. Skip the governance and you've bought regulatory and reputational risk in a single move, which is impressively efficient but not the goal. We build the governance ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "The unglamorous machine behind the product",
+    "url": "industry.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "The unglamorous machine behind the product Products scale in months. The machinery underneath tends to lag by a year or two, and it shows. By Series B the finance function is a heroic spreadsheet, compliance is one person answering everything, risk control is founder instinct, and the board has started asking for numbers you can't cleanly produce. We build the boring, essential",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "The licence, minus the wasted quarters",
+    "url": "industry.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "The licence, minus the wasted quarters PA licence, NBFC registration, SEBI IA or RA — the licensing path is a maze, the order you do things in matters more than people expect, and mistakes cost real time. We map the exact route for what you're trying to build, write the application, handle the back-and-forth with the regulator, and set up the compliance you'll need to hold on t",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Numbers a Series C diligence team won't unpick",
+    "url": "industry.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Numbers a Series C diligence team won't unpick Cohorts, unit economics by product, CAC and LTV by channel, margins by segment. Investors want all of it, every quarter, and they want it to reconcile. Stitching it together by hand from five systems is slow, quietly inconsistent, and tends to come apart the moment a diligence team starts pulling threads. We design the reporting ar",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Fraud detection that stops blocking your real customers",
+    "url": "industry.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Fraud detection that stops blocking your real customers Rules don't scale with you. As GMV climbs, so does fraud, and a rules engine responds to both by getting twitchier, blocking more good customers while the clever fraud strolls straight past. We build the AI layer that replaces the guesswork: behavioural models, device intelligence, network analysis, and a feedback loop so ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "The data plumbing your AI roadmap quietly depends on",
+    "url": "industry.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "The data plumbing your AI roadmap quietly depends on Every AI feature on your roadmap rests on data, and if that data is scattered across systems, half-clean and in no state to train a model, the roadmap is decoration. We go under the hood: audit what you've got, build the unified data layer, clean and structure the datasets that matter, and stand up the feature pipeline that t",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "From founder-run to grown-up, without the classic mistakes",
+    "url": "industry.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "From founder-run to grown-up, without the classic mistakes Going from founder-run to properly governed is one of the trickier moments in a company's life, and it's littered with expensive mistakes: the wrong board, a CFO hired before anyone defined the job, governance that generates meetings but not accountability. We've watched all of them happen. So we design the transition d",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Fraud detection that keeps pace with UPI",
+    "url": "industry.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Fraud detection that keeps pace with UPI At UPI speed, a rules engine is always fighting the last war. By the time you've spotted the pattern and written the rule, the fraud has moved somewhere else. We build the layer that works at the same speed the fraud does: behavioural models, device fingerprinting, velocity checks, and a network graph that notices a coordinated ring whil",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "PA/PG compliance that takes care of itself",
+    "url": "industry.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "PA/PG compliance that takes care of itself PA and PG compliance isn't a box you tick once. It's a running obligation that never quite stops: nodal accounts, merchant KYC and due diligence, data localisation, settlement reporting, and now the TPAP framework arriving to keep things interesting. We rebuild the lot into a system that hums along on its own, so compliance stops surfa",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Credit decisions that are quick and rarely wrong",
+    "url": "industry.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Credit decisions that are quick and rarely wrong BNPL, merchant advances, credit at checkout — at these volumes you need underwriting that's fast, accurate, and paying attention to how the book is actually performing week to week. A static scorecard and a human review can't manage all three at once. We build the decisioning engine that can: bureau data, alternative signals, beh",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Settlement that stops breaking on you",
+    "url": "industry.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Settlement that stops breaking on you Multi-bank, multi-instrument, multi-currency. The flows got complicated and the reconciliation system didn't keep up. Built for a tenth of today's volume, it fails in ways that are both costly and embarrassing, and at scale an unreconciled pile stops being a nuisance and becomes an incident with your name on it. We rebuild the settlement ar",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Collections that knows who to call and who to leave alone",
+    "url": "industry.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Collections that knows who to call and who to leave alone Who pays back, and when, varies enormously: by cohort, geography, channel, product, how far behind they already are. Run everyone through the same dialler with the same reminder and you'll leave money uncollected while irritating the borrowers who were always going to pay. We segment collections properly and build a prop",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "One risk picture instead of six half-pictures",
+    "url": "industry.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "One risk picture instead of six half-pictures You already have the signals. Transaction data on the issuing side, merchant behaviour on the acquiring side, repayment patterns from the lending book. What you don't have is anything reading them together, so each team makes a decent call on a third of the picture. We build the layer that pulls all of it into one real-time view, wh",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "SEBI compliance that stops living in workarounds",
+    "url": "industry.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "SEBI compliance that stops living in workarounds SEBI's rules for advisers and research analysts — fee structures, suitability, conflict disclosures, the walls around research independence — added up to a compliance load most wealth platforms are quietly carrying on duct tape and good intentions. We rebuild it into something solid: workflows that make sense, suitability documen",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Client reporting that's fresh when it lands",
+    "url": "industry.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Client reporting that's fresh when it lands Your HNI and mass-affluent clients want a live view of their portfolio, their goals, the tax picture, what's actually driving returns, on a screen, whenever they feel like checking. Most back offices are still sending batch reports that were out of date before they hit the inbox. We rebuild the reporting so it generates and delivers i",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Winning clients without a relationship manager for each one",
+    "url": "industry.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Winning clients without a relationship manager for each one An advisor for every client is expensive, and it stops scaling right around the point you most want to grow. Acquiring clients digitally — through content, search, the right platform partnerships — runs on a completely different machine: lead capture, onboarding that happens on a phone, suitability handled automaticall",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Portfolio construction that keeps up with the wealthtechs",
+    "url": "industry.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Portfolio construction that keeps up with the wealthtechs The distance between what a traditional AMC offers and what an AI-native wealthtech offers grows a little every quarter. Factor models, rebalancing that reacts in real time, alternative data, portfolios shaped to the individual — clients have quietly started assuming all of it comes standard. We design the investment met",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Onboarding that's compliant and doesn't lose the client",
+    "url": "industry.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Onboarding that's compliant and doesn't lose the client The quickest way to lose a wealthy prospect is a long, form-heavy onboarding. The catch is that SEBI's KYC and AML rules genuinely require a documented, auditable process, so you can't just cut it short and hope for the best. We redesign onboarding to satisfy both: e-KYC, video KYC where the rules ask for it, AML screening",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Making the maths work at today's fees",
+    "url": "industry.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Making the maths work at today's fees TER caps, direct plans, commission disclosure, the move to fee-based advice — the revenue you earn per rupee of AUM has fallen, and it isn't coming back. Most AMCs and IFAs have adjusted the pitch but not the cost base underneath it. We redesign the operating model: find where your costs still assume the old economics, automate the work tha",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Credit calls for the borrowers no bureau has met",
+    "url": "industry.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Credit calls for the borrowers no bureau has met Your borrowers are exactly the people a credit bureau knows little or nothing about, which is what makes them your whole market and impossible to score with ordinary tools. As it turns out, the signal is elsewhere: alternative data, how a group behaves, the small patterns in how people repay. We design the methodology around that",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Seeing a repayment problem 30 days before it's a problem",
+    "url": "industry.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Seeing a repayment problem 30 days before it's a problem Repayment in microfinance is stubbornly local. One field officer's book performs; the officer one block over struggles, and the reasons never show up in a district-level number. We break the numbers down by officer, area, cohort and product until the pattern's visible, then build the model that flags an account 30 to 60 d",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "MFI compliance that fits the 2022 rules, not the old ones",
+    "url": "industry.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "MFI compliance that fits the 2022 rules, not the old ones The 2022 harmonised framework changed the rules underneath you: indebtedness limits, income assessment, pricing caps, stronger borrower protections. Most MFI systems predate all of it, so compliance gets done by hand, which is slow, error-prone, and a standing invitation for the regulator to find something. We rebuild th",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "When a field officer leaves, the portfolio shouldn't",
+    "url": "industry.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "When a field officer leaves, the portfolio shouldn't In microfinance the field officer basically is the product. The relationship, the credit judgement and the collections all live in one person's head, which is fine right up until that person quits and takes their book's performance with them. We move that knowledge into something more durable: structured credit protocols, cli",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Knowing your PAR today, not next month",
+    "url": "industry.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Knowing your PAR today, not next month Most MFI reporting arrives weekly or monthly, which means by the time PAR-by-cohort lands on your desk, the at-risk accounts are already at risk and you're reading history. We build the layer that updates daily: portfolio health by area and officer, early delinquency surfaced before it hits 30 days past due, and field productivity in a sha",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Digital lending that's compliant before you switch it on",
+    "url": "industry.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Digital lending that's compliant before you switch it on RBI's digital lending guidelines — LSP engagement, what data you can collect, money going straight to the borrower, the key fact statement — shape the architecture from the ground up. Try to add the compliance afterwards and you'll be rebuilding, not patching. So we design it in from the first sketch: the borrower journey",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "The Sthiros Difference",
+    "url": "industry.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "The Sthiros Difference We read the circulars, so you don't have to explain them to us RBI, SEBI, IRDAI, DPDPA. We work with the current rulebook open on the desk. Compliance goes into the design at the start, which is considerably cheaper than discovering it during an audit. Our AI can survive a conversation with a regulator Explainable models, a log for every decision, drift m",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "We read the circulars, so you don't have to explain them to us",
+    "url": "industry.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We read the circulars, so you don't have to explain them to us RBI, SEBI, IRDAI, DPDPA. We work with the current rulebook open on the desk. Compliance goes into the design at the start, which is considerably cheaper than discovering it during an audit.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Our AI can survive a conversation with a regulator",
+    "url": "industry.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "Our AI can survive a conversation with a regulator Explainable models, a log for every decision, drift monitoring, a human who can pull the handbrake. The AI works inside your compliance boundary because we built it there on purpose.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "We leave software behind, which is rarer than it should be",
+    "url": "industry.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We leave software behind, which is rarer than it should be Risk dashboards, compliance trackers, fraud engines, credit platforms. Real products your team keeps running long after we've packed up. That's rather the point.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "What youcan expect",
+    "url": "industry.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "What youcan expect Reg-first Every build starts with the rulebook already open. 4-16 weeks Scoped to how BFSI actually decides. No retainer that quietly renews forever. One team,three modes The people who advise you are the people who build it. Nothing gets lost in a handoff, because there isn't one.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Reg-first",
+    "url": "industry.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "Reg-first Every build starts with the rulebook already open.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "4-16 weeks",
+    "url": "industry.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "4-16 weeks Scoped to how BFSI actually decides. No retainer that quietly renews forever.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "One team,three modes",
+    "url": "industry.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "One team,three modes The people who advise you are the people who build it. Nothing gets lost in a handoff, because there isn't one.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Relatedcase studies",
+    "url": "industry.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies FINAL_Sthiros_CaseStudy_Kinara_IS_Audit _v1 1 FINAL_Sthiros_CaseStudy_TFCU_v1 3",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Pick a way in.They all lead to thesame conversation.",
+    "url": "industry.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Pick a way in.They all lead to thesame conversation. Whether you run a mid-size bank, you're the one who has to make an NBFC's transformation actually work, or you're a founder who just hit the first wall money can't knock down; start wherever's easiest.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "A 30-minute call",
+    "url": "industry.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "A 30-minute call Tell us the problem. By the end of the call we'll tell you what we'd tackle first, whether that's a regulatory sprint, an AI build, or shipping a piece of software. No deck required.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "The BFSI readiness check",
+    "url": "industry.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "The BFSI readiness check A free self-assessment across your regulatory posture, AI readiness, operating maturity and risk gaps. It tells you where you stand and what's worth doing first. Occasionally it tells you you're fine, which we're happy to confirm.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Just describe the mess",
+    "url": "industry.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Just describe the mess Not ready to talk? Send three lines: what you are, what's broken, what you've already tried. You'll get an actual opinion back, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - BFSI | fintech",
+    "sectionTitle": "Genuinely not surewhere you fit?",
+    "url": "industry.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Genuinely not surewhere you fit? Tell us what you are, what's bugging you most, and whether you need advice, a build, or both. We'll point you at the right starting line.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Sthiros - D2C Retail",
+    "url": "industry1.html",
+    "anchor": "",
+    "content": "We build financial systems that clear audit before the auditor asks. ﻿ Sthiros - D2C Retail Your ad spend lies. We find out by how much. D2C brands are opening stores, FMCG giants are buying the upstarts that scared them, and quick commerce reset what counts as fast, while margins thin everywhere. What holds up is the operating model underneath the marketing. We build that layer. BOOK A 30-MIN CALL GET THE INDUSTRY",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry1.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "My margins are erodingas I scale",
+    "url": "industry1.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "My margins are erodingas I scale. CAC is rising, contribution is falling. What worked at ₹20Cr isn't holding at ₹80Cr and I can't see exactly where the margin is going. Finding where the margin really went: Margin that erodes as you scale is almost never a mystery, it's structural. CAC climbs because the cheap channels are tapped out. Contribution slips because nobody renegotia",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "I need to go offline but I'venever run physical retail",
+    "url": "industry1.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "I need to go offline but I'venever run physical retail. Retail leasing, store ops, channel inventory — every D2C brand is going offline. I don't know how to do it without destroying my digital margin. Going offline without wrecking the margin that got you here: D2C brands leased around 5.95 lakh sq ft of retail space in the first half of 2025, and a fair number are improvising ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "I'm thinking about an exit or astrategic raise",
+    "url": "industry1.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "I'm thinking about an exit or astrategic raise. HUL paid 8.5x for Minimalist. I want to know where I stand and what I need to fix to be acquisition-ready in 18 months. Getting acquisition-ready before the acquirer looks: HUL paid ₹2,955Cr for Minimalist, 8.5x revenue, on a brand that wasn't even profitable. What they were buying was brand equity, operating clarity, and a data r",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Everything still runs through me",
+    "url": "industry1.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Everything still runs through me. I'm the bottleneck. Every decision, every key relationship, every fire. I can't scale if the business can't operate without me in the room. Building a business that runs when you're not in the room: When every decision routes through you, what you've actually got is a very demanding job wearing a business costume. We design the org structure, t",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "I'm acquiring customers butnot keeping them",
+    "url": "industry1.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "I'm acquiring customers butnot keeping them. Repeat rate is too low, LTV isn't justifying CAC, and I'm running a leaky bucket. Acquisition is expensive. Retention is where the real margin is. Retention, which is where the money actually is: Every founder knows acquisition costs a fortune, and most keep spending there anyway because it's the visible number. The quieter truth is ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "I'm flying blind on data",
+    "url": "industry1.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "I'm flying blind on data. I have Shopify, Meta Ads, Google Analytics, and a 3PL dashboard. None of them talk to each other and none of them tell me what to do next. From five dashboards to one that tells you what to do: You've got Shopify, Meta Ads, Google Analytics, a 3PL dashboard, and a spreadsheet your ops lead built in 2022 and quietly still depends on. None of them are on",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry1.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Same-store sales growth is stalling",
+    "url": "industry1.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Same-store sales growth is stalling. Footfall is flat, ticket sizes aren't growing, and new store economics are getting harder to justify. The existing model is plateauing. SOLUTION Working out why same-store growth stalled, then restarting it: A same-store plateau is rarely one thing. It's usually format fatigue, an assortment that's drifted away from what the catchment actual",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Inventory is either too much or too little — never right",
+    "url": "industry1.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Inventory is either too much or too little — never right. Overstock in some SKUs, stockouts in others. My inventory planning is reactive and it's costing me both margin and sales. Inventory that's neither piled up nor sold out: Retail inventory punishes you at both ends. The slow movers pile up, tie up cash and eventually get marked down; the fast movers run dry and send custom",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "My online and offline channels aren't connected",
+    "url": "industry1.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "My online and offline channels aren't connected. A customer buys online and returns in-store. I have no unified view of who they are, what they've bought, or what they're worth. One customer record instead of two strangers: The customer who buys online and returns the item in-store is, as far as most retail systems are concerned, two unrelated people. So you can't see their rea",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Store-level P&L visibility is too lagging",
+    "url": "industry1.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Store-level P&L visibility is too lagging. By the time I know a store is underperforming, I've already missed the window to intervene. I need to see store economics in real time. Store economics you can see this week, not next month: Monthly store P&Ls mean every decision you make is a reaction to a reality that's already a month gone. By the time a struggling store shows up in",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Frontline staff productivity and retention is a constant problem",
+    "url": "industry1.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Frontline staff productivity and retention is a constant problem. High attrition, inconsistent service quality, training that doesn't stick — my frontline is the product and it's not reliable enough. A frontline that performs on a busy Saturday, not just in training: In retail the frontline is the product, which makes it awkward that the frontline is also where attrition runs h",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "I want to launch a loyalty programme that actually drives repeat",
+    "url": "industry1.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "I want to launch a loyalty programme that actually drives repeat. I have a points system. It doesn't change behaviour. I need a retention mechanic that actually makes customers come back more often and spend more. Loyalty that changes what people actually buy: A points programme that doesn't change behaviour is really a discount scheme with extra admin. Loyalty that works start",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry1.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "D2C challengers are taking share in my premium segments",
+    "url": "industry1.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "D2C challengers are taking share in my premium segments. Brands like Minimalist, Mamaearth, and Yoga Bar built in three years what took us twenty. I need a D2C response strategy that doesn't cannibalise my trade channel. Answering the D2C challengers without knifing your own trade channel: The digital-native brands built in three years what took you twenty, and copying them who",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "My digital commerce capability is significantly underdeveloped",
+    "url": "industry1.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "My digital commerce capability is significantly underdeveloped. RE-commerce is 8% of our revenue and growing, but our D2C site, marketplace presence, and digital marketing capability are all underinvested. Building the digital commerce muscle you skipped: Doing 8% of your revenue through digital and calling it 'growing' is a polite way of saying you're behind. The brands that w",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "I want to acquire a D2C brand but need to assess and integrate it well",
+    "url": "industry1.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "I want to acquire a D2C brand but need to assess and integrate it well. Every major FMCG player is acquiring D2C. I need a target assessment framework and a post-merger integration model that preserves the brand while plugging it into my distribution. Buying a D2C brand without accidentally killing it: Marico bought Beardo, True Elements and Plix. HUL took Minimalist. ITC picke",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Trade marketing spend is high but ROI is unclear",
+    "url": "industry1.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Trade marketing spend is high but ROI is unclear. I'm spending heavily on in-store visibility, promoter programmes, and trade schemes. The ROI is based on assumptions, not data. Finding out if your trade spend is doing anything: Trade marketing is usually one of the biggest lines in an FMCG P&L and one of the least measured, which is a striking combination when you say it out l",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Demand forecasting is too inaccurate and it's hurting service levels",
+    "url": "industry1.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Demand forecasting is too inaccurate and it's hurting service levels. Forecast accuracy drives everything — production, procurement, distributor fill rates. Mine isn't good enough and it's creating waste and stockouts at the same time. Forecasts good enough to stop wasting and stocking-out at once: A bad forecast in FMCG doesn't stay contained. It becomes the wrong production r",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "I want to build a direct consumer data capability",
+    "url": "industry1.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "I want to build a direct consumer data capability. My consumer data sits with Amazon, Flipkart, and Modern Trade. I don't own it. I want the first-party infrastructure that gives me a direct relationship with my end consumer. Owning the consumer relationship you're currently renting: If your consumer data lives entirely inside Amazon, Flipkart and Modern Trade, you don't really",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry1.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "My dark store unit economics don't work at current order density",
+    "url": "industry1.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "My dark store unit economics don't work at current order density. AOV is too low, delivery costs are too high, and I need a higher order density per store to make the P&L work. I don't know which lever to pull first. Making the dark store P&L work at the density you have: Quick commerce economics live and die on order density, the number of orders a dark store does per day. Bel",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Inventory positioning across dark stores is wrong",
+    "url": "industry1.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Inventory positioning across dark stores is wrong. I'm stocking the wrong SKUs in the wrong stores. Waste is high, stockouts on fast movers are frequent, and my assortment decisions are based on gut feel. Stocking Koramangala like Koramangala, not like everywhere else: Dark store assortment is stubbornly local. Koramangala doesn't buy what Whitefield buys, and neither of them b",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Dark store site selection is more art than science",
+    "url": "industry1.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Dark store site selection is more art than science. I'm opening stores based on catchment intuition and competitor proximity. I need a data-driven site scoring model before I commit the next round of capex. Picking dark store sites with data instead of a hunch: A dark store in the wrong spot burns capital quietly for months before anyone's willing to admit it. Catchment, compet",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Delivery partner and dark store ops efficiency varies too much",
+    "url": "industry1.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Delivery partner and dark store ops efficiency varies too much. My best stores run at significantly better economics than my worst. I can't identify what the best stores are doing differently or replicate it systematically. Cloning what your best dark store already knows: The gap between your best dark store and your worst usually comes down to a few unglamorous things: the sto",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "I have rich hyperlocal demand data I'm not using intelligently",
+    "url": "industry1.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "I have rich hyperlocal demand data I'm not using intelligently. Every order tells me something about hyperlocal demand patterns, time-of-day behaviour, and basket composition. I'm not extracting the intelligence I should be. Turning every order into something you can use: Every order you fulfil is a small pile of signal — time, location, basket, address, whether they've ordered",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "I want to expand to new cities but the playbook isn't documented",
+    "url": "industry1.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "I want to expand to new cities but the playbook isn't documented. We figured out how to make it work in our first two cities through trial and error. I need a documented, repeatable playbook before I deploy capital into ten more. A city playbook, before you bet capex on ten more: The trial-and-error that got your first two cities working is expensive to repeat ten more times. B",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry1.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Platform fees and advertising costs are compressing my margins to zero",
+    "url": "industry1.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Platform fees and advertising costs are compressing my margins to zero. Between referral fees, FBA costs, and the ad spend needed to maintain visibility, my contribution margin has been squeezed to single digits. Getting your marketplace margin back above zero: Referral fees, FBA charges, storage, ad spend, returns handling — stack all the platform costs up and a lot of sellers",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "I'm overdependent on one marketplace and it's a concentration risk",
+    "url": "industry1.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "I'm overdependent on one marketplace and it's a concentration risk. 80% of my revenue comes from one platform. A policy change, a fee increase, or an algorithm shift could significantly damage my business overnight. Spreading the risk beyond one platform's mood: Doing 80% of your revenue through a single marketplace means you're one policy change, fee hike or algorithm tweak aw",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "My ratings and reviews are declining and affecting conversion",
+    "url": "industry1.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "My ratings and reviews are declining and affecting conversion. Returns, quality complaints, and negative reviews are compounding. My category rank is dropping and I don't have a systematic way to address it. Stopping the ratings spiral before it eats your rank: On a marketplace, ratings and return rates feed straight into the algorithm, so a slipping rating cuts your visibility",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "My marketplace advertising is managed manually and inefficiently",
+    "url": "industry1.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "My marketplace advertising is managed manually and inefficiently. I'm spending on ads based on intuition. Keyword strategy, bid management, and ROAS optimisation are all manual processes that aren't keeping up with platform changes. Ad spend that isn't managed on a Sunday-night hunch: Hand-tuned keywords, manual bid tweaks, and a campaign structure someone built in 2021 that ha",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Inventory planning across marketplaces is creating FBA penalties and stockouts",
+    "url": "industry1.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Inventory planning across marketplaces is creating FBA penalties and stockouts. Oversending into FBA warehouses creates storage fees. Undersending creates stockouts and rank drops. I can't calibrate the right inventory levels consistently. The narrow FBA sweet spot between fees and stockouts: FBA inventory is a forecasting problem that punishes you generously in both directions",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "I want to reduce marketplace dependence by building a D2C channel",
+    "url": "industry1.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "I want to reduce marketplace dependence by building a D2C channel. Marketplace economics are getting worse every year. I want to build a D2C channel but I don't know how to acquire customers profitably outside a marketplace environment. Building a D2C channel where discovery isn't handed to you: Going D2C from a marketplace base means learning a completely different acquisition",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry1.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Portfolio-level P&L visibility is fragmented across brands",
+    "url": "industry1.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Portfolio-level P&L visibility is fragmented across brands. Each brand has its own reporting. I don't have a consolidated view of which brands are creating value, which are burning it, and where to allocate the next round of capital. One consolidated view instead of a dozen brand silos: Running a portfolio without consolidated financials is really just capital allocation by vib",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Shared services aren't actually saving costs or accelerating brands",
+    "url": "industry1.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Shared services aren't actually saving costs or accelerating brands. The promise of shared logistics, shared tech, and shared marketing hasn't materialised. Each brand still largely operates independently and the synergies are on paper. Shared services that exist somewhere other than the pitch deck: The aggregator pitch was always shared supply chain, shared tech, shared market",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "I want to assess acquisition targets more systematically",
+    "url": "industry1.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "I want to assess acquisition targets more systematically. We're looking at 10-15 D2C brands a quarter. Our assessment is inconsistent — sometimes deep on financials, sometimes gut feel. We need a repeatable scorecard. One scorecard, so every target gets judged the same way: Looking at 10 to 15 brands a quarter and assessing each one differently — deep financials on this one, a ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "I want AI-powered brand performance intelligence across the portfolio",
+    "url": "industry1.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "I want AI-powered brand performance intelligence across the portfolio. Cohort analysis, CAC trends, LTV trajectories, channel health — I want a live dashboard that aggregates these signals across all brands so I can see problems and opportunities early. Seeing a brand's problem before the monthly board pack does: Running a portfolio without live intelligence is running it a mon",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Brand founders are leaving after acquisition and taking brand DNA with them",
+    "url": "industry1.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Brand founders are leaving after acquisition and taking brand DNA with them. Post-acquisition retention of founding teams is poor. The brands lose momentum because the people who built them don't stay. I need a transition model that preserves brand culture. Keeping the founders who made the brand worth buying: The most common way a D2C acquisition disappoints is quietly: the fo",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "My exit strategy for portfolio brands isn't clearly defined",
+    "url": "industry1.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "My exit strategy for portfolio brands isn't clearly defined. I'm building brands toward an exit — strategic sale, secondary PE, or IPO. But the exit criteria, the preparation timeline, and the positioning work for each brand aren't structured. An exit plan for each brand, not a vague hope of one: A portfolio built without a clear exit for each brand is really a capital-structur",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Your ad spend lies. We find out by how much.",
+    "url": "industry1.html#sec-your-ad-spend-lies-we-find-out-by-how-much",
+    "anchor": "sec-your-ad-spend-lies-we-find-out-by-how-much",
+    "content": "Your ad spend lies. We find out by how much. D2C brands are opening stores, FMCG giants are buying the upstarts that scared them, and quick commerce reset what counts as fast, while margins thin everywhere. What holds up is the operating model underneath the marketing. We build that layer. BOOK A 30-MIN CALL GET THE INDUSTRY DIAGNOSTIC",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Who are you?We'll show you theright problems.",
+    "url": "industry1.html#Whotherightproblemssec",
+    "anchor": "Whotherightproblemssec",
+    "content": "Who are you?We'll show you theright problems. Pick your segment. What comes up is tuned to your reality and the exact stage you're at. D2C brand founder Retail chain FMCG brand Quick commerce Marketplace seller Brand incubator PROBLEMS STHIROS SOLUTION My margins are erodingas I scale CAC is rising, contribution is falling. What worked at ₹20Cr isn't holding at ₹80Cr and I can'",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Finding where the margin really went",
+    "url": "industry1.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Finding where the margin really went Margin that erodes as you scale is almost never a mystery, it's structural. CAC climbs because the cheap channels are tapped out. Contribution slips because nobody renegotiated COGS and logistics when the volume tripled. We rebuild the unit economics from CAC through to LTV, renegotiate costs by SKU and channel, and lay out a contribution wa",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Going offline without wrecking the margin that got you here",
+    "url": "industry1.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Going offline without wrecking the margin that got you here D2C brands leased around 5.95 lakh sq ft of retail space in the first half of 2025, and a fair number are improvising the whole way through. We design the operating model for your move offline properly: store formats, how inventory flows across channels, a retail P&L that makes sense, the data bridge that keeps offline",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Getting acquisition-ready before the acquirer looks",
+    "url": "industry1.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Getting acquisition-ready before the acquirer looks HUL paid ₹2,955Cr for Minimalist, 8.5x revenue, on a brand that wasn't even profitable. What they were buying was brand equity, operating clarity, and a data room that told the story without anyone having to spin it. We run the whole exit-readiness programme: financial cleanup, an honest audit of the operating model, brand doc",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Building a business that runs when you're not in the room",
+    "url": "industry1.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Building a business that runs when you're not in the room When every decision routes through you, what you've actually got is a very demanding job wearing a business costume. We design the org structure, the roles and the decision rights so your team can move without checking with you first, then build the performance system — goals, dashboards, escalation paths — that makes ac",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Retention, which is where the money actually is",
+    "url": "industry1.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Retention, which is where the money actually is Every founder knows acquisition costs a fortune, and most keep spending there anyway because it's the visible number. The quieter truth is that defensible D2C businesses get built on the second, third and tenth purchase. We design the retention strategy — cohorts, repeat-purchase logic, loyalty mechanics — then build the AI that r",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "From five dashboards to one that tells you what to do",
+    "url": "industry1.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "From five dashboards to one that tells you what to do You've got Shopify, Meta Ads, Google Analytics, a 3PL dashboard, and a spreadsheet your ops lead built in 2022 and quietly still depends on. None of them are on speaking terms. We consolidate the data, work out which decisions actually matter, and build an intelligence layer that answers the 'so what do I do now' question ra",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "SOLUTION Working out why same-store growth stalled, then restarting it",
+    "url": "industry1.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "SOLUTION Working out why same-store growth stalled, then restarting it A same-store plateau is rarely one thing. It's usually format fatigue, an assortment that's drifted away from what the catchment actually wants, and an in-store experience that's aged a little, all compounding at once. We run the diagnostic properly — footfall, conversion, basket trends, catchment mapping — ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Inventory that's neither piled up nor sold out",
+    "url": "industry1.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Inventory that's neither piled up nor sold out Retail inventory punishes you at both ends. The slow movers pile up, tie up cash and eventually get marked down; the fast movers run dry and send customers to someone else. We rebuild the forecasting and planning model around SKU-level velocity and store-cluster assortment, then put an AI replenishment engine underneath that pulls ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "One customer record instead of two strangers",
+    "url": "industry1.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "One customer record instead of two strangers The customer who buys online and returns the item in-store is, as far as most retail systems are concerned, two unrelated people. So you can't see their real lifetime value, their channel preferences, or whether they're about to drift away. We build the unified data layer that resolves identity across channels into a single record, p",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Store economics you can see this week, not next month",
+    "url": "industry1.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Store economics you can see this week, not next month Monthly store P&Ls mean every decision you make is a reaction to a reality that's already a month gone. By the time a struggling store shows up in the board pack, the moment to save it has usually passed. We design the store-level financial model and build the real-time dashboard that hands your ops and commercial teams live",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "A frontline that performs on a busy Saturday, not just in training",
+    "url": "industry1.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "A frontline that performs on a busy Saturday, not just in training In retail the frontline is the product, which makes it awkward that the frontline is also where attrition runs highest and service quality wobbles most. Inconsistent staff, training that evaporates under a busy Saturday, revolving-door hiring — these usually trace back to one thing, an operating model that was n",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Loyalty that changes what people actually buy",
+    "url": "industry1.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Loyalty that changes what people actually buy A points programme that doesn't change behaviour is really a discount scheme with extra admin. Loyalty that works starts from knowing which behaviours drive lifetime value — how often people visit, how big the basket, how many categories they touch — and then rewarding exactly those. We redesign the architecture around that and buil",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Answering the D2C challengers without knifing your own trade channel",
+    "url": "industry1.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Answering the D2C challengers without knifing your own trade channel The digital-native brands built in three years what took you twenty, and copying them wholesale usually just annoys your distributors. The move is a D2C strategy that captures the premium, direct-to-consumer opportunity without lighting a price and channel war with the modern trade network that still moves mos",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Building the digital commerce muscle you skipped",
+    "url": "industry1.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Building the digital commerce muscle you skipped Doing 8% of your revenue through digital and calling it 'growing' is a polite way of saying you're behind. The brands that win here have a D2C site worth visiting, a marketplace presence that's actually optimised across Amazon, Flipkart and Blinkit, and digital marketing that can acquire and keep customers without setting money o",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Buying a D2C brand without accidentally killing it",
+    "url": "industry1.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Buying a D2C brand without accidentally killing it Marico bought Beardo, True Elements and Plix. HUL took Minimalist. ITC picked up Yoga Bar. Every one of those was a bet on brand equity and digital chops. Signing the deal is the straightforward bit. The integration afterwards is where the value either compounds or quietly evaporates, and it's usually the latter. We cover the w",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Finding out if your trade spend is doing anything",
+    "url": "industry1.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Finding out if your trade spend is doing anything Trade marketing is usually one of the biggest lines in an FMCG P&L and one of the least measured, which is a striking combination when you say it out loud. Shelf visibility, promoter programmes, trade schemes, retailer incentives — most of it gets judged on gut feel and the strength of a relationship. We rebuild the measurement ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Forecasts good enough to stop wasting and stocking-out at once",
+    "url": "industry1.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Forecasts good enough to stop wasting and stocking-out at once A bad forecast in FMCG doesn't stay contained. It becomes the wrong production run, the wrong raw material order, distributor fill rates that slip, and then somehow both excess inventory and empty shelves at the same time. We rebuild the forecasting model around the signals that matter — sell-out data, promo calenda",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Owning the consumer relationship you're currently renting",
+    "url": "industry1.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Owning the consumer relationship you're currently renting If your consumer data lives entirely inside Amazon, Flipkart and Modern Trade, you don't really own the consumer relationship — you're renting it, on their terms. The day one of them changes a data-sharing policy, you go blind. We design the first-party data strategy: a direct channel, engagement programmes, loyalty mech",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Making the dark store P&L work at the density you have",
+    "url": "industry1.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Making the dark store P&L work at the density you have Quick commerce economics live and die on order density, the number of orders a dark store does per day. Below break-even, every order quietly loses money; comfortably above it, the margins are better than outsiders assume. We model the economics store by store, find the lever that actually moves your particular P&L — AOV, d",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Stocking Koramangala like Koramangala, not like everywhere else",
+    "url": "industry1.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Stocking Koramangala like Koramangala, not like everywhere else Dark store assortment is stubbornly local. Koramangala doesn't buy what Whitefield buys, and neither of them buys the same thing at 7am as at 9pm. Most operators run a near-standard assortment with a few local tweaks and hope. We build the hyperlocal demand intelligence that sets assortment at the SKU level by stor",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Picking dark store sites with data instead of a hunch",
+    "url": "industry1.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Picking dark store sites with data instead of a hunch A dark store in the wrong spot burns capital quietly for months before anyone's willing to admit it. Catchment, competitor density, delivery radius, the residential-versus-commercial mix, the shape of demand across the day — all of it decides whether a store reaches break-even density before the patience runs out. We build t",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Cloning what your best dark store already knows",
+    "url": "industry1.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Cloning what your best dark store already knows The gap between your best dark store and your worst usually comes down to a few unglamorous things: the store manager, picker productivity, and how seriously anyone takes inventory accuracy. Your best stores have clearly worked something out. The trouble is it lives in a handful of heads and nobody's written it down. We find the r",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Turning every order into something you can use",
+    "url": "industry1.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Turning every order into something you can use Every order you fulfil is a small pile of signal — time, location, basket, address, whether they've ordered before. Put together properly, those signals show you hyperlocal demand, time-of-day habits, which products get bought together, and category trends emerging in your data months before they surface in anyone's national number",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "A city playbook, before you bet capex on ten more",
+    "url": "industry1.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "A city playbook, before you bet capex on ten more The trial-and-error that got your first two cities working is expensive to repeat ten more times. Before the next expansion, the playbook needs to actually exist on paper: site selection criteria, the launch sequence, opening assortment, the staffing model, and honest ramp-up assumptions about when a new city turns investable. W",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Getting your marketplace margin back above zero",
+    "url": "industry1.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Getting your marketplace margin back above zero Referral fees, FBA charges, storage, ad spend, returns handling — stack all the platform costs up and a lot of sellers are quietly running a negative contribution on a real chunk of their catalogue without knowing which chunk. We audit the marketplace P&L SKU by SKU, separate the products that make money from the ones that lose it",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Spreading the risk beyond one platform's mood",
+    "url": "industry1.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Spreading the risk beyond one platform's mood Doing 80% of your revenue through a single marketplace means you're one policy change, fee hike or algorithm tweak away from a very bad quarter. We design the diversification strategy: which other marketplaces are worth activating, how to sequence the ONDC opportunity, and how to stand up a D2C channel that can acquire customers pro",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Stopping the ratings spiral before it eats your rank",
+    "url": "industry1.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Stopping the ratings spiral before it eats your rank On a marketplace, ratings and return rates feed straight into the algorithm, so a slipping rating cuts your visibility, which cuts sales, which drags the rating down further. It's a spiral with a nasty feedback loop. We find the actual root cause — product quality, inaccurate listings, fulfilment misses, or customers expectin",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Ad spend that isn't managed on a Sunday-night hunch",
+    "url": "industry1.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Ad spend that isn't managed on a Sunday-night hunch Hand-tuned keywords, manual bid tweaks, and a campaign structure someone built in 2021 that hasn't moved since — marketplace advertising run this way reliably leaves money on the table. We audit what you've got, rebuild the campaign architecture, and put an AI optimisation layer over it that adjusts bids, keywords and budgets ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "The narrow FBA sweet spot between fees and stockouts",
+    "url": "industry1.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "The narrow FBA sweet spot between fees and stockouts FBA inventory is a forecasting problem that punishes you generously in both directions. Send too much and you're paying storage fees and taking IPI penalties; send too little and you get stockouts and rank drops that take weeks to claw back. We rebuild the replenishment model around real velocity and sensible lead-time buffer",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Building a D2C channel where discovery isn't handed to you",
+    "url": "industry1.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Building a D2C channel where discovery isn't handed to you Going D2C from a marketplace base means learning a completely different acquisition game, because nobody's handing you free discovery anymore. We design the channel from the ground up: a brand reason for someone to buy direct, a paid-and-organic acquisition model that actually pays back, retention mechanics that make re",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "One consolidated view instead of a dozen brand silos",
+    "url": "industry1.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "One consolidated view instead of a dozen brand silos Running a portfolio without consolidated financials is really just capital allocation by vibes. You can't cleanly see which brands are creating value, which are quietly burning more than their share, and which are nearing the point where the next cheque stops making sense. We design the portfolio financial architecture and bu",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Shared services that exist somewhere other than the pitch deck",
+    "url": "industry1.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Shared services that exist somewhere other than the pitch deck The aggregator pitch was always shared supply chain, shared tech, shared marketing, all compounding into operating leverage. Then reality arrives: brands resist standardisation, shared systems breed dependency, and coordination costs more than the model ever assumed. We redesign the shared-services architecture arou",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "One scorecard, so every target gets judged the same way",
+    "url": "industry1.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "One scorecard, so every target gets judged the same way Looking at 10 to 15 brands a quarter and assessing each one differently — deep financials on this one, a good feeling about the founder on that one — means you're deploying capital on information you can't actually compare. We build the acquisition scorecard: one consistent frame across brand equity, financial health, chan",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Seeing a brand's problem before the monthly board pack does",
+    "url": "industry1.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Seeing a brand's problem before the monthly board pack does Running a portfolio without live intelligence is running it a month behind. By the time a brand's falling repeat rate or climbing CAC reaches the monthly board pack, the cheap moment to fix it has usually passed. We build the AI intelligence layer that aggregates cohorts, CAC, LTV and channel health live across every b",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Keeping the founders who made the brand worth buying",
+    "url": "industry1.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Keeping the founders who made the brand worth buying The most common way a D2C acquisition disappoints is quietly: the founders leave, and the instinct and culture that made the brand work walk out with them. Acquirers hand over earnouts and assume that's enough, then wonder why the momentum faded. We design the transition so it doesn't — a governance structure that gives found",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "An exit plan for each brand, not a vague hope of one",
+    "url": "industry1.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "An exit plan for each brand, not a vague hope of one A portfolio built without a clear exit for each brand is really a capital-structure problem waiting to be noticed. Strategic buyers want clean unit economics, documented brand equity, operating independence and a distribution story. PE buyers want a different list entirely — growth trajectory, a clear line to EBITDA, a manage",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "The Sthiros Difference",
+    "url": "industry1.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "The Sthiros Difference We speak fluent CAC, LTV and contribution margin SKU-level profitability, channel P&Ls, the whole unglamorous financial spine of a consumer business. We advise in that language natively, rather than importing a generic consulting framework and hoping it fits. Our AI does something other than describe the past Demand forecasting, churn prediction, pricing ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "We speak fluent CAC, LTV and contribution margin",
+    "url": "industry1.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We speak fluent CAC, LTV and contribution margin SKU-level profitability, channel P&Ls, the whole unglamorous financial spine of a consumer business. We advise in that language natively, rather than importing a generic consulting framework and hoping it fits.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Our AI does something other than describe the past",
+    "url": "industry1.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "Our AI does something other than describe the past Demand forecasting, churn prediction, pricing intelligence, returns-fraud detection, LTV scoring. Built to act on a consumer business, not just draw you a tidy chart of what already went wrong.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "We leave software your team runs without us",
+    "url": "industry1.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We leave software your team runs without us Channel P&L tools, retention engines, omnichannel dashboards, inventory platforms. Real products your operators open every day, none of which need a consultant in the room to work.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "What youcan expect",
+    "url": "industry1.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "What youcan expect ₹20-200Cr The growth stage we're actually built for. Big enough to matter, small enough to move. 4-16 weeks Founder-and-operator speed. Whatever consulting speed is, this isn't it. One team,three modes The people who advise you are the people who build it. The plan and the thing arrive together.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "₹20-200Cr",
+    "url": "industry1.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "₹20-200Cr The growth stage we're actually built for. Big enough to matter, small enough to move.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "4-16 weeks",
+    "url": "industry1.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "4-16 weeks Founder-and-operator speed. Whatever consulting speed is, this isn't it.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "One team,three modes",
+    "url": "industry1.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "One team,three modes The people who advise you are the people who build it. The plan and the thing arrive together.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Relatedcase studies",
+    "url": "industry1.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Moving inventory intelligence beyond reactive ERP reporting, in 12 weeks Automating multilingual video creation for training and incident reporting, at scale Teaching machine data and Excel to speak one language, in real time Cutting manual cash burn reporting effort by 50-70%, in 25 business days Turning an undocumented risk practice into a Board-ready, CAG",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Pick a way in.They all lead to thesame conversation.",
+    "url": "industry1.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Pick a way in.They all lead to thesame conversation. Whether you run a mid-size bank, you're the one who has to make an NBFC's transformation actually work, or you're a founder who just hit the first wall money can't knock down; start wherever's easiest.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "A 30-minute call",
+    "url": "industry1.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "A 30-minute call Tell us the problem. By the end of the call we'll tell you what we'd tackle first, whether that's a regulatory sprint, an AI build, or shipping a piece of software. No deck required.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Self diagnosis angle?",
+    "url": "industry1.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Self diagnosis angle? A free self-assessment across your regulatory posture, AI readiness, operating maturity and risk gaps. It tells you where you stand and what's worth doing first. Occasionally it tells you you're fine, which we're happy to confirm.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Just describe the mess",
+    "url": "industry1.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Just describe the mess Not ready to talk? Send three lines: what you are, what's broken, what you've already tried. You'll get an actual opinion back, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - D2C Retail",
+    "sectionTitle": "Genuinely not surewhere you fit?",
+    "url": "industry1.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Genuinely not surewhere you fit? Tell us what you are, what's bugging you most, and whether you need advice, a build, or both. We'll point you at the right starting line.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Industries - Energy, Mining & Utilities",
+    "url": "industry2.html",
+    "anchor": "",
+    "content": "We build financial systems that clear audit before the auditor asks. ﻿ Industries - Energy, Mining & Utilities We find the megawatts your model lost. Renewables are scaling at a pace the world has never attempted, discoms are squeezed by AT&C losses and tariff politics, oil and gas rides the usual price cycle, and mining is still running on last decade's extraction economics. Underneath all of it: the gap between wh",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry2.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Actual CUF is consistentlybelow P90 estimates",
+    "url": "industry2.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Actual CUF is consistentlybelow P90 estimates. My plants are underperforming against the generation projections in the financial model. The gap between estimated and actual CUF is eroding IRR and creating covenant pressure with lenders. Closing the gap between the P90 and what the plant actually does: Generation that falls short of the P90 almost always traces to a known list: ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Project execution delays are pushing COD and triggering penalties",
+    "url": "industry2.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Project execution delays are pushing COD and triggering penalties. Grid connectivity delays, land acquisition issues, equipment supply chain gaps, and approval bottlenecks are pushing commissioning dates beyond PPA milestone commitments. Reaching COD before the penalties do: Renewable delays in India are boringly predictable: ISTS connectivity and STU approvals that take longer",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "PPA negotiations and offtake structuring aren't optimised",
+    "url": "industry2.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "PPA negotiations and offtake structuring aren't optimised. I'm signing PPAs at tariffs that don't reflect the risk profile or the current market. Terms on curtailment, payment security, and force majeure aren't adequately protecting my returns. PPA terms you won't regret in year twelve: A PPA signed at the wrong tariff, or thin on curtailment, payment security and force majeure",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "O&M costs are rising and asset performance is degrading",
+    "url": "industry2.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "O&M costs are rising and asset performance is degrading. Module degradation, inverter failures, soiling losses, and O&M contractor performance gaps are increasing cost and reducing generation year-on-year beyond expected degradation curves. Keeping O&M cost and degradation on the curve they promised: O&M runs maybe 1 to 1.5% of capex a year, which sounds trivial until you multi",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Regulatory and grid compliance is creating operational complexity",
+    "url": "industry2.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Regulatory and grid compliance is creating operational complexity. CERC, SERC, ISTS charges, RPO obligations, deviation settlement mechanism, the regulatory environment for renewable generators is complex and non-compliance creates financial exposure. Staying compliant without it eating your week: Compliance for a renewable generator has a lot of moving parts: DSM penalties, in",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "I want to use AI for predictive O&M and generation forecasting",
+    "url": "industry2.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "I want to use AI for predictive O&M and generation forecasting. Predictive maintenance, soiling detection, curtailment prediction, and generation forecasting, AI can improve asset returns but I need the right implementation approach for my plant data. AI on your plant data that earns its keep: In renewable asset management, AI pays off in two specific places: predictive mainten",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry2.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "AT&C losses are too high and the root cause isn't clear",
+    "url": "industry2.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "AT&C losses are too high and the root cause isn't clear. My headline AT&C number is above target but I can't attribute it precisely between technical losses, commercial losses, and collection shortfalls by feeder, zone, or consumer category. Knowing exactly where the AT&C losses are hiding: A headline AT&C number with no attribution behind it is a problem you can't actually man",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Revenue collection efficiency isdeclining in specific segments",
+    "url": "industry2.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Revenue collection efficiency isdeclining in specific segments. Industrial and commercial collection is reasonable. Agricultural and domestic collection, particularly in rural areas is deteriorating. My collection infrastructure isn't calibrated for the problem. Collecting from the segments that have quietly slipped: Collection shortfall is never uniform. It varies sharply by c",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Regulatory asset accumulation is creating balance sheet pressure",
+    "url": "industry2.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Regulatory asset accumulation is creating balance sheet pressure. Tariff orders aren't recovering my cost of supply. Regulatory assets are accumulating faster than they're being recovered, and the gap between cost of supply and realised tariff is widening. Containing the gap between what supply costs and what tariff pays: Regulatory asset build-up is a structural bind: tariff r",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Power theft and metering accuracy are creating revenue leakage",
+    "url": "industry2.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Power theft and metering accuracy are creating revenue leakage. Tampering, bypass connections, and defective meters are creating commercial losses I can't quantify accurately or address systematically at scale. Finding the theft you can't inspect your way to: Theft and dud meters are systemic, and usually clustered in ways a spreadsheet won't show you. The hard part is scale — ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "I have no real-time visibility across the distribution network",
+    "url": "industry2.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "I have no real-time visibility across the distribution network. Feeder-level losses, outage duration, consumer complaints, and collection performance, I'm managing on lagging reports when I need live network intelligence to intervene before losses compound. Live visibility instead of yesterday's reports: Running thousands of feeders, substations and transformers off lagging mon",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "I want to use AI to improve loss attribution and demand forecasting",
+    "url": "industry2.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "I want to use AI to improve loss attribution and demand forecasting. AI for feeder-level loss decomposition, theft detection, demand forecasting, and consumer complaint prediction, the use cases are clear but the data infrastructure and implementation pathway aren't. AI on your billing and SCADA data that produces decisions: Two AI applications reliably earn their place in a DI",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry2.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Lifting costs are higher than field economics can sustain at current prices",
+    "url": "industry2.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Lifting costs are higher than field economics can sustain at current prices. Operating expenditure per barrel has increased structurally. At current oil prices, the margin between lifting cost and realisation is too thin to support the investment programme. Getting lifting cost back under what the field can bear: Lifting cost per barrel is the sum of a lot of moving inputs: ene",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "HSE compliance and incident frequency is a board-level concern",
+    "url": "industry2.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "HSE compliance and incident frequency is a board-level concern. Near-miss reporting, safety observation rates, and process safety metrics aren't at the level the board and regulators expect. One serious incident has disproportionate consequences in this sector. Seeing the incident coming, not writing it up afterwards: HSE in oil and gas is really a leading-indicator problem. Wh",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Reservoir management decisions aren't supported by adequate data",
+    "url": "industry2.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Reservoir management decisions aren't supported by adequate data. Production decline curves, water cut trends, and well interference effects aren't being integrated into field development decisions systematically. I'm making investment decisions with insufficient analytical support. Field development calls backed by more than instinct: Where to drill, when to intervene, how har",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Planned maintenance is creating unplanned downtime",
+    "url": "industry2.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Planned maintenance is creating unplanned downtime. Equipment failures between planned maintenance windows are causing unplanned production losses. My maintenance strategy isn't optimised for the actual failure patterns of the asset. Fixing it before it fails, on the equipment that actually matters: Unplanned failures on compressors, pumps, heat exchangers and rotating equipmen",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Midstream contract and tariff optimisation isn't structured",
+    "url": "industry2.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Midstream contract and tariff optimisation isn't structured. Pipeline access, processing agreements, and offtake contracts haven't been reviewed against current market rates and volumes. I'm potentially leaving commercial value in the counterparty's pocket. The commercial value sitting in contracts nobody's reopened: Midstream contracts — pipeline access, processing fees, offta",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "I want to digitise field operations and reduce manual data entry",
+    "url": "industry2.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "I want to digitise field operations and reduce manual data entry. Field data — production readings, equipment inspections, safety observations — is still largely paper-based or manual-entry digital. The data quality and timeliness isn't adequate for the decisions I need to make. Getting field data off paper and into something usable: Paper production logs, well tests written on",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry2.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Stripping ratio and mining cost per tonne of ore are above plan",
+    "url": "industry2.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Stripping ratio and mining cost per tonne of ore are above plan. Actual waste-to-ore ratios are higher than the mine plan projected. Mining cost per tonne is above the financial model and the gap is compressing the margin on every ore tonne processed. Bringing the stripping ratio back to what the plan assumed: A stripping ratio above the plan is a straightforward economics prob",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Processing recovery is below design and I can't identify why",
+    "url": "industry2.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Processing recovery is below design and I can't identify why. The concentrator or processing plant is recovering less metal per tonne of feed than the design specification. Feed variability, reagent control, and equipment performance are all potential contributors. Recovering the metal the plant was designed to recover: Recovery below design in a concentrator or hydromet plant ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Equipment availability and utilisation is below target",
+    "url": "industry2.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Equipment availability and utilisation is below target. Truck and shovel availability, plant utilisation, and overall equipment effectiveness are below the levels needed to hit the production plan. Maintenance is reactive rather than predictive. Downtime that costs the repair and the whole day behind it: Availability comes down to how often you do planned maintenance, how often",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Safety performance and regulatory compliance is under pressure",
+    "url": "industry2.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Safety performance and regulatory compliance is under pressure. DGMS compliance, safety observation rates, and incident frequency metrics are areas of concern. The regulatory and reputational consequences of a safety failure in mining are severe. Mining safety that runs ahead of the incident, and DGMS with it: Safety in mining matters both because people's lives depend on it an",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Mine planning and actual production diverge and I can't close the gap",
+    "url": "industry2.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Mine planning and actual production diverge and I can't close the gap. The short-term mine plan and actual mining sequences diverge regularly. Grade control, blast fragmentation, and scheduling adherence aren't integrated well enough to keep plan and reality aligned. Keeping the mine plan and what actually happens in the same room: When the short-term plan and the actual mining",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "I want to use AI for ore grade prediction and equipment predictive maintenance",
+    "url": "industry2.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "I want to use AI for ore grade prediction and equipment predictive maintenance. AI for ore grade modelling ahead of mining, equipment failure prediction, and processing optimisation — the data exists but the analytical capability to extract value from it doesn't. AI that knows the grade before the shovel gets there: Two AI applications earn their keep in mining. First, grade mo",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry2.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Regulatory pathway and market access isn't clear",
+    "url": "industry2.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Regulatory pathway and market access isn't clear. CERC, SERC, BIS certification, ALMM list inclusion, RDSS scheme eligibility — the regulatory and policy framework for new energy technologies in India is complex and changing. I need clarity before I commit capital. Regulatory clarity before you commit the capital: The rules around new energy tech in India shift constantly — CER",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Pilot-to-commercial scale transition is harder than expected",
+    "url": "industry2.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Pilot-to-commercial scale transition is harder than expected. The technology works at pilot scale. Commercial scale brings different operating conditions, grid integration requirements, and procurement dynamics that the pilot didn't anticipate. Crossing from pilot to commercial without the money running out: The jump from pilot to commercial scale is where a lot of Indian clean",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "PSU and utility procurement cycles are blocking revenue",
+    "url": "industry2.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "PSU and utility procurement cycles are blocking revenue. My target customers — DISCOMs, PSUs, and central agencies — have procurement timelines of 18-24 months. My business model needs revenue faster than the procurement cycle allows. Winning PSU business inside a cycle that wants to take two years: DISCOM and PSU procurement runs on its own clock: technical pre-qualification, ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "The commercial case for buyers isn't quantified well enough",
+    "url": "industry2.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "The commercial case for buyers isn't quantified well enough. Energy cost savings, grid stability value, carbon credit potential — the value proposition for my technology is multi-dimensional but I haven't built the buyer-specific financial model that makes it concrete. Making the buyer's case in rupees, not carbon: A pitch built on carbon impact or how clever the technology is ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "I want to access government schemes and green financing but the pathway is unclear",
+    "url": "industry2.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "I want to access government schemes and green financing but the pathway is unclear. PLI scheme, PM-KUSUM, RDSS, green bonds, and multilateral climate finance — the funding landscape is rich but the eligibility criteria, application process, and deal structuring are complex. Getting at the capital that's genuinely sitting there: The capital available for energy transition in Ind",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "I want to build an AI layer into my energy product",
+    "url": "industry2.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "I want to build an AI layer into my energy product. Real-time optimisation, predictive performance, grid-responsive dispatch — AI embedded in the product creates competitive differentiation and higher switching costs. I need the right architecture. AI inside the product, where it becomes a moat: Embed AI in an energy storage or cleantech product — real-time optimisation of char",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry2.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "My energy cost is too high and I don't know which lever to pull first",
+    "url": "industry2.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "My energy cost is too high and I don't know which lever to pull first. My blended power tariff, banking charges, cross-subsidy surcharges, and auxiliary consumption are all inputs to my energy cost. I don't have a structured view of where the biggest savings are. Finding the biggest lever in a bill you've never fully read: An industrial energy bill is a stack of components — en",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Captive solar or group captive economics are attractive but the structure is complex",
+    "url": "industry2.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Captive solar or group captive economics are attractive but the structure is complex. Captive solar, group captive, and open access from renewable IPPs all offer lower tariffs than grid supply. The regulatory structure — wheeling charges, banking, cross-subsidy surcharge — makes the net economics hard to calculate. Captive solar: from the attractive slide to the actual net numb",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Open access eligibility and procedures are unclear",
+    "url": "industry2.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Open access eligibility and procedures are unclear. Short-term and long-term open access from the SLDC, bilateral contracts with generators, and power exchange procurement — I'm eligible but the application process and ongoing compliance aren't clear. Open access, from eligible-on-paper to actually buying cheaper power: Open access lets a large consumer buy cheaper power from g",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Energy consumption data isn't granular enough to manage demand charges",
+    "url": "industry2.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Energy consumption data isn't granular enough to manage demand charges. My electricity bill includes demand charges, power factor penalties, and time-of-use components that I'm not managing actively. Better demand-side management would reduce my bill without reducing production. Cutting the bill without cutting a single unit of production: Demand charges are usually 30 to 40% o",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Power quality issues are damaging equipment and creating downtime",
+    "url": "industry2.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Power quality issues are damaging equipment and creating downtime. Voltage fluctuations, harmonic distortion, and supply interruptions are causing equipment damage and production downtime whose cost I've never systematically quantified. Putting a number on the power quality that's costing you: Voltage sags, harmonics, interruptions, frequency deviations — power quality problems",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "I want to use AI for energy consumption optimisation and cost forecasting",
+    "url": "industry2.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "I want to use AI for energy consumption optimisation and cost forecasting. AI for production schedule optimisation around time-of-use tariffs, demand peak prediction and management, and energy cost forecasting — I know the opportunity is significant but the implementation pathway isn't clear. AI that shifts load to the cheap hours on its own: If you have time-of-use tariffs, de",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "We find the megawatts your model lost.",
+    "url": "industry2.html#sec-we-find-the-megawatts-your-model-lost",
+    "anchor": "sec-we-find-the-megawatts-your-model-lost",
+    "content": "We find the megawatts your model lost. Renewables are scaling at a pace the world has never attempted, discoms are squeezed by AT&C losses and tariff politics, oil and gas rides the usual price cycle, and mining is still running on last decade's extraction economics. Underneath all of it: the gap between what an asset could produce and what it does. We close that gap. BOOK A 30",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Who are you?We'll show you theright problems.",
+    "url": "industry2.html#Whotherightproblemssec",
+    "anchor": "Whotherightproblemssec",
+    "content": "Who are you?We'll show you theright problems. Pick your segment. What comes up is tuned to your asset type, the regulator you deal with, and the commercial reality you're actually in. RENEWABLE DEVELOPER POWER UTILITY OR DISCOM OIL AND GAS MINING ENERGY STORAGE OR CLEANTECH INDUSTRIAL ENERGY CONSUMER PROBLEMS STHIROS SOLUTION Actual CUF is consistentlybelow P90 estimates My pla",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Closing the gap between the P90 and what the plant actually does",
+    "url": "industry2.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Closing the gap between the P90 and what the plant actually does Generation that falls short of the P90 almost always traces to a known list: an optimistic resource assessment, soiling worse than the design assumed, inverter clipping, losses in the transformers and cables, and curtailment nobody modelled properly. Each one needs a different fix, which is why 'the plant's underp",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Reaching COD before the penalties do",
+    "url": "industry2.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Reaching COD before the penalties do Renewable delays in India are boringly predictable: ISTS connectivity and STU approvals that take longer than anyone's schedule assumed, land and right-of-way disputes, inverters and transformers arriving late, and state-level approvals that quietly slipped because nobody was tracking them. We build the execution model around those known fai",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "PPA terms you won't regret in year twelve",
+    "url": "industry2.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "PPA terms you won't regret in year twelve A PPA signed at the wrong tariff, or thin on curtailment, payment security and force majeure, is a mistake you get to live with for 25 years. Indian PPAs have moved on a lot — curtailment compensation, must-run provisions, payment security, change-in-law protection are all negotiable, and each one moves your IRR in ways people underesti",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Keeping O&M cost and degradation on the curve they promised",
+    "url": "industry2.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Keeping O&M cost and degradation on the curve they promised O&M runs maybe 1 to 1.5% of capex a year, which sounds trivial until you multiply it across a GW-scale portfolio and it stops sounding trivial. Costs drift up when contractors coast unwatched, when spares are managed by whoever remembers, and when modules and inverters degrade faster than the design curve while nobody'",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Staying compliant without it eating your week",
+    "url": "industry2.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Staying compliant without it eating your week Compliance for a renewable generator has a lot of moving parts: DSM penalties, inter-state transmission charges and losses, RPO obligations, scheduling and forecasting duties, grid code requirements. Miss any of them and you're paying penalties, and in some cases risking must-run status, which is the one you really don't want to los",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "AI on your plant data that earns its keep",
+    "url": "industry2.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "AI on your plant data that earns its keep In renewable asset management, AI pays off in two specific places: predictive maintenance that catches inverter, transformer and tracker failures before they cost you generation, and forecasting that sharpens DSM compliance and your trading calls. Both need clean sensor data, a sensible model, and actual wiring into how your ops team wo",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Knowing exactly where the AT&C losses are hiding",
+    "url": "industry2.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Knowing exactly where the AT&C losses are hiding A headline AT&C number with no attribution behind it is a problem you can't actually manage. Inside that one figure are technical losses by feeder voltage, commercial losses from metering gaps, and collection shortfalls that vary wildly by consumer category, and each needs a completely different response. We decompose it: feeder-",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Collecting from the segments that have quietly slipped",
+    "url": "industry2.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Collecting from the segments that have quietly slipped Collection shortfall is never uniform. It varies sharply by consumer category, geography and channel, and the approach that works on an urban commercial connection does nothing for a rural agricultural one. We run the diagnostic segment by segment, then design the targeted programme around it — the right channels, sensible ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Containing the gap between what supply costs and what tariff pays",
+    "url": "industry2.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Containing the gap between what supply costs and what tariff pays Regulatory asset build-up is a structural bind: tariff revisions lag your rising cost of supply, true-up petitions come back only partly admitted, and the gap compounds every regulatory period until the balance sheet notices. Getting on top of it takes a deliberate regulatory strategy — cost documented rigorously",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Finding the theft you can't inspect your way to",
+    "url": "industry2.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Finding the theft you can't inspect your way to Theft and dud meters are systemic, and usually clustered in ways a spreadsheet won't show you. The hard part is scale — no field team can physically check every meter every month. AI reading consumption patterns can flag the high-probability locations, and a structured enforcement programme can send inspectors where they'll actual",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Live visibility instead of yesterday's reports",
+    "url": "industry2.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Live visibility instead of yesterday's reports Running thousands of feeders, substations and transformers off lagging monthly reports means you find out about a problem well after the moment you could have done something cheap about it. A modern utility runs on live network intelligence: feeder loading, transformer health, where the outage actually is, where the complaints are ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "AI on your billing and SCADA data that produces decisions",
+    "url": "industry2.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "AI on your billing and SCADA data that produces decisions Two AI applications reliably earn their place in a DISCOM: disaggregated loss attribution that pinpoints theft and commercial loss from smart-meter and billing data, and demand forecasting that tightens power-purchase planning and cuts imbalance charges. Both live or die on the data infrastructure and whether anyone wire",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Getting lifting cost back under what the field can bear",
+    "url": "industry2.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Getting lifting cost back under what the field can bear Lifting cost per barrel is the sum of a lot of moving inputs: energy for artificial lift, chemical injection, how you deploy the workforce, how often you intervene on wells, what the surface facilities cost to run. When realisation is thin, every dollar you take out of that matters more. We decompose the cost line by line ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Seeing the incident coming, not writing it up afterwards",
+    "url": "industry2.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Seeing the incident coming, not writing it up afterwards HSE in oil and gas is really a leading-indicator problem. When a serious incident finally happens, the signals that predicted it had usually been sitting there, unaddressed, for weeks. Near-miss frequency, unsafe-act observation rates, process safety indicators, audit scores — they all whisper before anything shouts. We r",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Field development calls backed by more than instinct",
+    "url": "industry2.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Field development calls backed by more than instinct Where to drill, when to intervene, how hard to push offtake — field development calls echo for decades. Make them on thin analysis and you get deferred production, recovery factors below what the reservoir would have given you, and a field that declines earlier than it should. We build the reservoir intelligence capability: p",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Fixing it before it fails, on the equipment that actually matters",
+    "url": "industry2.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Fixing it before it fails, on the equipment that actually matters Unplanned failures on compressors, pumps, heat exchangers and rotating equipment turn into production losses that cost far more than the repair. Calendar-based preventive maintenance gets it wrong in both directions — over-servicing gear that's fine, missing the failures that don't respect the schedule. We deploy",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "The commercial value sitting in contracts nobody's reopened",
+    "url": "industry2.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "The commercial value sitting in contracts nobody's reopened Midstream contracts — pipeline access, processing fees, offtake pricing, transportation — tend to get signed once and then left alone while volumes, markets and regulation all move on around them. An audit usually turns up real money: tariffs that stopped reflecting the market years ago, volume commitments worth renego",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Getting field data off paper and into something usable",
+    "url": "industry2.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Getting field data off paper and into something usable Paper production logs, well tests written on a clipboard, safety observations arriving by email — the data turns up too late and too rough to drive the decisions it's supposed to. We run the digitalisation programme: mobile capture for readings and observations, well-test data pulled in automatically, and a live field-ops d",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Bringing the stripping ratio back to what the plan assumed",
+    "url": "industry2.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Bringing the stripping ratio back to what the plan assumed A stripping ratio above the plan is a straightforward economics problem with an annoying number of causes. You're moving more waste per tonne of ore than the model assumed, so cost per tonne is up, and the culprit is usually some mix of the resource model being optimistic, mine planning that wasn't fully optimised, and ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Recovering the metal the plant was designed to recover",
+    "url": "industry2.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Recovering the metal the plant was designed to recover Recovery below design in a concentrator or hydromet plant is a multi-variable headache: feed grade the process wasn't calibrated for, reagent dosing that isn't tracking the feed, equipment wear caught too late, a circuit configured for an ore type you're no longer running. We take recovery apart stage by stage, compare actu",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Downtime that costs the repair and the whole day behind it",
+    "url": "industry2.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Downtime that costs the repair and the whole day behind it Availability comes down to how often you do planned maintenance, how often things fail anyway, and how long the repair takes when they do. Reactive maintenance on kit this expensive is a bad trade: an unplanned haul truck failure costs you the repair, then the lost production, then the flow-on hit to the plant feed rate",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Mining safety that runs ahead of the incident, and DGMS with it",
+    "url": "industry2.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Mining safety that runs ahead of the incident, and DGMS with it Safety in mining matters both because people's lives depend on it and because a serious incident brings a DGMS investigation, a possible shutdown, and a hit to your social licence that outlasts the news cycle. That means DGMS compliance, observation systems and incident reporting have to live inside daily operation",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Keeping the mine plan and what actually happens in the same room",
+    "url": "industry2.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Keeping the mine plan and what actually happens in the same room When the short-term plan and the actual mining sequence drift apart, it compounds. Each deviation reshapes next period's grade profile, changes what the plant gets fed, and adds the cost of re-sequencing to claw back. The usual reason is that grade control, blast fragmentation and scheduling adherence are run as t",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "AI that knows the grade before the shovel gets there",
+    "url": "industry2.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "AI that knows the grade before the shovel gets there Two AI applications earn their keep in mining. First, grade modelling ahead of the front — drill-hole data, geological mapping and process response history combined to predict grade variability before the shovel arrives, so the plant isn't surprised by what it's fed. Second, predictive maintenance that catches haul truck, sho",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Regulatory clarity before you commit the capital",
+    "url": "industry2.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Regulatory clarity before you commit the capital The rules around new energy tech in India shift constantly — CERC's storage regulations, ALMM listing for solar components, RDSS eligibility, state DISCOM procurement frameworks, all moving. Get your regulatory classification wrong or miss ALMM inclusion and you can find the market simply closed to you, after you've spent the mon",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Crossing from pilot to commercial without the money running out",
+    "url": "industry2.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Crossing from pilot to commercial without the money running out The jump from pilot to commercial scale is where a lot of Indian cleantech quietly stalls. Grid integration looks different once you're past pilot conditions, procurement takes longer than the plan assumed, and the cost structure changes shape as you scale. We design the transition deliberately: grid integration ar",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Winning PSU business inside a cycle that wants to take two years",
+    "url": "industry2.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Winning PSU business inside a cycle that wants to take two years DISCOM and PSU procurement runs on its own clock: technical pre-qualification, committee evaluation, L1 bidding, approval stages, easily 18 to 24 months from first meeting to purchase order. Very few cleantech companies can go that long on hope. We build the commercial strategy that works with the cycle rather tha",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Making the buyer's case in rupees, not carbon",
+    "url": "industry2.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Making the buyer's case in rupees, not carbon A pitch built on carbon impact or how clever the technology is doesn't get you through an Indian energy procurement. The people signing off want money on the page. Energy cost savings, peak demand reduction, better reliability, grid ancillary revenue — each one has to be turned into rupees against that specific buyer's tariff, load ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Getting at the capital that's genuinely sitting there",
+    "url": "industry2.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Getting at the capital that's genuinely sitting there The capital available for energy transition in India is genuinely large — PLI for advanced chemistry cells, PM-KUSUM for distributed solar, RDSS for DISCOM modernisation, SEBI-framework green bonds, climate finance from ADB, IFC and GCF. Getting at it is the hard bit: every scheme and funder has its own eligibility rules, ap",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "AI inside the product, where it becomes a moat",
+    "url": "industry2.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "AI inside the product, where it becomes a moat Embed AI in an energy storage or cleantech product — real-time optimisation of charge-discharge, grid-responsive dispatch, predictive performance, demand forecasting — and you get more customer value, higher switching costs, and a moat that's hard to copy. The catch is architectural: it has to handle sensor data, grid signals and p",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Finding the biggest lever in a bill you've never fully read",
+    "url": "industry2.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Finding the biggest lever in a bill you've never fully read An industrial energy bill is a stack of components — energy charges, demand charges, power factor penalties, wheeling and transmission, cross-subsidy surcharge, fuel cost adjustment — and each one is managed differently. Most large consumers have never had a clear view of which is biggest, which is most controllable, a",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Captive solar: from the attractive slide to the actual net number",
+    "url": "industry2.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Captive solar: from the attractive slide to the actual net number Captive solar looks wonderful on paper: ₹2 to 2.5 a unit against ₹6 to 8 for grid supply at your scale. The wrinkle is everything between the slide and the net number — wheeling charges, banking, cross-subsidy surcharge, transmission losses, the open access approval. We model the real economics for your actual co",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Open access, from eligible-on-paper to actually buying cheaper power",
+    "url": "industry2.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Open access, from eligible-on-paper to actually buying cheaper power Open access lets a large consumer buy cheaper power from generators outside the DISCOM's supply. Being eligible is the easy part. The process — SLDC application, connectivity and scheduling, banking and wheeling, the bilateral contract itself — is perfectly navigable but unforgiving about precision at each sta",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Cutting the bill without cutting a single unit of production",
+    "url": "industry2.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Cutting the bill without cutting a single unit of production Demand charges are usually 30 to 40% of an industrial bill, and they're set by your peak demand in a single 15-minute window across the whole month — one bad quarter-hour can define the charge. Power factor penalties pile on top. Manage both actively, through production scheduling, reactive power compensation and load",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Putting a number on the power quality that's costing you",
+    "url": "industry2.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Putting a number on the power quality that's costing you Voltage sags, harmonics, interruptions, frequency deviations — power quality problems damage equipment, lose production and create quality defects, and most consumers have never actually costed them. So we start by measuring: what's happening, how often, and what it's costing you in equipment and output. Only then does th",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "AI that shifts load to the cheap hours on its own",
+    "url": "industry2.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "AI that shifts load to the cheap hours on its own If you have time-of-use tariffs, demand charges and some captive generation, there's real money in shifting flexible loads to the cheap hours, dispatching captive generation well, and forecasting demand to head off peak events. Doing it by hand at the required speed and granularity isn't realistic. AI is. We design and deploy th",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "The Sthiros Difference",
+    "url": "industry2.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "The Sthiros Difference We speak CUF, AT&C, stripping ratio and LCOE natively Wellhead cost, ore grade, PPA tariff. The financial language of energy and mining assets is our first language, not a framework we imported and bent to fit a capital-intensive business from the outside. Our AI is built for sensor-rich, high-stakes assets Predictive maintenance, yield forecasting, ore g",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "We speak CUF, AT&C, stripping ratio and LCOE natively",
+    "url": "industry2.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We speak CUF, AT&C, stripping ratio and LCOE natively Wellhead cost, ore grade, PPA tariff. The financial language of energy and mining assets is our first language, not a framework we imported and bent to fit a capital-intensive business from the outside.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Our AI is built for sensor-rich, high-stakes assets",
+    "url": "industry2.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "Our AI is built for sensor-rich, high-stakes assets Predictive maintenance, yield forecasting, ore grade intelligence, AT&C loss attribution, grid demand prediction. Built for the messy, high-consequence data these assets actually generate, not for a tidy demo dataset.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "We leave software your control room actually uses",
+    "url": "industry2.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We leave software your control room actually uses Asset performance dashboards, compliance systems, cost intelligence platforms, procurement tools. Products your operations and commercial people open every day, not a pilot that quietly retires inside the data science team.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "What youcan expect",
+    "url": "industry2.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "What youcan expect Asset-native Every build starts from how the asset actually makes and loses money. 4-16 weeks Paced to how these sectors move. No retainer that quietly renews forever. One team,three modes The people who advise you are the people who build it. The plan and the thing arrive together.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Asset-native",
+    "url": "industry2.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "Asset-native Every build starts from how the asset actually makes and loses money.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "4-16 weeks",
+    "url": "industry2.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "4-16 weeks Paced to how these sectors move. No retainer that quietly renews forever.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "One team,three modes",
+    "url": "industry2.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "One team,three modes The people who advise you are the people who build it. The plan and the thing arrive together.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Relatedcase studies",
+    "url": "industry2.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Moving inventory intelligence beyond reactive ERP reporting, in 12 weeks Automating multilingual video creation for training and incident reporting, at scale Teaching machine data and Excel to speak one language, in real time Cutting manual cash burn reporting effort by 50-70%, in 25 business days Turning an undocumented risk practice into a Board-ready, CAG",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Pick a way in.They all lead to thesame conversation.",
+    "url": "industry2.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Pick a way in.They all lead to thesame conversation. Whether you run a mid-size bank, you're the one who has to make an NBFC's transformation actually work, or you're a founder who just hit the first wall money can't knock down; start wherever's easiest.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "A 30-minute call",
+    "url": "industry2.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "A 30-minute call Tell us the asset type and the problem. By the end of the call we'll say what we'd tackle first — asset performance, regulatory advisory, cost structure, an AI build, or a piece of software. No deck required.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "The energy and mining diagnostic",
+    "url": "industry2.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "The energy and mining diagnostic A free self-assessment across asset performance, regulatory posture, cost structure, operational risk, digital readiness and commercial optimisation. It shows where your returns are leaking. Occasionally it tells you you're running tight, which we're glad to confirm.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Just describe the situation",
+    "url": "industry2.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Just describe the situation Not ready to talk? Send three lines: what you are, what's broken, what you've already tried. You'll get an actual opinion back, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Energy, Mining & Utilities",
+    "sectionTitle": "Genuinely not surewhere you fit?",
+    "url": "industry2.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Genuinely not surewhere you fit? Tell us your asset type, your biggest operational or commercial pressure,and whether you need advice, a build, or both. We'll point you at the right starting line.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Industries - GCC",
+    "url": "industry3.html",
+    "anchor": "",
+    "content": "We build financial systems that clear audit before the auditor asks. ﻿ Industries - GCC HQ can see exactly what you cost. India runs over 1,700 GCCs employing 1.9 million people. Existing isn't remarkable anymore. What survives restructuring is proof you're worth more than the headcount saving. That's what we build. BOOK A 30-MIN CALL GET THE INDUSTRY DIAGNOSTIC Who are you? We'll show you the right problems. Pick y",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry3.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Location, SEZ, and entity decisions need to happen now",
+    "url": "industry3.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Location, SEZ, and entity decisions need to happen now. Bangalore, Hyderabad, Pune, Chennai: each has a different talent pool, cost profile, and SEZ benefit structure. I need a structured decision, not a gut call. The location call, made on evidence rather than instinct: Choosing where to put a GCC is a genuine multi-way trade-off: talent by function and seniority, compensation",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Hiring the first 50-200 people is slower than the plan assumed",
+    "url": "industry3.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Hiring the first 50-200 people is slower than the plan assumed. Leadership hiring, JD design, compensation benchmarking against GCC peers, and employer brand — India talent acquisition is more competitive than HQ expected. The first 200 hires, who quietly become your culture: Your first 200 hires quietly become the culture and capability of the centre, long before anyone writes",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Governance between HQ and India isn't designed yet",
+    "url": "industry3.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Governance between HQ and India isn't designed yet. Decision rights, reporting lines, escalation paths, SLA frameworks — the governance architecture between the global parent and India hasn't been thought through. The HQ-India governance nobody's designed yet: Governance between HQ and India quietly decides whether the centre runs with useful autonomy or spends its life escalat",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "India regulatory and compliance setup is creating delays",
+    "url": "industry3.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "India regulatory and compliance setup is creating delays. Companies Act, FEMA, GST, transfer pricing, data localisation — the India regulatory setup is more complex than HQ's legal team anticipated. The India regulatory setup HQ's legal team underestimated: Standing up a GCC in India means working through Companies Act registration, FEMA for the cross-border flows, GST, transfe",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "HQ wants a 12-month value demonstration plan",
+    "url": "industry3.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "HQ wants a 12-month value demonstration plan. The business case was approved but the CFO wants measurable value within 12 months. I don't have the reporting framework or agreed value metrics yet. Proving value inside twelve months, in metrics the CFO believes: A GCC that can't show value inside its first year carries a budget risk it rarely recovers from. The trouble is that th",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "I want to set up AI capability from day one",
+    "url": "industry3.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "I want to set up AI capability from day one. The global parent wants the India GCC to be AI-native. I need to design the AI operating model and toolchain before the centre scales past the point where it's easy to change. AI-native from day one, while it's still cheap to decide: Bolting AI onto an established GCC costs far more than building for it from the start, and everyone d",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry3.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Scaling headcount is creating span of control and quality problems",
+    "url": "industry3.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Scaling headcount is creating span of control and quality problems. We're adding 50-100 people a quarter. Manager ratios are stretching. Quality is starting to drift as we grow faster than the management layer can absorb. Adding 100 a quarter without the quality quietly slipping: Quality slipping during fast growth is both predictable and preventable, which is the frustrating p",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "New functions are being added faster than governance can keep up",
+    "url": "industry3.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "New functions are being added faster than governance can keep up. Finance, legal, tech, analytics: each function HQ migrates brings a different operating model and different HQ stakeholders. Integration is messy. One operating model, not six mini-organisations: Every function HQ migrates arrives with its own operating model, its own HQ stakeholders and its own idea of good. Wit",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "The value story to HQ isn't keeping pace with headcount growth",
+    "url": "industry3.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "The value story to HQ isn't keeping pace with headcount growth. Headcount is growing but the articulation of value, cost savings, quality improvements, capability depth, isn't growing proportionally. HQ is asking questions. Keeping the value story ahead of the headcount: An 800-person centre that can still only describe itself in headcount and cost is, to HQ, a large cost centr",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Mid-level talent retention is becoming structural",
+    "url": "industry3.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Mid-level talent retention is becoming structural. We're losing experienced 3-7 year professionals to competitors and startups. They carry institutional knowledge and HQ relationships that are expensive to replace. Keeping the 3-7 year people who actually run things: The 3-7 year professional is simultaneously your most valuable person and your most mobile: productive enough to",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "AI adoption across the centre is patchy and uncoordinated",
+    "url": "industry3.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "AI adoption across the centre is patchy and uncoordinated. Teams are experimenting with different AI tools. There's no unified strategy, no governance, and no consolidated way to demonstrate AI impact to HQ. Turning scattered AI experiments into a story HQ can fund: Twenty teams each experimenting with their own AI tool produces activity, not evidence. Different tools, differen",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Processes that worked at 200 people don't work at 800",
+    "url": "industry3.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Processes that worked at 200 people don't work at 800. The informal model, where everyone knew everyone and decisions happened in corridors, doesn't scale. I need formal operating infrastructure without killing the culture. Formal enough for 800, without turning into a bureaucracy: The informal model that hums along at 200 — corridor decisions, a shared WhatsApp group, everyone",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry3.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "HQ sees us as a cost centre, not a capability centre",
+    "url": "industry3.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "HQ sees us as a cost centre, not a capability centre. We deliver quality work but the HQ narrative is still about FTE cost and headcount. I need to change that perception before the next restructuring conversation happens. Changing HQ's mind before the next restructuring conversation: Cost-centre perception is remarkably sticky. Once it sets, strong performance alone won't shif",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "I want to establish Centres of Excellence but the mandate isn't clear",
+    "url": "industry3.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "I want to establish Centres of Excellence but the mandate isn't clear. Analytics CoE, AI CoE, Finance transformation CoE — I know what we could build. But CoE design, governance, and HQ buy-in all need to happen before I can resource them. A CoE with a real mandate, not just a nameplate: A CoE without a clear mandate and real HQ sponsorship is a team with an impressive name and",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "We're doing the same work we did three years ago",
+    "url": "industry3.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "We're doing the same work we did three years ago. The functions we support haven't grown in complexity. We're still doing transactional and support work while HQ keeps strategic and analytical work onshore. Earning the analytical work HQ keeps onshore: The route from transactional work to the analytical and strategic kind isn't a request, it's a sequence you earn: be reliably e",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "I want AI productivity improvement to unlock higher-value scope",
+    "url": "industry3.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "I want AI productivity improvement to unlock higher-value scope. If I can show HQ a 30% productivity gain from AI on current scope, they'll give us the next level of work. I need the deployment and measurement framework to make that case. The 30% AI number that unlocks the next level of work: A demonstrated 30% productivity gain from AI on your current scope is about the most p",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Value reporting to HQ is manual, inconsistent, and undersells what we do",
+    "url": "industry3.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Value reporting to HQ is manual, inconsistent, and undersells what we do. Our reports to HQ cover headcount, cost, and SLA metrics. They don't capture innovation, capability development, or strategic contribution. Reporting that stops underselling what you actually do: Reports built on headcount, cost per FTE and SLA percentages communicate inputs, and inputs are what cost cent",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "We lack the senior talent to take on higher-value work",
+    "url": "industry3.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "We lack the senior talent to take on higher-value work. The work we want from HQ requires senior specialists. Our talent pyramid is too heavy at junior and mid levels to be credible for that scope. Building the senior bench higher-value work actually needs: A pyramid that's 70% junior and mid-level simply can't carry analytical and strategic scope, and HQ knows it when they loo",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry3.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "I'm not confident India is delivering the value the business case promised",
+    "url": "industry3.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "I'm not confident India is delivering the value the business case promised. Three years in, costs are higher than projected, scope hasn't expanded as planned, and the quality of strategic work from India isn't where we expected. An honest read on what India is actually delivering: Three years into a GCC, the fair question is whether the value matches the business case someone a",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "We have multiple India centres with overlapping scope and no coordination",
+    "url": "industry3.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "We have multiple India centres with overlapping scope and no coordination. Acquisitions and organic growth left us with multiple India presences without a unified operating model or coordinated talent strategy. Turning several accidental India presences into one strategy: Acquisitions and organic growth have a way of leaving a company with three or four India presences that com",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "We're considering restructuring or consolidating the India footprint",
+    "url": "industry3.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "We're considering restructuring or consolidating the India footprint. A restructuring exercise is on the table. I need an objective assessment of what to keep, what to consolidate, and what transition looks like without disrupting continuity. Restructuring the footprint without breaking what works: Restructuring decisions made without a rigorous look at capability, dependencies",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "We want India to lead our global AI and digital capability",
+    "url": "industry3.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "We want India to lead our global AI and digital capability. India has the talent depth for AI and digital. I want the India GCC to be the global centre for these capabilities but the current model doesn't support that ambition. Making India the global AI hub, not just the biggest team: India genuinely has AI, data science and digital product depth no other geography matches at ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "India GCC leadership quality and succession is a concern",
+    "url": "industry3.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "India GCC leadership quality and succession is a concern. The GCC head and senior leadership don't have the credibility or HQ relationships to advocate for more strategic scope. Leadership development is a gap. A GCC leadership that can hold its own with HQ: A GCC head without real HQ credibility or sponsor relationships becomes the ceiling on everything the centre could be. Le",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Transfer pricing and entity structure need a review",
+    "url": "industry3.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Transfer pricing and entity structure need a review. The legal structure, transfer pricing methodology, and FEMA compliance were set up quickly. Revenue, scope, and India regulations have all changed significantly. Revisiting a structure that was set up in a hurry years ago: A GCC whose legal structure, transfer pricing and FEMA compliance were set up quickly at the start and n",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry3.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Attrition in the 3-7 year band is too high and too expensive",
+    "url": "industry3.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Attrition in the 3-7 year band is too high and too expensive. People who leave at this tenure take domain knowledge, HQ relationships, and team productivity with them. Replacement cost is high and time-to-productivity for replacements is long. Keeping the mid-level people whose leaving costs the most: Mid-level attrition costs far more than the replacement-hire line suggests. I",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "The talent pyramid is wrong for the work we want from HQ",
+    "url": "industry3.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "The talent pyramid is wrong for the work we want from HQ. We're top-heavy at junior grades and thin at senior specialist and leadership levels. This profile can't support the higher-complexity scope we want HQ to send to India. Reshaping a pyramid that's too junior for your ambitions: Reshaping the pyramid takes more than posting a few senior roles. It means finding the interna",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "AI and digital skills are inadequate and the gap is widening",
+    "url": "industry3.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "AI and digital skills are inadequate and the gap is widening. The speed of AI adoption globally is outpacing our reskilling. A significant portion of our workforce doesn't have the AI fluency that the next generation of GCC work requires. Closing the AI skills gap before it widens any further: The gap between the AI fluency the business now expects and what your workforce actua",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Career pathways inside the GCC are unclear",
+    "url": "industry3.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Career pathways inside the GCC are unclear. High performers leave because they can't see how their career develops in a captive centre. The answer isn't always pay — it's role clarity, growth opportunity, and HQ visibility. Career paths people can actually see from where they sit: Careers in a GCC are boxed in by the parent's hierarchy, so the obvious vertical ladder is short. ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Our employer brand in India isn't strong enough",
+    "url": "industry3.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Our employer brand in India isn't strong enough. We compete against Google, Amazon, JPMorgan for the same talent. Our EVP isn't differentiated enough to win the best candidates consistently. An employer brand that wins against the names everyone knows: You're up against Google, JPMorgan and Amazon for the same candidates, and you won't out-logo them. What you can do is compete ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "L&D programmes aren't translating into capability improvement",
+    "url": "industry3.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "L&D programmes aren't translating into capability improvement. We spend significantly on training. Measurement of capability improvement is weak and the link between training investment and performance outcome is unclear. L&D you can prove did something: An L&D programme that can't link its spend to a performance outcome is a budget line waiting to be cut in the next restructur",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry3.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "SLA performance is inconsistent and HQ is losing confidence",
+    "url": "industry3.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "SLA performance is inconsistent and HQ is losing confidence. Some functions consistently meet SLAs. Others are chronic underperformers. Inconsistency creates an uneven perception of India's capability at HQ level. Making SLA performance boringly consistent: When SLA performance varies wildly by function, HQ's view of India splinters — some sponsors trust you completely, others ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "I have no real-time view of delivery performance across functions",
+    "url": "industry3.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "I have no real-time view of delivery performance across functions. Each function head gives me a monthly update. I don't have a consolidated live view of quality, productivity, SLA adherence, and satisfaction across the centre. One live view instead of six monthly updates: Running a multi-function centre off monthly updates means you meet most problems only after they've alread",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "AI delivery adoption is fragmented with no coordinated measurement",
+    "url": "industry3.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "AI delivery adoption is fragmented with no coordinated measurement. Teams are experimenting individually. There's no unified framework, no measurement of productivity impact, and no story for HQ about what AI is delivering. AI delivery HQ can actually see the impact of: Scattered AI experiments across teams produce real efficiency that you can't demonstrate and can't present to",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Knowledge transfer from HQ is too slow and incomplete",
+    "url": "industry3.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Knowledge transfer from HQ is too slow and incomplete. When new scope migrates from HQ, the KT process is poorly structured. Teams go live without adequate process context, creating quality issues and rework. Going live actually ready, for once: When scope migrates from HQ on a weak knowledge transfer, you get quality problems that are slow to fix and quietly corrosive to HQ's ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Process execution is inconsistent across teams",
+    "url": "industry3.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Process execution is inconsistent across teams. The same process is done differently by different teams. There's no standard methodology, no shared playbook, and the variance is visible to HQ stakeholders. The same process, actually done the same way: When the same process runs three different ways across three teams, the variance is obvious to any HQ stakeholder who works with",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Productivity improvement commitments to HQ aren't being met",
+    "url": "industry3.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Productivity improvement commitments to HQ aren't being met. We committed to annual productivity gains in the business case. Actual improvement is below commitment and HQ is questioning the value of the India centre. Actually hitting the productivity numbers you promised HQ: Nearly every GCC business case promises annual productivity gains, and falling short of them opens a cre",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "HQ can see exactly what you cost.",
+    "url": "industry3.html#sec-hq-can-see-exactly-what-you-cost",
+    "anchor": "sec-hq-can-see-exactly-what-you-cost",
+    "content": "HQ can see exactly what you cost. India runs over 1,700 GCCs employing 1.9 million people. Existing isn't remarkable anymore. What survives restructuring is proof you're worth more than the headcount saving. That's what we build. BOOK A 30-MIN CALL GET THE INDUSTRY DIAGNOSTIC",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Who are you?We'll show you theright problems.",
+    "url": "industry3.html#Whotherightproblemssec",
+    "anchor": "Whotherightproblemssec",
+    "content": "Who are you?We'll show you theright problems. Pick your role. What comes up depends on where you are in the GCC lifecycle. Setting up a new GCC Scaling established GCC Cost to value transition Global parent strategy Talent and capability head Service delivery head PROBLEMS STHIROS SOLUTION Location, SEZ, and entity decisions need to happen now Bangalore, Hyderabad, Pune, Chenna",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "The location call, made on evidence rather than instinct",
+    "url": "industry3.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "The location call, made on evidence rather than instinct Choosing where to put a GCC is a genuine multi-way trade-off: talent by function and seniority, compensation benchmarks, real estate, SEZ or STPI tax treatment, the local regulatory picture. And it's close to irreversible — nobody relocates a centre after the first 200 hires, they just live with the choice. We run the ass",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "The first 200 hires, who quietly become your culture",
+    "url": "industry3.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "The first 200 hires, who quietly become your culture Your first 200 hires quietly become the culture and capability of the centre, long before anyone writes a values statement about it. The leadership hires matter most — a misaligned GCC head can cost you a year to eighteen months of momentum before anyone admits it was the wrong fit. We design the acquisition architecture: how",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "The HQ-India governance nobody's designed yet",
+    "url": "industry3.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "The HQ-India governance nobody's designed yet Governance between HQ and India quietly decides whether the centre runs with useful autonomy or spends its life escalating. Give it too much rope and you get misalignment; too little and everything bottlenecks through a time zone eight hours away. We design the whole architecture: who decides what, reporting lines, the SLA framework",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "The India regulatory setup HQ's legal team underestimated",
+    "url": "industry3.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "The India regulatory setup HQ's legal team underestimated Standing up a GCC in India means working through Companies Act registration, FEMA for the cross-border flows, GST, transfer pricing documentation, and data localisation under DPDPA 2023. HQ's legal team is usually surprised by how much there is. Doing it right at the start costs a fraction of fixing it after an assessmen",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Proving value inside twelve months, in metrics the CFO believes",
+    "url": "industry3.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Proving value inside twelve months, in metrics the CFO believes A GCC that can't show value inside its first year carries a budget risk it rarely recovers from. The trouble is that the usual metrics — headcount, cost per FTE — describe a cost, not a contribution. We design the value framework: the right mix of cost, quality, productivity and capability measures that actually re",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "AI-native from day one, while it's still cheap to decide",
+    "url": "industry3.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "AI-native from day one, while it's still cheap to decide Bolting AI onto an established GCC costs far more than building for it from the start, and everyone discovers this at roughly the same painful moment. AI-native means deciding deliberately: which toolchain you standardise on, how AI fluency shows up in your hiring profile, what governance looks like, and how you show HQ t",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Adding 100 a quarter without the quality quietly slipping",
+    "url": "industry3.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Adding 100 a quarter without the quality quietly slipping Quality slipping during fast growth is both predictable and preventable, which is the frustrating part. Push manager-to-team ratios past about 1:8 and the informal quality controls that used to work stop working: knowledge doesn't reach new joiners, and the early cohesion frays. We rebuild the operating model for scale: ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "One operating model, not six mini-organisations",
+    "url": "industry3.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "One operating model, not six mini-organisations Every function HQ migrates arrives with its own operating model, its own HQ stakeholders and its own idea of good. Without something holding them together, a multi-function GCC becomes six small organisations sharing a building and not much else — no common infrastructure, no shared performance language, and reporting to HQ that n",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Keeping the value story ahead of the headcount",
+    "url": "industry3.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Keeping the value story ahead of the headcount An 800-person centre that can still only describe itself in headcount and cost is, to HQ, a large cost centre: however good the actual work is As you scale, the value story has to scale with you: more complexity, real strategic-contribution metrics, and the language your business sponsors use when they're deciding where the next tr",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Keeping the 3-7 year people who actually run things",
+    "url": "industry3.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Keeping the 3-7 year people who actually run things The 3-7 year professional is simultaneously your most valuable person and your most mobile: productive enough to matter, credible enough for competitors to want, and ambitious enough to leave the moment growth stops being visible. The lever here is rarely pay. It's whether they can see a career, whether HQ knows their name, wh",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Turning scattered AI experiments into a story HQ can fund",
+    "url": "industry3.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Turning scattered AI experiments into a story HQ can fund Twenty teams each experimenting with their own AI tool produces activity, not evidence. Different tools, different governance, different ways of measuring — and no way to add it up into something you can show HQ, which is exactly the story that unlocks the next round of investment. We design the unified programme: use ca",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Formal enough for 800, without turning into a bureaucracy",
+    "url": "industry3.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Formal enough for 800, without turning into a bureaucracy The informal model that hums along at 200 — corridor decisions, a shared WhatsApp group, everyone knowing everyone — quietly breaks somewhere around 600. Decisions slow, gaps open up, quality starts to vary by team. Formalising it well is the opposite of adding bureaucracy: documented decision rights, clear escalation, s",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Changing HQ's mind before the next restructuring conversation",
+    "url": "industry3.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Changing HQ's mind before the next restructuring conversation Cost-centre perception is remarkably sticky. Once it sets, strong performance alone won't shift it — it just gets read as a cost centre that performs well. The gap between what a centre delivers and how HQ sees it is nearly always about communication and measurement rather than actual capability. We run the repositio",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "A CoE with a real mandate, not just a nameplate",
+    "url": "industry3.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "A CoE with a real mandate, not just a nameplate A CoE without a clear mandate and real HQ sponsorship is a team with an impressive name and not much authority. The design work is unglamorous and essential: what it owns versus merely advises on, how it's funded, who its internal clients are, how it delivers, and how the parent measures its value. We build that architecture end t",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Earning the analytical work HQ keeps onshore",
+    "url": "industry3.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Earning the analytical work HQ keeps onshore The route from transactional work to the analytical and strategic kind isn't a request, it's a sequence you earn: be reliably excellent on current scope, propose the adjacent piece, then quietly prove you can do it before it's formally handed over. It takes operational credibility with the sponsors you already have and a deliberate c",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "The 30% AI number that unlocks the next level of work",
+    "url": "industry3.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "The 30% AI number that unlocks the next level of work A demonstrated 30% productivity gain from AI on your current scope is about the most persuasive argument there is for HQ to send you the next level of work. The catch is that it only persuades if it's measured properly — a real baseline, a controlled rollout, an honest before-and-after, and a narrative that can attribute the",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Reporting that stops underselling what you actually do",
+    "url": "industry3.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Reporting that stops underselling what you actually do Reports built on headcount, cost per FTE and SLA percentages communicate inputs, and inputs are what cost centres report. The reporting that actually shifts HQ's view pairs cost efficiency with quality, innovation, capability development and the outcomes of strategic projects. We rebuild the value reporting framework — the ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Building the senior bench higher-value work actually needs",
+    "url": "industry3.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Building the senior bench higher-value work actually needs A pyramid that's 70% junior and mid-level simply can't carry analytical and strategic scope, and HQ knows it when they look. Winning that work means visibly having the senior specialists it requires — domain architects, functional strategists, analytics leads who've operated globally. We design the reshaping programme: ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "An honest read on what India is actually delivering",
+    "url": "industry3.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "An honest read on what India is actually delivering Three years into a GCC, the fair question is whether the value matches the business case someone approved with confidence. Usually costs have crept up, scope is a little narrower than promised, and quality is harder to pin down than anyone expected. We run the independent assessment: cost against benefit, delivered scope again",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Turning several accidental India presences into one strategy",
+    "url": "industry3.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Turning several accidental India presences into one strategy Acquisitions and organic growth have a way of leaving a company with three or four India presences that compete for the same talent, run different governance, and tell HQ no coherent story about India at all. Rationalising them takes a clear-eyed view of what each one actually does, where they overlap, what the consol",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Restructuring the footprint without breaking what works",
+    "url": "industry3.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Restructuring the footprint without breaking what works Restructuring decisions made without a rigorous look at capability, dependencies and risk have a habit of causing continuity failures that cost more than the restructuring ever saved. We give you the objective assessment: what capability you actually have and where it's concentrated, which dependencies will bite during tra",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Making India the global AI hub, not just the biggest team",
+    "url": "industry3.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Making India the global AI hub, not just the biggest team India genuinely has AI, data science and digital product depth no other geography matches at the same cost, so the ambition is sound. Realising it takes more than headcount, though — the right talent architecture, governance that gives India teams real ownership of global AI programmes rather than support roles on them, ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "A GCC leadership that can hold its own with HQ",
+    "url": "industry3.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "A GCC leadership that can hold its own with HQ A GCC head without real HQ credibility or sponsor relationships becomes the ceiling on everything the centre could be. Leadership development here is a specific thing, not a generic course: building genuine visibility with HQ, developing the ability to hold a strategic conversation with global business leaders as a peer, and lining",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Revisiting a structure that was set up in a hurry years ago",
+    "url": "industry3.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Revisiting a structure that was set up in a hurry years ago A GCC whose legal structure, transfer pricing and FEMA compliance were set up quickly at the start and never revisited is carrying tax and regulatory risk that stays invisible right up until an assessment or audit makes it very visible. Revenue has grown, scope has expanded, functions have been added, the rules have mo",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Keeping the mid-level people whose leaving costs the most",
+    "url": "industry3.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Keeping the mid-level people whose leaving costs the most Mid-level attrition costs far more than the replacement-hire line suggests. It takes domain knowledge out the door, disrupts HQ relationships that took years to build, dents team productivity through the ramp-up, and quietly signals to everyone left that staying doesn't pay. The levers for the 3-7 year band are specific:",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Reshaping a pyramid that's too junior for your ambitions",
+    "url": "industry3.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Reshaping a pyramid that's too junior for your ambitions Reshaping the pyramid takes more than posting a few senior roles. It means finding the internal people with genuine senior potential, building the accelerated pathway that gets them there, hiring externally only for the specialist roles you can't grow from within, and running a promotion model that makes the whole shift c",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Closing the AI skills gap before it widens any further",
+    "url": "industry3.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Closing the AI skills gap before it widens any further The gap between the AI fluency the business now expects and what your workforce actually has is widening faster than a generic e-learning rollout can close. What works is targeted: the specific AI capabilities the functions you support genuinely need, plus a measurement framework that proves the improvement to HQ and tells ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Career paths people can actually see from where they sit",
+    "url": "industry3.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Career paths people can actually see from where they sit Careers in a GCC are boxed in by the parent's hierarchy, so the obvious vertical ladder is short. Making the career credible means building growth sideways instead: real depth of expertise, cross-functional exposure, CoE leadership, HQ rotations, a seat on global projects. Done well, an India GCC career competes with anyt",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "An employer brand that wins against the names everyone knows",
+    "url": "industry3.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "An employer brand that wins against the names everyone knows You're up against Google, JPMorgan and Amazon for the same candidates, and you won't out-logo them. What you can do is compete on the dimensions they can't easily match — the depth of domain exposure, the global impact of the work, the quality of the learning environment, how fast a career can move inside your centre.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "L&D you can prove did something",
+    "url": "industry3.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "L&D you can prove did something An L&D programme that can't link its spend to a performance outcome is a budget line waiting to be cut in the next restructuring, however good the intentions. We rebuild the model: a needs assessment tied to the actual work being delivered, interventions specific enough to matter rather than generic catalogues, and measurement that tracks capabil",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Making SLA performance boringly consistent",
+    "url": "industry3.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Making SLA performance boringly consistent When SLA performance varies wildly by function, HQ's view of India splinters — some sponsors trust you completely, others not at all, and the centre never gets a clean reputation. Chronic underperformance almost always traces to something specific: a process design gap, thin knowledge transfer, resources miscalibrated, or measurement a",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "One live view instead of six monthly updates",
+    "url": "industry3.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "One live view instead of six monthly updates Running a multi-function centre off monthly updates means you meet most problems only after they've already dented a stakeholder's satisfaction. Quality drift, SLA misses, productivity dips — you want those visible in real time, by function, team and metric, so you can step in before HQ spots them first. We build the consolidated del",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "AI delivery HQ can actually see the impact of",
+    "url": "industry3.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "AI delivery HQ can actually see the impact of Scattered AI experiments across teams produce real efficiency that you can't demonstrate and can't present to HQ as anything coherent, which means it barely counts. A coordinated programme — chosen use cases, a measured baseline, a controlled rollout, honest before-and-after attribution — turns that into evidence, the kind that just",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Going live actually ready, for once",
+    "url": "industry3.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Going live actually ready, for once When scope migrates from HQ on a weak knowledge transfer, you get quality problems that are slow to fix and quietly corrosive to HQ's confidence in the team. The cause is nearly always structural: no defined KT method, no readiness checklist, no agreed criteria for what 'ready to go live' even means. We build the KT architecture — process, do",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "The same process, actually done the same way",
+    "url": "industry3.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "The same process, actually done the same way When the same process runs three different ways across three teams, the variance is obvious to any HQ stakeholder who works with more than one of them, and their opinion of the whole centre drops accordingly. Standardisation here isn't about stamping out judgement. It's a shared methodology, a common toolchain and clear quality stand",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Actually hitting the productivity numbers you promised HQ",
+    "url": "industry3.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Actually hitting the productivity numbers you promised HQ Nearly every GCC business case promises annual productivity gains, and falling short of them opens a credibility gap that's slow and painful to close. The shortfall usually comes from three things at once: a programme too vague to deliver, productivity never measured rigorously enough to prove, and gains quietly absorbed",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "The Sthiros Difference",
+    "url": "industry3.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "The Sthiros Difference We understand both sides of the GCC mandate Operating excellence for the parent, talent depth for India: we're fluent in HQ's expectations and in what actually executes on the ground here. Governance, value demonstration and operating model are our native language, not a slide we adapted. We build AI that HQ will actually fund Process automation, analytic",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "We understand both sides of the GCC mandate",
+    "url": "industry3.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We understand both sides of the GCC mandate Operating excellence for the parent, talent depth for India: we're fluent in HQ's expectations and in what actually executes on the ground here. Governance, value demonstration and operating model are our native language, not a slide we adapted.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "We build AI that HQ will actually fund",
+    "url": "industry3.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We build AI that HQ will actually fund Process automation, analytics CoEs, AI-accelerated delivery: use cases that move productivity in ways the parent can see, wrapped in the ROI narrative that keeps the investment coming. AI HQ pays for again, rather than approves once.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "We leave software that makes your value visible",
+    "url": "industry3.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We leave software that makes your value visible Performance dashboards, talent intelligence, SLA governance, value reporting: products that show the centre's contribution to your team, to HQ, and to whoever's deciding where the next tranche of work lands. Visibility is the whole game here, and we build for it.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "What youcan expect",
+    "url": "industry3.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "What youcan expect HQ-fluent Every build speaks the language global parents understand and fund. 4-16 weeks Paced to GCC operating speed. No retainer that quietly renews forever. One team,three modes The people who advise you are the people who build it. The plan and the thing arrive together.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "HQ-fluent",
+    "url": "industry3.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "HQ-fluent Every build speaks the language global parents understand and fund.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "4-16 weeks",
+    "url": "industry3.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "4-16 weeks Paced to GCC operating speed. No retainer that quietly renews forever.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "One team,three modes",
+    "url": "industry3.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "One team,three modes The people who advise you are the people who build it. The plan and the thing arrive together.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Relatedcase studies",
+    "url": "industry3.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Moving inventory intelligence beyond reactive ERP reporting, in 12 weeks Automating multilingual video creation for training and incident reporting, at scale Teaching machine data and Excel to speak one language, in real time Cutting manual cash burn reporting effort by 50-70%, in 25 business days Turning an undocumented risk practice into a Board-ready, CAG",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Pick a way in.They all lead to thesame conversation.",
+    "url": "industry3.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Pick a way in.They all lead to thesame conversation. Setting up, scaling, transitioning to a value centre, or defending your standing with HQ; start wherever fits where you are.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "A 30-minute call",
+    "url": "industry3.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "A 30-minute call Tell us the GCC context and the problem. By the end of the call we'll say what we'd tackle first — operating model, talent architecture, an AI build, or value reporting. No deck required.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "The GCC maturity diagnostic",
+    "url": "industry3.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "The GCC maturity diagnostic A free self-assessment across governance, talent depth, value delivery, HQ alignment, AI readiness and operating model. It shows where your centre sits on the maturity curve. Occasionally it tells you you're further along than you thought, which we're glad to confirm.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Just describe the situation",
+    "url": "industry3.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Just describe the situation Not ready to talk? Send three lines: your GCC type and scale, the pressure point, what you've already tried. You'll get an actual point of view back, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - GCC",
+    "sectionTitle": "Genuinely not surewhere you fit?",
+    "url": "industry3.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Genuinely not surewhere you fit? Tell us your GCC stage, your biggest pressure with HQ or operations, and whether you need advice, a build, or both. We'll point you at the right starting line.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Industries - Healthcare & Life Sciences",
+    "url": "industry4.html",
+    "anchor": "",
+    "content": "We build financial systems that clear audit before the auditor asks. ﻿ Industries - Healthcare & Life Sciences Every point you shave off ALOS shows up somewhere on your balance sheet. Healthcare is scaling faster than its infrastructure. Thin margins in hospitals, USFDA scrutiny in pharma, TAT pressure in diagnostics, startup speed in health tech. We build for where those collide. BOOK A 30-MIN CALL GET THE INDUSTRY",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry4.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Bed occupancy and ALOS aren't where they need to be",
+    "url": "industry4.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Bed occupancy and ALOS aren't where they need to be. Occupancy is below target, ALOS is above benchmark, and the two are reinforcing each other. Beds are occupied by patients who could be discharged earlier, blocking admissions. More capacity without building a single new bed: High ALOS and low occupancy are usually the same problem seen from two angles: patient flow that nobod",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Revenue cycle leakage is eroding my realisation rate",
+    "url": "industry4.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Revenue cycle leakage is eroding my realisation rate. Billing errors, insurance claim rejections, undercoding of procedures, and delayed collections are creating a gap between the care delivered and the revenue recognised. Closing the gap between the care you gave and the money you kept: Revenue leakage in a hospital is rarely one hole; it's a slow drip at every stage. Document",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "NABH accreditation and quality compliance is a constant operational burden",
+    "url": "industry4.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "NABH accreditation and quality compliance is a constant operational burden. NABH standards, clinical protocols, incident reporting, and documentation requirements are consuming nursing and administrative bandwidth that should be on patient care. NABH compliance that lives in the workflow, not in a binder: Treat NABH as something you cram for every accreditation cycle and you ge",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Clinical staff attrition and rostering is creating care quality gaps",
+    "url": "industry4.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Clinical staff attrition and rostering is creating care quality gaps. Specialist attrition, nursing shortages, and rostering gaps are creating inconsistent care quality across shifts and departments. I can't recruit fast enough to stay ahead of it. Keeping clinical staff, and rostering the ones you have well: Clinical attrition in Indian hospitals is structural, not bad luck: p",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "I have no real-time clinical and operational intelligence",
+    "url": "industry4.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "I have no real-time clinical and operational intelligence. Department heads get yesterday's data at the morning meeting. By then the bed situation has already changed. I need live visibility across admissions, discharges, OT utilisation, and revenue. A command centre showing today's hospital, not yesterday's: Running 300 beds across a dozen departments on yesterday's numbers me",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "I'm expanding to new facilities and the operating model doesn't replicate reliably",
+    "url": "industry4.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "I'm expanding to new facilities and the operating model doesn't replicate reliably. What works in my flagship hospital depends too much on specific people and local knowledge. The second and third facilities don't perform as well and I can't diagnose why systematically. The flagship's quality, minus its dependence on specific people: A second or third hospital that underperform",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry4.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "USFDA or CDSCO inspection readiness is not where it needs to be",
+    "url": "industry4.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "USFDA or CDSCO inspection readiness is not where it needs to be. My quality systems look right on paper but I'm not confident they'd hold up under a focused investigator. Documentation gaps, deviations not closed on time, and training records that aren't current are all risks I'm carrying. Inspection readiness that holds up under a focused investigator: 483 observations and CDS",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Batch rejections and deviations are happening too frequently",
+    "url": "industry4.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Batch rejections and deviations are happening too frequently. OOS results, batch failures, and critical deviations are occurring at a rate that's consuming QA bandwidth and damaging my batch release timeline and customer commitments. Fewer batch failures, caught at the source: A failed batch is expensive in every direction at once — the batch itself, the QA investigation, the s",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Batch release timelines are too long and holding up supply",
+    "url": "industry4.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Batch release timelines are too long and holding up supply. Testing, QA review, and documentation are taking longer than they should. Products are sitting in quarantine while the commercial team is managing customer escalations. Getting batches out of quarantine faster, quality intact: Every day a finished batch sits in quarantine is tied-up inventory, deferred revenue and a co",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "API and raw material supply chain is creating production risk",
+    "url": "industry4.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "API and raw material supply chain is creating production risk. Single-source API dependencies, China-linked supply concentration, and quality variability from key excipient suppliers are creating vulnerability in my production schedule. Taking the single-source risk out of your supply chain: APIs sourced from one geography, single-source excipients, and quality that wobbles fro",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Regulatory dossier and submission quality is slowing market approvals",
+    "url": "industry4.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Regulatory dossier and submission quality is slowing market approvals. ANDA, NDA, or CDSCO dossier submissions are being queried or rejected. The gap between what the regulator expects and what my regulatory affairs team is submitting is costing me time-to-market. Dossiers that move through review without the back-and-forth: A submission that draws a major deficiency letter cos",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "I want to use AI in quality and manufacturing but don't know how to do it compliantly",
+    "url": "industry4.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "I want to use AI in quality and manufacturing but don't know how to do it compliantly. AI for OOS prediction, process analytical technology, real-time release testing — the opportunity is real but the CSV and GxP validation requirements make unstructured deployment dangerous. AI on the manufacturing floor that an inspector will accept: PAT, real-time release testing, OOS predic",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry4.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "TAT is inconsistent and it's affecting doctor referral patterns",
+    "url": "industry4.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "TAT is inconsistent and it's affecting doctor referral patterns. Critical and routine TAT commitments aren't being met consistently. Referring doctors are noticing. Some have already started routing patients elsewhere. Turnaround a referring doctor can actually count on: Inconsistent TAT is really a referral problem in disguise. A doctor plans their clinical decisions around wh",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "NABL accreditation maintenance is consuming disproportionate QA bandwidth",
+    "url": "industry4.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "NABL accreditation maintenance is consuming disproportionate QA bandwidth. Document control, EQA participation, proficiency testing, and internal audit cycles are manual, time-consuming, and creating stress across my lab teams every accreditation cycle. NABL living in daily lab work, not in an accreditation scramble: Run NABL as a two-yearly event and you get the worst of both ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "I'm expanding to new collection centres but quality is inconsistent",
+    "url": "industry4.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "I'm expanding to new collection centres but quality is inconsistent. Pre-analytical errors, cold chain failures, and sample rejection rates vary significantly across collection centres. The quality I deliver at my reference lab isn't reaching patients at satellite locations. Getting reference-lab quality out to every collection centre: Result quality at the reference lab is dec",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Revenue per test and EBITDA margins are under pressure",
+    "url": "industry4.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Revenue per test and EBITDA margins are under pressure. Test pricing is competitive, reagent costs are rising, and instrument maintenance is expensive. My revenue per test isn't keeping up with the cost per test. Margins that survive rising reagent costs and price pressure: Diagnostics margin gets squeezed from several directions at once: test mix drifting toward the low-value ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "I have no consolidated view of lab performance across locations",
+    "url": "industry4.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "I have no consolidated view of lab performance across locations. Each lab sends a daily report. I don't have a single dashboard that shows TAT, rejection rates, instrument uptime, and financial performance across my entire network in real time. One live view across every lab, not a stack of daily emails: Running a lab network off a daily email from each location means you learn",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "I want to offer AI-powered diagnostic insights as a differentiator",
+    "url": "industry4.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "I want to offer AI-powered diagnostic insights as a differentiator. AI-assisted radiology reads, pattern recognition in pathology, and predictive health analytics — I want to offer these to referring doctors but don't know how to build or deploy them compliantly. AI insights referring doctors actually want to see: AI-assisted radiology reads, haematology flagging, pathology pat",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry4.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "CDSCO regulatory approval is taking longer than my commercial plan assumed",
+    "url": "industry4.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "CDSCO regulatory approval is taking longer than my commercial plan assumed. Import licence, MD-15 registration, clinical investigation requirements — the regulatory pathway is longer and less predictable than expected and it's delaying my market entry. The CDSCO pathway, without the surprise extra year: The device framework under MDR 2017 has got a lot more rigorous — import li",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Hospital procurement cycles are too long and too opaque",
+    "url": "industry4.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Hospital procurement cycles are too long and too opaque. Tenders, clinical evaluations, committee approvals, and price negotiations are taking 12-18 months per account. My sales force is spending time on deals that don't close. Moving hospital deals through a committee that likes to wait: Selling a device into a hospital means satisfying a whole cast — clinical champion, medica",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Clinical evidence generation is underfunded and slowing premium positioning",
+    "url": "industry4.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Clinical evidence generation is underfunded and slowing premium positioning. My competitors are publishing clinical data and winning formulary positions. My clinical evidence programme is either absent or too small to generate the data that changes prescription behaviour. Clinical evidence built to change prescriptions, not just satisfy regulators: In medtech, clinical evidence",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Post-market surveillance and vigilance reporting isn't systematic",
+    "url": "industry4.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Post-market surveillance and vigilance reporting isn't systematic. CDSCO's post-market surveillance requirements, adverse event reporting, and periodic safety update obligations are being managed manually. It's a compliance risk I'm not comfortable carrying. Post-market surveillance that runs as a system, not a scramble: CDSCO's post-market surveillance under MDR 2017 means per",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "I want to move from import to India manufacturing but the regulatory and ops pathway is unclear",
+    "url": "industry4.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "I want to move from import to India manufacturing but the regulatory and ops pathway is unclear. Make in India incentives, PLI scheme benefits, and localisation requirements are making domestic manufacturing attractive. The regulatory and operational pathway to get there isn't clear. Moving from import to making it in India, done properly: PLI benefits, localisation rules in go",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "I want to add digital or AI capabilities to my device ecosystem",
+    "url": "industry4.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "I want to add digital or AI capabilities to my device ecosystem. Software as a Medical Device, AI-powered diagnostics integrated with my hardware, remote monitoring — the opportunity is real but the regulatory classification and compliance pathway is complex. Adding software and AI to your devices, compliance built in: Software as a Medical Device, AI clinical decision support ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry4.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "CDSCO SaMD classification and regulatory pathway is blocking market access",
+    "url": "industry4.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "CDSCO SaMD classification and regulatory pathway is blocking market access. My digital health product may be classified as a Software as a Medical Device. The regulatory pathway, the clinical evidence requirements, and the timeline implications aren't clear. SaMD classification clarity before you build another feature: If your product meets the definition of Software as a Medic",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Patient data privacy and DPDPA compliance is creating product design constraints",
+    "url": "industry4.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Patient data privacy and DPDPA compliance is creating product design constraints. Health data is sensitive personal data under DPDPA 2023. Consent architecture, data minimisation, and purpose limitation requirements are creating product design decisions I'm not confident about. DPDPA-compliant by design, before it becomes a redesign: Health data is sensitive personal data under",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Hospital and clinic adoption is slower than my growth model assumed",
+    "url": "industry4.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Hospital and clinic adoption is slower than my growth model assumed. Clinicians are interested in demos. Procurement committees are slow. IT integration requirements are complex. The sales cycle is 3x longer than I modelled. Getting past the enthusiastic demo and into a purchase order: Selling into a hospital is a multi-stakeholder process most healthtech startups aren't built ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Clinical validation evidence is insufficient for institutional buyers",
+    "url": "industry4.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Clinical validation evidence is insufficient for institutional buyers. Hospitals and insurance companies want clinical evidence before adopting. My product has user traction but not peer-reviewed clinical validation — and that gap is blocking the accounts that matter. The clinical evidence institutional buyers ask for before they sign: User traction and a few enthusiastic clini",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "My operating model isn't built for regulated healthcare scale",
+    "url": "industry4.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "My operating model isn't built for regulated healthcare scale. We scaled from 10 to 100 customers on founder energy. Compliance documentation, clinical ops, customer success, and finance are all under-resourced for where the business needs to go. Looking institutional-grade, because your buyers are institutions: Going from 10 to 100 institutional customers needs a different ope",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "I want to embed AI clinical decision support but need a responsible framework",
+    "url": "industry4.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "I want to embed AI clinical decision support but need a responsible framework. AI for triage, risk stratification, or treatment recommendations carries specific liability and regulatory implications. I want to move fast but not create clinical risk or regulatory exposure. A responsible framework before clinical AI touches a patient: AI for triage, risk stratification, diagnosti",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry4.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Regulatory inspection readiness is not consistently maintained",
+    "url": "industry4.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Regulatory inspection readiness is not consistently maintained. ICH GCP, GLP, CDSCO, and USFDA inspection requirements demand a continuous state of readiness — not a pre-inspection scramble. My documentation, training records, and audit trails aren't consistently maintained. Inspection-ready always, because the inspection won't warn you: A CRO that's only sometimes inspection-r",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Data integrity gaps are creating sponsor concern",
+    "url": "industry4.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Data integrity gaps are creating sponsor concern. ALCOA-C principles, audit trail completeness, raw data retention, and electronic system validation — sponsor audits are finding gaps that are damaging trust and threatening contract renewals. Data integrity that survives the sponsor audit intact: Of everything a sponsor audit can find, a data integrity gap is the most commercial",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Study timelines are slipping and sponsors are escalating",
+    "url": "industry4.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Study timelines are slipping and sponsors are escalating. Protocol deviations, site activation delays, patient recruitment shortfalls, and data query resolution backlogs are compressing timelines and creating commercial risk with key sponsors. Hitting sponsor milestones, because slippage compounds: Timeline slippage in clinical research compounds in a horribly predictable way: ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Resource utilisation and capacity planning across studies is inefficient",
+    "url": "industry4.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Resource utilisation and capacity planning across studies is inefficient. Staff are over-allocated on some studies and underutilised on others. I'm carrying overhead that isn't generating revenue and turning away studies I don't have capacity to take on. Matching people to studies without carrying dead overhead: Resourcing a CRO is a genuinely hard matching problem — studies wi",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Clinical research talent attrition is a structural problem",
+    "url": "industry4.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Clinical research talent attrition is a structural problem. Experienced CRAs, biostatisticians, and regulatory writers are leaving faster than I can train replacements. The knowledge loss is creating quality inconsistency and slowing study execution. Keeping the CRAs and specialists your quality depends on: In clinical research the talent is the product. An experienced CRA, bio",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "I want to use AI to improve study execution and data quality but need a validated approach",
+    "url": "industry4.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "I want to use AI to improve study execution and data quality but need a validated approach. AI for protocol deviation prediction, patient recruitment optimisation, and data cleaning — the opportunity is significant but validation requirements under 21 CFR Part 11 and GxP make unstructured AI deployment risky. AI in clinical research that both the regulator and the sponsor accep",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Every point you shave off ALOS shows up somewhere on your balance sheet.",
+    "url": "industry4.html#sec-every-point-you-shave-off-alos-shows-up-somew",
+    "anchor": "sec-every-point-you-shave-off-alos-shows-up-somew",
+    "content": "Every point you shave off ALOS shows up somewhere on your balance sheet. Healthcare is scaling faster than its infrastructure. Thin margins in hospitals, USFDA scrutiny in pharma, TAT pressure in diagnostics, startup speed in health tech. We build for where those collide. BOOK A 30-MIN CALL GET THE INDUSTRY DIAGNOSTIC",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Who are you?We'll show you theright problems.",
+    "url": "industry4.html#Whotherightproblemssec",
+    "anchor": "Whotherightproblemssec",
+    "content": "Who are you?We'll show you theright problems. Pick your segment. What comes up is tuned to your clinical, commercial and regulatory reality. Hospital or provider Pharma manufacturer Diagnostics chain Medtech company Digital health startup CRO or contract lab PROBLEMS STHIROS SOLUTION Bed occupancy and ALOS aren't where they need to be Occupancy is below target, ALOS is above be",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "More capacity without building a single new bed",
+    "url": "industry4.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "More capacity without building a single new bed High ALOS and low occupancy are usually the same problem seen from two angles: patient flow that nobody runs as a system. Discharge decisions made late, beds blocked by specialty, rounds that finish too late to discharge before afternoon, and clinical teams and bed management working off different pictures all add up. We rebuild t",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Closing the gap between the care you gave and the money you kept",
+    "url": "industry4.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Closing the gap between the care you gave and the money you kept Revenue leakage in a hospital is rarely one hole; it's a slow drip at every stage. Documentation that doesn't support the codes, complex procedures undercoded, pre-auth delays, submission errors, and collections chased only when someone remembers. We audit the whole cycle from pre-admission to final rupee collecte",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "NABH compliance that lives in the workflow, not in a binder",
+    "url": "industry4.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "NABH compliance that lives in the workflow, not in a binder Treat NABH as something you cram for every accreditation cycle and you get the worst of both worlds: a frantic surge before assessment, and standards that quietly lapse in between. We rebuild it as an operating discipline that lives in daily work — protocols built into the clinical workflow, incident reporting that's r",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Keeping clinical staff, and rostering the ones you have well",
+    "url": "industry4.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Keeping clinical staff, and rostering the ones you have well Clinical attrition in Indian hospitals is structural, not bad luck: pay that's drifted below benchmark, rosters that burn people out, thin professional development, and management styles never designed for clinical staff. Recruiting faster is a treadmill. We redesign the workforce model instead — compensation benchmar",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "A command centre showing today's hospital, not yesterday's",
+    "url": "industry4.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "A command centre showing today's hospital, not yesterday's Running 300 beds across a dozen departments on yesterday's numbers means every morning meeting opens with data the day has already overtaken. Admissions, bed status, OT utilisation, ED flow, revenue by department, where the staff are — you want all of it live, not summarised the next morning. We build the intelligence l",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "The flagship's quality, minus its dependence on specific people",
+    "url": "industry4.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "The flagship's quality, minus its dependence on specific people A second or third hospital that underperforms the flagship is nearly always a replication failure. The flagship ran on specific people and relationships that quietly didn't come along to the new site. We design the operating model that travels: clinical protocols embedded in the system rather than in someone's head",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Inspection readiness that holds up under a focused investigator",
+    "url": "industry4.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Inspection readiness that holds up under a focused investigator 483 observations and CDSCO warning letters tend to rhyme: systems that work fine in practice but can't survive a documentation trail, deviations that never got closed properly, training records that don't match what actually happened on the floor. We run a mock inspection the way a real investigator would — a struc",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Fewer batch failures, caught at the source",
+    "url": "industry4.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Fewer batch failures, caught at the source A failed batch is expensive in every direction at once — the batch itself, the QA investigation, the schedule slip, the pile of regulatory documentation. And most OOS results and deviations trace back to a short list of causes: raw material variability, process parameters drifting, calibration gaps, analyst technique that varies by who",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Getting batches out of quarantine faster, quality intact",
+    "url": "industry4.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Getting batches out of quarantine faster, quality intact Every day a finished batch sits in quarantine is tied-up inventory, deferred revenue and a commercial team fielding escalations. Release timelines are usually longer than they need to be for unglamorous reasons: testing run in sequence when it could be parallel, documentation left to pile up at the end, and a QA review pr",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Taking the single-source risk out of your supply chain",
+    "url": "industry4.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Taking the single-source risk out of your supply chain APIs sourced from one geography, single-source excipients, and quality that wobbles from a key supplier are structural vulnerabilities that COVID made impossible to ignore and regulators now ask about directly. We rework the supply chain architecture: qualify alternative sources properly, run vendor quality development rath",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Dossiers that move through review without the back-and-forth",
+    "url": "industry4.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Dossiers that move through review without the back-and-forth A submission that draws a major deficiency letter costs you months, and it does something quieter and worse: it tells the reviewer this company's dossiers need a closer look, which colours everything you file afterwards. We audit your dossiers against CTD requirements and what reviewers actually expect, find the defic",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "AI on the manufacturing floor that an inspector will accept",
+    "url": "industry4.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "AI on the manufacturing floor that an inspector will accept PAT, real-time release testing, OOS prediction, manufacturing execution intelligence — AI on the pharma floor is genuinely valuable and genuinely fraught, because 21 CFR Part 11, Annex 11 and GAMP 5 all apply the moment a computerised system touches a GxP process. We build AI inside that frame: validated systems, docum",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Turnaround a referring doctor can actually count on",
+    "url": "industry4.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Turnaround a referring doctor can actually count on Inconsistent TAT is really a referral problem in disguise. A doctor plans their clinical decisions around when your report lands, and the day it doesn't, they quietly start trusting someone more reliable. The failures almost always sit at specific bottlenecks — instrument queues, manual data entry, a verification backlog, a co",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "NABL living in daily lab work, not in an accreditation scramble",
+    "url": "industry4.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "NABL living in daily lab work, not in an accreditation scramble Run NABL as a two-yearly event and you get the worst of both worlds — a bandwidth-eating scramble before each assessment, and standards that drift in the long gaps between. We rebuild the quality system so NABL lives in the daily work: document control that happens continuously, internal audits that are routine rat",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Getting reference-lab quality out to every collection centre",
+    "url": "industry4.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Getting reference-lab quality out to every collection centre Result quality at the reference lab is decided long before the sample arrives — it's decided at the collection centre, where most chains carry a lot of hidden variability. Wrong tubes, temperature excursions, haemolysed samples, short draws: nearly all of it comes down to training gaps and inconsistent process at the ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Margins that survive rising reagent costs and price pressure",
+    "url": "industry4.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Margins that survive rising reagent costs and price pressure Diagnostics margin gets squeezed from several directions at once: test mix drifting toward the low-value stuff, reagent costs rising faster than prices, instrument maintenance nobody's really tracking, and working capital stuck in receivables from hospitals and corporates. We rebuild the commercial model around that r",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "One live view across every lab, not a stack of daily emails",
+    "url": "industry4.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "One live view across every lab, not a stack of daily emails Running a lab network off a daily email from each location means you learn about problems after they've happened rather than in time to stop them. A TAT breach from yesterday, an analyser that was down for hours before anyone said so, financials that only resolve at month-end — all symptoms of intelligence that always ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "AI insights referring doctors actually want to see",
+    "url": "industry4.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "AI insights referring doctors actually want to see AI-assisted radiology reads, haematology flagging, pathology pattern recognition, predictive risk scoring — these are moving out of research papers and into clinical use. The labs that offer them attract referring doctors who want more than a number on a page; they want something closer to a second opinion. We design and build ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "The CDSCO pathway, without the surprise extra year",
+    "url": "industry4.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "The CDSCO pathway, without the surprise extra year The device framework under MDR 2017 has got a lot more rigorous — import licences, MD-15 registration, clinical investigation for certain classes, and CDSCO guidance that keeps moving. Getting the classification, the clinical data strategy and the dossier right the first time is quite literally the difference between a 12-month",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Moving hospital deals through a committee that likes to wait",
+    "url": "industry4.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Moving hospital deals through a committee that likes to wait Selling a device into a hospital means satisfying a whole cast — clinical champion, medical superintendent, purchase committee, finance, often a CMO or the board for capital equipment. Most medtech sales forces run this on relationships and hope, without a structured account plan, and then wonder why 12 to 18 months e",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Clinical evidence built to change prescriptions, not just satisfy regulators",
+    "url": "industry4.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Clinical evidence built to change prescriptions, not just satisfy regulators In medtech, clinical evidence pulls double duty. Yes, the regulator wants it, but peer-reviewed publications, conference data and solid health economics are also what move formulary decisions, tender specifications and individual prescriber habits. Treated as a box-tick, it's a cost; treated as a comme",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Post-market surveillance that runs as a system, not a scramble",
+    "url": "industry4.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Post-market surveillance that runs as a system, not a scramble CDSCO's post-market surveillance under MDR 2017 means periodic safety update reports, adverse event reporting inside defined timelines, and field safety corrective actions when they're needed. Run manually and reactively, it carries two risks at once — a compliance gap, and missing the early signal that something's ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Moving from import to making it in India, done properly",
+    "url": "industry4.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Moving from import to making it in India, done properly PLI benefits, localisation rules in government procurement, and the plain strategic sense of depending less on imports are all making domestic manufacturing attractive for medtech. Getting there runs through CDSCO manufacturing licences, medical device GMP, a QMS under ISO 13485, and the operational work of standing up a c",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Adding software and AI to your devices, compliance built in",
+    "url": "industry4.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Adding software and AI to your devices, compliance built in Software as a Medical Device, AI clinical decision support running off your device data, remote monitoring platforms — these open genuinely new value for a hardware medtech company. They also bring a compliance architecture that has to be designed in from the start: SaMD classification under CDSCO, clinical validation,",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "SaMD classification clarity before you build another feature",
+    "url": "industry4.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "SaMD classification clarity before you build another feature If your product meets the definition of Software as a Medical Device under CDSCO, it needs registration before you can sell it — and whether it meets that definition isn't always obvious. Guess low and you deploy without approval you needed; guess high and you carry regulatory burden you didn't. We do the classificati",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "DPDPA-compliant by design, before it becomes a redesign",
+    "url": "industry4.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "DPDPA-compliant by design, before it becomes a redesign Health data is sensitive personal data under DPDPA 2023, which means explicit consent, purpose limitation, data minimisation and the right to erasure all apply to how your product touches patient information. Get the consent architecture wrong, or build data flows that quietly breach purpose limitation, and you've bought b",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Getting past the enthusiastic demo and into a purchase order",
+    "url": "industry4.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Getting past the enthusiastic demo and into a purchase order Selling into a hospital is a multi-stakeholder process most healthtech startups aren't built for. A clinical champion loves the demo, and then a medical superintendent, an IT team, a finance committee and an infosec review all have to be satisfied before anyone raises a purchase order. Run that as demo-and-follow-up a",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "The clinical evidence institutional buyers ask for before they sign",
+    "url": "industry4.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "The clinical evidence institutional buyers ask for before they sign User traction and a few enthusiastic clinicians aren't clinical validation, however good they feel. Hospitals, insurers and government health programmes want evidence from structured studies — comparative effectiveness, safety profile, health economics — before they'll adopt, and that gap is usually what's bloc",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Looking institutional-grade, because your buyers are institutions",
+    "url": "industry4.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Looking institutional-grade, because your buyers are institutions Going from 10 to 100 institutional customers needs a different operating model, not just more of the founder's energy. Compliance documentation that clears hospital infosec, clinical ops that can actually support an enterprise deployment, customer success that understands a clinical workflow, and a finance functi",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "A responsible framework before clinical AI touches a patient",
+    "url": "industry4.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "A responsible framework before clinical AI touches a patient AI for triage, risk stratification, diagnostic assistance or treatment recommendation carries real weight in a clinical setting, because the failure mode isn't a bad recommendation, it's a harmed patient. Deploy it without regulatory classification, clinical validation or an informed-consent architecture and you've al",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Inspection-ready always, because the inspection won't warn you",
+    "url": "industry4.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Inspection-ready always, because the inspection won't warn you A CRO that's only sometimes inspection-ready is, by definition, not ready when it counts, because USFDA, CDSCO and sponsor audits rarely give you much warning. A 483 observation, a warning letter or a failed sponsor audit does commercial damage that dwarfs whatever it costs to stay ready all the time. We build the c",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Data integrity that survives the sponsor audit intact",
+    "url": "industry4.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Data integrity that survives the sponsor audit intact Of everything a sponsor audit can find, a data integrity gap is the most commercially damaging — it goes straight to whether they can trust anything you've produced. ALCOA-C applies to every data point in a GCP or GLP environment, and most CROs carry their gaps in the same few places: audit trail completeness, raw data reten",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Hitting sponsor milestones, because slippage compounds",
+    "url": "industry4.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Hitting sponsor milestones, because slippage compounds Timeline slippage in clinical research compounds in a horribly predictable way: late site activation pushes first-patient-in, which squeezes the recruitment window, which forces amendments or extensions, which drains sponsor confidence and makes the next study harder to win. We rebuild the planning and execution model — rea",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Matching people to studies without carrying dead overhead",
+    "url": "industry4.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Matching people to studies without carrying dead overhead Resourcing a CRO is a genuinely hard matching problem — studies with different therapeutic areas, geographies and timelines, matched to staff with the right training, availability and experience, all while keeping overall utilisation high enough to actually make money. Most CROs run it on spreadsheets and escalation, whi",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Keeping the CRAs and specialists your quality depends on",
+    "url": "industry4.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Keeping the CRAs and specialists your quality depends on In clinical research the talent is the product. An experienced CRA, biostatistician, regulatory writer or data manager carries knowledge about sponsors, therapeutic areas, sites and study types that walks out with them the day they resign. High attrition means quality that varies, knowledge that leaks, and a training bill",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "AI in clinical research that both the regulator and the sponsor accept",
+    "url": "industry4.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "AI in clinical research that both the regulator and the sponsor accept AI for protocol deviation prediction, recruitment optimisation, data cleaning and site performance monitoring is genuinely useful in clinical research operations. But the moment it runs in a GxP environment, 21 CFR Part 11 and Annex 11 validation apply, and sponsors want evidence the system's validated and i",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "The Sthiros Difference",
+    "url": "industry4.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "The Sthiros Difference We read clinical and commercial as one thing ALOS, bed occupancy, ARPOB, batch release cycles, TAT, regulatory dossiers: we advise in that operational language natively. Clinical excellence and commercial discipline aren't a trade-off we help you balance; they're the same goal seen from two sides. Our AI works inside the regulatory lines Clinical decision",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "We read clinical and commercial as one thing",
+    "url": "industry4.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We read clinical and commercial as one thing ALOS, bed occupancy, ARPOB, batch release cycles, TAT, regulatory dossiers: we advise in that operational language natively. Clinical excellence and commercial discipline aren't a trade-off we help you balance; they're the same goal seen from two sides.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Our AI works inside the regulatory lines",
+    "url": "industry4.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "Our AI works inside the regulatory lines Clinical decision support, readmission prediction, batch quality AI, diagnostic TAT intelligence: built to live inside CDSCO, NABH, NABL and USFDA frameworks rather than in spite of them. AI a regulator can inspect without your quality team losing sleep.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "We leave software your teams run every shift",
+    "url": "industry4.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We leave software your teams run every shift Clinical dashboards, revenue cycle tools, compliance systems, patient flow platforms: real products your clinical and operations teams open every shift, rather than a pilot that impressed everyone once and then quietly never scaled.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "What youcan expect",
+    "url": "industry4.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "What youcan expect Compliance-native Every build starts inside NABH, NABL, CDSCO and USFDA, from day one. 4-16 weeks Paced to healthcare operator speed. No retainer that quietly renews forever. One team,three modes The people who advise you are the people who build it. The plan and the thing arrive together.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Compliance-native",
+    "url": "industry4.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "Compliance-native Every build starts inside NABH, NABL, CDSCO and USFDA, from day one.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "4-16 weeks",
+    "url": "industry4.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "4-16 weeks Paced to healthcare operator speed. No retainer that quietly renews forever.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "One team,three modes",
+    "url": "industry4.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "One team,three modes The people who advise you are the people who build it. The plan and the thing arrive together.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Relatedcase studies",
+    "url": "industry4.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Moving inventory intelligence beyond reactive ERP reporting, in 12 weeks Automating multilingual video creation for training and incident reporting, at scale Teaching machine data and Excel to speak one language, in real time Cutting manual cash burn reporting effort by 50-70%, in 25 business days Turning an undocumented risk practice into a Board-ready, CAG",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Pick a way in.They all lead to the same conversation.",
+    "url": "industry4.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Pick a way in.They all lead to the same conversation. Hospital COO, pharma plant head, diagnostics founder or healthtech leader; start wherever fits where you are.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "A 30-minute call",
+    "url": "industry4.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "A 30-minute call Tell us your operating context. By the end of the call we'll say what we'd tackle first — clinical ops, a compliance programme, an AI build, or a piece of software. No deck required.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "The healthcare ops diagnostic",
+    "url": "industry4.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "The healthcare ops diagnostic A free self-assessment across clinical efficiency, compliance posture, revenue cycle, digital readiness and workforce capability. It shows where you're exposed and what to fix first. Occasionally it tells you you're in better shape than you feared, which we're glad to confirm.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Just describe the situation",
+    "url": "industry4.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Just describe the situation Not ready to talk? Send three lines: your organisation type, the operational pressure, what you've already tried. You'll get an actual point of view back, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Healthcare & Life Sciences",
+    "sectionTitle": "Genuinely not surewhere you fit?",
+    "url": "industry4.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Genuinely not surewhere you fit? Tell us your organisation type, your biggest operational pressure, and whether you need advice, a build, or both. We'll point you at the right starting line.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Industries - Manufacturing",
+    "url": "industry5.html",
+    "anchor": "",
+    "content": "We build financial systems that clear audit before the auditor asks. ﻿ Industries - Manufacturing Somewhere between the shop floor and the P&L, the margin goes missing. OEE looks fine on the dashboard. What actually protects margin is smaller: whether anyone besides the plant manager knows why line 3 slows every Tuesday. We build the system that knows anyway. BOOK A 30-MIN CALL GET THE INDUSTRY DIAGNOSTIC Who are yo",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry5.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Yield losses are eating into my batch margins",
+    "url": "industry5.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Yield losses are eating into my batch margins. Every batch below standard yield is a direct margin hit. I know it's happening but I can't pinpoint whether it's raw material variability, process drift, or operator inconsistency. Finding out where the yield actually goes: Yield loss usually comes from three places: raw material that varies enough to change the outcome, process pa",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Regulatory and quality compliance is becoming harder to maintain",
+    "url": "industry5.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Regulatory and quality compliance is becoming harder to maintain. GMP, FSSAI, REACH, BIS — the compliance burden is increasing and my systems weren't designed to manage it at current scale and complexity. Compliance that lives in the process, not in the paperwork: Compliance in process manufacturing gets treated as a documentation job, but GMP deviations don't happen in the doc",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Unplanned downtime is disrupting production schedules",
+    "url": "industry5.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Unplanned downtime is disrupting production schedules. Equipment failures that weren't predicted, changeover delays, and — utility interruptions are causing schedule slippage and customer delivery failures. Predicting the breakdown instead of reacting to it: Unplanned downtime in process manufacturing costs more than the lost production alone — there's the ruined batch, the was",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Raw material cost volatility is making margin planning impossible",
+    "url": "industry5.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Raw material cost volatility is making margin planning impossible. Commodity price swings, single-source dependencies, and long procurement lead times mean my standard costs are almost always wrong by the time the batch runs. Getting standard cost to actually resemble what you paid: Raw material is the biggest line in most process P&Ls and also the twitchiest. Single-source dep",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "I have no real-time visibility into plant performance",
+    "url": "industry5.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "I have no real-time visibility into plant performance. I get a production report the next morning. By then the shift is over, the decisions are made, and the losses are locked in. I need to see what's happening now. Seeing the shift while it's still happening: A production report that lands the next morning is a history lesson, not a control. By the time you read it the shift i",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "I want to scale capacity but my current processes aren't stable enough",
+    "url": "industry5.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "I want to scale capacity but my current processes aren't stable enough. Adding capacity on top of an unstable process just scales the problems. Before I invest in expansion, I need the current process under control. Getting the process stable before you scale its problems: Scaling an unstable process doesn't grow the business; it just buys you the same problems in bulk. Before ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry5.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "On-time delivery performance is damaging customer relationships",
+    "url": "industry5.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "On-time delivery performance is damaging customer relationships. Schedule adherence is below target. Customers are escalating. I'm spending more time managing delivery failures than improving the process that causes them. Missed delivery dates in discrete manufacturing are usually a planning problem wearing a production problem's clothes. Material shortages, breakdowns, quality",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Rejection and rework rates are too high and too unpredictable",
+    "url": "industry5.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Rejection and rework rates are too high and too unpredictable. Quality escapes, in-process rejections, and customer returns are creating hidden cost that doesn't show up until month-end — by which point the damage is done. Rejections and rework brought down to a number you can plan around: A quality escape costs you three times over: the scrap or rework itself, the schedule hit",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "My OEE is too low and I don't know which loss is biggest",
+    "url": "industry5.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "My OEE is too low and I don't know which loss is biggest. I know the number but not the breakdown. Is it availability, performance, or quality? Which machine, which shift, which product family is the real problem? OEE broken down to the loss that's actually worth fixing: OEE is one tidy number sitting on top of a messy mix — availability, performance and quality losses spread a",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Supply chain disruptions are causing line stoppages",
+    "url": "industry5.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Supply chain disruptions are causing line stoppages. Single-source components, long lead time imports, and supplier quality variability are creating material availability gaps that stop production lines mid-run. Keeping a supplier problem from stopping the line: Single-source critical components, long-lead imports and suppliers whose quality varies are structural vulnerabilitie",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Skilled operator attrition is hurting output quality and throughput",
+    "url": "industry5.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Skilled operator attrition is hurting output quality and throughput. When experienced operators leave, quality and speed drop on that cell or line. The knowledge is in people's heads, not in the process. Getting the operator's know-how out of their head and into the process: Your experienced operators carry knowledge that never made it into a document — the setup sequence, the ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "I want to move towards Industry 4.0 but don't know where to start",
+    "url": "industry5.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "I want to move towards Industry 4.0 but don't know where to start. Smart manufacturing, IoT sensors, digital twins — everyone is talking about it. I don't know what's real, what's worth investing in, and what the right sequence is for my plant. An Industry 4.0 plan for your plant, not for a brochure: Industry 4.0 is a direction, not a thing you buy. Bolt IoT sensors onto machin",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry5.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "My conversion margins are too thin to absorb any inefficiency",
+    "url": "industry5.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "My conversion margins are too thin to absorb any inefficiency. Brand owners benchmark me against co-packers every year. I'm winning on price and losing on margin. I need to find operational efficiency I haven't found yet. The efficiency your competitors haven't found yet: Co-packer margins get competed away at the quote, so the only durable edge is operational efficiency the ot",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Changeover times between SKUs are killing line utilisation",
+    "url": "industry5.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Changeover times between SKUs are killing line utilisation. My portfolio has dozens of SKUs with different formats, fills, and labels. Every changeover costs me time I'm not getting paid for. Recovering the line time your changeovers quietly eat: In high-mix co-packing, changeover is the single biggest source of lost line time. A 45-minute changeover on a line running 20 SKUs a",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Customer forecast variability is creating inventory and capacity problems",
+    "url": "industry5.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Customer forecast variability is creating inventory and capacity problems. Brand owners give me 8-week forecasts that change every 2 weeks. I'm either carrying too much material or scrambling to source at short notice. Planning around forecasts your customers won't stick to: Brand owner forecasts are unreliable by nature — promotions shift, listings move, distribution calls get",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Quality audits by brand owners are finding issues I didn't see",
+    "url": "industry5.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Quality audits by brand owners are finding issues I didn't see. Customer quality audits are identifying GMP gaps, documentation failures, and process deviations that my internal QA is missing. My audit readiness isn't where it needs to be. Passing the brand owner audit before it becomes a crisis: For a co-packer, a brand owner audit is a high-stakes event — fail one and you can",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "I want to add new brand owner customers but my capacity planning is weak",
+    "url": "industry5.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "I want to add new brand owner customers but my capacity planning is weak. I'm turning away business because I can't accurately model capacity. I don't know what I can commit to without compromising existing customers. Knowing what you can promise without letting a current customer: A co-packer who can't model capacity accurately does one of two things: turns away business it co",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "My production reporting is too slow and too manual for my customers",
+    "url": "industry5.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "My production reporting is too slow and too manual for my customers. Brand owners want real-time batch status, yield data, and quality release confirmation. I'm producing this manually with a 24-hour lag. Batch data your customers can see without a 24-hour lag: Brand owners increasingly want real-time batch status, yield and quality release, not a PDF that arrives the next morn",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry5.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Job cost overruns are eroding margins on individual orders",
+    "url": "industry5.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Job cost overruns are eroding margins on individual orders. We estimate accurately but execute expensively. Material wastage, engineering rework, and labour hours above standard are compressing the margin on almost every order. Closing the gap between what you quoted and what it cost: AJob cost overruns in industrial manufacturing are structural, not occasional: material exceed",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Order delivery timelines are consistently slipping",
+    "url": "industry5.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Order delivery timelines are consistently slipping. Long manufacturing cycles with complex engineering dependencies mean a delay in one stage cascades through the entire order. Customer penalties are accumulating. Long-cycle orders that don't accumulate delay stage by stage: Long cycles make schedule risk compound: a slip at fabrication ripples through assembly, testing and com",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "I have no real-time view of job cost versus estimate during production",
+    "url": "industry5.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "I have no real-time view of job cost versus estimate during production. I find out a job went over budget after it's shipped. I need to see job cost variance during production — not in the post-mortem. Job cost variance you can see while the job's still on the floor: Learning a job blew its budget after it ships is a post-mortem, not a control. The window to actually do somethi",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Engineering and design rework is consuming capacity and cost",
+    "url": "industry5.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Engineering and design rework is consuming capacity and cost. Design changes during production, specification ambiguity from customers, and internal engineering errors are creating rework loops that delay delivery and add cost. Cutting the rework loops between engineering and production: Engineering rework is a profit drain that most plants never measure properly. Design errors",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Procurement is too reactive and it's creating cost and schedule risk",
+    "url": "industry5.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Procurement is too reactive and it's creating cost and schedule risk. Long lead time items that weren't ordered on time, vendor quality issues discovered late, and price variances from quoted rates are all creating downstream problems. Procurement that stops holding your schedule hostage: Long-lead items ordered too late, vendor quality found only at incoming inspection, prices",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "I want to build a more accurate cost estimation and bidding capability",
+    "url": "industry5.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "I want to build a more accurate cost estimation and bidding capability. We lose jobs we should have won and win jobs we shouldn't have. The estimating process isn't precise enough and the risk pricing doesn't reflect execution reality. Winning the jobs worth winning, at a price that holds: Your estimating process decides both which jobs you win and whether winning them was a go",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry5.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Buyer sustainability and compliance audits are creating business risk",
+    "url": "industry5.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Buyer sustainability and compliance audits are creating business risk. ESG requirements, social compliance audits, chemical restrictions, and traceability demands from global buyers are becoming mandatory for order retention — not just good practice. Staying audit-ready for the buyers who now demand it: For global apparel and textile buyers, sustainability compliance has stoppe",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Labour productivity in stitching and weaving is too variable",
+    "url": "industry5.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Labour productivity in stitching and weaving is too variable. Output per operator per shift varies significantly across lines and supervisors. I know the gap exists but I don't have a systematic way to close it. Closing the 25-40% gap between your best line and your worst: Labour productivity in stitching and weaving is at once the most variable cost driver in a textile plant a",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Yarn and fabric procurement costs are volatile and hard to hedge",
+    "url": "industry5.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Yarn and fabric procurement costs are volatile and hard to hedge. Cotton prices, polyester feedstock, and specialty yarn availability swing significantly. My procurement timing decisions are based on market intuition, not data. SOLUTION Buying yarn and fabric on data instead of a feel for the market: Cotton, polyester feedstock and specialty yarn all move with commodity markets",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Order lead times are too long for fast-fashion buyer requirements",
+    "url": "industry5.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Order lead times are too long for fast-fashion buyer requirements. Buyers are shortening seasons and compressing lead times. My current planning and production cycle can't reliably deliver in the windows they're demanding. Hitting the 45-day window without cutting corners on quality: When a buyer moves you from a 90-day to a 45-day lead time without simplifying the order, that'",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Fabric wastage and cut plan inefficiency are adding hidden cost",
+    "url": "industry5.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Fabric wastage and cut plan inefficiency are adding hidden cost. Fabric is my largest input cost. Poor marker efficiency, off-standard cutting, and shrinkage miscalculation are creating waste I'm not measuring accurately. The ₹2Cr sitting in a 2% fabric utilisation gap: Fabric is the biggest single input cost in garment manufacturing — typically 60 to 65% of material cost — whi",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "I want to offer digital product development and sampling to attract new buyers",
+    "url": "industry5.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "I want to offer digital product development and sampling to attract new buyers. Global buyers want faster sampling, digital proto approvals, and PLM visibility. My development process is still sample-by-courier and it's costing me new business. Sampling that isn't still moving by courier: Global buyers are moving to digital proto approvals, 3D sampling and PLM-driven developmen",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry5.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Working capital is perpetually tight and I don't know why",
+    "url": "industry5.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Working capital is perpetually tight and I don't know why. Revenue is growing but cash is always short. Debtors are stretching, creditors are tightening, and I'm never sure whether a new order will help or hurt my liquidity. Finding out why growing revenue never turns into cash: Tight working capital in an MSME is usually structural, not bad luck: debtors stretching past their ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "I don't know which jobs or customers are actually making me money",
+    "url": "industry5.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "I don't know which jobs or customers are actually making me money. I price based on experience. I can't tell you which customer, product, or job type has the best margin. My costing is too rough to make good commercial decisions. Knowing which customers actually make you money: Pricing by experience works right up until the business gets complex enough that different jobs, cust",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Key person dependence is an existential risk to my business",
+    "url": "industry5.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Key person dependence is an existential risk to my business. My production supervisor, my QC head, my senior machinist — if any of them leave, a piece of the business goes with them. The knowledge isn't in the system. Making the business survive any one person leaving: In most MSME manufacturers, the institutional knowledge sits in two or three heads: the supervisor who knows e",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "I want to grow but I'm not confident the operations can scale",
+    "url": "industry5.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "I want to grow but I'm not confident the operations can scale. Taking on more orders means more raw material, more labour, more quality risk. I'm not confident the current operating model handles 2x volume without breaking. Getting to 2x without the wheels coming off: MSMEs that take on more orders without building the operating infrastructure to match usually discover the same",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "I'm losing bids on price but I don't know if the winning bids are profitable",
+    "url": "industry5.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "I'm losing bids on price but I don't know if the winning bids are profitable. Competitors are pricing below what I think is rational. Either they know something about their costs I don't know about mine, or they're buying market share at a loss. Knowing your real cost better than the competitor undercutting you: A competitor pricing below what looks rational to you means one of",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "I want to modernise operations but I don't know where technology adds real value",
+    "url": "industry5.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "I want to modernise operations but I don't know where technology adds real value. ERP, IoT sensors, quality management systems — everyone is selling me technology. I need to know what will actually move my business before I spend the money. Which technology actually moves your business, before you spend: ERP vendors, IoT sensor suppliers and quality-software companies all promi",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Somewhere between the shop floor and the P&L, the margin goes missing.",
+    "url": "industry5.html#sec-somewhere-between-the-shop-floor-and-the-p-l-",
+    "anchor": "sec-somewhere-between-the-shop-floor-and-the-p-l-",
+    "content": "Somewhere between the shop floor and the P&L, the margin goes missing. OEE looks fine on the dashboard. What actually protects margin is smaller: whether anyone besides the plant manager knows why line 3 slows every Tuesday. We build the system that knows anyway. BOOK A 30-MIN CALL GET THE INDUSTRY DIAGNOSTIC",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Who are you?We'll show you theright problems.",
+    "url": "industry5.html#Whotherightproblemssec",
+    "anchor": "Whotherightproblemssec",
+    "content": "Who are you?We'll show you theright problems. Pick your segment. What comes up is tuned to your operating context and where your cost structure actually hurts. Process manufacturer Discrete manufacturer FMCG co-packer Industrial and capital goods Textile and apparel MSME and job shop PROBLEMS STHIROS SOLUTION Yield losses are eating into my batch margins Every batch below stand",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Finding out where the yield actually goes",
+    "url": "industry5.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Finding out where the yield actually goes Yield loss usually comes from three places: raw material that varies enough to change the outcome, process parameters drifting in ways nobody clocks until the batch is tested, and operators executing the same step slightly differently. Most plants track yield in aggregate, which confirms the loss exists without telling you where to stan",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Compliance that lives in the process, not in the paperwork",
+    "url": "industry5.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Compliance that lives in the process, not in the paperwork Compliance in process manufacturing gets treated as a documentation job, but GMP deviations don't happen in the documents — they happen on the line, and the paperwork just records them after the fact. We rebuild it as an operating discipline: SOPs built into the production workflow, deviations flagged in real time, batc",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Predicting the breakdown instead of reacting to it",
+    "url": "industry5.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Predicting the breakdown instead of reacting to it Unplanned downtime in process manufacturing costs more than the lost production alone — there's the ruined batch, the wasted utilities, and the scramble to recover the schedule on top. Most plants run calendar-based preventive maintenance, which manages to both over-service equipment that's fine and miss the failures that don't",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Getting standard cost to actually resemble what you paid",
+    "url": "industry5.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Getting standard cost to actually resemble what you paid Raw material is the biggest line in most process P&Ls and also the twitchiest. Single-source dependencies, long lead times, and buying decisions made without much market intelligence leave your cost structure permanently on the back foot, and your standard cost wrong by the time the batch runs. We rework the procurement s",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Seeing the shift while it's still happening",
+    "url": "industry5.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Seeing the shift while it's still happening A production report that lands the next morning is a history lesson, not a control. By the time you read it the shift is done, the decisions are made, and the losses are locked in for good. We build the real-time layer — production rate, yield, downtime, quality and utility consumption visible live by line, batch and shift — so your p",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Getting the process stable before you scale its problems",
+    "url": "industry5.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Getting the process stable before you scale its problems Scaling an unstable process doesn't grow the business; it just buys you the same problems in bulk. Before you spend on new reactors, lines or utilities, the current process wants to be under statistical control — yield predictable, downtime manageable, quality steady, compliance reliable. We run the stabilisation programm",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Missed delivery dates in discrete manufacturing are usually a planning problem wearing a production problem's clothes. Material shortages, breakdowns, quality holds, engineering changes all hit the schedule, but the real issue is that the schedule was built as if none of them ever would. We redesign the planning model — constraint-based scheduling, buffers where they belong, material readiness checked before the job starts, and a daily rhythm that stops a small disruption from quietly turning into a late shipment Improve my on-time delivery",
+    "url": "industry5.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Missed delivery dates in discrete manufacturing are usually a planning problem wearing a production problem's clothes. Material shortages, breakdowns, quality holds, engineering changes all hit the schedule, but the real issue is that the schedule was built as if none of them ever would. We redesign the planning model — constraint-based scheduling, buffers where they belong, ma",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Rejections and rework brought down to a number you can plan around",
+    "url": "industry5.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Rejections and rework brought down to a number you can plan around A quality escape costs you three times over: the scrap or rework itself, the schedule hit from holding and reinspecting, and the customer damage when a bad part reaches the field. The good news is quality problems are rarely random — they cluster around particular machines, operators, setups and material lots. W",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "OEE broken down to the loss that's actually worth fixing",
+    "url": "industry5.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "OEE broken down to the loss that's actually worth fixing OEE is one tidy number sitting on top of a messy mix — availability, performance and quality losses spread across different machines, products and shifts. Improving it means knowing which bucket is biggest, which asset is dragging it, and why, before you spend anything on a fix. We decompose OEE down to the machine and th",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Keeping a supplier problem from stopping the line",
+    "url": "industry5.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Keeping a supplier problem from stopping the line Single-source critical components, long-lead imports and suppliers whose quality varies are structural vulnerabilities, and they all share one failure mode: the line stops. A stopped line in discrete manufacturing isn't a subtle cost either — it's immediate and everyone can see it. We rework the risk architecture: dual sourcing ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Getting the operator's know-how out of their head and into the process",
+    "url": "industry5.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Getting the operator's know-how out of their head and into the process Your experienced operators carry knowledge that never made it into a document — the setup sequence, the feel for when a tool's going, the handling quirks of a fussy material. When one leaves, that cell quietly underperforms until the replacement has re-earned the same experience the hard way. We capture it p",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "An Industry 4.0 plan for your plant, not for a brochure",
+    "url": "industry5.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "An Industry 4.0 plan for your plant, not for a brochure Industry 4.0 is a direction, not a thing you buy. Bolt IoT sensors onto machines with no reliable baseline and you generate noise, not intelligence. Build a digital twin of a process that isn't under control and you've built an expensive, high-resolution model of a problem you still haven't solved. We design the roadmap fo",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "The efficiency your competitors haven't found yet",
+    "url": "industry5.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "The efficiency your competitors haven't found yet Co-packer margins get competed away at the quote, so the only durable edge is operational efficiency the other three bidders haven't found yet. We run a structured conversion cost audit — labour productivity by line, material used against standard, utilities by product, whether overhead is even allocated accurately — and then im",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Recovering the line time your changeovers quietly eat",
+    "url": "industry5.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Recovering the line time your changeovers quietly eat In high-mix co-packing, changeover is the single biggest source of lost line time. A 45-minute changeover on a line running 20 SKUs a week is 15 hours of capacity you produced nothing with. SMED applied to your specific changeover types — format, label, fill weight, cleaning — typically takes 40 to 60% out of that. We run th",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Planning around forecasts your customers won't stick to",
+    "url": "industry5.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Planning around forecasts your customers won't stick to Brand owner forecasts are unreliable by nature — promotions shift, listings move, distribution calls get made late. Plan rigidly against the 8-week number and you'll be holding the wrong inventory and the wrong capacity commitment two weeks later. We redesign demand planning for that reality: rolling-horizon planning, mate",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Passing the brand owner audit before it becomes a crisis",
+    "url": "industry5.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Passing the brand owner audit before it becomes a crisis For a co-packer, a brand owner audit is a high-stakes event — fail one and you can lose the contract. And most failures are avoidable: documentation gaps, training records gone stale, GMP deviations nobody flagged, facility standards that quietly drifted since the last visit. We run the pre-audit diagnostic, close the gap",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Knowing what you can promise without letting a current customer",
+    "url": "industry5.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Knowing what you can promise without letting a current customer A co-packer who can't model capacity accurately does one of two things: turns away business it could have taken, or takes business and quietly fails an existing customer to fit it in. Capacity in high-mix co-packing is genuinely fiddly — changeover time, cleaning, SKU-specific line constraints, seasonality all eat ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Batch data your customers can see without a 24-hour lag",
+    "url": "industry5.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Batch data your customers can see without a 24-hour lag Brand owners increasingly want real-time batch status, yield and quality release, not a PDF that arrives the next morning. The good news is you don't have to rip out your production systems to give them that. It takes an integration layer that pulls from what you already have, shapes it into the format the customer wants, ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Closing the gap between what you quoted and what it cost",
+    "url": "industry5.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Closing the gap between what you quoted and what it cost AJob cost overruns in industrial manufacturing are structural, not occasional: material exceeds the BOM, labour runs over the routing, engineering changes add cost nobody budgeted, subcontract comes in above the quoted rate. Each variance looks trivial on its own, and together they compress the margin on nearly every orde",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Long-cycle orders that don't accumulate delay stage by stage",
+    "url": "industry5.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Long-cycle orders that don't accumulate delay stage by stage Long cycles make schedule risk compound: a slip at fabrication ripples through assembly, testing and commissioning, growing as it goes. By the time it's visible in the delivery date, the ways to recover are few and expensive. We rebuild the planning architecture for long-cycle work — milestone-based scheduling, the co",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Job cost variance you can see while the job's still on the floor",
+    "url": "industry5.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Job cost variance you can see while the job's still on the floor Learning a job blew its budget after it ships is a post-mortem, not a control. The window to actually do something — swap a material, rethink a process step, renegotiate a subcontract — is open during production and shut the moment it leaves the door. We build the tracking that shows actual against standard at the",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Cutting the rework loops between engineering and production",
+    "url": "industry5.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Cutting the rework loops between engineering and production Engineering rework is a profit drain that most plants never measure properly. Design errors caught during production, specifications ambiguous enough to be interpreted three ways, customer-driven changes mid-order — each spins up a rework loop that burns capacity and adds nothing. We diagnose where yours actually comes",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Procurement that stops holding your schedule hostage",
+    "url": "industry5.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Procurement that stops holding your schedule hostage Long-lead items ordered too late, vendor quality found only at incoming inspection, prices that drifted from the quote — all procurement failures, all with production consequences. In this kind of manufacturing, procurement quietly sets whether the line can run, which makes calling it back-office a mistake. We rebuild the ope",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Winning the jobs worth winning, at a price that holds",
+    "url": "industry5.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Winning the jobs worth winning, at a price that holds Your estimating process decides both which jobs you win and whether winning them was a good idea. Estimate too conservatively and you lose work to competitors who simply know their costs better; too aggressively and you win jobs that quietly destroy margin. We audit the process, rebuild the cost model on accurate BOM and rou",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Staying audit-ready for the buyers who now demand it",
+    "url": "industry5.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Staying audit-ready for the buyers who now demand it For global apparel and textile buyers, sustainability compliance has stopped being a preference and become a condition of keeping the order. GOTS, OEKO-TEX, BSCI, the Higg Index, chemical management under REACH and ZDHC, traceability from fibre to garment — these are now table stakes, not bonus points. We rebuild the complian",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Closing the 25-40% gap between your best line and your worst",
+    "url": "industry5.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Closing the 25-40% gap between your best line and your worst Labour productivity in stitching and weaving is at once the most variable cost driver in a textile plant and the most fixable. The gap between a high-performing line and a low-performing one on the same operation is typically 25 to 40%, and it comes down to operator skill mix, the supervisor, how the line's balanced, ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "SOLUTION Buying yarn and fabric on data instead of a feel for the market",
+    "url": "industry5.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "SOLUTION Buying yarn and fabric on data instead of a feel for the market Cotton, polyester feedstock and specialty yarn all move with commodity markets, currency and the season's crop. Buy on gut feel in that environment and your actual cost drifts a long way from budget, usually in the wrong direction. We build the procurement intelligence — price forecasting, optimal buying-w",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Hitting the 45-day window without cutting corners on quality",
+    "url": "industry5.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Hitting the 45-day window without cutting corners on quality When a buyer moves you from a 90-day to a 45-day lead time without simplifying the order, that's a planning and process problem before it's a capacity one. We map the full lead time from order confirmation to shipment, find the fat blocks — fabric sourcing, dyeing, sampling approvals, cut-to-pack — and redesign the se",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "The ₹2Cr sitting in a 2% fabric utilisation gap",
+    "url": "industry5.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "The ₹2Cr sitting in a 2% fabric utilisation gap Fabric is the biggest single input cost in garment manufacturing — typically 60 to 65% of material cost — which makes it the most valuable place to be losing money quietly. Marker efficiency, width utilisation, shrinkage allowance, end-bit waste all push actual consumption above the standard in your cost sheet. Two percentage poin",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Sampling that isn't still moving by courier",
+    "url": "industry5.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Sampling that isn't still moving by courier Global buyers are moving to digital proto approvals, 3D sampling and PLM-driven development, all of which collapse the physical sample cycle. The manufacturers who can offer that win the buyers who want their development timeline compressed. We design and build the capability — 3D visualisation, digital colour approval, PLM integratio",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Finding out why growing revenue never turns into cash",
+    "url": "industry5.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Finding out why growing revenue never turns into cash Tight working capital in an MSME is usually structural, not bad luck: debtors stretching past their terms, raw material overstocked on the slow movers and short on the fast ones, and no view of cash beyond the next fortnight. Revenue grows and the squeeze never lets up, which is a maddening combination. We rebuild the workin",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Knowing which customers actually make you money",
+    "url": "industry5.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Knowing which customers actually make you money Pricing by experience works right up until the business gets complex enough that different jobs, customers and product types carry genuinely different costs. Past that point, your profitable work is quietly subsidising your unprofitable work and nothing on your reports shows it. We rebuild the job costing — material and labour by ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Making the business survive any one person leaving",
+    "url": "industry5.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Making the business survive any one person leaving In most MSME manufacturers, the institutional knowledge sits in two or three heads: the supervisor who knows every machine's temperament, the QC head who approves batches by feel, the senior machinist who sets up the awkward jobs. That's both an existential risk and a growth ceiling — the business can only run as large as those",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Getting to 2x without the wheels coming off",
+    "url": "industry5.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Getting to 2x without the wheels coming off MSMEs that take on more orders without building the operating infrastructure to match usually discover the same three things: quality slips, delivery gets less reliable, and the MD ends up more overloaded than before, not less. Scaling well takes deliberate design — supervisory depth, quality systems that don't depend on the MD person",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Knowing your real cost better than the competitor undercutting you",
+    "url": "industry5.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Knowing your real cost better than the competitor undercutting you A competitor pricing below what looks rational to you means one of two things: they're buying market share at a loss, or they simply know their costs better than you know yours. Only one of those is your problem to fix. We build the cost intelligence — accurate direct cost by product and job type, overhead alloc",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Which technology actually moves your business, before you spend",
+    "url": "industry5.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Which technology actually moves your business, before you spend ERP vendors, IoT sensor suppliers and quality-software companies all promise transformational ROI, and they can't all be right. For an MSME with limited capital and limited IT muscle, the wrong technology buys you complexity and no value. We assess your operations, name the three or four interventions that would ac",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "The Sthiros Difference",
+    "url": "industry5.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "The Sthiros Difference We speak OEE, batch yield and conversion cost natively Capacity utilisation, rejection rates, the real economics of a shop floor: we advise in that language rather than importing a generic operational framework and applying it to manufacturing from the outside, which never quite fits. Our AI is built for the production floor, not the demo Predictive maint",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "We speak OEE, batch yield and conversion cost natively",
+    "url": "industry5.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We speak OEE, batch yield and conversion cost natively Capacity utilisation, rejection rates, the real economics of a shop floor: we advise in that language rather than importing a generic operational framework and applying it to manufacturing from the outside, which never quite fits.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Our AI is built for the production floor, not the demo",
+    "url": "industry5.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "Our AI is built for the production floor, not the demo Predictive maintenance, defect detection, demand-driven scheduling, yield optimisation: built for the messy realities of sensor data, batch records and shift-level operations, not for a clean dataset that never survives contact with a real plant.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "We leave software your plant team runs, not IT",
+    "url": "industry5.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We leave software your plant team runs, not IT Production dashboards, cost tracking, quality control platforms, compliance tools: real products your plant teams open every shift, rather than a system so fragile it needs an IT team standing behind it to stay upright.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "What youcan expect",
+    "url": "industry5.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "What youcan expect Plant-native Every build starts from how a plant actually runs, shifts, batches, yield, compliance. 4-16 weeks Delivered at plant speed. No retainer that quietly renews forever. One team,three modes The people who advise you are the people who build it. The plan and the thing arrive together.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Plant-native",
+    "url": "industry5.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "Plant-native Every build starts from how a plant actually runs, shifts, batches, yield, compliance.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "4-16 weeks",
+    "url": "industry5.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "4-16 weeks Delivered at plant speed. No retainer that quietly renews forever.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "One team,three modes",
+    "url": "industry5.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "One team,three modes The people who advise you are the people who build it. The plan and the thing arrive together.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Relatedcase studies",
+    "url": "industry5.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Moving inventory intelligence beyond reactive ERP reporting, in 12 weeks Automating multilingual video creation for training and incident reporting, at scale Teaching machine data and Excel to speak one language, in real time Cutting manual cash burn reporting effort by 50-70%, in 25 business days Turning an undocumented risk practice into a Board-ready, CAG",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Pick a way in.They all lead to thesame conversation.",
+    "url": "industry5.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Pick a way in.They all lead to thesame conversation. Plant head, MD or finance leader; start wherever fits where you are.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "A 30-minute call",
+    "url": "industry5.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "A 30-minute call Tell us the plant situation. By the end of the call we'll say what we'd tackle first — cost structure, an OEE improvement, a quality system, or a production intelligence build. No deck required.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "The manufacturing ops diagnostic",
+    "url": "industry5.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "The manufacturing ops diagnostic A free self-assessment across cost competitiveness, OEE, quality maturity, supply chain resilience, compliance posture and workforce capability. It shows exactly where you're exposed. Occasionally it tells you you're running tighter than you thought, which we're glad to confirm.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Just describe the situation",
+    "url": "industry5.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Just describe the situation Not ready to talk? Send three lines: your plant type and scale, the pressure point, what you've already tried. You'll get an actual point of view back, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Manufacturing",
+    "sectionTitle": "Genuinely not surewhere you fit?",
+    "url": "industry5.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Genuinely not surewhere you fit? Tell us your manufacturing type, your biggest operational pressure, and whether you need advice, a build, or both. We'll point you at the right starting line.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "url": "industry6.html",
+    "anchor": "",
+    "content": "We build financial systems that clear audit before the auditor asks. PUBLIC SECTOR & GOVERNMENT - STHIROS We build the delivery architecture a scheme's approval doesn't come with. India's public sector is running the most ambitious delivery agenda it has ever attempted, with National Infrastructure Pipeline, PM GatiShakti, Digital India, Jal Jeevan Mission, and Smart Cities. The gap between the policy and the outcom",
+    "type": "page"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry6.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Regulation is moving faster than my compliance team",
+    "url": "industry6.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Regulation is moving faster than my compliance team. Funds are allocated and released, but physical and financial progress at state and district level is below the targets set in the AOP. UC submissions are delayed, and the utilisation picture is incomplete. The gap between sanction and delivery, closed: Money moving and money working turn out to be two different questions, and",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Beneficiary identification and targeting has leakage and exclusion errors",
+    "url": "industry6.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Beneficiary identification and targeting has leakage and exclusion errors. The wrong people are getting benefits, and the right people aren't. DBT flows are reaching bank accounts, but we can't confirm whether the intended beneficiary is actually receiving the value. Beneficiary data that stays honest after intake: DBT solved the obvious fraud — the ghost beneficiary is mostly ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Real-time visibility of programme delivery across states is inadequate",
+    "url": "industry6.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Real-time visibility of programme delivery across states is inadequate. I'm managing a scheme across 28 states with monthly reports that are already stale. I need live programme intelligence — physical progress, fund flows, and outcome indicators — not last month's data. Programme intelligence that isn't a month behind: Twenty-eight states, one monthly report, and by the time i",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "DPR quality and project readiness before sanction needs improvement",
+    "url": "industry6.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "DPR quality and project readiness before sanction needs improvement. Projects are being sanctioned on DPRs that aren't implementation-ready — land not acquired, approvals pending, cost estimates not validated. Delays and cost overruns follow predictably. DPR readiness, checked before the sanction, not after: A DPR that hasn't had its land, its clearances or its cost estimate ac",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "I want to use AI for scheme monitoring and outcome measurement",
+    "url": "industry6.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "I want to use AI for scheme monitoring and outcome measurement. AI for beneficiary verification, leakage detection, outcome measurement, and grievance pattern analysis — the use cases are clear but the data architecture and implementation pathway within government systems aren't. AI for scheme delivery, built inside NIC's walls: Satellite imagery that verifies physical progress",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Inter-ministry and centre-state coordination is creating implementation delays",
+    "url": "industry6.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Inter-ministry and centre-state coordination is creating implementation delays. My scheme requires convergence across three ministries and coordination with state governments. The governance architecture for this convergence isn't designed and every coordination gap becomes a delivery gap. Convergence that survives contact with three ministries: A scheme that needs Health, Wome",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry6.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Last-mile delivery at block and panchayat level is inconsistent",
+    "url": "industry6.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Last-mile delivery at block and panchayat level is inconsistent. Scheme benefits reach urban and peri-urban beneficiaries reasonably well. Remote and tribal blocks consistently underperform on physical progress and beneficiary coverage. The gap is widening. Closing the gap the district PMU can't quite reach: Underperforming blocks tend to share the same story: a district PMU st",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "State scheme fund utilisation is below target at year-end",
+    "url": "industry6.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "State scheme fund utilisation is below target at year-end. Funds lapse at year-end because procurement, programme management, and UC submission processes aren't calibrated for the pace of implementation required. The same problem recurs every fiscal year. Ending the March scramble before it starts: The year-end lapse has a rhythm to it: procurement eats the first half of the ye",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Citizen grievance redressal is slow and repeat complaints are rising",
+    "url": "industry6.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Citizen grievance redressal is slow and repeat complaints are rising. My CM Helpline and online grievance portal are receiving more complaints and resolving fewer. The pattern of complaints — by district, by scheme, by type — contains information I'm not using to fix the underlying issues. Grievances that get fixed, not just closed: Counting complaints and closing tickets isn't",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "State budget planning and expenditure monitoring lacks real-time visibility",
+    "url": "industry6.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "State budget planning and expenditure monitoring lacks real-time visibility. Budget allocation, release, expenditure, and utilisation across 30-plus departments happens on different systems with different reporting cycles. I don't have a consolidated view of state finances in real time. One fiscal picture instead of thirty department views: Thirty-plus departments, each on its ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "I want to build a state programme management and MIS capability",
+    "url": "industry6.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "I want to build a state programme management and MIS capability. A unified MIS that tracks physical and financial progress across all schemes — both CSS and state schemes — with district-level drill-down and exception flagging. The architecture and platform need to be designed. One MIS instead of twenty half-views: Fifty schemes, twenty departments, twenty different MIS platfor",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "District administration capacity for scheme implementation is uneven",
+    "url": "industry6.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "District administration capacity for scheme implementation is uneven. Some districts implement schemes at significantly better rates than others. The difference is administrative capacity, not resource allocation. I need to understand what the high-performing districts are doing and how to replicate it. What the good districts do, made transferable: The districts that implement",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry6.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Capex deployment is consistently below annual plan targets",
+    "url": "industry6.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Capex deployment is consistently below annual plan targets. Board-approved capex and annual plan targets for project execution aren't being met. Projects are sanctioned but procurement, contractor performance, and approvals are slowing deployment. Capex that deploys on the AOP's actual timeline: Underspent capex is usually a scheduling failure dressed up as a resourcing one. Ge",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Project execution delays are creating cost overruns and revenue shortfalls",
+    "url": "industry6.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Project execution delays are creating cost overruns and revenue shortfalls. Large infrastructure or asset creation projects are running behind schedule. Cost escalation is accumulating and the revenue or service delivery planned from these assets is being deferred. Projects that land on the schedule they were given: Three things usually compound into a late, over-budget project",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Operational efficiency metrics aren't at commercially comparable levels",
+    "url": "industry6.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Operational efficiency metrics aren't at commercially comparable levels. Cost per unit of output, asset utilisation, and operational productivity are below what comparable private sector entities achieve. The gap is structural and I don't have a clear roadmap to close it. Closing the gap to what private industry gets away with: The efficiency gap between a PSU and its private-s",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "CVC compliance and procurement integrity is a constant governance concern",
+    "url": "industry6.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "CVC compliance and procurement integrity is a constant governance concern. Procurement under GFR and CVC guidelines creates process overhead. Complaints and vigilance inquiries — even unfounded ones — consume senior management bandwidth and slow decision-making. Procurement that's clean without being frozen: The fear of a CVC inquiry has become its own governance problem in a l",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Talent quality and skill levels are not keeping pace with the PSU's technical ambition",
+    "url": "industry6.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Talent quality and skill levels are not keeping pace with the PSU's technical ambition. My organisation is taking on more technically complex mandates — AI, digital systems, new energy. The workforce's technical capability isn't keeping pace and recruitment under government pay scales is constrained. Building the workforce your new mandate actually needs: Take on an AI or new-e",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "I want to build AI capability into PSU operations and service delivery",
+    "url": "industry6.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "I want to build AI capability into PSU operations and service delivery. AI for operational intelligence, predictive maintenance, customer service automation, and performance management — the use cases are clear but implementation within PSU IT governance and security frameworks is complex. AI that clears your IT governance, not around it: Predictive maintenance, service automat",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry6.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Own source revenue — property tax and user charges — is significantly below potential",
+    "url": "industry6.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Own source revenue — property tax and user charges — is significantly below potential. My property tax collection is a fraction of demand. GIS-based property mapping is incomplete, assessment is outdated, and collection efficiency is low. I'm leaving revenue on the table that would fund the infrastructure the city needs. Finding the tax roll's missing half: Run a proper GIS sur",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Smart Cities Mission deliverables are behind schedule and outcomes aren't visible",
+    "url": "industry6.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Smart Cities Mission deliverables are behind schedule and outcomes aren't visible. Projects were approved and funds released but implementation is delayed. The ICT integrations, command and control centre, and citizen services that the mission was meant to deliver are incomplete or underutilised. Finishing what the mission already paid for: A Smart City project that's incomplet",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Citizen service delivery — water, waste, grievances — isn't meeting expectations",
+    "url": "industry6.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Citizen service delivery — water, waste, grievances — isn't meeting expectations. Water supply is intermittent, solid waste collection is unreliable, and citizen complaints take too long to resolve. The gap between what the city should deliver and what residents experience is creating political pressure. Three different problems, three different fixes: Intermittent water, unrel",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "I have no integrated view of city operations across departments",
+    "url": "industry6.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "I have no integrated view of city operations across departments. Water supply, solid waste, roads, and property tax are managed on different systems with different data standards. I can't see the city's operational health in one place or identify where service delivery is failing. One city view instead of five department views: Water, roads, waste, tax, and permissions each on ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Urban planning — master plan, land use, building permissions — needs to be data-driven",
+    "url": "industry6.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Urban planning — master plan, land use, building permissions — needs to be data-driven. Building permission processing is manual and slow. Master plan violations are difficult to detect systematically. GIS data on land use, zoning, and building footprints isn't integrated into decision-making. Planning enforcement that doesn't need an inspector on-site: A 90-day building permis",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "I want AI for property tax intelligence and citizen service optimisation",
+    "url": "industry6.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "I want AI for property tax intelligence and citizen service optimisation. AI for satellite-based property identification, assessment gap detection, grievance prediction, and solid waste route optimisation — the applications are clear but the data infrastructure and implementation pathway need to be designed. AI that lands on a desk, not in a dashboard: Satellite-based property ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry6.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Indigenisation and Atmanirbhar Bharat targets aren't being met at programme level",
+    "url": "industry6.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Indigenisation and Atmanirbhar Bharat targets aren't being met at programme level. DAP 2020 indigenisation requirements, IDDM category procurement, and positive indigenisation lists — the policy framework is clear but the vendor development, ToT structuring, and programme management to deliver indigenisation outcomes aren't. Turning the indigenisation list into a supplier who c",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Capital acquisition programme timelines are consistently slipping",
+    "url": "industry6.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Capital acquisition programme timelines are consistently slipping. RFP to contract timelines for major capital programmes are longer than planned. Technical evaluation, commercial negotiation, and approvals are creating delays that affect operational readiness planning. Keeping a long procurement process on its own schedule: Technical evaluation, field trials, CNC negotiation, ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Maintenance and operational readiness of existing systems needs improvement",
+    "url": "industry6.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Maintenance and operational readiness of existing systems needs improvement. Fleet availability, weapon system readiness, and maintenance efficiency metrics are below the targets set in the capability development plan. Maintenance supply chain and spares management are key contributors. Finding where readiness is actually being lost: Readiness numbers usually trace back to the ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Defence procurement procedure compliance creates process complexity",
+    "url": "industry6.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Defence procurement procedure compliance creates process complexity. DPP and DAP compliance requirements — technical evaluation, field evaluation trials, CNC negotiations, and approval stages — require structured programme management that isn't always in place for concurrent programmes. Running concurrent acquisitions through the procedure, not around it: DPP and DAP compliance",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "I want to build AI capability for operational intelligence and maintenance management",
+    "url": "industry6.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "I want to build AI capability for operational intelligence and maintenance management. AI for predictive maintenance of defence platforms, logistics intelligence, training simulation, and operational data analysis — within the classified data and security architecture that defence systems require. AI built for a classified network, not adapted to one: Predictive maintenance on ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Defence manufacturing ecosystem development needs structured support",
+    "url": "industry6.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Defence manufacturing ecosystem development needs structured support. Building the MSME and Tier-2 supplier ecosystem for defence indigenisation requires vendor qualification, technology transfer support, quality management, and programme coordination that the existing defence industrial base needs help with. Building the supplier base the indigenisation policy assumes exists: ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry6.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Portfolio monitoring isn't capturing implementation quality, only disbursement",
+    "url": "industry6.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Portfolio monitoring isn't capturing implementation quality, only disbursement. My portfolio monitoring system tracks disbursement against plan but doesn't capture implementation quality, beneficiary outcomes, or early warning signals of projects at risk. I'm learning about problems too late. Monitoring what the money was supposed to achieve: Tracking disbursement against plan ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Project implementation delays are reducing development impact within the commitment period",
+    "url": "industry6.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Project implementation delays are reducing development impact within the commitment period. Delayed implementation means delayed outcomes. Projects are approved and funded but procurement, counterpart capacity, and regulatory approvals at the borrower level are slowing deployment. Keeping implementation inside the commitment period: Development finance projects tend to slip at ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Technical assistance programme design and delivery needs strengthening",
+    "url": "industry6.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Technical assistance programme design and delivery needs strengthening. TA components of my lending programme are often underdesigned, underutilised, or not aligned to the implementation bottlenecks of the investment. The connection between TA and investment outcomes isn't being maximised. TA designed to move the investment, not just occupy it: Technical assistance that isn't b",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Borrower capacity for implementation, financial management, and reporting is inadequate",
+    "url": "industry6.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Borrower capacity for implementation, financial management, and reporting is inadequate. My government and implementing agency counterparts have the mandate but not always the systems, processes, or skills to implement programmes at the pace and quality the investment requires. Capacity strengthening built for this investment, not a generic one: A borrower agency can have every",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "I want to use AI for portfolio risk monitoring and outcome measurement",
+    "url": "industry6.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "I want to use AI for portfolio risk monitoring and outcome measurement. AI for early warning of project distress, beneficiary outcome tracking, climate risk assessment in infrastructure portfolios, and knowledge extraction from programme experience — the data exists but the analytical infrastructure doesn't. Reading portfolio risk across sources instead of one report at a time:",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Knowledge management and cross-portfolio learning isn't systematic",
+    "url": "industry6.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Knowledge management and cross-portfolio learning isn't systematic. Every project generates implementation experience, lessons, and evidence. This knowledge isn't being captured, synthesised, or applied to the design of future programmes. Each project starts without the benefit of what previous ones learned. Making sure the next project doesn't start from zero: Every project pr",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "We build the delivery architecture a scheme's approval doesn't come with.",
+    "url": "industry6.html#sec-we-build-the-delivery-architecture-a-schemes-",
+    "anchor": "sec-we-build-the-delivery-architecture-a-schemes-",
+    "content": "We build the delivery architecture a scheme's approval doesn't come with. India's public sector is running the most ambitious delivery agenda it has ever attempted, with National Infrastructure Pipeline, PM GatiShakti, Digital India, Jal Jeevan Mission, and Smart Cities. The gap between the policy and the outcome is almost never a resources problem. It's an implementation, syst",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Who are you?We'll show you theright problems.",
+    "url": "industry6.html#Whotherightproblemssec",
+    "anchor": "Whotherightproblemssec",
+    "content": "Who are you?We'll show you theright problems. Pick your segment. The delivery challenges below reflect your accountability structure, your mandate, and your operating context. Central ministry State department PSU or government enterprise Urban local body or smart city Defence or national security DFI or multilateral agency PROBLEMS STHIROS SOLUTION Regulation is moving faster ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "The gap between sanction and delivery, closed",
+    "url": "industry6.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "The gap between sanction and delivery, closed Money moving and money working turn out to be two different questions, and most schemes are only answering the first one. The AOP has targets; the UC has a number, and below the state PMU the actual work — who does what, by when, at which block — was never written down clearly enough to hold anyone to it. We build that layer: distri",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Beneficiary data that stays honest after intake",
+    "url": "industry6.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Beneficiary data that stays honest after intake DBT solved the obvious fraud — the ghost beneficiary is mostly gone. What's left is quieter: a dormant account still drawing transfers, an Aadhaar seeding gap nobody's chased down, a beneficiary who migrated years ago and whose entry never got the memo. We rebuild the identification layer — deduplication, field verification, and a",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Programme intelligence that isn't a month behind",
+    "url": "industry6.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Programme intelligence that isn't a month behind Twenty-eight states, one monthly report, and by the time it lands on your desk it's describing a different month. Physical progress, fund flows, beneficiary coverage and grievance signals all move faster than that cycle allows. We pull the state MIS feeds into one place, standardise what a state actually has to report, and build ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "DPR readiness, checked before the sanction, not after",
+    "url": "industry6.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "DPR readiness, checked before the sanction, not after A DPR that hasn't had its land, its clearances or its cost estimate actually checked is a project that hasn't really been sanctioned — it's been scheduled to fail later instead of now. We build the pre-sanction checklist that catches this before the money moves: what needs verifying, a review process that can't be talked aro",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "AI for scheme delivery, built inside NIC's walls",
+    "url": "industry6.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "AI for scheme delivery, built inside NIC's walls Satellite imagery that verifies physical progress without a site visit, deduplication that catches the beneficiary listed twice, grievance analysis that spots the pattern behind a thousand individual complaints — the use cases for AI in scheme delivery are well understood. The harder part is building it inside NIC infrastructure ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Convergence that survives contact with three ministries",
+    "url": "industry6.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Convergence that survives contact with three ministries A scheme that needs Health, Women and Child Development, and Agriculture to move together doesn't get that convergence by asking nicely. Without shared data standards, joint monitoring, and an escalation path for when one ministry's piece stalls, each department delivers its component on schedule and the beneficiary still ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Closing the gap the district PMU can't quite reach",
+    "url": "industry6.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Closing the gap the district PMU can't quite reach Underperforming blocks tend to share the same story: a district PMU stretched thin, field staff who got the scheme brief but not the scheme training, and a monitoring system that notices the shortfall around the time the implementation window closes. We run the last-mile diagnostic to find the specific blocks and bottlenecks, t",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Ending the March scramble before it starts",
+    "url": "industry6.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Ending the March scramble before it starts The year-end lapse has a rhythm to it: procurement eats the first half of the year, last year's UC backlog delays this year's release, and nobody built the implementation plan around how long money actually takes to spend. We redesign the utilisation calendar — quarterly expenditure targets, a procurement schedule that isn't an afterth",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Grievances that get fixed, not just closed",
+    "url": "industry6.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Grievances that get fixed, not just closed Counting complaints and closing tickets isn't the same as fixing anything. When the same grievance keeps arriving from the same block — a pipeline that keeps leaking, a ration shop that keeps not opening — that's not a queue problem, it's a delivery failure wearing a grievance number. We rebuild the system to read for the pattern: root",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "One fiscal picture instead of thirty department views",
+    "url": "industry6.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "One fiscal picture instead of thirty department views Thirty-plus departments, each on its own version of PFMS, treasury and a spreadsheet, and the state's actual fiscal position lives somewhere in the gap between them. We build the integration layer that pulls PFMS, treasury and departmental data into one place, tracks the expenditure trajectory as it happens, and gives the Fi",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "One MIS instead of twenty half-views",
+    "url": "industry6.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "One MIS instead of twenty half-views Fifty schemes, twenty departments, twenty different MIS platforms, each reporting on its own schedule in its own format — asking for a single view of state programme delivery from that setup is asking a lot. We design and build the one that actually gives it to you: a common data architecture, standard reporting templates every department ca",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "What the good districts do, made transferable",
+    "url": "industry6.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "What the good districts do, made transferable The districts that implement well tend to be doing a handful of unglamorous things right — a collector who treats scheme review as a real priority, a PMU that actually functions at block level, monitoring that happens monthly instead of on paper. It's a capacity and culture gap, not a funding one, which is good news, because it mean",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Capex that deploys on the AOP's actual timeline",
+    "url": "industry6.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Capex that deploys on the AOP's actual timeline Underspent capex is usually a scheduling failure dressed up as a resourcing one. GeM procurement timelines, unfinished technical specifications, and tendering that starts later than it should all eat into the year the annual plan assumed you'd have. We rebuild the deployment model — readiness gates before a project enters the AOP,",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Projects that land on the schedule they were given",
+    "url": "industry6.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Projects that land on the schedule they were given Three things usually compound into a late, over-budget project: a DPR that wasn't ready, procurement that waited for detailed engineering instead of running alongside it, and contractor monitoring that caught the slippage too late to do anything useful with it. We run the execution diagnostic, redesign the procurement sequence,",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Closing the gap to what private industry gets away with",
+    "url": "industry6.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Closing the gap to what private industry gets away with The efficiency gap between a PSU and its private-sector comparison isn't usually one big problem. It's process waste, workforce deployed against the wrong tasks, assets running under capacity, and procurement optimised for audit trail rather than cost — all adding up quietly. We benchmark cost per unit against comparable e",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Procurement that's clean without being frozen",
+    "url": "industry6.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Procurement that's clean without being frozen The fear of a CVC inquiry has become its own governance problem in a lot of PSUs — decisions get avoided, documentation piles up defensively, and procurement starts optimising for looking clean rather than buying well. We build the governance framework that gives you real integrity: transparent process, documented rationale, sensibl",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Building the workforce your new mandate actually needs",
+    "url": "industry6.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Building the workforce your new mandate actually needs Take on an AI or new-energy mandate and you discover the workforce you have was hired for a different one, and government pay scales make hiring your way straight out of it difficult. The fix is rarely just recruitment — it's targeted reskilling of the people already there, senior lateral hires where they're worth the excep",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "AI that clears your IT governance, not around it",
+    "url": "industry6.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "AI that clears your IT governance, not around it Predictive maintenance, service automation, operational dashboards — the value of AI in PSU operations isn't in question. What's harder is fitting it inside NIC or in-house data centres, security classification rules, GeM or MeitY-empanelled procurement, and the approval chain new technology has to survive. We design and deploy i",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Finding the tax roll's missing half",
+    "url": "industry6.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Finding the tax roll's missing half Run a proper GIS survey against your property tax rolls and the usual finding is that you're taxing 40 to 60% of what's actually out there, at valuations well below market. That's not a policy problem, it's an identification and assessment problem, and it's solvable without raising a single rate. We build the OSR programme: satellite-based pr",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Finishing what the mission already paid for",
+    "url": "industry6.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Finishing what the mission already paid for A Smart City project that's incomplete, or complete and sitting unused, is both a financial exposure and a credibility problem the next review will ask about. It's almost always the same failure pattern: the ICCC wasn't fully integrated, the mobility app launched without anyone using it, and the operations model never got designed alo",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Three different problems, three different fixes",
+    "url": "industry6.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Three different problems, three different fixes Intermittent water, unreliable waste collection, and slow grievances are the three things that generate the most political heat, and each one breaks for a different reason: water is network condition and NRW losses, waste is route design and contractor accountability, grievances are triage and escalation. Treating all three as one",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "One city view instead of five department views",
+    "url": "industry6.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "One city view instead of five department views Water, roads, waste, tax, and permissions each on a different system, with different data standards and different reporting cycles, means the commissioner is making city-wide decisions off a fragment of the picture. We build the integration layer underneath — a unified GIS base, a cross-departmental dashboard, and a real-time opera",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Planning enforcement that doesn't need an inspector on-site",
+    "url": "industry6.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Planning enforcement that doesn't need an inspector on-site A 90-day building permission process and a master plan enforced by whoever happens to notice a violation don't scale to a city of millions, and the gap shows up as unauthorised construction, lost revenue, and a city that quietly drifts from its own plan. GIS-based monitoring, an online permission system with auto-scrut",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "AI that lands on a desk, not in a dashboard",
+    "url": "industry6.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "AI that lands on a desk, not in a dashboard Satellite-based property identification, assessment gap detection, waste route optimisation, grievance prediction — these aren't experimental ideas, they've already worked in other Indian cities. We build them into your existing systems rather than as a standalone platform, so the outputs land on a city official's desk as something to",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Turning the indigenisation list into a supplier who can build it",
+    "url": "industry6.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Turning the indigenisation list into a supplier who can build it A positive indigenisation list doesn't build the industrial capability to manufacture what's on it — that takes a vendor development programme, IDDM procurement structured correctly, and technology transfer that actually transfers something. We coordinate the piece that usually falls through the gap between the de",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Keeping a long procurement process on its own schedule",
+    "url": "industry6.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Keeping a long procurement process on its own schedule Technical evaluation, field trials, CNC negotiation, approvals — defence acquisition is long by design, and the programmes that still finish on time are the ones with someone dedicated to running the programme management, not just attending the meetings. We staff and design that layer: proactive evaluation management and an",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Finding where readiness is actually being lost",
+    "url": "industry6.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Finding where readiness is actually being lost Readiness numbers usually trace back to the supply chain before they trace back to the equipment — spares availability, depot maintenance timing, and documentation that a field technician can actually use. We run the readiness diagnostic to find where availability is actually being lost, then build the fix, including predictive mai",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Running concurrent acquisitions through the procedure, not around it",
+    "url": "industry6.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Running concurrent acquisitions through the procedure, not around it DPP and DAP compliance is a programme management discipline as much as a legal one — the procedures exist for good reason, and running several acquisition programmes through them at once needs people who know the procedure, understand the technical domain, and can move a decision through the approval chain wit",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "AI built for a classified network, not adapted to one",
+    "url": "industry6.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "AI built for a classified network, not adapted to one Predictive maintenance on platforms, logistics intelligence, and simulation-based training are established capability advantages elsewhere, and India's classified network requirements, domestic infrastructure rules, and data governance mean the architecture has to be built specifically for this environment rather than adapte",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Building the supplier base the indigenisation policy assumes exists",
+    "url": "industry6.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Building the supplier base the indigenisation policy assumes exists A positive list and an IDDM category don't create a Tier-2 supplier base capable of defence-grade manufacturing — that takes active vendor qualification, technology transfer that's actually managed, and quality systems built to the standard the OEM requires. We coordinate that development between the defence es",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Monitoring what the money was supposed to achieve",
+    "url": "industry6.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Monitoring what the money was supposed to achieve Tracking disbursement against plan tells you the money moved. It doesn't tell you whether beneficiary coverage improved, service got better, or the institution actually got stronger — that needs a monitoring architecture built around the theory of change, not the cash flow. We redesign the system around outcome indicators and th",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Keeping implementation inside the commitment period",
+    "url": "industry6.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Keeping implementation inside the commitment period Development finance projects tend to slip at the same few points — procurement at the implementing agency, counterpart funding that doesn't arrive on schedule, environmental and social compliance running long, and approvals nobody accounted for. We provide the implementation support that keeps a project moving through all four",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "TA designed to move the investment, not just occupy it",
+    "url": "industry6.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "TA designed to move the investment, not just occupy it Technical assistance that isn't built around the investment's actual implementation bottleneck tends to produce training that happened, studies that got filed, and outcomes that didn't move. We design TA backward from the theory of change: what capability is actually missing, what needs building, and what intervention gets ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Capacity strengthening built for this investment, not a generic one",
+    "url": "industry6.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Capacity strengthening built for this investment, not a generic one A borrower agency can have every intention and still lack the procurement, financial management, and monitoring systems to implement at the pace the investment needs. Generic public financial management training rarely moves that needle. What does is capacity strengthening built around the specific implementati",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Reading portfolio risk across sources instead of one report at a time",
+    "url": "industry6.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Reading portfolio risk across sources instead of one report at a time Disbursement records, implementation reports, field monitoring notes, third-party verification — a development finance portfolio generates plenty of data, and almost none of it gets read together. We build the intelligence layer that does: early warning scoring across sources, outcome measurement from remote ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Making sure the next project doesn't start from zero",
+    "url": "industry6.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Making sure the next project doesn't start from zero Every project produces real lessons about what worked in that sector, that geography, that institution — and most of it dies in a final report nobody reopens, or leaves with the staff member who knew it. We build the knowledge system that captures it properly, makes it searchable at the point a new project is being designed, ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "The Sthiros Difference",
+    "url": "industry6.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "The Sthiros Difference We understand public sector delivery Scheme architecture, GFR compliance, UC cycles, DPR preparation, PMU structures, GeM procurement: we advise with this vocabulary already fluent, not translated in from somewhere else. We deploy AI for citizen and governance outcomes What we build for is the data environment government really runs on: Aadhaar-linked sys",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "We understand public sector delivery",
+    "url": "industry6.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We understand public sector delivery Scheme architecture, GFR compliance, UC cycles, DPR preparation, PMU structures, GeM procurement: we advise with this vocabulary already fluent, not translated in from somewhere else.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "We deploy AI for citizen and governance outcomes",
+    "url": "industry6.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We deploy AI for citizen and governance outcomes What we build for is the data environment government really runs on: Aadhaar-linked systems, DBT flows, public infrastructure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "We build the systems that outlast the engagement",
+    "url": "industry6.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We build the systems that outlast the engagement Program dashboards, MIS platforms, grievance systems, citizen portals: built to be run and maintained by the department once we're gone, not handed over as something only we understand.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "What youcan expect",
+    "url": "industry6.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "What youcan expect Delivery-native Every engagement designed around how government programmes are actually implemented: scheme architecture, fund flows, and inter-agency coordination 4-16 weeks Structured to fit government decision cycles and budget timelines Advise. Build.Deploy. Strategy, AI and product from one team. The plan and the system arrive together.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Delivery-native",
+    "url": "industry6.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "Delivery-native Every engagement designed around how government programmes are actually implemented: scheme architecture, fund flows, and inter-agency coordination",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "4-16 weeks",
+    "url": "industry6.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "4-16 weeks Structured to fit government decision cycles and budget timelines",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Advise. Build.Deploy.",
+    "url": "industry6.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "Advise. Build.Deploy. Strategy, AI and product from one team. The plan and the system arrive together.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Relatedcase studies",
+    "url": "industry6.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Moving inventory intelligence beyond reactive ERP reporting, in 12 weeks Automating multilingual video creation for training and incident reporting, at scale Teaching machine data and Excel to speak one language, in real time Cutting manual cash burn reporting effort by 50-70%, in 25 business days Turning an undocumented risk practice into a Board-ready, CAG",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Three entry points.One conversation.",
+    "url": "industry6.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Three entry points.One conversation. Whether you're a ministry official, a PSU leader, a smart city CEO, or a development finance programme officer, pick the entry that fits your mandate and timeline.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "30-min discovery call",
+    "url": "industry6.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "30-min discovery call Tell us your mandate and the delivery challenge. We'll be direct about where we'd start — programme design, a system build, AI, or capacity work.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Public sector delivery diagnostic",
+    "url": "industry6.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Public sector delivery diagnostic A free self-assessment across scheme implementation, governance, data systems, procurement, capacity and citizen outcomes. It shows you where the gap is actually largest.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Send us your situation",
+    "url": "industry6.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Send us your situation Not ready for a call? Three lines: your mandate, the delivery challenge, what's already been tried. We'll come back with a specific point of view.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "PUBLIC SECTOR & GOVERNMENT - STHIROS",
+    "sectionTitle": "Genuinely not surewhere you fit?",
+    "url": "industry6.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Genuinely not surewhere you fit? Tell us your mandate, your biggest delivery challenge, and whether you need advisory, a system build, or both.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Industries - Telecom & Digital Infrastructure",
+    "url": "industry7.html",
+    "anchor": "",
+    "content": "We build financial systems that clear audit before the auditor asks. ﻿ Industries - Telecom & Digital Infrastructure Every tower you put up is a bet. We check the odds before you pay for the steel. A tower goes up, a fibre route gets laid, a data centre breaks ground, and only later does anyone check the economics against ARPU. 5G capex and data centre demand are outrunning most operators' ability to model returns.",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry7.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "ARPU is declining and the competitive floor keeps dropping",
+    "url": "industry7.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "ARPU is declining and the competitive floor keeps dropping. Tariff wars are compressing ARPU across consumer and enterprise segments. I'm not confident my value proposition justifies a price premium over competitors. Growing ARPU without simply winning the race to the bottom: When three operators have much the same network and much the same plans, ARPU growth has to come from s",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Churn rate is too high and retention isn't systematic",
+    "url": "industry7.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Churn rate is too high and retention isn't systematic. Monthly churn is above target. My retention interventions are reactive — I'm calling customers after they've decided to leave rather than before they've made the decision. Reaching the customer before they've decided to leave, not after: Telecom churn is one of the more predictable things in business — the signals sit in th",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "5G rollout is consuming capital faster than revenue is following",
+    "url": "industry7.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "5G rollout is consuming capital faster than revenue is following. 5G network capex is committed. Monetisation through enterprise use cases, fixed wireless access, and premium consumer tiers is behind the investment curve. Getting revenue to catch up with the 5G you already paid for: The 5G capex is spent; that decision's behind you. The revenue case in front of you — fixed wire",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Network operating cost is too high relative to revenue",
+    "url": "industry7.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Network operating cost is too high relative to revenue. Energy, O&M, and shared infrastructure costs are rising. My EBITDA margin is being squeezed between flat revenue and rising opex. Taking real cost out of the network, not theoretical cost: Network opex is dominated by a short list of big items — energy across radio and core sites, passive infrastructure leases, and O&M. En",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "TRAI regulatory compliance and spectrum management is creating operational burden",
+    "url": "industry7.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "TRAI regulatory compliance and spectrum management is creating operational burden. Quality of service reporting, interconnect obligations, spectrum utilisation efficiency, and net neutrality compliance — the regulatory workload is consuming bandwidth that should be on commercial execution. TRAI compliance that runs itself, mostly: TRAI compliance spans QoS benchmarks, speed tes",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "I want to use AI for network optimisation and customer intelligence",
+    "url": "industry7.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "I want to use AI for network optimisation and customer intelligence. Network fault prediction, demand forecasting, churn prediction, and personalised offer engines — AI use cases in telecom are well established but implementing them at production scale is harder than it looks. AI that reaches production, not just the pilot deck: Telecom generates more AI-usable data than almost",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry7.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Tenancy ratio isn't growing fast enough",
+    "url": "industry7.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Tenancy ratio isn't growing fast enough. I have a large portfolio of single-tenant towers. Adding second and third tenants to existing sites is the highest-margin growth available to me but the commercial and operational model for co-location isn't optimised. Turning single-tenant towers into the margin they're capable of: An extra tenant on an existing tower is about as good a",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Energy cost is my largest opex item and it's rising",
+    "url": "industry7.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Energy cost is my largest opex item and it's rising. Diesel for remote sites, grid power at urban sites, and battery replacement costs — energy is 30-40% of my tower opex and the cost per site is rising faster than tenancy revenue. Getting diesel off your largest opex line: Energy is the biggest operating cost for most tower companies, typically 30 to 40% of opex, and diesel at",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "New site acquisition is slower than the rollout plan requires",
+    "url": "industry7.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "New site acquisition is slower than the rollout plan requires. Land acquisition, municipal permissions, and community resistance are slowing new site delivery. I'm missing rollout commitments to tenants and losing opportunities to competitors who move faster. Delivering sites faster without cutting a single corner: Site delivery in India isn't gated by how fast you can build — ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Tower uptime and SLA compliance is under pressure at remote sites",
+    "url": "industry7.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Tower uptime and SLA compliance is under pressure at remote sites. Power failures, equipment theft, and maintenance response times at remote and rural sites are creating SLA breaches that affect tenant relationships and trigger penalty clauses. Reliability at the remote sites that quietly cost you SLA penalties: SLA breaches at remote sites almost always come from the same shor",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Portfolio performance visibility across thousands of sites is inadequate",
+    "url": "industry7.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Portfolio performance visibility across thousands of sites is inadequate. I manage thousands of towers with different tenancy, energy, and maintenance profiles. I don't have a consolidated real-time view of which sites are underperforming and why. One live view across ten thousand towers: Run 10,000 sites off daily exception reports and monthly summaries and you're forever reac",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "I want to use AI for predictive maintenance and energy optimisation",
+    "url": "industry7.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "I want to use AI for predictive maintenance and energy optimisation. Predictive equipment failure detection, diesel consumption optimisation, and battery health management — AI can reduce my opex significantly but the sensor data and implementation pathway need to be right. AI that cuts diesel and catches failures, wired to your NOC: Tower AI has two applications that reliably ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry7.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "PUE is above target and energy cost is compressing margin",
+    "url": "industry7.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "PUE is above target and energy cost is compressing margin. My power usage effectiveness is higher than best-in-class peers. The gap represents real energy cost I'm paying unnecessarily — and a competitive disadvantage on power cost to customers. Every tenth of a PUE point is money you're currently burning: PUE is a compound problem — cooling design, airflow management, server i",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Uptime SLA compliance is too close to the contractual threshold",
+    "url": "industry7.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Uptime SLA compliance is too close to the contractual threshold. I'm meeting my 99.99% uptime SLA but with less margin than I'm comfortable with. A single major incident would breach the SLA and trigger significant penalty payments. Building headroom back into an SLA you're only just meeting: Hitting 99.99% uptime with no headroom means you're one bad incident away from a breac",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Capacity utilisation is uneven and I'm building too far ahead",
+    "url": "industry7.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Capacity utilisation is uneven and I'm building too far ahead. Some halls are near capacity while others are underutilised. My capex planning is driven by overall capacity rather than by demand by power density, cooling type, and location — creating stranded investment. Building capacity for the demand you have, not demand in general: Planning capacity at the hall or pod level ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Customer contracts aren't structured to protect margin as power costs rise",
+    "url": "industry7.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Customer contracts aren't structured to protect margin as power costs rise. My customer contracts have fixed power cost assumptions that don't reflect current or projected energy prices. As electricity costs rise, my margin on committed contracts deteriorates. Contracts that don't quietly go margin-negative when power prices rise: A contract signed on a fixed power cost assumpt",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Skilled data centre operations talent is scarce and expensive",
+    "url": "industry7.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Skilled data centre operations talent is scarce and expensive. Critical facility engineers, electrical and mechanical specialists, and data centre operations managers are hard to recruit and retain in India. Attrition is creating coverage gaps and operational risk. Keeping the critical facility engineers everyone else is also chasing: Critical facility engineers, experienced M&",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "I want to use AI for cooling optimisation and predictive maintenance",
+    "url": "industry7.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "I want to use AI for cooling optimisation and predictive maintenance. AI-driven cooling optimisation can reduce PUE significantly. Predictive maintenance on critical M&E equipment reduces unplanned downtime. Both require the right sensor data architecture and model deployment. The DeepMind cooling trick, on your data centre: DeepMind famously cut Google's data centre cooling en",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry7.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Last-mile infrastructure cost per home passed is too high",
+    "url": "industry7.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Last-mile infrastructure cost per home passed is too high. The cost of laying fibre to the premises — civil work, materials, permissions, and labour — is higher than the business model can sustain at current ARPU levels in tier-2 and tier-3 markets. Getting cost per home passed down to something the model survives: Last-mile fibre economics in tier-2 and tier-3 markets hinge on",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Subscriber take-up rate is below the level needed to recover infrastructure cost",
+    "url": "industry7.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Subscriber take-up rate is below the level needed to recover infrastructure cost. I've passed homes but the conversion from passed to connected is below target. The value proposition, the sales motion, and the last-mile experience aren't converting at the rate the capex requires. Turning homes passed into homes actually paying you: Passing a home with fibre is a capex event. Co",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Churn is eroding the subscriber base faster than acquisition replaces it",
+    "url": "industry7.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Churn is eroding the subscriber base faster than acquisition replaces it. Monthly churn at the ISP level is driven by price sensitivity, service quality incidents, and competitive offers. My retention model is too passive to arrest the attrition. Plugging churn before it outruns your acquisition: Broadband churn in India runs on three things: price sensitivity when a competitor",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "TRAI compliance — speed testing, QoS reporting, and interconnect — is creating overhead",
+    "url": "industry7.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "TRAI compliance — speed testing, QoS reporting, and interconnect — is creating overhead. TRAI's quality of service regulations, speed testing requirements, and interconnect obligations are creating compliance overhead that's disproportionate to the scale of my operations. TRAI compliance sized for an ISP, not a national carrier: TRAI's QoS regulations for ISPs cover minimum spe",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Network fault resolution times are damaging customer satisfaction",
+    "url": "industry7.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Network fault resolution times are damaging customer satisfaction. Mean time to repair for fibre cuts, ONT failures, and equipment issues is too long. Customer complaints during outages damage retention and create escalations I don't have the operations capacity to manage. Faster MTTR, without necessarily hiring more field engineers: MTTR on fibre cuts, ONT failures, OLT issues",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "I want to expand to new cities but the rollout playbook isn't documented",
+    "url": "industry7.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "I want to expand to new cities but the rollout playbook isn't documented. My model works in the first two cities through trial and error. Before I deploy capital into new markets, I need a documented and repeatable rollout playbook. A rollout playbook, before you bet capex on the next ten cities: The trial-and-error that got your first two cities working turns into avoidable co",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry7.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Telecom operator procurement cycles are too long and unpredictable",
+    "url": "industry7.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Telecom operator procurement cycles are too long and unpredictable. RFP processes, technical evaluations, commercial negotiations, and approval stages can take 18-24 months. My pipeline is large but revenue recognition is uncertain and the close rate isn't where it needs to be. Moving operator deals through an 18-month procurement without losing them: Operator procurement runs ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Price pressure from Chinese vendors is compressing my margins",
+    "url": "industry7.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Price pressure from Chinese vendors is compressing my margins. On comparable technical specifications, Chinese vendors are consistently 20-30% cheaper. I need a differentiation strategy that makes price comparison less relevant to the buying decision. Competing with vendors 30% cheaper, without racing them down: Trying to out-price a Chinese equipment vendor is a race you finis",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Post-sale managed services and software revenue isn't growing",
+    "url": "industry7.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Post-sale managed services and software revenue isn't growing. My hardware margins are thin and getting thinner. The recurring revenue opportunity from managed services, software subscriptions, and performance guarantees isn't being captured systematically. Building the recurring revenue your thin hardware margins need: Hardware margins in telecom equipment are in structural de",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "I want to build AI and analytics capabilities into my product portfolio",
+    "url": "industry7.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "I want to build AI and analytics capabilities into my product portfolio. Network operators are asking for AI-powered features — predictive maintenance, traffic optimisation, energy management. I need to develop or acquire this capability before competitors do. Putting AI inside the product, where it makes the account sticky: Operators are asking for AI features — predictive mai",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Account management depth isn't strong enough to protect large operator relationships",
+    "url": "industry7.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Account management depth isn't strong enough to protect large operator relationships. My large operator accounts are vulnerable at renewal because the relationship is too shallow — one or two contacts rather than embedded across technical, commercial, and operational stakeholders. Making a big account survive its champion leaving: A large account held together by one or two rel",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "India regulatory and local content requirements are creating compliance complexity",
+    "url": "industry7.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "India regulatory and local content requirements are creating compliance complexity. BIS certification, PMA requirements, trusted source obligations, and local manufacturing mandates under PLI are creating compliance and manufacturing decisions I haven't fully structured. The BIS, PMA, trusted-source and PLI maze, mapped for your portfolio: Selling telecom equipment in India mea",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry7.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Due diligence on digital infrastructure targets isn't deep enough",
+    "url": "industry7.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Due diligence on digital infrastructure targets isn't deep enough. Technical assessment of network quality, spectrum efficiency, tower portfolio health, and data centre criticality requires domain expertise I don't have in-house. Generic financial DD misses the asset-specific risks. Technical DD that finds the risk the financial model can't: Financial DD on a tower company, dat",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Portfolio company operating performance isn't meeting the investment thesis",
+    "url": "industry7.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Portfolio company operating performance isn't meeting the investment thesis. Revenue growth is below projection, opex is above plan, or tenancy growth is slower than modelled. I need an independent operating assessment and a turnaround roadmap. An honest read on why the portfolio company is missing the thesis: When a digital infrastructure portfolio company misses the thesis, i",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "I want to evaluate a new digital infrastructure sub-sector I haven't invested in before",
+    "url": "industry7.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "I want to evaluate a new digital infrastructure sub-sector I haven't invested in before. Data centres, neutral host networks, subsea cables, satellite broadband — each sub-sector has specific technical, regulatory, and commercial dynamics I need to understand before committing capital. Understanding a new sub-sector before you commit capital to it: Neutral host networks, subsea",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Regulatory and spectrum risk in my telecom portfolio isn't adequately mapped",
+    "url": "industry7.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Regulatory and spectrum risk in my telecom portfolio isn't adequately mapped. Spectrum auction outcomes, TRAI regulatory changes, and interconnect policy shifts can materially affect the value of telecom assets. My regulatory risk framework isn't comprehensive. Mapping the regulatory and spectrum risk a single decision can trigger: A spectrum auction result, a TRAI tariff chang",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "I want to assess AI and digitalisation maturity in target assets",
+    "url": "industry7.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "I want to assess AI and digitalisation maturity in target assets. AI-enabled operations, digital customer management, and predictive infrastructure management are becoming differentiators. I need a framework to assess digitalisation maturity as part of investment due diligence. Assessing an asset's AI maturity as part of the diligence, not after: An asset's AI and digitalisatio",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "ESG and energy transition obligations in digital infrastructure are becoming material",
+    "url": "industry7.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "ESG and energy transition obligations in digital infrastructure are becoming material. Data centre energy consumption, tower diesel dependence, and scope 2 emissions are increasingly scrutinised by LPs and co-investors. I need an ESG assessment and transition roadmap for portfolio assets. Turning the ESG obligation into something LPs actually reward: Data centre energy draw, to",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Every tower you put up is a bet. We check the odds before you pay for the steel.",
+    "url": "industry7.html#sec-every-tower-you-put-up-is-a-bet-we-check-the-",
+    "anchor": "sec-every-tower-you-put-up-is-a-bet-we-check-the-",
+    "content": "Every tower you put up is a bet. We check the odds before you pay for the steel. A tower goes up, a fibre route gets laid, a data centre breaks ground, and only later does anyone check the economics against ARPU. 5G capex and data centre demand are outrunning most operators' ability to model returns. We answer that before go-live. BOOK A 30-MIN CALL GET THE INDUSTRY DIAGNOSTIC",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Where do you sit?The problems change depending on the answer.",
+    "url": "industry7.html#Whotherightproblemssec",
+    "anchor": "Whotherightproblemssec",
+    "content": "Where do you sit?The problems change depending on the answer. Pick your segment. What comes up is tuned to your asset economics, your regulator, and the competitor you're actually up against. Telecom operator Tower company Data centre ISP or last-mile Equipment vendor Digital infra investor PROBLEMS STHIROS SOLUTION ARPU is declining and the competitive floor keeps dropping Tar",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Growing ARPU without simply winning the race to the bottom",
+    "url": "industry7.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Growing ARPU without simply winning the race to the bottom When three operators have much the same network and much the same plans, ARPU growth has to come from somewhere other than price. Realistically it's one of three places: upselling to higher tiers on genuine value, cross-selling adjacent services that quietly raise the cost of leaving, or winning enterprise customers who",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Reaching the customer before they've decided to leave, not after",
+    "url": "industry7.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Reaching the customer before they've decided to leave, not after Telecom churn is one of the more predictable things in business — the signals sit in the data weeks before anyone decides to leave. Usage tailing off, complaints ticking up, an ageing tariff plan, a competitor's offer landing at the wrong moment. We build the predictive model and the intervention system behind it:",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Getting revenue to catch up with the 5G you already paid for",
+    "url": "industry7.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Getting revenue to catch up with the 5G you already paid for The 5G capex is spent; that decision's behind you. The revenue case in front of you — fixed wireless access eating into home broadband, enterprise private networks, low-latency industrial use cases, premium consumer tiers — still has to be built deliberately. Most operators are running 5G monetisation as a marketing s",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Taking real cost out of the network, not theoretical cost",
+    "url": "industry7.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Taking real cost out of the network, not theoretical cost Network opex is dominated by a short list of big items — energy across radio and core sites, passive infrastructure leases, and O&M. Energy alone is usually 30 to 40% of it, which makes it the lever worth pulling first. We run the cost diagnostic — energy by site type, O&M by network layer, shared infrastructure efficien",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "TRAI compliance that runs itself, mostly",
+    "url": "industry7.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "TRAI compliance that runs itself, mostly TRAI compliance spans QoS benchmarks, speed testing and reporting, tariff transparency, net neutrality monitoring, and interconnect. Handle it reactively — scrambling every time a show-cause notice or audit request lands — and it's both expensive and reputationally risky. We build the compliance operating model instead: proactive monitor",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "AI that reaches production, not just the pilot deck",
+    "url": "industry7.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "AI that reaches production, not just the pilot deck Telecom generates more AI-usable data than almost any other industry — network performance at millisecond granularity, subscriber behaviour across billions of daily events, billing and CRM on the commercial side. The hard part was never finding a model. It's turning that data into production applications — fault prediction, de",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Turning single-tenant towers into the margin they're capable of",
+    "url": "industry7.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Turning single-tenant towers into the margin they're capable of An extra tenant on an existing tower is about as good as revenue gets — the tower, the foundation and the power are already sunk cost, so the marginal cost of that tenant is close to nothing. The levers are straightforward: go after operators planning coverage expansion before they build their own, make co-locating",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Getting diesel off your largest opex line",
+    "url": "industry7.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Getting diesel off your largest opex line Energy is the biggest operating cost for most tower companies, typically 30 to 40% of opex, and diesel at remote sites is both the most expensive part and the most controllable. We build the reduction programme around that: renewables for off-grid and partially-grid sites, DG efficiency where diesel stays, battery storage optimised rath",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Delivering sites faster without cutting a single corner",
+    "url": "industry7.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Delivering sites faster without cutting a single corner Site delivery in India isn't gated by how fast you can build — it's gated by land, municipal and panchayat permissions, utility connections and community engagement. The companies that deliver faster have simply systematised each of those: a pre-identified land pipeline, landowners pre-qualified, municipal relationships ac",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Reliability at the remote sites that quietly cost you SLA penalties",
+    "url": "industry7.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Reliability at the remote sites that quietly cost you SLA penalties SLA breaches at remote sites almost always come from the same short list: power outages that outlast the battery backup, equipment theft, maintenance that arrives late, and — the embarrassing one — outages nobody noticed until the tenant rang up to complain. We build the remote-site reliability model: predictiv",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "One live view across ten thousand towers",
+    "url": "industry7.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "One live view across ten thousand towers Run 10,000 sites off daily exception reports and monthly summaries and you're forever reacting to problems that already escalated. Energy failures, SLA breaches, tenancy revenue shortfalls — you want those visible in real time, by site, by cluster and by operator, so your ops and commercial teams can step in before a problem becomes a cu",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "AI that cuts diesel and catches failures, wired to your NOC",
+    "url": "industry7.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "AI that cuts diesel and catches failures, wired to your NOC Tower AI has two applications that reliably pay off: predictive maintenance on DG sets, batteries and active equipment that catches a failure before it becomes an SLA breach, and energy optimisation that trims diesel runtime and battery cycling through smarter load management. Both need clean telemetry off the site and",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Every tenth of a PUE point is money you're currently burning",
+    "url": "industry7.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Every tenth of a PUE point is money you're currently burning PUE is a compound problem — cooling design, airflow management, server inlet temperature, power delivery efficiency and UPS losses all feed into it. A 1.8 against a peer's 1.5 is 20% more energy for the same IT load, which is a direct disadvantage on your single largest cost line and it shows up in every price you quo",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Building headroom back into an SLA you're only just meeting",
+    "url": "industry7.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Building headroom back into an SLA you're only just meeting Hitting 99.99% uptime with no headroom means you're one bad incident away from a breach and the penalties and reputation damage that follow. Headroom gets built the unglamorous way: redundancy actually validated rather than assumed, failure modes analysed, maintenance windows managed, and monitoring that catches the pr",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Building capacity for the demand you have, not demand in general",
+    "url": "industry7.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Building capacity for the demand you have, not demand in general Planning capacity at the hall or pod level — by power density, cooling type and connectivity — is a much harder problem than planning aggregate MW. Hyperscaler demand arrives in big blocks with specific requirements; enterprise demand is fragmented and hard to predict. And capex sunk into a hall configured for the",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Contracts that don't quietly go margin-negative when power prices rise",
+    "url": "industry7.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Contracts that don't quietly go margin-negative when power prices rise A contract signed on a fixed power cost assumption turns margin-negative the moment electricity prices climb, and they've been climbing. Fixing it means the right energy pass-through mechanisms, escalation clauses and PUE commitments — in the new contracts, and where possible retrofitted into the existing on",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Keeping the critical facility engineers everyone else is also chasing",
+    "url": "industry7.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Keeping the critical facility engineers everyone else is also chasing Critical facility engineers, experienced M&E specialists, and operations managers who actually understand uptime culture are genuinely scarce in India, and everyone's hiring from the same small pool. When one leaves, you get operational risk through the handover and a knowledge gap that takes a year or more o",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "The DeepMind cooling trick, on your data centre",
+    "url": "industry7.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "The DeepMind cooling trick, on your data centre DeepMind famously cut Google's data centre cooling energy by around 40% with AI, and the same principle applies to any facility with decent sensor data — it's not magic, it's a control problem with a lot of variables. AI cooling optimisation continuously adjusts CRAC setpoints, airflow and chiller loads to hold the thermal envelop",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Getting cost per home passed down to something the model survives",
+    "url": "industry7.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Getting cost per home passed down to something the model survives Last-mile fibre economics in tier-2 and tier-3 markets hinge on a handful of drivers: civil work per kilometre, drop cable and ONT cost per home, and how many homes you pass per kilometre of distribution fibre. Get the network design right, run civil work more efficiently, and share infrastructure where it exists",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Turning homes passed into homes actually paying you",
+    "url": "industry7.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Turning homes passed into homes actually paying you Passing a home with fibre is a capex event. Connecting the subscriber is the revenue event that was supposed to justify it. The gap between the two comes down to awareness, price perception, installation friction, and how you stack up against the competitor's offer next door. We rebuild the acquisition model: hyperlocal market",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Plugging churn before it outruns your acquisition",
+    "url": "industry7.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Plugging churn before it outruns your acquisition Broadband churn in India runs on three things: price sensitivity when a competitor drops a promo, service quality incidents that don't get resolved fast enough to save the account, and households simply moving. The first two you can manage with the right retention model; the third you handle by re-acquiring proactively at the ne",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "TRAI compliance sized for an ISP, not a national carrier",
+    "url": "industry7.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "TRAI compliance sized for an ISP, not a national carrier TRAI's QoS regulations for ISPs cover minimum speeds, complaint resolution timelines, outage reporting and interconnect peering. For a growing ISP, the trap is handling all of it reactively, one compliance notice at a time, which eats admin bandwidth you can't spare at your size. We design a compliance framework scaled to",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Faster MTTR, without necessarily hiring more field engineers",
+    "url": "industry7.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Faster MTTR, without necessarily hiring more field engineers MTTR on fibre cuts, ONT failures, OLT issues and backhaul problems is about the most direct driver of ISP customer satisfaction and churn there is. And the operations that resolve faults faster usually don't have more field engineers; they have better fault detection, sharper trouble-ticket triage, and smarter dispatc",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "A rollout playbook, before you bet capex on the next ten cities",
+    "url": "industry7.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "A rollout playbook, before you bet capex on the next ten cities The trial-and-error that got your first two cities working turns into avoidable cost and delay the moment you try to repeat it ten times. Before the next round of rollout capex goes out, the playbook needs to exist on paper: market assessment criteria, network design standards, a civil work execution model, the sub",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Moving operator deals through an 18-month procurement without losing them",
+    "url": "industry7.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Moving operator deals through an 18-month procurement without losing them Operator procurement runs through a specific gauntlet — technical evaluation, interoperability testing, commercial negotiation, multi-level approval — with a different set of stakeholders at each gate. Most vendors run this on account managers working from instinct rather than a structured account plan, a",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Competing with vendors 30% cheaper, without racing them down",
+    "url": "industry7.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Competing with vendors 30% cheaper, without racing them down Trying to out-price a Chinese equipment vendor is a race you finish second in even when you win. Justifying a 20 to 30% premium means competing on the dimensions they can't credibly claim — integration and support quality, software and network management, a roadmap you'll actually still be committed to in five years, ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Building the recurring revenue your thin hardware margins need",
+    "url": "industry7.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Building the recurring revenue your thin hardware margins need Hardware margins in telecom equipment are in structural decline, and no amount of selling harder reverses that. The recurring revenue sitting next to it — managed network services, software subscriptions, analytics platforms, performance SLA guarantees — is real and largely uncaptured, because most vendors never bui",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Putting AI inside the product, where it makes the account sticky",
+    "url": "industry7.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Putting AI inside the product, where it makes the account sticky Operators are asking for AI features — predictive maintenance on network equipment, traffic load optimisation, energy management, anomaly detection. The vendors who build these into the product, rather than bolting them on as an integration afterthought, get stickier relationships and can defend higher pricing. We",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Making a big account survive its champion leaving",
+    "url": "industry7.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Making a big account survive its champion leaving A large account held together by one or two relationships is quietly fragile — the day your champion moves on, or a competitor builds broader relationships across technical, commercial and operational stakeholders, you're exposed at renewal. Protecting it means embedding across the whole customer organisation: their technical te",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "The BIS, PMA, trusted-source and PLI maze, mapped for your portfolio",
+    "url": "industry7.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "The BIS, PMA, trusted-source and PLI maze, mapped for your portfolio Selling telecom equipment in India means clearing a specific stack of requirements: BIS certification, Preferred Market Access for government procurement, trusted-source obligations under the NCCS framework, and local manufacturing under PLI. Get any of them wrong and you're facing a market access barrier that",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Technical DD that finds the risk the financial model can't",
+    "url": "industry7.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Technical DD that finds the risk the financial model can't Financial DD on a tower company, data centre or fibre network tells you what the numbers are. Technical DD tells you whether they'll hold. Tower structural integrity and load capacity, power and cooling redundancy that's actually adequate rather than nominally adequate, fibre route diversity and splice quality, spectrum",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "An honest read on why the portfolio company is missing the thesis",
+    "url": "industry7.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "An honest read on why the portfolio company is missing the thesis When a digital infrastructure portfolio company misses the thesis, it's almost always the operating model rather than the asset itself — the towers are fine, the running of them isn't. Revenue below projection, opex above plan, growth behind forecast each trace to specific operational causes if you look properly.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Understanding a new sub-sector before you commit capital to it",
+    "url": "industry7.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Understanding a new sub-sector before you commit capital to it Neutral host networks, subsea cables, satellite broadband, edge facilities, dark fibre — each digital infrastructure sub-sector has its own technical, regulatory and commercial dynamics, and they differ from the familiar tower and data centre playbook more than they first appear. Commit capital without understanding",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Mapping the regulatory and spectrum risk a single decision can trigger",
+    "url": "industry7.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Mapping the regulatory and spectrum risk a single decision can trigger A spectrum auction result, a TRAI tariff change, an interconnect policy shift, a licence renewal term — any one of these can move the value of a telecom asset materially, sometimes overnight. Yet most telecom portfolios don't have a proper regulatory risk register mapping exposure by asset, by decision and b",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Assessing an asset's AI maturity as part of the diligence, not after",
+    "url": "industry7.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Assessing an asset's AI maturity as part of the diligence, not after An asset's AI and digitalisation maturity is quietly becoming a value driver of its own — AI-enabled operations cut opex, lift SLA performance, and leave behind a data asset with standalone value. But assessing it in diligence takes a structured frame rather than a gut feel: data infrastructure quality, how fa",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Turning the ESG obligation into something LPs actually reward",
+    "url": "industry7.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Turning the ESG obligation into something LPs actually reward Data centre energy draw, tower diesel dependence and the scope 2 emissions of digital infrastructure are under growing scrutiny from LPs, co-investors and regulators, and ESG here has moved from a voluntary disclosure to a diligence requirement. We design the assessment and the transition roadmap: an emissions baseli",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "The Sthiros Difference",
+    "url": "industry7.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "The Sthiros Difference We speak ARPU, churn, tenancy ratio and PUE natively Spectrum efficiency, last-mile cost per home passed, the real financial language of digital infrastructure: we advise in it rather than importing a generic strategy framework and applying it to capital-intensive networks from the outside, which never quite lands. Our AI is built for high-volume network ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "We speak ARPU, churn, tenancy ratio and PUE natively",
+    "url": "industry7.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We speak ARPU, churn, tenancy ratio and PUE natively Spectrum efficiency, last-mile cost per home passed, the real financial language of digital infrastructure: we advise in it rather than importing a generic strategy framework and applying it to capital-intensive networks from the outside, which never quite lands.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Our AI is built for high-volume network data",
+    "url": "industry7.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "Our AI is built for high-volume network data Churn prediction, network fault detection, energy optimisation, demand forecasting, LTV scoring: built for the high-volume, high-frequency data these assets throw off, not for a tidy sample that never survives a real network.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "We leave software that reaches production",
+    "url": "industry7.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We leave software that reaches production Network performance dashboards, churn intelligence, energy management tools, compliance systems: real products your network and commercial teams run every day, not a proof-of-concept that impressed a committee and then quietly never shipped.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "What youcan expect",
+    "url": "industry7.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "What youcan expect Network-native Every build starts from how the asset actually generates and protects returns. 4-16 weeks Delivered at infrastructure-operator speed. No retainer that quietly renews forever. One team,three modes The people who advise you are the people who build it. The plan and the thing arrive together.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Network-native",
+    "url": "industry7.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "Network-native Every build starts from how the asset actually generates and protects returns.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "4-16 weeks",
+    "url": "industry7.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "4-16 weeks Delivered at infrastructure-operator speed. No retainer that quietly renews forever.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "One team,three modes",
+    "url": "industry7.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "One team,three modes The people who advise you are the people who build it. The plan and the thing arrive together.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Relatedcase studies",
+    "url": "industry7.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Moving inventory intelligence beyond reactive ERP reporting, in 12 weeks Automating multilingual video creation for training and incident reporting, at scale Teaching machine data and Excel to speak one language, in real time Cutting manual cash burn reporting effort by 50-70%, in 25 business days Turning an undocumented risk practice into a Board-ready, CAG",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Pick a way in.They all lead to thesame conversation.",
+    "url": "industry7.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Pick a way in.They all lead to thesame conversation. Telco operator, tower company, data centre, ISP founder or infra investor; start wherever fits where you are.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "A 30-minute call",
+    "url": "industry7.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "A 30-minute call Tell us your asset type, your biggest commercial or operational pressure, and whether you need advice, a build, or both. We'll point you at the right starting line.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "The digital infrastructure diagnostic",
+    "url": "industry7.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "The digital infrastructure diagnostic A free self-assessment across your regulatory posture, AI readiness, operating maturity and risk gaps. It tells you where you stand and what's worth doing first. Occasionally it tells you you're fine, which we're happy to confirm.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Just describe the situation",
+    "url": "industry7.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Just describe the situation Not ready to talk? Send three lines: your asset type and scale, the commercial or operational pressure, what you've already tried. You'll get an actual point of view back, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Telecom & Digital Infrastructure",
+    "sectionTitle": "Genuinely not surewhere you fit?",
+    "url": "industry7.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Genuinely not surewhere you fit? Tell us what you are, what's bugging you most, and whether you need advice, a build, or both. We'll point you at the right starting line.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Industries - Travel & Hospitality",
+    "url": "industry8.html",
+    "anchor": "",
+    "content": "We build financial systems that clear audit before the auditor asks. ﻿ Industries - Travel & Hospitality RevPAR is back to 2019 levels. GOP is still deciding whether to show up. Domestic travel, premium hotel demand and OTA GMV are all at record highs but OTA commissions and customer acquisition costs are structurally higher too, so occupancy and revenue recovered before margin did. We close that gap. BOOK A 30-MIN",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry8.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "RevPAR is recovering but GOP margin isn't",
+    "url": "industry8.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "RevPAR is recovering but GOP margin isn't. Occupancy and ADR are back. But labour, energy, and F&B costs have risen faster. The topline recovery hasn't translated into bottom-line improvement. Getting GOP to follow the RevPAR that already recovered: Strong RevPAR sitting on top of weak GOP is the defining profitability problem for Indian hotel operators right now. The gap is al",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "OTA commission costs are too high and direct booking share is too low",
+    "url": "industry8.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "OTA commission costs are too high and direct booking share is too low. I'm paying 15–22% commission on a growing share of bookings. My direct booking engine isn't converting well enough to reduce OTA dependence. Winning back the bookings you're paying 18% for: A hotel paying 18% commission on 60% of its bookings is running with a structural handicap: the commission alone can ea",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Revenue management is intuition-based, not data-driven",
+    "url": "industry8.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Revenue management is intuition-based, not data-driven. Pricing decisions are made by the revenue manager based on experience and competitor rate checks. I'm leaving yield on the table without knowing how much. Pricing that captures the 8–15% of RevPAR intuition leaves behind: Intuition-based revenue management works fine, right up until it doesn't, and the gap between what a w",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Labour cost and attrition is structurally higher than pre-pandemic",
+    "url": "industry8.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Labour cost and attrition is structurally higher than pre-pandemic. Hospitality talent is harder to hire, faster to leave, and more expensive to retain. Labour as a percentage of revenue is above target and I don't have a systematic way to address it. Staffing at a cost the P&L can actually carry: Hospitality labour costs more than it did, structurally — wage inflation, attriti",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "I have no real-time view of property performance across my portfolio",
+    "url": "industry8.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "I have no real-time view of property performance across my portfolio. Each property sends a morning report. I don't have a consolidated live view of RevPAR, occupancy, GOP, and guest satisfaction across my hotel portfolio. A live view of the portfolio, not fifteen morning emails: Run 15 properties off a morning email from each and you're forever responding to yesterday. By the ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Guest experience is inconsistent across properties and it's affecting ratings",
+    "url": "industry8.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Guest experience is inconsistent across properties and it's affecting ratings. Review scores vary significantly across properties. I know which ones are underperforming but I can't diagnose why systematically or fix it at the operating model level. Making the good property's experience the standard, not the exception: Review scores that swing from property to property are almos",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry8.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "OTA dependence is eating my margin",
+    "url": "industry8.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "OTA dependence is eating my margin. Booking.com and MakeMyTrip account for most of my bookings. The commission is my largest cost line and I don't know how to shift bookings to direct without losing volume. Shifting bookings direct without watching your occupancy drop: An independent paying 18 to 22% commission on most of its bookings is in a structurally weak spot on margin. T",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "I'm not confident my pricing is optimised",
+    "url": "industry8.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "I'm not confident my pricing is optimised. I set rates based on local competition and gut feel. I don't know if I'm pricing correctly for demand periods, lead time, or room type mix. Pricing for demand, not for the rate card you set in January: An independent running on a fixed rate card with a few manual bumps for peak season is quietly undercharging on the nights everyone wan",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "My online reputation is mixed and I don't manage it systematically",
+    "url": "industry8.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "My online reputation is mixed and I don't manage it systematically. I have good reviews but also some consistent complaints I haven't fixed. My review response is reactive and I don't have a process for translating feedback into operational improvement. Turning reviews into fixes, not just replies: Your review score on Booking.com, TripAdvisor and Google feeds straight into sea",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Working capital is tight and I don't know where to improve it",
+    "url": "industry8.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Working capital is tight and I don't know where to improve it. Revenue looks reasonable but cash is always short. Advance deposits, OTA payment cycles, and seasonal demand swings make cash flow unpredictable. Making cash predictable when the revenue is lumpy: Independent hotel cash flow is lumpy by design: deposits collected months before check-in, OTA settlements landing 30 to",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Staff attrition is disrupting service quality",
+    "url": "industry8.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Staff attrition is disrupting service quality. I lose trained staff to bigger hotels and chains. Every time a key person leaves, the guest experience drops until the replacement is up to speed. Keeping the staff who quietly are your guest experience: In an independent, every experienced person who leaves takes a piece of the guest experience out the door with them — the front d",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "I want to use technology to compete with chains but don't know where to start",
+    "url": "industry8.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "I want to use technology to compete with chains but don't know where to start. PMS, channel manager, revenue management system, CRM — the technology stack for hotels is complex and expensive. I need to know what actually moves my business. The technology that actually moves an independent, before you buy it: PMS, channel manager, revenue management system, CRM, guest messaging ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry8.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Conversion rate is too low relative to traffic acquisition cost",
+    "url": "industry8.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Conversion rate is too low relative to traffic acquisition cost. I'm spending heavily to bring travellers to the platform. The conversion from search to booking isn't high enough to make the unit economics work at current CAC. Fixing conversion, which is a product problem wearing a traffic problem's clothes: OTA conversion is a product problem that people keep trying to solve b",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Take rate is under pressure from supplier negotiation",
+    "url": "industry8.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Take rate is under pressure from supplier negotiation. Hotels, airlines, and tour operators are pushing back on commission rates. My blended take rate has been declining and I don't have a clear strategy to defend or grow it. Defending take rate by being worth the commission: Take rate compression in online travel is structural — every supplier that invests in its own direct ch",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Search and discovery isn't personalised enough to compete",
+    "url": "industry8.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Search and discovery isn't personalised enough to compete. Users get the same results regardless of their travel history, preferences, or intent signals. Personalisation is the gap between my conversion rate and what the leading OTAs achieve. Search that remembers the traveller booked Goa twice already: A traveller who's booked beach holidays in Goa twice shouldn't get the same",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Fraud and payment risk is scaling with transaction volume",
+    "url": "industry8.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Fraud and payment risk is scaling with transaction volume. As GMV grows, fraud attempts, chargebacks, and payment disputes are growing proportionally. My fraud detection isn't keeping pace. Fraud detection that scales with GMV instead of lagging it: Travel fraud has its own specific shapes: stolen-card bookings for premium hotels, chargeback fraud on airline tickets, loyalty po",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Inventory breadth and quality varies too much across markets",
+    "url": "industry8.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Inventory breadth and quality varies too much across markets. My supplier coverage is strong in tier-1 markets and weak in tier-2 and tier-3. Travellers searching for secondary destinations are finding better options on competitor platforms. Winning the Coorg and Kasauli searches you currently lose: Market share in secondary Indian cities goes to whichever platform has the deep",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Repeat booking rate is too low and loyalty isn't working",
+    "url": "industry8.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Repeat booking rate is too low and loyalty isn't working. Most of my users book once and return through a meta-search or OTA ad. My loyalty programme isn't creating the direct return behaviour that makes unit economics sustainable. Making the second booking come back to you, not to meta-search: A traveller who books through you once and comes back via meta-search or a competito",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry8.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Yield management isn't capturing enough revenue on high-demand routes",
+    "url": "industry8.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Yield management isn't capturing enough revenue on high-demand routes. My pricing on peak routes and peak days isn't optimised. I know I'm leaving yield on the table but the revenue management system and the team aren't calibrated to capture it. Capturing the yield you're leaving on the peak-day routes: Airline yield management compounds in a way that punishes small errors — a ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "On-time performance is damaging customer satisfaction and brand",
+    "url": "industry8.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "On-time performance is damaging customer satisfaction and brand. OTP is below target on specific routes and time slots. The causes are a mix of turnaround time, ATC, and maintenance — but I don't have a systematic view of which is biggest. Treating OTP as a systemic pattern, not a run of bad luck: OTP falling short on specific routes is almost always a combination — turnaround ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Ancillary revenue per passenger is below industry benchmark",
+    "url": "industry8.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Ancillary revenue per passenger is below industry benchmark. Seat selection, baggage, meals, and travel insurance are underperforming. My ancillary attach rate is too low and the offer sequencing isn't designed around purchase intent. Ancillary revenue, where the marginal cost is close to zero: Ancillary revenue is one of the highest-leverage levers an airline has, because once",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Cost per available seat kilometre is too high",
+    "url": "industry8.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Cost per available seat kilometre is too high. CASK has increased structurally — fuel, MRO, airport charges, and crew costs are all higher. I need to find cost reduction that doesn't compromise safety or service. Taking real cost out of CASK, not the kind a passenger notices: CASK has drifted up structurally for most Indian carriers — fuel, MRO, rising airport charges and crew ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Crew scheduling and rostering is inefficient and expensive",
+    "url": "industry8.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Crew scheduling and rostering is inefficient and expensive. Crew costs are my second-largest expense after fuel. Rostering inefficiencies, deadhead costs, and last-minute crew changes are adding cost I should be able to reduce. Taking avoidable cost out of crew, your second-biggest line after fuel: Crew is typically the second-biggest cost line in an airline after fuel, and a l",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "I want to use AI for demand forecasting and network planning",
+    "url": "industry8.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "I want to use AI for demand forecasting and network planning. Route profitability, demand forecasting, and network optimisation decisions are currently made with limited data and significant reliance on analyst judgement. AI can change this. AI on network planning, the highest-stakes call you make slowly: Network planning — which routes, what frequency, what capacity — is among",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry8.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "FIT margins are compressing and group margins are thin",
+    "url": "industry8.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "FIT margins are compressing and group margins are thin. Free independent travel margins have been squeezed by direct booking and OTA competition. Group margins depend on volume I don't always have. Both are under pressure simultaneously. Protecting margin on FIT and group, which need opposite fixes: FIT margins are being squeezed by direct booking and aggregators offering the s",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Supplier cost management is manual and not optimised",
+    "url": "industry8.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Supplier cost management is manual and not optimised. Hotel contracts, ground operators, guide rates, and visa costs are negotiated individually and tracked in spreadsheets. I'm not leveraging volume across programmes to get better rates. The volume discounts you're not claiming because nobody added it up: Tour operators routinely leave supplier savings on the table because buy",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Sales team productivity varies too much and conversion is inconsistent",
+    "url": "industry8.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Sales team productivity varies too much and conversion is inconsistent. Some sales staff convert at significantly higher rates than others. The knowledge, the pitch, and the follow-up process aren't standardised and I'm losing enquiries I should be winning. Making your best salesperson's process everyone's process: Conversion that varies wildly between salespeople is almost alw",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Customer repeat rate and referral is lower than it should be",
+    "url": "industry8.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Customer repeat rate and referral is lower than it should be. Travellers who have a great experience don't automatically come back or refer. My post-trip engagement is weak and I'm leaving the loyalty and referral revenue on the table. Turning a great trip into the next booking, and a referral: A traveller who's just had a great trip is the cheapest new business you'll ever fin",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Operations management across programmes is too manual",
+    "url": "industry8.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Operations management across programmes is too manual. Booking confirmations, voucher generation, supplier coordination, and customer communication are largely manual processes. The ops team is overwhelmed and errors are creating customer experience failures. Automating the routine so the team is free for the human bits: Tour operations are communication-heavy by nature — booki",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "I want to launch new destination or product lines but the risk assessment isn't structured",
+    "url": "industry8.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "I want to launch new destination or product lines but the risk assessment isn't structured. Expanding into new destinations or segment types requires investment in supplier relationships, marketing, and ops capability. I make these decisions based on gut feel rather than a structured commercial analysis. Analysing a new destination before you sink money into it: Launching a new",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry8.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Hotel and hospitality enterprise sales cycles are too long",
+    "url": "industry8.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Hotel and hospitality enterprise sales cycles are too long. Hotel groups, OTAs, and airline procurement teams take 9-18 months to evaluate and onboard new technology. My sales motion isn't built for this and I'm running out of runway. Moving a hotel group through a 12-month procurement before your runway ends: Hotel group tech procurement runs a specific relay — revenue manager",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Proving ROI to hospitality buyers before they'll commit",
+    "url": "industry8.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Proving ROI to hospitality buyers before they'll commit. Hotel COOs and revenue managers want to see evidence of RevPAR improvement or cost reduction before signing. I have user traction but not the structured ROI evidence institutional buyers need. The ROI evidence a hotel COO needs before signing: A hotel COO who's sat through fifteen demos this year wants exactly one thing b",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "AI features aren't differentiated enough from established competitors",
+    "url": "industry8.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "AI features aren't differentiated enough from established competitors. Incumbent PMS, channel manager, and revenue management vendors are adding AI features. My AI capability needs to be demonstrably better, not just different, to justify a switch. AI that's demonstrably better, since 'newer' won't move an incumbent's customer: Once the established PMS and channel manager vendo",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Churn from hospitality customers is too high",
+    "url": "industry8.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Churn from hospitality customers is too high. Hotels and travel operators who trial the product don't always convert to long-term customers. Onboarding friction, integration complexity, and unclear value realisation are the common patterns. Getting customers past the 90-day value cliff: Hospitality tech churn is usually an onboarding and value-realisation failure — a customer w",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Integration with PMS, channel managers, and GDS is creating technical debt",
+    "url": "industry8.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Integration with PMS, channel managers, and GDS is creating technical debt. The hospitality tech stack is fragmented and poorly standardised. Building and maintaining integrations is consuming engineering capacity that should be on product development. Stopping hospitality integrations from eating your engineering team: The hospitality tech ecosystem is famously fragmented — PM",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "My operating model isn't built to scale enterprise hospitality customers",
+    "url": "industry8.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "My operating model isn't built to scale enterprise hospitality customers. Signing a hotel chain with 50 properties is a different commercial and operational undertaking from signing individual hotels. My customer success, implementation, and support model isn't built for it. Being ready for the 50-property chain before you win it: Signing a 50-property chain is a completely dif",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "RevPAR is back to 2019 levels. GOP is still deciding whether to show up.",
+    "url": "industry8.html#sec-revpar-is-back-to-2019-levels-gop-is-still-de",
+    "anchor": "sec-revpar-is-back-to-2019-levels-gop-is-still-de",
+    "content": "RevPAR is back to 2019 levels. GOP is still deciding whether to show up. Domestic travel, premium hotel demand and OTA GMV are all at record highs but OTA commissions and customer acquisition costs are structurally higher too, so occupancy and revenue recovered before margin did. We close that gap. BOOK A 30-MIN CALL GET THE INDUSTRY DIAGNOSTIC",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Who are you?We'll show you theright problems.",
+    "url": "industry8.html#Whotherightproblemssec",
+    "anchor": "Whotherightproblemssec",
+    "content": "Who are you?We'll show you theright problems. Pick your segment. What comes up is tuned to your operating context and where your margin actually leaks. Hotel chain Independent hotel OTA or travel platform Airline or aviation Tour operator Travel tech startup PROBLEMS STHIROS SOLUTION RevPAR is recovering but GOP margin isn't Occupancy and ADR are back. But labour, energy, and F",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Getting GOP to follow the RevPAR that already recovered",
+    "url": "industry8.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Getting GOP to follow the RevPAR that already recovered Strong RevPAR sitting on top of weak GOP is the defining profitability problem for Indian hotel operators right now. The gap is almost always the same suspects: labour that's structurally more expensive, energy inflation, F&B costs creeping up, and OTA commission quietly growing as a share of revenue. We run the GOP diagno",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Winning back the bookings you're paying 18% for",
+    "url": "industry8.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Winning back the bookings you're paying 18% for A hotel paying 18% commission on 60% of its bookings is running with a structural handicap: the commission alone can eat most of the room margin. Shifting even ten points of bookings from OTA to direct moves GOP meaningfully. We design the direct booking strategy — website conversion, rate parity management, loyalty mechanics, and",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Pricing that captures the 8–15% of RevPAR intuition leaves behind",
+    "url": "industry8.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Pricing that captures the 8–15% of RevPAR intuition leaves behind Intuition-based revenue management works fine, right up until it doesn't, and the gap between what a well-calibrated system captures and what a good revenue manager's instinct captures is typically 8 to 15% of RevPAR. That's real money left on the desk every night. We build the revenue management capability: a de",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Staffing at a cost the P&L can actually carry",
+    "url": "industry8.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Staffing at a cost the P&L can actually carry Hospitality labour costs more than it did, structurally — wage inflation, attrition swapping experienced people for premium-cost new hires, and departments that stay staffed for an occupancy they no longer have. We rebuild the workforce model around that: staffing ratios that flex with the occupancy band, scheduling optimised, cross",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "A live view of the portfolio, not fifteen morning emails",
+    "url": "industry8.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "A live view of the portfolio, not fifteen morning emails Run 15 properties off a morning email from each and you're forever responding to yesterday. By the time the numbers reach you, the demand window has moved and the moment to act on it has quietly closed. We build the real-time layer: RevPAR, occupancy, ADR, GOP and guest satisfaction visible live across every property, so ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Making the good property's experience the standard, not the exception",
+    "url": "industry8.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Making the good property's experience the standard, not the exception Review scores that swing from property to property are almost always a replication problem, not a mystery of local character. Your strong properties have specific practices, training standards and service-recovery habits that the weaker ones either lack or apply inconsistently. We find exactly what the high p",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Shifting bookings direct without watching your occupancy drop",
+    "url": "industry8.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Shifting bookings direct without watching your occupancy drop An independent paying 18 to 22% commission on most of its bookings is in a structurally weak spot on margin. The catch is that the OTA traffic is real and it converts, so you can't just switch it off — reducing dependence means building a direct acquisition and conversion model that can actually compete with OTA effi",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Pricing for demand, not for the rate card you set in January",
+    "url": "industry8.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Pricing for demand, not for the rate card you set in January An independent running on a fixed rate card with a few manual bumps for peak season is quietly undercharging on the nights everyone wants a room and sometimes overcharging on the nights they don't. We rebuild the pricing model: demand-based rate tiers, lead-time logic, room-type yield management, and a competitive int",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Turning reviews into fixes, not just replies",
+    "url": "industry8.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Turning reviews into fixes, not just replies Your review score on Booking.com, TripAdvisor and Google feeds straight into search ranking and conversion, so it's a commercial number, not a vanity one. Most independents manage reviews reactively — a polite reply to the bad ones, after the damage is done. We build the systematic version: structured feedback collection, the recurri",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Making cash predictable when the revenue is lumpy",
+    "url": "industry8.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Making cash predictable when the revenue is lumpy Independent hotel cash flow is lumpy by design: deposits collected months before check-in, OTA settlements landing 30 to 45 days after checkout, demand that swings with the season, and fixed costs that carry on regardless of whether the rooms are full. We rebuild the working capital model — cash flow forecasting, advance payment",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Keeping the staff who quietly are your guest experience",
+    "url": "industry8.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Keeping the staff who quietly are your guest experience In an independent, every experienced person who leaves takes a piece of the guest experience out the door with them — the front desk agent who remembers your regulars, the F&B supervisor who can defuse a difficult table. High attrition turns into a quality wobble that shows up, reliably, in your review scores. We rebuild t",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "The technology that actually moves an independent, before you buy it",
+    "url": "industry8.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "The technology that actually moves an independent, before you buy it PMS, channel manager, revenue management system, CRM, guest messaging — the hospitality tech market is a crowded room where every vendor promises transformation. For an independent, the right stack is simply the one that solves your specific problems at a price the property can absorb, and not one line more. W",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Fixing conversion, which is a product problem wearing a traffic problem's clothes",
+    "url": "industry8.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Fixing conversion, which is a product problem wearing a traffic problem's clothes OTA conversion is a product problem that people keep trying to solve by buying more traffic. The gap between a traveller landing on your results and actually completing a booking comes from specific friction: search relevance, how price is presented, whether reviews are visible, checkout friction,",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Defending take rate by being worth the commission",
+    "url": "industry8.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Defending take rate by being worth the commission Take rate compression in online travel is structural — every supplier that invests in its own direct channel gains negotiating leverage, and platform competition pushes the same direction. You defend take rate by being genuinely worth paying: the reach, the data, the marketing services, and above all the incremental demand you d",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Search that remembers the traveller booked Goa twice already",
+    "url": "industry8.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Search that remembers the traveller booked Goa twice already A traveller who's booked beach holidays in Goa twice shouldn't get the same results as a first-timer typing 'Goa hotels' — and yet, on most platforms, they do. Personalised discovery, driven by booking history, search behaviour, price sensitivity and contextual signals, is the single biggest conversion lever in online",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Fraud detection that scales with GMV instead of lagging it",
+    "url": "industry8.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Fraud detection that scales with GMV instead of lagging it Travel fraud has its own specific shapes: stolen-card bookings for premium hotels, chargeback fraud on airline tickets, loyalty point manipulation, account takeover going after stored cards. A rules engine can't keep up as GMV climbs — it just blocks more good customers while the sophisticated stuff walks through. We bu",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Winning the Coorg and Kasauli searches you currently lose",
+    "url": "industry8.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Winning the Coorg and Kasauli searches you currently lose Market share in secondary Indian cities goes to whichever platform has the deepest, most accurate, most bookable inventory. A traveller searching Coorg, Kasauli or Rann of Kutch goes to whoever has the right hotels, real availability and current rates — and quietly stops opening your app if you don't. We design the inven",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Making the second booking come back to you, not to meta-search",
+    "url": "industry8.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Making the second booking come back to you, not to meta-search A traveller who books through you once and comes back via meta-search or a competitor next time is a unit-economics failure — you paid to acquire them and then handed them back to the market. Loyalty that works isn't a points balance nobody thinks about; it's a set of benefits and experiences that make booking direc",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Capturing the yield you're leaving on the peak-day routes",
+    "url": "industry8.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Capturing the yield you're leaving on the peak-day routes Airline yield management compounds in a way that punishes small errors — a fare decision made 90 days out shapes load factor, which shapes your last-minute pricing power, which shapes the whole route's revenue. Intuition and static fare buckets leave money on the table that a well-calibrated demand forecast and dynamic p",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Treating OTP as a systemic pattern, not a run of bad luck",
+    "url": "industry8.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Treating OTP as a systemic pattern, not a run of bad luck OTP falling short on specific routes is almost always a combination — turnaround time variance, ATC slot management, ground handling dependencies, and maintenance scheduling that sets off cascading delays. The trap is that each delay looks like its own bit of bad luck when it's really a pattern with a cause. We run the O",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Ancillary revenue, where the marginal cost is close to zero",
+    "url": "industry8.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Ancillary revenue, where the marginal cost is close to zero Ancillary revenue is one of the highest-leverage levers an airline has, because once the booking's made, the marginal cost of selling a seat upgrade or travel insurance is close to nothing — it's almost pure contribution. Most airlines underperform here because the offers are sequenced without regard to purchase intent",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Taking real cost out of CASK, not the kind a passenger notices",
+    "url": "industry8.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Taking real cost out of CASK, not the kind a passenger notices CASK has drifted up structurally for most Indian carriers — fuel, MRO, rising airport charges and crew cost inflation all compounding. Bringing it down takes a disciplined decomposition: which cost lines you can actually control, which are structural, and which initiatives deliver real savings rather than the theore",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Taking avoidable cost out of crew, your second-biggest line after fuel",
+    "url": "industry8.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Taking avoidable cost out of crew, your second-biggest line after fuel Crew is typically the second-biggest cost line in an airline after fuel, and a lot of it is avoidable: deadhead positioning, the recovery cost of minimum-rest breaches, last-minute reassignments, pairings built less tightly than they could be. We redesign the crew scheduling model and build the optimisation ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "AI on network planning, the highest-stakes call you make slowly",
+    "url": "industry8.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "AI on network planning, the highest-stakes call you make slowly Network planning — which routes, what frequency, what capacity — is among the highest-stakes decisions an airline makes, and one of the slowest and most expensive to reverse when it's wrong. AI demand forecasting, competitive intelligence and route profitability modelling can genuinely sharpen these calls. The catc",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Protecting margin on FIT and group, which need opposite fixes",
+    "url": "industry8.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Protecting margin on FIT and group, which need opposite fixes FIT margins are being squeezed by direct booking and aggregators offering the same components at a lower consumer price. Group margins lean on volume that's harder and harder to commit ahead of time. Awkwardly, the two need opposite medicine — FIT needs differentiation through experience quality and components nobody",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "The volume discounts you're not claiming because nobody added it up",
+    "url": "industry8.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "The volume discounts you're not claiming because nobody added it up Tour operators routinely leave supplier savings on the table because buying happens by destination or product line, so nobody ever adds the volume up. You might book 500 room nights across ten programmes into a single hotel and be paying rack-adjacent rates on all of them, simply because no one saw the aggregat",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Making your best salesperson's process everyone's process",
+    "url": "industry8.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Making your best salesperson's process everyone's process Conversion that varies wildly between salespeople is almost always a process problem in disguise. Your best people follow an implicit process the rest of the team doesn't — how they identify needs, customise the itinerary, build trust, handle objections, time the follow-up. Make that explicit, document it, train it, and ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Turning a great trip into the next booking, and a referral",
+    "url": "industry8.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Turning a great trip into the next booking, and a referral A traveller who's just had a great trip is the cheapest new business you'll ever find — as a repeat booker and as a referral source both. Yet most tour operators treat the final payment as the end of the relationship rather than the start of the next one, and quietly let all that goodwill evaporate. We build the post-tr",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Automating the routine so the team is free for the human bits",
+    "url": "industry8.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Automating the routine so the team is free for the human bits Tour operations are communication-heavy by nature — booking confirmations, vouchers, supplier coordination, visa reminders, pre-trip briefings, all requiring human input that scales straight up with volume. The point of automating the routine, high-volume messages isn't to make the experience colder; it's to free you",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Analysing a new destination before you sink money into it",
+    "url": "industry8.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Analysing a new destination before you sink money into it Launching a new destination or product type means spending on supplier relationships, marketing and ops capability before the first booking arrives. Most operators make that call on market intuition and a glance at what competitors are doing. We run the commercial analysis instead: demand assessed, the competitive landsc",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Moving a hotel group through a 12-month procurement before your runway ends",
+    "url": "industry8.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Moving a hotel group through a 12-month procurement before your runway ends Hotel group tech procurement runs a specific relay — revenue manager evaluation, operations head sign-off, IT security review, legal, finance approval — each with its own stakeholder. Most travel tech companies run this as a series of demos and relationships without a structured account plan, and end up",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "The ROI evidence a hotel COO needs before signing",
+    "url": "industry8.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "The ROI evidence a hotel COO needs before signing A hotel COO who's sat through fifteen demos this year wants exactly one thing before signing: proof that this actually lifted RevPAR, cut OTA commission, or saved labour cost at a property like theirs. Producing that proof takes a properly designed pilot, a baseline measurement methodology, and an analysis that can isolate your ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "AI that's demonstrably better, since 'newer' won't move an incumbent's customer",
+    "url": "industry8.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "AI that's demonstrably better, since 'newer' won't move an incumbent's customer Once the established PMS and channel manager vendors bolt AI onto their products, 'we have AI too' stops meaning anything. To pull a customer off an incumbent, your AI has to be demonstrably better at the one use case that buyer cares about — measurably, in forecast accuracy or pricing lift or autom",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Getting customers past the 90-day value cliff",
+    "url": "industry8.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Getting customers past the 90-day value cliff Hospitality tech churn is usually an onboarding and value-realisation failure — a customer who hasn't seen measurable impact inside the first 90 days simply doesn't renew. The causes are familiar: integration complexity, not enough training for the hotel ops staff who actually use it, and success metrics nobody agreed up front. We r",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Stopping hospitality integrations from eating your engineering team",
+    "url": "industry8.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Stopping hospitality integrations from eating your engineering team The hospitality tech ecosystem is famously fragmented — PMS, channel manager, CRS, POS, RMS, GDS and OTA connections each with their own data format, authentication and update frequency. Building and maintaining all of it quietly consumes the engineering capacity that should be going into your actual product. W",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Being ready for the 50-property chain before you win it",
+    "url": "industry8.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Being ready for the 50-property chain before you win it Signing a 50-property chain is a completely different undertaking from signing 50 individual hotels — multi-property rollout, centralised versus property-level configuration, chain-level reporting, enterprise support SLAs, all of it new. Most travel tech startups discover this the hard way, after they've won their first ch",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "The Sthiros Difference",
+    "url": "industry8.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "The Sthiros Difference We speak RevPAR, GOP, take rate and yield natively ADR, OTA commission, FIT versus group margin: the financial language of travel and hospitality is our first language, not a generic operational framework we imported and applied to the sector from the outside, which never quite fits. Our AI is built for perishable inventory and volatile demand Dynamic pri",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "We speak RevPAR, GOP, take rate and yield natively",
+    "url": "industry8.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We speak RevPAR, GOP, take rate and yield natively ADR, OTA commission, FIT versus group margin: the financial language of travel and hospitality is our first language, not a generic operational framework we imported and applied to the sector from the outside, which never quite fits.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Our AI is built for perishable inventory and volatile demand",
+    "url": "industry8.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "Our AI is built for perishable inventory and volatile demand Dynamic pricing, demand forecasting, personalisation, yield optimisation, cost anomaly detection: built for the specific data patterns of travel: seasonality, demand that swings, and a room-night that's worth nothing the morning after it's gone unsold.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "We leave software your revenue team runs without us",
+    "url": "industry8.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We leave software your revenue team runs without us Revenue management dashboards, direct booking engines, distribution intelligence, guest intelligence tools: real products your revenue and operations teams open every day, not a system that needs a consultant in the room to be read",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "What youcan expect",
+    "url": "industry8.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "What youcan expect Revenue-native Every build starts from how a travel business actually makes and protects margin. 4-16 weeks Delivered at operator speed. No retainer that quietly renews forever. One team,three modes The people who advise you are the people who build it. The plan and the thing arrive together.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Revenue-native",
+    "url": "industry8.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "Revenue-native Every build starts from how a travel business actually makes and protects margin.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "4-16 weeks",
+    "url": "industry8.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "4-16 weeks Delivered at operator speed. No retainer that quietly renews forever.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "One team,three modes",
+    "url": "industry8.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "One team,three modes The people who advise you are the people who build it. The plan and the thing arrive together.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Relatedcase studies",
+    "url": "industry8.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Moving inventory intelligence beyond reactive ERP reporting, in 12 weeks Automating multilingual video creation for training and incident reporting, at scale Teaching machine data and Excel to speak one language, in real time Cutting manual cash burn reporting effort by 50-70%, in 25 business days Turning an undocumented risk practice into a Board-ready, CAG",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Pick a way in.They all lead to thesame conversation.",
+    "url": "industry8.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Pick a way in.They all lead to thesame conversation. Hotel operator, OTA leader, airline exec or travel tech founder; start wherever fits where you are.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "A 30-minute call",
+    "url": "industry8.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "A 30-minute call Tell us your business and the challenge. By the end of the call we'll say what we'd tackle first — revenue strategy, cost structure, channel mix, an AI build, or a piece of software. No deck required.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "The travel business diagnostic",
+    "url": "industry8.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "The travel business diagnostic A free self-assessment across your regulatory posture, AI readiness, operating maturity and risk gaps. It tells you where you stand and what's worth doing first. Occasionally it tells you you're fine, which we're happy to confirm.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Just describe the situation",
+    "url": "industry8.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Just describe the situation Not ready to talk? Send three lines: your business type and scale, the commercial pressure, what you've already tried. You'll get an actual point of view back, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - Travel & Hospitality",
+    "sectionTitle": "Genuinely not surewhere you fit?",
+    "url": "industry8.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Genuinely not surewhere you fit? Tell us your business type, your biggest revenue or cost pressure, and whether you need advice, a build, or both. We'll point you at the right starting line.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "url": "industry9.html",
+    "anchor": "",
+    "content": "We build financial systems that clear audit before the auditor asks. Industries - REAL ESTATE, EPC & CONSTRUCTION Every week of delay has a number attached to it. Liquidated damages. Working capital gaps. Cost overruns that don't surface until the project is 60% built. In construction and real estate the problems are financial and operational at the same time, and they compound fast. We work with developers, EPC con",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry9.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "RERA compliance is a daily operational burden",
+    "url": "industry9.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "RERA compliance is a daily operational burden. Quarterly reporting, escrow fund norms, buyer communication — I'm managing this manually and one slip creates serious regulator exposure. RERA compliance that runs itself instead of panicking quarterly: Most developers run RERA on spreadsheets, reminders and a compliance consultant kept on standby, which is fine until a reporting d",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Project cash flow is tighter than my P&L suggests",
+    "url": "industry9.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Project cash flow is tighter than my P&L suggests. Collections lag, construction draws are heavy, and unsold inventory is tying up capital I need elsewhere. Cash flow architecture, for when the P&L is lying to you: Collections lag, construction draws land early, and unsold inventory sits there tying up capital you could be using on the next phase — developer cash flow is struct",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Delays are eroding buyer confidence and triggering penalties",
+    "url": "industry9.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Delays are eroding buyer confidence and triggering penalties. My construction schedule keeps slipping. Buyers are asking questions. RERA penalty clauses are getting real. Getting the schedule back before RERA notices: A slipping construction schedule is a double hit in real estate — RERA penalty exposure on one side, buyer confidence draining away on the other, both compounding",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "I have no real view across multiple projects",
+    "url": "industry9.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "I have no real view across multiple projects. Each project is a different file. My CFO and I are flying blind on portfolio-level cost, collections, and exposure. One view across every project, instead of one file per project: Six projects across three cities, each living in its own file, isn't a filing problem — it's a structural risk that shows up the day two of them go wrong ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "My project margins are shrinking on every new launch",
+    "url": "industry9.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "My project margins are shrinking on every new launch. Land costs, material escalation, approvals — by the time I launch, the numbers I underwrote don't hold. Margin protected from the underwriting model onward: Developer margin gets decided at underwriting — land cost, approval timeline, construction estimate, sales velocity — and once any of those assumptions drift, there's us",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "I want to scale but my operating model isn't built for it",
+    "url": "industry9.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "I want to scale but my operating model isn't built for it. Going from two projects to six means my current team, systems, and governance will break. I need to build the machine. An operating model built for six projects, not stretched from two: Going from two projects to six isn't more of the same thing — it needs a different delegation structure, a different approval hierarchy",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry9.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Cost overruns are eating margin I bid thin already",
+    "url": "industry9.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Cost overruns are eating margin I bid thin already. Material escalation, scope changes, subcontractor underperformance — by the time I see the variance report, it's too late. Catching the overrun before it's a done deal: Cost overruns in EPC rarely arrive as one event. They accumulate quietly — a bit of material escalation, a scope change, labour running slightly under estimate",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "LD exposure is building and I can't arrest the delay",
+    "url": "industry9.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "LD exposure is building and I can't arrest the delay. The schedule is slipping across multiple workfronts. Liquidated damages are compounding. I need a recovery plan now. Recovering the schedule before the LD clock outruns you: At 0.1 to 1% of contract value a week, LD exposure compounds fast, and most contractors know they're behind long before the formal delay notice shows up",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Cash flow gaps between billing and payment are strangling operations",
+    "url": "industry9.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Cash flow gaps between billing and payment are strangling operations. RA bill certification takes 45-60 days. I'm funding site costs daily. The working capital gap is unsustainable. Closing the gap between the bill and the payment: RA certification running 45 to 60 days, 5 to 10% retention locked until the defects liability period ends, mobilisation advance recovery eating into",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "We keep winning bids at margins we can't deliver",
+    "url": "industry9.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "We keep winning bids at margins we can't deliver. The estimating and risk pricing isn't reflecting execution reality. We win, then we bleed. Winning bids at a margin your execution can actually protect: The margin problem usually starts at the bid — risk priced too thin, contingencies that look fine on paper, escalation clauses nobody stress-tested, back-to-back terms that quie",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Subcontractor management is a constant fire",
+    "url": "industry9.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Subcontractor management is a constant fire. Delayed mobilisation, quality disputes, payment disputes — my subcontractor ecosystem is creating more risk than value. Turning the subcontractor ecosystem from risk into performance: For most EPC contractors, 60 to 70% of the actual execution sits with subcontractors, so when one underperforms, delays or disputes payment, the main c",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "I have no real-time project intelligence",
+    "url": "industry9.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "I have no real-time project intelligence. I'm running multiple packages with WhatsApp updates and monthly reports. I need to know what's happening today, not last month. Project intelligence that doesn't run on WhatsApp: Running multiple packages on WhatsApp updates and monthly reports is a structural risk wearing the costume of a communication habit, and when something breaks ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry9.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "My contractor is at risk of defaulting or walking away",
+    "url": "industry9.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "My contractor is at risk of defaulting or walking away. Cost overruns are mounting. The contractor's balance sheet is under pressure. I need to assess risk and protect the project. Knowing your contractor's balance sheet before it becomes your problem: When a contractor's finances deteriorate mid-project, the owner inherits the consequence regardless of whose fault it is — dela",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "The project is delayed and I'm losing confidence in the schedule",
+    "url": "industry9.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "The project is delayed and I'm losing confidence in the schedule. Every revised programme looks optimistic. I need an independent view on what's actually achievable. An honest read on what's actually achievable: A revised programme from a contractor under pressure is optimistic by design — it has to be, that's the position they're in. What you need is an independent, evidence-b",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "I don't have the internal capability to oversee complex EPC delivery",
+    "url": "industry9.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "I don't have the internal capability to oversee complex EPC delivery. My team can manage contracts, not construction. I need an owner's engineer lens to protect my interests on site. Owner's engineer capability, where the ambiguity actually lives: Most owners have procurement and contract management sorted, but not construction oversight, and that's exactly the gap where a cont",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "I need better project reporting for my board and funders",
+    "url": "industry9.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "I need better project reporting for my board and funders. My lenders and board want consistent, reliable project status. What I get from the contractor isn't sufficient. Project reporting your board can actually trust: Your board and your lenders want to know three things — on schedule, on budget, and whether the contractor is actually going to deliver — and most owner reportin",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Contract disputes are escalating and I need to protect my position",
+    "url": "industry9.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Contract disputes are escalating and I need to protect my position. Variation claims, force majeure disputes, LD application — the contract is becoming adversarial and I need a structured response. Building the position before arbitration becomes the only option: Once an EPC contract turns adversarial — variation claims, EOT requests, force majeure, LD disputes — the party with",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "I'm planning a major capital project and need to get the structure right",
+    "url": "industry9.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "I'm planning a major capital project and need to get the structure right. Owner's requirements, procurement strategy, contract structure, risk allocation — I want to get this right before we go to market. Getting the structure right before you go to market: The expensive mistakes in a major capital project happen before a contractor is even appointed — in how the owner's requir",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry9.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "My reporting is too lagging to be genuinely useful",
+    "url": "industry9.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "My reporting is too lagging to be genuinely useful. By the time I produce the monthly dashboard, the client already knows what's in it. I need to be ahead of the data. Reporting that's ahead of the client, not behind them: A report that hands the client last month's data this month isn't adding intelligence, it's adding formatting. We rebuild the reporting architecture around l",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "I want to offer AI-powered project controls as a differentiator",
+    "url": "industry9.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "I want to offer AI-powered project controls as a differentiator. Clients are asking about predictive analytics, early warning systems, and AI scheduling. I don't have the capability yet. AI project controls, the differentiator clients are already asking for: Predictive schedule analytics, AI-driven cost overrun warnings, subcontractor performance scoring — clients have started ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Contractor coordination is consuming my team's bandwidth",
+    "url": "industry9.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Contractor coordination is consuming my team's bandwidth. Interface management, documentation, RFI tracking — my team is a coordination machine, not a controls team. Control instead of expensive coordination: A lot of PMC firms end up running meetings, chasing RFIs and distributing minutes, which is coordination, not control, and clients are paying for control — the ability to ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "My documentation and audit trail isn't robust enough",
+    "url": "industry9.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "My documentation and audit trail isn't robust enough. When disputes arise, the paper trail I have isn't sufficient to defend the project owner's position or mine. Documentation that holds up when a project goes wrong: When a project goes wrong, the PMC's documentation is the first thing anyone examines, and site diaries, inspection records, instruction logs and variation corres",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "I want to standardise delivery across multiple PMC mandates",
+    "url": "industry9.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "I want to standardise delivery across multiple PMC mandates. Each project runs differently depending on the team. I need a standardised PMC operating model, toolkit, and reporting framework. Consistent delivery, whichever team is on the project: When quality depends on which team happens to be running a project, that's not process, it's personality, and it becomes a reputationa",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "I'm growing but my systems and processes aren't keeping up",
+    "url": "industry9.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "I'm growing but my systems and processes aren't keeping up. More clients, more projects, same team structure. The quality is slipping and I need operating infrastructure to scale. Scaling the PMC business without scaling the burnout: More clients and more projects on the same team structure eventually shows up as quality slippage, burnout, and a client who's noticed both. Scali",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry9.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "One bad project is enough to threaten the whole business",
+    "url": "industry9.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "One bad project is enough to threaten the whole business. My business has no financial buffer. A delayed payment or a cost overrun on a major project is an existential risk. Built to survive a bad project, not just a good run: For most construction businesses, the working capital reserve is one bad project away from zero — a delayed payment, a cost overrun past the margin, a di",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "I don't know which projects are actually making money",
+    "url": "industry9.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "I don't know which projects are actually making money. Revenue is growing but the bank balance doesn't reflect it. I can't see margin by project, client, or contract type. Knowing which jobs are actually making money: Most construction owners find out a project's real margin at the end, which is exactly when it's too late to do anything about it. Usually the cause is structural",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Key man risk is everywhere in my business",
+    "url": "industry9.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Key man risk is everywhere in my business. My site managers, my estimator, my ops head — if any of them leave, a piece of the business walks out with them. Making the business bigger than any one person in it: The estimating lives in one person's head, the client relationships belong to another, and the site methodology is whatever the senior site manager was trained on — which",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "My estimating isn't accurate enough to protect margin",
+    "url": "industry9.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "My estimating isn't accurate enough to protect margin. We bid based on experience and gut feel. When execution surprises us, there's no margin left to absorb it. Protecting margin from the first number you write down: Most construction estimating is a blend of historical rates, gut feel and however much competitive pressure the bid is under, and when the job comes in below expe",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "I want to grow but I don't know if the business can handle it",
+    "url": "industry9.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "I want to grow but I don't know if the business can handle it. More projects means more working capital, more people, more risk. I'm not confident the operating model scales. An operating model that scales without turning into chaos: Taking a construction business from five projects to fifteen needs a genuinely different operating model — more working capital, deeper supervisio",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "My finance function is too basic for the size of business I'm running",
+    "url": "industry9.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "My finance function is too basic for the size of business I'm running. Tally, a part-time accountant, and monthly bank statements aren't enough. I need a proper financial operating model. A finance function that matches the size of the business you're running: A ₹50 crore construction business running on Tally and a part-time accountant isn't a finance function, it's record-kee",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "PROBLEMS",
+    "url": "industry9.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "PROBLEMS.  : ",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Payment delays are creating a working capital crisis",
+    "url": "industry9.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Payment delays are creating a working capital crisis. Back-to-back clauses mean I get paid when the main contractor gets paid. That gap is 60-90 days and my costs don't wait. Managing the payment gap you can't negotiate away: The back-to-back clause is structural — you get paid when the main contractor gets paid, and there's no version of the contract where that changes. What y",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "I'm losing money on variation work that isn't getting paid",
+    "url": "industry9.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "I'm losing money on variation work that isn't getting paid. I do the extra work, I raise the variation, the main contractor disputes it or delays approval. I absorb the cost. Getting paid for the work you actually did: Variation work done without a properly approved order is effectively a gift to the main contractor, and most subcontractors know it and let it happen anyway — sc",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "I'm too dependent on one or two main contractors",
+    "url": "industry9.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "I'm too dependent on one or two main contractors. If my main client delays or disputes payment, my whole business is exposed. I need to diversify and de-risk. Reducing how much of the business depends on one client: Concentration risk in a subcontract business is existential — the day your main contractor delays, disputes, or simply awards the next package elsewhere, your reven",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "My documentation isn't strong enough to defend my position",
+    "url": "industry9.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "My documentation isn't strong enough to defend my position. When disputes happen, my daily records, site diaries, and correspondence aren't organised well enough to win the argument. Building the paper trail that wins the argument: When a dispute happens, the subcontractor who wins is usually the one with the better documentation, not the one who was actually right, and most su",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "I want to grow to prime contractor but don't know how",
+    "url": "industry9.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "I want to grow to prime contractor but don't know how. I have the execution capability. I don't have the balance sheet, the bonding capacity, or the bid infrastructure to go prime. Building toward prime contractor, deliberately: The execution capability is already there — what's missing is the balance sheet, the bonding capacity, and the bid infrastructure a client expects from",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "I can't see my real margin until the project is finished",
+    "url": "industry9.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "I can't see my real margin until the project is finished. By the time I understand what a project actually made, I've already committed to the next one at a similar price. Knowing the margin while the job is still running: Most subcontractors find out what a project actually made at the final account, months after it finished, by which point the next job is already committed at",
+    "type": "problem"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Every week of delay has a number attached to it.",
+    "url": "industry9.html#sec-every-week-of-delay-has-a-number-attached-to-",
+    "anchor": "sec-every-week-of-delay-has-a-number-attached-to-",
+    "content": "Every week of delay has a number attached to it. Liquidated damages. Working capital gaps. Cost overruns that don't surface until the project is 60% built. In construction and real estate the problems are financial and operational at the same time, and they compound fast. We work with developers, EPC contractors and construction businesses to build the controls, systems and int",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Who are you?We'll show you theright problems.",
+    "url": "industry9.html#Whotherightproblemssec",
+    "anchor": "Whotherightproblemssec",
+    "content": "Who are you?We'll show you theright problems. Pick your role. The pressure points below reflect your specific context. Real estate developer EPC contractor Infrastructure project owner PMC firm Construction business owner Subcontractor PROBLEMS STHIROS SOLUTION RERA compliance is a daily operational burden Quarterly reporting, escrow fund norms, buyer communication — I'm managi",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "RERA compliance that runs itself instead of panicking quarterly",
+    "url": "industry9.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "RERA compliance that runs itself instead of panicking quarterly Most developers run RERA on spreadsheets, reminders and a compliance consultant kept on standby, which is fine until a reporting deadline tightens or an inspector asks for something your team can't produce fast enough. We turn it into a system instead of a scramble: clear workflows, fund utilisation governance, qua",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Cash flow architecture, for when the P&L is lying to you",
+    "url": "industry9.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Cash flow architecture, for when the P&L is lying to you Collections lag, construction draws land early, and unsold inventory sits there tying up capital you could be using on the next phase — developer cash flow is structural, not a bad quarter. We map it across the whole portfolio, find where the timing actually breaks, accelerate collections where that's realistic, and build",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Getting the schedule back before RERA notices",
+    "url": "industry9.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Getting the schedule back before RERA notices A slipping construction schedule is a double hit in real estate — RERA penalty exposure on one side, buyer confidence draining away on the other, both compounding at once. We audit the current programme, find the actual critical-path blockers rather than the obvious ones, design the recovery sequence, and install the early warning t",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "One view across every project, instead of one file per project",
+    "url": "industry9.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "One view across every project, instead of one file per project Six projects across three cities, each living in its own file, isn't a filing problem — it's a structural risk that shows up the day two of them go wrong at once. We build the portfolio intelligence layer that pulls cost, collections, schedule and RERA status into one place in real time, so the decision you and your",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Margin protected from the underwriting model onward",
+    "url": "industry9.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "Margin protected from the underwriting model onward Developer margin gets decided at underwriting — land cost, approval timeline, construction estimate, sales velocity — and once any of those assumptions drift, there's usually no mechanism in the project to recover it. We rebuild the underwriting model, stress-test the assumptions you're actually relying on, and put a cost cont",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "An operating model built for six projects, not stretched from two",
+    "url": "industry9.html#problems-bank",
+    "anchor": "problems-bank",
+    "content": "An operating model built for six projects, not stretched from two Going from two projects to six isn't more of the same thing — it needs a different delegation structure, a different approval hierarchy, site reporting that doesn't depend on you reading every WhatsApp group, and a team that can function without the promoter in every meeting. We design the operating model for the",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Catching the overrun before it's a done deal",
+    "url": "industry9.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Catching the overrun before it's a done deal Cost overruns in EPC rarely arrive as one event. They accumulate quietly — a bit of material escalation, a scope change, labour running slightly under estimate — and by the time the monthly report shows the number, the project is 60% built and the margin is already gone. We put real-time cost control at the work-package level, tracki",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Recovering the schedule before the LD clock outruns you",
+    "url": "industry9.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Recovering the schedule before the LD clock outruns you At 0.1 to 1% of contract value a week, LD exposure compounds fast, and most contractors know they're behind long before the formal delay notice shows up — they just don't have a recovery plan or the paper trail to defend an extension-of-time claim. We quantify the exposure, build the recovery programme, and put the documen",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Closing the gap between the bill and the payment",
+    "url": "industry9.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Closing the gap between the bill and the payment RA certification running 45 to 60 days, 5 to 10% retention locked until the defects liability period ends, mobilisation advance recovery eating into cash early — the EPC payment cycle is structurally set against the contractor. We rebuild the billing and cash architecture: faster RA billing, a retention recovery strategy, and a 1",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Winning bids at a margin your execution can actually protect",
+    "url": "industry9.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Winning bids at a margin your execution can actually protect The margin problem usually starts at the bid — risk priced too thin, contingencies that look fine on paper, escalation clauses nobody stress-tested, back-to-back terms that quietly push every cost risk downstream to you. We audit the estimating and bid process, reprice the risk allocation properly, and restructure the",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Turning the subcontractor ecosystem from risk into performance",
+    "url": "industry9.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Turning the subcontractor ecosystem from risk into performance For most EPC contractors, 60 to 70% of the actual execution sits with subcontractors, so when one underperforms, delays or disputes payment, the main contractor absorbs all of it — schedule, cost and the client relationship. We rebuild the subcontractor framework: selection criteria that mean something, mobilisation",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Project intelligence that doesn't run on WhatsApp",
+    "url": "industry9.html#problems-insurance",
+    "anchor": "problems-insurance",
+    "content": "Project intelligence that doesn't run on WhatsApp Running multiple packages on WhatsApp updates and monthly reports is a structural risk wearing the costume of a communication habit, and when something breaks on Package 3, you find out at the client review, same as they do. We build one intelligence layer across every package — cost, schedule, quality and risk, consolidated in ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Knowing your contractor's balance sheet before it becomes your problem",
+    "url": "industry9.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Knowing your contractor's balance sheet before it becomes your problem When a contractor's finances deteriorate mid-project, the owner inherits the consequence regardless of whose fault it is — delays, disputed claims, potentially a project in default. We run an independent financial health assessment of the contractor, quantify what it actually means for your project, and desi",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "An honest read on what's actually achievable",
+    "url": "industry9.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "An honest read on what's actually achievable A revised programme from a contractor under pressure is optimistic by design — it has to be, that's the position they're in. What you need is an independent, evidence-based view of what's actually achievable, not what the contractor needs you to believe. We run a structured programme assessment, check the critical path against what's",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Owner's engineer capability, where the ambiguity actually lives",
+    "url": "industry9.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Owner's engineer capability, where the ambiguity actually lives Most owners have procurement and contract management sorted, but not construction oversight, and that's exactly the gap where a contractor finds room to move on design decisions, variation claims and quality sign-offs. We provide owner's engineer support: independent technical oversight, quality assurance, variatio",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Project reporting your board can actually trust",
+    "url": "industry9.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Project reporting your board can actually trust Your board and your lenders want to know three things — on schedule, on budget, and whether the contractor is actually going to deliver — and most owner reporting is assembled from contractor submissions, which makes it exactly as accurate as the contractor needs it to be. We design and run an independent reporting framework that ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Building the position before arbitration becomes the only option",
+    "url": "industry9.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Building the position before arbitration becomes the only option Once an EPC contract turns adversarial — variation claims, EOT requests, force majeure, LD disputes — the party with the better documentation and the more structured argument usually wins, and that's rarely a coincidence. We help owners build the claim defence or counterclaim, organise the evidence trail properly,",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Getting the structure right before you go to market",
+    "url": "industry9.html#problems-fintech",
+    "anchor": "problems-fintech",
+    "content": "Getting the structure right before you go to market The expensive mistakes in a major capital project happen before a contractor is even appointed — in how the owner's requirements are defined, how risk gets allocated in the contract, and how the procurement strategy is designed. We work the front end with you: requirements, procurement strategy, contract structure, risk alloca",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Reporting that's ahead of the client, not behind them",
+    "url": "industry9.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Reporting that's ahead of the client, not behind them A report that hands the client last month's data this month isn't adding intelligence, it's adding formatting. We rebuild the reporting architecture around live site feeds and automated variance analysis, so the dashboard tells the client something they genuinely couldn't see themselves, and the issue surfaces in your report",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "AI project controls, the differentiator clients are already asking for",
+    "url": "industry9.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "AI project controls, the differentiator clients are already asking for Predictive schedule analytics, AI-driven cost overrun warnings, subcontractor performance scoring — clients have started asking for these, and most PMC firms don't have an answer yet. We build the AI layer into your delivery model properly: the methodology underneath it, the tools, and the client-facing outp",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Control instead of expensive coordination",
+    "url": "industry9.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Control instead of expensive coordination A lot of PMC firms end up running meetings, chasing RFIs and distributing minutes, which is coordination, not control, and clients are paying for control — the ability to see a problem coming, make a recommendation, and hold a contractor accountable with evidence behind it. We rebuild the operating model around that distinction, so the ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Documentation that holds up when a project goes wrong",
+    "url": "industry9.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Documentation that holds up when a project goes wrong When a project goes wrong, the PMC's documentation is the first thing anyone examines, and site diaries, inspection records, instruction logs and variation correspondence that aren't systematically kept leave the PMC exposed right alongside the contractor. We rebuild the documentation system and, more importantly, install th",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Consistent delivery, whichever team is on the project",
+    "url": "industry9.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Consistent delivery, whichever team is on the project When quality depends on which team happens to be running a project, that's not process, it's personality, and it becomes a reputational risk the moment your mandate portfolio grows past what one strong team lead can carry personally. We design the standard delivery framework — initiation playbook, reporting templates, contra",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Scaling the PMC business without scaling the burnout",
+    "url": "industry9.html#problems-payments",
+    "anchor": "problems-payments",
+    "content": "Scaling the PMC business without scaling the burnout More clients and more projects on the same team structure eventually shows up as quality slippage, burnout, and a client who's noticed both. Scaling a PMC firm properly needs deliberate infrastructure: hiring built for the pipeline, knowledge that doesn't live in one person's head, workload distributed on purpose, and governa",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Built to survive a bad project, not just a good run",
+    "url": "industry9.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Built to survive a bad project, not just a good run For most construction businesses, the working capital reserve is one bad project away from zero — a delayed payment, a cost overrun past the margin, a dispute that locks up receivables, any one of them can turn into a genuine liquidity crisis. We design the resilience model underneath: a cash buffer that's actually sized corre",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Knowing which jobs are actually making money",
+    "url": "industry9.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Knowing which jobs are actually making money Most construction owners find out a project's real margin at the end, which is exactly when it's too late to do anything about it. Usually the cause is structural — cost allocation that's inconsistent, overhead absorbed by guesswork, variation revenue recognised late. We rebuild the project P&L so you can see margin by project, clien",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Making the business bigger than any one person in it",
+    "url": "industry9.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Making the business bigger than any one person in it The estimating lives in one person's head, the client relationships belong to another, and the site methodology is whatever the senior site manager was trained on — which means when any of them leave, a piece of the business genuinely walks out the door with them. We design the knowledge capture and role architecture that mak",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Protecting margin from the first number you write down",
+    "url": "industry9.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "Protecting margin from the first number you write down Most construction estimating is a blend of historical rates, gut feel and however much competitive pressure the bid is under, and when the job comes in below expectation, there's no diagnostic, just a worse margin than you expected. We rebuild the estimating process — structured cost libraries, a real risk pricing methodolo",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "An operating model that scales without turning into chaos",
+    "url": "industry9.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "An operating model that scales without turning into chaos Taking a construction business from five projects to fifteen needs a genuinely different operating model — more working capital, deeper supervision, real procurement leverage, and a management layer between the owner and the site that doesn't currently exist. Without that infrastructure, growth just produces chaos: quali",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "A finance function that matches the size of the business you're running",
+    "url": "industry9.html#problems-amc",
+    "anchor": "problems-amc",
+    "content": "A finance function that matches the size of the business you're running A ₹50 crore construction business running on Tally and a part-time accountant isn't a finance function, it's record-keeping, and the two stop being the same thing well before you notice. You need project-level P&L, cash flow forecasting, working capital management, and reporting you can actually make a comm",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Managing the payment gap you can't negotiate away",
+    "url": "industry9.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Managing the payment gap you can't negotiate away The back-to-back clause is structural — you get paid when the main contractor gets paid, and there's no version of the contract where that changes. What you can manage is around it: faster billing, invoice factoring where it makes sense, a cash flow forecast that maps the gap honestly, and a working capital buffer, so you're not",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Getting paid for the work you actually did",
+    "url": "industry9.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Getting paid for the work you actually did Variation work done without a properly approved order is effectively a gift to the main contractor, and most subcontractors know it and let it happen anyway — schedule pressure, wanting to keep the relationship, or the paperwork just being too cumbersome to chase. We rebuild the variation process: identification, notification, document",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Reducing how much of the business depends on one client",
+    "url": "industry9.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Reducing how much of the business depends on one client Concentration risk in a subcontract business is existential — the day your main contractor delays, disputes, or simply awards the next package elsewhere, your revenue disappears with them. We help you design the diversification: which new main contractors or sectors are actually worth targeting, how to build the track reco",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Building the paper trail that wins the argument",
+    "url": "industry9.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Building the paper trail that wins the argument When a dispute happens, the subcontractor who wins is usually the one with the better documentation, not the one who was actually right, and most subcontractors don't keep daily site diaries, photographic records and correspondence consistently enough under execution pressure to matter. We design the documentation system and, more",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Building toward prime contractor, deliberately",
+    "url": "industry9.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Building toward prime contractor, deliberately The execution capability is already there — what's missing is the balance sheet, the bonding capacity, and the bid infrastructure a client expects from a prime contractor. We design the transition roadmap: what needs to be true financially, operationally and commercially before your first prime bid, and the sequence that gets you t",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Knowing the margin while the job is still running",
+    "url": "industry9.html#problems-microfinance",
+    "anchor": "problems-microfinance",
+    "content": "Knowing the margin while the job is still running Most subcontractors find out what a project actually made at the final account, months after it finished, by which point the next job is already committed at a similar price. It's a structural problem — cost tracking that lags, variation revenue that isn't recognised until approved, overhead allocated by guesswork. We rebuild th",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "The Sthiros Difference",
+    "url": "industry9.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "The Sthiros Difference We understand project economics BOQ structures, RA billing cycles, retention mechanics, LD exposure, back-to-back subcontract terms: we advise with this fluent already, not translated in from a generic framework. We bring AI to site-level decisions Cost overrun prediction, delay risk scoring, subcontractor performance tracking, material price intelligence",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "We understand project economics",
+    "url": "industry9.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We understand project economics BOQ structures, RA billing cycles, retention mechanics, LD exposure, back-to-back subcontract terms: we advise with this fluent already, not translated in from a generic framework.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "We bring AI to site-level decisions",
+    "url": "industry9.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We bring AI to site-level decisions Cost overrun prediction, delay risk scoring, subcontractor performance tracking, material price intelligence: built for construction as it actually runs, not a dashboard that reports what already happened.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "We build the control infrastructure that stays",
+    "url": "industry9.html#howsthirosdifferentsec",
+    "anchor": "howsthirosdifferentsec",
+    "content": "We build the control infrastructure that stays Project command centres, cash flow trackers, RA billing tools, RERA dashboards: built for your site and finance teams to run daily, not systems that need a consultant to operate.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "What youcan expect",
+    "url": "industry9.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "What youcan expect Project-native Built around how construction actually runs: billing cycles, site operations, contract terms 4-16 weeks Defined outputs, not an open-ended retainer on a ticking day rate Advise. Build.Deploy. Strategy, AI and product from one team. The plan and the system arrive together.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Project-native",
+    "url": "industry9.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "Project-native Built around how construction actually runs: billing cycles, site operations, contract terms",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "4-16 weeks",
+    "url": "industry9.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "4-16 weeks Defined outputs, not an open-ended retainer on a ticking day rate",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Advise. Build.Deploy.",
+    "url": "industry9.html#what-expect-section",
+    "anchor": "what-expect-section",
+    "content": "Advise. Build.Deploy. Strategy, AI and product from one team. The plan and the system arrive together.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Relatedcase studies",
+    "url": "industry9.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Moving inventory intelligence beyond reactive ERP reporting, in 12 weeks Automating multilingual video creation for training and incident reporting, at scale Teaching machine data and Excel to speak one language, in real time Cutting manual cash burn reporting effort by 50-70%, in 25 business days Turning an undocumented risk practice into a Board-ready, CAG",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Three entry points.One conversation.",
+    "url": "industry9.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Three entry points.One conversation. Whether you run a mid-size bank, you're the one who has to make an NBFC's transformation actually work, or you're a founder who just hit the first wall money can't knock down; start wherever's easiest.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "30-min discovery call",
+    "url": "industry9.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "30-min discovery call Tell us the project situation. We'll be direct about what we'd do first — a cash flow fix, a cost control system, or a project intelligence build",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Project and business diagnostic",
+    "url": "industry9.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Project and business diagnostic A free self-assessment across cash flow health, project controls, cost management maturity and RERA readiness. It shows you where you're exposed and what to fix first.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Send us your situation",
+    "url": "industry9.html#choosehowrostartsec",
+    "anchor": "choosehowrostartsec",
+    "content": "Send us your situation Not ready for a call? Three lines: your project or business type, the pressure point, what you've already tried. We'll come back with a direct point of view.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Industries - REAL ESTATE, EPC & CONSTRUCTION",
+    "sectionTitle": "Genuinely not surewhere you fit?",
+    "url": "industry9.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Genuinely not surewhere you fit? Tell us your role, your biggest pressure point, and whether you need advisory, a control system, or both.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - ORIQ",
+    "sectionTitle": "Sthiros - ORIQ",
+    "url": "oriq.html",
+    "anchor": "",
+    "content": "Sthiros Products Sthiros - ORIQ Built from the work we already do. An Oriq product begins inside a live client engagement, with a process that's breaking or a report someone still builds by hand every week. That capability doesn't come from a lab. It comes from inside live client workflows, tested against real operating conditions, producing proprietary products bu",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Sthiros - ORIQ",
+    "sectionTitle": "Built fromthe work wealready do.",
+    "url": "oriq.html#sec-built-fromthe-work-wealready-do",
+    "anchor": "sec-built-fromthe-work-wealready-do",
+    "content": "Built fromthe work wealready do. An Oriq product begins inside a live client engagement, with a process that's breaking or a report someone still builds by hand every week.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - ORIQ",
+    "sectionTitle": "TRADE OPERATIONS",
+    "url": "oriq.html#complianceoperationsec",
+    "anchor": "complianceoperationsec",
+    "content": "TRADE OPERATIONS",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - ORIQ",
+    "sectionTitle": "Keliros",
+    "url": "oriq.html#complianceoperationsec",
+    "anchor": "complianceoperationsec",
+    "content": "Keliros An export workflow that files itself. Keliros turns a shipment into one continuous workflow, from sales invoice to proof of delivery, replacing the patchwork of email, spreadsheets, and WhatsApp groups most export teams still run on. Piloted inside a live steel export corridor running India to the US, with a VC-backed manufacturer as the first client.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - ORIQ",
+    "sectionTitle": "COMPLIANCE OS",
+    "url": "oriq.html#complianceoperationsec",
+    "anchor": "complianceoperationsec",
+    "content": "COMPLIANCE OS",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - ORIQ",
+    "sectionTitle": "Thesen",
+    "url": "oriq.html#complianceoperationsec",
+    "anchor": "complianceoperationsec",
+    "content": "Thesen A compliance register that updates itself. Reads a company's entity structure and builds its complete compliance register automatically, then keeps it current as obligations change. Piloted inside a diversified group with operations across 30-plus Indian and US states, plus a manufacturing and export footprint into Mexico. 600+ obligations trackedfor one client 2 countri",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - ORIQ",
+    "sectionTitle": "Tell us what's still being done by hand.",
+    "url": "oriq.html#Telluswhatsstillbeingdonebyhandsec",
+    "anchor": "Telluswhatsstillbeingdonebyhandsec",
+    "content": "Tell us what's still being done by hand. Most Oriq products started as exactly that kind of complaint. Tell usyours, and we'll tell you honestly whether it's a project or a product.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Our Work - Sthiros",
+    "sectionTitle": "Our Work - Sthiros",
+    "url": "our-work.html",
+    "anchor": "",
+    "content": "Our Work - Sthiros Built for what cannot fail. SEE MORE Complexity leaves clues. Most organisations have the data. Few have a system that can make sense of it. SPEAK WITH STHIROS Trusted across critical industries Organisations trust Sthiros when the cost of uncertainty is too high. 70+ Organisations 6 Industries ALL INDUSTRIES HEALTHCARE BFSI & FI",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Our Work - Sthiros",
+    "sectionTitle": "Complexityleaves clues.",
+    "url": "our-work.html#complexity-banner",
+    "anchor": "complexity-banner",
+    "content": "Complexityleaves clues. Most organisations have the data.Few have a system that can make sense of it.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Our Work - Sthiros",
+    "sectionTitle": "Trusted acrosscritical industries",
+    "url": "our-work.html#abs-wrapper",
+    "anchor": "abs-wrapper",
+    "content": "Trusted acrosscritical industries Organisations trust Sthiros when the cost of uncertainty is too high.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Our Work - Sthiros",
+    "sectionTitle": "Intelligence",
+    "url": "our-work.html#intel-repository-section",
+    "anchor": "intel-repository-section",
+    "content": "Intelligence",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Our Work - Sthiros",
+    "sectionTitle": "repository",
+    "url": "our-work.html#intel-repository-section",
+    "anchor": "intel-repository-section",
+    "content": "repository Explore by challenge, capability or outcome.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Our Work - Sthiros",
+    "sectionTitle": "BROWSE ALL CASE STUDIES",
+    "url": "our-work.html#browse-all-header-wrapper",
+    "anchor": "browse-all-header-wrapper",
+    "content": "BROWSE ALL CASE STUDIES",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Our Work - Sthiros",
+    "sectionTitle": "Our Work - Sthiros",
+    "url": "ourwork.html",
+    "anchor": "",
+    "content": "Our Work - Sthiros Built for what cannot fail. SEE MORE Complexity leaves clues. Most organisations have the data. Few have a system that can make sense of it. SPEAK WITH STHIROS Trusted across critical industries Organisations trust Sthiros when the cost of uncertainty is too high. 70+ Organisations 6 Industries ALL INDUSTRIES HEALTHCARE BFSI & FI",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Our Work - Sthiros",
+    "sectionTitle": "Complexityleaves clues.",
+    "url": "ourwork.html#complexity-banner",
+    "anchor": "complexity-banner",
+    "content": "Complexityleaves clues. Most organisations have the data.Few have a system that can make sense of it.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Our Work - Sthiros",
+    "sectionTitle": "Trusted acrosscritical industries",
+    "url": "ourwork.html#abs-wrapper",
+    "anchor": "abs-wrapper",
+    "content": "Trusted acrosscritical industries Organisations trust Sthiros when the cost of uncertainty is too high.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Our Work - Sthiros",
+    "sectionTitle": "Intelligence",
+    "url": "ourwork.html#intel-repository-section",
+    "anchor": "intel-repository-section",
+    "content": "Intelligence",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Our Work - Sthiros",
+    "sectionTitle": "repository",
+    "url": "ourwork.html#intel-repository-section",
+    "anchor": "intel-repository-section",
+    "content": "repository Explore by challenge, capability or outcome.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Our Work - Sthiros",
+    "sectionTitle": "BROWSE ALL CASE STUDIES",
+    "url": "ourwork.html#browse-all-header-wrapper",
+    "anchor": "browse-all-header-wrapper",
+    "content": "BROWSE ALL CASE STUDIES",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Products",
+    "sectionTitle": "Sthiros - Products",
+    "url": "products.html",
+    "anchor": "",
+    "content": "Sthiros Products Sthiros - Products Built from the work we already do. An Oriq product begins inside a live client engagement, with a process that's breaking or a report someone still builds by hand every week. That capability doesn't come from a lab. It comes from inside live client workflows, tested against real operating conditions, producing proprietary product",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Sthiros - Products",
+    "sectionTitle": "Built fromthe work wealready do.",
+    "url": "products.html#sec-built-fromthe-work-wealready-do",
+    "anchor": "sec-built-fromthe-work-wealready-do",
+    "content": "Built fromthe work wealready do. An Oriq product begins inside a live client engagement, with a process that's breaking or a report someone still builds by hand every week.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Products",
+    "sectionTitle": "TRADE OPERATIONS",
+    "url": "products.html#complianceoperationsec",
+    "anchor": "complianceoperationsec",
+    "content": "TRADE OPERATIONS",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Products",
+    "sectionTitle": "Keliros",
+    "url": "products.html#complianceoperationsec",
+    "anchor": "complianceoperationsec",
+    "content": "Keliros An export workflow that files itself. Keliros turns a shipment into one continuous workflow, from sales invoice to proof of delivery, replacing the patchwork of email, spreadsheets, and WhatsApp groups most export teams still run on. Piloted inside a live steel export corridor running India to the US, with a VC-backed manufacturer as the first client.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Products",
+    "sectionTitle": "COMPLIANCE OS",
+    "url": "products.html#complianceoperationsec",
+    "anchor": "complianceoperationsec",
+    "content": "COMPLIANCE OS",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Products",
+    "sectionTitle": "Niyamos",
+    "url": "products.html#complianceoperationsec",
+    "anchor": "complianceoperationsec",
+    "content": "Niyamos A compliance register that updates itself. Reads a company's entity structure and builds its complete compliance register automatically, then keeps it current as obligations change. Piloted inside a diversified group with operations across 30-plus Indian and US states, plus a manufacturing and export footprint into Mexico. 600+ obligations trackedfor one client 2 countr",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Products",
+    "sectionTitle": "Tell us what'sstill being doneby hand.",
+    "url": "products.html#Telluswhatsstillbeingdonebyhandsec",
+    "anchor": "Telluswhatsstillbeingdonebyhandsec",
+    "content": "Tell us what'sstill being doneby hand. Most Oriq products started as exactly that kind of complaint. Tell usyours, and we'll tell you honestly whether it's a project or a product.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Repository - sthiros",
+    "sectionTitle": "Repository - sthiros",
+    "url": "repository.html",
+    "anchor": "",
+    "content": "Repository - sthiros Proof over promises. Our Case studies, perspectives, white papers, and the people behind them, gathered in one place. Find what you're looking for Type Case Study Industry Insights Leadership Insights White Paper and Research Articles Service All Services Strategy Risk Cyber AI Who We Serve All Who We Serve BFSI & Fintech D2C &",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Repository - sthiros",
+    "sectionTitle": "Proof over promises.",
+    "url": "repository.html#sec-proof-over-promises",
+    "anchor": "sec-proof-over-promises",
+    "content": "Proof over promises. Our Case studies, perspectives, white papers, and the people behind them, gathered inone place.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Repository - sthiros",
+    "sectionTitle": "Find what you'relooking for",
+    "url": "repository.html#sec-find-what-yourelooking-for",
+    "anchor": "sec-find-what-yourelooking-for",
+    "content": "Find what you'relooking for Type Case Study Industry Insights Leadership Insights White Paper and Research Articles Service All Services Strategy Risk Cyber AI Who We Serve All Who We Serve BFSI & Fintech D2C & Retail Energy, Mining & Utilities GCC Healthcare & Life Sciences Manufacturing Public Sector & Government Real Estate / EPC / Construction Telecom & Digital Infrastructu",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Repository - sthiros",
+    "sectionTitle": "CASE STUDIES",
+    "url": "repository.html#sec-case-studies",
+    "anchor": "sec-case-studies",
+    "content": "CASE STUDIES",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Repository - sthiros",
+    "sectionTitle": "Work that speaksfor itself",
+    "url": "repository.html#sec-work-that-speaksfor-itself",
+    "anchor": "sec-work-that-speaksfor-itself",
+    "content": "Work that speaksfor itself A running record of problems we've solved and what it took to solve them. Catching customs and demurrage risk 48 hours before it costs a steel exporter money Taking a manufacturer's intelligence from a 35 to one governed Smart Genba view Taking a manufacturer's intelligence from a 35 to one governed Smart Genba view Turning an undocumented risk practi",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Repository - sthiros",
+    "sectionTitle": "Industry Insight",
+    "url": "repository.html#sec-industry-insight",
+    "anchor": "sec-industry-insight",
+    "content": "Industry Insight A sector-by-sector look ahead: the challenges taking shape, and the openings that come with them. STHIROS | D2C & RETAIL | INDIA-LED, GLOBALLY INFORMED",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Repository - sthiros",
+    "sectionTitle": "Our two cents",
+    "url": "repository.html#our-two-cents-section",
+    "anchor": "our-two-cents-section",
+    "content": "Our two cents Leadership talking through real problems, across articles, videos and multiple perspectives. Prime Take 1 | What's the One Risk no company Budgeted for in 2025 Prime Take 2 | CbCR India Avoid Penalities, Prove Substance Prime Take 3 | Striking the Balance Navigating Consulting & Automation Under One Roof Prime Take 4 | SPR at GFF 2025 \"Operationalising the Future ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Repository - sthiros",
+    "sectionTitle": "The Deep Dives",
+    "url": "repository.html#thedeepdivessec",
+    "anchor": "thedeepdivessec",
+    "content": "The Deep Dives White papers and research articles on the problems worth sitting with. Article Title Article content Article Title Article content Article Title Article content",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Repository - sthiros",
+    "sectionTitle": "Article Title",
+    "url": "repository.html#thedeepdivessec",
+    "anchor": "thedeepdivessec",
+    "content": "Article Title Article content",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Repository - sthiros",
+    "sectionTitle": "Yours can too.",
+    "url": "repository.html#yourscantoosec",
+    "anchor": "yourscantoosec",
+    "content": "Yours can too.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Services",
+    "url": "risk1.html",
+    "anchor": "",
+    "content": "Services WHAT WE DO → RISK → ENTERPRISE GOVERNANCE & REGULATORY STRATEGY Governance is what lets a board say yes , and defend it later. Boards don't want a longer list of what could go wrong. They want a framework they can act on and stand behind. We build that framework: enterprise risk mapped to standards a regulator recognizes, clear accountabil",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Governance is what lets a boardsay yes, anddefend it later.",
+    "url": "risk1.html#sec-governance-is-what-lets-a-boardsay-yes-anddef",
+    "anchor": "sec-governance-is-what-lets-a-boardsay-yes-anddef",
+    "content": "Governance is what lets a boardsay yes, anddefend it later.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Service lines& deliverables",
+    "url": "risk1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Service lines& deliverables Enterprise GRC & Frameworks The operating system for how your organization takes risk. ERM & COSO Frameworks Board-grade risk architecture, mapped to the framework and built around who's actually accountable for each decision. Governance Framework Design Policies, SOPs, DOA, and control ownership shaped into governance that gets used, not filed. Risk",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Enterprise GRC & Frameworks",
+    "url": "risk1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Enterprise GRC & Frameworks",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "ERM & COSO Frameworks",
+    "url": "risk1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "ERM & COSO Frameworks Board-grade risk architecture, mapped to the framework and built around who's actually accountable for each decision.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Governance Framework Design",
+    "url": "risk1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Governance Framework Design Policies, SOPs, DOA, and control ownership shaped into governance that gets used, not filed.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Risk Registers & Mapping",
+    "url": "risk1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Risk Registers & Mapping Risk registers converted from static spreadsheets into living maps, owned, escalated, and closed out.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Regulatory Compliance & Readiness",
+    "url": "risk1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Regulatory Compliance & Readiness",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Assurance Readiness (IFC, SOX, SOC)",
+    "url": "risk1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Assurance Readiness (IFC, SOX, SOC) IFC, SOX, and SOC readiness built before the audit shows up, with evidence and controls that already hold.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Third-Party Risk Management",
+    "url": "risk1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Third-Party Risk Management Vendor and partner risk made visible before an outsourced dependency becomes an enterprise problem.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Corporate Governance Reviews",
+    "url": "risk1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Corporate Governance Reviews A practical health check on how oversight and accountability actually function, not just how they're documented.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Social Audit",
+    "url": "risk1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Social Audit Social commitments checked against independent evidence, built to withstand scrutiny.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "What'sdifferentabout workingwith us",
+    "url": "risk1.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "What'sdifferentabout workingwith us",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "This is our founding strength.",
+    "url": "risk1.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "This is our founding strength. Risk and assurance are where the practice began, with depth built over 20+ years.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Governance that enables growth.",
+    "url": "risk1.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Governance that enables growth. Frameworks designed to let you take calculated risks, not to freeze you in place.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Board- and audit-grade.",
+    "url": "risk1.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Board- and audit-grade. Work built to stand up to a board, an auditor, and a regulator.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "When you'llneed this",
+    "url": "risk1.html#Whenyouneedthis",
+    "anchor": "Whenyouneedthis",
+    "content": "When you'llneed this",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Relatedcase studies",
+    "url": "risk1.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Mapping every risk across a $9.7B credit union, then cutting the critical ones by 97% Validating access and control integrity across a lender's core systems, end to end Finding forged signatures and dead beneficiaries behind Rs. 90 Lakhs of certified CSR spend Mapping every risk across a $9.7B credit union, then cutting the critical ones by 97% Closing SoD c",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Skip the deck.",
+    "url": "risk1.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Skip the deck.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Tell us what you're actually deciding.",
+    "url": "risk1.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Tell us what you're actually deciding. Tell us the decision you're facing. Book a 30-minute call and we'll tell you what we'd do first. Or send us three lines: your situation, what you've tried. And we'll come back with a point of view, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Services",
+    "url": "risk2.html",
+    "anchor": "",
+    "content": "Services WHAT WE DO → RISK → STRATEGIC ASSURANCE & PROCESS INTELLIGENCE The risk that hurts most rarely looks dramatic. Real exposure hides in the ordinary: a capex project drifting past its milestones, a contract quietly not delivering what was signed. We bring the same rigor to financial risk and commercial risk and turn internal audit from an an",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "The risk that hurts most rarely looks dramatic.",
+    "url": "risk2.html#sec-the-risk-that-hurts-most-rarely-looks-dramati",
+    "anchor": "sec-the-risk-that-hurts-most-rarely-looks-dramati",
+    "content": "The risk that hurts most rarely looks dramatic.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Service lines& deliverables",
+    "url": "risk2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Service lines& deliverables Financial & Capital Assurance Where the money is made, spent, and sometimes quietly lost. Financial & Credit Risk Management Financial and credit exposure surfaced early, before it shows up as a cash problem leadership didn't see coming. Capital Project Assurance Capital outlay checked against milestones and cost before an overrun becomes the story. ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Financial & Capital Assurance",
+    "url": "risk2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Financial & Capital Assurance",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Financial & Credit Risk Management",
+    "url": "risk2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Financial & Credit Risk Management Financial and credit exposure surfaced early, before it shows up as a cash problem leadership didn't see coming.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Capital Project Assurance",
+    "url": "risk2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Capital Project Assurance Capital outlay checked against milestones and cost before an overrun becomes the story.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Project Risk Management",
+    "url": "risk2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Project Risk Management Project derailers caught early enough that timelines and budgets can still be corrected, not just explained.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Revenue Assurance",
+    "url": "risk2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Revenue Assurance Revenue leakage traced across order, billing, and collection, wherever it's quietly going missing.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Commercial & Contract Assurance",
+    "url": "risk2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Commercial & Contract Assurance",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Contract Reviews & Compliance",
+    "url": "risk2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Contract Reviews & Compliance Contract terms checked against what's actually being delivered and billed, so value doesn't quietly leak between the two.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Supply Chain & Logistics Audit",
+    "url": "risk2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Supply Chain & Logistics Audit Supply chain movement tested end to end for where control breaks down and exposure builds up.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Vendor Risk Assessment",
+    "url": "risk2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Vendor Risk Assessment Critical suppliers classified by what failure would cost you, and what it takes to prevent it.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Internal Audit Transformation",
+    "url": "risk2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Internal Audit Transformation",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Risk-Based Internal Audit",
+    "url": "risk2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Risk-Based Internal Audit Internal audit focused on where the real risk sits, not just where the checklist points.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Process Maturity Benchmarking",
+    "url": "risk2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Process Maturity Benchmarking Process maturity measured honestly enough to show what's actually controlled versus what's just surviving on manual effort.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Internal Audit CoE",
+    "url": "risk2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Internal Audit CoE A modern internal audit engine, methodology, tools, and governance built to scale with the business, not rebuilt every time it grows.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "What'sdifferentabout workingwith us",
+    "url": "risk2.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "What'sdifferentabout workingwith us",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "We separate financial risk from commercial risk.",
+    "url": "risk2.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "We separate financial risk from commercial risk. Real depth in both, not a single narrow lens applied to everything.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Assurance that finds money.",
+    "url": "risk2.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Assurance that finds money. Revenue leakage and cost exposure recovered.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Risk-based, not checklist-based.",
+    "url": "risk2.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Risk-based, not checklist-based. Effort goes where the exposure actually sits.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "When you'llneed this",
+    "url": "risk2.html#Whenyouneedthis",
+    "anchor": "Whenyouneedthis",
+    "content": "When you'llneed this",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Relatedcase studies",
+    "url": "risk2.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Mapping every risk across a $9.7B credit union, then cutting the critical ones by 97% Validating access and control integrity across a lender's core systems, end to end Finding forged signatures and dead beneficiaries behind Rs. 90 Lakhs of certified CSR spend Mapping every risk across a $9.7B credit union, then cutting the critical ones by 97% Closing SoD c",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Skip the deck.",
+    "url": "risk2.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Skip the deck.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Tell us what you're actually deciding.",
+    "url": "risk2.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Tell us what you're actually deciding. Tell us the decision you're facing. Book a 30-minute call and we'll tell you what we'd do first. Or send us three lines: your situation, what you've tried. And we'll come back with a point of view, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Services",
+    "url": "risk3.html",
+    "anchor": "",
+    "content": "Services WHAT WE DO → RISK → DIGITAL RISK & TECHNOLOGY CONTROLS Control gaps moved. They now live inside your systems. As the business moved into SAP, Oracle, and now AI, so did the risk. Access combinations that shouldn't exist, AI decisions nobody's governing. We govern risk where it actually lives: inside the applications and the AI running the",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Control gaps moved. Theynow live inside your systems.",
+    "url": "risk3.html#sec-control-gaps-moved-theynow-live-inside-your-s",
+    "anchor": "sec-control-gaps-moved-theynow-live-inside-your-s",
+    "content": "Control gaps moved. Theynow live inside your systems.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Service lines& deliverables",
+    "url": "risk3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Service lines& deliverables Application GRC & IT Controls The controls living inside the systems that run your business. ITGC & Application Controls ERP and core-system controls tested where the risk that actually matters to the business sits. Access Governance & SOD Toxic access combinations and privilege creep caught before a control weakness turns into a fraud opportunity. D",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Application GRC & IT Controls",
+    "url": "risk3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Application GRC & IT Controls",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "ITGC & Application Controls",
+    "url": "risk3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "ITGC & Application Controls ERP and core-system controls tested where the risk that actually matters to the business sits.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Access Governance & SOD",
+    "url": "risk3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Access Governance & SOD Toxic access combinations and privilege creep caught before a control weakness turns into a fraud opportunity.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Data Analytics & Dashboarding",
+    "url": "risk3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Data Analytics & Dashboarding Risk and control data turned into live dashboards that surface exceptions before leadership has to go looking for them.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Emerging Tech & AI Risk",
+    "url": "risk3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Emerging Tech & AI Risk",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "AI Risk & Ethical Frameworks",
+    "url": "risk3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "AI Risk & Ethical Frameworks Responsible AI governance that keeps innovation inside the enterprise's actual risk appetite, not just its intentions.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "AI Lifecycle Governance",
+    "url": "risk3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "AI Lifecycle Governance AI controlled from training to deployment, so a model stays explainable and monitored long after launch day.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Regulatory Alignment",
+    "url": "risk3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Regulatory Alignment AI initiatives aligned to regulation while it's still emerging, before compliance becomes a production problem.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "What'sdifferentabout workingwith us",
+    "url": "risk3.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "What'sdifferentabout workingwith us",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "We govern the systems, not just the paperwork.",
+    "url": "risk3.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "We govern the systems, not just the paperwork. Controls where the business actually runs, inside SAP, Oracle, and AI.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "One coherent view of AI risk.",
+    "url": "risk3.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "One coherent view of AI risk. This is Risk's control lens on AI, aligned with what the AI tower builds.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Analytics-led and continuous.",
+    "url": "risk3.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Analytics-led and continuous. Monitoring that's live and visible.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "When you'llneed this",
+    "url": "risk3.html#Whenyouneedthis",
+    "anchor": "Whenyouneedthis",
+    "content": "When you'llneed this",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Relatedcase studies",
+    "url": "risk3.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Mapping every risk across a $9.7B credit union, then cutting the critical ones by 97% Validating access and control integrity across a lender's core systems, end to end Finding forged signatures and dead beneficiaries behind Rs. 90 Lakhs of certified CSR spend Mapping every risk across a $9.7B credit union, then cutting the critical ones by 97% Closing SoD c",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Skip the deck.",
+    "url": "risk3.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Skip the deck.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Tell us what you're actually deciding.",
+    "url": "risk3.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Tell us what you're actually deciding. Tell us the decision you're facing. Book a 30-minute call and we'll tell you what we'd do first. Or send us three lines: your situation, what you've tried. And we'll come back with a point of view, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Services",
+    "url": "risk4.html",
+    "anchor": "",
+    "content": "Services WHAT WE DO → RISK → FORENSIC INTEGRITY & ASSET PROTECTION Fraud rarely announces itself. It shows up as a number that's off. By the time it reaches the numbers, the money is usually gone. We work both ends, building defenses that make fraud hard, and running the investigation when it isn't hard enough. Loss isn't only financial, so we prot",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Fraud rarelyannounces itself.It shows up as anumber that's off.",
+    "url": "risk4.html#sec-fraud-rarelyannounces-itself-it-shows-up-as-a",
+    "anchor": "sec-fraud-rarelyannounces-itself-it-shows-up-as-a",
+    "content": "Fraud rarelyannounces itself.It shows up as anumber that's off.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Service lines& deliverables",
+    "url": "risk4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Service lines& deliverables Fraud Defense & Forensics Stop the loss you can prevent; investigate the loss you couldn't. Fraud Risk Management Fraud defenses built into how the business actually runs, before loss has room to occur. Forensic Investigations Suspected misconduct investigated down to the root cause, with evidence that supports what happens next. Anti-Bribery & Corru",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Fraud Defense & Forensics",
+    "url": "risk4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Fraud Defense & Forensics",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Fraud Risk Management",
+    "url": "risk4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Fraud Risk Management Fraud defenses built into how the business actually runs, before loss has room to occur.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Forensic Investigations",
+    "url": "risk4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Forensic Investigations Suspected misconduct investigated down to the root cause, with evidence that supports what happens next.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Anti-Bribery & Corruption",
+    "url": "risk4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Anti-Bribery & Corruption Corruption risk controlled at the level it actually happens, third-party dealings and approval discipline.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Digital & Tech Forensics",
+    "url": "risk4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Digital & Tech Forensics Digital evidence recovered and analyzed to uncover fraud that left a trail, even a well-hidden one.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Asset & Inventory Assurance",
+    "url": "risk4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Asset & Inventory Assurance",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Inventory & Stock Audits",
+    "url": "risk4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Inventory & Stock Audits Book stock tested against physical reality, not just the records that say it should match.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Physical Asset Management",
+    "url": "risk4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Physical Asset Management Physical assets tracked and reconciled so leakage shows up before it becomes a write-off.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Brand & Customer Assurance",
+    "url": "risk4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Brand & Customer Assurance Customer experience and brand standards tested where they're actually delivered, on the ground.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Incentive & PLI Audits",
+    "url": "risk4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Incentive & PLI Audits Incentive and PLI claims validated before the benefit is at risk of denial or clawback.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "What'sdifferentabout workingwith us",
+    "url": "risk4.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "What'sdifferentabout workingwith us",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Prevention and investigation, one team.",
+    "url": "risk4.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Prevention and investigation, one team. We build the defenses and run the investigation when they're tested.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "We protect tangible assets, not just financial ones.",
+    "url": "risk4.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "We protect tangible assets, not just financial ones. Fraud defense plus physical asset assurance, built for retail, manufacturing, and BFSI.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Evidence that holds.",
+    "url": "risk4.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Evidence that holds. Forensics rigorous enough to stand up when it actually counts.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "When you'llneed this",
+    "url": "risk4.html#Whenyouneedthis",
+    "anchor": "Whenyouneedthis",
+    "content": "When you'llneed this",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Relatedcase studies",
+    "url": "risk4.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Mapping every risk across a $9.7B credit union, then cutting the critical ones by 97% Validating access and control integrity across a lender's core systems, end to end Finding forged signatures and dead beneficiaries behind Rs. 90 Lakhs of certified CSR spend Mapping every risk across a $9.7B credit union, then cutting the critical ones by 97% Closing SoD c",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Skip the deck.",
+    "url": "risk4.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Skip the deck.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Tell us what you're actually deciding.",
+    "url": "risk4.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Tell us what you're actually deciding. Tell us the decision you're facing. Book a 30-minute call and we'll tell you what we'd do first. Or send us three lines: your situation, what you've tried. And we'll come back with a point of view, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Services",
+    "sectionTitle": "Sthiros - Services",
+    "url": "services.html",
+    "anchor": "",
+    "content": "Sthiros - Services Four capabilities. One conversation. Inside Sthiros, Strategy, Risk, Cyber, and AI work as one team, with one point of contact for you. Risk gets consulted before a strategy is signed off. AI deployments get security built in from day one. That's what holding complexity looks like. Strategy Risk Cyber AI Strategy turns ambition i",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Sthiros - Services",
+    "sectionTitle": "Four capabilities.One conversation.",
+    "url": "services.html#services_banner",
+    "anchor": "services_banner",
+    "content": "Four capabilities.One conversation. Inside Sthiros, Strategy, Risk, Cyber, and AI work as one team, with one point of contact for you. Risk gets consulted before a strategy is signed off. AI deployments get security built in from day one. That's what holding complexity looks like.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Services",
+    "sectionTitle": "Business &Growth Strategy",
+    "url": "services.html#tab-strategy",
+    "anchor": "tab-strategy",
+    "content": "Business &Growth Strategy",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Services",
+    "sectionTitle": "StrategicFinance &Transactions",
+    "url": "services.html#tab-strategy",
+    "anchor": "tab-strategy",
+    "content": "StrategicFinance &Transactions",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Services",
+    "sectionTitle": "EnterpriseOperations &Ecosystems",
+    "url": "services.html#tab-strategy",
+    "anchor": "tab-strategy",
+    "content": "EnterpriseOperations &Ecosystems",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Services",
+    "sectionTitle": "Change &OrganizationalAcceleration",
+    "url": "services.html#tab-strategy",
+    "anchor": "tab-strategy",
+    "content": "Change &OrganizationalAcceleration",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Services",
+    "sectionTitle": "Al Strategy &SovereignGovernance",
+    "url": "services.html#tab-ai",
+    "anchor": "tab-ai",
+    "content": "Al Strategy &SovereignGovernance",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Services",
+    "sectionTitle": "IntelligentFoundation",
+    "url": "services.html#tab-ai",
+    "anchor": "tab-ai",
+    "content": "IntelligentFoundation",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Services",
+    "sectionTitle": "AgenticOperations &Automation",
+    "url": "services.html#tab-ai",
+    "anchor": "tab-ai",
+    "content": "AgenticOperations &Automation",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Services",
+    "sectionTitle": "CognitiveExperience &Engineering",
+    "url": "services.html#tab-ai",
+    "anchor": "tab-ai",
+    "content": "CognitiveExperience &Engineering",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Services",
+    "sectionTitle": "EnterpriseGovernance &Regulatory Strategy",
+    "url": "services.html#tab-risk",
+    "anchor": "tab-risk",
+    "content": "EnterpriseGovernance &Regulatory Strategy",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Services",
+    "sectionTitle": "StrategicAssurance &ProcessIntelligence",
+    "url": "services.html#tab-risk",
+    "anchor": "tab-risk",
+    "content": "StrategicAssurance &ProcessIntelligence",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Services",
+    "sectionTitle": "Digital Risk &TechnologyControls",
+    "url": "services.html#tab-risk",
+    "anchor": "tab-risk",
+    "content": "Digital Risk &TechnologyControls",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Services",
+    "sectionTitle": "ForensicIntegrity &AssetProtection",
+    "url": "services.html#tab-risk",
+    "anchor": "tab-risk",
+    "content": "ForensicIntegrity &AssetProtection",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Services",
+    "sectionTitle": "Offensive Security& Exposure",
+    "url": "services.html#tab-cyber",
+    "anchor": "tab-cyber",
+    "content": "Offensive Security& Exposure",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Services",
+    "sectionTitle": "CloudSecurity &Zero Trust",
+    "url": "services.html#tab-cyber",
+    "anchor": "tab-cyber",
+    "content": "CloudSecurity &Zero Trust",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Services",
+    "sectionTitle": "Data Privacy& ProtectionEngineering",
+    "url": "services.html#tab-cyber",
+    "anchor": "tab-cyber",
+    "content": "Data Privacy& ProtectionEngineering",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Services",
+    "sectionTitle": "CyberResilience &CrisisReadiness",
+    "url": "services.html#tab-cyber",
+    "anchor": "tab-cyber",
+    "content": "CyberResilience &CrisisReadiness",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Services",
+    "sectionTitle": "Our Clients",
+    "url": "services.html#our-clients-section",
+    "anchor": "our-clients-section",
+    "content": "Our Clients ALL INDUSTRIES HEALTHCARE BFSI & FINTECH IT & ITeS BFSI DEFENCE SERVICE AUTOMOTIVE FMCG CONSTRUCTION BUSINESS CONSULTING HOTEL NGO RETAIL MINING AGRI BUSINESS BPO REAL ESTATE MANUFACTURING ENTERTAINMENT GAS AND OIL GOVERNMENT IT CHARTED ACCOUNTANT EDUTECH",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Sthiros - Services",
+    "sectionTitle": "Start theconversation",
+    "url": "services.html#sthirosconversationsec",
+    "anchor": "sthirosconversationsec",
+    "content": "Start theconversation Tell us the decision you're facing. Book a 30-minute call and we'll tell you what we'd do first. Or send us three lines, your situation, what you've tried, and we'll come back with a point of view, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Services",
+    "url": "servicesai1.html",
+    "anchor": "",
+    "content": "Services WHAT WE DO → AI → AI Strategy and Sovereign Governance The hard part isn't building AI. It's choosing what to build. Pilots are easy to start and hard to justify. The organizations pulling ahead pick the few use cases that pay, and govern them well enough to put in front of a board and a regulator. We handle the strategy and the risk of AI",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "The hard partisn't building AI.It's choosing whatto build.",
+    "url": "servicesai1.html#sec-the-hard-partisnt-building-ai-its-choosing-wh",
+    "anchor": "sec-the-hard-partisnt-building-ai-its-choosing-wh",
+    "content": "The hard partisn't building AI.It's choosing whatto build.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Service lines& deliverables",
+    "url": "servicesai1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Service lines& deliverables AI Strategy & Value Where AI actually pays, and where it just burns budget. Business Case & ROI The number an AI investment has to hit before it gets funded, and the tracking that proves whether it did. Maturity Assessment An honest read on whether the business is actually ready for AI, or just talking about it. Vision & Roadmap Leadership's AI ambit",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "AI Strategy & Value",
+    "url": "servicesai1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "AI Strategy & Value",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Business Case & ROI",
+    "url": "servicesai1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Business Case & ROI The number an AI investment has to hit before it gets funded, and the tracking that proves whether it did.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Maturity Assessment",
+    "url": "servicesai1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Maturity Assessment An honest read on whether the business is actually ready for AI, or just talking about it.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Vision & Roadmap",
+    "url": "servicesai1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Vision & Roadmap Leadership's AI ambition turned into a sequence, what gets built first, and who's accountable for it.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Use Case Prioritization",
+    "url": "servicesai1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Use Case Prioritization The AI ideas worth funding, separated from the ones that just sound good in a slide.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Sovereign Governance (GRC)",
+    "url": "servicesai1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Sovereign Governance (GRC)",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Responsible AI Frameworks",
+    "url": "servicesai1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Responsible AI Frameworks Ethical guardrails and bias controls that fit how this enterprise actually makes decisions, not a generic template.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Lifecycle Governance",
+    "url": "servicesai1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Lifecycle Governance Every model tracked from intake to retirement, so nothing runs unmonitored once it's live.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Regulatory Alignment",
+    "url": "servicesai1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Regulatory Alignment AI initiatives checked against what regulators will ask, before production makes the question urgent.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Build vs Buy Advisory",
+    "url": "servicesai1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Build vs Buy Advisory A clear call on building, buying, or walking away, based on what the use case actually needs, not what's trending.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Strategic Program Office",
+    "url": "servicesai1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Strategic Program Office",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Agile Governance",
+    "url": "servicesai1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Agile Governance Fast AI delivery that still leaves a trail leadership can follow.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Project Intake",
+    "url": "servicesai1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Project Intake One front door for AI demand, where the strong ideas get through and the weak ones don't waste a quarter.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Capacity Planning",
+    "url": "servicesai1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Capacity Planning AI ambition checked against what it actually costs, in people, compute, and vendor time.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "PMO Tooling",
+    "url": "servicesai1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "PMO Tooling A single dashboard that shows what's shipping, what's stuck, and what it's worth.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "What'sdifferentabout workingwith us",
+    "url": "servicesai1.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "What'sdifferentabout workingwith us",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "We own the risk and the strategy, not just the build.",
+    "url": "servicesai1.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "We own the risk and the strategy, not just the build. The hard governance calls sit with us, not left for you to make alone after handover.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Finance-grade ROI.",
+    "url": "servicesai1.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Finance-grade ROI. Every AI bet is grounded in a business case, not momentum or hype.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Governance that ships.",
+    "url": "servicesai1.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Governance that ships. Control designed to enable delivery, not stall it.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "When you'llneed this",
+    "url": "servicesai1.html#Whenyouneedthis",
+    "anchor": "Whenyouneedthis",
+    "content": "When you'llneed this",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Relatedcase studies",
+    "url": "servicesai1.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Catching customs and demurrage risk 48 hours before it costs a steel exporter money Taking a manufacturer's intelligence from a 35 to one governed Smart Genba view Turning an undocumented risk practice into a Board-ready, CAG-audit-ready ERM framework Automating multilingual video creation for training and incident reporting, at scale Cutting manual cash bur",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Skip the deck.",
+    "url": "servicesai1.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Skip the deck.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Tell us the decision you're facing.",
+    "url": "servicesai1.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Tell us the decision you're facing. Book a 30-minute call and we'll tell you what we'd do first. Or send us three lines: your situation, what you've tried. And we'll come back with a point of view, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Services",
+    "url": "servicesai2.html",
+    "anchor": "",
+    "content": "Services WHAT WE DO → AI → Intelligent Foundation Most AI projects don't fail at the model. The foundation gives out first. Brittle pipelines, a warehouse that can't keep up, cloud costs nobody can explain. That's where ambitious AI quietly stalls. We rebuild the data and cloud layer AI actually runs on, so the modernization you were already planni",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Most AI projectsdon't fail at the model.The foundation givesout first.",
+    "url": "servicesai2.html#sec-most-ai-projectsdont-fail-at-the-model-the-fo",
+    "anchor": "sec-most-ai-projectsdont-fail-at-the-model-the-fo",
+    "content": "Most AI projectsdon't fail at the model.The foundation givesout first.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Service lines& deliverables",
+    "url": "servicesai2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Service lines& deliverables Modern Data Fabric The data layer AI actually runs on. Lakehouse Architecture One governed data foundation for analytics and AI, built on whichever stack you're already running, Fabric, Synapse, Snowflake, or cloud-native. Pipelines & Orchestration Data that shows up where it's needed, on schedule, without someone chasing it manually. Data Quality Ba",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Modern Data Fabric",
+    "url": "servicesai2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Modern Data Fabric",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Lakehouse Architecture",
+    "url": "servicesai2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Lakehouse Architecture One governed data foundation for analytics and AI, built on whichever stack you're already running, Fabric, Synapse, Snowflake, or cloud-native.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Pipelines & Orchestration",
+    "url": "servicesai2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Pipelines & Orchestration Data that shows up where it's needed, on schedule, without someone chasing it manually.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Data Quality",
+    "url": "servicesai2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Data Quality Bad data caught and fixed before it becomes an automated mistake at scale.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Synthetic Data",
+    "url": "servicesai2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Synthetic Data Realistic, privacy-safe datasets to train and test models when the real data is too scarce or too sensitive to use.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "AI-Ready Cloud",
+    "url": "servicesai2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "AI-Ready Cloud",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Cloud Strategy",
+    "url": "servicesai2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Cloud Strategy The AI cloud footprint designed before the spend does, not audited after it's already scaled.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "FinOps",
+    "url": "servicesai2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "FinOps Cloud spend on AI infrastructure that's traceable to a decision, not just a rising number on a dashboard.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Infrastructure as Code",
+    "url": "servicesai2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Infrastructure as Code Environments that rebuild themselves in minutes, so AI teams stop waiting weeks for provisioning.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "DevSecOps",
+    "url": "servicesai2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "DevSecOps Security and release controls built into the AI pipeline from the first commit, where they're cheaper to fix.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Database Reliability",
+    "url": "servicesai2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Database Reliability",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Design & Development",
+    "url": "servicesai2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Design & Development Databases built to handle application, analytics, and AI workloads from the first schema decision, not retrofitted for them later.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "High-Availability Migration",
+    "url": "servicesai2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "High-Availability Migration Critical database moves planned so downtime stays close to zero, and rollback is never a scramble.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Performance Tuning",
+    "url": "servicesai2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Performance Tuning Data systems tuned to hold their speed under real production load, not just in the benchmark.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "What'sdifferentabout workingwith us",
+    "url": "servicesai2.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "What'sdifferentabout workingwith us",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Modernization is AI readiness",
+    "url": "servicesai2.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Modernization is AI readiness We don't treat the data and cloud rebuild as a separate IT project, it's the runway.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Cost-aware by default",
+    "url": "servicesai2.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Cost-aware by default FinOps is baked in, so the cloud doesn't quietly become a runaway bill.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Reliability engineered, not hoped for.",
+    "url": "servicesai2.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Reliability engineered, not hoped for. Availability and performance are designed in, not discovered in an incident.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "When you'llneed this",
+    "url": "servicesai2.html#Whenyouneedthis",
+    "anchor": "Whenyouneedthis",
+    "content": "When you'llneed this",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Relatedcase studies",
+    "url": "servicesai2.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Catching customs and demurrage risk 48 hours before it costs a steel exporter money Taking a manufacturer's intelligence from a 35 to one governed Smart Genba view Turning an undocumented risk practice into a Board-ready, CAG-audit-ready ERM framework Automating multilingual video creation for training and incident reporting, at scale Cutting manual cash bur",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Skip the deck.",
+    "url": "servicesai2.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Skip the deck.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Tell us the decision you're facing.",
+    "url": "servicesai2.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Tell us the decision you're facing. Book a 30-minute call and we'll tell you what we'd do first. Or send us three lines: your situation, what you've tried. And we'll come back with a point of view, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Services",
+    "url": "servicesai3.html",
+    "anchor": "",
+    "content": "Services WHAT WE DO → AI → Agentic Operations & Automation Rule-based bots handled the clicks. This is the judgment they never had. Rules-based automation was a real win, until it hit the first exception it wasn't scripted for and stopped. What comes next is a digital workforce that adapts, decides, and keeps going. We build the agents, the automat",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Rule-based botshandled the clicks.This is the judgmentthey never had.",
+    "url": "servicesai3.html#sec-rule-based-botshandled-the-clicks-this-is-the",
+    "anchor": "sec-rule-based-botshandled-the-clicks-this-is-the",
+    "content": "Rule-based botshandled the clicks.This is the judgmentthey never had.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Service lines& deliverables",
+    "url": "servicesai3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Service lines& deliverables Agentic AI & Autonomy Software that doesn't just follow a script. It acts, decides, and adapts. Autonomous Operations Operating flows that catch a problem, act on it, and escalate what's genuinely outside the rules,without waiting for someone to notice first. Smart Decision Systems Approvals and recommendations made in real time by an engine that com",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Agentic AI & Autonomy",
+    "url": "servicesai3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Agentic AI & Autonomy",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Autonomous Operations",
+    "url": "servicesai3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Autonomous Operations Operating flows that catch a problem, act on it, and escalate what's genuinely outside the rules,without waiting for someone to notice first.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Smart Decision Systems",
+    "url": "servicesai3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Smart Decision Systems Approvals and recommendations made in real time by an engine that combines your rules with AI judgment.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Cognitive Workflows",
+    "url": "servicesai3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Cognitive Workflows Workflows run by AI agents that read the situation and reroute themselves when it changes, instead of breaking.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Intelligent Process Automation",
+    "url": "servicesai3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Intelligent Process Automation",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "RPA",
+    "url": "servicesai3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "RPA Bots that take repetitive system tasks off people's plates, without breaking the controls built around them.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Document Processing",
+    "url": "servicesai3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Document Processing Documents turned into usable data, read, checked, and routed without someone retyping any of it.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Process Mining",
+    "url": "servicesai3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Process Mining What's really happening in the process, pulled straight from system logs instead of the flowchart everyone assumes is still accurate.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "BPA",
+    "url": "servicesai3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "BPA One workflow connecting the people, systems, and approvals that used to run as separate handoffs.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Enterprise Ecosystem",
+    "url": "servicesai3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Enterprise Ecosystem",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Power Platform",
+    "url": "servicesai3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Power Platform Business apps and workflows built on Microsoft's low-code stack, governed the way IT actually needs them to be.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Zoho Universe",
+    "url": "servicesai3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Zoho Universe Zoho configured and extended until it runs the workflows day-to-day teams actually rely on, not just the default setup.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "ERP Extension",
+    "url": "servicesai3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "ERP Extension Portals and integrations that cover what the core ERP was never built to handle.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Generative & Knowledge Systems",
+    "url": "servicesai3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Generative & Knowledge Systems",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Knowledge Retrieval (RAG)",
+    "url": "servicesai3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Knowledge Retrieval (RAG) Answers pulled from approved documents only, with a citation trail back to the source every time.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Content Production",
+    "url": "servicesai3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Content Production Generative AI for business content, governed enough that drafts don't need a compliance review before they go out.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Voice Agent",
+    "url": "servicesai3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Voice Agent Conversational agents that handle real customer and employee interactions, then hand off cleanly when a human needs to take over.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "What'sdifferentabout workingwith us",
+    "url": "servicesai3.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "What'sdifferentabout workingwith us",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Agents that think, not bots that break.",
+    "url": "servicesai3.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Agents that think, not bots that break. We build for the exceptions, not just the happy path.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Grounded generative AI",
+    "url": "servicesai3.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Grounded generative AI RAG and guardrails keep output accurate and traceable not confidently wrong.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Automation inside your ecosystem.",
+    "url": "servicesai3.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Automation inside your ecosystem. Power Platform, Zoho, ERP, built where your teams already work, so it actually gets adopted.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "When you'llneed this",
+    "url": "servicesai3.html#Whenyouneedthis",
+    "anchor": "Whenyouneedthis",
+    "content": "When you'llneed this",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Relatedcase studies",
+    "url": "servicesai3.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Catching customs and demurrage risk 48 hours before it costs a steel exporter money Taking a manufacturer's intelligence from a 35 to one governed Smart Genba view Turning an undocumented risk practice into a Board-ready, CAG-audit-ready ERM framework Automating multilingual video creation for training and incident reporting, at scale Cutting manual cash bur",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Skip the deck.",
+    "url": "servicesai3.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Skip the deck.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Tell us the decision you're facing.",
+    "url": "servicesai3.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Tell us the decision you're facing. Book a 30-minute call and we'll tell you what we'd do first. Or send us three lines: your situation, what you've tried. And we'll come back with a point of view, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Services",
+    "url": "servicesai4.html",
+    "anchor": "",
+    "content": "Services WHAT WE DO → AI → Cognitive Experience & Engineering What you need is an app that can see, hear, and think. The interface is where AI actually meets the user, and most software still just shows screens. We merge engineering with AI to build applications that perceive, generate, and respond, engineered to hold up under real production load.",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "What youneed is an appthat can see,hear, and think.",
+    "url": "servicesai4.html#sec-what-youneed-is-an-appthat-can-see-hear-and-t",
+    "anchor": "sec-what-youneed-is-an-appthat-can-see-hear-and-t",
+    "content": "What youneed is an appthat can see,hear, and think.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Service lines& deliverables",
+    "url": "servicesai4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Service lines& deliverables Intelligent App Engineering Applications built to be intelligent from the first line. App Modernization Legacy applications rebuilt on architecture that can support AI, not just run alongside it. Full-Stack Development Production web applications, built end to end, from the database to what the user sees. Mobile Engineering Secure mobile apps built f",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Intelligent App Engineering",
+    "url": "servicesai4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Intelligent App Engineering",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "App Modernization",
+    "url": "servicesai4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "App Modernization Legacy applications rebuilt on architecture that can support AI, not just run alongside it.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Full-Stack Development",
+    "url": "servicesai4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Full-Stack Development Production web applications, built end to end, from the database to what the user sees.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Mobile Engineering",
+    "url": "servicesai4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Mobile Engineering Secure mobile apps built for people working offline, in the field, away from a desk.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "API Architecture",
+    "url": "servicesai4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "API Architecture The layer that lets ERP, apps, and outside systems actually talk to each other, instead of each one running in isolation.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Perception & Connected Reality",
+    "url": "servicesai4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Perception & Connected Reality",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Computer Vision",
+    "url": "servicesai4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Computer Vision Cameras that catch what an inspector would, running continuously instead of on a schedule.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "IoT Intelligence",
+    "url": "servicesai4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "IoT Intelligence Sensor data that triggers a decision or an alert, instead of just sitting in a log nobody checks.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Immersive Experiences",
+    "url": "servicesai4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Immersive Experiences AR/VR built for training and remote support where being physically present isn't possible or practical.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Sustainability Intelligence",
+    "url": "servicesai4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Sustainability Intelligence ESG and emissions data tracked with enough rigor to survive a real audit, not just a sustainability report.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Quality Engineering",
+    "url": "servicesai4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Quality Engineering",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Automation Testing",
+    "url": "servicesai4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Automation Testing Automated tests that catch a failure before a user does, run continuously instead of before each release.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Performance Engineering",
+    "url": "servicesai4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Performance Engineering Systems tested under the load they'll see, not the load they were designed for.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Security Testing",
+    "url": "servicesai4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Security Testing Weaknesses found by testing the application the way an attacker would, before production does it for you.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "API & Database Testing",
+    "url": "servicesai4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "API & Database Testing Data validated everywhere it moves and everywhere it's stored, not just at the points someone remembered to check.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "What'sdifferentabout workingwith us",
+    "url": "servicesai4.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "What'sdifferentabout workingwith us",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Intelligent interfaces, not just apps.",
+    "url": "servicesai4.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Intelligent interfaces, not just apps. We build software that sees, hears, and generates, not another set of static screens.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Engineering and AI in one team.",
+    "url": "servicesai4.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Engineering and AI in one team. No seam between the app and the intelligence inside it.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Quality engineered in.",
+    "url": "servicesai4.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Quality engineered in. Production-grade rigor throughout, not commodity testing bolted on at the end.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "When you'llneed this",
+    "url": "servicesai4.html#Whenyouneedthis",
+    "anchor": "Whenyouneedthis",
+    "content": "When you'llneed this",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Relatedcase studies",
+    "url": "servicesai4.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Catching customs and demurrage risk 48 hours before it costs a steel exporter money Taking a manufacturer's intelligence from a 35 to one governed Smart Genba view Turning an undocumented risk practice into a Board-ready, CAG-audit-ready ERM framework Automating multilingual video creation for training and incident reporting, at scale Cutting manual cash bur",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Skip the deck.",
+    "url": "servicesai4.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Skip the deck.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Tell us the decision you're facing.",
+    "url": "servicesai4.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Tell us the decision you're facing. Book a 30-minute call and we'll tell you what we'd do first. Or send us three lines: your situation, what you've tried. And we'll come back with a point of view, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Services",
+    "url": "servicescyber1.html",
+    "anchor": "",
+    "content": "Services What We Do → Cyber → Offensive Security & Exposure A compliance checklist can be clean and still get breached. The only security posture worth trusting is the one that survives someone actively trying to break it. We test your defenses the way a real adversary would, probing the environment, the applications, the code. That's where your we",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "A compliancechecklist can beclean and stillget breached.",
+    "url": "servicescyber1.html#sec-a-compliancechecklist-can-beclean-and-stillge",
+    "anchor": "sec-a-compliancechecklist-can-beclean-and-stillge",
+    "content": "A compliancechecklist can beclean and stillget breached.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Service lines& deliverables",
+    "url": "servicescyber1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Service lines& deliverables VAPT & Risk Assessment Find the weaknesses before an attacker does. Vulnerability Assessment A prioritized view of exposure across systems, so technical gaps turn into decisions someone can actually act on. Penetration Testing Real attack simulation that proves what can be breached and what needs fixing first. Cyber Risk Assessment + ITGRC Technical ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "VAPT & Risk Assessment",
+    "url": "servicescyber1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "VAPT & Risk Assessment",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Vulnerability Assessment",
+    "url": "servicescyber1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Vulnerability Assessment A prioritized view of exposure across systems, so technical gaps turn into decisions someone can actually act on.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Penetration Testing",
+    "url": "servicescyber1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Penetration Testing Real attack simulation that proves what can be breached and what needs fixing first.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Cyber Risk Assessment + ITGRC",
+    "url": "servicescyber1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Cyber Risk Assessment + ITGRC Technical findings translated into governance leadership can actually act on.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "AppSec & Code Security",
+    "url": "servicescyber1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "AppSec & Code Security",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Secure Code Review",
+    "url": "servicescyber1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Secure Code Review Vulnerabilities caught inside the codebase, before they ship as production exposure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Application Security Assessments",
+    "url": "servicescyber1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Application Security Assessments SApplication attack surfaces tested where attackers actually probe hardest: access controls, business logic, and APIs.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "What'sdifferentabout workingwith us",
+    "url": "servicescyber1.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "What'sdifferentabout workingwith us",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "We test, we don't just advise",
+    "url": "servicescyber1.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "We test, we don't just advise Active testing over checklists. Credibility you can independently verify.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "We think like the adversary.",
+    "url": "servicescyber1.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "We think like the adversary. Real attack techniques, not theoretical risk ratings on a spreadsheet.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Security shiftedleft.",
+    "url": "servicescyber1.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Security shiftedleft. Built into code and the CI/CD pipeline, not inspected at the very end.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "When you'llneed this",
+    "url": "servicescyber1.html#Whenyouneedthis",
+    "anchor": "Whenyouneedthis",
+    "content": "When you'llneed this",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Cybercase studies",
+    "url": "servicescyber1.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Cybercase studies Turning an unencrypted, unlogged AWS environment into a CIS-benchmarked cloud estate Validating RBI and NPCI compliance across 500+ ATMs, with zero exceptions found Aligning a manufacturer's IT security with ISO 27001, NIST, and CIS, from scratch Finding anti-forensic tools and unauthorised access behind a suspected data theft Closing email spoofing and data c",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Skip the deck.",
+    "url": "servicescyber1.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Skip the deck.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Tell us what you're actually deciding.",
+    "url": "servicescyber1.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Tell us what you're actually deciding. Tell us the decision you're facing. Book a 30-minute call and we'll tell you what we'd do first. Or send us three lines: your situation, what you've tried. And we'll come back with a point of view, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Services",
+    "url": "servicescyber2.html",
+    "anchor": "",
+    "content": "Services WHAT WE DO → Cyber → Cloud Security & Zero Trust Architecture The cloud moved the walls to identity, and left the door open. Migrating to AWS or Azure trades the breached firewall for a quieter risk: misconfiguration and over-privileged accounts. Identity is the new perimeter. We secure the cloud you've already moved to, with a Zero Trust",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "The cloud moved the wallsto identity, and left thedoor open.",
+    "url": "servicescyber2.html#sec-the-cloud-moved-the-wallsto-identity-and-left",
+    "anchor": "sec-the-cloud-moved-the-wallsto-identity-and-left",
+    "content": "The cloud moved the wallsto identity, and left thedoor open.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Service lines& deliverables",
+    "url": "servicescyber2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Service lines& deliverables Cloud Infrastructure Security Secure the cloud you've already moved to. Cloud Security Posture Assessment Cloud misconfigurations and risky identities surfaced before they become breach paths. Secure Architecture Design Security embedded into the cloud blueprint from the first design decision, not the last one. Cloud Auditing & Compliance Cloud contr",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Cloud Infrastructure Security",
+    "url": "servicescyber2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Cloud Infrastructure Security",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Cloud Security Posture Assessment",
+    "url": "servicescyber2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Cloud Security Posture Assessment Cloud misconfigurations and risky identities surfaced before they become breach paths.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Secure Architecture Design",
+    "url": "servicescyber2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Secure Architecture Design Security embedded into the cloud blueprint from the first design decision, not the last one.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Cloud Auditing & Compliance",
+    "url": "servicescyber2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Cloud Auditing & Compliance Cloud controls checked against the standards and regulators your business actually has to answer to.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Identity & Access (IAM)",
+    "url": "servicescyber2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Identity & Access (IAM)",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Identity & Access Management",
+    "url": "servicescyber2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Identity & Access Management Access matched to identity and moment, with excess privilege systematically removed.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Privileged Access Management",
+    "url": "servicescyber2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Privileged Access Management Powerful accounts locked down before attackers turn them into the fastest route to compromise.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Zero Trust Management",
+    "url": "servicescyber2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Zero Trust Management Every user, device, and workload verified continuously, with movement restricted by default.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "What'sdifferentabout workingwith us",
+    "url": "servicescyber2.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "What'sdifferentabout workingwith us",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Secure by design, not by patch.",
+    "url": "servicescyber2.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Secure by design, not by patch. We build cloud security into the architecture, before the exposure exists to fix.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Identity-first.",
+    "url": "servicescyber2.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Identity-first. We treat identity as the real perimeter, because in the cloud that's exactly what it is.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Assumebreach.",
+    "url": "servicescyber2.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Assumebreach. Zero Trust built on the premisethat someone will get in, and won't get far.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "When you'llneed this",
+    "url": "servicescyber2.html#Whenyouneedthis",
+    "anchor": "Whenyouneedthis",
+    "content": "When you'llneed this",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Cybercase studies",
+    "url": "servicescyber2.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Cybercase studies Turning an unencrypted, unlogged AWS environment into a CIS-benchmarked cloud estate Validating RBI and NPCI compliance across 500+ ATMs, with zero exceptions found Aligning a manufacturer's IT security with ISO 27001, NIST, and CIS, from scratch Finding anti-forensic tools and unauthorised access behind a suspected data theft Closing email spoofing and data c",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Skip the deck.",
+    "url": "servicescyber2.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Skip the deck.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Tell us what you're actually deciding.",
+    "url": "servicescyber2.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Tell us what you're actually deciding. Tell us the decision you're facing. Book a 30-minute call and we'll tell you what we'd do first. Or send us three lines: your situation, what you've tried. And we'll come back with a point of view, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Services",
+    "url": "servicescyber3.html",
+    "anchor": "",
+    "content": "Services WHAT WE DO → Cyber → Data Privacy & Protection Engineering A privacy policy is a promise. Privacy engineering is what makes it true. Compliance written into a policy rarely survives a regulator asking to see it work. Privacy has to be built into the systems that handle the data: what's collected, where it lives, who can reach it. We treat",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "A privacy policyis a promise.Privacy engineering iswhat makes it true.",
+    "url": "servicescyber3.html#sec-a-privacy-policyis-a-promise-privacy-engineer",
+    "anchor": "sec-a-privacy-policyis-a-promise-privacy-engineer",
+    "content": "A privacy policyis a promise.Privacy engineering iswhat makes it true.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Service lines& deliverables",
+    "url": "servicescyber3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Service lines& deliverables Privacy Operations & Controls Privacy built into the systems, not just written into the policy. Data Privacy Gap Assessments Where privacy policy and actual data handling diverge, mapped and closed before a regulator finds the gap first. Data Classification & Protection Every place sensitive data lives gets found, labelled, and locked down including ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Privacy Operations & Controls",
+    "url": "servicescyber3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Privacy Operations & Controls",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Data Privacy Gap Assessments",
+    "url": "servicescyber3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Data Privacy Gap Assessments Where privacy policy and actual data handling diverge, mapped and closed before a regulator finds the gap first.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Data Classification & Protection",
+    "url": "servicescyber3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Data Classification & Protection Every place sensitive data lives gets found, labelled, and locked down including the copies nobody remembers making.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Privacy-by-Design",
+    "url": "servicescyber3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Privacy-by-Design Privacy decided at the architecture stage, so it's never a patch bolted on after launch.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Consent & Lifecycle Management",
+    "url": "servicescyber3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Consent & Lifecycle Management What a user agreed to, and for how long, enforced automatically instead of tracked in a spreadsheet.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Cross-Border & Audit Compliance",
+    "url": "servicescyber3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Cross-Border & Audit Compliance",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Privacy Audits",
+    "url": "servicescyber3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Privacy Audits An outside check on whether privacy controls actually work, not just whether the policy says they should.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Privacy Impact Assessments",
+    "url": "servicescyber3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Privacy Impact Assessments New products and features checked for privacy risk while there's still time to change course.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Regulatory Implementation",
+    "url": "servicescyber3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Regulatory Implementation Privacy law translated into the daily workflows that keep you provably compliant, not just technically compliant.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "What'sdifferentabout workingwith us",
+    "url": "servicescyber3.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "What'sdifferentabout workingwith us",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Privacy is engineering, not legal advice.",
+    "url": "servicescyber3.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Privacy is engineering, not legal advice. We build the controls into your systems, where a policy document alone can't reach.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Execution over policy.",
+    "url": "servicescyber3.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Execution over policy. Implemented, working controls not a compliance binder nobody operationalizes.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Builtfor Indiaand beyond.",
+    "url": "servicescyber3.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Builtfor Indiaand beyond. Fluent in the DPDP Act,GDPR, and the cross-borderobligations that come with scale.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "When you'llneed this",
+    "url": "servicescyber3.html#Whenyouneedthis",
+    "anchor": "Whenyouneedthis",
+    "content": "When you'llneed this",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Cybercase studies",
+    "url": "servicescyber3.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Cybercase studies Turning an unencrypted, unlogged AWS environment into a CIS-benchmarked cloud estate Validating RBI and NPCI compliance across 500+ ATMs, with zero exceptions found Aligning a manufacturer's IT security with ISO 27001, NIST, and CIS, from scratch Finding anti-forensic tools and unauthorised access behind a suspected data theft Closing email spoofing and data c",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Skip the deck.",
+    "url": "servicescyber3.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Skip the deck.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Tell us what you're actually deciding.",
+    "url": "servicescyber3.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Tell us what you're actually deciding. Tell us the decision you're facing. Book a 30-minute call and we'll tell you what we'd do first. Or send us three lines: your situation, what you've tried. And we'll come back with a point of view, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Services",
+    "url": "servicescyber4.html",
+    "anchor": "",
+    "content": "Services WHAT WE DO → Cyber → Cyber Resilience & Crisis Readiness What matters is whether you're ready for it. Every organization gets tested eventually, and the ones that come through it are the ones that rehearsed. We work on the assumption a breach will happen, building the incident response and recovery playbooks that keep you running through t",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "What matters is whether you're ready for it.",
+    "url": "servicescyber4.html#sec-what-matters-is-whether-youre-ready-for-it",
+    "anchor": "sec-what-matters-is-whether-youre-ready-for-it",
+    "content": "What matters is whether you're ready for it.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Service lines& deliverables",
+    "url": "servicescyber4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Service lines& deliverables Resilience & Response Planning Be ready before the breach, not scrambling after it. Incident Response Readiness Who does what, and how fast, worked out before a cyber incident forces you to figure it out live. Recovery & Response Playbooks Crisis steps defined in advance, so response becomes execution. BCP / DR Integration Cyber recovery wired into b",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Resilience & Response Planning",
+    "url": "servicescyber4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Resilience & Response Planning",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Incident Response Readiness",
+    "url": "servicescyber4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Incident Response Readiness Who does what, and how fast, worked out before a cyber incident forces you to figure it out live.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Recovery & Response Playbooks",
+    "url": "servicescyber4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Recovery & Response Playbooks Crisis steps defined in advance, so response becomes execution.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "BCP / DR Integration",
+    "url": "servicescyber4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "BCP / DR Integration Cyber recovery wired into business continuity, so critical operations keep running through disruption.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Simulation & Wargaming",
+    "url": "servicescyber4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Simulation & Wargaming",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Cyber Crisis Simulations",
+    "url": "servicescyber4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Cyber Crisis Simulations The board and the response team, tested on a fake breach before a real one tests them instead.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Attack Path Simulation",
+    "url": "servicescyber4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Attack Path Simulation We walk the same route an attacker would take through your systems, then shut it before they find it.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Resilience Drills",
+    "url": "servicescyber4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Resilience Drills The plan on paper, run enough times live that nobody has to read it during an actual incident.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "What'sdifferentabout workingwith us",
+    "url": "servicescyber4.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "What'sdifferentabout workingwith us",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "We assume the breach will come.",
+    "url": "servicescyber4.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "We assume the breach will come. The work is recovery and readiness, not the false comfort of prevention alone.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "We rehearse the crisis.",
+    "url": "servicescyber4.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "We rehearse the crisis. Executive simulations and drills, so the first time isn't the real time.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Continuitybuilt in.",
+    "url": "servicescyber4.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Continuitybuilt in. Incident response and business continuity designed as one.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "When you'llneed this",
+    "url": "servicescyber4.html#Whenyouneedthis",
+    "anchor": "Whenyouneedthis",
+    "content": "When you'llneed this",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Cybercase studies",
+    "url": "servicescyber4.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Cybercase studies Turning an unencrypted, unlogged AWS environment into a CIS-benchmarked cloud estate Validating RBI and NPCI compliance across 500+ ATMs, with zero exceptions found Aligning a manufacturer's IT security with ISO 27001, NIST, and CIS, from scratch Finding anti-forensic tools and unauthorised access behind a suspected data theft Closing email spoofing and data c",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Skip the deck.",
+    "url": "servicescyber4.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Skip the deck.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Tell us what you're actually deciding.",
+    "url": "servicescyber4.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Tell us what you're actually deciding. Tell us the decision you're facing. Book a 30-minute call and we'll tell you what we'd do first. Or send us three lines: your situation, what you've tried. And we'll come back with a point of view, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Services",
+    "url": "servicesinner.html",
+    "anchor": "",
+    "content": "﻿ Services WHAT WE DO → STRATEGY → BUSINESS & GROWTH STRATEGY The operating model is where growth plans actually break. For an established business entering India or the US, or restructuring after a decade of accumulated complexity, the risk sits in sequencing: when to enter, what to build first, how fast to scale. Founder-led companies run into th",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "The operatingmodel is wheregrowth plansactually break.",
+    "url": "servicesinner.html#sec-the-operatingmodel-is-wheregrowth-plansactual",
+    "anchor": "sec-the-operatingmodel-is-wheregrowth-plansactual",
+    "content": "The operatingmodel is wheregrowth plansactually break.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Service lines& deliverables",
+    "url": "servicesinner.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Service lines& deliverables Market Entry & Expansion For leaders entering or scaling in complex markets, where the cost of a wrong first move is high. Market Entry Strategy The structure, compliance path, and go-to-market sequence for entering India, the US, or any market where getting the order wrong is expensive. Growth Roadmaps Investment, capability, and execution sequenced",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Market Entry & Expansion",
+    "url": "servicesinner.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Market Entry & Expansion",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Market Entry Strategy",
+    "url": "servicesinner.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Market Entry Strategy The structure, compliance path, and go-to-market sequence for entering India, the US, or any market where getting the order wrong is expensive.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Growth Roadmaps",
+    "url": "servicesinner.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Growth Roadmaps Investment, capability, and execution sequenced so scale compounds instead of overextending.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Business Model Innovation",
+    "url": "servicesinner.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Business Model Innovation Rebuilding how the business creates, prices, and captures value once the old model stops earning its keep.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Target Operating Models",
+    "url": "servicesinner.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Target Operating Models",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Digital Strategy & Roadmap",
+    "url": "servicesinner.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Digital Strategy & Roadmap Technology decisions anchored to business direction, so the stack moves at the pace of the strategy, not behind it.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Operational Design",
+    "url": "servicesinner.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Operational Design Strategy translated into the functions, processes, and decision rights that can actually run it.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Board Advisory",
+    "url": "servicesinner.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Board Advisory Independent counsel for decisions where the consequences are real, not theoretical.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "What'sdifferentabout workingwith us",
+    "url": "servicesinner.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "What'sdifferentabout workingwith us",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "We start with the decision, not the deck.",
+    "url": "servicesinner.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "We start with the decision, not the deck. Every engagement is anchored to the actual call leadership has to make.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Finance- grade rigor.",
+    "url": "servicesinner.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Finance- grade rigor. Our analysis is built to withstand the toughest scrutiny, ensuring absolute confidence in every strategic move.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "From advice tooperating model,one team.",
+    "url": "servicesinner.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "From advice tooperating model,one team. The people who write the recommendationbuild the operating model it depends on,inside a single engagement, start to finish.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "When you'llneed this",
+    "url": "servicesinner.html#Whenyouneedthis",
+    "anchor": "Whenyouneedthis",
+    "content": "When you'llneed this",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Relatedcase studies",
+    "url": "servicesinner.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Moving inventory intelligence beyond reactive ERP reporting, in 12 weeks Automating multilingual video creation for training and incident reporting, at scale Teaching machine data and Excel to speak one language, in real time Cutting manual cash burn reporting effort by 50-70%, in 25 business days Turning an undocumented risk practice into a Board-ready, CAG",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Skip the deck.",
+    "url": "servicesinner.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Skip the deck.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Tell us what you're actually deciding.",
+    "url": "servicesinner.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Tell us what you're actually deciding. Tell us the decision you're facing. Book a 30-minute call and we'll tell you what we'd do first. Or send us three lines: your situation, what you've tried. And we'll come back with a point of view, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Services",
+    "url": "strategy1.html",
+    "anchor": "",
+    "content": "Services WHAT WE DO → STRATEGY → BUSINESS & GROWTH STRATEGY The operating model is where growth plans actually break. For an established business entering India or the US, or restructuring after a decade of accumulated complexity, the risk sits in sequencing: when to enter, what to build first, how fast to scale. Founder-led companies run into the",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "The operatingmodel is wheregrowth plansactually break.",
+    "url": "strategy1.html#sec-the-operatingmodel-is-wheregrowth-plansactual",
+    "anchor": "sec-the-operatingmodel-is-wheregrowth-plansactual",
+    "content": "The operatingmodel is wheregrowth plansactually break.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Service lines& deliverables",
+    "url": "strategy1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Service lines& deliverables Market Entry & Expansion For leaders entering or scaling in complex markets, where the cost of a wrong first move is high. Market Entry Strategy The structure, compliance path, and go-to-market sequence for entering India, the US, or any market where getting the order wrong is expensive. Growth Roadmaps Investment, capability, and execution sequenced",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Market Entry & Expansion",
+    "url": "strategy1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Market Entry & Expansion",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Market Entry Strategy",
+    "url": "strategy1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Market Entry Strategy The structure, compliance path, and go-to-market sequence for entering India, the US, or any market where getting the order wrong is expensive.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Growth Roadmaps",
+    "url": "strategy1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Growth Roadmaps Investment, capability, and execution sequenced so scale compounds instead of overextending.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Business Model Innovation",
+    "url": "strategy1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Business Model Innovation Rebuilding how the business creates, prices, and captures value once the old model stops earning its keep.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Target Operating Models",
+    "url": "strategy1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Target Operating Models",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Digital Strategy & Roadmap",
+    "url": "strategy1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Digital Strategy & Roadmap Technology decisions anchored to business direction, so the stack moves at the pace of the strategy, not behind it.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Operational Design",
+    "url": "strategy1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Operational Design Strategy translated into the functions, processes, and decision rights that can actually run it.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Board Advisory",
+    "url": "strategy1.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Board Advisory Independent counsel for decisions where the consequences are real, not theoretical.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "What'sdifferentabout workingwith us",
+    "url": "strategy1.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "What'sdifferentabout workingwith us",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "We start with the decision, not the deck.",
+    "url": "strategy1.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "We start with the decision, not the deck. Every engagement is anchored to the actual call leadership has to make.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Finance- grade rigor.",
+    "url": "strategy1.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Finance- grade rigor. Our analysis is built to withstand the toughest scrutiny, ensuring absolute confidence in every strategic move.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "From advice tooperating model,one team.",
+    "url": "strategy1.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "From advice tooperating model,one team. The people who write the recommendationbuild the operating model it depends on,inside a single engagement, start to finish.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "When you'llneed this",
+    "url": "strategy1.html#Whenyouneedthis",
+    "anchor": "Whenyouneedthis",
+    "content": "When you'llneed this",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Relatedcase studies",
+    "url": "strategy1.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Cutting manual effort by 70% across a healthcare GCC, headcount unchanged Unifying a global fintech's finance operations across 9 entities and 6 countries onto one ERP Turning three deal-flow bottlenecks into one AI-orchestrated due diligence platform, in 36 weeks Taking Supplier Paid On Time from 65.87% to 78.79%, without new technology Delivering $60M+ in ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Skip the deck.",
+    "url": "strategy1.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Skip the deck.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Tell us what you're actually deciding.",
+    "url": "strategy1.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Tell us what you're actually deciding. Tell us the decision you're facing. Book a 30-minute call and we'll tell you what we'd do first. Or send us three lines: your situation, what you've tried. And we'll come back with a point of view, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Services",
+    "url": "strategy2.html",
+    "anchor": "",
+    "content": "Services WHAT WE DO → STRATEGY → Strategic Finance & Transactions Diligence doesn't ask for trust. It asks for evidence. A raise, a sale, or a board review surfaces exactly how the finance function runs, one person and a spreadsheet, or a system that holds under scrutiny. We build finance functions that move from individual-led to system-led, and s",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Diligence doesn'task for trust.It asks for evidence.",
+    "url": "strategy2.html#sec-diligence-doesntask-for-trust-it-asks-for-evi",
+    "anchor": "sec-diligence-doesntask-for-trust-it-asks-for-evi",
+    "content": "Diligence doesn'task for trust.It asks for evidence.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Service lines & deliverables",
+    "url": "strategy2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Service lines & deliverables Transaction Strategy & Diligence For deals where a wrong assumption costs the whole thesis. Buy-Side & Sell-Side Due Diligence Every number and process in a deal, pressure-tested against what the data room doesn't show. Deal Value Realization The synergies modelled in the boardroom, captured on the ground once integration starts. Investment Thesis V",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Transaction Strategy & Diligence",
+    "url": "strategy2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Transaction Strategy & Diligence",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Buy-Side & Sell-Side Due Diligence",
+    "url": "strategy2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Buy-Side & Sell-Side Due Diligence Every number and process in a deal, pressure-tested against what the data room doesn't show.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Deal Value Realization",
+    "url": "strategy2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Deal Value Realization The synergies modelled in the boardroom, captured on the ground once integration starts.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Investment Thesis Validation",
+    "url": "strategy2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Investment Thesis Validation The story behind the deal, checked against what the business can actually deliver.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "CFO Office & FP&A",
+    "url": "strategy2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "CFO Office & FP&A",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Virtual CFO Services",
+    "url": "strategy2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Virtual CFO Services CFO-grade financial leadership without the CFO hire, for businesses that have outgrown founder-led finance but haven't yet built out the office.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Financial Planning & Analysis",
+    "url": "strategy2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Financial Planning & Analysis Forecasts and budgets built to be used, not filed, so numbers drive the next decision instead of explaining the last one.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Accounting & Reporting",
+    "url": "strategy2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Accounting & Reporting Financial records built to hold up in front of whoever's asking, management, auditors, investors, or lenders.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Accounting Policy Implementation",
+    "url": "strategy2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Accounting Policy Implementation Accounting positions turned into policies and controls that survive scrutiny, not just pass it.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Global Tax & Structuring",
+    "url": "strategy2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Global Tax & Structuring",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Business Setup & Structuring",
+    "url": "strategy2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Business Setup & Structuring Entity, tax, and operating structure set up right the first time, before a fix costs more than getting it right would have.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Transfer Pricing Strategy",
+    "url": "strategy2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Transfer Pricing Strategy Cross-border pricing built on logic that holds up under a tax authority's questions, not just your auditor's.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Tax Advisory & Policy",
+    "url": "strategy2.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Tax Advisory & Policy Regulatory shifts read early enough to become a decision, not a scramble.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "What'sdifferentabout workingwith us",
+    "url": "strategy2.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "What'sdifferentabout workingwith us",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Finance-first by origin.",
+    "url": "strategy2.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Finance-first by origin. This is the foundation the practice was built on. The rigor is native, not bolted on after a strategy deck.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Engineered for system-led finance.",
+    "url": "strategy2.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Engineered for system-led finance. We build the function to a standard a board, an auditor, and an acquirer all trust. Not just one that gets through this quarter.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "One team from diligence to value.",
+    "url": "strategy2.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "One team from diligence to value. The people who vet the deal are the people who help realize it. No handoff between the verdict and the integration.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "When you'llneed this",
+    "url": "strategy2.html#Whenyouneedthis",
+    "anchor": "Whenyouneedthis",
+    "content": "When you'llneed this",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Relatedcase studies",
+    "url": "strategy2.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Cutting manual effort by 70% across a healthcare GCC, headcount unchanged Unifying a global fintech's finance operations across 9 entities and 6 countries onto one ERP Turning three deal-flow bottlenecks into one AI-orchestrated due diligence platform, in 36 weeks Taking Supplier Paid On Time from 65.87% to 78.79%, without new technology Delivering $60M+ in ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Skip the deck.",
+    "url": "strategy2.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Skip the deck.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Tell us what you're actually deciding.",
+    "url": "strategy2.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Tell us what you're actually deciding. Tell us the decision you're facing. Book a 30-minute call and we'll tell you what we'd do first. Or send us three lines: your situation, what you've tried. And we'll come back with a point of view, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Services",
+    "url": "strategy3.html",
+    "anchor": "",
+    "content": "Services WHAT WE DO → STRATEGY → Enterprise Operations & Ecosystems A strategy only works if the operation can run it. The plan is sound, but disconnected systems and untouched processes quietly leak the growth it promises. We turn the operating layer into one connected ecosystem: processes streamlined, systems talking to each other. A machine that",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "A strategy only worksif the operation can run it.",
+    "url": "strategy3.html#sec-a-strategy-only-worksif-the-operation-can-run",
+    "anchor": "sec-a-strategy-only-worksif-the-operation-can-run",
+    "content": "A strategy only worksif the operation can run it.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Service lines& deliverables",
+    "url": "strategy3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Service lines& deliverables Core Business Operations The engine room, where the plan either runs smoothly or grinds. Managed Business Services Operational load taken off the business, run with the same rigor it would get in-house, freeing teams for the work that actually needs them. Process Optimization Finding where time, cash, and control leak from the process, then redesigni",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Core Business Operations",
+    "url": "strategy3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Core Business Operations",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Managed Business Services",
+    "url": "strategy3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Managed Business Services Operational load taken off the business, run with the same rigor it would get in-house, freeing teams for the work that actually needs them.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Process Optimization",
+    "url": "strategy3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Process Optimization Finding where time, cash, and control leak from the process, then redesigning the flow to stop it.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Startup Enablement",
+    "url": "strategy3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Startup Enablement The operating backbone startups usually build too late, set up before growth starts showing the cracks.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Enterprise Ecosystems (ERP)",
+    "url": "strategy3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Enterprise Ecosystems (ERP)",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Zoho Universe Strategy",
+    "url": "strategy3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Zoho Universe Strategy Turning Zoho from a set of apps into a connected operating system for the business.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "SAP S/4HANA Advisory",
+    "url": "strategy3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "SAP S/4HANA Advisory Tier-one ERP configured to serve the business case it was bought for.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Supply Chain Optimization",
+    "url": "strategy3.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Supply Chain Optimization Procurement and logistics rebuilt to generate margin, not just move goods.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "What'sdifferentabout workingwith us",
+    "url": "strategy3.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "What'sdifferentabout workingwith us",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "We run it, not just recommend it.",
+    "url": "strategy3.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "We run it, not just recommend it. Advisory and managed operations in one team. The plan and the people executing it don't sit in separate rooms.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Platform-fluent, stage-appropriate.",
+    "url": "strategy3.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Platform-fluent, stage-appropriate. Fluent across Zoho and SAP, and honest about which one your stage actually needs.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Built to outlast us.",
+    "url": "strategy3.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Built to outlast us. The operating layer is designed for your team to run after we step out.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "When you'llneed this",
+    "url": "strategy3.html#Whenyouneedthis",
+    "anchor": "Whenyouneedthis",
+    "content": "When you'llneed this",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Relatedcase studies",
+    "url": "strategy3.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Cutting manual effort by 70% across a healthcare GCC, headcount unchanged Unifying a global fintech's finance operations across 9 entities and 6 countries onto one ERP Turning three deal-flow bottlenecks into one AI-orchestrated due diligence platform, in 36 weeks Taking Supplier Paid On Time from 65.87% to 78.79%, without new technology Delivering $60M+ in ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Skip the deck.",
+    "url": "strategy3.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Skip the deck.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Tell us what you're actually deciding.",
+    "url": "strategy3.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Tell us what you're actually deciding. Tell us the decision you're facing. Book a 30-minute call and we'll tell you what we'd do first. Or send us three lines: your situation, what you've tried. And we'll come back with a point of view, not a brochure.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Services",
+    "url": "strategy4.html",
+    "anchor": "",
+    "content": "Services WHAT WE DO → STRATEGY → Change Management & Organizational Acceleration Plans get signed off . People still have to live with them. The strategy is signed off, the system bought, the reorg announced. Then nothing moves, because the organization was told to change but never brought along. We make adoption the point: aligned leadership, a re",
+    "type": "page"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Plans get signed off.People still have to live with them.",
+    "url": "strategy4.html#sec-plans-get-signed-off-people-still-have-to-liv",
+    "anchor": "sec-plans-get-signed-off-people-still-have-to-liv",
+    "content": "Plans get signed off.People still have to live with them.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Service lines& deliverables",
+    "url": "strategy4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Service lines& deliverables Change Strategy & Leadership Change starts at the top, or it doesn't start. Change Strategy & Alignment A deliberate path for change, built before transformation has the chance to land as disruption. Leadership Alignment One leadership voice before transformation reaches the floor, because mixed signals become operational noise. Communication Strateg",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Change Strategy & Leadership",
+    "url": "strategy4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Change Strategy & Leadership",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Change Strategy & Alignment",
+    "url": "strategy4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Change Strategy & Alignment A deliberate path for change, built before transformation has the chance to land as disruption.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Leadership Alignment",
+    "url": "strategy4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Leadership Alignment One leadership voice before transformation reaches the floor, because mixed signals become operational noise.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Communication Strategy",
+    "url": "strategy4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Communication Strategy Owning the transformation narrative before the silence gets filled with rumor.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Organization & Workforce Design",
+    "url": "strategy4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Organization & Workforce Design",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Organization Design",
+    "url": "strategy4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Organization Design The organization's shape reset around where the business is actually going.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Workforce Planning",
+    "url": "strategy4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Workforce Planning Talent and capacity planned ahead of the strategy gap, before it slows execution.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Role Definition & Benchmarking",
+    "url": "strategy4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Role Definition & Benchmarking Ownership and expectations benchmarked clearly enough that accountability stops slipping between functions.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Culture & Capability",
+    "url": "strategy4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Culture & Capability",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Culture & Risk-Aware Behaviours",
+    "url": "strategy4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Culture & Risk-Aware Behaviours Risk sense built into how decisions actually get made, not filed away as policy nobody reads.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Change Enablement & Adoption",
+    "url": "strategy4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Change Enablement & Adoption The distance from awareness to real use, past the tracker, the login, the launch-day energy that fades by week three.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Capability Building",
+    "url": "strategy4.html#Servicelinesdeliverablescontsec",
+    "anchor": "Servicelinesdeliverablescontsec",
+    "content": "Capability Building Skills built for whatever operating model comes next, so this transformation isn't the last one people have to relearn for.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "What'sdifferentabout workingwith us",
+    "url": "strategy4.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "What'sdifferentabout workingwith us",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Adoption is the deliverable.",
+    "url": "strategy4.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Adoption is the deliverable. Not a workstream bolted onto the end of a transformation the outcome we're accountable for from day one.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Tied to the change that triggered it.",
+    "url": "strategy4.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "Tied to the change that triggered it. We align to the actual operating-model shift, ERP rollout, or strategy underneath the change.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "We build capability that stays.",
+    "url": "strategy4.html#differentaboutworkingwithus",
+    "anchor": "differentaboutworkingwithus",
+    "content": "We build capability that stays. The organization keeps moving after we step out, because the skill and the ownership sit with your people.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "When you'llneed this",
+    "url": "strategy4.html#Whenyouneedthis",
+    "anchor": "Whenyouneedthis",
+    "content": "When you'llneed this",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Relatedcase studies",
+    "url": "strategy4.html#relatedcasestudiessec",
+    "anchor": "relatedcasestudiessec",
+    "content": "Relatedcase studies Cutting manual effort by 70% across a healthcare GCC, headcount unchanged Unifying a global fintech's finance operations across 9 entities and 6 countries onto one ERP Turning three deal-flow bottlenecks into one AI-orchestrated due diligence platform, in 36 weeks Taking Supplier Paid On Time from 65.87% to 78.79%, without new technology Delivering $60M+ in ",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Skip the deck.",
+    "url": "strategy4.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Skip the deck.",
+    "type": "section"
+  },
+  {
+    "pageTitle": "Services",
+    "sectionTitle": "Tell us what you're actually deciding.",
+    "url": "strategy4.html#skithedesksec",
+    "anchor": "skithedesksec",
+    "content": "Tell us what you're actually deciding. Tell us the decision you're facing. Book a 30-minute call and we'll tell you what we'd do first. Or send us three lines: your situation, what you've tried. And we'll come back with a point of view, not a brochure.",
+    "type": "section"
+  }
+];

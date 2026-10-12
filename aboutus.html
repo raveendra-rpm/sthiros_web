@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -500,8 +500,8 @@
         }
 
         .team-card.inactive {
-            width: 130px;
-            height: 200px;
+            width: 115px;
+            height: 210px;
             filter: brightness(0.6);
         }
 
@@ -536,14 +536,14 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 480px;
+            height: 100%;
             z-index: 10;
             cursor: pointer;
         }
 
         .team-card.active {
-            width: 260px;
-            height: 480px;
+            width: 285px;
+            height: 560px;
             filter: brightness(1);
             z-index: 100;
         }
@@ -558,10 +558,9 @@
 
         .team-card-info {
             position: absolute;
-            bottom: 20px;
-            left: 12px;
-            /* Reduced from 20px for more width */
-            right: 12px;
+            bottom: 16px;
+            left: 8px;
+            right: 8px;
             z-index: 2;
             transition: opacity 0.3s ease;
         }
@@ -1278,7 +1277,7 @@
 </head>
 
 <body>
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• SITE HEADER â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- =============== SITE HEADER =============== -->
                         <header class="site-header">
         <div class="header-left">
             <a href="index.html" class="logo-link">
@@ -1448,7 +1447,128 @@
         </div>
     </header>
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FULL SCREEN MENU OVERLAY â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- =============== FULL SCREEN MENU OVERLAY =============== -->
+    <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
+        <div class="menu-content">
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link active">HOME</a>
+                <a href="aboutus.html" target="_blank" class="nav-link">ABOUT US</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">WHAT WE DO <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="services.html" target="_blank" class="sub-nav-link">WHAT WE DO</a>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Strategy <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="strategy1.html" class="nested-sub-nav-link">Business & Growth Strategy</a>
+                                <a href="strategy2.html" class="nested-sub-nav-link">Strategic Finance &
+                                    Transactions</a>
+                                <a href="strategy3.html" class="nested-sub-nav-link">Enterprise Operations &
+                                    Ecosystems</a>
+                                <a href="strategy4.html" class="nested-sub-nav-link">Change Management & Organisational
+                                    Acceleration</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">AI <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="servicesai1.html" class="nested-sub-nav-link">AI Strategy & Sovereign
+                                    Governance</a>
+                                <a href="servicesai2.html" class="nested-sub-nav-link">Intelligent Foundation (Data &
+                                    Cloud)</a>
+                                <a href="servicesai3.html" class="nested-sub-nav-link">Agentic Operations &
+                                    Automation</a>
+                                <a href="servicesai4.html" class="nested-sub-nav-link">Cognitive Experience &
+                                    Engineering</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Risk <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="risk1.html" class="nested-sub-nav-link">Enterprise Governance & Regulatory
+                                    Strategy</a>
+                                <a href="risk2.html" class="nested-sub-nav-link">Strategic Assurance & Process
+                                    Intelligence</a>
+                                <a href="risk3.html" class="nested-sub-nav-link">Digital Risk & Technology Controls</a>
+                                <a href="risk4.html" class="nested-sub-nav-link">Forensic Integrity & Asset
+                                    Protection</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item-dropdown nested-dropdown">
+                            <a href="#" class="sub-nav-link dropdown-toggle">Cyber <img
+                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                            <div class="sub-nav nested-sub-nav">
+                                <a href="servicescyber1.html" class="nested-sub-nav-link">Offensive Security &
+                                    Exposure</a>
+                                <a href="servicescyber2.html" class="nested-sub-nav-link">Cloud Security & Zero
+                                    Trust</a>
+                                <a href="servicescyber3.html" class="nested-sub-nav-link">Data Privacy & Protection
+                                    Engineering</a>
+                                <a href="servicescyber4.html" class="nested-sub-nav-link">Cyber Resilience & Crisis
+                                    Readiness</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a href="repository.html" target="_blank" class="nav-link">THE REPOSITORY</a>
+                <a href="products.html" target="_blank" class="nav-link">ORIQ</a>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">INDUSTRIES <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="industry.html" class="sub-nav-link">BFSI & Fintech</a>
+                        <a href="industry1.html" class="sub-nav-link">D2C & Retail</a>
+                        <a href="industry2.html" class="sub-nav-link">Energy, Mining & Utilities</a>
+                        <a href="industry3.html" class="sub-nav-link">GCC</a>
+                        <a href="industry4.html" class="sub-nav-link">Healthcare & Life Sciences</a>
+                        <a href="industry5.html" class="sub-nav-link">Manufacturing</a>
+                        <a href="industry7.html" class="sub-nav-link">Telecom & Digital Infrastructure</a>
+                        <a href="industry8.html" class="sub-nav-link">Travel & Hospitality</a>
+                        <a href="industry6.html" class="sub-nav-link">Public Sector & Government</a>
+                        <a href="industry9.html" class="sub-nav-link">Real Estate / EPC / Construction</a>
+                    </div>
+                </div>
+
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">CONTACT US <img
+                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
+                    <div class="sub-nav">
+                        <a href="contactus.html" target="_blank" class="sub-nav-link">CONTACT</a>
+                        <a href="#" class="sub-nav-link">Careers</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="mobile-menu-search">
+                <input type="text" placeholder="Type to search.." class="mobile-menu-search-input">
+                <button class="mobile-menu-search-btn" aria-label="Search">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    </header>
+
+    <!-- =============== FULL SCREEN MENU OVERLAY =============== -->
     <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
         <div class="menu-content">
             <nav class="main-nav">
@@ -1559,118 +1679,7 @@
 
     </header>
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FULL SCREEN MENU OVERLAY â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-    <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
-        <div class="menu-content">
-            <nav class="main-nav">
-                <a href="index.html" class="nav-link active">HOME</a>
-                <a href="aboutus.html" target="_blank" class="nav-link">ABOUT US</a>
-
-                <div class="nav-item-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">WHAT WE DO <img
-                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
-                    <div class="sub-nav">
-                        <a href="services.html" target="_blank" class="sub-nav-link">WHAT WE DO</a>
-
-                        <div class="nav-item-dropdown nested-dropdown">
-                            <a href="#" class="sub-nav-link dropdown-toggle">Strategy <img
-                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
-                            <div class="sub-nav nested-sub-nav">
-                                <a href="strategy1.html" class="nested-sub-nav-link">Business & Growth Strategy</a>
-                                <a href="strategy2.html" class="nested-sub-nav-link">Strategic Finance &
-                                    Transactions</a>
-                                <a href="strategy3.html" class="nested-sub-nav-link">Enterprise Operations &
-                                    Ecosystems</a>
-                                <a href="strategy4.html" class="nested-sub-nav-link">Change Management & Organisational
-                                    Acceleration</a>
-                            </div>
-                        </div>
-
-                        <div class="nav-item-dropdown nested-dropdown">
-                            <a href="#" class="sub-nav-link dropdown-toggle">AI <img
-                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
-                            <div class="sub-nav nested-sub-nav">
-                                <a href="servicesai1.html" class="nested-sub-nav-link">AI Strategy & Sovereign
-                                    Governance</a>
-                                <a href="servicesai2.html" class="nested-sub-nav-link">Intelligent Foundation (Data &
-                                    Cloud)</a>
-                                <a href="servicesai3.html" class="nested-sub-nav-link">Agentic Operations &
-                                    Automation</a>
-                                <a href="servicesai4.html" class="nested-sub-nav-link">Cognitive Experience &
-                                    Engineering</a>
-                            </div>
-                        </div>
-
-                        <div class="nav-item-dropdown nested-dropdown">
-                            <a href="#" class="sub-nav-link dropdown-toggle">Risk <img
-                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
-                            <div class="sub-nav nested-sub-nav">
-                                <a href="risk1.html" class="nested-sub-nav-link">Enterprise Governance & Regulatory
-                                    Strategy</a>
-                                <a href="risk2.html" class="nested-sub-nav-link">Strategic Assurance & Process
-                                    Intelligence</a>
-                                <a href="risk3.html" class="nested-sub-nav-link">Digital Risk & Technology Controls</a>
-                                <a href="risk4.html" class="nested-sub-nav-link">Forensic Integrity & Asset
-                                    Protection</a>
-                            </div>
-                        </div>
-
-                        <div class="nav-item-dropdown nested-dropdown">
-                            <a href="#" class="sub-nav-link dropdown-toggle">Cyber <img
-                                    src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
-                            <div class="sub-nav nested-sub-nav">
-                                <a href="servicescyber1.html" class="nested-sub-nav-link">Offensive Security &
-                                    Exposure</a>
-                                <a href="servicescyber2.html" class="nested-sub-nav-link">Cloud Security & Zero
-                                    Trust</a>
-                                <a href="servicescyber3.html" class="nested-sub-nav-link">Data Privacy & Protection
-                                    Engineering</a>
-                                <a href="servicescyber4.html" class="nested-sub-nav-link">Cyber Resilience & Crisis
-                                    Readiness</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <a href="repository.html" target="_blank" class="nav-link">THE REPOSITORY</a>
-                <a href="products.html" target="_blank" class="nav-link">ORIQ</a>
-
-                <div class="nav-item-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">INDUSTRIES <img
-                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
-                    <div class="sub-nav">
-                        <a href="industry.html" class="sub-nav-link">BFSI & Fintech</a>
-                        <a href="industry1.html" class="sub-nav-link">D2C & Retail</a>
-                        <a href="industry2.html" class="sub-nav-link">Energy, Mining & Utilities</a>
-                        <a href="industry3.html" class="sub-nav-link">GCC</a>
-                        <a href="industry4.html" class="sub-nav-link">Healthcare & Life Sciences</a>
-                        <a href="industry5.html" class="sub-nav-link">Manufacturing</a>
-                        <a href="industry7.html" class="sub-nav-link">Telecom & Digital Infrastructure</a>
-                        <a href="industry8.html" class="sub-nav-link">Travel & Hospitality</a>
-                        <a href="industry6.html" class="sub-nav-link">Public Sector & Government</a>
-                        <a href="industry9.html" class="sub-nav-link">Real Estate / EPC / Construction</a>
-                    </div>
-                </div>
-
-                <div class="nav-item-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">CONTACT US <img
-                            src="assets/images/sthiros_arrow_btn.png" alt="Arrow" class="chevron"></a>
-                    <div class="sub-nav">
-                        <a href="contactus.html" target="_blank" class="sub-nav-link">CONTACT</a>
-                        <a href="#" class="sub-nav-link">Careers</a>
-                    </div>
-                </div>
-            </nav>
-
-
-        </div>
-    </div>
-
-
-    </header>
-
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FULL SCREEN MENU OVERLAY â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- =============== FULL SCREEN MENU OVERLAY =============== -->
     <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
         <div class="menu-content">
             <nav class="main-nav">
@@ -1781,7 +1790,7 @@
 
     </header>
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FULL SCREEN MENU OVERLAY â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- =============== FULL SCREEN MENU OVERLAY =============== -->
     <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
         <div class="menu-content">
             <nav class="main-nav">
@@ -1892,7 +1901,7 @@
 
     </header>
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FULL SCREEN MENU OVERLAY â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- =============== FULL SCREEN MENU OVERLAY =============== -->
     <div class="menu-overlay" id="menuOverlay" data-lenis-prevent>
         <div class="menu-content">
             <nav class="main-nav">
@@ -2587,7 +2596,7 @@
         </div>
     </footer>
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• SCRIPTS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- =============== SCRIPTS =============== -->
     <!-- GSAP, ScrollTrigger, Anime.js, Lenis (smooth scroll) & Three.js (WebGL) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -2643,14 +2652,69 @@
 
             // Initialize Team Slider
             const teamData = [
-                { category: "Market & Growth", name: "Pooja Parameswaran", role: "Chief Branding Officer", desc: "Pooja brings extensive experience in brand strategy and marketing, shaping the company's identity and market presence.", img: "assets/images/aboutpage/teamoneimg.jpg" },
-                { category: "MARKET & GROWTH", name: "Sreekhar", role: "HEAD OF SALES", desc: "Sreekhar is a Chartered Accountant with over thirteen years in enterprise risk and digital transformation. He holds ISO 27001, 27701, NIST-aligned, FAFD, and BRSR credentials, the foundation for how he reads a client's business and shapes the deal around it.", img: "assets/images/aboutpage/teamoneimg.jpg" },
-                { category: "Client Solutions", name: "Karthik Jegannathan", role: "Client Solutions", desc: "Karthik specializes in client relationship management and tailored solutions, ensuring every engagement delivers maximum value.", img: "assets/images/aboutpage/teamoneimg.jpg" },
-                { category: "Client Solutions", name: "Praveen Babu C", role: "Head of AI", desc: "Praveen leads the AI division, focusing on cutting-edge machine learning and data engineering to drive automated intelligence.", img: "assets/images/aboutpage/teamoneimg.jpg" },
-                { category: "Strategic Partner Practice", name: "Hithender Kumar G", role: "Head OF Strategy", desc: "Hithender drives the long-term strategic vision and key partnerships, aligning business goals with emerging market opportunities.", img: "assets/images/aboutpage/teamoneimg.jpg" },
-                { category: "Strategic Partner Practice", name: "Ravishankar M", role: "Head of Risk", desc: "Ravishankar is an expert in risk mitigation, security protocols, and operational resilience, safeguarding the organization's core assets.", img: "assets/images/aboutpage/teamoneimg.jpg" },
-                { category: "Enterprise Enablement", name: "Krishnapriya", role: "Head of Legal & Compliance", desc: "Krishnapriya oversees all legal frameworks, ensuring strict compliance and robust governance across global operations.", img: "assets/images/aboutpage/teamoneimg.jpg" },
-                { category: "Enterprise Enablement", name: "Santhosh Kumar R", role: "Chief People Officer", desc: "Santhosh is dedicated to building strong, resilient teams and fostering a great company culture rooted in continuous learning.", img: "assets/images/aboutpage/teamoneimg.jpg" }
+                {
+                    category: "MARKET & GROWTH",
+                    name: "Sreekhar",
+                    role: "HEAD OF SALES",
+                    desc: "Sreekhar is a Chartered Accountant with over thirteen years in enterprise risk and digital transformation. He holds ISO 27001, 27701, NIST-aligned, FAFD, and BRSR credentials, the foundation for how he reads a client's business and shapes the deal around it.",
+                    img: "assets/images/aboutpage/vijaysreekhar.png"
+                },
+                {
+                    category: "MARKET & GROWTH",
+                    name: "Pooja Parameswaran",
+                    role: "CHIEF BRANDING OFFICER",
+                    desc: "Pooja is rebuilding how Sthiros shows up in the market. Her conviction: a brand is the logic behind why people choose to trust an organisation. She holds an MBA from Singapore and a Kellogg digital-strategy diploma, with ten-plus years across hospitality, e-commerce, FMCG, and IT, working where B2C intuition meets B2B rigour. Her mandate spans brand intelligence, employer branding, and content.",
+                    img: "assets/images/aboutpage/pooja_parameswaran.png"
+                },
+                {
+                    category: "MARKET & GROWTH",
+                    name: "Braen Migogo",
+                    role: "MARKET & GROWTH",
+                    desc: "Braen drives market expansion, strategic client partnerships, and commercial growth initiatives at Sthiros, translating strategic vision into measurable market impact.",
+                    img: "assets/images/aboutpage/braen_migogo.png"
+                },
+                {
+                    category: "CLIENT SOLUTIONS",
+                    name: "Karthik Jegannathan",
+                    role: "HEAD OF CYBER",
+                    desc: "Karthik leads Cyber at Sthiros, working where threat intelligence meets boardroom strategy. Over twenty-three years across cybersecurity, risk, and transformation at HDFC Bank, HPE, Cognizant, and IBM taught him to pair technical depth with a record of scaling practices and revenue. He's a certified NIST practitioner, ISO 27001 Lead Auditor, and CISA who's trained a thousand-plus professionals worldwide. His conviction: security shouldn't cost speed.",
+                    img: "assets/images/aboutpage/karthik_jegannathan.png"
+                },
+                {
+                    category: "CLIENT SOLUTIONS",
+                    name: "Praveen Babu C",
+                    role: "HEAD OF AI",
+                    desc: "Praveen leads AI at Sthiros, focused on how organisations adopt it responsibly and at scale. Where most see a technology, he sees a lens spanning business, process, people, data, and audit, sharpened at PwC's IT controls and governance practice. His domain covers AI strategy, sovereign governance, responsible-AI frameworks, and the data fabric and automation that make it scalable. His belief: most organisations don't have an AI problem. They have an integration problem.",
+                    img: "assets/images/aboutpage/praveenb.png"
+                },
+                {
+                    category: "STRATEGIC PARTNER PRACTICE",
+                    name: "Hithender Kumar G",
+                    role: "HEAD OF STRATEGY",
+                    desc: "Hithender leads Strategy, working where tax intelligence, cross-border structuring, and commercial execution meet. A Chartered Accountant trained in Tax and Transfer Pricing at PwC Chennai, he brings fourteen-plus years across direct, international, and expatriate tax. His track record spans cross-border structuring, benchmarking, and litigation before the Income Tax Appellate Tribunal and High Courts. He partners with boards and founders to turn regulatory complexity into sustainable advantage.",
+                    img: "assets/images/aboutpage/hithender_kumar.png"
+                },
+                {
+                    category: "STRATEGIC PARTNER PRACTICE",
+                    name: "Ravishankar M",
+                    role: "HEAD OF RISK",
+                    desc: "Ravishankar leads Risk & Resilience, the person clients turn to when the stakes are high. A Chartered Accountant and CISA with over eighteen years across the risk practices of PwC and Protiviti, he covers internal audit, ERM, IT controls, SOX, and SOC 1/2 across pharma, BFSI, logistics, and manufacturing. His view: risk is a growth enabler.",
+                    img: "assets/images/aboutpage/ravishankar.png"
+                },
+                {
+                    category: "ENTERPRISE ENABLEMENT",
+                    name: "Santhosh Kumar R",
+                    role: "CHIEF PEOPLE OFFICER",
+                    desc: "Santhosh shapes the culture that makes the work possible. A strategic HR leader with over fifteen years across business partnering, talent, rewards, and change management, he's led enterprise-wide transformation, building the technology and governance behind it. His belief: HR works best where analytics meets empathy.",
+                    img: "assets/images/aboutpage/santhosh_kumar.png"
+                },
+                {
+                    category: "ENTERPRISE ENABLEMENT",
+                    name: "Krishnapriya",
+                    role: "HEAD OF LEGAL & COMPLIANCE",
+                    desc: "Krishnapriya leads legal and governance at Sthiros, keeping growth anchored in integrity and regulatory excellence. She is a Chartered Secretary with over a decade in corporate governance, compliance, and board advisory, guiding organisations through the Companies Act, FEMA, and the full sweep of secretarial work. Her gift is translation, turning dense legal language into clear compliance action.",
+                    img: "assets/images/aboutpage/krishnapriya.png"
+                }
             ];
 
             const teamSlider = document.getElementById('teamSlider');
@@ -2760,10 +2824,10 @@
                         <div class="team-card-content" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
                             <img src="" class="team-card-img" alt="">
                             
-                            <div class="team-card-info" style="padding: 10px 5px; bottom: 0;">
-                                <p class="tc-tag" style="font-size: 9px; color: #ccc; margin-bottom: 2px; letter-spacing: 0.5px; line-height: 1.2; font-weight: 400;"></p>
-                                <h2 class="tc-name" style="font-size: 12px; margin-bottom: 2px; line-height: 1.2; font-weight: 600;"></h2>
-                                <h4 class="tc-role" style="font-size: 9px; color: #aaa; letter-spacing: 0.5px; line-height: 1.2; font-weight: 400; text-transform: uppercase;"></h4>
+                            <div class="team-card-info" style="padding: 8px 4px; bottom: 0;">
+                                <p class="tc-tag" style="font-family: 'Quicksand', sans-serif; font-size: 10px; color: #bbb; margin-bottom: 4px; letter-spacing: 0.8px; line-height: 1.2; font-weight: 400; text-transform: uppercase;"></p>
+                                <h2 class="tc-name" style="font-family: 'Quicksand', sans-serif; font-size: 15px; margin-bottom: 4px; line-height: 1.25; font-weight: 700; color: #ffffff;"></h2>
+                                <h4 class="tc-role" style="font-family: 'Quicksand', sans-serif; font-size: 10px; color: #999; letter-spacing: 0.5px; line-height: 1.2; font-weight: 400; text-transform: uppercase;"></h4>
                             </div>
 
                             <div class="team-active-text-panel" style="transition: opacity 0.3s ease;">

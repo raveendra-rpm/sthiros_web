@@ -5626,8 +5626,31 @@ body.light-mode #skithedesksec .hero-btn-inner:hover,
 body.light-mode .skipthedeskcont .hero-btn-inner:hover {
   color: #ffffff !important;
 }
+/* ── Ensure CTA buttons in Skip the desk section are always clickable ── */
+.skipthedesktop,
+.skipthedeskbtm,
+.skipthedeskbtm-mobile,
+.skipthedesktop svg,
+.skipthedeskbtm svg,
+.skipthedeskbtm-mobile svg {
+  pointer-events: none !important;
+}
 
+.skipthedeskcont {
+  z-index: 30 !important;
+}
 
+.skipthedeskcont .std-buttons {
+  position: relative !important;
+  z-index: 50 !important;
+}
+
+.skipthedeskcont .std-buttons a,
+.skipthedeskcont .std-buttons .hero-btn-outer,
+.skipthedeskcont .std-buttons .hero-btn-inner {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
 
 /* Logo click hint */
 .logo-link {
@@ -8792,3 +8815,414 @@ mark.sthiros-search-match.is-active {
   outline: none !important;
   -webkit-tap-highlight-color: transparent;
 }
+
+/* ════════════════════════════════════════════
+   MOBILE MENU SEARCH BOX
+   ════════════════════════════════════════════ */
+.mobile-menu-search {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 4px 4px 4px 18px;
+  width: calc(100% - 60px);
+  max-width: 320px;
+  height: 46px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  position: relative;
+  box-sizing: border-box;
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.mobile-menu-search:focus-within {
+  box-shadow: 0 0 0 2px rgba(239, 70, 35, 0.4), 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.mobile-menu-search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: #1a1a1a;
+  font-family: inherit;
+  padding: 0;
+  margin-right: 8px;
+}
+
+.mobile-menu-search-input::placeholder {
+  color: #888888;
+}
+
+.mobile-menu-search-btn {
+  background-color: #EF4623;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.2s ease, background-color 0.25s ease;
+  padding: 0;
+}
+
+.mobile-menu-search-btn svg {
+  stroke: #ffffff;
+  display: block;
+}
+
+.mobile-menu-search-btn:hover {
+  background-color: #d13d1e;
+  transform: scale(1.05);
+}
+
+.mobile-menu-search-btn:active {
+  transform: scale(0.95);
+}
+
+/* Light mode styling */
+body.light-mode .mobile-menu-search {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .mobile-menu-search:focus-within {
+  box-shadow: 0 0 0 2px rgba(239, 70, 35, 0.35), 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* Search suggestions dropdown inside mobile menu */
+.mobile-menu-search .search-dropdown-results {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 100%;
+  min-width: 100%;
+  background: rgba(15, 15, 15, 0.98);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(239, 70, 35, 0.35);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+  overflow: hidden;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+body.light-mode .mobile-menu-search .search-dropdown-results {
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(239, 70, 35, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+body.light-mode .mobile-menu-search .search-dropdown-item {
+  color: #222;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Responsive display */
+@media screen and (max-width: 1024px) {
+  .mobile-menu-search {
+    display: flex;
+    z-index: 100;
+  }
+
+  .menu-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-content .main-nav {
+    order: 2;
+    transition: filter 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .menu-content .mobile-menu-search {
+    order: 3;
+    transition: margin 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s ease;
+  }
+
+  /* When search box is active/focused on mobile screen:
+     - Search box moves to the top above WHO WE ARE (order: 1)
+     - Navigation menu list gets blurred */
+  .menu-content.search-active .mobile-menu-search,
+  .menu-content:has(.mobile-menu-search:focus-within) .mobile-menu-search {
+    order: 1;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  .menu-content.search-active .main-nav,
+  .menu-content:has(.mobile-menu-search:focus-within) .main-nav {
+    filter: blur(6px);
+    opacity: 0.25;
+    pointer-events: none;
+    user-select: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .mobile-menu-search {
+    width: calc(100% - 40px);
+    max-width: 290px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    height: 44px;
+    padding: 4px 4px 4px 15px;
+  }
+
+  .menu-content.search-active .mobile-menu-search,
+  .menu-content:has(.mobile-menu-search:focus-within) .mobile-menu-search {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .mobile-menu-search-btn {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+/* ════════════════════════════════════════════
+   SITE-WIDE SEARCH ENGINE DROPDOWN
+   ════════════════════════════════════════════ */
+.site-search-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 380px;
+  max-width: 90vw;
+  max-height: 440px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #EF4623 rgba(14, 14, 14, 0.95);
+  background: rgba(14, 14, 14, 0.98);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(239, 70, 35, 0.35);
+  border-radius: 14px;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.7);
+  z-index: 10000;
+  display: none;
+  flex-direction: column;
+  padding: 6px 0;
+  box-sizing: border-box;
+  pointer-events: auto;
+}
+
+.site-search-dropdown.is-open {
+  display: flex;
+}
+
+/* Mobile search dropdown anchor */
+.mobile-menu-search .site-search-dropdown {
+  left: 0;
+  right: auto;
+  width: 100%;
+  max-width: 100%;
+  max-height: min(340px, calc(100vh - 190px));
+}
+
+.search-result-item {
+  flex-shrink: 0;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background-color 0.15s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  text-decoration: none;
+  user-select: none;
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-item:hover,
+.search-result-item.is-selected {
+  background-color: rgba(239, 70, 35, 0.22);
+}
+
+/* Current Page Result Highlighting in Dropdown */
+.search-result-item.is-current-page {
+  background-color: rgba(239, 70, 35, 0.12);
+  border-left: 3px solid #EF4623;
+}
+
+.search-result-item.is-current-page:hover,
+.search-result-item.is-current-page.is-selected {
+  background-color: rgba(239, 70, 35, 0.26);
+}
+
+.search-result-badge.is-current-page-badge {
+  background: #EF4623;
+  color: #ffffff;
+  border-color: #EF4623;
+  font-weight: 700;
+  box-shadow: 0 0 8px rgba(239, 70, 35, 0.5);
+}
+
+.search-result-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.search-result-title {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.3;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.search-result-badge {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  color: #EF4623;
+  background: rgba(239, 70, 35, 0.15);
+  border: 1px solid rgba(239, 70, 35, 0.3);
+  padding: 1px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.search-result-snippet {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+  color: #999999;
+  line-height: 1.4;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.search-result-path {
+  font-size: 10.5px;
+  color: #666666;
+  margin-top: 2px;
+  font-family: monospace;
+}
+
+mark.search-highlight {
+  background-color: transparent;
+  color: #EF4623;
+  font-weight: 700;
+  padding: 0;
+}
+
+.search-empty-state {
+  padding: 16px;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 13px;
+  color: #888888;
+}
+
+.search-loading-state {
+  padding: 14px 16px;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+  color: #777777;
+}
+
+/* Custom Dropdown Scrollbar */
+.site-search-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+
+.site-search-dropdown::-webkit-scrollbar-track {
+  background: rgba(14, 14, 14, 0.95);
+  border-radius: 6px;
+}
+
+.site-search-dropdown::-webkit-scrollbar-thumb {
+  background: #EF4623;
+  border-radius: 6px;
+}
+
+.site-search-dropdown::-webkit-scrollbar-thumb:hover {
+  background: #ff5733;
+}
+
+/* In-Page Target Section Pulsing Highlight */
+.search-target-highlight {
+  outline: 2px solid #EF4623 !important;
+  box-shadow: 0 0 25px rgba(239, 70, 35, 0.7) !important;
+  transition: outline 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 8px;
+}
+
+/* Light Mode Overrides */
+body.light-mode .site-search-dropdown {
+  background: #ffffff;
+  border: 1px solid rgba(239, 70, 35, 0.35);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.15);
+}
+
+body.light-mode .site-search-dropdown::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+body.light-mode .search-result-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .search-result-item:hover,
+body.light-mode .search-result-item.is-selected {
+  background-color: rgba(239, 70, 35, 0.12);
+}
+
+body.light-mode .search-result-item.is-current-page {
+  background-color: rgba(239, 70, 35, 0.08);
+  border-left: 3px solid #EF4623;
+}
+
+body.light-mode .search-result-item.is-current-page:hover,
+body.light-mode .search-result-item.is-current-page.is-selected {
+  background-color: rgba(239, 70, 35, 0.16);
+}
+
+body.light-mode .search-result-title {
+  color: #111111;
+}
+
+body.light-mode .search-result-snippet {
+  color: #555555;
+}
+
+body.light-mode .search-result-path {
+  color: #888888;
+}
+
+body.light-mode .search-empty-state {
+  color: #666666;
+}
+
+
