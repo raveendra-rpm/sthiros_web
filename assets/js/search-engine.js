@@ -333,13 +333,81 @@
     walk(container);
   }
 
+  function scrollTargetIntoExactView(targetEl, firstMatch) {
+    if (!targetEl && !firstMatch) return;
+
+    const lenisInstance = window.lenis || (typeof lenis !== 'undefined' ? lenis : null);
+
+    function refreshLayout() {
+      if (typeof ScrollTrigger !== 'undefined' && typeof ScrollTrigger.refresh === 'function') {
+        ScrollTrigger.refresh();
+      }
+      if (lenisInstance && typeof lenisInstance.resize === 'function') {
+        lenisInstance.resize();
+      }
+    }
+
+    refreshLayout();
+
+    let dest = targetEl || firstMatch;
+    let offset = window.innerWidth <= 768 ? -75 : -85;
+
+    if (dest.tagName !== 'SECTION' && firstMatch) {
+      const parentCard = firstMatch.closest('.expert-card, .team-card, .problem-item, .vm-card, .rcs-card');
+      if (parentCard) {
+        dest = parentCard;
+        offset = window.innerWidth <= 768 ? -80 : -95;
+      }
+    }
+
+    function doScroll(immediate = false) {
+      refreshLayout();
+
+      if (lenisInstance && typeof lenisInstance.scrollTo === 'function') {
+        lenisInstance.scrollTo(dest, {
+          offset: offset,
+          immediate: immediate,
+          duration: immediate ? 0 : 0.9,
+          lock: false
+        });
+      } else {
+        const y = dest.getBoundingClientRect().top + window.pageYOffset + offset;
+        window.scrollTo({ top: Math.max(0, y), behavior: immediate ? 'auto' : 'smooth' });
+      }
+    }
+
+    doScroll(false);
+
+    setTimeout(() => {
+      refreshLayout();
+      const rect = dest.getBoundingClientRect();
+      if (Math.abs(rect.top - Math.abs(offset)) > 35) {
+        doScroll(false);
+      }
+    }, 450);
+
+    setTimeout(() => {
+      refreshLayout();
+      const rect = dest.getBoundingClientRect();
+      if (rect.top < 0 || rect.top > window.innerHeight * 0.7) {
+        doScroll(false);
+      }
+    }, 950);
+  }
+
   function highlightTargetResult(anchor, query) {
     clearPageHighlights();
     if (!query) return;
 
     let targetEl = null;
     if (anchor) {
-      targetEl = document.getElementById(anchor) || document.querySelector(`[name="${anchor}"]`);
+      try {
+        targetEl = document.getElementById(anchor) ||
+          document.querySelector('.' + CSS.escape(anchor)) ||
+          document.querySelector(`[name="${anchor}"]`);
+      } catch (_) {
+        targetEl = document.getElementById(anchor) || document.querySelector(`[name="${anchor}"]`);
+      }
     }
 
     if (targetEl) {
@@ -373,21 +441,37 @@
     } else {
       const mainEl = document.querySelector('main') || document.body;
       highlightInElement(mainEl, query);
-      const firstMatch = document.querySelector('mark.sthiros-search-match');
-      if (firstMatch) {
-        const lenisInstance = window.lenis || (typeof lenis !== 'undefined' ? lenis : null);
-        if (lenisInstance) {
-          lenisInstance.scrollTo(firstMatch, { offset: -120 });
-        } else {
-          const y = firstMatch.getBoundingClientRect().top + window.pageYOffset - 120;
-          window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+
+    const firstMatch = document.querySelector('mark.sthiros-search-match');
+
+    if (firstMatch) {
+      const expertCard = firstMatch.closest('.expert-card');
+      if (expertCard) {
+        expertCard.classList.add('search-target-highlight');
+        if (typeof expertCard.click === 'function') {
+          expertCard.click();
         }
+      }
+      const teamCard = firstMatch.closest('.team-card');
+      if (teamCard) {
+        teamCard.classList.add('active');
+        teamCard.classList.add('search-target-highlight');
+      }
+      const problemItem = firstMatch.closest('.problem-item');
+      if (problemItem) {
+        problemItem.classList.add('active');
+        problemItem.classList.add('search-target-highlight');
       }
     }
 
+    scrollTargetIntoExactView(targetEl, firstMatch);
+
     setTimeout(() => {
-      if (targetEl) targetEl.classList.remove('search-target-highlight');
-    }, 6000);
+      document.querySelectorAll('.search-target-highlight').forEach(el => {
+        el.classList.remove('search-target-highlight');
+      });
+    }, 7000);
   }
 
   function clearAllSearchState() {
@@ -441,23 +525,9 @@
     // If on the same page
     if (!targetPage || targetPage === currentPage) {
       if (anchor) {
-        const el = document.getElementById(anchor);
-        if (el) {
-          const lenisInstance = window.lenis || (typeof lenis !== 'undefined' ? lenis : null);
-          if (lenisInstance) {
-            lenisInstance.scrollTo(el, { offset: -70 });
-          } else {
-            const y = el.getBoundingClientRect().top + window.pageYOffset - 70;
-            window.scrollTo({ top: y, behavior: 'smooth' });
-          }
-          history.pushState(null, '', '#' + anchor);
-          if (query) {
-            setTimeout(() => {
-              highlightTargetResult(anchor, query);
-            }, 300);
-          }
-          return;
-        }
+        history.pushState(null, '', '#' + anchor);
+        highlightTargetResult(anchor, query);
+        return;
       } else {
         if (query) {
           highlightTargetResult(null, query);
@@ -834,9 +904,26 @@
       // Clean query parameter from URL address bar without reloading
       clearAllSearchState();
 
-      setTimeout(() => {
+      // If preloader is active, immediately dismiss it so user arrives directly at target section
+      const preloader = document.getElementById('preloader');
+      if (preloader) {
+        preloader.remove();
+        document.body.classList.remove('loading');
+        if (typeof triggerBoot === 'function') {
+          triggerBoot();
+        }
+      }
+
+      const runHighlight = () => {
         highlightTargetResult(hash, query);
-      }, 600);
+      };
+
+      if (document.readyState === 'complete') {
+        setTimeout(runHighlight, 120);
+      } else {
+        window.addEventListener('load', () => setTimeout(runHighlight, 120), { once: true });
+        setTimeout(runHighlight, 450);
+      }
     }
   }
 

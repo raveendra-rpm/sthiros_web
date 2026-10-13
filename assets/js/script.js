@@ -99,6 +99,25 @@ function triggerBoot() {
 }
 
 function initPreloader() {
+  // Check if landing with search highlight or direct search query
+  const urlParams = new URLSearchParams(window.location.search);
+  const hasSearch = urlParams.has('searchHighlight') || urlParams.has('q');
+  let hasSession = false;
+  try {
+    hasSession = !!sessionStorage.getItem('sthiros_search_highlight');
+  } catch (_) {}
+
+  // If arriving from search, immediately dismiss preloader and boot to reveal the target section
+  if (hasSearch || hasSession) {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+      preloader.remove();
+    }
+    document.body.classList.remove('loading');
+    triggerBoot();
+    return;
+  }
+
   // Force scroll to top and lock it
   window.scrollTo(0, 0);
   const preventScroll = (e) => {
@@ -181,17 +200,39 @@ function initLenis() {
       const target = document.querySelector(id);
       if (!target) return;
       e.preventDefault();
-      lenis.scrollTo(target, { offset: -70 });
+      if (typeof ScrollTrigger !== 'undefined' && typeof ScrollTrigger.refresh === 'function') {
+        ScrollTrigger.refresh();
+      }
+      if (lenis && typeof lenis.resize === 'function') {
+        lenis.resize();
+      }
+      lenis.scrollTo(target, { offset: -85 });
     });
   });
 
   // Handle URL hash on initial page load / navigation from another page
   if (window.location.hash) {
-    const hashTarget = document.querySelector(window.location.hash);
-    if (hashTarget) {
-      setTimeout(() => {
-        lenis.scrollTo(hashTarget, { offset: -70 });
-      }, 400);
+    const urlParams = new URLSearchParams(window.location.search);
+    const hasSearch = urlParams.has('searchHighlight') || urlParams.has('q');
+    let hasSession = false;
+    try {
+      hasSession = !!sessionStorage.getItem('sthiros_search_highlight');
+    } catch (_) {}
+
+    // Only run standard hash scroll if search highlight engine is not handling it
+    if (!hasSearch && !hasSession) {
+      const hashTarget = document.querySelector(window.location.hash);
+      if (hashTarget) {
+        setTimeout(() => {
+          if (typeof ScrollTrigger !== 'undefined' && typeof ScrollTrigger.refresh === 'function') {
+            ScrollTrigger.refresh();
+          }
+          if (lenis && typeof lenis.resize === 'function') {
+            lenis.resize();
+          }
+          lenis.scrollTo(hashTarget, { offset: -85 });
+        }, 500);
+      }
     }
   }
 }
@@ -4756,13 +4797,86 @@ function initAdvancedSearch() {
     walk(container);
   }
 
+  function scrollTargetIntoExactView(targetEl, firstMatch) {
+    if (!targetEl && !firstMatch) return;
+
+    const lenisInstance = window.lenis || lenis;
+
+    function refreshLayout() {
+      if (typeof ScrollTrigger !== 'undefined' && typeof ScrollTrigger.refresh === 'function') {
+        ScrollTrigger.refresh();
+      }
+      if (lenisInstance && typeof lenisInstance.resize === 'function') {
+        lenisInstance.resize();
+      }
+    }
+
+    refreshLayout();
+
+    // Determine target element to scroll to
+    let dest = targetEl || firstMatch;
+    let offset = window.innerWidth <= 768 ? -75 : -85;
+
+    // If target is inside a specific card or item and not a full section
+    if (dest.tagName !== 'SECTION' && firstMatch) {
+      const parentCard = firstMatch.closest('.expert-card, .team-card, .problem-item, .vm-card, .rcs-card');
+      if (parentCard) {
+        dest = parentCard;
+        offset = window.innerWidth <= 768 ? -80 : -95;
+      }
+    }
+
+    function doScroll(immediate = false) {
+      refreshLayout();
+
+      if (lenisInstance && typeof lenisInstance.scrollTo === 'function') {
+        lenisInstance.scrollTo(dest, {
+          offset: offset,
+          immediate: immediate,
+          duration: immediate ? 0 : 0.9,
+          lock: false
+        });
+      } else {
+        const y = dest.getBoundingClientRect().top + window.pageYOffset + offset;
+        window.scrollTo({ top: Math.max(0, y), behavior: immediate ? 'auto' : 'smooth' });
+      }
+    }
+
+    // Pass 1: scroll now
+    doScroll(false);
+
+    // Pass 2: check after GSAP / DOM layout settles (450ms)
+    setTimeout(() => {
+      refreshLayout();
+      const rect = dest.getBoundingClientRect();
+      if (Math.abs(rect.top - Math.abs(offset)) > 35) {
+        doScroll(false);
+      }
+    }, 450);
+
+    // Pass 3: safety confirmation check (950ms)
+    setTimeout(() => {
+      refreshLayout();
+      const rect = dest.getBoundingClientRect();
+      if (rect.top < 0 || rect.top > window.innerHeight * 0.7) {
+        doScroll(false);
+      }
+    }, 950);
+  }
+
   function highlightTargetResult(anchor, query) {
     clearPageHighlights();
     if (!query) return;
 
     let targetEl = null;
     if (anchor) {
-      targetEl = document.getElementById(anchor) || document.querySelector(`[name="${anchor}"]`);
+      try {
+        targetEl = document.getElementById(anchor) ||
+          document.querySelector('.' + CSS.escape(anchor)) ||
+          document.querySelector(`[name="${anchor}"]`);
+      } catch (_) {
+        targetEl = document.getElementById(anchor) || document.querySelector(`[name="${anchor}"]`);
+      }
     }
 
     // Auto-expand collapsed parents / tabs / accordions
@@ -4795,25 +4909,44 @@ function initAdvancedSearch() {
       targetEl.classList.add('search-target-highlight');
       highlightInElement(targetEl, query);
     } else {
-      // If no specific anchor, search within main container
+      // If no specific anchor or anchor element not found, search within main container
       const mainEl = document.querySelector('main') || document.body;
       highlightInElement(mainEl, query);
-      const firstMatch = document.querySelector('mark.sthiros-search-match');
-      if (firstMatch) {
-        const lenisInstance = window.lenis || lenis;
-        if (lenisInstance) {
-          lenisInstance.scrollTo(firstMatch, { offset: -120 });
-        } else {
-          const y = firstMatch.getBoundingClientRect().top + window.pageYOffset - 120;
-          window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+
+    // Find first highlighted match in document
+    const firstMatch = document.querySelector('mark.sthiros-search-match');
+
+    // If match is inside an expert-card (e.g. 3D Coverflow on index.html #industries-new)
+    if (firstMatch) {
+      const expertCard = firstMatch.closest('.expert-card');
+      if (expertCard) {
+        expertCard.classList.add('search-target-highlight');
+        if (typeof expertCard.click === 'function') {
+          expertCard.click();
         }
+      }
+      const teamCard = firstMatch.closest('.team-card');
+      if (teamCard) {
+        teamCard.classList.add('active');
+        teamCard.classList.add('search-target-highlight');
+      }
+      const problemItem = firstMatch.closest('.problem-item');
+      if (problemItem) {
+        problemItem.classList.add('active');
+        problemItem.classList.add('search-target-highlight');
       }
     }
 
-    // Auto-remove pulsing outline after 6 seconds
+    // Perform exact and accurate scroll to destination
+    scrollTargetIntoExactView(targetEl, firstMatch);
+
+    // Auto-remove pulsing outline after 7 seconds
     setTimeout(() => {
-      if (targetEl) targetEl.classList.remove('search-target-highlight');
-    }, 6000);
+      document.querySelectorAll('.search-target-highlight').forEach(el => {
+        el.classList.remove('search-target-highlight');
+      });
+    }, 7000);
   }
 
   function clearAllSearchState() {
@@ -4866,23 +4999,9 @@ function initAdvancedSearch() {
     // If on same page
     if (!targetPage || targetPage === currentPage) {
       if (anchor) {
-        const el = document.getElementById(anchor);
-        if (el) {
-          const lenisInstance = window.lenis || lenis;
-          if (lenisInstance) {
-            lenisInstance.scrollTo(el, { offset: -70 });
-          } else {
-            const y = el.getBoundingClientRect().top + window.pageYOffset - 70;
-            window.scrollTo({ top: y, behavior: 'smooth' });
-          }
-          history.pushState(null, '', '#' + anchor);
-          if (query) {
-            setTimeout(() => {
-              highlightTargetResult(anchor, query);
-            }, 300);
-          }
-          return;
-        }
+        history.pushState(null, '', '#' + anchor);
+        highlightTargetResult(anchor, query);
+        return;
       } else {
         if (query) {
           highlightTargetResult(null, query);
@@ -5249,9 +5368,26 @@ function initAdvancedSearch() {
       // Clean query parameter from URL address bar without reloading
       clearAllSearchState();
 
-      setTimeout(() => {
+      // If preloader is active, immediately dismiss it so user arrives directly at target section
+      const preloader = document.getElementById('preloader');
+      if (preloader) {
+        preloader.remove();
+        document.body.classList.remove('loading');
+        if (typeof triggerBoot === 'function') {
+          triggerBoot();
+        }
+      }
+
+      const runHighlight = () => {
         highlightTargetResult(hash, query);
-      }, 600);
+      };
+
+      if (document.readyState === 'complete') {
+        setTimeout(runHighlight, 120);
+      } else {
+        window.addEventListener('load', () => setTimeout(runHighlight, 120), { once: true });
+        setTimeout(runHighlight, 450);
+      }
     }
   }
 

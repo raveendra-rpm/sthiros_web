@@ -8833,24 +8833,45 @@ body.light-mode #services-title .text-red {
 
 /* Enhancing the highlight mark */
 mark.sthiros-search-match {
-  background-color: rgba(239, 70, 35, 0.2) !important;
+  background-color: rgba(239, 70, 35, 0.25) !important;
   color: #EF4623 !important;
   border-radius: 3px;
-  padding: 0 2px;
+  padding: 1px 4px;
   font-weight: bold;
-  box-shadow: 0 0 5px rgba(239, 70, 35, 0.5);
-  animation: pulseHighlight 1.5s infinite alternate;
+  box-shadow: 0 0 6px rgba(239, 70, 35, 0.5);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 mark.sthiros-search-match.is-active {
   background-color: #EF4623 !important;
-  color: #fff !important;
-  box-shadow: 0 0 10px rgba(239, 70, 35, 0.8);
+  color: #ffffff !important;
+  border-radius: 4px;
+  padding: 2px 7px;
+  box-shadow: 0 0 16px rgba(239, 70, 35, 0.95), 0 0 30px rgba(239, 70, 35, 0.5);
+  display: inline-block;
+  position: relative;
+  z-index: 30;
+  animation: sthirosSearchGlowPulse 1.2s infinite alternate ease-in-out;
 }
 
-@keyframes pulseHighlight {
-  from { box-shadow: 0 0 5px rgba(239, 70, 35, 0.3); }
-  to { box-shadow: 0 0 12px rgba(239, 70, 35, 0.7); }
+@keyframes sthirosSearchGlowPulse {
+  0% {
+    box-shadow: 0 0 8px rgba(239, 70, 35, 0.6), 0 0 15px rgba(239, 70, 35, 0.3);
+    transform: scale(1);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(239, 70, 35, 1), 0 0 35px rgba(239, 70, 35, 0.85);
+    transform: scale(1.05);
+  }
+}
+
+.search-target-highlight {
+  outline: 2px solid #EF4623 !important;
+  outline-offset: 4px;
+  box-shadow: 0 0 25px rgba(239, 70, 35, 0.55) !important;
+  border-radius: 8px;
+  transition: all 0.5s ease;
 }
 
 .rcs-nav-btn {

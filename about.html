@@ -601,6 +601,42 @@
             z-index: 100;
         }
 
+        .team-card.active.dimmed {
+            cursor: pointer;
+        }
+
+        .team-card.active.dimmed .team-card-img {
+            filter: brightness(0.55);
+            transition: filter 0.4s ease;
+        }
+
+        .team-card.active.dimmed .team-card-content::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(var(--bg-rgb), 0.9) 0%, rgba(60, 20, 25, 0.6) 100%);
+            z-index: 1;
+            pointer-events: none;
+            transition: opacity 0.4s ease;
+        }
+
+        .team-card.active.dimmed .team-active-text-panel {
+            opacity: 0.25;
+            filter: brightness(0.7);
+            transition: opacity 0.4s ease, filter 0.4s ease;
+        }
+
+        .team-card.active.dimmed:hover .team-card-img {
+            filter: brightness(0.75);
+        }
+
+        .team-card.active.dimmed:hover .team-active-text-panel {
+            opacity: 0.5;
+        }
+
         .team-card-img {
             width: 100%;
             height: 100%;
@@ -3275,7 +3311,7 @@
         </div>
 
         <!-- Market & Growth -->
-        <div class="meetsthirossec">
+        <div class="meetsthirossec" id="meetsthirossec">
             <div class="team-slider" id="teamSlider">
                 <!-- JavaScript will populate this (desktop) -->
             </div>
@@ -3659,22 +3695,29 @@
                 let dataOffset = 0; // Card 0: Sreekhar, Card 1: Pooja, Card 2: Braen
                 const uniqueCategories = [...new Set(teamData.map(item => item.category.toUpperCase()))];
 
+                let selectedCategory = 'MARKET & GROWTH';
+
                 function updateFilters() {
-                    const currentActiveIndex = ((1 + dataOffset) % len + len) % len;
-                    const activeCat = teamData[currentActiveIndex].category.toUpperCase();
                     document.querySelectorAll('.team-filter-btn').forEach(btn => {
-                        if (btn.innerText === activeCat) btn.classList.add('active');
+                        if (btn.innerText === selectedCategory) btn.classList.add('active');
                         else btn.classList.remove('active');
                     });
 
                     domCards.forEach((card, i) => {
-                        if (i === 1) {
-                            card.classList.remove('highlighted');
-                            return;
-                        }
                         const dataIndex = ((i + dataOffset) % len + len) % len;
                         const memberCat = teamData[dataIndex].category.toUpperCase();
-                        if (memberCat === activeCat) {
+
+                        if (i === 1) {
+                            card.classList.remove('highlighted');
+                            if (memberCat === selectedCategory) {
+                                card.classList.remove('dimmed');
+                            } else {
+                                card.classList.add('dimmed');
+                            }
+                            return;
+                        }
+
+                        if (memberCat === selectedCategory) {
                             card.classList.add('highlighted');
                         } else {
                             card.classList.remove('highlighted');
@@ -3712,6 +3755,10 @@
 
                     const dir = shift > 0 ? -1 : 1; // swipe left (shift>0) -> out left (-1), in right (+1)
                     dataOffset = ((dataOffset + shift) % len + len) % len;
+
+                    // When cards rotate, sync selectedCategory to the newly active card's category
+                    const currentActiveIndex = ((1 + dataOffset) % len + len) % len;
+                    selectedCategory = teamData[currentActiveIndex].category.toUpperCase();
                     updateFilters();
 
                     domCards.forEach((card, i) => {
@@ -3795,22 +3842,8 @@
                             btn.addEventListener('click', (e) => {
                                 e.stopPropagation();
                                 if (isAnimating) return;
-                                const currentActiveIndex = ((1 + dataOffset) % len + len) % len;
-                                const targetIndex = cat === 'MARKET & GROWTH' ? 1 : teamData.findIndex(item => item.category.toUpperCase() === cat);
-                                if (targetIndex !== -1) {
-                                    if (targetIndex !== currentActiveIndex) {
-                                        shiftCards(targetIndex - currentActiveIndex);
-                                    }
-                                    if (window.innerWidth < 768) {
-                                        setTimeout(() => {
-                                            const activeCard = domCards[1];
-                                            if (activeCard && teamSlider) {
-                                                const targetScroll = activeCard.offsetLeft - (teamSlider.clientWidth - activeCard.offsetWidth) / 2;
-                                                teamSlider.scrollTo({ left: Math.max(0, targetScroll), behavior: 'smooth' });
-                                            }
-                                        }, 50);
-                                    }
-                                }
+                                selectedCategory = cat;
+                                updateFilters();
                             });
                             taFilters.appendChild(btn);
                         });
@@ -3830,7 +3863,15 @@
                             teamSlider.scrollTo({ left: Math.max(0, targetScroll), behavior: 'smooth' });
                             return;
                         }
-                        if (isAnimating || i === 1) return;
+                        if (isAnimating) return;
+                        if (i === 1) {
+                            if (card.classList.contains('dimmed')) {
+                                const currentActiveIndex = ((1 + dataOffset) % len + len) % len;
+                                selectedCategory = teamData[currentActiveIndex].category.toUpperCase();
+                                updateFilters();
+                            }
+                            return;
+                        }
                         shiftCards(i - 1);
                     });
 
