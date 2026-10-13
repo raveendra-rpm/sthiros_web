@@ -551,10 +551,11 @@
             width: 115px;
             height: 210px;
             filter: brightness(0.6);
+            transition: filter 0.4s ease;
         }
 
         .team-card.inactive:hover {
-            filter: brightness(0.8);
+            filter: brightness(0.85);
         }
 
         .team-card.inactive .team-card-content::after {
@@ -570,11 +571,15 @@
             transition: opacity 0.4s ease;
         }
 
-        .team-card.inactive.left-card {
+        .team-card.inactive.highlighted {
             filter: brightness(1);
         }
 
-        .team-card.inactive.left-card .team-card-content::after {
+        .team-card.inactive.highlighted:hover {
+            filter: brightness(1.1);
+        }
+
+        .team-card.inactive.highlighted .team-card-content::after {
             background: linear-gradient(to top, rgba(var(--bg-rgb), 0.9) 0%, transparent 60%);
         }
 
@@ -607,8 +612,8 @@
         .team-card-info {
             position: absolute;
             bottom: 16px;
-            left: 8px;
-            right: 8px;
+            left: 6px;
+            right: 6px;
             z-index: 2;
             transition: opacity 0.3s ease;
         }
@@ -667,7 +672,7 @@
 
         .tc-name {
             font-family: 'Quicksand', sans-serif;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
             color: var(--text-primary);
             margin: 0 0 4px 0;
@@ -677,7 +682,8 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
             line-height: 1.25;
-            word-break: break-word;
+            word-break: normal;
+            overflow-wrap: normal;
         }
 
         .tc-role {
@@ -1022,7 +1028,11 @@
 
             .team-card.inactive {
                 height: 180px;
-                width: 100px;
+                width: 105px;
+            }
+
+            .tc-name {
+                font-size: 13.5px;
             }
 
             .ta-name {
@@ -3646,7 +3656,7 @@
 
                 const domCards = [];
                 const len = teamData.length;
-                let dataOffset = len - 1; // Card 1 initially displays teamData[0] (Sreekhar)
+                let dataOffset = 0; // Card 0: Sreekhar, Card 1: Pooja, Card 2: Braen
                 const uniqueCategories = [...new Set(teamData.map(item => item.category.toUpperCase()))];
 
                 function updateFilters() {
@@ -3655,6 +3665,20 @@
                     document.querySelectorAll('.team-filter-btn').forEach(btn => {
                         if (btn.innerText === activeCat) btn.classList.add('active');
                         else btn.classList.remove('active');
+                    });
+
+                    domCards.forEach((card, i) => {
+                        if (i === 1) {
+                            card.classList.remove('highlighted');
+                            return;
+                        }
+                        const dataIndex = ((i + dataOffset) % len + len) % len;
+                        const memberCat = teamData[dataIndex].category.toUpperCase();
+                        if (memberCat === activeCat) {
+                            card.classList.add('highlighted');
+                        } else {
+                            card.classList.remove('highlighted');
+                        }
                     });
                 }
 
@@ -3733,10 +3757,9 @@
                 for (let i = 0; i < len; i++) {
                     const card = document.createElement('div');
                     const isActive = i === 1; // 2nd card is always the active one visually
-                    const isLeftCard = i === 0;
                     const isLastThree = i >= len - 4;
 
-                    card.className = `team-card ${isActive ? 'active' : 'inactive'} ${isLeftCard ? 'left-card' : ''} ${isLastThree ? 'text-left' : ''}`;
+                    card.className = `team-card ${isActive ? 'active' : 'inactive'} ${isLastThree ? 'text-left' : ''}`;
                     card.style.order = i;
                     card.style.webkitTapHighlightColor = 'transparent';
 
@@ -3744,10 +3767,10 @@
                         <div class="team-card-content" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
                             <img src="" class="team-card-img" alt="">
                             
-                            <div class="team-card-info" style="padding: 8px 4px; bottom: 0;">
+                            <div class="team-card-info" style="padding: 8px 2px; bottom: 0; left: 6px; right: 6px;">
                                 <p class="tc-tag" style="font-family: 'Quicksand', sans-serif; font-size: 10px; color: #bbb; margin-bottom: 4px; letter-spacing: 0.8px; line-height: 1.2; font-weight: 400; text-transform: uppercase;"></p>
-                                <h2 class="tc-name" style="font-family: 'Quicksand', sans-serif; font-size: 15px; margin-bottom: 4px; line-height: 1.25; font-weight: 700; color: #ffffff;"></h2 >
-                                <h4 class="tc-role" style="font-family: 'Quicksand', sans-serif; font-size: 10px; color: #999; letter-spacing: 0.5px; line-height: 1.2; font-weight: 400; text-transform: uppercase;"></h4 >
+                                <h2 class="tc-name" style="font-family: 'Quicksand', sans-serif; font-size: 14px; margin-bottom: 4px; line-height: 1.25; font-weight: 700; color: #ffffff; word-break: normal; overflow-wrap: normal;"></h2>
+                                <h4 class="tc-role" style="font-family: 'Quicksand', sans-serif; font-size: 10px; color: #999; letter-spacing: 0.5px; line-height: 1.2; font-weight: 400; text-transform: uppercase;"></h4>
                             </div>
 
                             <div class="team-active-text-panel" style="transition: opacity 0.3s ease;">
@@ -3773,7 +3796,7 @@
                                 e.stopPropagation();
                                 if (isAnimating) return;
                                 const currentActiveIndex = ((1 + dataOffset) % len + len) % len;
-                                const targetIndex = teamData.findIndex(item => item.category.toUpperCase() === cat);
+                                const targetIndex = cat === 'MARKET & GROWTH' ? 1 : teamData.findIndex(item => item.category.toUpperCase() === cat);
                                 if (targetIndex !== -1) {
                                     if (targetIndex !== currentActiveIndex) {
                                         shiftCards(targetIndex - currentActiveIndex);

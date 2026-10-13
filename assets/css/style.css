@@ -4662,6 +4662,10 @@ mark.sthiros-search-match.is-active {
   font-size: 1.5rem;
 }
 
+.sub-nav-link.active {
+  color: #F13715;
+}
+
 /* --- NESTED DROPDOWN STYLES --- */
 .nested-sub-nav {
   padding-left: 25px;
@@ -4693,11 +4697,16 @@ body.light-mode .nested-sub-nav {
   font-size: 1.1rem;
 }
 
+.nested-sub-nav-link.active {
+  color: #F13715;
+}
+
 body.light-mode .nested-sub-nav-link {
   color: #555;
 }
 
-body.light-mode .nested-sub-nav-link:hover {
+body.light-mode .nested-sub-nav-link:hover,
+body.light-mode .nested-sub-nav-link.active {
   color: #F13715;
 }
 
@@ -4705,7 +4714,8 @@ body.light-mode .sub-nav-link {
   color: #666;
 }
 
-body.light-mode .sub-nav-link:hover {
+body.light-mode .sub-nav-link:hover,
+body.light-mode .sub-nav-link.active {
   color: #F13715;
 }
 
@@ -5904,8 +5914,24 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
     font-weight: 400 !important;
   }
 
+  .menu-content .main-nav > .nav-item-dropdown > .nav-link.dropdown-toggle {
+    width: 235px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  .menu-content .nested-dropdown > .sub-nav-link.dropdown-toggle {
+    width: 155px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
   .menu-content .chevron {
     width: 8px !important;
+    height: auto !important;
+    display: inline-block !important;
   }
 
   .menu-content .sub-nav-link {
@@ -5914,7 +5940,8 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
     padding-left: 20px !important;
   }
 
-  .menu-content .sub-nav-link:hover {
+  .menu-content .sub-nav-link:hover,
+  .menu-content .sub-nav-link.active {
     font-size: 1rem !important;
     color: #EF4623 !important;
   }
@@ -5925,6 +5952,11 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
     padding-left: 15px !important;
     margin-bottom: 8px !important;
     line-height: 1.4 !important;
+  }
+
+  .menu-content .nested-sub-nav-link:hover,
+  .menu-content .nested-sub-nav-link.active {
+    color: #EF4623 !important;
   }
   
   .menu-content .sub-nav {
@@ -8515,11 +8547,17 @@ body.light-mode .footer-menu li {
   }
 
   body.light-mode:not(.home-page):not(.home-index) .menu-overlay .sub-nav-link:hover,
+  body.light-mode:not(.home-page):not(.home-index) .menu-overlay .sub-nav-link.active,
   body.light-mode:not(.home-page):not(.home-index) .menu-overlay .nested-sub-nav-link:hover,
+  body.light-mode:not(.home-page):not(.home-index) .menu-overlay .nested-sub-nav-link.active,
   body.light-mode.sub-page .menu-overlay .sub-nav-link:hover,
+  body.light-mode.sub-page .menu-overlay .sub-nav-link.active,
   body.light-mode.sub-page .menu-overlay .nested-sub-nav-link:hover,
+  body.light-mode.sub-page .menu-overlay .nested-sub-nav-link.active,
   body.light-mode.page-subpage .menu-overlay .sub-nav-link:hover,
-  body.light-mode.page-subpage .menu-overlay .nested-sub-nav-link:hover {
+  body.light-mode.page-subpage .menu-overlay .sub-nav-link.active,
+  body.light-mode.page-subpage .menu-overlay .nested-sub-nav-link:hover,
+  body.light-mode.page-subpage .menu-overlay .nested-sub-nav-link.active {
     color: #F13715 !important;
   }
 
@@ -8638,12 +8676,19 @@ body.light-mode .footer-menu li {
     letter-spacing: 0.1em !important;
     font-weight: 400 !important;
   }
+  .menu-content .main-nav > .nav-item-dropdown > .nav-link.dropdown-toggle {
+    width: 220px !important;
+  }
   .menu-content .sub-nav-link {
     font-size: 0.95rem !important;
     height: 36px !important;
     padding-left: 20px !important;
   }
-  .menu-content .sub-nav-link:hover {
+  .menu-content .nested-dropdown > .sub-nav-link.dropdown-toggle {
+    width: 145px !important;
+  }
+  .menu-content .sub-nav-link:hover,
+  .menu-content .sub-nav-link.active {
     font-size: 0.95rem !important;
     color: #EF4623 !important;
   }
@@ -8656,7 +8701,8 @@ body.light-mode .footer-menu li {
     line-height: 1.4 !important;
     font-size: 0.95rem !important;
   }
-  .menu-content .nested-sub-nav-link:hover {
+  .menu-content .nested-sub-nav-link:hover,
+  .menu-content .nested-sub-nav-link.active {
     font-size: 0.95rem !important;
     color: #EF4623 !important;
   }

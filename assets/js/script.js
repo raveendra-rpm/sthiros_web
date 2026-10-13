@@ -3361,17 +3361,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const mNavLinks = document.querySelectorAll('.main-nav a');
     mNavLinks.forEach(link => link.classList.remove('active'));
 
+    const cleanPage = page.replace(/\.html$/, '');
+
     mNavLinks.forEach(link => {
         const href = link.getAttribute('href');
-        if (href && (href === page || (href === 'services.html' && isServicesPage))) {
+        if (!href || href === '#') return;
+        const cleanHref = href.replace(/\.html$/, '');
+
+        const isMatch = (href === page || cleanHref === cleanPage || (href === 'services.html' && isServicesPage));
+        if (isMatch) {
             link.classList.add('active');
             
             // Highlight parent dropdowns if any
             let parentDropdown = link.closest('.nav-item-dropdown');
             while (parentDropdown) {
-                const parentToggle = parentDropdown.querySelector('.dropdown-toggle');
+                const parentToggle = parentDropdown.querySelector(':scope > .dropdown-toggle') || parentDropdown.querySelector('.dropdown-toggle');
                 if (parentToggle) parentToggle.classList.add('active');
-                parentDropdown = parentDropdown.parentElement.closest('.nav-item-dropdown'); // For nested dropdowns
+                parentDropdown = parentDropdown.parentElement ? parentDropdown.parentElement.closest('.nav-item-dropdown') : null;
             }
         }
     });
