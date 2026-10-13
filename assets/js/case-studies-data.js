@@ -11,7 +11,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "AI",
     "industry": "Manufacturing",
     "pdf": "assets/AIcasestudypdf/STHIROS · AI · INTELLIGENT FOUNDATION · AUTOMOTIVE MANUFACTURING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · AI · INTELLIGENT FOUNDATION · AUTOMOTIVE MANUFACTURING.png",
     "sheet": "Already uploaded"
   },
   {
@@ -22,7 +22,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "AI",
     "industry": "Telecom & Digital Infrastructure",
     "pdf": "assets/AIcasestudypdf/STHIROS · AI · COGNITIVE EXPERIENCE & ENGINEERING · CROSS-INDUSTRY.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · AI · COGNITIVE EXPERIENCE & ENGINEERING · CROSS-INDUSTRY.png",
     "sheet": "Already uploaded"
   },
   {
@@ -33,7 +33,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "AI",
     "industry": "Energy, Mining & Utilities",
     "pdf": "assets/AIcasestudypdf/STHIROS · AI · INTELLIGENT FOUNDATION · MINING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · AI · INTELLIGENT FOUNDATION · MINING.png",
     "sheet": "Already uploaded"
   },
   {
@@ -44,7 +44,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "AI",
     "industry": "D2C & Retail",
     "pdf": "assets/AIcasestudypdf/STHIROS · AI · COGNITIVE EXPERIENCE & ENGINEERING · E-COMMERCE, SUPPLY CHAIN PLATFORM.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · AI · COGNITIVE EXPERIENCE & ENGINEERING · E-COMMERCE, SUPPLY CHAIN PLATFORM.png",
     "sheet": "Already uploaded"
   },
   {
@@ -55,7 +55,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "AI",
     "industry": "Public Sector & Government",
     "pdf": "assets/AIcasestudypdf/STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · GOVERNMENT & DIGITAL INFRASTRUCTURE.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · GOVERNMENT & DIGITAL INFRASTRUCTURE.png",
     "sheet": "Already uploaded"
   },
   {
@@ -66,7 +66,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "AI",
     "industry": "Manufacturing",
     "pdf": "assets/AIcasestudypdf/STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · AUTOMOTIVE, MANUFACTURING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · AUTOMOTIVE, MANUFACTURING.png",
     "sheet": "Already uploaded"
   },
   {
@@ -77,7 +77,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "AI",
     "industry": "Manufacturing",
     "pdf": "assets/AIcasestudypdf/STHIROS · AI · AGENTIC OPERATIONS & AUTOMATION · STEEL MANUFACTURING, EXPORT LOGISTICS.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · AI · AGENTIC OPERATIONS & AUTOMATION · STEEL MANUFACTURING, EXPORT LOGISTICS.png",
     "sheet": "Already uploaded"
   },
   {
@@ -88,7 +88,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Risk",
     "industry": "BFSI & Fintech",
     "pdf": "assets/casestudybsfi/STHIROS · RISK · INFORMATION SYSTEMS AUDIT · BFSI.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · RISK · INFORMATION SYSTEMS AUDIT · BFSI.png",
     "sheet": "Already uploaded"
   },
   {
@@ -99,7 +99,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Risk",
     "industry": "BFSI & Fintech",
     "pdf": "assets/casestudybsfi/STHIROS · RISK · ENTERPRISE IT RISK ASSESSMENT · BFSI.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · RISK · ENTERPRISE IT RISK ASSESSMENT · BFSI.png",
     "sheet": "Already uploaded"
   },
   {
@@ -110,7 +110,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Cyber",
     "industry": "Healthcare & Life Sciences",
     "pdf": "assets/cybercasestudy/STHIROS · CYBER · DATA PRIVACY & PROTECTION ENGINEERING · LIFE SCIENCES.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · CYBER · DATA PRIVACY & PROTECTION ENGINEERING · LIFE SCIENCES.png",
     "sheet": "Already uploaded"
   },
   {
@@ -121,7 +121,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Cyber",
     "industry": "BFSI & Fintech",
     "pdf": "assets/cybercasestudy/STHIROS · CYBER · DATA PRIVACY & PROTECTION ENGINEERING · BANKING & FINANCIAL SERVICES.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · CYBER · DATA PRIVACY & PROTECTION ENGINEERING · BANKING & FINANCIAL SERVICES.png",
     "sheet": "Already uploaded"
   },
   {
@@ -132,7 +132,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Cyber",
     "industry": "Manufacturing",
     "pdf": "assets/cybercasestudy/STHIROS · CYBER · OFFENSIVE SECURITY & TECHNICAL ASSURANCE · AUTOMOTIVE MANUFACTURING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · CYBER · OFFENSIVE SECURITY & TECHNICAL ASSURANCE · AUTOMOTIVE MANUFACTURING.png",
     "sheet": "Already uploaded"
   },
   {
@@ -143,7 +143,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Cyber",
     "industry": "Telecom & Digital Infrastructure",
     "pdf": "assets/cybercasestudy/STHIROS · CYBER · CYBER RESILIENCE & CRISIS READINESS · SOFTWARE DEVELOPMENT & IT SERVICES.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · CYBER · CYBER RESILIENCE & CRISIS READINESS · SOFTWARE DEVELOPMENT & IT SERVICES.png",
     "sheet": "Already uploaded"
   },
   {
@@ -154,7 +154,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Cyber",
     "industry": "BFSI & Fintech",
     "pdf": "assets/cybercasestudy/STHIROS · CYBER · CLOUD SECURITY & ZERO TRUST ARCHITECTURE · BANKING & FINANCIAL SERVICES (SMALL FINANCE BANK).pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · CYBER · CLOUD SECURITY & ZERO TRUST ARCHITECTURE · BANKING & FINANCIAL SERVICES (SMALL FINANCE BANK).png",
     "sheet": "Already uploaded"
   },
   {
@@ -165,7 +165,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Cyber",
     "industry": "Telecom & Digital Infrastructure",
     "pdf": "assets/cybercasestudy/STHIROS · CYBER · OFFENSIVE SECURITY & TECHNICAL ASSURANCE · IT & IT-ENABLED SERVICES.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · CYBER · OFFENSIVE SECURITY & TECHNICAL ASSURANCE · IT & IT-ENABLED SERVICES.png",
     "sheet": "Already uploaded"
   },
   {
@@ -176,7 +176,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Cyber",
     "industry": "Manufacturing",
     "pdf": "assets/cybercasestudy/STHIROS · CYBER · CYBER RESILIENCE & CRISIS READINESS · MANUFACTURING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · CYBER · CYBER RESILIENCE & CRISIS READINESS · MANUFACTURING.png",
     "sheet": "Already uploaded"
   },
   {
@@ -187,7 +187,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Cyber",
     "industry": "BFSI & Fintech",
     "pdf": "assets/cybercasestudy/STHIROS · CYBER · CLOUD SECURITY & ZERO TRUST ARCHITECTURE · BANKING & FINANCIAL SERVICES (SMALL FINANCE BANK).pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · CYBER · CLOUD SECURITY & ZERO TRUST ARCHITECTURE · BANKING & FINANCIAL SERVICES (SMALL FINANCE BANK).png",
     "sheet": "Already uploaded"
   },
   {
@@ -198,7 +198,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Strategy",
     "industry": "D2C & Retail",
     "pdf": "assets/sthiroscasestudypdf/D2C/STHIROS · STRATEGY · SHARED SERVICE CENTRE SETUP · FMCG.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · STRATEGY · SHARED SERVICE CENTRE SETUP · FMCG.png",
     "sheet": "To upload"
   },
   {
@@ -209,7 +209,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Risk",
     "industry": "D2C & Retail",
     "pdf": "assets/sthiroscasestudypdf/D2C/STHIROS · RISK · INVENTORY VERIFICATION · RETAIL.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · RISK · INVENTORY VERIFICATION · RETAIL.png",
     "sheet": "To upload"
   },
   {
@@ -220,7 +220,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "AI",
     "industry": "Energy, Mining & Utilities",
     "pdf": "assets/sthiroscasestudypdf/Energy/STHIROS · AI · PLANT DIGITISATION & INTEGRATION · MINING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · AI · PLANT DIGITISATION & INTEGRATION · MINING.png",
     "sheet": "To upload"
   },
   {
@@ -231,7 +231,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Risk",
     "industry": "Energy, Mining & Utilities",
     "pdf": "assets/sthiroscasestudypdf/Energy/STHIROS · RISK · PROJECT EXPENDITURE GOVERNANCE · METALS & MINING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · RISK · PROJECT EXPENDITURE GOVERNANCE · METALS & MINING.png",
     "sheet": "To upload"
   },
   {
@@ -242,7 +242,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Strategy",
     "industry": "GCC",
     "pdf": "assets/sthiroscasestudypdf/GCC/STHIROS · STRATEGY · OPERATIONAL EXCELLENCE TRANSFORMATION · SHARED SERVICES.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · STRATEGY · OPERATIONAL EXCELLENCE TRANSFORMATION · SHARED SERVICES.png",
     "sheet": "To upload"
   },
   {
@@ -253,7 +253,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "AI",
     "industry": "GCC",
     "pdf": "assets/sthiroscasestudypdf/GCC/STHIROS · AI · INTELLIGENT GCC BLUEPRINT · HEALTHCARE.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · AI · INTELLIGENT GCC BLUEPRINT · HEALTHCARE.png",
     "sheet": "To upload"
   },
   {
@@ -264,7 +264,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Risk",
     "industry": "Manufacturing",
     "pdf": "assets/sthiroscasestudypdf/Manufature/STHIROS · RISK · INVENTORY VERIFICATION · MANUFACTURING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · RISK · INVENTORY VERIFICATION · MANUFACTURING.png",
     "sheet": "To upload"
   },
   {
@@ -275,7 +275,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "AI",
     "industry": "Manufacturing",
     "pdf": "assets/sthiroscasestudypdf/Manufature/STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · AUTOMOTIVE, MANUFACTURING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · AUTOMOTIVE, MANUFACTURING.png",
     "sheet": "To upload"
   },
   {
@@ -286,7 +286,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Risk",
     "industry": "Public Sector & Government",
     "pdf": "assets/sthiroscasestudypdf/Public Sector/STHIROS · RISK · REVENUE ASSURANCE AUDIT · URBAN TRANSPORT & PUBLIC INFRASTRUCTURE.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · RISK · REVENUE ASSURANCE AUDIT · URBAN TRANSPORT & PUBLIC INFRASTRUCTURE.png",
     "sheet": "To upload"
   },
   {
@@ -297,7 +297,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Risk",
     "industry": "Public Sector & Government",
     "pdf": "assets/sthiroscasestudypdf/Public Sector/STHIROS · RISK · CSR EXPENDITURE REVIEW · CORPORATE SOCIAL RESPONSIBILITY & HEALTHCARE.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · RISK · CSR EXPENDITURE REVIEW · CORPORATE SOCIAL RESPONSIBILITY & HEALTHCARE.png",
     "sheet": "To upload"
   },
   {
@@ -308,7 +308,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "AI",
     "industry": "Real Estate / EPC / Construction",
     "pdf": "assets/sthiroscasestudypdf/Realstate/STHIROS · AI · UNIFIED ANALYTICS PLATFORM · CONSTRUCTION & INFRASTRUCTURE.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · AI · UNIFIED ANALYTICS PLATFORM · CONSTRUCTION & INFRASTRUCTURE.png",
     "sheet": "To upload"
   },
   {
@@ -319,7 +319,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Cyber",
     "industry": "Healthcare & Life Sciences",
     "pdf": "assets/sthiroscasestudypdf/Health/STHIROS · CYBER · SOC 2 TYPE 2 ASSESSMENT · LIFE SCIENCES.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · CYBER · SOC 2 TYPE 2 ASSESSMENT · LIFE SCIENCES.png",
     "sheet": "To upload"
   },
   {
@@ -330,7 +330,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Strategy",
     "industry": "Healthcare & Life Sciences",
     "pdf": "assets/sthiroscasestudypdf/Health/STHIROS · STRATEGY · HEALTHCARE OPERATIONS EXCELLENCE · HEALTHCARE.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · STRATEGY · HEALTHCARE OPERATIONS EXCELLENCE · HEALTHCARE.png",
     "sheet": "To upload"
   },
   {
@@ -341,7 +341,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Risk",
     "industry": "Healthcare & Life Sciences",
     "pdf": "assets/sthiroscasestudypdf/Risk/STHIROS · RISK · STRATEGIC ASSURANCE & PROCESS INTELLIGENCE · HEALTH INSURANCE.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · RISK · STRATEGIC ASSURANCE & PROCESS INTELLIGENCE · HEALTH INSURANCE.png",
     "sheet": "To upload"
   },
   {
@@ -352,7 +352,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Risk",
     "industry": "BFSI & Fintech",
     "pdf": "assets/sthiroscasestudypdf/Risk/STHIROS · RISK · FORENSIC INTEGRITY & ASSET PROTECTION · BANKING & FINANCIAL SERVICES.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · RISK · FORENSIC INTEGRITY & ASSET PROTECTION · BANKING & FINANCIAL SERVICES.png",
     "sheet": "To upload"
   },
   {
@@ -363,7 +363,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Risk",
     "industry": "Real Estate / EPC / Construction",
     "pdf": "assets/sthiroscasestudypdf/Risk/STHIROS · RISK · STRATEGIC ASSURANCE & PROCESS INTELLIGENCE · FMCG, SUPPLY CHAIN & WAREHOUSING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · RISK · STRATEGIC ASSURANCE & PROCESS INTELLIGENCE · FMCG, SUPPLY CHAIN & WAREHOUSING.png",
     "sheet": "To upload"
   },
   {
@@ -374,7 +374,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Risk",
     "industry": "Public Sector & Government",
     "pdf": "assets/sthiroscasestudypdf/Risk/STHIROS · RISK · ENTERPRISE GOVERNANCE & REGULATORY STRATEGY · GOVERNMENT & DIGITAL INFRASTRUCTURE.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · RISK · ENTERPRISE GOVERNANCE & REGULATORY STRATEGY · GOVERNMENT & DIGITAL INFRASTRUCTURE.png",
     "sheet": "To upload"
   },
   {
@@ -385,7 +385,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Risk",
     "industry": "Real Estate / EPC / Construction",
     "pdf": "assets/sthiroscasestudypdf/Risk/STHIROS · RISK · ENTERPRISE GOVERNANCE & REGULATORY STRATEGY · PUBLIC SECTOR, INFRASTRUCTURE & HOUSING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · RISK · ENTERPRISE GOVERNANCE & REGULATORY STRATEGY · PUBLIC SECTOR, INFRASTRUCTURE & HOUSING.png",
     "sheet": "To upload"
   },
   {
@@ -396,7 +396,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Risk",
     "industry": "BFSI & Fintech",
     "pdf": "assets/sthiroscasestudypdf/Risk/STHIROS · RISK · DIGITAL RISK & TECHNOLOGY CONTROLS · BFSI.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · RISK · DIGITAL RISK & TECHNOLOGY CONTROLS · BFSI.png",
     "sheet": "To upload"
   },
   {
@@ -407,7 +407,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Risk",
     "industry": "BFSI & Fintech",
     "pdf": "assets/sthiroscasestudypdf/Risk/STHIROS · RISK · DIGITAL RISK & TECHNOLOGY CONTROLS · FINANCIAL SERVICES, LENDING (NBFC).pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · RISK · DIGITAL RISK & TECHNOLOGY CONTROLS · FINANCIAL SERVICES, LENDING (NBFC).png",
     "sheet": "To upload"
   },
   {
@@ -418,7 +418,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Risk",
     "industry": "Travel & Hospitality",
     "pdf": "assets/sthiroscasestudypdf/Risk/STHIROS · RISK · FORENSIC INTEGRITY & ASSET PROTECTION · HOSPITALITY, FOOD & BEVERAGE.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · RISK · FORENSIC INTEGRITY & ASSET PROTECTION · HOSPITALITY, FOOD & BEVERAGE.png",
     "sheet": "To upload"
   },
   {
@@ -429,7 +429,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Strategy",
     "industry": "GCC",
     "pdf": "assets/sthiroscasestudypdf/GCC/STHIROS · AI · INTELLIGENT GCC BLUEPRINT · HEALTHCARE.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · AI · INTELLIGENT GCC BLUEPRINT · HEALTHCARE.png",
     "sheet": "To upload"
   },
   {
@@ -440,7 +440,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Strategy",
     "industry": "BFSI & Fintech",
     "pdf": "assets/sthiroscasestudypdf/Strategy/STHIROS · STRATEGY · BUSINESS & GROWTH STRATEGY · FINTECH, CROSS-BORDER REMITTANCE.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · STRATEGY · BUSINESS & GROWTH STRATEGY · FINTECH, CROSS-BORDER REMITTANCE.png",
     "sheet": "To upload"
   },
   {
@@ -451,7 +451,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Strategy",
     "industry": "Energy, Mining & Utilities",
     "pdf": "assets/sthiroscasestudypdf/Strategy/STHIROS · STRATEGY · STRATEGIC FINANCE & TRANSACTIONS · MINING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · STRATEGY · STRATEGIC FINANCE & TRANSACTIONS · MINING.png",
     "sheet": "To upload"
   },
   {
@@ -462,7 +462,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Strategy",
     "industry": "BFSI & Fintech",
     "pdf": "assets/sthiroscasestudypdf/Strategy/STHIROS · STRATEGY · BUSINESS & GROWTH STRATEGY · VENTURE CAPITAL, INVESTMENT ADVISORY.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · STRATEGY · BUSINESS & GROWTH STRATEGY · VENTURE CAPITAL, INVESTMENT ADVISORY.png",
     "sheet": "To upload"
   },
   {
@@ -473,7 +473,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Strategy",
     "industry": "Manufacturing",
     "pdf": "assets/sthiroscasestudypdf/Strategy/STHIROS · STRATEGY · ENTERPRISE OPERATIONS & ECOSYSTEMS · HEAVY EQUIPMENT & INDUSTRIAL DISTRIBUTION.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · STRATEGY · ENTERPRISE OPERATIONS & ECOSYSTEMS · HEAVY EQUIPMENT & INDUSTRIAL DISTRIBUTION.png",
     "sheet": "To upload"
   },
   {
@@ -484,7 +484,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Strategy",
     "industry": "Manufacturing",
     "pdf": "assets/sthiroscasestudypdf/Strategy/STHIROS · STRATEGY · CHANGE MANAGEMENT & ORGANISATIONAL ACCELERATION · AUTOMOTIVE MANUFACTURING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · STRATEGY · CHANGE MANAGEMENT & ORGANISATIONAL ACCELERATION · AUTOMOTIVE MANUFACTURING.png",
     "sheet": "To upload"
   },
   {
@@ -495,7 +495,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Strategy",
     "industry": "BFSI & Fintech",
     "pdf": "assets/sthiroscasestudypdf/Strategy/STHIROS · STRATEGY · CHANGE MANAGEMENT & ORGANISATIONAL ACCELERATION · BFSI.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · STRATEGY · CHANGE MANAGEMENT & ORGANISATIONAL ACCELERATION · BFSI.png",
     "sheet": "To upload"
   },
   {
@@ -506,7 +506,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Strategy",
     "industry": "Real Estate / EPC / Construction",
     "pdf": "assets/sthiroscasestudypdf/Strategy/STHIROS · STRATEGY · STRATEGIC FINANCE & TRANSACTIONS · FMCG, FOOD MANUFACTURING & WAREHOUSING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · STRATEGY · STRATEGIC FINANCE & TRANSACTIONS · FMCG, FOOD MANUFACTURING & WAREHOUSING.png",
     "sheet": "To upload"
   },
   {
@@ -517,7 +517,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "AI",
     "industry": "Telecom & Digital Infrastructure",
     "pdf": "assets/sthiroscasestudypdf/Telecom/STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · GOVERNMENT & DIGITAL INFRASTRUCTURE.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · GOVERNMENT & DIGITAL INFRASTRUCTURE.png",
     "sheet": "To upload"
   },
   {
@@ -528,7 +528,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Cyber",
     "industry": "Telecom & Digital Infrastructure",
     "pdf": "assets/sthiroscasestudypdf/Telecom/STHIROS · CYBER · ISAE 3402 SOC CERTIFICATION · TECHNOLOGY OPERATIONS.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · CYBER · ISAE 3402 SOC CERTIFICATION · TECHNOLOGY OPERATIONS.png",
     "sheet": "To upload"
   },
   {
@@ -539,7 +539,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Risk",
     "industry": "Travel & Hospitality",
     "pdf": "assets/sthiroscasestudypdf/Travel/STHIROS · RISK · FORENSIC AUDIT · HOSPITALITY, FOOD & BEVERAGE.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · RISK · FORENSIC AUDIT · HOSPITALITY, FOOD & BEVERAGE.png",
     "sheet": "To upload"
   },
   {
@@ -550,7 +550,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "AI",
     "industry": "Travel & Hospitality",
     "pdf": "assets/sthiroscasestudypdf/Travel/STHIROS · AI · DATA ENGINEERING, AUTOMATION & BI TRANSFORMATION · TRAVEL & TOURISM.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
+    "bgImg": "assets/images/casestudybannerimg/STHIROS · AI · DATA ENGINEERING, AUTOMATION & BI TRANSFORMATION · TRAVEL & TOURISM.png",
     "sheet": "To upload"
   },
   {
@@ -561,7 +561,7 @@ const STHIROS_CASE_STUDIES = [
     "service": "Strategy",
     "industry": "D2C & Retail",
     "pdf": "assets/insightrepopage/sthiros_d2c&retails_india-led_globallyinformed.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
+    "bgImg": "assets/images/casestudybannerimg/sthiros_d2c&retails_india-led_globallyinformed.png",
     "sheet": "insightrepopage"
   }
 ];
