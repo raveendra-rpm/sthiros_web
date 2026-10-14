@@ -3512,6 +3512,11 @@ body.light-mode .stat-label {
   color: #EF4623;
 }
 
+.thinking-cards-viewport {
+  width: 100%;
+  position: relative;
+}
+
 .thinking-cards-wrapper {
   display: flex;
   gap: 30px;
@@ -3622,6 +3627,22 @@ body.light-mode .stat-label {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.6);
   margin: 0;
+}
+
+.thinking-nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 15;
+}
+
+.thinking-nav-container .story-arrow-btn {
+  width: 78px;
+  height: 78px;
 }
 
 .thinking-bottom-line {
@@ -7722,23 +7743,53 @@ body.light-mode .footer-menu li {
   }
 
   /* 7. Intelligence built in the Field. section cards responsive layout */
+  .thinking-cards-viewport {
+    width: 100% !important;
+    overflow: hidden !important;
+    position: relative !important;
+    padding: 0 !important;
+  }
+
   .thinking-cards-wrapper {
     display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
     gap: 20px !important;
     width: 100% !important;
-    transform: none !important; /* Override any JS transform if present */
+    margin: 0 !important;
+    padding: 0 !important;
+    transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1) !important;
+    will-change: transform !important;
   }
 
   .thinking-card {
-    flex: none !important;
-    width: 100% !important;
+    flex: 0 0 100% !important;
+    min-width: 100% !important;
     max-width: 100% !important;
+    width: 100% !important;
     height: auto !important;
     min-height: 220px !important;
     padding: 30px 24px !important;
     box-sizing: border-box !important;
+    margin: 0 !important;
+  }
+
+  .thinking-nav-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 20px !important;
+    margin-top: 30px !important;
+    margin-bottom: 25px !important;
+    position: relative !important;
+    z-index: 15 !important;
+  }
+
+  .thinking-nav-container .story-arrow-btn {
+    width: 55px !important;
+    height: 55px !important;
   }
 
   /* 8. Bring us the hardest one. CTA section mobile layout matching uploaded image */

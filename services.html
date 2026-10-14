@@ -1033,15 +1033,15 @@
                 display: none !important;
             }
             
-            /* Order exactly as per screenshot */
+            /* Mobile order: Strategy, Risk, Cyber, AI */
             .services-tab[data-tab="strategy"] { order: 1; }
             #tab-strategy { order: 2; }
-            .services-tab[data-tab="ai"] { order: 3; }
-            #tab-ai { order: 4; }
-            .services-tab[data-tab="risk"] { order: 5; }
-            #tab-risk { order: 6; }
-            .services-tab[data-tab="cyber"] { order: 7; }
-            #tab-cyber { order: 8; }
+            .services-tab[data-tab="risk"] { order: 3; }
+            #tab-risk { order: 4; }
+            .services-tab[data-tab="cyber"] { order: 5; }
+            #tab-cyber { order: 6; }
+            .services-tab[data-tab="ai"] { order: 7; }
+            #tab-ai { order: 8; }
             
             .services-split-layout.tab-content {
                 display: none;
@@ -1093,7 +1093,13 @@
                 flex: 1;
             }
             .service-card:not(.active) .service-title br {
-                display: none;
+                display: inline;
+                content: " ";
+            }
+            .service-card:not(.active) .service-title {
+                white-space: normal;
+                word-spacing: normal;
+                letter-spacing: normal;
             }
             .service-card.active {
                 min-height: 250px !important;
@@ -1855,7 +1861,7 @@
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
-                        <h3 class="service-title">Business &<br>Growth Strategy</h3>
+                        <h3 class="service-title">Business & <br>Growth Strategy</h3>
                     </a>
 
                     <!-- Card 2 -->
@@ -1864,7 +1870,7 @@
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
-                        <h3 class="service-title">Strategic<br>Finance &<br>Transactions</h3>
+                        <h3 class="service-title">Strategic <br>Finance & <br>Transactions</h3>
                     </a>
 
                     <!-- Card 3 -->
@@ -1873,7 +1879,7 @@
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
-                        <h3 class="service-title">Enterprise<br>Operations &<br>Ecosystems</h3>
+                        <h3 class="service-title">Enterprise <br>Operations & <br>Ecosystems</h3>
                     </a>
 
                     <!-- Card 4 -->
@@ -1882,7 +1888,7 @@
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
-                        <h3 class="service-title">Change &<br>Organizational<br>Acceleration</h3>
+                        <h3 class="service-title">Change Management & <br>Organisational <br>Acceleration</h3>
                     </a>
 
                 </div>
@@ -1907,7 +1913,7 @@
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
-                        <h3 class="service-title">Al Strategy &<br>Sovereign<br>Governance</h3>
+                        <h3 class="service-title">Al Strategy & <br>Sovereign <br>Governance</h3>
                     </a>
                     <a href="servicesai2.html" class="service-card" style="text-decoration: none;">
                         <img src="assets/images/servicespage/aivector.png" alt="AI Logo" class="service-bg-logo">
@@ -1921,14 +1927,14 @@
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
-                        <h3 class="service-title">Agentic<br>Operations &<br>Automation</h3>
+                        <h3 class="service-title">Agentic <br>Operations & <br>Automation</h3>
                     </a>
                     <a href="servicesai4.html" class="service-card" style="text-decoration: none;">
                         <img src="assets/images/servicespage/aivector.png" alt="AI Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
-                        <h3 class="service-title">Cognitive<br>Experience &<br>Engineering</h3>
+                        <h3 class="service-title">Cognitive <br>Experience & <br>Engineering</h3>
                     </a>
                 </div>
             </div>
@@ -1948,28 +1954,28 @@
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
-                        <h3 class="service-title">Enterprise<br>Governance &<br>Regulatory Strategy</h3>
+                        <h3 class="service-title">Enterprise <br>Governance & <br>Regulatory Strategy</h3>
                     </a>
                     <a href="risk2.html" class="service-card" style="text-decoration: none;">
                         <img src="assets/images/servicespage/riskvector.png" alt="Risk Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
-                        <h3 class="service-title">Strategic<br>Assurance &<br>Process<br>Intelligence</h3>
+                        <h3 class="service-title">Strategic <br>Assurance & <br>Process <br>Intelligence</h3>
                     </a>
                     <a href="risk3.html" class="service-card" style="text-decoration: none;">
                         <img src="assets/images/servicespage/riskvector.png" alt="Risk Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
-                        <h3 class="service-title">Digital Risk &<br>Technology<br>Controls</h3>
+                        <h3 class="service-title">Digital Risk & <br>Technology <br>Controls</h3>
                     </a>
                     <a href="risk4.html" class="service-card" style="text-decoration: none;">
                         <img src="assets/images/servicespage/riskvector.png" alt="Risk Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
-                        <h3 class="service-title">Forensic<br>Integrity &<br>Asset<br>Protection</h3>
+                        <h3 class="service-title">Forensic <br>Integrity & <br>Asset <br>Protection</h3>
                     </a>
                 </div>
             </div>
@@ -1990,28 +1996,28 @@
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
-                        <h3 class="service-title">Offensive Security<br>& Exposure</h3>
+                        <h3 class="service-title">Offensive Security <br>& Technical Assurance</h3>
                     </a>
                     <a href="servicescyber2.html" class="service-card" style="text-decoration: none;">
                         <img src="assets/images/servicespage/cybervector.png" alt="Cyber Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
-                        <h3 class="service-title">Cloud<br>Security &<br>Zero Trust</h3>
+                        <h3 class="service-title">Cloud <br>Security & <br>Zero Trust Architecture</h3>
                     </a>
                     <a href="servicescyber3.html" class="service-card" style="text-decoration: none;">
                         <img src="assets/images/servicespage/cybervector.png" alt="Cyber Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
-                        <h3 class="service-title">Data Privacy<br>& Protection<br>Engineering</h3>
+                        <h3 class="service-title">Data Privacy <br>& Protection <br>Engineering</h3>
                     </a>
                     <a href="servicescyber4.html" class="service-card" style="text-decoration: none;">
                         <img src="assets/images/servicespage/cybervector.png" alt="Cyber Logo" class="service-bg-logo">
                         <img src="assets/images/servicespage/arrowwhite.png" alt="Arrow"
                             class="service-arrow white-arrow">
                         <img src="assets/images/servicespage/arrowred.png" alt="Arrow" class="service-arrow red-arrow">
-                        <h3 class="service-title">Cyber<br>Resilience &<br>Crisis<br>Readiness</h3>
+                        <h3 class="service-title">Cyber <br>Resilience & <br>Crisis <br>Readiness</h3>
                     </a>
                 </div>
             </div>
@@ -2616,7 +2622,7 @@
                 </p>
             </div>
             <div class="conv-right-col">
-                <a href="contactus.html" class="conv-btn">
+                <a href="contactus.html#contactusformsec" class="conv-btn">
                     <div class="conv-btn-inner">
                         BOOK A 30-MIN CALL
                     </div>

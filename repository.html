@@ -719,16 +719,21 @@
             position: relative;
         }
 
-        .dives-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px !important;
-            margin-bottom: 40px;
+        .dives-viewport {
             width: 100%;
+            overflow: hidden;
+        }
+
+        .dives-grid {
+            display: flex;
+            gap: 40px !important;
+            width: 100%;
+            transition: transform 0.5s ease;
         }
 
         .dives-card {
             position: relative;
+            flex: 0 0 calc((100% - 80px) / 3);
             height: 340px;
             border-radius: 20px;
             border: 1px solid var(--FLAME-ORANGE, #EF4623);
@@ -1410,8 +1415,13 @@
                 padding: 0 20px !important;
             }
             .dives-grid {
-                grid-template-columns: 1fr !important;
                 gap: 20px !important;
+            }
+            .dives-card {
+                flex: 0 0 100% !important;
+            }
+            .dives-nav {
+                margin-top: 30px !important;
             }
             /* Keep headings readable on light mode mobile by changing white text to black */
             body.light-mode .repo-work .repo-section-title,
@@ -3224,7 +3234,8 @@
             <p class="repo-cents-subheading">White papers and research articles on the problems worth sitting with.</p>
 
             <div class="dives-container">
-                <div class="dives-grid">
+                <div class="dives-viewport">
+                <div class="dives-grid" id="dives-track">
                     <!-- Card 1 -->
                     <div class="dives-card sthiros-glow-card">
                         <img src="assets/images/repositorypage/casestudyimgone.jpg" alt="Article 1"
@@ -3285,9 +3296,62 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Card 4 -->
+                    <div class="dives-card sthiros-glow-card">
+                        <img src="assets/images/repositorypage/casestudyimgone.jpg" alt="Article 4"
+                            class="dives-card-bg">
+                        <div class="dives-card-overlay"></div>
+                        <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png"
+                            class="sthiros-hover-glow-effect" alt="">
+                        <div class="dives-card-content">
+                            <div class="dives-card-text">
+                                <h3>Article Title</h3>
+                                <p>Article content</p>
+                            </div>
+                            <div class="dives-card-icon">
+                                <img src="assets/images/repositorypage/arrowwhite.png" class="dives-arrow-normal"
+                                    alt="Arrow">
+                                <img src="assets/images/repositorypage/arrowred.png" class="dives-arrow-hover"
+                                    alt="Arrow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </div>
 
+                <div class="rcs-nav dives-nav">
+                    <div class="rcs-nav-btn" id="dives-btn-prev" role="button" aria-label="Previous">
+                        <img src="assets/images/arrowslideleft.png" alt="Left">
+                    </div>
+                    <div class="rcs-nav-btn" id="dives-btn-next" role="button" aria-label="Next">
+                        <img src="assets/images/arrowslideright.png" alt="Right">
+                    </div>
+                </div>
             </div>
+            <script>
+                (function () {
+                    var track = document.getElementById('dives-track');
+                    var prev = document.getElementById('dives-btn-prev');
+                    var next = document.getElementById('dives-btn-next');
+                    if (!track || !prev || !next) return;
+                    var cards = track.children, idx = 0;
+                    function perView() { return window.innerWidth <= 768 ? 1 : 3; }
+                    function update() {
+                        var max = Math.max(0, cards.length - perView());
+                        if (idx > max) idx = max;
+                        var step = cards[0].offsetWidth + (parseFloat(getComputedStyle(track).columnGap) || 0);
+                        track.style.transform = 'translateX(' + (-idx * step) + 'px)';
+                        prev.style.opacity = idx === 0 ? '0.4' : '';
+                        next.style.opacity = idx === max ? '0.4' : '';
+                    }
+                    prev.addEventListener('click', function () { if (idx > 0) { idx--; update(); } });
+                    next.addEventListener('click', function () {
+                        if (idx < cards.length - perView()) { idx++; update(); }
+                    });
+                    window.addEventListener('resize', update);
+                    update();
+                })();
+            </script>
         </section>
 
         <!-- Yours Can Too Section -->
@@ -3342,7 +3406,7 @@
                     <h2>Yours can too.</h2>
                 </div>
                 <div class="yct-buttons">
-                    <a href="contactus.html" class="hero-btn-outer">
+                    <a href="contactus.html#contactusformsec" class="hero-btn-outer">
                         <span class="hero-btn-inner" style="font-size: 13px;">TALK TO US</span>
                     </a>
                 </div>

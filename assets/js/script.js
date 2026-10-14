@@ -4447,11 +4447,37 @@ function initMobileHeroReveal() {
     webkitClipPath: 'inset(0% 0% 100% 0%)'
   });
 
+  // Extend the hero's vertical line down until it touches the top of the
+  // about-us line, so there is no blank gap between the two (same x position,
+  // same artwork, so any overlap is invisible).
+  function bridgeGap() {
+    rightSvg.style.height = '';
+    var r = rightSvg.getBoundingClientRect();
+    var a = aboutSvgWrapper.getBoundingClientRect();
+    var gap = a.top - r.bottom;
+    if (gap > -2) {
+      var scaleY = r.height / (rightSvg.offsetHeight || r.height) || 1;
+      rightSvg.style.height = (rightSvg.offsetHeight + (gap + 3) / scaleY) + 'px';
+    }
+  }
+  bridgeGap();
+  ScrollTrigger.addEventListener('refreshInit', bridgeGap);
+
+  // The hero line finishes revealing exactly where the about-us line starts.
+  function aboutStartPos() {
+    var top = aboutSvgWrapper.getBoundingClientRect().top + window.pageYOffset;
+    return top - window.innerHeight * 0.6;
+  }
+
   var tl = gsap.timeline({
     scrollTrigger: {
       trigger: heroSection,
       start: 'top top',
-      end: '+=1500',
+      end: function () {
+        var heroTop = heroSection.getBoundingClientRect().top + window.pageYOffset;
+        return Math.max(aboutStartPos(), heroTop + 300);
+      },
+      invalidateOnRefresh: true,
       scrub: true
     }
   });
@@ -4483,6 +4509,8 @@ function initMobileHeroReveal() {
   });
 
   return function () {
+    ScrollTrigger.removeEventListener('refreshInit', bridgeGap);
+    rightSvg.style.height = '';
     tl.scrollTrigger && tl.scrollTrigger.kill();
     tl.kill();
     aboutTl.scrollTrigger && aboutTl.scrollTrigger.kill();
@@ -5507,109 +5535,105 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Latest Thinking Slider (Mobile Only)
-document.addEventListener('DOMContentLoaded', () => {
+// Latest Thinking Slider (Desktop & Mobile)
+function initLatestThinkingSlider() {
+    const viewport = document.querySelector('.thinking-cards-viewport');
     const wrapper = document.querySelector('.thinking-cards-wrapper');
-    const prevBtn = document.querySelector('.story-prev');
-    const nextBtn = document.querySelector('.story-next');
-    
-    if (wrapper && prevBtn && nextBtn) {
-        return; // Slider logic disabled (now pure CSS responsive layout)
-        if (wrapper.dataset.sliderInitialized) return;
-        wrapper.dataset.sliderInitialized = 'true';
+    const prevBtn = document.getElementById('thinkingPrevBtn');
+    const nextBtn = document.getElementById('thinkingNextBtn');
 
-        // Wrap it in a viewport
-        const viewport = document.createElement('div');
-        viewport.className = 'thinking-slider-viewport';
-        viewport.style.overflow = 'hidden';
-        viewport.style.width = '100%';
-        viewport.style.boxSizing = 'border-box';
-        
-        wrapper.parentNode.insertBefore(viewport, wrapper);
-        viewport.appendChild(wrapper);
+    if (!wrapper || !prevBtn || !nextBtn) return;
+    if (wrapper.dataset.sliderReady) return;
+    wrapper.dataset.sliderReady = 'true';
 
-        let isAnimating = false;
+    const cards = Array.from(wrapper.querySelectorAll('.thinking-card'));
+    if (cards.length === 0) return;
 
-        function updateThinkingLayout() {
-            const isMobile = window.innerWidth <= 768;
-            
-            if (!isMobile) {
-                // Desktop: remove JS transform
-                wrapper.style.transform = 'none';
-                wrapper.style.transition = 'none';
-                viewport.style.padding = '0';
-                Array.from(wrapper.children).forEach(card => {
-                    card.style.flex = '';
-                    card.style.width = '';
-                });
-                return { cardWidth: 0, gap: 30 };
+    let currentIndex = 0;
+    const totalCards = cards.length;
+    let isAnimating = false;
+
+    function updateSlider(animate = true) {
+        const isMobile = window.innerWidth <= 768;
+
+        cards.forEach((card, idx) => {
+            if (idx === currentIndex) {
+                card.classList.add('active');
+            } else {
+                card.classList.remove('active');
             }
+        });
 
-            const gap = 20;
-            viewport.style.padding = '0 20px';
-            wrapper.style.gap = gap + 'px';
-            
-            const viewportWidth = viewport.clientWidth - 40; // minus padding
-            const cardWidth = viewportWidth; // 1 card visible
-            
-            Array.from(wrapper.children).forEach(card => {
-                if(card.classList.contains('thinking-card')) {
-                    card.style.display = 'flex';
-                    card.style.flex = `0 0 ${cardWidth}px`;
-                    card.style.width = `${cardWidth}px`;
-                }
-            });
-            
-            return { cardWidth, gap };
+        if (!isMobile) {
+            wrapper.style.transform = 'none';
+            wrapper.style.transition = 'none';
+            return;
         }
 
-        nextBtn.addEventListener('click', () => {
-            if (window.innerWidth > 768) return;
-            if (isAnimating) return;
-            isAnimating = true;
-            
-            const { cardWidth, gap } = updateThinkingLayout();
-            const moveAmount = cardWidth + gap;
-            
-            wrapper.style.transition = 'transform 0.5s ease-in-out';
-            wrapper.style.transform = `translateX(-${moveAmount}px)`;
-            
-            setTimeout(() => {
-                wrapper.style.transition = 'none';
-                wrapper.appendChild(wrapper.firstElementChild);
-                wrapper.style.transform = 'translateX(0)';
-                wrapper.offsetHeight; // force reflow
-                isAnimating = false;
-            }, 500);
-        });
+        const containerWidth = viewport ? viewport.clientWidth : wrapper.clientWidth;
+        const gap = 20;
+        const offset = -currentIndex * (containerWidth + gap);
 
-        prevBtn.addEventListener('click', () => {
-            if (window.innerWidth > 768) return;
-            if (isAnimating) return;
-            isAnimating = true;
-            
-            const { cardWidth, gap } = updateThinkingLayout();
-            const moveAmount = cardWidth + gap;
-            
+        if (animate) {
+            wrapper.style.transition = 'transform 0.45s cubic-bezier(0.25, 1, 0.5, 1)';
+        } else {
             wrapper.style.transition = 'none';
-            wrapper.insertBefore(wrapper.lastElementChild, wrapper.firstElementChild);
-            wrapper.style.transform = `translateX(-${moveAmount}px)`;
-            wrapper.offsetHeight; // force reflow
-            
-            wrapper.style.transition = 'transform 0.5s ease-in-out';
-            wrapper.style.transform = 'translateX(0)';
-            
-            setTimeout(() => {
-                isAnimating = false;
-            }, 500);
-        });
+        }
 
-        window.addEventListener('resize', () => {
-            wrapper.style.transition = 'none';
-            wrapper.style.transform = 'translateX(0)';
-            updateThinkingLayout();
-        });
-
-        setTimeout(updateThinkingLayout, 100);
+        wrapper.style.transform = `translate3d(${offset}px, 0, 0)`;
     }
-});
+
+    function goToSlide(newIndex) {
+        if (isAnimating) return;
+        isAnimating = true;
+
+        currentIndex = (newIndex + totalCards) % totalCards;
+        updateSlider(true);
+
+        setTimeout(() => {
+            isAnimating = false;
+        }, 460);
+    }
+
+    nextBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        goToSlide(currentIndex + 1);
+    });
+
+    prevBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        goToSlide(currentIndex - 1);
+    });
+
+    // Touch swipe support on mobile devices
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    wrapper.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    wrapper.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        const diff = touchEndX - touchStartX;
+        const threshold = 40;
+        if (diff < -threshold) {
+            goToSlide(currentIndex + 1);
+        } else if (diff > threshold) {
+            goToSlide(currentIndex - 1);
+        }
+    }, { passive: true });
+
+    window.addEventListener('resize', () => {
+        updateSlider(false);
+    });
+
+    updateSlider(false);
+    setTimeout(() => updateSlider(false), 150);
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLatestThinkingSlider);
+} else {
+    initLatestThinkingSlider();
+}

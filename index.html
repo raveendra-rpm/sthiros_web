@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css?v=50" />
+    <link rel="stylesheet" href="assets/css/style.css?v=52" />
 
     <style>
         /* Force red text in light mode for Four Pillars on mobile */
@@ -414,7 +414,7 @@
                     properly, and act on it with confidence.
                 </p>
                 <div class="hero-actions" style="margin-top: 40px; display: flex; gap: 20px;">
-                    <a href="contactus.html" class="hero-btn-outer">
+                    <a href="contactus.html#contactusformsec" class="hero-btn-outer">
                         <span class="hero-btn-inner">TALK TO US</span>
                     </a>
                     <a href="services.html" class="hero-btn-outer">
@@ -492,7 +492,7 @@
                     with confidence.
                 </p>
                 <div class="hero-mobile-actions">
-                    <a href="contactus.html" class="hero-btn-outer">
+                    <a href="contactus.html#contactusformsec" class="hero-btn-outer">
                         <span class="hero-btn-inner">TALK TO US</span>
                     </a>
                     <a href="services.html" class="hero-btn-outer">
@@ -1694,21 +1694,35 @@
                 </h2>
             </div>
             <hr class="thinking-divider bottom-divider">
-            <div class="thinking-cards-wrapper">
-                <a href="repository.html" class="thinking-card" style="text-decoration: none;">
-                    <p class="card-eyebrow">PERSPECTIVE</p>
-                    <div class="card-bottom">
-                        <h3 class="card-title">What governance actually looks like before the event.</h3>
-                        <p class="card-read-time">6 min read</p>
-                    </div>
-                </a>
-                <a href="repository.html" class="thinking-card" style="text-decoration: none;">
-                    <p class="card-eyebrow">BRIEFING</p>
-                    <div class="card-bottom">
-                        <h3 class="card-title">Automation without strategy is just faster mistakes.</h3>
-                        <p class="card-read-time">8 min read</p>
-                    </div>
-                </a>
+            <div class="thinking-cards-viewport">
+                <div class="thinking-cards-wrapper">
+                    <a href="repository.html" class="thinking-card active" style="text-decoration: none;">
+                        <p class="card-eyebrow">PERSPECTIVE</p>
+                        <div class="card-bottom">
+                            <h3 class="card-title">What governance actually looks like before the event.</h3>
+                            <p class="card-read-time">6 min read</p>
+                        </div>
+                    </a>
+                    <a href="repository.html" class="thinking-card" style="text-decoration: none;">
+                        <p class="card-eyebrow">BRIEFING</p>
+                        <div class="card-bottom">
+                            <h3 class="card-title">Automation without strategy is just faster mistakes.</h3>
+                            <p class="card-read-time">8 min read</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slider Navigation Buttons -->
+            <div class="thinking-nav-container">
+                <button class="story-arrow-btn story-prev thinking-prev" id="thinkingPrevBtn" aria-label="Previous thinking card">
+                    <img src="assets/images/sthiroscircle.png" alt="Circle" class="arrow-circle-bg">
+                    <img src="assets/images/arrowslideleft.png" alt="Left Arrow" class="arrow-icon icon-left">
+                </button>
+                <button class="story-arrow-btn story-next thinking-next" id="thinkingNextBtn" aria-label="Next thinking card">
+                    <img src="assets/images/sthiroscircle.png" alt="Circle" class="arrow-circle-bg">
+                    <img src="assets/images/arrowslideright.png" alt="Right Arrow" class="arrow-icon icon-right">
+                </button>
             </div>
 
             <div class="thinking-bottom-line">
@@ -1820,7 +1834,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="assets/js/script.js?v=49"></script>
+    <script src="assets/js/script.js?v=52"></script>
 
     <script>
         function connectMagnets() {
