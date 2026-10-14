@@ -241,7 +241,7 @@
                 flex-direction: row !important;
                 align-items: center !important;
                 justify-content: center !important;
-                gap: 5px;
+                gap: 8px;
             }
 
             .telluswhatssvgtopcont .tw-btn-wrap {
@@ -492,6 +492,24 @@
             margin-bottom: 20px;
         }
 
+        .cf-card-keliros .cf-desc,
+        .cf-card-keliros .cf-small-desc {
+            max-width: 245px;
+        }
+
+        .cf-card-thesen .cf-desc,
+        .cf-card-thesen .cf-small-desc {
+            max-width: 285px;
+        }
+
+        .cf-card-thesen {
+            margin-top: -40px;
+        }
+
+        .cf-card-thesen .cf-action-btn-wrap {
+            margin-bottom: 40px;
+        }
+
         .cf-stats {
             display: flex;
             flex-direction: column;
@@ -548,17 +566,18 @@
         .cf-feature-title {
             color: #FFF;
             font-family: 'Pacaembu', sans-serif;
-            font-size: 18px;
+            font-size: 21px;
             font-weight: 600;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
             text-transform: uppercase;
         }
 
         .cf-feature-sub {
             color: #CCC;
             font-family: 'Quicksand', sans-serif;
-            font-size: 11px;
-            line-height: 1.4;
+            font-size: 12.5px;
+            line-height: 1.45;
             margin-bottom: 10px;
             min-height: 35px;
         }
@@ -572,8 +591,8 @@
         .cf-feature-list li {
             color: #CCC;
             font-family: 'Quicksand', sans-serif;
-            font-size: 12px;
-            line-height: 1.4;
+            font-size: 12.5px;
+            line-height: 1.5;
             margin-bottom: 10px;
             position: relative;
             padding-left: 15px;
@@ -594,6 +613,10 @@
             justify-content: flex-start;
             margin-top: auto;
             margin-bottom: 10px;
+        }
+
+        .compliance-feature-card .cf-action-btn-wrap .hero-btn-inner {
+            gap: 8px;
         }
 
         .cf-action-btn-outer {
@@ -634,6 +657,21 @@
 
             .compliance-feature-card .cf-left {
                 max-width: 100%;
+            }
+
+            .cf-card-keliros .cf-desc,
+            .cf-card-keliros .cf-small-desc,
+            .cf-card-thesen .cf-desc,
+            .cf-card-thesen .cf-small-desc {
+                max-width: 100%;
+            }
+
+            .cf-card-thesen {
+                margin-top: 0;
+            }
+
+            .cf-card-thesen .cf-action-btn-wrap {
+                margin-bottom: 10px;
             }
 
             .cf-features-row {
@@ -843,12 +881,12 @@
             }
 
             .cf-feature-title {
-                font-size: 16px;
+                font-size: 18px;
                 margin-bottom: 5px;
             }
 
             .cf-feature-sub {
-                font-size: 12px;
+                font-size: 13px;
                 margin-bottom: 8px;
                 min-height: 28px;
             }
@@ -1559,7 +1597,7 @@
 
         <div class="contdivseccompliancecard">
             <!-- Card 1: Keliros -->
-            <div class="compliance-feature-card">
+            <div class="compliance-feature-card cf-card-keliros">
                 <div class="cf-left">
                     <h4 class="cf-title">TRADE OPERATIONS</h4>
                     <h2 class="cf-heading">Keliros</h2>
@@ -1617,7 +1655,7 @@
                         </div>
                     </div>
                     <div class="cf-action-btn-wrap">
-                        <a href="contactus.html" class="hero-btn-outer">
+                        <a href="contactus.html#contactusformsec" class="hero-btn-outer">
                             <span class="hero-btn-inner" style="font-size: 13px;"><span>TALK TO US</span> <span>ABOUT KELIROS</span></span>
                         </a>
                     </div>
@@ -1665,7 +1703,7 @@
             </div>
 
             <!-- Card 2: Thesen -->
-            <div class="compliance-feature-card">
+            <div class="compliance-feature-card cf-card-thesen">
                 <div class="cf-left">
                     <h4 class="cf-title">COMPLIANCE OS</h4>
                     <h2 class="cf-heading">Thesen</h2>
@@ -1721,7 +1759,7 @@
                         </div>
                     </div>
                     <div class="cf-action-btn-wrap">
-                        <a href="contactus.html" class="hero-btn-outer">
+                        <a href="contactus.html#contactusformsec" class="hero-btn-outer">
                             <span class="hero-btn-inner" style="font-size: 13px;"><span>TALK TO US</span> <span>ABOUT THESEN</span></span>
                         </a>
                     </div>

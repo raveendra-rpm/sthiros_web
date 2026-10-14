@@ -542,7 +542,7 @@
         .team-card {
             position: relative;
             cursor: pointer;
-            transition: all 0.4s ease;
+            transition: width 0.45s cubic-bezier(0.4, 0, 0.2, 1), height 0.45s cubic-bezier(0.4, 0, 0.2, 1), filter 0.4s ease;
             flex-shrink: 0;
             overflow: visible;
         }
@@ -551,7 +551,7 @@
             width: 115px;
             height: 210px;
             filter: brightness(0.6);
-            transition: filter 0.4s ease;
+            transition: width 0.45s cubic-bezier(0.4, 0, 0.2, 1), height 0.45s cubic-bezier(0.4, 0, 0.2, 1), filter 0.4s ease;
         }
 
         .team-card.inactive:hover {
@@ -583,6 +583,14 @@
             background: linear-gradient(to top, rgba(var(--bg-rgb), 0.9) 0%, transparent 60%);
         }
 
+        .team-card.inactive.dimmed {
+            filter: brightness(0.35);
+        }
+
+        .team-card.inactive.dimmed:hover {
+            filter: brightness(0.65);
+        }
+
         .team-card.inactive::before {
             content: '';
             position: absolute;
@@ -601,40 +609,9 @@
             z-index: 100;
         }
 
-        .team-card.active.dimmed {
-            cursor: pointer;
-        }
-
         .team-card.active.dimmed .team-card-img {
             filter: brightness(0.55);
             transition: filter 0.4s ease;
-        }
-
-        .team-card.active.dimmed .team-card-content::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to top, rgba(var(--bg-rgb), 0.9) 0%, rgba(60, 20, 25, 0.6) 100%);
-            z-index: 1;
-            pointer-events: none;
-            transition: opacity 0.4s ease;
-        }
-
-        .team-card.active.dimmed .team-active-text-panel {
-            opacity: 0.25;
-            filter: brightness(0.7);
-            transition: opacity 0.4s ease, filter 0.4s ease;
-        }
-
-        .team-card.active.dimmed:hover .team-card-img {
-            filter: brightness(0.75);
-        }
-
-        .team-card.active.dimmed:hover .team-active-text-panel {
-            opacity: 0.5;
         }
 
         .team-card-img {
@@ -656,31 +633,19 @@
 
         .team-card.active .team-card-info {
             opacity: 0;
-            /* Hide small info when active */
             pointer-events: none;
         }
 
-        .ta-filters {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            flex-wrap: nowrap;
-            width: max-content;
-            position: absolute;
-            left: calc(100% + 40px);
-            top: 0;
-            z-index: 20;
-        }
-
+        /* Filter buttons styling */
         .team-filter-btn {
             background-color: transparent;
             color: var(--text-muted);
             font-family: 'Quicksand', sans-serif;
-            font-size: 12px;
+            font-size: 11.5px;
             text-transform: uppercase;
             border: 1px solid var(--VERMILION-RED, #EC2D26);
             border-radius: 50px;
-            padding: 10px 24px;
+            padding: 8px 18px;
             cursor: pointer;
             transition: all 0.3s ease;
             font-weight: 500;
@@ -737,33 +702,121 @@
 
         .team-active-text-panel {
             display: none;
-            position: absolute;
-            left: calc(100% + 40px);
-            top: 55px;
-            /* Anchored to top so tags stay fixed, moved down for tag space */
-            width: 820px;
-            max-width: 58vw;
             z-index: 10;
             pointer-events: none;
         }
 
         .team-card.active .team-active-text-panel {
             display: block;
-            animation: fadeInRight 0.5s ease forwards;
         }
 
-        .team-card.active.text-left .team-active-text-panel {
+        /* ── Position Mode: layout-right (Active card at indices 0, 1, 2) ── */
+        .team-card.layout-right .ta-filters {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: nowrap;
+            width: max-content;
+            position: absolute;
+            top: 0;
+            left: calc(100% + 35px);
+            right: auto;
+            z-index: 20;
+            animation: fadeInRight 0.45s ease forwards;
+        }
+
+        .team-card.layout-right .team-active-text-panel {
+            position: absolute;
+            top: 55px;
+            left: calc(100% + 35px);
+            right: auto;
+            width: 740px;
+            max-width: 58vw;
+            text-align: left;
+            animation: fadeInRight 0.45s ease forwards;
+        }
+
+        /* ── Position Mode: layout-left (Active card at indices 6, 7, 8) ── */
+        .team-card.layout-left .ta-filters {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: nowrap;
+            width: max-content;
+            position: absolute;
+            top: 0;
+            right: calc(100% + 35px);
             left: auto;
-            right: calc(100% + 40px);
-            animation: fadeInLeft 0.5s ease forwards;
+            z-index: 20;
+            animation: fadeInLeft 0.45s ease forwards;
         }
 
+        .team-card.layout-left .team-active-text-panel {
+            position: absolute;
+            top: 55px;
+            right: calc(100% + 35px);
+            left: auto;
+            width: 740px;
+            max-width: 58vw;
+            text-align: left;
+            animation: fadeInLeft 0.45s ease forwards;
+        }
 
+        /* ── Position Mode: layout-split (Active card at indices 3, 4, 5) ── */
+        .team-card.layout-split .tp-filters-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: nowrap;
+            width: max-content;
+            position: absolute;
+            top: 0;
+            right: calc(100% + 25px);
+            left: auto;
+            z-index: 20;
+            animation: fadeInLeft 0.45s ease forwards;
+        }
+
+        .team-card.layout-split .tp-panel-left {
+            position: absolute;
+            top: 55px;
+            right: calc(100% + 25px);
+            left: auto;
+            width: 380px;
+            max-width: 28vw;
+            text-align: left;
+            animation: fadeInLeft 0.45s ease forwards;
+        }
+
+        .team-card.layout-split .tp-filters-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: nowrap;
+            width: max-content;
+            position: absolute;
+            top: 0;
+            left: calc(100% + 25px);
+            right: auto;
+            z-index: 20;
+            animation: fadeInRight 0.45s ease forwards;
+        }
+
+        .team-card.layout-split .tp-panel-right {
+            position: absolute;
+            top: 55px;
+            left: calc(100% + 25px);
+            right: auto;
+            width: 380px;
+            max-width: 28vw;
+            text-align: left;
+            animation: fadeInRight 0.45s ease forwards;
+        }
 
         .ta-name {
             color: var(--text-primary);
             font-family: 'Quicksand', sans-serif;
-            font-size: 44px;
+            font-size: 42px;
             font-weight: 600;
             margin: 0 0 8px 0;
             line-height: 1.15;
@@ -772,7 +825,7 @@
         .ta-role {
             color: var(--text-primary);
             font-family: 'Quicksand', sans-serif;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 600;
             text-transform: uppercase;
             margin: 0 0 16px 0;
@@ -3692,244 +3745,163 @@
 
             function initTeam() {
                 if (!teamSlider) return;
-                teamSlider.innerHTML = '';
 
-                const domCards = [];
                 const len = teamData.length;
-                let dataOffset = 0; // Card 0: Sreekhar, Card 1: Pooja, Card 2: Braen
-                const uniqueCategories = [...new Set(teamData.map(item => item.category.toUpperCase()))];
+                const uniqueCategories = [
+                    "MARKET & GROWTH",
+                    "CLIENT SOLUTIONS",
+                    "STRATEGIC PARTNER PRACTICE",
+                    "ENTERPRISE ENABLEMENT"
+                ];
 
-                let selectedCategory = 'MARKET & GROWTH';
+                let activeIndex = 1; // Default active card (Pooja)
+                let selectedCategory = teamData[activeIndex].category.toUpperCase();
 
-                function updateFilters() {
-                    document.querySelectorAll('.team-filter-btn').forEach(btn => {
-                        if (btn.innerText === selectedCategory) btn.classList.add('active');
-                        else btn.classList.remove('active');
+                function getLayoutMode(idx) {
+                    if (idx <= 2) return 'right';
+                    if (idx >= 6) return 'left';
+                    return 'split';
+                }
+
+                function createFilterBtn(cat) {
+                    const btn = document.createElement('button');
+                    btn.className = 'team-filter-btn' + (cat === selectedCategory ? ' active' : '');
+                    btn.innerText = cat;
+                    btn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        activateCategory(cat);
                     });
+                    return btn;
+                }
 
-                    domCards.forEach((card, i) => {
-                        const dataIndex = ((i + dataOffset) % len + len) % len;
-                        const memberCat = teamData[dataIndex].category.toUpperCase();
+                function updateCardDOM(card, i, isActive, mode, member) {
+                    card.className = `team-card ${isActive ? 'active' : 'inactive'} ${isActive ? 'layout-' + mode : ''} ${member.category.toUpperCase() === selectedCategory ? 'highlighted' : 'dimmed'}`;
 
-                        if (i === 1) {
-                            card.classList.remove('highlighted');
-                            if (memberCat === selectedCategory) {
-                                card.classList.remove('dimmed');
-                            } else {
-                                card.classList.add('dimmed');
-                            }
-                            return;
-                        }
-
-                        if (memberCat === selectedCategory) {
-                            card.classList.add('highlighted');
+                    let activeHTML = '';
+                    if (isActive) {
+                        if (mode === 'right' || mode === 'left') {
+                            activeHTML = `
+                                <div class="team-active-text-panel tp-panel">
+                                    <h2 class="ta-name"${member.name === "Hithender Kumar G" ? ' style="white-space: nowrap;"' : ''}>${member.name}</h2>
+                                    <h4 class="ta-role">${member.role}</h4>
+                                    <p class="ta-desc">${member.desc}</p>
+                                </div>
+                                <div class="ta-filters tp-filters"></div>
+                            `;
                         } else {
-                            card.classList.remove('highlighted');
+                            // mode === 'split'
+                            activeHTML = `
+                                <div class="team-active-text-panel tp-panel tp-panel-left">
+                                    <h2 class="ta-name"${member.name === "Hithender Kumar G" ? ' style="white-space: nowrap;"' : ''}>${member.name}</h2>
+                                    <h4 class="ta-role">${member.role}</h4>
+                                </div>
+                                <div class="team-active-text-panel tp-panel tp-panel-right">
+                                    <p class="ta-desc">${member.desc}</p>
+                                </div>
+                                <div class="tp-filters tp-filters-left ta-filters"></div>
+                                <div class="tp-filters tp-filters-right ta-filters"></div>
+                            `;
                         }
-                    });
-                }
-
-                function populateData(container, dataIndex) {
-                    const member = teamData[dataIndex];
-
-                    const img = container.querySelector('.team-card-img');
-                    img.src = member.img;
-                    img.alt = member.name;
-
-                    container.querySelector('.ta-name').innerText = member.name;
-                    container.querySelector('.ta-role').innerText = member.role;
-                    container.querySelector('.ta-desc').innerText = member.desc;
-
-                    container.querySelector('.tc-name').innerText = member.name;
-                    container.querySelector('.tc-role').innerText = member.role;
-                    const tcTag = container.querySelector('.tc-tag');
-                    if (tcTag) tcTag.innerText = member.category;
-                }
-
-                function shiftCards(shift) {
-                    if (shift === 0 || isAnimating) return;
-                    isAnimating = true;
-
-                    // Shortest path logic for offset rotation
-                    if (shift > len / 2) {
-                        shift = shift - len;
-                    } else if (shift < -len / 2) {
-                        shift = shift + len;
                     }
 
-                    const dir = shift > 0 ? -1 : 1; // swipe left (shift>0) -> out left (-1), in right (+1)
-                    dataOffset = ((dataOffset + shift) % len + len) % len;
+                    // Remove existing active elements if any
+                    card.querySelectorAll('.tp-panel, .tp-filters, .ta-filters, .team-active-text-panel').forEach(el => el.remove());
 
-                    // When cards rotate, sync selectedCategory to the newly active card's category
-                    const currentActiveIndex = ((1 + dataOffset) % len + len) % len;
-                    selectedCategory = teamData[currentActiveIndex].category.toUpperCase();
-                    updateFilters();
+                    if (isActive) {
+                        const temp = document.createElement('div');
+                        temp.innerHTML = activeHTML;
+                        while (temp.firstChild) {
+                            card.appendChild(temp.firstChild);
+                        }
 
-                    domCards.forEach((card, i) => {
-                        const content = card.querySelector('.team-card-content');
-
-                        // Clone entire wrapper for perfectly synced outgoing animation
-                        const clone = content.cloneNode(true);
-                        clone.style.transition = 'opacity 0.4s ease';
-
-                        card.appendChild(clone);
-
-                        // Force reflow for clone
-                        void clone.offsetWidth;
-
-                        // Fade out clone
-                        clone.style.opacity = '0';
-
-                        // Instantly prepare incoming real wrapper (underneath clone)
-                        const dataIndex = ((i + dataOffset) % len + len) % len;
-                        populateData(content, dataIndex);
-
-                        content.style.transition = 'none';
-                        content.style.opacity = '0';
-
-                        void content.offsetWidth; // Force reflow
-
-                        // Fade in real wrapper
-                        content.style.transition = 'opacity 0.4s ease';
-                        content.style.opacity = '1';
-
-                        // Cleanup after animation finishes
-                        setTimeout(() => {
-                            clone.remove();
-                            content.style.transition = '';
-                        }, 400);
-                    });
-
-                    setTimeout(() => {
-                        isAnimating = false;
-                    }, 400);
+                        if (mode === 'right' || mode === 'left') {
+                            const filtersWrap = card.querySelector('.tp-filters');
+                            if (filtersWrap) {
+                                uniqueCategories.forEach(cat => filtersWrap.appendChild(createFilterBtn(cat)));
+                            }
+                        } else {
+                            const leftWrap = card.querySelector('.tp-filters-left');
+                            const rightWrap = card.querySelector('.tp-filters-right');
+                            if (leftWrap && rightWrap) {
+                                leftWrap.appendChild(createFilterBtn(uniqueCategories[0]));
+                                leftWrap.appendChild(createFilterBtn(uniqueCategories[1]));
+                                rightWrap.appendChild(createFilterBtn(uniqueCategories[2]));
+                                rightWrap.appendChild(createFilterBtn(uniqueCategories[3]));
+                            }
+                        }
+                    }
                 }
 
-                for (let i = 0; i < len; i++) {
-                    const card = document.createElement('div');
-                    const isActive = i === 1; // 2nd card is always the active one visually
-                    const isLastThree = i >= len - 4;
+                const domCards = [];
+                teamSlider.innerHTML = '';
 
-                    card.className = `team-card ${isActive ? 'active' : 'inactive'} ${isLastThree ? 'text-left' : ''}`;
+                teamData.forEach((member, i) => {
+                    const card = document.createElement('div');
                     card.style.order = i;
                     card.style.webkitTapHighlightColor = 'transparent';
 
-                    card.innerHTML = `
+                    const baseContent = `
                         <div class="team-card-content" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                            <img src="" class="team-card-img" alt="">
+                            <img src="${member.img}" class="team-card-img" alt="${member.name}">
                             
                             <div class="team-card-info" style="padding: 8px 2px; bottom: 0; left: 6px; right: 6px;">
-                                <p class="tc-tag" style="font-family: 'Quicksand', sans-serif; font-size: 10px; color: #bbb; margin-bottom: 4px; letter-spacing: 0.8px; line-height: 1.2; font-weight: 400; text-transform: uppercase;"></p>
-                                <h2 class="tc-name" style="font-family: 'Quicksand', sans-serif; font-size: 14px; margin-bottom: 4px; line-height: 1.25; font-weight: 700; color: #ffffff; word-break: normal; overflow-wrap: normal;"></h2>
-                                <h4 class="tc-role" style="font-family: 'Quicksand', sans-serif; font-size: 10px; color: #999; letter-spacing: 0.5px; line-height: 1.2; font-weight: 400; text-transform: uppercase;"></h4>
-                            </div>
-
-                            <div class="team-active-text-panel" style="transition: opacity 0.3s ease;">
-                                <h2 class="ta-name"></h2>
-                                <h4 class="ta-role"></h4>
-                                <p class="ta-desc"></p>
+                                <p class="tc-tag" style="font-family: 'Quicksand', sans-serif; font-size: 10px; color: #bbb; margin-bottom: 4px; letter-spacing: 0.8px; line-height: 1.2; font-weight: 400; text-transform: uppercase;">${member.category}</p>
+                                <h2 class="tc-name" style="font-family: 'Quicksand', sans-serif; font-size: 14px; margin-bottom: 4px; line-height: 1.25; font-weight: 700; color: #ffffff; word-break: normal; overflow-wrap: normal;">${member.name}</h2>
+                                <h4 class="tc-role" style="font-family: 'Quicksand', sans-serif; font-size: 10px; color: #999; letter-spacing: 0.5px; line-height: 1.2; font-weight: 400; text-transform: uppercase;">${member.role}</h4>
                             </div>
                         </div>
-                        ${isActive ? `<div class="ta-filters"></div>` : ''}
                     `;
+                    card.innerHTML = baseContent;
 
-                    const content = card.querySelector('.team-card-content');
-                    const initialDataIndex = ((i + dataOffset) % len + len) % len;
-                    populateData(content, initialDataIndex);
-
-                    const taFilters = card.querySelector('.ta-filters');
-                    if (taFilters) {
-                        uniqueCategories.forEach((cat) => {
-                            const btn = document.createElement('button');
-                            btn.className = 'team-filter-btn';
-                            btn.innerText = cat;
-                            btn.addEventListener('click', (e) => {
-                                e.stopPropagation();
-                                if (isAnimating) return;
-                                selectedCategory = cat;
-                                updateFilters();
-                            });
-                            taFilters.appendChild(btn);
-                        });
-                    }
-
-                    // Prevent native image dragging so custom mouse swipe works smoothly
+                    // Prevent native image drag
                     const img = card.querySelector('.team-card-img');
-                    if (img) {
-                        img.addEventListener('dragstart', (e) => e.preventDefault());
-                    }
+                    if (img) img.addEventListener('dragstart', (e) => e.preventDefault());
 
                     card.addEventListener('click', () => {
-                        if (wasSwiped) return;
                         if (window.innerWidth < 768) {
-                            // On mobile horizontal snap scroll, smooth scroll card into center
                             const targetScroll = card.offsetLeft - (teamSlider.clientWidth - card.offsetWidth) / 2;
                             teamSlider.scrollTo({ left: Math.max(0, targetScroll), behavior: 'smooth' });
                             return;
                         }
-                        if (isAnimating) return;
-                        if (i === 1) {
-                            if (card.classList.contains('dimmed')) {
-                                const currentActiveIndex = ((1 + dataOffset) % len + len) % len;
-                                selectedCategory = teamData[currentActiveIndex].category.toUpperCase();
-                                updateFilters();
-                            }
-                            return;
-                        }
-                        shiftCards(i - 1);
+                        activateCard(i);
                     });
 
                     domCards.push(card);
                     teamSlider.appendChild(card);
+                });
+
+                function activateCard(index) {
+                    if (index < 0 || index >= len) return;
+                    activeIndex = index;
+                    selectedCategory = teamData[index].category.toUpperCase();
+                    renderActiveState();
                 }
 
-                updateFilters();
-
-                // Add swipe/drag detection
-                let startX = 0;
-                let startY = 0;
-                let isDragging = false;
-                let wasSwiped = false;
-
-                const handleDragStart = (e) => {
-                    if (isAnimating) return;
-                    startX = e.touches ? e.touches[0].clientX : e.clientX;
-                    startY = e.touches ? e.touches[0].clientY : e.clientY;
-                    isDragging = true;
-                };
-
-                const handleDragEnd = (e) => {
-                    if (!isDragging) return;
-                    isDragging = false;
-
-                    // On mobile, let native CSS snap-scroll handle the swipe
-                    if (window.innerWidth < 768) return;
-
-                    const endX = e.changedTouches ? e.changedTouches[0].clientX : e.clientX;
-                    const endY = e.changedTouches ? e.changedTouches[0].clientY : e.clientY;
-
-                    const deltaX = endX - startX;
-                    const deltaY = endY - startY;
-
-                    // If horizontal swipe is strong enough
-                    if (Math.abs(deltaX) > 40 && Math.abs(deltaX) > Math.abs(deltaY)) {
-                        wasSwiped = true;
-                        setTimeout(() => { wasSwiped = false; }, 50);
-
-                        if (deltaX < 0) {
-                            // Swipe left -> next data
-                            shiftCards(1);
-                        } else {
-                            // Swipe right -> prev data
-                            shiftCards(-1);
-                        }
+                function activateCategory(cat) {
+                    selectedCategory = cat.toUpperCase();
+                    const currentMember = teamData[activeIndex];
+                    if (currentMember.category.toUpperCase() !== selectedCategory) {
+                        const firstIdx = teamData.findIndex(m => m.category.toUpperCase() === selectedCategory);
+                        if (firstIdx !== -1) activeIndex = firstIdx;
                     }
-                };
+                    renderActiveState();
+                }
 
-                teamSlider.addEventListener('touchstart', handleDragStart, { passive: true });
-                teamSlider.addEventListener('touchend', handleDragEnd);
-                teamSlider.addEventListener('mousedown', handleDragStart);
-                window.addEventListener('mouseup', handleDragEnd);
+                function renderActiveState() {
+                    const mode = getLayoutMode(activeIndex);
+                    domCards.forEach((card, i) => {
+                        const isActive = i === activeIndex;
+                        const member = teamData[i];
+                        updateCardDOM(card, i, isActive, mode, member);
+                    });
+                }
+
+                // Expose methods for testing/interaction if needed
+                window.activateTeamCard = activateCard;
+                window.activateTeamCategory = activateCategory;
+
+                // Initial render
+                renderActiveState();
             }
 
             initTeam();
