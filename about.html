@@ -505,13 +505,14 @@
             position: relative;
             width: 100%;
             display: flex;
-            justify-content: center;
-            align-items: flex-end;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
             padding: 20px 40px;
             box-sizing: border-box;
             overflow-x: auto;
             background-color: transparent;
-            margin-top: -10rem;
+            margin-top: 10px;
             -ms-overflow-style: none;
             /* IE and Edge */
             scrollbar-width: none;
@@ -520,6 +521,18 @@
 
         .meetsthirossec::-webkit-scrollbar {
             display: none;
+        }
+
+        .team-desktop-tabs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            width: 100%;
+            margin-bottom: 45px;
+            position: relative;
+            z-index: 50;
+            flex-wrap: wrap;
         }
 
         .team-accordion-mobile {
@@ -532,7 +545,7 @@
             justify-content: center;
             /* Centers the slider items horizontally */
             gap: 15px;
-            padding-top: 300px;
+            padding-top: 0;
             position: relative;
             margin: 0 auto;
             width: max-content;
@@ -710,24 +723,15 @@
             display: block;
         }
 
-        /* ── Position Mode: layout-right (Active card at indices 0, 1, 2) ── */
-        .team-card.layout-right .ta-filters {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            flex-wrap: nowrap;
-            width: max-content;
-            position: absolute;
-            top: 0;
-            left: calc(100% + 35px);
-            right: auto;
-            z-index: 20;
-            animation: fadeInRight 0.45s ease forwards;
+        .team-card .ta-filters,
+        .team-card .tp-filters {
+            display: none !important;
         }
 
+        /* ── Position Mode: layout-right (Active card at indices 0, 1, 2, 3, 4) ── */
         .team-card.layout-right .team-active-text-panel {
             position: absolute;
-            top: 55px;
+            top: 15px;
             left: calc(100% + 35px);
             right: auto;
             width: 740px;
@@ -736,50 +740,40 @@
             animation: fadeInRight 0.45s ease forwards;
         }
 
-        /* ── Position Mode: layout-left (Active card at indices 6, 7, 8) ── */
-        .team-card.layout-left .ta-filters {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            flex-wrap: nowrap;
-            width: max-content;
-            position: absolute;
-            top: 0;
-            right: calc(100% + 35px);
-            left: auto;
-            z-index: 20;
-            animation: fadeInLeft 0.45s ease forwards;
+        /* 4th card (Karthik Jegannathan, idx 3): tailored width so right-aligned details fit cleanly without overflow */
+        .team-card[data-index="3"].layout-right .team-active-text-panel {
+            width: 580px;
+            max-width: 40vw;
         }
 
+        /* 5th card (Praveen Babu C, idx 4): tailored width so right-aligned details fit cleanly without overflow */
+        .team-card[data-index="4"].layout-right .team-active-text-panel {
+            width: 530px;
+            max-width: 36vw;
+        }
+
+        /* ── Position Mode: layout-left (Active card at indices 5, 6, 7, 8) ── */
         .team-card.layout-left .team-active-text-panel {
             position: absolute;
-            top: 55px;
+            top: 15px;
             right: calc(100% + 35px);
             left: auto;
             width: 740px;
             max-width: 58vw;
             text-align: left;
             animation: fadeInLeft 0.45s ease forwards;
+        }
+
+        /* 6th card (Hithender Kumar G, idx 5): tailored width for balanced left layout */
+        .team-card[data-index="5"].layout-left .team-active-text-panel {
+            width: 600px;
+            max-width: 42vw;
         }
 
         /* ── Position Mode: layout-split (Active card at indices 3, 4, 5) ── */
-        .team-card.layout-split .tp-filters-left {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: nowrap;
-            width: max-content;
-            position: absolute;
-            top: 0;
-            right: calc(100% + 25px);
-            left: auto;
-            z-index: 20;
-            animation: fadeInLeft 0.45s ease forwards;
-        }
-
         .team-card.layout-split .tp-panel-left {
             position: absolute;
-            top: 55px;
+            top: 15px;
             right: calc(100% + 25px);
             left: auto;
             width: 380px;
@@ -788,23 +782,9 @@
             animation: fadeInLeft 0.45s ease forwards;
         }
 
-        .team-card.layout-split .tp-filters-right {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: nowrap;
-            width: max-content;
-            position: absolute;
-            top: 0;
-            left: calc(100% + 25px);
-            right: auto;
-            z-index: 20;
-            animation: fadeInRight 0.45s ease forwards;
-        }
-
         .team-card.layout-split .tp-panel-right {
             position: absolute;
-            top: 55px;
+            top: 15px;
             left: calc(100% + 25px);
             right: auto;
             width: 380px;
@@ -1056,14 +1036,14 @@
             }
 
             .team-active-text-panel {
-                top: 55px;
+                top: 15px;
                 bottom: auto;
                 width: 720px;
                 max-width: 58vw;
             }
 
             .team-slider {
-                padding-top: 250px;
+                padding-top: 0;
             }
 
             .about-hero-title {
@@ -1089,25 +1069,27 @@
             }
         }
 
-        .team-card.active.text-left .ta-filters {
-            left: auto;
-            right: calc(100% + 40px);
-            justify-content: flex-end;
-        }
-
         @media (max-width: 1366px) {
-            .ta-filters {
-                flex-wrap: wrap;
-                max-width: 650px;
-                gap: 10px;
-                top: -50px;
-            }
-
             .team-active-text-panel {
                 width: 650px;
                 max-width: 58vw;
-                top: 50px;
+                top: 15px;
                 bottom: auto;
+            }
+
+            .team-card[data-index="3"].layout-right .team-active-text-panel {
+                width: 500px;
+                max-width: 38vw;
+            }
+
+            .team-card[data-index="4"].layout-right .team-active-text-panel {
+                width: 460px;
+                max-width: 36vw;
+            }
+
+            .team-card[data-index="5"].layout-left .team-active-text-panel {
+                width: 520px;
+                max-width: 42vw;
             }
 
             .team-card.active {
@@ -1957,6 +1939,10 @@
                 overflow: visible !important;
                 width: 100% !important;
                 box-sizing: border-box !important;
+            }
+
+            .team-desktop-tabs {
+                display: none !important;
             }
 
             .team-slider {
@@ -3379,6 +3365,12 @@
 
         <!-- Market & Growth -->
         <div class="meetsthirossec" id="meetsthirossec">
+            <div class="team-desktop-tabs" id="teamDesktopTabs">
+                <button type="button" class="team-filter-btn active" data-category="MARKET &amp; GROWTH">MARKET &amp; GROWTH</button>
+                <button type="button" class="team-filter-btn" data-category="CLIENT SOLUTIONS">CLIENT SOLUTIONS</button>
+                <button type="button" class="team-filter-btn" data-category="STRATEGIC PARTNER PRACTICE">STRATEGIC PARTNER PRACTICE</button>
+                <button type="button" class="team-filter-btn" data-category="ENTERPRISE ENABLEMENT">ENTERPRISE ENABLEMENT</button>
+            </div>
             <div class="team-slider" id="teamSlider">
                 <!-- JavaScript will populate this (desktop) -->
             </div>
@@ -3768,21 +3760,31 @@
                 let selectedCategory = teamData[activeIndex].category.toUpperCase();
 
                 function getLayoutMode(idx) {
-                    if (idx <= 2) return 'right';
-                    if (idx >= 6) return 'left';
-                    return 'split';
+                    if (idx <= 4) return 'right';
+                    return 'left';
                 }
 
-                function createFilterBtn(cat) {
-                    const btn = document.createElement('button');
-                    btn.className = 'team-filter-btn' + (cat === selectedCategory ? ' active' : '');
-                    btn.innerText = cat;
+                const desktopTabsContainer = document.getElementById('teamDesktopTabs');
+                const tabButtons = desktopTabsContainer ? desktopTabsContainer.querySelectorAll('.team-filter-btn') : [];
+
+                function updateDesktopTabButtons() {
+                    tabButtons.forEach(btn => {
+                        const cat = (btn.getAttribute('data-category') || btn.innerText).trim().toUpperCase();
+                        if (cat === selectedCategory) {
+                            btn.classList.add('active');
+                        } else {
+                            btn.classList.remove('active');
+                        }
+                    });
+                }
+
+                tabButtons.forEach(btn => {
                     btn.addEventListener('click', (e) => {
                         e.stopPropagation();
+                        const cat = (btn.getAttribute('data-category') || btn.innerText).trim().toUpperCase();
                         activateCategory(cat);
                     });
-                    return btn;
-                }
+                });
 
                 function updateCardDOM(card, i, isActive, mode, member) {
                     card.className = `team-card ${isActive ? 'active' : 'inactive'} ${isActive ? 'layout-' + mode : ''} ${member.category.toUpperCase() === selectedCategory ? 'highlighted' : 'dimmed'}`;
@@ -3796,7 +3798,6 @@
                                     <h4 class="ta-role">${member.role}</h4>
                                     <p class="ta-desc">${member.desc}</p>
                                 </div>
-                                <div class="ta-filters tp-filters"></div>
                             `;
                         } else {
                             // mode === 'split'
@@ -3808,8 +3809,6 @@
                                 <div class="team-active-text-panel tp-panel tp-panel-right">
                                     <p class="ta-desc">${member.desc}</p>
                                 </div>
-                                <div class="tp-filters tp-filters-left ta-filters"></div>
-                                <div class="tp-filters tp-filters-right ta-filters"></div>
                             `;
                         }
                     }
@@ -3823,22 +3822,6 @@
                         while (temp.firstChild) {
                             card.appendChild(temp.firstChild);
                         }
-
-                        if (mode === 'right' || mode === 'left') {
-                            const filtersWrap = card.querySelector('.tp-filters');
-                            if (filtersWrap) {
-                                uniqueCategories.forEach(cat => filtersWrap.appendChild(createFilterBtn(cat)));
-                            }
-                        } else {
-                            const leftWrap = card.querySelector('.tp-filters-left');
-                            const rightWrap = card.querySelector('.tp-filters-right');
-                            if (leftWrap && rightWrap) {
-                                leftWrap.appendChild(createFilterBtn(uniqueCategories[0]));
-                                leftWrap.appendChild(createFilterBtn(uniqueCategories[1]));
-                                rightWrap.appendChild(createFilterBtn(uniqueCategories[2]));
-                                rightWrap.appendChild(createFilterBtn(uniqueCategories[3]));
-                            }
-                        }
                     }
                 }
 
@@ -3847,6 +3830,7 @@
 
                 teamData.forEach((member, i) => {
                     const card = document.createElement('div');
+                    card.setAttribute('data-index', i);
                     card.style.order = i;
                     card.style.webkitTapHighlightColor = 'transparent';
 
@@ -3899,6 +3883,7 @@
 
                 function renderActiveState() {
                     const mode = getLayoutMode(activeIndex);
+                    updateDesktopTabButtons();
                     domCards.forEach((card, i) => {
                         const isActive = i === activeIndex;
                         const member = teamData[i];

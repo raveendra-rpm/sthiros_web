@@ -5483,10 +5483,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
             
+            const currentCards = container.querySelectorAll('.rcs-card');
+            if (currentCards.length < 3) {
+                rcsPrev.style.cursor = 'default';
+                rcsNext.style.cursor = 'default';
+            } else {
+                rcsPrev.style.cursor = 'pointer';
+                rcsNext.style.cursor = 'pointer';
+            }
+            
             return { cardWidth, gap };
         }
         
         rcsNext.addEventListener('click', () => {
+            const currentCards = container.querySelectorAll('.rcs-card');
+            if (currentCards.length < 3) return;
             if (isAnimating) return;
             isAnimating = true;
             
@@ -5506,6 +5517,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
         rcsPrev.addEventListener('click', () => {
+            const currentCards = container.querySelectorAll('.rcs-card');
+            if (currentCards.length < 3) return;
             if (isAnimating) return;
             isAnimating = true;
             
