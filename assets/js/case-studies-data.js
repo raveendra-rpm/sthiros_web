@@ -26,17 +26,6 @@ const STHIROS_CASE_STUDIES = [
     "sheet": "Already uploaded"
   },
   {
-    "id": 3,
-    "title": "STHIROS · AI · INTELLIGENT FOUNDATION · MINING",
-    "desc": "Teaching machine data and Excel to speak one language, in real time",
-    "type": "Case Study",
-    "service": "AI",
-    "industry": "Energy, Mining & Utilities",
-    "pdf": "assets/AIcasestudypdf/STHIROS · AI · INTELLIGENT FOUNDATION · MINING.pdf",
-    "bgImg": "assets/images/casestudybannerimg/STHIROS · AI · INTELLIGENT FOUNDATION · MINING.png",
-    "sheet": "Already uploaded"
-  },
-  {
     "id": 4,
     "title": "STHIROS · AI · COGNITIVE EXPERIENCE & ENGINEERING · E-COMMERCE, SUPPLY CHAIN PLATFORM",
     "desc": "Cutting manual cash burn reporting effort by 50-70%, in 25 business days",
@@ -56,17 +45,6 @@ const STHIROS_CASE_STUDIES = [
     "industry": "Public Sector & Government",
     "pdf": "assets/AIcasestudypdf/STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · GOVERNMENT & DIGITAL INFRASTRUCTURE.pdf",
     "bgImg": "assets/images/casestudybannerimg/STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · GOVERNMENT & DIGITAL INFRASTRUCTURE.png",
-    "sheet": "Already uploaded"
-  },
-  {
-    "id": 6,
-    "title": "STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · AUTOMOTIVE, MANUFACTURING",
-    "desc": "Taking a manufacturer's intelligence from a 35 to one governed Smart Genba view",
-    "type": "Case Study",
-    "service": "AI",
-    "industry": "Manufacturing",
-    "pdf": "assets/AIcasestudypdf/STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · AUTOMOTIVE, MANUFACTURING.pdf",
-    "bgImg": "assets/images/casestudybannerimg/STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · AUTOMOTIVE, MANUFACTURING.png",
     "sheet": "Already uploaded"
   },
   {
@@ -312,17 +290,6 @@ const STHIROS_CASE_STUDIES = [
     "sheet": "To upload"
   },
   {
-    "id": 29,
-    "title": "STHIROS · CYBER · SOC 2 TYPE 2 ASSESSMENT · LIFE SCIENCES",
-    "desc": "Turning 120+ controls across three geographies into one clean SOC 2 report",
-    "type": "Case Study",
-    "service": "Cyber",
-    "industry": "Healthcare & Life Sciences",
-    "pdf": "assets/sthiroscasestudypdf/Health/STHIROS · CYBER · SOC 2 TYPE 2 ASSESSMENT · LIFE SCIENCES.pdf",
-    "bgImg": "assets/images/casestudybannerimg/STHIROS · CYBER · SOC 2 TYPE 2 ASSESSMENT · LIFE SCIENCES.png",
-    "sheet": "To upload"
-  },
-  {
     "id": 30,
     "title": "STHIROS · STRATEGY · HEALTHCARE OPERATIONS EXCELLENCE · HEALTHCARE",
     "desc": "Fixing discharge delays, radiology waits, and seven other symptoms, one hospital system at a time",
@@ -419,17 +386,6 @@ const STHIROS_CASE_STUDIES = [
     "industry": "Travel & Hospitality",
     "pdf": "assets/sthiroscasestudypdf/Risk/STHIROS · RISK · FORENSIC INTEGRITY & ASSET PROTECTION · HOSPITALITY, FOOD & BEVERAGE.pdf",
     "bgImg": "assets/images/casestudybannerimg/STHIROS · RISK · FORENSIC INTEGRITY & ASSET PROTECTION · HOSPITALITY, FOOD & BEVERAGE.png",
-    "sheet": "To upload"
-  },
-  {
-    "id": 39,
-    "title": "STHIROS · AI · INTELLIGENT GCC BLUEPRINT · HEALTHCARE",
-    "desc": "Cutting manual effort by 70% across a healthcare GCC, headcount unchanged",
-    "type": "Case Study",
-    "service": "Strategy",
-    "industry": "GCC",
-    "pdf": "assets/sthiroscasestudypdf/GCC/STHIROS · AI · INTELLIGENT GCC BLUEPRINT · HEALTHCARE.pdf",
-    "bgImg": "assets/images/casestudybannerimg/STHIROS · AI · INTELLIGENT GCC BLUEPRINT · HEALTHCARE.png",
     "sheet": "To upload"
   },
   {
@@ -552,17 +508,6 @@ const STHIROS_CASE_STUDIES = [
     "pdf": "assets/sthiroscasestudypdf/Travel/STHIROS · AI · DATA ENGINEERING, AUTOMATION & BI TRANSFORMATION · TRAVEL & TOURISM.pdf",
     "bgImg": "assets/images/casestudybannerimg/STHIROS · AI · DATA ENGINEERING, AUTOMATION & BI TRANSFORMATION · TRAVEL & TOURISM.png",
     "sheet": "To upload"
-  },
-  {
-    "id": 51,
-    "title": "STHIROS · STRATEGY · D2C & RETAILS · INDIA-LED, GLOBALLY INFORMED",
-    "desc": "India-led, globally informed — strategic shifts across supply chain, direct distribution, and customer economics.",
-    "type": "Case Study",
-    "service": "Strategy",
-    "industry": "D2C & Retail",
-    "pdf": "assets/insightrepopage/sthiros_d2c&retails_india-led_globallyinformed.pdf",
-    "bgImg": "assets/images/casestudybannerimg/sthiros_d2c&retails_india-led_globallyinformed.png",
-    "sheet": "insightrepopage"
   }
 ];
 
