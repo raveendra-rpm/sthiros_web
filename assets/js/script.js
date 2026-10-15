@@ -5484,7 +5484,8 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             
             const currentCards = container.querySelectorAll('.rcs-card');
-            if (currentCards.length < 3) {
+            const minCardsToScroll = isMobile ? 2 : 4;
+            if (currentCards.length < minCardsToScroll) {
                 rcsPrev.style.cursor = 'default';
                 rcsNext.style.cursor = 'default';
             } else {
@@ -5496,8 +5497,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         rcsNext.addEventListener('click', () => {
+            const isMobile = window.innerWidth <= 768;
             const currentCards = container.querySelectorAll('.rcs-card');
-            if (currentCards.length < 3) return;
+            const minCardsToScroll = isMobile ? 2 : 4;
+            if (currentCards.length < minCardsToScroll) return;
             if (isAnimating) return;
             isAnimating = true;
             
@@ -5517,8 +5520,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
         rcsPrev.addEventListener('click', () => {
+            const isMobile = window.innerWidth <= 768;
             const currentCards = container.querySelectorAll('.rcs-card');
-            if (currentCards.length < 3) return;
+            const minCardsToScroll = isMobile ? 2 : 4;
+            if (currentCards.length < minCardsToScroll) return;
             if (isAnimating) return;
             isAnimating = true;
             
