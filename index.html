@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css?v=52" />
+    <link rel="stylesheet" href="assets/css/style.css?v=54" />
 
     <style>
         /* Force red text in light mode for Four Pillars on mobile */
@@ -17,6 +17,12 @@
         body.light-mode h2#services-title span.text-red {
             color: #EC2D26 !important;
             -webkit-text-fill-color: #EC2D26 !important;
+        }
+
+        /* Disable transform and scale on hover for Intelligence built in the Field cards */
+        #latest-thinking .rcs-card,
+        #latest-thinking .rcs-card:hover {
+            transform: none !important;
         }
     </style>
 </head>
@@ -1694,35 +1700,77 @@
                 </h2>
             </div>
             <hr class="thinking-divider bottom-divider">
-            <div class="thinking-cards-viewport">
-                <div class="thinking-cards-wrapper">
-                    <a href="repository.html" class="thinking-card active" style="text-decoration: none;">
-                        <p class="card-eyebrow">PERSPECTIVE</p>
-                        <div class="card-bottom">
-                            <h3 class="card-title">What governance actually looks like before the event.</h3>
-                            <p class="card-read-time">6 min read</p>
+            <div class="rcs-container" id="rcs-slider-container">
+                <!-- Card 1 -->
+                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/AIcasestudypdf/STHIROS · AI · AGENTIC OPERATIONS & AUTOMATION · STEEL MANUFACTURING, EXPORT LOGISTICS.pdf', '_blank')">
+                    <img src="assets/images/casestudybannerimg/STHIROS · AI · AGENTIC OPERATIONS & AUTOMATION · STEEL MANUFACTURING, EXPORT LOGISTICS.png" class="rcs-bg" alt="Case Study">
+                    <div class="rcs-overlay"></div>
+                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                    <div class="rcs-content">
+                        <div class="rcs-text">
+                            <p class="rcs-desc">Catching customs and demurrage risk 48 hours before it costs a steel exporter money</p>
                         </div>
-                    </a>
-                    <a href="repository.html" class="thinking-card" style="text-decoration: none;">
-                        <p class="card-eyebrow">BRIEFING</p>
-                        <div class="card-bottom">
-                            <h3 class="card-title">Automation without strategy is just faster mistakes.</h3>
-                            <p class="card-read-time">8 min read</p>
+                        <div class="rcs-arrow-container">
+                            <img src="assets/images/repositorypage/arrowwhite.png" class="rcs-arrow-normal" alt="Arrow">
+                            <img src="assets/images/repositorypage/arrowred.png" class="rcs-arrow-hover" alt="Arrow">
                         </div>
-                    </a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/sthiroscasestudypdf/Manufature/STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · AUTOMOTIVE, MANUFACTURING.pdf', '_blank')">
+                    <img src="assets/images/casestudybannerimg/STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · AUTOMOTIVE, MANUFACTURING.png" class="rcs-bg" alt="Case Study">
+                    <div class="rcs-overlay"></div>
+                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                    <div class="rcs-content">
+                        <div class="rcs-text">
+                            <p class="rcs-desc">Taking a manufacturer's intelligence from a 35 to one governed Smart Genba view</p>
+                        </div>
+                        <div class="rcs-arrow-container">
+                            <img src="assets/images/repositorypage/arrowwhite.png" class="rcs-arrow-normal" alt="Arrow">
+                            <img src="assets/images/repositorypage/arrowred.png" class="rcs-arrow-hover" alt="Arrow">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/sthiroscasestudypdf/Telecom/STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · GOVERNMENT & DIGITAL INFRASTRUCTURE.pdf', '_blank')">
+                    <img src="assets/images/casestudybannerimg/STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · GOVERNMENT & DIGITAL INFRASTRUCTURE.png" class="rcs-bg" alt="Case Study">
+                    <div class="rcs-overlay"></div>
+                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                    <div class="rcs-content">
+                        <div class="rcs-text">
+                            <p class="rcs-desc">Turning an undocumented risk practice into a Board-ready, CAG-audit-ready ERM framework</p>
+                        </div>
+                        <div class="rcs-arrow-container">
+                            <img src="assets/images/repositorypage/arrowwhite.png" class="rcs-arrow-normal" alt="Arrow">
+                            <img src="assets/images/repositorypage/arrowred.png" class="rcs-arrow-hover" alt="Arrow">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/AIcasestudypdf/STHIROS · AI · COGNITIVE EXPERIENCE & ENGINEERING · CROSS-INDUSTRY.pdf', '_blank')">
+                    <img src="assets/images/casestudybannerimg/STHIROS · AI · COGNITIVE EXPERIENCE & ENGINEERING · CROSS-INDUSTRY.png" class="rcs-bg" alt="Case Study">
+                    <div class="rcs-overlay"></div>
+                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                    <div class="rcs-content">
+                        <div class="rcs-text">
+                            <p class="rcs-desc">Automating multilingual video creation for training and incident reporting, at scale</p>
+                        </div>
+                        <div class="rcs-arrow-container">
+                            <img src="assets/images/repositorypage/arrowwhite.png" class="rcs-arrow-normal" alt="Arrow">
+                            <img src="assets/images/repositorypage/arrowred.png" class="rcs-arrow-hover" alt="Arrow">
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!-- Slider Navigation Buttons -->
-            <div class="thinking-nav-container">
-                <button class="story-arrow-btn story-prev thinking-prev" id="thinkingPrevBtn" aria-label="Previous thinking card">
-                    <img src="assets/images/sthiroscircle.png" alt="Circle" class="arrow-circle-bg">
-                    <img src="assets/images/arrowslideleft.png" alt="Left Arrow" class="arrow-icon icon-left">
-                </button>
-                <button class="story-arrow-btn story-next thinking-next" id="thinkingNextBtn" aria-label="Next thinking card">
-                    <img src="assets/images/sthiroscircle.png" alt="Circle" class="arrow-circle-bg">
-                    <img src="assets/images/arrowslideright.png" alt="Right Arrow" class="arrow-icon icon-right">
-                </button>
+            <div class="rcs-nav">
+                <div class="rcs-nav-btn" id="rcs-btn-prev" role="button" tabindex="0" aria-label="Previous case study">
+                    <img src="assets/images/arrowslideleft.png" alt="Left">
+                </div>
+                <div class="rcs-nav-btn" id="rcs-btn-next" role="button" tabindex="0" aria-label="Next case study">
+                    <img src="assets/images/arrowslideright.png" alt="Right">
+                </div>
             </div>
 
             <div class="thinking-bottom-line">
@@ -1834,7 +1882,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="assets/js/script.js?v=52"></script>
+    <script src="assets/js/script.js?v=54"></script>
 
     <script>
         function connectMagnets() {

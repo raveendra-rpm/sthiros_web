@@ -3476,7 +3476,7 @@ body.light-mode .stat-label {
 }
 
 .latest-thinking-container {
-  max-width: 1300px;
+  max-width: 1440px;
   width: 100%;
 }
 
@@ -8925,13 +8925,209 @@ mark.sthiros-search-match.is-active {
   transition: all 0.5s ease;
 }
 
+/* ════════════════════════════════════════════
+   RELATED CASE STUDIES / REPO CASE STUDIES (RCS)
+   ════════════════════════════════════════════ */
+.rcs-container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.rcs-card {
+  position: relative;
+  flex: 1;
+  height: 340px;
+  border-radius: 20px;
+  border: 1px solid #EC2D26;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  box-sizing: border-box;
+  background-color: #0b0b0b;
+}
+
+.rcs-card:hover {
+  transform: none !important;
+  box-shadow: 0 10px 30px rgba(236, 45, 38, 0.25);
+}
+
+.section-latest-thinking .rcs-card,
+.section-latest-thinking .rcs-card:hover {
+  transform: none !important;
+}
+
+.rcs-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.rcs-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0) 100%);
+  z-index: 2;
+}
+
+.rcs-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 4;
+}
+
+.rcs-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.rcs-text h3 {
+  font-family: 'Pacaembu', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+.rcs-text .rcs-desc {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.rcs-arrow-container {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  flex-shrink: 0;
+  margin-left: 15px;
+}
+
+.rcs-arrow-normal,
+.rcs-arrow-hover {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+.rcs-arrow-hover {
+  opacity: 0;
+}
+
+.rcs-card:hover .rcs-arrow-normal {
+  opacity: 0;
+}
+
+.rcs-card:hover .rcs-arrow-hover {
+  opacity: 1;
+}
+
+.rcs-nav {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 15;
+}
+
 .rcs-nav-btn {
+  width: 48px;
+  height: 48px;
+  background-image: url('../images/sthiroscircle.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  background-color: transparent;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   outline: none !important;
   -webkit-tap-highlight-color: transparent;
+}
+
+.rcs-nav-btn:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.rcs-nav-btn img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+/* Light mode support */
+body.light-mode .rcs-card {
+  border-color: #EF4623;
+}
+
+body.light-mode .rcs-text .rcs-desc,
+body.light-mode .rcs-text h3 {
+  color: #ffffff !important;
+}
+
+body.light-mode .rcs-nav-btn {
+  background-color: transparent;
+}
+
+body.light-mode .rcs-nav-btn img {
+  filter: brightness(0);
+}
+
+@media (max-width: 1024px) {
+  .rcs-card {
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rcs-card {
+    height: 240px;
+  }
+  .rcs-content {
+    padding: 20px;
+  }
+  .rcs-text .rcs-desc {
+    font-size: 14px;
+  }
 }
 
 /* ════════════════════════════════════════════
