@@ -446,7 +446,7 @@
 
         .compliance-feature-card .cf-left {
             flex: 1;
-            max-width: 400px;
+            max-width: 440px;
             position: relative;
             z-index: 30;
         }
@@ -472,32 +472,35 @@
         .cf-subheading {
             color: #FFF;
             font-family: 'Quicksand', sans-serif;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 1.5;
             margin-bottom: 15px;
+            max-width: 100%;
         }
 
         .cf-desc {
             color: #CCC;
             font-family: 'Quicksand', sans-serif;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 1.5;
             margin-bottom: 15px;
+            max-width: 100%;
         }
 
         .cf-small-desc {
             color: #666;
             font-family: 'Quicksand', sans-serif;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 1.5;
             margin-bottom: 20px;
+            max-width: 100%;
         }
 
         .cf-card-keliros .cf-desc,
         .cf-card-keliros .cf-small-desc,
         .cf-card-thesen .cf-desc,
         .cf-card-thesen .cf-small-desc {
-            max-width: 310px;
+            max-width: 100%;
         }
 
         .cf-card-thesen {
@@ -505,7 +508,7 @@
         }
 
         .cf-card-thesen .cf-action-btn-wrap {
-            margin-bottom: 40px;
+            margin-bottom: 65px;
         }
 
         .cf-stats {
@@ -756,6 +759,13 @@
             }
         }
 
+        /* 1920px screens at 100% display scale: zoom cards and right-side SVG by 1.15 */
+        @media screen and (min-width: 1880px) {
+            #complianceoperationsec {
+                zoom: 1.15;
+            }
+        }
+
         /* --rail-scale only ever shrinks the rail enough to keep both of its
            descents on screen: the widest point is 729.361px either side of the
            centre line, so the largest usable scale is (viewport / 1458.7). */
@@ -789,6 +799,12 @@
 
             .products-hero-title {
                 font-size: 75px;
+            }
+        }
+        /* Shift TRADE OPERATIONS card slightly downwards only on 1366px & 1280px desktop screens */
+        @media (max-width: 1366px) and (min-width: 1025px) {
+            .cf-card-keliros {
+                transform: translateY(45px);
             }
         }
 
@@ -846,19 +862,19 @@
             }
 
             .cf-subheading {
-                font-size: 15px;
+                font-size: 13.5px;
                 margin-bottom: 10px;
                 line-height: 1.45;
             }
 
             .cf-desc {
-                font-size: 15px;
+                font-size: 13.5px;
                 margin-bottom: 10px;
                 line-height: 1.45;
             }
 
             .cf-small-desc {
-                font-size: 15px;
+                font-size: 13.5px;
                 margin-bottom: 15px;
                 line-height: 1.45;
             }

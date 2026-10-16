@@ -314,7 +314,7 @@
 
         .compliance-feature-card .cf-left {
             flex: 1;
-            max-width: 400px;
+            max-width: 440px;
             position: relative;
             z-index: 30;
         }
@@ -340,25 +340,28 @@
         .cf-subheading {
             color: #FFF;
             font-family: 'Quicksand', sans-serif;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 1.5;
             margin-bottom: 15px;
+            max-width: 100%;
         }
 
         .cf-desc {
             color: #CCC;
             font-family: 'Quicksand', sans-serif;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 1.5;
             margin-bottom: 15px;
+            max-width: 100%;
         }
 
         .cf-small-desc {
             color: #666;
             font-family: 'Quicksand', sans-serif;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 1.5;
             margin-bottom: 20px;
+            max-width: 100%;
         }
 
         .cf-stats {
@@ -541,6 +544,13 @@
             }
         }
 
+        /* 1920px screens at 100% display scale: zoom cards and right-side SVG by 1.15 */
+        @media screen and (min-width: 1880px) {
+            #complianceoperationsec {
+                zoom: 1.15;
+            }
+        }
+
         @media (max-width: 1600px) {
             .telluswhatssvgtopcont {
                 max-width: 1200px;
@@ -589,6 +599,11 @@
 
             .products-hero-title {
                 font-size: 75px;
+            }
+        /* Shift TRADE OPERATIONS card slightly downwards only on 1366px & 1280px desktop screens */
+        @media (max-width: 1366px) and (min-width: 1025px) {
+            .cf-card-keliros {
+                transform: translateY(30px);
             }
         }
 
@@ -648,19 +663,19 @@
             }
 
             .cf-subheading {
-                font-size: 15px;
+                font-size: 13.5px;
                 margin-bottom: 10px;
                 line-height: 1.45;
             }
 
             .cf-desc {
-                font-size: 15px;
+                font-size: 13.5px;
                 margin-bottom: 10px;
                 line-height: 1.45;
             }
 
             .cf-small-desc {
-                font-size: 15px;
+                font-size: 13.5px;
                 margin-bottom: 15px;
                 line-height: 1.45;
             }
@@ -1709,7 +1724,7 @@
 
         <div class="contdivseccompliancecard">
             <!-- Card 1: Keliros -->
-            <div class="compliance-feature-card">
+            <div class="compliance-feature-card cf-card-keliros">
                 <div class="cf-left">
                     <h4 class="cf-title">TRADE OPERATIONS</h4>
                     <h2 class="cf-heading">Keliros</h2>
@@ -1773,7 +1788,7 @@
             </div>
 
             <!-- Card 2: Niyamos -->
-            <div class="compliance-feature-card" style="padding-bottom: 180px;">
+            <div class="compliance-feature-card cf-card-thesen" style="padding-bottom: 180px;">
                 <div class="cf-left">
                     <h4 class="cf-title">COMPLIANCE OS</h4>
                     <h2 class="cf-heading">Niyamos</h2>
