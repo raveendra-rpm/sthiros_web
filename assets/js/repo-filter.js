@@ -12,7 +12,7 @@
 
     // Filter State
     const filterState = {
-        type: null, // null until 'Case Study' is chosen
+        type: 'ALL', // 'ALL' or specific type like 'Case Study'
         service: 'ALL',
         industry: 'ALL',
         searchQuery: ''
@@ -30,6 +30,22 @@
             .replace(/>/g, '&gt;')
             .replace(/"/g, '&quot;')
             .replace(/'/g, '&#39;');
+    }
+
+    // Helper: Show Results Area with smooth transition
+    function showResultsArea() {
+        const filterSection = document.querySelector('.repo-filter-section');
+        if (filterSection && !filterSection.classList.contains('has-cards')) {
+            filterSection.classList.add('has-cards');
+        }
+        if (resultsWrapper && resultsWrapper.style.display === 'none') {
+            resultsWrapper.style.display = 'block';
+            resultsWrapper.style.opacity = '0';
+            setTimeout(() => {
+                resultsWrapper.style.opacity = '1';
+                if (window.ScrollTrigger) ScrollTrigger.refresh();
+            }, 50);
+        }
     }
 
     // DOM Elements
@@ -77,36 +93,20 @@
     }
 
     // Type Selection Handler
-    // RULE: "type me jab tak mera case study select nhi hoga tab tak ye kuchh bhi work nhi karega"
     function handleTypeSelection(text) {
-        const isCaseStudy = text.toLowerCase().includes('case study');
-        const filterSection = document.querySelector('.repo-filter-section');
-
-        if (isCaseStudy) {
-            filterState.type = 'Case Study';
-            if (filterSection) filterSection.classList.add('has-cards');
-            resultsWrapper.style.display = 'block';
-            resultsWrapper.style.opacity = '0';
-            setTimeout(() => {
-                resultsWrapper.style.opacity = '1';
-                if (window.ScrollTrigger) ScrollTrigger.refresh();
-            }, 50);
-            applyFilters();
+        showResultsArea();
+        if (text.toLowerCase().includes('all') || text.toLowerCase() === 'type') {
+            filterState.type = 'ALL';
         } else {
             filterState.type = text;
-            if (filterSection) filterSection.classList.remove('has-cards');
-            resultsWrapper.style.display = 'none';
-            if (window.ScrollTrigger) {
-                setTimeout(() => ScrollTrigger.refresh(), 50);
-            }
         }
+        applyFilters();
     }
 
     // Service Selection Handler
     function handleServiceSelection(text) {
-        if (filterState.type !== 'Case Study') return;
-
-        if (text.toLowerCase().includes('all')) {
+        showResultsArea();
+        if (text.toLowerCase().includes('all') || text.toLowerCase() === 'service') {
             filterState.service = 'ALL';
         } else {
             filterState.service = text;
@@ -116,9 +116,8 @@
 
     // Who We Serve Selection Handler
     function handleIndustrySelection(text) {
-        if (filterState.type !== 'Case Study') return;
-
-        if (text.toLowerCase().includes('all')) {
+        showResultsArea();
+        if (text.toLowerCase().includes('all') || text.toLowerCase().includes('who we serve')) {
             filterState.industry = 'ALL';
         } else {
             filterState.industry = text;
@@ -132,8 +131,11 @@
 
         let debounceTimer;
         const triggerSearch = () => {
-            if (filterState.type !== 'Case Study') return;
-            filterState.searchQuery = searchInput.value.trim().toLowerCase();
+            const query = searchInput.value.trim().toLowerCase();
+            filterState.searchQuery = query;
+            if (query || filterState.type !== 'ALL' || filterState.service !== 'ALL' || filterState.industry !== 'ALL') {
+                showResultsArea();
+            }
             applyFilters();
         };
 
@@ -164,9 +166,13 @@
 
     // Reset Filters Helper
     function resetAllFilters() {
+        filterState.type = 'ALL';
         filterState.service = 'ALL';
         filterState.industry = 'ALL';
         filterState.searchQuery = '';
+
+        const typeLabel = document.querySelector('#dropdown-type .repo-filter-label');
+        if (typeLabel) typeLabel.textContent = 'Type';
 
         const serviceLabel = document.querySelector('#dropdown-service .repo-filter-label');
         if (serviceLabel) serviceLabel.textContent = 'Service';
@@ -181,11 +187,6 @@
 
     // 3. Main Filtering Engine
     function applyFilters() {
-        if (filterState.type !== 'Case Study') {
-            resultsWrapper.style.display = 'none';
-            return;
-        }
-
         if (typeof STHIROS_CASE_STUDIES === 'undefined' || !Array.isArray(STHIROS_CASE_STUDIES)) {
             console.warn('STHIROS_CASE_STUDIES dataset not found.');
             return;
@@ -193,9 +194,20 @@
 
         // Filter master dataset
         currentMatches = STHIROS_CASE_STUDIES.filter(cs => {
+            // Type match
+            if (filterState.type !== 'ALL') {
+                const csType = (cs.type || '').toLowerCase();
+                const filterType = filterState.type.toLowerCase();
+                if (!csType.includes(filterType) && !filterType.includes(csType)) {
+                    return false;
+                }
+            }
+
             // Service match
             if (filterState.service !== 'ALL') {
-                if (cs.service.toLowerCase() !== filterState.service.toLowerCase()) {
+                const csSrv = (cs.service || '').toLowerCase();
+                const filterSrv = filterState.service.toLowerCase();
+                if (csSrv !== filterSrv && !csSrv.includes(filterSrv)) {
                     return false;
                 }
             }
