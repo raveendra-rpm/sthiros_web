@@ -1,27 +1,5 @@
 [
   {
-    "id": 1,
-    "title": "STHIROS · AI · INTELLIGENT FOUNDATION · AUTOMOTIVE MANUFACTURING",
-    "desc": "Moving inventory intelligence beyond reactive ERP reporting, in 12 weeks",
-    "type": "Case Study",
-    "service": "AI",
-    "industry": "Manufacturing",
-    "pdf": "assets/AIcasestudypdf/STHIROS · AI · INTELLIGENT FOUNDATION · AUTOMOTIVE MANUFACTURING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
-    "sheet": "Already uploaded"
-  },
-  {
-    "id": 2,
-    "title": "STHIROS · AI · COGNITIVE EXPERIENCE & ENGINEERING · CROSS-INDUSTRY",
-    "desc": "Automating multilingual video creation for training and incident reporting, at scale",
-    "type": "Case Study",
-    "service": "AI",
-    "industry": "Cross-Industry",
-    "pdf": "assets/AIcasestudypdf/STHIROS · AI · COGNITIVE EXPERIENCE & ENGINEERING · CROSS-INDUSTRY.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
-    "sheet": "Already uploaded"
-  },
-  {
     "id": 3,
     "title": "STHIROS · AI · INTELLIGENT FOUNDATION · MINING",
     "desc": "Teaching machine data and Excel to speak one language, in real time",
@@ -30,28 +8,6 @@
     "industry": "Energy, Mining & Utilities",
     "pdf": "assets/AIcasestudypdf/STHIROS · AI · INTELLIGENT FOUNDATION · MINING.pdf",
     "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
-    "sheet": "Already uploaded"
-  },
-  {
-    "id": 4,
-    "title": "STHIROS · AI · COGNITIVE EXPERIENCE & ENGINEERING · E-COMMERCE, SUPPLY CHAIN PLATFORM",
-    "desc": "Cutting manual cash burn reporting effort by 50-70%, in 25 business days",
-    "type": "Case Study",
-    "service": "AI",
-    "industry": "D2C & Retail",
-    "pdf": "assets/AIcasestudypdf/STHIROS · AI · COGNITIVE EXPERIENCE & ENGINEERING · E-COMMERCE, SUPPLY CHAIN PLATFORM.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
-    "sheet": "Already uploaded"
-  },
-  {
-    "id": 5,
-    "title": "STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · GOVERNMENT & DIGITAL INFRASTRUCTURE",
-    "desc": "Turning an undocumented risk practice into a Board-ready, CAG-audit-ready ERM framework",
-    "type": "Case Study",
-    "service": "AI",
-    "industry": "Public Sector & Government",
-    "pdf": "assets/AIcasestudypdf/STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · GOVERNMENT & DIGITAL INFRASTRUCTURE.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
     "sheet": "Already uploaded"
   },
   {
@@ -66,17 +22,6 @@
     "sheet": "Already uploaded"
   },
   {
-    "id": 7,
-    "title": "STHIROS · AI · AGENTIC OPERATIONS & AUTOMATION · STEEL MANUFACTURING, EXPORT LOGISTICS",
-    "desc": "Catching customs and demurrage risk 48 hours before it costs a steel exporter money",
-    "type": "Case Study",
-    "service": "AI",
-    "industry": "Manufacturing",
-    "pdf": "assets/AIcasestudypdf/STHIROS · AI · AGENTIC OPERATIONS & AUTOMATION · STEEL MANUFACTURING, EXPORT LOGISTICS.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
-    "sheet": "Already uploaded"
-  },
-  {
     "id": 8,
     "title": "STHIROS · RISK · INFORMATION SYSTEMS AUDIT · BFSI",
     "desc": "Validating access and control integrity across a lender's core systems, end to end",
@@ -88,17 +33,6 @@
     "sheet": "Already uploaded"
   },
   {
-    "id": 9,
-    "title": "STHIROS · RISK · ENTERPRISE IT RISK ASSESSMENT · BFSI",
-    "desc": "Mapping every risk across a $9.7B credit union, then cutting the critical ones by 97%",
-    "type": "Case Study",
-    "service": "Risk",
-    "industry": "BFSI & Fintech",
-    "pdf": "assets/casestudybsfi/STHIROS · RISK · ENTERPRISE IT RISK ASSESSMENT · BFSI.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
-    "sheet": "Already uploaded"
-  },
-  {
     "id": 10,
     "title": "STHIROS · CYBER · DATA PRIVACY & PROTECTION ENGINEERING · LIFE SCIENCES",
     "desc": "Turning 120+ controls across three geographies into one clean SOC 2 report",
@@ -107,83 +41,6 @@
     "industry": "Healthcare & Life Sciences",
     "pdf": "assets/cybercasestudy/STHIROS · CYBER · DATA PRIVACY & PROTECTION ENGINEERING · LIFE SCIENCES.pdf",
     "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
-    "sheet": "Already uploaded"
-  },
-  {
-    "id": 11,
-    "title": "STHIROS · CYBER · DATA PRIVACY & PROTECTION ENGINEERING · BANKING & FINANCIAL SERVICES",
-    "desc": "Closing email spoofing and data classification gaps for a prominent banking services company",
-    "type": "Case Study",
-    "service": "Cyber",
-    "industry": "BFSI & Fintech",
-    "pdf": "assets/cybercasestudy/STHIROS · CYBER · DATA PRIVACY & PROTECTION ENGINEERING · BANKING & FINANCIAL SERVICES.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
-    "sheet": "Already uploaded"
-  },
-  {
-    "id": 12,
-    "title": "STHIROS · CYBER · OFFENSIVE SECURITY & TECHNICAL ASSURANCE · AUTOMOTIVE MANUFACTURING",
-    "desc": "Finding and fixing 10 critical web app vulnerabilities for an automotive cloud platform",
-    "type": "Case Study",
-    "service": "Cyber",
-    "industry": "Manufacturing",
-    "pdf": "assets/cybercasestudy/STHIROS · CYBER · OFFENSIVE SECURITY & TECHNICAL ASSURANCE · AUTOMOTIVE MANUFACTURING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
-    "sheet": "Already uploaded"
-  },
-  {
-    "id": 13,
-    "title": "STHIROS · CYBER · CYBER RESILIENCE & CRISIS READINESS · SOFTWARE DEVELOPMENT & IT SERVICES",
-    "desc": "Finding anti-forensic tools and unauthorised access behind a suspected data theft",
-    "type": "Case Study",
-    "service": "Cyber",
-    "industry": "Telecom & Digital Infrastructure",
-    "pdf": "assets/cybercasestudy/STHIROS · CYBER · CYBER RESILIENCE & CRISIS READINESS · SOFTWARE DEVELOPMENT & IT SERVICES.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
-    "sheet": "Already uploaded"
-  },
-  {
-    "id": 14,
-    "title": "STHIROS · CYBER · CLOUD SECURITY & ZERO TRUST ARCHITECTURE · BANKING & FINANCIAL SERVICES",
-    "desc": "Turning an unencrypted, unlogged AWS environment into a CIS-benchmarked cloud estate",
-    "type": "Case Study",
-    "service": "Cyber",
-    "industry": "BFSI & Fintech",
-    "pdf": "assets/cybercasestudy/STHIROS · CYBER · CLOUD SECURITY & ZERO TRUST ARCHITECTURE · BANKING & FINANCIAL SERVICES (SMALL FINANCE BANK).pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
-    "sheet": "Already uploaded"
-  },
-  {
-    "id": 15,
-    "title": "STHIROS · CYBER · OFFENSIVE SECURITY & TECHNICAL ASSURANCE · IT & IT-ENABLED SERVICES",
-    "desc": "Identifying 9 OWASP Top 10 vulnerability categories across an IT company's web app and APIs",
-    "type": "Case Study",
-    "service": "Cyber",
-    "industry": "Telecom & Digital Infrastructure",
-    "pdf": "assets/cybercasestudy/STHIROS · CYBER · OFFENSIVE SECURITY & TECHNICAL ASSURANCE · IT & IT-ENABLED SERVICES.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
-    "sheet": "Already uploaded"
-  },
-  {
-    "id": 16,
-    "title": "STHIROS · CYBER · CYBER RESILIENCE & CRISIS READINESS · MANUFACTURING",
-    "desc": "Aligning a manufacturer's IT security with ISO 27001, NIST, and CIS, from scratch",
-    "type": "Case Study",
-    "service": "Cyber",
-    "industry": "Manufacturing",
-    "pdf": "assets/cybercasestudy/STHIROS · CYBER · CYBER RESILIENCE & CRISIS READINESS · MANUFACTURING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
-    "sheet": "Already uploaded"
-  },
-  {
-    "id": 17,
-    "title": "STHIROS · CYBER · CLOUD SECURITY & ZERO TRUST ARCHITECTURE · BANKING & FINANCIAL SERVICES (SMALL FINANCE BANK)",
-    "desc": "Validating RBI and NPCI compliance across 500+ ATMs, with zero exceptions found",
-    "type": "Case Study",
-    "service": "Cyber",
-    "industry": "BFSI & Fintech",
-    "pdf": "assets/cybercasestudy/STHIROS · CYBER · CLOUD SECURITY & ZERO TRUST ARCHITECTURE · BANKING & FINANCIAL SERVICES (SMALL FINANCE BANK).pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
     "sheet": "Already uploaded"
   },
   {
@@ -330,72 +187,6 @@
     "sheet": "To upload"
   },
   {
-    "id": 31,
-    "title": "STHIROS · RISK · STRATEGIC ASSURANCE & PROCESS INTELLIGENCE · HEALTH INSURANCE",
-    "desc": "Detecting Rs. 1.78 Crore in erroneous health insurance claims before they were paid",
-    "type": "Case Study",
-    "service": "Risk",
-    "industry": "Cross-Industry",
-    "pdf": "assets/sthiroscasestudypdf/Risk/STHIROS · RISK · STRATEGIC ASSURANCE & PROCESS INTELLIGENCE · HEALTH INSURANCE.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
-    "sheet": "To upload"
-  },
-  {
-    "id": 32,
-    "title": "STHIROS · RISK · FORENSIC INTEGRITY & ASSET PROTECTION · BANKING & FINANCIAL SERVICES",
-    "desc": "Tracing Rs. 4.45 Crore in fund diversion behind a defaulted loan account",
-    "type": "Case Study",
-    "service": "Risk",
-    "industry": "BFSI & Fintech",
-    "pdf": "assets/sthiroscasestudypdf/Risk/STHIROS · RISK · FORENSIC INTEGRITY & ASSET PROTECTION · BANKING & FINANCIAL SERVICES.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
-    "sheet": "To upload"
-  },
-  {
-    "id": 33,
-    "title": "STHIROS · RISK · STRATEGIC ASSURANCE & PROCESS INTELLIGENCE · FMCG, SUPPLY CHAIN & WAREHOUSING",
-    "desc": "Finding fire safety, security, and inventory gaps hiding behind a 6-year-old SOP",
-    "type": "Case Study",
-    "service": "Risk",
-    "industry": "D2C & Retail",
-    "pdf": "assets/sthiroscasestudypdf/Risk/STHIROS · RISK · STRATEGIC ASSURANCE & PROCESS INTELLIGENCE · FMCG, SUPPLY CHAIN & WAREHOUSING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
-    "sheet": "To upload"
-  },
-  {
-    "id": 34,
-    "title": "STHIROS · RISK · ENTERPRISE GOVERNANCE & REGULATORY STRATEGY · GOVERNMENT & DIGITAL INFRASTRUCTURE",
-    "desc": "Turning an undocumented risk practice into a Board-ready, CAG-audit-ready ERM framework",
-    "type": "Case Study",
-    "service": "Risk",
-    "industry": "Public Sector & Government",
-    "pdf": "assets/sthiroscasestudypdf/Risk/STHIROS · RISK · ENTERPRISE GOVERNANCE & REGULATORY STRATEGY · GOVERNMENT & DIGITAL INFRASTRUCTURE.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
-    "sheet": "To upload"
-  },
-  {
-    "id": 35,
-    "title": "STHIROS · RISK · ENTERPRISE GOVERNANCE & REGULATORY STRATEGY · PUBLIC SECTOR, INFRASTRUCTURE & HOUSING",
-    "desc": "Uncovering 500+ documentation gaps across a government infrastructure entity's controls",
-    "type": "Case Study",
-    "service": "Risk",
-    "industry": "Real Estate / EPC / Construction",
-    "pdf": "assets/sthiroscasestudypdf/Risk/STHIROS · RISK · ENTERPRISE GOVERNANCE & REGULATORY STRATEGY · PUBLIC SECTOR, INFRASTRUCTURE & HOUSING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
-    "sheet": "To upload"
-  },
-  {
-    "id": 36,
-    "title": "STHIROS · RISK · DIGITAL RISK & TECHNOLOGY CONTROLS · BFSI",
-    "desc": "Mapping every risk across a $9.7B credit union, then cutting the critical ones by 97%",
-    "type": "Case Study",
-    "service": "Risk",
-    "industry": "Cross-Industry",
-    "pdf": "assets/sthiroscasestudypdf/Risk/STHIROS · RISK · DIGITAL RISK & TECHNOLOGY CONTROLS · BFSI.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
-    "sheet": "To upload"
-  },
-  {
     "id": 37,
     "title": "STHIROS · RISK · DIGITAL RISK & TECHNOLOGY CONTROLS · FINANCIAL SERVICES, LENDING (NBFC)",
     "desc": "Closing SoD conflicts across five core systems for a major NBFC's RBI compliance",
@@ -429,83 +220,6 @@
     "sheet": "To upload"
   },
   {
-    "id": 40,
-    "title": "STHIROS · STRATEGY · BUSINESS & GROWTH STRATEGY · FINTECH, CROSS-BORDER REMITTANCE",
-    "desc": "Unifying a global fintech's finance operations across 9 entities and 6 countries onto one ERP",
-    "type": "Case Study",
-    "service": "Strategy",
-    "industry": "BFSI & Fintech",
-    "pdf": "assets/sthiroscasestudypdf/Strategy/STHIROS · STRATEGY · BUSINESS & GROWTH STRATEGY · FINTECH, CROSS-BORDER REMITTANCE.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
-    "sheet": "To upload"
-  },
-  {
-    "id": 41,
-    "title": "STHIROS · STRATEGY · STRATEGIC FINANCE & TRANSACTIONS · MINING",
-    "desc": "Validating Rs. 4,722 Crores in disbursements and preventing Rs. 70.84 Crores in erroneous payments",
-    "type": "Case Study",
-    "service": "Strategy",
-    "industry": "Energy, Mining & Utilities",
-    "pdf": "assets/sthiroscasestudypdf/Strategy/STHIROS · STRATEGY · STRATEGIC FINANCE & TRANSACTIONS · MINING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
-    "sheet": "To upload"
-  },
-  {
-    "id": 42,
-    "title": "STHIROS · STRATEGY · BUSINESS & GROWTH STRATEGY · VENTURE CAPITAL, INVESTMENT ADVISORY",
-    "desc": "Turning three deal-flow bottlenecks into one AI-orchestrated due diligence platform, in 36 weeks",
-    "type": "Case Study",
-    "service": "Strategy",
-    "industry": "BFSI & Fintech",
-    "pdf": "assets/sthiroscasestudypdf/Strategy/STHIROS · STRATEGY · BUSINESS & GROWTH STRATEGY · VENTURE CAPITAL, INVESTMENT ADVISORY.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
-    "sheet": "To upload"
-  },
-  {
-    "id": 43,
-    "title": "STHIROS · STRATEGY · ENTERPRISE OPERATIONS & ECOSYSTEMS · HEAVY EQUIPMENT & INDUSTRIAL DISTRIBUTION",
-    "desc": "Automating 11+ SAP-dependent processes down to a 5-minute execution cycle",
-    "type": "Case Study",
-    "service": "Strategy",
-    "industry": "Manufacturing",
-    "pdf": "assets/sthiroscasestudypdf/Strategy/STHIROS · STRATEGY · ENTERPRISE OPERATIONS & ECOSYSTEMS · HEAVY EQUIPMENT & INDUSTRIAL DISTRIBUTION.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
-    "sheet": "To upload"
-  },
-  {
-    "id": 44,
-    "title": "STHIROS · STRATEGY · CHANGE MANAGEMENT & ORGANISATIONAL ACCELERATION · AUTOMOTIVE MANUFACTURING",
-    "desc": "Taking Supplier Paid On Time from 65.87% to 78.79%, without new technology",
-    "type": "Case Study",
-    "service": "Strategy",
-    "industry": "Manufacturing",
-    "pdf": "assets/sthiroscasestudypdf/Strategy/STHIROS · STRATEGY · CHANGE MANAGEMENT & ORGANISATIONAL ACCELERATION · AUTOMOTIVE MANUFACTURING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgtwo.jpg",
-    "sheet": "To upload"
-  },
-  {
-    "id": 45,
-    "title": "STHIROS · STRATEGY · CHANGE MANAGEMENT & ORGANISATIONAL ACCELERATION · BFSI",
-    "desc": "Delivering $60M+ in benefits across a multi-year, multi-country BFSI transformation",
-    "type": "Case Study",
-    "service": "Strategy",
-    "industry": "Cross-Industry",
-    "pdf": "assets/sthiroscasestudypdf/Strategy/STHIROS · STRATEGY · CHANGE MANAGEMENT & ORGANISATIONAL ACCELERATION · BFSI.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
-    "sheet": "To upload"
-  },
-  {
-    "id": 46,
-    "title": "STHIROS · STRATEGY · STRATEGIC FINANCE & TRANSACTIONS · FMCG, FOOD MANUFACTURING & WAREHOUSING",
-    "desc": "Turning a year of construction into an IFRS-compliant, SAP-ready Rs. 213 Crore asset register",
-    "type": "Case Study",
-    "service": "Strategy",
-    "industry": "D2C & Retail",
-    "pdf": "assets/sthiroscasestudypdf/Strategy/STHIROS · STRATEGY · STRATEGIC FINANCE & TRANSACTIONS · FMCG, FOOD MANUFACTURING & WAREHOUSING.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
-    "sheet": "To upload"
-  },
-  {
     "id": 47,
     "title": "STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · GOVERNMENT & DIGITAL INFRASTRUCTURE",
     "desc": "Turning an undocumented risk practice into a Board-ready, CAG-audit-ready ERM framework",
@@ -525,17 +239,6 @@
     "industry": "Telecom & Digital Infrastructure",
     "pdf": "assets/sthiroscasestudypdf/Telecom/STHIROS · CYBER · ISAE 3402 SOC CERTIFICATION · TECHNOLOGY OPERATIONS.pdf",
     "bgImg": "assets/images/repositorypage/casestudyimgthree.jpg",
-    "sheet": "To upload"
-  },
-  {
-    "id": 49,
-    "title": "STHIROS · RISK · FORENSIC AUDIT · HOSPITALITY, FOOD & BEVERAGE",
-    "desc": "Uncovering a Rs. 88+ Crore governance breakdown across a multi-brand restaurant chain",
-    "type": "Case Study",
-    "service": "Risk",
-    "industry": "Travel & Hospitality",
-    "pdf": "assets/sthiroscasestudypdf/Travel/STHIROS · RISK · FORENSIC AUDIT · HOSPITALITY, FOOD & BEVERAGE.pdf",
-    "bgImg": "assets/images/repositorypage/casestudyimgone.jpg",
     "sheet": "To upload"
   },
   {
