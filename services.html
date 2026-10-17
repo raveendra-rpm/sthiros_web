@@ -172,6 +172,7 @@
 
         .services-hero {
             position: relative;
+            z-index: 1;
             width: 100%;
             min-height: 100vh;
             display: flex;
@@ -190,7 +191,7 @@
             left: 0;
             width: 50%;
             height: auto;
-            z-index: 3;
+            z-index: 1;
             pointer-events: none;
             overflow: visible;
             -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 90%);
@@ -415,6 +416,7 @@
 
         #sthservicessec {
             position: relative;
+            z-index: 5;
             width: 100%;
             padding: 80px max(40px, calc((100vw - var(--max-w, 1440px)) / 2));
             /* background-color: #000; */
@@ -465,6 +467,7 @@
             padding: 0;
             list-style: none;
             position: relative;
+            z-index: 2;
         }
 
         .services-tab {
@@ -510,6 +513,7 @@
             border: 1px solid rgba(236, 45, 38, 0.4);
             border-radius: 16px;
             position: relative;
+            z-index: 2;
             padding: 30px 20px;
             display: flex;
             flex-direction: column;
@@ -1226,6 +1230,11 @@
             background: linear-gradient(to right, #000 0%, transparent 5%, transparent 95%, #000 100%);
             pointer-events: none;
             z-index: 2;
+            transition: opacity 0.3s ease;
+        }
+
+        .oc-marquee-container.oc-static::after {
+            opacity: 0;
         }
 
         .oc-marquee-track {
@@ -2156,7 +2165,6 @@
                 <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry12.png" alt="industry12" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry12.png" alt="itindustry12" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites3.png" alt="itnites3" class="oc-logo-img" loading="lazy"></div>
-                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing4.png" alt="manufacturing4" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="miningindustry"><img src="assets/images/servicesclients/miningindustry/miningindustry4.png" alt="miningindustry4" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="realstateindustry"><img src="assets/images/servicesclients/realstateindustry/realestate4.png" alt="realestate4" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative13.png" alt="automative13" class="oc-logo-img" loading="lazy"></div>
@@ -2172,7 +2180,6 @@
                 <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry13.png" alt="industry13" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry13.png" alt="itindustry13" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites4.png" alt="itnites4" class="oc-logo-img" loading="lazy"></div>
-                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing5.png" alt="manufacturing5" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative14.png" alt="automative14" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi14.png" alt="bfsi14" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="bfsifintech"><img src="assets/images/servicesclients/bfsifintech/bsfifin6.png" alt="bsfifin6" class="oc-logo-img" loading="lazy"></div>
@@ -2185,7 +2192,6 @@
                 <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry14.png" alt="industry14" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry14.png" alt="itindustry14" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites5.png" alt="itnites5" class="oc-logo-img" loading="lazy"></div>
-                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing6.png" alt="manufacturing6" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative15.png" alt="automative15" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi15.png" alt="bfsi15" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="bfsifintech"><img src="assets/images/servicesclients/bfsifintech/bsfifin7.png" alt="bsfifin7" class="oc-logo-img" loading="lazy"></div>
@@ -2197,7 +2203,6 @@
                 <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry2.png" alt="industry2" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry15.png" alt="itindustry15" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites6.png" alt="itnites6" class="oc-logo-img" loading="lazy"></div>
-                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing7.png" alt="manufacturing7" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative16.png" alt="automative16" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi16.png" alt="bfsi16" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci4.png" alt="bci4" class="oc-logo-img" loading="lazy"></div>
@@ -2398,7 +2403,6 @@
                 <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry12.png" alt="industry12" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry12.png" alt="itindustry12" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites3.png" alt="itnites3" class="oc-logo-img" loading="lazy"></div>
-                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing4.png" alt="manufacturing4" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="miningindustry"><img src="assets/images/servicesclients/miningindustry/miningindustry4.png" alt="miningindustry4" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="realstateindustry"><img src="assets/images/servicesclients/realstateindustry/realestate4.png" alt="realestate4" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative13.png" alt="automative13" class="oc-logo-img" loading="lazy"></div>
@@ -2414,7 +2418,6 @@
                 <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry13.png" alt="industry13" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry13.png" alt="itindustry13" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites4.png" alt="itnites4" class="oc-logo-img" loading="lazy"></div>
-                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing5.png" alt="manufacturing5" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative14.png" alt="automative14" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi14.png" alt="bfsi14" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="bfsifintech"><img src="assets/images/servicesclients/bfsifintech/bsfifin6.png" alt="bsfifin6" class="oc-logo-img" loading="lazy"></div>
@@ -2427,7 +2430,6 @@
                 <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry14.png" alt="industry14" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry14.png" alt="itindustry14" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites5.png" alt="itnites5" class="oc-logo-img" loading="lazy"></div>
-                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing6.png" alt="manufacturing6" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative15.png" alt="automative15" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi15.png" alt="bfsi15" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="bfsifintech"><img src="assets/images/servicesclients/bfsifintech/bsfifin7.png" alt="bsfifin7" class="oc-logo-img" loading="lazy"></div>
@@ -2439,7 +2441,6 @@
                 <div class="oc-logo-item" data-folder="industry"><img src="assets/images/servicesclients/industry/industry2.png" alt="industry2" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="itindustry"><img src="assets/images/servicesclients/itindustry/itindustry15.png" alt="itindustry15" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="itnites"><img src="assets/images/servicesclients/itnites/itnites6.png" alt="itnites6" class="oc-logo-img" loading="lazy"></div>
-                <div class="oc-logo-item" data-folder="manufacturing"><img src="assets/images/servicesclients/manufacturing/manufacturing7.png" alt="manufacturing7" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="automativeindustry"><img src="assets/images/servicesclients/automativeindustry/automative16.png" alt="automative16" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="bfsi"><img src="assets/images/servicesclients/bfsi/bfsi16.png" alt="bfsi16" class="oc-logo-img" loading="lazy"></div>
                 <div class="oc-logo-item" data-folder="businessconsultingindustry"><img src="assets/images/servicesclients/businessconsultingindustry/bci4.png" alt="bci4" class="oc-logo-img" loading="lazy"></div>
@@ -2754,63 +2755,90 @@
             const track = document.getElementById('oc-marquee-track');
             const toggleText = toggle ? toggle.querySelector('.oc-toggle-text') : null;
 
-            // Cache all initial logo elements (the full set)
+            // Cache all initial logo elements (the full set: 484 elements = 242 unique + 242 clones)
             const allItems = Array.from(track.querySelectorAll('.oc-logo-item'));
+            const halfLength = Math.floor(allItems.length / 2);
+            const uniqueItems = allItems.slice(0, halfLength);
+            let currentCategory = 'all';
+
+            function renderItems(items) {
+                const fragment = document.createDocumentFragment();
+                items.forEach(el => {
+                    const clone = el.cloneNode(true);
+                    const img = clone.querySelector('img');
+                    if (img) {
+                        img.removeAttribute('loading');
+                        img.loading = 'eager';
+                    }
+                    fragment.appendChild(clone);
+                });
+                return fragment;
+            }
 
             function applyFilter(category, categoryName) {
-                let matched = [];
+                currentCategory = category || 'all';
 
-                if (category === 'all') {
-                    const halfLength = Math.floor(allItems.length / 2);
-                    matched = allItems.slice(0, halfLength);
-                    if (toggleText) toggleText.textContent = 'ALL INDUSTRIES';
-                } else {
-                    const cats = category.split(',');
-                    const halfLength = Math.floor(allItems.length / 2);
-                    const uniqueItems = allItems.slice(0, halfLength);
-                    matched = uniqueItems.filter(el => cats.includes(el.getAttribute('data-folder')));
-                    if (toggleText) toggleText.textContent = 'ALL INDUSTRIES';
+                if (toggleText) toggleText.textContent = 'ALL INDUSTRIES';
+
+                if (currentCategory === 'all') {
+                    track.innerHTML = '';
+                    track.appendChild(renderItems(allItems));
+
+                    marquee.classList.remove('oc-static');
+                    track.style.width = 'max-content';
+                    track.style.justifyContent = 'flex-start';
+                    track.style.animation = 'none';
+                    track.style.transform = 'none';
+                    void track.offsetWidth;
+                    track.style.animation = 'scrollMarquee 320s linear infinite';
+                    return;
                 }
+
+                const cats = currentCategory.split(',');
+                const matched = uniqueItems.filter(el => cats.includes(el.getAttribute('data-folder')));
 
                 if (matched.length > 0) {
                     track.innerHTML = '';
+
+                    // 1. Render matched logos EXACTLY ONCE (show only as many logos as actually exist)
+                    track.appendChild(renderItems(matched));
+
+                    // 2. Measure if they fit within the container width
                     track.style.animation = 'none';
-                    
-                    // Append one set
-                    matched.forEach(el => track.appendChild(el.cloneNode(true)));
+                    track.style.transform = 'none';
+                    track.style.width = 'max-content';
+                    track.style.justifyContent = 'flex-start';
 
-                    requestAnimationFrame(() => {
-                        const containerWidth = marquee.clientWidth;
-                        const contentWidth = track.scrollWidth;
+                    const containerWidth = marquee.clientWidth;
+                    const contentWidth = track.scrollWidth;
+                    // Fits comfortably if contentWidth plus safe margin fits in container
+                    const fits = (contentWidth + 40) <= containerWidth;
 
-                        if (contentWidth > containerWidth) {
-                            // Repeat to fill and allow scrolling
-                            const setsPerHalf = Math.max(1, Math.ceil(containerWidth / contentWidth));
-                            const totalSets = setsPerHalf * 2;
-                            
-                            for (let r = 1; r < totalSets; r++) {
-                                matched.forEach(el => track.appendChild(el.cloneNode(true)));
-                            }
-                            
-                            track.style.width = 'max-content';
-                            track.style.justifyContent = 'flex-start';
-                            track.style.animationName = 'scrollMarquee';
-                            track.style.animationDuration = Math.max(15, matched.length * totalSets * 1.5) + 's';
-                            track.style.animationTimingFunction = 'linear';
-                            track.style.animationIterationCount = 'infinite';
-                        } else {
-                            // No scroll needed, just center
-                            track.style.width = '100%';
-                            track.style.justifyContent = 'center';
-                            track.style.animationName = 'none';
-                        }
-                    });
+                    if (fits) {
+                        // Logos are few: show only that exact count, static and centered, no movement
+                        marquee.classList.add('oc-static');
+                        track.style.width = '100%';
+                        track.style.justifyContent = 'center';
+                        track.style.animation = 'none';
+                        track.style.transform = 'none';
+                    } else {
+                        // Logos exceed screen width: duplicate once (Half 2) for seamless infinite marquee loop
+                        marquee.classList.remove('oc-static');
+                        track.appendChild(renderItems(matched));
+
+                        const duration = Math.max(25, Math.round(matched.length * 2.8));
+                        track.style.width = 'max-content';
+                        track.style.justifyContent = 'flex-start';
+                        track.style.animation = 'none';
+                        track.style.transform = 'none';
+                        void track.offsetWidth;
+                        track.style.animation = `scrollMarquee ${duration}s linear infinite`;
+                    }
                 } else {
                     track.innerHTML = '';
+                    track.style.animation = 'none';
+                    track.style.transform = 'none';
                 }
-
-                // Reset animation slightly to re-trigger cleanly
-                track.offsetHeight;
             }
 
             // Toggle grid / marquee
@@ -2834,15 +2862,30 @@
             document.querySelectorAll('.oc-grid-item').forEach(item => {
                 item.addEventListener('click', function(e) {
                     e.preventDefault();
+                    const wasActive = this.classList.contains('active');
                     document.querySelectorAll('.oc-grid-item').forEach(i => i.classList.remove('active'));
-                    this.classList.add('active');
 
-                    const category = this.getAttribute('data-category');
-                    const categoryName = this.textContent.trim();
-                    
-                    applyFilter(category, categoryName);
-                    // Do not close grid, so the logos update dynamically while grid is open
+                    if (wasActive) {
+                        // Clicking already active item toggles back to ALL INDUSTRIES
+                        applyFilter('all', 'ALL INDUSTRIES');
+                    } else {
+                        this.classList.add('active');
+                        const category = this.getAttribute('data-category');
+                        const categoryName = this.textContent.trim();
+                        applyFilter(category, categoryName);
+                    }
                 });
+            });
+
+            // Window resize handler to adapt between static/scrolling if screen size changes
+            let resizeTimer;
+            window.addEventListener('resize', function() {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(function() {
+                    if (currentCategory && currentCategory !== 'all') {
+                        applyFilter(currentCategory);
+                    }
+                }, 150);
             });
         })();
     </script>

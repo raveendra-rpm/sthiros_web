@@ -6281,6 +6281,14 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
   }
 }
 
+/* 1600px screens (~1451px to 1750px, e.g. MacBook Air 1559px, 1600px desktop):
+   Move hero text and action buttons up to align with the visual artwork */
+@media screen and (min-width: 1451px) and (max-width: 1750px) {
+  .hero-inner {
+    padding: 40px 0 280px 0;
+  }
+}
+
 /* 1920px+ screens: type/size tweaks for later sections (Why Sthiros, Latest Thinking, CTA banner),
    plus a hero-inner position fix (2026-09-12 — see memory). The base .hero-inner is
    max-width:1440px + margin:0 auto, so past ~1520px wide it starts auto-centering that 1440px
@@ -7397,6 +7405,13 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
 
 #uppar-repo-section svg {
   transform: scaleX(0.8);
+}
+
+@media (min-width: 769px) {
+  #uppar-repo-section svg {
+    position: relative;
+    left: -15px;
+  }
 }
 
 
