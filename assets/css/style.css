@@ -4066,7 +4066,7 @@ body.light-mode .stat-label {
 }
 
 .nav-link {
-  font-family: 'Pacaembu', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.2rem;
   letter-spacing: 0.1em;
   color: #fff;
@@ -4602,9 +4602,9 @@ mark.sthiros-search-match.is-active {
 }
 
 .nav-link {
-  font-family: 'Pacaembu', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 0.18em;
   color: #fff;
   text-decoration: none;
@@ -4674,9 +4674,9 @@ mark.sthiros-search-match.is-active {
 }
 
 .sub-nav-link {
-  font-family: 'Pacaembu', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.1rem;
-  font-weight: 300;
+  font-weight: 500;
   color: #aaa;
   text-decoration: none;
   text-transform: uppercase;
@@ -4709,9 +4709,9 @@ body.light-mode .nested-sub-nav {
 }
 
 .nested-sub-nav-link {
-  font-family: 'Pacaembu', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 0.95rem;
-  font-weight: 300;
+  font-weight: 500;
   color: #888;
   text-decoration: none;
   text-transform: capitalize;
@@ -4799,15 +4799,17 @@ body.light-mode .sub-nav-link.active {
 .d-nav-list>li>a {
   color: #fff;
   text-decoration: none;
-  font-family: 'Pacaembu', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
   transition: color 0.3s ease;
   display: flex;
   align-items: center;
   gap: 5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .d-nav-list>li>a:hover,
@@ -4893,9 +4895,9 @@ body.light-mode .sub-nav-link.active {
 
 .mega-main-title {
   color: #EC2D26;
-  font-family: 'Pacaembu', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 38px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
   margin: 0;
   display: flex;
@@ -4925,7 +4927,7 @@ body.light-mode .sub-nav-link.active {
 
 .mega-heading {
   color: #EC2D26;
-  font-family: 'Pacaembu', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -4946,9 +4948,9 @@ body.light-mode .sub-nav-link.active {
 .mega-links a {
   color: #aaa;
   text-decoration: none;
-  font-family: 'Pacaembu', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 1.5px;
   line-height: 1.6;
   text-transform: uppercase;
@@ -4993,15 +4995,17 @@ body.light-mode .sub-nav-link.active {
 .d-nav-list>li>a {
   color: #fff;
   text-decoration: none;
-  font-family: 'Pacaembu', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
   transition: color 0.3s ease;
   display: flex;
   align-items: center;
   gap: 5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .d-nav-list>li>a:hover,
@@ -5186,9 +5190,9 @@ body.light-mode .sub-nav-link.active {
   padding: 16px 40px;
   color: #888;
   text-decoration: none;
-  font-family: 'Pacaembu', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 1.5px;
   display: flex;
   justify-content: space-between;
@@ -5262,15 +5266,24 @@ body.light-mode .sub-nav-link.active {
 .split-mega-menu .mega-links-list li a {
   color: #fff;
   text-decoration: none;
-  font-family: 'Pacaembu', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   transition: all 0.3s ease;
   display: inline-block;
   padding-bottom: 8px;
   border-bottom: 1px solid transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#mega-industries .mega-links-list li a {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .split-mega-menu .mega-links-list li a:hover,
@@ -5371,6 +5384,11 @@ body.light-mode {
 
 body.light-mode .menu-overlay {
   background-color: #f0f0f0;
+}
+
+/* Light mode mobile menu arrow icon becomes black */
+body.light-mode .menu-overlay .chevron {
+  filter: brightness(0) !important;
 }
 
 body.light-mode .nav-link {
@@ -6296,6 +6314,10 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
   .hero-inner {
     padding: 40px 0 180px 0;
   }
+
+  .hero-headline {
+    font-size: 76px !important;
+  }
 }
 
 /* 1920px+ screens: type/size tweaks for later sections (Why Sthiros, Latest Thinking, CTA banner),
@@ -6855,7 +6877,7 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
     letter-spacing: 0.25em;
     text-transform: uppercase;
     text-decoration: none;
-    background: #000;
+    background: var(--FLAME-ORANGE, #4f1a10b4);
     transition: all 0.3s ease;
     width: 100%;
   }
@@ -7079,6 +7101,8 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
   #services .section-center-para {
     width: 100% !important;
     margin-top: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
   }
 }
 
@@ -9574,5 +9598,41 @@ body.light-mode .search-result-path {
 body.light-mode .search-empty-state {
   color: #666666;
 }
+
+/* Fix-btn link support for Who We Serve problem solutions */
+a.fix-btn {
+  text-decoration: none !important;
+  display: inline-block;
+  text-align: center;
+}
+
+/* ── Global Header & Dropdown Font Family: Quicksand ── */
+.site-header,
+.site-header a,
+.desktop-nav,
+.d-nav-list,
+.d-nav-list>li>a,
+.mega-menu,
+.split-mega-menu,
+.split-mega-menu a,
+.split-mega-menu .mega-sidebar-link,
+.split-mega-menu .mega-links-list li a,
+#mega-industries .mega-links-list li a,
+.menu-overlay,
+.menu-overlay .main-nav,
+.menu-overlay .nav-link,
+.menu-overlay .sub-nav-link,
+.menu-overlay .nested-sub-nav-link {
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+/* Mobile light mode menu chevron arrow: pure black */
+body.light-mode.home-page .menu-overlay .chevron,
+body.light-mode.home-index .menu-overlay .chevron,
+body.light-mode .menu-overlay .chevron {
+  filter: brightness(0) !important;
+}
+
+
 
 

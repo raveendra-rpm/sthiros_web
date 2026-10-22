@@ -8,8 +8,9 @@
     <meta name="description" content="We build intelligence that holds systems together." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css?v=58" />
+    <link rel="preload" as="image" href="assets/images/cube_poster.jpg" />
 
     <style>
         /* Force red text in light mode for Four Pillars on mobile */
@@ -492,7 +493,7 @@
         <img src="assets/robotic_hand_1.png" alt="robotic_hand_1" class="hero-hand" aria-hidden="true">
 
         <!-- Rotating cube video overlay -->
-        <video class="hero-hand-video" autoplay loop muted playsinline>
+        <video class="hero-hand-video" autoplay loop muted playsinline preload="auto" poster="assets/images/cube_poster.jpg">
             <source src="assets/videos/sthiros_p_5.mp4" type="video/mp4">
         </video>
 
@@ -569,7 +570,7 @@
                 <div class="hero-mobile-hand-clipper">
                     <div class="hero-mobile-hand-wrap">
                         <img src="assets/robotic_hand_1.png" alt="Sthiros Robotic Hand" class="hero-mobile-hand" />
-                        <video class="hero-mobile-hand-video hero-hand-video" autoplay loop muted playsinline>
+                        <video class="hero-mobile-hand-video hero-hand-video" autoplay loop muted playsinline preload="auto" poster="assets/images/cube_poster.jpg">
                             <source src="assets/videos/sthiros_p_5.mp4" type="video/mp4">
                         </video>
                     </div>
