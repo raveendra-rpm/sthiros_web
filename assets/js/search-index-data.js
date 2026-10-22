@@ -129,134 +129,6 @@ window.__sthirosSearchIndex = [
     "type": "section"
   },
   {
-    "pageTitle": "about us - sthiros",
-    "sectionTitle": "Sreekhar (HEAD OF SALES)",
-    "url": "aboutus.html#meetsthirossec",
-    "anchor": "meetsthirossec",
-    "content": "Sreekhar - HEAD OF SALES [MARKET & GROWTH]. Sreekhar is a Chartered Accountant with over thirteen years in enterprise risk and digital transformation. He holds ISO 27001, 27701, NIST-aligned, FAFD, and BRSR credentials, the foundation for how he reads a client",
-    "type": "leader"
-  },
-  {
-    "pageTitle": "about us - sthiros",
-    "sectionTitle": "Pooja Parameswaran (CHIEF BRANDING OFFICER)",
-    "url": "aboutus.html#meetsthirossec",
-    "anchor": "meetsthirossec",
-    "content": "Pooja Parameswaran - CHIEF BRANDING OFFICER [MARKET & GROWTH]. Pooja is rebuilding how Sthiros shows up in the market. Her conviction: a brand is the logic behind why people choose to trust an organisation. She holds an MBA from Singapore and a Kellogg digital-strategy diploma, with ten-plus years across hospitality, e-commerce, FMCG, and IT, working where B2C intuition meets B2B rigour. Her mandate spans brand intelligence, employer branding, and content.",
-    "type": "leader"
-  },
-  {
-    "pageTitle": "about us - sthiros",
-    "sectionTitle": "Braen Migogo (MARKET & GROWTH)",
-    "url": "aboutus.html#meetsthirossec",
-    "anchor": "meetsthirossec",
-    "content": "Braen Migogo - MARKET & GROWTH [MARKET & GROWTH]. Braen drives market expansion, strategic client partnerships, and commercial growth initiatives at Sthiros, translating strategic vision into measurable market impact.",
-    "type": "leader"
-  },
-  {
-    "pageTitle": "about us - sthiros",
-    "sectionTitle": "Karthik Jegannathan (HEAD OF CYBER)",
-    "url": "aboutus.html#meetsthirossec",
-    "anchor": "meetsthirossec",
-    "content": "Karthik Jegannathan - HEAD OF CYBER [CLIENT SOLUTIONS]. Karthik leads Cyber at Sthiros, working where threat intelligence meets boardroom strategy. Over twenty-three years across cybersecurity, risk, and transformation at HDFC Bank, HPE, Cognizant, and IBM taught him to pair technical depth with a record of scaling practices and revenue. He",
-    "type": "leader"
-  },
-  {
-    "pageTitle": "about us - sthiros",
-    "sectionTitle": "Praveen Babu C (HEAD OF AI)",
-    "url": "aboutus.html#meetsthirossec",
-    "anchor": "meetsthirossec",
-    "content": "Praveen Babu C - HEAD OF AI [CLIENT SOLUTIONS]. Praveen leads AI at Sthiros, focused on how organisations adopt it responsibly and at scale. Where most see a technology, he sees a lens spanning business, process, people, data, and audit, sharpened at PwC",
-    "type": "leader"
-  },
-  {
-    "pageTitle": "about us - sthiros",
-    "sectionTitle": "Hithender Kumar G (HEAD OF STRATEGY)",
-    "url": "aboutus.html#meetsthirossec",
-    "anchor": "meetsthirossec",
-    "content": "Hithender Kumar G - HEAD OF STRATEGY [STRATEGIC PARTNER PRACTICE]. Hithender leads Strategy, working where tax intelligence, cross-border structuring, and commercial execution meet. A Chartered Accountant trained in Tax and Transfer Pricing at PwC Chennai, he brings fourteen-plus years across direct, international, and expatriate tax. His track record spans cross-border structuring, benchmarking, and litigation before the Income Tax Appellate Tribunal and High Courts. He partners with boards and founders to turn regulatory complexity into sustainable advantage.",
-    "type": "leader"
-  },
-  {
-    "pageTitle": "about us - sthiros",
-    "sectionTitle": "Ravishankar M (HEAD OF RISK)",
-    "url": "aboutus.html#meetsthirossec",
-    "anchor": "meetsthirossec",
-    "content": "Ravishankar M - HEAD OF RISK [STRATEGIC PARTNER PRACTICE]. Ravishankar leads Risk & Resilience, the person clients turn to when the stakes are high. A Chartered Accountant and CISA with over eighteen years across the risk practices of PwC and Protiviti, he covers internal audit, ERM, IT controls, SOX, and SOC 1/2 across pharma, BFSI, logistics, and manufacturing. His view: risk is a growth enabler.",
-    "type": "leader"
-  },
-  {
-    "pageTitle": "about us - sthiros",
-    "sectionTitle": "Santhosh Kumar R (CHIEF PEOPLE OFFICER)",
-    "url": "aboutus.html#meetsthirossec",
-    "anchor": "meetsthirossec",
-    "content": "Santhosh Kumar R - CHIEF PEOPLE OFFICER [ENTERPRISE ENABLEMENT]. Santhosh shapes the culture that makes the work possible. A strategic HR leader with over fifteen years across business partnering, talent, rewards, and change management, he",
-    "type": "leader"
-  },
-  {
-    "pageTitle": "about us - sthiros",
-    "sectionTitle": "Krishnapriya (HEAD OF LEGAL & COMPLIANCE)",
-    "url": "aboutus.html#meetsthirossec",
-    "anchor": "meetsthirossec",
-    "content": "Krishnapriya - HEAD OF LEGAL & COMPLIANCE [ENTERPRISE ENABLEMENT]. Krishnapriya leads legal and governance at Sthiros, keeping growth anchored in integrity and regulatory excellence. She is a Chartered Secretary with over a decade in corporate governance, compliance, and board advisory, guiding organisations through the Companies Act, FEMA, and the full sweep of secretarial work. Her gift is translation, turning dense legal language into clear compliance action.",
-    "type": "leader"
-  },
-  {
-    "pageTitle": "about us - sthiros",
-    "sectionTitle": "about us - sthiros",
-    "url": "aboutus.html",
-    "anchor": "",
-    "content": "about us - sthiros People build the system. AI and product come first here. Everything else is what earned us the right to say that: years spent building, auditing, defending, and scaling real businesses across Strategy, Risk, Cyber, and AI. We'd rather solve your problem at the root than sell you a service. The world we are building Every person a",
-    "type": "page"
-  },
-  {
-    "pageTitle": "about us - sthiros",
-    "sectionTitle": "People buildthe system.",
-    "url": "aboutus.html#aboutherosection",
-    "anchor": "aboutherosection",
-    "content": "People buildthe system. AI and product come first here. Everything else is what earned us the right to say that: years spent building, auditing, defending, and scaling real businesses across Strategy, Risk, Cyber, and AI. We'd rather solve your problem at the root than sell you a service.",
-    "type": "section"
-  },
-  {
-    "pageTitle": "about us - sthiros",
-    "sectionTitle": "The world we are building",
-    "url": "aboutus.html#Theworldbuilding",
-    "anchor": "Theworldbuilding",
-    "content": "The world we are building Every person at Sthiros is working towards the big picture. The biggest one there is, actually. We are on a mission to eradicate operational noise holding enterprises back, replacing legacy workflows with trusted AI that elevated human potential. Mission We kill grunt work, deploy cognitive engines for high stakes decisions and put human judgment exact",
-    "type": "section"
-  },
-  {
-    "pageTitle": "about us - sthiros",
-    "sectionTitle": "MEET THE LEADERS",
-    "url": "aboutus.html#meettheleaderssec",
-    "anchor": "meettheleaderssec",
-    "content": "MEET THE LEADERS ADITYA AMIN FOUNDER & CEO Aditya built Sthiros on one conviction: advice means nothing without engineering behind it. A Chartered Accountant, CISA, and CDPSE, he brings over fourteen years across financial planning, risk, and systems audit. As Founder and CEO, he holds every engagement to three tests: clear strategy, strong governance, resilient systems, and pa",
-    "type": "section"
-  },
-  {
-    "pageTitle": "about us - sthiros",
-    "sectionTitle": "ADITYA AMIN",
-    "url": "aboutus.html#meettheleaderssec",
-    "anchor": "meettheleaderssec",
-    "content": "ADITYA AMIN",
-    "type": "section"
-  },
-  {
-    "pageTitle": "about us - sthiros",
-    "sectionTitle": "FOUNDER & CEO",
-    "url": "aboutus.html#meettheleaderssec",
-    "anchor": "meettheleaderssec",
-    "content": "FOUNDER & CEO Aditya built Sthiros on one conviction: advice means nothing without engineering behind it. A Chartered Accountant, CISA, and CDPSE, he brings over fourteen years across financial planning, risk, and systems audit. As Founder and CEO, he holds every engagement to three tests: clear strategy, strong governance, resilient systems, and partners with founders and boar",
-    "type": "section"
-  },
-  {
-    "pageTitle": "about us - sthiros",
-    "sectionTitle": "Ready whenyou are.",
-    "url": "aboutus.html#readywhenyouaresec",
-    "anchor": "readywhenyouaresec",
-    "content": "Ready whenyou are. GET IN TOUCH",
-    "type": "section"
-  },
-  {
     "pageTitle": "Careers - Sthiros",
     "sectionTitle": "Careers - Sthiros",
     "url": "careers.html",
@@ -690,22 +562,6 @@ window.__sthirosSearchIndex = [
   },
   {
     "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
-    "sectionTitle": "What governance actually looks like before the event.",
-    "url": "index.html#latest-thinking",
-    "anchor": "latest-thinking",
-    "content": "What governance actually looks like before the event. 6 min read",
-    "type": "section"
-  },
-  {
-    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
-    "sectionTitle": "Automation without strategy is just faster mistakes.",
-    "url": "index.html#latest-thinking",
-    "anchor": "latest-thinking",
-    "content": "Automation without strategy is just faster mistakes. 8 min read",
-    "type": "section"
-  },
-  {
-    "pageTitle": "Sthiros : When Complexity Rises, Sthiros Holds.",
     "sectionTitle": "Bring us the hardest one.",
     "url": "index.html#ctaBanner",
     "anchor": "ctaBanner",
@@ -754,26 +610,26 @@ window.__sthirosSearchIndex = [
   },
   {
     "pageTitle": "Sthiros - BFSI | fintech",
-    "sectionTitle": "I want to deploy AI, but theboard wants explainability",
+    "sectionTitle": "I want to deploy AI, but the board wants explainability",
     "url": "industry.html#problems-bank",
     "anchor": "problems-bank",
-    "content": "I want to deploy AI, but theboard wants explainability. Everyone's talking AI in credit, collections, ops. I can't get sign-off without a governance framework the regulator will actually accept. AI you can actually explain to an inspector: The hard part of AI in banking was never the model. It's convincing a regulator you know exactly why the model did what it did. RBI's AI fra",
+    "content": "I want to deploy AI, but the board wants explainability. Everyone's talking AI in credit, collections, ops. I can't get sign-off without a governance framework the regulator will actually accept. AI you can actually explain to an inspector: The hard part of AI in banking was never the model. It's convincing a regulator you know exactly why the model did what it did. RBI's AI fr",
     "type": "problem"
   },
   {
     "pageTitle": "Sthiros - BFSI | fintech",
-    "sectionTitle": "My transformation programmehas spent, but isn't delivering",
+    "sectionTitle": "My transformation programme has spent, but isn't delivering",
     "url": "industry.html#problems-bank",
     "anchor": "problems-bank",
-    "content": "My transformation programmehas spent, but isn't delivering. The tech's in. The vendors are paid. The outcomes aren't here. Something in the execution layer is broken. The transformation you already paid for, finished: When a BFSI transformation stalls, the technology is rarely the culprit. It dies in the quiet gap between the strategy deck and the actual work, where someone was",
+    "content": "My transformation programme has spent, but isn't delivering. The tech's in. The vendors are paid. The outcomes aren't here. Something in the execution layer is broken. The transformation you already paid for, finished: When a BFSI transformation stalls, the technology is rarely the culprit. It dies in the quiet gap between the strategy deck and the actual work, where someone wa",
     "type": "problem"
   },
   {
     "pageTitle": "Sthiros - BFSI | fintech",
-    "sectionTitle": "Fintech talent isn't sticking toour operating model",
+    "sectionTitle": "Fintech talent isn't sticking to our operating model",
     "url": "industry.html#problems-bank",
     "anchor": "problems-bank",
-    "content": "Fintech talent isn't sticking toour operating model. We're hiring digital and data people, and they're hitting walls, legacy systems, slow approvals, risk-averse culture. Attrition's high. Getting your digital hires past the antibodies: Hire a data scientist into a bank and you don't automatically get a data capability. You get a data scientist who's now waiting three weeks for",
+    "content": "Fintech talent isn't sticking to our operating model. We're hiring digital and data people, and they're hitting walls, legacy systems, slow approvals, risk-averse culture. Attrition's high. Getting your digital hires past the antibodies: Hire a data scientist into a bank and you don't automatically get a data capability. You get a data scientist who's now waiting three weeks fo",
     "type": "problem"
   },
   {
@@ -1069,7 +925,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Who are you?We'll show you theright problems.",
     "url": "industry.html#Whotherightproblemssec",
     "anchor": "Whotherightproblemssec",
-    "content": "Who are you?We'll show you theright problems. Pick your segment. What comes up is tuned to your reality, right down to the regulator BANK OR NBFC INSURANCE FINTECH FOUNDER PAYMENTS AND LENDING AMC OR WEALTHTECH MICROFINANCE OR SFB PROBLEMS STHIROS SOLUTION Regulation is moving faster than my compliance team RBI circulars, DPDPA, CKYC... My team spends the week putting out fires",
+    "content": "Who are you?We'll show you theright problems. Pick your segment. What comes up is tuned to your reality, right down to the regulator who keeps you up at night. BANK OR NBFC INSURANCE FINTECH FOUNDER PAYMENTS AND LENDING AMC OR WEALTHTECH MICROFINANCE OR SFB PROBLEMS STHIROS SOLUTION Regulation is moving faster than my compliance team RBI circulars, DPDPA, CKYC... My team spends",
     "type": "section"
   },
   {
@@ -1477,7 +1333,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Sthiros - D2C Retail",
     "url": "industry1.html",
     "anchor": "",
-    "content": "We build financial systems that clear audit before the auditor asks. ﻿ Sthiros - D2C Retail Your ad spend lies. We find out by how much. D2C brands are opening stores, FMCG giants are buying the upstarts that scared them, and quick commerce reset what counts as fast, while margins thin everywhere. What holds up is the operating model underneath the marketing. We build that layer. BOOK A 30-MIN CALL GET THE INDUSTRY",
+    "content": "We build financial systems that clear audit before the auditor asks. Sthiros - D2C Retail Your ad spend lies. We find out by how much. D2C brands are opening stores, FMCG giants are buying the upstarts that scared them, and quick commerce reset what counts as fast, while margins thin everywhere. What holds up is the operating model underneath the marketing. We build that layer. BOOK A 30-MIN CALL GET THE INDUSTRY DI",
     "type": "page"
   },
   {
@@ -1490,26 +1346,26 @@ window.__sthirosSearchIndex = [
   },
   {
     "pageTitle": "Sthiros - D2C Retail",
-    "sectionTitle": "My margins are erodingas I scale",
+    "sectionTitle": "My margins are eroding as I scale",
     "url": "industry1.html#problems-bank",
     "anchor": "problems-bank",
-    "content": "My margins are erodingas I scale. CAC is rising, contribution is falling. What worked at ₹20Cr isn't holding at ₹80Cr and I can't see exactly where the margin is going. Finding where the margin really went: Margin that erodes as you scale is almost never a mystery, it's structural. CAC climbs because the cheap channels are tapped out. Contribution slips because nobody renegotia",
+    "content": "My margins are eroding as I scale. CAC is rising, contribution is falling. What worked at ₹20Cr isn't holding at ₹80Cr and I can't see exactly where the margin is going. Finding where the margin really went: Margin that erodes as you scale is almost never a mystery, it's structural. CAC climbs because the cheap channels are tapped out. Contribution slips because nobody renegoti",
     "type": "problem"
   },
   {
     "pageTitle": "Sthiros - D2C Retail",
-    "sectionTitle": "I need to go offline but I'venever run physical retail",
+    "sectionTitle": "I need to go offline but I've never run physical retail",
     "url": "industry1.html#problems-bank",
     "anchor": "problems-bank",
-    "content": "I need to go offline but I'venever run physical retail. Retail leasing, store ops, channel inventory — every D2C brand is going offline. I don't know how to do it without destroying my digital margin. Going offline without wrecking the margin that got you here: D2C brands leased around 5.95 lakh sq ft of retail space in the first half of 2025, and a fair number are improvising ",
+    "content": "I need to go offline but I've never run physical retail. Retail leasing, store ops, channel inventory — every D2C brand is going offline. I don't know how to do it without destroying my digital margin. Going offline without wrecking the margin that got you here: D2C brands leased around 5.95 lakh sq ft of retail space in the first half of 2025, and a fair number are improvising",
     "type": "problem"
   },
   {
     "pageTitle": "Sthiros - D2C Retail",
-    "sectionTitle": "I'm thinking about an exit or astrategic raise",
+    "sectionTitle": "I'm thinking about an exit or a strategic raise",
     "url": "industry1.html#problems-bank",
     "anchor": "problems-bank",
-    "content": "I'm thinking about an exit or astrategic raise. HUL paid 8.5x for Minimalist. I want to know where I stand and what I need to fix to be acquisition-ready in 18 months. Getting acquisition-ready before the acquirer looks: HUL paid ₹2,955Cr for Minimalist, 8.5x revenue, on a brand that wasn't even profitable. What they were buying was brand equity, operating clarity, and a data r",
+    "content": "I'm thinking about an exit or a strategic raise. HUL paid 8.5x for Minimalist. I want to know where I stand and what I need to fix to be acquisition-ready in 18 months. Getting acquisition-ready before the acquirer looks: HUL paid ₹2,955Cr for Minimalist, 8.5x revenue, on a brand that wasn't even profitable. What they were buying was brand equity, operating clarity, and a data ",
     "type": "problem"
   },
   {
@@ -1522,10 +1378,10 @@ window.__sthirosSearchIndex = [
   },
   {
     "pageTitle": "Sthiros - D2C Retail",
-    "sectionTitle": "I'm acquiring customers butnot keeping them",
+    "sectionTitle": "I'm acquiring customers but not keeping them",
     "url": "industry1.html#problems-bank",
     "anchor": "problems-bank",
-    "content": "I'm acquiring customers butnot keeping them. Repeat rate is too low, LTV isn't justifying CAC, and I'm running a leaky bucket. Acquisition is expensive. Retention is where the real margin is. Retention, which is where the money actually is: Every founder knows acquisition costs a fortune, and most keep spending there anyway because it's the visible number. The quieter truth is ",
+    "content": "I'm acquiring customers but not keeping them. Repeat rate is too low, LTV isn't justifying CAC, and I'm running a leaky bucket. Acquisition is expensive. Retention is where the real margin is. Retention, which is where the money actually is: Every founder knows acquisition costs a fortune, and most keep spending there anyway because it's the visible number. The quieter truth is",
     "type": "problem"
   },
   {
@@ -1829,7 +1685,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Who are you?We'll show you theright problems.",
     "url": "industry1.html#Whotherightproblemssec",
     "anchor": "Whotherightproblemssec",
-    "content": "Who are you?We'll show you theright problems. Pick your segment. What comes up is tuned to your reality and the exact stage you're at. D2C brand founder Retail chain FMCG brand Quick commerce Marketplace seller Brand incubator PROBLEMS STHIROS SOLUTION My margins are erodingas I scale CAC is rising, contribution is falling. What worked at ₹20Cr isn't holding at ₹80Cr and I can'",
+    "content": "Who are you?We'll show you theright problems. Pick your segment. What comes up is tuned to your reality and the exact stage you're at. D2C brand founder Retail chain FMCG brand Quick commerce Marketplace seller Brand incubator PROBLEMS STHIROS SOLUTION My margins are eroding as I scale CAC is rising, contribution is falling. What worked at ₹20Cr isn't holding at ₹80Cr and I can",
     "type": "section"
   },
   {
@@ -2237,7 +2093,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Industries - Energy, Mining & Utilities",
     "url": "industry2.html",
     "anchor": "",
-    "content": "We build financial systems that clear audit before the auditor asks. ﻿ Industries - Energy, Mining & Utilities We find the megawatts your model lost. Renewables are scaling at a pace the world has never attempted, discoms are squeezed by AT&C losses and tariff politics, oil and gas rides the usual price cycle, and mining is still running on last decade's extraction economics. Underneath all of it: the gap between wh",
+    "content": "We build financial systems that clear audit before the auditor asks. Industries - Energy, Mining & Utilities We find the megawatts your model lost. Renewables are scaling at a pace the world has never attempted, discoms are squeezed by AT&C losses and tariff politics, oil and gas rides the usual price cycle, and mining is still running on last decade's extraction economics. Underneath all of it: the gap between what",
     "type": "page"
   },
   {
@@ -2250,10 +2106,10 @@ window.__sthirosSearchIndex = [
   },
   {
     "pageTitle": "Industries - Energy, Mining & Utilities",
-    "sectionTitle": "Actual CUF is consistentlybelow P90 estimates",
+    "sectionTitle": "Actual CUF is consistently below P90 estimates",
     "url": "industry2.html#problems-bank",
     "anchor": "problems-bank",
-    "content": "Actual CUF is consistentlybelow P90 estimates. My plants are underperforming against the generation projections in the financial model. The gap between estimated and actual CUF is eroding IRR and creating covenant pressure with lenders. Closing the gap between the P90 and what the plant actually does: Generation that falls short of the P90 almost always traces to a known list: ",
+    "content": "Actual CUF is consistently below P90 estimates. My plants are underperforming against the generation projections in the financial model. The gap between estimated and actual CUF is eroding IRR and creating covenant pressure with lenders. Closing the gap between the P90 and what the plant actually does: Generation that falls short of the P90 almost always traces to a known list:",
     "type": "problem"
   },
   {
@@ -2314,10 +2170,10 @@ window.__sthirosSearchIndex = [
   },
   {
     "pageTitle": "Industries - Energy, Mining & Utilities",
-    "sectionTitle": "Revenue collection efficiency isdeclining in specific segments",
+    "sectionTitle": "Revenue collection efficiency is declining in specific segments",
     "url": "industry2.html#problems-insurance",
     "anchor": "problems-insurance",
-    "content": "Revenue collection efficiency isdeclining in specific segments. Industrial and commercial collection is reasonable. Agricultural and domestic collection, particularly in rural areas is deteriorating. My collection infrastructure isn't calibrated for the problem. Collecting from the segments that have quietly slipped: Collection shortfall is never uniform. It varies sharply by c",
+    "content": "Revenue collection efficiency is declining in specific segments. Industrial and commercial collection is reasonable. Agricultural and domestic collection, particularly in rural areas is deteriorating. My collection infrastructure isn't calibrated for the problem. Collecting from the segments that have quietly slipped: Collection shortfall is never uniform. It varies sharply by ",
     "type": "problem"
   },
   {
@@ -2589,7 +2445,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Who are you?We'll show you theright problems.",
     "url": "industry2.html#Whotherightproblemssec",
     "anchor": "Whotherightproblemssec",
-    "content": "Who are you?We'll show you theright problems. Pick your segment. What comes up is tuned to your asset type, the regulator you deal with, and the commercial reality you're actually in. RENEWABLE DEVELOPER POWER UTILITY OR DISCOM OIL AND GAS MINING ENERGY STORAGE OR CLEANTECH INDUSTRIAL ENERGY CONSUMER PROBLEMS STHIROS SOLUTION Actual CUF is consistentlybelow P90 estimates My pla",
+    "content": "Who are you?We'll show you theright problems. Pick your segment. What comes up is tuned to your asset type, the regulator you deal with, and the commercial reality you're actually in. RENEWABLE DEVELOPER POWER UTILITY OR DISCOM OIL AND GAS MINING ENERGY STORAGE OR CLEANTECH INDUSTRIAL ENERGY CONSUMER PROBLEMS STHIROS SOLUTION Actual CUF is consistently below P90 estimates My pl",
     "type": "section"
   },
   {
@@ -2997,7 +2853,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Industries - GCC",
     "url": "industry3.html",
     "anchor": "",
-    "content": "We build financial systems that clear audit before the auditor asks. ﻿ Industries - GCC HQ can see exactly what you cost. India runs over 1,700 GCCs employing 1.9 million people. Existing isn't remarkable anymore. What survives restructuring is proof you're worth more than the headcount saving. That's what we build. BOOK A 30-MIN CALL GET THE INDUSTRY DIAGNOSTIC Who are you? We'll show you the right problems. Pick y",
+    "content": "We build financial systems that clear audit before the auditor asks. Industries - GCC HQ can see exactly what you cost. India runs over 1,700 GCCs employing 1.9 million people. Existing isn't remarkable anymore. What survives restructuring is proof you're worth more than the headcount saving. That's what we build. BOOK A 30-MIN CALL GET THE INDUSTRY DIAGNOSTIC Who are you? We'll show you the right problems. Pick you",
     "type": "page"
   },
   {
@@ -3757,7 +3613,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Industries - Healthcare & Life Sciences",
     "url": "industry4.html",
     "anchor": "",
-    "content": "We build financial systems that clear audit before the auditor asks. ﻿ Industries - Healthcare & Life Sciences Every point you shave off ALOS shows up somewhere on your balance sheet. Healthcare is scaling faster than its infrastructure. Thin margins in hospitals, USFDA scrutiny in pharma, TAT pressure in diagnostics, startup speed in health tech. We build for where those collide. BOOK A 30-MIN CALL GET THE INDUSTRY",
+    "content": "We build financial systems that clear audit before the auditor asks. Industries - Healthcare & Life Sciences Every point you shave off ALOS shows up somewhere on your balance sheet. Healthcare is scaling faster than its infrastructure. Thin margins in hospitals, USFDA scrutiny in pharma, TAT pressure in diagnostics, startup speed in health tech. We build for where those collide. BOOK A 30-MIN CALL GET THE INDUSTRY D",
     "type": "page"
   },
   {
@@ -4517,7 +4373,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Industries - Manufacturing",
     "url": "industry5.html",
     "anchor": "",
-    "content": "We build financial systems that clear audit before the auditor asks. ﻿ Industries - Manufacturing Somewhere between the shop floor and the P&L, the margin goes missing. OEE looks fine on the dashboard. What actually protects margin is smaller: whether anyone besides the plant manager knows why line 3 slows every Tuesday. We build the system that knows anyway. BOOK A 30-MIN CALL GET THE INDUSTRY DIAGNOSTIC Who are yo",
+    "content": "We build financial systems that clear audit before the auditor asks. Industries - Manufacturing Somewhere between the shop floor and the P&L, the margin goes missing. OEE looks fine on the dashboard. What actually protects margin is smaller: whether anyone besides the plant manager knows why line 3 slows every Tuesday. We build the system that knows anyway. BOOK A 30-MIN CALL GET THE INDUSTRY DIAGNOSTIC Who are you?",
     "type": "page"
   },
   {
@@ -6037,7 +5893,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Industries - Telecom & Digital Infrastructure",
     "url": "industry7.html",
     "anchor": "",
-    "content": "We build financial systems that clear audit before the auditor asks. ﻿ Industries - Telecom & Digital Infrastructure Every tower you put up is a bet. We check the odds before you pay for the steel. A tower goes up, a fibre route gets laid, a data centre breaks ground, and only later does anyone check the economics against ARPU. 5G capex and data centre demand are outrunning most operators' ability to model returns.",
+    "content": "We build financial systems that clear audit before the auditor asks. Industries - Telecom & Digital Infrastructure Every tower you put up is a bet. We check the odds before you pay for the steel. A tower goes up, a fibre route gets laid, a data centre breaks ground, and only later does anyone check the economics against ARPU. 5G capex and data centre demand are outrunning most operators' ability to model returns. We",
     "type": "page"
   },
   {
@@ -6797,7 +6653,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Industries - Travel & Hospitality",
     "url": "industry8.html",
     "anchor": "",
-    "content": "We build financial systems that clear audit before the auditor asks. ﻿ Industries - Travel & Hospitality RevPAR is back to 2019 levels. GOP is still deciding whether to show up. Domestic travel, premium hotel demand and OTA GMV are all at record highs but OTA commissions and customer acquisition costs are structurally higher too, so occupancy and revenue recovered before margin did. We close that gap. BOOK A 30-MIN",
+    "content": "We build financial systems that clear audit before the auditor asks. Industries - Travel & Hospitality RevPAR is back to 2019 levels. GOP is still deciding whether to show up. Domestic travel, premium hotel demand and OTA GMV are all at record highs but OTA commissions and customer acquisition costs are structurally higher too, so occupancy and revenue recovered before margin did. We close that gap. BOOK A 30-MIN CA",
     "type": "page"
   },
   {
@@ -8465,67 +8321,11 @@ window.__sthirosSearchIndex = [
     "type": "section"
   },
   {
-    "pageTitle": "Sthiros - Products",
-    "sectionTitle": "Sthiros - Products",
-    "url": "products.html",
-    "anchor": "",
-    "content": "Sthiros Products Sthiros - Products Built from the work we already do. An Oriq product begins inside a live client engagement, with a process that's breaking or a report someone still builds by hand every week. That capability doesn't come from a lab. It comes from inside live client workflows, tested against real operating conditions, producing proprietary product",
-    "type": "page"
-  },
-  {
-    "pageTitle": "Sthiros - Products",
-    "sectionTitle": "Built fromthe work wealready do.",
-    "url": "products.html#sec-built-fromthe-work-wealready-do",
-    "anchor": "sec-built-fromthe-work-wealready-do",
-    "content": "Built fromthe work wealready do. An Oriq product begins inside a live client engagement, with a process that's breaking or a report someone still builds by hand every week.",
-    "type": "section"
-  },
-  {
-    "pageTitle": "Sthiros - Products",
-    "sectionTitle": "TRADE OPERATIONS",
-    "url": "products.html#complianceoperationsec",
-    "anchor": "complianceoperationsec",
-    "content": "TRADE OPERATIONS",
-    "type": "section"
-  },
-  {
-    "pageTitle": "Sthiros - Products",
-    "sectionTitle": "Keliros",
-    "url": "products.html#complianceoperationsec",
-    "anchor": "complianceoperationsec",
-    "content": "Keliros An export workflow that files itself. Keliros turns a shipment into one continuous workflow, from sales invoice to proof of delivery, replacing the patchwork of email, spreadsheets, and WhatsApp groups most export teams still run on. Piloted inside a live steel export corridor running India to the US, with a VC-backed manufacturer as the first client.",
-    "type": "section"
-  },
-  {
-    "pageTitle": "Sthiros - Products",
-    "sectionTitle": "COMPLIANCE OS",
-    "url": "products.html#complianceoperationsec",
-    "anchor": "complianceoperationsec",
-    "content": "COMPLIANCE OS",
-    "type": "section"
-  },
-  {
-    "pageTitle": "Sthiros - Products",
-    "sectionTitle": "Niyamos",
-    "url": "products.html#complianceoperationsec",
-    "anchor": "complianceoperationsec",
-    "content": "Niyamos A compliance register that updates itself. Reads a company's entity structure and builds its complete compliance register automatically, then keeps it current as obligations change. Piloted inside a diversified group with operations across 30-plus Indian and US states, plus a manufacturing and export footprint into Mexico. 600+ obligations trackedfor one client 2 countr",
-    "type": "section"
-  },
-  {
-    "pageTitle": "Sthiros - Products",
-    "sectionTitle": "Tell us what'sstill being doneby hand.",
-    "url": "products.html#Telluswhatsstillbeingdonebyhandsec",
-    "anchor": "Telluswhatsstillbeingdonebyhandsec",
-    "content": "Tell us what'sstill being doneby hand. Most Oriq products started as exactly that kind of complaint. Tell usyours, and we'll tell you honestly whether it's a project or a product.",
-    "type": "section"
-  },
-  {
     "pageTitle": "Repository - sthiros",
     "sectionTitle": "Repository - sthiros",
     "url": "repository.html",
     "anchor": "",
-    "content": "Repository - sthiros Proof over promises. Our Case studies, perspectives, white papers, and the people behind them, gathered in one place. Find what you're looking for Type Case Study Industry Insights Leadership Insights White Paper and Research Articles Service All Services Strategy Risk Cyber AI Who We Serve All Who We Serve BFSI & Fintech D2C &",
+    "content": "Repository - sthiros Proof over promises. Our Case studies, perspectives, white papers, and the people behind them, gathered in one place. Find what you're looking for Type All Types Case Study Industry Insights Leadership Insights White Paper and Research Articles Service All Services Strategy Risk Cyber AI Who We Serve All Who We Serve BFSI & Fin",
     "type": "page"
   },
   {
@@ -8541,7 +8341,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Find what you'relooking for",
     "url": "repository.html#sec-find-what-yourelooking-for",
     "anchor": "sec-find-what-yourelooking-for",
-    "content": "Find what you'relooking for Type Case Study Industry Insights Leadership Insights White Paper and Research Articles Service All Services Strategy Risk Cyber AI Who We Serve All Who We Serve BFSI & Fintech D2C & Retail Energy, Mining & Utilities GCC Healthcare & Life Sciences Manufacturing Public Sector & Government Real Estate / EPC / Construction Telecom & Digital Infrastructu",
+    "content": "Find what you'relooking for Type All Types Case Study Industry Insights Leadership Insights White Paper and Research Articles Service All Services Strategy Risk Cyber AI Who We Serve All Who We Serve BFSI & Fintech D2C & Retail Energy, Mining & Utilities GCC Healthcare & Life Sciences Manufacturing Public Sector & Government Real Estate / EPC / Construction Telecom & Digital In",
     "type": "section"
   },
   {
@@ -8557,7 +8357,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Work that speaksfor itself",
     "url": "repository.html#sec-work-that-speaksfor-itself",
     "anchor": "sec-work-that-speaksfor-itself",
-    "content": "Work that speaksfor itself A running record of problems we've solved and what it took to solve them. Catching customs and demurrage risk 48 hours before it costs a steel exporter money Taking a manufacturer's intelligence from a 35 to one governed Smart Genba view Taking a manufacturer's intelligence from a 35 to one governed Smart Genba view Turning an undocumented risk practi",
+    "content": "Work that speaksfor itself A running record of problems we've solved and what it took to solve them. Catching customs and demurrage risk 48 hours before it costs a steel exporter money Taking a manufacturer's intelligence from a 35 to one governed Smart Genba view Turning an undocumented risk practice into a Board-ready, CAG-audit-ready ERM framework Automating multilingual vid",
     "type": "section"
   },
   {
@@ -8581,14 +8381,14 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "The Deep Dives",
     "url": "repository.html#thedeepdivessec",
     "anchor": "thedeepdivessec",
-    "content": "The Deep Dives White papers and research articles on the problems worth sitting with. Article Title Article content Article Title Article content Article Title Article content",
+    "content": "The Deep Dives White papers and research articles on the problems worth sitting with. Article Title Article content Article Title Article content Article Title Article content Article Title Article content",
     "type": "section"
   },
   {
     "pageTitle": "Repository - sthiros",
     "sectionTitle": "Article Title",
-    "url": "repository.html#thedeepdivessec",
-    "anchor": "thedeepdivessec",
+    "url": "repository.html#dives-track",
+    "anchor": "dives-track",
     "content": "Article Title Article content",
     "type": "section"
   },
@@ -8741,7 +8541,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Relatedcase studies",
     "url": "risk1.html#relatedcasestudiessec",
     "anchor": "relatedcasestudiessec",
-    "content": "Relatedcase studies Mapping every risk across a $9.7B credit union, then cutting the critical ones by 97% Validating access and control integrity across a lender's core systems, end to end Finding forged signatures and dead beneficiaries behind Rs. 90 Lakhs of certified CSR spend Mapping every risk across a $9.7B credit union, then cutting the critical ones by 97% Closing SoD c",
+    "content": "Relatedcase studies Mapping every risk across a $9.7B credit union, then cutting the critical ones by 97% Closing SoD conflicts across five core systems for a major NBFC's RBI compliance Turning an undocumented risk practice into a Board-ready, CAG-audit-ready ERM framework Uncovering 500+ documentation gaps across a government infrastructure entity's controls Governing 5,500 C",
     "type": "section"
   },
   {
@@ -8933,7 +8733,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Relatedcase studies",
     "url": "risk2.html#relatedcasestudiessec",
     "anchor": "relatedcasestudiessec",
-    "content": "Relatedcase studies Mapping every risk across a $9.7B credit union, then cutting the critical ones by 97% Validating access and control integrity across a lender's core systems, end to end Finding forged signatures and dead beneficiaries behind Rs. 90 Lakhs of certified CSR spend Mapping every risk across a $9.7B credit union, then cutting the critical ones by 97% Closing SoD c",
+    "content": "Relatedcase studies Detecting Rs. 1.78 Crore in erroneous health insurance claims before they were paid Finding fire safety, security, and inventory gaps hiding behind a 6-year-old SOP Uncovering 500+ documentation gaps across a government infrastructure entity's controls Finding forged signatures and dead beneficiaries behind Rs. 90 Lakhs of certified CSR spend Uncovering Rs. ",
     "type": "section"
   },
   {
@@ -9085,7 +8885,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Relatedcase studies",
     "url": "risk3.html#relatedcasestudiessec",
     "anchor": "relatedcasestudiessec",
-    "content": "Relatedcase studies Mapping every risk across a $9.7B credit union, then cutting the critical ones by 97% Validating access and control integrity across a lender's core systems, end to end Finding forged signatures and dead beneficiaries behind Rs. 90 Lakhs of certified CSR spend Mapping every risk across a $9.7B credit union, then cutting the critical ones by 97% Closing SoD c",
+    "content": "Relatedcase studies Mapping every risk across a $9.7B credit union, then cutting the critical ones by 97% Closing SoD conflicts across five core systems for a major NBFC's RBI compliance Validating access and control integrity across a lender's core systems, end to end",
     "type": "section"
   },
   {
@@ -9253,7 +9053,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Relatedcase studies",
     "url": "risk4.html#relatedcasestudiessec",
     "anchor": "relatedcasestudiessec",
-    "content": "Relatedcase studies Mapping every risk across a $9.7B credit union, then cutting the critical ones by 97% Validating access and control integrity across a lender's core systems, end to end Finding forged signatures and dead beneficiaries behind Rs. 90 Lakhs of certified CSR spend Mapping every risk across a $9.7B credit union, then cutting the critical ones by 97% Closing SoD c",
+    "content": "Relatedcase studies Uncovering a Rs. 88+ Crore governance breakdown across a multi-brand restaurant chain Tracing Rs. 4.45 Crore in fund diversion behind a defaulted loan account Finding fire safety, security, and inventory gaps hiding behind a 6-year-old SOP When 150-Crore of inventory had to be counted right, in 10 days Finding 3,420 discrepancies inside 1.17 crore units, the",
     "type": "section"
   },
   {
@@ -9290,42 +9090,42 @@ window.__sthirosSearchIndex = [
   },
   {
     "pageTitle": "Sthiros - Services",
-    "sectionTitle": "Business &Growth Strategy",
+    "sectionTitle": "Business & Growth Strategy",
     "url": "services.html#tab-strategy",
     "anchor": "tab-strategy",
-    "content": "Business &Growth Strategy",
+    "content": "Business & Growth Strategy",
     "type": "section"
   },
   {
     "pageTitle": "Sthiros - Services",
-    "sectionTitle": "StrategicFinance &Transactions",
+    "sectionTitle": "Strategic Finance & Transactions",
     "url": "services.html#tab-strategy",
     "anchor": "tab-strategy",
-    "content": "StrategicFinance &Transactions",
+    "content": "Strategic Finance & Transactions",
     "type": "section"
   },
   {
     "pageTitle": "Sthiros - Services",
-    "sectionTitle": "EnterpriseOperations &Ecosystems",
+    "sectionTitle": "Enterprise Operations & Ecosystems",
     "url": "services.html#tab-strategy",
     "anchor": "tab-strategy",
-    "content": "EnterpriseOperations &Ecosystems",
+    "content": "Enterprise Operations & Ecosystems",
     "type": "section"
   },
   {
     "pageTitle": "Sthiros - Services",
-    "sectionTitle": "Change &OrganizationalAcceleration",
+    "sectionTitle": "Change Management & Organisational Acceleration",
     "url": "services.html#tab-strategy",
     "anchor": "tab-strategy",
-    "content": "Change &OrganizationalAcceleration",
+    "content": "Change Management & Organisational Acceleration",
     "type": "section"
   },
   {
     "pageTitle": "Sthiros - Services",
-    "sectionTitle": "Al Strategy &SovereignGovernance",
+    "sectionTitle": "Al Strategy & Sovereign Governance",
     "url": "services.html#tab-ai",
     "anchor": "tab-ai",
-    "content": "Al Strategy &SovereignGovernance",
+    "content": "Al Strategy & Sovereign Governance",
     "type": "section"
   },
   {
@@ -9338,82 +9138,82 @@ window.__sthirosSearchIndex = [
   },
   {
     "pageTitle": "Sthiros - Services",
-    "sectionTitle": "AgenticOperations &Automation",
+    "sectionTitle": "Agentic Operations & Automation",
     "url": "services.html#tab-ai",
     "anchor": "tab-ai",
-    "content": "AgenticOperations &Automation",
+    "content": "Agentic Operations & Automation",
     "type": "section"
   },
   {
     "pageTitle": "Sthiros - Services",
-    "sectionTitle": "CognitiveExperience &Engineering",
+    "sectionTitle": "Cognitive Experience & Engineering",
     "url": "services.html#tab-ai",
     "anchor": "tab-ai",
-    "content": "CognitiveExperience &Engineering",
+    "content": "Cognitive Experience & Engineering",
     "type": "section"
   },
   {
     "pageTitle": "Sthiros - Services",
-    "sectionTitle": "EnterpriseGovernance &Regulatory Strategy",
+    "sectionTitle": "Enterprise Governance & Regulatory Strategy",
     "url": "services.html#tab-risk",
     "anchor": "tab-risk",
-    "content": "EnterpriseGovernance &Regulatory Strategy",
+    "content": "Enterprise Governance & Regulatory Strategy",
     "type": "section"
   },
   {
     "pageTitle": "Sthiros - Services",
-    "sectionTitle": "StrategicAssurance &ProcessIntelligence",
+    "sectionTitle": "Strategic Assurance & Process Intelligence",
     "url": "services.html#tab-risk",
     "anchor": "tab-risk",
-    "content": "StrategicAssurance &ProcessIntelligence",
+    "content": "Strategic Assurance & Process Intelligence",
     "type": "section"
   },
   {
     "pageTitle": "Sthiros - Services",
-    "sectionTitle": "Digital Risk &TechnologyControls",
+    "sectionTitle": "Digital Risk & Technology Controls",
     "url": "services.html#tab-risk",
     "anchor": "tab-risk",
-    "content": "Digital Risk &TechnologyControls",
+    "content": "Digital Risk & Technology Controls",
     "type": "section"
   },
   {
     "pageTitle": "Sthiros - Services",
-    "sectionTitle": "ForensicIntegrity &AssetProtection",
+    "sectionTitle": "Forensic Integrity & Asset Protection",
     "url": "services.html#tab-risk",
     "anchor": "tab-risk",
-    "content": "ForensicIntegrity &AssetProtection",
+    "content": "Forensic Integrity & Asset Protection",
     "type": "section"
   },
   {
     "pageTitle": "Sthiros - Services",
-    "sectionTitle": "Offensive Security& Exposure",
+    "sectionTitle": "Offensive Security & Technical Assurance",
     "url": "services.html#tab-cyber",
     "anchor": "tab-cyber",
-    "content": "Offensive Security& Exposure",
+    "content": "Offensive Security & Technical Assurance",
     "type": "section"
   },
   {
     "pageTitle": "Sthiros - Services",
-    "sectionTitle": "CloudSecurity &Zero Trust",
+    "sectionTitle": "Cloud Security & Zero Trust Architecture",
     "url": "services.html#tab-cyber",
     "anchor": "tab-cyber",
-    "content": "CloudSecurity &Zero Trust",
+    "content": "Cloud Security & Zero Trust Architecture",
     "type": "section"
   },
   {
     "pageTitle": "Sthiros - Services",
-    "sectionTitle": "Data Privacy& ProtectionEngineering",
+    "sectionTitle": "Data Privacy & Protection Engineering",
     "url": "services.html#tab-cyber",
     "anchor": "tab-cyber",
-    "content": "Data Privacy& ProtectionEngineering",
+    "content": "Data Privacy & Protection Engineering",
     "type": "section"
   },
   {
     "pageTitle": "Sthiros - Services",
-    "sectionTitle": "CyberResilience &CrisisReadiness",
+    "sectionTitle": "Cyber Resilience & Crisis Readiness",
     "url": "services.html#tab-cyber",
     "anchor": "tab-cyber",
-    "content": "CyberResilience &CrisisReadiness",
+    "content": "Cyber Resilience & Crisis Readiness",
     "type": "section"
   },
   {
@@ -9621,7 +9421,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Relatedcase studies",
     "url": "servicesai1.html#relatedcasestudiessec",
     "anchor": "relatedcasestudiessec",
-    "content": "Relatedcase studies Catching customs and demurrage risk 48 hours before it costs a steel exporter money Taking a manufacturer's intelligence from a 35 to one governed Smart Genba view Turning an undocumented risk practice into a Board-ready, CAG-audit-ready ERM framework Automating multilingual video creation for training and incident reporting, at scale Cutting manual cash bur",
+    "content": "Relatedcase studies Turning an undocumented risk practice into a Board-ready, CAG-audit-ready ERM framework Taking a manufacturer's intelligence from a 35 to one governed Smart Genba view",
     "type": "section"
   },
   {
@@ -9821,7 +9621,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Relatedcase studies",
     "url": "servicesai2.html#relatedcasestudiessec",
     "anchor": "relatedcasestudiessec",
-    "content": "Relatedcase studies Catching customs and demurrage risk 48 hours before it costs a steel exporter money Taking a manufacturer's intelligence from a 35 to one governed Smart Genba view Turning an undocumented risk practice into a Board-ready, CAG-audit-ready ERM framework Automating multilingual video creation for training and incident reporting, at scale Cutting manual cash bur",
+    "content": "Relatedcase studies Moving inventory intelligence beyond reactive ERP reporting, in 12 weeks Teaching machine data and Excel to speak one language, in real time Turning 10+ disconnected systems into one 'Eye' for 10,000+ users to see by Taking a manufacturer's intelligence from a 35 to one governed Smart Genba view Cutting manual cash burn reporting effort by 50-70%, in 25 busi",
     "type": "section"
   },
   {
@@ -10045,7 +9845,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Relatedcase studies",
     "url": "servicesai3.html#relatedcasestudiessec",
     "anchor": "relatedcasestudiessec",
-    "content": "Relatedcase studies Catching customs and demurrage risk 48 hours before it costs a steel exporter money Taking a manufacturer's intelligence from a 35 to one governed Smart Genba view Turning an undocumented risk practice into a Board-ready, CAG-audit-ready ERM framework Automating multilingual video creation for training and incident reporting, at scale Cutting manual cash bur",
+    "content": "Relatedcase studies Catching customs and demurrage risk 48 hours before it costs a steel exporter money Cutting manual cash burn reporting effort by 50-70%, in 25 business days Turning 200+ hours of manual airline work each month into real-time automation Cutting manual effort by 70% across a healthcare GCC, headcount unchanged",
     "type": "section"
   },
   {
@@ -10253,7 +10053,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Relatedcase studies",
     "url": "servicesai4.html#relatedcasestudiessec",
     "anchor": "relatedcasestudiessec",
-    "content": "Relatedcase studies Catching customs and demurrage risk 48 hours before it costs a steel exporter money Taking a manufacturer's intelligence from a 35 to one governed Smart Genba view Turning an undocumented risk practice into a Board-ready, CAG-audit-ready ERM framework Automating multilingual video creation for training and incident reporting, at scale Cutting manual cash bur",
+    "content": "Relatedcase studies Automating multilingual video creation for training and incident reporting, at scale Teaching machine data and Excel to speak one language, in real time Turning 10+ disconnected systems into one 'Eye' for 10,000+ users to see by",
     "type": "section"
   },
   {
@@ -10397,7 +10197,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Cybercase studies",
     "url": "servicescyber1.html#relatedcasestudiessec",
     "anchor": "relatedcasestudiessec",
-    "content": "Cybercase studies Turning an unencrypted, unlogged AWS environment into a CIS-benchmarked cloud estate Validating RBI and NPCI compliance across 500+ ATMs, with zero exceptions found Aligning a manufacturer's IT security with ISO 27001, NIST, and CIS, from scratch Finding anti-forensic tools and unauthorised access behind a suspected data theft Closing email spoofing and data c",
+    "content": "Cybercase studies Finding and fixing 10 critical web app vulnerabilities for an automotive cloud platform Identifying 9 OWASP Top 10 vulnerability categories across an IT company's web app and APIs",
     "type": "section"
   },
   {
@@ -10549,7 +10349,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Cybercase studies",
     "url": "servicescyber2.html#relatedcasestudiessec",
     "anchor": "relatedcasestudiessec",
-    "content": "Cybercase studies Turning an unencrypted, unlogged AWS environment into a CIS-benchmarked cloud estate Validating RBI and NPCI compliance across 500+ ATMs, with zero exceptions found Aligning a manufacturer's IT security with ISO 27001, NIST, and CIS, from scratch Finding anti-forensic tools and unauthorised access behind a suspected data theft Closing email spoofing and data c",
+    "content": "Cybercase studies Turning an unencrypted, unlogged AWS environment into a CIS-benchmarked cloud estate Validating RBI and NPCI compliance across 500+ ATMs, with zero exceptions found",
     "type": "section"
   },
   {
@@ -10709,7 +10509,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Cybercase studies",
     "url": "servicescyber3.html#relatedcasestudiessec",
     "anchor": "relatedcasestudiessec",
-    "content": "Cybercase studies Turning an unencrypted, unlogged AWS environment into a CIS-benchmarked cloud estate Validating RBI and NPCI compliance across 500+ ATMs, with zero exceptions found Aligning a manufacturer's IT security with ISO 27001, NIST, and CIS, from scratch Finding anti-forensic tools and unauthorised access behind a suspected data theft Closing email spoofing and data c",
+    "content": "Cybercase studies Turning 120+ controls across three geographies into one clean SOC 2 report Closing email spoofing and data classification gaps for a prominent banking services company Bringing 68 process areas into ISAE 3402 SOC compliance in 6 months flat",
     "type": "section"
   },
   {
@@ -10861,7 +10661,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Cybercase studies",
     "url": "servicescyber4.html#relatedcasestudiessec",
     "anchor": "relatedcasestudiessec",
-    "content": "Cybercase studies Turning an unencrypted, unlogged AWS environment into a CIS-benchmarked cloud estate Validating RBI and NPCI compliance across 500+ ATMs, with zero exceptions found Aligning a manufacturer's IT security with ISO 27001, NIST, and CIS, from scratch Finding anti-forensic tools and unauthorised access behind a suspected data theft Closing email spoofing and data c",
+    "content": "Cybercase studies Finding anti-forensic tools and unauthorised access behind a suspected data theft Aligning a manufacturer's IT security with ISO 27001, NIST, and CIS, from scratch",
     "type": "section"
   },
   {
@@ -10885,7 +10685,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Services",
     "url": "servicesinner.html",
     "anchor": "",
-    "content": "﻿ Services WHAT WE DO → STRATEGY → BUSINESS & GROWTH STRATEGY The operating model is where growth plans actually break. For an established business entering India or the US, or restructuring after a decade of accumulated complexity, the risk sits in sequencing: when to enter, what to build first, how fast to scale. Founder-led companies run into th",
+    "content": "Services WHAT WE DO → STRATEGY → BUSINESS & GROWTH STRATEGY The operating model is where growth plans actually break. For an established business entering India or the US, or restructuring after a decade of accumulated complexity, the risk sits in sequencing: when to enter, what to build first, how fast to scale. Founder-led companies run into the",
     "type": "page"
   },
   {
@@ -11165,7 +10965,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Relatedcase studies",
     "url": "strategy1.html#relatedcasestudiessec",
     "anchor": "relatedcasestudiessec",
-    "content": "Relatedcase studies Cutting manual effort by 70% across a healthcare GCC, headcount unchanged Unifying a global fintech's finance operations across 9 entities and 6 countries onto one ERP Turning three deal-flow bottlenecks into one AI-orchestrated due diligence platform, in 36 weeks Taking Supplier Paid On Time from 65.87% to 78.79%, without new technology Delivering $60M+ in ",
+    "content": "Relatedcase studies When a 1,500-Crore retailer's finance function had to be rebuilt from memory into process, in 8 months Unifying a global fintech's finance operations across 9 entities and 6 countries onto one ERP Turning three deal-flow bottlenecks into one AI-orchestrated due diligence platform, in 36 weeks",
     "type": "section"
   },
   {
@@ -11357,7 +11157,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Relatedcase studies",
     "url": "strategy2.html#relatedcasestudiessec",
     "anchor": "relatedcasestudiessec",
-    "content": "Relatedcase studies Cutting manual effort by 70% across a healthcare GCC, headcount unchanged Unifying a global fintech's finance operations across 9 entities and 6 countries onto one ERP Turning three deal-flow bottlenecks into one AI-orchestrated due diligence platform, in 36 weeks Taking Supplier Paid On Time from 65.87% to 78.79%, without new technology Delivering $60M+ in ",
+    "content": "Relatedcase studies Turning a year of construction into an IFRS-compliant, SAP-ready Rs. 213 Crore asset register Validating Rs. 4,722 Crores in disbursements and preventing Rs. 70.84 Crores in erroneous payments",
     "type": "section"
   },
   {
@@ -11509,7 +11309,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Relatedcase studies",
     "url": "strategy3.html#relatedcasestudiessec",
     "anchor": "relatedcasestudiessec",
-    "content": "Relatedcase studies Cutting manual effort by 70% across a healthcare GCC, headcount unchanged Unifying a global fintech's finance operations across 9 entities and 6 countries onto one ERP Turning three deal-flow bottlenecks into one AI-orchestrated due diligence platform, in 36 weeks Taking Supplier Paid On Time from 65.87% to 78.79%, without new technology Delivering $60M+ in ",
+    "content": "Relatedcase studies Automating 11+ SAP-dependent processes down to a 5-minute execution cycle Unifying a global fintech's finance operations across 9 entities and 6 countries onto one ERP Cutting manual effort by 70% across a healthcare GCC, headcount unchanged",
     "type": "section"
   },
   {
@@ -11693,7 +11493,7 @@ window.__sthirosSearchIndex = [
     "sectionTitle": "Relatedcase studies",
     "url": "strategy4.html#relatedcasestudiessec",
     "anchor": "relatedcasestudiessec",
-    "content": "Relatedcase studies Cutting manual effort by 70% across a healthcare GCC, headcount unchanged Unifying a global fintech's finance operations across 9 entities and 6 countries onto one ERP Turning three deal-flow bottlenecks into one AI-orchestrated due diligence platform, in 36 weeks Taking Supplier Paid On Time from 65.87% to 78.79%, without new technology Delivering $60M+ in ",
+    "content": "Relatedcase studies Taking Supplier Paid On Time from 65.87% to 78.79%, without new technology Delivering $60M+ in benefits across a multi-year, multi-country BFSI transformation When a global SSC turned four years of discipline into $360M Fixing discharge delays, radiology waits, and seven other symptoms, one hospital system at a time",
     "type": "section"
   },
   {

@@ -5,7 +5,10 @@
 /* ── Pacaembu Custom Font ── */
 @font-face {
   font-family: 'Pacaembu';
-  src: local('Pacaembu'), local('Pacaembu-Regular'), local('Pacaembu Regular'), url('../Pacaembu-Regular.ttf') format('truetype');
+  src: local('Pacaembu'), local('Pacaembu-Regular'), local('Pacaembu Regular'), local('Pacaembu Trial'),
+       url('../Pacaembu-Regular.woff') format('woff'),
+       url('https://fonts.cdnfonts.com/s/87922/Pacaembu-Regular-Trial.woff') format('woff'),
+       url('../Pacaembu-Regular.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -13,7 +16,10 @@
 
 @font-face {
   font-family: 'Pacaembu';
-  src: local('Pacaembu'), local('Pacaembu-Regular'), local('Pacaembu Regular'), url('../Pacaembu-Regular.ttf') format('truetype');
+  src: local('Pacaembu'), local('Pacaembu-Regular'), local('Pacaembu Regular'), local('Pacaembu Trial'),
+       url('../Pacaembu-Regular.woff') format('woff'),
+       url('https://fonts.cdnfonts.com/s/87922/Pacaembu-Regular-Trial.woff') format('woff'),
+       url('../Pacaembu-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -21,7 +27,10 @@
 
 @font-face {
   font-family: 'Pacaembu';
-  src: local('Pacaembu Bold'), local('Pacaembu-Bold'), local('Pacaembu'), url('../Pacaembu-Regular.ttf') format('truetype');
+  src: local('Pacaembu Bold'), local('Pacaembu-Bold'), local('Pacaembu'), local('Pacaembu Trial'),
+       url('../Pacaembu-Bold.woff') format('woff'),
+       url('https://fonts.cdnfonts.com/s/87922/Pacaembu-Bold-Trial.woff') format('woff'),
+       url('../Pacaembu-Regular.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1570,7 +1579,7 @@ body.light-mode .stat-label {
   margin-bottom: 20px;
 }
 
-#realstoriesheading h1 {
+#realstoriesheading h1, #realstoriesheading h2 {
   font-family: 'Pacaembu', sans-serif;
   font-weight: 600;
   font-size: clamp(40px, 6vw, 80px);
@@ -1579,7 +1588,7 @@ body.light-mode .stat-label {
   margin: 0;
 }
 
-#realstoriesheading h1 span {
+#realstoriesheading h1 span, #realstoriesheading h2 span {
   color: #EF4623;
 }
 
@@ -1892,7 +1901,7 @@ body.light-mode .stat-label {
   padding: 0 20px;
 }
 
-#workholdheading h1 {
+#workholdheading h1, #workholdheading h2 {
   font-family: 'Pacaembu', sans-serif;
   font-size: clamp(40px, 7vw, 90px);
   font-style: normal;
@@ -1902,7 +1911,7 @@ body.light-mode .stat-label {
   margin: 0;
 }
 
-#workholdheading h1 span {
+#workholdheading h1 span, #workholdheading h2 span {
   color: #EF4623;
 }
 
@@ -2134,7 +2143,7 @@ body.light-mode .stat-label {
   margin: 0 0 28px 0;
 }
 
-#ourstory h1 {
+#ourstory h1, #ourstory h2 {
   font-family: 'Pacaembu', sans-serif;
   font-size: clamp(38px, 6.5vw, 90px);
   font-style: normal;
@@ -2144,7 +2153,7 @@ body.light-mode .stat-label {
   margin: 0 0 36px 0;
 }
 
-#ourstory h1 span {
+#ourstory h1 span, #ourstory h2 span {
   color: #EF4623;
   /* Exact vibrant orange-red color for 'simplifying the complex.' */
 }
@@ -3784,7 +3793,7 @@ body.light-mode .stat-label {
 }
 
 .cta-title {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Pacaembu', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: clamp(40px, 5.5vw, 84px);
@@ -5382,7 +5391,7 @@ body.light-mode .section-hero {
 }
 
 body.light-mode #herosectionmobilescreen {
-  background-color: #000000;
+  background: #000000 url('../images/sthiros_banner_mobile.jpg') no-repeat center center / cover;
   position: relative;
   z-index: 0;
 }
@@ -5470,7 +5479,7 @@ body.light-mode .ai-service-img {
 }
 
 /* ── Real Stories Section Light Mode ── */
-body.light-mode #realstoriesheading h1 {
+body.light-mode #realstoriesheading h1, body.light-mode #realstoriesheading h2 {
   color: #000000;
 }
 
@@ -5497,7 +5506,7 @@ body.light-mode .story-card-icon {
 }
 
 /* ── Work Holds Section Light Mode ── */
-body.light-mode #workholdheading h1 {
+body.light-mode #workholdheading h1, body.light-mode #workholdheading h2 {
   color: #000000;
 }
 
@@ -5514,7 +5523,7 @@ body.light-mode #ourstory h4 {
   color: #666666;
 }
 
-body.light-mode #ourstory h1 {
+body.light-mode #ourstory h1, body.light-mode #ourstory h2 {
   color: #000000;
 }
 
@@ -6281,11 +6290,11 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
   }
 }
 
-/* 1600px screens (~1451px to 1750px, e.g. MacBook Air 1559px, 1600px desktop):
-   Move hero text and action buttons up to align with the visual artwork */
+/* 1920px at 125% scale & 1600px screens (1451px to 1750px):
+   Position hero text section down properly to match 1920px 100% scale alignment */
 @media screen and (min-width: 1451px) and (max-width: 1750px) {
   .hero-inner {
-    padding: 40px 0 280px 0;
+    padding: 40px 0 180px 0;
   }
 }
 
@@ -6642,13 +6651,14 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
     padding-top: 80px;
     padding-bottom: 150px;
     overflow-x: clip;
+    background: #000000 url('../images/sthiros_banner_mobile.jpg') no-repeat center center / cover;
   }
 
   .hero-mobile-container {
     display: flex;
     flex-direction: column;
     position: relative;
-    z-index: 2;
+    z-index: auto;
     padding: 0px 20px;
   }
 
@@ -6677,16 +6687,15 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
 
   .hero-mobile-hand-clipper {
     width: 100%;
-    overflow: hidden;
+    overflow: visible;
     position: relative;
-    z-index: 2;
-    mix-blend-mode: screen;
+    z-index: auto;
     pointer-events: none;
   }
 
   .hero-mobile-hand-wrap {
     position: relative;
-    z-index: 2;
+    z-index: auto;
     width: 165vw;
     max-width: 680px;
     min-width: 580px;
@@ -6695,7 +6704,6 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
     margin-top: -30px;
     pointer-events: none;
     display: block;
-    mix-blend-mode: screen;
   }
 
   .hero-mobile-hand {
@@ -6703,7 +6711,7 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
     height: auto;
     display: block;
     mix-blend-mode: screen;
-    opacity: 0.95;
+    opacity: 1;
     pointer-events: none;
   }
 
@@ -6716,8 +6724,8 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
     object-fit: contain;
     mix-blend-mode: screen;
     pointer-events: none;
-    z-index: 2;
-    opacity: 0.95;
+    z-index: auto;
+    opacity: 1;
     transform: scale(0.55) translateY(-14%);
     transform-origin: 75% 35%;
   }
@@ -6975,7 +6983,7 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
     font-size: 2.8rem !important;
   }
 
-  #realstoriesheading h1 {
+  #realstoriesheading h1, #realstoriesheading h2 {
     font-size: 65px !important;
   }
 
@@ -6996,7 +7004,7 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
     height: 55px;
   }
 
-  #workholdheading h1 {
+  #workholdheading h1, #workholdheading h2 {
     font-size: 70px !important;
     line-height: 1.15 !important;
   }
@@ -7005,7 +7013,7 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
     top: calc(50vh - 250px) !important;
   }
 
-  #ourstory h1 {
+  #ourstory h1, #ourstory h2 {
     font-size: 70px !important;
     line-height: 1.15 !important;
   }
@@ -7024,6 +7032,19 @@ body.light-mode .skipthedeskcont .hero-btn-inner:hover {
 
   .strategy-content {
     margin-top: 20px !important;
+  }
+}
+
+/* 1400px & 1440px screens: Header navigation single-line fit */
+@media screen and (min-width: 1367px) and (max-width: 1450px) {
+  .d-nav-list {
+    gap: 18px !important;
+  }
+
+  .d-nav-list>li>a {
+    font-size: 12px !important;
+    letter-spacing: 1px !important;
+    white-space: nowrap !important;
   }
 }
 
@@ -7523,7 +7544,7 @@ body.light-mode .footer-menu li {
    ════════════════════════════════════════════════════════════════ */
 @media (max-width: 768px) {
   /* 1. Real stories from our case files heading (Image 1) */
-  #realstoriesheading h1 {
+  #realstoriesheading h1, #realstoriesheading h2 {
     font-size: clamp(24px, 6.5vw, 30px) !important;
     line-height: 1.25 !important;
     text-align: center !important;
@@ -7571,7 +7592,7 @@ body.light-mode .footer-menu li {
   }
 
   /* 3. Why the work holds after we leave heading (Image 2) */
-  #workholdheading h1 {
+  #workholdheading h1, #workholdheading h2 {
     font-size: clamp(24px, 6.5vw, 30px) !important;
     line-height: 1.25 !important;
     text-align: center !important;
@@ -7718,7 +7739,7 @@ body.light-mode .footer-menu li {
   }
 
   /* 5. Decades of simplifying the complex. heading (Image 4) */
-  #ourstory h1 {
+  #ourstory h1, #ourstory h2 {
     font-size: clamp(24px, 6.5vw, 30px) !important;
     line-height: 1.25 !important;
     text-align: center !important;
@@ -7842,7 +7863,7 @@ body.light-mode .footer-menu li {
   }
 
   .cta-title {
-    font-family: 'Quicksand', sans-serif !important;
+    font-family: 'Pacaembu', sans-serif !important;
     font-weight: 300 !important;
     font-size: clamp(48px, 12.5vw, 62px) !important;
     line-height: 1.08 !important;
@@ -8789,10 +8810,10 @@ body.light-mode .footer-menu li {
 
 
 /* Maintain span highlight colors in light mode */
-body.light-mode #realstoriesheading h1 span,
-body.light-mode #workholdheading h1 span,
+body.light-mode #realstoriesheading h1 span, body.light-mode #realstoriesheading h2 span,
+body.light-mode #workholdheading h1 span, body.light-mode #workholdheading h2 span,
 body.light-mode .workhold-card-title span,
-body.light-mode #ourstory h1 span {
+body.light-mode #ourstory h1 span, body.light-mode #ourstory h2 span {
   color: #EF4623 !important;
 }
 

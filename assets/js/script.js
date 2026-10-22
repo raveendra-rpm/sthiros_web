@@ -2570,7 +2570,7 @@ function initOurWorkPageScroll() {
    REAL STORIES SLIDER LOGIC
    ════════════════════════════════════════════ */
 function initRealStoriesSlider() {
-  const heading = document.querySelector('#realstoriesheading h1');
+  const heading = document.querySelector('#realstoriesheading h1, #realstoriesheading h2');
   if (heading) {
     gsap.fromTo(heading,
       { opacity: 0, y: 50, scale: 0.95 },
@@ -2692,7 +2692,7 @@ function initWorkholdSlider() {
   const section = document.getElementById('workholdslidecont');
   const track = document.getElementById('workholdCardsTrack');
   const wrapper = document.querySelector('.workhold-pinned-wrapper');
-  const heading = document.querySelector('#workholdheading h1');
+  const heading = document.querySelector('#workholdheading h1, #workholdheading h2');
   const prevBtn = document.getElementById('workholdPrevBtn');
   const nextBtn = document.getElementById('workholdNextBtn');
 

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css?v=56" />
+    <link rel="stylesheet" href="assets/css/style.css?v=58" />
 
     <style>
         /* Force red text in light mode for Four Pillars on mobile */
@@ -24,6 +24,115 @@
         #latest-thinking .rcs-card:hover {
             transform: none !important;
         }
+
+        /* Mobile Hero Background & Video Transparency: sthiros_banner_mobile.jpg for dark & light mode */
+        @media (max-width: 768px) {
+            #herosectionmobilescreen,
+            body.light-mode #herosectionmobilescreen {
+                background: #000000 url('assets/images/sthiros_banner_mobile.jpg') no-repeat center center / cover !important;
+            }
+
+            .hero-mobile-container {
+                z-index: auto !important;
+            }
+
+            .hero-mobile-hand-clipper {
+                overflow: visible !important;
+                z-index: auto !important;
+                mix-blend-mode: normal !important;
+            }
+
+            .hero-mobile-hand-wrap {
+                z-index: auto !important;
+                mix-blend-mode: normal !important;
+            }
+
+            .hero-mobile-hand {
+                opacity: 1 !important;
+                mix-blend-mode: screen !important;
+            }
+
+            .hero-mobile-hand-video {
+                opacity: 1 !important;
+                mix-blend-mode: screen !important;
+                z-index: auto !important;
+            }
+        }
+    
+        /* Preserve exact typography and styling for Real Stories, Work Holds, and Our Story H2 headings */
+        #realstoriesheading h2 {
+            font-family: 'Pacaembu', sans-serif;
+            font-weight: 600;
+            font-size: clamp(40px, 6vw, 80px);
+            line-height: 1.15;
+            color: #fff;
+            margin: 0;
+        }
+
+        #realstoriesheading h2 span {
+            color: #EF4623;
+        }
+
+        body.light-mode #realstoriesheading h2 {
+            color: #000000;
+        }
+
+        #workholdheading h2 {
+            font-family: 'Pacaembu', sans-serif;
+            font-size: clamp(40px, 7vw, 90px);
+            font-style: normal;
+            font-weight: 600;
+            line-height: clamp(48px, 7.8vw, 100px);
+            color: #fff;
+            margin: 0;
+        }
+
+        #workholdheading h2 span {
+            color: #EF4623;
+        }
+
+        body.light-mode #workholdheading h2 {
+            color: #000000;
+        }
+
+        #ourstory h2 {
+            font-family: 'Pacaembu', sans-serif;
+            font-size: clamp(38px, 6.5vw, 90px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: clamp(46px, 7.2vw, 100px);
+            color: #FFFFFF;
+            margin: 0 0 36px 0;
+        }
+
+        #ourstory h2 span {
+            color: #EF4623;
+        }
+
+        body.light-mode #ourstory h2 {
+            color: #000000;
+        }
+
+        @media screen and (max-width: 1450px) {
+            #realstoriesheading h2 {
+                font-size: 65px !important;
+            }
+
+            #workholdheading h2 {
+                font-size: 70px !important;
+                line-height: 1.15 !important;
+            }
+        }
+
+        /* Ensure all headings across index.html strictly use Pacaembu font-family */
+        h1, h2, h3, h4, h5, h6,
+        h1 *, h2 *, h3 *, h4 *, h5 *, h6 *,
+        h2.cta-title,
+        .cta-title,
+        h3.footer-heading,
+        .footer-heading {
+            font-family: 'Pacaembu', sans-serif !important;
+        }
     </style>
 </head>
 
@@ -32,7 +141,7 @@
     <div id="sthiros-password-gate"
         style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000; z-index: 9999999; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Quicksand', sans-serif;">
         <div style="text-align: center;">
-            <h2 style="color: #fff; font-size: 24px; margin-bottom: 25px; font-weight: 500;">Please enter password to
+            <h2 style="color: #fff; font-size: 24px; margin-bottom: 25px; font-weight: 500; font-family: 'Pacaembu', sans-serif !important;">Please enter password to
                 access site</h2>
             <div style="display: flex; gap: 10px; justify-content: center;">
                 <input type="password" id="sthiros-gate-input" placeholder="Enter password"
@@ -376,11 +485,11 @@
 
         <!-- Vector 1: right-side rails + bottom-right horizontal line (behind hand) -->
         <div class="hero-vec-1" aria-hidden="true">
-            <img src="assets/hero_vector_1.svg?v=2" alt="">
+            <img src="assets/hero_vector_1.svg?v=2" alt="hero_vector_1">
         </div>
 
         <!-- Robotic hand (in front of vector 1, behind text) -->
-        <img src="assets/robotic_hand_1.png" alt="" class="hero-hand" aria-hidden="true">
+        <img src="assets/robotic_hand_1.png" alt="robotic_hand_1" class="hero-hand" aria-hidden="true">
 
         <!-- Rotating cube video overlay -->
         <video class="hero-hand-video" autoplay loop muted playsinline>
@@ -393,7 +502,7 @@
             <!-- The Corner -->
             <div class="hero-vec-2-corner"
                 style="position: absolute; left: 0; top: 0; width: calc(var(--rail-h) * 460 / 918);">
-                <img src="assets/hero_vector_2.svg?v=3" alt="" style="width: 100%; height: auto; display: block;">
+                <img src="assets/hero_vector_2.svg?v=3" alt="hero_vector_2" style="width: 100%; height: auto; display: block;">
             </div>
             <!-- The Bridge (stretches to fill gap) -->
             <svg class="hero-vec-bridge" preserveAspectRatio="none" viewBox="0 0 100 73.87"
@@ -753,7 +862,7 @@
                             <p class="smr-sub">We provide the Structural Blueprints for market entry, financial
                                 transactions, and organizational acceleration.</p>
                             <a class="smr-link" href="services.html?tab=strategy">Know more
-                                <img src="assets/images/arrowred.png" alt=""></a>
+                                <img src="assets/images/arrowred.png" alt="arrowred"></a>
                         </div>
                     </div>
 
@@ -767,7 +876,7 @@
                             <p class="smr-sub">Gaps are where we start. What we actually build is the governance and
                                 operational resilience that let you take risks on purpose.</p>
                             <a class="smr-link" href="services.html?tab=risk">Know more
-                                <img src="assets/images/arrowred.png" alt=""></a>
+                                <img src="assets/images/arrowred.png" alt="arrowred"></a>
                         </div>
                     </div>
 
@@ -792,7 +901,7 @@
                                 and
                                 the data itself, and secure what's actually there.</p>
                             <a class="smr-link" href="services.html?tab=cyber">Know more
-                                <img src="assets/images/arrowred.png" alt=""></a>
+                                <img src="assets/images/arrowred.png" alt="arrowred"></a>
                         </div>
                     </div>
 
@@ -806,7 +915,7 @@
                             <p class="smr-sub">IT keeps the lights on. We build the intelligent systems and the agentic
                                 workforce that carry the business forward.</p>
                             <a class="smr-link" href="services.html?tab=ai">Know more
-                                <img src="assets/images/arrowred.png" alt=""></a>
+                                <img src="assets/images/arrowred.png" alt="arrowred"></a>
                         </div>
                     </div>
                 </div>
@@ -943,7 +1052,7 @@
                                             <a href="services.html?tab=cyber"
                                                 style="display: inline-flex; align-items: center; gap: 8px; color: #EC2D26; text-decoration: none; font-size: 1.5rem; font-weight: 600; margin-top: 0; position: relative; z-index: 999; pointer-events: auto;">
                                                 Know more
-                                                <img src="assets/images/arrowred.png" alt=""
+                                                <img src="assets/images/arrowred.png" alt="arrowred"
                                                     style="width: 20px; height: auto;">
                                             </a>
                                         </div>
@@ -965,7 +1074,7 @@
                                                 <a href="services.html?tab=ai"
                                                     style="display: inline-flex; align-items: center; gap: 8px; color: #EC2D26; text-decoration: none; font-size: 1.5rem; font-weight: 600; margin-top: 0; position: relative; z-index: 999; pointer-events: auto;">
                                                     Know more
-                                                    <img src="assets/images/arrowred.png" alt=""
+                                                    <img src="assets/images/arrowred.png" alt="arrowred"
                                                         style="width: 20px; height: auto;">
                                                 </a>
                                             </div>
@@ -987,7 +1096,7 @@
                                     <a href="services.html?tab=risk"
                                         style="display: inline-flex; align-items: center; gap: 8px; color: #EC2D26; text-decoration: none; font-size: 1.5rem; font-weight: 600; margin-top: 0; position: relative; z-index: 999; pointer-events: auto;">
                                         Know more
-                                        <img src="assets/images/arrowred.png" alt="" style="width: 20px; height: auto;">
+                                        <img src="assets/images/arrowred.png" alt="arrowred" style="width: 20px; height: auto;">
                                     </a>
                                 </div>
                             </div>
@@ -1005,7 +1114,7 @@
                         <a href="services.html?tab=strategy"
                             style="display: inline-flex; align-items: center; gap: 8px; color: #EC2D26; text-decoration: none; font-size: 1.5rem; font-weight: 600; margin-top: 0; position: relative; z-index: 999; pointer-events: auto;">
                             Know more
-                            <img src="assets/images/arrowred.png" alt="" style="width: 20px; height: auto;">
+                            <img src="assets/images/arrowred.png" alt="arrowred" style="width: 20px; height: auto;">
                         </a>
                     </div>
                 </div>
@@ -1062,7 +1171,7 @@
             </svg>
         </div>
         <div id="realstoriesheading">
-            <h1><span>Real stories</span><br />from our case files</h1>
+            <h2><span>Real stories</span><br />from our case files</h2>
         </div>
 
         <!-- Stories Cards Slider Section -->
@@ -1071,7 +1180,7 @@
                 <div class="stories-slider-track" id="storiesSliderTrack">
                     <!-- Card 1: Strategy -->
                     <div class="story-card">
-                        <img src="assets/images/strategy_sthiros_clip.png" alt="" class="story-card-bg-clip"
+                        <img src="assets/images/strategy_sthiros_clip.png" alt="strategy_sthiros_clip" class="story-card-bg-clip"
                             aria-hidden="true">
                         <div class="story-card-left">
                             <img src="assets/images/s_img_sthiros.png" alt="Strategy Logo" class="story-card-icon">
@@ -1089,7 +1198,7 @@
 
                     <!-- Card 2: Risk -->
                     <div class="story-card">
-                        <img src="assets/images/risk_sthiros_clip.png" alt="" class="story-card-bg-clip"
+                        <img src="assets/images/risk_sthiros_clip.png" alt="risk_sthiros_clip" class="story-card-bg-clip"
                             aria-hidden="true">
                         <div class="story-card-left">
                             <img src="assets/images/o_img_sthiros.png" alt="Risk Logo" class="story-card-icon">
@@ -1108,7 +1217,7 @@
 
                     <!-- Card 3: Cyber -->
                     <div class="story-card">
-                        <img src="assets/images/cyber_sthiros_clip.png" alt="" class="story-card-bg-clip"
+                        <img src="assets/images/cyber_sthiros_clip.png" alt="cyber_sthiros_clip" class="story-card-bg-clip"
                             aria-hidden="true">
                         <div class="story-card-left">
                             <img src="assets/images/c_img_sthiros.png" alt="Cyber Logo" class="story-card-icon">
@@ -1127,7 +1236,7 @@
 
                     <!-- Card 4: AI -->
                     <div class="story-card">
-                        <img src="assets/images/ai_sthiros_clip.png" alt="" class="story-card-bg-clip"
+                        <img src="assets/images/ai_sthiros_clip.png" alt="ai_sthiros_clip" class="story-card-bg-clip"
                             aria-hidden="true">
                         <div class="story-card-left">
                             <img src="assets/images/ai_img_sthiros.png" alt="AI Logo" class="story-card-icon">
@@ -1209,7 +1318,7 @@
         </div>
 
         <div id="workholdheading">
-            <h1>Why the <span style="color: #EF4623 !important;">work holds</span><br /> after we leave</h1>
+            <h2>Why the <span style="color: #EF4623 !important;">work holds</span><br /> after we leave</h2>
         </div>
 
         <div id="workholdslidecont">
@@ -1338,7 +1447,7 @@
         <div id="ourstory">
             <h4>Our story</h4>
             <hr class="thinking-divider top-divider">
-            <h1>Decades of<br /><span style="color: #EF4623 !important;">simplifying the complex.</span></h1>
+            <h2>Decades of<br /><span style="color: #EF4623 !important;">simplifying the complex.</span></h2>
             <p>Sthiros began as a risk boutique enterprise. As the organisations we served grow more interconnected, so
                 do the problems they bring us, until risk, strategy, security, and technology stopped being separate
                 conversations.
@@ -1702,10 +1811,10 @@
             <hr class="thinking-divider bottom-divider">
             <div class="rcs-container" id="rcs-slider-container">
                 <!-- Card 1 -->
-                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/AIcasestudypdf/STHIROS · AI · AGENTIC OPERATIONS & AUTOMATION · STEEL MANUFACTURING, EXPORT LOGISTICS.pdf', '_blank')">
+                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/AIcasestudypdf/STHIROS_AI_AGENTIC_OPERATIONS_AND_AUTOMATION_STEEL_MANUFACTURING_EXPORT_LOGISTICS.pdf', '_blank')">
                     <img src="assets/images/casestudybannerimg/STHIROS · AI · AGENTIC OPERATIONS & AUTOMATION · STEEL MANUFACTURING, EXPORT LOGISTICS.png" class="rcs-bg" alt="Case Study">
                     <div class="rcs-overlay"></div>
-                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="card_glow effect_sthiros">
                     <div class="rcs-content">
                         <div class="rcs-text">
                             <p class="rcs-desc">Catching customs and demurrage risk 48 hours before it costs a steel exporter money</p>
@@ -1717,10 +1826,10 @@
                     </div>
                 </div>
                 <!-- Card 2 -->
-                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/sthiroscasestudypdf/Manufature/STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · AUTOMOTIVE, MANUFACTURING.pdf', '_blank')">
+                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/sthiroscasestudypdf/Manufature/STHIROS_AI_AI_STRATEGY_AND_SOVEREIGN_GOVERNANCE_AUTOMOTIVE_MANUFACTURING.pdf', '_blank')">
                     <img src="assets/images/casestudybannerimg/STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · AUTOMOTIVE, MANUFACTURING.png" class="rcs-bg" alt="Case Study">
                     <div class="rcs-overlay"></div>
-                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="card_glow effect_sthiros">
                     <div class="rcs-content">
                         <div class="rcs-text">
                             <p class="rcs-desc">Taking a manufacturer's intelligence from a 35 to one governed Smart Genba view</p>
@@ -1732,10 +1841,10 @@
                     </div>
                 </div>
                 <!-- Card 3 -->
-                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/sthiroscasestudypdf/Telecom/STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · GOVERNMENT & DIGITAL INFRASTRUCTURE.pdf', '_blank')">
+                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/sthiroscasestudypdf/Telecom/STHIROS_AI_AI_STRATEGY_AND_SOVEREIGN_GOVERNANCE_GOVERNMENT_AND_DIGITAL_INFRASTRUCTURE.pdf', '_blank')">
                     <img src="assets/images/casestudybannerimg/STHIROS · AI · AI STRATEGY & SOVEREIGN GOVERNANCE · GOVERNMENT & DIGITAL INFRASTRUCTURE.png" class="rcs-bg" alt="Case Study">
                     <div class="rcs-overlay"></div>
-                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="card_glow effect_sthiros">
                     <div class="rcs-content">
                         <div class="rcs-text">
                             <p class="rcs-desc">Turning an undocumented risk practice into a Board-ready, CAG-audit-ready ERM framework</p>
@@ -1747,10 +1856,10 @@
                     </div>
                 </div>
                 <!-- Card 4 -->
-                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/AIcasestudypdf/STHIROS · AI · COGNITIVE EXPERIENCE & ENGINEERING · CROSS-INDUSTRY.pdf', '_blank')">
+                <div class="rcs-card sthiros-glow-card" onclick="window.open('assets/AIcasestudypdf/STHIROS_AI_COGNITIVE_EXPERIENCE_AND_ENGINEERING_CROSS-INDUSTRY.pdf', '_blank')">
                     <img src="assets/images/casestudybannerimg/STHIROS · AI · COGNITIVE EXPERIENCE & ENGINEERING · CROSS-INDUSTRY.png" class="rcs-bg" alt="Case Study">
                     <div class="rcs-overlay"></div>
-                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="">
+                    <img src="assets/images/servicesinnpage/card_glow effect_sthiros.png" class="sthiros-hover-glow-effect" alt="card_glow effect_sthiros">
                     <div class="rcs-content">
                         <div class="rcs-text">
                             <p class="rcs-desc">Automating multilingual video creation for training and incident reporting, at scale</p>
