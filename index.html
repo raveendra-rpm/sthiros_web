@@ -134,6 +134,174 @@
         .footer-heading {
             font-family: 'Pacaembu', sans-serif !important;
         }
+
+        /* Four Pillars section desktop screen paragraph font-family: Quicksand */
+        @media (min-width: 769px) {
+            #services .section-center-para {
+                font-family: 'Quicksand', sans-serif !important;
+            }
+        }
+
+        /* Four Pillars Strategy paragraph text font-family: Quicksand */
+        .strategy-sub,
+        .strategy-content p {
+            font-family: 'Quicksand', sans-serif !important;
+        }
+
+        /* Whatever your industry, the gap looks familiar desktop heading font size slightly reduced */
+        @media (min-width: 769px) {
+            .industries-new-title {
+                font-size: clamp(34px, 4.2vw, 58px) !important;
+                line-height: 1.15 !important;
+            }
+        }
+        @media (min-width: 769px) and (max-width: 1280px) {
+            .industries-new-title {
+                font-size: 46px !important;
+            }
+        }
+        @media (min-width: 1281px) and (max-width: 1440px) {
+            .industries-new-title {
+                font-size: 52px !important;
+            }
+        }
+
+        /* Specific adjustments for ~1098px screen range (1025px to 1180px) */
+        @media screen and (min-width: 1025px) and (max-width: 1180px) {
+            /* 1. Header menu fitting so it does not collide with logo */
+            .site-header {
+                padding: 0 20px !important;
+            }
+
+            .header-left .site-logo {
+                height: 22px !important;
+            }
+
+            .desktop-nav {
+                margin-right: 15px !important;
+            }
+
+            .d-nav-list {
+                gap: 12px !important;
+            }
+
+            .d-nav-list > li > a {
+                font-size: 10.5px !important;
+                letter-spacing: 0.8px !important;
+            }
+
+            .header-right {
+                gap: 12px !important;
+            }
+
+            .header-search {
+                width: 165px !important;
+            }
+
+            .header-search-input {
+                font-size: 11.5px !important;
+            }
+
+            /* 2. Hero "When complexity rises, Sthiros holds." text slightly smaller & moved slightly up */
+            .hero-inner {
+                padding-bottom: 150px !important;
+            }
+
+            .hero-text {
+                transform: translateY(-30px) !important;
+            }
+
+            .hero-headline {
+                font-size: 52px !important;
+                line-height: 1.05 !important;
+            }
+
+            .hero-sub {
+                font-size: 15px !important;
+                line-height: 1.45 !important;
+                max-width: 460px !important;
+            }
+
+            .hero-actions {
+                margin-top: 25px !important;
+                gap: 14px !important;
+            }
+
+            .hero-btn-inner {
+                font-size: 13px !important;
+                padding: 6px 20px !important;
+            }
+
+            /* 3. Hero Section SVG Line Broadness (Thickness) reduced to match Four Pillars (.first-svg)
+               Scale factor: 50vw / 991 (matches Four Pillars width: 50% / viewBox: 991)
+               Position/Corner/Movement anchored at the exact same baseline */
+            .hero-vec-2-wrapper {
+                position: absolute !important;
+                left: var(--rail-inset) !important;
+                top: calc(var(--rail-h) * 844.546 / 918) !important;
+                width: calc(100vw - 2 * var(--rail-inset) - (1177 * 50vw / 991) + 4px) !important;
+                height: calc(567 * 50vw / 991) !important;
+                z-index: 1 !important;
+                pointer-events: none !important;
+            }
+
+            .hero-vec-2-corner {
+                position: absolute !important;
+                left: 0 !important;
+                top: 0 !important;
+                width: calc(460 * 50vw / 991) !important;
+            }
+
+            .hero-vec-2-corner img {
+                width: 100% !important;
+                height: auto !important;
+                display: block !important;
+            }
+
+            .hero-vec-bridge {
+                position: absolute !important;
+                left: calc(459 * 50vw / 991) !important;
+                top: 0 !important;
+                height: calc(73.87 * 50vw / 991) !important;
+                width: calc(100% - (459 * 50vw / 991) + 2px) !important;
+                display: block !important;
+            }
+
+            .hero-vec-1 {
+                position: absolute !important;
+                top: 0 !important;
+                right: var(--rail-inset) !important;
+                width: calc(1177 * 50vw / 991) !important;
+                height: calc(var(--rail-h) * 844.546 / 918 + (73.87 * 50vw / 991)) !important;
+                z-index: 1 !important;
+                pointer-events: none !important;
+            }
+
+            .hero-vec-1::before {
+                content: '' !important;
+                position: absolute !important;
+                top: 0 !important;
+                right: 0 !important;
+                height: calc(var(--rail-h) * 844.546 / 918 - (844.546 * 50vw / 991) + 2px) !important;
+                width: calc(73.95 * 50vw / 991) !important;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' viewBox='0 0 73.95 100'%3E%3Crect x='0' y='0' width='4.16' height='100' fill='%23EC2D26'/%3E%3Crect x='9.93' y='0' width='6.16' height='100' fill='%23EC2D26'/%3E%3Crect x='24.63' y='0' width='12.33' height='100' fill='%23EC2D26'/%3E%3Crect x='49.32' y='0' width='24.63' height='100' fill='%23EC2D26'/%3E%3C/svg%3E") !important;
+                background-size: 100% 100% !important;
+                background-repeat: no-repeat !important;
+                pointer-events: none !important;
+                display: block !important;
+                z-index: 1 !important;
+            }
+
+            .hero-vec-1 img {
+                position: absolute !important;
+                top: calc(var(--rail-h) * 844.546 / 918 - (844.546 * 50vw / 991)) !important;
+                right: 0 !important;
+                height: calc(918 * 50vw / 991) !important;
+                width: calc(1177 * 50vw / 991) !important;
+                display: block !important;
+                clip-path: none !important;
+            }
+        }
     </style>
 </head>
 
@@ -1107,7 +1275,7 @@
                         style="margin-bottom: 36px; position: relative; z-index: 10; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start;">
                         <h2 style="margin-bottom: 5px; color: #EC2D26; font-size: 3.5rem; font-weight: 600;">Strategy
                         </h2>
-                        <p class="strategy-sub" style="white-space: nowrap; margin-bottom: 5px;">We provide the
+                        <p class="strategy-sub" style="white-space: nowrap; margin-bottom: 5px; font-family: 'Quicksand', sans-serif;">We provide the
                             Structural
                             Blueprints <br>
                             for market entry, financial transactions,<br>

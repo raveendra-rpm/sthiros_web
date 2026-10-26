@@ -9633,6 +9633,42 @@ body.light-mode .menu-overlay .chevron {
   filter: brightness(0) !important;
 }
 
+/* ══════════════════════════════════════════════════════════════════
+   SPECIFIC HEADER FIX FOR ~1098px SCREEN RANGE (1025px to 1180px)
+   Applied across ALL pages to prevent header menu & logo collision
+   ══════════════════════════════════════════════════════════════════ */
+@media screen and (min-width: 1025px) and (max-width: 1180px) {
+  .site-header {
+    padding: 0 20px !important;
+  }
 
+  .header-left .site-logo {
+    height: 22px !important;
+  }
 
+  .desktop-nav {
+    margin-right: 15px !important;
+  }
+
+  .d-nav-list {
+    gap: 12px !important;
+  }
+
+  .d-nav-list > li > a {
+    font-size: 10.5px !important;
+    letter-spacing: 0.8px !important;
+  }
+
+  .header-right {
+    gap: 12px !important;
+  }
+
+  .header-search {
+    width: 165px !important;
+  }
+
+  .header-search-input {
+    font-size: 11.5px !important;
+  }
+}
 
